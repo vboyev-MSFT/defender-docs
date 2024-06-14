@@ -64,6 +64,9 @@ You manage incidents from **Investigation & response > Incidents & alerts > Inci
 
 :::image type="content" source="/defender/media/incidents-overview/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="/defender/media/incidents-overview/incidents-ss-incidents.png":::
 
+> [!TIP]
+> **Defender Boxed** appears for a limited time during January and July of each year. It's a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
+
 Selecting an incident name displays the incident page, starting with the entire **attack story** of the incident, including:
 
 - **Alert page within incident**: The scope of alerts related to the incident and their information on the same tab.

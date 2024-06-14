@@ -18,7 +18,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 06/05/2024
+ms.date: 07/01/2024
 appliesto: 
 - Microsoft Defender XDR 
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -57,6 +57,28 @@ For example: *Multi-stage incident on multiple endpoints reported by multiple so
 If you onboarded Microsoft Sentinel to the unified security operations platform, then any alerts and incidents coming from Microsoft Sentinel are likely to have their names changed (regardless of whether they were created before or since the onboarding).
 
 We recommend that you avoid using the incident name as a condition for triggering [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules). If the incident name is a condition, and the incident name changes, the rule will not be triggered.
+
+### Defender Boxed
+
+For a limited time during January and July of each year, **Defender Boxed** automatically appears when you first visit the Incidents page. Defender Boxed highlights your organization's security success, improvements, and response actions during the previous six months or calendar year.
+
+[insert recording of Defender Boxed]
+
+> [!NOTE]
+> Defender Boxed is only available to users who performed applicable activities in the Microsoft Defender portal.
+
+You can do the following actions in the series of cards that appear in Defender Boxed:
+
+- Download a detailed summary of your achievements that can be shared with others in your organization.
+[insert image]
+- Change the frequency of how often Your Defender Boxed will appear. You can choose between once (every January) or twice (every January and July) per year.
+[insert image]
+- Share your achievement to your social media networks, email, and other forums by saving the slide as an image.
+[insert image]
+
+To reopen Defender Boxed, go to the Incidents queue and then select **Your Defender Boxed** on the right side of the pane.
+
+[insert incident queue image of Defender Boxed]
 
 ## Filters <a name="available-filters"></a>
 

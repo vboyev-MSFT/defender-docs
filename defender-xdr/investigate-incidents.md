@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 12/04/2023
+ms.date: 07/01/2024
 ---
 
 # Investigate incidents in Microsoft Defender XDR
@@ -230,6 +230,9 @@ For incidents with a remediation status of **Pending approval**, you can approve
    - Select the Reject pending action option to prevent a pending action from being taken.
 
 :::image type="content" source="/defender/media/defender/m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal." lightbox="/defender/media/defender/m365-defender-approve-reject-action.png":::
+
+> [!TIP]
+> **Defender Boxed** appears for a limited time during January and July of each year. It's a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
 
 ## Next steps
 

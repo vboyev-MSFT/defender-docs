@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 06/05/2024
+ms.date: 07/01/2024
 ---
 
 # View and organize the Microsoft Defender for Endpoint Incidents queue
@@ -45,6 +45,9 @@ On the top navigation you can:
 - Customize and apply date ranges
 
 :::image type="content" source="media/atp-incident-queue.png" alt-text="The Incidents queue" lightbox="media/atp-incident-queue.png":::
+
+> [!TIP]
+> **Defender Boxed** appears for a limited time during January and July of each year. It's a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year. Learn how you can share your [Defender Boxed](/defender-xdr/incident-queue#defender-boxed) highlights.
 
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.
@@ -78,7 +81,6 @@ For example: *Multi-stage incident on multiple endpoints reported by multiple so
 
 > [!NOTE]
 > Incidents that existed prior the rollout of automatic incident naming will retain their name.
-
 
 ## See also
 - [Incidents queue](view-incidents-queue.md)

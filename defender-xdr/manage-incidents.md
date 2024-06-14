@@ -17,7 +17,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 06/05/2024
+ms.date: 07/01/2024
 ---
 
 # Manage incidents in Microsoft Defender
@@ -35,6 +35,9 @@ Incident management is critical to ensuring that incidents are named, assigned, 
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
 :::image type="content" source="/defender/media/incidents-queue/fig1-manageincidents.png" alt-text="Screenshot highlighting the manage incident option within the incident queue and quick launch pane in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig1-manageincidents.png":::
+
+> [!TIP]
+> **Defender Boxed** appears for a limited time during January and July of each year. It's a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
 
 Here are the ways you can manage your incidents:
 
