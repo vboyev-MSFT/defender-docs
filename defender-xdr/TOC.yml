@@ -130,6 +130,8 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
+       - name: Alerts, incidents, and correlation
+         href: alerts-incidents-correlation.md
        - name: Respond to incidents
          items: 
               - name: Overview
@@ -408,8 +410,6 @@
                   href: communicate-defender-experts-xdr.md
                 - name: Defender Experts for Hunting
                   href: defender-experts-for-hunting.md
-                - name: Ask Defender Experts
-                  href: experts-on-demand.md
                 - name: Auditing
                   href: auditing.md
               - name: Frequently asked questions
@@ -493,8 +493,6 @@
           href: mto-dashboard.md
         - name: Manage tenants
           href: mto-tenants.md
-        - name: Distribute content via tenant groups
-          href: mto-tenantgroups.md                      
         - name: Create and manage endpoint security policies
           href: mto-endpoint-security-policy.md               
     - name: Manage roles and permissions
