@@ -62,7 +62,7 @@ We recommend that you avoid using the incident name as a condition for triggerin
 
 For a limited time during January and July of each year, **Defender Boxed** automatically appears when you first visit the Incidents page. Defender Boxed highlights your organization's security success, improvements, and response actions during the previous six months or calendar year.
 
-[insert recording of Defender Boxed]
+:::image type="content" source="/defender/media/defender-boxed/defender-boxed-recording.gif" alt-text="Defender Boxed as shown in the incident queue.":::
 
 > [!NOTE]
 > Defender Boxed is only available to users who performed applicable activities in the Microsoft Defender portal.
@@ -70,15 +70,15 @@ For a limited time during January and July of each year, **Defender Boxed** auto
 You can do the following actions in the series of cards that appear in Defender Boxed:
 
 - Download a detailed summary of your achievements that can be shared with others in your organization.
-[insert image]
+  :::image type="content" source="/defender/media/defender-boxed/defender-boxed-summary-small.png" alt-text="Screenshot of Defender Boxed slide with the download summary option highlighted." lightbox="/defender/media/defender-boxed/defender-boxed-summary.png":::
 - Change the frequency of how often Your Defender Boxed will appear. You can choose between once (every January) or twice (every January and July) per year.
-[insert image]
+  :::image type="content" source="/defender/media/defender-boxed/defender-boxed-frequency-small.png" alt-text="Screenshot of Defender Boxed slide with the frequency highlighted." lightbox="/defender/media/defender-boxed/defender-boxed-frequency.png":::
 - Share your achievement to your social media networks, email, and other forums by saving the slide as an image.
-[insert image]
+  :::image type="content" source="/defender/media/defender-boxed/defender-boxed-save-small.png" alt-text="Screenshot of Defender Boxed slide with the save option highlighted." lightbox="/defender/media/defender-boxed/defender-boxed-save.png":::
 
 To reopen Defender Boxed, go to the Incidents queue and then select **Your Defender Boxed** on the right side of the pane.
 
-[insert incident queue image of Defender Boxed]
+:::image type="content" source="/defender/media/defender-boxed/defender-boxed-incident-small.png" alt-text="Screenshot of Defender Boxed slide with the save option highlighted." lightbox="/defender/media/defender-boxed/defender-boxed-incident.png":::
 
 ## Filters <a name="available-filters"></a>
 
