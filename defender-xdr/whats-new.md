@@ -29,6 +29,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## July 2024
+
+- **Defender Boxed** is available for a limited time in January and July of each year. This series of slides highlights your organization’s security successes, improvements, and response actions in the Microsoft Defender portal for the past six months/year. To learn how you can share your security operations team’s achievements, see [Defender Boxed](incident-queue.md#defender-boxed).
+
 ## June 2024
 
 - (Preview) **[Content distribution through tenant groups in multitenant management](mto-tenantgroups.md)** is now available. Content distribution helps you manage content at scale across tenants in multitenant management in Microsoft Defender XDR. In content distribution, you can create tenant groups to copy existing content, like custom detection rules, from the source tenant to the target tenants you assign during tenant group creation. The content then runs on the target tenant's devices or device groups that you set in the tenant group scope.
