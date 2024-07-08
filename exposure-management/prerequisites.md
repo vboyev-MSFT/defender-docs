@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 03/11/2024
+ms.date: 06/24/2024
 ---
 
 # Prerequisites and support
@@ -22,8 +22,9 @@ Security Exposure Management is currently in public preview.
 Permissions are based on [Microsoft Entra ID RBAC](/entra/identity/role-based-access-control/custom-overview). You need a tenant with at least one Global Admin or Security Admin to create a Security Exposure Management workspace.
 
 - For full Security Exposure Management access, user roles need access to all Defender for Endpoint  [device groups](/microsoft-365/security//defender-endpoint/machine-groups).
-- Users with scope restrictions to access, such as limits to a specific device group or multiple device groups, can view global exposure insight information, but not specific device information.
-- Users with a defined scope don't have access to attack paths and Security Exposure Management advanced hunting tables.
+- Users who have access restricted to specific device groups can:
+    - Access global exposure insights data. They can't access specific device information and attack paths
+    - Access the Security Exposure Management attack surface map and advanced hunting schemas (ExposureGraphNodes and ExposureGraphEdges) for the device groups to which they have access.
 
 ### Permissions for Security Exposure Management tasks
 
@@ -42,18 +43,18 @@ Permission levels are summarized in the table.
 | **Grant permissions to others** | ✔       |  -       |   -      | - | -|
 |  **Onboard your organization to the Microsoft Defender External Attack Surface Management (EASM) initiative**   | ✔       |  ✔       |   ✔      | ✔ | ✔ |
 |  **Mark initiative as a favorite**   | ✔       |  ✔       |   ✔      | ✔ | ✔ |
-| **Set initiative target score** | ✔       |  -       |   -      | - | - |
+| **Set initiative target score** | ✔       |  -       |   ✔      | - | - |
 |  **View general initiatives**  | ✔       |  ✔       |   ✔      | ✔ | ✔ |
 |  **Share metric/Recommendations**   | ✔       |  ✔       |   ✔      | ✔ | ✔ |
-| **Edit metric weight** | ✔       |  -       |   -      | - | - |
+| **Edit metric weight** | ✔       |  -       |   ✔     | - | - |
 | **Export metric (PDF)** | ✔       |  ✔       |   ✔      | ✔ | ✔ |
 |  **View metrics**  | ✔       |  ✔       |   ✔      | ✔ | ✔ |
 | **Export assets (metric/recommendation)**  | ✔       |  ✔       |   ✔      | ✔ | ✔ |
 |  **Manage recommendations**  |    ✔    | -  |  ✔  |   -      | - |
 |  **View recommendations**  | ✔       |  ✔       |   ✔      | ✔ | ✔ |
 |  **Export events**  | ✔       |  ✔       |   ✔      | ✔ | ✔ |
-|  **Change criticality level**  | ✔       |  ✔       |   ✔      | ✔ | ✔ |
-| **Set critical asset rule** | ✔       |  -       |   -      | - | - |
+|  **Change criticality level**  | ✔       |  -       |   ✔      | ✔ | - |
+| **Set critical asset rule** | ✔       |  -       |   ✔      | - | - |
 |  **Create criticality rule**  | ✔       |    -    |   ✔      | - | - |
 |  **Turn criticality rule on/off**  | ✔       |    -    |   ✔      | ✔ | - |
 |  **Run a query on exposure graph data**  |    ✔    |   ✔     |  ✔       | ✔ | ✔ |

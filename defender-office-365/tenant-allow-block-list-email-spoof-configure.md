@@ -45,6 +45,10 @@ This article describes how admins can manage entries for email senders in the Mi
 
 - Entries for spoofed senders never expire.
 
+- For blocking inbound and outbound email from a domain, any subdomains in that domain, and any email addresses in that domain, create the block entry using the syntax: `*.TLD`, where `TLD` can be any top-level domain, internal domain, or email address domain.
+
+- For blocking inbound and outbound email from a sudomain in a domain and any email addresses in that subdomain, create the block entry using the syntax: `*.SD1.TLD`, `*.SD2.SD1.TLD`, `*.SD3.SD2.SD1.TLD`, etc. for internal domains and email address domains.
+
 - For details about the syntax for spoofed sender entries, see the [Domain pair syntax for spoofed sender entries](#domain-pair-syntax-for-spoofed-sender-entries) section later in this article.
 
 - An entry should be active within 5 minutes.
@@ -60,7 +64,10 @@ This article describes how admins can manage entries for email senders in the Mi
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+
+    > [!IMPORTANT]
+    > <sup>\*</sup> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## Domains and email addresses in the Tenant Allow/Block List
 
