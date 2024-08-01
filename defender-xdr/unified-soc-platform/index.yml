@@ -28,6 +28,6 @@ landingContent:
             url: /defender-xdr/microsoft-365-defender
       - linkListType: whats-new
         links:
-          - text: What's new the Microsoft security operations platform
-            url: /defender-xdr/whats-new
+          - text: What's new in the Microsoft security operations platform
+            url: /defender-xdr/unified-soc-platform/whats-new
 

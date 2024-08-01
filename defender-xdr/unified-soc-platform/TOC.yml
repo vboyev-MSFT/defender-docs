@@ -4,12 +4,12 @@
   items:
     - name: Overview
       items:
-      - name: What is unified security operations?
+      - name: What is the Microsoft unified security operations platform?
         href: /defender-xdr/microsoft-365-defender.md
-      - name: What is the Microsoft Defender portal
-        href: /defender-xdr/microsoft-365-defender-portal.md
       - name: What's new
-        href: /defender-xdr/whats-new.md
+        href: /defender-xdr/unified-soc-platform/whats-new.md
+      - name: What is the Microsoft Defender portal?
+        href: /defender-xdr/microsoft-365-defender-portal.md
       - name: Microsoft Defender portal services
         items:
         - name: Defender for Endpoint
@@ -26,7 +26,7 @@
           href: /defender-xdr/microsoft-365-security-center-defender-cloud.md
         - name: Microsoft Sentinel
           href: /azure/sentinel/microsoft-sentinel-defender-portal?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-    - name: Plan ## Different or new zero trust article? Include defender deployment stuff and Sentinel?
+    - name: Plan ## Different or new zero trust article? Include defender deployment stuff and Sentinel? Do we have one article that summarizes and then links out or a deployment guide?
       items:
         - name: Zero trust
           href: /security/operations/siem-xdr-overview
@@ -50,7 +50,7 @@
           href: /defender-xdr/microsoft-sentinel-onboard.md
     - name: Reduce risk ## (Pre-breach) - one article that summarizes how to do that with USX
       href: /security-exposure-management/microsoft-security-exposure-management ## Placeholder link
-    - name: Protect against threats ##  (post breach) - one article with all the different ways services protect.
+    - name: Protect against threats ##  (post breach) - one article with all the different ways services protect. This title doesn't make it clear it's post breach. Batami suggested "Secure after breach" - what do you do after breach?
       items:
         - name: Automatic attack disruption for SAP
           href: /azure/sentinel/sap/deployment-attack-disrupt
