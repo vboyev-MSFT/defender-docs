@@ -50,12 +50,12 @@ The SOC optimization experience in both the Azure and Defender portals is now ge
 
 - **Use threat-based recommendations** to help identify gaps in coverage against specific attacks based on Microsoft research and mitigate them by ingesting the recommended logs and adding recommended detections.
 
-The [`recommendations`](soc-optimization/soc-optimization-api.md) API is still in Preview. 
+The [`recommendations`](/azure/sentinel/soc-optimization/soc-optimization-api) API is still in Preview. 
 
 For more information, see:
 
-- [Optimize your security operations](soc-optimization/soc-optimization-access.md)
-- [SOC optimization reference of recommendations](soc-optimization/soc-optimization-reference.md)
+- [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access)
+- [SOC optimization reference of recommendations](/azure/sentinel/soc-optimization/soc-optimization-reference)
 
 ### SAP Business Technology Platform (BTP) connector now generally available (GA)
 
@@ -63,15 +63,15 @@ The Microsoft Sentinel Solution for SAP BTP is now generally available (GA). Thi
 
 For more information, see:
 
-- [Microsoft Sentinel Solution for SAP Business Technology Platform (BTP)](sap/sap-btp-solution-overview.md)
-- [Deploy the Microsoft Sentinel solution for SAP BTP](sap/deploy-sap-btp-solution.md)
-- [Microsoft Sentinel Solution for SAP BTP: security content reference](sap/sap-btp-security-content.md)
+- [Microsoft Sentinel Solution for SAP Business Technology Platform (BTP)](/azure/sentinel/sap/sap-btp-solution-overview)
+- [Deploy the Microsoft Sentinel solution for SAP BTP](/azure/sentinel/sap/deploy-sap-btp-solution)
+- [Microsoft Sentinel Solution for SAP BTP: security content reference](/azure/sentinel/sap/sap-btp-security-content)
 
 ### Microsoft unified security platform now generally available
 
 Microsoft Sentinel is now generally available within the Microsoft unified security operations platform in the Microsoft Defender portal. The Microsoft unified security operations platform brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender. For more information, see the following resources:
 
 - Blog post: [General availability of the  Microsoft unified security operations platform](https://aka.ms/unified-soc-announcement)
-- [Microsoft Sentinel in the Microsoft Defender portal](microsoft-sentinel-defender-portal.md)
+- [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
 - [Connect Microsoft Sentinel to Microsoft Defender XDR](/defender-xdr/microsoft-sentinel-onboard)
 - [Microsoft Copilot in Microsoft Defender](/defender-xdr/security-copilot-in-microsoft-365-defender)

@@ -31,9 +31,9 @@
         - name: Zero trust
           href: /security/operations/siem-xdr-overview
         - name: Prerequisites ## Instead of this new article that covers specific to USX all up and link out to service topics
-          href: prerequisites.md
+          href: /defender-xdr/prerequisites
         - name: Microsoft security portals
-          href: portals.md
+          href: /defender-xdr/portals
         - name: Planning guide Microsoft Sentinel
           href: /azure/sentinel/deploy-overview
         - name: Microsoft Sentinel integration
