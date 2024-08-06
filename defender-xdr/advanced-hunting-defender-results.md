@@ -116,14 +116,14 @@ You can use the link to incident feature to add advanced hunting query results t
 ### View linked records in the incident
 You can click on the generated link from the summary step of the wizard or select the incident name from the incidents’ queue, to view the incident that the events are linked to.
 
-:::image type="content" source="/defender/media/advanced-hunting-results-link8.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link8.png":::
+:::image type="content" source="/defender/media/advanced-hunting-results-link7.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link7.png":::
 
 In our example, the three alerts, representing the three selected events, were linked successfully to a new incident.
 In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and query results view. 
 
 You can also select the event from the timeline view or from the query results view to open the Inspect record pane.
 
-:::image type="content" source="/defender/media/advanced-hunting-results-link2.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link2.png":::
+:::image type="content" source="/defender/media/advanced-hunting-results-link8.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link8.png":::
 
 ### Filter for events added using advanced hunting
 You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by Manual detection source 
