@@ -46,18 +46,21 @@ For Microsoft Defender XDR data, you can take further action by selecting the ch
 
 ## Link query results to an incident
 
-You can use the link to incident feature to add advanced hunting query results to a new or existing incident under investigation. This feature helps you to easily capture records from Advanced hunting activities, which enables you to create a richer timeline or context of events regarding an incident.
+You can use the link to incident feature to add advanced hunting query results to a new or existing incident under investigation. This feature helps you to easily capture records from advanced hunting activities, which allows you to create a richer timeline or context of events regarding an incident.
 
 ### Link results to new or existing incidents
-1.	In the advanced hunting query page, first enter your query in the query field provided, then select **Run query** to get your results.
+
+1.	In the advanced hunting query pane, enter your query in the query field provided, then select **Run query** to get your results.
+[IMAGE]
  
-2.	In the Results page, select the events or records that are related to a new or current investigation you're working on, then select **Link to incident**.
- 
+2.	In the Results pane, select the events or records that are related to a new or current investigation you're working on, then select **Link to incident**.
+[IMAGE]
+
 3.	In the **Alert details** section in the Link to incident pane, select **Create new incident** to convert the events to alerts and group them to a new incident:
-[TBD update screenshot]
+[IMAGE]
  
     You can also select **Link to an existing incident** to add the selected records to an existing one. Choose the related incident from the dropdown list of existing incidents. You can also enter the first few characters of the incident name or ID to find the existing incident.
- 
+ [IMAGE]
 4.	For either selection, provide the following details, then select **Next**:
     - **Alert title** - a descriptive title for the results that your incident responders can understand; this descriptive title becomes the alert title
     - **Severity** - choose the severity applicable to the group of alerts
@@ -97,9 +100,13 @@ You can use the link to incident feature to add advanced hunting query results t
     After an entity type is selected, select an identifier type that exists in the selected records and will be used to identify this entity. Each entity type has a list of supported identifiers, as can be seen in the relevant drop down. Use the description displayed when hovering on each identifier to better understand it. 
 
      After selecting the identifier, select a column from the query results’ that contains the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
- 
+
+     [IMAGE]
+
      In our example, we used a query to find events related to a possible email exfiltration incident, therefore the recipient’s mailbox and recipient’s account are the impacted entities, and the sender’s IP as well as mail message are related evidence.
- 
+
+    [IMAGE]
+
     A different alert is created for each record with a unique combination of impacted entities. In our example, if there are three different recipients mailboxes and recipient object ids combinations, for instance, then three alerts are created and linked to the chosen incident.
 
 6. Select **Next**.
@@ -108,15 +115,20 @@ You can use the link to incident feature to add advanced hunting query results t
 
 ### View linked records in the incident
 You can click on the generated link from the summary step of the wizard or select the incident name from the incidents’ queue, to view the incident that the events are linked to.
- 
+
+ [IMAGE]
+
 In our example, the three alerts, representing the three selected events, were linked successfully to a new incident.
 In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and query results view. 
 
 You can also select the event from the timeline view or from the query results view to open the Inspect record pane.
  
-### Filter for events added using advanced hunting
-You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by Manual detection source (TBD screenshot)
+ [IMAGE]
 
+### Filter for events added using advanced hunting
+You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by Manual detection source 
+
+ [IMAGE]
  
 
 
