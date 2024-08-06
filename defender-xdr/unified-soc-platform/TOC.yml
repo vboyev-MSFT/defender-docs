@@ -48,7 +48,7 @@
           href: /azure/sentinel/quickstart-onboard
         - name: Connect Microsoft Sentinel to Microsoft Defender
           href: /defender-xdr/microsoft-sentinel-onboard.md
-    - name: Reduce risk ## (Pre-breach) - one article that summarizes how to do that with USX
+    - name: Reduce risk ## (Pre-breach) - one article that summarizes how to do that with USX - Get security recommendations and harden environment (apply recommendations).
       href: /security-exposure-management/microsoft-security-exposure-management ## Placeholder link
     - name: React to threats (post breach) ##  (post breach) - one article with all the different ways services protect. This title doesn't make it clear it's post breach. Batami suggested "Secure after breach" - what do you do after breach?
       items:
