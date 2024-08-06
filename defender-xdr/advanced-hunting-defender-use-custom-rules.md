@@ -1,0 +1,73 @@
+---
+title: Use custom functions in advanced hunting in Microsoft Defender
+description: Using functions, saved queries, and custom rules in advanced hunting in the portal unifying Defender XDR and Sentinel data
+search.appverid: met150
+ms.service: defender-xdr
+ms.subservice: adv-hunting
+f1.keywords: 
+  - NOCSH
+ms.author: maccruz
+author: schmurky
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: 
+  - m365-security
+  - m365initiative-m365-defender
+  - tier1
+  - usx-security
+ms.topic: conceptual
+appliesto:
+    - Microsoft Defender XDR
+    - Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 08/07/2024
+---
+
+# Use advanced hunting functions, saved queries, and custom rules in Microsoft Defender
+
+
+## Use functions
+
+To use a function from Microsoft Sentinel, go to the **Functions** tab and scroll until you find the function that you want. Double-click the function name to insert the function in the query editor. 
+
+You can also select the vertical ellipses ( ![kebab icon](/defender/media/ah-kebab.png) ) to the right of the function and select **Insert to query** to insert the function into a query in the query editor. 
+
+Other options include:
+- **View details** – opens the function side pane containing its details
+- **Load function code** – opens a new tab containing the function code
+
+For editable functions, more options are available when you select the vertical ellipses:
+- **Edit details** – opens the function side pane to allow you to edit details about the function (except folder names for Sentinel functions)
+- **Delete** – deletes the function
+
+
+## Use saved queries
+
+To use a saved query from Microsoft Sentinel, go to the **Queries** tab and scroll until you find the query that you want. Double-click the query name to load the query in the query editor. For more options, select the vertical ellipses ( ![kebab icon](/defender/media/ah-kebab.png) ) to the right of the query. From here, you can perform the following actions:
+
+- **Run query** – loads the query in the query editor and runs it automatically
+- **Open in query editor** – loads the query in the query editor
+- **View details** – opens the query details side pane where you can inspect the query, run the query, or open the query in the editor
+
+   :::image type="content" source="/defender/media/advanced-hunting-unified-view-details.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-unified-view-details.png":::
+
+
+For editable queries, more options are available:
+
+- **Edit details** – opens the query details side pane with the option to edit the details like description (if applicable) and the query itself; only the folder names (location) of Microsoft Sentinel queries can't be edited
+- **Delete** – deletes the query
+- **Rename** – allows you to modify the query name
+
+## Create custom analytics and detection rules
+
+To help discover threats and anomalous behaviors in your environment, you can create custom detection policies. 
+
+For analytics rules that apply to data ingested through the connected Microsoft Sentinel workspace, select **Manage rules > Create analytics rule**.
+
+:::image type="content" source="/defender/media/advanced-hunting-unified-rules.png" alt-text="Screenshot of the options to create custom analytics or detections in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-unified-rules.png":::
+
+The **Analytics rule wizard** appears. Fill up the required details as described in [Analytics rule wizard—General tab](/azure/sentinel/detect-threats-custom#analytics-rule-wizardgeneral-tab).
+
+You can also create custom detection rules that query data from both Microsoft Sentinel and Defender XDR tables. Select **Manage rules > Create custom detection**. Read [Create and manage custom detection rules](custom-detection-rules.md) for more information. 
+
+If your Defender XDR data is ingested into Microsoft Sentinel, you have the option to choose between **Create custom detection** and **Create analytics rule**.
