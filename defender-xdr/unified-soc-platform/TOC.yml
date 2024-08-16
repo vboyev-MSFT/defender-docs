@@ -50,10 +50,6 @@
           href: /defender-xdr/microsoft-sentinel-onboard.md
     - name: Reduce risk ## (Pre-breach) - one article that summarizes how to do that with USX - Get security recommendations and harden environment (apply recommendations). What's the best practice and what would you do in what order. 
       href: /security-exposure-management/microsoft-security-exposure-management ## Placeholder link
-    - name: React to threats (post breach) ##  (post breach) - one article with all the different ways services protect. This title doesn't make it clear it's post breach. Batami suggested "Secure after breach" - what do you do after breach?
-      items:
-        - name: Automatic attack disruption for SAP
-          href: /azure/sentinel/sap/deployment-attack-disrupt
     - name: Detect threats ## Have each writer provide article and then we summarize in one article.
       href: /azure/sentinel/threat-detection
     - name: Investigate ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
