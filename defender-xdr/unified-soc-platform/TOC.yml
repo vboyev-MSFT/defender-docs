@@ -72,6 +72,8 @@
           href: /azure/sentinel/automation/automation
         - name: Automate threat response
           href: /azure/sentinel/automate-incident-handling-with-automation-rules
+        - name: Automatic attack disruption for SAP
+          href: /azure/sentinel/sap/deployment-attack-disrupt
     - name: Optimize your security operations 
       items:
         - name: Overview
