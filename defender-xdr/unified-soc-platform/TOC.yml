@@ -60,7 +60,7 @@
           href: /defender-xdr/advanced-hunting-microsoft-defender
         - name: Microsoft Copilot for Security in advanced hunting
           href: /defender-xdr/advanced-hunting-security-copilot
-        - name: Investigate incidents in Copilot for Security
+        - name: Investigate incidents in Copilot for Security ## This article is specific to Sentinel in the context of using outside of USX and with XDR in USX. We don't think it applies to Sentinel only but need to confirm with PM.  Austin thought title w/o mentioning Sentinel is misleading. We might need to leave this out of TOC or as part of plan/deploy to integrate Sentinel w/ Copilot features.
           href: /azure/sentinel/sentinel-security-copilot
         - name: Entities
           href: /azure/sentinel/entity-pages?tabs=azure-portal
