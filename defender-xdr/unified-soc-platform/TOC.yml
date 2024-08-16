@@ -76,8 +76,6 @@
           href: /azure/sentinel/automation/automation
         - name: Automate threat response
           href: /azure/sentinel/automate-incident-handling-with-automation-rules
-    - name: Remediate ## This could include posture recommendations
-      href: /azure/defender-for-cloud/concept-cloud-security-posture-management ## placeholder. I don't know what goes here.
     - name: Optimize your security operations 
       items:
         - name: Overview
