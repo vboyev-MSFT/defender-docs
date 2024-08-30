@@ -87,7 +87,7 @@ In the unified portal, in addition to viewing the schema column names and descri
     - Near real-time detection frequency is not available for detections that include Microsoft Sentinel data. 
     - Custom functions that were created and saved in Microsoft Sentinel are not supported.
     - Defining entities from Sentinel data is not yet supported in custom detections.
-- Bookmarks aren't supported in the advanced hunting experience. They're supported in the **Microsoft Sentinel > Threat management > Hunting** feature.
+- Bookmarks aren't supported in the advanced hunting experience. They're supported in the **Microsoft Sentinel > Threat management > Hunting** feature. You can also use the [link to incident](advanced-hunting-defender-results.md#link-results-to-new-or-existing-incidents) feature to link events to incidents. 
 - If you're streaming Defender XDR tables to Log Analytics, there might be a difference between the`Timestamp` and `TimeGenerated` columns. In case the data arrives to Log Analytics after 48 hours, it's being overridden upon ingestion to `now()`. Therefore, to get the actual time the event happened, we recommend relying on the `Timestamp` column.
 - When prompting [Copilot for Security](advanced-hunting-security-copilot.md) for advanced hunting queries, you might find that not all Microsoft Sentinel tables are currently supported. However, support for these tables can be expected in the future.
 
@@ -95,5 +95,4 @@ In the unified portal, in addition to viewing the schema column names and descri
 ## See also
 
 - [Use advanced hunting functions, saved queries, and custom rules](advanced-hunting-defender-use-custom-rules.md)
-- [Explore advanced hunting results](advanced-hunting-defender-results.md)
-- [Link Microsoft Sentinel incidents](advanced-hunting-link-to-incident.md)
+- [Explore advanced hunting results with Microsoft Sentinel data](advanced-hunting-defender-results.md)
