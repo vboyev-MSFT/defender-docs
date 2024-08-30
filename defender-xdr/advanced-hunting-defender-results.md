@@ -1,5 +1,5 @@
 ---
-title: Work with advanced hunting results in Microsoft Defender
+title: Work with results containing Microsoft Sentinel data
 description: Work with advanced hunting in the portal unifying Defender XDR and Sentinel data
 search.appverid: met150
 ms.service: defender-xdr
@@ -23,7 +23,7 @@ appliesto:
 ms.date: 08/07/2024
 ---
 
-# Work with advanced hunting results in Microsoft Defender
+# Work with advanced hunting results containing Microsoft Sentinel data
 
 ## Explore results
 
@@ -58,7 +58,7 @@ You can use the link to incident feature to add advanced hunting query results t
 
 3.	In the **Alert details** section in the Link to incident pane, select **Create new incident** to convert the events to alerts and group them to a new incident:
 
-[IMAGE]
+
  
     You can also select **Link to an existing incident** to add the selected records to an existing incident. Choose the related incident from the dropdown list of existing incidents. You can also enter the first few characters of the incident name or ID to find the incident you want.
    :::image type="content" source="/defender/media/advanced-hunting-results-link4.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link4.png":::

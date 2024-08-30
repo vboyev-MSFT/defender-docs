@@ -1,5 +1,5 @@
 ---
-title: Use custom functions in advanced hunting in Microsoft Defender
+title: Use Microsoft Sentinel custom functions in advanced hunting in Microsoft Defender
 description: Using functions, saved queries, and custom rules in advanced hunting in the portal unifying Defender XDR and Sentinel data
 search.appverid: met150
 ms.service: defender-xdr
@@ -23,7 +23,7 @@ appliesto:
 ms.date: 08/07/2024
 ---
 
-# Use advanced hunting functions, saved queries, and custom rules in Microsoft Defender
+# Use Microsoft Sentinel functions, saved queries, and custom rules 
 
 
 ## Use functions
