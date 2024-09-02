@@ -34,6 +34,12 @@
         href: classify-critical-assets.md
       - name: Predefined classifications
         href: predefined-classification-rules-and-levels.md
+     - name: Connect external data sources
+       items:
+       - name: Overview
+         href: external-data-sources-overview.md
+       - name: Work with external data sources
+         href: work-with-external-data-sources.md
     - name: Work with attack paths
       items:      
         - name: Overview
