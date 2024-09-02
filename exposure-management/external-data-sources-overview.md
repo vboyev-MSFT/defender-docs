@@ -15,8 +15,8 @@ ms.date: 09/02/2024
 
 To provide coverage of all your assets and security signals, MSEM provides data connectors that ingest data from other security or asset management products deployed in your environment.
 This means you're able to seamlessly integrate with existing security solutions to:
--Ingest data from external data sources
--Consolidate all your asset and security posture data in MSEM
+- Ingest data from external data sources
+- Consolidate all your asset and security posture data in MSEM
 
 The support for external solutions helps to further streamline, integrate, and orchestrate defenses from other vendors with MSEM; enabling security teams to effectively manage their posture and exposure across the entire attack surface.
 Integration is currently supported for the following solutions:

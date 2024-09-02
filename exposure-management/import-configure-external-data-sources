@@ -11,6 +11,8 @@ ms.date: 09/02/2024
 
 # Work with external data sources
 
+There are several steps to prepare and configure your external data sources in Microsoft Security Exposure Management (MSEM). This article provides an overview of the process and the types of assets and data that can be imported into MSEM.
+
 ## Imported Assets and Types
 
 The Microsoft Security Exposure Management solution includes various types of assets. These assets are aimed at enhancing the company's digital presence and improving customer engagement.
@@ -44,5 +46,4 @@ After you prepare the connection for the supported external data sources, follow
 
 ## Next steps
 
--
 -
