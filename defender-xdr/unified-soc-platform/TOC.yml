@@ -5,58 +5,52 @@
     - name: Overview
       items:
       - name: What is the Microsoft unified security operations platform?
-        href: /defender-xdr/microsoft-365-defender.md
+        href: /defender-xdr/microsoft-365-defender ## PLACEHOLDER LINK
       - name: What's new
         href: /defender-xdr/unified-soc-platform/whats-new.md
-      - name: What is the Microsoft Defender portal?
-        href: /defender-xdr/microsoft-365-defender-portal.md
-      - name: Microsoft Defender portal services
+      - name: Service integration in the portal
         items:
-        - name: Defender for Endpoint
-          href: /defender-xdr/microsoft-365-security-center-mde.md
-        - name: Defender for IoT
-          href: /defender-for-iot/microsoft-defender-iot
-        - name: Defender for Office 365
-          href: /defender-xdr/microsoft-365-security-center-mdo.md
-        - name: Defender for Identity
-          href: /defender-xdr/microsoft-365-security-center-mdi.md
-        - name: Defender for Cloud Apps
-          href: /defender-xdr/microsoft-365-security-center-defender-cloud-apps.md
-        - name: Defender for Cloud
-          href: /defender-xdr/microsoft-365-security-center-defender-cloud.md
-        - name: Microsoft Sentinel
-          href: /azure/sentinel/microsoft-sentinel-defender-portal?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-    - name: Plan ## Different or new zero trust article? Include defender deployment stuff and Sentinel? Do we have one article that summarizes and then links out or a deployment guide?
-      items:
-        - name: Zero trust
-          href: /security/operations/siem-xdr-overview
-        - name: Prerequisites ## Instead of this new article that covers specific to USX all up and link out to service topics
-          href: /defender-xdr/prerequisites
-        - name: Microsoft security portals
-          href: /defender-xdr/portals
-        - name: Planning guide Microsoft Sentinel
-          href: /azure/sentinel/deploy-overview
+        - name: Microsoft Defender XDR integration
+          href: /defender-xdr/microsoft-365-defender-portal
+        - name: Microsoft Security Exposure Management integration
+          href: /security-exposure-management/get-started-exposure-management
         - name: Microsoft Sentinel integration
           href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
-    - name: Deploy ## Need new high level article. Put post deployment links at the end of article. New article title: Deploy the Microsoft unified security operations
+        - name: Defender for Cloud integration
+          href: /defender-xdr/microsoft-365-security-center-defender-cloud
+        - name: Defender for IoT integration
+          href: /defender-for-iot/microsoft-defender-iot
+        - name: Microsoft Copilot for Security in the Defender portal
+          href: /defender-xdr/security-copilot-in-microsoft-365-defender
+    - name: Plan ## Leverage existing zero trust articles? One article for USX all up planning (like guide that links out).
       items:
-        - name: Turn on Defender XDR ## placeholder links in this section...?
-          href: /defender-xdr/m365d-enable
-        - name: Deploy Defender components
-          href: /defender-xdr/deploy-supported-services
-        - name: Set up Microsoft Sentinel 
-          href: /azure/sentinel/quickstart-onboard
-        - name: Connect Microsoft Sentinel to Microsoft Defender
-          href: /defender-xdr/microsoft-sentinel-onboard.md
-    - name: Reduce risk ## (Pre-breach) - one article that summarizes how to do that with USX
-      href: /security-exposure-management/microsoft-security-exposure-management ## Placeholder link
+        - name: Zero trust security ## Discuss principles around Zero Trust security, link to the Zero Trust doc set as needed.
+          items:
+          - name: Microsoft Defender XDR
+            href: /defender-xdr/zero-trust-with-microsoft-365-defender
+          - name: Microsoft Sentinel and Microsoft Defender XDR
+            href: /security/operations/siem-xdr-overview
+          - name: Microsoft Defender for Cloud
+            href: /azure/defender-for-cloud/zero-trust
+          - name: Microsoft Defender for Cloud Apps
+            href: /defender-cloud-apps/zero-trust
+          - name: Microsoft Defender for Identity
+            href: /defender-for-identity/zero-trust
+        - name: Plan for unified security operations ## NEW article that covers specific to USX all up and link out to service topics
+          href: /defender-xdr/prerequisites ## PLACEHOLDER LINK
+    - name: Deploy ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
+      href: /defender-xdr/microsoft-sentinel-onboard ## PLACEHOLDER LINK
+    - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
+      href: /security-exposure-management/microsoft-security-exposure-management ## PLACEHOLDER LINK
     - name: Protect against threats ##  (post breach) - one article with all the different ways services protect. This title doesn't make it clear it's post breach. Batami suggested "Secure after breach" - what do you do after breach?
       items:
-        - name: Automatic attack disruption for SAP
-          href: /azure/sentinel/sap/deployment-attack-disrupt
-    - name: Detect threats ## Have each writer provide article and then we summarize in one article.
-      href: /azure/sentinel/threat-detection
-    - name: Investigate ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
+        - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
+          href: /azure/sentinel/sap/deployment-attack-disrupt ## PLACEHOLDER LINK
+        - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section
+          href: /defender-xdr/microsoft-secure-score
+    - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
+      href: /azure/sentinel/threat-detection ## PLACEHOLDER LINK
+    - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
         - name: Alerts, incidents, and correlation
           href: /defender-xdr/alerts-incidents-correlation
