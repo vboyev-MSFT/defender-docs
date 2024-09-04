@@ -10,15 +10,19 @@
         href: /defender-xdr/unified-soc-platform/whats-new.md
       - name: Service integration in the portal
         items:
-        - name: Microsoft Defender XDR integration
+        - name: Microsoft Defender XDR
           href: /defender-xdr/microsoft-365-defender-portal
-        - name: Microsoft Security Exposure Management integration
+        - name: Microsoft Security Exposure Management
           href: /security-exposure-management/get-started-exposure-management
-        - name: Microsoft Sentinel integration
-          href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
-        - name: Defender for Cloud integration
+        - name: Microsoft Sentinel
+          items:
+          - name: Microsoft Sentinel integration
+            href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
+          - name: Experience in the Defender portal
+            href: /azure/sentinel/microsoft-sentinel-defender-portal?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
+        - name: Microsoft Defender for Cloud
           href: /defender-xdr/microsoft-365-security-center-defender-cloud
-        - name: Defender for IoT integration
+        - name: Microsoft Defender for IoT
           href: /defender-for-iot/microsoft-defender-iot
         - name: Microsoft Copilot for Security in the Defender portal
           href: /defender-xdr/security-copilot-in-microsoft-365-defender
@@ -41,37 +45,59 @@
     - name: Deploy ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
       href: /defender-xdr/microsoft-sentinel-onboard ## PLACEHOLDER LINK
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
-      href: /security-exposure-management/microsoft-security-exposure-management ## PLACEHOLDER LINK
-    - name: Protect against threats ##  (post breach) - one article with all the different ways services protect. This title doesn't make it clear it's post breach. Batami suggested "Secure after breach" - what do you do after breach?
       items:
         - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
           href: /azure/sentinel/sap/deployment-attack-disrupt ## PLACEHOLDER LINK
-        - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section
-          href: /defender-xdr/microsoft-secure-score
+        - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section. Or because this is going away, we just link in all the articles? Or put them in reference?
+          items:
+          - name: Overview
+            href: /defender-xdr/microsoft-secure-score.md
+          - name: What's new
+            href: /defender-xdr/microsoft-secure-score-whats-new.md
+          - name: Assess your security posture
+            href: /defender-xdr/microsoft-secure-score-improvement-actions.md
+          - name: Track your score history and meet goals
+            href: /defender-xdr/microsoft-secure-score-history-metrics-trends.md
+          - name: Data storage and privacy
+            href: /defender-xdr/secure-score-data-storage-privacy.md
     - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
       href: /azure/sentinel/threat-detection ## PLACEHOLDER LINK
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
+        - name: Overview
+          href: /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
         - name: Alerts, incidents, and correlation
           href: /defender-xdr/alerts-incidents-correlation
-        - name: Advanced hunting
-          href: /defender-xdr/advanced-hunting-microsoft-defender
-        - name: Microsoft Copilot for Security in advanced hunting
-          href: /defender-xdr/advanced-hunting-security-copilot
+        - name: Investigate alerts
+          href: /defender-xdr/investigate-alerts
+        - name: Hunt for threats
+          items:
+          - name: Advanced hunting
+            href: /defender-xdr/advanced-hunting-microsoft-defender
+          - name: Microsoft Copilot for Security in advanced hunting
+            href: /defender-xdr/advanced-hunting-security-copilot
+          - name: Learn the query language
+            href: /defender-xdr/advanced-hunting-query-language
         - name: Investigate incidents in Copilot for Security ## This article is specific to Sentinel in the context of using outside of USX and with XDR in USX. We don't think it applies to Sentinel only but need to confirm with PM.  Austin thought title w/o mentioning Sentinel is misleading. We might need to leave this out of TOC or as part of plan/deploy to integrate Sentinel w/ Copilot features.
           href: /azure/sentinel/sentinel-security-copilot
-        - name: Entities
-          href: /azure/sentinel/entity-pages?tabs=azure-portal
+        - name: Investigate entities
+          items: 
+          - name: Overview
+            href: /azure/sentinel/entity-pages?tabs=azure-portal
+          - name: User entity pages
+            href: investigate-users.md
+          - name: Device entity pages
+            href: entity-page-device.md
+          - name: IP entity pages
+            href: entity-page-ip.md
     - name: Respond to threats
       items:
         - name: Overview
           href: /defender-xdr/incidents-overview
-        - name: Automation in Microsoft Sentinel
-          href: /azure/sentinel/automation/automation
-        - name: Automate threat response
-          href: /azure/sentinel/automate-incident-handling-with-automation-rules
-        - name: Automatic attack disruption for SAP
-          href: /azure/sentinel/sap/deployment-attack-disrupt
+        - name: Prioritize incidents
+          href: /defender-xdr/incident-queue
+        - name: Automatic attack disruption 
+          href: /defender-xdr/automatic-attack-disruption
     - name: Optimize your security operations 
       items:
         - name: Overview
@@ -82,9 +108,21 @@
           href: /azure/sentinel/soc-optimization/soc-optimization-reference
     - name: Manage your unified SOC ## Need article w/ overview about settings? What else needs to go here? Several other things like permissions and costs would get referenced by planning guide.
       items:
-        - name: Multi-tenant management ## Work will start soon to integrate Sentinel into one or more of these articles.
+        - name: Manage multiple tenants ## Work will start soon to integrate Sentinel into one or more of these articles.
           items: 
             - name: Overview
               href: /defender-xdr/mto-overview
             - name: Set up multi-tenant management
               href: /defender-xdr/mto-requirements
+        - name: Configure notifications
+          items:
+          - name: Get incident notifications
+            href: /defender-xdr/m365d-notifications-incidents
+          - name: Configure alert notifications
+            href: /defender-xdr/configure-email-notifications 
+    - name: Resources
+      items:
+        - name: Threat actor naming
+          href: /defender-xdr/microsoft-threat-actor-naming
+        - name: Microsoft virus initiative
+          href: /defender-xdr/virus-initiative-criteria
