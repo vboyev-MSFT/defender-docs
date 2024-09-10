@@ -20,8 +20,6 @@
             href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
           - name: Experience in the Defender portal
             href: /azure/sentinel/microsoft-sentinel-defender-portal?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Connect Microsoft Sentinel to Microsoft Defender
-            href: /defender-xdr/microsoft-sentinel-onboard
         - name: Microsoft Defender for Cloud
           href: /defender-xdr/microsoft-365-security-center-defender-cloud
         - name: Microsoft Defender for IoT
@@ -32,20 +30,24 @@
       items:
         - name: Zero trust security ## Discuss principles around Zero Trust security, link to the Zero Trust doc set as needed.
           items:
-          - name: Microsoft Defender XDR
-            href: /defender-xdr/zero-trust-with-microsoft-365-defender
           - name: Microsoft Sentinel and Microsoft Defender XDR
             href: /security/operations/siem-xdr-overview
+          - name: Microsoft Defender XDR
+            href: /defender-xdr/zero-trust-with-microsoft-365-defender
           - name: Microsoft Defender for Cloud
             href: /azure/defender-for-cloud/zero-trust
           - name: Microsoft Defender for Cloud Apps
             href: /defender-cloud-apps/zero-trust
           - name: Microsoft Defender for Identity
             href: /defender-for-identity/zero-trust
+          - name: Microsoft Defender for IoT
+            href: /azure/defender-for-iot/organizations/concept-zero-trust
         - name: Plan for unified security operations ## NEW article that covers specific to USX all up and link out to service topics
           href: /defender-xdr/prerequisites ## PLACEHOLDER LINK
     - name: Deploy ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
-      href: /defender-xdr/microsoft-sentinel-onboard ## PLACEHOLDER LINK
+      Items:
+        - name: Connect Microsoft Sentinel to Microsoft Defender
+          href: /defender-xdr/microsoft-sentinel-onboard
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
       items:
         - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
@@ -68,7 +70,7 @@
       items:
       - name: Overview
         href: /defender-xdr/advanced-hunting-overview ## PLACEHOLDER - Need overview article about the hunting features across services. Advanced hunting, custom detections, hunts in Sentinel
-      - name: Search for threats with advanced hunting 
+      - name: Search with advanced hunting 
         items:
         - name: Overview
           href: /defender-xdr/advanced-hunting-overview
@@ -90,6 +92,8 @@
           href: /defender-xdr/advanced-hunting-query-language
         - name: Get expert training
           href: /defender-xdr/advanced-hunting-expert-training
+        - name: Use shared queries
+          href: /defender-xdr/advanced-hunting-shared-queries
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
         - name: Overview
@@ -142,6 +146,8 @@
             href: /defender-xdr/automatic-attack-disruption
           - name: Configure capabilities
             href: /defender-xdr/configure-attack-disruption
+          - name: View results
+            href: /defender-xdr/autoad-results
         - name: Review remediations in the action center
           href: /defender-xdr/m365d-action-center
     - name: Optimize your security operations 
