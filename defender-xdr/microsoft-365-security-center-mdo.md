@@ -170,7 +170,7 @@ For more information, see the following articles:
 
 ### Learning hub
 
-Redirects to <https://learn.microsoft.com/training/defender/>.
+Redirects to the [Microsoft Defender XDR learning paths](/training/defender/).
 
 ### Trials
 
