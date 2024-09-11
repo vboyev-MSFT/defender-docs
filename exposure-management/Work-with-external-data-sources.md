@@ -1,0 +1,48 @@
+---
+title: Working with external data sources in Microsoft Security Exposure Management
+description: Learn how to work with external data sources in Microsoft Security Exposure Management.
+ms.author: dlanger
+author: dlanger
+manager: rayne-wiselman
+ms.topic: reference
+ms.service: exposure-management
+ms.date: 09/02/2024
+---
+
+# Work with external data sources
+
+## Imported Assets and Types
+
+The Microsoft Security Exposure Management solution includes various types of assets. These assets are aimed at enhancing the company's digital presence and improving customer engagement.
+
+- Devices
+- Vulnerabilities
+- Users (future)
+- Software (future)
+- SaaS Applications (future)
+
+The asset information imported into MSEM includes data from external data sources like Qualys, Rapid7, and ServiceNow CMDB environments. This data is consolidated into MSEM, to provide a comprehensive view of the security posture across all digital assets.
+
+The imported assets appear in the inventories and the exposure graph. Microsoft Security Exposure Management also offers integration with critical asset protection, attack paths, metrics, and initiatives. It provides insights into potential attack paths and entry points that could compromise critical assets. It also offers metrics and recommendations to help prioritize actions to protect these assets.
+
+The information brought into the system includes:
+
+- Device and service data from systems, including OS
+- Distribution
+- Interfaces
+- Network details
+- Last users
+
+## Configuring your data sources/connections
+
+After you prepare the connection for the supported external data sources, follow these steps:
+
+1. Complete the applicable prerequisite steps for your data sources.
+2. To connect your data source’s environment, go to [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the MSEM navigation.
+3. Select **Connect** on the selected data source from the catalog:
+4. A side pane opens with connectivity details. Fill in the required fields and select **Connect**.
+
+## Next steps
+
+-
+-
