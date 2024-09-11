@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 in the Microsoft Defender portal
-description: Learn about changes from the Security & Compliance Center to the Microsoft Defender portal.
+description: Learn about how Microsoft Defender for Office 365 operates in the Microsoft Defender portal.
 ms.date: 09/10/2024
 ms.author: chrisda
 author: chrisda
@@ -26,7 +26,7 @@ ms.service: defender-xdr
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Office 365 Plan 1 and Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
 
-This article describes the Microsoft Defender for Office 365 experience in the Microsoft Defender portal at <https://security.microsoft.com>. Formerly, Defender for Office 365 customers used the Office 365 Security & Compliance Center at <https://protection.office.com>, but access to that portal was discontinued in 2022.
+This article describes the Microsoft Defender for Office 365 experience in the Microsoft Defender portal at <https://security.microsoft.com>. Formerly, Defender for Office 365 customers used the Office 365 Security & Compliance Center at <https://protection.office.com>, but access to that portal ended in 2022.
 
 The Defender portal combines security capabilities from existing Microsoft 365 security portals. This improved portal helps security teams protect their organization from threats more effectively and efficiently.
 
@@ -36,11 +36,11 @@ If you're looking for compliance-related items, see [Microsoft Purview complianc
 
 ## Capabilities
 
-With the unified Defender XDR solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
+With the unified Defender XDR solution, you can stitch together the threat signals and determine the full scope of the threat, and how it currently affects the organization.
 
-:::image type="content" source="media/mdo-m36d-nav-collapsed.png" alt-text="A screenshot of the left navigation pane of the M365 Defender portal." lightbox="media/mdo-m36d-nav-collapsed.png":::
+:::image type="content" source="media/mdo-m36d-nav-collapsed.png" alt-text="A screenshot of the left navigation pane of the Microsoft 365 Defender portal." lightbox="media/mdo-m36d-nav-collapsed.png":::
 
-Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Most of the Defender for Office 365-specific features are available under the **Email & collaboration** node as described in the [Email & collaboration](#email--collaboration) section.
+Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Most Defender for Office 365 specific features are available under the **Email & collaboration** node as described in the [Email & collaboration](#email--collaboration) section.
 
 :::image type="content" source="media/mdo-m365d-nav.png" alt-text="A screenshot that shows the Email & collaboration node expanded in the Defender portal." lightbox="media/mdo-m365d-nav.png":::
 
@@ -48,7 +48,7 @@ Defender for Office 365 safeguards your organization against malicious threats p
 >
 > - Defender for Office 365 includes all the functionality in Exchange Online Protection (EOP). For more information about EOP, see [Exchange Online Protection overview](/defender-office-365/eop-about).
 >
-> - What you see or don't see in the Defender portal depends on your subscription (for example, Defender for Office 365 Plan 2 that's included in Microsoft 365 E5 vs. an add-on or standalone Defender for Office 365 Plan 2 subscription).
+> - What you see or don't see in the Defender portal depends on your subscription (for example, Microsoft 365 E5 vs. an add-on or standalone Defender for Office 365 Plan 2 subscription).
 >
 >   For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
@@ -56,16 +56,12 @@ Defender for Office 365 safeguards your organization against malicious threats p
 
 The **Home** page of the Defender portal shows important summary information (cards) about the security status of your Microsoft 365 environment.
 
-Use :::image type="icon" source="media/m365-cc-sc-guided-tour-icon.png" border="false"::: **Guided tour** to take a quick tour of:
-
-- Email & collaboration
-- Attack simulation training (Defender for Office 365 Plan 2 only)
-
-Use :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" border="false"::: **What's New** to go to the [Microsoft Defender XDR Blog](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/bg-p/MicrosoftThreatProtectionBlog).
-
-Use :::image type="icon" source="media/m365-cc-sc-community-icon.png" border="false"::: **Community to go to the [Security, Compliance, and Identity community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance).
-
-Use :::image type="icon" source="media/m365-cc-sc-create-icon.png" border="false"::: **Add cards** to customize the information that's shown on the page.
+- Use :::image type="icon" source="media/m365-cc-sc-guided-tour-icon.png" border="false"::: **Guided tour** to take a quick tour of:
+  - Email & collaboration
+  - Attack simulation training (Defender for Office 365 Plan 2 only)
+- Use :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" border="false"::: **What's New** to go to the [Microsoft Defender XDR Blog](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/bg-p/MicrosoftThreatProtectionBlog).
+- Use :::image type="icon" source="media/m365-cc-sc-community-icon.png" border="false"::: **Community to go to the [Security, Compliance, and Identity community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance).
+- Use :::image type="icon" source="media/m365-cc-sc-create-icon.png" border="false"::: **Add cards** to customize the information on the page.
 
 ### Investigation & response
 
@@ -85,13 +81,13 @@ Brings together incident and alert management across your email, devices, and id
 
 #### Hunting
 
-Proactively search for threats, malware, and malicious activity across your endpoints, Microsoft 365 mailboxes, and more by using [advanced hunting queries](advanced-hunting-overview.md). These powerful queries can be used to locate and review threat indicators and entities for both known and potential threats.
+Proactively search for threats, malware, and malicious activity across your endpoints, Microsoft 365 mailboxes, and more by using [advanced hunting queries](advanced-hunting-overview.md). You can use these powerful queries to locate and review threat indicators and entities for known and potential threats.
 
-[Custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
+You can build [custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) from advanced hunting queries to proactively monitor events that might indicate breach activity and misconfigured devices.
 
 ### Actions & submissions
 
-**Action center** shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in the Defender portal can help security teams by automatically responding to specific events.
+**Action center** shows you the investigations created by automated investigation and response capabilities. This automated, self-healing capability in the Defender portal can help security teams by automatically responding to specific events.
 
 For more information, see [Action center](m365d-action-center.md).
 
@@ -109,7 +105,7 @@ The following subsections describe the features that are available in the **Inve
 
 Get threat intelligence from expert Microsoft security researchers. Threat Analytics helps security teams be more efficient when facing emerging threats. Threat Analytics includes:
 
-- Email-related detections and mitigations from Microsoft Defender for Office 365. This is in addition to the endpoint data already available from Microsoft Defender for Endpoint.
+- Email-related detections and mitigations from Microsoft Defender for Office 365.
 - Incidents view related to the threats.
 - Enhanced experience for quickly identifying and using actionable information in the reports.
 
@@ -126,7 +122,7 @@ The **Email & collaboration** node contains features that are specific to Defend
 - **Review** at <https://security.microsoft.com/threatreview> contains the following features:
   - [Action center](/defender-xdr/m365d-action-center): Defender for Office 365 Plan 2 only.
   - **Quarantine** for [users](/defender-office-365/quarantine-end-user) and [admins](/defender-office-365/quarantine-admin-manage-messages-files).
-  - **Restricted entities** contains [restricted users](/defender-office-365/outbound-spam-restore-restricted-users) and [restricted connectors](/defender-office-365/connectors-detect-respond-to-compromise).
+  - **Restricted entities**: Contains [restricted users](/defender-office-365/outbound-spam-restore-restricted-users) and [restricted connectors](/defender-office-365/connectors-detect-respond-to-compromise).
   - **Malware trends**
 - [Campaigns](/defender-office-365/campaigns): Defender for Office 365 Plan 2 only.
 - [Threat trackers](/defender-office-365/threat-trackers): Defender for Office 365 Plan 2 only.
@@ -139,7 +135,7 @@ The **Email & collaboration** node contains features that are specific to Defend
       - [Configuration analyzer](/defender-office-365/configuration-analyzer-for-security-policies)
     - **Policies** section:
       - [Anti-phishing](/defender-office-365/anti-phishing-policies-about)
-      - [Anti-spam](/defender-office-365/anti-spam-protection-about#anti-spam-policies)
+      - **Anti-spam**: Includes [inbound anti-spam](/defender-office-365/anti-spam-protection-about#anti-spam-policies), [outbound anti-spam](/defender-office-365/outbound-spam-policies-configure), and [connection filtering](/defender-office-365/connection-filter-policies-configure).
       - [Anti-malware](/defender-office-365/anti-malware-protection-about#anti-malware-policies)
       - [Safe Attachments](/defender-office-365/safe-attachments-about)
       - [Safe Links](/defender-office-365/safe-links-about)
@@ -147,17 +143,21 @@ The **Email & collaboration** node contains features that are specific to Defend
       - [Tenant Allow/Block List](/defender-office-365/tenant-allow-block-list-about)
       - **Email authentication settings**: Settings for [trusted ARC sealers](/defender-office-365/email-authentication-arc-configure) and [DKIM](/defender-office-365/email-authentication-dkim-configure).
       - [Advanced delivery](/defender-office-365/advanced-delivery-policy-configure)
-      - [Enhanced delivery](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+      - [Enhanced filtering](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
       - [Quarantine policies](/defender-office-365/quarantine-policies)
   - [Alert policies](/purview/alert-policies)
   - [Activity alerts](/purview/create-activity-alerts)
 
-:::image type="content" source="media/mdo-m365d-nav.png" alt-text="A screenshot that shows the left navigation pane of the M365 Defender portal focused on Email & collaboration." lightbox="media/mdo-m365d-nav.png":::
+:::image type="content" source="media/mdo-m365d-nav.png" alt-text="A screenshot that shows the left navigation pane of the Defender portal focused on Email & collaboration." lightbox="media/mdo-m365d-nav.png":::
 
 > [!TIP]
 > For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 >
 > Although it isn't directly accessible from the left navigation pane in the Defender portal, the **Email entity page** in Defender for Office 365 *unifies* and *centralizes* email information to empower admins and security operations (SecOps) teams to quickly understand and act on email threats. For more information, see [The Email entity page](/defender-office-365/mdo-email-entity-page).
+
+### SOC optimization
+
+For more information, see [SOC optimization reference of recommendations](/en-us/azure/sentinel/soc-optimization/soc-optimization-reference).
 
 ### Reports
 
@@ -168,13 +168,45 @@ For more information, see the following articles:
 - [Email security report](/defender-office-365/reports-email-security)
 - [Defender for Office 365 reports](/defender-office-365/reports-defender-for-office-365)
 
-### Access and Reports
+### Learning hub
 
-View reports, change your settings, and modify user roles.
+Redirects to <https://learn.microsoft.com/training/defender/>.
 
-:::image type="content" source="media/m365d-settings-nav.png" alt-text="A screenshot that shows the left navigation pane of the M365 Defender portal highlighting Access and Reports capabilities." lightbox="media/m365d-settings-nav.png":::
-  
+### Trials
 
+Start trials of eligible Defender security products and Microsoft Purview compliance products.
+
+Organizations with Defender for Office 365 Plan 1 can start a trial of Defender for Office 365 Plan 2. For more information, see [Trial user guide: Microsoft Defender for Office 365](/defender-office-365/trial-user-guide-defender-for-office-365).
+
+### System
+
+The following subsections describe the features that are available in the **System** node in the Defender portal.
+
+:::image type="content" source="media/m365d-system-nav.png" alt-text="A screenshot showing the expanded System node in the Defender portal." lightbox="media/m365d-system-nav.png":::
+
+#### Audit
+
+[Audit log search](/en-us/purview/audit-search) and [audit log retention policies](/purview/audit-log-retention-policies).
+
+#### Permissions
+
+- [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md)
+- **Microsoft Entra ID**. You can view information about the roles that are shown, but you can't manage role membership here. The details flyout of each role contains a link to the **Users** page in Microsoft Entra where you can add users to roles.
+- [Email & collaboration roles](/defender-office-365/scc-permissions)
+
+#### Health
+
+- **Service health**: View the health status of the Microsoft 365 services that are included in your company's subscription.
+- **Message center**: The [Microsoft 365 Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 admin center.
+
+#### Settings
+
+**Email & collaboration** contains the following Defender for Office 365 features:
+
+- [User reported settings](/defender-office-365/submissions-user-reported-messages-custom-mailbox)
+- [User tags](/defender-office-365/user-tags-about)
+- [Priority account protection](/defender-office-365/priority-accounts-turn-on-priority-account-protection) (Defender for Office 365 Plan 2 only)
+- [Microsoft Teams protection](/defender-office-365/mdo-support-teams-about#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2)
 
 ## Related information
 
