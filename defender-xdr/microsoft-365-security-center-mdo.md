@@ -38,11 +38,11 @@ If you're looking for compliance-related items, see [Microsoft Purview complianc
 
 With the unified Defender XDR solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
-:::image type="content" source="/defender/media/mdo-m36d-nav-collapsed.png" alt-text="A screenshot of the left navigation pane of the M365 Defender portal." lightbox="/defender/media/mdo-m36d-nav-collapsed.png":::
+:::image type="content" source="media/mdo-m36d-nav-collapsed.png" alt-text="A screenshot of the left navigation pane of the M365 Defender portal." lightbox="media/mdo-m36d-nav-collapsed.png":::
 
 Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Most of the Defender for Office 365-specific features are available under the **Email & collaboration** node as described in the [Email & collaboration](#email--collaboration) section.
 
-:::image type="content" source="/defender/media/mdo-m365d-nav.png" alt-text="A screenshot that shows the Email & collaboration node expanded in the Defender portal." lightbox="/defender/media/mdo-m365d-nav.png":::
+:::image type="content" source="media/mdo-m365d-nav.png" alt-text="A screenshot that shows the Email & collaboration node expanded in the Defender portal." lightbox="media/mdo-m365d-nav.png":::
 
 > [!TIP]
 >
@@ -56,22 +56,22 @@ Defender for Office 365 safeguards your organization against malicious threats p
 
 The **Home** page of the Defender portal shows important summary information (cards) about the security status of your Microsoft 365 environment.
 
-Use :::image type="icon" source="../defender/media/m365-cc-sc-guided-tour-icon.png" border="false"::: **Guided tour** to take a quick tour of:
+Use :::image type="icon" source="media/m365-cc-sc-guided-tour-icon.png" border="false"::: **Guided tour** to take a quick tour of:
 
 - Email & collaboration
 - Attack simulation training (Defender for Office 365 Plan 2 only)
 
-Use :::image type="icon" source="../defender/media/m365-cc-sc-take-actions-icon.png" border="false"::: **What's New** to go to the [Microsoft Defender XDR Blog](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/bg-p/MicrosoftThreatProtectionBlog).
+Use :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" border="false"::: **What's New** to go to the [Microsoft Defender XDR Blog](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/bg-p/MicrosoftThreatProtectionBlog).
 
-Use :::image type="icon" source="../defender/media/m365-cc-sc-community-icon.png" border="false"::: **Community to go to the [Security, Compliance, and Identity community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance).
+Use :::image type="icon" source="media/m365-cc-sc-community-icon.png" border="false"::: **Community to go to the [Security, Compliance, and Identity community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance).
 
-Use :::image type="icon" source="../defender/media/m365-cc-sc-create-icon.png" border="false"::: **Add cards** to customize the information that's shown on the page.
+Use :::image type="icon" source="media/m365-cc-sc-create-icon.png" border="false"::: **Add cards** to customize the information that's shown on the page.
 
 ### Investigation & response
 
 The following subsections describe the features that are available in the **Investigation & response** node in the Defender portal.
 
-:::image type="content" source="/defender/media/m365d-investigation-and-response-nav.png" alt-text="A screenshot showing the expanded Investigation & response node in the Defender portal." lightbox="/defender/media/m365d-investigation-and-response-nav.png":::
+:::image type="content" source="media/m365d-investigation-and-response-nav.png" alt-text="A screenshot showing the expanded Investigation & response node in the Defender portal." lightbox="media/m365d-investigation-and-response-nav.png":::
 
 #### Incidents & alerts
 
@@ -103,7 +103,7 @@ For more information, see [Admin submissions](/defender-office-365/submissions-a
 
 The following subsections describe the features that are available in the **Investigation & response** node in the Defender portal in organizations with Defender for Office 365 Plan 2.
 
-:::image type="content" source="/defender/media/m365d-threat-intelligence-nav.png" alt-text="A screenshot showing the expanded Threat intelligence node in the Defender portal." lightbox="/defender/media/m365d-threat-intelligence-nav.png":::
+:::image type="content" source="media/m365d-threat-intelligence-nav.png" alt-text="A screenshot showing the expanded Threat intelligence node in the Defender portal." lightbox="media/m365d-threat-intelligence-nav.png":::
 
 #### Threat Analytics
 
@@ -152,7 +152,7 @@ The **Email & collaboration** node contains features that are specific to Defend
   - [Alert policies](/purview/alert-policies)
   - [Activity alerts](/purview/create-activity-alerts)
 
-:::image type="content" source="/defender/media/mdo-m365d-nav.png" alt-text="A screenshot that shows the left navigation pane of the M365 Defender portal focused on Email & collaboration." lightbox="/defender/media/mdo-m365d-nav.png":::
+:::image type="content" source="media/mdo-m365d-nav.png" alt-text="A screenshot that shows the left navigation pane of the M365 Defender portal focused on Email & collaboration." lightbox="media/mdo-m365d-nav.png":::
 
 > [!TIP]
 > For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
@@ -172,7 +172,7 @@ For more information, see the following articles:
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="/defender/media/m365d-settings-nav.png" alt-text="A screenshot that shows the left navigation pane of the M365 Defender portal highlighting Access and Reports capabilities." lightbox="/defender/media/m365d-settings-nav.png":::
+:::image type="content" source="media/m365d-settings-nav.png" alt-text="A screenshot that shows the left navigation pane of the M365 Defender portal highlighting Access and Reports capabilities." lightbox="media/m365d-settings-nav.png":::
   
 
 
