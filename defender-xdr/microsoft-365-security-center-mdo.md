@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 in the Microsoft Defender portal
 description: Learn about how Microsoft Defender for Office 365 operates in the Microsoft Defender portal.
-ms.date: 09/10/2024
+ms.date: 09/11/2024
 ms.author: chrisda
 author: chrisda
 manager: deniseb
@@ -97,7 +97,7 @@ For more information, see [Admin submissions](/defender-office-365/submissions-a
 
 ### Threat intelligence in Defender for Office 365 Plan 2
 
-The following subsections describe the features that are available in the **Investigation & response** node in the Defender portal in organizations with Defender for Office 365 Plan 2.
+The following subsections describe the features that are available in the **Threat intelligence** node in the Defender portal in organizations with Defender for Office 365 Plan 2.
 
 :::image type="content" source="media/m365d-threat-intelligence-nav.png" alt-text="A screenshot showing the expanded Threat intelligence node in the Defender portal." lightbox="media/m365d-threat-intelligence-nav.png":::
 
@@ -206,7 +206,7 @@ The following subsections describe the features that are available in the **Syst
 - [User reported settings](/defender-office-365/submissions-user-reported-messages-custom-mailbox)
 - [User tags](/defender-office-365/user-tags-about)
 - [Priority account protection](/defender-office-365/priority-accounts-turn-on-priority-account-protection) (Defender for Office 365 Plan 2 only)
-- [Microsoft Teams protection](/defender-office-365/mdo-support-teams-about#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2)
+- [Microsoft Teams protection](/defender-office-365/mdo-support-teams-about#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2) (Defender for Office 365 Plan 2 only)
 
 ## Related information
 
