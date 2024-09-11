@@ -26,17 +26,17 @@ ms.service: defender-xdr
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Office 365 Plan 1 and Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
 
-This article describes the Microsoft Defender for Office 365 experience in the Microsoft Defender portal at <https://security.microsoft.com>. Formerly (before February 2022), Defender for Office 365 customers used the Office 365 Security & Compliance center ([https://protection.office.com](https://protection.office.com)).
+This article describes the Microsoft Defender for Office 365 experience in the Microsoft Defender portal at <https://security.microsoft.com>. Formerly, Defender for Office 365 customers used the Office 365 Security & Compliance Center at <https://protection.office.com>, but access to that portal was discontinued in 2022.
 
-The Defender portal combines security capabilities from existing Microsoft 365 security portals. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+The Defender portal combines security capabilities from existing Microsoft 365 security portals. This improved portal helps security teams protect their organization from threats more effectively and efficiently.
 
-For more information about the benefits, see [Overview of Microsoft Defender XDR](microsoft-365-defender.md).
+For more information about the benefits of the unified Microsoft Defender XDR, see [Overview of Defender XDR](microsoft-365-defender.md).
 
 If you're looking for compliance-related items, see [Microsoft Purview compliance portal](/purview/purview-compliance-portal).
 
 ## Capabilities
 
-With the unified Microsoft Defender XDR solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
+With the unified Defender XDR solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
 :::image type="content" source="/defender/media/mdo-m36d-nav-collapsed.png" alt-text="A screenshot of the left navigation pane of the M365 Defender portal." lightbox="/defender/media/mdo-m36d-nav-collapsed.png":::
 
