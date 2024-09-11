@@ -29,6 +29,8 @@ Integration with the following solutions is currently supported:
 - Tenable
 - Wiz
 
+:::image type="content" source="media/connect-data-sources/data-connectors.png" alt-text="Screenshot of data connectors in MSEM" lightbox="media/connect-data-sources/data-connectors.png":::
+
 Security Exposure Management is currently in public preview.
 
 [!INCLUDE [prerelease](../includes//prerelease.md)]
@@ -63,7 +65,6 @@ You can find more details about the permission levels here, [Prerequisites, and 
 
 - MSEM is available in Commercial Clouds (Azure, AWS, and GCP).
 - Nation/Sovereign Clouds: MSEM isn't available in US Gov, China Gov, or Other Gov clouds.
-
 
 ## Next steps
 

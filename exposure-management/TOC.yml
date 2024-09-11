@@ -34,12 +34,14 @@
         href: classify-critical-assets.md
       - name: Predefined classifications
         href: predefined-classification-rules-and-levels.md
-    -  name: Connect external data sources
+    -  name: Data Connectors
        items:
        - name: Overview
-         href: external-data-sources-overview.md
-       - name: Work with external data sources
-         href: import-configure-external-data-sources.md
+         href: connect-data-sources.md
+       - name: Working with data connectors
+         href: understand-data-connectors.md
+       - name: Configure data connectors
+         href: configure-data-connectors.md
     - name: Work with attack paths
       items:      
         - name: Overview
