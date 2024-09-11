@@ -21,7 +21,7 @@ This means you're able to seamlessly integrate with existing security solutions 
 
 The support for external solutions helps to further streamline, integrate, and orchestrate defenses from other vendors with Exposure Management; enabling security teams to effectively manage their posture and exposure across the entire attack surface.
 
-Integration with the following solutions is currently supported:
+Supported external data connectors include:
 
 - ServiceNow CMDB
 - Qualys VM
@@ -43,11 +43,12 @@ The following prerequisites are required to connect data sources to Microsoft Se
 
 - Implemented Microsoft Security Exposure Management.
 - Supported external data sources to ingest data from these asset inventory or vulnerability management products:
-    - ServiceNow CMDB
-    - Qualys VM
-    - Rapid7 VM
-    - Tenable
-    - Wiz
+
+  - ServiceNow CMDB
+  - Qualys VM
+  - Rapid7 VM
+  - Tenable
+  - Wiz
 
 ### Roles & permissions
 
