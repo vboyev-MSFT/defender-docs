@@ -60,7 +60,7 @@ The **Home** page of the Defender portal shows important summary information (ca
   - Email & collaboration
   - Attack simulation training (Defender for Office 365 Plan 2 only)
 - Use :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" border="false"::: **What's New** to go to the [Microsoft Defender XDR Blog](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/bg-p/MicrosoftThreatProtectionBlog).
-- Use :::image type="icon" source="media/m365-cc-sc-community-icon.png" border="false"::: **Community to go to the [Security, Compliance, and Identity community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance).
+- Use :::image type="icon" source="media/m365-cc-sc-community-icon.png" border="false"::: **Community** to go to the [Security, Compliance, and Identity community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance).
 - Use :::image type="icon" source="media/m365-cc-sc-create-icon.png" border="false"::: **Add cards** to customize the information on the page.
 
 ### Investigation & response
