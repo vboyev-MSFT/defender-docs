@@ -1,6 +1,6 @@
 ---
-title: Incident response overview
-description: Get an overview of incident response processes and best practices
+title: Incident response planning
+description: Start planning for incident handling
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: cwatson
