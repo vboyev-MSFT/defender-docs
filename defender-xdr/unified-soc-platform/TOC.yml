@@ -10,8 +10,8 @@
         href: /defender-xdr/unified-soc-platform/whats-new.md
       - name: Defender portal service integration
         items:
-        - name: Microsoft Defender XDR
-          href: /defender-xdr/microsoft-365-defender-portal ## Placeholder article
+        - name: Microsoft Defender portal
+          href: overview-defender-portal.md
         - name: Microsoft Security Exposure Management
           href: /security-exposure-management/get-started-exposure-management
         - name: Microsoft Sentinel

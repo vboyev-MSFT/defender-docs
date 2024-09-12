@@ -28,17 +28,17 @@ The unified security operations platform combines services in the [Defender port
 
 ### Protect assets
 
-Use the unified security platform to protect a wide range of assets:
+Use the unified security platform to protect a wide range of assets, including:
 
-- **Defender XDR**: 
-    - **Defender for Office 365**: Protect against threats posed by email messages, URL links, and Office 365 collaboration tools.
-    - **Defender for Endpoint**: Monitor and protect endpoint devices. Detect and investigate device breaches, and automatically respond to threats.
-    - **Defender Vulnerability Management**: Identify assets and software inventory. Assess device posture to find security vulnerabilities.
-    - **Defender for Cloud Apps**: Protect and control access to SaaS cloud apps.
-    - **Defender for Identity**: Identify, detect, and investigate Entra ID threats.
-- **Defender for Cloud**: Improve multicloud and on-premises security posture, and protect cloud workloads against threats.
-- **Microsoft Security Exposure Management**: Discover and assess assets, and remediate risk to reduce attack surfaces.
-- **Defender for IoT**: Identify and protect OT/IT resources by extending Defender XDR protectoin to OT environments.
+
+- Protect against threats posed by email messages, URL links, and Office 365 collaboration tools with Defender for Office 365.
+- Monitor and protect endpoint devices with Microsoft Defender for Endpoint. You can monitor, detect, and investigate device breaches, and automatically respond to security threats.
+- With Defender Vulnerability Management, you can identify assets and software inventory, and assess device posture to find security vulnerabilities.
+- Protect and control access to SaaS cloud apps with Defender for Cloud Apps.
+- Identify, detect, and investigate Entra ID threats with Defender for Identity.
+- Improve multicloud and on-premises security posture, and protect cloud workloads against threats with Microsoft Defender for Cloud
+- Discover and assess assets, and remediate risk to reduce attack surfaces with Microsoft Security Exposure Management.
+- Identify and protect OT/IT resources by extending Defender XDR protection to OT environments with Microsoft Defender for IoT.
 
 ### Simplify security management
 
