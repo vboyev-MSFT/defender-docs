@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Microsoft Defender portal
+# Defender portal
 
 Microsoft unified security platform combines its services in the Microsoft Defender portal at <https://security.microsoft.com>. In the Defender portal, you can monitor and manage pre-breach and post-breach security across your organization's on-premises and multicloud assets.
 
@@ -26,10 +26,10 @@ From the portal, you can centrally monitor security state, improve security post
     - **[Microsoft Defender for Endpoint](/defender-endpoint/)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
     - **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
     - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
-- **[Microsoft Sentinel](/azure/sentinel/microsoft-sentinel-defender-portal)** in the Defender portal integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution that provides proactive threat detection, investigation, and response.
-- **[Microsoft Defender for Cloud](microsoft-sentinel-defender-portal)** integrates into the Defender portal allowing security teams to access Defender for Cloud alerts in the portal, providing a single location with rich context for security investigations.
-- **[Microsoft Security Exposure Management](../../exposure-management/microsoft-security-exposure-management.md)** in the Defender portal provides a unified view of security posture across organizational assets. Discover and assess the security state of assets. Identify and remediate security risk to reduce attack surfaces.
-- **[Microsoft Defender for IoT](../../defender-for-iot/microsoft-defender-iot.md)** in the Defender portal identifies and protects OT/IT resources by extending Defender XDR protection to OT environments.
+- **[Microsoft Sentinel](azure/sentinel/microsoft-sentinel-defender-portal)** in the Defender portal integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution that provides proactive threat detection, investigation, and response.
+- **[Microsoft Defender for Cloud](microsoft-365-security-center-defender-cloud.md)** integrates into the Defender portal allowing security teams to access Defender for Cloud alerts in the portal, providing a single location with rich context for security investigations.
+- **[Microsoft Security Exposure Management]- (../../exposure-management/microsoft-security-exposure-management)** in the Defender portal provides a unified view of security posture across organizational assets. Discover and assess the security state of assets. Identify and remediate security risk to reduce attack surfaces.
+- **[Microsoft Defender for IoT](../../defender-for-iot/microsoft-defender-iot)** in the Defender portal identifies and protects OT/IT resources by extending Defender XDR protection to OT environments.
 
 
 > [!NOTE]
@@ -50,8 +50,8 @@ For Microsoft Sentinel, after you connect Microsoft Sentinel to the Defender por
 
 ### Learn more 
 
-- Learn how to [manage access to Microsoft Defender XDR](m365d-permissions.md)
-- Learn how to [create custom roles](custom-roles.md) in Microsoft Defender XD
+- Learn how to [manage access](../m365d-permissions.md).
+- Learn how to [create custom roles](../custom-roles.md).
 - Learn about [roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)
 - [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac)
 
