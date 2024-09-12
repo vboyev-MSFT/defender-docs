@@ -5,7 +5,7 @@
     - name: Overview
       items:
       - name: What's the Microsoft unified security operations platform?
-        href: /defender-xdr/microsoft-365-defender ## PLACEHOLDER LINK
+        href: overview-unified-security.md
       - name: What's new
         href: /defender-xdr/unified-soc-platform/whats-new.md
       - name: Defender portal service integration
