@@ -39,7 +39,7 @@
        - name: Overview
          href: connect-data-sources.md
        - name: Working with data connectors
-         href: understand-data-connectors.md
+         href: leverage-data-connectors.md
        - name: Configure data connectors
          href: configure-data-connectors.md
     - name: Work with attack paths
