@@ -38,9 +38,9 @@
        items:
        - name: Overview
          href: connect-data-sources.md
-       - name: Working with data connectors
+       - name: Getting value from your data connectors
          href: leverage-data-connectors.md
-       - name: Configure data connectors
+       - name: Configure your data connectors
          href: configure-data-connectors.md
     - name: Work with attack paths
       items:      
