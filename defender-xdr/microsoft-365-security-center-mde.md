@@ -27,7 +27,7 @@ appliesto:
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) combines security capabilities that protect assets, and detect, investigate, and respond to threats. [Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint.md) is part of the Microsoft Defender portal, which provides a unified experience for security teams to manage incidents and alerts, hunt for threats, and automate investigations and responses.
+The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) combines security capabilities that protect assets, and detect, investigate, and respond to threats. [Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint) is part of the Microsoft Defender portal, which provides a unified experience for security teams to manage incidents and alerts, hunt for threats, and automate investigations and responses.
 
 > [!NOTE]
 > In the Microsoft Defender portal, customers only see the security features they've purchased. For example, if you have Defender for Endpoint, you'll only see the Defender for Endpoint features and capabilities in the Microsoft Defender portal.
