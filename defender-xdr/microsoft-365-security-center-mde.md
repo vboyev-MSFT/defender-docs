@@ -1,14 +1,14 @@
 ---
 title: Microsoft Defender for Endpoint in the Microsoft Defender portal
-description: Get an overview of what to expect when moving from the Microsoft Defender Security Center to the Microsoft Defender portal
+description: Get an overview of what to expect when running Microsoft Defender for Endpoint in the Microsoft Defender portal
 ms.service: defender-xdr
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
-author: dansimp
-manager: dansimp
-ms.date: 02/27/2024
+author: diannegali
+manager: deniseb
+ms.date: 09/13/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -18,71 +18,27 @@ ms.collection:
 - m365-security 
 - tier2
 ms.custom: admindeeplinkDEFENDER
+appliesto:
+- Microsoft Defender XDR
+- Microsoft Defender for Endpoint
 ---
 
 # Microsoft Defender for Endpoint in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
+The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) combines security capabilities that protect assets, and detect, investigate, and respond to threats. [Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint.md) is part of the Microsoft Defender portal, which provides a unified experience for security teams to manage incidents and alerts, hunt for threats, and automate investigations and responses.
 
-- [Microsoft Defender XDR](microsoft-365-defender.md)
-- [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)
+> [!NOTE]
+> In the Microsoft Defender portal, customers only see the security features they've purchased. For example, if you have Defender for Endpoint, you'll only see the Defender for Endpoint features and capabilities in the Microsoft Defender portal.
 
-This article describes the Defender for Endpoint experience in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Formerly, Defender for Endpoint customers used the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com) or [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)).
+This article provides an overview of what to expect when running Microsoft Defender for Endpoint in the Microsoft Defender portal. For more information about the Microsoft Defender portal, see [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
-## Quick reference
-
-The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and the Microsoft Defender portal.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="/defender/media/mde-m3d-security-center.png" alt-text="The new locations in the Microsoft Defender portal" lightbox="/defender/media/mde-m3d-security-center.png":::
-
-| Microsoft Defender Security Center | the Microsoft Defender portal |
-|---------|---------|
-| Dashboards <ul><li>Security Operations</li><li>Threat Analytics</li></ul>  |Home <ul><li>Threat analytics</li></ul>   |
-| Incidents | Incidents & alerts |
-| Device inventory | Device inventory |
-| Alerts queue | Incidents & alerts |
-| Automated investigations | Action center |
-| Advanced hunting | Hunting |
-| Reports | Reports |
-| Partners & APIs | Partners & APIs |
-| Microsoft Defender Vulnerability Management | Vulnerability management |
-| Evaluation and tutorials | Evaluation & tutorials |
-| Configuration management | Configuration management |
-| Settings | Settings | 
-
-The improved [Microsoft Defender portal](microsoft-365-defender-portal.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
-
-If you're familiar with the Microsoft Defender Security Center, this article helps describe some of the changes and improvements in the Microsoft Defender portal. However there are some new and updated elements to be aware of.
-
-Historically, the [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and help responding to alerts of potential advanced persistent threat activity or data breaches. To help reduce the number of portals, the Microsoft Defender portal will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
-
-Microsoft Defender for Endpoint in the Microsoft Defender portal supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [access is granted in the Microsoft Defender Security Center](mssp-access.md).
-
-> [!IMPORTANT]
-> What you see in the Microsoft Defender portal depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
-
-> [!Note]
-> Microsoft Defender XDR is not fully available for:
->- US Government Community Cloud (GCC)
->- US Government Community Cloud High (GCC High)
->- US Department of Defense
->- All US government institutions with commercial licenses
->- See availability for the above environments here: [Microsoft Defender for Endpoint for US Government customers](/defender-endpoint/gov?view=o365-worldwide&preserve-view=true)
-
-Take a look in the Microsoft Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
-
-Learn more about the benefits: [Overview of Microsoft Defender XDR](microsoft-365-defender.md)
-
-## What's changed
-
-This table is a quick reference of the changes between the Microsoft Defender Security Center and the Microsoft Defender portal.
+## What to expect
 
 ### Alerts and actions
 
-| Area | Description of change |
+| Area | Description |
 |---------|---------|
 | [Incidents & alerts](incidents-overview.md)  | In the Microsoft Defender portal, you can manage incidents and alerts across all of your endpoints, email, and identities. We've converged the experience to help you find related events more easily. For more information, see [Incidents Overview](incidents-overview.md).   |
 | [Hunting](advanced-hunting-overview.md)  |  Modifying custom detection rules created in Microsoft Defender for Endpoint to include identity and email tables automatically moves them to the Microsoft Defender portal. Their corresponding alerts will also appear in the Microsoft Defender portal. For more details about these changes, read [Migrate custom detection rules](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>The `DeviceAlertEvents` table for advanced hunting isn't available in the Microsoft Defender portal. To query device-specific alert information in the Microsoft Defender portal, you can use the `AlertInfo` and `AlertEvidence` tables to accommodate even more information from a diverse set of sources. Craft your next device-related query by following [Write queries without DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
@@ -114,10 +70,6 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Reports  | See reports for endpoints and email & collaboration, including Threat protection, Device health and compliance, and Vulnerable devices. |
 | Health  |  Currently links out to the "Service health" page in the [Microsoft 365 admin center](https://admin.microsoft.com/). |
 | Settings |  Manage your settings for the Microsoft Defender portal, Endpoints, Email & collaboration, Identities, and Device discovery.   |
-
-## Microsoft 365 security navigation and capabilities
-
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in Microsoft Defender portal. 
 
 ### Incidents and alerts
 
