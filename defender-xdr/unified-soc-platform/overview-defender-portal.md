@@ -17,19 +17,21 @@ ms.topic: conceptual
 
 # Defender portal
 
-Microsoft unified security platform combines its services in the Microsoft Defender portal at <https://security.microsoft.com>. In the Defender portal, you can monitor and manage pre-breach and post-breach security across your organization's on-premises and multicloud assets.
+Microsoft's unified security platform combines services in the [Microsoft Defender portal](https://security.microsoft.com). In the Defender portal, you can monitor and manage pre-breach and post-breach security across your organization's on-premises and multicloud assets and workloads.
 
-From the portal, you can centrally monitor security state, improve security posture, reduce attack surfaces, and detect, investigate, and response to threats across your entire organization. The Defender portal emphasizes quick and centralized access to information, simpler layouts, and bringing related information together for easier use. Portal services include:
+In the Defender portal, you can visualize and monitor security state across the entire company. You can reduce risk by improving security posture and reducing attack surfaces. You can continuously detect, investigate, and respond to cybersecurity threats. The Defender portal provides quick and centralized access to security status, and consolidates security information and context for easy viewing and deep analysis. Microsoft services in the Defender portal include.
 
-- Microsoft Defender XDR includes:
-    - **[Microsoft Defender for Office 365](/defender-office-365/mdo-about)** helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
-    - **[Microsoft Defender for Endpoint](/defender-endpoint/)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-    - **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-    - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
-- **[Microsoft Sentinel](azure/sentinel/microsoft-sentinel-defender-portal)** in the Defender portal integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution that provides proactive threat detection, investigation, and response.
-- **[Microsoft Defender for Cloud](microsoft-365-security-center-defender-cloud.md)** integrates into the Defender portal allowing security teams to access Defender for Cloud alerts in the portal, providing a single location with rich context for security investigations.
-- **[Microsoft Security Exposure Management]- (../../exposure-management/microsoft-security-exposure-management)** in the Defender portal provides a unified view of security posture across organizational assets. Discover and assess the security state of assets. Identify and remediate security risk to reduce attack surfaces.
-- **[Microsoft Defender for IoT](../../defender-for-iot/microsoft-defender-iot)** in the Defender portal identifies and protects OT/IT resources by extending Defender XDR protection to OT environments.
+**Service** | **Details**
+--- | ---
+**[Microsoft Defender XDR](microsoft-365-defender.md)** | Provides a coordinated threat protection solution that integrating key services and capabilities, including Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
+**[Defender for Office 365](/defender-office-365/mdo-about)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
+**[Defender for Endpoint](/defender-endpoint/)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
+**[Defender for Identity](/defender-for-identity/what-is) | Provides a cloud-based security solution that uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+**[Defender for Cloud Apps](defender-cloud-apps/what-is-defender-for-cloud-apps)** | Provides a comprehensive cross-SaaS and PaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+**[Microsoft Sentinel](/azure/sentinel/overview)** Microsoft Sentinel is a cloud services that enables security information and event management (SIEM) and Provides in the Defender portal, Microsoft Sentinel integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution and security orchestration automation response. Sentinel integrates with Defender XDR to provided a unified security platform for threat detection, investigation, hunting, and response.
+**[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)** | Defender for Cloud improves multicloud and on-premises security posture, and protect cloud workloads against security threats. Defender for Cloud integrates into the Defender portal. Security teams can access Defender for Cloud alerts in the portal, providing a single location with added rich context for security investigations.
+**[Microsoft Security Exposure Management](../../exposure-management/microsoft-security-exposure-management)** | Provides a unified view of security posture across organizational assets. With Security Exposure Management, you can assess the security state of assets, and identify and remediate security risk to reduce attack surfaces.
+**[Microsoft Defender for IoT](../../defender-for-iot/microsoft-defender-iot)** | Integrates into the Defender portal to identify and protect OT/IT resources by extending Defender XDR protection to OT environments.
 
 
 > [!NOTE]

@@ -8,12 +8,20 @@
         href: overview-unified-security.md
       - name: What's new
         href: /defender-xdr/unified-soc-platform/whats-new.md
-      - name: Defender portal service integration
+      - name: Defender portal services integration
         items:
         - name: Microsoft Defender portal
           href: overview-defender-portal.md
         - name: Defender XDR
           href: /defender-xdr/microsoft-365-defender
+        - name: Defender for Office 365
+          href: /defender-office-365/mdo-sec-ops-guid
+        - name: Defender for Endpoint
+          href: /defender-endpoint/mde-sec-ops-guide
+        - name: Defender for Identity
+          href: /defender-xdr/microsoft-365-security-center-mdi
+        - name: Defender for Cloud Apps
+          href: /defender-xdr/microsoft-365-security-center-defender-cloud-apps
         - name: Microsoft Sentinel
           href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
         - name: Security Exposure Management
