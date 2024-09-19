@@ -191,7 +191,7 @@ For more information, see [Automated investigation and response in Microsoft Def
 
 The **Evidence and Response** tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
-:::image type="content" source="/defender/media/investigate-incidents/incident-evidenceresponse-small.png" alt-text="The Evidence and Response page for an incident in the Microsoft Defender portal" lightbox="/defender/media/investigate-incidents/incident-evidenceresponse.png":::
+:::image type="content" source="/defender/media/investigate-incidents/incidents-evidenceresponse-small.png" alt-text="The Evidence and Response page for an incident in the Microsoft Defender portal" lightbox="/defender/media/investigate-incidents/incidents-evidenceresponse.png":::
 
 Microsoft Defender XDR automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
