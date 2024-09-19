@@ -169,6 +169,14 @@ The **Apps** view lists all the apps identified to be part of or related to the 
 
 You can select the check mark for an app to see a list of active alerts. Select the app name to see additional details on the Explorer page for Defender for Cloud Apps.
 
+### Cloud resources
+
+The **Cloud resources** view lists all the cloud resources identified to be part of or related to the incident. Here's an example.
+
+:::image type="content" source="/defender/media/investigate-incidents/incident-assets-cloudresource-small.png" alt-text="The Cloud resources page for an incident in the Microsoft Defender portal." lightbox="/defender/media/investigate-incidents/incident-assets-cloudresource.png":::
+
+You can select the check mark for a cloud resource to see the resource's details and a list of active alerts. Select *Open cloud resource page* to see additional details and to view its full details in Microsoft Defender for Cloud.
+
 ## Investigations
 
 The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
