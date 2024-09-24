@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender portal overview
-description: Learn about the Microsoft Defender portal
+title: Microsoft Defender XDR in the Defender portal 
+description: Learn about Microsoft Defender XDR in the Defender portal
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: cwatson
@@ -54,17 +54,17 @@ A primary example is **Incidents** under **Incidents & alerts**.
 
 Selecting an incident name displays a page that demonstrates the value of centralizing security information as you get better insights into the full extend of a threat, from email, to identity, to endpoints.
 
-:::image type="content" source="/defender/media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="/defender/media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../defender/media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="../../defender/media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
 
-Learn more about [incidents in the Defender portal](incidents-overview.md), and [managing incidents and alerts](manage-incidents.md).
+Learn more about [incidents in the Defender portal](../incidents-overview.md), and [managing incidents and alerts](../manage-incidents.md).
 
 ## Hunt for threats
 
 You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
 
-Learn about [proactive threat hunting](advanced-hunting-overview.md), and [hunting for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md).
+Learn about [proactive threat hunting](../advanced-hunting-overview.md), and [hunting for threats across devices, emails, apps, and identities](../advanced-hunting-query-emails-devices.md).
 
 
 ## Respond to emerging threats
@@ -77,5 +77,5 @@ Threat analytics is the Microsoft threat intelligence solution from expert Micro
 - Common attack surfaces
 - Prevalent malware
 
-Learn about [tracking and responding to emerging threats with threat analytics](threat-analytics.md).
+Learn about [tracking and responding to emerging threats with threat analytics](../threat-analytics.md).
 
