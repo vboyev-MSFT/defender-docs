@@ -17,22 +17,26 @@ ms.topic: conceptual
 
 # Defender portal
 
-Microsoft's unified security platform combines services in the [Microsoft Defender portal](https://security.microsoft.com). In the Defender portal, you can monitor and manage pre-breach and post-breach security across your organization's on-premises and multicloud assets and workloads.
+Microsoft's unified security platform combines services in the [Microsoft Defender portal](https://security.microsoft.com). Use the Defender portal to monitor and manage pre-breach and post-breach security across on-premises and multicloud assets and workloads. The portal provides quick, centralized access to the state of security across the organization, consolidating security data and context for easy viewing and deep analysis. 
 
-In the Defender portal, you can visualize and monitor security state across the entire company. You can reduce risk by improving security posture and reducing attack surfaces. You can continuously detect, investigate, and respond to cybersecurity threats. The Defender portal provides quick and centralized access to security status, and consolidates security information and context for easy viewing and deep analysis. Microsoft services in the Defender portal include.
+Microsoft services in the Defender portal include.
+
+- Visualize and monitor security state across the entire company.
+- Reduce risk by improving security posture and reducing attack surfaces.
+- Continuously detect, investigate, and respond to cybersecurity threats. 
+
+
+## Portal services
+
+The Defender portal combines a number of Microsoft security services in a single location.
 
 **Service** | **Details**
 --- | ---
-**[Microsoft Defender XDR](microsoft-365-defender.md)** | Provides a coordinated threat protection solution that integrating key services and capabilities, including Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
-**[Defender for Office 365](/defender-office-365/mdo-about)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
-**[Defender for Endpoint](/defender-endpoint/)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
-**[Defender for Identity](/defender-for-identity/what-is) | Provides a cloud-based security solution that uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-**[Defender for Cloud Apps](defender-cloud-apps/what-is-defender-for-cloud-apps)** | Provides a comprehensive cross-SaaS and PaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
-**[Microsoft Sentinel](/azure/sentinel/overview)** Microsoft Sentinel is a cloud services that enables security information and event management (SIEM) and Provides in the Defender portal, Microsoft Sentinel integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution and security orchestration automation response. Sentinel integrates with Defender XDR to provided a unified security platform for threat detection, investigation, hunting, and response.
-**[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)** | Defender for Cloud improves multicloud and on-premises security posture, and protect cloud workloads against security threats. Defender for Cloud integrates into the Defender portal. Security teams can access Defender for Cloud alerts in the portal, providing a single location with added rich context for security investigations.
-**[Microsoft Security Exposure Management](../../exposure-management/microsoft-security-exposure-management)** | Provides a unified view of security posture across organizational assets. With Security Exposure Management, you can assess the security state of assets, and identify and remediate security risk to reduce attack surfaces.
-**[Microsoft Defender for IoT](../../defender-for-iot/microsoft-defender-iot)** | Integrates into the Defender portal to identify and protect OT/IT resources by extending Defender XDR protection to OT environments.
-
+**[Microsoft Defender XDR](microsoft-365-defender.md)** | In the Defender portal, protect against security threats to assets and resources across the organization, including devices, email and collaboration tools, SaaS cloud apps, Entra ID threats, cloud and on-premises workloads, and OT/IT resources. Get integrated incidents and alerts, threat hunting, and threat protection services and capabilities included in Defender XDR.
+**[Microsoft Defender Threat Intelligence](../../defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti.md)** | From the Defender portal, conduct threat infrastructure analysis, and gather threat intelligence.
+**[Microsoft Security Exposure Management](../../exposure-management/microsoft-security-exposure-management)** | In the Defender portal, get a unified view of security posture across organizational assets. Assess the security state of assets, and identify and remediate security risk to reduce attack surfaces.
+**[Microsoft Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud)** | Defender for Cloud improves multicloud and on-premises security posture, and protect cloud workloads against security threats. It integrates into the Defender portal so that security teams can access Defender for Cloud alerts in the portal, providing a single location with added rich context for security investigations.
+**[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)** | Defender for IoT integrates into the Defender portal to identify and protect OT/IT resources by extending Defender XDR protection to OT environments.
 
 > [!NOTE]
 > When you open the portal, you see only the security services included in your subscriptions. For example, if you have Defender for Office 365 but not Defender for Endpoint, you see features and capabilities for Defender for Office 365, but not for device protection. 
@@ -130,53 +134,6 @@ Search results are categorized by sections related to your search terms. You can
 - **Defender Vulnerability Management** - same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations).
 
 Search also provides results from relevant links in the Microsoft Tech Community portal, relevant documentation in Microsoft Learn, navigation items within the portal, and a link where you can provide feedback. Search history is stored in your browser and is accessible for the next 30 days.
-
-
-## Investigate incidents and alerts
-
-Centralizing security information creates a single place to investigate security incidents across your entire organization and all its components including:
-
-- Hybrid identities
-- Endpoints
-- Cloud apps
-- Business apps
-- Email and docs
-- IoT
-- Network
-- Business applications
-- Operational technology (OT)
-- Infrastructure and cloud workloads
-
-A primary example is **Incidents** under **Incidents & alerts**.
-
-:::image type="content" source="/defender/media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/incidents-ss-incidents.png":::
-
-Selecting an incident name displays a page that demonstrates the value of centralizing security information as you get better insights into the full extend of a threat, from email, to identity, to endpoints.
-
-:::image type="content" source="/defender/media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="/defender/media/incidents-overview/incidents-ss-incident-summary.png":::
-
-Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
-
-Learn more about [incidents in the Defender portal](incidents-overview.md), and [managing incidents and alerts](manage-incidents.md).
-
-## Hunt for threats
-
-You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
-
-Learn about [proactive threat hunting](advanced-hunting-overview.md), and [hunting for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md).
-
-
-## Respond to emerging threats
-
-Threat analytics is the Microsoft threat intelligence solution from expert Microsoft security researchers.In the portal, track and respond to emerging threats with these threat analytics:
-
-- Active threat actors and their campaigns
-- Popular and new attack techniques
-- Critical vulnerabilities
-- Common attack surfaces
-- Prevalent malware
-
-Learn about [tracking and responding to emerging threats with threat analytics](threat-analytics.md).
 
 ## Partner catalog
 
