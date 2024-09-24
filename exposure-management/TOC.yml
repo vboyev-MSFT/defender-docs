@@ -42,6 +42,24 @@
          href: understand-data-connectors.md
        - name: Configure data connectors
          href: configure-data-connectors.md
+       - name: CMDB data connectors
+         items:
+           - name: ServiceNow
+             href: ServiceNow-data-connector.md
+       - name: Vulnerability Management data connectors
+         items:
+           - name: Qualys
+             href: qualys-data-connector.md
+           - name: Rapid7
+             href: rapid7-data-connector.md
+           - name: Tenable
+             href: tenable-data-connector.md
+       - name: Cloud security data connectors
+         items:
+           - name: Wiz
+             href: Wiz-data-connector.md
+           - name: Palo Alto
+             href: PaloAlto-data-connector.md
     - name: Work with attack paths
       items:      
         - name: Overview
