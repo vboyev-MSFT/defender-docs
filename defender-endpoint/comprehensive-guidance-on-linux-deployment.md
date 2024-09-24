@@ -2,8 +2,8 @@
 title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
 ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -130,7 +130,7 @@ The following table lists the supported proxy settings:
 
 #### Step 3: Verify SSL inspection isn't being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You must bypass SSL inspection for Microsoft Defender for Endpoint URLs. For additional information about the certificate pinning process, see [enterprise-certificate-pinning] (/windows/security/identity-protection/enterprise-certificate-pinning).
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You must bypass SSL inspection for Microsoft Defender for Endpoint URLs. For additional information about the certificate pinning process, see [enterprise-certificate-pinning](/windows/security/identity-protection/enterprise-certificate-pinning).
 
 ##### Troubleshoot cloud connectivity issues
 
