@@ -39,6 +39,8 @@ You can also get product updates and important notifications through the [messag
     - In the analytics rule wizard's *Set rule logic* step, you can select **View query results** to verify the results of the query you are about to set. 
     - In the [query resources report](advanced-hunting-limits.md#find-resource-heavy-queries), you can view any of the queries by selecting the three dots on the query row and selecting **Open in query editor**. 
     - For device entities involved in incidents or alerts, **Go hunt** is also available as one of the options after selecting the three dots on the device side panel.
+- (GA) **Near real-time custom detection** is now generally available in advanced hunting custom detections. Using the Continuous (NRT) frequency has minimal to no impact to your resource usage and should thus be considered for any qualified custom detection rule in your organization. You can migrate compatible KQL queries by following the steps in [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency).
+
 
 ## August 2024
 

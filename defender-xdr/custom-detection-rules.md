@@ -140,10 +140,20 @@ When you edit a rule, it will run with the applied changes in the next run time 
 
 ##### Continuous (NRT) frequency
 
-Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster.
+Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster. Using the Continuous (NRT) frequency has minimal to no impact to your resource usage and should thus be considered for any qualified custom detection rule in your organization.
 
-> [!NOTE]
->  Using the Continuous (NRT) frequency has minimal to no impact to your resource usage and should thus be considered for any qualified custom detection rule in your organization.
+From the custom detection rules page, you can migrate custom detections rules that fit the Continuous (NRT) frequency with a single button, **Migrate now**:
+
+:::image type="content" source="media/custom-detection-migrate-now.png" alt-text="Screenshot of the migrate now button in advanced hunting." lightbox="media/custom-detection-migrate-now.png":::
+
+
+Selecting **Migrate now** gives you a list of all compatible rules according to their KQL query. You can choose to migrate all or selected rules only according to your preferences:
+
+:::image type="content" source="media/custom-detection-compatible-queries.png" alt-text="Screenshot of the continuous frequency compatible queries in advanced hunting." lightbox="media/custom-detection-compatible-queries.png":::
+
+
+Once you click **Save**, the selected rules' frequency gets updated to Continuous(NRT) frequency.
+ 
 
 ###### Queries you can run continuously
 
