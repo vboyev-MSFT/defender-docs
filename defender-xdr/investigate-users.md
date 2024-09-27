@@ -10,16 +10,16 @@ author: diannegali
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security
-  - tier2
-  - usx-security
+- m365-security
+- tier2
+- usx-security
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 03/29/2024
+ms.date: 09/30/2024
 appliesto:
-    - Microsoft Defender XDR
-    - Microsoft Sentinel in the Microsoft Defender portal
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # User entity page in Microsoft Defender
