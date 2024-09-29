@@ -9,7 +9,7 @@ ms.service: exposure-management
 ms.date: 09/24/2024
 ---
 
-# Rapid7 data connector 
+# Rapid7 data connector
 
 To set up the Rapid7 integration, you need the endpoint of your server, such as “us.api.insight.rapid7.com”. The connector authenticates with API Key Auth using an Endpoint and API Key.
 
@@ -22,6 +22,8 @@ To set up the Rapid7 integration, you need the endpoint of your server, such as 
    > **Note:** *We have found that connecting with an organization key has been more successful than connecting with a user key. We recommend you opt for an organization key to increase the likelihood of a successful connection.*
 
 ## Establish ServiceNow connection in Exposure Management
+
+To establish a connection with Rapid7 in Exposure Management, follow these steps:
 
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Rapid7 tile.
 1. Enter your Rapid7 Endpoint and API key details and select **Connect**.

@@ -21,34 +21,27 @@ This means you're able to seamlessly integrate with existing security solutions 
 
 The support for external solutions helps to further streamline, integrate, and orchestrate defenses from other vendors with Exposure Management; enabling security teams to effectively manage their posture and exposure across the entire attack surface.
 
-Supported external data connectors include:
-
-- ServiceNow CMDB
-- Qualys VM
-- Rapid7 VM
-- Tenable
-- Wiz
-
 :::image type="content" source="media/connect-data-sources/data-connectors.png" alt-text="Screenshot of data connectors in MSEM" lightbox="media/connect-data-sources/data-connectors.png":::
 
-Security Exposure Management is currently in public preview.
+Data Connectors in Microsoft Security Exposure Management is currently in public preview.
 
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
 ## Prerequisites
 
-The following prerequisites are required to connect data sources to Microsoft Security Exposure Management.
+The following prerequisites are required to integrate external data connecters to Microsoft Security Exposure Management.
 
 ### Environmental requirements
 
 - Implemented Microsoft Security Exposure Management.
 - Supported external data sources to ingest data from these asset inventory or vulnerability management products:
 
-  - ServiceNow CMDB
-  - Qualys VM
-  - Rapid7 VM
-  - Tenable
-  - Wiz
+  - [ServiceNow CMDB](ServiceNow-data-connector.md)
+  - [Qualys VM](Qualys-data-connector.md)
+  - [Rapid7 VM](Rapid7-data-connector.md)
+  - [Tenable](Tenable-data-connector.md)
+  - [Wiz](Wiz-data-connector.md)
+  - [Palo Alto](PaloAlto-data-connector.md) (coming soon)
 
 ### Roles & permissions
 
@@ -64,8 +57,8 @@ You can find more details about the permission levels here, [Prerequisites, and 
 
 ### Cloud support
 
-- MSEM is available in Commercial Clouds (Azure, AWS, and GCP).
-- Nation/Sovereign Clouds: MSEM isn't available in US Gov, China Gov, or Other Gov clouds.
+- Exposure Management is available in Commercial Clouds (Azure, AWS, and GCP).
+- Nation/Sovereign Clouds: Exposure Management isn't available in US Gov, China Gov, or other Gov clouds.
 
 ## Next steps
 

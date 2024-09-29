@@ -9,27 +9,27 @@ ms.service: exposure-management
 ms.date: 09/24/2024
 ---
 
-# Qualys data connector 
+# Qualys data connector
 
 To integrate with Qualys, you have to provide basic credentials for a Qualys user with **Manager** role or a **Reader** role with full scope.
 
 ## Qualys configuration
 
-1. Get Qualys API URL 
+1. Get Qualys API URL
 2. To set up the Qualys integration, you need the API_URL of your Qualys instance, such as “qualysapi.qg1.apps.qualys.co.uk”. You can find it here.
-   1. If you can't find it: 
-      1. Log in to your Qualys account. 
-      2. Go to **Help** → **About**. 
-      3. You'll see the required information under **Security Operations Center** (SOC). 
+   1. If you can't find it:
+      1. Log in to your Qualys account.
+      2. Go to **Help** → **About**.
+      3. You'll see the required information under **Security Operations Center** (SOC).
 3. Make sure the user intended to be used in the login credentials for connector has the necessary permissions:
-4. Create the **Read** **Asset** role: 
+4. Create the **Read** **Asset** role:
    1. Log in to Qualys.
    2. Go to **Administration** area.
    3. Go to the **Role Management** section.
    4. Select New Role.
    5. Fill in role name.
-   6. Fill in the role permissions. 
-   7. Make sure to check API Access. 
+   6. Fill in the role permissions.
+   7. Make sure to check API Access.
    8. From the **Modules** drop down, choose Asset View.
    9. To limit the permissions, choose the **Change** option within the **Asset View** selected module.
    10. Make sure to enable, at least, **Read Asset** under **Asset Management Permissions**.
@@ -41,7 +41,9 @@ To integrate with Qualys, you have to provide basic credentials for a Qualys use
 
 ## Establish ServiceNow connection in Exposure Management
 
-1. Open the [Data Connectors ](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Qualys tile.
+To establish a connection with Qualys in Exposure Management, follow these steps:
+
+1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Qualys tile.
 1. Enter your Qualys API URL and authentication credentials and select **Connect**.
 
 ## Next steps

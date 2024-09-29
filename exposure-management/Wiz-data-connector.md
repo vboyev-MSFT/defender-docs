@@ -29,6 +29,7 @@ Follow these steps to get the Wiz Client ID and Client Secret:
 ## Establish Wiz Connection in Exposure Management
 
 To establish a connection between Wiz and Exposure Management, follow these steps:
+
 1. Open the [Data connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Wiz tile.
 1. Enter your Wiz API URL, Client ID, and Client secret details and select **Connect**.
 

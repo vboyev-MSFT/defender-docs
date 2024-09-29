@@ -9,9 +9,9 @@ ms.service: exposure-management
 ms.date: 09/24/2024
 ---
 
-# ServiceNow data connector 
+# ServiceNow data connector
 
-To set up the ServiceNow integration, you need the hostname of your ServiceNow instance, such as “msft-xspm.service-now.com”. The connector authenticates with Basic Auth using username and password for read only access. 
+To set up the ServiceNow integration, you need the hostname of your ServiceNow instance, such as “msft-xspm.service-now.com”. The connector authenticates with Basic Auth using username and password for read only access.
 
 ## ServiceNow configuration
 
@@ -24,7 +24,9 @@ To set up the ServiceNow integration, you need the hostname of your ServiceNow i
 
 ## Establish ServiceNow connection in Exposure Management
 
-1. Open the [Data Connectors ](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the ServiceNow CMDB tile.
+To establish a connection with ServiceNow in Exposure Management, follow these steps:
+
+1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the ServiceNow CMDB tile.
 1. Enter your ServiceNow instance **details** (created in the ServiceNow configuration) and select **Connect**.
 
 ## Next steps

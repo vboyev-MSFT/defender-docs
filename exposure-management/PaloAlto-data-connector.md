@@ -17,7 +17,9 @@ To integrate with Palo Alto, you need the Palo Alto XXXX
 
 XXXXXXX
 
-## Establish Palo Alto Connection in Exposure Management 
+## Establish Palo Alto Connection in Exposure Management
+
+To establish a connection with Palo Alto in Exposure Management, follow these steps:
 
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Palo Alto tile.
 1. Enter your Palo xxxx details and select **Connect**.
