@@ -21,7 +21,7 @@ There are various types of assets available for consumption, such as digital ass
 - Vulnerabilities
 - Users (future)
 - Software (future)
-- SaaS Applications   (future)
+- SaaS Applications (future)
 
 The asset information imported into Exposure Management includes data from external data sources like Qualys, Rapid7, and ServiceNow CMDB environments. This data is consolidated to provide a comprehensive view of the security posture across all digital assets.
 
@@ -37,4 +37,4 @@ The information brought into the system includes:
 
 ## Next steps
 
-[[Classify critical assets](classify-critical-assets.md)](configure-data-connectors.md).
+- [Connect data sources to Microsoft Security Exposure Management](connect-data-sources.md)
