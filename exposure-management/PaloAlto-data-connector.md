@@ -9,9 +9,9 @@ ms.service: exposure-management
 ms.date: 09/19/2024
 ---
 
-# Palo Alto data connector (Private Preview)
+# Palo Alto data connector (Preview)
 
-To integrate with Palo Alto you will need the Palo Alto XXXX
+To integrate with Palo Alto, you need the Palo Alto XXXX
 
 ## Palo Alto configuration
 

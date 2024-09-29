@@ -18,9 +18,9 @@ To set up the ServiceNow integration, you need the hostname of your ServiceNow i
 1. Create a New ServiceNow user:
    1. Follow the steps [here](https://docs.servicenow.com/en-US/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html) to create a new user.
    2. Keep the **username (User Id) and password** you provided for future use.
-   3. If there’s no password field, submit the form to create the user. Afterwards, when you click on the new user, you’ll receive the **Set Password** option.
+   3. If there’s no password field, submit the form to create the user. Afterwards, when you select on the new user, you receive the **Set Password** option.
    4. Check the **Web service access only** box.
-2. Assign a **cmdb_read** role to the user you have just created. Detailed instructions can be found [here](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+2. Assign a **cmdb_read** role to the user you have created. Detailed instructions can be found [here](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
 ## Establish ServiceNow connection in Exposure Management
 

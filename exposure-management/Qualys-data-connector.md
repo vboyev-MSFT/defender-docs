@@ -11,19 +11,19 @@ ms.date: 09/24/2024
 
 # Qualys data connector 
 
-To integrate with Qualys you will have to provide basic credentials for a Qualys user with **Manager** role or a **Reader** role with full scope.
+To integrate with Qualys, you have to provide basic credentials for a Qualys user with **Manager** role or a **Reader** role with full scope.
 
 ## Qualys configuration
 
 1. Get Qualys API URL 
-2. To set up the Qualys integration, you need the API_URL of your Qualys instance, such as “qualysapi.qg1.apps.qualys.co.uk”. You can find it here. 
-   1. If you cannot find it: 
-      1. Login to your Qualys account. 
+2. To set up the Qualys integration, you need the API_URL of your Qualys instance, such as “qualysapi.qg1.apps.qualys.co.uk”. You can find it here.
+   1. If you can't find it: 
+      1. Log in to your Qualys account. 
       2. Go to **Help** → **About**. 
-      3. You will see the required information under **Security Operations Center** (SOC). 
+      3. You'll see the required information under **Security Operations Center** (SOC). 
 3. Make sure the user intended to be used in the login credentials for connector has the necessary permissions:
 4. Create the **Read** **Asset** role: 
-   1. Login to Qualys.
+   1. Log in to Qualys.
    2. Go to **Administration** area.
    3. Go to the **Role Management** section.
    4. Select New Role.

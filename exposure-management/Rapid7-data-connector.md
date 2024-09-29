@@ -23,7 +23,7 @@ To set up the Rapid7 integration, you need the endpoint of your server, such as 
 
 ## Establish ServiceNow connection in Exposure Management
 
-1. Open the [Data Connectors ](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Rapid7 tile.
+1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Rapid7 tile.
 1. Enter your Rapid7 Endpoint and API key details and select **Connect**.
 
 ## Next steps
