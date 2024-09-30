@@ -53,11 +53,7 @@
            - name: Tenable
              href: tenable-data-connector.md
        - name: Cloud security data connectors
-         items:
-           - name: Wiz
-             href: Wiz-data-connector.md
-           - name: Palo Alto
-             href: PaloAlto-data-connector.md
+         items: 
        - name: Getting value from your data connectors
          href: value-data-connectors.md
     - name: Work with attack paths
