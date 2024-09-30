@@ -37,4 +37,4 @@ The information brought into the system includes:
 
 ## Next steps
 
-- [Connect data sources to Microsoft Security Exposure Management](connect-data-sources.md)
+- [Overview of attack paths](work-attack-paths-overview.md)

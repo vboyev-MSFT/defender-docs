@@ -27,4 +27,4 @@ Select the external data connector you want to configure and follow the steps to
 
 - [CMDB data connectors](ServiceNow-data-connector.md)
 - [Vulnerability management data connectors](Qualys-data-connector.md)
-- [Cloud security data connectors](Wiz-data-connector.md)
+- Cloud security data connectors (coming soon)

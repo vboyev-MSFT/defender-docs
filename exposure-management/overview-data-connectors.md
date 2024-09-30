@@ -40,8 +40,8 @@ The following prerequisites are required to integrate external data connecters t
   - [Qualys VM](Qualys-data-connector.md)
   - [Rapid7 VM](Rapid7-data-connector.md)
   - [Tenable](Tenable-data-connector.md)
-  - [Wiz](Wiz-data-connector.md)
-  - [Palo Alto](PaloAlto-data-connector.md) (coming soon)
+  - Wiz (coming soon)
+  - Palo Alto (coming soon)
 
 ### Roles & permissions
 
