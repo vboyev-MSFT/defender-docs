@@ -30,4 +30,4 @@ To establish a connection with Rapid7 in Exposure Management, follow these steps
 
 ### Next steps
 
-[Getting value from your data connectors](leverage-data-connectors.md).
+[Getting value from your data connectors](value-data-connectors.md).

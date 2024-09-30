@@ -31,4 +31,4 @@ To establish a connection with ServiceNow in Exposure Management, follow these s
 
 ### Next steps
 
-[Getting value from your data connectors](leverage-data-connectors.md).
+[Getting value from your data connectors](value-data-connectors.md).

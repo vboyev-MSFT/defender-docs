@@ -26,4 +26,4 @@ To establish a connection with Tenable in Exposure Management, follow these step
 
 ### Next steps
 
-[Getting value from your data connectors](leverage-data-connectors.md).
+[Getting value from your data connectors](value-data-connectors.md).

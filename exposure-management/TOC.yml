@@ -37,11 +37,9 @@
     -  name: Data Connectors
        items:
        - name: Overview
-         href: connect-data-sources.md
+         href: overview-data-connectors.md
        - name: Configure your data connectors
          href: configure-data-connectors.md
-       - name: Getting value from your data connectors
-         href: leverage-data-connectors.md
        - name: CMDB data connectors
          items:
            - name: ServiceNow
@@ -60,6 +58,8 @@
              href: Wiz-data-connector.md
            - name: Palo Alto
              href: PaloAlto-data-connector.md
+       - name: Getting value from your data connectors
+         href: value-data-connectors.md
     - name: Work with attack paths
       items:      
         - name: Overview
