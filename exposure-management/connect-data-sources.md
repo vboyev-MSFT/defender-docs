@@ -62,4 +62,4 @@ You can find more details about the permission levels here, [Prerequisites, and 
 
 ## Next steps
 
-[Getting value from your data connectors](leverage-data-connectors.md).
+[Configure your data connectors](configure-data-connectors.md).
