@@ -13,7 +13,7 @@ ms.date: 09/24/2024
 
 To integrate with Qualys, you have to provide basic credentials for a Qualys user with **Manager** role or a **Reader** role with full scope.
 
-## Qualys configuration
+### Qualys configuration
 
 1. Get Qualys API URL
 2. To set up the Qualys integration, you need the API_URL of your Qualys instance, such as “qualysapi.qg1.apps.qualys.co.uk”. You can find it here.
@@ -39,13 +39,13 @@ To integrate with Qualys, you have to provide basic credentials for a Qualys use
 6. Under **Roles and Scopes**, add the Read Asset role created in previous sections to the user assigned roles.
 7. Allow full scope by checking the **Allow user view access to all objects** option.
 
-## Establish ServiceNow connection in Exposure Management
+### Establish Qualys connection in Exposure Management
 
 To establish a connection with Qualys in Exposure Management, follow these steps:
 
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Qualys tile.
 1. Enter your Qualys API URL and authentication credentials and select **Connect**.
 
-## Next steps
+### Next steps
 
 [Getting value from your data connectors](leverage-data-connectors.md).

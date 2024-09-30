@@ -13,7 +13,7 @@ ms.date: 09/24/2024
 
 To set up the ServiceNow integration, you need the hostname of your ServiceNow instance, such as “msft-xspm.service-now.com”. The connector authenticates with Basic Auth using username and password for read only access.
 
-## ServiceNow configuration
+### ServiceNow configuration
 
 1. Create a New ServiceNow user:
    1. Follow the steps [here](https://docs.servicenow.com/en-US/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html) to create a new user.
@@ -22,13 +22,13 @@ To set up the ServiceNow integration, you need the hostname of your ServiceNow i
    4. Check the **Web service access only** box.
 2. Assign a **cmdb_read** role to the user you have created. Detailed instructions can be found [here](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
-## Establish ServiceNow connection in Exposure Management
+### Establish ServiceNow connection in Exposure Management
 
 To establish a connection with ServiceNow in Exposure Management, follow these steps:
 
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the ServiceNow CMDB tile.
 1. Enter your ServiceNow instance **details** (created in the ServiceNow configuration) and select **Connect**.
 
-## Next steps
+### Next steps
 
 [Getting value from your data connectors](leverage-data-connectors.md).
