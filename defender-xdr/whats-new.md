@@ -31,8 +31,6 @@ You can also get product updates and important notifications through the [messag
 
 ## September 2024
 
-- (Preview) Security analysts can now investigate a user's insider risk in the Microsoft Defender portal with **insider risk severity and insights** available for Microsoft Defender XDR users with provisioned access to Microsoft Purview Insider Risk Management. 
-
 - (GA) The global search for entities in the Microsoft Defender portal is now generally available. The enhanced search results page centralizes the results from all entities. For more information, see [Global search in the Microsoft Defender portal](microsoft-365-defender-portal.md#global-search).
 - (GA) Copilot in Defender now includes the identity summary capability, providing instant insights into a user's risk level, sign in activity, and more. For more information, see [Summarize identity information with Copilot in Defender](security-copilot-defender-identity-summary.md).
 - [Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) customers can now view the [latest featured threat intelligence articles](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#featured-threat-intelligence-articles-widget) in the Microsoft Defender portal home page. The **Intel explorer** page now also has an [article digest](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#article-digest) that notifies them of the number of new Defender TI articles that were published since they last accessed the Defender portal.
@@ -85,6 +83,8 @@ You can also get product updates and important notifications through the [messag
 - (GA) You can now **[filter your results](advanced-hunting-query-results.md#filter-results)** in advanced hunting so you can narrow down your investigation on specific data you want to focus on.
 
 ## May 2024
+
+- (Preview) Security analysts can now investigate a user's insider risk in the Microsoft Defender portal with **insider risk severity and insights** available for Microsoft Defender XDR users with provisioned access to Microsoft Purview Insider Risk Management. See the [entity details in the user page](investigate-users.md#entity-details) for more information.
 
 - (GA) The endpoint security policies page is now available in multitenant management in Microsoft Defender XDR. Create, edit, and delete security policies for your tenants' devices from the **Endpoint security policies** page. For more information, see [Endpoint security policies in multitenant management](mto-endpoint-security-policy.md).
 
