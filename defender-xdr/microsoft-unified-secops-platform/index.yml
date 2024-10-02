@@ -29,5 +29,5 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in the Microsoft security operations platform
-            url: /defender-xdr/unified-soc-platform/whats-new
+            url: /defender-xdr/microsoft-unified-secops-platform/whats-new
 
