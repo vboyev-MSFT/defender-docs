@@ -29,7 +29,7 @@ Security Exposure Management is currently in public preview.
 
 ### New changed asset information for initiative history
 
-From the History tab of an initiative, you can now see the list of assets that were added or removed from the initiative. This information helps you understand the impact of the initiative on your organization's assets.
+From the **History** tab of an initiative, you can now see the list of assets that were added or removed from the initiative. This information helps you understand the impact of the initiative on your organization's assets.
 
 For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
 
