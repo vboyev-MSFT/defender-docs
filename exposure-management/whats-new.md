@@ -25,6 +25,14 @@ Security Exposure Management is currently in public preview.
 >
 > `https://aka.ms/msem/rss`
 
+## October 2024
+
+### New changed asset information for initiative history
+
+From the History tab of an initiative, you can now see the list of assets that were added or removed from the initiative. This information helps you understand the impact of the initiative on your organization's assets.
+
+For more information, see, [Reviewing initiative history](https://learn.microsoft.com/en-us/security-exposure-management/exposure-insights-overview#reviewing-initiative-history)
+
 ## September 2024
 
 ### New Enterprise IoT Security Initiative

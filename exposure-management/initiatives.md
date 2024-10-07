@@ -77,6 +77,7 @@ The changes in your score provide you with useful feedback about how well you're
     1. If needed, filter for specific time points.
     1. Choose the time point and select to examine the percent effect on the initiative score and the reason for the change.
     1. Select a metric to explore the change's effect further, if applicable.
+    1. Open the **Changes to affected assets** dropdown to view the top 100 changed assets. The status will indicate whether it has been added or removed.
 
 :::image type="content" source="media/initiatives/history-details.png" alt-text="Screenshot of the history metric change details side panel.":::
 
