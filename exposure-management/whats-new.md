@@ -31,7 +31,7 @@ Security Exposure Management is currently in public preview.
 
 From the History tab of an initiative, you can now see the list of assets that were added or removed from the initiative. This information helps you understand the impact of the initiative on your organization's assets.
 
-For more information, see, [Reviewing initiative history](https://learn.microsoft.com/en-us/security-exposure-management/exposure-insights-overview#reviewing-initiative-history)
+For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
 
 ## September 2024
 
