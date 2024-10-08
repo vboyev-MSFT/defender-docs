@@ -42,7 +42,7 @@ This article explains the various types of exclusions that can be defined or act
 
 ## Types of exclusions
 
-The following table summarizes the different exclusion types and capabilites in Defender for Endpoint and Microsoft Defender Antivirus. Select each type to see more information about it. 
+The following table summarizes the different exclusion types and capabilities in Defender for Endpoint and Microsoft Defender Antivirus. Select each type to see more information about it. 
 
 > [!TIP]
 >
@@ -237,7 +237,9 @@ Depending on what you're using, you might need to refer to the documentation for
 ## See also
 
 - [Submissions, suppressions and exclusions](submissions-suppressions-exclusions.md)
+
 - [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions)
+
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
