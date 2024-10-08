@@ -27,6 +27,20 @@ Security Exposure Management is currently in public preview.
 
 ## September 2024
 
+### New Enterprise IoT Security Initiative
+
+With this new initiative, Enterprise IoT Security offers a powerful solution to identify unmanaged IoT devices and enhance your security. With continuous monitoring, vulnerability assessments, and tailored recommendations designed for Enterprise IoT devices, you gain comprehensive visibility into the risks posed by these devices. This initiative not only helps you understand the potential threats but also strengthens your organization's resilience in mitigating them.
+
+For more information, see, [Review security initiatives](initiatives.md)
+
+### New predefined classifications
+
+The following predefined classification rule was added to the critical assets list:
+
+| Classification                                               | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Hyper-V Server**                                                 | This rule applies to devices identified as Hyper-V servers within a domain. These servers are essential for running and managing virtual machines within your infrastructure, serving as the core platform for their creation and management. |
+
 ### Enhanced visibility for scoped users
 
 This change now allows users who have been granted access to only some of the organization's devices to see the list of affected assets in metrics, recommendations, events, and initiative history within their specific scope.
