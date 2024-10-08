@@ -2,7 +2,7 @@
 title: What's new in the Microsoft unified security operations platform
 description: Lists the new features and functionality in the Microsoft unified security operations platform
 search.appverid: met150
-ms.service: defender-xdr
+ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
