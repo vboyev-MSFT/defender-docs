@@ -2,11 +2,11 @@
 title: Incident response planning
 description: Start planning for incident handling
 search.appverid: met150
-ms.service: defender-xdr
-ms.author: cwatson
-author: cwatson-cat
+ms.service: unified-secops-platform
+author: yelevin
+ms.author: yelevin
 ms.localizationpriority: medium
-ms.date: 07/16/2024
+ms.date: 10/08/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance

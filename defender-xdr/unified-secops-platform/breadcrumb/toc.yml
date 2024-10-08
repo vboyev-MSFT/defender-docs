@@ -3,14 +3,14 @@
   topicHref: /defender/index
   items:
   - name: 'Microsoft unified security operations platform'
-    tocHref: /unified-soc-platform/
-    topicHref: /unified-soc-platform/index
+    tocHref: /unified-secops-platform/
+    topicHref: /defender-xdr/unified-secops-platform/index
   - name: 'Microsoft unified security operations platform'
     tocHref: /security/zero-trust/
-    topicHref: /defender-xdr/unified-soc-platform/index
+    topicHref: /defender-xdr/unified-secops-platform/index
   - name: Unified security operations platform
     tocHref: /defender-for-identity/
-    topicHref: /unified-soc-platform/index
+    topicHref: /defender-xdr/unified-secops-platform/index
 
 ## Microsoft Sentinel override
 - name: 'Microsoft Defender'
@@ -19,4 +19,4 @@
   items:
   - name: 'Unified security operations platform'
     tocHref: /azure/sentinel/
-    topicHref: /unified-soc-platform/index
+    topicHref:  /defender-xdr/unified-secops-platform/index

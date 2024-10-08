@@ -88,11 +88,7 @@
           href: /defender-xdr/advanced-hunting-shared-queries
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
-        - name: Incident response overview
-          href: incident-response-overview.md
-        - name: Incident response planning
-          href: incident-response-planning.md
-        - name: Incident investigation overview
+        - name: Overview
           href: /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
         - name: Alerts, incidents, and correlation
           href: /defender-xdr/alerts-incidents-correlation
@@ -194,3 +190,11 @@
           href: /defender-xdr/virus-initiative-criteria
         - name: Microsoft security portals
           href: /defender-xdr/portals
+        - name: Operation guides
+          items:
+            - name: Incident response
+              items:
+              - name: Overview
+                href: incident-response-overview.md
+              - name: Incident response
+                href: incident-response-planning.md

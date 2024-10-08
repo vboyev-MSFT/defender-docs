@@ -2,7 +2,7 @@
 title: Microsoft Defender portal overview
 description: Learn about the Microsoft Defender portal
 search.appverid: met150
-ms.service: defender-xdr
+ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
