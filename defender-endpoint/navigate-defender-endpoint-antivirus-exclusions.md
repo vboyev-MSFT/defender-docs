@@ -60,8 +60,6 @@ The following table summarizes the different exclusion types and capabilities in
 | [Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Customer | You can allow certain apps or signed executables to access protected folders by defining exclusions.|
 | [Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) | Customer | Automated investigation and remediation in Defender for Endpoint examines alerts and takes immediate action to automatically resolve detected breaches. You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities.|
  
-> [!Note] 
-> Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to real-time protection. 
 
 > [!Note] 
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). <br/><br/> If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).|
@@ -105,13 +103,22 @@ The list of built-in exclusions in Windows is kept up to date as the threat land
 
 ### Custom exclusions
 
-[Custom exclusions](configure-exclusions-microsoft-defender-antivirus.md) include files and folders that you specify. Exclusions for files, folders, and processes will be skipped by scheduled scans, on-demand scans, and real-time protection. Exclusions for process-opened files won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan).
+The capabilities of custom exclusions vary slightly by operating system.  Custom exclusions define the files, processes, and conditions under which Microsoft Defender for Endpoint should exclude. 
+
+#### Windows
+
+[Custom exclusions](configure-exclusions-microsoft-defender-antivirus.md) include files and folders that you specify. Exclusions for files, folders, and processes will be skipped by Microsoft Defender Antivirus scheduled scans, on-demand scans, and real-time protection. Exclusions for process-opened files won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan).
 
 - [Configure custom exclusions for Microsoft Defender Antivirus on Windows](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)
+
+#### macOS
 
 - [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](/defender-endpoint/mac-exclusions)
 
 - [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-exclusions)
+
+> [!Note] 
+> Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to real-time protection. 
 
 ### Custom remediation actions
 
