@@ -107,6 +107,12 @@ The list of built-in exclusions in Windows is kept up to date as the threat land
 
 [Custom exclusions](configure-exclusions-microsoft-defender-antivirus.md) include files and folders that you specify. Exclusions for files, folders, and processes will be skipped by scheduled scans, on-demand scans, and real-time protection. Exclusions for process-opened files won't be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan).
 
+- [Configure custom exclusions for Microsoft Defender Antivirus on Windows](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)
+
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](/defender-endpoint/mac-exclusions)
+
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-exclusions)
+
 ### Custom remediation actions
 
 When Microsoft Defender Antivirus detects a potential threat while running a scan, it attempts to remediate or remove the detected threat. You can define custom remediation actions to configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed. [Configure remediation actions for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md).
