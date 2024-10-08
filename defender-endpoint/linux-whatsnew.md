@@ -34,7 +34,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 > [!IMPORTANT]
-> Starting with version `101.2408.0000`, Microsoft defender for Endpoint for Linux no longer supports the Auditd event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023 and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options: 
+> Starting with version `101.2408.0004`, Microsoft defender for Endpoint for Linux no longer supports the Auditd event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023 and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
 > 
 > 1.	Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
 >
@@ -43,6 +43,27 @@ This article is updated frequently to let you know what's new in the latest rele
 > Review your current Defender for Endpoint on Linux deployment, and begin planning your migration to the eBPF-supported build. For more information on eBPF and how it works, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf).
 >
 > If you have any concerns or need assistance during this transition, contact support.
+
+<details>
+<summary> Oct-2024 (Build: 101.24082.0004 | Release version: 30.124082.0004.0)</summary>
+
+## Sept-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
+
+&ensp;Released: **October 15, 2024**<br/>
+&ensp;Published: **October 15, 2024**<br/>
+&ensp;Build: **101.24082.0004**<br/>
+&ensp;Release version: **30.124082.0004**<br/>
+&ensp;Engine version: **1.1.24080.9**<br/>
+&ensp;Signature version: **1.417.659.0**<br/>
+
+**What's new**
+
+- The supplementary event provider auditd is removed from support. We have transitioned completely to ebpf. In case of fallback of ebpf, it will switch back to netfilter as supplementary event provider. Netfilter will provide reduced functionality, tracking only process events
+- MDE Attach support for global exclusion settings configured on MEM portal
+- Stability and performance improvements
+- Other bug fixes
+
+</details>
 
 <details>
 <summary> Sept-2024 (Build: 101.24072.0001 | Release version: 30.124072.0001.0)</summary>
