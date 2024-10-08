@@ -2,7 +2,7 @@
 title: Microsoft Defender portal overview
 description: Learn about the Microsoft Defender portal
 search.appverid: met150
-ms.service: defender-xdr
+ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
@@ -33,8 +33,8 @@ The Defender portal combines a number of Microsoft security services in a single
 **Service** | **Details**
 --- | ---
 **[Microsoft Defender XDR](defender-xdr-portal.md)** | In the Defender portal, protect against security threats to assets and resources across the organization, including devices, email and collaboration tools, SaaS cloud apps, Entra ID threats, cloud and on-premises workloads, and OT/IT resources. Get integrated incidents and alerts, threat hunting, and threat protection services and capabilities included in Defender XDR.
-**[Microsoft Defender Threat Intelligence](../../defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti.md)** | From the Defender portal, conduct threat infrastructure analysis, and gather threat intelligence.
-**[Microsoft Security Exposure Management](../../exposure-management/microsoft-security-exposure-management)** | In the Defender portal, get a unified view of security posture across organizational assets. Assess the security state of assets, and identify and remediate security risk to reduce attack surfaces.
+**[Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)** | From the Defender portal, conduct threat infrastructure analysis, and gather threat intelligence.
+**[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)** | In the Defender portal, get a unified view of security posture across organizational assets. Assess the security state of assets, and identify and remediate security risk to reduce attack surfaces.
 **[Microsoft Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud)** | Defender for Cloud improves multicloud and on-premises security posture, and protect cloud workloads against security threats. It integrates into the Defender portal so that security teams can access Defender for Cloud alerts in the portal, providing a single location with added rich context for security investigations.
 **[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)** | Defender for IoT integrates into the Defender portal to identify and protect OT/IT resources by extending Defender XDR protection to OT environments.
 
