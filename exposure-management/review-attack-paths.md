@@ -56,7 +56,9 @@ Select **Group** to group by **Attack path name**, **Entry point**,**Entry point
 1. Go the choke points tab to view a list of choke points on the attack path dashboard. By focusing on these choke points, you can reduce risk by addressing high-impact assets, thus preventing attackers from progressing through various paths.
 1. Select a choke point to open the side panel, select **View blast radius** and explore the attack paths from a choke point. The blast radius provides a detailed visualization showing how the compromise of one asset could affect others. This enables security teams to assess the broader implications of an attack and prioritize mitigation strategies more effectively.
  
-:::image type="content" source="media/review-attack-paths/choke points and blast radius.png" alt-text="Screenshot of chock point and blast radius " lightbox="media/review-attack-paths/choke points and blast radius.png":::
+:::image type="content" source="media/review-attack-paths/choke points and blast radius.png" alt-text="Screenshot of choke point and blast radius " lightbox="media/review-attack-paths/choke points and blast radius.png":::
+
+:::image type="content" source="media/review-attack-paths/choke-points on map.png" alt-text="Screenshot of choke point on attack map" lightbox="media/review-attack-paths/choke-points on map.png":::
 
 ### Examine an attack path
 
