@@ -27,7 +27,7 @@ Security Exposure Management is currently in public preview.
 
 ### Attack path dashboard
 
-The dashboard provides a comprehensive overview of all identified attack paths within the environment. It enables security teams to gain valuable insights into the types of paths identified, top entry points, target assets, and more, helping to prioritize risk mitigation efforts effectively. The overview includes:
+The dashboard provides a high-level overview of all identified attack paths within the environment. It enables security teams to gain valuable insights into the types of paths identified, top entry points, target assets, and more, helping to prioritize risk mitigation efforts effectively. The overview includes:
 
 - Graph of attack paths over time
 - Top choke points
