@@ -58,8 +58,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- The supplementary event provider auditd is removed from support. We have transitioned completely to ebpf. In case of fallback of ebpf, it will switch back to netfilter as supplementary event provider. Netfilter will provide reduced functionality, tracking only process events
-- MDE Attach support for global exclusion settings configured on MEM portal
+- Starting this version, Microsoft defender for Endpoint for Linux will no longer support AuditD as a supplementary event provider. For improved stability and performance, we have completely transitioned to eBPF. If you disable eBPF or in the event eBPF is not supported on any specific kernel, microsoft defender for endpoint for Linux will automatically switch back to Netlink as a fallback supplementary event provider. Netlink will provide reduced functionality and track only process related events. In this case, all process operations will continue to flow seamlessly, but you may miss out on specific file and socket-related events that eBPF would otherwise capture. For more details refer- [linux-support-ebpf.md](linux-support-ebpf.md). If you have any concerns or need assistance during this transition, contact support.
 - Stability and performance improvements
 - Other bug fixes
 
