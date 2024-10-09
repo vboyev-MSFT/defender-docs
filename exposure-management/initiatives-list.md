@@ -1,27 +1,29 @@
 ---
-title: Review security initiatives in Microsoft Security Exposure Management
-description: Learn how to work with security Initiatives in Microsoft Security Exposure Management.
+title: Security initiatives in Microsoft Security Exposure Management
+description: List of security Initiatives in Microsoft Security Exposure Management.
 ms.author: dlanger
 author: dlanger
 manager: rayne-wiselman
-ms.topic: overview
+ms.topic: reference
 ms.service: exposure-management
 ms.date: 10/09/2024
 ---
 
 # Security Initiatives
 
+This is a list of security initiatives in Microsoft Security Exposure Management. Each initiative is designed to help you manage and improve the security posture of your organization.
+
 ## Business Email Compromise - Financial fraud
 
-Business email compromise (BEC) financial fraud is a social engineering attack that aims to steal money or sensitive information. The attacker tricks the target into believing they are interacting with a trusted entity to conduct either personal or professional business. After deceiving the target, the attacker persuades them to share valuable information or process a payment.
+Business email compromise (BEC) financial fraud is a social engineering attack that aims to steal money or sensitive information. The attacker tricks the target into believing they're interacting with a trusted entity to conduct either personal or professional business. After deceiving the target, the attacker persuades them to share valuable information or process a payment.
 
-## CIS M365 Foundations Benchmark
+## CIS Microsoft 365 Foundations Benchmark
 
 The CIS Microsoft 365 Foundations Benchmark (v3.0.0) is a set of security assessments developed by the Center for Internet Security (CIS). It provides prescriptive guidance for establishing a secure baseline configuration for Microsoft 365. The benchmark includes configuration baselines and best practices for securely configuring a system. The benchmark is internationally recognized as a security standard for defending IT systems and data against cyber attacks. This initiative contains a subset of security assessments recommended by the CIS
 
 ## Cloud Security [Preview]
 
-This initiative aims to reflects the status around cloud security coverage, ROI, health, configuration and performance. It consists of measurements across multiple domains and disciplines to provide security managers with a high-level view into how posture is enforced in cloud ops.
+This initiative aims to reflect the status around cloud security coverage, ROI, health, configuration, and performance. It consists of measurements across multiple domains and disciplines to provide security managers with a high-level view into how posture is enforced in cloud ops.
 
 ## Critical Asset Protection [Preview]
 
@@ -29,15 +31,15 @@ Critical asset protection refers to the strategies, processes, and technologies 
 
 ## Cryptographic Assessment
 
-The Cryptographic Assessment initiative involves discovering and managing cryptographic assets inside your organization to ensure cryptographic risk management, post quantum safety and cryptographic agility. It addresses the complexity of cryptography dispersed throughout IT architectures, embedded into various components across your organization.
+The Cryptographic Assessment initiative involves discovering and managing cryptographic assets inside your organization to ensure cryptographic risk management, post quantum safety, and cryptographic agility. It addresses the complexity of cryptography dispersed throughout IT architectures, embedded into various components across your organization.
 
 Endpoint Security
 
-Monitor the coverage and configuration of physical and virtual workstations, servers and mobile phones.
+Monitor the coverage and configuration of physical and virtual workstations, servers, and mobile phones.
 
 ## Enterprise IoT Security
 
-IoT devices are often connected to endpoints, to one another or to the internet, which means they are potential targets for cyberattacks. It's imperative for businesses to monitor the security of their IoT devices, including their spread, configuration, connectivity, exposure, and behavior. This initiative will provide overall visibility into the risk introduced by IoT devices in the enterprise and the resilience the organization has to mitigate it.
+IoT devices are often connected to endpoints, to one another or to the internet, which means they're potential targets for cyberattacks. It's imperative for businesses to monitor the security of their IoT devices, including their spread, configuration, connectivity, exposure, and behavior. This initiative provides overall visibility into the risk introduced by IoT devices in the enterprise and the resilience the organization has to mitigate it.
 
 ## External Attack Surface Protection
 
@@ -57,11 +59,11 @@ Ransomware attacks have become increasingly common in recent years, and they can
 
 ## SaaS Security
 
-This initiative focuses on displaying the current state of SaaS (software as a service) security coverage, health, configuration and performance. It consists of metrics across multiple domains and disciplines to provide security managers with a high-level view into their SaaS security posture management. To make the most of this Initiative, activate application connectors for the following: Microsoft 365, Salesforce, ServiceNow, GitHub, Okta, Citrix ShareFile, DocuSign, Dropbox, Google Workspace, NetDocuments, Workplace (preview), Zendesk, Zoom (preview), Atlassian. Learn more on connectors enablement: https://aka.ms/AAs4lmg
+This initiative focuses on displaying the current state of SaaS (software as a service) security coverage, health, configuration, and performance. It consists of metrics across multiple domains and disciplines to provide security managers with a high-level view into their SaaS security posture management. To make the most of this Initiative, activate application connectors for the following: Microsoft 365, Salesforce, ServiceNow, GitHub, Okta, Citrix ShareFile, DocuSign, Dropbox, Google Workspace, NetDocuments, Workplace (preview), Zendesk, Zoom (preview), Atlassian. Learn more on connectors enablement: https://aka.ms/AAs4lmg
 
 ## Vulnerability Assessment
 
-This initiative serves as a central hub for security managers to continuously assess and analyze vulnerabilities and misconfigurations across the organization's digital landscape. In the Vulnerability Assessment initiative users can actively identify, prioritize, track and delegate vulnerabilities with in the IT infrastructure and the cloud. Users gain real-time visibility into the security posture of their organization, enabling data-driven decision-making for resource investment and placement. This collaborative environment ensures a holistic approach to vulnerability management, empowering stakeholders to proactively strengthen their security defenses, reduce the attack surface, and enhance overall resilience against evolving cyber threats.
+This initiative serves as a central hub for security managers to continuously assess and analyze vulnerabilities and misconfigurations across the organization's digital landscape. In the Vulnerability Assessment initiative users can actively identify, prioritize, track, and delegate vulnerabilities with in the IT infrastructure and the cloud. Users gain real-time visibility into the security posture of their organization, enabling data-driven decision-making for resource investment and placement. This collaborative environment ensures a holistic approach to vulnerability management, empowering stakeholders to proactively strengthen their security defenses, reduce the attack surface, and enhance overall resilience against evolving cyber threats.
 
 ## Zero Trust (Foundational)
 
@@ -69,7 +71,4 @@ Zero Trust is a security strategy that follows three principles, verify explicit
 
 ## Next steps
 
-- [Improve security insights with exposure insights overview](exposure-insights-overview.md)
-- [Review security metrics](security-metrics.md)
-- [Explore security events](security-events.md)
-- [Review security recommendations](security-recommendations.md)
+- [Investigate security initiative metrics](security-metrics.md)
