@@ -47,31 +47,28 @@ The following table summarizes the different exclusion types and capabilities in
 > - [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) is available as a standalone plan, and is included in Microsoft 365 E5.
 > - If you have Microsoft 365 E3 or E5, make sure to [set up your Defender for Endpoint capabilities](deployment-strategy.md).
 
-### Automatic Exclusions
+### Pre-configured Exclusions
 
-These exclusion types are provided by Microsoft.  
+These exclusion types come pre-configured in Microsoft Defender for Endpoint.  
 
 | Exclusion types | Configuration | Description |
 |:---|:----| :----|
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> _Note: for active roles on Windows Server 2016 and later_. |
 | [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built in exclusions for operating system files on all versions of Windows.|
 
-### Custom Exclusions
+### Customer Exclusions
 
 Thes exclusion types can be configured by customers.
 
 > [!CAUTION]
 > **Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus**. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See **[Important points about exclusions](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/configure-exclusions-microsoft-defender-antivirus.md)** and **[Common mistakes to avoid](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/common-exclusion-mistakes-microsoft-defender-antivirus.md)**.
-| Exclusion types | Configuration | Description | 
-
+| Exclusion types | Configuration | Description |
 |:---|:----| :----|
-
-
-| [Custom Microsoft Defender Antivirus exclusions](#custom-exclusions) | Customer | You can add an exclusion for a file, folder, or process that was detected and identified as malicious, even though it isn't a threat. The files, folders, or processes you exclude will be skipped by scheduled scans, on-demand scans, and real-time protection. |
-| [Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Customer | If attack surface reducion rules cause ununexpected behavior in your organization, you can define exclusions for certain files and folders. Such exclusions are applied to all attack surface reduction rules.|
-| [Defender for Endpoint Indicators](#defender-for-endpoint-indicators) | Customer | You can define indicators with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. When you define your indicators, you can specify actions such as "Allow" where Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. |
-| [Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Customer | You can allow certain apps or signed executables to access protected folders by defining exclusions.|
-| [Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) | Customer | Automated investigation and remediation in Defender for Endpoint examines alerts and takes immediate action to automatically resolve detected breaches. You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities.|
+| [Custom Microsoft Defender Antivirus exclusions](#custom-exclusions) |Varies by operating system  | You can add an exclusion for a file, folder, or process that was detected and identified as malicious, even though it isn't a threat. The files, folders, or processes you exclude will be skipped by scheduled scans, on-demand scans, and real-time protection. |
+| [Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Intune, GPO | If attack surface reduction rules cause unexpected behavior in your organization, you can define exclusions for certain files and folders. Such exclusions are applied to all attack surface reduction rules.|
+| [Defender for Endpoint Indicators](#defender-for-endpoint-indicators) |Portal | You can define indicators with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. When you define your indicators, you can specify actions such as "Allow" where Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. |
+| [Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Intune, GPO | You can allow certain apps or signed executables to access protected folders by defining exclusions.|
+| [Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) | Portal | Automated investigation and remediation in Defender for Endpoint examines alerts and takes immediate action to automatically resolve detected breaches. You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities.|
 
 > [!Note] 
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). <br/><br/> If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).|
