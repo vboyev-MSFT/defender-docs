@@ -52,11 +52,27 @@ Despite this, sometimes unexpected behaviors occur:
 
 - **Application compatibility issues** - applications experience unexpected behavior when running with Defender for Endpoint 
 
+> [!CAUTION]
+> **Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus**. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See **[Important points about exclusions](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/configure-exclusions-microsoft-defender-antivirus.md)** and **[Common mistakes to avoid](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/common-exclusion-mistakes-microsoft-defender-antivirus.md)**.
 This article explains the various types of exclusions that can be defined or actions that can be taken for Defender for Endpoint and Microsoft Defender Antivirus to help manage these situations. 
 
 ## Types of exclusions
 
 The following table summarizes the different exclusion types and capabilities in Defender for Endpoint and Microsoft Defender Antivirus. Select each type to see more information about it. 
+
+
+### Customer Exclusions
+
+These exclusion types can be configured by customers.
+
+| Exclusion types | Description |Use When|
+|:---| :----| -------- |
+|[Custom Microsoft Defender Antivirus exclusions](#custom-exclusions) |Excludes file, folders or paths from  scheduled scans, on-demand scans, and real-time protection. |A file, folder or process is identified as malicious, even though it's not a threat.<BR><BR> An application encounters unexpected performance or application compatibility issue when running with Microsoft Defender for Endpoint|
+|[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) |Excludes files and folders from attack surface reduction rules.|An attack surface reduction rule causes  unexpected behavior|
+|[Defender for Endpoint File and Certificate Allow Indicators](#defender-for-endpoint-indicators)|Allows a file identified by file hash or process signed by certificate to be accessed that otherwise would be blocked by Defender.|A file or process signed by a certificate is identified as malicious even through it's not.|
+|[Defender for Endpoint Indicators Domain, URL and IP address Indicators](#defender-for-endpoint-indicators) |Allows a domain, URL or external IP address to be accessed that otherwise would be blocked by Defender.|A URL, domain or external IP address is identified as malicious even though it's not.  |
+|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | You can allow certain apps or signed executables to access protected folders by defining exclusions.|Controlled folder access blocks an application from accessing a protected folder.|
+|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Excludes folders, file extensions in a specific directory, and file names from automated investigation and remediation capabilities.|Automated investigation and remediation takes action on a file, extension or directory that should be done manually.|
 
 ### Pre-configured Exclusions
 
@@ -67,20 +83,6 @@ These exclusion types come pre-configured in Microsoft Defender for Endpoint.
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> _Note: for active roles on Windows Server 2016 and later_. |
 | [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built in exclusions for operating system files on all versions of Windows.|
 
-### Customer Exclusions
-
-These exclusion types can be configured by customers.
-
-> [!CAUTION]
-> **Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus**. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See **[Important points about exclusions](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/configure-exclusions-microsoft-defender-antivirus.md)** and **[Common mistakes to avoid](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/common-exclusion-mistakes-microsoft-defender-antivirus.md)**.
-| Exclusion types | Description |Use When|
-|:---| :----| -------- |
-|[Custom Microsoft Defender Antivirus exclusions](#custom-exclusions) |Excludes file, folders or paths from  scheduled scans, on-demand scans, and real-time protection. |A file, folder or process is identified as malicious, even though it's not a threat.<BR><BR> An application encounters unexpected performance or application compatibility issue when running with Microsoft Defender for Endpoint|
-|[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) |Excludes files and folders from attack surface reduction rules.|An attack surface reduction rule causes  unexpected behavior|
-|[Defender for Endpoint File and Certificate Allow Indicators](#defender-for-endpoint-indicators)|Allows a file identified by file hash or process signed by certificate to be accessed that otherwise would be blocked by Defender.|A file or process signed by a certificate is identified as malicious even through it's not.|
-|[Defender for Endpoint Indicators Domain, URL and IP address Indicators](#defender-for-endpoint-indicators) |Allows a domain, URL or external IP address to be accessed that otherwise would be blocked by Defender.|A URL, domain or external IP address is identified as malicious even though it's not.  |
-|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | You can allow certain apps or signed executables to access protected folders by defining exclusions.|Controlled folder access blocks an application from accessing a protected folder.|
-|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Excludes folders, file extensions in a specific directory, and file names from automated investigation and remediation capabilities.|Automated investigation and remediation takes action on a file, extension or directory that should be done manually.|
 
 The following sections describe these exclusions in more detail.
 
