@@ -26,8 +26,13 @@ search.appverid: met150
 
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
+
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
+> [!TIP]
+> - **[Defender for Endpoint Plan 1](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/defender-endpoint-plan-1.md)** is available as a standalone plan, and is included in Microsoft 365 E3.
+> - **[Defender for Endpoint Plan 2](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/microsoft-defender-endpoint.md)** is available as a standalone plan, and is included in Microsoft 365 E5.
+> - If you have Microsoft 365 E3 or E5, make sure to **[set up your Defender for Endpoint capabilities](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/deployment-strategy.md)**.
 > [!NOTE]
 > As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
 
@@ -40,12 +45,6 @@ This article explains the various types of exclusions that can be defined or act
 ## Types of exclusions
 
 The following table summarizes the different exclusion types and capabilities in Defender for Endpoint and Microsoft Defender Antivirus. Select each type to see more information about it. 
-
-> [!TIP]
->
-> - [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) is available as a standalone plan, and is included in Microsoft 365 E3.
-> - [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) is available as a standalone plan, and is included in Microsoft 365 E5.
-> - If you have Microsoft 365 E3 or E5, make sure to [set up your Defender for Endpoint capabilities](deployment-strategy.md).
 
 ### Pre-configured Exclusions
 
