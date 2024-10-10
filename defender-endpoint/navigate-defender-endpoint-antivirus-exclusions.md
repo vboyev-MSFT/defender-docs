@@ -30,13 +30,17 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
 > [!TIP]
-> - **[Defender for Endpoint Plan 1](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/defender-endpoint-plan-1.md)** is available as a standalone plan, and is included in Microsoft 365 E3.
-> - **[Defender for Endpoint Plan 2](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/microsoft-defender-endpoint.md)** is available as a standalone plan, and is included in Microsoft 365 E5.
-> - If you have Microsoft 365 E3 or E5, make sure to **[set up your Defender for Endpoint capabilities](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/deployment-strategy.md)**.
+>- **[Defender for Endpoint Plan 1](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/defender-endpoint-plan-1.md)** is available as a standalone plan, and is included in Microsoft 365 E3.
+>- **[Defender for Endpoint Plan 2](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/microsoft-defender-endpoint.md)** is available as a standalone plan, and is included in Microsoft 365 E5.
+>- If you have Microsoft 365 E3 or E5, make sure to **[set up your Defender for Endpoint capabilities](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/deployment-strategy.md)**.
+
+> [!NOTE]
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). 
+> If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
+
 > [!NOTE]
 > As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
-
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
 
 As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
 
@@ -57,21 +61,18 @@ These exclusion types come pre-configured in Microsoft Defender for Endpoint.
 
 ### Customer Exclusions
 
-Thes exclusion types can be configured by customers.
+These exclusion types can be configured by customers.
 
 > [!CAUTION]
 > **Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus**. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See **[Important points about exclusions](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/configure-exclusions-microsoft-defender-antivirus.md)** and **[Common mistakes to avoid](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/common-exclusion-mistakes-microsoft-defender-antivirus.md)**.
 | Exclusion types | Description |Use When|
 |:---| :----| -------- |
-|[Custom Microsoft Defender Antivirus exclusions](#custom-exclusions) |Excludes file, folders or paths from  scheduled scans, on-demand scans, and real-time protection. |A file, folder or process is identified as malicious, even though it's not a threat.<BR><BR>An application encounters unexpected performance or application compatibility issue when running with Microsoft Defender for Endpoint|
+|[Custom Microsoft Defender Antivirus exclusions](#custom-exclusions) |Excludes file, folders or paths from  scheduled scans, on-demand scans, and real-time protection. |A file, folder or process is identified as malicious, even though it's not a threat.<BR><BR> An application encounters unexpected performance or application compatibility issue when running with Microsoft Defender for Endpoint|
 |[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) |Excludes files and folders from attack surface reduction rules.|An attack surface reduction rule causes  unexpected behavior|
 |[Defender for Endpoint File and Certificate Allow Indicators](#defender-for-endpoint-indicators)|Allows a file identified by file hash or process signed by certificate to be accessed that otherwise would be blocked by Defender.|A file or process signed by a certificate is identified as malicious even through it's not.|
 |[Defender for Endpoint Indicators Domain, URL and IP address Indicators](#defender-for-endpoint-indicators) |Allows a domain, URL or external IP address to be accessed that otherwise would be blocked by Defender.|A URL, domain or external IP address is identified as malicious even though it's not.  |
 |[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | You can allow certain apps or signed executables to access protected folders by defining exclusions.|Controlled folder access blocks an application from accessing a protected folder.|
-| [Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) | Automated investigation and remediation in Defender for Endpoint examines alerts and takes immediate action to automatically resolve detected breaches. You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities.||
-
-> [!Note] 
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). <br/><br/> If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).|
+|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Excludes folders, file extensions in a specific directory, and file names from automated investigation and remediation capabilities.|Automated investigation and remediation takes action on a file, extension or directory that should be done manually.|
 
 The following sections describe these exclusions in more detail.
 
@@ -267,21 +268,20 @@ Depending on what you're using, you might need to refer to the documentation for
 
 > [!TIP]
 > **Performance tip** Due to a variety of factors, Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
->
-> - Top paths that impact scan time
-> - Top files that impact scan time
-> - Top processes that impact scan time
-> - Top file extensions that impact scan time
-> - Combinations, such as:
->   - top files per extension
->   - top paths per extension
->   - top processes per path
->   - top scans per file
->   - top scans per file per process
->
+> 
+- Top paths that impact scan time
+- Top files that impact scan time
+- Top processes that impact scan time
+- Top file extensions that impact scan time
+- Combinations, such as:
+  - top files per extension
+  - top paths per extension
+  - top processes per path
+  - top scans per file
+  - top scans per file per process
+
 > You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
 > See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
-
 ## See also
 
 - [Submissions, suppressions and exclusions](submissions-suppressions-exclusions.md)
