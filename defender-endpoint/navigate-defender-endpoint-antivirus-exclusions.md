@@ -26,7 +26,6 @@ search.appverid: met150
 
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
 > [!TIP]
@@ -37,12 +36,21 @@ search.appverid: met150
 > [!NOTE]
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). 
 > If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
 
 > [!NOTE]
-> As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
+> As a Microsoft MVP, **[Fabian Bader](https://cloudbrothers.info/)** contributed to and provided material feedback for this article.
 
-As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
+
+Microsoft pre-configures the product to perform well on the operating system that it is installed.  No additional changes should be needed.
+
+Despite this, sometimes unexpected behaviors occur:
+
+- **False positives** - files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
+
+- **Performance issues** - systems experience an unexpected performance impact when running with Defender for Endpoint
+
+- **Application compatibility issues** - applications experience unexpected behavior when running with Defender for Endpoint 
 
 This article explains the various types of exclusions that can be defined or actions that can be taken for Defender for Endpoint and Microsoft Defender Antivirus to help manage these situations. 
 
