@@ -48,6 +48,8 @@ There are three ways you can create indicators for files:
 
 Understand the following prerequisites before you create indicators for files:
 
+### Windows prerequisites
+
 - This feature is available if your organization uses [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) (in active mode) 
 - [Behavior Monitoring is enabled](behavior-monitor.md)
 
@@ -59,9 +61,19 @@ Understand the following prerequisites before you create indicators for files:
 
 - This feature is supported on devices running Windows 10, version 1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016 or later, Windows Server 2019, or Windows Server 2022.
 
-- In `Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\MpEngine\`, the file hash computation feature should be set to **Enabled**
-  
+- File hash computation is enabled, by setting `Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\MpEngine\` to **Enabled**
+    
 - To start blocking files, [turn on the "block or allow" feature](advanced-features.md) in Settings (in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Allow or block file**).
+
+### macOS prerequisites
+
+- [File hash computation is enabled](https://learn.microsoft.com/en-us/defender-endpoint/mac-resources#configuring-from-the-command-line) by running `mdatp config enable-file-hash-computation --value enabled`
+
+### linux prerequisites
+
+-  Available in Defender for Endpoint version 101.85.27 or later.
+
+- [File hash computation is enabled] from the portal or in the managed JSON (https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences#configure-file-hash-computation-feature)
 
 This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. 
 
