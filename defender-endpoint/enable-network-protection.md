@@ -19,20 +19,19 @@ search.appverid: met150
 
 # Turn on network protection
 
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender XDR](/defender-xdr)
+- Microsoft Defender for Servers
 - Microsoft Defender Antivirus
 
 **Platforms**
 
 - Windows
-- Linux \(See [Network protection for Linux](network-protection-linux.md)\)
-- macOS \(See [Network protection for macOS](network-protection-macos.md)\)
+- Linux (See [Network protection for Linux](network-protection-linux.md))
+- macOS (See [Network protection for macOS](network-protection-macos.md))
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -229,15 +228,10 @@ $exploitGuardObject.Put()
 ## See also
 
 - [Network protection](network-protection.md)
-
 - [Network protection for Linux](network-protection-linux.md)
-
 - [Network protection for macOS](network-protection-macos.md)
-
 - [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
-
 - [Evaluate network protection](evaluate-network-protection.md)
-
 - [Troubleshoot network protection](troubleshoot-np.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
