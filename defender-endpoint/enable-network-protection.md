@@ -98,10 +98,9 @@ Enable network protection by using any of these methods:
    > ```
    > [!TIP]
    > For Windows Server 2022 and above the following setting must also be set to $true
-   ```powershell
-   set-mpPreference -AllowNetworkProtectionOnWinServer $true
-   ```
-   
+   > ```powershell
+   > set-mpPreference -AllowNetworkProtectionOnWinServer $true
+   > ```
 ### Mobile device management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
