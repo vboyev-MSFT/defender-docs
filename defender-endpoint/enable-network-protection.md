@@ -95,12 +95,11 @@ To enable network protection, you can use one of the following methods:
 
    To turn off network protection, use the `Disabled` parameter instead of `AuditMode` or `Enabled`.
 
-
 ### Mobile device management (MDM)
 
-Use the [EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
+1. Use the [EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-[Update Microsoft Defender antimalware platform to the latest version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) before you enable or disable network protection or enable audit mode.
+2. [Update Microsoft Defender antimalware platform to the latest version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) before you enable or disable network protection or enable audit mode.
 
 ### Microsoft Intune
 
@@ -148,13 +147,13 @@ Use the [EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defe
 
 4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
 
-4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
+5. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
 
-5. In the **Configuration settings** section, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Select **Next**.
+6. In the **Configuration settings** section, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Select **Next**.
 
-6. Select the appropriate **Scope tags**, **Assignments**, and **Applicability rules** as required by your organization. Admins can set more requirements.
+7. Select the appropriate **Scope tags**, **Assignments**, and **Applicability rules** as required by your organization. Admins can set more requirements.
 
-7. Review all the information, and then select **Create**.
+8. Review all the information, and then select **Create**.
 
 ### Group Policy
 
