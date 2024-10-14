@@ -207,24 +207,26 @@ Use the following procedure to enable network protection on domain-joined comput
 
 7. From the ribbon, select **Deploy** to deploy the policy to a collection.
 
-> [!IMPORTANT]
-> Once you deploy an Exploit Guard policy from Configuration Manager, the Exploit Guard settings will not be removed from the clients if you remove the deployment. `Delete not supported` is recorded in the Configuration Manager client's ExploitGuardHandler.log if you remove the client's Exploit Guard deployment. <!--CMADO8538577-->
-> The following PowerShell script can be run under SYSTEM context to remove these settings:<!--CMADO9907132-->
->
-> ```powershell
-> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
-> $defenderObject.AttackSurfaceReductionRules = $null
-> $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
-> $defenderObject.EnableControlledFolderAccess = $null
-> $defenderObject.ControlledFolderAccessAllowedApplications = $null
-> $defenderObject.ControlledFolderAccessProtectedFolders = $null
-> $defenderObject.EnableNetworkProtection = $null
-> $defenderObject.Put()
->
-> $exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
-> $exploitGuardObject.ExploitProtectionSettings = $null
-> $exploitGuardObject.Put()
->```  
+#### Important information about removing Exploit Guard settings from a device
+
+Once an Exploit Guard policy is deployed using Configuration Manager, Exploit Guard settings aren't removed from the clients if you remove the deployment. Furthermore, if you remove the client's Exploit Guard deployment, `Delete not supported` is recorded in the client's `ExploitGuardHandler.log` in Configuration Manager.  <!--CMADO8538577-->
+
+Use the following PowerShell script in the SYSTEM context to remove Exploit Guard settings correctly:<!--CMADO9907132-->
+
+```powershell
+$defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
+$defenderObject.AttackSurfaceReductionRules = $null
+$defenderObject.AttackSurfaceReductionOnlyExclusions = $null
+$defenderObject.EnableControlledFolderAccess = $null
+$defenderObject.ControlledFolderAccessAllowedApplications = $null
+$defenderObject.ControlledFolderAccessProtectedFolders = $null
+$defenderObject.EnableNetworkProtection = $null
+$defenderObject.Put()
+
+$exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
+$exploitGuardObject.ExploitProtectionSettings = $null
+$exploitGuardObject.Put()
+```  
 
 ## See also
 
