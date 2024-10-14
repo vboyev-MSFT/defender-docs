@@ -384,7 +384,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 **Exlusion setting preferences are currently in preview**.
 
 > [!NOTE] 
-> Available in Defender for Endpoint version `101.23092.0012` or later till Insider Slow/Production Ring.
+> Global exclusions are currently in public preview and available from Defender for Endpoint version `101.23092.0012` or later in Insiders Slow and Production Ring.
 
 The *exclusionSettings* section of the configuration profile is used to configure various exclusions for Microsoft Defender for Endpoint for Linux.
 
