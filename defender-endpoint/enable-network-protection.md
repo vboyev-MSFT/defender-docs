@@ -91,11 +91,11 @@ Enable network protection by using any of these methods:
    
    > [!TIP]
    > For Windows Server 2012 R2, Windows Server 2016 the following settings must also be set to $true
-   ```powershell
-   set-MpPreference -AllowNetworkProtectionDownLevel $true 
-   set-MpPreference -AllowNetworkProtectionOnWinServer $true
-   ```
-   
+   > ```
+   > set-MpPreference -AllowNetworkProtectionDownLevel $true 
+   > ```
+   > set-MpPreference -AllowNetworkProtectionOnWinServer $true
+   > ```
    > [!TIP]
    > For Windows Server 2022 and above the following setting must also be set to $true
    ```powershell
