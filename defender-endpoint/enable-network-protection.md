@@ -182,8 +182,7 @@ Use the following procedure to enable network protection on domain-joined comput
    > [!IMPORTANT]
    > To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
 
-   > [!NOTE]
-   > Optional: Follow the steps in [Check if network protection is enabled](#check-if-network-protection-is-enabled) to verify that your Group Policy settings are correct.
+5. (This step is optional.) Follow the steps in [Check if network protection is enabled](#check-if-network-protection-is-enabled) to verify that your Group Policy settings are correct.
 
 ### Microsoft Configuration Manager
 
