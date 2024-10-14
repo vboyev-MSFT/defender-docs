@@ -80,7 +80,7 @@ To enable network protection, you can use one of the following methods:
    Set-MpPreference -EnableNetworkProtection Enabled
    ```
 
-3. For Windows Server, use the commands listed in the following table:
+3. For Windows Server, use the additional commands that listed in the following table:
 
    | Windows Server version | Commands |
    |---|---|
