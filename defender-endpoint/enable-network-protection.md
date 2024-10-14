@@ -72,7 +72,7 @@ To enable network protection, you can use one of the following methods:
 
 ### PowerShell
 
-1. On your Windows device, select Start, type `powershell`, right-click **Windows PowerShell** and select **Run as administrator**.
+1. On your Windows device, select Start, type `powershell`, right-click **Windows PowerShell**, and then select **Run as administrator**.
 
 2. Run the following cmdlet:
 
