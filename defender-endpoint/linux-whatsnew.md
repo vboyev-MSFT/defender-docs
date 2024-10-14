@@ -3,10 +3,10 @@ title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
 ms.author: deniseb
-author: deniseb
+author: denisebmsft
 ms.reviewer: kumasumit, gopkr
 ms.localizationpriority: medium
-ms.date: 08/22/2024
+ms.date: 10/11/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -25,8 +25,8 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 
 This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on Linux.
 
@@ -36,14 +36,32 @@ This article is updated frequently to let you know what's new in the latest rele
 > [!IMPORTANT]
 > Starting with version `101.2408.0000`, Microsoft defender for Endpoint for Linux no longer supports the Auditd event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023 and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options: 
 > 
-> 1.	Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
+> 1.    Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
 >
-> 2.	If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
+> 2.    If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
 >
 > Review your current Defender for Endpoint on Linux deployment, and begin planning your migration to the eBPF-supported build. For more information on eBPF and how it works, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf).
 >
-> If you have any concerns or need assistance during this transition, please reach out to our support team.
+> If you have any concerns or need assistance during this transition, contact support.
 
+<details>
+<summary> Sept-2024 (Build: 101.24072.0001 | Release version: 30.124072.0001.0)</summary>
+
+## Sept-2024 Build: 101.24072.0001 | Release version: 30.124072.0001.0
+
+&ensp;Released: **September 23, 2024**<br/>
+&ensp;Published: **September 23, 2024**<br/>
+&ensp;Build: **101.24072.0001**<br/>
+&ensp;Release version: **30.124072.0001.0**<br/>
+&ensp;Engine version: **1.1.24060.6**<br/>
+&ensp;Signature version: **1.415.228.0**<br/>
+
+**What's new**
+
+- Added support for Ubuntu 24.04
+- Updated default engine version to `1.1.24060.6` and default signatures version to `1.415.228.0`.
+
+</details>
 
 <details>
 <summary> July-2024 (Build: 101.24062.0001 | Release version: 30.124062.0001.0)</summary>
@@ -71,14 +89,14 @@ There are multiple fixes and new changes in this release.
 </details>
 
 <details>
-<summary> June-2024 (Build: 101.24052.0002 | Release version: 30.24052.0002.0)</summary>
+<summary> June-2024 (Build: 101.24052.0002 | Release version: 30.124052.0002.0)</summary>
 
 ## June-2024 Build: 101.24052.0002 | Release version: 30.124052.0002.0
 
 &ensp;Released: **June 24, 2024**<br/>
 &ensp;Published: **June 24, 2024**<br/>
 &ensp;Build: **101.24052.0002**<br/>
-&ensp;Release version: **30.24052.0002.0**<br/>
+&ensp;Release version: **30.124052.0002.0**<br/>
 &ensp;Engine version: **1.1.24040.2**<br/>
 &ensp;Signature version: **1.411.153.0**<br/>
 
@@ -93,14 +111,14 @@ There are multiple fixes and new changes in this release.
 
 </details>
 <details>
-<summary> May-2024 (Build: 101.24042.0002 | Release version: 30.24042.0002.0)</summary>
+<summary> May-2024 (Build: 101.24042.0002 | Release version: 30.124042.0002.0)</summary>
 
 ## May-2024 Build: 101.24042.0002 | Release version: 30.124042.0002.0
 
 &ensp;Released: **May 29, 2024**<br/>
 &ensp;Published: **May 29, 2024**<br/>
 &ensp;Build: **101.24042.0002**<br/>
-&ensp;Release version: **30.24042.0002.0**<br/>
+&ensp;Release version: **30.124042.0002.0**<br/>
 &ensp;Engine version: **1.1.24030.4**<br/>
 &ensp;Signature version: **1.407.521.0**<br/>
 

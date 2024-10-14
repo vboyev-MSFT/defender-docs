@@ -79,6 +79,9 @@
         href: demonstration-behavior-monitoring.md
       - name: Validate antimalware
         href: validate-antimalware.md
+      - name: AMSI demonstrations
+        href: defender-endpoint-demonstration-amsi.md
+        displayName: Antimalware Scan Interface (AMSI), AMSI
       - name: Attack surface reduction rules demonstrations
         href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
       - name: Cloud-delivered protection demonstration
@@ -422,13 +425,15 @@
 
         - name: Troubleshoot Microsoft Defender for Endpoint on macOS
           items:
+          - name: Troubleshoot NetExt issues with Defender for Endpoint on Mac
+            href: mac-troubleshoot-netext-mde.md
           - name: Troubleshooting mode on macOS
             href: mac-troubleshoot-mode.md
           - name: Troubleshoot macOS installation issues
             href: mac-support-install.md
           - name: Troubleshoot macOS performance issues overview
             href: mac-support-perf-overview.md
-            displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+            displayName: Troubleshoot performance issues for Defender for Endpoint on macOS
           - name: Troubleshoot performance issues
             href: mac-support-perf.md
           - name: Troubleshoot cloud connectivity

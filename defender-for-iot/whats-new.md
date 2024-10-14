@@ -20,13 +20,17 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 |Service area  |Updates  |
 |---------|---------|
-| **OT networks** | - [New Device Category Added – Building Management Systems (BMS)](#new-device-category-added--building-management-systems-bms) |
+| **OT networks** | - [Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page](#review-unmanaged-enterprise-iot-devices-in-microsoft-security-exposure-management-initiatives-page)<br>- [New Building Management Systems (BMS) device category](#new-building-management-systems-bms-device-category)|
 
-### New Device Category Added – Building Management Systems (BMS)
+### Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page
 
-A new BMS device category has been added to the MDIoT license aiming to improve BMS device discovery and security. The BMS category includes a subset of Smart Facility and Surveillance devices (previously under the IoT category) such as fire alarms, humidity sensors, security radars, etc. These devices now require an Microsoft Defender for IoT site-based license for full protection.
+You can now review the new Enterprise IoT Security initiative in the Microsoft Security Exposure Management Initiatives page. This new initiative provides a metric-driven way of tracking exposure about unmanaged enterprise IoT devices.
 
-Cameras devices will remain under the IoT category.
+For more information, see the [Microsoft Security Exposure Management release notes](/security-exposure-management/whats-new#new-enterprise-iot-security-initiative).
+
+### New Building Management Systems (BMS) device category
+
+We now support the new BMS device category in Defender for IoT that improves BMS device discovery and security. The BMS category includes a subset of Smart Facility and Surveillance devices (previously under the IoT category) such as fire alarms, humidity sensors, security radars, etc. Camera devices remain under the IoT category.
 
 For more information, see [overview of device discovery](device-discovery.md).
 
