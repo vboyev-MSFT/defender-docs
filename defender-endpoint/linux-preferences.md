@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/11/2024
+ms.date: 10/14/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -220,7 +220,7 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 - Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
 - Muted (`mute`): Mount points marked as noexec aren't scanned as part of RTP, these mount point can be created for:
-  - Database files on Database servers for keeping data base files.
+  - Database files on Database servers for keeping database files.
   - File server can keep data files mountpoints with noexec option.
   - Backup can keep data files mountpoints with noexec option.
 
@@ -384,9 +384,9 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 **Exlusion setting preferences are currently in preview**.
 
 > [!NOTE] 
-> Available in Defender for Endpoint version `101.23092.0012` or later till Insider Slow Ring.
+> Global exclusions are currently in public preview, and are available in Defender for Endpoint beginning with version `101.23092.0012` or later in the Insiders Slow and Production rings.
 
-The *exclusionSettings* section of the configuration profile is used to configure various exclusions for Microsoft Defender for Endpoint for Linux.
+The `exclusionSettings` section of the configuration profile is used to configure various exclusions for Microsoft Defender for Endpoint for Linux.
 
 |Description|JSON Value|
 |---|---|
