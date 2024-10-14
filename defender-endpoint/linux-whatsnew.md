@@ -34,11 +34,11 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 > [!IMPORTANT]
-> Starting with version `101.2408.0004`, Microsoft defender for Endpoint for Linux no longer supports the Auditd event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023 and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
+> Starting with version `101.2408.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023, and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
 > 
-> 1.    Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
+> 1. Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
 >
-> 2.    If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
+> 2. If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
 >
 > Review your current Defender for Endpoint on Linux deployment, and begin planning your migration to the eBPF-supported build. For more information on eBPF and how it works, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf).
 >
@@ -58,7 +58,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- Starting this version, Microsoft Defender for Endpoint on Linux no longer supports `AuditD` as a supplementary event provider. For improved stability and performance, we have completely transitioned to eBPF. If you disable eBPF, or in the event eBPF is not supported on any specific kernel, Defender for Endpoint on Linux automatically switches back to Netlink as a fallback supplementary event provider. Netlink provides reduced functionality and tracks only process-related events. In this case, all process operations continue to flow seamlessly, but you could miss specific file and socket-related events that eBPF would otherwise capture. For more details, see [linux-support-ebpf.md](linux-support-ebpf.md). If you have any concerns or need assistance during this transition, contact support.
+- Starting this version, Defender for Endpoint on Linux no longer supports `AuditD` as a supplementary event provider. For improved stability and performance, we have completely transitioned to eBPF. If you disable eBPF, or in the event eBPF is not supported on any specific kernel, Defender for Endpoint on Linux automatically switches back to Netlink as a fallback supplementary event provider. Netlink provides reduced functionality and tracks only process-related events. In this case, all process operations continue to flow seamlessly, but you could miss specific file and socket-related events that eBPF would otherwise capture. For more details, see [linux-support-ebpf.md](linux-support-ebpf.md). If you have any concerns or need assistance during this transition, contact support.
 - Stability and performance improvements
 - Other bug fixes
 
