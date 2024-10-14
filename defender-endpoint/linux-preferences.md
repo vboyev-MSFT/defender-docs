@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 08/28/2024
+ms.date: 10/11/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -25,9 +25,8 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -63,6 +62,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
 - Real-time (`real_time`): Real-time protection (scan files as they're modified) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
+  - Definition updates occur only when a scan starts, even if `automaticDefinitionUpdateEnabled` is set to `true` in on-demand mode.
 - Passive (`passive`): Runs the antivirus engine in passive mode. In this case, all of the following apply:
   - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
   - On-demand scanning is turned on: Still use the scan capabilities on the endpoint.
@@ -222,7 +222,7 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 - Muted (`mute`): Mount points marked as noexec aren't scanned as part of RTP, these mount point can be created for:
   - Database files on Database servers for keeping data base files.
   - File server can keep data files mountpoints with noexec option.
-  - Back up can keep data files mountpoints with noexec option.
+  - Backup can keep data files mountpoints with noexec option.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -627,6 +627,7 @@ Determines whether security intelligence updates are installed automatically:
 |**Data type**|Boolean|Drop down|
 |**Possible values**|`true` (default) <p>`false`|Not configured<br>Disabled<br>Enabled (Default)|
 
+Depending on the enforcement level, the automatic security intelligence updates are installed differently. In RTP mode, updates are installed periodically. In Passive/ On-Demand mode updates are installed before every scan.
 
 ### Advanced optional features
 
