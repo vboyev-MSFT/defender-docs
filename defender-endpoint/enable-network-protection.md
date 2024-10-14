@@ -81,7 +81,7 @@ To enable network protection, you can use one of the following methods:
    Set-MpPreference -EnableNetworkProtection Enabled
    ```
 
-3. For Windows Server, run the following additional commands:
+3. For Windows Server, use the commands listed in the following table:
 
    | Windows Server version | Commands |
    |---|---|
@@ -94,7 +94,8 @@ To enable network protection, you can use one of the following methods:
    Set-MpPreference -EnableNetworkProtection AuditMode
    ```
 
-5. 
+   To turn off network protection, use the `Disabled` parameter instead of `AuditMode` or `Enabled`.
+
 
 ### Mobile device management (MDM)
 
