@@ -97,7 +97,7 @@ Enable network protection by using any of these methods:
    
 1. For Windows Server 2022 and above the following setting must also be set to $true
 
-   ```
+   ```powershell
    set-mpPreference -AllowNetworkProtectionOnWinServer $true
    ```
    
