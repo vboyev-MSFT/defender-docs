@@ -11,7 +11,7 @@ ms.date: 09/09/2024
 
 # Overview
 
-[Microsoft Security Exposure Management](microsoft-security-exposure-management.md) consolidates security posture data from all your digital assets enabling you to map your attack surface and focus your security efforts on areas at greatest risk. The data from Microsoft products gets ingested automatically once connected to Exposure Management, and you can add more connectors from external data sources.
+[Microsoft Security Exposure Management](microsoft-security-exposure-management.md) consolidates security posture data from all your digital assets, enabling you to map your attack surface and focus your security efforts on areas at greatest risk. Data from Microsoft Security products like Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud, Microsoft Entra ID, and others are automatically ingested and consolidated within Exposure Management. You can further enrich and extend this data by connecting to external data sources.
 
 To provide coverage of all your assets and security signals, Exposure Management provides data connectors that ingest data from other security or asset management products deployed in your environment.
 This means you're able to seamlessly integrate with existing security solutions to:
@@ -27,21 +27,11 @@ Data Connectors in Microsoft Security Exposure Management is currently in public
 
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
+> **Note:** During the preview phase, use of the data connectors feature is free.
+
 ## Prerequisites
 
 The following prerequisites are required to integrate external data connecters to Microsoft Security Exposure Management.
-
-### Environmental requirements
-
-- Implemented Microsoft Security Exposure Management.
-- Supported external data sources to ingest data from these asset inventory or vulnerability management products:
-
-  - [ServiceNow CMDB](ServiceNow-data-connector.md)
-  - [Qualys VM](Qualys-data-connector.md)
-  - [Rapid7 VM](Rapid7-data-connector.md)
-  - [Tenable](Tenable-data-connector.md)
-  - Wiz (coming soon)
-  - Palo Alto (coming soon)
 
 ### Roles & permissions
 
@@ -52,6 +42,11 @@ For full access, you need one of the following Microsoft Entra ID roles:
 - Security Admin (read and write permissions)
 - Security Operator (read and limited write permissions)
 - Security Reader (read permissions)
+
+Support for URBAC (User Role-Based Access Control) is available in Exposure Management. The following roles are supported:
+
+-
+-  
 
 You can find more details about the permission levels here, [Prerequisites, and support](prerequisites.md).
 
