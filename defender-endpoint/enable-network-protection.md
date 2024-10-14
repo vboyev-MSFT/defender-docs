@@ -3,7 +3,7 @@ title: Turn on network protection
 description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 07/25/2024
+ms.date: 10/14/2024
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -43,27 +43,27 @@ search.appverid: met150
 
 ## Check if network protection is enabled
 
-Check to see if network protection is enabled on a local device by using Registry editor.
+You can use Registry Editor to check the status of network protection.
 
-1. Select the **Start** button in the task bar and type **regedit** to open Registry editor.
+1. Select the **Start** button in the task bar and type `regedit`. In the list of results, select Registry editor to open it.
 
 2. Choose **HKEY_LOCAL_MACHINE** from the side menu.
 
 3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Policy Manager**.
 
-If the Key is missing,  Navigate to **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
+   If the key is missing, navigate to **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
 
-   - 0, or **Off**
-   - 1, or **On**
-   - 2, or **Audit** mode
+   - **0**, or **Off**
+   - **1**, or **On**
+   - **2**, or **Audit** mode
 
-    :::image type="content" source="/defender/media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Network Protection registry key" lightbox="/defender/media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+   :::image type="content" source="/defender/media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Network Protection registry key" lightbox="/defender/media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## Enable network protection
 
-Enable network protection by using any of these methods:
+To enable network protection, you can use one of the following methods:
 
 - [PowerShell](#powershell)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
@@ -73,34 +73,27 @@ Enable network protection by using any of these methods:
 
 ### PowerShell
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
+1. On your Windows device, select Start, type `powershell`, right-click **Windows PowerShell** and select **Run as administrator**.
 
-1. Enter the following cmdlet:
+1. Run the following cmdlet:
 
-    ```PowerShell
+   ```PowerShell
    Set-MpPreference -EnableNetworkProtection Enabled
-    ```
-    
-1. Optional: Enable the feature in audit mode using the following cmdlet:
+   ```
 
-    ```PowerShell
+2. For Windows Server, run the following additional commands:
+
+   | Windows Server version | Commands |
+   |---|---|
+   | Windows Server 2022 and later | `set-mpPreference -AllowNetworkProtectionOnWinServer $true` |
+   | Windows Server 2016 <br/>Windows Server 2012 R2 | `set-MpPreference -AllowNetworkProtectionDownLevel $true` <br/>`set-MpPreference -AllowNetworkProtectionOnWinServer $true` |
+
+3. To set network protection to audit mode, use the following cmdlet:
+
+   ```PowerShell
    Set-MpPreference -EnableNetworkProtection AuditMode
-    ```
-    
-    To turn off the feature, use `Disabled` instead of `AuditMode` or `Enabled`.
-   
-   > [!TIP]
-   > For Windows Server 2012 R2, Windows Server 2016 the following settings must also be set to $true
-   > ```
-   > set-MpPreference -AllowNetworkProtectionDownLevel $true 
-   > ```
-   > set-MpPreference -AllowNetworkProtectionOnWinServer $true
-   > ```
-   > [!TIP]
-   > For Windows Server 2022 and above the following setting must also be set to $true
-   > ```powershell
-   > set-mpPreference -AllowNetworkProtectionOnWinServer $true
-   > ```
+   ```
+      
 ### Mobile device management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
