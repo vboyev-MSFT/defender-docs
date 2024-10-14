@@ -193,7 +193,7 @@ Consider these steps for your own incident response workflow:
 | As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.||
 | [Resolve](../manage-incidents.md#resolve-an-incident) the incident and document your findings. | Take time for post-incident learning to: <li>Understand the type of the attack and its impact.<li>Research the attack in [Threat Analytics](../threat-analytics.md) and the security community for a security attack trend.<li>Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.<li>Determine whether changes in your security configuration are needed and implement them. |
 
-If you're new to security analysis, see the [introduction to responding to your first incident](../ncidents-overview.md) for additional information and to step through an example incident.
+If you're new to security analysis, see the [introduction to responding to your first incident](../incidents-overview.md) for additional information and to step through an example incident.
 
 For more information about incident response across Microsoft products, see [this article](/security/operations/incident-response-overview).
 
