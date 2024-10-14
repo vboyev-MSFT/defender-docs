@@ -91,7 +91,9 @@ Enable network protection by using any of these methods:
    
 1. For Windows Server 2012R2, Windows Server 2016 the following setting must also be set to $true
 
+   ```powershell
    set-mpPreference -AllowNetworkProtectionDownLevel $true
+   ```
    
 1. For Windows Server 2022 and above the following setting must also be set to $true
 
