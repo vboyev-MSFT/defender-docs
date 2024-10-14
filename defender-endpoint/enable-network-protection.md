@@ -75,21 +75,30 @@ Enable network protection by using any of these methods:
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
-2. Enter the following cmdlet:
+1. Enter the following cmdlet:
 
     ```PowerShell
-    Set-MpPreference -EnableNetworkProtection Enabled
+   Set-MpPreference -EnableNetworkProtection Enabled
     ```
-
-3. Optional: Enable the feature in audit mode using the following cmdlet:
+    
+1. Optional: Enable the feature in audit mode using the following cmdlet:
 
     ```PowerShell
-    Set-MpPreference -EnableNetworkProtection AuditMode
+   Set-MpPreference -EnableNetworkProtection AuditMode
     ```
-
+    
     To turn off the feature, use `Disabled` instead of `AuditMode` or `Enabled`.
+   
+   > [!TIP]
+   > For Windows Server (Windows Server 2022 and above ) , youan extra setting
 
-### Mobile device management (MDM)
+```
+set-mpPreference -AllowNetworkProtectionOnWinServer $true
+```
+
+**Mobile device management (MDM)**
+
+Mobile device management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
@@ -231,6 +240,5 @@ Use the following procedure to enable network protection on domain-joined comput
 - [Evaluate network protection](evaluate-network-protection.md)
 
 - [Troubleshoot network protection](troubleshoot-np.md)
-
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
