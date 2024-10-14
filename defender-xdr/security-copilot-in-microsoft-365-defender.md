@@ -121,9 +121,9 @@ Ask Copilot to summarize the relevant threats impacting your environment, to pri
 
 To ensure that you have access to Copilot in Defender, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Copilot for Security, the key features become available in the Microsoft Defender portal.
 
-## Sample Copilot in Defender prompts
+## Sample prompts in Copilot
 
-In the Microsoft Defender portal, Copilot in Defender provides prompts to help you navigate and use some of the capabilities of Copilot. The prompts are designed to help you understand the capabilities of Copilot and how to use them effectively. Here are some examples of prompts you might see in the Microsoft Defender portal:
+In the Microsoft Defender portal, you can find sample prompts to help you navigate and use some Copilot capabilities. The prompts are designed to help you understand these capabilities and how to use them effectively. Here are some examples of prompts you might see in the portal:
 
 Advanced hunting prompts:
 
@@ -132,6 +132,13 @@ Advanced hunting prompts:
 Threat intelligence prompts:
 
 :::image type="content" source="/defender/media/copilot-in-defender/sample-prompt-threat-intel-small.png" alt-text="Screenshot highlighting the Copilot prompts in the threat intelligence page." lightbox="/defender/media/copilot-in-defender/sample-prompt-threat-intel.png":::
+
+You can extend your investigation in the Copilot for Security standalone portal using natural language prompts. The following are sample prompts that you can type in the prompt bar to help you summarize an incident with recommendations:
+
+- Type **Summarize incident {incident number} and conclude with a set of recommendations** to generate the incident summary and recommendations.
+- Type **What can you tell me about the reputation of the indicators in the script? Are they malicious? If so, why?** to analyze the script and generate details about the script.
+
+Prompting in Copilot helps you navigate and use the capabilities effectively. You can also use the prompt bar to generate KQL queries, summarize incidents, and analyze files. See tips to create effective prompts in [effective prompting](copilot/security/prompting-tips). You can also use prebuilt promptbooks to help you get started with Copilot. To learn more about promptbooks, see [promptbooks in Copilot](copilot/security/using-promptbooks).
 
 ## Provide feedback
 
