@@ -284,7 +284,10 @@ Android low touch onboarding is disabled by default. Admins can enable it throug
 
       > [!div class="mx-imgBorder"]
    > ![Screenshot showing a low touch onboarding configuration policy.](media/low-touch-user-upn.png)
-   
+
+> [!Note]
+> Once the policy is created, these value types will show as string.
+ 
 8. Assign the policy to the target user group.
 
 9. Review and create the policy.
