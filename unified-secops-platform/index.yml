@@ -1,1 +1,38 @@
-# Welcome to unified-secops-platform!
+### YamlMime:Landing
+
+title: Microsoft Unified SecOps platform # < 60 chars
+summary: Learn about Microsoft unified SecOps platform.
+
+metadata:
+  title: Microsoft Unified SecOps platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft unified SecOps platform. # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: defender-xdr
+  ms.topic: landing-page # Required
+  ms.collection: essentials-navigation
+  ms.custom: intro-hub-or-landing
+  author: v-garymoore #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-garymoore #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/13/2024
+  ms.localizationpriority: high
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Microsoft Sentinel
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Sentinel
+            url: 
+      - linkListType: whats-new
+        links:
+          - text: What's new in Microsoft unified SecOps platform
+            url: 
+      - linkListType: video
+        links:
+          - text: Overview video
+            url: 
