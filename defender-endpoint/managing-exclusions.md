@@ -29,7 +29,19 @@ Use the `Microsoft Defender Antivirus exclusions` [Endpoint security policy](/de
 
 ### Powershell
 
-Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Module](https://learn.microsoft.com/en-us/powershell/module/defender/?view=windowsserver2022-ps) 
+Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Module](/powershell/module/defender/?view=windowsserver2022-ps) 
+
+### Configuration Manager
+
+Use configuration manager to configure [antivirus exclusions](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus).
+
+### Group Policy Object (GPO)
+
+Use group policy to configure [antivirus exclusions.](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus)
+
+### Windows Management Instrumentation (WMI)
+
+Use WMI to configure [antivirus exclusions.](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus)
 
 ## Managing Exclusions for macOS
 
