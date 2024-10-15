@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 09/11/2024
+ms.date: 10/15/2024
 ---
 
 # Configure your data connectors
@@ -33,21 +33,24 @@ To establish a connection with any of the supported external products, follow th
 
 To ensure successful connections between your external products and our system, you may need to allowlist specific IP addresses. Follow these steps to allowlist IP addresses for your external products:
 
-1. **Identify the IP Addresses**:
-   - Obtain the list of IP addresses that need to be allowlisted. 
-2. **Access the External Product's Configuration Settings**:
-   - Log in to the external product's administration or configuration portal.
-   - Navigate to the section where you can manage network settings or security settings.
-3. **Add the IP Addresses to the Allowlist**:
-   - Locate the allowlist.
-   - Enter the IP addresses that you obtained in step 1.
-   - Save the changes to update the allowlist.
-4. **Verify the Connection**:
-   - After updating the allowlist, verify that the connection between the external product and our system is successful.
-   - Check for any error messages or connection issues and ensure that the allowlisted IP addresses are correctly configured.
-5. **Troubleshooting**:
-   - If you encounter any issues, double-check the IP addresses and ensure they are correctly entered.
-   - Refer to the external product's documentation for additional troubleshooting steps or contact their support team for assistance.
+1. Identify the IP addresses:
+   1. Obtain the list of IP addresses that need to be allowlisted. 
+2. Access the external product's configuration settings:
+   1. Log in to the external product's administration or configuration portal.
+   2. Navigate to the section where you can manage network settings or security settings.
+3. Add the IP addresses to the allowlist:
+   1. Locate the allowlist.
+   2. Enter the IP addresses that you obtained in step 1.
+   3. Save the changes to update the allowlist.
+4. Verify the connection:
+   1. After updating the allowlist, verify that the connection between the external product and our system is successful.
+   2. Check for any error messages or connection issues and ensure that the allowlisted IP addresses are correctly configured.
+5. Troubleshooting:
+   1. If you encounter any issues, double-check the IP addresses and ensure they are correctly entered.
+   2. Refer to the external product's documentation for additional troubleshooting steps or contact their support team for assistance.
+
+> **Note:** If you are restricting access to your target product based on IPs or IP ranges, ensure that your allowed IP list includes the source IPs used by Exposure Management to connect. Add the IPs listed under "Scuba" to your allow list from the following public IP ranges:  
+> [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 
 For specific instructions on allowlisting IP addresses for each external product, please refer to their respective documentation or support resources.
 
