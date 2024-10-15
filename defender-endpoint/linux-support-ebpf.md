@@ -2,8 +2,8 @@
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: deniseb
 ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 08/22/2024
+ms.date: 10/11/2024
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
@@ -24,9 +24,8 @@ ms.date: 08/22/2024
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 - 
 > [!NOTE]
 > Starting with Defender for Endpoint on Linux, version `101.2408.0000`, AuditD is no longer be supported as a supplementary event provider. For more information, see the FAQs at the end of this article.
@@ -62,6 +61,10 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
 | Oracle Linux UEK   | 7.9                  | 5.4            |
 | Amazon Linux 2     | 2                    | 5.4.261-174.360|
+| Rocky Linux 8      | 8.7                  | 4.18.0-425     |
+| Rocky Linux 9      | 9.2                  | 5.14.0-284     |
+| Alma Linux 8       | 8.4                  | 4.18.0-305     |
+| Alma Linux 9       | 9.2                  | 5.14.0-284     |
 
 > [!NOTE]
 > Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 will result in kernel hang when eBPF is enabled as supplementary subsystem provider. This kernel version should not be used for eBPF mode. Refer to Troubleshooting and Diagnostics section for mitigation steps.
@@ -153,7 +156,7 @@ The following two sets of data help analyze potential issues and determine the m
 
 #### Troubleshooting performance issues
 
-If you see increased resource consumption by Microsoft Defender on your endpoints, it's important to identify the process/mount-point/files that are causing most of the CPU/Memory utilization. You can then apply the necessary exclusions. After applying possible antivirusexclusions, if `wdavdaemon` (parent process) is still consuming the resources, use the ebpf-statistics command to get the top system call count:
+If you see increased resource consumption by Microsoft Defender on your endpoints, it's important to identify the process/mount-point/files that are causing most of the CPU/Memory utilization. You can then apply the necessary exclusions. After applying possible antivirus exclusions, if `wdavdaemon` (parent process) is still consuming the resources, use the ebpf-statistics command to get the top system call count:
 
 ```Bash
 sudo mdatp diagnostic  ebpf-statistics
@@ -198,7 +201,7 @@ The extended Berkeley Packet Filter (eBPF) for Microsoft Defender for Endpoint o
 
 - Resource Efficiency: eBPF uses fewer resources, which helps maintain system stability even under heavy load conditions.
 
-- Scalability: eBPF’s architecture is more scalable, making it a better choice for environments with growing or complex workloads.
+- Scalability: eBPF's architecture is more scalable, making it a better choice for environments with growing or complex workloads.
 
 - Modern Technology: eBPF represents a modern, forward-looking technology that aligns with future Linux kernel developments, ensuring better long-term support.
 

@@ -11,14 +11,15 @@ audience: ITPro
 ms.collection:
   - Tier1
   - security-copilot
+  - magic-ai-copilot
 ms.topic: conceptual
 ms.date: 12/04/2023
 ---
 
 # Microsoft Copilot for Security and Microsoft Defender Threat Intelligence
 
-> [!IMPORTANT]
-> On June 30, 2024, The Microsoft Defender Threat Intelligence (Defender TI) standalone portal (https://ti.defender.microsoft.com) will be retired and will no longer be accessible. Customers can continue using Defender TI in the [Microsoft Defender portal](https://aka.ms/mdti-intel-explorer) or with [Microsoft Copilot for Security](security-copilot-and-defender-threat-intelligence.md). [Learn more](https://aka.ms/mdti-standaloneportal)
+>[!IMPORTANT] 
+> On June 30, 2024, The Microsoft Defender Threat Intelligence (Defender TI) standalone portal (https://ti.defender.microsoft.com) was retired and is no longer accessible. Customers can continue using Defender TI in the [Microsoft Defender portal](https://aka.ms/mdti-intel-explorer) or with [Microsoft Copilot for Security](security-copilot-and-defender-threat-intelligence.md). [Learn more](https://aka.ms/mdti-standaloneportal)
 
 Microsoft Copilot for Security is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, read [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot).
 
@@ -52,14 +53,14 @@ This article introduces you to Copilot and includes sample prompts that can help
 
     ![Screenshot of the prompt bar in Microsoft Copilot for Security with the Sources icon highlighted.](media/defender-ti-and-copilot/copilot-prompts-bar-sources.png)
   
-  
-    In the **Manage sources** pop-up window that appears, under **Plugins**, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
+    In the **Manage sources** pop-up window that appears, under **Plugins**, confirm that the **Microsoft Threat Intelligence** toggle is turned on, then close the window.
 
-    ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](media/defender-ti-and-copilot/copilot-manage-plugins.png)
+    ![Screenshot of the Manage plugins pop-up window with the Microsoft Threat Intelligence plugin highlighted.](media/defender-ti-and-copilot/copilot-manage-plugins.png)
 
     > [!NOTE]
     > Some roles can turn the toggle on or off for plugins like Defender TI. For more information, read [Manage plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins).
-
+    
+    
 3. Enter your prompt in the prompt bar.
 
 ### Built-in system features

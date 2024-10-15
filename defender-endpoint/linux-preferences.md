@@ -3,10 +3,10 @@ title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer: gopkr, ardeshmukh
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 08/28/2024
+ms.date: 10/14/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -25,9 +25,8 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -63,6 +62,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
 - Real-time (`real_time`): Real-time protection (scan files as they're modified) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
+  - Definition updates occur only when a scan starts, even if `automaticDefinitionUpdateEnabled` is set to `true` in on-demand mode.
 - Passive (`passive`): Runs the antivirus engine in passive mode. In this case, all of the following apply:
   - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
   - On-demand scanning is turned on: Still use the scan capabilities on the endpoint.
@@ -220,9 +220,9 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 - Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
 - Muted (`mute`): Mount points marked as noexec aren't scanned as part of RTP, these mount point can be created for:
-  - Database files on Database servers for keeping data base files.
+  - Database files on Database servers for keeping database files.
   - File server can keep data files mountpoints with noexec option.
-  - Back up can keep data files mountpoints with noexec option.
+  - Backup can keep data files mountpoints with noexec option.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -384,9 +384,9 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 **Exlusion setting preferences are currently in preview**.
 
 > [!NOTE] 
-> Available in Defender for Endpoint version `101.23092.0012` or later till Insider Slow Ring.
+> Global exclusions are currently in public preview, and are available in Defender for Endpoint beginning with version `101.23092.0012` or later in the Insiders Slow and Production rings.
 
-The *exclusionSettings* section of the configuration profile is used to configure various exclusions for Microsoft Defender for Endpoint for Linux.
+The `exclusionSettings` section of the configuration profile is used to configure various exclusions for Microsoft Defender for Endpoint for Linux.
 
 |Description|JSON Value|
 |---|---|
@@ -627,6 +627,7 @@ Determines whether security intelligence updates are installed automatically:
 |**Data type**|Boolean|Drop down|
 |**Possible values**|`true` (default) <p>`false`|Not configured<br>Disabled<br>Enabled (Default)|
 
+Depending on the enforcement level, the automatic security intelligence updates are installed differently. In RTP mode, updates are installed periodically. In Passive/ On-Demand mode updates are installed before every scan.
 
 ### Advanced optional features
 
@@ -861,40 +862,15 @@ The following configuration profile contains entries for all settings described 
 
 ```JSON
 {
-   "antivirusEngine":{
-      "enforcementLevel":"real_time",
-      "behaviorMonitoring": "enabled",
+"antivirusEngine":{
+      "enforcementLevel":"passive",
+      "behaviorMonitoring": "disabled",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "scanHistoryMaximumItems": 10000,
       "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
-      "exclusions":[
-         {
-            "$type":"excludedPath",
-            "isDirectory":false,
-            "path":"/var/log/system.log<EXAMPLE DO NOT USE>"
-         },
-         {
-            "$type":"excludedPath",
-            "isDirectory":true,
-            "path":"/run<EXAMPLE DO NOT USE>"
-         },
-         {
-            "$type":"excludedPath",
-            "isDirectory":true,
-            "path":"/home/*/git<EXAMPLE DO NOT USE>"
-         },
-         {
-            "$type":"excludedFileExtension",
-            "extension":".pdf<EXAMPLE DO NOT USE>"
-         },
-         {
-            "$type":"excludedFileName",
-            "name":"cat<EXAMPLE DO NOT USE>"
-         }
-      ],
       "allowedThreats":[
          "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
       ],
@@ -904,6 +880,7 @@ The following configuration profile contains entries for all settings described 
       ],
       "nonExecMountPolicy":"unmute",
       "unmonitoredFilesystems": ["nfs,fuse"],
+      "enableFileHashComputation": false,
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {
@@ -914,14 +891,49 @@ The following configuration profile contains entries for all settings described 
             "key":"archive_bomb",
             "value":"audit"
          }
-      ]
+      ],
+      "scanFileModifyPermissions":false,
+      "scanFileModifyOwnership":false,
+      "scanNetworkSocketEvent":false,
+      "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/<EXAMPLE DO NOT USE>",
+      "offlineDefintionUpdateFallbackToCloud":false,
+      "offlineDefinitionUpdate":"disabled"
    },
    "cloudService":{
       "enabled":true,
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/",
+      "definitionUpdatesInterval":28800
+   },
+   "features":{
+      "moduleLoad":"disabled",
+      "supplementarySensorConfigurations":{
+        "enableFilePermissionEvents":"disabled",
+        "enableFileOwnershipEvents":"disabled",
+        "enableRawSocketEvent":"disabled",
+        "enableBootLoaderCalls":"disabled",
+        "enableProcessCalls":"disabled",
+        "enablePseudofsCalls":"diabled",
+        "enableEbpfModuleLoadEvents":"disabled",
+        "sendLowfiEvents":"disabled"
+      },
+      "ebpfSupplementaryEventProvider":"enabled",
+      "offlineDefinitionUpdateVerifySig": "disabled"
+   },
+   "networkProtection":{
+      "enforcementLevel":"disabled",
+      "disableIcmpInspection":true
+   },
+   "edr":{
+      "groupIds":"GroupIdExample",
+      "tags": [
+         {
+         "key": "GROUP",
+         "value": "Tag"
+         }
+       ]
    },
 "exclusionSettings":{
   "exclusions":[
