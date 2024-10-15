@@ -15,7 +15,7 @@ ms.custom: partner-contribution
 ms.topic: conceptual
 ms.subservice: android
 search.appverid: met150
-ms.date: 07/25/2024
+ms.date: 10/11/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
