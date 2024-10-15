@@ -114,13 +114,13 @@ You can create rules for specific devices, alert severities, and vulnerabilities
 
 #### Permissions and roles
 
-To manage roles, permissions, and device groups for endpoints, navigate to *Permissions* options under **Settings > Endpoints**. You can create and define role and assign permissions under *Roles* and create and organize devices into groups under *Device groups*.
+To manage roles, permissions, and device groups for endpoints, navigate to *Permissions* under **Settings > Endpoints**. You can create and define role and assign permissions under *Roles* and create and organize devices into groups under *Device groups*.
 
 Alternately, you can navigate to *Endpoints roles & groups* in the **System > Permissions** page.
 
 #### APIs and MSSP
 
-The Microsoft Defender XDR alerts API is the official API that enables customers to work with alerts across all Defender XDR products using a single integration. For more information, see [Migrate from the MDE SIEm API to the Microsoft Defender XDR alerts API](/defender-endpoint/configure-siem).
+The Microsoft Defender XDR alerts API is the official API that enables customers to work with alerts across all Defender XDR products using a single integration. For more information, see [Migrate from the MDE SIEM API to the Microsoft Defender XDR alerts API](/defender-endpoint/configure-siem).
 
 To authorize a managed security service provider (MSSP) to access receive alerts, you need to provide the application and tenant IDs of the MSSP. For more information, see [MSSP integration](/defender-endpoint/configure-mssp-support#mssp-integration).
 
@@ -131,7 +131,7 @@ You can create rules and policies to manage indicators, filter web content, mana
 - [Manage indicators](/defender-endpoint/indicator-manage)
 - [Manage automation uploads](/defender-endpoint/manage-automation-file-uploads)
 - [Manage automation folder exclusions](/defender-endpoint/manage-automation-folder-exclusions)
-- [Web content filtering](/defender-endpoint/web-content-filtering)
+- [Filter web content](/defender-endpoint/web-content-filtering)
 
 #### Configuration management
 
