@@ -73,13 +73,15 @@ You can submit files, email attachments, and URLs to Microsoft Defender for anal
 
 ### Assets
 
-The Assets page contains the [device inventory](/defender-endpoint/machines-view-overview) page, which lists all the devices in your organization where alerts were generated. You can view the details of the devices, including the IP address, criticality level, device category, and device type.
+The **Assets > Devices** page contains the [device inventory](/defender-endpoint/machines-view-overview), which lists all the devices in your organization where alerts were generated. You can view the details of the devices, including the IP address, criticality level, device category, and device type.
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/device-inventory-mde-small.png" alt-text="Screenshot of the Device inventory page in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/device-inventory-mde.png":::
 
 ### Endpoints
 
-The Endpoints page contain the [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) data, including device exposure, Secure Score for devices, top vulnerable software, and top exposed devices in your organization. This page offers recommendations to help you improve the security posture of your organization, remediation actions, and more.
+You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. 
+
+The device configuration dashboard is found in **Endpoints > Configuration management > Dashboard**. You can view device security, onboarding via Microsoft Intune and Microsoft Defender for Endpoint, web protection coverage, and attack surface management at a glance.
 
 Security administrators can deploy endpoint security policies to devices in your organization under **Endpoints > Configuration management > Endpoint security policies**. Know more about [endpoint security policies](/defender-endpoint/manage-security-policies).
 
