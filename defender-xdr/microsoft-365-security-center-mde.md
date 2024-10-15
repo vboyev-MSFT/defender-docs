@@ -65,6 +65,12 @@ The [Action center](m365d-action-center.md) shows you the investigations created
 
 You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](/defender-endpoint/admin-submissions-mde.md). You can also view the status of the submissions and the results of the analysis. Navigate to the submssions page under **Investigation & response > Actions & submissions > Submissions**.
 
+### Threat intelligence
+
+You can view emerging threats, new attack techniques, prevalent malware, and information about threat actors and campaigns in the **Threat intelligence** page. Access the [threat analytics](/defender-endpoint/threat-analytics) dashboard to view the latest threat intelligence and insights. You can also view read and understand how to protect from certain threats through the [analyst report](/defender-endpoint/threat-analytics-analyst-reports).
+
+Navigate to the threat analytics page under **Threat intelligence > Threat analytics**.
+
 ### Device inventory
 
 The **Assets > Devices** page contains the [device inventory](/defender-endpoint/machines-view-overview), which lists all the devices in your organization where alerts were generated. You can view the details of the devices, including the IP address, criticality level, device category, and device type.
