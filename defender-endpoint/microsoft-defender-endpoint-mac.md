@@ -60,7 +60,7 @@ To get the latest features, including preview capabilities (such as endpoint det
 There are several methods and deployment tools that you can use to install and configure Defender for Endpoint on Mac.
 
 - [Microsoft Intune-based deployment](mac-install-with-intune.md)
-- Third-party management tools:
+- Non-Microsoft management tools:
     - [JAMF-based deployment](mac-install-with-jamf.md)
     - [Other MDM products](mac-install-with-other-mdm.md)
 - Command-line tool: [Manual deployment](mac-install-manually.md)
