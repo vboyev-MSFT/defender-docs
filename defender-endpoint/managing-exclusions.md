@@ -21,7 +21,11 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ### Defender Portal
 
-Use the `Microsoft Defender Antivirus exclusions` [Endpoint security policy](https://learn.microsoft.com/en-us/defender-endpoint/manage-security-policies?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fbreadcrumb%2Ftoc.json#create-an-endpoint-security-policy) to manage defender antivirus exclusions
+Use the `Microsoft Defender Antivirus exclusions` [Endpoint security policy](/defender-endpoint/manage-security-policies?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fbreadcrumb%2Ftoc.json) to manage defender antivirus exclusions
+
+### Intune
+
+[Create new exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#create-a-new-antivirus-policy-with-exclusions-in-intune) or [manage existing exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#manage-antivirus-exclusions-in-intune-for-existing-policies) from Intune.
 
 ### Powershell
 
