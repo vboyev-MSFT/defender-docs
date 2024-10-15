@@ -29,6 +29,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+
+## October 2024
+
+- (Preview) Microsoft Defender portal users can now use the *arg()* function to query Azure resources in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#preview-use-arg-function). You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator.
+
 ## September 2024
 
 - (GA) The global search for entities in the Microsoft Defender portal is now generally available. The enhanced search results page centralizes the results from all entities. For more information, see [Global search in the Microsoft Defender portal](microsoft-365-defender-portal.md#global-search).

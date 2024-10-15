@@ -40,6 +40,8 @@ For editable functions, more options are available when you select the vertical 
 - **Edit details** – opens the function side pane to allow you to edit details about the function (except folder names for Sentinel functions)
 - **Delete** – deletes the function
 
+## (Preview) Use arg() function
+Preview customers can use the *arg()* operator to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. Read [Create alerts with Azure REsource Graph and Log Analytics](/azure/governance/resource-graph/alerts-query-quickstart?tabs=azure-resource-graph) for more details.
 
 ## Use saved queries
 
