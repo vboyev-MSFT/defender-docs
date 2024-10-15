@@ -39,12 +39,6 @@ To use Microsoft Defender for Endpoint in the Microsoft Defender portal, you nee
 
 ## What to expect
 
-### Exposure management
-
-The Exposure management page shows you the devices in your organization that are exposed to threats. You can view onboarded and discovered devices, devices with critical and high vulnerabilities, attack surface map data for devices, critical assets, and more. You can also view the Microsoft Secure score for your organization, which is a measure of the security posture of your organization.
-
-Data presented in the Exposure management page is delivered by Microsoft Security Exposure Management. For more information, see [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management).
-
 ### Investigation and response
 
 Investigation and response capabilities in the Microsoft Defender portal help you investigate and respond to incidents and alerts. Incidents are groups of alerts that are related to each other.
