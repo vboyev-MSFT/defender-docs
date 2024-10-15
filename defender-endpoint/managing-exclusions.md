@@ -19,6 +19,10 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Managing Exclusions for Windows
 
+### Defender Portal
+
+Use the `Microsoft Defender Antivirus exclusions` [Endpoint security policy](https://learn.microsoft.com/en-us/defender-endpoint/manage-security-policies?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fbreadcrumb%2Ftoc.json#create-an-endpoint-security-policy) to manage defender antivirus exclusions
+
 ### Powershell
 
 Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Module](https://learn.microsoft.com/en-us/powershell/module/defender/?view=windowsserver2022-ps) 
