@@ -351,6 +351,9 @@
               href: machine-tags.md
         - name: Rules and Exclusions
           items:
+          - name: Managing Exclusions
+            href: managing-exclusions.md
+            displayName: exclusions
           - name: Exclusions overview
             href: navigate-defender-endpoint-antivirus-exclusions.md
           - name: Using submissions, suppressions and exclusions
