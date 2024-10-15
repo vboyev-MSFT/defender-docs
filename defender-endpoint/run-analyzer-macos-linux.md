@@ -22,6 +22,7 @@ search.appverid: met150
 # Run the client analyzer on macOS and Linux
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
@@ -46,15 +47,16 @@ If you're using a terminal, download the tool by entering the following command:
 
    > [!NOTE]
    > The current SHA256 hash of `XMDEClientAnalyzerBinary.zip` that is downloaded from this link is: `4E972F7950EA475A21735042484CD00CED6EA70ED9CBB48B4C9405FFD2706DFA`.
+ 
    - Linux
 
-       ```console
+    ```console
     echo '4E972F7950EA475A21735042484CD00CED6EA70ED9CBB48B4C9405FFD2706DFA XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
    - macOS
 
-       ```console
+    ```console
     echo '4E972F7950EA475A21735042484CD00CED6EA70ED9CBB48B4C9405FFD2706DFA  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
     ```
 
@@ -103,17 +105,14 @@ If you're using a terminal, download the tool by entering the following command:
 ## Running the Python-based client analyzer
 
 > [!NOTE]
->
-> - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
->
->   >[!WARNING]
->   >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
+> - The analyzer depends on few extra PIP packages (decorator, sh, distro, lxml, psutil) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
-> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
-.
->   `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+
+> [!WARNING]
+> Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
