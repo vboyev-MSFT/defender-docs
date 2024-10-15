@@ -19,6 +19,10 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Managing Exclusions for Windows
 
+### Powershell
+
+Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Module](https://learn.microsoft.com/en-us/powershell/module/defender/?view=windowsserver2022-ps) 
+
 ## Managing Exclusions for macOS
 
 ## Managing Exclusions for Linux
