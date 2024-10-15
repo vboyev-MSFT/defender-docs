@@ -63,13 +63,13 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 [Custom detection rules](custom-detection-rules.md) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
 
-#### Actions and submissions
+#### Action center and submissions
 
-The [Action center](m365d-action-center.md) shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in the Microsoft Defender portal can help security teams by automatically responding to specific events. You can view actions applied to devices, the status of the actions, and approve or reject the automated actions.
+The [Action center](m365d-action-center.md) shows you the investigations created by automated investigation and response capabilities. This automated self-healing in the Microsoft Defender portal can help security teams by automatically responding to specific events. You can view actions applied to devices, the status of the actions, and approve or reject the automated actions. Navigate to the Action center page under **Investigation & response > Actions & submissions > Action center**.
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/action-center-mde-small.png" alt-text="Screenshot of the Action center in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/action-center-mde.png":::
 
-You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](submission-guide.md). You can also view the status of the submissions and the results of the analysis.
+You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](/defender-endpoint/admin-submissions-mde.md). You can also view the status of the submissions and the results of the analysis. Navigate to the submssions page under **Investigation & response > Actions & submissions > Submissions**.
 
 ### Device inventory
 
@@ -77,7 +77,7 @@ The **Assets > Devices** page contains the [device inventory](/defender-endpoint
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/device-inventory-mde-small.png" alt-text="Screenshot of the Device inventory page in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/device-inventory-mde.png":::
 
-### Microsoft Defender for Vulnerability Management and configuration management
+### Microsoft Defender for Vulnerability Management and endpoint configuration management
 
 You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. Defender for Vulnerability Management helps you discover, prioritize, and remediate vulnerabilities in your network. Know more about [prerequisites and permissions](/defender-vulnerability-management/tvm-prerequisites) and how to [onboard devices to Defender Vulnerability Management](/defender-vulnerability-management/mdvm-onboard-devices.md).
 
@@ -118,7 +118,7 @@ To manage roles, permissions, and device groups for endpoints, navigate to *Perm
 
 Alternately, you can navigate to *Endpoints roles & groups* in the **System > Permissions** page.
 
-#### APIs and MSSP
+#### APIs and MSSPs
 
 The Microsoft Defender XDR alerts API is the official API that enables customers to work with alerts across all Defender XDR products using a single integration. For more information, see [Migrate from the MDE SIEM API to the Microsoft Defender XDR alerts API](/defender-endpoint/configure-siem).
 
@@ -133,7 +133,7 @@ You can create rules and policies to manage indicators, filter web content, mana
 - [Manage automation folder exclusions](/defender-endpoint/manage-automation-folder-exclusions)
 - [Filter web content](/defender-endpoint/web-content-filtering)
 
-#### Configuration management
+#### Security setting management
 
 In **Settings > Endpoints > Configuration management > Enforcement scope**, you can allow Microsoft Intune security settings to be enforced by Microsoft Defender for Endpoint. For more information, see [Use Microsoft Intune to configure and manage Microsoft Defender Antivirus](/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus).
 
