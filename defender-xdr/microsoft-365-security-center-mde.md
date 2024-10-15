@@ -101,7 +101,7 @@ In the **Settings > Device discovery** page, you can configure device discovery 
 
 #### Endpoint settings
 
-Navigate to the **Settings > Endpoints** page to configure settings for Microsoft Defender for Endpoint, including advanced features, email notifications, permissions, and more.
+Navigate to the **Settings > Endpoints** page to configure settings for Microsoft Defender for Endpoint, including [advanced features](/defender-endpoint/advanced-features.md), email notifications, permissions, and more.
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/settings-mde-small.png" alt-text="Screenshot of the Settings page in the Microsoft Defender portal where endpoint settings are highlighted." lightbox="/defender/media/portal/mde-in-portal/settings-mde.png":::
 
