@@ -30,16 +30,15 @@ The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint he
 
 There are two ways to run the client analyzer tool:
 
-1. Using a binary version (no Python dependency)
+1. Using a binary version (no external Python dependency)
 2. Using a Python-based solution
-
 
 ## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
 If you're using a terminal, download the tool by entering the following command:
 
-    ```console
+    ```bash
     wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
     ```
 
@@ -50,13 +49,13 @@ If you're using a terminal, download the tool by entering the following command:
  
    - Linux
 
-    ```console
+    ```bash
     echo '4E972F7950EA475A21735042484CD00CED6EA70ED9CBB48B4C9405FFD2706DFA XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
    - macOS
 
-    ```console
+    ```bash
     echo '4E972F7950EA475A21735042484CD00CED6EA70ED9CBB48B4C9405FFD2706DFA  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
     ```
 
@@ -65,13 +64,13 @@ If you're using a terminal, download the tool by entering the following command:
 
     If you're using a terminal, extract the files by entering the following command:
 
-    ```console
+    ```bash
     unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
     ```
 
 4. Change to the tool's directory by entering the following command:
 
-    ```console
+    ```bash
     cd XMDEClientAnalyzerBinary
     ```
 
@@ -86,19 +85,19 @@ If you're using a terminal, download the tool by entering the following command:
 
    - Linux
 
-     ```console
+     ```bash
      unzip -q SupportToolLinuxBinary.zip
      ```
 
    - Mac
 
-     ```console
+     ```bash
      unzip -q SupportToolMacOSBinary.zip
      ```
 
 7. Run the tool as _root_ to generate diagnostic package:
 
-   ```console
+   ```bash
    sudo ./MDESupportTool -d
    ```
 
@@ -106,9 +105,7 @@ If you're using a terminal, download the tool by entering the following command:
 
 > [!NOTE]
 > - The analyzer depends on few extra PIP packages (decorator, sh, distro, lxml, psutil) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
->
 > - In addition, the tool currently requires Python version 3 or later to be installed.
->
 > - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 > [!WARNING]
@@ -118,7 +115,7 @@ If you're using a terminal, download the tool by entering the following command:
 
     If you're using a terminal, download the tool by running the following command:
 
-    ```console
+    ```bash
     wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
     ```
 
@@ -126,44 +123,44 @@ If you're using a terminal, download the tool by entering the following command:
 
    - Linux
 
-    ```console
+    ```bash
     echo 'E1C3D20516C849D8CD27257BB6084FBC2991B8F6214BF9121BB9B1446F95BB1F XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
    - macOS
 
-    ```console
+    ```bash
     echo 'E1C3D20516C849D8CD27257BB6084FBC2991B8F6214BF9121BB9B1446F95BB1F  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.
     If you're using a terminal, extract the files by using the following command:
 
-    ```console
+    ```bash
     unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
     ```
 
 4. Change directory to the extracted location.
 
-    ```console
+    ```bash
     cd XMDEClientAnalyzer
     ```
 
 5. Give the tool executable permission:
 
-    ```console
+    ```bash
     chmod a+x mde_support_tool.sh
     ```
 
 6. Run as a non-root user to install required dependencies:
 
-    ```console
+    ```bash
     ./mde_support_tool.sh
     ```
 
 7. To collect actual diagnostic package and generate the result archive file, run again as root:
 
-    ```console
+    ```bash
     sudo ./mde_support_tool.sh -d
     ```
 
