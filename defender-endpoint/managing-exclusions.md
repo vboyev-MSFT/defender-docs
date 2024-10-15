@@ -19,9 +19,13 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Managing Exclusions for Windows
 
-### Defender Portal
+### Endpoint Security Policy
 
-Use the `Microsoft Defender Antivirus exclusions` [Endpoint security policy](/defender-endpoint/manage-security-policies?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fbreadcrumb%2Ftoc.json) to manage defender antivirus exclusions
+|Exclusion Type | Reference |
+| -------- | -------- |
+| Antivirus exclusions   | `Microsoft Defender Antivirus exclusions` [Endpoint security policy](/defender-endpoint/manage-security-policies?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fbreadcrumb%2Ftoc.json)   |
+| Attack Surface Reduction rule exclusions   | `Attack Surface Reduction` [Endpoint security policy](/defender-endpoint/enable-attack-surface-reduction#endpoint-security-policy) |
+
 
 ### Intune
 
