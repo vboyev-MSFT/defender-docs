@@ -8,7 +8,7 @@ f1.keywords:
 ms.author: dansimp
 author: diannegali
 manager: deniseb
-ms.date: 10/14/2024
+ms.date: 10/17/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -65,7 +65,7 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 The [Action center](m365d-action-center.md) shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in the Microsoft Defender portal can help security teams by automatically responding to specific events. You can view actions applied to devices, the status of the actions, and approve or reject the automated actions.
 
-You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](m365d-submission-portal.md). You can also view the status of the submissions and the results of the analysis.
+You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](submission-guide.md). You can also view the status of the submissions and the results of the analysis.
 
 ### Assets
 
@@ -81,6 +81,10 @@ Security administrators can deploy endpoint security policies to devices in your
 
 You can view device health, vulnerable devices, monthly security summary, web protection, firewall, device control, and attack surface reduction rules reports in the **Reports** page.
 
+### Device discovery
+
+In the **Settings > Device discovery** page, you can configure device discovery settings, including the discovery method, exclusions, enabling Enterprise IOT (access dependent), and configure authenticated scan schedules. For more information, see [Device discovery](/defender-endpoint/device-discovery).
+
 ### General settings
 
 Navigate to the **Settings > Endpoints** page to configure settings for Microsoft Defender for Endpoint, including advanced features, email notifications, permissions, and more.
@@ -90,7 +94,7 @@ Navigate to the **Settings > Endpoints** page to configure settings for Microsof
 You can create rules for specific devices, alert severities, and vulnerabilities to send email notifications to specific users or groups. For more information, see the following information:
 
 - [Configure email notifications for alerts](configure-email-notifications.md)
-- [Configure email notifications for vulnerabilities](/defender-endpoint/configure-vulnerability-email-notifications.md)
+- [Configure email notifications for vulnerabilities](/defender-endpoint/configure-vulnerability-email-notifications)
 
 #### Permissions and roles
 
@@ -109,12 +113,16 @@ To authorize a managed security service provider (MSSP) to access receive alerts
 You can create rules and policies to manage indicators, filter web content, manage automation uploads and automation folder exclusions, and more. To create these rules, navigate to *Rules* under **Settings > Endpoints**. More information on managing these rules can be found in the following links:
 
 - [Manage indicators](/defender-endpoint/indicator-manage)
-- [Manage automation uploads](/defender-endpoint/manage-automation-file-uploads.md)
-- [Manage automation folder exclusions](/defender-endpoint/manage-automation-folder-exclusions.md)
+- [Manage automation uploads](/defender-endpoint/manage-automation-file-uploads)
+- [Manage automation folder exclusions](/defender-endpoint/manage-automation-folder-exclusions)
 - [Web content filtering](/defender-endpoint/web-content-filtering)
 
 #### Configuration management
 
-In **Settings > Endpoints > Configuration management > Enforcement scope**, you can  allow Microsoft Intune security settings to be enforced by Microsoft Defender for Endpoint. For more information, see [Use Microsoft Intune to configure and manage Microsoft Defender Antivirus](/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus.md).
+In **Settings > Endpoints > Configuration management > Enforcement scope**, you can allow Microsoft Intune security settings to be enforced by Microsoft Defender for Endpoint. For more information, see [Use Microsoft Intune to configure and manage Microsoft Defender Antivirus](/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus).
+
+#### Device management
+
+You can onboard or offboard devices and run a device detection test in the **Settings > Endpoints > Device management** page. See [Onboard to Microsoft Defender for Endpoint](/defender-endpoint/onboarding) to know the steps to onboard devices. To offboard devices, see [Offboard devices](/defender-endpoint/offboard-machines).
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
