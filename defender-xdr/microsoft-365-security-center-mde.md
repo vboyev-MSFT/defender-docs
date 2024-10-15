@@ -71,13 +71,13 @@ The [Action center](m365d-action-center.md) shows you the investigations created
 
 You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](submission-guide.md). You can also view the status of the submissions and the results of the analysis.
 
-### Assets
+### Device inventory
 
 The **Assets > Devices** page contains the [device inventory](/defender-endpoint/machines-view-overview), which lists all the devices in your organization where alerts were generated. You can view the details of the devices, including the IP address, criticality level, device category, and device type.
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/device-inventory-mde-small.png" alt-text="Screenshot of the Device inventory page in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/device-inventory-mde.png":::
 
-### Endpoints
+### Microsoft Defender for Vulnerability Management and configuration management
 
 You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. Defender for Vulnerability Management helps you discover, prioritize, and remediate vulnerabilities in your network. Know more about [prerequisites and permissions](/defender-vulnerability-management/tvm-prerequisites) and how to [onboard devices to Defender Vulnerability Management](/defender-vulnerability-management/mdvm-onboard-devices.md).
 
@@ -91,13 +91,15 @@ You can view device health, vulnerable devices, monthly security summary, web pr
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/reports-mde-small.png" alt-text="Screenshot of the Reports page highlighting the endpoint-related reports in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/reports-mde.png":::
 
-### Device discovery
+### General settings
+
+#### Device discovery
 
 In the **Settings > Device discovery** page, you can configure device discovery settings, including the discovery method, exclusions, enabling Enterprise IOT (access dependent), and configure authenticated scan schedules. For more information, see [Device discovery](/defender-endpoint/device-discovery).
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/device-discovery-mde-small.png" alt-text="Screenshot of the Device discovery page in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/device-discovery-mde.png":::
 
-### General settings
+#### Endpoint settings
 
 Navigate to the **Settings > Endpoints** page to configure settings for Microsoft Defender for Endpoint, including advanced features, email notifications, permissions, and more.
 
