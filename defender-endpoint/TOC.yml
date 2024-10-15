@@ -351,9 +351,6 @@
               href: machine-tags.md
         - name: Rules and Exclusions
           items:
-          - name: Managing Exclusions
-            href: managing-exclusions.md
-            displayName: exclusions
           - name: Exclusions overview
             href: navigate-defender-endpoint-antivirus-exclusions.md
           - name: Using submissions, suppressions and exclusions
@@ -394,6 +391,10 @@
 
       - name: Safeguard and manage your environment 
         items:
+
+          - name: Managing Exclusions
+            href: managing-exclusions.md
+            displayName: exclusions
           - name: Safe deployment practices
             href: mde-sdp-strategy.md
 

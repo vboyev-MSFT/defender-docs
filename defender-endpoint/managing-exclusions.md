@@ -13,4 +13,13 @@ ms.topic:    # Add the ms.topic value
 ms.date:     10/15/2024
 ---
 
-Managing Exclusions
+# Managing Exclusions
+
+Each version of Defender for Endpoint provides management of exclusions via the supported management tools.  
+
+## Managing Exclusions for Windows
+
+## Managing Exclusions for macOS
+
+## Managing Exclusions for Linux
+
