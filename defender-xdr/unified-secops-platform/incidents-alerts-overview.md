@@ -26,11 +26,11 @@ appliesto:
 
 # Incidents and alerts in the Microsoft Defender portal: an overview
 
-In the Microsoft Defender portal, ***alerts*** are signals from a collection of sources that result from various threat detection activities. These signals indicate the occurrence of malicious or suspicious events in your environment. While you can investigate and mitigate alerts by themselves, they can more often be part of a broader, complex attack story. Microsoft Defender aggregates and correlates related alerts together to form ***incidents*** that represent these attack stories.
+In the Microsoft Defender portal, ***alerts*** are signals from a collection of sources that result from various threat detection activities. These signals indicate the occurrence of malicious or suspicious events in your environment. While you can investigate and mitigate the threats that alerts bring to your attention, by themselves these threats are isolated occurrences that don't tell you anything about a broader, complex attack story. You could search for, research, investigate, and correlate groups of alerts that belong together in a single attack story, but that will cost you lots of time, effort, and energy. Instead, Microsoft's unified security operations platform in the Defender portal aggregates and correlates related alerts together to form ***incidents*** that represent these attack stories.
 
-***Incidents*** tell the full story of an attack and provide the complete picture. The correlation engines and algorithms in the Microsoft Defender portal automatically correlate signals (alerts) from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents.
+***Incidents*** tell the full story of an attack and provide the complete picture. The correlation engines and algorithms in the Microsoft Defender portal automatically correlate signals (alerts) from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents. Incidents contain all the alerts deemed to be related to each other and to the overall attack story, and present the story in various forms: a timeline of alerts; lists of all the involved and impacted users, devices, and other resources; a visual representation of how all the players in the story interact, 
 
-Incidents also function as "case files," providing you a platform for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](../incidents-overview.md).
+Incidents also function as "case files," providing you with a unified security operations platform for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](../incidents-overview.md).
 
 [!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
@@ -40,7 +40,7 @@ Here is a summary of the main attributes of incidents and alerts, and the differ
 
 - Are the main "unit of measure" of the work of the Security Operations Center (SOC).
 - Display the broader context of an attack&mdash;the **attack story**.
-- Represent "case files" of all the information needed to investigate the threat and the findings of the investigation.
+- Represent "case files" containing all the information needed to investigate the threat and the findings of the investigation.
 - Are created by Microsoft Defender XDR to contain at least one alert, and in many cases, to contain many alerts.
 - Trigger automatic series of responses to the threat, using [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules?tabs=onboarded), [attack disruption](../automatic-attack-disruption.md), and [playbooks](/azure/sentinel/automation/automate-responses-with-playbooks).
 - Record all activity related to the threat and its investigation and resolution.
