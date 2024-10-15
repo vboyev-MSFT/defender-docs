@@ -79,7 +79,7 @@ The **Assets > Devices** page contains the [device inventory](/defender-endpoint
 
 ### Endpoints
 
-You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. 
+You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. Defender for Vulnerability Management helps you discover, prioritize, and remediate vulnerabilities in your network. Know more about [prerequisites and permissions](/defender-vulnerability-management/tvm-prerequisites) and how to [onboard devices to Defender Vulnerability Management](/defender-vulnerability-management/mdvm-onboard-devices.md).
 
 The device configuration dashboard is found in **Endpoints > Configuration management > Dashboard**. You can view device security, onboarding via Microsoft Intune and Microsoft Defender for Endpoint, web protection coverage, and attack surface management at a glance.
 
