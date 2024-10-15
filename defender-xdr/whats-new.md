@@ -32,7 +32,7 @@ You can also get product updates and important notifications through the [messag
 
 ## October 2024
 
-- (Preview) Microsoft Defender portal users can now use the *arg()* function to query Azure resources in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#preview-use-arg-function). You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator.
+- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#preview-use-arg-function), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## September 2024
 

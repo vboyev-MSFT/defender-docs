@@ -40,8 +40,28 @@ For editable functions, more options are available when you select the vertical 
 - **Edit details** – opens the function side pane to allow you to edit details about the function (except folder names for Sentinel functions)
 - **Delete** – deletes the function
 
-## (Preview) Use arg() function
-Preview customers can use the *arg()* operator to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. Read [Create alerts with Azure REsource Graph and Log Analytics](/azure/governance/resource-graph/alerts-query-quickstart?tabs=azure-resource-graph) for more details.
+### Use arg() operator for Azure Resource Graph queries (Preview)
+Preview customers can use the *arg()* operator to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. Read [Create alerts with Azure Resource Graph and Log Analytics](/azure/governance/resource-graph/alerts-query-quickstart?tabs=azure-resource-graph) for more details.
+
+In the query editor, enter *arg("").* followed by the Azure Resource Graph table name. 
+
+```Kusto
+arg("").<Azure-Resource-Graph-table-name>
+```
+
+You can then, for instance, filter a query that searches over Microsoft Sentinel data based on the results of an Azure Resource Graph query:
+
+```Kusto
+arg("").Resources 
+| where type == "microsoft.compute/virtualmachines" and properties.hardwareProfile.vmSize startswith "Standard_D"
+| join (
+    Heartbeat
+    | where TimeGenerated > ago(1d)
+    | distinct Computer
+    )
+    on $left.name == $right.Computer
+```
+
 
 ## Use saved queries
 
