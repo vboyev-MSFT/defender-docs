@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2024
+ms.date: 04/22/2024
 ---
 
 # Understand the advanced hunting schema
