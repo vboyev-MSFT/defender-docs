@@ -33,7 +33,7 @@ Microsoft Defender for Endpoint utilizes the [Antimalware Scan Interface (AMSI)]
 
 - Windows 10 or newer
 - Windows Server 2016, or newer
-- Microsoft Defender Antivirus (as primary) and these need to be enabled:
+- Microsoft Defender Antivirus (as primary) and these capabilities need to be enabled:
   - Real-Time Protection (RTP) 
   - Behavior Monitoring (BM)  
   - Turn on script scanning
@@ -73,7 +73,7 @@ In this demonstration page, you have three engine choices to test AMSI:
 
    The result should be as follows:
 
-   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png" alt-text="Screenshot showing the AMSI test results. It should show that the script was blocked by antivirus software." lightbox="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png":::
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png" alt-text="Screenshot showing the AMSI test results. It should show that antivirus software blocked the script." lightbox="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png":::
 
    
 ### Verifying the test results
