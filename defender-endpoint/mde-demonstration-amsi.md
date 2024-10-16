@@ -73,63 +73,14 @@ In this demonstration page, you have three engine choices to test AMSI:
 
    The result should be as follows:
 
-   ```console
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png" alt-text="Screenshot showing the AMSI test results. It should show that the script was blocked by antivirus software.":::
 
-   Windows Script Host
-
-   Script: C:\Users\Admin\Desktop\AMSI_vbscript.vbs
-
-   Line: 3
-
-   Char: 1
-
-   Error: This script contains malicious content and has been blocked by your antivirus software.: 'eval'
-
-   Code: 800A802D
-
-   Source: Microsoft VBScript runtime error
-
-   ```
-
+   
 ### Verifying the test results
 
 In your protection history, you should be able to see the following information:
 
-```console
-
-Threat blocked
-
-Detected: Virus: Win32/MpTest!amsi
-
-Status: Cleaned
-
-This threat or app was cleaned or quarantined before it became active on your device.
-
-Details: This program is dangerous and replicates by infecting other files.
-
-Affected items:
-
-amsi: \Device\HarddiskVolume3\Windows\System32\WindowsPowershell\v1.0\powershell.exe or amsi: C:\Users\Admin\Desktop\AMSI_vbscript.vbs
-
-```
-
-You might also see the following information:
-
-```console
-
-Threat blocked
-
-Detected: Virus: Win32/MpTest!amsi
-
-Status: Cleaned
-
-This threat or app was cleaned or quarantined before it became active on your device.
-
-Details: This program is dangerous and replicates by infecting other files
-
-Affected items:
-
-```
+:::image type="content" source="media/mde-demonstrations-amsi/verifying-results.png" alt-text="Screenshot showing the AMSI test results. The information should show that a threat was blocked and cleaned.":::
 
 ### Get the list of Microsoft Defender Antivirus threats
 
@@ -143,37 +94,7 @@ You can view detected threats by using the Event log or PowerShell.
 
 3. Look for `event ID 1116`. You should see the following information:
 
-   ```console
-
-   Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
-
-   For more information please see the following: https://go.microsoft.com/fwlink/?linkid=37020&name=Virus:Win32/MpTest!amsi&threatid=2147694217&enterprise=0
-
-   Name: Virus:Win32/MpTest!amsi
-
-   ID: 2147694217
-
-   Severity: Severe
-
-   Category: Virus
-
-   Path: _\Device\HarddiskVolume3\Windows\System32\WindowsPowerShell\v1.0\powershell.exe or _C:\Users\Admin\Desktop\AMSI_jscript.js;   file: _C:\Users\Admin\Desktop\AMSI_jscript.js->[Eval] or _C:\Users\Admin\Desktop\AMSI_vbscript.vbs
-
-   Detection Origin: Local machine or Unknown
-
-   Detection Type: Concrete
-
-   Detection Source: System
-
-   User: NT AUTHORITY\SYSTEM
-
-   Process Name: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe or C:\Windows\System32\cscript.exe or C:\Windows\System32\wscript.exe or Unknown 
-
-   Security intelligence Version: AV: 1.419.221.0, AS: 1.419.221.0, NIS: 1.419.221.0
-
-   Engine Version: AM: 1.1.24080.9, NIS: 1.1.24080.9
-
-   ```
+   :::image type="content" source="media/mde-demonstrations-amsi/eventid1116.png" alt-text="Screenshot showing Event ID 1116, which says malware or unwanted software was detected.":::
 
 ##### Use PowerShell
 
