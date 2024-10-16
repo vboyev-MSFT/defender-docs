@@ -16,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 04/22/2024
 ---
 
 # Learn the advanced hunting query language

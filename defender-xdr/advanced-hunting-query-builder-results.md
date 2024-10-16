@@ -15,7 +15,7 @@ ms.collection:
   - m365-security
   - tier2
 ms.topic: conceptual
-ms.date: 08/11/2023
+ms.date: 04/22/2024
 ---
 
 # Work with query results in guided mode
