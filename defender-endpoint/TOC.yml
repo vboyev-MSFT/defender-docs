@@ -61,7 +61,7 @@
 
   - name: Microsoft Defender for Endpoint demonstrations and evaluation
     items:
-    - name: Evaluation overview
+    - name: Evaluate Microsoft Defender Antivirus
       href: evaluate-microsoft-defender-antivirus.md
       items:
       - name: Evaluate Microsoft Defender Antivirus using PowerShell
