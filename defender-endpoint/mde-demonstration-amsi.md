@@ -98,11 +98,13 @@ You can view detected threats by using the Event log or PowerShell.
 
 ##### Use PowerShell
 
-Open PowerShell, and then type the following command: `Get-MpThreat`.
+1. On your device, open PowerShell.
 
-You might see the following results:
+2. Type the following command: `Get-MpThreat`.
 
-:::image type="content" source="media/mde-demonstrations-amsi/get-mpthreat-results.png" alt-text="Screenshot showing the results of the Get-MpThreat command. It should show that an AMSI threat was detected." lightbox="media/mde-demonstrations-amsi/get-mpthreat-results.png":::
+   You might see the following results:
+
+   :::image type="content" source="media/mde-demonstrations-amsi/get-mpthreat-results.png" alt-text="Screenshot showing the results of the Get-MpThreat command. It should show that an AMSI threat was detected." lightbox="media/mde-demonstrations-amsi/get-mpthreat-results.png":::
 
 
 ## See also
