@@ -102,31 +102,8 @@ Open PowerShell, and then type the following command: `Get-MpThreat`.
 
 You might see the following results:
 
-```console
+:::image type="content" source="media/mde-demonstrations-amsi/get-mpthreat-results.png" alt-text="Screenshot showing the results of the Get-MpThreat command. It should show that an AMSI threat was detected.":::
 
-CategoryID       : 42
-
-DidThreatExecute : True
-
-IsActive         : True
-
-Resources        :
-
-RollupStatus     : 97
-
-SchemaVersion    : 1.0.0.0
-
-SeverityID       : 5
-
-ThreatID         : 2147694217
-
-ThreatName       : Virus:Win32/MpTest!amsi
-
-TypeID           : 0
-
-PSComputerName   :
-
-```
 
 ## See also
 
