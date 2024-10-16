@@ -67,7 +67,7 @@ To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must
 
 ### Unified security operations platform prerequisites 
 
-To unify capablities with Microsoft Defender XDR in the unified security operations platform, you must have the following resources and access:
+To unify capabilities with Microsoft Defender XDR in the unified security operations platform, you must have the following resources and access:
 
 - Microsoft Defender XDR onboarded to the Microsoft Entra tenant
 - Access to Microsoft Defender XDR in the Defender portal
