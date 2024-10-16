@@ -14,20 +14,19 @@ ms.collection:
 - demo
 ms.topic: article
 ms.subservice: ngp
-ms.date: 01/15/2024
+ms.date: 10/16/2024
 ---
 
 # Microsoft Defender for Endpoint - demonstration scenarios
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+- [Microsoft Defender for Endpoint Plan 1 or 2](microsoft-defender-endpoint.md)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
 - [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 
-The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint on Windows, Mac, and Linux. Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
+Demonstration scenarios help you learn about the capabilities of Microsoft Defender for Endpoint on Windows, Mac, and Linux. Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
 
 :::image type="content" source="media/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="media/microsoft-defender-for-endpoint-cloud-protection.png":::
 
