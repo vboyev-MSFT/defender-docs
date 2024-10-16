@@ -50,7 +50,7 @@ In this demonstration page, you have three engine choices to test AMSI:
 
 1. Save the following PowerShell script as `AMSI_PoSh_script.ps1`:
 
-   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-powershell-save-script.png" alt-text="Screenshot showing PowerShell script to save as AMSI_PoSh_script.ps1":::
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-powershell-save-script.png" alt-text="Screenshot showing PowerShell script to save as AMSI_PoSh_script.ps1" lightbox="media/mde-demonstrations-amsi/test-amsi-powershell-save-script.png":::
 
 2. On your device, open PowerShell as an administrator.
 
@@ -58,14 +58,14 @@ In this demonstration page, you have three engine choices to test AMSI:
 
    The result should be as follows:
 
-   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-powershell-results.png" alt-text="Screenshot showing the results of the AMSI test sample. It should show a threat was detected.":::
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-powershell-results.png" alt-text="Screenshot showing the results of the AMSI test sample. It should show a threat was detected." lightbox="media/mde-demonstrations-amsi/test-amsi-powershell-results.png":::
 
    
 ### Testing AMSI with VBScript
 
 1. Save the following VBScript as `AMSI_vbscript.vbs`:
 
-   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-save-script.png" alt-text="Screenshot showing VBScript to save as AMSI_vbscript.vbs":::
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-save-script.png" alt-text="Screenshot showing VBScript to save as AMSI_vbscript.vbs" lightbox="media/mde-demonstrations-amsi/test-amsi-vbscript-save-script.png":::
 
 2. On your Windows Device, open Command Prompt as an administrator.
 
@@ -73,14 +73,14 @@ In this demonstration page, you have three engine choices to test AMSI:
 
    The result should be as follows:
 
-   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png" alt-text="Screenshot showing the AMSI test results. It should show that the script was blocked by antivirus software.":::
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png" alt-text="Screenshot showing the AMSI test results. It should show that the script was blocked by antivirus software." lightbox="media/mde-demonstrations-amsi/test-amsi-vbscript-results.png":::
 
    
 ### Verifying the test results
 
 In your protection history, you should be able to see the following information:
 
-:::image type="content" source="media/mde-demonstrations-amsi/verifying-results.png" alt-text="Screenshot showing the AMSI test results. The information should show that a threat was blocked and cleaned.":::
+:::image type="content" source="media/mde-demonstrations-amsi/verifying-results.png" alt-text="Screenshot showing the AMSI test results. The information should show that a threat was blocked and cleaned." lightbox="media/mde-demonstrations-amsi/verifying-results.png":::
 
 ### Get the list of Microsoft Defender Antivirus threats
 
@@ -94,7 +94,7 @@ You can view detected threats by using the Event log or PowerShell.
 
 3. Look for `event ID 1116`. You should see the following information:
 
-   :::image type="content" source="media/mde-demonstrations-amsi/eventid1116.png" alt-text="Screenshot showing Event ID 1116, which says malware or unwanted software was detected.":::
+   :::image type="content" source="media/mde-demonstrations-amsi/eventid1116.png" alt-text="Screenshot showing Event ID 1116, which says malware or unwanted software was detected." lightbox="media/mde-demonstrations-amsi/eventid1116.png":::
 
 ##### Use PowerShell
 
@@ -102,7 +102,7 @@ Open PowerShell, and then type the following command: `Get-MpThreat`.
 
 You might see the following results:
 
-:::image type="content" source="media/mde-demonstrations-amsi/get-mpthreat-results.png" alt-text="Screenshot showing the results of the Get-MpThreat command. It should show that an AMSI threat was detected.":::
+:::image type="content" source="media/mde-demonstrations-amsi/get-mpthreat-results.png" alt-text="Screenshot showing the results of the Get-MpThreat command. It should show that an AMSI threat was detected." lightbox="media/mde-demonstrations-amsi/get-mpthreat-results.png":::
 
 
 ## See also
