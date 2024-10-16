@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint utilizes the [Antimalware Scan Interface (AMSI)]
 
 ## Testing AMSI with Defender for Endpoint
 
-In this demonstration page, you have three engine choices to test AMSI:
+In this demonstration article, you have two engine choices to test AMSI:
 
 - PowerShell
 - VBScript
