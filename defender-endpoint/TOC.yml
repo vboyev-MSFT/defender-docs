@@ -80,7 +80,7 @@
       - name: Validate antimalware
         href: validate-antimalware.md
       - name: AMSI demonstrations
-        href: defender-endpoint-demonstration-amsi.md
+        href: mde-demonstration-amsi.md
         displayName: Antimalware Scan Interface (AMSI), AMSI
       - name: Attack surface reduction rules demonstrations
         href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
