@@ -14,7 +14,7 @@ ms.collection:
 - mde-edr
 ms.topic: conceptual
 ms.subservice: edr
-ms.date: 03/15/2021
+ms.date: 04/24/2024
 ---
 
 # Techniques in the device timeline

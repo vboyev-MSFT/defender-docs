@@ -16,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
 ms.topic: conceptual
-ms.date: 02/25/2024
+ms.date: 04/22/2024
 ---
 
 # Link query results to an incident
