@@ -46,7 +46,7 @@ The following table lists the available demonstrations alphabetically, with thei
 
 | Demonstration name | Protection area | Description |
 |---|---|---|
-| [AMSI demonstrations](mde-demonstration-amsi.md) | Microsoft Defender Antivirus | Confirm that an AMSI script is detected and blocked. |
+| [AMSI demonstrations](mde-demonstration-amsi.md) | NGP | Confirm that an AMSI script is detected and blocked. |
 |[Antimalware validation](validate-antimalware.md)| NGP |Confirm that antivirus/antimalware is detecting and blocking malware. |
 | [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md)| ASR | Download sample files to trigger each ASR rule. |
 |[App reputation demonstration](defender-endpoint-demonstration-app-reputation.md)| NGP | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge.|
