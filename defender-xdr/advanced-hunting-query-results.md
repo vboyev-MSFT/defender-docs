@@ -15,7 +15,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2024
+ms.date: 08/06/2024
 ---
 
 # Work with advanced hunting query results

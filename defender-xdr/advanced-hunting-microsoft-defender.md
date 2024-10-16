@@ -20,7 +20,7 @@ ms.topic: conceptual
 appliesto:
     - Microsoft Defender XDR
     - Microsoft Sentinel in the Microsoft Defender portal
-ms.date: 04/12/2024
+ms.date: 08/26/2024
 ---
 
 # Advanced hunting in the Microsoft Defender portal

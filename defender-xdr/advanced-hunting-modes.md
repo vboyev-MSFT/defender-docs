@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.date: 04/02/2024
+ms.date: 04/22/2024
 ---
 
 # Choose between guided and advanced modes to hunt in Microsoft Defender XDR

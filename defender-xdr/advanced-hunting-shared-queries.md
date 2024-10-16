@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 02/16/2024
+ms.date: 04/22/2024
 ---
 
 # Use shared queries in advanced hunting

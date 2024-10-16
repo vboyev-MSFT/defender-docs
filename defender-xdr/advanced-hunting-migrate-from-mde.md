@@ -16,7 +16,7 @@ ms.collection:
   - tier2
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.date: 02/17/2024
+ms.date: 04/22/2024
 ---
 
 # Migrate advanced hunting queries from Microsoft Defender for Endpoint

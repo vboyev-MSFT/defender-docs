@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 05/16/2023
+ms.date: 04/22/2024
 ---
 
 # Use custom functions
