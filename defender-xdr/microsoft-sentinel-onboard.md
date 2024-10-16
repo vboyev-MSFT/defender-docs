@@ -22,12 +22,12 @@ search.appverid:
 appliesto:
     - Microsoft Defender XDR
     - Microsoft Sentinel in the Microsoft Defender portal
-ms.date: 10/10/2024
+ms.date: 10/16/2024
 ---
 
 # Connect Microsoft Sentinel to the Microsoft Defender portal
 
-Microsoft Sentinel is generally available within the Microsoft unified security operations platform in the Microsoft Defender portal. When you onboard Microsoft Sentinel to the Defender portal with Microsoft Defender XDR, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
+Microsoft Sentinel is generally available within Microsoft's unified security operations platform in the Microsoft Defender portal. When you onboard Microsoft Sentinel to the Defender portal with Microsoft Defender XDR, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
 
 - Blog post: [General availability of the Microsoft unified security operations platform](https://aka.ms/unified-soc-announcement)
 - Blog post: [Frequently asked questions about the unified security operations platform](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/frequently-asked-questions-about-the-unified-security-operations/ba-p/4212048)
@@ -94,11 +94,11 @@ To connect a Microsoft Sentinel workspace to the Defender portal, complete the f
 
 1. Select **Connect**.
 
-After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready. The **Overview** page is updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
+After your workspace is connected, the banner on the **Overview** page shows that your environment is ready. The **Overview** page is updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 
 ## Explore Microsoft Sentinel features in the Defender portal
 
-After you connect your workspace to the Defender portal, **Microsoft Sentinel** is on the left-hand side navigation pane. If you have Defender XDR enabled, pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR. For more information about the unified capabilities and differences between portals, see  [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690).
+After you connect your workspace to the Defender portal, **Microsoft Sentinel** is on the left-hand side navigation pane. If you have Defender XDR enabled, pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR. If you don't have Defender XDR enabled, these pages just include data from Microsoft Sentinel (preview). For more information about the unified capabilities and differences between portals, see  [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690).
 
 Many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
 
@@ -148,5 +148,5 @@ If you want to connect to a different workspace, from the **Workspaces** page, s
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 - [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2264410)
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
-- [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
+- [Investigate incidents in Microsoft Defender portal](investigate-incidents.md)
 - [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access?tabs=defender-portal)
