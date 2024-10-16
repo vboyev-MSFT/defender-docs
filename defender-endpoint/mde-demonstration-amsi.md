@@ -25,7 +25,6 @@ ms.custom:
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 
 Microsoft Defender for Endpoint utilizes the [Antimalware Scan Interface (AMSI)](/defender-endpoint/amsi-on-mdav) to enhance protection against fileless malware, dynamic script-based attacks, and other nontraditional cyber threats.  In this article, we describe how to test the AMSI engine with a benign sample.
@@ -59,29 +58,9 @@ In this demonstration page, you have three engine choices to test AMSI:
 
    The result should be as follows:
 
-   ```console
+   :::image type="content" source="media/mde-demonstrations-amsi/test-amsi-powershell-results.png" alt-text="Screenshot showing the results of the AMSI test sample. It should show a threat was detected.":::
 
-   Invoke-Expression : At line:1 char:1
-
-   + AMSI Test Sample: 7e72c3ce-861b-4339-8740-0ac1484c1386
-
-   + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-   This script contains malicious content and has been blocked by your antivirus software.
-
-   At C:\Users\Admin\Desktop\AMSI_PoSh_script.ps1:3 char:1
-
-   + Invoke-Expression $testString
-
-   + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException
-
-    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand
-    
-    ```
-
-
+   
 ### Testing AMSI with VBScript
 
 1. Save the following VBScript as `AMSI_vbscript.vbs`:
