@@ -8,7 +8,7 @@ f1.keywords:
 ms.author: dansimp
 author: diannegali
 manager: deniseb
-ms.date: 10/17/2024
+ms.date: 10/16/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -36,6 +36,10 @@ This guide shows you what to expect when running Microsoft Defender for Endpoint
 ## Know before you begin
 
 To use Microsoft Defender for Endpoint in the Microsoft Defender portal, you need to have a Microsoft Defender for Endpoint license. For more information, see [Microsoft Defender for Endpoint licensing](/defender-endpoint/minimum-requirements#licensing-requirements).
+
+In addition, confirm that you have the requirements on hardware and software, browser, network connectivity, and compatibility with Microsoft Defender Antivirus. For more information, see [Microsoft Defender for Endpoint minimum requirements](/defender-endpoint/minimum-requirements).
+
+You also need to have the required permissions to access the Microsoft Defender portal. For more information, see [Use basic permissions to access the portal](/defender-endpoint/basic-permissions.md).
 
 ## What to expect
 
