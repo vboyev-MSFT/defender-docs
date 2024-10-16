@@ -12,7 +12,6 @@ ms.collection:
 - m365-security
 ms.topic: how-to
 ms.date: 10/16/2024
-ms.subservice: ngp
 search.appverid: met150
 ms.custom: 
 - partner-contribution
