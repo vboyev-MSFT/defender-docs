@@ -16,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier2
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 07/18/2024
 ---
 
 # Create and manage custom detections rules
