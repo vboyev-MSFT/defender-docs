@@ -28,27 +28,27 @@ appliesto:
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in the Microsoft Defender portal supports incident response teams in immediately resolving incidents with guided responses. Copilot in Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
+[Microsoft Security Copilot](/security-copilot/microsoft-security-copilot) in the Microsoft Defender portal supports incident response teams in immediately resolving incidents with guided responses. Copilot in Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
 This guide outlines how to access the guided response capability, including information on providing feedback about the responses.
 
 ## Know before you begin
 
-If you're new to Copilot for Security, you should familiarize yourself with it by reading the following articles:
+If you're new to Security Copilot, you should familiarize yourself with it by reading the following articles:
 
-- [What is Copilot for Security?](/security-copilot/microsoft-security-copilot)
-- [Copilot for Security experiences](/security-copilot/experiences-security-copilot)
-- [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
-- [Understand authentication in Copilot for Security](/security-copilot/authentication)
-- [Prompting in Copilot for Security](/security-copilot/prompting-security-copilot)
+- [What is Security Copilot?](/security-copilot/microsoft-security-copilot)
+- [Security Copilot experiences](/security-copilot/experiences-security-copilot)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
+- [Understand authentication in Security Copilot](/security-copilot/authentication)
+- [Prompting in Security Copilot](/security-copilot/prompting-security-copilot)
 
 Responding to incidents in the Microsoft Defender portal often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
 
-## Copilot for Security integration in Microsoft Defender
+## Security Copilot integration in Microsoft Defender
 
-Guided responses are available in the Microsoft Defender portal for customers who have provisioned access to Copilot for Security.
+Guided responses are available in the Microsoft Defender portal for customers who have provisioned access to Security Copilot.
 
-Guided responses are also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+Guided responses are also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Key features
 
@@ -98,12 +98,12 @@ The **View similar emails** action, which is specific to phishing incidents, tak
 
 ## Sample guided responses prompt
 
-In the Copilot for Security standalone portal, you can use the following prompt to generate guided responses:
+In the Security Copilot standalone portal, you can use the following prompt to generate guided responses:
 
 - *Generate guided responses and recommendations for Defender incident {incident ID}.*
 
 > [!TIP]
-> When generating guided responses in the Copilot for Security portal, Microsoft recommends including the word ***Defender*** in your prompts to ensure that the guided responses capability delivers the results.
+> When generating guided responses in the Security Copilot portal, Microsoft recommends including the word ***Defender*** in your prompts to ensure that the guided responses capability delivers the results.
 
 ## Provide feedback
 
@@ -111,7 +111,7 @@ Microsoft highly encourages you to provide feedback to Copilot, as it’s crucia
 
 ## See also
 
-- [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
-- [Privacy and data security in Copilot for Security](/copilot/security/privacy-data-security)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
+- [Privacy and data security in Security Copilot](/copilot/security/privacy-data-security)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
