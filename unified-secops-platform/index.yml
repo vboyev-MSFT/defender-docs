@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Microsoft Unified SecOps Platform # < 60 chars
-summary: Learn about the Microsoft Unified SecOps Platform.  # < 160 chars
+title: Microsoft's unified security operations platform # < 60 chars
+summary: Learn about Microsoft's unified security operations platform.  # < 160 chars
 
 metadata:
-  title: Microsoft Unified SecOps Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the Microsoft Unified SecOps Platform. # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft's unified security operations platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft's unified security operations platform. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: defender-xdr
   ms.topic: landing-page # Required
@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Microsoft Unified SecOps Platform
+  - title: Microsoft's unified security operations platform
     linkLists:
       - linkListType: overview
         links:
