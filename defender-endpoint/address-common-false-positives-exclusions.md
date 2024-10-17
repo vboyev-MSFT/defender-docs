@@ -9,8 +9,6 @@ ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
 ms.localizationpriority: medium 
-ms.collection: # Useful for querying on a set of strategic or high-priority content.
-ms.custom:     # Useful for querying on a specific set of articles.
 ms.reviewer: joshbregman
 search.appverid: MET150
 f1.keywords: NOCSH 
