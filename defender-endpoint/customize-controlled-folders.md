@@ -36,7 +36,7 @@ ms.date: 10/27/2023
 Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019, Windows Server 2022, Windows 10, and Windows 11 clients.
 
 > [!IMPORTANT]
-> Controlled folder access is not supported on Linux.
+> Controlled folder access is not supported on Linux servers.
 
 This article describes how to customize controlled folder access capabilities, and includes the following sections:
 - [Protect additional folders](#protect-additional-folders)
