@@ -359,7 +359,7 @@
           - name: Indicators
             items:
             - name: Overview of indicators
-              href: manage-indicators.md
+              href: indicators-overview.md
             - name: Create indicators for files
               href: indicator-file.md
             - name: Create indicators for IPs and URLs/domains
