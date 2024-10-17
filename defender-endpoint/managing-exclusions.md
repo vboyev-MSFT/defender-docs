@@ -25,12 +25,12 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ### Defender portal
 
-Many exclusions can be managed from [Defender portal](https://security.microsoft.com)
+Many exclusions can be managed from the [Microsoft Defender portal](https://security.microsoft.com).
 
 | Exclusion Type | Instructions |
-|-----           | ----     |
-| Custom antivirus exclusions | 1. Navigate to `Endpoints > Configuration Management > Endpoint security policies > Windows policies` <BR> 2. Click on `Create New Policy` <BR> 3. Select Platform `Windows 10, Windows 11, and Windows Server` 4.  Select a template. Both `Microsoft Defender Antivirus exclusions` and `Microsoft Defender Antivirus` support custom antivirus exclusions |
-| Attack Surface Reduction only exclusions | 1. Navigate to `Endpoints > Configuration Management > Endpoint security policies > Windows policies` <BR> 2. Click on `Create New Policy` <BR> 3. Select Platform `Windows 10, Windows 11, and Windows Server` 4. Select the `Attack Surface Reduction Rules` template |
+|-----|----|
+| Custom antivirus exclusions | 1. Navigate to **Endpoints > Configuration Management > Endpoint security policies > Windows policies** <BR> 2. Click on **Create New Policy** <BR> 3. Select Platform **Windows 10, Windows 11, and Windows Server** 4.  Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
+| Attack Surface Reduction only exclusions | 1. Navigate to **Endpoints > Configuration Management > Endpoint security policies > Windows policies** <BR> 2. Click on **Create New Policy** <BR> 3. Select Platform **Windows 10, Windows 11, and Windows Server** 4. Select the **Attack Surface Reduction Rules** template |
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions | Not supported |
 
@@ -48,9 +48,9 @@ Many exclusions can be managed from [Intune portal](https://endpoint.microsoft.c
 
 | Exclusion Type | Instructions |
 |-----           | ----     |
-| Custom antivirus exclusion  | 1. Navigate to ` Home > Endpoint security > Antivirus` <BR> 2. Click on `Create Policy` <BR> 3. Select `Windows` as the platform <BR> 4. Both `Microsoft Defender Antivirus exclusions` and `Microsoft Defender Antivirus` support custom antivirus exclusions |
-| Attack Surface Reduction only exclusions | 1. Navigate to ` Home > Endpoint security > Attack surface reduction` <BR> 2. Click on `Create Policy` <BR> 3. Select `Windows` as the platform <BR> 4. Select `Attack surface reduction rules` profile. <br>5. Under `Configuration Settings`, scroll down to `Attack Surface Reduction Only Exclusions` |
-| Attack surface reduction per rule exclusion | 1. Navigate to ` Home > Endpoint security > Attack surface reduction` <BR> 2. Click on `Create Policy` <BR> 3. Select `Windows` as the platform <BR> 4. Select `Attack surface reduction rules` profile. <br>5. Under `Configuration Settings`, scroll down to the rule to create an exclusion.  <br>6.  Change it from `Not configured` to `Block`,`Audit`, or `Warn`. <br>7. Click on `Add` to enter the path to be excluded. |
+| Custom antivirus exclusion  | 1. Navigate to ** Home > Endpoint security > Antivirus** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
+| Attack Surface Reduction only exclusions | 1. Navigate to ** Home > Endpoint security > Attack surface reduction** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Select **Attack surface reduction rules** profile. <br>5. Under **Configuration Settings**, scroll down to **Attack Surface Reduction Only Exclusions** |
+| Attack surface reduction per rule exclusion | 1. Navigate to ** Home > Endpoint security > Attack surface reduction** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Select **Attack surface reduction rules** profile. <br>5. Under **Configuration Settings**, scroll down to the rule to create an exclusion.  <br>6.  Change it from `Not configured` to `Block`,`Audit`, or `Warn`. <br>7. Click on **Add** to enter the path to be excluded. |
 | Automatic antivirus exclusions | Not supported |
 
 Learn More
@@ -122,7 +122,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 </table>
 
 > [!NOTE]
-> `Automatic antivirus exclusions` are only available on Windows Server 2016 or later
+> Automatic antivirus exclusions are only available on Windows Server 2016 or later
 
 ### Configuration Manager
 
