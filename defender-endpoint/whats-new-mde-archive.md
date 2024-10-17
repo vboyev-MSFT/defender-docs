@@ -185,7 +185,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## July 2020
 
-- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates.
+- [Create indicators for certificates](indicators-overview.md) <br> Create indicators to allow or block certificates.
 
 ## June 2020
 
@@ -209,7 +209,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## October 2019
 
-- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence.
+- [Indicators for IP addresses, URLs/Domains](indicators-overview.md) <BR> You can now allow or block URLs/domains using your own threat intelligence.
 
 - [Microsoft Threat Experts - Experts on Demand](endpoint-attack-notifications.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.
 
