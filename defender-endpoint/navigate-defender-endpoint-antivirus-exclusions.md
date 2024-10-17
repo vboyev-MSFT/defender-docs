@@ -37,7 +37,7 @@ search.appverid: met150
 
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
 
-Microsoft pre-configures the product to perform well on the operating system that it is installed.  No additional changes should be needed.
+Microsoft preconfigures the product to perform well on the operating system that it's installed. No additional changes should be needed.
 
 Despite this, sometimes unexpected behaviors occur. Here are some examples:
 
@@ -68,7 +68,7 @@ These exclusion types can be configured by customers.
 
 ### Pre-configured exclusions
 
-These exclusion types come pre-configured in Microsoft Defender for Endpoint.  
+These exclusion types come pre-configured in Microsoft Defender for Endpoint. 
 
 | Exclusion types | Configuration | Description |
 |---|----|----|
@@ -94,7 +94,7 @@ Examples include:
 - ...and more.
 
 > [!NOTE]
-> Automatic exclusions for server roles aren't supported on Windows Server 2012 R2. For servers running Windows Server 2012 R2 with the Active Directory Domain Services (AD DS) server role installed, exclusions for domain controllers must be specified manually. See [Active Directory exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#active-directory-exclusions).  
+> Automatic exclusions for server roles aren't supported on Windows Server 2012 R2. For servers running Windows Server 2012 R2 with the Active Directory Domain Services (AD DS) server role installed, exclusions for domain controllers must be specified manually. See [Active Directory exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#active-directory-exclusions). 
 
 For more information, see [Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions).
 
