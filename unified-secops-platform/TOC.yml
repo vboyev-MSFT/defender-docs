@@ -1,10 +1,10 @@
-- name: Microsoft unified security operations platform
+- name: Microsoft's unified security operations platform
   href: index.yml
   expanded: true
   items:
     - name: Overview
       items:
-      - name: What's the Microsoft unified security operations platform?
+      - name: What is Microsoft's unified security operations platform?
         href: overview-unified-security.md
       - name: What's new
         href: /defender-xdr/unified-soc-platform/whats-new.md
