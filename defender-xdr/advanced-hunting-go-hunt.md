@@ -15,7 +15,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 08/31/2023
+ms.date: 04/22/2024
 ---
 
 # Quickly hunt for entity or event information with go hunt
