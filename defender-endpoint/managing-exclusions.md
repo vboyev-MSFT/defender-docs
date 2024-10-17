@@ -29,16 +29,17 @@ Many exclusions can be managed from the [Microsoft Defender portal](https://secu
 
 | Exclusion Type | Instructions |
 |-----|----|
-| Custom antivirus exclusions | 1. Navigate to **Endpoints > Configuration Management > Endpoint security policies > Windows policies** <BR> 2. Click on **Create New Policy** <BR> 3. Select Platform **Windows 10, Windows 11, and Windows Server** 4.  Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
-| Attack Surface Reduction only exclusions | 1. Navigate to **Endpoints > Configuration Management > Endpoint security policies > Windows policies** <BR> 2. Click on **Create New Policy** <BR> 3. Select Platform **Windows 10, Windows 11, and Windows Server** 4. Select the **Attack Surface Reduction Rules** template |
-| Attack surface reduction rule per rule exclusion | Not supported |
-| Automatic antivirus exclusions | Not supported |
+| Custom antivirus exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy**. <br.> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/>4. Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions. |
+| Attack surface reduction only exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template. |
+| Attack surface reduction rule per rule exclusion | Not supported in the [Microsoft Defender portal](https://security.microsoft.com).  |
+| Automatic antivirus exclusions | Not supported in the [Microsoft Defender portal](https://security.microsoft.com). |
 
 > [!NOTE]
-> `IP Address Exclusions` cannot be configured from the Defender portal.
+> `IP Address Exclusions` cannot be configured from the [Microsoft Defender portal](https://security.microsoft.com).
 
-Learn More
-- [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](https://learn.microsoft.com/en-us/defender-endpoint/mde-security-settings-management)
+**Learn More**:
+
+- [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](/defender-endpoint/mde-security-settings-management)
 
 
 
