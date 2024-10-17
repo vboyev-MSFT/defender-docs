@@ -163,9 +163,9 @@ To learn more about these data types, [read about Kusto scalar data types](/azur
 
 Take advantage of the following functionality to write queries faster:
 
-- **Autosuggest**—as you write queries, advanced hunting provides suggestions from IntelliSense.
-- **Schema tree**—a schema representation that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
-- **[Schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
+- **Autosuggest** - as you write queries, advanced hunting provides suggestions from IntelliSense.
+- **Schema tree** - a schema representation that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
+- **[Schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
 
 ## Work with multiple queries in the editor
 
