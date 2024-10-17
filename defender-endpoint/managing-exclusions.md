@@ -50,13 +50,13 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
     </tr>
   </thead>
   <tr>
-    <td rowspan="4">Antivirus exclusion</td><td><code>-ExclusionIpAddress<code></td><td>Description</td>
+    <td rowspan="4">Antivirus exclusion</td><td><code>-ExclusionIpAddress<code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionipaddress">IP addresses to exclude from scheduled and real-time scanning</a></td>
   </tr>
   <tr>
-    <td><code>-ExclusionPath</code></td><td>Description</td>
+    <td><code>-ExclusionPath</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionpath">file paths to exclude from scheduled and real-time scanning</a></td>
   </tr>
   <tr>
-    <td><code>-ExclusionProcess</td><td>Description</td>
+    <td><code>-ExclusionProcess</td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionprocess">Files opened by these processes are excluded from scheduled and real-time scanning.</a></td>
   </tr>
   <tr>
     <td><code>-ExclusionExtension</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionextension">File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning</a></td>
