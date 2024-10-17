@@ -122,5 +122,9 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 
 ## Managing Exclusions for Network Protection
 
+> [!NOTE]
+> A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.
+
 Learn More
 - [Add exclusions to network protection](https://learn.microsoft.com/en-us/defender-endpoint/troubleshoot-np#add-exclusions)
+- [Important points about exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#important-points-about-exclusions)
