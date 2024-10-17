@@ -19,14 +19,20 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Managing Exclusions for Windows
 
-### Endpoint Security Policy
+### Defender portal
 
-|Exclusion Type | Reference |
-| -------- | -------- |
-| Custom antivirus exclusions   | `Microsoft Defender Antivirus exclusions` [Endpoint security policy](/defender-endpoint/manage-security-policies?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fbreadcrumb%2Ftoc.json)   |
-| Attack Surface reduction rule file and folder exclusions   | `Attack Surface Reduction` [Endpoint security policy](/defender-endpoint/enable-attack-surface-reduction#endpoint-security-policy) |
-| Attack surface reduction rule per rule exclusion | |
+Many exclusions can be managed from [https://security.microsoft.com]
+
+| Exclusion Type | Instructions |
+|-----           | ----     |
+| Custom antivirus exclusions | 1. Navigate to `Endpoints > Configuration Management > Endpoint security policies > Windows policies` <BR> 2. Click on `Create New Policy` <BR> 3. Select Platform `Windows 10, Windows 11, and Windows Server` 4.  Select a template. Both `Microsoft Defender Antivirus exclusions` and `Microsoft Defender Antivirus` support custom antivirus exclusions |
+| Attack Surface Reduction only exclusions | 1. Navigate to `Endpoints > Configuration Management > Endpoint security policies > Windows policies` <BR> 2. Click on `Create New Policy` <BR> 3. Select Platform `Windows 10, Windows 11, and Windows Server` 4. Select the `Attack Surface Reduction Rules` template |
+| Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions | Not supported |
+
+Learn More
+- [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](https://learn.microsoft.com/en-us/defender-endpoint/mde-security-settings-management)
+
 
 
 ### Intune
@@ -35,7 +41,7 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 |Exclusion Type | Reference |
 | -------- | -------- |
 | Custom antivirus exclusions |  [Create new exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#create-a-new-antivirus-policy-with-exclusions-in-intune)<BR>[manage existing exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#manage-antivirus-exclusions-in-intune-for-existing-policies)
-| Attack surface reduction rule file and folder exclusions | [Create exclusion for attack surface reduction rule](https://learn.microsoft.com/en-us/defender-endpoint/enable-attack-surface-reduction#custom-profile-in-intune)
+| Attack Surface Reduction only exclusions | [Create exclusion for attack surface reduction rule](https://learn.microsoft.com/en-us/defender-endpoint/enable-attack-surface-reduction#custom-profile-in-intune)
 | Attack surface reduction rule per rule exclusion | |
 | Automatic antivirus exclusions |  |
 
@@ -64,7 +70,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
     <td><code>-ExclusionExtension</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionextension">File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning</a></td>
   </tr>
   <tr>
-    <td>Attack surface reduction rule file and folder exclusion</td><td><code>-AttackSurfaceReductionOnlyExclusions</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-attacksurfacereductiononlyexclusions">Specifies the files and paths to exclude</a></td>
+    <td>Attack Surface Reduction only exclusions</td><td><code>-AttackSurfaceReductionOnlyExclusions</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-attacksurfacereductiononlyexclusions">Specifies the files and paths to exclude</a></td>
   </tr>
   <tr>
     <td>Attack surface reduction per rule exclusions</td><td colspan="2">Not supported</td>
@@ -80,7 +86,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 ### Configuration Manager
 
 | Custom antivirus exclusion | Use configuration manager to configure [antivirus exclusions](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus).|
-| Attack surface reduction rule file and folder exclusion ||
+| Attack Surface Reduction only exclusions ||
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions ||
 
@@ -90,7 +96,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 |Exclusion Type | Reference |
 | -------- | -------- |
 | Custom antivirus exclusion | Use group policy to configure [antivirus exclusions.](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus) |
-| Attack surface reduction rule file and folder exclusion ||
+| Attack Surface Reduction only exclusions ||
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions ||
 
@@ -101,7 +107,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 |Exclusion Type | Reference |
 | -------- | -------- |
 | Custom antivirus exclusion | Use WMI to configure [antivirus exclusions.](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus)|
-| Attack surface reduction rule file and folder exclusion ||
+| Attack Surface Reduction only exclusions ||
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions ||
 
