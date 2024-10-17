@@ -77,7 +77,7 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 
 ### PowerShell
 
-Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module](/powershell/module/defender/?view=windowsserver2022-ps).
+Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module](/powershell/module/defender/?view=windowsserver2022-ps&preserve-view=true).
 
 | Exclusion type | Flag | Description |
 |---|---|---|
