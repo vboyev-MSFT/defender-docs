@@ -25,7 +25,7 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 | Configuration| Description | Android AE config key | Android MAM | iOS |
 |--------------|-------------|-----------------------|-------------|-----|
 |Web Protection|Admins can use this setting to change the web protection feature. When disabled, end users aren't asked for VPN permissions|Antiphishing = 0/1 (default), VPN = 0/1(default)|Antiphishing=0/1(default), VPN = 0/1(default)| WebProtection = true (default) / false|
-|Network Protection| Network protection is disabled by default. Admins can enable it to include rogue WiFi and certificate detection (only available on android) on mobile.|Enable Network protection in Microsoft Defender = 0(default)/1| DefenderNetworkProtectionEnable = 0(default)/1|DefenderNetworkProtectionEnable = 0(default)/1|
+|Network Protection| Network protection is disabled by default. Admins can enable it to include rogue WiFi and certificate detection (only available on android) on mobile.|Enable Network protection in Microsoft Defender = 0(default)/1| DefenderNetworkProtectionEnable = 0/1 (default)|DefenderNetworkProtectionEnable = 0/1 (default)|
 
 ## Privacy configuration
 
