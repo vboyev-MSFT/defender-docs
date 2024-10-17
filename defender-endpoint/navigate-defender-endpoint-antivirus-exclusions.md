@@ -37,7 +37,7 @@ search.appverid: met150
 
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
 
-Microsoft preconfigures the product to perform well on the operating system that it's installed. No additional changes should be needed.
+Microsoft preconfigures the product to perform well on the operating system that it's installed. No other changes should be needed.
 
 Despite this, sometimes unexpected behaviors occur. Here are some examples:
 
@@ -47,7 +47,7 @@ Despite this, sometimes unexpected behaviors occur. Here are some examples:
 
 - **Application compatibility issues** - applications experience unexpected behavior when running with Defender for Endpoint 
 
-This article explains the various types of exclusions that can be defined or actions that can be taken for Defender for Endpoint and Microsoft Defender Antivirus to help manage these situations. 
+This article explains the various types of exclusions that you can define, as well as actions that you can take for Defender for Endpoint and Microsoft Defender Antivirus when you encounter unexpected behaviors. 
 
 ## Types of exclusions
 
