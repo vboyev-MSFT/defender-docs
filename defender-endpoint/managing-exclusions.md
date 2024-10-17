@@ -17,13 +17,13 @@ ms.collection:
 - tier2
 ---
 
-# Managing Exclusions Reference
+# Managing exclusions reference
 
-Each version of Defender for Endpoint provides management of exclusions via the supported management tools.  
+Each version of Defender for Endpoint provides management of exclusions via the supported management tools. This article summarizes how you can configure exclusions using various management tools. 
 
-## Managing Exclusions for Windows
+## Manage exclusions for Windows devices
 
-### Defender portal
+### The Microsoft Defender portal
 
 Many exclusions can be managed from the [Microsoft Defender portal](https://security.microsoft.com).
 
@@ -75,9 +75,9 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 - [Defender Policy CSP](/windows/client-management/mdm/policy-csp-defender)
 - [Use custom settings for Windows client devices in Intune](/mem/intune/configuration/custom-settings-windows-10)
 
-### Powershell
+### PowerShell
 
-Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Module](/powershell/module/defender/?view=windowsserver2022-ps) 
+Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module](/powershell/module/defender/?view=windowsserver2022-ps).
 
 | Exclusion type | Flag | Description |
 |---|---|---|
@@ -118,11 +118,19 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions ||
 
-## Managing Exclusions for macOS
+## Manage exclusions for macOS
 
-## Managing Exclusions for Linux
+(content coming soon)
 
-## Managing Exclusions for Network Protection
+## Manage exclusions for Linux
+
+(content coming soon)
+
+
+## Manage exclusions for Network Protection
+
+(content coming soon)
+
 
 > [!NOTE]
 > A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.
