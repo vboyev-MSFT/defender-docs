@@ -25,11 +25,11 @@ search.appverid: met150
 **Applies to:**
 
 - Microsoft Defender Antivirus
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+- [Microsoft Defender for Endpoint Plan 1 or 2](microsoft-defender-endpoint.md)
+- Microsoft Defender for Servers (for Windows Server and Linux Server)
 
 > [!NOTE]
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). 
+> To onboard servers to Defender for Endpoint, you need another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). 
 > If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).
 
 > [!NOTE]
@@ -59,11 +59,11 @@ These exclusion types can be configured by customers.
 
 | Exclusion types | Scope |Use When|
 |:---| :----| -------- |
-|[Custom Defender for Endpoint exclusions](#custom-exclusions) | Microsoft Defender Antivirus, Microsoft Defender for Endpoint, Attack Surface Redution Rules, Network Protection |A file, folder or process is identified as malicious, even though it's not a threat.<BR><BR> An application encounters unexpected performance or application compatibility issue when running with Microsoft Defender for Endpoint|
-|[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Attack Surface Reduction rules|An attack surface reduction rule causes  unexpected behavior|
-|[Defender for Endpoint File and Certificate Allow Indicators](/defender-endpoint/indicator-certificates)| Microsoft Defender Antivirus, Attack Surface Reduction Rules, Controlled Folder Access |A file or process signed by a certificate is identified as malicious even through it's not.|
-|[Defender for Endpoint Domain/URL and IP address Indicators](/defender-endpoint/indicator-ip-domain) |SmartScreen, WebContent Filtering, Network Protection |SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block on a specific site.|
-|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled Folder Access|Controlled folder access blocks an application from accessing a protected folder.|
+|[Custom Defender for Endpoint exclusions](#custom-exclusions) | Microsoft Defender Antivirus<br/>Microsoft Defender for Endpoint<br/>Attack surface reduction rules<br/>Network Protection |A file, folder or process is identified as malicious, even though it's not a threat.<br/><br/> An application encounters unexpected performance or application compatibility issue when running with Defender for Endpoint|
+|[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Attack surface reduction rules|An attack surface reduction rule causes unexpected behavior|
+|[Defender for Endpoint File and Certificate Allow Indicators](/defender-endpoint/indicator-certificates)| Microsoft Defender Antivirus<br/>Attack surface reduction rules<br/>Controlled folder access |A file or process signed by a certificate is identified as malicious even through it's not.|
+|[Defender for Endpoint Domain/URL and IP address Indicators](/defender-endpoint/indicator-ip-domain) |SmartScreen<br/>Web Content Filtering<br/>Network Protection |SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block on a specific site.|
+|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
 |[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension or directory that should be done manually.|
 
 ### Pre-configured exclusions
