@@ -1,5 +1,5 @@
 ---
-title: Create indicators
+title: Overview of indicators in Microsoft Defender for Endpoint
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 ms.service: defender-endpoint
 ms.author: diannegali
@@ -15,10 +15,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 10/17/2024
 ---
 
-# Create indicators
+# Overview of indicators in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
