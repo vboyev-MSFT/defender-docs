@@ -198,17 +198,17 @@
               href: mac-install-manually.md
           - name: Configure Defender for Endpoint on macOS
             items:
-              - name: Configure and validate exclusions
+              - name: Configure and validate exclusions on Mac
                 href: mac-exclusions.md
-              - name: Set preferences
+              - name: Set preferences on Mac
                 href: mac-preferences.md 
-              - name: Detect and block Potentially Unwanted Applications
+              - name: Detect and block potentially unwanted applications on Mac
                 href: mac-pua.md
               - name: Protect macOS security settings using tamper protection
                 href: tamperprotection-macos.md
               - name: Device control
                 items:
-                - name: Device control overview
+                - name: Device control overview on Mac
                   href: mac-device-control-overview.md
                 - name: JAMF examples
                   href: mac-device-control-jamf.md
@@ -216,7 +216,7 @@
                   href: mac-device-control-intune.md
                 - name: macOS Device Control frequently asked questions (FAQ)
                   href: mac-device-control-faq.md
-              - name: Schedule scans
+              - name: Schedule scans on Mac
                 href: mac-schedule-scan.md
           - name: Update Defender for Endpoint on macOS
             href: mac-updates.md
@@ -269,7 +269,7 @@
               href: mde-linux-deployment-on-sap.md
           - name: Configure Defender for Endpoint on Linux
             items:
-            - name: Configure and validate exclusions
+            - name: Configure and validate exclusions on Linux
               href: linux-exclusions.md
             - name: Static proxy configuration
               href: linux-static-proxy-configuration.md
@@ -348,7 +348,7 @@
               href: machine-groups.md
             - name: Create and manage device tags
               href: machine-tags.md
-        - name: Rules and Exclusions
+        - name: Rules and exclusions
           items:
           - name: Exclusions overview
             href: navigate-defender-endpoint-antivirus-exclusions.md
@@ -392,9 +392,8 @@
       - name: Safeguard and manage your environment 
         items:
 
-          - name: Managing Exclusions Reference
+          - name: Managing exclusions reference
             href: managing-exclusions.md
-            displayName: exclusions
           - name: Safe deployment practices
             href: mde-sdp-strategy.md
 
