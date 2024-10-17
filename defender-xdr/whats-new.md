@@ -31,7 +31,7 @@ You can also get product updates and important notifications through the [messag
 
 ## October 2024
 
-- [Microsoft Unified RBAC roles](../defender-xdr/experts-on-demand#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
+- [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
 
 ## September 2024
 
