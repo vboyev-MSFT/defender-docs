@@ -61,27 +61,16 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 
 ### MDM
 
-<table>
-  <thead>
-    <tr>
-      <th>Exclusion Type</th>
-      <th>OMA-URI</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tr>
-    <td rowspan=3>Custom antivirus exclusion</td><td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses</td><td><a href="/windows/client-management/mdm/policy-csp-defender#excludedprocesses">ExcludedProcesses</a></td>
-  </tr>
-  <tr>
-    <td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths</td><td><a href="/windows/client-management/mdm/policy-csp-defender#excludedpaths">ExcludedPaths</a></td>
-  </tr>
-  <tr><td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions</td><td><a href="/windows/client-management/mdm/policy-csp-defender#excludedextensions">ExcludedExtensions</a><td></tr>
-  <tr>
-    <td>Attack Surface Reduction only exclusions</td><td>./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions</td><td><a href="/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions">AttackSurfaceReductionOnlyExclusions</a></td><tr>
-  <tr>
-</table>
+| Exclusion type | OMA-URI | Description | 
+|--|--|--|
+| Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses` | [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses) |
+| Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths` | [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths)
+| Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions` | [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions) |
+| Attack surface reduction only exclusions | `./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions` | [AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions) |
 
-Learn more
+
+**Learn more**:
+
 - [Defender CSP](/windows/client-management/mdm/defender-csp)
 - [Defender Policy CSP](/windows/client-management/mdm/policy-csp-defender)
 - [Use custom settings for Windows client devices in Intune](/mem/intune/configuration/custom-settings-windows-10)
