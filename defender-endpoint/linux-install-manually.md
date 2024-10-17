@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 08/01/2024
+ms.date: 10/15/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -24,9 +24,8 @@ ms.date: 08/01/2024
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -95,48 +94,46 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
 
 - Install `yum-utils` if it isn't installed yet:
 
-  ```bash
+    ```bash
   sudo yum install yum-utils
   ```
 
-  > [!NOTE]
+    > [!NOTE]
   > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
-  Use the following table to help guide you in locating the package:
+    Use the following table to help guide you in locating the package:
 
   |Distro & version|Package|
   |---|---|
   |For Alma 8.4 and higher|<https://packages.microsoft.com/config/alma/8/prod.repo>|
   |For Alma 9.2 and higher|<https://packages.microsoft.com/config/alma/9/prod.repo>|
   |For RHEL/Centos/Oracle 9.0-9.8|<https://packages.microsoft.com/config/rhel/9/prod.repo>|
-  |For RHEL/Centos/Oracle 8.0-8.9|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+  |For RHEL/Centos/Oracle 8.0-8.10|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
   |For Rocky 8.7 and higher|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
   |For Rocky 9.2 and higher|<https://packages.microsoft.com/config/rocky/9/prod.repo>|
+  
+    In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
-  <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
-
-  In the following commands, replace *[version]* and *[channel]* with the information you've identified:
-
-  ```bash
+    ```bash
   sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
   ```
 
-  > [!TIP]
+    > [!TIP]
   > Use hostnamectl command to identify system related information including release *[version]*.
 
-  For example, if you're running CentOS 7 and want to deploy Defender for Endpoint on Linux from the `prod` channel:
+    For example, if you're running CentOS 7 and want to deploy Defender for Endpoint on Linux from the `prod` channel:
 
-  ```bash
+    ```bash
   sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
   ```
 
-  Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
+    Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
-  ```bash
+    ```bash
   sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
   ```
 
