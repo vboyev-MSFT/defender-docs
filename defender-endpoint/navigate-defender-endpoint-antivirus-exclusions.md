@@ -58,7 +58,7 @@ The following table summarizes the different exclusion types and capabilities in
 These exclusion types can be configured by customers.
 
 | Exclusion types | Scope |Use When|
-|:---| :----| -------- |
+|---| ----| -------- |
 |[Custom Defender for Endpoint exclusions](#custom-exclusions) | Microsoft Defender Antivirus<br/>Microsoft Defender for Endpoint<br/>Attack surface reduction rules<br/>Network Protection |A file, folder or process is identified as malicious, even though it's not a threat.<br/><br/> An application encounters unexpected performance or application compatibility issue when running with Defender for Endpoint|
 |[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Attack surface reduction rules|An attack surface reduction rule causes unexpected behavior|
 |[Defender for Endpoint File and Certificate Allow Indicators](/defender-endpoint/indicator-certificates)| Microsoft Defender Antivirus<br/>Attack surface reduction rules<br/>Controlled folder access |A file or process signed by a certificate is identified as malicious even through it's not.|
@@ -71,7 +71,7 @@ These exclusion types can be configured by customers.
 These exclusion types come pre-configured in Microsoft Defender for Endpoint.  
 
 | Exclusion types | Configuration | Description |
-|:---|:----| :----|
+|---|----|----|
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> _Note: for active roles on Windows Server 2016 and later_. |
 | [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built in exclusions for operating system files on all versions of Windows.|
 
