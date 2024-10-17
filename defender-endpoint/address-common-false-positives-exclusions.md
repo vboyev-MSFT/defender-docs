@@ -65,23 +65,22 @@ In this scenario, an application is detected by Microsoft Defender Antivirus bec
 
 In this scenario, a user copies a non-malicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.   
 
-**How to observe**: CONTENT NEEDED
+**How to observe**: AMSI detection in the Operational logs 
 
-AMSI detection in the Operational logs 
+**How to address**: Define a path exclusion with limitations. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
 
-**How to address**:  
+## An app is considered a potentially unwanted application (PUA)
 
-Create Path exclusions with limitations 
+In this scenario, an app is detected as PUA, and you want to allow it to run. 
 
- 
+**How to address**: Define an exclusion for the app. See the following articles:
 
-Customer app is detected by PUA and customer wants to allow it 
+- [Exclude files from PUA protection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md#exclude-files-from-pua-protection)
+- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-**How to address**:
+## An app is blocked from writing to a protected folder
 
-Follow Exclude files from PUA protection instructions 
-
-Customer legitimate  app is blocked from writing to CFA protected folder 
+In this scenario, a legitimate app is blocked from writing to folders that are protected by controlled folder access.
 
 **How to address**:
 
@@ -89,11 +88,11 @@ Allow File/Certificate IOC
 
 Path Exclusion 
 
-Customer 3rd party legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint AV 
+## Customer 3rd party legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint AV 
 
 If a 3rd party application is identified as a false positive, recommend 3rd party to submit app to MS via WDSI 
 
-Scenario: Customer owned legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint ASR Rule 
+## Customer owned legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint ASR Rule 
 
 Customer app launches downloaded content and is blocked  by Microsoft Defender ASR rule “Block JavaScript or VBScript from launching downloaded executable content”. 
 
