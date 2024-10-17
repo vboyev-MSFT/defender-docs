@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - usx-security
 - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/22/2024
 appliesto: 
 - Microsoft Defender XDR 

@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier2
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: seo-marvel-apr2020
 ms.date: 04/22/2024
 ---

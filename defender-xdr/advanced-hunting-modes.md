@@ -14,7 +14,7 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier2
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
 ms.date: 04/22/2024
