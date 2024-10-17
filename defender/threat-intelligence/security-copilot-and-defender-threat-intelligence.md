@@ -12,6 +12,8 @@ ms.collection:
   - Tier1
   - security-copilot
   - magic-ai-copilot
+ms.custom:
+- cx-ti
 ms.topic: conceptual
 ms.date: 12/04/2023
 ---
