@@ -7,7 +7,9 @@ manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: quickstart
 ms.date: 04/19/2024
-ms.custom: template-quickstart
+ms.custom: 
+- template-overview
+- cx-ti
 ms.collection: essentials-get-started
 ---
 
