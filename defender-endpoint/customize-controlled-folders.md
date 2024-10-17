@@ -15,7 +15,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 10/27/2023
+ms.date: 10/17/2024
 ---
 
 # Customize controlled folder access
