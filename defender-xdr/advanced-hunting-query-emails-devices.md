@@ -14,6 +14,8 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+ms.custom:
+- cx-ti
 ms.topic: how-to
 ms.date: 04/22/2024
 ---

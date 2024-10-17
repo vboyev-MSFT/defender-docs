@@ -7,7 +7,9 @@ manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
-ms.custom: template-concept
+ms.custom: 
+- template-concept
+- cx-ti
 ---
 
 # Data sets

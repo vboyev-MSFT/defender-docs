@@ -16,6 +16,8 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
   - usx-security
+ms.custom:
+- cx-ti
 ms.topic: conceptual
 appliesto:
     - Microsoft Defender XDR

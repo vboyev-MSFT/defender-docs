@@ -7,7 +7,9 @@ manager: dolmont
 ms.service: threat-intelligence
 ms.topic: tutorial
 ms.date: 08/02/2022
-ms.custom: template-tutorial
+ms.custom: 
+- template-overview
+- cx-ti
 ---
 
 
