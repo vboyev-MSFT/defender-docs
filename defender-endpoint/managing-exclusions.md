@@ -1,12 +1,20 @@
 ---
 title:  Managing exclusions reference
 description: This aritcle describes various ways to manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
-author:      j0shbregman # GitHub alias
-ms.author:   joshbregman # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: joshbregman
+ms.service: defender-endpoint
+ms.subservice: onboard
+ms.topic: how-to
+ms.localizationpriority: medium
 ms.date: 10/17/2024
+search.appverid: met150
+ms.custom: 
+- partner-contribution
+ms.collection: 
+- m365-security
+- tier2
 ---
 
 # Managing Exclusions Reference
