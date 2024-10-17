@@ -47,15 +47,16 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 
 | Exclusion Type | Instructions |
 |-----           | ----     |
-| Custom antivirus exclusion  | 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Antivirus**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
-| Attack surface reduction rule only exclusions | 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/>5. Under **Configuration Settings**, scroll down to **Attack Surface Reduction Only Exclusions**. |
-| Attack surface reduction per rule exclusion | 1. Navigate to ** Home > Endpoint security > Attack surface reduction** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Select **Attack surface reduction rules** profile. <br>5. Under **Configuration Settings**, scroll down to the rule to create an exclusion.  <br>6.  Change it from `Not configured` to `Block`,`Audit`, or `Warn`. <br>7. Click on **Add** to enter the path to be excluded. |
-| Automatic antivirus exclusions | Not supported |
+| Custom antivirus exclusion  | 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Antivirus**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
+| Attack surface reduction rule only exclusions | 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/>5. Under **Configuration Settings**, scroll down to **Attack Surface Reduction Only Exclusions**. |
+| Attack surface reduction per-rule exclusions | 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/> 5. Under **Configuration Settings**, scroll down to the rule to create an exclusion. <br/> 6. Change it from `Not configured` to `Block`,`Audit`, or `Warn`. <br/>7. Select **Add** to enter the path to be excluded. |
+| Automatic antivirus exclusions | Not supported in the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).|
 
-Learn More
-- [Create a new antivirus policy with exclusions in Intune](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#create-a-new-antivirus-policy-with-exclusions-in-intune)
-- [Manage antivirus exclusions in Intune (for existing policies)](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#manage-antivirus-exclusions-in-intune-for-existing-policies)
-- [Configure attack surface reduction per-rule exclusions](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment-test#configure-attack-surface-reduction-per-rule-exclusions)
+**Learn More**:
+
+- [Create a new antivirus policy with exclusions in Intune](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#create-a-new-antivirus-policy-with-exclusions-in-intune)
+- [Manage antivirus exclusions in Intune (for existing policies)](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#manage-antivirus-exclusions-in-intune-for-existing-policies)
+- [Configure attack surface reduction per-rule exclusions](/defender-endpoint/attack-surface-reduction-rules-deployment-test#configure-attack-surface-reduction-per-rule-exclusions)
 
 
 ### MDM
@@ -69,21 +70,21 @@ Learn More
     </tr>
   </thead>
   <tr>
-    <td rowspan=3>Custom antivirus exclusion</td><td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses</td><td><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#excludedprocesses">ExcludedProcesses</a></td>
+    <td rowspan=3>Custom antivirus exclusion</td><td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses</td><td><a href="/windows/client-management/mdm/policy-csp-defender#excludedprocesses">ExcludedProcesses</a></td>
   </tr>
   <tr>
-    <td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths</td><td><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#excludedpaths">ExcludedPaths</a></td>
+    <td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths</td><td><a href="/windows/client-management/mdm/policy-csp-defender#excludedpaths">ExcludedPaths</a></td>
   </tr>
-  <tr><td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions</td><td><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#excludedextensions">ExcludedExtensions</a><td></tr>
+  <tr><td>./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions</td><td><a href="/windows/client-management/mdm/policy-csp-defender#excludedextensions">ExcludedExtensions</a><td></tr>
   <tr>
-    <td>Attack Surface Reduction only exclusions</td><td>./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions</td><td><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions">AttackSurfaceReductionOnlyExclusions</a></td><tr>
+    <td>Attack Surface Reduction only exclusions</td><td>./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions</td><td><a href="/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions">AttackSurfaceReductionOnlyExclusions</a></td><tr>
   <tr>
 </table>
 
 Learn more
-- [Defender CSP](https://learn.microsoft.com/en-us/windows/client-management/mdm/defender-csp)
-- [Defender Policy CSP](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender)
-- [Use custom settings for Windows client devices in Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/custom-settings-windows-10)
+- [Defender CSP](/windows/client-management/mdm/defender-csp)
+- [Defender Policy CSP](/windows/client-management/mdm/policy-csp-defender)
+- [Use custom settings for Windows client devices in Intune](/mem/intune/configuration/custom-settings-windows-10)
 
 ### Powershell
 
@@ -98,25 +99,25 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
     </tr>
   </thead>
   <tr>
-    <td rowspan="4">Custom antivirus exclusion</td><td><code>-ExclusionIpAddress<code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionipaddress">IP addresses to exclude from scheduled and real-time scanning</a></td>
+    <td rowspan="4">Custom antivirus exclusion</td><td><code>-ExclusionIpAddress<code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionipaddress">IP addresses to exclude from scheduled and real-time scanning</a></td>
   </tr>
   <tr>
-    <td><code>-ExclusionPath</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionpath">file paths to exclude from scheduled and real-time scanning</a></td>
+    <td><code>-ExclusionPath</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionpath">file paths to exclude from scheduled and real-time scanning</a></td>
   </tr>
   <tr>
-    <td><code>-ExclusionProcess</td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionprocess">Files opened by these processes are excluded from scheduled and real-time scanning.</a></td>
+    <td><code>-ExclusionProcess</td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionprocess">Files opened by these processes are excluded from scheduled and real-time scanning.</a></td>
   </tr>
   <tr>
-    <td><code>-ExclusionExtension</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionextension">File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning</a></td>
+    <td><code>-ExclusionExtension</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionextension">File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning</a></td>
   </tr>
   <tr>
-    <td>Attack Surface Reduction only exclusions</td><td><code>-AttackSurfaceReductionOnlyExclusions</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-attacksurfacereductiononlyexclusions">Specifies the files and paths to exclude</a></td>
+    <td>Attack Surface Reduction only exclusions</td><td><code>-AttackSurfaceReductionOnlyExclusions</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-attacksurfacereductiononlyexclusions">Specifies the files and paths to exclude</a></td>
   </tr>
   <tr>
     <td>Attack surface reduction per rule exclusions</td><td colspan="2">Not supported</td>
   </tr>
   <tr>
-    <td>Automatic antivirus exclusions</td><td><code>-DisableAutoExclusions</code></td><td><a href="https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-disableautoexclusions">Disable automatic antivirus exclusions<a/></td>
+    <td>Automatic antivirus exclusions</td><td><code>-DisableAutoExclusions</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-disableautoexclusions">Disable automatic antivirus exclusions<a/></td>
   </tr>
 </table>
 
@@ -165,5 +166,5 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 > A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.
 
 Learn More
-- [Add exclusions to network protection](https://learn.microsoft.com/en-us/defender-endpoint/troubleshoot-np#add-exclusions)
-- [Important points about exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#important-points-about-exclusions)
+- [Add exclusions to network protection](/defender-endpoint/troubleshoot-np#add-exclusions)
+- [Important points about exclusions](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#important-points-about-exclusions)
