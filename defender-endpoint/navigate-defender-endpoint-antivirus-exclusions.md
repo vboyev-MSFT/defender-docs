@@ -47,7 +47,7 @@ Despite this, sometimes unexpected behaviors occur. Here are some examples:
 
 - **Application compatibility issues** - applications experience unexpected behavior when running with Defender for Endpoint 
 
-This article explains the various types of exclusions that you can define, as well as actions that you can take for Defender for Endpoint and Microsoft Defender Antivirus when you encounter unexpected behaviors. 
+This article explains the various types of exclusions that you can define, and actions that you can take for Defender for Endpoint and Microsoft Defender Antivirus when you encounter unexpected behaviors. 
 
 ## Types of exclusions
 
@@ -55,7 +55,7 @@ The following table summarizes the different exclusion types and capabilities in
 
 ### Customer Exclusions
 
-These exclusion types can be configured by customers.
+You can configure these exclusion types.
 
 | Exclusion types | Scope |Use When|
 |---| ----| -------- |
