@@ -32,9 +32,9 @@ In this scenario, whenever a user runs an application, the application is detect
 
 **How to address**: Create "allow" indicators for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
 
-## A custom, self-signed app is detected by Microsoft Defender Antivirus when application runs 
+## A custom, self-signed app is detected by Microsoft Defender Antivirus when the application runs 
 
-In this scenario, whenever a custom app is updated, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
+In this scenario, whenever a custom app that is periodically updated run, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
 
 **How to address**: Create "allow" indicators for certificates or files. See the following articles:
 
@@ -45,19 +45,25 @@ In this scenario, whenever a custom app is updated, it's detected by Microsoft D
 
 In this scenario, a custom app accesses a set file types, and the set is detected as malicious by Microsoft Defender Antivirus whenever the application runs. 
 
-**How to address**: 
+**How to observe**: When the application is running, it's detected by Microsoft Defender Antivirus as a behavior monitoring detection.
 
- Define exclusions for Microsoft Defender Antivirus  File\path exclusion with possibly Wildcards 
+**How to address**: Define exclusions for Microsoft Defender Antivirus, such as a file or path exclusion that might include wildcards. Or define a custom file path exclusion. See the following articles:
 
-Custom File path - Configure custom exclusions for Microsoft Defender Antivirus | Microsoft Learn 
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-Application behaviour while app is running is detected by defender av as “behavior” detection 
+## An application is detected by Microsoft Defender Antivirus as a “behavior” detection 
 
-**How to address**:
+In this scenario, an application is detected by Microsoft Defender Antivirus because of certain behavior, even though the application is not a threat. 
 
-Process exclusion 
+**How to address**: Define a process exclusion. See the following articles:
 
-Customer copies a non-malicious powershell script file onto the endpoint and that is incorrectly detected by Microsoft Defender Antivirus  
+- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+
+## A non-malicious PowerShell script file is incorrectly detected by Microsoft Defender Antivirus
+
+In this scenario, a user copies a non-malicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.   
 
 **How to observe**: CONTENT NEEDED
 
