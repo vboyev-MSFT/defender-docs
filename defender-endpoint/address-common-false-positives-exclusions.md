@@ -32,17 +32,16 @@ In this scenario, whenever a user runs an application, the application is detect
 
 How to observe:  
 
-How to address:  
-
-Create "allow" indicators for Microsoft Defender for Endpoint : create an "allow" indicator for a file, such as an executable 
+How to address: Create "allow" indicators for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
 
 ## A custom, self-signed app is detected by Microsoft Defender Antivirus when application runs 
 
 In this scenario, whenever a custom app is updated, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
 
-How to address:   
+How to address: Create "allow" indicators for certificates or files. See the following articles:
 
-Advanced topic – Create “allow” Certificate indicators for Microsoft Defender for Endpoint : create an "allow" indicator for a file, such as an executable 
+- [Create indicators based on certificates](indicator-certificates.md)
+- [Create indicators for files](indicator-file.md)
 
 ## A custom app accesses a set of file types that is detected as malicious when the application runs
 
