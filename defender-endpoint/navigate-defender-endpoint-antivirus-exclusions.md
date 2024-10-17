@@ -59,21 +59,21 @@ You can configure these exclusion types.
 
 | Exclusion types | Scope |Use When|
 |---| ----| -------- |
-|[Custom Defender for Endpoint exclusions](#custom-exclusions) | Microsoft Defender Antivirus<br/>Microsoft Defender for Endpoint<br/>Attack surface reduction rules<br/>Network Protection |A file, folder or process is identified as malicious, even though it's not a threat.<br/><br/> An application encounters unexpected performance or application compatibility issue when running with Defender for Endpoint|
+|[Custom Defender for Endpoint exclusions](#custom-exclusions) | Microsoft Defender Antivirus<br/>Microsoft Defender for Endpoint<br/>Attack surface reduction rules<br/>Network Protection |A file, folder, or process is identified as malicious, even though it's not a threat.<br/><br/> An application encounters unexpected performance or application compatibility issue when running with Defender for Endpoint|
 |[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Attack surface reduction rules|An attack surface reduction rule causes unexpected behavior|
 |[Defender for Endpoint File and Certificate Allow Indicators](/defender-endpoint/indicator-certificates)| Microsoft Defender Antivirus<br/>Attack surface reduction rules<br/>Controlled folder access |A file or process signed by a certificate is identified as malicious even through it's not.|
 |[Defender for Endpoint Domain/URL and IP address Indicators](/defender-endpoint/indicator-ip-domain) |SmartScreen<br/>Web Content Filtering<br/>Network Protection |SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block on a specific site.|
 |[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
-|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension or directory that should be done manually.|
+|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension, or directory that should be done manually.|
 
-### Pre-configured exclusions
+### Preconfigured exclusions
 
-These exclusion types come pre-configured in Microsoft Defender for Endpoint. 
+These exclusion types come preconfigured in Microsoft Defender for Endpoint. 
 
 | Exclusion types | Configuration | Description |
 |---|----|----|
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> _Note: for active roles on Windows Server 2016 and later_. |
-| [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built in exclusions for operating system files on all versions of Windows.|
+| [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
 
 The following sections describe each type of exclusions in more detail.
 
@@ -125,7 +125,7 @@ For macOS, you can define exclusions that apply to on-demand scans, real-time pr
 - **Folder**: Exclude all files under a specified folder recursively.
 - **Process**: Exclude a specific process and all files opened by it.
 
-For more details, refer to the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
+For more information, see the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
 
 #### Linux
 
@@ -231,7 +231,7 @@ Depending on what you're using, you might need to refer to the documentation for
 
 ## See also
 
-- [Submissions, suppressions and exclusions](submissions-suppressions-exclusions.md)
+- [Submissions, suppressions, and exclusions](submissions-suppressions-exclusions.md)
 - [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Overview of indicators in Microsoft Defender for Endpoint](indicators-overview.md)
