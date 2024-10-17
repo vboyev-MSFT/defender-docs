@@ -356,21 +356,22 @@
             href: submissions-suppressions-exclusions.md
           - name: Manage suppression rules
             href: manage-suppression-rules.md
-          - name: Create indicators
-            href: manage-indicators.md
+          - name: Indicators
             items:
-              - name: Create indicators for files
-                href: indicator-file.md
-              - name: Create indicators for IPs and URLs/domains
-                href: indicator-ip-domain.md
-              - name: Create indicators for certificates
-                href: indicator-certificates.md
-              - name: Manage indicators
-                href: indicator-manage.md
-              - name: Manage automation file uploads
-                href: manage-automation-file-uploads.md
-              - name: Manage automation folder exclusions
-                href: manage-automation-folder-exclusions.md
+            - name: Overview of indicators
+              href: manage-indicators.md
+            - name: Create indicators for files
+              href: indicator-file.md
+            - name: Create indicators for IPs and URLs/domains
+              href: indicator-ip-domain.md
+            - name: Create indicators for certificates
+              href: indicator-certificates.md
+            - name: Manage indicators
+              href: indicator-manage.md
+            - name: Manage automation file uploads
+              href: manage-automation-file-uploads.md
+            - name: Manage automation folder exclusions
+              href: manage-automation-folder-exclusions.md
 
         - name: Device management
           items:
