@@ -219,6 +219,11 @@
       "source_path": "defender-endpoint/defender-endpoint-demonstration-amsi.md",
       "redirect_url": "/defender-endpoint/mde-demonstration-amsi",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "defender-endpoint/manage-indicators.md",
+      "redirect_url": "/defender-endpoint/indicators-overview",
+      "redirect_document_id": true
     }
   ]
 }
