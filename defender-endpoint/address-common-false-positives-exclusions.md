@@ -23,3 +23,103 @@ ms.collection:
 ---
 
 # Address common false-positive scenarios with exclusions
+
+A false positive is when an entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. This article describes common false-positive scenarios you might encounter, and how you can address them with exclusions. For more information about exclusions, see [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md).
+
+## An app is detected by Microsoft Defender Antivirus when the application runs
+
+In this scenario, whenever a user runs an application, the application is detected by Microsoft Defender Antivirus as a potential threat. 
+
+How to observe:  
+
+How to address:  
+
+Create "allow" indicators for Microsoft Defender for Endpoint : create an "allow" indicator for a file, such as an executable 
+
+## A custom, self-signed app is detected by Microsoft Defender Antivirus when application runs 
+
+In this scenario, whenever a custom app is updated, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
+
+How to address:   
+
+Advanced topic – Create “allow” Certificate indicators for Microsoft Defender for Endpoint : create an "allow" indicator for a file, such as an executable 
+
+## A custom app accesses a set of file types that is detected as malicious when the application runs
+
+In this scenario, a custom app accesses a set file types, and the set is detected as malicious by Microsoft Defender Antivirus whenever the application runs. 
+
+How to address : 
+
+ Define exclusions for Microsoft Defender Antivirus  File\path exclusion with possibly Wildcards 
+
+Custom File path - Configure custom exclusions for Microsoft Defender Antivirus | Microsoft Learn 
+
+Application behaviour while app is running is detected by defender av as “behavior” detection 
+
+How to address:   
+
+Process exclusion 
+
+Customer copies a non-malicious powershell script file onto the endpoint and that is incorrectly detected by Microsoft Defender Antivirus  
+
+How to observe:   
+
+AMSI detection in the Operational logs 
+
+How to address:  
+
+Create Path exclusions with limitations 
+
+ 
+
+Customer app is detected by PUA and customer wants to allow it 
+
+How to address:   
+
+Follow Exclude files from PUA protection instructions 
+
+Customer legitimate  app is blocked from writing to CFA protected folder 
+
+How to address:   
+
+Allow File/Certificate IOC 
+
+Path Exclusion 
+
+Customer 3rd party legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint AV 
+
+If a 3rd party application is identified as a false positive, recommend 3rd party to submit app to MS via WDSI 
+
+Scenario: Customer owned legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint ASR Rule 
+
+Customer app launches downloaded content and is blocked  by Microsoft Defender ASR rule “Block JavaScript or VBScript from launching downloaded executable content”. 
+
+How to observe: 
+
+How to address:  
+
+Point customers to ASR report in the MDATP portal and use that to add ASR exclusions – strongly recommended 
+
+ 
+
+Customer uses Office documents with word templates containing macros that launch exes and ASR rule Block Win32 imports from Macro code in Office blocks the word application 
+
+How to observe: 
+
+How to address: 
+
+Point customers to ASR report in the MDATP portal and use that to add ASR exclusions – strongly recommended 
+
+ 
+
+ 
+
+Customer runs custom created Application from an USB Drive and “Block aps running from USB drive” blocks the app 
+
+How to observe: 
+
+How to address: 
+
+Add a AV path exclusion does not work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions 
+
+ 
