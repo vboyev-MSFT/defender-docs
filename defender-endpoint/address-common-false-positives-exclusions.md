@@ -54,16 +54,16 @@ In this scenario, a custom app accesses a set file types, and the set is detecte
 
 ## An application is detected by Microsoft Defender Antivirus as a “behavior” detection 
 
-In this scenario, an application is detected by Microsoft Defender Antivirus because of certain behavior, even though the application is not a threat. 
+In this scenario, an application is detected by Microsoft Defender Antivirus because of certain behavior, even though the application isn't a threat. 
 
 **How to address**: Define a process exclusion. See the following articles:
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## A non-malicious PowerShell script file is incorrectly detected by Microsoft Defender Antivirus
+## A nonmalicious PowerShell script file is incorrectly detected by Microsoft Defender Antivirus
 
-In this scenario, a user copies a non-malicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.   
+In this scenario, a user copies a nonmalicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.   
 
 **How to observe**: AMSI detection in the Operational logs 
 
@@ -90,13 +90,13 @@ In this scenario, a legitimate app is blocked from writing to folders that are p
 
 ## A third-party app is detected as malicious by Microsoft Defender Antivirus
 
-In this scenario, a third-party app that is not a threat is detected and identified as malicious by Microsoft Defender Antivirus.
+In this scenario, a third-party app that isn't a threat is detected and identified as malicious by Microsoft Defender Antivirus.
 
 **How to address**: Submit the app to Microsoft for analysis. See [How to submit a file to Microsoft for analysis](/defender-xdr/submission-guide#how-do-i-submit-a-file-to-microsoft-for-analysis).
 
 ## A custom app is incorrectly detected and identified as malicious by Defender for Endpoint
 
-In this scenario, a custom, legitimate app that is not a threat is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, the app and any downloaded content is blocked by the attack surface reduction rule, [Block JavaScript or VBScript from launching downloaded executable content](/defender-endpoint/attack-surface-reduction-rules-reference#block-javascript-or-vbscript-from-launching-downloaded-executable-content). 
+In this scenario, a custom, legitimate app that isn't a threat is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, the app and any downloaded content are blocked by the attack surface reduction rule, [Block JavaScript or VBScript from launching downloaded executable content](/defender-endpoint/attack-surface-reduction-rules-reference#block-javascript-or-vbscript-from-launching-downloaded-executable-content). 
 
 <!---**How to observe**: CONTENT NEEDED--->
 
@@ -128,11 +128,11 @@ In this scenario, whenever a user opens documents that were created by using Mic
 
 ## When a user runs a custom app from a USB drive, the app is blocked
 
-In this scenario, whenever a user runs a custom created application from an USB drive, the app is blocked by the “Block apps running from USB drive” configuration. 
+In this scenario, whenever a user runs a custom created application from a USB drive, the app is blocked by the “Block apps running from USB drive” configuration. 
 
 <!---**How to observe**: CONTENT NEEDED--->
 
-**How to address**: <!---CONTENT NEEDED. Add a AV path exclusion does not work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions--->
+**How to address**: <!---CONTENT NEEDED. Add an AV path exclusion doesn't work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions--->
 
 ## See also
 
