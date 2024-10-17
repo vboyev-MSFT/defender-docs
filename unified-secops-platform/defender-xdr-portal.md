@@ -56,13 +56,13 @@ Selecting an incident name displays a page that demonstrates the value of centra
 
 Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
 
-Learn more about [incidents in the Defender portal](../incidents-overview.md), and [managing incidents and alerts](../manage-incidents.md).
+Learn more about [incidents in the Defender portal](/defender-xdr/incidents-overview), and [managing incidents and alerts](/defender-xdr/manage-incidents).
 
 ## Hunt for threats
 
 You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
 
-Learn about [proactive threat hunting](../advanced-hunting-overview.md), and [hunting for threats across devices, emails, apps, and identities](../advanced-hunting-query-emails-devices.md).
+Learn about [proactive threat hunting](/defender-xdr/advanced-hunting-overview), and [hunting for threats across devices, emails, apps, and identities](/defender-xdr/advanced-hunting-query-emails-devices).
 
 
 ## Respond to emerging threats
@@ -75,5 +75,5 @@ Threat analytics is the Microsoft threat intelligence solution from expert Micro
 - Common attack surfaces
 - Prevalent malware
 
-Learn about [tracking and responding to emerging threats with threat analytics](../threat-analytics.md).
+Learn about [tracking and responding to emerging threats with threat analytics](/defender-xdr/threat-analytics).
 

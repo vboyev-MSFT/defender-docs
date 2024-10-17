@@ -56,8 +56,8 @@ For Microsoft Sentinel, after you connect Microsoft Sentinel to the Defender por
 
 ### Learn more 
 
-- Learn how to [manage access](../m365d-permissions.md).
-- Learn how to [create custom roles](../custom-roles.md).
+- Learn how to [manage access](/defender-xdr/m365d-permissions).
+- Learn how to [create custom roles](/defender-xdr/custom-roles).
 - Learn about [roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)
 - [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac)
 
