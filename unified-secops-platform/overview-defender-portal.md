@@ -30,7 +30,7 @@ Microsoft services in the Defender portal include.
 
 The Defender portal combines a number of Microsoft security services in a single location.
 
-**Service** | **Details**
+Service | Details
 --- | ---
 **[Microsoft Defender XDR](defender-xdr-portal.md)** | In the Defender portal, protect against security threats to assets and resources across the organization, including devices, email and collaboration tools, SaaS cloud apps, Entra ID threats, cloud and on-premises workloads, and OT/IT resources. Get integrated incidents and alerts, threat hunting, and threat protection services and capabilities included in Defender XDR.
 **[Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)** | From the Defender portal, conduct threat infrastructure analysis, and gather threat intelligence.
