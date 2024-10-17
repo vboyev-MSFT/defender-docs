@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 09/03/2024
+ms.date: 10/17/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -67,13 +67,13 @@ Understand the following prerequisites before you create indicators for files:
 
 ### macOS prerequisites
 
-- [File hash computation is enabled](https://learn.microsoft.com/en-us/defender-endpoint/mac-resources#configuring-from-the-command-line) by running `mdatp config enable-file-hash-computation --value enabled`
+- [File hash computation is enabled](/defender-endpoint/mac-resources#configuring-from-the-command-line) by running `mdatp config enable-file-hash-computation --value enabled`
 
 ### linux prerequisites
 
 -  Available in Defender for Endpoint version 101.85.27 or later.
 
-- [File hash computation is enabled] from the portal or in the managed JSON (https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences#configure-file-hash-computation-feature)
+- [File hash computation is enabled] from the portal or in the managed JSON (/defender-endpoint/linux-preferences#configure-file-hash-computation-feature)
 
 This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. 
 
@@ -117,28 +117,28 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 
 The current supported actions for file IOC are allow, audit and block, and remediate. After choosing to block a file, you can choose whether triggering an alert is needed. In this way, you'll be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
 
-In Microsoft Defender XDR, go to **Settings** > **Endpoints** > **Indicators** > **Add New File Hash**.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Indicators** > **Add New File Hash**.
 
-Choose to Block and remediate the file.
+2. Choose to block and remediate the file.
 
-Choose if to Generate an alert on the file block event and define the alerts settings:
+3. Specify whether to generate an alert on the file block event and define the alerts settings:
 
-- The alert title
-- The alert severity
-- Category
-- Description
-- Recommended actions
+   - The alert title
+   - The alert severity
+   - Category
+   - Description
+   - Recommended actions
 
-:::image type="content" source="media/indicators-generate-alert.png" alt-text="The Alert settings for file indicators" lightbox="media/indicators-generate-alert.png":::
+   :::image type="content" source="media/indicators-generate-alert.png" alt-text="The Alert settings for file indicators" lightbox="media/indicators-generate-alert.png":::
 
-> [!IMPORTANT]
-> - Typically, file blocks are enforced and removed within15 minutes, average 30 minutes but can take upwards of 2 hours.
-- If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group.
-- In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device's group, then for a device, the policy in the device group will win.
-- If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
-
-> For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
-> > For more information on configuring this feature on Defender for Endpoint on Linux and macOS, see [Configure file hash computation feature on Linux](linux-preferences.md#configure-file-hash-computation-feature) and [Configure file hash computation feature on macOS](mac-preferences.md#configure-file-hash-computation-feature).
+   > [!IMPORTANT]
+   > - Typically, file blocks are enforced and removed within15 minutes, average 30 minutes but can take upwards of 2 hours.
+   > - If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash 
+   IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group.
+   > - In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device's group, then for a device, the policy in the device group will win.
+   > - If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
+   > For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
+   > For more information on configuring this feature on Defender for Endpoint on Linux and macOS, see [Configure file hash computation feature on Linux](linux-preferences.md#configure-file-hash-computation-feature) and [Configure file hash computation feature on macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 > ## Advanced hunting capabilities (preview)
 
