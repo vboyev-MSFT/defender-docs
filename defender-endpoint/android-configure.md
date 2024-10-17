@@ -38,7 +38,7 @@ For more information about how to set up Defender for Endpoint on Android and Co
 > [!NOTE]
 > Defender for Endpoint on Android only supports creating custom indicators for IP addresses and URLs/domains.
 
-Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Manage indicators](manage-indicators.md).
+Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Overview of indicators](indicators-overview.md).
 
 ## Configure web protection
 

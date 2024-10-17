@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 06/21/2024
+ms.date: 10/17/2024
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -98,7 +98,7 @@ Turning on this feature allows you to create indicators for IP addresses, domain
 
 To use this feature, devices must be running Windows 10 version 1709 or later, or Windows 11. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
-For more information, see [Manage indicators](manage-indicators.md).
+For more information, see [Overview of indicators](indicators-overview.md).
 
 > [!NOTE]
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you've selected for your Defender for Endpoint data.

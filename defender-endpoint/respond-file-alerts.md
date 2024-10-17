@@ -251,7 +251,7 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 
 Files automatically blocked by an indicator don't show up in the file's Action center, but the alerts are still visible in the Alerts queue.
 
-See [manage indicators](manage-indicators.md) for more details on blocking and raising alerts on files.
+See [Overview of indicators](indicators-overview.md) for more details on blocking and raising alerts on files.
 
 To stop blocking a file, remove the indicator. You can do so via the **Edit Indicator** action on the file's profile page. This action is visible in the same position as the **Add Indicator** action, before you added the indicator.
 
