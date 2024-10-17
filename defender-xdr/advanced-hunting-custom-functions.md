@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 ms.custom: 
 - cxti
-ms.topic: reference
+ms.topic: how-to
 ms.date: 04/22/2024
 ---
 

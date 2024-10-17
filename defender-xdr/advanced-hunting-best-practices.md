@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: 
 - cxti
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/22/2024
 ---
 
