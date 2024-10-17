@@ -30,9 +30,9 @@ A false positive is when an entity, such as a file or a process, was detected an
 
 In this scenario, whenever a user runs an application, the application is detected by Microsoft Defender Antivirus as a potential threat. 
 
-How to observe:  
+**How to observe**: CONTENT NEEDED
 
-How to address: Create "allow" indicators for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
+**How to address**: Create "allow" indicators for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
 
 ## A custom, self-signed app is detected by Microsoft Defender Antivirus when application runs 
 
@@ -47,7 +47,7 @@ How to address: Create "allow" indicators for certificates or files. See the fol
 
 In this scenario, a custom app accesses a set file types, and the set is detected as malicious by Microsoft Defender Antivirus whenever the application runs. 
 
-How to address : 
+**How to address**: 
 
  Define exclusions for Microsoft Defender Antivirus  File\path exclusion with possibly Wildcards 
 
@@ -61,7 +61,7 @@ Process exclusion
 
 Customer copies a non-malicious powershell script file onto the endpoint and that is incorrectly detected by Microsoft Defender Antivirus  
 
-How to observe:   
+**How to observe**: CONTENT NEEDED
 
 AMSI detection in the Operational logs 
 
@@ -93,7 +93,7 @@ Scenario: Customer owned legitimate app (not a threat)  is detected and identifi
 
 Customer app launches downloaded content and is blocked  by Microsoft Defender ASR rule “Block JavaScript or VBScript from launching downloaded executable content”. 
 
-How to observe: 
+**How to observe**: CONTENT NEEDED
 
 How to address:  
 
@@ -103,7 +103,7 @@ Point customers to ASR report in the MDATP portal and use that to add ASR exclus
 
 Customer uses Office documents with word templates containing macros that launch exes and ASR rule Block Win32 imports from Macro code in Office blocks the word application 
 
-How to observe: 
+**How to observe**: CONTENT NEEDED
 
 How to address: 
 
@@ -115,10 +115,13 @@ Point customers to ASR report in the MDATP portal and use that to add ASR exclus
 
 Customer runs custom created Application from an USB Drive and “Block aps running from USB drive” blocks the app 
 
-How to observe: 
+**How to observe**: CONTENT NEEDED
 
 How to address: 
 
 Add a AV path exclusion does not work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions 
 
- 
+## See also
+
+- [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md)
+- [Managing exclusions reference](managing-exclusions.md)
