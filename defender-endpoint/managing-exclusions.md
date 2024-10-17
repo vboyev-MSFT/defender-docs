@@ -41,16 +41,14 @@ Many exclusions can be managed from the [Microsoft Defender portal](https://secu
 
 - [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](/defender-endpoint/mde-security-settings-management)
 
-
-
 ### Intune
 
-Many exclusions can be managed from [Intune portal](https://endpoint.microsoft.com)
+Many exclusions can be managed in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 | Exclusion Type | Instructions |
 |-----           | ----     |
-| Custom antivirus exclusion  | 1. Navigate to ** Home > Endpoint security > Antivirus** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
-| Attack Surface Reduction only exclusions | 1. Navigate to ** Home > Endpoint security > Attack surface reduction** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Select **Attack surface reduction rules** profile. <br>5. Under **Configuration Settings**, scroll down to **Attack Surface Reduction Only Exclusions** |
+| Custom antivirus exclusion  | 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Antivirus**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions |
+| Attack surface reduction rule only exclusions | 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/>5. Under **Configuration Settings**, scroll down to **Attack Surface Reduction Only Exclusions**. |
 | Attack surface reduction per rule exclusion | 1. Navigate to ** Home > Endpoint security > Attack surface reduction** <BR> 2. Click on **Create Policy** <BR> 3. Select **Windows** as the platform <BR> 4. Select **Attack surface reduction rules** profile. <br>5. Under **Configuration Settings**, scroll down to the rule to create an exclusion.  <br>6.  Change it from `Not configured` to `Block`,`Audit`, or `Warn`. <br>7. Click on **Add** to enter the path to be excluded. |
 | Automatic antivirus exclusions | Not supported |
 
