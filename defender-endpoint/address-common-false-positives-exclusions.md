@@ -28,7 +28,7 @@ A false positive is when an entity, such as a file or a process, was detected an
 
 In this scenario, whenever a user runs an application, the application is detected by Microsoft Defender Antivirus as a potential threat. 
 
-**How to observe**: CONTENT NEEDED
+<!---**How to observe**: CONTENT NEEDED--->
 
 **How to address**: Create "allow" indicators for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
 
@@ -96,23 +96,27 @@ In this scenario, a third-party app that is not a threat is detected and identif
 
 ## A custom app is incorrectly detected and identified as malicious by Defender for Endpoint
 
-In this scenario, a custom, legitimate app that is not a threat is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, 
+In this scenario, a custom, legitimate app that is not a threat is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, the app and any downloaded content is blocked by the attack surface reduction rule, [Block JavaScript or VBScript from launching downloaded executable content](/defender-endpoint/attack-surface-reduction-rules-reference#block-javascript-or-vbscript-from-launching-downloaded-executable-content). 
 
-Customer app launches downloaded content and is blocked  by Microsoft Defender ASR rule “Block JavaScript or VBScript from launching downloaded executable content”. 
+<!---**How to observe**: CONTENT NEEDED--->
 
-**How to observe**: CONTENT NEEDED
+**How to address**: <!---PLEASE VERIFY THESE STEPS--->
 
-**How to address**:
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Reports**. Under **Reports**, select **Security report**.
 
-Point customers to ASR report in the MDATP portal and use that to add ASR exclusions – strongly recommended 
+2. Scroll down to devices to find your attack surface reduction cards. For more information, see [attack surface reduction rules report](attack-surface-reduction-rules-report.md).
+
+3. Use the information to identify the files and folder locations to be excluded.
+
+4. Add exclusions. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
 
 ## Word templates that contain macros that launch other apps are blocked
 
 In this scenario, whenever a user opens documents that were created by using Microsoft Word templates that contain macros and those macros launch other applications, the attack surface reduction rule [Block Win32 API calls from Office macros](/defender-endpoint/attack-surface-reduction-rules-reference#block-win32-api-calls-from-office-macros) blocks Microsoft Word. 
 
-**How to observe**: CONTENT NEEDED
+<!---**How to observe**: CONTENT NEEDED--->
 
-**How to address**: PLEASE VERIFY THESE STEPS
+**How to address**: <!---PLEASE VERIFY THESE STEPS---->
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Reports**. Under **Reports**, select **Security report**.
 
@@ -126,9 +130,9 @@ In this scenario, whenever a user opens documents that were created by using Mic
 
 In this scenario, whenever a user runs a custom created application from an USB drive, the app is blocked by the “Block apps running from USB drive” configuration. 
 
-**How to observe**: CONTENT NEEDED
+<!---**How to observe**: CONTENT NEEDED--->
 
-**How to address**: CONTENT NEEDED. Add a AV path exclusion does not work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions 
+**How to address**: <!---CONTENT NEEDED. Add a AV path exclusion does not work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions--->
 
 ## See also
 
