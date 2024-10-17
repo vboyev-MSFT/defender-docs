@@ -15,7 +15,9 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier2
-ms.topic: how-to
+ms.custom:
+- cx-ti
+ms.topic: conceptual
 ms.date: 04/22/2024
 ---
 
