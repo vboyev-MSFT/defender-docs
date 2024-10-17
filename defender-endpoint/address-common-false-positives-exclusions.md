@@ -82,17 +82,21 @@ In this scenario, an app is detected as PUA, and you want to allow it to run.
 
 In this scenario, a legitimate app is blocked from writing to folders that are protected by controlled folder access.
 
-**How to address**:
+**How to address**: Define an "allow" indicator for files or certificates, and define a path exclusion. See the following articles:
 
-Allow File/Certificate IOC 
+- [Create indicators for files](indicator-file.md)
+- [Create indicators based on certificates](indicator-certificates.md)
+- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-Path Exclusion 
+## A third-party app is detected as malicious by Microsoft Defender Antivirus
 
-## Customer 3rd party legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint AV 
+In this scenario, a third-party app that is not a threat is detected and identified as malicious by Microsoft Defender Antivirus.
 
-If a 3rd party application is identified as a false positive, recommend 3rd party to submit app to MS via WDSI 
+**How to address**: Submit the app to Microsoft for analysis. See [How to submit a file to Microsoft for analysis](/defender-xdr/submission-guide#how-do-i-submit-a-file-to-microsoft-for-analysis).
 
-## Customer owned legitimate app (not a threat)  is detected and identified as malicious by Defender for Endpoint ASR Rule 
+## A custom app is incorrectly detected and identified as malicious by Defender for Endpoint
+
+In this scenario, a custom, legitimate app that is not a threat is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, 
 
 Customer app launches downloaded content and is blocked  by Microsoft Defender ASR rule “Block JavaScript or VBScript from launching downloaded executable content”. 
 
