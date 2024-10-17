@@ -109,8 +109,6 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions ||
 
-
-
 ### Windows Management Instrumentation (WMI)
 
 |Exclusion Type | Reference |
@@ -119,8 +117,6 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 | Attack Surface Reduction only exclusions ||
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions ||
-
-
 
 ## Managing Exclusions for macOS
 
@@ -131,6 +127,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 > [!NOTE]
 > A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.
 
-Learn More
+**Learn more**:
+
 - [Add exclusions to network protection](/defender-endpoint/troubleshoot-np#add-exclusions)
 - [Important points about exclusions](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#important-points-about-exclusions)
