@@ -14,8 +14,10 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier1
-ms.topic: conceptual
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- cx-ti
+- seo-marvel-apr2020
+ms.topic: overview
 search.appverid: met150
 ms.date: 04/22/2024
 ---
