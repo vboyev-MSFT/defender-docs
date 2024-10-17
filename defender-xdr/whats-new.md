@@ -6,7 +6,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 09/23/2024
+ms.date: 10/17/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -28,6 +28,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Sentinel](/azure/sentinel/whats-new)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## October 2024
+
+- [Microsoft Unified RBAC roles](../defender-xdr/experts-on-demand#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
 
 ## September 2024
 
