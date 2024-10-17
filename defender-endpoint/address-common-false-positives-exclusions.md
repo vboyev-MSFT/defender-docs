@@ -36,7 +36,7 @@ In this scenario, whenever a user runs an application, the application is detect
 
 In this scenario, whenever a custom app is updated, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
 
-How to address: Create "allow" indicators for certificates or files. See the following articles:
+**How to address**: Create "allow" indicators for certificates or files. See the following articles:
 
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Create indicators for files](indicator-file.md)
@@ -53,7 +53,7 @@ Custom File path - Configure custom exclusions for Microsoft Defender Antivirus 
 
 Application behaviour while app is running is detected by defender av as “behavior” detection 
 
-How to address:   
+**How to address**:
 
 Process exclusion 
 
@@ -63,7 +63,7 @@ Customer copies a non-malicious powershell script file onto the endpoint and tha
 
 AMSI detection in the Operational logs 
 
-How to address:  
+**How to address**:  
 
 Create Path exclusions with limitations 
 
@@ -71,13 +71,13 @@ Create Path exclusions with limitations
 
 Customer app is detected by PUA and customer wants to allow it 
 
-How to address:   
+**How to address**:
 
 Follow Exclude files from PUA protection instructions 
 
 Customer legitimate  app is blocked from writing to CFA protected folder 
 
-How to address:   
+**How to address**:
 
 Allow File/Certificate IOC 
 
@@ -93,29 +93,23 @@ Customer app launches downloaded content and is blocked  by Microsoft Defender A
 
 **How to observe**: CONTENT NEEDED
 
-How to address:  
+**How to address**:
 
 Point customers to ASR report in the MDATP portal and use that to add ASR exclusions – strongly recommended 
-
- 
 
 Customer uses Office documents with word templates containing macros that launch exes and ASR rule Block Win32 imports from Macro code in Office blocks the word application 
 
 **How to observe**: CONTENT NEEDED
 
-How to address: 
+**How to address**:
 
 Point customers to ASR report in the MDATP portal and use that to add ASR exclusions – strongly recommended 
-
- 
-
- 
 
 Customer runs custom created Application from an USB Drive and “Block aps running from USB drive” blocks the app 
 
 **How to observe**: CONTENT NEEDED
 
-How to address: 
+**How to address**:
 
 Add a AV path exclusion does not work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions 
 
