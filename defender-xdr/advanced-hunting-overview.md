@@ -16,8 +16,8 @@ ms.collection:
   - tier1
 ms.custom:
 - cx-ti
+- seo-marvel-apr2020
 ms.topic: overview
-ms.custom: seo-marvel-apr2020
 search.appverid: met150
 ms.date: 04/22/2024
 ---
