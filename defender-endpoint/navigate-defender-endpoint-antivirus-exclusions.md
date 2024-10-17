@@ -32,9 +32,6 @@ search.appverid: met150
 > To onboard servers to Defender for Endpoint, you need another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). 
 > If you're a small or medium-sized business using [Microsoft Defender for Business](/defender-business/mdb-overview), you can get [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers).
 
-> [!NOTE]
-> As a Microsoft MVP, **[Fabian Bader](https://cloudbrothers.info/)** contributed to and provided material feedback for this article.
-
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
 
 Microsoft preconfigures the product to perform well on the operating system that it's installed. No other changes should be needed.
@@ -72,7 +69,7 @@ These exclusion types come preconfigured in Microsoft Defender for Endpoint.
 
 | Exclusion types | Configuration | Description |
 |---|----|----|
-| [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> Note that these exclusions are only for active roles on Windows Server 2016 and later. |
+| [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> These exclusions are only for active roles on Windows Server 2016 and later. |
 | [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
 
 The following sections describe each type of exclusions in more detail.
