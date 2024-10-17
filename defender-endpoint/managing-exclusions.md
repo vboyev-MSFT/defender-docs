@@ -79,39 +79,16 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 
 Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Module](/powershell/module/defender/?view=windowsserver2022-ps) 
 
-<table>
-  <thead>
-    <tr>
-      <th>Exclusion Type</th>
-      <th>Flag</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tr>
-    <td rowspan="4">Custom antivirus exclusion</td><td><code>-ExclusionIpAddress<code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionipaddress">IP addresses to exclude from scheduled and real-time scanning</a></td>
-  </tr>
-  <tr>
-    <td><code>-ExclusionPath</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionpath">file paths to exclude from scheduled and real-time scanning</a></td>
-  </tr>
-  <tr>
-    <td><code>-ExclusionProcess</td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionprocess">Files opened by these processes are excluded from scheduled and real-time scanning.</a></td>
-  </tr>
-  <tr>
-    <td><code>-ExclusionExtension</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-exclusionextension">File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning</a></td>
-  </tr>
-  <tr>
-    <td>Attack Surface Reduction only exclusions</td><td><code>-AttackSurfaceReductionOnlyExclusions</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-attacksurfacereductiononlyexclusions">Specifies the files and paths to exclude</a></td>
-  </tr>
-  <tr>
-    <td>Attack surface reduction per rule exclusions</td><td colspan="2">Not supported</td>
-  </tr>
-  <tr>
-    <td>Automatic antivirus exclusions</td><td><code>-DisableAutoExclusions</code></td><td><a href="/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-disableautoexclusions">Disable automatic antivirus exclusions<a/></td>
-  </tr>
-</table>
+| Exclusion type | Flag | Description |
+|---|---|---|
+| Custom antivirus exclusion | `ExclusionIpAddress` | [IP addresses to exclude from scheduled and real-time scanning](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-exclusionipaddress) |
+| Custom antivirus exclusion | `ExclusionPath` | [File paths to exclude from scheduled and real-time scanning](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-exclusionpath) |
+| Custom antivirus exclusion | `ExclusionProcess` | [Files opened by these processes are excluded from scheduled and real-time scanning](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-exclusionprocess) |
+| Custom antivirus exclusion | `ExclusionExtension` | [File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-exclusionextension) |
+| Attack surface reduction only exclusion | `AttackSurfaceReductionOnlyExclusions` | [Specifies the files and paths to exclude](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-attacksurfacereductiononlyexclusions) | 
+| Attack surface reduction per-rule exclusion | N/A | Not supported |
+| Automatic antivirus exclusions <br/>(*Only available on Windows Server 2016 and later*) | `DisableAutoExclusions` | [Disable automatic antivirus exclusions](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-disableautoexclusions) |
 
-> [!NOTE]
-> Automatic antivirus exclusions are only available on Windows Server 2016 or later
 
 ### Configuration Manager
 
