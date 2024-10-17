@@ -120,3 +120,7 @@ Use `Set-MpPreference` or `Get-MpPreference` from the [Defender Powershell Modul
 
 ## Managing Exclusions for Linux
 
+## Managing Exclusions for Network Protection
+
+Learn More
+- [Add exclusions to network protection](https://learn.microsoft.com/en-us/defender-endpoint/troubleshoot-np#add-exclusions)
