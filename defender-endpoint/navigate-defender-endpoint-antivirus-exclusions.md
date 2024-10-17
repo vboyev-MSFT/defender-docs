@@ -39,7 +39,7 @@ search.appverid: met150
 
 Microsoft pre-configures the product to perform well on the operating system that it is installed.  No additional changes should be needed.
 
-Despite this, sometimes unexpected behaviors occur:
+Despite this, sometimes unexpected behaviors occur. Here are some examples:
 
 - **False positives** - files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
 
@@ -121,14 +121,11 @@ Microsoft Defender for Endpoint allows you to configure custom exclusions to opt
 For macOS, you can define exclusions that apply to on-demand scans, real-time protection, and monitoring. The supported exclusion types include:
 
 - **File extension**: Exclude all files with a specific extension.
-
 - **File**: Exclude a specific file identified by its full path.
-
 - **Folder**: Exclude all files under a specified folder recursively.
-
 - **Process**: Exclude a specific process and all files opened by it.
 
-For more details, refer to the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions)
+For more details, refer to the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
 
 #### Linux
 
@@ -145,21 +142,20 @@ For more information, see the [Microsoft Defender for Endpoint on Linux document
 For Windows, custom exclusions can be defined for scheduled scans, on-demand scans, and always-on real-time protection and monitoring. The types of exclusions include:
 
 - **File extension**: Exclude files based on their extension.
-
 - **File**: Exclude specific files by their full path.
-
 - **Folder**: Exclude all files within a specified folder.
-
 - **Process**: Exclude files opened by specific processes.
 
-For detailed instructions, visit the [Microsoft Defender Antivirus documentation](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)
+For detailed instructions, see [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
 
 > [!Note] 
 > Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to real-time protection. 
 
 ### Custom remediation actions
 
-When Microsoft Defender Antivirus detects a potential threat while running a scan, it attempts to remediate or remove the detected threat. You can define custom remediation actions to configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed. [Configure remediation actions for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md).
+When Microsoft Defender Antivirus detects a potential threat while running a scan, it attempts to remediate or remove the detected threat. You can define custom remediation actions to configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed. 
+
+For more information, see [Configure remediation actions for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md).
 
 ### Attack surface reduction exclusions
 
@@ -177,13 +173,17 @@ Sometimes, legitimate applications exhibit software behaviors that could be bloc
 
 ### Controlled folder access exclusions
 
-[Controlled folder access](controlled-folders.md) monitors apps for activities that are detected as malicious and protects the contents of certain (protected) folders on Windows devices. Controlled folder access allows only trusted apps to access protected folders, such as common system folders (including boot sectors) and other folders that you specify. You can allow certain apps or signed executables to access protected folders by defining exclusions. See [Customize controlled folder access](customize-controlled-folders.md).
+[Controlled folder access](controlled-folders.md) monitors apps for activities that are detected as malicious and protects the contents of certain (protected) folders on Windows devices. Controlled folder access allows only trusted apps to access protected folders, such as common system folders (including boot sectors) and other folders that you specify. You can allow certain apps or signed executables to access protected folders by defining exclusions. 
+
+For more information, sSee [Customize controlled folder access](customize-controlled-folders.md).
 
 ### Automation folder exclusions
 
 Automation folder exclusions apply to [automated investigation and remediation](automated-investigations.md) in Defender for Endpoint, which is designed to examine alerts and take immediate action to resolve detected breaches. As alerts are triggered, and an automated investigation runs, a verdict (Malicious, Suspicious, or No threats found) is reached for each piece of evidence investigated. Depending on the [automation level](automation-levels.md) and other security settings, remediation actions can occur automatically or only upon approval by your security operations team.
 
-You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities. Such automation folder exclusions apply to all devices onboarded to Defender for Endpoint. These exclusions are still subject to antivirus scans. See [Manage automation folder exclusions](manage-automation-folder-exclusions.md).
+You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities. Such automation folder exclusions apply to all devices onboarded to Defender for Endpoint. These exclusions are still subject to antivirus scans. 
+
+For more information, see [Manage automation folder exclusions](manage-automation-folder-exclusions.md).
 
 ## How exclusions and indicators are evaluated
 
