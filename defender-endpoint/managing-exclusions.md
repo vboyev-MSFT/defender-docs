@@ -30,6 +30,9 @@ Many exclusions can be managed from [https://security.microsoft.com]
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions | Not supported |
 
+> [!NOTE]
+> `IP Address Exclusions` cannot be configured from the Defender portal.
+
 Learn More
 - [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](https://learn.microsoft.com/en-us/defender-endpoint/mde-security-settings-management)
 
