@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.date: 9/13/2023
+ms.date: 04/22/2024
 ---
 
 # Advanced hunting example for Microsoft Defender for Office 365
