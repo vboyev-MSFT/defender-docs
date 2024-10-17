@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2024
+ms.date: 10/17/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -27,11 +27,6 @@ search.appverid: met150
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
-> [!TIP]
->- **[Defender for Endpoint Plan 1](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/defender-endpoint-plan-1.md)** is available as a standalone plan, and is included in Microsoft 365 E3.
->- **[Defender for Endpoint Plan 2](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/microsoft-defender-endpoint.md)** is available as a standalone plan, and is included in Microsoft 365 E5.
->- If you have Microsoft 365 E3 or E5, make sure to **[set up your Defender for Endpoint capabilities](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/deployment-strategy.md)**.
 
 > [!NOTE]
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). 
@@ -52,14 +47,11 @@ Despite this, sometimes unexpected behaviors occur:
 
 - **Application compatibility issues** - applications experience unexpected behavior when running with Defender for Endpoint 
 
-> [!CAUTION]
-> **Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus**. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See **[Important points about exclusions](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/configure-exclusions-microsoft-defender-antivirus.md)** and **[Common mistakes to avoid](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Fnavigate-defender-endpoint-antivirus-exclusions.md/pr/1543/common-exclusion-mistakes-microsoft-defender-antivirus.md)**.
 This article explains the various types of exclusions that can be defined or actions that can be taken for Defender for Endpoint and Microsoft Defender Antivirus to help manage these situations. 
 
 ## Types of exclusions
 
 The following table summarizes the different exclusion types and capabilities in Defender for Endpoint and Microsoft Defender Antivirus. Select each type to see more information about it. 
-
 
 ### Customer Exclusions
 
@@ -74,7 +66,7 @@ These exclusion types can be configured by customers.
 |[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled Folder Access|Controlled folder access blocks an application from accessing a protected folder.|
 |[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension or directory that should be done manually.|
 
-### Pre-configured Exclusions
+### Pre-configured exclusions
 
 These exclusion types come pre-configured in Microsoft Defender for Endpoint.  
 
@@ -82,7 +74,6 @@ These exclusion types come pre-configured in Microsoft Defender for Endpoint.
 |:---|:----| :----|
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> _Note: for active roles on Windows Server 2016 and later_. |
 | [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built in exclusions for operating system files on all versions of Windows.|
-
 
 The following sections describe each type of exclusions in more detail.
 
@@ -183,39 +174,6 @@ Sometimes, legitimate applications exhibit software behaviors that could be bloc
 > [!NOTE]
 > Some ASR rules do honor some Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
 
-### Defender for Endpoint indicators
-
-You can define [indicators](manage-indicators.md) with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. In Defender for Endpoint, indicators are referred to as Indicators of Compromise (IoCs), and less often, as custom indicators. When you define your indicators, you can specify one of the following actions:
-
-- **Allow** – Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (*Use this action with caution.*)
-
-- **Audit** – Files, IP addresses, and URLs/domains with Audit indicators are monitored, and when they're accessed by users, informational alerts are generated in the Microsoft Defender portal.
-
-- **Block and Remediate** – Files or certificates with Block and Remediate indicators are blocked and quarantined when detected.
-
-- **Block Execution** – IP addresses and URLs/domains with Block Execution indicators are blocked. Users can't access those locations.
-
-- **Warn** – IP addresses and URLs/domains with Warn indicators cause a warning message to be displayed when a user attempts to access those locations. Users can choose to bypass the warning and proceed to the IP address or URL/domain.
-
-> [!IMPORTANT]
-> You can have up to 15,000 indicators in your tenant.
-
-The following table summarizes IoC types and available actions:
-
-| Indicator type | Available actions |
-|:---|:---|
-| [Files](indicator-file.md) | - Allow <br/> - Audit <br/> - Warn <br/> - Block execution <br/> - Block and remediate |
-| [IP addresses and URLs/domains](indicator-ip-domain.md) | - Allow <br/> - Audit <br/> - Warn <br/> - Block execution |
-| [Certificates](indicator-certificates.md) | - Allow <br/> - Block and remediate |
-
-> [!TIP]
-> See the following resources to learn more about indicators:
->
-> - [Create indicators](manage-indicators.md)
-> - [Create indicators for files](indicator-file.md)
-> - [Create indicators for IP addresses and URLs/domains](indicator-ip-domain.md)
-> - [Create indicators based on certificates](indicator-certificates.md)
-> - [Manage indicators](indicator-manage.md)
 
 ### Controlled folder access exclusions
 
@@ -230,10 +188,6 @@ You can specify folders, file extensions in a specific directory, and file names
 ## How exclusions and indicators are evaluated
 
 Most organizations have several different types of exclusions and indicators to determine whether users should be able to access and use a file or process. Exclusions and indicators are processed in a particular order so that [policy conflicts are handled systematically](indicator-file.md#policy-conflict-handling).
-
-The following image summarizes how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
-
-:::image type="content" source="media/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="media/mdav-mde-flow.png":::
 
 Here's how it works:
 
@@ -261,9 +215,7 @@ In cases where Defender for Endpoint indicators conflict, here's what to expect:
 
 [Automated investigation and remediation capabilities](automated-investigations.md) in Defender for Endpoint first determine a verdict for each piece of evidence, and then take an action depending on Defender for Endpoint indicators. Thus, a file/process could get a verdict of "good" (which means no threats were found) and still be blocked if there's an indicator with that action. Similarly, an entity could get a verdict of "bad" (which means it's determined to be malicious) and still be allowed if there's an indicator with that action.
 
-The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
-
-:::image type="content" source="media/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="media/air-exclusions.png":::
+For more information, see [automated investigation and remediation works with indicators](indicators-overview.md#automated-investigation-and-remediation-engine):
 
 ## Other server workloads and exclusions
 
@@ -277,22 +229,6 @@ Here are some examples of technical documentation to identify and implement the 
 
 Depending on what you're using, you might need to refer to the documentation for that server workload.
 
-> [!TIP]
-> **Performance tip** Due to a variety of factors, Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
-> 
-- Top paths that impact scan time
-- Top files that impact scan time
-- Top processes that impact scan time
-- Top file extensions that impact scan time
-- Combinations, such as:
-  - top files per extension
-  - top paths per extension
-  - top processes per path
-  - top scans per file
-  - top scans per file per process
-
-> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
-> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 ## See also
 
 - [Submissions, suppressions and exclusions](submissions-suppressions-exclusions.md)
