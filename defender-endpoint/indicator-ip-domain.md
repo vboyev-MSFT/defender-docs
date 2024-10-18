@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: 
 search.appverid: met150
-ms.date: 08/26/2024
+ms.date: 10/18/2024
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -81,7 +81,7 @@ URL/IP allow and block requires that the Microsoft Defender for Endpoint compone
 
 ### Custom network indicators requirements
 
-To start blocking IP addresses and/or URL's, turn on "**Custom network indicators"** feature in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features**. For more information, see [Advanced features](advanced-features.md).
+To start blocking IP addresses and/or URLs, turn on "**Custom network indicators"** feature in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](ios-configure-features.md#configure-custom-indicators).
 
@@ -178,8 +178,8 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 
 5. Review the details in the **Summary** tab, then select **Save**.
 
-> [!NOTE]
-> There may be up to 2 hours of latency between the time a policy is created and the URL or IP being blocked on the device.
+> [!IMPORTANT]
+> It can take up to 48 hours after a policy is created for a URL or IP address to be blocked on a device.
 
 ## Related articles
 
