@@ -113,14 +113,22 @@ The list of built-in exclusions in Windows is kept up to date as the threat land
 
 Microsoft Defender for Endpoint allows you to configure custom exclusions to optimize performance and avoid false positives. The types of exclusions you can set vary by operating system. Below is a summary of the custom exclusions available for macOS, Linux, and Windows.
 
-In general, MDE has the following types of exclusions:
+Exclusions are scoped to 1 or more components of Microsoft Defender for Endpoint:
+
+- Antivirus:  Exclude the operations of *only* the antivirus component
+- Global:  Exclude the operations of *all components* of Microsoft Defender for Endpoint
+
+>[!NOTE]
+> Global exclusions are only available on Linux
+
+Exclusions can be defined for files or processes:
+
 - File and folder based exclusions:  Exclude the behavior (e.g. scanning) based on the file or folder location.
 - Process based exclusions:  Exclude behavior (e.g. real time protection) based on the process initiating the activty.
 
 > [!NOTE]
 > Network Protection is directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection not being unable to inspect traffic or enforce rules for that specific process.
 
-- Global exclusions:  Exclude the behavior from the sensor.
 
 
 
@@ -182,7 +190,7 @@ Sometimes, legitimate applications exhibit software behaviors that could be bloc
 
 [Controlled folder access](controlled-folders.md) monitors apps for activities that are detected as malicious and protects the contents of certain (protected) folders on Windows devices. Controlled folder access allows only trusted apps to access protected folders, such as common system folders (including boot sectors) and other folders that you specify. You can allow certain apps or signed executables to access protected folders by defining exclusions. 
 
-For more information, sSee [Customize controlled folder access](customize-controlled-folders.md).
+For more information, See [Customize controlled folder access](customize-controlled-folders.md).
 
 ### Automation folder exclusions
 
