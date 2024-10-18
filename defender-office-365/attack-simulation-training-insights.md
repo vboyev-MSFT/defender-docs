@@ -220,12 +220,16 @@ If you hover over a data point in the chart, the actual values are shown.
 
 The details table below the chart shows the following information. You can sort the information by clicking on an available column header. Select :::image type="icon" source="media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
-- **User**
-- **Simulation types**
-- **Simulations**
-- **Email address**
-- **Last repeat count**
-- **Repeat offenses**
+- **User**: Name of the user
+- **Simulation types**: Type of simulations where the user was involved 
+- **Simulations**: Name of simulations where the user was involved
+- **Email address**: Email address of the user
+- **Latest repeat count**: This is the latest count of compromises for users categorized as repeat offender. As an example, if the repeat offender’s threshold is set to 3, and a user has been compromised in 3 consecutive simulations, then the latest repeat count is 3. If the user has been compromised in 4 consecutive simulations, then the latest repeat count is 4. If the user has been compromised in 2 consecutive simulations, then this value shows N/A. The latest repeat count sets to 0 (N/A), every time a repeat offender flag is reset (meaning the user passes a simulation). 
+- **Repeat offences**: This will include the number of times a user has been classified as a repeat offender. As an example, if a user:
+  -   Was classified as a repeat offender in first few simulations (they were compromised 3 consecutive times, where repeat offender threshold is 2)
+  -   Was classified as ‘clean’ after passing a simulation
+  -   Was classified as a repeat offender in the next few simulations  (they were compromised 4 consecutive times, where repeat offender threshold is 2)
+  In such a case, the number of repeat offences would be set to 2. The count updates every time a user is considered a repeat offender.
 - **Last simulation name**
 - **Last simulation result**
 - **Last training assigned**
