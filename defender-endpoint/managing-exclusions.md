@@ -24,19 +24,17 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 ## Manage exclusions for Windows devices
 
 | Tool | Custom AV | ASR Only |  ASR per Rule | CFA | Automatic |
-|---   |---        |---       |---            |---  |---        |
-| Defender Portal | X | X | X | X | - |
+|--- |---|---|---|---|---|
+| Microsoft Defender portal | X | X | X | X | - |
 | Intune | X | X | X | X | - |
 | MDM CSP | X | X | - | X | - |
 | PowerShell | X | X | - | X | X |
 | GPO | X | X | - | X | X |
 | WMI | X| - | - | - | X |
 
-
-
 ### The Microsoft Defender portal
 
-Many exclusions can be managed from the [Microsoft Defender portal](https://security.microsoft.com).
+Many exclusions can be managed in the [Microsoft Defender portal](https://security.microsoft.com).
 
 | Exclusion Type | Instructions |
 |-----|----|
