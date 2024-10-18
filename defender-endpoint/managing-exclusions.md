@@ -154,12 +154,6 @@ Learn more:
 
 (content coming soon)
 
-## Manage exclusions for Network Protection
-
-(content coming soon)
-
-> [!NOTE]
-> A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.
 
 **Learn more**:
 
