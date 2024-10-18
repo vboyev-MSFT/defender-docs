@@ -26,13 +26,13 @@ A false positive is when an entity, such as a file or a process, was detected an
 
 ## An app is detected by Microsoft Defender Antivirus when the application runs
 
-In this scenario, whenever a user runs an application, the application is detected by Microsoft Defender Antivirus as a potential threat. 
+In this scenario, whenever a user runs a certain application, the application is detected by Microsoft Defender Antivirus as a potential threat. 
 
 <!---**How to observe**: CONTENT NEEDED--->
 
-**How to address**: Create "allow" indicators for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
+**How to address**: Create an "allow" indicator for Microsoft Defender for Endpoint. For example, you can create an "allow" indicator for a file, such as an executable. See [Create indicators for files](indicator-file.md). 
 
-## A custom, self-signed app is detected by Microsoft Defender Antivirus when the application runs 
+## A custom, self-signed app is detected by Microsoft Defender Antivirus when the application runs
 
 In this scenario, whenever a custom app that is periodically updated run, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
 
@@ -94,9 +94,9 @@ In this scenario, a third-party app that isn't a threat is detected and identifi
 
 **How to address**: Submit the app to Microsoft for analysis. See [How to submit a file to Microsoft for analysis](/defender-xdr/submission-guide#how-do-i-submit-a-file-to-microsoft-for-analysis).
 
-## A custom app is incorrectly detected and identified as malicious by Defender for Endpoint
+## An app is incorrectly detected and identified as malicious by Defender for Endpoint
 
-In this scenario, a custom, legitimate app that isn't a threat is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, the app and any downloaded content are blocked by the attack surface reduction rule, [Block JavaScript or VBScript from launching downloaded executable content](/defender-endpoint/attack-surface-reduction-rules-reference#block-javascript-or-vbscript-from-launching-downloaded-executable-content). 
+In this scenario, a legitimate app is detected and identified as malicious by an attack surface reduction rule in Defender for Endpoint. Whenever a user uses the app, the app and any downloaded content are blocked by the attack surface reduction rule, [Block JavaScript or VBScript from launching downloaded executable content](/defender-endpoint/attack-surface-reduction-rules-reference#block-javascript-or-vbscript-from-launching-downloaded-executable-content). 
 
 <!---**How to observe**: CONTENT NEEDED--->
 
