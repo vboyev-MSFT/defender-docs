@@ -99,18 +99,16 @@ Microsoft Defender Antivirus can be configured to exclude combinations of proces
 
 For more granular control that helps minimize protection gaps, consider using [Contextual file and process exclusions](/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus).  
 
-### Preconfigured exclusions
+### Antivirus preconfigured exclusions
 
-These exclusion types come preconfigured in Microsoft Defender for Endpoint. 
+These exclusion types are preconfigured in Microsoft Defender for Endpoint for Microsoft Defender Antivirus. 
 
 | Exclusion types | Configuration | Description |
 |---|----|----|
-| [Automatic Microsoft Defender Antivirus exclusions](#automatic-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> These exclusions are only for active roles on Windows Server 2016 and later. |
+| [Automatic Microsoft Defender Antivirus exclusions](#automatic-server-role-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> These exclusions are only for active roles on Windows Server 2016 and later. |
 | [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
 
-The following sections describe each type of exclusions in more detail.
-
-### Automatic server role exclusions
+#### Automatic server role exclusions
 
 [Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions) include exclusions for server roles and features in Windows Server 2016 and later. These exclusions aren't scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
 
@@ -131,7 +129,7 @@ Here are some examples of automatic server role exclusions:
 
 For more information, see [Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions).
 
-### Built-in exclusions
+#### Built-in exclusions
 
 [Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows (including Windows 10, Windows 11, and Windows Server). 
 
@@ -145,13 +143,6 @@ Examples include:
 
 The list of built-in exclusions in Windows is kept up to date as the threat landscape changes. To learn more about these exclusions, see [Microsoft Defender Antivirus exclusions on Windows Server: Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
 
-
-### Custom remediation actions
-
-When Microsoft Defender Antivirus detects a potential threat while running a scan, it attempts to remediate or remove the detected threat. You can define custom remediation actions to configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed. 
-
-For more information, see [Configure remediation actions for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md).
-
 ### Attack surface reduction exclusions
 
 [Attack surface reduction rules](attack-surface-reduction.md) (also known as ASR rules) target certain software behaviors, such as:
@@ -163,7 +154,14 @@ For more information, see [Configure remediation actions for Microsoft Defender 
 Sometimes, legitimate applications exhibit software behaviors that could be blocked by attack surface reduction rules. If that's occurring in your organization, you can define exclusions for certain files and folders. Such exclusions are applied to all attack surface reduction rules. See [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md#exclude-files-and-folders).
 
 > [!NOTE]
-> Some ASR rules do honor some Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
+> Attack surface reduction rules honor process exclusions, but not all attack surface reduction rules honor Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules). 
+
+### Custom remediation actions
+
+When Microsoft Defender Antivirus detects a potential threat while running a scan, it attempts to remediate or remove the detected threat. You can define custom remediation actions to configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed. 
+
+For more information, see [Configure remediation actions for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md).
+
 
 
 ### Controlled folder access exclusions
