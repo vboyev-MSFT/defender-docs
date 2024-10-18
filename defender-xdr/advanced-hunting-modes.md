@@ -1,6 +1,6 @@
 ---
-title: Choose between guided and advanced modes for hunting in Microsoft Defender XDR
-description: Guided hunting in Microsoft Defender XDR does not require KQL knowledge while advanced hunting allows you to write a query from scratch.
+title: Choose between guided and advanced modes for hunting in Microsoft Defender
+description: Guided hunting in Microsoft Defender does not require KQL knowledge while advanced hunting allows you to write a query from scratch.
 ms.service: defender-xdr
 ms.subservice: adv-hunting
 f1.keywords:
@@ -19,17 +19,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.topic: how-to
 search.appverid: met150
-ms.date: 04/22/2024
+ms.date: 10/18/2024
+appliesto: 
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Choose between guided and advanced modes to hunt in Microsoft Defender XDR
+# Choose between guided and advanced modes to hunt in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-- Microsoft Defender XDR
-
-You can find the **advanced hunting** page by going to the left navigation bar in Microsoft Defender XDR and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](/defender/media/guided-hunting/hunting-icon.png).
+You can find the **advanced hunting** page by going to the left navigation bar in the Microsoft Defender portal and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](/defender/media/guided-hunting/hunting-icon.png).
 
 In the **advanced hunting** page, two modes are supported:
 

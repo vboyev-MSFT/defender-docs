@@ -1,5 +1,5 @@
 ---
-title: Learn the advanced hunting query language in Microsoft Defender XDR
+title: Learn the advanced hunting query language in Microsoft Defender
 description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
 search.appverid: met150
 ms.service: defender-xdr
@@ -18,16 +18,15 @@ ms.collection:
 ms.custom:
 - cx-ti
 ms.topic: how-to
-ms.date: 04/22/2024
+ms.date: 10/18/2024
+appliesto:
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Learn the advanced hunting query language
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-
-- Microsoft Defender XDR
 
 Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md).
 
