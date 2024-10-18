@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ngp
 search.appverid: met150
-ms.date: 02/09/2024
+ms.date: 10/18/2024
 ---
 # Resources for Microsoft Defender for Endpoint for mobile devices
 
