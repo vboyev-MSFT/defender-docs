@@ -112,7 +112,7 @@ These exclusion types are preconfigured in Microsoft Defender for Endpoint for M
 
 [Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions) include exclusions for server roles and features in Windows Server 2016 and later. These exclusions aren't scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
 
-Here are some examples of automatic server role exclusions: 
+Examples include:
 
 - File Replication Service (FRS)
 - Hyper-V
