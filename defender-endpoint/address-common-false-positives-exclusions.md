@@ -1,10 +1,10 @@
 ---
-title: Address common false-positive scenarios with exclusions            
+title: Address common false-positive scenarios with exclusions in Microsoft Defender for Endpoint            
 description: Learn how to address common false-positive scenarios using antivirus exclusions or Defender for Endpoint indicators.            
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
-ms.date: 10/17/2024
+ms.date: 10/18/2024
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
@@ -20,7 +20,7 @@ ms.collection:
 - tier2
 ---
 
-# Address common false-positive scenarios with exclusions
+# Address common false-positive scenarios with exclusions in Microsoft Defender for Endpoint
 
 A false positive is when an entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. This article describes common false-positive scenarios you might encounter, and how you can address them with exclusions. For more information about exclusions, see [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md).
 
@@ -52,7 +52,7 @@ In this scenario, a custom app accesses a set file types, and the set is detecte
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-## An application is detected by Microsoft Defender Antivirus as a “behavior” detection 
+## An application is detected by Microsoft Defender Antivirus as a "behavior" detection 
 
 In this scenario, an application is detected by Microsoft Defender Antivirus because of certain behavior, even though the application isn't a threat. 
 
@@ -128,7 +128,7 @@ In this scenario, whenever a user opens documents that were created by using Mic
 
 ## When a user runs a custom app from a USB drive, the app is blocked
 
-In this scenario, whenever a user runs a custom created application from a USB drive, the app is blocked by the “Block apps running from USB drive” configuration. 
+In this scenario, whenever a user runs a custom created application from a USB drive, the app is blocked by the "Block apps running from USB drive" configuration. 
 
 <!---**How to observe**: CONTENT NEEDED--->
 
