@@ -129,8 +129,8 @@ Exclusions can be defined for files or processes:
 > [!NOTE]
 > Network Protection is directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection not being unable to inspect traffic or enforce rules for that specific process.
 
-
-
+> [!NOTE]
+> Both custom exclusions and custom indicators of compromise (IoC) control the protection behavior of Defender for Endpoint.  Indicators are preferred to exclusions as they create a smaller protection gap. See [how exclusions and indicators are evaluated](how-exclusions-and-indicators-are-evaluated) for details.
 
 #### macOS
 
