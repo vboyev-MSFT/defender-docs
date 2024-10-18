@@ -32,7 +32,7 @@ This table shows which exclusion types are supported by each management tool.
 | [MDM CSP](#mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: |
 | [PowerShell](#powershell) | ✅ | ✅ | :x: | ✅ | ✅ |
 | [GPO](#group-policy-object-gpo) | ✅ | ✅ | :x: | ✅ | ✅ |
-| [WMI](#wmi) | ✅| :x: | :x: | :x: | ✅ |
+| [WMI](#windows-management-instrumentation-wmi) | ✅| :x: | :x: | :x: | ✅ |
 | [Configuration Manager](#configuration-manager)| ✅ | ✅ | :x: | ✅ | :x: |
 
 ### The Microsoft Defender portal
