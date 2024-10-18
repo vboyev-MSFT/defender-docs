@@ -35,17 +35,15 @@ This table shows which exclusion types are supported by each management tool.
 | [WMI](wmi) | ✅| :x: | :x: | :x: |:x: | ✅ |
 | [Configuration Manager](configuration-manager)| ✅ | ✅ | :x: | ✅ |:x: | :x: |
 
-
-
 ### The Microsoft Defender portal
 
-Many exclusions can be managed from the [Microsoft Defender portal](https://security.microsoft.com).
+Many exclusions can be managed in the [Microsoft Defender portal](https://security.microsoft.com).
 
 | Exclusion Type | Instructions |
 |-----|----|
 | Custom antivirus exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy**. <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/>4. Select a template. Both **Microsoft Defender Antivirus exclusions** and **Microsoft Defender Antivirus** support custom antivirus exclusions. |
 | Attack surface reduction only exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<BR> 5.  Scroll down to **Attack Surface Reduction Only Exclusions** |
-| Attack surface reduction rule per rule exclusion | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<BR> 5. Scroll down to the rule to create an exclusion.<BR>6. Change it from **Not configured** to `Block`,`Audit`, or `Warn`. <br/>7. Select **Add** to enter the path to be excluded.    |
+| Attack surface reduction rule per rule exclusion | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<br/> 5. Scroll down to the rule to create an exclusion.<BR>6. Change it from **Not configured** to `Block`,`Audit`, or `Warn`. <br/>7. Select **Add** to enter the path to be excluded.    |
 | Conntrolled folder access exclusion | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<BR> 5.  Scroll down to **Controlled Folder Access Allowed Applications** |
 | Automation folder exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Rules** > **Automation folder exclusions**]<br>2. Select **New Folder Exclusion** |
 | Automatic antivirus exclusions | Not supported in the [Microsoft Defender portal](https://security.microsoft.com). |
