@@ -8,7 +8,7 @@ ms.service: defender-endpoint
 ms.subservice: onboard
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 10/17/2024
+ms.date: 10/18/2024
 search.appverid: met150
 ms.custom: 
 - partner-contribution
@@ -83,7 +83,7 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 | Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths` | [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths)
 | Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions` | [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions) |
 | Attack surface reduction only exclusions | `./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions` | [AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions) |
-| Controlled folder access exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications` | [ControlledFolderAccessAllowedApplications](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#controlledfolderaccessallowedapplications)
+| Controlled folder access exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications` | [ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#controlledfolderaccessallowedapplications)
 
 **Learn more**:
 
@@ -103,33 +103,31 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Custom antivirus exclusion | `ExclusionExtension` | [File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-exclusionextension) |
 | Attack surface reduction only exclusion | `AttackSurfaceReductionOnlyExclusions` | [Specifies the files and paths to exclude](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-attacksurfacereductiononlyexclusions) | 
 | Attack surface reduction per-rule exclusion | N/A | Not supported |
-| Controlled Folder Access exception | `ControlledFolderAccessAllowedApplications` | [Specifies applications that can make changes in controlled folders](https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-controlledfolderaccessallowedapplications) |
+| Controlled Folder Access exception | `ControlledFolderAccessAllowedApplications` | [Specifies applications that can make changes in controlled folders](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-controlledfolderaccessallowedapplications) |
 | Automatic antivirus exclusions <br/>(*Only available on Windows Server 2016 and later*) | `DisableAutoExclusions` | [Disable automatic antivirus exclusions](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-disableautoexclusions) |
-
 
 
 ### Configuration Manager
 
 |Exclusion Type | Reference |
 | -------- | -------- |
-| Custom antivirus exclusion | See [exclusion settings]https://learn.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
-| Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
+| Custom antivirus exclusion | See [exclusion settings]/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
+| Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Controlled Folder Access exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
 | Automatic antivirus exclusions | Not supported |
-
 
 
 ### Group Policy Object (GPO)
 
 |Exclusion Type | Setting | Reference |
 | -------- | -------- | -----|
-| Custom antivirus exclusion - Path| Windows components > Microsoft Defender Antivirus > Exclusions > Path Exclusions | See [Use Group Policy to configure folder or file extension exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus#use-group-policy-to-configure-folder-or-file-extension-exclusions) for details |
-| Custom antivirus exclusions - Process | Windows components > Microsoft Defender Antivirus > Exclusions > Process Exclusions | See [Use Group Policy to exclude files that have been opened by specified processes from scans](https://learn.microsoft.com/en-us/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus#use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans) for details|
-| Attack Surface Reduction only exclusions |Windows components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack surface reduction > Exclude files and paths from Attack surface reduction rules | See [Group Policy](https://learn.microsoft.com/en-us/defender-endpoint/enable-attack-surface-reduction#group-policy) for details|
+| Custom antivirus exclusion - Path| Windows components > Microsoft Defender Antivirus > Exclusions > Path Exclusions | See [Use Group Policy to configure folder or file extension exclusions](/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus#use-group-policy-to-configure-folder-or-file-extension-exclusions) for details |
+| Custom antivirus exclusions - Process | Windows components > Microsoft Defender Antivirus > Exclusions > Process Exclusions | See [Use Group Policy to exclude files that have been opened by specified processes from scans](/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus#use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans) for details|
+| Attack Surface Reduction only exclusions |Windows components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack surface reduction > Exclude files and paths from Attack surface reduction rules | See [Group Policy](/defender-endpoint/enable-attack-surface-reduction#group-policy) for details|
 | Attack surface reduction rule per rule exclusion | Not supported | |
-| Automatic antivirus exclusions |Windows components > Microsoft Defender Antivirus > Exclusions > Enabled| See [Use Group Policy to disable the auto-exclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022](https://learn.microsoft.com/en-us/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022) for details|
-| Controlled Folder Access exclusions | Windows components > Microsoft Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access > Configure allowed applications | See [Use group policy to allow specific apps](https://learn.microsoft.com/en-us/defender-endpoint/customize-controlled-folders#use-group-policy-to-allow-specific-apps) for details |
+| Automatic antivirus exclusions |Windows components > Microsoft Defender Antivirus > Exclusions > Enabled| See [Use Group Policy to disable the auto-exclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022](/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022) for details|
+| Controlled Folder Access exclusions | Windows components > Microsoft Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access > Configure allowed applications | See [Use group policy to allow specific apps](/defender-endpoint/customize-controlled-folders#use-group-policy-to-allow-specific-apps) for details |
 
 ### Windows Management Instrumentation (WMI)
 
@@ -145,21 +143,20 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 
 Learn more:
 
-- [Windows Defender WMIv2 APIs](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-## Manage exclusions for macOS
-
-(content coming soon)
+- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## Manage exclusions for Linux
 
 (content coming soon)
 
 
-## Manage exclusions for Network Protection
+## Manage exclusions for macOS
 
 (content coming soon)
 
+## Manage exclusions for Network Protection
+
+(content coming soon)
 
 > [!NOTE]
 > A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.

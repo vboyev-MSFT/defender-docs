@@ -62,16 +62,16 @@ The following table summarizes types of custom exclusions that you can define. N
 |---| ----| -------- |
 |[Custom Defender for Endpoint exclusions](#custom-exclusions) | Antivirus<br/>Attack surface reduction rules<br/>Defender for Endpoint<br/>Network Protection |A file, folder, or process is identified as malicious, even though it's not a threat.<br/><br/> An application encounters unexpected performance or application compatibility issue when running with Defender for Endpoint|
 |[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Attack surface reduction rules|An attack surface reduction rule causes unexpected behavior|
+|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension, or directory that should be done manually.|
+|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
 |[Defender for Endpoint File and Certificate Allow Indicators](/defender-endpoint/indicator-certificates)| Antivirus<br/>Attack surface reduction rules<br/>Controlled folder access |A file or process signed by a certificate is identified as malicious even through it's not.|
 |[Defender for Endpoint Domain/URL and IP address Indicators](/defender-endpoint/indicator-ip-domain) |Network Protection<br/>SmartScreen<br/>Web Content Filtering |SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block on a specific site.|
-|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
-|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension, or directory that should be done manually.|
 
 
 > [!NOTE]
 > Network Protection is directly impacted by process exclusions on all platforms. A process exclusion on any OS (Windows, MacOS, Linux) results in preventing Network Protection from inspecting traffic or enforcing rules for that specific process.
 
-The following sections describe exclusion types for the macOS, Linux, and Windows operating systems.
+The following sections provide more details about exclusion types for the macOS, Linux, and Windows operating systems.
 
 #### Exclusions on Mac
 
@@ -106,7 +106,7 @@ These exclusion types are preconfigured in Microsoft Defender for Endpoint for M
 | Exclusion types | Configuration | Description |
 |---|----|----|
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-server-role-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> These exclusions are only for active roles on Windows Server 2016 and later. |
-| [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
+| [Built-in Microsoft Defender Antivirus exclusions](#built-in-antivirus-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
 
 #### Automatic server role exclusions
 
@@ -129,9 +129,9 @@ Examples include:
 
 For more information, see [Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions).
 
-#### Built-in exclusions
+#### Built-in antivirus exclusions
 
-[Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows (including Windows 10, Windows 11, and Windows Server). 
+[Built-in antivirus exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows (including Windows 10, Windows 11, and Windows Server). 
 
 Examples include:
 
@@ -210,7 +210,7 @@ For more information, see [automated investigation and remediation works with in
 
 ## Other server workloads and exclusions
 
-If your organization is using other server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic exclusions](#automatic-exclusions) feature (and only when using their default installation location). You'll likely need to define antivirus exclusions for these other workloads, or for all workloads if you disable automatic exclusions.
+If your organization is using other server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic server role exclusions](#automatic-server-role-exclusions) feature (and only when using their default installation location). You'll likely need to define antivirus exclusions for these other workloads, or for all workloads if you disable automatic exclusions.
 
 Here are some examples of technical documentation to identify and implement the exclusions you need:
 
