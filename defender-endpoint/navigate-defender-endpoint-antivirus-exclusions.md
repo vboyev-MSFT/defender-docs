@@ -113,6 +113,17 @@ The list of built-in exclusions in Windows is kept up to date as the threat land
 
 Microsoft Defender for Endpoint allows you to configure custom exclusions to optimize performance and avoid false positives. The types of exclusions you can set vary by operating system. Below is a summary of the custom exclusions available for macOS, Linux, and Windows.
 
+In general, MDE has the following types of exclusions:
+- File and folder based exclusions:  Exclude the behavior (e.g. scanning) based on the file or folder location.
+- Process based exclusions:  Exclude behavior (e.g. real time protection) based on the process initiating the activty.
+
+> [!NOTE]
+> Network Protection is directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection not being unable to inspect traffic or enforce rules for that specific process.
+
+- Global exclusions:  Exclude the behavior from the sensor.
+
+
+
 #### macOS
 
 For macOS, you can define exclusions that apply to on-demand scans, real-time protection, and monitoring. The supported exclusion types include:
@@ -136,17 +147,16 @@ For more information, see the [Microsoft Defender for Endpoint on Linux document
 
 #### Windows
 
-For Windows, custom exclusions can be defined for scheduled scans, on-demand scans, and always-on real-time protection and monitoring. The types of exclusions include:
+Microsoft Defender Antivirus can be configured to exclude combinations of processes, files, and extensions from scheduled scans, on-demdand scans and real-time protection.  [Contextual file and process exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus#:~:text=Exclusions%20are%20primarily%20intended%20to%20mitigate%20affects%20on,for%20addressing%20false%20positives%20in%20a%20reliable%20way.) provide granular control to minimize protection gaps.  
 
-- **File extension**: Exclude files based on their extension.
-- **File**: Exclude specific files by their full path.
-- **Folder**: Exclude all files within a specified folder.
-- **Process**: Exclude files opened by specific processes.
+> [!NOTE]
+> Some ASR rules do honor Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).  All ASR rules honor process exclusions.
+
+
+
 
 For detailed instructions, see [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
 
-> [!Note] 
-> Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to real-time protection. 
 
 ### Custom remediation actions
 
