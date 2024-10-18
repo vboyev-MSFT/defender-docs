@@ -54,7 +54,9 @@ The following table summarizes the different exclusion types and capabilities in
 
 ### Custom exclusions
 
-You can configure these exclusion types.
+Microsoft Defender for Endpoint allows you to configure custom exclusions to optimize performance and avoid false positives. The types of exclusions you can set vary by Defender for Endpoint capabilities and by operating systems. 
+
+The following table summarizes types of custom exclusions that you can define. Note the scope for each exclusion type. 
 
 | Exclusion types | Scope |Use When|
 |---| ----| -------- |
@@ -64,6 +66,41 @@ You can configure these exclusion types.
 |[Defender for Endpoint Domain/URL and IP address Indicators](/defender-endpoint/indicator-ip-domain) |SmartScreen<br/>Web Content Filtering<br/>Network Protection |SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block on a specific site.|
 |[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
 |[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension, or directory that should be done manually.|
+
+
+> [!NOTE]
+> Network Protection is directly impacted by process exclusions on all platforms. A process exclusion on any OS (Windows, MacOS, Linux) results in preventing Network Protection from inspecting traffic or enforcing rules for that specific process.
+
+The following sections describe exclusion types for the macOS, Linux, and Windows operating systems.
+
+#### macOS
+
+For macOS, you can define exclusions that apply to on-demand scans, real-time protection, and monitoring. The supported exclusion types include:
+
+- **File extension**: Exclude all files with a specific extension.
+- **File**: Exclude a specific file identified by its full path.
+- **Folder**: Exclude all files under a specified folder recursively.
+- **Process**: Exclude a specific process and all files opened by it.
+
+For more information, see the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
+
+#### Linux
+
+On Linux, you can configure both antivirus and global exclusions.
+
+- **Antivirus exclusions**: Apply to on-demand scans, real-time protection (RTP), and behavior monitoring (BM).
+- **Global exclusions**: Apply to real-time protection (RTP), behavior monitoring (BM), and endpoint detection and response (EDR), stopping all associated antivirus detections and EDR alerts.
+
+For more information, see the [Microsoft Defender for Endpoint on Linux documentation](/defender-endpoint/linux-exclusions)
+
+#### Windows
+
+Microsoft Defender Antivirus can be configured to exclude combinations of processes, files, and extensions from scheduled scans, on-demdand scans and real-time protection. See [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
+
+For more granular control that helps minimize protection gaps, consider using [Contextual file and process exclusions](/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus).  
+
+> [!NOTE]
+> Attack surface reduction rules honor process exclusions, but not all attack surface reduction rules honor Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules). 
 
 ### Preconfigured exclusions
 
@@ -110,62 +147,6 @@ Examples include:
 - ... and more.
 
 The list of built-in exclusions in Windows is kept up to date as the threat landscape changes. To learn more about these exclusions, see [Microsoft Defender Antivirus exclusions on Windows Server: Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
-
-### Custom exclusions
-
-Microsoft Defender for Endpoint allows you to configure custom exclusions to optimize performance and avoid false positives. The types of exclusions you can set vary by operating system. Below is a summary of the custom exclusions available for macOS, Linux, and Windows.
-
-Exclusions are scoped to 1 or more components of Microsoft Defender for Endpoint:
-
-- Antivirus:  Exclude the operations of *only* the antivirus component
-- Global:  Exclude the operations of *all components* of Microsoft Defender for Endpoint
-
->[!NOTE]
-> Global exclusions are only available on Linux
-
-Exclusions can be defined for files or processes:
-
-- File and folder based exclusions:  Exclude the behavior (e.g. scanning) based on the file or folder location.
-- Process based exclusions:  Exclude behavior (e.g. real time protection) based on the process initiating the activty.
-
-> [!NOTE]
-> Network Protection is directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection not being unable to inspect traffic or enforce rules for that specific process.
-
-> [!NOTE]
-> Both custom exclusions and custom indicators of compromise (IoC) control the protection behavior of Defender for Endpoint.  Indicators are preferred to exclusions as they create a smaller protection gap. See [how exclusions and indicators are evaluated](how-exclusions-and-indicators-are-evaluated) for details.
-
-#### macOS
-
-For macOS, you can define exclusions that apply to on-demand scans, real-time protection, and monitoring. The supported exclusion types include:
-
-- **File extension**: Exclude all files with a specific extension.
-- **File**: Exclude a specific file identified by its full path.
-- **Folder**: Exclude all files under a specified folder recursively.
-- **Process**: Exclude a specific process and all files opened by it.
-
-For more information, see the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
-
-#### Linux
-
-On Linux, you can configure both antivirus and global exclusions. The supported exclusion scopes are:
-
-- **Antivirus exclusions**: Apply to on-demand scans, real-time protection (RTP), and behavior monitoring (BM).
-
-- **Global exclusions**: Apply to real-time protection (RTP), behavior monitoring (BM), and endpoint detection and response (EDR), stopping all associated antivirus detections and EDR alerts.
-
-For more information, see the [Microsoft Defender for Endpoint on Linux documentation](/defender-endpoint/linux-exclusions)
-
-#### Windows
-
-Microsoft Defender Antivirus can be configured to exclude combinations of processes, files, and extensions from scheduled scans, on-demdand scans and real-time protection.  [Contextual file and process exclusions](https://learn.microsoft.com/en-us/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus#:~:text=Exclusions%20are%20primarily%20intended%20to%20mitigate%20affects%20on,for%20addressing%20false%20positives%20in%20a%20reliable%20way.) provide granular control to minimize protection gaps.  
-
-> [!NOTE]
-> Some ASR rules do honor Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).  All ASR rules honor process exclusions.
-
-
-
-
-For detailed instructions, see [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
 
 
 ### Custom remediation actions
