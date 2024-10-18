@@ -118,7 +118,6 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Controlled Folder Access exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
 | Automation folder exclusions | Not supported |
-| Automatic antivirus exclusions | Not supported |
 
 
 ### Group Policy Object (GPO)
