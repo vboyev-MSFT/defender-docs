@@ -23,14 +23,17 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Manage exclusions for Windows devices
 
-| Tool | Custom AV | ASR Only |  ASR per Rule | CFA | Automatic |
-|---   |---        |---       |---            |---  |---        |
-| Defender Portal | X | X | X | X | - |
-| Intune | X | X | X | X | - |
-| MDM CSP | X | X | - | X | - |
-| PowerShell | X | X | - | X | X |
-| GPO | X | X | - | X | X |
-| WMI | X| - | - | - | X |
+This table shows which exclusion types are supported by each management tool. 
+
+| Management | Custom AV | ASR Only |  ASR per Rule | CFA | Automatic |
+|---   |:------:|:---:|:---:|:---:|:---:|
+| [Defender Portal](the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | :x: |
+| [Intune](intune) | ✅ | ✅ | ✅ | ✅ | :x: |
+| [MDM CSP](mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: |
+| [PowerShell](powershell) | ✅ | ✅ | :x: | ✅ | ✅ |
+| [GPO](gpo) | ✅ | ✅ | :x: | ✅ | ✅ |
+| [WMI](wmi) | ✅| :x: | :x: | :x: | ✅ |
+| [Configuration Manager](configuration-manager)| ✅ | ✅ | :x: | ✅ | :x: |
 
 
 
@@ -112,8 +115,9 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Custom antivirus exclusion | See [exclusion settings]https://learn.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
 | Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
 | Attack surface reduction rule per rule exclusion | Not supported |
-| Automatic antivirus exclusions | Not supported |
 | Controlled Folder Access exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
+| Automatic antivirus exclusions | Not supported |
+
 
 
 ### Group Policy Object (GPO)
