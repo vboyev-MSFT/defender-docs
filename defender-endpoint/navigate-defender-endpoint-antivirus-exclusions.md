@@ -106,7 +106,7 @@ These exclusion types are preconfigured in Microsoft Defender for Endpoint for M
 | Exclusion types | Configuration | Description |
 |---|----|----|
 | [Automatic Microsoft Defender Antivirus exclusions](#automatic-server-role-exclusions) | Automatic | Automatic Exclusions for server roles and features in Windows Server. When you install a role on Windows Server 2016 or later, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. <br/> These exclusions are only for active roles on Windows Server 2016 and later. |
-| [Built-in Microsoft Defender Antivirus exclusions](#built-in-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
+| [Built-in Microsoft Defender Antivirus exclusions](#built-in-antivirus-exclusions) | Automatic |Microsoft Defender Antivirus includes built-in exclusions for operating system files on all versions of Windows.|
 
 #### Automatic server role exclusions
 
@@ -129,9 +129,9 @@ Examples include:
 
 For more information, see [Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions).
 
-#### Built-in exclusions
+#### Built-in antivirus exclusions
 
-[Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows (including Windows 10, Windows 11, and Windows Server). 
+[Built-in antivirus exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions) include certain operating system files that are excluded by Microsoft Defender Antivirus on all versions of Windows (including Windows 10, Windows 11, and Windows Server). 
 
 Examples include:
 
