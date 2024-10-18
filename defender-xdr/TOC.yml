@@ -549,8 +549,6 @@
                 href: configure-email-notifications.md
             - name: Set time zone
               href: m365d-time-zone.md
-            - name: View device profiles
-              href: device-profile.md
             - name: Troubleshoot service issues
               href: troubleshoot.md
             - name: Set up dynamic rules for devices

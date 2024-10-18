@@ -224,6 +224,11 @@
       "source_path": "defender-endpoint/defender-endpoint-demonstration-amsi.md",
       "redirect_url": "/defender-endpoint/mde-demonstration-amsi",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "defender-xdr/device-profile.md",
+      "redirect_url": "/defender-xdr/entity-page-device",
+      "redirect_document_id": true
+    }    
   ]
 }
