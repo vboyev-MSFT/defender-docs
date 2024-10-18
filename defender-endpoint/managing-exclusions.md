@@ -8,7 +8,7 @@ ms.service: defender-endpoint
 ms.subservice: onboard
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 10/17/2024
+ms.date: 10/18/2024
 search.appverid: met150
 ms.custom: 
 - partner-contribution
@@ -104,7 +104,6 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Automatic antivirus exclusions <br/>(*Only available on Windows Server 2016 and later*) | `DisableAutoExclusions` | [Disable automatic antivirus exclusions](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-disableautoexclusions) |
 
 
-
 ### Configuration Manager
 
 |Exclusion Type | Reference |
@@ -143,19 +142,18 @@ Learn more:
 
 - [Windows Defender WMIv2 APIs](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## Manage exclusions for macOS
-
-(content coming soon)
-
 ## Manage exclusions for Linux
 
 (content coming soon)
 
 
-## Manage exclusions for Network Protection
+## Manage exclusions for macOS
 
 (content coming soon)
 
+## Manage exclusions for Network Protection
+
+(content coming soon)
 
 > [!NOTE]
 > A process exclusion on any platform causes network protection to be unable to inspect traffic or enforce rules for that specific process.
