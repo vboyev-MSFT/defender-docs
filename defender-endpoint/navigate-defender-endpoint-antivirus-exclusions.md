@@ -99,9 +99,6 @@ Microsoft Defender Antivirus can be configured to exclude combinations of proces
 
 For more granular control that helps minimize protection gaps, consider using [Contextual file and process exclusions](/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus).  
 
-> [!NOTE]
-> Attack surface reduction rules honor process exclusions, but not all attack surface reduction rules honor Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules). 
-
 ### Preconfigured exclusions
 
 These exclusion types come preconfigured in Microsoft Defender for Endpoint. 
