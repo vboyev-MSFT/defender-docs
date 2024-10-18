@@ -25,15 +25,15 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 This table shows which exclusion types are supported by each management tool. 
 
-| Management | Custom AV | ASR Only |  ASR per Rule | CFA | Automatic |
-|---   |:------:|:---:|:---:|:---:|:---:|
-| [Defender Portal](#the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | :x: |
-| [Intune](#intune) | ✅ | ✅ | ✅ | ✅ | :x: |
-| [MDM CSP](#mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: |
-| [PowerShell](#powershell) | ✅ | ✅ | :x: | ✅ | ✅ |
-| [GPO](#group-policy-object-gpo) | ✅ | ✅ | :x: | ✅ | ✅ |
-| [WMI](#windows-management-instrumentation-wmi) | ✅| :x: | :x: | :x: | ✅ |
-| [Configuration Manager](#configuration-manager)| ✅ | ✅ | :x: | ✅ | :x: |
+| Management | Custom AV | ASR Only |  ASR per Rule | CFA | Automation | Disable Automatic | 
+|---   |:------:|:---:|:---:|:---:|:---:|:---:|
+| [Defender Portal](the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | ✅ |:x: |
+| [Intune](intune) | ✅ | ✅ | ✅ | ✅ | :x: | :x: |
+| [MDM CSP](mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: | :x: |
+| [PowerShell](powershell) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
+| [GPO](gpo) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
+| [WMI](wmi) | ✅| :x: | :x: | :x: |:x: | ✅ |
+| [Configuration Manager](configuration-manager)| ✅ | ✅ | :x: | ✅ |:x: | :x: |
 
 ### The Microsoft Defender portal
 
@@ -45,6 +45,7 @@ Many exclusions can be managed in the [Microsoft Defender portal](https://securi
 | Attack surface reduction only exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<BR> 5.  Scroll down to **Attack Surface Reduction Only Exclusions** |
 | Attack surface reduction rule per rule exclusion | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<br/> 5. Scroll down to the rule to create an exclusion.<BR>6. Change it from **Not configured** to `Block`,`Audit`, or `Warn`. <br/>7. Select **Add** to enter the path to be excluded.    |
 | Conntrolled folder access exclusion | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration Management** > **Endpoint security policies** > **Windows policies**. <br/> 2. Select **Create New Policy** <br/> 3. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/> 4. Select the **Attack Surface Reduction Rules** template.<BR> 5.  Scroll down to **Controlled Folder Access Allowed Applications** |
+| Automation folder exclusions | 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Rules** > **Automation folder exclusions**]<br>2. Select **New Folder Exclusion** |
 | Automatic antivirus exclusions | Not supported in the [Microsoft Defender portal](https://security.microsoft.com). |
 
 > [!NOTE]
@@ -53,6 +54,7 @@ Many exclusions can be managed in the [Microsoft Defender portal](https://securi
 **Learn More**:
 
 - [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](/defender-endpoint/mde-security-settings-management)
+- [Add automatic folder exclusion](https://learn.microsoft.com/en-us/defender-endpoint/manage-automation-folder-exclusions#add-an-automation-folder-exclusion)
 
 ### Intune
 
@@ -64,6 +66,7 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 | Attack surface reduction rule only exclusions | 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/>5. Under **Configuration Settings**, scroll down to **Attack Surface Reduction Only Exclusions**. |
 | Attack surface reduction per-rule exclusions | 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/> 5. Under **Configuration Settings**, scroll down to the rule to create an exclusion. <br/> 6. Change it from `Not configured` to `Block`,`Audit`, or `Warn`. <br/>7. Select **Add** to enter the path to be excluded. |
 | Conntrolled folder access exclusion| 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Home** > **Endpoint security** > **Attack surface reduction**. <br/> 2. Select **Create Policy**. <br/> 3. For **Platform**, select **Windows**. <br/> 4. For **Profile**, select **Attack surface reduction rules**. <br/>5. Under **Configuration Settings**, scroll down to **Controlled Folder Access Allowed Applications**. |
+| Automation folder exclusions | Not supported |
 | Automatic antivirus exclusions | Not supported in the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).|
 
 **Learn More**:
@@ -102,6 +105,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Attack surface reduction only exclusion | `AttackSurfaceReductionOnlyExclusions` | [Specifies the files and paths to exclude](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-attacksurfacereductiononlyexclusions) | 
 | Attack surface reduction per-rule exclusion | N/A | Not supported |
 | Controlled Folder Access exception | `ControlledFolderAccessAllowedApplications` | [Specifies applications that can make changes in controlled folders](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-controlledfolderaccessallowedapplications) |
+| Automation folder exclusions | N/A | Not supported |
 | Automatic antivirus exclusions <br/>(*Only available on Windows Server 2016 and later*) | `DisableAutoExclusions` | [Disable automatic antivirus exclusions](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-disableautoexclusions) |
 
 
@@ -112,8 +116,8 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Custom antivirus exclusion | See [exclusion settings]/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
 | Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
 | Attack surface reduction rule per rule exclusion | Not supported |
-| Controlled Folder Access exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
-| Automatic antivirus exclusions | Not supported |
+| Controlled Folder Access exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
+| Automation folder exclusions | Not supported |
 
 
 ### Group Policy Object (GPO)
@@ -125,6 +129,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Attack Surface Reduction only exclusions |Windows components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack surface reduction > Exclude files and paths from Attack surface reduction rules | See [Group Policy](/defender-endpoint/enable-attack-surface-reduction#group-policy) for details|
 | Attack surface reduction rule per rule exclusion | Not supported | |
 | Automatic antivirus exclusions |Windows components > Microsoft Defender Antivirus > Exclusions > Enabled| See [Use Group Policy to disable the auto-exclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022](/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022) for details|
+| Automation folder exclusions | Not supported |
 | Controlled Folder Access exclusions | Windows components > Microsoft Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access > Configure allowed applications | See [Use group policy to allow specific apps](/defender-endpoint/customize-controlled-folders#use-group-policy-to-allow-specific-apps) for details |
 
 ### Windows Management Instrumentation (WMI)
@@ -138,6 +143,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Attack surface reduction rule per rule exclusion | Not supported |
 | Automatic antivirus exclusions | `DisableAutoExclusions`|
 | Controlled Folder Access exclusions | Not supported |
+| Automation folder exclusions | Not supported |
 
 Learn more:
 
