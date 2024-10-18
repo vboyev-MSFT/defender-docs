@@ -178,8 +178,8 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 
 5. Review the details in the **Summary** tab, then select **Save**.
 
-> [!NOTE]
-> There may be up to 48 hours of latency between the time a policy is created and the URL or IP being blocked on the device.
+> [!IMPORTANT]
+> It can take up to 48 hours after a policy is created for a URL or IP address to be blocked on a device.
 
 ## Related articles
 
