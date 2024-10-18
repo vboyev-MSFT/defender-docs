@@ -73,7 +73,7 @@ The following table summarizes types of custom exclusions that you can define. N
 
 The following sections describe exclusion types for the macOS, Linux, and Windows operating systems.
 
-#### macOS
+#### Exclusions on Mac
 
 For macOS, you can define exclusions that apply to on-demand scans, real-time protection, and monitoring. The supported exclusion types include:
 
@@ -84,7 +84,7 @@ For macOS, you can define exclusions that apply to on-demand scans, real-time pr
 
 For more information, see the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
 
-#### Linux
+#### Exclusions on Linux
 
 On Linux, you can configure both antivirus and global exclusions.
 
@@ -93,7 +93,7 @@ On Linux, you can configure both antivirus and global exclusions.
 
 For more information, see the [Microsoft Defender for Endpoint on Linux documentation](/defender-endpoint/linux-exclusions)
 
-#### Windows
+#### Exclusions on Windows
 
 Microsoft Defender Antivirus can be configured to exclude combinations of processes, files, and extensions from scheduled scans, on-demdand scans and real-time protection. See [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
 
