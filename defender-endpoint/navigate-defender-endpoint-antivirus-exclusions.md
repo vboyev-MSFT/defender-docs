@@ -42,7 +42,11 @@ Microsoft preconfigures the product to perform well on the operating system that
 
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
-This article explains the various types of exclusions that you can define. This article also describes how exclusions are evaluated and what to expect if policy conflicts occur.  
+This article explains the various types of exclusions that you can define, how exclusions are evaluated, and what to expect if policy conflicts occur. For how-to information, see the following articles:
+
+- [Address common false-positive scenarios with exclusions](address-common-false-positives-exclusions.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Managing exclusions reference](managing-exclusions.md)
 
 ## Types of exclusions
 
