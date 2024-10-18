@@ -81,7 +81,7 @@ URL/IP allow and block requires that the Microsoft Defender for Endpoint compone
 
 ### Custom network indicators requirements
 
-To start blocking IP addresses and/or URL's, turn on "**Custom network indicators"** feature in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features**. For more information, see [Advanced features](advanced-features.md).
+To start blocking IP addresses and/or URLs, turn on "**Custom network indicators"** feature in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](ios-configure-features.md#configure-custom-indicators).
 
