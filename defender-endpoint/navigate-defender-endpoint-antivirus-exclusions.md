@@ -52,7 +52,7 @@ This article explains the various types of exclusions that you can define, how e
 
 The following table summarizes the different exclusion types and capabilities in Defender for Endpoint and Microsoft Defender Antivirus. Select each type to see more information about it. 
 
-### Customer Exclusions
+### Custom exclusions
 
 You can configure these exclusion types.
 
@@ -76,11 +76,11 @@ These exclusion types come preconfigured in Microsoft Defender for Endpoint.
 
 The following sections describe each type of exclusions in more detail.
 
-### Automatic exclusions
+### Automatic server role exclusions
 
-[Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions) (also referred to as *automatic server role exclusions*) include exclusions for server roles and features in Windows Server. These exclusions aren't scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
+[Automatic server role exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#automatic-server-role-exclusions) include exclusions for server roles and features in Windows Server 2016 and later. These exclusions aren't scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
 
-Examples include: 
+Here are some examples of automatic server role exclusions: 
 
 - File Replication Service (FRS)
 - Hyper-V
