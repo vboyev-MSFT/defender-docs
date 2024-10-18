@@ -62,10 +62,10 @@ The following table summarizes types of custom exclusions that you can define. N
 |---| ----| -------- |
 |[Custom Defender for Endpoint exclusions](#custom-exclusions) | Antivirus<br/>Attack surface reduction rules<br/>Defender for Endpoint<br/>Network Protection |A file, folder, or process is identified as malicious, even though it's not a threat.<br/><br/> An application encounters unexpected performance or application compatibility issue when running with Defender for Endpoint|
 |[Defender for Endpoint attack surface reduction exclusions](#attack-surface-reduction-exclusions) | Attack surface reduction rules|An attack surface reduction rule causes unexpected behavior|
+|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension, or directory that should be done manually.|
+|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
 |[Defender for Endpoint File and Certificate Allow Indicators](/defender-endpoint/indicator-certificates)| Antivirus<br/>Attack surface reduction rules<br/>Controlled folder access |A file or process signed by a certificate is identified as malicious even through it's not.|
 |[Defender for Endpoint Domain/URL and IP address Indicators](/defender-endpoint/indicator-ip-domain) |Network Protection<br/>SmartScreen<br/>Web Content Filtering |SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block on a specific site.|
-|[Defender for Endpoint controlled folder access exclusions](#controlled-folder-access-exclusions) | Controlled folder access|Controlled folder access blocks an application from accessing a protected folder.|
-|[Defender for Endpoint automation folder exclusions](#automation-folder-exclusions) |Automated investigation and response|Automated investigation and remediation takes action on a file, extension, or directory that should be done manually.|
 
 
 > [!NOTE]
