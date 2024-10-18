@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/17/2024
+ms.date: 10/18/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -34,17 +34,15 @@ search.appverid: met150
 
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). 
 
-Microsoft preconfigures the product to perform well on the operating system that it's installed. No other changes should be needed.
+Microsoft preconfigures the product to perform well on the operating system that it's installed. No other changes should be needed. Despite preconfigured settings, sometimes unexpected behaviors occur. Here are some examples:
 
-Despite this, sometimes unexpected behaviors occur. Here are some examples:
+- **False positives**: Files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
 
-- **False positives** - files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
+- **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
 
-- **Performance issues** - systems experience an unexpected performance impact when running with Defender for Endpoint
+- **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
-- **Application compatibility issues** - applications experience unexpected behavior when running with Defender for Endpoint 
-
-This article explains the various types of exclusions that you can define, and actions that you can take for Defender for Endpoint and Microsoft Defender Antivirus when you encounter unexpected behaviors. 
+This article explains the various types of exclusions that you can define. This article also describes how exclusions are evaluated and what to expect if policy conflicts occur.  
 
 ## Types of exclusions
 
