@@ -100,7 +100,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Custom antivirus exclusion | `ExclusionExtension` | [File name extensions, such as obj or lib, to exclude from scheduled, custom, and real-time scanning](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-exclusionextension) |
 | Attack surface reduction only exclusion | `AttackSurfaceReductionOnlyExclusions` | [Specifies the files and paths to exclude](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-attacksurfacereductiononlyexclusions) | 
 | Attack surface reduction per-rule exclusion | N/A | Not supported |
-| Controlled Folder Access exception | `ControlledFolderAccessAllowedApplications` | [Specifies applications that can make changes in controlled folders](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-controlledfolderaccessallowedapplications) |
+| Controlled Folder Access exception | `ControlledFolderAccessAllowedApplications` | [Specifies applications that can make changes in controlled folders](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-controlledfolderaccessallowedapplications) |
 | Automatic antivirus exclusions <br/>(*Only available on Windows Server 2016 and later*) | `DisableAutoExclusions` | [Disable automatic antivirus exclusions](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-disableautoexclusions) |
 
 
