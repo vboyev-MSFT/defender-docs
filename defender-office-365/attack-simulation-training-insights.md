@@ -13,7 +13,7 @@ ms.collection:
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft Defender portal affects users and can gain insights from simulation and training outcomes.
 search.appverid: met150
-ms.date: 08/14/2024
+ms.date: 10/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
@@ -220,16 +220,18 @@ If you hover over a data point in the chart, the actual values are shown.
 
 The details table below the chart shows the following information. You can sort the information by clicking on an available column header. Select :::image type="icon" source="media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
-- **User**: Name of the user
-- **Simulation types**: Type of simulations where the user was involved 
-- **Simulations**: Name of simulations where the user was involved
-- **Email address**: Email address of the user
-- **Latest repeat count**: This is the latest count of compromises for users categorized as repeat offender. As an example, if the repeat offender’s threshold is set to 3, and a user has been compromised in 3 consecutive simulations, then the latest repeat count is 3. If the user has been compromised in 4 consecutive simulations, then the latest repeat count is 4. If the user has been compromised in 2 consecutive simulations, then this value shows N/A. The latest repeat count sets to 0 (N/A), every time a repeat offender flag is reset (meaning the user passes a simulation). 
-- **Repeat offences**: This will include the number of times a user has been classified as a repeat offender. As an example, if a user:
-  -   Was classified as a repeat offender in first few simulations (they were compromised 3 consecutive times, where repeat offender threshold is 2)
-  -   Was classified as ‘clean’ after passing a simulation
-  -   Was classified as a repeat offender in the next few simulations  (they were compromised 4 consecutive times, where repeat offender threshold is 2)
-  In such a case, the number of repeat offences would be set to 2. The count updates every time a user is considered a repeat offender.
+- **User**: Name of the user.
+- **Simulation types**: Type of simulations where the user was involved.
+- **Simulations**: Name of simulations where the user was involved.
+- **Email address**: Email address of the user.
+- **Latest repeat count**: Latest count of compromises for users categorized as repeat offenders. For example, if the repeat offender threshold is set to 3, and a user was compromised in 3 consecutive simulations, then the latest repeat count is 3. If the user was compromised in 4 consecutive simulations, then the latest repeat count is 4. If the user was compromised in 2 consecutive simulations, then the value N/A. The latest repeat count sets to 0 (N/A), every time a repeat offender flag is reset (meaning the user passes a simulation).
+- **Repeat offences**: Includes the number of times a user was classified as a repeat offender. For example:
+  -   The user was classified as a repeat offender in first few simulations (they were compromised 3 consecutive times, where repeat offender threshold is 2).
+  -   The user was classified as 'clean' after passing a simulation.
+  -   The user was classified as a repeat offender in the next few simulations (they were compromised 4 consecutive times, where repeat offender threshold is 2).
+
+  In these cases, the number of repeat offences is set to 2. The count updates every time a user is considered a repeat offender.
+
 - **Last simulation name**
 - **Last simulation result**
 - **Last training assigned**
