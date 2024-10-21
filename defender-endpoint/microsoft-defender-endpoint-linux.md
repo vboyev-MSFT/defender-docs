@@ -74,12 +74,17 @@ In general you need to take the following steps:
 ### System requirements
 
 - Disk space: 2 GB
+
   > [!NOTE]
   > An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections. Please make sure that you have free disk space in /var.
+
 - Cores: 2 minimum, 4 preferred
+
   > [!NOTE]
   > If you are on Passive or RTP ON mode, 2 Cores are minimum and 4 Cores are preferred. If you are turning on BM, then a minimum of 4 Cores is required.
+
 - Memory: 1 GB minimum, 4 preferred
+
 - List of supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
   - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
@@ -112,8 +117,10 @@ In general you need to take the following steps:
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
   > Microsoft Defender Vulnerablity Management is not supported on Rocky and Alma currently.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
+
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system that use `fanotify` in blocking mode, applications are listed in the `conflicting_applications` field of the `mdatp health` command output. The Linux **FAPolicyD** feature uses `fanotify` in blocking mode, and is therefore unsupported when running Defender for Endpoint in active mode. You can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality Real Time Protection Enabled to [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
+
 - List of supported filesystems for RTP, Quick, Full and Custom Scan.
   |RTP, Quick, Full Scan| Custom Scan|
   |---|---|
@@ -133,26 +140,26 @@ In general you need to take the following steps:
   |udf||
   |vfat||
   |xfs||
-  
-  
+    
 - Audit framework (`auditd`) must be enabled if you are using auditd as your primary event provider.
 
   > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
+
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 ### External package dependency
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies. The following external package dependencies exist for the mdatp package:
 
-- The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage` `selinux-policy-targeted`, `mde-netfilter`
-- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, `mde-netfilter`
-- For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, `mde-netfilter`
+- The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage` `selinux-policy-targeted`, and `mde-netfilter`
+- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, and `mde-netfilter`
+- For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, and `mde-netfilter`
 
 The mde-netfilter package also has the following package dependencies:
-- For DEBIAN the mde-netfilter package requires `libnetfilter-queue1`, `libglib2.0-0`
 
-- For RPM the mde-netfilter package requires `libmnl`, `libnfnetlink`, `libnetfilter_queue`, `glib2`
+- For DEBIAN the mde-netfilter package requires `libnetfilter-queue1`, and `libglib2.0-0`
+- For RPM the mde-netfilter package requires `libmnl`, `libnfnetlink`, `libnetfilter_queue`, and `glib2`
 
 ### Configuring Exclusions
 
@@ -171,7 +178,6 @@ If a proxy or firewall is blocking anonymous traffic, make sure that anonymous t
 
 > [!WARNING]
 > PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
->
 > SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint on Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 
 For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
