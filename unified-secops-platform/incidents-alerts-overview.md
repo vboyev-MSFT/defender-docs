@@ -30,9 +30,9 @@ In the Microsoft Defender portal, ***alerts*** are signals from a collection of 
 
 ***Incidents*** tell the full story of an attack and provide the complete picture. The correlation engines and algorithms in the Microsoft Defender portal automatically correlate signals (alerts) from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents. Incidents contain all the alerts deemed to be related to each other and to the overall attack story, and present the story in various forms: a timeline of alerts; lists of all the involved and impacted users, devices, and other resources; a visual representation of how all the players in the story interact, 
 
-Incidents also function as "case files," providing you with a unified security operations platform for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](../incidents-overview.md).
+Incidents also function as "case files," providing you with a unified security operations platform for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
-[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
+[!INCLUDE [unified-soc-preview](../includes/unified-soc-preview.md)]
 
 Here is a summary of the main attributes of incidents and alerts, and the differences between them:
 
@@ -42,7 +42,7 @@ Here is a summary of the main attributes of incidents and alerts, and the differ
 - Display the broader context of an attack&mdash;the **attack story**.
 - Represent "case files" containing all the information needed to investigate the threat and the findings of the investigation.
 - Are created by Microsoft Defender XDR to contain at least one alert, and in many cases, to contain many alerts.
-- Trigger automatic series of responses to the threat, using [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules?tabs=onboarded), [attack disruption](../automatic-attack-disruption.md), and [playbooks](/azure/sentinel/automation/automate-responses-with-playbooks).
+- Trigger automatic series of responses to the threat, using [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules?tabs=onboarded), [attack disruption](/defender-xdr/automatic-attack-disruption), and [playbooks](/azure/sentinel/automation/automate-responses-with-playbooks).
 - Record all activity related to the threat and its investigation and resolution.
 
 **Alerts:**
@@ -50,7 +50,7 @@ Here is a summary of the main attributes of incidents and alerts, and the differ
 - Represent the individual pieces of the story that are essential to understanding and investigating the incident.
 - Are created by many different sources both internal and external to the Defender portal.
 - Can be analyzed by themselves to add value when deeper analysis is required.
-- Can trigger [automatic investigations and responses](../m365d-autoir.md) at the alert level, to minimize the potential threat impact.
+- Can trigger [automatic investigations and responses](/defender-xdr/m365d-autoir) at the alert level, to minimize the potential threat impact.
 
 ## Alert sources and threat detection
 
@@ -85,7 +85,7 @@ The following table shows the detection methods that produce alerts for each ser
   - Non-Microsoft security solutions that pass their alerts to Microsoft Sentinel
   - Microsoft Defender for Cloud
 
-Microsoft Defender XDR itself also creates alerts. With Microsoft Sentinel onboarded to the [unified security operations platform](../microsoft-sentinel-onboard.md), Microsoft Defender XDR's correlation engine now has access to all the raw data ingested by Microsoft Sentinel. (You can find this data in **Advanced hunting** tables.) Defender XDR's unique correlation capabilities provide another layer of data analysis and threat detection for all the non-Microsoft solutions in your digital estate. These detections produce Defender XDR alerts, in addition to the alerts already provided by Microsoft Sentinel's analytics rules.
+Microsoft Defender XDR itself also creates alerts. With Microsoft Sentinel onboarded to the [unified security operations platform](/defender-xdr/microsoft-sentinel-onboard), Microsoft Defender XDR's correlation engine now has access to all the raw data ingested by Microsoft Sentinel. (You can find this data in **Advanced hunting** tables.) Defender XDR's unique correlation capabilities provide another layer of data analysis and threat detection for all the non-Microsoft solutions in your digital estate. These detections produce Defender XDR alerts, in addition to the alerts already provided by Microsoft Sentinel's analytics rules.
 
 
 
@@ -110,19 +110,19 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 
 The unified security operations platform in the Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
-- [Microsoft Copilot in Defender](../security-copilot-in-microsoft-365-defender.md) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
+- [Microsoft Copilot in Defender](/defender-xdr/security-copilot-in-microsoft-365-defender) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
 
     This capability is in addition to the other AI-based functionality that Microsoft Sentinel brings to the unified platform, in the areas of user and entity behavior analytics, anomaly detection, multi-stage threat detection, and more.
 
 - Automated attack disruption uses high-confidence signals collected from Microsoft Defender XDR and Microsoft Sentinel to automatically disrupt active attacks at machine speed, containing the threat and limiting the impact.
 
-- If [enabled](../m365d-enable.md), Microsoft Defender XDR can [automatically investigate and resolve](../m365d-autoir.md) alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
+- If [enabled](/defender-xdr/m365d-enable), Microsoft Defender XDR can [automatically investigate and resolve](/defender-xdr/m365d-autoir) alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
 
 - Microsoft Sentinel [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, specifying a reason and adding comments.
 
 <a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
 
-[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
+[!INCLUDE [unified-soc-preview](../includes/unified-soc-preview.md)]
 
 ## Incidents and alerts in the Microsoft Defender portal
 
@@ -156,7 +156,7 @@ The incident page consists of the following tabs:
 
 - **Investigations**
 
-  All the [automated investigations](../m365d-autoir.md) triggered by alerts in the incident, including the status of the investigations and their results.
+  All the [automated investigations](/defender-xdr/m365d-autoir) triggered by alerts in the incident, including the status of the investigations and their results.
 
 - **Evidence and Response**
 
@@ -167,7 +167,7 @@ The incident page consists of the following tabs:
   A quick overview of the impacted assets associated with alerts.
 
 > [!NOTE]
-> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../investigate-incidents.md#alerts).
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](/defender-xdr/investigate-incidents.md#alerts).
 
 <a name='example-incident-response-workflow-for-microsoft-365-defender'></a>
 
@@ -179,8 +179,8 @@ Here's a workflow example for responding to incidents in Microsoft 365 with the 
 
 On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
-- [Triaging](../incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
-- [Managing](../manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
+- [Triaging](/defender-xdr/incident-queue) to determining the highest priority incidents through filtering and sorting of the incident queue.
+- [Managing](/defender-xdr/manage-incidents) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
 You can use Microsoft Sentinel automation rules to automatically triage and manage (and even respond to) some incidents as they're created, removing the easiest-to-handle incidents from taking up space in your queue.
 
@@ -188,12 +188,12 @@ Consider these steps for your own incident response workflow:
 
 | Stage | Steps |
 | ----- | ----- |
-| For each incident, begin an [attack and alert investigation and analysis](../investigate-incidents.md). | <ol><li> View the attack story of the incident to understand its scope, severity, detection source, and which asset entities are affected.<li>Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.<li>As needed, gather information on impacted devices, users, and mailboxes with the graph. Select any entity to open a flyout with all the details. Follow through to the entity page for more insights.<li>See how Microsoft Defender XDR has [automatically resolved some alerts](../m365d-autoir.md) with the **Investigations** tab.<li>As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab. |
+| For each incident, begin an [attack and alert investigation and analysis](/defender-xdr/investigate-incidents). | <ol><li> View the attack story of the incident to understand its scope, severity, detection source, and which asset entities are affected.<li>Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.<li>As needed, gather information on impacted devices, users, and mailboxes with the graph. Select any entity to open a flyout with all the details. Follow through to the entity page for more insights.<li>See how Microsoft Defender XDR has [automatically resolved some alerts](/defender-xdr/m365d-autoir) with the **Investigations** tab.<li>As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab. |
 | After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat. | For example,<li>Disable compromised users<li>Isolate impacted devices<li>Block hostile IP addresses. |
 | As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.||
-| [Resolve](../manage-incidents.md#resolve-an-incident) the incident and document your findings. | Take time for post-incident learning to: <li>Understand the type of the attack and its impact.<li>Research the attack in [Threat Analytics](../threat-analytics.md) and the security community for a security attack trend.<li>Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.<li>Determine whether changes in your security configuration are needed and implement them. |
+| [Resolve](/defender-xdr/manage-incidents.md#resolve-an-incident) the incident and document your findings. | Take time for post-incident learning to: <li>Understand the type of the attack and its impact.<li>Research the attack in [Threat Analytics](/defender-xdr/threat-analytics) and the security community for a security attack trend.<li>Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.<li>Determine whether changes in your security configuration are needed and implement them. |
 
-If you're new to security analysis, see the [introduction to responding to your first incident](../incidents-overview.md) for additional information and to step through an example incident.
+If you're new to security analysis, see the [introduction to responding to your first incident](/defender-xdr/incidents-overview) for additional information and to step through an example incident.
 
 For more information about incident response across Microsoft products, see [this article](/security/operations/incident-response-overview).
 
@@ -207,15 +207,15 @@ Here's an example of integrating security operations (SecOps) processes in the M
 
 Daily tasks can include:
 
-- [Managing](../manage-incidents.md) incidents
-- Reviewing [automated investigation and response (AIR)](../m365d-action-center.md) actions in the Action center
-- Reviewing the latest [Threat Analytics](../threat-analytics.md)
-- [Responding](../investigate-incidents.md) to incidents
+- [Managing](/defender-xdr/manage-incidents) incidents
+- Reviewing [automated investigation and response (AIR)](/defender-xdr/m365d-action-center) actions in the Action center
+- Reviewing the latest [Threat Analytics](/defender-xdr/threat-analytics)
+- [Responding](/defender-xdr/investigate-incidents) to incidents
 
 Monthly tasks can include:
 
-- Reviewing [AIR settings](../m365d-configure-auto-investigation-response.md)
-- Reviewing [Secure Score](../microsoft-secure-score-improvement-actions.md) and [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
+- Reviewing [AIR settings](/defender-xdr/m365d-configure-auto-investigation-response)
+- Reviewing [Secure Score](/defender-xdr/microsoft-secure-score-improvement-actions) and [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 - Reporting to your IT security management chain
 
 Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).
@@ -224,7 +224,7 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
-See [Integrating Microsoft Defender XDR into your security operations](../integrate-microsoft-365-defender-secops.md) for more details.
+See [Integrating Microsoft Defender XDR into your security operations](/defender-xdr/integrate-microsoft-365-defender-secops) for more details.
 
 ### SecOps resources across Microsoft products
 
@@ -242,7 +242,7 @@ You can set up the Microsoft Defender portal to notify your staff with an email 
 - Alert sources
 - Device group
 
-To set up email notifications for incidents, see [get email notifications on incidents](../m365d-notifications-incidents.md).
+To set up email notifications for incidents, see [get email notifications on incidents](/defender-xdr/m365d-notifications-incidents).
 
 ## Training for security analysts
 
@@ -265,8 +265,8 @@ Follow this table for your level of experience with security analysis and incide
 
 | Level | Steps |
 |:-------|:-----|
-| **New** | <ol><li> See the [Respond to your first incident walkthrough](../respond-first-incident-365-defender.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft Defender portal with an example attack. </li><li> See which incidents should be [prioritized](../incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](../manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.</li></ol> |
-| **Experienced** | <ol><li> Get started with the incident queue from the **Incidents** page of the Microsoft Defender portal. From here you can: </li> <ul><li> See which incidents should be [prioritized](../incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](../manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li><li> Perform [investigations](../investigate-incidents.md) of incidents. </li></ul> </li><li> Track and respond to emerging threats with [threat analytics](../threat-analytics.md). </li><li>  Proactively hunt for threats with [advanced threat hunting](../advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
+| **New** | <ol><li> See the [Respond to your first incident walkthrough](/defender-xdr/respond-first-incident-365-defender) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft Defender portal with an example attack. </li><li> See which incidents should be [prioritized](/defender-xdr/incident-queue) based on severity and other factors. </li><li> [Manage incidents](/defender-xdr/manage-incidents), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.</li></ol> |
+| **Experienced** | <ol><li> Get started with the incident queue from the **Incidents** page of the Microsoft Defender portal. From here you can: </li> <ul><li> See which incidents should be [prioritized](/defender-xdr/incident-queue) based on severity and other factors. </li><li> [Manage incidents](/defender-xdr/manage-incidents), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li><li> Perform [investigations](/defender-xdr/investigate-incidents) of incidents. </li></ul> </li><li> Track and respond to emerging threats with [threat analytics](/defender-xdr/threat-analytics). </li><li>  Proactively hunt for threats with [advanced threat hunting](/defender-xdr/advanced-hunting-overview). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
 
 ### Security team role
 
@@ -274,9 +274,9 @@ Follow this table based on your security team role.
 
 | Role | Steps |
 |---|---|
-| Incident responder (Tier 1) | Get started with the incident queue from the **Incidents** page of the Microsoft Defender portal. From here you can: <ul><li> See which incidents should be [prioritized](../incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](../manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li></ul> |
-| Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](../investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
-| Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](../investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](../threat-analytics.md). </li><li> Proactively hunt for threats with [advanced threat hunting](../advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
-| SOC manager | See how to [integrate Microsoft Defender XDR into your Security Operations Center (SOC)](../integrate-microsoft-365-defender-secops.md). |
+| Incident responder (Tier 1) | Get started with the incident queue from the **Incidents** page of the Microsoft Defender portal. From here you can: <ul><li> See which incidents should be [prioritized](/defender-xdr/incident-queue) based on severity and other factors. </li><li> [Manage incidents](/defender-xdr/manage-incidents), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li></ul> |
+| Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](/defender-xdr/investigate-incidents) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
+| Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](/defender-xdr/investigate-incidents) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](/defender-xdr/threat-analytics). </li><li> Proactively hunt for threats with [advanced threat hunting](/defender-xdr/advanced-hunting-overview). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
+| SOC manager | See how to [integrate Microsoft Defender XDR into your Security Operations Center (SOC)](/defender-xdr/integrate-microsoft-365-defender-secops). |
 
-[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
