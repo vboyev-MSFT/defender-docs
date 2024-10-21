@@ -75,7 +75,6 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 - [Manage antivirus exclusions in Intune (for existing policies)](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#manage-antivirus-exclusions-in-intune-for-existing-policies)
 - [Configure attack surface reduction per-rule exclusions](/defender-endpoint/attack-surface-reduction-rules-deployment-test#configure-attack-surface-reduction-per-rule-exclusions)
 
-
 ### MDM CSP
 
 | Exclusion type | OMA-URI | Description | 
@@ -108,18 +107,6 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Automation folder exclusions | N/A | Not supported |
 | Automatic antivirus exclusions <br/>(*Only available on Windows Server 2016 and later*) | `DisableAutoExclusions` | [Disable automatic antivirus exclusions](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true#-disableautoexclusions) |
 
-
-### Configuration Manager
-
-|Exclusion Type | Reference |
-| -------- | -------- |
-| Custom antivirus exclusion | See [exclusion settings]/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
-| Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
-| Attack surface reduction rule per rule exclusion | Not supported |
-| Controlled Folder Access exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
-| Automation folder exclusions | Not supported |
-
-
 ### Group Policy Object (GPO)
 
 |Exclusion Type | Setting | Reference |
@@ -148,6 +135,16 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 Learn more:
 
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+
+### Configuration Manager
+
+|Exclusion Type | Reference |
+| -------- | -------- |
+| Custom antivirus exclusion | See [exclusion settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
+| Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
+| Attack surface reduction rule per rule exclusion | Not supported |
+| Controlled Folder Access exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
+| Automation folder exclusions | Not supported |
 
 ## Manage exclusions for Linux
 
