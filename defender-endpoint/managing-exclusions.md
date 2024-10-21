@@ -27,13 +27,13 @@ This table shows which exclusion types are supported by each management tool.
 
 | Management | Custom AV | ASR Only |  ASR per Rule | CFA | Automation | Disable Automatic | 
 |---   |:------:|:---:|:---:|:---:|:---:|:---:|
-| [Defender Portal](the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | ✅ |:x: |
-| [Intune](intune) | ✅ | ✅ | ✅ | ✅ | :x: | :x: |
-| [MDM CSP](mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: | :x: |
-| [PowerShell](powershell) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
-| [GPO](gpo) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
-| [WMI](wmi) | ✅| :x: | :x: | :x: |:x: | ✅ |
-| [Configuration Manager](configuration-manager)| ✅ | ✅ | :x: | ✅ |:x: | :x: |
+| [Defender Portal](#the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | ✅ |:x: |
+| [Intune](#intune) | ✅ | ✅ | ✅ | ✅ | :x: | :x: |
+| [MDM CSP](#mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: | :x: |
+| [PowerShell](#powershell) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
+| [GPO](#group-policy-object-gpo) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
+| [WMI](#windows-management-instrumentation-wmi)| ✅| :x: | :x: | :x: |:x: | ✅ |
+| [Configuration Manager](#configuration-manager)| ✅ | ✅ | :x: | ✅ |:x: | :x: |
 
 ### The Microsoft Defender portal
 
