@@ -1,49 +1,32 @@
 ### YamlMime:Landing
 
-title: Microsoft Unified SecOps Platform # < 60 chars
-summary: Learn about the Microsoft Unified SecOps Platform.  # < 160 chars
+title: Microsoft's unified security operations platform # < 60 chars
+summary: The unified security operations platform brings together the full capabilities of Microsoft Sentinel, Defender XDR, and generative AI. # < 160 chars
 
 metadata:
-  title: Microsoft Unified SecOps Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the Microsoft Unified SecOps Platform. # Required; article description that is displayed in search results. < 160 chars.
-  services: office-365-security-compliance
-  ms.service: defender-xdr
+  title: Microsoft's unified security operations platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: The unified security operations platform brings together the full capabilities of Microsoft Sentinel, Defender XDR, and generative AI. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: unified-secops-platform #Required; use either service or product per approved list. 
+  ms.subservice: usx
   ms.topic: landing-page # Required
-  ms.collection: essentials-navigation
-  ms.custom: intro-hub-or-landing
+  ms.collection: usx-security # Optional; Remove if no collection is used.
   author: cwatson-cat #Required; your GitHub user alias, with correct capitalization.
   ms.author: cwatson #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/13/2024
-  ms.localizationpriority: high
+  ms.date: 07/30/2024 #Required; mm/dd/yyyy format.
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Microsoft Unified SecOps Platform
+  # Card 
+  - title: About Microsoft's unified security operations platform
     linkLists:
       - linkListType: overview
         links:
-          - text: Placeholder title
-            url: index.yml
+          - text: What is the Microsoft security operations platform?
+            url: /defender-xdr/microsoft-365-defender
       - linkListType: whats-new
         links:
-          - text: Placeholder title
-            url: index.yml
-      - linkListType: video
-        links:
-          - text: Placeholder title
-            url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
-
-
-# Card
-  - title: Placeholder title
-    linkLists:
-      - linkListType: get-started
-        links:
-        - text: Placeholder title
-          url: index.yml
-        - text: Placeholder title
-          url: index.yml
+          - text: What's new in the Microsoft security operations platform
+            url: /defender-xdr/unified-secops-platform/whats-new

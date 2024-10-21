@@ -14,8 +14,10 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier2
-ms.topic: conceptual
-ms.date: 08/11/2023
+ms.custom:
+- cx-ti
+ms.topic: how-to
+ms.date: 04/22/2024
 ---
 
 # Build hunting queries using guided mode in Microsoft Defender XDR
