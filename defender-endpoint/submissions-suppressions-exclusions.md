@@ -1,5 +1,5 @@
 ---
-title: Submissions, suppressions, and exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+title: Using submissions, suppressions, and exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 description: Learn about suppressing alerts, submitting files for analysis, and defining exclusions and indicators to reduce noise and risk for your organization.
 ms.service: defender-endpoint
 ms.subservice: ngp
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Submissions, suppressions, and exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+# Using submissions, suppressions, and exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -28,9 +28,11 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus), [attack surface reduction](attack-surface-reduction.md), [endpoint detection and response](overview-endpoint-detection-response.md), and [automated investigation and remediation](automated-investigations.md). When threats are detected, or your security teams has a question about a file or executable, submissions, alert suppressions, and exclusions or indicators come into play. This article describes submissions, suppressions, and exclusions/indicators, and example scenarios for using them.
+## Overview
 
-## Using submissions, suppressions, and exclusions
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus), [attack surface reduction](attack-surface-reduction.md), [endpoint detection and response](overview-endpoint-detection-response.md), and [automated investigation and remediation](automated-investigations.md). When threats are detected, or your security teams has a question about a file or executable, submissions, alert suppressions, and exclusions or indicators come into play. This article describes example scenarios and how to use submissions, suppressions, and exclusions/indicators.
+
+## Example scenarios
 
 The following table describes some example scenarios and how to use file submissions, alert suppressions, and exclusions.
 
