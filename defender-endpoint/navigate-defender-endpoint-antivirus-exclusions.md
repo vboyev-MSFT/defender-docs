@@ -37,9 +37,7 @@ search.appverid: met150
 Microsoft preconfigures the product to perform well on the operating system that it's installed. No other changes should be needed. Despite preconfigured settings, sometimes unexpected behaviors occur. Here are some examples:
 
 - **False positives**: Files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
-
 - **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
-
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
 This article explains the various types of exclusions that you can define, how exclusions are evaluated, and what to expect if policy conflicts occur. For how-to information, see the following articles:
