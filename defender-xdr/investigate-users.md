@@ -141,13 +141,14 @@ The lateral movement path report, which can be viewed by date, is always availab
 
 ## Timeline
 
-The timeline displays user activities and alerts observed from a user's identity in the last 30 days. It unifies the user's identity entries across Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint workloads. By using the timeline, you can focus on activities a user performed or were performed on them in specific timeframes.
+The timeline displays user activities and alerts observed from a user's identity in the last 180 days. It unifies the user's identity entries across Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint workloads. By using the timeline, you can focus on activities a user performed or were performed on them in specific timeframes.
 
 For users of the unified SOC platform to see alerts from Microsoft Sentinel based on data sources other than the ones in the previous paragraph, they can find these alerts and other information in the **Sentinel events** tab, [described below](#sentinel-events).
 
-- **Custom time range picker:** You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**. For example:
+- **Custom time range picker:** You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**. Filtered data older than 30 days is displayed in seven-day intervals.  
+For example:
 
-  :::image type="content" source="/defender/media/image.png" alt-text="Screenshot that shows how to choose time frame." lightbox="/defender/media/image.png":::
+    :::image type="content" source="/defender/media/image.png" alt-text="Screenshot that shows how to choose time frame." lightbox="/defender/media/image.png":::
 
 - **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user.
 

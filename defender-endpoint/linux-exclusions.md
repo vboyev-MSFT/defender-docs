@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/11/2024
+ms.date: 10/14/2024
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
@@ -32,7 +32,7 @@ ms.date: 10/11/2024
 This article provides information on how to define antivirus and global exclusions for Microsoft Defender for Endpoint. Antivirus exclusions apply to on-demand scans, real-time protection (RTP), and behavior monitoring (BM). Global exclusions apply to real-time protection (RTP), behavior monitoring (BM), and endpoint detection and response (EDR), thus stopping all the associated antivirus detections, EDR alerts, and visibility for the excluded item.
 
 > [!IMPORTANT]
-> The antivirus exclusions described in this article apply to only antivirus capabilities and not endpoint detection and response (EDR). Files that you exclude using the antivirus exclusions described in this article can still trigger EDR alerts and other detections. Whereas the global exclusions described in this section apply to antivirus as well as endpoint detection and response capabilities thus stopping all associated AV protection, EDR alerts and detection. Global exclusions are available from Defender for Endpoint version `101.23092.0012` or later till Insider Slow Ring.  For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
+> The antivirus exclusions described in this article apply to only antivirus capabilities and not to endpoint detection and response (EDR). Files that you exclude using the antivirus exclusions described in this article can still trigger EDR alerts and other detections. Global exclusions described in this section apply to antivirus **and** endpoint detection and response capabilities, thus stopping all associated antivirus protection, EDR alerts, and detections. Global exclusions are currently in public preview, and are available in Defender for Endpoint version `101.23092.0012` or later, in the Insiders Slow and Production rings. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
 
 You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux.
 

@@ -16,11 +16,13 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
   - usx-security
+ms.custom:
+- cx-ti
 ms.topic: conceptual
 appliesto:
     - Microsoft Defender XDR
     - Microsoft Sentinel in the Microsoft Defender portal
-ms.date: 04/12/2024
+ms.date: 08/26/2024
 ---
 
 # Advanced hunting in the Microsoft Defender portal
