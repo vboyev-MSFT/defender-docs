@@ -213,7 +213,7 @@ In cases where Defender for Endpoint indicators conflict, here's what to expect:
 
 [Automated investigation and remediation capabilities](automated-investigations.md) in Defender for Endpoint first determine a verdict for each piece of evidence, and then take an action depending on Defender for Endpoint indicators. Thus, a file/process could get a verdict of "good" (which means no threats were found) and still be blocked if there's an indicator with that action. Similarly, an entity could get a verdict of "bad" (which means it's determined to be malicious) and still be allowed if there's an indicator with that action.
 
-For more information, see [automated investigation and remediation works with indicators](indicators-overview.md#automated-investigation-and-remediation-engine).
+For more information, see [automated investigation and remediation and indicators](indicators-overview.md#automated-investigation-and-remediation-engine).
 
 ## Other server workloads and exclusions
 
