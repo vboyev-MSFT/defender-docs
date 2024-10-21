@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/19/2024
+ms.date: 10/21/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -28,29 +28,15 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
-**Platforms**
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus), attack surface reduction, endpoint detection and response, and automated investigation and remediation. When threats are detected, or your security teams has a question about a file or executable, submissions, alert suppressions, and exclusions or indicators come into play. 
 
-- Windows
+This article describes submissions, suppressions, and exclusions/indicators, and example scenarios for using them.
 
-> [!NOTE]
-> As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
+## Using submissions, suppressions, and exclusions
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
+The following table describes some example scenarios and how to use file submissions, alert suppressions, and exclusions.
 
-This article describes the most common scenarios where this behavior occurs and the capabilites available in Defender for Endpoint and Microsoft Defender Antivirus to safely prevent or address it without impacting your productivity. These actions include:
-
-- [Submitting a file to Microsoft for analysis](#submitting-files-for-analysis)
-- [Suppressing an alert](#suppressing-alerts)
-- [Adding an exclusion or indicator](#using-exclusions-and-indicators)
-
-> [!CAUTION]
-> **Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus**. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions) and [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md).
-
-## Submissions, suppressions, and exclusions
-
-When you're dealing with false positives, or known entities that are generating alerts, you don't necessarily need to add an exclusion. Sometimes classifying and suppressing an alert is enough. We recommend submitting false positives (and false negatives) to Microsoft for analysis as well. The following table describes some scenarios and what steps to take with respect to file submissions, alert suppressions, and exclusions.
-
-| Scenario | Steps to consider |
+| Example scenario | What to do |
 |:---|:----|
 | [False positive](defender-endpoint-false-positives-negatives.md): An entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. | 1. [Review and classify alerts](defender-endpoint-false-positives-negatives.md#part-1-review-and-classify-alerts) that were generated as a result of the detected entity. <br/>2. [Suppress an alert](defender-endpoint-false-positives-negatives.md#suppress-an-alert) for a known entity. <br/>3. [Review remediation actions](defender-endpoint-false-positives-negatives.md#part-2-review-remediation-actions) that were taken for the detected entity. <br/>4. [Submit the false positive to Microsoft](/defender-xdr/submission-guide) for analysis. <br/>5. [Define an exclusion](defender-endpoint-false-positives-negatives.md#part-3-review-or-define-exclusions) for the entity (only if necessary). |
 | [Performance issues](troubleshoot-performance-issues.md) such as one of the following issues:<br/>- A system is having high CPU usage or other performance issues.<br/>- A system is having memory leak issues.<br/>- An app is slow to load on devices.<br/>- An app is slow to open a file on devices. | 1. [Collect diagnostic data](collect-diagnostic-data.md) for Microsoft Defender Antivirus.<br/>2. If you're using a non-Microsoft antivirus solution, [check with the vendor for any needed exclusions](troubleshoot-performance-issues.md#check-with-vendor-for-antivirus-exclusions).<br/>3. [Analyze the Microsoft Protection Log](troubleshoot-performance-issues.md#analyze-the-microsoft-protection-log) to see the estimated performance impact.<br/>4. [Define an exclusion for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) (if necessary).<br/>5. [Create an indicator for Defender for Endpoint](indicators-overview.md) (only if necessary). |
