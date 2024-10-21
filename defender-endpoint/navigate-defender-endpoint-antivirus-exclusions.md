@@ -57,7 +57,7 @@ There are several different types of exclusions. Some types of exclusions affect
 - [Attack surface reduction exclusions](#attack-surface-reduction-exclusions): These are exclusions to prevent attack surface reduction capabilities from blocking legitimate applications that your organization might be using. 
 - [Automation folder exclusions](#automation-folder-exclusions): These are exclusions that you define to prevent automated investigation and remediation capablities from applying to specific files or folders.
 - [Controlled folder access exclusions](#controlled-folder-access-exclusions): These are exclusions to allow certain apps or executables to access protected folders.
-- Custom remediation actions
+- [Custom remediation actions](#custom-remediation-actions): These are actions that you specify for Microsoft Defender Antivirus when certain types of detections.
 
 If you're looking for information about indicators in Defender for Endpoint, see [Overview of indicators in Microsoft Defender for Endpoint](indicators-overview.md).
 
