@@ -122,24 +122,25 @@ In general you need to take the following steps:
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system that use `fanotify` in blocking mode, applications are listed in the `conflicting_applications` field of the `mdatp health` command output. The Linux **FAPolicyD** feature uses `fanotify` in blocking mode, and is therefore unsupported when running Defender for Endpoint in active mode. You can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality Real Time Protection Enabled to [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 - List of supported filesystems for RTP, Quick, Full and Custom Scan.
-  |RTP, Quick, Full Scan| Custom Scan|
-  |---|---|
-  |btrfs|All filesystems supported for RTP, Quick, Full Scan|
-  |ecryptfs|Efs|
-  |ext2|S3fs|
-  |ext3|Blobfuse|
-  |ext4|Lustr|
-  |fuse|glustrefs|
-  |fuseblk|Afs|
-  |jfs|sshfs|
-  |nfs (v3 only)|cifs|
-  |overlay|smb|
-  |ramfs|gcsfuse|
-  |reiserfs|sysfs|
-  |tmpfs||
-  |udf||
-  |vfat||
-  |xfs||
+
+   |RTP, Quick, Full Scan| Custom Scan|
+   |---|---|
+   |`btrfs`|All filesystems supported for RTP, Quick, Full Scan|
+   |`ecryptfs`|`Efs`|
+   |`ext2`|`S3fs`|
+   |`ext3`|`Blobfuse`|
+   |`ext4`|`Lustr`|
+   |`fuse`|`glustrefs`|
+   |`fuseblk`|`Afs`|
+   |`jfs`|`sshfs`|
+   |`nfs` (v3 only)|`cifs`|
+   |`overlay`|`smb`|
+   |`ramfs`|`gcsfuse`|
+   |`reiserfs`|`sysfs`|
+   |`tmpfs`||
+   |`udf`||
+   |`vfat`||
+   |`xfs`||
     
 - Audit framework (`auditd`) must be enabled if you are using auditd as your primary event provider.
 
