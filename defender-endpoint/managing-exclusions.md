@@ -8,7 +8,7 @@ ms.service: defender-endpoint
 ms.subservice: onboard
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 10/18/2024
+ms.date: 10/21/2024
 search.appverid: met150
 ms.custom: 
 - partner-contribution
@@ -54,7 +54,7 @@ Many exclusions can be managed in the [Microsoft Defender portal](https://securi
 **Learn More**:
 
 - [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](/defender-endpoint/mde-security-settings-management)
-- [Add automatic folder exclusion](https://learn.microsoft.com/en-us/defender-endpoint/manage-automation-folder-exclusions#add-an-automation-folder-exclusion)
+- [Add automatic folder exclusion](/defender-endpoint/manage-automation-folder-exclusions#add-an-automation-folder-exclusion)
 
 ### Intune
 
@@ -116,7 +116,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender Powershell Module]
 | Custom antivirus exclusion | See [exclusion settings]/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details|
 | Attack Surface Reduction only exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-attack-surface-reduction#microsoft-configuration-manager) for details|
 | Attack surface reduction rule per rule exclusion | Not supported |
-| Controlled Folder Access exclusions | See [Microsoft Configuration Manager](https://learn.microsoft.com/en-us/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
+| Controlled Folder Access exclusions | See [Microsoft Configuration Manager](/defender-endpoint/enable-controlled-folders#microsoft-configuration-manager) for details|
 | Automation folder exclusions | Not supported |
 
 
