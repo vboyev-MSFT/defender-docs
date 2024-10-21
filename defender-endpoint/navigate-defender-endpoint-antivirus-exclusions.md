@@ -80,8 +80,6 @@ The following table summarizes types of custom exclusions that you can define. N
 > [!NOTE]
 > Network Protection is directly impacted by process exclusions on all platforms. A process exclusion on any OS (Windows, MacOS, Linux) results in preventing Network Protection from inspecting traffic or enforcing rules for that specific process.
 
-The following sections provide more details about exclusion types for the macOS, Linux, and Windows operating systems.
-
 #### Exclusions on Mac
 
 For macOS, you can define exclusions that apply to on-demand scans, real-time protection, and monitoring. The supported exclusion types include:
