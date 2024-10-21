@@ -15,8 +15,11 @@ ms.collection:
   - m365-security
   - tier1
   - security-copilot
-ms.topic: conceptual
-ms.date: 04/01/2024
+  - magic-ai-copilot
+ms.custom:
+- cx-ti
+ms.topic: how-to
+ms.date: 10/02/2024
 ---
 
 # Microsoft Copilot for Security in advanced hunting

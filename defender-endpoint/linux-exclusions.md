@@ -2,9 +2,9 @@
 title: Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 description: Provide and validate exclusions for Microsoft Defender for Endpoint on Linux. Exclusions can be set for files, folders, and processes.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
-ms.reviewer: gopkr
+ms.author: deniseb
+author: denisebmsft
+ms.reviewer: gopkr, ardeshmukh
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -15,33 +15,24 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 07/23/2024
+ms.date: 10/14/2024
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**In this article:**
-
-1. [Supported exclusion scopes](#supported-exclusion-scopes)
-2. [Supported exclusion types](#supported-exclusion-types)
-3. [How to configure the list of exclusions](#how-to-configure-the-list-of-exclusions)
-4. [Validate exclusions lists with the EICAR test file](#validate-exclusions-lists-with-the-eicar-test-file)
-5. [Allow threats](#allow-threats)
-
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article provides information on how to define antivirus and global exclusions for Microsoft Defender for Endpoint. Antivirus exclusions apply to on-demand scans, real-time protection (RTP), and behavior monitoring (BM). Global exclusions apply to real-time protection (RTP), behavior monitoring (BM), and endpoint detection and response (EDR), thus stopping all the associated antivirus detections, EDR alerts, and visibility for the excluded item.
 
 > [!IMPORTANT]
-> The antivirus exclusions described in this article apply to only antivirus capabilities and not endpoint detection and response (EDR). Files that you exclude using the antivirus exclusions described in this article can still trigger EDR alerts and other detections. Whereas the global exclusions described in this section apply to antivirus as well as endpoint detection and response capabilities thus stopping all associated AV protection, EDR alerts and detection. Global exclusions are available from Defender for Endpoint version `101.23092.0012` or later.  For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
+> The antivirus exclusions described in this article apply to only antivirus capabilities and not to endpoint detection and response (EDR). Files that you exclude using the antivirus exclusions described in this article can still trigger EDR alerts and other detections. Global exclusions described in this section apply to antivirus **and** endpoint detection and response capabilities, thus stopping all associated antivirus protection, EDR alerts, and detections. Global exclusions are currently in public preview, and are available in Defender for Endpoint version `101.23092.0012` or later, in the Insiders Slow and Production rings. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
 
 You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux.
 
@@ -81,7 +72,8 @@ Process|A specific process (specified either by the full path or file name) and 
 File, folder, and process exclusions support the following wildcards:
 
 > [!NOTE]
-> Wildcards are not supported while configuring global exclusions. 
+> File path needs to be present before adding or removing file exclusions with scope as global.
+> Wildcards are not supported while configuring global exclusions.
 
 Wildcard|Description|Examples|
 ---|---|---
@@ -95,14 +87,60 @@ For antivirus exclusions, when using the * wildcard at the end of the path, it w
 
 ### Using the management console
 
-For more information on how to configure exclusions from Puppet, Ansible, or another management console, see [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
+To configure exclusions from Puppet, Ansible, or another management console, please refer to the following sample `mdatp_managed.json`.
+```JSON
+{
+   "exclusionSettings":{
+     "exclusions":[
+        {
+           "$type":"excludedPath",
+           "isDirectory":true,
+           "path":"/home/*/git<EXAMPLE DO NOT USE>",
+           "scopes": [
+              "epp"
+           ]
+        },
+        {
+           "$type":"excludedPath",
+           "isDirectory":true,
+           "path":"/run<EXAMPLE DO NOT USE>",
+           "scopes": [
+              "global"
+           ]
+        },
+        {
+           "$type":"excludedPath",
+           "isDirectory":false,
+           "path":"/var/log/system.log<EXAMPLE DO NOT USE><EXCLUDED IN ALL SCENARIOS>",
+           "scopes": [
+              "epp", "global"
+           ]
+        },
+        {
+           "$type":"excludedFileExtension",
+           "extension":".pdf<EXAMPLE DO NOT USE>",
+           "scopes": [
+              "epp"
+           ]
+        },
+        {
+           "$type":"excludedFileName",
+           "name":"/bin/cat<EXAMPLE DO NOT USE><NO SCOPE PROVIDED - GLOBAL CONSIDERED>"
+        }
+     ],
+     "mergePolicy":"admin_only"
+   }
+}
+```
+
+For more information, see [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 ### Using the command line
 
 Run the following command to see the available switches for managing exclusions:
 
 > [!NOTE]
-> `--scope` is an optional flag with accepted value as `epp` or `global`. It provides the same scope used while adding the exclusion to remove the same exclusion. In the command line approach, if the scope isn’t mentioned, the scope value is set as `epp`.
+> `--scope` is an optional flag with accepted value as `epp` or `global`. It provides the same scope used while adding the exclusion to remove the same exclusion. In the command line approach, if the scope isn't mentioned, the scope value is set as `epp`.
 > Exclusions added through CLI before the introduction of `--scope` flag remain unaffected and their scope is considered `epp`.
 
 ```bash
@@ -114,7 +152,7 @@ mdatp exclusion
 
 Examples:
 
-- Add an exclusion for a file extension *(Extension exclusion isn't supported for  global exclusion scope)* : 
+- Add an exclusion for a file extension *(Extension exclusion isn't supported for global exclusion scope)* : 
 
     ```bash
     mdatp exclusion extension add --name .txt
@@ -132,7 +170,7 @@ Examples:
     Extension exclusion removed successfully
     ```
 
-- Add/Remove an exclusion for a file:
+- Add/Remove an exclusion for a file *(File path should already be present in case of adding or removing exclusion with global scope)* :
 
     ```bash
     mdatp exclusion file add --path /var/log/dummy.log --scope epp

@@ -16,6 +16,24 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
+## September 2024
+
+|Service area  |Updates  |
+|---------|---------|
+| **OT networks** | - [Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page](#review-unmanaged-enterprise-iot-devices-in-microsoft-security-exposure-management-initiatives-page)<br>- [New Building Management Systems (BMS) device category](#new-building-management-systems-bms-device-category)|
+
+### Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page
+
+You can now review the new Enterprise IoT Security initiative in the Microsoft Security Exposure Management Initiatives page. This new initiative provides a metric-driven way of tracking exposure about unmanaged enterprise IoT devices.
+
+For more information, see the [Microsoft Security Exposure Management release notes](/security-exposure-management/whats-new#new-enterprise-iot-security-initiative).
+
+### New Building Management Systems (BMS) device category
+
+We now support the new BMS device category in Defender for IoT that improves BMS device discovery and security. The BMS category includes a subset of Smart Facility and Surveillance devices (previously under the IoT category) such as fire alarms, humidity sensors, security radars, etc. Camera devices remain under the IoT category.
+
+For more information, see [overview of device discovery](device-discovery.md).
+
 ## July 2024
 
 |Service area  |Updates  |

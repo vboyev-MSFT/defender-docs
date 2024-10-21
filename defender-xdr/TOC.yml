@@ -374,10 +374,10 @@
          items:
               - name: Threat analytics overview
                 href: threat-analytics.md
-              - name: Defender Threat Intelligence in Microsoft Defender XDR
-                href: defender-threat-intelligence.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
+              - name: Defender Threat Intelligence in Microsoft Defender XDR
+                href: defender-threat-intelligence.md
        - name: Endpoint Attack Notifications
          href: /defender-endpoint/endpoint-attack-notifications
        - name: Collaborate with Microsoft Defender Experts for Hunting
@@ -444,6 +444,8 @@
                 href: copilot-in-defender-file-analysis.md
               - name: Generate device summaries
                 href: copilot-in-defender-device-summary.md
+              - name: Summarize identities
+                href: security-copilot-defender-identity-summary.md                
               - name: Use guided responses
                 href: security-copilot-m365d-guided-response.md
               - name: Generate KQL queries
@@ -478,12 +480,14 @@
         items:
         - name: SOC optimization overview
           display name: SOC optimization
-          href: https://aka.ms/soc-opt-from-defender
+          href: /azure/sentinel/soc-optimization/soc-optimization-access?toc=/defender-xdr/toc.json&bc=/defender-xdr/breadcrumb/toc.json
+        - name: Use SOC optimizations programmatically
+          href: /azure/sentinel/soc-optimization/soc-optimization-api?toc=/defender-xdr/toc.json&bc=/defender-xdr/breadcrumb/toc.json
         - name: SOC optimization reference
-          href: https://aka.ms/soc-opt-ref
+          href: /azure/sentinel/soc-optimization/soc-optimization-reference?toc=/defender-xdr/toc.json&bc=/defender-xdr/breadcrumb/toc.json
     - name: Manage multitenant environments
       items:
-        - name: Multitenant management in Microsoft Defender XDR
+        - name: Overview
           href: mto-overview.md
         - name: Set up multitenant management
           href: mto-requirements.md
@@ -545,8 +549,6 @@
                 href: configure-email-notifications.md
             - name: Set time zone
               href: m365d-time-zone.md
-            - name: View device profiles
-              href: device-profile.md
             - name: Troubleshoot service issues
               href: troubleshoot.md
             - name: Set up dynamic rules for devices
