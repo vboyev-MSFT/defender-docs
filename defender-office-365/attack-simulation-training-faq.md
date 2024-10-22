@@ -264,11 +264,12 @@ We find that campaigns where the targeted users are identified by Microsoft Entr
 
 Currently, there are 94 built-in trainings on the [Training modules](attack-simulation-training-training-modules.md) page.
 
-### Q: How are languages enabled for experiences like training modules and notifications?   
+### Q: How are languages used for experiences like training modules and notifications?
 
-By default, training module uses the browser locale settings to determine the language of the end user. However, once the training has been assigned to a user, then the language selection persists, and future trainings are assigned in that language. 
-For end user notifications, the service follows the mailbox locale/language, whereas the language for simulation payload is based on the selection made by admin during the creation of simulation.  
-For landing pages, it uses the Microsoft 365 account language settings, and the settings around preferred and display languages should be set to the desired language.  User can also change languages from the dropdown present in the landing pages.
+- **Training modules**: The browser locale settings are used. But once the training has been assigned to a user, the language selection persists, and future trainings are assigned in that language.
+- **End user notifications**: The mailbox locale/language settings are used.
+- **Simulation playloads**: The language selected by the admin during creation is used.
+- **Landing pages**: The Microsoft 365 account language settings are used. User can also change languages from the drop down present in the landing page.
 
 ### Q: Are there any limits in targeting users while importing from a CSV or adding users?
 
