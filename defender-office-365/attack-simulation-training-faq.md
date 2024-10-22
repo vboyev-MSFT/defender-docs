@@ -96,7 +96,7 @@ Either way, it's important to use different payloads to avoid discussion and ide
 
 By default, Outlook is configured to block automatic image downloads in messages from the internet. Although you can [configure Outlook to automatically download images](https://support.microsoft.com/office/15e08854-6808-49b1-9a0a-50b81f2d617a), we don't recommend it due to the security implications (potential automatic download of malicious code or web bugs, also known as web beacons or tracking pixels).
 
-### I see clicks or compromise events from users who insist they didn't click the link in the simulation message OR I am seeing clicks within a few seconds of delivery for many of my users (false positives). What's going on?
+### I see clicks or compromise events from users who insist they didn't click the link in the simulation message OR I see clicks within a few seconds of delivery for many users (false positives). What's going on?
 
 These events can occur when additional security devices or applications inspect simulation messages. For example (but not limited to): 
 
