@@ -118,7 +118,7 @@
     {
       "source_path": "defender-xdr/device-profile.md",
       "redirect_url": "/defender-xdr/entity-page-device",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }    
   ]
 }
