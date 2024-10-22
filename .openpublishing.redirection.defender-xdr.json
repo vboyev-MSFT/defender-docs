@@ -2,37 +2,37 @@
   "redirections": [
     {
       "source_path": "defender-xdr/unified-secops-platform/defender-xdr-portal.md",
-      "redirect_url": "/defender-xdr/unified-secops-platform/defender-xdr-portal",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     },
     {
       "source_path": "defender-xdr/unified-secops-platform/incident-response-overview.md",
-      "redirect_url": "/defender-xdr/unified-secops-platform/incident-response-overview",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     },
     {
       "source_path": "defender-xdr/unified-secops-platform/incident-response-planning.md",
-      "redirect_url": "/defender-xdr/unified-secops-platform/incident-response-planning",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     },
     {
       "source_path": "defender-xdr/unified-secops-platform/index.yml",
-      "redirect_url": "/defender-xdr/unified-secops-platform/index",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     },
     {
       "source_path": "defender-xdr/unified-secops-platform/overview-defender-portal.md",
-      "redirect_url": "/defender-xdr/unified-secops-platform/overview-defender-portal",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     },
     {
       "source_path": "defender-xdr/unified-secops-platform/overview-unified-security.md",
-      "redirect_url": "/defender-xdr/unified-secops-platform/overview-unified-security",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     },
     {
       "source_path": "defender-xdr/unified-secops-platform/whats-new.md",
-      "redirect_url": "/defender-xdr/unified-secops-platform/whats-new",
+      "redirect_url": "/defender-xdr/",
       "redirect_document_id": false
     }
   ]
