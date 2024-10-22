@@ -19,7 +19,7 @@ ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.service: defender-office-365
-ms.date: 09/23/2024
+ms.date: 10/22/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
@@ -96,20 +96,20 @@ Either way, it's important to use different payloads to avoid discussion and ide
 
 By default, Outlook is configured to block automatic image downloads in messages from the internet. Although you can [configure Outlook to automatically download images](https://support.microsoft.com/office/15e08854-6808-49b1-9a0a-50b81f2d617a), we don't recommend it due to the security implications (potential automatic download of malicious code or web bugs, also known as web beacons or tracking pixels).
 
-### I see clicks or compromise events from users who insist they didn't click the link in the simulation message OR I am seeing clicks within a few seconds of delivery for many of my users. (False positives)
+### I see clicks or compromise events from users who insist they didn't click the link in the simulation message OR I am seeing clicks within a few seconds of delivery for many of my users (false positives). What's going on?
 
-These events can occur when there are security devices, or applications that might be inspecting the mail, some of which may include (but not limited to): 
+These events can occur when additional security devices or applications inspect simulation messages. For example (but not limited to): 
 
-- Applications/plugins within outlook that inspect/intercept the message
-- Email security applications
-- Endpoint security or antivirus software
-- SOAR playbooks that auto-triage/auto-respond to reported messages
+- Applications or plugins within Outlook that inspect or intercept the message.
+- Email security applications.
+- Endpoint security or anti-virus software.
+- Security orchestration, automation and response (SOAR) playbooks that automatically triage or automatically respond to reported messages.
 
-These kind of applications can look at the website content for the purpose of detecting real phish, and you will need to define  exclusions for simulation messages.
+These types of applications can look at web content to detecting phishing, so you need to define exclusions for simulation messages in these applications.
 
-Looking through different fields like IP (e.g. EmailLinkClicked_IP) and TimeStamp (e.g. EmailLinkClicked_TimeStamp) may give more details about the event. e.g. if a click occured within a few seconds of delivery, and it is a non-Microsoft IP or not your company/user's IP, then it is likely that a third-party filtering system or another service is intercepting the message. 
+EmailLinkClicked_IP and EmailLinkClicked_TimeStamp data might give more details about the event. For example, if a click occured a few seconds after delivery, and the IP address doesn't belong to Microsoft, your company, or the user, then it's likely that a third-party filtering system or another service intercepted the message.
 
-For any non-Microsoft filtering systems or service that you use, you need to allow or exempt the following items:
+For any non-Microsoft filtering systems or services, you need to allow or exempt the following items:
 
 - All [Attack simulation training URLs](attack-simulation-training-get-started.md#simulations) and the corresponding domains. Currently, we don't send simulation messages from a static list of IP addresses.
 - Any other domains that you use in custom payloads.
