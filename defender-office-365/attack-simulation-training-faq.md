@@ -96,13 +96,24 @@ Either way, it's important to use different payloads to avoid discussion and ide
 
 By default, Outlook is configured to block automatic image downloads in messages from the internet. Although you can [configure Outlook to automatically download images](https://support.microsoft.com/office/15e08854-6808-49b1-9a0a-50b81f2d617a), we don't recommend it due to the security implications (potential automatic download of malicious code or web bugs, also known as web beacons or tracking pixels).
 
-### I see clicks or compromise events from users who insist they didn't click the link in the simulation message
+### I see clicks or compromise events from users who insist they didn't click the link in the simulation message OR I am seeing clicks within a few seconds of delivery for many of my users. (False positives)
 
-Third-party filtering services might be to blame. For any non-Microsoft filtering systems that you use, you need to allow or exempt the following items:
+These events can occur when there are security devices, or applications that might be inspecting the mail, some of which may include (but not limited to): 
+
+- Applications/plugins within outlook that inspect/intercept the message
+- Email security applications
+- Endpoint security or antivirus software
+- SOAR playbooks that auto-triage/auto-respond to reported messages
+
+These kind of applications can look at the website content for the purpose of detecting real phish, and you will need to define  exclusions for simulation messages.
+
+Looking through different fields like IP (e.g. EmailLinkClicked_IP) and TimeStamp (e.g. EmailLinkClicked_TimeStamp) may give more details about the event. e.g. if a click occured within a few seconds of delivery, and it is a non-Microsoft IP or not your company/user's IP, then it is likely that a third-party filtering system or another service is intercepting the message. 
+
+For any non-Microsoft filtering systems or service that you use, you need to allow or exempt the following items:
 
 - All [Attack simulation training URLs](attack-simulation-training-get-started.md#simulations) and the corresponding domains. Currently, we don't send simulation messages from a static list of IP addresses.
 - Any other domains that you use in custom payloads.
-
+	
 ### Can I add the External tag or safety tips to simulation messages?
 
 Custom payloads have the option to add the External tag to messages. For more information, see Step 5 in [Create payloads](attack-simulation-training-payloads.md#create-payloads).
@@ -252,6 +263,12 @@ We find that campaigns where the targeted users are identified by Microsoft Entr
 ### Q: How many training modules are there?
 
 Currently, there are 94 built-in trainings on the [Training modules](attack-simulation-training-training-modules.md) page.
+
+### Q: How are languages enabled for experiences like training modules and notifications?   
+
+By default, training module uses the browser locale settings to determine the language of the end user. However, once the training has been assigned to a user, then the language selection persists, and future trainings are assigned in that language. 
+For end user notifications, the service follows the mailbox locale/language, whereas the language for simulation payload is based on the selection made by admin during the creation of simulation.  
+For landing pages, it uses the Microsoft 365 account language settings, and the settings around preferred and display languages should be set to the desired language.  User can also change languages from the dropdown present in the landing pages.
 
 ### Q: Are there any limits in targeting users while importing from a CSV or adding users?
 
