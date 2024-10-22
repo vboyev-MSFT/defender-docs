@@ -150,6 +150,6 @@
   "targets": {},
   "redirection_files": [
     ".openpublishing.redirection.defender.json",
-    ".openpublishing.redirection.endpoint.json"
+    ".openpublishing.redirection.defender-xdr.json"
   ]
 }
