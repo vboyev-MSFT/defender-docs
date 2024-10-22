@@ -56,13 +56,12 @@ Selecting **All** includes data from all domains you currently have access to. N
 
 You can choose from:
 
-- All domains - to look through all available data in your query
-- Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
-- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/defender-office-365/threat-explorer-real-time-detections-about) can find the same data here
-- Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](/defender-cloud-apps/activity-filters) can find the same data here
-- Cloud infrastructure - to look through cloud infrastructure data as provided by Microsoft Defender for Cloud
-- Exposure management - to look through exposure management data as provided by Microsoft Security Exposure Management
-
+- All domains - To look through all available data in your query.
+- Endpoints - To look through endpoint data as provided by Microsoft Defender for Endpoint.
+- Email and collaboration - To look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/defender-office-365/threat-explorer-real-time-detections-about) can find the same data here.
+- Apps and identities - To look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](/defender-cloud-apps/activity-filters) can find the same data here.
+- Cloud infrastructure - To look through cloud infrastructure data as provided by Microsoft Defender for Cloud.
+- Exposure management - To look through exposure management data as provided by Microsoft Security Exposure Management.
 
 ## Use basic filters
 
@@ -180,5 +179,5 @@ Then, add another condition, this time specifying the folder or **DeliveryLocati
 
 - [Refine your query in guided mode](advanced-hunting-query-builder-details.md)
 - [Work with query results in guided mode](advanced-hunting-query-builder-results.md)
- - [Understand the schema](advanced-hunting-schema-tables.md)
+- [Understand the schema](advanced-hunting-schema-tables.md)
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
