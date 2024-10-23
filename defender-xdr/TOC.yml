@@ -549,14 +549,14 @@
                 href: configure-email-notifications.md
             - name: Set time zone
               href: m365d-time-zone.md
-            - name: Troubleshoot service issues
-              href: troubleshoot.md
             - name: Set up dynamic rules for devices
               href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
               href: mssp-access.md
+        - name: Troubleshoot service issues
+          href: troubleshoot.md              
         - name: Microsoft Defender XDR APIs
           items:
             - name: Overview
@@ -623,8 +623,6 @@
                  href: /defender-endpoint/technological-partners
                - name: Professional services supported by Microsoft Defender XDR
                  href: /defender-endpoint/professional-services
-            - name: Understand threat intelligence concepts
-              href: /defender-endpoint/threat-indicator-concepts
         - name: Bi-directional connector for Microsoft Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
     - name: Resources
@@ -637,6 +635,8 @@
           href: criteria.md
         - name: Submit files for analysis
           href: submission-guide.md
+        - name: Understand threat intelligence concepts
+          href: /defender-endpoint/threat-indicator-concepts          
         - name: Microsoft virus initiative
           href: virus-initiative-criteria.md
         - name: Software developer FAQ
