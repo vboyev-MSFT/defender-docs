@@ -31,7 +31,7 @@ ms.date: 10/23/2024
 This article describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
+> Running other non-Microsoft endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
