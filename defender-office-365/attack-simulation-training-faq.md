@@ -258,6 +258,11 @@ A: Several options are available to target users:
 - Select users from a CSV file (one email address per line).
 - Microsoft Entra group-based targeting.
 
+The following group types are supported:
+- Microsoft 365 groups (static and dynamic)
+- Distribution groups (static only)
+- Mail-enabled Security groups (static only)
+
 We find that campaigns where the targeted users are identified by Microsoft Entra groups are easier to manage.
 
 ### Q: How many training modules are there?
@@ -282,7 +287,7 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 > [!TIP]
 > Currently, shared mailboxes aren't supported in Attack simulation training. Simulations should target user mailboxes or groups containing user mailboxes.
 >
-> Distribution groups are expanded and the list of users is generated at the time of saving the simulation or simulation automation.
+> Distribution groups & Microsoft 365 groups are expanded and the list of users is generated at the time of saving the simulation, simulation automation or training campaign.
 
 ### Q: Are the limits for the number of simulations that can be deployed during a specific time interval?
 
