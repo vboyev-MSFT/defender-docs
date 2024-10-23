@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 - Linux distribution using the [systemd](https://systemd.io/)system manager
 
   > [!NOTE]
-  > Linux distribution using system manager, except for RHEL/CentOS 6.x support both SystemV and Upstart.
+  > Linux distribution using system manager, except for CentOS 6.x support both SystemV and Upstart.
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (for manual deployment)
 
@@ -86,7 +86,6 @@ In general you need to take the following steps:
 - Memory: 1 GB minimum, 4 preferred
 
 - List of supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
-  - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
   - Red Hat Enterprise Linux 9.x
