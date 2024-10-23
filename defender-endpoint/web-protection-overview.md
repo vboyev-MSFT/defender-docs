@@ -48,17 +48,14 @@ Web threat protection includes:
 
 > [!NOTE]
 > For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
->
 > - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
-> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
-> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
-> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
-> - Full URL path blocks can be applied for unencrypted URLs.
->
+- Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+- Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+- Full URL path blocks can be applied for unencrypted URLs.
+
 > There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
-
-For more information, see [Web threat protection](web-threat-protection.md).
-
+> For more information, see [Web threat protection](web-threat-protection.md).
 ### Custom indicators
 
 Custom indicator detections are also summarized in your organizations web threat reports under **Web threat detections over time** and **Web threat summary**.
@@ -121,6 +118,8 @@ Internal IP addresses aren't supported by custom indicators. For a warn policy w
 
 In all web protection scenarios, SmartScreen and Network Protection can be used together to ensure protection across both Microsoft and non-Microsoft browsers and processes. SmartScreen is built directly into Microsoft Edge, while Network Protection monitors traffic in non-Microsoft browsers and processes. The following diagram illustrates this concept. This diagram of the two clients working together to provide multiple browser/app coverages is accurate for all features of Web Protection (Indicators, Web Threats, Content Filtering).
 
+> [!NOTE]
+> Custom Indicators of Compromise and Web Content Filtering features are currently not supported in Application Guard sessions of Microsoft Edge. These containerized browser sessions can only enforce web threat blocks via the built-in SmartScreen protection. They cannot enforce any enterprise web protection policies.
 :::image type="content" source="/defender/media/web-protection-protect-browsers.png" alt-text="The usage of smartScreen and Network Protection together" lightbox="/defender/media/web-protection-protect-browsers.png":::
 
 ## Troubleshoot endpoint blocks
