@@ -121,7 +121,7 @@ In all web protection scenarios, SmartScreen and Network Protection can be used 
 
 > [!NOTE]
 > Custom Indicators of Compromise and Web Content Filtering features are currently not supported in Application Guard sessions of Microsoft Edge. These containerized browser sessions can only enforce web threat blocks via the built-in SmartScreen protection. They cannot enforce any enterprise web protection policies.
-:::image type="content" source="/defender/media/web-protection-protect-browsers.png" alt-text="The usage of smartScreen and Network Protection together" lightbox="/defender/media/web-protection-protect-browsers.png":::
+> :::image type="content" source="/defender/media/web-protection-protect-browsers.png" alt-text="The usage of smartScreen and Network Protection together" lightbox="/defender/media/web-protection-protect-browsers.png":::
 
 ## Troubleshoot endpoint blocks
 
@@ -183,7 +183,7 @@ For WCF, you can dispute the category of a domain. Navigate to the **Domains** t
 
 For more information on how to submit false positives/negatives, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## Related information
+## Related articles
 
 |Article|Description|
 |---|---|
