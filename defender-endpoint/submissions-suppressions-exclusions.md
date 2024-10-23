@@ -72,8 +72,8 @@ For more information, see [Exclusions overview](navigate-defender-endpoint-antiv
 
 ## See also
 
+- [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md)
 - [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [MVP Fabian Bader's Blog post: The Hitchhiker's Guide to Microsoft Defender for Endpoint exclusions](https://cloudbrothers.info/en/guide-to-defender-exclusions/)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
