@@ -58,7 +58,7 @@ The following sample shows the daily and/or weekly configuration for the schedul
 | lowPriorityScheduledScan | `true` or `false` |
 | `dayOfWeek` | The range is between `0` and `8`. <br>- `0`: Everyday <br>- `1`: Sunday <br>- `2`: Monday <br>- `3`: Tuesday <br>- `4`: Wednesday <br>- `5`: Thursday <br>- `6`: Friday <br>- `7`: Saturday <br>- `8`: Never |
 | `timeOfDay` | Specifies the time of day, as the number of `minutes after midnight`, to perform a scheduled scan. The time refers to the local time on the computer. If you don't specify a value for this parameter, a scheduled scan runs at a default time of two hours after midnight. |
-| `interval` | `0` (never), `every 1` (hour) to `every 24` (hours, 1 scan per day) |
+| `interval` | `0` (never), `every 1` (hour) to `every 24` (hours, one scan per day) |
 | `randomizeScanStartTime` | Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. <br> For example, if a scan is scheduled for 2 p.m and `randomizeScanStartTime` is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. |
 
 Your scheduled scan runs at the date, time, and frequency you defined in your `plist`.
