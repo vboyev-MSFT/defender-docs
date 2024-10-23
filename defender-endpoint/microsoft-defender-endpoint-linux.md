@@ -117,7 +117,7 @@ If you experience any installation failures, see [Troubleshooting installation f
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system that use `fanotify` in blocking mode, applications are listed in the `conflicting_applications` field of the `mdatp health` command output. The Linux **FAPolicyD** feature uses `fanotify` in blocking mode, and is therefore unsupported when running Defender for Endpoint in active mode. You can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality Real Time Protection Enabled to [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
-- List of supported filesystems for RTP, Quick, Full and Custom Scan.
+- List of supported filesystems for RTP, Quick, Full, and Custom Scan.
 
    |RTP, Quick, Full Scan| Custom Scan|
    |---|---|
@@ -138,7 +138,7 @@ If you experience any installation failures, see [Troubleshooting installation f
    |`vfat`||
    |`xfs`||
     
-- Audit framework (`auditd`) must be enabled if you are using auditd as your primary event provider.
+- Audit framework (`auditd`) must be enabled if you're using auditd as your primary event provider.
 
   > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
@@ -147,7 +147,7 @@ If you experience any installation failures, see [Troubleshooting installation f
 
 ### External package dependency
 
-If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies. The following external package dependencies exist for the mdatp package:
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies. The following external package dependencies exist for the mdatp package:
 
 - The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage` `selinux-policy-targeted`, and `mde-netfilter`
 - For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, and `mde-netfilter`
@@ -164,7 +164,7 @@ When adding exclusions to Microsoft Defender Antivirus, you should be mindful of
 
 ### Network connections
 
-Ensure that connectivity is possible from your devices to Microsoft Defender for Endpoint cloud services. To prepare your environment, please reference [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
+Ensure that connectivity is possible from your devices to Microsoft Defender for Endpoint cloud services. To prepare your environment, see [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
 Defender for Endpoint on Linux can connect through a proxy server by using the following discovery methods:
 
