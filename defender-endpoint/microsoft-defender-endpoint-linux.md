@@ -40,11 +40,14 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 ### Prerequisites
 
 - Access to the Microsoft Defender portal
+- 
 - Linux distribution using the [systemd](https://systemd.io/)system manager
 
   > [!NOTE]
   > Linux distribution using system manager, support both SystemV and Upstart.
+
 - Beginner-level experience in Linux and BASH scripting
+- 
 - Administrative privileges on the device (for manual deployment)
 
 > [!NOTE]
