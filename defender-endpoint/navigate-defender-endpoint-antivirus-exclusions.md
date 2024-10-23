@@ -42,7 +42,7 @@ Microsoft preconfigures the product to perform well on the operating system that
 
 This article explains the various types of exclusions that you can define, how exclusions are evaluated, and what to expect if policy conflicts occur. For how-to information, see the following articles/sections:
 
-- [Custom exclusions](#custom-exclusions)
+- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Managing exclusions reference](managing-exclusions.md)
 - [Address common false-positive scenarios with exclusions](address-common-false-positives-exclusions.md)
 
