@@ -1,6 +1,6 @@
 ---
-title: Using submissions, suppressions, and exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
-description: Learn about suppressing alerts, submitting files for analysis, and defining exclusions and indicators to reduce noise and risk for your organization.
+title: Using submissions, suppressions, and exclusions with Microsoft Defender for Endpoint
+description: Learn about suppressing alerts, submitting files for analysis, and defining exclusions and indicators for Defender for Endpoint.
 ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Using submissions, suppressions, and exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+# Using submissions, suppressions, and exclusions with Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
