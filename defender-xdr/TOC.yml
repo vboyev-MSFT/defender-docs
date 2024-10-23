@@ -557,10 +557,6 @@
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
               href: mssp-access.md
-            - name: Create ServiceNow tickets and tasks
-              items:
-              - name: ServiceNow integration overview
-                href: ./tickets.md
         - name: Microsoft Defender XDR APIs
           items:
             - name: Overview
@@ -641,8 +637,6 @@
           href: criteria.md
         - name: Submit files for analysis
           href: submission-guide.md
-        - name: Troubleshoot MSI portal errors caused by admin block
-          href: portal-submission-troubleshooting.md
         - name: Microsoft virus initiative
           href: virus-initiative-criteria.md
         - name: Software developer FAQ
