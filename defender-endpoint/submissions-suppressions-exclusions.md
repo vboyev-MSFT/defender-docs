@@ -70,10 +70,5 @@ Sometimes, the term *exclusions* is used to refer to exceptions that apply acros
 
 For more information, see [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md).
 
-## See also
-
-- [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md)
-- [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions)
-- [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
