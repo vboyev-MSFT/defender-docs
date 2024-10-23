@@ -78,7 +78,7 @@ If you experience any installation failures, see [Troubleshooting installation f
 - Cores: 2 minimum, 4 preferred
 
   > [!NOTE]
-  > If you are on Passive or RTP ON mode, at least two Cores are required. Four Cores are preferred. If you are turning on BM, then a minimum of 4 Cores is required.
+  > If you are on Passive or RTP ON mode, at least two Cores are required. Four Cores are preferred. If you are turning on BM, then at least four Cores are required.
 
 - Memory: 1 GB minimum, 4 preferred
 
