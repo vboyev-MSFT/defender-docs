@@ -75,12 +75,12 @@ If you experience any installation failures, see [Troubleshooting installation f
   > [!NOTE]
   > An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections. Please make sure that you have free disk space in /var.
 
-- Cores: 2 minimum, 4 preferred
+- Cores: Two minimum, four preferred
 
   > [!NOTE]
   > If you are on Passive or RTP ON mode, at least two Cores are required. Four Cores are preferred. If you are turning on BM, then at least four Cores are required.
 
-- Memory: 1 GB minimum, 4 preferred
+- Memory: 1 GB minimum, 4 GB preferred
 
 - The following Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions are supported:
   - Red Hat Enterprise Linux 6.7 or higher (In preview)
@@ -171,7 +171,7 @@ Defender for Endpoint on Linux can connect through a proxy server by using the f
 - Transparent proxy
 - Manual static proxy configuration
 
-If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no additional configuration is needed for Defender for Endpoint. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
+If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no another configuration is needed for Defender for Endpoint. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
 > [!WARNING]
 > PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
@@ -189,7 +189,7 @@ Guidance for how to configure the product in enterprise environments is availabl
 
 ## Common Applications to Microsoft Defender for Endpoint can impact
 
-High I/O workloads from certain applications can experience performance issues when Microsoft Defender for Endpoint is installed. These include applications for developer scenarios like Jenkins and Jira, and database workloads like OracleDB and Postgres. If experiencing performance degradation, consider setting exclusions for trusted applications, keeping [Common Exclusion Mistakes for Microsoft Defender Antivirus](common-exclusion-mistakes-microsoft-defender-antivirus.md) in mind. For additional guidance, consider consulting documentation regarding antivirus exclusions from third party applications.
+High I/O workloads from certain applications can experience performance issues when Microsoft Defender for Endpoint is installed. These include applications for developer scenarios like Jenkins and Jira, and database workloads like OracleDB and Postgres. If experiencing performance degradation, consider setting exclusions for trusted applications, keeping [Common Exclusion Mistakes for Microsoft Defender Antivirus](common-exclusion-mistakes-microsoft-defender-antivirus.md) in mind. For more guidance, consider consulting documentation regarding antivirus exclusions from non-Microsoft applications.
 
 ## Resources
 
