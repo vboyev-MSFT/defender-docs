@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/21/2024
+ms.date: 10/23/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -40,11 +40,11 @@ Microsoft preconfigures the product to perform well on the operating system that
 - **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
-This article explains the various types of exclusions that you can define, how exclusions are evaluated, and what to expect if policy conflicts occur. For how-to information, see the following articles:
+This article explains the various types of exclusions that you can define, how exclusions are evaluated, and what to expect if policy conflicts occur. For how-to information, see the following articles/sections:
 
-- [Address common false-positive scenarios with exclusions](address-common-false-positives-exclusions.md)
-- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Custom exclusions](#custom-exclusions)
 - [Managing exclusions reference](managing-exclusions.md)
+- [Address common false-positive scenarios with exclusions](address-common-false-positives-exclusions.md)
 
 ## Types of exclusions
 
