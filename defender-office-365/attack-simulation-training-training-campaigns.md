@@ -113,7 +113,6 @@ On the **Target users** page, select who receives the Training campaign. Use the
   The following search tools are available:
 
   - **Search for users or groups**: If you click in the :::image type="icon" source="media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and do one of the following actions, the **Filter users by categories** options on the **Add users** flyout are replaced by a **User list** section:
-
     - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name**, **Email**, **Job title**, and **Type**.
     - Type less than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
 
