@@ -333,8 +333,8 @@ For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 o
    - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
    - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
-> [!NOTE]
-> In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
+     > [!NOTE]
+     > In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
 
 ### Network protection for Windows Servers
 
