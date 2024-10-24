@@ -8,7 +8,7 @@ ms.service: defender-endpoint
 ms.subservice: onboard
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.date: 10/21/2024
+ms.date: 10/24/2024
 search.appverid: met150
 ms.custom: 
 - partner-contribution
@@ -27,13 +27,13 @@ This table shows which exclusion types are supported by each management tool.
 
 | Management | Custom AV | ASR Only |  ASR per Rule | CFA | Automation | Disable Automatic | 
 |---   |:------:|:---:|:---:|:---:|:---:|:---:|
-| [Defender Portal](#the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | ✅ |:x: |
+| [Defender Portal](#the-microsoft-defender-portal) | ✅ | ✅ | ✅ | ✅ | ✅ | :x: |
 | [Intune](#intune) | ✅ | ✅ | ✅ | ✅ | :x: | :x: |
 | [MDM CSP](#mdm-csp) | ✅ | ✅ | :x: | ✅ | :x: | :x: |
-| [PowerShell](#powershell) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
-| [GPO](#group-policy-object-gpo) | ✅ | ✅ | :x: | ✅ |:x: | ✅ |
+| [PowerShell](#powershell) | ✅ | ✅ | :x: | ✅ | :x: | ✅ |
+| [GPO](#group-policy-object-gpo) | ✅ | ✅ | :x: | ✅ | :x: | ✅ |
 | [WMI](#windows-management-instrumentation-wmi)| ✅| :x: | :x: | :x: |:x: | ✅ |
-| [Configuration Manager](#configuration-manager)| ✅ | ✅ | :x: | ✅ |:x: | :x: |
+| [Configuration Manager](#configuration-manager)| ✅ | ✅ | :x: | ✅ | :x: | :x: |
 
 ### The Microsoft Defender portal
 
