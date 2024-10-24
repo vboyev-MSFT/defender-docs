@@ -319,7 +319,7 @@ Collect the networking logs by following these steps:
 
 1. Open an elevated(admin) PowerShell prompt.
 
-2. Download and Run: `.\collect-networking-logs.ps1`
+2. Download and run: `.\collect-networking-logs.ps1`
 
    ```powershell
    
@@ -329,19 +329,19 @@ Collect the networking logs by following these steps:
    
    ```
 
-3. Open a new command prompt and run: `wsl`
+3. Open a new command prompt and run the following command: `wsl`.
       
-4. Open an elevated(admin) command prompt and run:  `wsl --debug-shell`
+4. Open an elevated(admin) command prompt and run the following command: `wsl --debug-shell`.
 
-5. In debug shell, run: `mdatp connectivity test`
+5. In debug shell, run: `mdatp connectivity test`.
 
-6. Allow the connectivity test to be completed
+6. Allow the connectivity test to be completed.
 
-7. Stop the .ps1 ran in step #2
+7. Stop the .ps1 ran in step #2.
 
-8. Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#support-bundle-collection).      
+8. Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#support-bundle-collection).
 
-### Support bundle collection
+### Collect a support bundle
 
 1. If you run into any other challenges or issues, open Terminal, and run the following commands to generate a support bundle:
 
@@ -388,7 +388,7 @@ Collect the networking logs by following these steps:
    - **Value**: `Dogfood or External or InsiderFast or Production`
    - **Path**:  `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Defender for Endpoint plug-in for WSL`
 
-1. If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
+4. If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
 
    1. In Control Panel, go to **Programs** > **Programs and Features**.
       
