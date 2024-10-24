@@ -86,7 +86,6 @@ If you experience any installation failures, see [Troubleshooting installation f
 - Memory: 1 GB minimum, 4 GB preferred
 
 - The following Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions are supported:
-  - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
   - Red Hat Enterprise Linux 9.x
