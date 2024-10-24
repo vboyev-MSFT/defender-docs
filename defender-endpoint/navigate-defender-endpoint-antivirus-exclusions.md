@@ -42,7 +42,7 @@ Microsoft preconfigures the product to perform well on the operating system that
 
 Creating an exclusion is one possible approach for addressing these types of issues. This article also includes [Alternatives to creating exclusions and allow indicators](#alternatives-to-creating-exclusions-and-allow-indicators).  
 
->[!NOTE] 
+> [!NOTE]
 > Creating an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
 
 | Example scenario | Steps to consider |
