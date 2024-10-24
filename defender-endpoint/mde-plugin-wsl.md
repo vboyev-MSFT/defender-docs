@@ -258,29 +258,29 @@ DeviceProcessEvents
 1. The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in five minutes."
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
-   
-1. If the previously mentioned error occurs, take the following steps:
+
+2. If the previously mentioned error occurs, take the following steps:
 
    1. Open a terminal instance and run the command `wsl`.
-      
-   1. Wait for at least five minutes before rerunning the health check.
-      
-1. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in five minutes."
+
+   2. Wait for at least five minutes before rerunning the health check.
+
+3. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in five minutes."
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
-   
+
    If that error occurs, wait for five minutes and rerun `healthcheck.exe`.
-   
-1. If you don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline, check the following things:
+
+4. If you don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline, check the following things:
 
    - If you aren't seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes).
-      
+
    - Make sure to use the right filters, and that you have the appropriate permissions assigned to view all device objects. (For example, is your account/group is restricted to a specific group?)
-      
+
    - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `%ProgramFiles%\Microsoft Defender for Endpoint plug-in for WSL\tools`.
-   
+
      :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
-     
+
    - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to our support team.
 
    - If the connectivity test reports "invalid" in health check:
@@ -382,10 +382,10 @@ DeviceProcessEvents
    - **Value**: `Dogfood or External or InsiderFast or Production`
    - **Path**:  `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Defender for Endpoint plug-in for WSL`
 
-1. If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
+4. If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
 
    1. In Control Panel, go to **Programs** > **Programs and Features**.
-      
+
    2. Search for and select **Microsoft Defender for Endpoint plug-in for WSL**. Then select **Repair**. This action should fix the problem by placing the right files in the expected directories.
 
-      :::image type="content" source="media/mdeplugin-wsl/plug-in-repair-control-panel.png" alt-text="Screenshot showing MDE plug-in for WSL repair option in control panel." lightbox="media/mdeplugin-wsl/plug-in-repair-control-panel.png":::
+   :::image type="content" source="media/mdeplugin-wsl/plug-in-repair-control-panel.png" alt-text="Screenshot showing MDE plug-in for WSL repair option in control panel." lightbox="media/mdeplugin-wsl/plug-in-repair-control-panel.png":::
