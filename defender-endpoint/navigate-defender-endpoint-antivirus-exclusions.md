@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/23/2024
+ms.date: 10/24/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -40,11 +40,10 @@ Microsoft preconfigures the product to perform well on the operating system that
 - **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
-Creating an exclusion is one possible approach for addressing these types of issues.  
+Creating an exclusion is one possible approach for addressing these types of issues. This article also includes [Alternatives to creating exclusions and allow indicators](#alternatives-to-creating-exclusions-and-allow-indicators).  
 
-
->[!NOTE] Creating an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
-
+>[!NOTE] 
+> Creating an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
 
 | Example scenario | Steps to consider |
 |:---|:----|
@@ -57,6 +56,28 @@ This article explains the various types of exclusions that you can define, how e
 - [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Managing exclusions reference](managing-exclusions.md)
 - [Address common false-positive scenarios with exclusions](address-common-false-positives-exclusions.md)
+
+## Alternatives to creating exclusions and allow indicators
+
+Creating an exclusion or allow indicator create a protection gap. These techniques should only be used after determining the root cause of the issue.  Until that determination is made, consider these alternatives.
+
+### Submitting files for analysis
+
+If you have a file that you think is wrongly detected as malware (a false positive), or a file that you suspect might be malware even though it wasn't detected (a false negative), you can submit the file to Microsoft for analysis. Your submission is scanned immediately, and will then be reviewed by Microsoft security analysts. You're able to check the status of your submission on the [submission history page](https://www.microsoft.com/wdsi/submissionhistory).
+
+Submitting files for analysis helps reduce false positives and false negatives for all customers. To learn more, see the following articles:
+
+- [Submit files for analysis](/microsoft-365/security/intelligence/submission-guide) (available to all customers)
+- [Submit files using the new unified submissions portal in Defender for Endpoint](admin-submissions-mde.md) (available to customers who have Defender for Endpoint Plan 2 or Microsoft Defender XDR)
+
+### Suppressing alerts
+
+If you're getting alerts in the Microsoft Defender portal for tools or processes that you know aren't actually a threat, you can suppress those alerts. To suppress an alert, you create a suppression rule, and specify what actions to take for that on other, identical alerts. You can create suppression rules for a specific alert on a single device, or for all alerts that have the same title across your organization.
+
+To learn more, see the following articles:
+
+- [Suppress alerts](manage-alerts.md#suppress-alerts)
+- [Introducing the new alert suppression experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience/ba-p/3562719) (for Defender for Endpoint)
 
 ## Types of exclusions
 
