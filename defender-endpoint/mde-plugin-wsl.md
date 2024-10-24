@@ -286,34 +286,32 @@ DeviceProcessEvents
    - If the connectivity test reports "invalid" in health check:
    
       - If your machine has a proxy setup, run the command `healthCheck --extendedProxy`. This will provide information on which proxy(s) is set on your machine and whether these configurations are invalid for WSL defender.
-            
-            
-            ![Extend HealthCheck Proxy doc](media/mde-plugin-wsl/extend-healthcheck-proxy-doc.png)
+                   
+        ![Extend HealthCheck Proxy doc](media/mde-plugin-wsl/extend-healthcheck-proxy-doc.png)
             
       - If the steps mentioned above do not fix the problem, include the following configuration settings in the `.wslconfig` located in your `%UserProfile%` and restart WSL. Details about settings can be found in [WSL Settings](/windows/wsl/wsl-config#main-wsl-settings).
 
+         - In Windows 11
+           
+            ```bash
+              # Settings apply across all Linux distros running on WSL 2
+              [wsl2]
+         
+              dnsTunneling=true
+         
+              networkingMode=mirrored  
+            ```
 
-```
-  - In Windows 11
+         - In Windows 10
 
-     ```bash
-     # Settings apply across all Linux distros running on WSL 2
-     [wsl2]
-
-     dnsTunneling=true
-
-     networkingMode=mirrored  
-     ```
-
-- In Windows 10
-
-     ```bash
-     # Settings apply across all Linux distros running on WSL 2
-     [wsl2]
-
-     dnsProxy=false
-     ```
-```   - If the connectivity issues persist, run the following steps to collect the networking logs
+           ```bash
+           # Settings apply across all Linux distros running on WSL 2
+           [wsl2]
+      
+           dnsProxy=false
+           ```
+           
+   - If the connectivity issues persist, run the following steps to collect the networking logs
 
       1. Open an elevated(admin) PowerShell prompt 
       
