@@ -260,7 +260,6 @@ Depending on what you're using, you might need to refer to the documentation for
 
 ## See also
 
-- [Submissions, suppressions, and exclusions](submissions-suppressions-exclusions.md)
 - [Address common false-positive scenarios with exclusions](address-common-false-positives-exclusions.md)
 - [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
