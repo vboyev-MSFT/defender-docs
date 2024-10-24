@@ -37,27 +37,27 @@ Defender for Office 365 contributes to a Zero Trust architecture by helping to p
 
 This is article 3 of 6 in a series to help you deploy the components of Microsoft Defender XDR, including investigating and responding to incidents.
 
-:::image type="content" source="./media/eval-defender-xdr/defender-xdr-pilot-deploy-flow-office-365.svg" alt-text="A diagram that shows Microsoft Defender for Office 365 in the pilot and deploy Microsoft Defender XDR process." lightbox="./media/eval-defender-xdr/defender-xdr-pilot-deploy-flow-office-365.svg" border="false":::
+:::image type="content" source="media/defender-xdr-pilot-deploy-flow-office-365.svg" alt-text="A diagram that shows Microsoft Defender for Office 365 in the pilot and deploy Microsoft Defender XDR process." lightbox="media/defender-xdr-pilot-deploy-flow-office-365.svg" border="false":::
 
 The articles in this series correspond to the following phases of end-to-end deployment:
 
 | Phase | Link |
 |---|---|
-| A. Start the pilot | [Start the pilot](pilot-deploy-overview.md#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](pilot-deploy-defender-identity.md) <br><br> - **Pilot and deploy  Defender for Office 365** (this article) <br><br> - [Pilot and deploy Defender for Endpoint](pilot-deploy-defender-endpoint.md) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
-|C. Investigate and respond to threats | [Practice incident investigation and response](pilot-deploy-investigate-respond.md) |
+| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview.md#start-the-pilot)|
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity.md) <br><br> - **Pilot and deploy  Defender for Office 365** (this article) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint.md) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps.md)  |
+|C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond.md) |
 
 ## Pilot and deploy workflow for Defender for Office 365
 
 The following diagram illustrates a common process to deploy a product or service in an IT environment.
 
-:::image type="content" source="./media/eval-defender-xdr/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="./media/eval-defender-xdr/adoption-phases.svg":::
+:::image type="content" source="media/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="media/adoption-phases.svg":::
 
 You start by evaluating the product or service and how it will work within your organization. Then, you pilot the product or service with a suitably small subset of your production infrastructure for testing, learning, and customization. Then, gradually increase the scope of the deployment until your entire infrastructure or organization is covered.
 
 Here is the workflow for piloting and deploying Defender for Office 365 in your production environment.
 
-:::image type="content" source="./media/eval-defender-xdr/defender-office-365-pilot-deploy-steps.svg" alt-text="A diagram that shows the steps to pilot and deploy Microsoft Defender for Office 365." lightbox="./media/eval-defender-xdr/defender-office-365-pilot-deploy-steps.svg" border="false":::
+:::image type="content" source="media/defender-office-365-pilot-deploy-steps.svg" alt-text="A diagram that shows the steps to pilot and deploy Microsoft Defender for Office 365." lightbox="media/defender-office-365-pilot-deploy-steps.svg" border="false":::
 
 Follow these steps:
 
@@ -81,7 +81,7 @@ Here are the recommended steps for each deployment stage.
 
 The following diagram illustrates baseline architecture for Microsoft Defender for Office 365, which can include a third-party SMTP gateway or on-premises integration. Hybrid coexistence scenarios (that is, production mailboxes are both on-premises and online) require more complex configurations and aren't covered in this article or evaluation guidance.
 
-:::image type="content" source="./media/eval-defender-xdr/m365-defender-office-architecture.svg" alt-text="A diagram for the architecture for the Microsoft Defender for Office 365." lightbox="./media/eval-defender-xdr/m365-defender-office-architecture.svg":::
+:::image type="content" source="media/m365-defender-office-architecture.svg" alt-text="A diagram for the architecture for the Microsoft Defender for Office 365." lightbox="media/m365-defender-office-architecture.svg":::
 
 The following table describes this illustration.
 
@@ -254,7 +254,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 
 You can integrate Defender for Office 365 with Microsoft Sentinel or a generic security information and event management (SIEM) service to enable centralized monitoring of alerts and activities from connected apps. With Microsoft Sentinel, you can more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.
 
-:::image type="content" source="./media/eval-defender-xdr/defender-office-365-siem-integration.svg" alt-text="A diagram that shows the architecture for Microsoft Defender for Office 365 with SIEM integration." lightbox="./media/eval-defender-xdr/defender-office-365-siem-integration.svg":::
+:::image type="content" source="media/defender-office-365-siem-integration.svg" alt-text="A diagram that shows the architecture for Microsoft Defender for Office 365 with SIEM integration." lightbox="media/defender-office-365-siem-integration.svg":::
 
 Microsoft Sentinel includes a Defender for Office 365 connector. For more information, see [Connect alerts from Microsoft Defender for Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection).
 
@@ -266,8 +266,8 @@ Incorporate the information in [Microsoft Defender for Office 365 Security Opera
 
 ## Next step for the end-to-end deployment of Microsoft Defender XDR
 
-Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Defender for Endpoint](pilot-deploy-defender-endpoint.md).
+Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint.md).
 
-:::image type="content" source="./media/eval-defender-xdr/defender-xdr-pilot-deploy-flow-endpoint.svg" alt-text="A diagram that shows Microsoft Defender for Endpoint in the pilot and deploy Microsoft Defender XDR process." lightbox="./media/eval-defender-xdr/defender-xdr-pilot-deploy-flow-endpoint.svg" border="false":::
+:::image type="content" source="media/defender-xdr-pilot-deploy-flow-endpoint.svg" alt-text="A diagram that shows Microsoft Defender for Endpoint in the pilot and deploy Microsoft Defender XDR process." lightbox="media/defender-xdr-pilot-deploy-flow-endpoint.svg" border="false":::
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
