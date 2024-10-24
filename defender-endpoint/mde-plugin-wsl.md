@@ -339,7 +339,7 @@ Collect the networking logs by following these steps:
 
 7. Stop the .ps1 ran in step #2.
 
-8. Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#support-bundle-collection).
+8. Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#collect-a-support-bundle).
 
 ### Collect a support bundle
 
