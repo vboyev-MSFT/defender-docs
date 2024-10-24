@@ -43,9 +43,9 @@ The articles in this series correspond to the following phases of end-to-end dep
 
 | Phase | Link |
 |---|---|
-| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview.md#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity.md) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-officer-365/pilot-deploy-defender-office-365.md) <br><br> - **Pilot and deploy Defender for Endpoint** (this article) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps.md)  |
-|C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond.md) |
+| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview#start-the-pilot)|
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-officer-365/pilot-deploy-defender-office-365.md) <br><br> - **Pilot and deploy Defender for Endpoint** (this article) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps)  |
+|C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond) |
 
 ## Pilot and deploy workflow for Defender for Identity
 
@@ -209,7 +209,7 @@ Incorporate the information in [Defender for Endpoint Security Operations Guide]
 
 ## Next step for the end-to-end deployment of Microsoft Defender XDR
 
-Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps.md).
+Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps).
 
 :::image type="content" source="media/defender-xdr-pilot-deploy-flow-cloud-apps.svg" alt-text="A diagram that shows Microsoft Defender for Cloud Apps in the pilot and deploy Microsoft Defender XDR process." lightbox="media/defender-xdr-pilot-deploy-flow-cloud-apps.svg" border="false":::
 
