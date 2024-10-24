@@ -43,7 +43,7 @@ The articles in this series correspond to the following phases of end-to-end dep
 
 | Phase | Link |
 |---|---|
-| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview.md#start-the-pilot)|
+| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview#start-the-pilot)|
 | B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity.md) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-officer-365/pilot-deploy-defender-office-365.md) <br><br> - **Pilot and deploy Defender for Endpoint** (this article) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps.md)  |
 |C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond.md) |
 
