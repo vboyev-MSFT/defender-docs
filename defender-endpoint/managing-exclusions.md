@@ -25,8 +25,9 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 This table shows which exclusion types are supported by each management tool. 
 
-| Management | Custom AV | ASR Only |  ASR per Rule | CFA | Automation | Disable Automatic | 
-|---   |:------:|:---:|:---:|:---:|:---:|:---:|
+
+| Management | Custom antivirus | ASR only |  ASR per rule | Controlled folder access | Automation | Disable automatic | 
+|---|----|---|---|---|---|---|
 | [Defender Portal](#the-microsoft-defender-portal) | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes":::  | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: |
 | [Intune](#intune) | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: |
 | [MDM CSP](#mdm-csp) | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: |
