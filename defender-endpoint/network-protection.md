@@ -391,7 +391,7 @@ For Windows Servers and Windows Multi-session, there are additional items that y
 Due to the environment where network protection runs, the feature might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve the connectivity problem, [configure a static proxy for Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
 
 > [!NOTE]
-> Before starting troubleshooting, please set QUIC protocol to disabled in browsers that will be used. QUIC protocol is not supported with Network Protection functionality.
+> Before starting troubleshooting, make sure to set the QUIC protocol to disabled in browsers that are used. QUIC protocol is not supported with Network Protection functionality.
 
 ## Optimizing network protection performance
 
