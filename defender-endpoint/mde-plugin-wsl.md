@@ -83,20 +83,20 @@ If your Windows Subsystem for Linux isn't installed yet, follow these steps:
 
 3. Confirm that WSL is installed and running.
 
-    1. Using Terminal or Command Prompt, run `wsl –-update` to make sure you have the latest version.
+   1. Using Terminal or Command Prompt, run `wsl –-update` to make sure you have the latest version.
 
-    2. Run the `wsl` command to ensure WSL is running before testing.
+   2. Run the `wsl` command to ensure WSL is running before testing.
 
 4. Install the plug-in by following these steps:
 
-    1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**).
+   1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**).
 
-    2. Open a command prompt/terminal and run `wsl`.
+   2. Open a command prompt/terminal and run `wsl`.
 
    You can [deploy the package using Microsoft Intune](/mem/intune/apps/lob-apps-windows).
 
 > [!NOTE]
-> If `WslService` is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
+> If `WslService` is running, it stops during the installation process. You do not need to onboard the subsystem separately. Instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
 
 ## Installation validation checklist
 
@@ -161,7 +161,7 @@ After installing the plug-in, the subsystem and all its running containers are o
 
 2. Filter using the tag **WSL2**.
 
-  :::image type="content" source="media/mdeplugin-wsl/wsl-device-inventory.png" alt-text="Screenshot showing device inventory filter" lightbox="media/mdeplugin-wsl/wsl-device-inventory.png":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-device-inventory.png" alt-text="Screenshot showing device inventory filter" lightbox="media/mdeplugin-wsl/wsl-device-inventory.png":::
 
    You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. These instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
@@ -175,7 +175,7 @@ The timeline is populated, similar to Defender for Endpoint on Linux, with event
 
 The plug-in onboards the WSL machine with the tag `WSL2`. Should you or your organization need a custom tag, please follow the steps outlined below:
 
-1. Open Registry Editor as an administrator
+1. Open Registry Editor as an administrator.
 
 2. Create a registry key with the following details:
 
@@ -186,9 +186,9 @@ The plug-in onboards the WSL machine with the tag `WSL2`. Should you or your org
 
 3. Once the registry is set, restart wsl using the following steps:
 
-    1. Open Command Prompt and run the command, `wsl --shutdown`.
+   1. Open Command Prompt and run the command, `wsl --shutdown`.
 
-    2. Run the `wsl` command.
+   2. Run the `wsl` command.
 
 4. Wait for 5-10 minutes for the portal to reflect the changes. 
 
@@ -255,87 +255,91 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-1. The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in five minutes."
+### The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in five minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
+:::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
    
-1. If the previously mentioned error occurs, take the following steps:
+1. Open a terminal instance and run the command `wsl`.
 
-   1. Open a terminal instance and run the command `wsl`.
-      
-   1. Wait for at least five minutes before rerunning the health check.
-      
-1. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in five minutes."
+2. Wait for at least five minutes before rerunning the health check.
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
-   
-   If that error occurs, wait for five minutes and rerun `healthcheck.exe`.
-   
-1. If you don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline, check the following things:
+### The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in five minutes."
 
-   - If you aren't seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes).
-      
-   - Make sure to use the right filters, and that you have the appropriate permissions assigned to view all device objects. (For example, is your account/group is restricted to a specific group?)
-      
-   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `%ProgramFiles%\Microsoft Defender for Endpoint plug-in for WSL\tools`.
+:::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
    
-     :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
+If that error occurs, wait for five minutes and rerun `healthcheck.exe`.
+
+### You don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline
+
+Check the following things:
+
+- If you aren't seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes).
+      
+- Make sure to use the right filters, and that you have the appropriate permissions assigned to view all device objects. (For example, is your account/group is restricted to a specific group?)
+      
+- Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `%ProgramFiles%\Microsoft Defender for Endpoint plug-in for WSL\tools`.
+   
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
      
-   - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to our support team.
+- Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to our support team.
 
-   - If the connectivity test reports "invalid" in health check:
+### Connectivity test reports "invalid" in health check
+
+- If your machine has a proxy setup, run the command `healthCheck --extendedProxy`. This will provide information on which proxy(s) is set on your machine and whether these configurations are invalid for WSL defender.
+
+   ![Extend HealthCheck Proxy doc](media/mde-plugin-wsl/extend-healthcheck-proxy-doc.png)
+            
+- If the steps mentioned above do not fix the problem, include the following configuration settings in the `.wslconfig` located in your `%UserProfile%` and restart WSL. Details about settings can be found in [WSL Settings](/windows/wsl/wsl-config#main-wsl-settings).
+
+   **In Windows 11**
+
+   ```
+
+   # Settings apply across all Linux distros running on WSL 2
+   [wsl2]
+
+   dnsTunneling=true
+
+   networkingMode=mirrored  
+   ```
+
+   **In Windows 10**
+
+   ```bash
+   # Settings apply across all Linux distros running on WSL 2
+   [wsl2]
    
-      - If your machine has a proxy setup, run the command `healthCheck --extendedProxy`. This will provide information on which proxy(s) is set on your machine and whether these configurations are invalid for WSL defender.
-            
-            
-            ![Extend HealthCheck Proxy doc](media/mde-plugin-wsl/extend-healthcheck-proxy-doc.png)
-            
-      - If the steps mentioned above do not fix the problem, include the following configuration settings in the `.wslconfig` located in your `%UserProfile%` and restart WSL. Details about settings can be found in [WSL Settings](/windows/wsl/wsl-config#main-wsl-settings).
+   dnsProxy=false
+   
+   ```
 
+### Connectivity issues persist
 
-```
-  - In Windows 11
+Collect the networking logs by following these steps:
 
-     ```bash
-     # Settings apply across all Linux distros running on WSL 2
-     [wsl2]
+1. Open an elevated(admin) PowerShell prompt.
 
-     dnsTunneling=true
+2. Download and Run: `.\collect-networking-logs.ps1`
 
-     networkingMode=mirrored  
-     ```
+   ```powershell
+   
+   Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/WSL/master/diagnostics/collect-networking-logs.ps1" -OutFile collect-networking-logs.ps1
+   Set-ExecutionPolicy Bypass -Scope Process -Force
+   .\collect-networking-logs.ps1
+   
+   ```
 
-- In Windows 10
-
-     ```bash
-     # Settings apply across all Linux distros running on WSL 2
-     [wsl2]
-
-     dnsProxy=false
-     ```
-```   - If the connectivity issues persist, run the following steps to collect the networking logs
-
-      1. Open an elevated(admin) PowerShell prompt 
+3. Open a new command prompt and run: `wsl`
       
-      2. Download and Run: `.\collect-networking-logs.ps1`
+4. Open an elevated(admin) command prompt and run:  `wsl --debug-shell`
 
-         ```powershell
-         Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/WSL/master/diagnostics/collect-networking-logs.ps1" -OutFile collect-networking-logs.ps1
-         Set-ExecutionPolicy Bypass -Scope Process -Force
-         .\collect-networking-logs.ps1
-         ```
+5. In debug shell, run: `mdatp connectivity test`
 
-      3.	Open a new command prompt and run: `wsl`
-      
-      4.	Open an elevated(admin) command prompt and run:  `wsl --debug-shell`
+6. Allow the connectivity test to be completed
 
-      5.	In debug shell, run: `mdatp connectivity test`
+7. Stop the .ps1 ran in step #2
 
-      6.	Allow the connectivity test to be completed
-
-      7.	Stop the .ps1 ran in step #2
-
-      8.	Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#support-bundle-collection).      
+8. Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#support-bundle-collection).      
 
 ### Support bundle collection
 
