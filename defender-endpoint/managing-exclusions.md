@@ -148,13 +148,11 @@ Learn more:
 
 ## Manage exclusions for Linux
 
-(content coming soon)
-
+See [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
 
 ## Manage exclusions for macOS
 
-(content coming soon)
-
+See [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md).
 
 **Learn more**:
 
