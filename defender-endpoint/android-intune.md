@@ -2,8 +2,8 @@
 title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
 ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -15,7 +15,7 @@ ms.custom: partner-contribution
 ms.topic: conceptual
 ms.subservice: android
 search.appverid: met150
-ms.date: 07/25/2024
+ms.date: 10/11/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
@@ -284,7 +284,10 @@ Android low touch onboarding is disabled by default. Admins can enable it throug
 
       > [!div class="mx-imgBorder"]
    > ![Screenshot showing a low touch onboarding configuration policy.](media/low-touch-user-upn.png)
-   
+
+> [!Note]
+> Once the policy is created, these value types will show as string.
+ 
 8. Assign the policy to the target user group.
 
 9. Review and create the policy.

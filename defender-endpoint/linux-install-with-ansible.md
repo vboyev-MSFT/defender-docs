@@ -3,8 +3,8 @@ title: Deploy Microsoft Defender for Endpoint on Linux with Ansible
 ms.reviewer: gopkr
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Ansible.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: deniseb
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 07/10/2024
+ms.date: 10/11/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Ansible
@@ -24,9 +24,8 @@ ms.date: 07/10/2024
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
+- Microsoft Defender for Servers
+- Microsoft Defender XDR
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -192,8 +191,12 @@ Create a subtask or role files that contribute to a playbook or task.
         ```Output
         - hosts: servers
           tasks:
-            - include: ../roles/onboarding_setup.yml
-            - include: ../roles/add_apt_repo.yml
+            - name: include onboarding tasks
+              import_tasks:
+                file: ../roles/onboarding_setup.yml
+            - name: add apt repository
+              import_tasks:
+                file: ../roles/add_apt_repo.yml
             - name: Install MDATP
               apt:
                 name: mdatp
@@ -221,8 +224,12 @@ Create a subtask or role files that contribute to a playbook or task.
         ```Output
         - hosts: servers
           tasks:
-            - include: ../roles/onboarding_setup.yml
-            - include: ../roles/add_yum_repo.yml
+            - name: include onboarding tasks
+              import_tasks:
+                file: ../roles/onboarding_setup.yml
+            - name: add apt repository
+              import_tasks:
+                file: ../roles/add_yum_repo.yml
             - name: Install MDATP
               dnf:
                 name: mdatp

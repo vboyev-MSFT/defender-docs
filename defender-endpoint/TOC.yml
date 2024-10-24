@@ -59,41 +59,43 @@
     - name: Antivirus solution compatibility with Defender for Endpoint
       href: defender-compatibility.md
 
-  - name: Microsoft Defender for Endpoint demonstrations
+  - name: Microsoft Defender for Endpoint demonstrations and evaluation
     items:
-    - name: Microsoft Defender for Endpoint demonstrations
+    - name: Evaluate Microsoft Defender Antivirus
+      href: evaluate-microsoft-defender-antivirus.md
       items:
-      - name: Overview
-        href: evaluate-microsoft-defender-antivirus.md
       - name: Evaluate Microsoft Defender Antivirus using PowerShell
         href: microsoft-defender-antivirus-using-powershell.md
       - name: Evaluate Microsoft Defender Antivirus using Microsoft Defender Endpoint Security Settings Management
         href: evaluate-mda-using-mde-security-settings-management.md
       - name: Evaluate Microsoft Defender Antivirus using Group Policy 
         href: evaluate-mdav-using-gp.md  
-      - name: Microsoft Defender for Endpoint demonstration scenarios
-        href: defender-endpoint-demonstrations.md
+    - name: Demonstration scenarios
+      href: defender-endpoint-demonstrations.md
+      items:
+      - name: AMSI demonstrations
+        href: mde-demonstration-amsi.md
+      - name: Antimalware validation demonstration
+        href: validate-antimalware.md
+      - name: Attack surface reduction rules demonstration
+        href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
       - name: App reputation demonstration
         href: defender-endpoint-demonstration-app-reputation.md
-      - name: Behavior monitoring demonstrations
+      - name: Behavior monitoring demonstration
         href: demonstration-behavior-monitoring.md
-      - name: Validate antimalware
-        href: validate-antimalware.md
-      - name: Attack surface reduction rules demonstrations
-        href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
-      - name: Cloud-delivered protection demonstration
+      - name: Cloud-delivered protection
         href: defender-endpoint-demonstration-cloud-delivered-protection.md
-      - name: Controlled folder access (CFA) demonstration (block script)
+      - name: Controlled folder access (block script) demonstration
         href: defender-endpoint-demonstration-controlled-folder-access-test-tool.md
-      - name: Controlled folder access (CFA) demonstrations (block ransomware)
+      - name: Controlled folder access (block ransomware) demonstration
         href: defender-endpoint-demonstration-controlled-folder-access.md
-      - name: EDR detections
+      - name: EDR detections demonstration
         href: edr-detection.md
-      - name: Exploit protection (EP) demonstrations
+      - name: Exploit protection demonstration
         href: defender-endpoint-demonstration-exploit-protection.md
-      - name: Network protection demonstrations
+      - name: Network protection demonstration
         href: defender-endpoint-demonstration-network-protection.md
-      - name: Potentially unwanted applications (PUA) demonstration
+      - name: Potentially unwanted applications demonstration
         href: defender-endpoint-demonstration-potentially-unwanted-applications.md
       - name: URL reputation demonstrations
         href: defender-endpoint-demonstration-smartscreen-url-reputation.md
@@ -346,8 +348,12 @@
               href: machine-groups.md
             - name: Create and manage device tags
               href: machine-tags.md
-        - name: Rules
+        - name: Rules and Exclusions
           items:
+          - name: Exclusions overview
+            href: navigate-defender-endpoint-antivirus-exclusions.md
+          - name: Using submissions, suppressions and exclusions
+            href: submissions-suppressions-exclusions.md
           - name: Manage suppression rules
             href: manage-suppression-rules.md
           - name: Create indicators
@@ -386,6 +392,7 @@
         items:
           - name: Safe deployment practices
             href: mde-sdp-strategy.md
+
       - name: Defender for Endpoint Security Operations Guide 
         href: mde-sec-ops-guide.md
       - name: Troubleshoot
@@ -417,13 +424,15 @@
 
         - name: Troubleshoot Microsoft Defender for Endpoint on macOS
           items:
+          - name: Troubleshoot NetExt issues with Defender for Endpoint on Mac
+            href: mac-troubleshoot-netext-mde.md
           - name: Troubleshooting mode on macOS
             href: mac-troubleshoot-mode.md
           - name: Troubleshoot macOS installation issues
             href: mac-support-install.md
           - name: Troubleshoot macOS performance issues overview
             href: mac-support-perf-overview.md
-            displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+            displayName: Troubleshoot performance issues for Defender for Endpoint on macOS
           - name: Troubleshoot performance issues
             href: mac-support-perf.md
           - name: Troubleshoot cloud connectivity
@@ -707,8 +716,6 @@
         href: safety-scanner-download.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
-      - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
-        href: defender-endpoint-antivirus-exclusions.md
       - name: Cloud protection and Microsoft Defender Antivirus
         href: cloud-protection-microsoft-defender-antivirus.md
         items:
@@ -859,8 +866,9 @@
           href: restore-quarantined-files-microsoft-defender-antivirus.md
 
       - name: Microsoft Defender Antivirus exclusions
-        href: configure-exclusions-microsoft-defender-antivirus.md
         items:
+        - name: Configure custom exclusions
+          href: configure-exclusions-microsoft-defender-antivirus.md
         - name: Exclusions based on file extension and folder location
           href: configure-extension-file-exclusions-microsoft-defender-antivirus.md
         - name: Exclusions for files opened by processes
