@@ -43,9 +43,9 @@ The articles in this series correspond to the following phases of end-to-end dep
 
 | Phase | Link |
 |---|---|
-| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - **Pilot and deploy  Defender for Office 365** (this article) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps)  |
-|C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond) |
+| A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview.md#start-the-pilot)|
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity.md) <br><br> - **Pilot and deploy  Defender for Office 365** (this article) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint.md) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps.md)  |
+|C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond.md) |
 
 ## Pilot and deploy workflow for Defender for Office 365
 
@@ -266,7 +266,7 @@ Incorporate the information in [Microsoft Defender for Office 365 Security Opera
 
 ## Next step for the end-to-end deployment of Microsoft Defender XDR
 
-Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint).
+Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint.md).
 
 :::image type="content" source="media/defender-xdr-pilot-deploy-flow-endpoint.svg" alt-text="A diagram that shows Microsoft Defender for Endpoint in the pilot and deploy Microsoft Defender XDR process." lightbox="media/defender-xdr-pilot-deploy-flow-endpoint.svg" border="false":::
 

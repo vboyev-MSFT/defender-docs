@@ -44,7 +44,7 @@ The articles in this series correspond to the following phases of end-to-end dep
 | Phase | Link |
 |---|---|
 | A. Start the pilot | [Start the pilot](pilot-deploy-overview.md#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - **Pilot and deploy Defender for Identity** (this article) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
+| B. Pilot and deploy Microsoft Defender XDR components | - **Pilot and deploy Defender for Identity** (this article) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365.md) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint.md) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
 |C. Investigate and respond to threats | [Practice incident investigation and response](pilot-deploy-investigate-respond.md) |
 
 ## Pilot and deploy workflow for Defender for Identity
@@ -214,7 +214,7 @@ Incorporate the following into your SecOps processes:
 
 ## Next step for the end-to-end deployment of Microsoft Defender XDR
 
-Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365).
+Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365.md).
 
 :::image type="content" source="./media/eval-defender-xdr/defender-xdr-pilot-deploy-flow-office-365.svg" alt-text="A diagram that shows Microsoft Defender for Office 365 in the pilot and deploy Microsoft Defender XDR process." lightbox="./media/eval-defender-xdr/defender-xdr-pilot-deploy-flow-office-365.svg" border="false":::
 
