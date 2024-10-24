@@ -23,10 +23,16 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Manage exclusions for Windows devices
 
-This table shows which exclusion types are supported by each management tool. 
+The following table shows which exclusion types are supported by each management tool. 
 
+- "Custom AV" refers to custom antivirus exclusions.
+- "ASR only" refers to exclusions for attack surface reduction capabilities only.
+- "ASR per rule" refers to attack surface reduction per-rule exclusions.
+- "CFA" refers to controlled folder access
+- "Automation" refers to folder exclusions for automated investigation & remediation.
+- "Disable automatic" refers to disabling automatic antivirus exclusions on Windows Server 2016 and later.
 
-| Management | Custom antivirus | ASR only |  ASR per rule | Controlled folder access | Automation | Disable automatic | 
+| Management | Custom AV | ASR only |  ASR per rule | CFA | Automation | Disable automatic |
 |---|----|---|---|---|---|---|
 | [Defender Portal](#the-microsoft-defender-portal) | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes":::  | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: |
 | [Intune](#intune) | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/check-mark-button-2705.svg" alt-text="Yes"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: | :::image type="content" source="media/exclusions/cross-mark-274c.svg" alt-text="No"::: |
