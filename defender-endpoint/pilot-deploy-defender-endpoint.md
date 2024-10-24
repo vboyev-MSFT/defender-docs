@@ -209,7 +209,7 @@ Incorporate the information in [Defender for Endpoint Security Operations Guide]
 
 ## Next step for the end-to-end deployment of Microsoft Defender XDR
 
-Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps.md).
+Continue your end-to-end deployment of Microsoft Defender XDR with [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps).
 
 :::image type="content" source="media/defender-xdr-pilot-deploy-flow-cloud-apps.svg" alt-text="A diagram that shows Microsoft Defender for Cloud Apps in the pilot and deploy Microsoft Defender XDR process." lightbox="media/defender-xdr-pilot-deploy-flow-cloud-apps.svg" border="false":::
 

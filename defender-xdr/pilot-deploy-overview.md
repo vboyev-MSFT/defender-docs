@@ -112,7 +112,7 @@ Microsoft recommends enabling the components of Microsoft 365 Defender in the fo
 | Phase | Link |
 |---|---|
 | A. Start the pilot | [Start the pilot](#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](pilot-deploy-defender-identity.md) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365.md) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint.md) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](pilot-deploy-defender-identity.md) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
 |C. Investigate and respond to threats | [Practice incident investigation and response](pilot-deploy-investigate-respond.md) |
 
 This order is designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Prioritize the components to meet your business needs.
