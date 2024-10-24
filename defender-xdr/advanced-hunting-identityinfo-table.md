@@ -15,8 +15,10 @@ ms.collection:
 - m365-security
 - usx-security
 - tier3
-ms.topic: conceptual
-ms.date: 03/29/2024
+ms.custom:
+- cx-ti
+ms.topic: reference
+ms.date: 04/22/2024
 appliesto: 
 - Microsoft Defender XDR 
 - Microsoft Sentinel in the Microsoft Defender portal

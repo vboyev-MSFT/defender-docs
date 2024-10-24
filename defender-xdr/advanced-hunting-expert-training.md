@@ -14,8 +14,10 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
-ms.date: 02/16/2024
+ms.custom:
+- cx-ti
+ms.topic: tutorial
+ms.date: 04/22/2024
 ---
 
 # Get expert training on advanced hunting
