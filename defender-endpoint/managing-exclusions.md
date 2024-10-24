@@ -148,9 +148,13 @@ Learn more:
 
 ## Manage exclusions for Linux
 
+You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux.
+
 See [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
 
 ## Manage exclusions for macOS
+
+You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Mac scans.
 
 See [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md).
 
