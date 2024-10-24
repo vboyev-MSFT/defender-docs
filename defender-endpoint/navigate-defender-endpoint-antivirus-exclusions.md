@@ -40,6 +40,12 @@ Microsoft preconfigures the product to perform well on the operating system that
 - **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
+Creating an exclusion is one possible approach for addressing these types of issues.  
+
+
+>[!NOTE] Creating an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
+
+
 | Example scenario | Steps to consider |
 |:---|:----|
 | [False positive](defender-endpoint-false-positives-negatives.md): An entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. | 1. [Review and classify alerts](defender-endpoint-false-positives-negatives.md#part-1-review-and-classify-alerts) that were generated as a result of the detected entity. <br/>2. [Suppress an alert](defender-endpoint-false-positives-negatives.md#suppress-an-alert) for a known entity. <br/>3. [Review remediation actions](defender-endpoint-false-positives-negatives.md#part-2-review-remediation-actions) that were taken for the detected entity. <br/>4. [Submit the false positive to Microsoft](/defender-xdr/submission-guide) for analysis. <br/>5. [Define an exclusion](defender-endpoint-false-positives-negatives.md#part-3-review-or-define-exclusions) for the entity (only if necessary). |

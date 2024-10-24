@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Using submissions, suppressions, and exclusions with Microsoft Defender for Endpoint
+# Alternatives to creating exclusions and allow indicators
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -28,20 +28,11 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus), [attack surface reduction](attack-surface-reduction.md), [endpoint detection and response](overview-endpoint-detection-response.md), and [automated investigation and remediation](automated-investigations.md). When threats are detected, or your security teams has a question about a file or executable, using submissions, alert suppressions, and exclusions or indicators can help address questions or issues. 
 
-## Example scenarios and steps to consider
+Creating an exclusion or allow indicator create a protection gap.  These techniques should only be used after determining the root cause of the issue.  Until that determination is made, consider these alternatives.
 
-The following table describes some example scenarios and how to use file submissions, alert suppressions, and exclusions.
+For more information, see [Exclusions overview]  (navigate-defender-endpoint-antivirus-exclusions.md).
 
-| Example scenario | Steps to consider |
-|:---|:----|
-| [False positive](defender-endpoint-false-positives-negatives.md): An entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. | 1. [Review and classify alerts](defender-endpoint-false-positives-negatives.md#part-1-review-and-classify-alerts) that were generated as a result of the detected entity. <br/>2. [Suppress an alert](defender-endpoint-false-positives-negatives.md#suppress-an-alert) for a known entity. <br/>3. [Review remediation actions](defender-endpoint-false-positives-negatives.md#part-2-review-remediation-actions) that were taken for the detected entity. <br/>4. [Submit the false positive to Microsoft](/defender-xdr/submission-guide) for analysis. <br/>5. [Define an exclusion](defender-endpoint-false-positives-negatives.md#part-3-review-or-define-exclusions) for the entity (only if necessary). |
-| [Performance issues](troubleshoot-performance-issues.md) such as one of the following issues:<br/>- A system is having high CPU usage or other performance issues.<br/>- A system is having memory leak issues.<br/>- An app is slow to load on devices.<br/>- An app is slow to open a file on devices. | 1. [Collect diagnostic data](collect-diagnostic-data.md) for Microsoft Defender Antivirus.<br/>2. If you're using a non-Microsoft antivirus solution, [check with the vendor for any needed exclusions](troubleshoot-performance-issues.md#check-with-vendor-for-antivirus-exclusions).<br/>3. [Analyze the Microsoft Protection Log](troubleshoot-performance-issues.md#analyze-the-microsoft-protection-log) to see the estimated performance impact.<br/>4. [Define an exclusion for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) (if necessary).<br/>5. [Create an indicator for Defender for Endpoint](indicators-overview.md) (only if necessary). |
-| [Compatibility issues](microsoft-defender-antivirus-compatibility.md) with non-Microsoft antivirus products. <br/>Example: Defender for Endpoint relies on security intelligence updates for devices, whether they're running Microsoft Defender Antivirus or a non-Microsoft antivirus solution.  | 1. If you're using a non-Microsoft antivirus product as your primary antivirus/antimalware solution, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).<br/>2. If you're switching from a non-Microsoft antivirus/antimalware solution to Defender for Endpoint, see [Make the switch to Defender for Endpoint](switch-to-mde-overview.md). This guidance includes:<br/>- [Exclusions you might need to define for the non-Microsoft antivirus/antimalware solution](switch-to-mde-phase-2.md#step-3-add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution);<br/>- [Exclusions you might need to define for Microsoft Defender Antivirus](switch-to-mde-phase-2.md#step-4-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus); and <br/>- [Troubleshooting information](switch-to-mde-troubleshooting.md) (just in case something goes wrong while migrating). |
-
-> [!IMPORTANT]
-> An "allow" indicator is the strongest type of exclusion you can define in Defender for Endpoint. Make sure to use indicators sparingly (only when necessary), and review all exclusions periodically.
 
 ## Submitting files for analysis
 
@@ -61,14 +52,7 @@ To learn more, see the following articles:
 - [Suppress alerts](manage-alerts.md#suppress-alerts)
 - [Introducing the new alert suppression experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience/ba-p/3562719) (for Defender for Endpoint)
 
-## Using exclusions and indicators
 
-Sometimes, the term *exclusions* is used to refer to exceptions that apply across Defender for Endpoint and Microsoft Defender Antivirus. A more accurate way to describe these exceptions is as follows:
-
-- [Indicators for Defender for Endpoint](indicators-overview.md); (which apply across Defender for Endpoint and Microsoft Defender Antivirus); and
-- [Exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md).
-
-For more information, see [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md).
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
