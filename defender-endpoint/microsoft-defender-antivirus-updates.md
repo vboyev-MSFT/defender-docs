@@ -92,7 +92,7 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 ## Platform and engine releases
 
-All our updates contain:
+Updates contain:
 
 - Performance improvements
 - Serviceability improvements
@@ -108,8 +108,16 @@ All our updates contain:
 
 #### What's new
 
-- item
-- item
+- IMPORTANT On servers 2019 and above, new binary (MpDefenderCoreService.exe) will be included in the update package to support future service improvements (more info to follow).
+- Improved detection logic to reduce false positives related to the ASR Rule Block Office applications from injecting code into other processes
+- Fixed issue that could lead to a Windows device to be marked as non-compliant in Intune during Microsoft Defender Antivirus startup.
+- Fixed issue with Catchup scan configuration, where the policy setting (DaysUntilAggressiveCatchupQuickScan) was not honored.
+- Fixed SharedSignatureRoot processing when an empty value was set.
+- Fixed problem with Device Control where certain file systems (like FAT, FAT32, exFAT) where volume information was displayed when a block rule was defined.
+- Improved performance in specific scenarios where network files were accessed.
+- Fixed an issue on Azure Virtual Desktop where the Intune policy was not being honored.
+- Fixed potential deadlock for Custom Detection Rules (https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules on the Windows client)
+- Fixed bug where exclusions not being honored with AMSI.
 
 ### August-2024 (Platform: 4.18.24080.9 | Engine: 1.1.24080.9)
 
@@ -143,26 +151,6 @@ All our updates contain:
 - Resolved an issue where file evidence location was not always captured in scenarios where the remote location is inaccessible. 
 - New event log added (`5016`) to report Microsoft Defender Antivirus self-healed when a deadlock is detected during shutdown. 
 - Fixed a prioritization issue with [full scans](mdav-scan-best-practices.md) initiated from the portal that resulted in longer than expected full scan duration.
-
-### June-2024 (Platform: 4.18.24060.7 | Engine: 1.1.24060.5)
-
-- Security intelligence update version: **1.415.1.0**
-- Release date: **July 9, 2024** (Engine) / **July 15, 2024** (Platform)
-- Platform: **4.18.24060.7**
-- Engine: **1.1.24060.5**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed issue where Microsoft Defender Antivirus was not properly changing state when non-Microsoft antivirus/antimalware software was installed and [Windows Defender Application Control](/windows/security/application-security/application-control/windows-defender-application-control/wdac) (WDAC) with [Intelligent Security Graph](/windows/security/application-security/application-control/windows-defender-application-control/design/use-wdac-with-intelligent-security-graph) were enabled.
-- Fixed deadlock issue on [VDI](deployment-vdi-microsoft-defender-antivirus.md) that occurred when loading corrupted update files from UNC share.
-- Custom scans started with [Start-MpScan](/powershell/module/defender/start-mpscan) are now reported in the event log.
-- Fixed potential deadlock that occurred on volume mount scanning.
-- Fixed issue where Microsoft Defender Antivirus did not allow applications to clean up temporary files.
-- Fixed potentially packet loss due to [network protection](network-protection.md) shutdown that could lead to deadlock.
-- Implemented performance improvements for scenarios where WDAC is enabled with Intelligent Security Graph.
-- Fixed an issue where an Outlook exclusion for the ASR rule [Block Office applications from injecting code into other processes](/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) was not honored.
-- Fixed a race condition during the startup of [endpoint data loss prevention](/purview/endpoint-dlp-getting-started) such that, in certain environments, some system files could be corrupted.
 
 ### Previous version updates: Technical upgrade support only
 
