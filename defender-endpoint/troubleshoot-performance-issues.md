@@ -45,11 +45,11 @@ You can also provide additional logs to your submission to Microsoft support by 
 - [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
 - [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder)
 
-For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+For performance-specific issues related to Microsoft Defender Antivirus, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 ## Check with the vendor for known issues with antivirus products
 
-If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Check to see fi there are any known issues with antivirus products. If need be, you can open a support ticket with them and ask them to publish one.
+If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Check to see if there are any known issues with antivirus products. If need be, you can open a support ticket with them and ask them to publish one.
 
 We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
