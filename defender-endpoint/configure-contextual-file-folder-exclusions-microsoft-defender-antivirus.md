@@ -89,7 +89,7 @@ The process image path can contain wildcards, as in the following example:
 
 ### File/folder restriction
 
-You can restrict exclusions to only apply if the target is a file or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, the exclusion don't apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion applies.
+You can restrict exclusions to only apply if the target is a file or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, the exclusion doesn't apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion applies.
 
 #### File/folder exclusions default behavior
 
