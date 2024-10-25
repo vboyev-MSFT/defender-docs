@@ -36,7 +36,7 @@ If your system is having high CPU usage or performance issues related to the rea
 
 As an admin, you can also troubleshoot these issues on your own.
 
-First, you might want to check if the issue is being caused by another software. Read [Check with vendor for antivirus exclusions](#check-with-vendor-for-antivirus-exclusions).
+First, you might want to check if the issue is being caused by another software. Read [Check with vendor for antivirus exclusions](#check-with-the-vendor-for-known-issues-with-antivirus-products).
 
 Otherwise, you can identify which software is related to the identified performance issue by following the steps in [Analyze the Microsoft Protection Log](#analyze-the-microsoft-protection-log).
 
