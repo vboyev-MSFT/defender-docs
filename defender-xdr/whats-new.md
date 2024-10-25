@@ -6,7 +6,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 09/23/2024
+ms.date: 10/17/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -32,6 +32,7 @@ You can also get product updates and important notifications through the [messag
 
 ## October 2024
 
+- [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
 - (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#preview-use-arg-function), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## September 2024
