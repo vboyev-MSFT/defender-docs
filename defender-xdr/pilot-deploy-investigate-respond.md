@@ -601,7 +601,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 6. Select **Create**. Then, select **Custom detection rules** from the navigation panel.
 
-   :::image type="content" source="/defender/media/mtp/fig27a.png" alt-text="A screenshot of the Custom detection rules rules option in the Microsoft Defender portal." lightbox="/defender/media/mtp/fig27a.png":::
+   :::image type="content" source="/defender/media/mtp/fig27a.png" alt-text="A screenshot of the Custom detection rules option in the Microsoft Defender portal." lightbox="/defender/media/mtp/fig27a.png":::
 
    :::image type="content" source="/defender/media/mtp/fig27b.png" alt-text="A screenshot of the page displaying the detection rules and execution details in the Microsoft Defender portal." lightbox="/defender/media/mtp/fig27b.png":::
 
