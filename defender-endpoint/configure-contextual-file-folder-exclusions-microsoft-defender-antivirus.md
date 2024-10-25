@@ -52,17 +52,19 @@ Restrictions are typically applied by adding the restriction type to the file or
 
 | Restriction | TypeName | value |
 |:---|:---|:---|
-| File/folder  | PathType  | file <br> folder |
-| Scan type | ScanType | quick <br> full |
-| Scan trigger | ScanTrigger | OnDemand <br> OnAccess <br> BM |
-| Process | Process | "<image_path>" |
+| File/folder  | `PathType`  | `file` <br/> `folder` |
+| Scan type | `ScanType` | `quick` <br/> `full` |
+| Scan trigger | `ScanTrigger` | `OnDemand` <br/> `OnAccess` <br/> BM |
+| Process | `Process` | "<image_path>" |
 
 ### Requirements
 
-This capability requires Microsoft Defender Antivirus:
+This capability requires Microsoft Defender Antivirus. 
 
-- Platform: **4.18.2205.7** or later
-- Engine: **1.1.19300.2** or later
+- Platform version: **4.18.2205.7** or later
+- Engine version: **1.1.19300.2** or later
+
+See [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
 ### Syntax
 
