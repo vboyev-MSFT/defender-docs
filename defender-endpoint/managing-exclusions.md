@@ -84,13 +84,13 @@ Many exclusions can be managed in the [Microsoft Intune admin center](https://go
 
 ### MDM CSP
 
-| Exclusion type | OMA-URI | Description | 
-|--|--|--|
-| Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses` | [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses) |
-| Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths` | [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths)
-| Custom antivirus exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions` | [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions) |
-| Attack surface reduction only exclusions | `./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions` | [AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions) |
-| Controlled folder access exclusion | `./Device/Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications` | [ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#controlledfolderaccessallowedapplications)
+| Exclusion type | OMA-URI |
+|--|--|
+| Custom antivirus exclusion: <br/>[ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses) | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses` | 
+| Custom antivirus exclusion: <br/>[ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths) | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths` | 
+| Custom antivirus exclusion: <br/>[ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions)  | `./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions` |
+| Attack surface reduction only exclusions: <br/>[AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#attacksurfacereductiononlyexclusions) | `./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions` |  
+| Controlled folder access exclusion: <br/>[ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#controlledfolderaccessallowedapplications)  | `./Device/Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications` | 
 
 **Learn more**:
 
@@ -122,7 +122,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender PowerShell Module]
 | Custom antivirus exclusions - Process | **Windows components** > **Microsoft Defender Antivirus** > **Exclusions** > **Process Exclusions** | See [Use Group Policy to exclude files that have been opened by specified processes from scans](/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus#use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans) for details|
 | Attack Surface Reduction only exclusions | **Windows components** > **Microsoft Defender Antivirus** > **Microsoft Defender Exploit Guard** > **Attack surface reduction** > **Exclude files and paths from Attack surface reduction rules** | See [Group Policy](/defender-endpoint/enable-attack-surface-reduction#group-policy) for details|
 | Attack surface reduction rule per rule exclusion | Not supported | |
-| Automatic antivirus exclusions | **Windows components** > **Microsoft Defender Antivirus** > **Exclusions** > **Enabled** | See [Use Group Policy to disable the autoexclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022](/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022) for details|
+| Automatic antivirus exclusions | **Windows components** > **Microsoft Defender Antivirus** > **Exclusions** > **Enabled** | See [Use Group Policy to disable the autoexclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022](/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022) for details |
 | Automation folder exclusions | Not supported |
 | Controlled Folder Access exclusions | **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Configure allowed applications** | See [Use group policy to allow specific apps](/defender-endpoint/customize-controlled-folders#use-group-policy-to-allow-specific-apps) for details |
 
