@@ -46,8 +46,8 @@ Restrictions are typically applied by adding the restriction type to the file or
 |:---|:---|:---|
 | File/folder  | `PathType`  | `file` <br/> `folder` |
 | Scan type | `ScanType` | `quick` <br/> `full` |
-| Scan trigger | `ScanTrigger` | `OnDemand` <br/> `OnAccess` <br/> BM |
-| Process | `Process` | "<image_path>" |
+| Scan trigger | `ScanTrigger` | `OnDemand` <br/> `OnAccess` <br/> Behavior monitoring |
+| Process | `Process` | `<path>` |
 
 ### Requirements
 
@@ -60,7 +60,7 @@ See [Microsoft Defender Antivirus security intelligence and product updates](mic
 
 ### Syntax
 
-As a starting point, you may already have exclusions in place that you wish to make more specific. To form the exclusion string, first define the path to the file or folder to be excluded, then add the type name and associated value, as shown in the following example.
+As a starting point, you might already have exclusions in place that you wish to make more specific. To form the exclusion string, first define the path to the file or folder to be excluded, then add the type name and associated value, as shown in the following example.
 
 `<PATH>\:{TypeName:value,TypeName:value}`
 
@@ -68,7 +68,6 @@ Keep in mind that _all_ **types** and **values** are case sensitive.
 
 > [!NOTE]  
 > Conditions inside `{}` MUST be true for the restriction to match. For example, if you specify two scan triggers this cannot be true, and the exclusion will not apply. To specify two restrictions of the same type, create two separate exclusions.
-
 
 ### Examples
 
@@ -152,7 +151,6 @@ To exclude a file or folder and its contents from being scanned only when the fi
 This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process. Wildcards are supported in the process name/path.
 
 > [!NOTE]  
->
 > Using a large amount of process exclusion restrictions on a machine can adversely affect performance. In addition, if an exclusion is restricted to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
 
 To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to. For example:  
@@ -163,5 +161,6 @@ To exclude a file or folder only when accessed by a specific process, create a n
 
 After constructing your desired contextual exclusions, you can use your existing management tool to configure file and folder exclusions using the string you created.
 
-See: [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
