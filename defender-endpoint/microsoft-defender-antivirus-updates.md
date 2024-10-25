@@ -98,6 +98,19 @@ All our updates contain:
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender))
 
+### September-2024 (Platform: 4.18.xxxxx.x | Engine 1.1.xxxxx.x)
+
+- Security intelligence update version: **1.1.xxxx.x**
+- Release date: **October 28, 2024** (Engine and Platform)
+- Platform: **4.18.xxxx.x**
+- Engine: **1.1.xxxx.x**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- item
+- item
+
 ### August-2024 (Platform: 4.18.24080.9 | Engine: 1.1.24080.9)
 
 - Security intelligence update version: **1.419.1.0**
@@ -106,7 +119,7 @@ All our updates contain:
 - Engine: **1.1.24080.9**
 - Support phase: **Security and Critical Updates**
 
-### What's new
+#### What's new
 
 - Added a new parameter (`ControlledFolderAccessDefaultProtectedFolders`) to [Get-MpPreference](/powershell/module/defender/get-mppreference) cmdlet to show default protected folders for [controlled folder access](enable-controlled-folders.md).
 - Fixed an issue with device control regarding printer security checks.
@@ -122,7 +135,7 @@ All our updates contain:
 - Engine: **1.1.24070.3**
 - Support phase: **Security and Critical Updates**
 
-### What's new
+#### What's new
 
 - False positive detections are no longer reported as `ThreatNotFound` in the Microsoft Defender portal. 
 - Optimized [network protection](network-protection.md) calls to the backend that occur as a result of suspicious connection checks.
@@ -139,7 +152,7 @@ All our updates contain:
 - Engine: **1.1.24060.5**
 - Support phase: **Security and Critical Updates**
 
-### What's new
+#### What's new
 
 - Fixed issue where Microsoft Defender Antivirus was not properly changing state when non-Microsoft antivirus/antimalware software was installed and [Windows Defender Application Control](/windows/security/application-security/application-control/windows-defender-application-control/wdac) (WDAC) with [Intelligent Security Graph](/windows/security/application-security/application-control/windows-defender-application-control/design/use-wdac-with-intelligent-security-graph) were enabled.
 - Fixed deadlock issue on [VDI](deployment-vdi-microsoft-defender-antivirus.md) that occurred when loading corrupted update files from UNC share.
