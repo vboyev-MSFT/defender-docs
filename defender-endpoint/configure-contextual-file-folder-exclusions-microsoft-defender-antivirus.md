@@ -27,14 +27,14 @@ Exclusions are primarily intended to mitigate affects on performance. They come 
 
 There are four restrictions you can apply to limit the applicability of an exclusion:
 
-- **File/folder path type restriction**. You can restrict exclusions to only apply if the target is a file, or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, it will not apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion applies.
+- **File/folder path type restriction**. You can restrict exclusions to only apply if the target is a file, or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, the exclusion doesn't apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion applies.
 
 - **Scan type restriction**. Enables you to define the required scan type for an exclusion to apply. For example, you only want to exclude a certain folder from Full scans but not from a "resource" scan (targeted scan).
 
-- **Scan trigger type restriction**. You can use this restriction to specify that the exclusion should only apply when the scan was initiated by a specific event:
-  - on demand
-  - on access
-  - or originating from behavioral monitoring
+- **Scan trigger type restriction**. You can use this restriction to specify that the exclusion should only apply when the scan was initiated by a specific event, such as:
+  - on demand;
+  - on access; or 
+  - originating from behavioral monitoring.
 
 - **Process restriction**. Enables you to define that an exclusion should only apply when a file or folder is being accessed by a specific process.
 
