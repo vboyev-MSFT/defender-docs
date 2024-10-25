@@ -108,16 +108,19 @@ Updates contain:
 
 #### What's new
 
-- IMPORTANT On servers 2019 and above, new binary (MpDefenderCoreService.exe) will be included in the update package to support future service improvements (more info to follow).
-- Improved detection logic to reduce false positives related to the ASR Rule Block Office applications from injecting code into other processes
-- Fixed issue that could lead to a Windows device to be marked as non-compliant in Intune during Microsoft Defender Antivirus startup.
-- Fixed issue with Catchup scan configuration, where the policy setting (DaysUntilAggressiveCatchupQuickScan) was not honored.
-- Fixed SharedSignatureRoot processing when an empty value was set.
-- Fixed problem with Device Control where certain file systems (like FAT, FAT32, exFAT) where volume information was displayed when a block rule was defined.
+- Improved detection logic to reduce false positives related to the ASR rule, [Block Office applications from injecting code into other processes](/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes)
+- Resolved an issue that could lead to a Windows device to be marked as [non-compliant in Intune](/mem/intune/fundamentals/reports#device-compliance-reports) when Microsoft Defender Antivirus starts.
+- Resolved an issue with catchup scan configuration, where the [DaysUntilAggressiveCatchupQuickScan](/windows/client-management/mdm/defender-csp#configurationdaysuntilaggressivecatchupquickscan) policy setting was not honored.
+- Fixed `SharedSignatureRoot` processing when an empty value was set.
+- Fixed a problem with [device control](device-control-overview.md) where certain file systems (like `FAT`, `FAT32`, `exFAT`) with volume information displayed when a blocking rule was defined.
 - Improved performance in specific scenarios where network files were accessed.
-- Fixed an issue on Azure Virtual Desktop where the Intune policy was not being honored.
-- Fixed potential deadlock for Custom Detection Rules (https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules on the Windows client)
-- Fixed bug where exclusions not being honored with AMSI.
+- Fixed an issue with [Azure Virtual Desktop](/azure/virtual-desktop/overview) where the Intune policy was not being honored.
+- Fixed potential deadlock for [custom detection rules](/defender-xdr/custom-detection-rules) on the Windows client
+- Resolved an issue where [exclusions](configure-exclusions-microsoft-defender-antivirus.md) were not being honored with [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal).
+
+> [!IMPORTANT]
+> On Windows Server 2019 and later, a new binary (`MpDefenderCoreService.exe`) will be included in the update package to support future service improvements (more information to follow).
+
 
 ### August-2024 (Platform: 4.18.24080.9 | Engine: 1.1.24080.9)
 
