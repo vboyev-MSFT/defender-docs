@@ -47,7 +47,7 @@ You can also provide additional logs to your submission to Microsoft support by 
 
 For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 
-## Check with the vendor to see if there are known issues with antivirus products
+## Check with the vendor for known issues with antivirus products
 
 If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Check to see fi there are any known issues with antivirus products. If need be, you can open a support ticket with them and ask them to publish one.
 
