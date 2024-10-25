@@ -71,25 +71,25 @@ Keep in mind that _all_ **types** and **values** are case sensitive.
 
 ### Examples
 
-The following string excludes "c:\documents\design.doc" only if it's a file and only in on-access scans:
+The following string excludes `c:\documents\design.doc` only if it's a file and only in on-access scans:
 
 `c:\documents\design.doc\:{PathType:file,ScanTrigger:OnAccess}`
 
-The following string excludes "c:\documents\design.doc" only if it's scanned (on-access) due to it being accessed by a process having the image name "winword.exe":
+The following string excludes `c:\documents\design.doc` only if it's scanned (on-access), due to it being accessed by a process having the image name `winword.exe`:
 
 `c:\documents\design.doc\:{Process:"winword.exe"}`
 
-File and folder paths may contain wildcards, as in the following example:
+File and folder paths can contain wildcards, as in the following example:
 
 `c:\*\*.doc\:{PathType:file,ScanTrigger:OnDemand}`
 
-The process image path may contain wildcards, as in the following example:
+The process image path can contain wildcards, as in the following example:
 
 `c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### File/folder restriction
 
-You can restrict exclusions to only apply if the target is a file or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, the exclusion won't apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion will apply.
+You can restrict exclusions to only apply if the target is a file or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, the exclusion don't apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion applies.
 
 #### File/folder exclusions default behavior
 
@@ -117,7 +117,7 @@ Example:
 By default, exclusions apply to all scan types:  
 
 - **resource**: a single file or folder is scanned in a targeted way (for example, right-click, Scan)
-- **quick**: common startup locations utilized by malware, memory and certain registry keys
+- **quick**: common startup locations utilized by malware, memory, and certain registry keys
 - **full**: includes quick scan locations and complete file system (all files and folders)
 
 To mitigate performance issues, you can exclude a folder or a set of files from being scanned by a specific scan type. You can also define the required scan type for an exclusion to apply.  
@@ -136,9 +136,9 @@ If you want to make sure this exclusion only applies to a specific file and not 
 
 ### Scan trigger restriction
 
-By default, basic exclusions apply to all scan triggers. ScanTrigger restriction enables you to specify that the exclusion should only apply when the scan was initiated by a specific event; on demand (including quick, full and targeted scans), on access or originating from behavioral monitoring (including memory scans).
+By default, basic exclusions apply to all scan triggers. ScanTrigger restriction enables you to specify that the exclusion should only apply when the scan was initiated by a specific event; on demand (including quick, full, and targeted scans), on access or originating from behavioral monitoring (including memory scans).
 
-- **OnDemand**: a scan was triggered by a command or admin action. Remember that scheduled quick and full scans also fall under this category.
+- **OnDemand**: a scan that's triggered by a command or admin action. Remember that scheduled quick and full scans also fall under this category.
 - **OnAccess**: a file or folder is opened/written/read/modified (typically considered real-time protection)
 - **BM**: a behavioral trigger causes the behavioral monitoring to scan a specific file
 
