@@ -124,7 +124,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender PowerShell Module]
 | Attack surface reduction rule per rule exclusion | Not supported | |
 | Automatic antivirus exclusions | **Windows components** > **Microsoft Defender Antivirus** > **Exclusions** > **Enabled** | See [Use Group Policy to disable the autoexclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022](/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022) for details|
 | Automation folder exclusions | Not supported |
-| Controlled Folder Access exclusions | Windows components > Microsoft Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access > Configure allowed applications | See [Use group policy to allow specific apps](/defender-endpoint/customize-controlled-folders#use-group-policy-to-allow-specific-apps) for details |
+| Controlled Folder Access exclusions | **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Configure allowed applications** | See [Use group policy to allow specific apps](/defender-endpoint/customize-controlled-folders#use-group-policy-to-allow-specific-apps) for details |
 
 ### Windows Management Instrumentation (WMI)
 
