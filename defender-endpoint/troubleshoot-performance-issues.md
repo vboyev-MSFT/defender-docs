@@ -40,7 +40,7 @@ First, you might want to check if the issue is being caused by another software.
 
 Otherwise, you can identify which software is related to the identified performance issue by following the steps in [Analyze the Microsoft Protection Log](#analyze-the-microsoft-protection-log).
 
-You can also provide additional logs to your submission to Microsoft support by following the steps in:
+You can also provide other logs to your submission to Microsoft support by following the steps in:
 
 - [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
 - [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder)
@@ -49,7 +49,7 @@ For performance-specific issues related to Microsoft Defender Antivirus, see [Pe
 
 ## Check with the vendor for known issues with antivirus products
 
-If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Check to see if there are any known issues with antivirus products. If need be, you can open a support ticket with them and ask them to publish one.
+If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Check to see if there are any known issues with antivirus products. If necessary, you can open a support ticket with them and ask them to publish one.
 
 We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
@@ -81,7 +81,7 @@ If the previous step doesn't solve the problem, you can collect more information
 
 ## Capture process logs using Process Monitor
 
-Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring.
+Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this tool to capture the performance issue as it is occurring.
 
 1. Download [Process Monitor v3.89](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
 
@@ -93,11 +93,11 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
     :::image type="content" source="media/procmon-motw.png" alt-text="The Remove MOTW page" lightbox="media/procmon-motw.png":::
 
-3. Unzip the file in `C:\temp` so that the folder path will be `C:\temp\ProcessMonitor`.
+3. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
 
 4. Copy **ProcMon.exe**  to the Windows client or Windows server you're troubleshooting.
 
-5. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Doing this will minimize the number of processes to check.
+5. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
 
 6. You can launch ProcMon in two ways.
     1. Right-click **ProcMon.exe** and select **Run as administrator**.
@@ -106,7 +106,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
         :::image type="content" source="media/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="media/procmon-magglass.png":::
 
-        To verify that you have stopped the capture, check if the magnifying glass icon now appears with a red X.
+        To verify that you've stopped the capture, check if the magnifying glass icon now appears with a red X.
 
         :::image type="content" source="media/procmon-magglass-stop.png" alt-text="The red slash" lightbox="media/procmon-magglass-stop.png":::
 
@@ -142,7 +142,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
 10. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
 
-11. To save the capture with a unique name and with the .pml format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
+11. To save the capture with a unique name and with the `.pml` format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
     :::image type="content" source="media/procmon-savesettings1.png" alt-text="The save settings page" lightbox="media/procmon-savesettings1.png":::
 
@@ -154,7 +154,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     > [!TIP]
     > If you have a working system, you might want to get a sample log to compare.
 
-13. Zip the .pml file and submit it to Microsoft support.
+13. Zip the `.pml` file and submit it to Microsoft support.
 
 ## Capture performance logs using Windows Performance Recorder
 
