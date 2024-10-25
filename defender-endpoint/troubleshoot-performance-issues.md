@@ -7,7 +7,7 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dolmont
-ms.date: 04/24/2024
+ms.date: 10/25/2024
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: ngp
@@ -47,13 +47,14 @@ You can also provide additional logs to your submission to Microsoft support by 
 
 For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 
-## Check with vendor for antivirus exclusions
+## Check with the vendor to see if there are known issues with antivirus products
 
-If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Search if they have recommendations about antivirus exclusions. If the vendor's website does not have them, you can open a support ticket with them and ask them to publish one.
+If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Check to see fi there are any known issues with antivirus products. If need be, you can open a support ticket with them and ask them to publish one.
 
 We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
 ## Analyze the Microsoft Protection Log
+
 You can find the Microsoft protection log file in **C:\ProgramData\Microsoft\Windows Defender\Support**.
 
 In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact information of running software as *EstimatedImpact*:
