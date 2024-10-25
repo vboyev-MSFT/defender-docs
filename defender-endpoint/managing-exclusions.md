@@ -165,7 +165,7 @@ You can exclude certain files, folders, processes, and process-opened files from
 
 See [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md).
 
-**Learn more**:
+## See also
 
 - [Add exclusions to network protection](/defender-endpoint/troubleshoot-np#add-exclusions)
 - [Important points about exclusions](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus#important-points-about-exclusions)
