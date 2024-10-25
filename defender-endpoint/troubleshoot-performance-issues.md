@@ -189,7 +189,6 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
    :::image type="content" source="media/wpr-03.png" alt-text="The page on which you can select more options" lightbox="media/wpr-03.png":::
 
-
 6. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
 
 7. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
@@ -203,9 +202,13 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 8. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
 
     1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
+    
     2. Select **Custom measurements**.
+    
     3. Select **Microsoft Defender for Endpoint analysis**.
+    
     4. Select **Verbose** under *Detail* level.
+    
     5. Select **File** or **Memory** under Logging mode.
 
     > [!IMPORTANT]
@@ -236,6 +239,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
     :::image type="content" source="media/wpr-12.png" alt-text="The pane in which you fill" lightbox="media/wpr-12.png":::
 
     1. Select **File Name:** to determine where your trace file will be saved. By default, it is saved to `%user%\Documents\WPR Files\`.
+    
     1. Select **Save**.
 
 14. Wait while the trace is being merged.
@@ -284,37 +288,10 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 8. Include both the file and the folder in your submission to Microsoft support.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
-> [!TIP]
-> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
->
-> - Top paths that impact scan time
-> - Top files that impact scan time
-> - Top processes that impact scan time
-> - Top file extensions that impact scan time
-> - Combinations – for example:
->   - top files per extension
->   - top paths per extension
->   - top processes per path
->   - top scans per file
->   - top scans per file per process
->
-> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
-> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
->
-
 ## See also
 
 - [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
