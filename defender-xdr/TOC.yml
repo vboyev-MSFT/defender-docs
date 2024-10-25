@@ -56,10 +56,6 @@
           href: pilot-deploy-overview.md
         - name: Defender for Identity
           href: pilot-deploy-defender-identity.md
-        - name: Defender for Office 365
-          href: pilot-deploy-defender-office-365.md
-        - name: Defender for Endpoint
-          href: pilot-deploy-defender-endpoint.md
         - name: Defender for Cloud Apps
           href: pilot-deploy-defender-cloud-apps.md
         - name: Investigate and respond to threats
