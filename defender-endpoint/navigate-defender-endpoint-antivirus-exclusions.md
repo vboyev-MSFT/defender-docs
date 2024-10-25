@@ -110,7 +110,7 @@ For macOS, you can define exclusions that apply to on-demand scans, real-time pr
 - **Folder**: Exclude all files under a specified folder recursively.
 - **Process**: Exclude a specific process and all files opened by it.
 
-For more information, see the [Microsoft Defender for Endpoint on macOS documentation](/defender-endpoint/mac-exclusions).
+For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md).
 
 #### Exclusions on Linux
 
@@ -119,7 +119,7 @@ On Linux, you can configure both antivirus and global exclusions.
 - **Antivirus exclusions**: Apply to on-demand scans, real-time protection (RTP), and behavior monitoring (BM).
 - **Global exclusions**: Apply to real-time protection (RTP), behavior monitoring (BM), and endpoint detection and response (EDR), stopping all associated antivirus detections and EDR alerts.
 
-For more information, see the [Microsoft Defender for Endpoint on Linux documentation](/defender-endpoint/linux-exclusions)
+For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
 
 #### Exclusions on Windows
 

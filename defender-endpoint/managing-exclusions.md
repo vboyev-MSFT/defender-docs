@@ -139,7 +139,7 @@ Use `Set-MpPreference` or `Get-MpPreference` in the [Defender PowerShell Module]
 | Controlled Folder Access exclusions | Not supported |
 | Automation folder exclusions | Not supported |
 
-Learn more:
+**Learn more**:
 
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
