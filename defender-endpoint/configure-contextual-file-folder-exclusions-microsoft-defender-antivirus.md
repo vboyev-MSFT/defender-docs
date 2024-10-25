@@ -106,9 +106,7 @@ To ensure an exclusion only applies if the target is a folder, not a file you ca
 
 #### Files
 
-To make sure an exclusion only applies if the target is a file, not a folder you can use the PathType: file restriction.
-
-Example:
+To make sure an exclusion only applies if the target is a file, not a folder you can use the PathType: file restriction. For example:
 
 `C:\documents\*.mdb\:{PathType:file}`
 
@@ -126,11 +124,11 @@ To exclude a folder from being scanned only during a full scan, specify a restri
 
 `C:\documents\:{ScanType:full}`
 
-To exclude a folder from being scanned only during a quick scan, specify a restriction type together with the file or folder exclusion:
+To exclude a folder from being scanned only during a quick scan, specify a restriction type together with the file or folder exclusion, as in the following example:
 
 `C:\program.exe\:{ScanType:quick}`
 
-If you want to make sure this exclusion only applies to a specific file and not a folder (c:\foo.exe could be a folder), also apply the PathType restriction:
+If you want to make sure this exclusion only applies to a specific file and not a folder (c:\foo.exe could be a folder), also apply the `PathType` restriction, as in the following example:
 
 `C:\program.exe\:{ScanType:quick,PathType:file}`
 
@@ -162,5 +160,10 @@ To exclude a file or folder only when accessed by a specific process, create a n
 After constructing your desired contextual exclusions, you can use your existing management tool to configure file and folder exclusions using the string you created.
 
 See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
+
+## See also
+
+- [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md)
+- [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
