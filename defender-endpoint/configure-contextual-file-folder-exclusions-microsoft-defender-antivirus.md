@@ -19,31 +19,23 @@ search.appverid: met150
 
 # Contextual file and folder exclusions
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
-- Microsoft Defender for Business
-
-- Microsoft Defender Antivirus
-
-- Microsoft Defender for individuals
-
 This article/section describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions.
 
 ## Overview
 
-Exclusions are primarily intended to mitigate affects on performance. They come at the penalty of reduced protection value. These restrictions allow you to limit this protection reduction by specifying circumstances under which the exclusion should apply. Contextual exclusions aren't suitable for addressing false positives in a reliable way. If you encounter a false positive, you can submit files for analysis through the [Microsoft Defender](https://security.microsoft.com/) portal (subscription required) or through the [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) website. For a temporary suppression method, consider creating a custom _allow_ indicator in [Microsoft Defender for Endpoint](indicator-file.md).
+Exclusions are primarily intended to mitigate affects on performance. They come at the penalty of reduced protection value. These restrictions allow you to limit this protection reduction by specifying circumstances under which the exclusion should apply. Contextual exclusions aren't suitable for addressing false positives in a reliable way. If you encounter a false positive, you can submit files for analysis through the [Microsoft Defender portal](https://security.microsoft.com/) (subscription required) or through the [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) website. For a temporary suppression method, consider creating a custom _allow_ indicator in [Microsoft Defender for Endpoint](indicator-file.md).
 
 There are four restrictions you can apply to limit the applicability of an exclusion:
 
-- **File/folder path type restriction**. You can restrict exclusions to only apply if the target is a file, or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, it will not apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion will apply.
+- **File/folder path type restriction**. You can restrict exclusions to only apply if the target is a file, or a folder by making the intent specific. If the target is a file but the exclusion is specified to be a folder, it will not apply. Conversely, if the target is folder but the exclusion is specified to be a file, the exclusion applies.
+
 - **Scan type restriction**. Enables you to define the required scan type for an exclusion to apply. For example, you only want to exclude a certain folder from Full scans but not from a "resource" scan (targeted scan).
+
 - **Scan trigger type restriction**. You can use this restriction to specify that the exclusion should only apply when the scan was initiated by a specific event:
   - on demand
   - on access
   - or originating from behavioral monitoring
+
 - **Process restriction**. Enables you to define that an exclusion should only apply when a file or folder is being accessed by a specific process.
 
 ## Configuring restrictions
