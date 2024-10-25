@@ -36,7 +36,7 @@ If your system is having high CPU usage or performance issues related to the rea
 
 As an admin, you can also troubleshoot these issues on your own.
 
-First, you might want to check if the issue is being caused by another software. Read [Check with vendor for antivirus exclusions](#check-with-the-vendor-for-known-issues-with-antivirus-products).
+First, you might want to check if the issue is caused by other software. Read [Check with vendor for antivirus exclusions](#check-with-the-vendor-for-known-issues-with-antivirus-products).
 
 Otherwise, you can identify which software is related to the identified performance issue by following the steps in [Analyze the Microsoft Protection Log](#analyze-the-microsoft-protection-log).
 
@@ -214,7 +214,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
     > [!IMPORTANT]
     > You should select *File* to use the file logging mode if the performance issue can be reproduced directly by the user. Most issues fall under this category. However, if the user cannot directly reproduce the issue but can easily notice it once the issue occurs, the user should select *Memory* to use the memory logging mode. This ensures that the trace log will not inflate excessively due to the long run time.
 
-9. Now you're ready to collect data. Exit all the applications that are not relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
+9. Now you're ready to collect data. Exit all the applications that aren't relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
 
    :::image type="content" source="media/wpr-08.png" alt-text="The Hide options" lightbox="media/wpr-08.png":::
 
@@ -238,7 +238,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     :::image type="content" source="media/wpr-12.png" alt-text="The pane in which you fill" lightbox="media/wpr-12.png":::
 
-    1. Select **File Name:** to determine where your trace file will be saved. By default, it is saved to `%user%\Documents\WPR Files\`.
+    1. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
     
     1. Select **Save**.
 
