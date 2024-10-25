@@ -23,7 +23,7 @@ Each version of Defender for Endpoint provides management of exclusions via the 
 
 ## Manage exclusions for Windows devices
 
-The following table shows which exclusion types are supported by each management tool. 
+The following table shows which exclusion types are supported by each management tool. In the table, certain abbreviations are used:
 
 - "Custom AV" refers to custom antivirus exclusions.
 - "ASR only" refers to exclusions for attack surface reduction capabilities only.
