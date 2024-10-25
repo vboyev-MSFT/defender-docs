@@ -61,7 +61,7 @@ Many exclusions can be managed in the [Microsoft Defender portal](https://securi
 **Learn More**:
 
 - [Use Microsoft Defender for Endpoint Security Settings Management to manage Microsoft Defender Antivirus](/defender-endpoint/mde-security-settings-management)
-- [Add automatic folder exclusion](/defender-endpoint/manage-automation-folder-exclusions#add-an-automation-folder-exclusion)
+- [Add automatic folder exclusions](/defender-endpoint/manage-automation-folder-exclusions#add-an-automation-folder-exclusion)
 
 ### Intune
 
