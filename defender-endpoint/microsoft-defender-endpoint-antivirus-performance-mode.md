@@ -105,6 +105,9 @@ Enable performance mode status via the OMA-URI settings shown in the following t
    
 4. Select **Apply**, and then select **OK**. 
 
+> [!NOTE]
+> The updated Group Policy Template **Configure performance mode status** under Real-Time Protection is only available after you install the 24H2 update. 
+
 ### PowerShell
 
 1. Open PowerShell as an administrator on the device.
