@@ -1,10 +1,10 @@
 ---
 title: Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)
 description: Learn how to set up and use the Defender for Endpoint plug-in for Windows Subsystem for Linux.
-author: pahuijbr
-ms.author: pahuijbr
+author: denisebmsft
+ms.author: deniseb
 manager: deniseb
-ms.reviewer: gokulgiju, priyankagill, kvitta
+ms.reviewer: gokulgiju, priyankagill, kvitta, pahuijbr
 ms.service: defender-endpoint
 ms.subservice: onboard
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.collection:
 ms.custom:
 - partner-contribution
 audience: ITPro
-ms.date: 08/12/2024
+ms.date: 10/24/2024
 search.appverid: MET150
 ---
 
@@ -83,20 +83,20 @@ If your Windows Subsystem for Linux isn't installed yet, follow these steps:
 
 3. Confirm that WSL is installed and running.
 
-    1. Using Terminal or Command Prompt, run `wsl –-update` to make sure you have the latest version.
+   1. Using Terminal or Command Prompt, run `wsl –-update` to make sure you have the latest version.
 
-    2. Run the `wsl` command to ensure WSL is running before testing.
+   2. Run the `wsl` command to ensure WSL is running before testing.
 
 4. Install the plug-in by following these steps:
 
-    1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**).
+   1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**).
 
-    2. Open a command prompt/terminal and run `wsl`.
+   2. Open a command prompt/terminal and run `wsl`.
 
    You can [deploy the package using Microsoft Intune](/mem/intune/apps/lob-apps-windows).
 
 > [!NOTE]
-> If `WslService` is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
+> If `WslService` is running, it stops during the installation process. You do not need to onboard the subsystem separately. Instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
 
 ## Installation validation checklist
 
@@ -161,7 +161,7 @@ After installing the plug-in, the subsystem and all its running containers are o
 
 2. Filter using the tag **WSL2**.
 
-  :::image type="content" source="media/mdeplugin-wsl/wsl-device-inventory.png" alt-text="Screenshot showing device inventory filter" lightbox="media/mdeplugin-wsl/wsl-device-inventory.png":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-device-inventory.png" alt-text="Screenshot showing device inventory filter" lightbox="media/mdeplugin-wsl/wsl-device-inventory.png":::
 
    You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. These instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
@@ -175,7 +175,7 @@ The timeline is populated, similar to Defender for Endpoint on Linux, with event
 
 The plug-in onboards the WSL machine with the tag `WSL2`. Should you or your organization need a custom tag, please follow the steps outlined below:
 
-1. Open Registry Editor as an administrator
+1. Open Registry Editor as an administrator.
 
 2. Create a registry key with the following details:
 
@@ -186,9 +186,9 @@ The plug-in onboards the WSL machine with the tag `WSL2`. Should you or your org
 
 3. Once the registry is set, restart wsl using the following steps:
 
-    1. Open Command Prompt and run the command, `wsl --shutdown`.
+   1. Open Command Prompt and run the command, `wsl --shutdown`.
 
-    2. Run the `wsl` command.
+   2. Run the `wsl` command.
 
 4. Wait for 5-10 minutes for the portal to reflect the changes. 
 
@@ -255,81 +255,93 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-1. The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in five minutes."
+### The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in five minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
+:::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
+   
+1. Open a terminal instance and run the command `wsl`.
 
-2. If the previously mentioned error occurs, take the following steps:
+2. Wait for at least five minutes before rerunning the health check.
 
-   1. Open a terminal instance and run the command `wsl`.
+### The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in five minutes."
 
-   2. Wait for at least five minutes before rerunning the health check.
+:::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
+   
+If that error occurs, wait for five minutes and rerun `healthcheck.exe`.
 
-3. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in five minutes."
+### You don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
+Check the following things:
 
-   If that error occurs, wait for five minutes and rerun `healthcheck.exe`.
-
-4. If you don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline, check the following things:
-
-   - If you aren't seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes).
-
-   - Make sure to use the right filters, and that you have the appropriate permissions assigned to view all device objects. (For example, is your account/group is restricted to a specific group?)
-
-   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `%ProgramFiles%\Microsoft Defender for Endpoint plug-in for WSL\tools`.
-
-      :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
-
-   - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to our support team.
-
-   - If the connectivity test reports "invalid" in health check, include the following configuration settings in the `.wslconfig` located in your `%UserProfile%` and restart WSL. Details about settings can be found in [WSL Settings](/windows/wsl/wsl-config#main-wsl-settings).
-
-      - In Windows 11
-
-         ```bash
-         # Settings apply across all Linux distros running on WSL 2
-         [wsl2]
-
-         dnsTunneling=true
-
-         networkingMode=mirrored  
-         ```
-
-      - In Windows 10
-
-         ```bash
-         # Settings apply across all Linux distros running on WSL 2
-         [wsl2]
-
-         dnsProxy=false
-         ```
-
-   - If the connectivity issues persist, run the following steps to collect the networking logs
-
-      1. Open an elevated(admin) PowerShell prompt 
+- If you aren't seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes).
       
-      2. Download and Run: `.\collect-networking-logs.ps1`
-
-         ```powershell
-         Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/WSL/master/diagnostics/collect-networking-logs.ps1" -OutFile collect-networking-logs.ps1
-         Set-ExecutionPolicy Bypass -Scope Process -Force
-         .\collect-networking-logs.ps1
-         ```
-
-      3.	Open a new command prompt and run: `wsl`
+- Make sure to use the right filters, and that you have the appropriate permissions assigned to view all device objects. (For example, is your account/group is restricted to a specific group?)
       
-      4.	Open an elevated(admin) command prompt and run:  `wsl --debug-shell`
+- Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `%ProgramFiles%\Microsoft Defender for Endpoint plug-in for WSL\tools`.
+   
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
+     
+- Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to our support team.
 
-      5.	In debug shell, run: `mdatp connectivity test`
+### Connectivity test reports "invalid" in health check
 
-      6.	Allow the connectivity test to be completed
+- If your machine has a proxy setup, run the command `healthCheck --extendedProxy`. This will provide information on which proxy(s) is set on your machine and whether these configurations are invalid for WSL defender.
 
-      7.	Stop the .ps1 ran in step #2
+   ![Extend HealthCheck Proxy doc](media/mde-plugin-wsl/extend-healthcheck-proxy-doc.png)
+            
+- If the steps mentioned above do not fix the problem, include the following configuration settings in the `.wslconfig` located in your `%UserProfile%` and restart WSL. Details about settings can be found in [WSL Settings](/windows/wsl/wsl-config#main-wsl-settings).
 
-      8.	Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#support-bundle-collection).      
+   **In Windows 11**
 
-### Support bundle collection
+   ```
+
+   # Settings apply across all Linux distros running on WSL 2
+   [wsl2]
+
+   dnsTunneling=true
+
+   networkingMode=mirrored  
+   ```
+
+   **In Windows 10**
+
+   ```bash
+   # Settings apply across all Linux distros running on WSL 2
+   [wsl2]
+   
+   dnsProxy=false
+   
+   ```
+
+### Connectivity issues persist
+
+Collect the networking logs by following these steps:
+
+1. Open an elevated(admin) PowerShell prompt.
+
+2. Download and run: `.\collect-networking-logs.ps1`
+
+   ```powershell
+   
+   Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/WSL/master/diagnostics/collect-networking-logs.ps1" -OutFile collect-networking-logs.ps1
+   Set-ExecutionPolicy Bypass -Scope Process -Force
+   .\collect-networking-logs.ps1
+   
+   ```
+
+3. Open a new command prompt and run the following command: `wsl`.
+      
+4. Open an elevated(admin) command prompt and run the following command: `wsl --debug-shell`.
+
+5. In debug shell, run: `mdatp connectivity test`.
+
+6. Allow the connectivity test to be completed.
+
+7. Stop the .ps1 ran in step #2.
+
+8. Share the generated .zip file along with support bundle that can be collected as mentioned in [steps](#collect-a-support-bundle).
+
+### Collect a support bundle
 
 1. If you run into any other challenges or issues, open Terminal, and run the following commands to generate a support bundle:
 
@@ -379,7 +391,7 @@ DeviceProcessEvents
 4. If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
 
    1. In Control Panel, go to **Programs** > **Programs and Features**.
-
+      
    2. Search for and select **Microsoft Defender for Endpoint plug-in for WSL**. Then select **Repair**. This action should fix the problem by placing the right files in the expected directories.
 
-   :::image type="content" source="media/mdeplugin-wsl/plug-in-repair-control-panel.png" alt-text="Screenshot showing MDE plug-in for WSL repair option in control panel." lightbox="media/mdeplugin-wsl/plug-in-repair-control-panel.png":::
+      :::image type="content" source="media/mdeplugin-wsl/plug-in-repair-control-panel.png" alt-text="Screenshot showing MDE plug-in for WSL repair option in control panel." lightbox="media/mdeplugin-wsl/plug-in-repair-control-panel.png":::

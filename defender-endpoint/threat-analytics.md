@@ -16,7 +16,7 @@ ms.collection:
   - mde-edr
 ms.topic: conceptual
 ms.subservice: edr
-ms.date: 12/18/2023
+ms.date: 10/18/2024
 ---
 
 # Track and respond to emerging threats through threat analytics

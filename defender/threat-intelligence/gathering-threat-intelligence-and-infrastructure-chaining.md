@@ -6,8 +6,10 @@ ms.author: aroland
 manager: dolmont
 ms.service: threat-intelligence
 ms.topic: tutorial
-ms.date: 08/02/2022
-ms.custom: template-tutorial
+ms.date: 10/18/2024
+ms.custom: 
+- template-overview
+- cx-ti
 ---
 
 
