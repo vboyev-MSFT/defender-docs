@@ -31,7 +31,7 @@ search.appverid: met150
 
 - Windows
 
-This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), also go thru [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
+This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside other device protection capabilities), also go through [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
 
@@ -66,7 +66,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 5. Enter `\\<Windows File Server shared location\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
-6. Select **OK**, and then deploy the GPO to the VMs you want to test.
+6. Select **OK**, and then deploy the Group Policy Object to the VMs you want to test.
 
 ### PowerShell
 
@@ -192,7 +192,7 @@ Sometimes, Microsoft Defender Antivirus notifications are sent to or persist acr
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team sees the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and appear in the [Microsoft Defender portal](https://security.microsoft.com).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team sees the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated, and appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 
@@ -237,7 +237,7 @@ For more information, see [Start the scheduled scan only when computer is on but
 
 5. Deploy your Group Policy Object as you usually do.
 
-This policy forces a scan if the VM has missed two or more consecutive scheduled scans.
+This policy forces a scan if the VM missed two or more consecutive scheduled scans.
 
 ## Enable headless UI mode
 
