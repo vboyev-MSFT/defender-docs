@@ -27,9 +27,9 @@ Security Exposure Management is currently in public preview.
 
 ## October 2024
 
-### New changed asset information for initiative history
+### New asset exposure details for metric changes
 
-From the **History** tab of an initiative, you can now see the list of assets that were added or removed from the initiative. This information helps you understand the impact of the initiative on your organization's assets.
+Metric changes can now be investigated by reviewing the asset exposure change details. From the **History** tab of an initiative, by selecting a specific metric, you can now see the list of assets where exposure was added or removed.
 
 For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
 
