@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 10/18/2024
 ---
 
 # The analyst report in threat analytics

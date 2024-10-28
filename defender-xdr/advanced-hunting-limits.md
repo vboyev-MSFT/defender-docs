@@ -14,8 +14,10 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: conceptual
-ms.date: 06/27/2024
+ms.custom:
+- cx-ti
+ms.topic: how-to
+ms.date: 09/10/2024
 ---
 
 # Use the advanced hunting query resource report
