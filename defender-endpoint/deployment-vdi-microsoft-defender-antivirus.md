@@ -162,7 +162,7 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a four-hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization causes Microsoft Defender Antivirus to start a scan on each machine within a four-hour window from the time set for the scheduled scan.
 
 See [Schedule scans](schedule-antivirus-scans.md) for other configuration options available for scheduled scans.
 
@@ -192,7 +192,7 @@ Sometimes, Microsoft Defender Antivirus notifications are sent to or persist acr
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft Defender portal](https://security.microsoft.com).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team sees the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 
