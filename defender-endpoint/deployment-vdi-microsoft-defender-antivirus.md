@@ -42,7 +42,7 @@ This guide describes how to configure Microsoft Defender Antivirus on your VMs f
 - [Use quick scans](#use-quick-scans)
 - [Prevent notifications](#prevent-notifications)
 - [Disable scans from occurring after every update](#disable-scans-after-an-update)
-- [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
+- [Scan out-of-date machines or machines that were offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
 > [!IMPORTANT]
@@ -95,10 +95,9 @@ Start-Process -FilePath $vdmpackage -WorkingDirectory $vdmpath -ArgumentList "/x
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs receive the new update. We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
 
-Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it will increase the network overhead on your management machine for no benefit.
+Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it increases the network overhead on your management machine for no benefit.
 
-You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
-This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set up this configuration, follow these steps:
+You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption. This configuration is possible when the devices have share and read access (NTFS permissions) to the share so they can grab the updates. To set up this configuration, follow these steps:
 
 1. Create an SMB/CIFS file share.
 
@@ -121,7 +120,7 @@ This configuration is possible when the devices have the share and read access (
    
 ### Set a scheduled task to run the PowerShell script
 
-1. On the management machine, open the Start menu and type `Task Scheduler`. From the results, Task Scheduler and then select **Create task...** on the side panel.
+1. On the management machine, open the Start menu and type `Task Scheduler`. From the results, select Task Scheduler and then select **Create task...** in the side panel.
 
 2. Specify the name as `Security intelligence unpacker`. 
 
@@ -150,7 +149,7 @@ If you would prefer to do everything manually, here's what to do to replicate th
    Here's an example: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
-   > In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
+   > We set the script so that the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
 
 3. Download a security intelligence package from [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  into the GUID folder. The file should be named `mpam-fe.exe`.
 
@@ -197,10 +196,10 @@ Suppressing notifications prevents notifications from Microsoft Defender Antivir
 
 ## Disable scans after an update
 
-Disabling a scan after an update will prevent a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
+Disabling a scan after an update prevents a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 > [!IMPORTANT]
-> Running scans after an update will help ensure your VMs are protected with the latest security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
+> Running scans after an update helps ensure your VMs are protected with the latest security intelligence updates. Disabling this option reduces the protection level of your VMs and should only be used when first creating or deploying the base image.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
