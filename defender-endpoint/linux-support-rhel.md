@@ -71,58 +71,6 @@ Use the following command to get the kernel version:
 ```bash
 uname -r
 ```
-## Check if mdatp audisp process is running 
-The expected output is that the process is running.
-
-Use the following command to check:
-
-```bash
-pidof mdatp_audisp_plugin 
-```
-
-## Check TALPA modules
-There should be nine modules loaded. 
-
-Use the following command to check:
-
-```bash
-lsmod | grep talpa
-```
-
-Expected output: Enabled
-
-```bash
-talpa_pedconnector       878  0 
-
-talpa_pedevice          5189  2 talpa_pedconnector 
-
-talpa_vfshook          32300  1 
-
-talpa_vcdevice          4947  1 
-
-talpa_syscall           9127  0 
-
-talpa_core             90699  4 talpa_vfshook,talpa_vcdevice,talpa_syscall 
-
-talpa_linux            29424  5 talpa_vfshook,talpa_vcdevice,talpa_syscall,talpa_core 
-
-talpa_syscallhookprobe      882  0 
-
-talpa_syscallhook      14987  2 talpa_vfshook,talpa_syscallhookprobe 
-```
-
-
-```bash
-lsmod | grep talpa | wc -l 
-```
-
-Expected output: 9
-
-## Check TALPA status
-
-```bash
-cat /proc/sys/talpa/interceptors/VFSHookInterceptor/status 
-```
 
 Debug log files (apart from the 'mdatp diagnostic create' bundle) 
 
@@ -133,7 +81,6 @@ Debug log files (apart from the 'mdatp diagnostic create' bundle)
 
 semanage fcontext -l > selinux.log 
 ```
- 
 
 Performance and Memory 
 
