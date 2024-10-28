@@ -45,8 +45,8 @@ For full access, you need one of the following Microsoft Entra ID roles:
 
 Support for URBAC (User Role-Based Access Control) is available in Exposure Management. The following roles are supported:
 
--
--  
+- Add role
+- Add role
 
 You can find more details about the permission levels here, [Prerequisites, and support](prerequisites.md).
 

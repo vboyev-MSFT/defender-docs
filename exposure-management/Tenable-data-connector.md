@@ -17,7 +17,7 @@ To integrate with Tenable, you need to create an Access Key and Secret Key on Te
 
 For more information on generating your access and secret keys, see [here](https://docs.tenable.com/tenableio/Content/Platform/Settings/MyAccount/GenerateAPIKey.htm).
 
-### Establish ServiceNow connection in Exposure Management
+### Establish Tenable connection in Exposure Management
 
 To establish a connection with Tenable in Exposure Management, follow these steps:
 
