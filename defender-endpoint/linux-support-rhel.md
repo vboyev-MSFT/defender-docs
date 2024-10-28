@@ -31,7 +31,10 @@ ms.date: 10/11/2024
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This article provides guidance on how to troubleshoot issues you might encounter with Microsoft Defender for Linux on Red Hat Linux 6 (RHEL 6) or higher. 
+> [!NOTE]
+> MDE Linux no longer be ships a solution for RHEL 6.
+
+This article provides guidance on how to troubleshoot issues you might encounter with Microsoft Defender for Linux on Red Hat Linux (RHEL). 
 
 After the package (mdatp_XXX.XX.XX.XX.x86_64.rpm) is installed, take actions provided to verify that the installation was successful. 
 
