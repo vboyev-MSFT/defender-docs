@@ -30,16 +30,19 @@ Exposure Management currently retrieves data on devices and vulnerabilities from
 
 The following fields are ingested via the connector: [TenableAssetInfoAdditionalData.json - Repos (azure.com)](https://dev.azure.com/msazure/CESEC/_git/XSPM-Orion-IngestionClientContracts?path=/src/EnterpriseGraphDataModel/DataModelDefinitions/AdditionalData/TenableAssetInfoAdditionalData.json&version=GBmain&_a=contents)
 
-**Assets/devices**
+#### Assets/devices
+
 - IP info
 - FQDN
 
-**Network adapter**
+#### Network adapter
+
 - Mac address
 - OS
 - Hostnames
 
-**Vulnerability findings**
+#### Vulnerability findings
+
 - CVEs
 
 ## Troubleshooting the connector
@@ -50,7 +53,7 @@ Some common issues that might come up when configuring the Tenable connector.
 
 Elad Iwanir - what is the action here? Check permissions?
 
-###  Too many requests error (429) upon trying to connect
+### Too many requests error (429) upon trying to connect
 
 Elad Iwanir - what is the action here? Throttling? What to do?
 

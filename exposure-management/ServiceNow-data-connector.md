@@ -24,7 +24,6 @@ To set up the ServiceNow integration, you need the hostname of your ServiceNow i
 
 > **Note:** The ServiceNow connector only supports Basic Authentication. OAuth authentication will be made available at a later time.
 
-
 ## Establish ServiceNow connection in Exposure Management
 
 To establish a connection with ServiceNow in Exposure Management, follow these steps:
@@ -39,38 +38,39 @@ Exposure Management currently retrieves data on devices, their business applicat
 The following fields are ingested via the connector:
 
  **Devices**:
+
 - properties
-   - os
-   - osVersion
-   - osServicePack
-   - cpuType
-   - category
-   - assetTag
-   - virtual
-   - serviceNowCriticality
-   - usedFor
-   - networkAdapters
-   - lastLoggedOnUser
-   - mostFrequentUser
-   - sysClassName
-   - uPrimaryBusinessApplication
+  - os
+  - osVersion
+  - osServicePack
+  - cpuType
+  - category
+  - assetTag
+  - virtual
+  - serviceNowCriticality
+  - usedFor
+  - networkAdapters
+  - lastLoggedOnUser
+  - mostFrequentUser
+  - sysClassName
+  - uPrimaryBusinessApplication
 
 **networkAdapter**:
 
 - properties:
-   - name
-   - sysId
-   - macAddress
-   - ipAddress
-   - ipDefaultGateway
+  - name
+  - sysId
+  - macAddress
+  - ipAddress
+  - ipDefaultGateway
 
- **businessApplication**: 
+ **businessApplication**:
 
 - properties:
-   - sysId
-   - number
-   - uCriticality
-   - businessCriticality    
+  - sysId
+  - number
+  - uCriticality
+  - businessCriticality
 
 ## Troubleshooting the connector
 
@@ -79,7 +79,7 @@ Some common issues that might come up when configuring the ServiceNow CMDB conne
 ### 'Bad URL' error  upon trying to connect
 
 Double-check your ServiceNow Instance hostname. Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
- 
+
 ### 'Temporary disconnected' or 'Temporary failure' error
 
  **@Elad Iwanir - what should be the customer action here?**
@@ -90,6 +90,7 @@ See [Retrieved data](#retrieved-data) for a description of the  data expected to
 If there's still missing data, please contact Support.
 
 ### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
+
 Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
 
 ## Next steps

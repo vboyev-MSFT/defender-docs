@@ -21,7 +21,7 @@ To establish a connection with any of the supported external products, follow th
      - [Tenable](Tenable-data-connector.md)
      - Wiz (coming soon)
      - Palo Alto (coming soon)
-     
+
 1. Go to **Data Connectors** in the Exposure Management navigation.
 1. Select **Connect** on the selected data connector from the external connectors catalog.
 1. A side pane opens with the relevant connectivity details. Fill in the required fields and select **Connect**.
@@ -34,7 +34,7 @@ To establish a connection with any of the supported external products, follow th
 To ensure successful connections between your external products and our system, you may need to allowlist specific IP addresses. Follow these steps to allowlist IP addresses for your external products:
 
 1. Identify the IP addresses:
-   1. Obtain the list of IP addresses that need to be allowlisted. 
+   1. Obtain the list of IP addresses that need to be allowlisted.
 2. Access the external product's configuration settings:
    1. Log in to the external product's administration or configuration portal.
    2. Navigate to the section where you can manage network settings or security settings.
