@@ -7,8 +7,10 @@ manager: dolmont
 ms.service: threat-intelligence 
 ms.collection: essentials-overview
 ms.topic: overview
-ms.date: 08/02/2022
-ms.custom: template-overview
+ms.date: 10/18/2024
+ms.custom: 
+- template-overview
+- cx-ti
 ---
 
 # What is Microsoft Defender Threat Intelligence (Defender TI)?

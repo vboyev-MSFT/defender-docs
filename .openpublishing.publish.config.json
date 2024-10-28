@@ -1,6 +1,18 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "ATA-Docs",
+      "build_source_folder": "ATADocs",
+      "build_output_subfolder": "ATA-Docs",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs"
+    },
+    {
       "docset_name": "defender",
       "build_source_folder": "defender",
       "build_output_subfolder": "defender",
@@ -20,6 +32,18 @@
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs"
+    },
+    {
+      "docset_name": "defender-cloud-apps",
+      "build_source_folder": "CloudAppSecurityDocs",
+      "build_output_subfolder": "defender-cloud-apps",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content"
       },
@@ -150,6 +174,7 @@
   "targets": {},
   "redirection_files": [
     ".openpublishing.redirection.defender.json",
-    ".openpublishing.redirection.endpoint.json"
+    ".openpublishing.redirection.defender-cloud-apps.json",
+    ".openpublishing.redirection.defender-xdr.json"
   ]
 }
