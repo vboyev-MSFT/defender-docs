@@ -458,7 +458,7 @@
             href: health-status.md
           - name: Troubleshoot cloud connectivity issues
             href: linux-support-connectivity.md
-          - name: Troubleshoot RHEL 6 installation issues
+          - name: Troubleshoot RHEL installation issues
             href: linux-support-rhel.md
           - name: Troubleshoot performance issues
             href: linux-support-perf.md
