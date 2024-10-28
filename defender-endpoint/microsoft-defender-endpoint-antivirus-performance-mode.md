@@ -62,12 +62,12 @@ For more information about Dev Drive, see: [Set up a Dev Drive on Windows 11](/w
 By default, to give the best possible performance, creating a Dev Drive automatically grants trust in the new volume. A trusted Dev Drive volume causes real-time protection to run in a special asynchronous performance mode for that volume. Running performance mode provides a balance between threat protection and performance. The balance is achieved by deferring security scans until after the open file operation has completed, instead of performing the security scan synchronously while the file operation is being processed. This mode of performing security scans inherently provides faster performance, but with less protection. However, enabling performance mode provides significantly better protection than other performance tuning methods, such as using folder exclusions, which block security scans altogether.
 
 > [!NOTE]
-> Does not apply for high cpu or high memory usage in Microsoft Defender Antivirus service (MsMpEng.exe or WinDefend or Antimalware Service Executable).  If you are troubleshooting a high cpu usage, instead use the Microsoft Defender Antivirus [Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus) to narrow down to the hot processes/paths and add them to the exclusions.  Tip: Use [Contextual exclusions](/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) to target real-time protection (RTP).
+> Using performance mode doesn't apply to high cpu or high memory usage scenarios with Microsoft Defender Antivirus services (`MsMpEng.exe`, `WinDefend`, or Antimalware Service Executable). If you are troubleshooting a high cpu usage, instead use the Microsoft Defender Antivirus [Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus) to narrow down to the hot processes/paths and add them to the exclusions.  Tip: Use [Contextual exclusions](/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus) to target real-time protection (RTP).
 The following table summarizes performance mode synchronous and asynchronous scan behavior.
 
 | Performance mode state | Scan type | Description | Summary |
 |:---|:---|:---|:---|
-|Not enabled (Off) | **Synchronous** <br> (Real-time protection) | Opening a file initiates a real-time protection scan. | Open now, scan now. |
+|Not enabled (Off) | **Synchronous** <br/> (Real-time protection) | Opening a file initiates a real-time protection scan. | Open now, scan now. |
 |Enabled (On) | **Asynchronous** | File open operations are scanned asynchronously. | Open now, scan later. |
 
 An untrusted Dev Drive doesn't have the same benefits as a trusted Dev Drive. Security runs in synchronous, real-time protection mode when a Dev Drive is untrusted. Real-time protection scans can affect performance.
@@ -84,29 +84,29 @@ Enable performance mode status via the OMA-URI settings shown in the following t
 
 | Setting | Value |
 | -------- | -------- |
-|OMA-URI:| ./Device/Vendor/MSFT/Defender/Configuration/PerformanceModeStatus |
+|OMA-URI:| `./Device/Vendor/MSFT/Defender/Configuration/PerformanceModeStatus` |
 |Data type|Integer|
 |Value|0|
 
-0 = Enable (default)
-1 = Disable
+`0` = `Enable` (default)
+`1` = `Disable`
 
 ### Group Policy
   
-1. In GPMC.msc or GPedit.msc, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
+1. Using your Group Policy Management Console or Group Policy Editor, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
 2. Double-click **Configure performance mode status**.
 
    :::image type="content" alt-text="Screenshot of Defender Performance Mode 10." source="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png" lightbox="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png":::
 
-1. Select **Enabled**.
+2. Select **Enabled**.
 
    ![Screenshot of Defender Performance Mode 11.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-11.png)
    
-4. Select **Apply**, and then select **OK**. 
+3. Select **Apply**, and then select **OK**. 
 
 > [!NOTE]
-> The updated Group Policy Template **Configure performance mode status** under Real-Time Protection is only available after you install the 24H2 update. 
+> The updated Group Policy Template **Configure performance mode status**, located under **Real-Time Protection** is only available after you install the [Windows 11 2024 Update (24H2)](https://www.microsoft.com/en-us/download/details.aspx?id=106254&msockid=361c21bb46b6605111133499470c6155). 
 
 ### PowerShell
 
@@ -130,9 +130,9 @@ To verify that Dev Drive and Defender Performance Mode is enabled, follow these 
 
    |Drive| Status|
    | -------- | -------- |
-   | C: |Since the system drive (for example, C: or D:) drive is formatted with NTFS, it's not eligible for Defender Performance mode.|
-   |D:|Dev Drive is enabled but Defender Performance mode isn't enabled.|
-   |F:|Dev Drive is enabled, and Defender Performance mode is enabled.|
+   | `C:` |Since the system drive (for example, C: or D:) drive is formatted with NTFS, it's not eligible for Defender Performance mode.|
+   |`D:`|Dev Drive is enabled but Defender Performance mode isn't enabled.|
+   |`F:`|Dev Drive is enabled, and Defender Performance mode is enabled.|
 
 ## See also
 
