@@ -14,8 +14,10 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: reference
-ms.date: 01/02/2024
+ms.custom:
+- cx-ti
+ms.topic: how-to
+ms.date: 04/22/2024
 ---
 
 # Rerun queries in query history
