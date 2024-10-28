@@ -52,8 +52,6 @@
              href: rapid7-data-connector.md
            - name: Tenable
              href: tenable-data-connector.md
-       - name: Cloud security data connectors
-         items: 
        - name: Getting value from your data connectors
          href: value-data-connectors.md
     - name: Work with attack paths

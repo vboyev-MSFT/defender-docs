@@ -32,24 +32,65 @@ To establish a connection with ServiceNow in Exposure Management, follow these s
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the ServiceNow CMDB tile.
 1. Enter your ServiceNow instance **details** (created in the ServiceNow configuration) and select **Connect**.
 
-## Retreived data
+## Retrieved data
 
-## Troublehsooting the connector
+Exposure Management currently retrieves data on devices, their business application association and business criticality. Additional data is also retrieved that helps identify the device, such as network adapter information and OS data.
 
-Some common issues that may come up when configuring the ServiceNow CMDB connector:
+The following fields are ingested via the connector:
 
-Q: I'm getting a 'Bad URL' error  upon trying to connect
-A: Double-check your ServiceNow Instance hostname. Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
+ **Devices**:
+- properties
+   - os
+   - osVersion
+   - osServicePack
+   - cpuType
+   - category
+   - assetTag
+   - virtual
+   - serviceNowCriticality
+   - usedFor
+   - networkAdapters
+   - lastLoggedOnUser
+   - mostFrequentUser
+   - sysClassName
+   - uPrimaryBusinessApplication
+
+**networkAdapter**:
+
+- properties:
+   - name
+   - sysId
+   - macAddress
+   - ipAddress
+   - ipDefaultGateway
+
+ **businessApplication**: 
+
+- properties:
+   - sysId
+   - number
+   - uCriticality
+   - businessCriticality    
+
+## Troubleshooting the connector
+
+Some common issues that may come up when configuring the ServiceNow CMDB connector.
+
+### 'Bad URL' error  upon trying to connect
+
+Double-check your ServiceNow Instance hostname. Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
  
-Q: My ServiceNow connector shows a 'Temporary disconnected' or 'Temporary failure' error
-A: **@Elad Iwanir - what should be the customer action here?**
+### 'Temporary disconnected' or 'Temporary failure' error
 
-Q: I'm not seeing some of my ServiceNow CMDB CIs in the ingested data.
-A: See below for a description of the expected data to be retrieved by the ServiceNow CMDB connector.
-   If there is still missing data, please contact Support.
+ **@Elad Iwanir - what should be the customer action here?**
 
-Q: How can I configure my ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow?
-A: See how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
+### Not seeing ServiceNow CMDB CIs in the ingested data
+
+See [Retrieved data](#retrieved-data) for a description of the expected data to be retrieved by the ServiceNow CMDB connector.
+If there is still missing data, please contact Support.
+
+### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
+Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
 
 ## Next steps
 
