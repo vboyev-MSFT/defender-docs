@@ -157,13 +157,9 @@ The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, 
 
 To run the client analyzer for troubleshooting performance issues, see [Run the client analyzer on macOS and Linux](run-analyzer-macos-linux.md).
 
-
 ## Configure Global Exclusions for better performance
 
-Configure Microsoft Defender for Endpoint on Linux with exclusions for the processes or disk locations that contribute to the performance issues. For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
-
-> [!NOTE]
-> In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation.
+Configure Microsoft Defender for Endpoint on Linux with exclusions for the processes or disk locations that contribute to the performance issues. For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md). IF you still have performace issues, contact support for further instructions and mitigation.
 
 ## Troubleshoot AuditD performance issues
 
@@ -179,9 +175,9 @@ Configure Microsoft Defender for Endpoint on Linux with exclusions for the proce
 
 In certain server workloads, two issues might be observed:
 
-- **High CPU** resource consumption from ***mdatp_audisp_plugin*** process.
+- `High CPU` resource consumption from `mdatp_audisp_plugin` process.
 
-- ***/var/log/audit/audit.log*** becoming large or frequently rotating.
+- `/var/log/audit/audit.log` becoming large or frequently rotating.
 
 These issues may occur on servers with many events flooding AuditD. Such issues can arise if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events. To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-analyzer-macos-linux.md) on the sample affected server.
 
@@ -227,7 +223,7 @@ Contains important aggregated information that is useful when investigating Audi
 
 ### Exclusion Types
 
-The XMDEClientAnalyzer support tool contains syntax that can be used to add AuditD exclusion configuration rules:
+The XMDEClientAnalyzer support tool contains syntax that can be used to add AuditD exclusion configuration rules.
 
 AuditD exclusion – support tool syntax help:
 
@@ -235,15 +231,15 @@ AuditD exclusion – support tool syntax help:
 
 **By initiator**
 
-- **-e/ -exe** full binary path > Removes all events by this initiator
+- `-e/ -exe` full binary path > Removes all events by this initiator
 
 **By path**
 
-- **-d / -dir** full path to a directory > Removes filesystem events targeting this directory
+- `-d / -dir` full path to a directory > Removes filesystem events targeting this directory
 
 Examples:
 
-If "`/opt/app/bin/app`" writes to "`/opt/app/cfg/logs/1234.log`", then you can use the support tool to exclude with various options:
+If `/opt/app/bin/app` writes to `/opt/app/cfg/logs/1234.log`, then you can use the support tool to exclude with various options:
 
 `-e /opt/app/bin/app`
 
@@ -290,4 +286,5 @@ When the ratelimit is enabled a rule will be added in AuditD to handle 2500 even
 ## See also
 
 - [Investigate agent health issues](health-status.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
