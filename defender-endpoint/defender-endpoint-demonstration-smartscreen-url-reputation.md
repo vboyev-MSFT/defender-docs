@@ -71,7 +71,7 @@ Blocked from downloading because of its URL reputation
 
 - [Download blocked due to URL reputation](https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe)
 
-  Launching this link should render a message similar to the Malware page message.
+  Launching this link should render a warning that the download was blocked as being unsafe by Microsoft Edge.
 
 ### Exploit page
 
