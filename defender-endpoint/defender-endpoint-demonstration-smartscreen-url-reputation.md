@@ -14,7 +14,7 @@ ms.collection:
 - demo
 ms.topic: article
 ms.subservice: asr
-ms.date: 01/15/2024
+ms.date: 10/28/2024
 ---
 
 # URL reputation demonstrations
