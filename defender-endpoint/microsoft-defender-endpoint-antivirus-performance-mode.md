@@ -38,15 +38,15 @@ ms.date: 10/28/2024
 
 Performance mode is now available on Windows 11 as a new Microsoft Defender Antivirus capability. Performance mode reduces the performance impact of Microsoft Defender Antivirus scans for files stored on designated Dev Drive. The goal of performance mode is to improve functional performance for developers who use Windows 11 devices. 
 
-It's important to note that performance mode can run only on Dev Drive. Additionally, real-time protection must be turned on for performance mode to function. Enabling this feature on a Dev Drive doesn't change standard real-time protection running on volumes with operating systems or other volumes formatted FAT32 or NTFS.
+It's important to note that performance mode can run only on Dev Drive. Additionally, real-time protection must be turned on for performance mode to function. Enabling this feature on a Dev Drive doesn't change standard real-time protection running on volumes with operating systems or other volumes formatted as `FAT32` or `NTFS`.
 
 ### Microsoft Defender Antivirus requirements for performance mode
 
 1. Review the requirements that are specific to Dev Drive. See [Set up a Dev Drive on Windows 11](/windows/dev-drive).
 
-1. Make sure Microsoft Defender Antivirus is up to date. 
+2. Make sure Microsoft Defender Antivirus is up to date. 
 
-   - Microsoft Defender Antivirus needs to be primary
+   - Microsoft Defender Antivirus needs to be the primary antivirus/antimalware solution
    - Real-time protection is turned on
    - Antimalware platform version: `4.18.2303.8` (or later)
    - Antimalware security intelligence version: `1.385.1455.0` (or later)
