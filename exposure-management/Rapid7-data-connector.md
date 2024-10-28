@@ -50,7 +50,7 @@ Assets/devices unique identifiers:
 
 Some common issues that may come up when configuring the Rapid7 connector:
 
-### “Temporary connectivity issues”, or 'The remote name could not be resolved' error upon trying to connect
+### “Temporary connectivity issues”, or 'The remote name couldn't be resolved' error upon trying to connect
 
 Check the URL, make sure it aligns with instructions here [InsightVM Cloud Integrations API (rapid7.com)](https://nam06.safelinks.protection.outlook.com/?url=https:%2f%2fhelp.rapid7.com%2finsightvm%2fen-us%2fapi%2fintegrations.html&data=05|02|ronitr@microsoft.com|613676725a324b099c8508dcd8b812ae|72f988bf86f141af91ab2d7cd011db47|1|0|638623532338702698|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|0|||&sdata=YRvrsZ6xNm%2f1v1TvK2XeX0B7xWSjBaXHuf86yelRmTI%3D&reserved=0)
 
@@ -62,7 +62,7 @@ Double check that your API Auth key has sufficient permissions for the connectio
 
 See [Retrieved data](#retrieved-data) for a description of the expected data to be retrieved by the Rapid7 connector.
 
-If there is still missing data, please contact Support.
+If there's still missing data, please contact Support.
 
 ### Configure Rapid7 allowed IPs to enable Exposure Management connectors to access Rapid7
 

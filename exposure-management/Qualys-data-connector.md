@@ -16,7 +16,7 @@ To integrate with Qualys, you have to provide basic credentials for a Qualys use
 ## Qualys configuration
 
 1. Get Qualys API URL
-2. To set up the Qualys integration, you need the API_URL of your Qualys instance, such as “qualysapi.qg1.apps.qualys.co.uk”. You can find it [here](https://www.qualys.com/platform-identification/). .
+2. To set up the Qualys integration, you need the API_URL of your Qualys instance, such as “qualysapi.qg1.apps.qualys.co.uk”. You can find it [here](https://www.qualys.com/platform-identification/).
    1. If you can't find it:
       1. Log in to your Qualys account.
       2. Go to **Help** → **About**.
@@ -63,7 +63,7 @@ To establish a connection with Qualys in Exposure Management, follow these steps
 
 ## Troubleshooting the Qualys data connector
 
-Some common issues that may come up when configuring the Qualys connector.
+Some common issues that might come up when configuring the Qualys connector.
 
 ### Temporary connection error or temporary connectivity issues (401 or 409) upon trying to connect
 
@@ -75,8 +75,8 @@ Elad Iwanir - Do we reflect that Knowledge_base_api access fails? Link to the st
 
 ### Not seeing my assets or the vulnerabilities reported by Qualys in the ingested data
 
-See [Retrieved Qualys data](#retrieved-qualys-data) for a description of the expected data to be retrieved by the Qualys connector.
-If there is still missing data, please contact Support.
+See [Retrieved Qualys data](#retrieved-qualys-data) for a description of the  data expected to be retrieved by the Qualys connector.
+If there's still missing data, please contact Support.
 
 ### Configure Qualys allowed IPs to enable Exposure Management connectors to access Qualys
 

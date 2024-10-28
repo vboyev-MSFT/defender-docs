@@ -44,7 +44,7 @@ The following fields are ingested via the connector: [TenableAssetInfoAdditional
 
 ## Troubleshooting the connector
 
-Some common issues that may come up when configuring the Tenable connector.
+Some common issues that might come up when configuring the Tenable connector.
 
 ### Temporary connection error (409) upon trying to connect
 
@@ -61,27 +61,27 @@ Elad Iwanir - what is the action here? Throttling? What to do?
 
 ### Not seeing my assets or the vulnerabilities reported by Tenable in the ingested data
 
-See [Retrieved data](#retrieved-data) for a description of the expected data to be retrieved by the Tenable connector.
+See [Retrieved data](#retrieved-data) for a description of the data expected to be retrieved by the Tenable connector.
 
-If there is still missing data, please contact Support.
+If there's still missing data, please contact Support.
 
 ### Seeing only vulnerability management data imported, not data from other Tenable products
 
-The Tenable connector currently supports only vulnerability data from Tenable Vulnerability Management. If you are interested in other types of data, please enter a request through the **Request new connectors** feedback option on the **Data Connectors** page.
+The Tenable connector currently supports only vulnerability data from Tenable Vulnerability Management. If you're interested in other types of data, please enter a request through the **Request new connectors** feedback option on the **Data Connectors** page.
 
 ### Not seeing any Tenable data ingested
 
 1. Ensure you Tenable connector is properly connected and not in an error state.
 2. Run queries on the Exposure Graph via Advanced Hunting (as described in [Getting value from your data connectors](value-data-connectors.md)) to check for the Tenable sourced data.
-3. If you are still not seeing any data ingested, please contact Support.
+3. If you're still not seeing any data ingested, please contact Support.
 
 ### Configure Tenable allowed IPs to enable Exposure Management connectors to access Tenable
 
 Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
 
-### I am using Tenable Security Center (the on-premises version), can I connect to that via the Tenable connector?
+### I'm using Tenable Security Center (the on-premises version), can I connect to that via the Tenable connector?
 
-We currently support only Tenable Vulnerability Management and do not support Tenable SC. We are working to add Tenable.sc in the future.
+We currently support only Tenable Vulnerability Management and don't support Tenable SC. We're working to add Tenable.sc in the future.
 
 ## Next steps
 

@@ -34,7 +34,7 @@ To establish a connection with ServiceNow in Exposure Management, follow these s
 
 ## Retrieved data
 
-Exposure Management currently retrieves data on devices, their business application association and business criticality. Additional data is also retrieved that helps identify the device, such as network adapter information and OS data.
+Exposure Management currently retrieves data on devices, their business application association, and business criticality. Additional data is also retrieved that helps identify the device, such as network adapter information and OS data.
 
 The following fields are ingested via the connector:
 
@@ -74,7 +74,7 @@ The following fields are ingested via the connector:
 
 ## Troubleshooting the connector
 
-Some common issues that may come up when configuring the ServiceNow CMDB connector.
+Some common issues that might come up when configuring the ServiceNow CMDB connector.
 
 ### 'Bad URL' error  upon trying to connect
 
@@ -86,8 +86,8 @@ Double-check your ServiceNow Instance hostname. Learn more about authentication 
 
 ### Not seeing ServiceNow CMDB CIs in the ingested data
 
-See [Retrieved data](#retrieved-data) for a description of the expected data to be retrieved by the ServiceNow CMDB connector.
-If there is still missing data, please contact Support.
+See [Retrieved data](#retrieved-data) for a description of the  data expected to be retrieved by the ServiceNow CMDB connector.
+If there's still missing data, please contact Support.
 
 ### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
 Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
