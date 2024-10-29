@@ -42,7 +42,7 @@ Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender
 
 Using _OAuthAppId_ allows the queries that consider specific OAuth applications, making queries and detection rules more accurate.
 
-For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table"https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-cloudappevents-table").
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
 ## September 2024
 
