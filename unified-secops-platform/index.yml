@@ -24,9 +24,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is the Microsoft security operations platform?
-            url: /defender-xdr/microsoft-365-defender
+          - text: "What is Microsoft's unified SecOps platform?"
+            url: overview-unified-security.md
       - linkListType: whats-new
         links:
-          - text: What's new in the Microsoft security operations platform
-            url: /defender-xdr/unified-secops-platform/whats-new
+          - text: "What's new in Microsoft's unified SecOps platform"
+            url: whats-new.md
+
