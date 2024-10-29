@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 09/19/2024
+ms.date: 10/29/2024
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -116,7 +116,8 @@ Updates contain:
 - Improved performance in specific scenarios where network files were accessed.
 - Fixed an issue with [Azure Virtual Desktop](/azure/virtual-desktop/overview) where the Intune policy was not being honored.
 - Fixed potential deadlock for [custom detection rules](/defender-xdr/custom-detection-rules) on the Windows client
-- Resolved an issue where [exclusions](configure-exclusions-microsoft-defender-antivirus.md) were not being honored with [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal).
+- Resolved an issue where [antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md) were not being honored with [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal).
+- Fixed issue impacting a subset of devices where [antivirus exclusions configured through SCCM](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) were not honored
 
 > [!IMPORTANT]
 > On Windows Server 2019 and later, a new binary (`MpDefenderCoreService.exe`) will be included in the update package to support future service improvements (more information to follow).
