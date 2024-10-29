@@ -12,8 +12,10 @@ ms.collection:
   - Tier1
   - security-copilot
   - magic-ai-copilot
+ms.custom:
+- cx-ti
 ms.topic: conceptual
-ms.date: 12/04/2023
+ms.date: 10/18/2024
 ---
 
 # Microsoft Copilot for Security in Microsoft Defender Threat Intelligence
