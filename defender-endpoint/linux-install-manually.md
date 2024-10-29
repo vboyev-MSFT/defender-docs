@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/15/2024
+ms.date: 10/28/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -501,7 +501,6 @@ Download the onboarding package from Microsoft Defender portal.
 The following external package dependencies exist for the mdatp package:
 
 - The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage` `selinux-policy-targeted`, `mde-netfilter`
-- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, `mde-netfilter`
 - For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, `mde-netfilter`
 - For Mariner the mdatp package requires `attr`, `audit`, `diffutils`, `libacl`, `libattr`, `libselinux-utils`, `selinux-policy`, `policycoreutils`, `mde-netfilter`
 
