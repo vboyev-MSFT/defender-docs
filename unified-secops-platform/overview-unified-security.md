@@ -1,5 +1,5 @@
 ---
-title: What is the Microsoft unified security operations platform?
+title: "What is Microsoft's unified security operations platform?"
 description: Provides an overview of features and functionality in the Microsoft unified security operations platform
 search.appverid: met150
 ms.service: unified-secops-platform
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# What is the Microsoft unified security operations platform?
+# What is Microsoft's unified security operations platform?"
 
 <!--Need to define when something goes here versus other what's new articles. Maybe we just focus on updates within this library and things tied directly to USX (features that unblock onboarding, parity features with Sentinel, enhancements to core USX features?) -->
 
