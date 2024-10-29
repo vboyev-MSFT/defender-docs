@@ -165,8 +165,8 @@ The incident page consists of the following tabs:
   A quick overview of the impacted assets associated with alerts.
 
 > [!NOTE]
-> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](/defender-xdr/investigate-incidents.md#alerts).
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](/defender-xdr/investigate-incidents#alerts).
 
 ## Related items
 
-To learn more about alert correlation and incident merging in the Defender portal, see [Alerts, incidents, and correlation in Microsoft Defender XDR](../alerts-incidents-correlation.md)
+To learn more about alert correlation and incident merging in the Defender portal, see [Alerts, incidents, and correlation in Microsoft Defender XDR](/defender-xdr/alerts-incidents-correlation)
