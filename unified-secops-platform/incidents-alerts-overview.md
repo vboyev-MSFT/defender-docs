@@ -36,6 +36,7 @@ In the Microsoft Defender portal, ***alerts*** are signals from a collection of 
 - A visual representation of how all the players in the story interact
 - Logs of automatic investigation and response processes that Defender XDR initiated and completed
 - Collections of evidence supporting the attack story: bad actors' user accounts and device information and address, malicious files and processes, relevant threat intelligence, and so on
+- A textual summary of the attack story
 
 Incidents also function as "case files," providing you with a framework for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
