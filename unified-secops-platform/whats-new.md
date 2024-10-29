@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "What's new in the Microsoft's unified SecOps platform"
-=======
-title: What's new in the Microsoft unified security operations platform
->>>>>>> 188b7565439cdb87c11f303ccfc0090999d707b6
 description: Lists the new features and functionality in the Microsoft unified security operations platform
 search.appverid: met150
 ms.service: unified-secops-platform

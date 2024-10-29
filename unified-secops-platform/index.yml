@@ -20,7 +20,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card 
-  - title: About the Microsoft security operations platform
+  - title: About Microsoft's unified security operations platform
     linkLists:
       - linkListType: overview
         links:
