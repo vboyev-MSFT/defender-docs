@@ -121,13 +121,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "/defender-office-365/pilot-deploy-defender-office-365.md",
-      "redirect_url": "defender-xdr/pilot-deploy-defender-office-365",
+      "source_path": "defender-office-365/pilot-deploy-defender-office-365.md",
+      "redirect_url": "/defender-xdr/pilot-deploy-defender-office-365",
       "redirect_document_id": false
     },
     {
-      "source_path": "/defender-endpoint/pilot-deploy-defender-endpoint.md",
-      "redirect_url": "defender-xdr/pilot-deploy-defender-office-365",
+      "source_path": "defender-endpoint/pilot-deploy-defender-endpoint.md",
+      "redirect_url": "/defender-xdr/pilot-deploy-defender-office-365",
       "redirect_document_id": false
     }           
   ]
