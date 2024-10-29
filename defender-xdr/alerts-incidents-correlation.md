@@ -1,5 +1,5 @@
 ---
-title: Overview 2: Alert correlation and incident merging in the Microsoft Defender portal
+title: "Overview 2: Alert correlation and incident merging in the Microsoft Defender portal"
 description: Learn how alerts are correlated, and how and why incidents may be merged, in the Microsoft Defender portal.
 ms.service: defender-xdr
 f1.keywords: 
@@ -26,7 +26,7 @@ appliesto:
 
 # Overview 2: Alert correlation and incident merging in the Microsoft Defender portal
 
-This article continues your introduction to how alerts and incidents work, and what they represent, in the Microsoft Defender portal. For the beginning of this introduction, see [Incidents and alerts in the Microsoft Defender portal: an overview](/unified-secops-platform/incidents-alerts-overview).
+This article continues your introduction to how alerts and incidents work, and what they represent, in the Microsoft Defender portal. For the beginning of this introduction, see [Incidents and alerts in the Microsoft Defender portal: an overview](/unified-secops-platform/incidents-alerts-overview.md).
 
 ## Incident creation and alert correlation
 
