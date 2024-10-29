@@ -20,6 +20,30 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 
+## October 2024
+
+### New anomaly data in advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal, can now utilize the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules.  
+The new columns are designed to assist you to better __identify uncommon activities__ that may appear suspicious, and allow you to create more accurate custom detections, as well as investigate any suspicious activities that arise.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### New Conditional Access app control / inline data in advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules.   
+Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### New data in advanced hunting CloudAppEvents table - OAuthAppId
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new _OAuthAppId_ column for queries and detection rules.
+
+Using _OAuthAppId_ allows the queries that consider specific OAuth applications, making queries and detection rules more accurate.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
 ## September 2024
 
 ### Enforce Edge in-browser when accessing business apps
@@ -28,7 +52,7 @@ Administrators who understand the power of Edge in-browser protection, can now r
 A primary reason is security, since the barrier to circumventing session controls using Edge is much higher than with reverse proxy technology.
 
 For more information see: 
-[Enforce Edge in-browser protection when accessing business apps](https://learn.microsoft.com/defender-cloud-apps/in-browser-protection#enforce-edge-in-browser-when-accessing-business-apps)
+[Enforce Edge in-browser protection when accessing business apps](/defender-cloud-apps/in-browser-protection)
 
 ### Connect Mural to Defender for Cloud Apps (Preview)
 
@@ -146,7 +170,7 @@ Microsoft Defender for Cloud Apps log collector now supports [Azure Kubernetes S
 
 For more information, see [Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)](discovery-kubernetes.md).
 
-### New Conditional Access app control / inline data for the advanced hunting CloudAppEvents table
+### New Conditional Access app control / inline data for the advanced hunting CloudAppEvents table (Preview)
 
 Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules. Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
 
@@ -224,7 +248,7 @@ Automatic log collection is supported using a Docker container on multiple opera
 
 For more information, see [Configure automatic log upload using Podman](discovery-linux-podman.md).
 
-### New anomaly data for the advanced hunting CloudAppEvents table
+### New anomaly data for the advanced hunting CloudAppEvents table (Preview)
 
 Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules. Using this data helps to rule out false positives and find anomalies.
 
