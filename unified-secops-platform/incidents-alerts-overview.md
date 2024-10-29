@@ -26,13 +26,21 @@ appliesto:
 
 # Incidents and alerts in the Microsoft Defender portal: an overview
 
-In the Microsoft Defender portal, ***alerts*** are signals from a collection of sources that result from various threat detection activities. These signals indicate the occurrence of malicious or suspicious events in your environment. While you can investigate and mitigate the threats that alerts bring to your attention, by themselves these threats are isolated occurrences that don't tell you anything about a broader, complex attack story. You could search for, research, investigate, and correlate groups of alerts that belong together in a single attack story, but that will cost you lots of time, effort, and energy. Instead, Microsoft's unified security operations platform in the Defender portal aggregates and correlates related alerts together to form ***incidents*** that represent these attack stories.
+In the Microsoft Defender portal, ***alerts*** are signals from a collection of sources that result from various threat detection activities. These signals indicate the occurrence of malicious or suspicious events in your environment. While you can investigate and mitigate the threats that individual alerts bring to your attention, by themselves these threats are isolated occurrences that don't tell you anything about a broader, complex attack story. You could search for, research, investigate, and correlate groups of alerts that belong together in a single attack story, but that will cost you lots of time, effort, and energy. Instead, Microsoft's unified security operations platform in the Defender portal aggregates and correlates related alerts together to form ***incidents*** that represent these larger attack stories.
 
-***Incidents*** tell the full story of an attack and provide the complete picture. The correlation engines and algorithms in the Microsoft Defender portal automatically correlate signals (alerts) from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents. Incidents contain all the alerts deemed to be related to each other and to the overall attack story, and present the story in various forms: a timeline of alerts; lists of all the involved and impacted users, devices, and other resources; a visual representation of how all the players in the story interact, 
+***Incidents*** tell the full story of an attack and provide the complete picture. The correlation engines and algorithms in the Microsoft Defender portal automatically correlate signals (alerts) from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions collected through Microsoft Sentinel and Microsoft Defender for Cloud. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents. Incidents contain all the alerts deemed to be related to each other and to the overall attack story, and present the story in various forms:
+
+- A timeline of alerts
+- Lists of all the involved and impacted users, devices, and other resources
+- A visual representation of how all the players in the story interact
+- Logs of automatic investigation and response processes that Defender XDR initiated and completed
+- 
 
 Incidents also function as "case files," providing you with a unified security operations platform for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
+<!-- INCLUDE THIS?
 [!INCLUDE [unified-soc-preview](../includes/unified-soc-preview.md)]
+-->
 
 Here is a summary of the main attributes of incidents and alerts, and the differences between them:
 
@@ -54,7 +62,27 @@ Here is a summary of the main attributes of incidents and alerts, and the differ
 
 ## Alert sources and threat detection
 
-Alerts in the Microsoft Defender portal come from many sources. These sources include the many services that are part of Microsoft Defender XDR, as well as other services with varying degrees of integration with the Microsoft Defender portal. Within each of these sources, there are one or more threat detection mechanisms that produce alerts based on the rules defined in each mechanism.
+Alerts in the Microsoft Defender portal come from many sources. These sources include the many services that are part of Microsoft Defender XDR, as well as other services with varying degrees of integration with the Microsoft Defender portal. 
+
+- Solutions that are part of Microsoft Defender XDR
+  - Microsoft Defender for Endpoint
+  - Microsoft Defender for Office 365
+  - Microsoft Defender for Identity
+  - Microsoft Defender for Cloud Apps
+  - The app governance add-on for Microsoft Defender for Cloud Apps
+  - Microsoft Entra ID Protection
+  - Microsoft Data Loss Prevention
+
+- Other services that have integrations with the Microsoft Defender security portal
+  - Microsoft Defender for Cloud
+  - Microsoft Sentinel
+  - Non-Microsoft security solutions that pass their alerts to Microsoft Sentinel  
+    When Microsoft Sentinel is onboarded to the [unified security operations platform](/defender-xdr/microsoft-sentinel-onboard), the correlation engine in the Microsoft Defender portal has access to all the raw data ingested by Microsoft Sentinel. (You can find this data in **Advanced hunting** tables.) 
+
+- Microsoft Defender XDR itself also creates alerts. Defender XDR's unique correlation capabilities provide another layer of data analysis and threat detection for all the non-Microsoft solutions in your digital estate. These detections produce Defender XDR alerts, in addition to the alerts already provided by Microsoft Sentinel's analytics rules.
+
+
+Within each of these sources, there are one or more threat detection mechanisms that produce alerts based on the rules defined in each mechanism.
 
 The following table shows the detection methods that produce alerts for each service in the Microsoft Defender portal:
 
@@ -71,34 +99,10 @@ The following table shows the detection methods that produce alerts for each ser
 | Microsoft Defender for Cloud | <li>Microsoft Defender for Cloud<li>Microsoft Defender for IoT<li>Microsoft Defender for Servers<li>Microsoft Defender for Storage<li>Microsoft Defender for DNS<li>Microsoft Defender for Databases<li>Microsoft Defender for Containers<li>Microsoft Defender for Network<li>Microsoft Defender for App Service<li>Microsoft Defender for Key Vault<li>Microsoft Defender for Resource Manager<li>Microsoft Defender for API Management |
 | Microsoft Sentinel | <li>Microsoft Sentinel<li>NRT rules<li>Scheduled detection<li>Threat intelligence<li>ML detection |
 
-- Solutions that are part of Microsoft Defender XDR
-  - Microsoft Defender for Endpoint
-  - Microsoft Defender for Office 365
-  - Microsoft Defender for Identity
-  - Microsoft Defender for Cloud Apps
-  - The app governance add-on for Microsoft Defender for Cloud Apps
-  - Microsoft Entra ID Protection
-  - Microsoft Data Loss Prevention
-
-- Other services that have integrations with the Microsoft Defender security portal
-  - Microsoft Sentinel
-  - Non-Microsoft security solutions that pass their alerts to Microsoft Sentinel
-  - Microsoft Defender for Cloud
-
-Microsoft Defender XDR itself also creates alerts. With Microsoft Sentinel onboarded to the [unified security operations platform](/defender-xdr/microsoft-sentinel-onboard), Microsoft Defender XDR's correlation engine now has access to all the raw data ingested by Microsoft Sentinel. (You can find this data in **Advanced hunting** tables.) Defender XDR's unique correlation capabilities provide another layer of data analysis and threat detection for all the non-Microsoft solutions in your digital estate. These detections produce Defender XDR alerts, in addition to the alerts already provided by Microsoft Sentinel's analytics rules.
 
 
 
 ================================================================================
-
-
-An *incident* in the Microsoft Defender portal is a collection of related alerts and associated data that make up the story of an attack. It's also a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it.
-
-The Microsoft Sentinel and Microsoft Defender services create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable evidence of a completed or ongoing attack. However, increasingly prevalent and sophisticated attacks typically employ a variety of techniques and vectors against different types of asset entities, such as devices, users, and mailboxes. The result is multiple alerts, from multiple sources, for multiple asset entities in your digital estate.
-
-Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the unified security operations platform automatically identifies alerts that are related&mdash;from both Microsoft Sentinel and Microsoft Defender XDR&mdash;and aggregates them and their associated information into an incident.
-
-:::image type="content" source="/defender/media/incidents-overview/incidents.png" alt-text="How Microsoft Defender XDR correlates events from entities into an incident." lightbox="/defender/media/incidents-overview/incidents.png":::
 
 Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see:
 
