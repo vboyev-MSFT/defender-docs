@@ -14,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-get-started
 ms.topic: conceptual
+ms.custom: cx-dex
 search.appverid: met150
-ms.date: 08/01/2024
+ms.date: 10/30/2024
 ---
 
 # Get started with Microsoft Defender Experts for XDR
