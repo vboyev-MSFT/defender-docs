@@ -17,16 +17,19 @@ ms.topic: conceptual
 
 # What is Microsoft's unified security operations platform?
 
-Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps). 
+Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps). It integrates security information and event management (SIEM), security orchestration, automation, and response (SOAR), extended detection and response (XDR), posture and exposure management, cloud security, and threat intelligence.
+
+To cover all those capabilities, Microsoft's unified SecOps platform combines services like [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender), [Microsoft Sentinel](/azure/sentinel/overview), [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot) in the [Microsoft Defender portal](https://security.microsoft.com). The Defender portal provides a single location to monitor, detect, investigate, remediate, and respond against prebreach and postbreach cybersecurity risks and threats.
+
+:::image type="content" source="media/overview-unified-security/defender-portal-home.png" lightbox="media/overview-unified-security/defender-portal-home.png" alt-text="Screenshot of the home page of Microsoft's unified SecOps platform in the Defender portal.":::
+
+With Microsoft's unified SecOps platform:
 
 - Reduce risk and prevent attacks with integrated exposure management.
 - Detect and disrupt cyberthreats in near-real time across domain like endpoints, identities, email and collaboration tools, cloud apps, data stores, and hybrid infrastructure.
 - Investigate and respond faster with generative AI solutions that innovate and enhance security capabilities.
 
-Microsoft's unified SecOps platform combines services like [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender), [Microsoft Sentinel](/azure/sentinel/overview), [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot) in the [Microsoft Defender portal](https://security.microsoft.com). The Defender portal provides a single location to monitor, detect, investigate, remediate, and respond against prebreach and postbreach cybersecurity risks and threats.
-
-:::image type="content" source="media/overview-unified-security/defender-portal-home.png" lightbox="media/overview-unified-security/defender-portal-home.png" alt-text="Screenshot of the home page of Microsoft's unified SecOps platform in the Defender portal.":::
-
+<!--- (Add something about zero trust into doc)--->
 
 ## Protect assets
 
