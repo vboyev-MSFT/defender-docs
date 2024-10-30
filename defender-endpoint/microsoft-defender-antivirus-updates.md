@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 10/29/2024
+ms.date: 10/30/2024
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -98,12 +98,12 @@ Updates contain:
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender))
 
-### September-2024 (Platform: 4.18.24090.11 | Engine 1.1.xxxxx.x)
+### September-2024 (Platform: 4.18.24090.11 | Engine 1.1.24090.11)
 
-- Security intelligence update version: **1.419.775.0**
+- Security intelligence update version: **1.421.12.0**
 - Release date: **October 29, 2024** (Engine and Platform)
 - Platform: **4.18.24090.11**
-- Engine: **1.1.xxxx.x**
+- Engine: **1.1.24090.11**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
