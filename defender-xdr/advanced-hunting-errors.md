@@ -17,7 +17,7 @@ ms.collection:
 ms.custom:
 - cx-ti
 ms.topic: error-reference
-ms.date: 04/22/2024
+ms.date: 10/29/2024
 ---
 
 # Handle advanced hunting errors
