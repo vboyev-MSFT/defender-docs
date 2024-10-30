@@ -31,6 +31,8 @@ Exposure insights provide visibility and granular context around security postur
 - Follow actionable recommendations and remediation steps to improve security posture and reduce risk.
 - Monitor security posture state and improvements over time.
 
+> **Note:** The versioning feature in Exposure Management notifies users about upcoming version updates, providing visibility in advance into the expected metric changes and their impact on related initiatives. A side panel offers more details about the update, including the expected date of the change, release notes, and current and new metric values, as well as changes to the related initiatives' scores. Users can provide feedback about the update directly through the platform. The information is dynamic and may vary depending on when it is accessed.
+
 ## Security initiatives
 
 Security initiatives provide a simple way to assess security readiness for a specific security area or workload, and to constantly track and measure exposure risk for that area or workload over time.
