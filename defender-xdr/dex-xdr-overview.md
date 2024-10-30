@@ -14,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-overview
 ms.topic: conceptual
+ms.custom: cx-dex
 search.appverid: met150
-ms.date: 04/25/2024
+ms.date: 10/30/2024
 ---
 
 # Microsoft Defender Experts for XDR

@@ -14,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-get-started
 ms.topic: conceptual
+ms.custom: cx-ean
 search.appverid: met150
-ms.date: 04/18/2024
+ms.date: 10/30/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting
