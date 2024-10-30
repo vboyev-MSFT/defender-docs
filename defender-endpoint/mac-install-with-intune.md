@@ -80,7 +80,7 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
 
 1. In the **Settings picker**, expand the **System Configuration** category, and then select **System Extensions** > **Allowed System Extensions:**
 
-   ![Screenshot showing the Settings Picker](media/mac-install-with-intune/screenshot-2024-09-11-at-1.41.09 pm.png)
+   :::image type="content" alt-text="Screenshot showing the Settings Picker" source="media/mac-install-with-intune/screenshot-2024-09-11-at-1.41.09-pm.png" lightbox="media/mac-install-with-intune/screenshot-2024-09-11-at-1.41.09-pm.png":::
 
 1. Close the Settings picker, and then select **+ Edit instance**. 
 
@@ -91,7 +91,7 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
    |`com.microsoft.wdav.epsext`|`UBF8T346G9`|
    |`com.microsoft.wdav.netext`|`UBF8T346G9`|
 
-   ![Screenshot showing allowed system extensions](media/mac-install-with-intune/image003.png)
+   :::image type="content" alt-text="Screenshot showing allowed system extensions" source="media/mac-install-with-intune/image003.png" lightbox="media/mac-install-with-intune/image003.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices or users are located.
 
@@ -203,7 +203,7 @@ Download [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-
 
 To turn off notifications for the end users, you can change **Show NotificationCenter** from `true` to `false` in [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig).
 
-:::image type="content" source="../defender-endpoint/media/image.png" alt-text="Screenshot showing notif.mobileconfig with ShowNotificationCenter set to True." lightbox="../defender-endpoint/media//image.png":::
+:::image type="content" source="../defender-endpoint/media/image.png" alt-text="Screenshot showing notif.mobileconfig with ShowNotificationCenter set to True.":::
 
 To configure notifications:
 

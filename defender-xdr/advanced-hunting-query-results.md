@@ -1,6 +1,6 @@
 ---
-title: Work with advanced hunting query results in Microsoft Defender XDR
-description: Make the most of the query results returned by advanced hunting in Microsoft Defender XDR
+title: Work with advanced hunting query results in Microsoft Defender
+description: Make the most of the query results returned by advanced hunting in Microsoft Defender
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
@@ -14,16 +14,19 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
-ms.topic: conceptual
-ms.date: 02/16/2024
+ms.custom:
+- cx-ti
+- cx-ah
+ms.topic: how-to
+ms.date: 10/18/2024
+appliesto:
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Work with advanced hunting query results
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 

@@ -15,8 +15,11 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier1
-ms.topic: conceptual
-ms.date: 02/25/2024
+ms.custom:
+- cx-ti
+- cx-ah
+ms.topic: how-to
+ms.date: 04/22/2024
 ---
 
 # Link query results to an incident

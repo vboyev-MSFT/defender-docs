@@ -14,11 +14,14 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+ms.custom: 
+- cx-ti
+- cx-ah
 ms.topic: reference
 ms.date: 12/29/2023
 ---
 
-# BehaviorInfo
+# BehaviorInfo (Preview)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -33,6 +36,9 @@ The `BehaviorInfo` table in the [advanced hunting](advanced-hunting-overview.md)
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+> [!IMPORTANT]
+> Behaviors feature is now in preview. Have feedback to share? Fill out our [feedback form](https://forms.office.com/r/x0mX5hBkGu).
 
 Behaviors are a type of data in Microsoft Defender XDR based on one or more raw events. Behaviors provide contextual insight into events and can, but not necessarily, indicate malicious activity. [Read more about behaviors](/defender-cloud-apps/behaviors)
 
