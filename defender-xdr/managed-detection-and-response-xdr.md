@@ -14,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-manage
 ms.topic: conceptual
+ms.custom: cx-ean
 search.appverid: met150
-ms.date: 07/31/2024
+ms.date: 10/31/2024
 ---
 
 # Managed detection and response
