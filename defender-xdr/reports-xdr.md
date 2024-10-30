@@ -14,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-manage
 ms.topic: conceptual
+ms.custom: cx-dex
 search.appverid: met150
-ms.date: 05/28/2024
+ms.date: 10/30/2024
 ---
 
 # Get real-time visibility with Defender Experts for XDR reports
