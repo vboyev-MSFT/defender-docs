@@ -13,8 +13,9 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
+ms.custom: dex-cx
 search.appverid: met150
-ms.date: 06/28/2024
+ms.date: 10/30/2024
 ---
 
 # How Microsoft Defender Experts for XDR permissions work
