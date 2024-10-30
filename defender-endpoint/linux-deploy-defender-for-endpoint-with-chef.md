@@ -20,11 +20,6 @@ ms.date: 10/11/2024
 
 # Deploy Defender for Endpoint on Linux with Chef
 
-**Applies to:**
-
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
-
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
 
 Before you begin: Install unzip if it's not already installed.

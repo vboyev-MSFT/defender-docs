@@ -12,12 +12,15 @@ author: vpattnai
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
+ms.custom: 
+- cx-ti
+- cx-dex
 ms.collection: 
 - m365-security 
 - tier1
 - essentials-manage
 ms.topic: conceptual
-ms.date: 08/14/2023
+ms.date: 10/30/2024
 ---
 
 # Understand the Defender Experts for Hunting report in Microsoft Defender XDR
