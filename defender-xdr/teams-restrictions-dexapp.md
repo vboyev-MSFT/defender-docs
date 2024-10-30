@@ -14,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-manage
 ms.topic: conceptual
+ms.custom: cx-dex
 search.appverid: met150
-ms.date: 06/27/2024
+ms.date: 10/31/2024
 ---
 
 # Troubleshooting issues with Microsoft Defender Experts app in Microsoft Teams

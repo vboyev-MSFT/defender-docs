@@ -45,7 +45,7 @@ The articles in this series correspond to the following phases of end-to-end dep
 | Phase | Link |
 |---|---|
 | A. Start the pilot | [Start the pilot](pilot-deploy-overview.md#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](pilot-deploy-defender-identity.md) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-office-365/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-endpoint/pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](pilot-deploy-defender-identity.md) <br><br> - [Pilot and deploy  Defender for Office 365](pilot-deploy-defender-office-365.md) <br><br> - [Pilot and deploy Defender for Endpoint](pilot-deploy-defender-endpoint.md) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](pilot-deploy-defender-cloud-apps.md)  |
 |C. Investigate and respond to threats | **Practice incident investigation and response** (this article) |
 
 At any time during your pilot and deployment, you can test Microsoft Defender XDR's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft Defender portal to investigate and respond.
@@ -601,7 +601,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 6. Select **Create**. Then, select **Custom detection rules** from the navigation panel.
 
-   :::image type="content" source="/defender/media/mtp/fig27a.png" alt-text="A screenshot of the Custom detection rules option in the Microsoft Defender portal." lightbox="/defender/media/mtp/fig27a.png":::
+   :::image type="content" source="/defender/media/mtp/fig27a.png" alt-text="A screenshot of the Custom detection rules rules option in the Microsoft Defender portal." lightbox="/defender/media/mtp/fig27a.png":::
 
    :::image type="content" source="/defender/media/mtp/fig27b.png" alt-text="A screenshot of the page displaying the detection rules and execution details in the Microsoft Defender portal." lightbox="/defender/media/mtp/fig27b.png":::
 
