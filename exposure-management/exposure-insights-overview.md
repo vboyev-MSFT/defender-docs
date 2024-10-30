@@ -155,9 +155,7 @@ Selecting the metric that changed provides more details about the change. For in
 
 You can't control the metric or score changes in advance.
 
-
 ## Reviewing events
-
 
 Events measure the score drop or worsening in the metric status. Events include:
 
