@@ -17,6 +17,9 @@ ms.collection:
   - tier1
   - usx-security
 ms.topic: conceptual
+ms.custom:
+- cx-ti
+- cx-ah
 appliesto:
     - Microsoft Defender XDR
     - Microsoft Sentinel in the Microsoft Defender portal

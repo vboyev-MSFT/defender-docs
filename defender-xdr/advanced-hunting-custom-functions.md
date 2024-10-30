@@ -15,7 +15,8 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: 
-- cxti
+- cx-ti
+- cx-ah
 ms.topic: how-to
 ms.date: 04/22/2024
 ---

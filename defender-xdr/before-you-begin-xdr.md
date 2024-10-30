@@ -14,7 +14,9 @@ ms.collection:
   - tier1
   - essentials-compliance
 ms.topic: conceptual
-ms.custom: cx-dex
+ms.custom: 
+- cx-ti
+- cx-dex
 search.appverid: met150
 ms.date: 10/31/2024
 ---
