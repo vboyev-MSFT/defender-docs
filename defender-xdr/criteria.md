@@ -12,7 +12,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 06/27/2024
+ms.date: 10/30/2024
 search.appverid: met150
 ---
 
