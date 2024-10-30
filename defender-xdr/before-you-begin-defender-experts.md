@@ -15,6 +15,7 @@ ms.collection:
   - tier1
   - essentials-compliance
 ms.topic: conceptual
+ms.custom: cx-ean
 search.appverid: met150
 ms.date: 08/14/2024
 ---
