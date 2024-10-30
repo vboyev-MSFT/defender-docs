@@ -15,7 +15,9 @@ ms.collection:
   - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
-ms.custom: cx-ean
+ms.custom: 
+- cx-ti
+- cx-ean
 ms.date: 10/30/2024
 ---
 
