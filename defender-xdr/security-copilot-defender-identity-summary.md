@@ -30,6 +30,8 @@ appliesto:
 
 Security operations teams investigating users can easily understand identity information with the identity summary capability in [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender. Through generative AI and harnessing the power of Microsoft Defender for Identity, Copilot creates contextual insights about an identity in an organization, helping analysts quickly understand important data to speed up their investigation.
 
+With the identity summary capability, analysts can immediately identify suspicious or risky identity-related changes and actions that can negatively impact an organization. The summary also includes potential misconfigurations that affects an identity. Using natural language, Copilot delivers clear and actionable user information that analysts can use in their incident investigation activities. The capability currently focuses on users and will include service accounts in its next iteration.
+
 This guide describes what the identity summary capability is and how it works, including how you can provide feedback on the results generated.
 
 ## Know before you begin
@@ -41,8 +43,6 @@ If you're new to Copilot for Security, you should familiarize yourself with it b
 - [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
 - [Understand authentication in Copilot for Security](/security-copilot/authentication)
 - [Prompting in Copilot for Security](/security-copilot/prompting-security-copilot)
-
-With the identity summary capability, analysts can immediately identify suspicious or risky identity-related changes and actions that can negatively impact an organization. The summary also includes potential misconfigurations that affects an identity. Using natural language, Copilot delivers clear and actionable user information that analysts can use in their incident investigation activities. The capability currently focuses on users and will include service accounts in its next iteration.
 
 ## Copilot for Security integration in Microsoft Defender
 
