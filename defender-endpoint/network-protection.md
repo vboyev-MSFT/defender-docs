@@ -3,10 +3,10 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 02/28/2024
+ms.date: 10/24/2024
 audience: ITPro
-author: siosulli
-ms.author: siosulli
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: mkaminska
 manager: deniseb
 ms.custom: asr
@@ -333,8 +333,8 @@ For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 o
    - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
    - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
-> [!NOTE]
-> In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
+     > [!NOTE]
+     > In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
 
 ### Network protection for Windows Servers
 
@@ -389,6 +389,9 @@ For Windows Servers and Windows Multi-session, there are additional items that y
 ## Network protection troubleshooting
 
 Due to the environment where network protection runs, the feature might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve the connectivity problem, [configure a static proxy for Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
+
+> [!NOTE]
+> Before starting troubleshooting, make sure to set the QUIC protocol to disabled in browsers that are used. QUIC protocol is not supported with Network Protection functionality.
 
 ## Optimizing network protection performance
 

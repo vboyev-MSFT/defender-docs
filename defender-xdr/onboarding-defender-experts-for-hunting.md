@@ -2,12 +2,8 @@
 title: How to subscribe to Microsoft Defender Experts for Hunting
 ms.reviewer:
 description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you onboard, receive, and set up Defender experts notifications.
-keywords: managed threat hunting service,onboarding to Defender Experts, sample DEN, defender experts notifications, Ask Defender Experts, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
-search.product: Windows 10
 ms.service: defender-experts
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.subservice: dex-hunting
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -18,8 +14,9 @@ ms.collection:
   - tier1
   - essentials-get-started
 ms.topic: conceptual
+ms.custom: cx-ean
 search.appverid: met150
-ms.date: 04/18/2024
+ms.date: 10/30/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting

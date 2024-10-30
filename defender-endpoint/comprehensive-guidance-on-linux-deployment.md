@@ -2,8 +2,8 @@
 title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
 ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -14,15 +14,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 05/08/2024
+ms.date: 10/28/2024
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
-
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
 This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
@@ -102,7 +97,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
 > [!NOTE]
-> - It is generally recommended that traffic for Defender for Endpoint is not inspected by SSL inspection (TLS inspection). This applies to all supported operating systems (Windows, Linux, and MacOS).
+> - Traffic for Defender for Endpoint should NOT be inspected by SSL inspection (TLS inspection). This applies to all supported operating systems (Windows, Linux, and MacOS).
 > - To allow connectivity to the consolidated set of URLs or IP addresses, ensure your devices are running the latest component versions. See [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md) for more information.
 
 For more information see [Troubleshoot cloud connectivity issues](#troubleshoot-cloud-connectivity-issues).
@@ -130,7 +125,7 @@ The following table lists the supported proxy settings:
 
 #### Step 3: Verify SSL inspection isn't being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You must bypass SSL inspection for Microsoft Defender for Endpoint URLs. For additional information about the certificate pinning process, see [enterprise-certificate-pinning](/windows/security/identity-protection/enterprise-certificate-pinning).
 
 ##### Troubleshoot cloud connectivity issues
 
@@ -167,8 +162,6 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
 |RHEL 7.x, RHEL 8.x, and RHEL 9.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows|
-|RHEL 6.x|TALPA kernel driver|
-
 ## 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus.

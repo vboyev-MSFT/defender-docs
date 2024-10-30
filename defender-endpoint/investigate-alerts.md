@@ -2,8 +2,8 @@
 title: Investigate Microsoft Defender for Endpoint alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -49,7 +49,7 @@ Expand entities to view details at a glance. Selecting an entity will switch the
 
 ## Investigate using the alert timeline
 
-The alert timeline complements the existing 'process tree' view by offering users a comprehensive perspective on each alert. While the process tree provides a detailed breakdown of the alert's associated processes and activities, the alert timeline presents a condensed chronological view that facilitates rapid triage and decision-making. 
+The alert timeline complements the existing 'process tree' view by offering users a comprehensive perspective on each alert. While the process tree provides a detailed breakdown of the alert's associated processes and activities, the alert timeline presents a condensed chronological view that facilitates rapid triage and decision-making.
 
 ## Take action from the details pane
 

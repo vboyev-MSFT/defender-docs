@@ -12,10 +12,11 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
-  - essentials-compliance
+  - essentials-manage
 ms.topic: conceptual
+ms.custom: cx-dex
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 10/30/2024
 ---
 
 # Auditing
