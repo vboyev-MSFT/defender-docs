@@ -69,8 +69,6 @@ Behavior monitoring monitors process behavior to detect and analyze potential th
 ##### What's new
 
 - Bug and performance fixes
-- osqueryi crash on macos with --verbose arg
-
 
 ### Oct-2024 (Build: 101.24082.0009  | Release version: 20.124082.9.0)
 
