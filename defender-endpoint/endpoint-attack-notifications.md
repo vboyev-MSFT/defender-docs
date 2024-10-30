@@ -12,9 +12,10 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.custom: cx-ean
 ms.subservice: edr
 search.appverid: met150
-ms.date: 08/15/2024
+ms.date: 10/30/2024
 ---
 
 # Endpoint Attack Notifications
