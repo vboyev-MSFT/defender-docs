@@ -17,7 +17,7 @@ ms.collection:
 ms.custom:
 - cx-ti
 - cx-ta
-- ms.topic: conceptual
+ms.topic: conceptual
 ms.subservice: edr
 ms.date: 10/18/2024
 ---
