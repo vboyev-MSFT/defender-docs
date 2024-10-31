@@ -1,6 +1,6 @@
 ---
 title: Run the client analyzer on macOS
-description: Learn how to use the MDE Client Analyzer on Mac to identify health or performance issue causes.
+description: Learn how to use the Defender for Endpoint Client Analyzer on Mac to identify health or performance issue causes.
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb
@@ -82,7 +82,7 @@ If you're experiencing reliability or device health issues with Microsoft Defend
 
 The client analyzer depends on few extra PIP packages (`decorator`, `sh`, `distro`, `lxml`, and `psutil`) that are installed in the operating system when in root mode to produce the result output. If not installed, the analyzer attempts to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
 
-The tool currently requires Python version 3 or later to be installed on your device. If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the `mde_support_tool.sh` script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`.
+The tool currently requires Python version 3 or later to be installed on your device. If your device is behind a proxy, then you can pass the proxy server as an environment variable to the `mde_support_tool.sh` script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`.
 
 > [!WARNING]
 > Running the Python-based client analyzer requires the installation of PIP packages which could cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
