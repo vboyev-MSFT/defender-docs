@@ -48,8 +48,6 @@
           href: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-design?toc=%2Fazure%2Fsentinel%2FTOC.json&bc=%2Fazure%2Fsentinel%2Fbreadcrumb%2Ftoc.json
         - name: Review sample workspace designs
           href: https://learn.microsoft.com/en-us/azure/sentinel/sample-workspace-designs
-        - name: Prepare for multiple workspaces ## is this relevant?
-          href: https://learn.microsoft.com/en-us/azure/sentinel/prepare-multiple-workspaces
       - name: Prioritize data connectors
         href: https://learn.microsoft.com/en-us/azure/sentinel/prioritize-data-connectors
       - name: Plan roles and permissions

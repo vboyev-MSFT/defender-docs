@@ -49,23 +49,14 @@ For example, the Microsoft Sentinel workspace in the following diagram is in the
 
 ## Plan your Log Analytics workspace architecture
 
-To use Microsoft Sentinel, you need a Log Analytics workspace. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements.
+To use Microsoft Sentinel, you need a Log Analytics workspace. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements. Microsoft's unified security operations platform supports only a single workspace.
 
-We recommend creating separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
-
-The unified security operations platform, which provides access to Microsoft Sentinel in the Defender portal, supports only a single workspace. <!--isn't this no longer true? if so we need to update in ZT too-->
-
-Design the Log Analytics workspace you want to enable for Microsoft Sentinel. Consider parameters such as:
-
-- Whether you'll use a single tenant or multiple tenants
-- Any compliance requirements you have for data collection and storage
-- How to control access to Microsoft Sentinel data
+Design the Log Analytics workspace you want to enable for Microsoft Sentinel. Consider parameters such as any compliance requirements you have for data collection and storage and how to control access to Microsoft Sentinel data.
 
 Review these articles:
 
 1. [Design workspace architecture](/azure/azure-monitor/logs/workspace-design?toc=%2Fazure%2Fsentinel%2FTOC.json&bc=%2Fazure%2Fsentinel%2Fbreadcrumb%2Ftoc.json)
 1. [Review sample workspace designs](/azure/sentinel/sample-workspace-designs)
-1. [Prepare for multiple workspaces](/azure/sentinel/prepare-multiple-workspaces) <!--is this relevant?-->
 
 ## Prioritize data connectors
 

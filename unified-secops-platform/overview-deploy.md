@@ -37,37 +37,26 @@ Microsoft Defender XDR unifies your incident response process by integrating key
     1. [Pilot and deploy Microsoft Defender for Endpoint](../defender-xdr/pilot-deploy-defender-endpoint.md)
     1. [Pilot and deploy Microsoft Defender for Cloud Apps](../defender-xdr/pilot-deploy-defender-cloud-apps.md)
 
-## Enable Microsoft Entra ID Protection
+## Configure Microsoft Entra ID Protection
 
-Microsoft Defender XDR also ingests and includes the signals of Microsoft Entra ID Protection. 
+Microsoft Defender XDR can also ingest and include signals from Microsoft Entra ID Protection, which evaluates risk data from billions of sign-in attempts and evaluates the risk of each sign-in to your environment. Microsoft Entra ID Protection data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.
 
-Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.
-
-For more information, see [Configure your Microsoft Entra ID Protection policies](/entra/id-protection/how-to-deploy-identity-protection).
+Configure Microsoft Entra ID Protection to enhance your security posture and add Microsoft Entra signals to your unified security operations. For more information, see [Configure your Microsoft Entra ID Protection policies](/entra/id-protection/how-to-deploy-identity-protection).
 
 ## Deploy Microsoft Defender for Cloud
 
-Complete deploying Microsoft Defender XDR tools by deploying Microsoft Defender for Cloud. Microsoft Defender for Cloud provides a unified security management experience for your cloud resources. For example, you might want to start by connecting your Azure subscriptions to Microsoft Defender for Cloud, and then move on to other cloud environments.
+Complete deploying Microsoft Defender XDR tools by deploying Microsoft Defender for Cloud. Microsoft Defender for Cloud provides a unified security management experience for your cloud resources, and can also send signals to Microsoft Defender XDR. For example, you might want to start by connecting your Azure subscriptions to Microsoft Defender for Cloud, and then move on to other cloud environments.
 
 For more information, see [Connect your Azure subscriptions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-azure-subscription).
 
-## Architect your workspace
+## Architect your workspace and onboard to Microsoft Sentinel
 
-The first step in using Microsoft Sentinel is to create a Log Analytics workspace, if you don't have one already. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements.
+The first step in using Microsoft Sentinel is to create a Log Analytics workspace, if you don't have one already. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements. Microsoft's unified security operations platform supports only a single workspace.
 
-It's a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
+1. Create a Security resource group for governance purposes, which allows you to isolate Microsoft Sentinel resources and role-based access to the collection.
+1. Create a Log Analytics workspace in the Security resource group and onboard Microsoft Sentinel into it.
 
-The unified security operations platform, which provides access to Microsoft Sentinel in the Defender portal, supports only a single workspace. <!--is this still true?-->
-
-- Create a Security resource group for governance purposes, which allows you to isolate Microsoft Sentinel resources and role-based access to the collection. For more information, see Design a Log Analytics workspace architecture.
-
-- Create a Log Analytics workspace in the Security resource group and onboard Microsoft Sentinel into it. This automatically gives you 31 days of data ingestion up to 10 Gb a day free as part of a free trial.
-
-- Set your Log Analytics Workspace supporting Microsoft Sentinel to 90 day retention at a minimum.
-
-Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no extra cost, and ensure a 90-day rollover of log data. You'll incur costs for the total amount of data in the workspace after 90 days. You might consider retaining log data for longer based on governmental requirements. For more information, see Create Log Analytics workspaces and Quickstart: Onboard in Microsoft Sentinel.
-
-<!--do we want to include this here?-->
+For more information, see [Onboard Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
 
 ## Configure roles and permissions
 
@@ -83,6 +72,11 @@ For more information, see [Connect Microsoft Sentinel to Microsoft Defender](../
 
 ## Post-deployment tasks
 
+
+Enable health and auditing https://learn.microsoft.com/en-us/azure/sentinel/enable-monitoring?tabs=azure-portal
+Configure content https://learn.microsoft.com/en-us/azure/sentinel/configure-content
+Enable User and Entity Behavior Analytics (UEBA)	Enable and use the UEBA feature to streamline the analysis process. https://learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?tabs=azure
+Set up interactive and long-term data retention	Set up interactive and long-term data retention, to make sure your organization retains the data that's important in the long term. https://learn.microsoft.com/en-us/azure/sentinel/configure-data-retention-archive
 
 
 ### Ingest data sources
@@ -235,35 +229,18 @@ Defense evasion
 Exfiltration (this is where ransomware itself is detected)
 
 
-
-This article introduces the activities that help you plan your Microsft unified security operations platform deployment.
-
-
-1. Preparation and Planning
-Assess Requirements: Identify the specific security needs and objectives of your organization.
-Gather Resources: Ensure you have the necessary licenses, permissions, and access to the Microsoft Defender portal.
-Review Documentation: Familiarize yourself with the relevant documentation on Microsoft Learn, such as the An external link was removed to protect your privacy.1.
-2. Initial Setup
-Create a Microsoft Defender Portal Account: If you don't already have one, create an account and log in to the Microsoft Defender portal.
-Configure Basic Settings: Set up your organization's basic security settings and preferences in the portal.
-3. Deploy Microsoft Defender Services
-Microsoft Defender for Endpoint: Deploy and configure Microsoft Defender for Endpoint to protect your devices.
-Microsoft Defender for Office 365: Set up Microsoft Defender for Office 365 to secure your email and collaboration tools.
-Microsoft Defender for Identity: Implement Microsoft Defender for Identity to protect your identities and detect threats.
-Microsoft Defender for Cloud Apps: Integrate Microsoft Defender for Cloud Apps to secure your cloud applications.
-Microsoft Defender XDR: Deploy Microsoft Defender XDR to unify and enhance threat detection and response across all Defender services1.
-4. Integrate Microsoft Sentinel
-Connect Microsoft Sentinel: Integrate Microsoft Sentinel with the Defender portal to enhance threat detection and response capabilities.
-Configure Data Connectors: Set up data connectors to ingest data from various sources into Microsoft Sentinel.
 Create and Customize Workbooks: Use workbooks to visualize and analyze security data in Microsoft Sentinel.
+
 5. Advanced Configuration
 Set Up Advanced Hunting: Enable advanced hunting capabilities to query and analyze security data across your environment.
 Configure Automated Response: Set up automated response actions to quickly mitigate threats.
 Implement Security Playbooks: Create and deploy security playbooks to automate common response actions.
+
 6. Monitoring and Maintenance
 Continuous Monitoring: Regularly monitor your security operations platform for alerts and incidents.
 Update and Patch: Keep your security tools and systems up to date with the latest patches and updates.
 Review and Optimize: Periodically review your security configurations and optimize them based on new threats and best practices.
+
 7. Training and Support
 Provide Training: Ensure your security team is trained on using the Microsoft Defender portal and its features.
 Access Support: Utilize Microsoft support resources and community forums for assistance and troubleshooting.
