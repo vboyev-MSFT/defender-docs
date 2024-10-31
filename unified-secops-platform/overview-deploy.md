@@ -72,79 +72,27 @@ For more information, see [Connect Microsoft Sentinel to Microsoft Defender](../
 
 ## Post-deployment tasks
 
+After completing the full unified security operations platform deployment, you can start using the platform to monitor and respond to security incidents. Here are some tasks to start with:
+
+## Configure Microsoft Sentinel content
+
+Based on the [data sources you selected](overview-plan.md#prioritize-data-connectors) when planning your deployment, install Microsoft Sentinel solutions and configure your data connectors. 
+
+Microsoft Sentinel provides a wide range of built-in solutions and data connectors, but you can also build custom connectors and set up connectors to ingest CEF or Syslog logs. Many solutions also provide out-of-the-box analytics rule templates that you can use to create scheduled rules to start detecting threats in your environment.
+
+For more information, see:
+
+- [Configure content](/azure/sentinel/configure-content).
+- Microsoft Sentinel content hub catalog
+- Discover and manage Microsoft Sentinel out-of-the-box content
+- Set up free data sources
+
+
 
 Enable health and auditing /azure/sentinel/enable-monitoring?tabs=azure-portal
 Configure content /azure/sentinel/configure-content
 Enable User and Entity Behavior Analytics (UEBA)	Enable and use the UEBA feature to streamline the analysis process. /azure/sentinel/enable-entity-behavior-analytics?tabs=azure
 Set up interactive and long-term data retention	Set up interactive and long-term data retention, to make sure your organization retains the data that's important in the long term. /azure/sentinel/configure-data-retention-archive
-
-
-### Ingest data sources
-
-Use the following recommendations to get started with installing solutions and configuring data connectors. For more information, see:
-
-Microsoft Sentinel content hub catalog
-Discover and manager Microsoft Sentinel out-of-the-box content
-Set up free data sources
-Start by focus on setting up free data sources to ingest, including:
-
-Azure activity logs: Ingesting Azure activity Logs is critical in enabling Microsoft Sentinel to provide a single-pane of glass view across the environment.
-
-Office 365 audit Logs, including all SharePoint activity, Exchange admin activity, and Teams.
-
-Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint.
-
-If you haven't onboarded your workspace to the unified security operations platform and are working in the Azure portal, ingesting security alerts into Microsoft Sentinel enables the Azure portal to be the central pane of incident management across the environment. In such cases, incident investigation starts in Microsoft Sentinel and should continue in the Microsoft Defender portal or Defender for Cloud, if deeper analysis is required.
-
-For more information, see Microsoft Defender XDR incidents and Microsoft incident creation rules.
-
-Microsoft Defender for Cloud Apps alerts.
-
-For more information, see Microsoft Sentinel Pricing and Free data sources.
-
-Set up paid data sources
-To provide broader monitoring and alerting coverage, focus on adding the Microsoft Entra ID and Microsoft Defender XDR data connectors. There's a charge for ingesting data from these sources.
-
-Make sure to send Microsoft Defender XDR logs to Microsoft Sentinel if any of the following are required:
-
-Onboarding to the unified security operations platform, which provides a single portal for incident management in Microsoft Defender.
-Microsoft Sentinel fusion alerts, which correlate data sources from multiple products to detect multi-stage attacks across the environment.
-Longer retention than what is offered in Microsoft Defender XDR.
-Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint.
-For more information, see:
-
-Integrate Microsoft 365 Defender
-Connect data from Microsoft Defender XDR to Microsoft Sentinel
-Connect Microsoft Entra data to Microsoft Sentinel
-Set up data sources per your environment
-This section describes data sources you might want to use, depending on the services and deployment methods used in your environment.
-
-Scenario	Data sources
-Azure services	If any of the following services are deployed in Azure, use the following connectors to send these resources' Diagnostic Logs to Microsoft Sentinel:
-
-- Azure Firewall
-- Azure Application Gateway
-- Keyvault
-- Azure Kubernetes Service
-- Azure SQL
-- Network Security Groups
-- Azure-Arc Servers
-
-We recommend that you set up Azure Policy to require that their logs be forwarded to the underlying Log Analytics workspace. For more on information, see Create diagnostic settings at scale using Azure Policy.
-Virtual machines	For virtual machines hosted on-premises or in other clouds that require their logs collected, use the following data connectors:
-
-- Windows Security Events using AMA
-- Events via Defender for Endpoint (for server)
-- Syslog
-Network virtual appliances / on-premises sources	For network virtual appliances or other on-premises sources that generate Common Event Format (CEF) or SYSLOG logs, use the following data connectors:
-
-- Syslog via AMA
-- Common Event Format (CEF) via AMA
-
-For more information, see Ingest Syslog and CEF messages to Microsoft Sentinel with the Azure Monitor Agent.
-When you're done, search in the Microsoft Sentinel Content hub for other devices and software as a service (SaaS) apps that require logs to be sent to Microsoft Sentinel.
-
-For more information, see Discover and manage Microsoft Sentinel out-of-the-box content .
 
 ### Configure incident detection and response
 
@@ -246,3 +194,5 @@ Provide Training: Ensure your security team is trained on using the Microsoft De
 Access Support: Utilize Microsoft support resources and community forums for assistance and troubleshooting.
 
 ## Next step
+
+<!--what's our first step after deployment?-->

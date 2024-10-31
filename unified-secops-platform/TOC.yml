@@ -64,6 +64,8 @@
           href: /azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers
     - name: Deploy unified security operations ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
       items:
+      - name: Overview
+        href: overview-deploy.md
       - name: Turn on Microsoft Defender XDR
         href: /defender-xdr/m365d-enable?view=o365-worldwide
       - name: Deploy supported services
@@ -72,6 +74,12 @@
         href: /azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal
       - name: Connect Microsoft Sentinel to Microsoft Defender
         href: /defender-xdr/microsoft-sentinel-onboard
+      - name: Configure content
+        href: /azure/sentinel/configure-content
+      - name: Enable UEBA
+        href: /azure/sentinel/enable-entity-behavior-analytics?tabs=azure
+      - name: Configure interactive and long-term data retention
+        href: /azure/sentinel/configure-data-retention-archive
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
       items:
         - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
