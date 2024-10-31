@@ -363,7 +363,7 @@ Add exclusions for audit-d monitoring.
 
 Usage example: `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
-### AuditD Rate Limiter
+### AuditD rate limiter
 
 Syntax that can be used to limit the number of events reported by the auditD plugin. This option sets the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events are limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
 
@@ -380,7 +380,7 @@ Usage example: `sudo ./mde_support_tool.sh ratelimit -e true`
 > [!NOTE]
 > This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
 
-### AuditD Skip Faulty Rules
+### AuditD skip faulty rules
 
 This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there's a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
 
