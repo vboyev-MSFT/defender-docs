@@ -1,5 +1,5 @@
 ---
-title: Incidents and alerts in the Microsoft Defender portal - an overview
+title: Overview of incidents and alerts in the Microsoft Defender portal
 description: An introduction to incidents and alerts, and the differences between them, in the unified security operations platform in the Microsoft Defender portal.
 ms.service: defender-xdr
 f1.keywords:
@@ -25,11 +25,21 @@ appliesto:
 - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Incidents and alerts in the Microsoft Defender portal: an overview
+# Overview of incidents and alerts in the Microsoft Defender portal
 
-In the Microsoft Defender portal, ***alerts*** are signals from a collection of sources that result from various threat detection activities. These signals indicate the occurrence of malicious or suspicious events in your environment. While you can investigate and mitigate the threats that individual alerts bring to your attention, by themselves these threats are isolated occurrences that don't tell you anything about a broader, complex attack story. You could search for, research, investigate, and correlate groups of alerts that belong together in a single attack story, but that will cost you lots of time, effort, and energy. Instead, Microsoft's unified security operations platform in the Defender portal aggregates and correlates related alerts together to form ***incidents*** that represent these larger attack stories.
+The Microsoft Defender portal brings together a unified set of security services to reduce your exposure to security threats, improve your organizational security posture, detect security threats, and investigate and respond to breaches. These services collect and produce signals that are displayed in the portal. This article discusses two main kinds of signals&mdash;**alerts** and **incidents**, what they represent, and what you can do with them.
 
-***Incidents*** tell the full story of an attack and provide the complete picture. The correlation engines and algorithms in the Microsoft Defender portal automatically correlate signals (alerts) from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions collected through Microsoft Sentinel and Microsoft Defender for Cloud. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents. Incidents contain all the alerts deemed to be related to each other and to the overall attack story, and present the story in various forms:
+## What are alerts and incidents?
+
+***Alerts*** are signals that result from various threat detection activities. These signals indicate the occurrence of malicious or suspicious events in your environment.
+
+***Incidents*** are "case files" that contain collections of related alerts and tell the full story of an attack. The alerts come from all Microsoft security and compliance solutions, as well as from vast numbers of external solutions collected through Microsoft Sentinel and Microsoft Defender for Cloud.
+
+## Why do we need incidents?
+
+While you can investigate and mitigate the threats that individual alerts bring to your attention, by themselves these threats are isolated occurrences that don't tell you anything about a broader, complex attack story. You could search for, research, investigate, and correlate groups of alerts that belong together in a single attack story, but that will cost you lots of time, effort, and energy.
+
+Instead, the correlation engines and algorithms in the Microsoft Defender portal automatically aggregate and correlate related alerts together to form ***incidents*** that represent these larger attack stories. Defender identifies multiple signals as belonging to the same attack story, using AI to continually monitor its telemetry sources and add more evidence to already open incidents. Incidents contain all the alerts deemed to be related to each other and to the overall attack story, and present the story in various forms:
 
 - A timeline of alerts
 - Lists of all the involved and impacted users, devices, and other resources
@@ -38,7 +48,7 @@ In the Microsoft Defender portal, ***alerts*** are signals from a collection of 
 - Collections of evidence supporting the attack story: bad actors' user accounts and device information and address, malicious files and processes, relevant threat intelligence, and so on
 - A textual summary of the attack story
 
-Incidents also function as "case files," providing you with a framework for managing and documenting your investigations. For more information about incidents' functionality in this regard, see [Incident response in the Microsoft Defender portal](/defender-xdr/incidents-overview).
+Incidents also provide you with a framework for managing and documenting your investigations and threat response. For more information about incidents' functionality in this regard, see [Manage incidents in Microsoft Defender](../defender-xdr/manage-incidents.md).
 
 <!-- INCLUDE THIS?
 [!INCLUDE [unified-soc-preview](../includes/unified-soc-preview.md)]
