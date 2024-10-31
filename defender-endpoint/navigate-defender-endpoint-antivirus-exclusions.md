@@ -46,9 +46,8 @@ Creating an exclusion is one possible approach for addressing these types of iss
 
 In order to properly diagnose and resolve issues, the first step is to determine if the issue is being caused by Defender Antivirus or Defender for Endpoint.
 
-From the portal, this can be done by looking at the detection source.
-
-From the device, this can be done by checking if there is high-CPU usage from `MsSense.exe` `SenseNDR.exe` or `SenseTVM.exe`
+- In the Microsoft Defender portal, look at the detection source.
+- On a device, see if there is high CPU usage with `MsSense.exe` `SenseNDR.exe` or `SenseTVM.exe`
 
 This article explains the various types of exclusions that you can define, how exclusions are evaluated, and what to expect if policy conflicts occur. For how-to information, see the following articles/sections:
 
