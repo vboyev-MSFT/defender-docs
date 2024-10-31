@@ -1,7 +1,7 @@
 ---
 title: Run the client analyzer on Linux
 description: Run the Defender for Endpoint client analyzer on Linux
-uthor: denisebmsft
+author: denisebmsft
 ms.author: deniseb
 manager: deniseb
 ms.reviewer: yongrhee
@@ -42,7 +42,7 @@ The XMDE Client Analyzer tool can be downloaded as a [binary](https://aka.ms/XMD
 
 ### Install the XMDE Client Analyzer
 
-Download and extract the the XMDE Client Analyzer. You can use either the binary or Python version, as follows:
+Download and extract the XMDE Client Analyzer. You can use either the binary or Python version, as follows:
 
 - [Binary version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
 - [Python version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
@@ -279,7 +279,7 @@ This section provides instructions on how to run the tool locally on the Linux m
     chmod a+x mde_support_tool.sh
     ```
 
-6. Run as a non-root user to install required dependencies:
+6. Run as a nonroot user to install required dependencies:
 
     ```bash
     ./mde_support_tool.sh
@@ -317,7 +317,7 @@ Use the following command to get the machine diagnostic.
 
 Usage example: `sudo ./MDESupportTool -d`
 
-NOTE: The log level auto-reset feature only available in 2405 or newer client version.
+NOTE: The log level autoreset feature only available in 2405 or newer client version.
 
 ### Positional arguments
 
@@ -407,9 +407,9 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 | `Processes_information.txt` | Contains the details of the running Microsoft Defender for Endpoint related processes on the system. |
 | `Log.txt` | Contains the same log messages written on screen during the data collection. |
 | `Health.txt` | The same basic health output that is shown when running *mdatp health* command. |
-| `Events.xml` | Additional XML file used by the analyzer when building the HTML report. |
+| `Events.xml` | Another XML file used by the analyzer when building the HTML report. |
 | `Audited_info.txt` | Details on audited service and related components for [Linux](linux-resources.md) OS.| 
-| `perf_benchmark.tar.gz` | The performance test reports. You'll see this only if you're using the performance parameter. |
+| `perf_benchmark.tar.gz` | The performance test reports. You'll see this file only if you're using the performance parameter. |
 
 
 ## See also
