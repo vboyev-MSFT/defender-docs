@@ -79,7 +79,7 @@ The changes in your score provide you with useful feedback about how well you're
     1. Select a metric to explore the change's effect further, if applicable.
     1. Open the **Changes to exposed assets** dropdown to view up to the top 100 changed assets. The status will indicate whether the asset exposure has been added or removed.
 
-:::image type="content" source="media/initiatives/initiatives-history-details-reduced.png" alt-text="Screenshot of initiatives history side panel" lightbox="media/initiatives/initiatives-history-details.png":::
+:::image type="content" source="media/exposure-insights-overview/initiatives-history-details-redcued.jpg" alt-text="Screenshot of history side panel" lightbox="media/initiatives/initiatives-history-details.png":::
 
 ## Review metrics and recommendations
 
