@@ -47,7 +47,6 @@ Follow the instructions from [Intune](/mem/intune/protect/advanced-threat-protec
 For more information on using Defender for Endpoint CSP, see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 > [!NOTE]
->
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
 > - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
 > - Onboarding to Defender for Endpoint will onboard the device to [Data Loss Prevention (DLP)](/Microsoft-365/compliance/endpoint-dlp-learn-about), which is also a part of Microsoft 365 compliance.
