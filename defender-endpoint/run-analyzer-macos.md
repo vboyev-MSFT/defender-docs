@@ -257,7 +257,7 @@ This option enables you to skip the faulty rules added in the auditd rules file 
 Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 > [!NOTE]
-> This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
+> This functionality skips faulty rules. The faulty rule then needs to be further identified and fixed.
 
 ## Result package contents on macOS and Linux
 
