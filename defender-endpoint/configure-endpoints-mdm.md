@@ -77,20 +77,29 @@ For security reasons, the package used to Offboard devices will expire 7 days af
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named `WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding`.
 
-3. In Microsoft Intune admin center, create a custom configuration policy.
+3. In Microsoft Intune admin center, there are 2 options: use a custom configuration policy or an EDR policy.
 
-   1. In the navigation pane, select **Devices** \> **By platform** \> **Windows** \> **Manage Devices** \> **Configuration**.
-   2. Under **Policies** click **Create** \> **New Policy**.
-   3. In the **Create a profile** slide out, select **Windows 10 and later** as **Platform** and **Templates** as **Profile Type**.
-   4. Under **Template Name**, click the **Custom** template and click **Create**.
-   5. Enter a value for **Name** and click **Next**. 
-   6. Under **Configuration settings**, click **Add** and use the following OMA-URI settings.
-      - Name: Provide a name
-      - OMA-URI: `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding`
-      - Date type: String
-      - Value: *Copy and paste the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file*
-   7. Make the appropriate group assignments, applicability rules, and on the **Review + create** step, click the **Create** button to finish the policy.
-
+   Option a:
+      1. In the navigation pane, select **Devices** \> **By platform** \> **Windows** \> **Manage Devices** \> **Configuration**.
+      2. Under **Policies** click **Create** \> **New Policy**.
+      3. In the **Create a profile** slide out, select **Windows 10 and later** as **Platform** and **Templates** as **Profile Type**.
+      4. Under **Template Name**, click the **Custom** template and click **Create**.
+      5. Enter a value for **Name** and click **Next**. 
+      6. Under **Configuration settings**, click **Add** and use the following OMA-URI settings.
+         - Name: Provide a name
+         - OMA-URI: `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding`
+         - Date type: String
+         - Value: *Copy and paste the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file*
+      7. Make the appropriate group assignments, applicability rules, and on the **Review + create** step, click the **Create** button to finish the policy.
+   
+   Option b:
+      1. In the navigation pane, select **Endpoint security** \> **Manage** \> **Endpoint detection and response**.
+      2. Under **Endpoint detection and response (EDR) policies** click **Create policy**.
+      3. In the **Create a profile** slide out, select **Windows** as **Platform** and **Endpoint detection and response** and click **Create**.
+      5. Enter a value for **Name** and click **Next**. 
+      6. Under **Configuration settings**, select **Offboard** for the setting **Microsoft Defender for Endpoint client configuration package type**.
+      7. Copy the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file and paste it in the **Offboarding (Device)** setting then click **Next**.         
+      8. Specify any scope tags if needed, make the appropriate group assignments and on the **Review + create** step, click the **Create** button to finish the policy.
 For more information on Microsoft Intune policy settings, see [Windows 10 policy settings in Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10).
 
 > [!NOTE]
