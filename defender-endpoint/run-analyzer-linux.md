@@ -15,23 +15,198 @@ ms.subservice: linux
 
 # Run the client analyzer on Linux
 
+# 
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+- [Microsoft Defender XDR](/defender-xdr)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+
+When contacting support, you might be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
+
 The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running Linux.
 
-There are two ways to run the client analyzer tool:
+There are two different ways to run the client analyzer tool using live response or locally:
 
 1. Using a binary version (no external Python dependency)
-2. Using a Python-based solution
+1. Using a Python-based solution
+
+## Collect support logs in Microsoft Defender for Endpoint using live response
+
+This section provides instructions on how to run the tool via Live Response on Linux machines.
+
+## Linux
+
+The XMDE Client Analyzer tool can be downloaded as a [binary](https://aka.ms/XMDEClientAnalyzerBinary) or [Python](https://aka.ms/XMDEClientAnalyzer) package that can be extracted and executed on Linux machines. Both versions of the XMDE Client Analyzer can be executed during a Live Response session.
+
+### Prerequisites
+
+- For installation the `unzip` package is required.
+
+- For execution the `acl` package is required.
+
+> [!IMPORTANT]
+> Window uses the Carriage Return and Line Feed invisible characters to represent the end of one line and beginning of a new line in a file, but Linux systems uses only the Line Feed invisible character at the end of its file lines. When using the following scripts, if done on Windows, this difference can result in errors and failures of the scripts to run. A potential solution to this is to utilize the Windows Subsystem for Linux and the `dos2unix` package to reformat the script so it aligns with the Unix and Linux format standard.
+
+### Installing the XMDE Client Analyzer
+
+Both versions of XMDE Client Analyzer, binary and Python, a self-contained package that must be downloaded and extracted before executing, and the complete set of steps for this process can be found:
+
+- [Running the Binary version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
+
+- [Running the Python version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
+
+Due to the limited commands available in Live Response the steps detailed must be executed in a bash script, and by splitting the installation and execution portion of these commands it's possible to run the install script once, while running the execution script multiple times.
+
+> [!IMPORTANT]
+> The example scripts assume the machine has direct internet access and can retrieve the XMDE Client Analyzer from Microsoft. If the machine does not have direct internet access then the installation scripts will need to be updated to fetch the XMDE Client Analyzer from a location the machines can access successfully.
+
+#### Binary Client Analyzer Install Script
+
+The following script performs the first six steps of the [Running the Binary version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux). When complete, the XMDE Client Analyzer binary is available from the `/tmp/XMDEClientAnalyzerBinary/ClientAnalyzer` directory.
+
+1. Create a bash file `InstallXMDEClientAnalyzer.sh` and paste the following content into it.
+
+   ```bash
+   #! /usr/bin/bash
+
+   echo "Starting Client Analyzer Script. Running As:"
+   whoami
+
+   echo "Getting XMDEClientAnalyzerBinary"
+   wget --quiet -O /tmp/XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   echo '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469 /tmp/XMDEClientAnalyzerBinary.zip' | sha256sum -c
+
+   echo "Unzipping XMDEClientAnalyzerBinary.zip"
+   unzip -q /tmp/XMDEClientAnalyzerBinary.zip -d /tmp/XMDEClientAnalyzerBinary
+
+   echo "Unzipping SupportToolLinuxBinary.zip"
+   unzip -q /tmp/XMDEClientAnalyzerBinary/SupportToolLinuxBinary.zip -d /tmp/XMDEClientAnalyzerBinary/ClientAnalyzer
+
+   echo "MDESupportTool installed at /tmp/XMDEClientAnalyzerBinary/ClientAnalyzer"
+
+   ```
+
+#### Python Client Analyzer Install Script
+
+The following script performs the first six steps of the [Running the Python version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux). When complete, the XMDE Client Analyzer Python scripts are available from the `/tmp/XMDEClientAnalyzer` directory.
+
+1. Create a bash file `InstallXMDEClientAnalyzer.sh` and paste the following content into it.
+
+   ```bash
+   #! /usr/bin/bash
+
+   echo "Starting Client Analyzer Install Script. Running As:"
+   whoami
+  
+   echo "Getting XMDEClientAnalyzer.zip"
+   wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer 
+   echo '36C2B13AE657456119F3DC2A898FD9D354499A33F65015670CE2CD8A937F3C66 XMDEClientAnalyzer.zip' | sha256sum -c  
+
+   echo "Unzipping XMDEClientAnalyzer.zip"
+   unzip -q XMDEClientAnalyzer.zip -d /tmp/XMDEClientAnalyzer  
+
+   echo "Setting execute permissions on mde_support_tool.sh script"
+   cd /tmp/XMDEClientAnalyzer 
+   chmod a+x mde_support_tool.sh  
+
+   echo "Performing final support tool setup"
+   ./mde_support_tool.sh
+
+   ```
+
+#### Running the Client Analyzer Install Scripts
+
+1. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
+
+2. Select **Upload file to library**.
+
+3. Select **Choose file**.
+
+4. Select the downloaded file named `InstallXMDEClientAnalyzer.sh`, and then select **Confirm**.
+
+5. While still in the LiveResponse session, use the following commands to install the analyzer:
+
+   ```console
+   run InstallXMDEClientAnalyzer.sh
+   ```
+
+### Running the XMDE Client Analyzer
+
+Live Response doesn't support running the XMDE Client Analyzer or Python directly, so an execution script is necessary.
+
+> [!IMPORTANT]
+> The following scripts assume the XMDE Client Analyzer was installed using the same locations from the scripts mentioned earlier. If your organization has chosen to install the scripts into a different location, then the following scripts need to be updated to align with your organization's chosen installation location.
+
+#### Binary Client Analyzer Run Script
+
+The Binary Client Analyzer accepts command line parameters to perform different analysis tests. To provide similar capabilities during Live Response the execution script takes advantage of the `$@` bash variable to pass all input parameters provided to the script to the XMDE Client Analyzer.
+
+1. Create a bash file `MDESupportTool.sh` and paste the following content into it.
+
+   ```bash
+   #! /usr/bin/bash
+
+   echo "cd /tmp/XMDEClientAnalyzerBinary/ClientAnalyzer"
+   cd /tmp/XMDEClientAnalyzerBinary/ClientAnalyzer
+
+   echo "Running MDESupportTool"
+   ./MDESupportTool $@
+
+   ```
+
+#### Python Client Analyzer Run Script
+
+The Python Client Analyzer accepts command line parameters to perform different analysis tests. To provide similar capabilities during Live Response the execution script takes advantage of the `$@` bash variable to pass all input parameters provided to the script to the XMDE Client Analyzer.
+
+1. Create a bash file `MDESupportTool.sh` and paste the following content into it.
+
+   ```bash
+   #! /usr/bin/bash  
+
+   echo "cd /tmp/XMDEClientAnalyzer"
+   cd /tmp/XMDEClientAnalyzer 
+
+   echo "Running mde_support_tool"
+   ./mde_support_tool.sh $@
+
+   ```
+
+#### Running the Client Analyzer Script
+
+> [!NOTE]
+> If you have an active Live Response session you can skip Step 1.
+
+1. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate. 
+
+2. Select **Upload file to library**.
+
+3. Select **Choose file**.
+
+4. Select the downloaded file named `MDESupportTool.sh`, and then select **Confirm**.
+
+1. While still in the Live Response session, use the following commands to run the analyzer and collect the resulting file.
+
+   ```
+   run MDESupportTool.sh -parameters "--bypass-disclaimer -d"
+   GetFile "/tmp/your_archive_file_name_here.zip"
+   ```
+   
+## Collect Microsoft Defender for Endpoint support logs locally
+
+This section provides instructions on how to run the tool locally on the Linux machines.
 
 ## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.  
 If you're using a terminal, download the tool by entering the following command:
 
-       ```bash
-    wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
-    ```
-
-1. Verify the download.
+```
+   ```bash
+wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+```
+```1. Verify the download.
 
 - Linux
 
@@ -98,18 +273,12 @@ If you're using a terminal, download the tool by entering the following command:
     wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
     ```
 
-2. Verify the download
+1. Verify the download
 
-   - Linux
+- Linux
 
-    ```bash
+       ```bash
     echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11 XMDEClientAnalyzer.zip' | sha256sum -c
-    ```
-
-   - macOS
-
-    ```bash
-    echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.
@@ -186,25 +355,6 @@ Collect extensive machine performance tracing for analysis of a performance scen
 
 Usage example: `sudo ./MDESupportTool performance --frequency 2`
 
-#### Use OS trace (for macOS only)
-
-Use OS tracing facilities to record Defender for Endpoint performance traces.
-
-> [!NOTE]
-> This functionality exists in the Python solution only.
-
-```console
--h, --help       show this help message and exit
---length LENGTH  Length of time to record the trace (in seconds).
---mask MASK      Mask to select with event to trace. Defaults to all
-```
-
-On running this command for the first time, it installs a Profile configuration.
-
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
-
-Usage example `./mde_support_tool.sh trace --length 5`
-
 #### Exclude mode
 
 Add exclusions for audit-d monitoring.
@@ -268,7 +418,7 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 > [!NOTE]
 > This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
 
-## Result package contents on macOS and Linux
+## Result package contents on Linux
 
 - report.html
 
@@ -276,7 +426,7 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
   
 - mde_diagnostic.zip
 
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information).
+  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on [Linux](linux-resources.md#collect-diagnostic-information).
   
 - mde.xml
 
@@ -305,4 +455,22 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 - perf_benchmark.tar.gz
 
   Description: The performance test reports. You'll see this only if you're using the performance parameter.
+See also
+
+- [Client analyzer overview](overview-client-analyzer.md)
+
+- [Download and run the client analyzer](download-client-analyzer.md)
+
+- [Run the client analyzer on Windows](run-analyzer-windows.md)
+
+- [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+
+- [Understand the analyzer HTML report](analyzer-report.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
+
+
+
+
