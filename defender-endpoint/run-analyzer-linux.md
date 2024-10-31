@@ -28,13 +28,7 @@ f1.keywords: NOCSH
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-If you're experiencing reliability or device health issues with Defender for Endpoint on Linux, and you contact support, you might be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool. This article describes how to use the client analyzer tool locally on the device or together with live response. 
-
-
-
-The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running Linux.
-
-There are two different ways to run the client analyzer tool using live response or locally. In both cases, you can use a Python-based solution or a binary version that has no external Python dependency. 
+If you're experiencing reliability or device health issues with Defender for Endpoint on Linux, and you contact support, you might be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool. This article describes how to use the client analyzer tool locally on the device or together with live response. In either case, you can use a Python-based solution or a binary version that has no external Python dependency. 
 
 ## Use live response in Defender for Endpoint to collect support logs
 
@@ -46,20 +40,19 @@ The XMDE Client Analyzer tool can be downloaded as a [binary](https://aka.ms/XMD
 > [!IMPORTANT]
 > Window uses the Carriage Return and Line Feed invisible characters to represent the end of one line and beginning of a new line in a file, but Linux systems uses only the Line Feed invisible character at the end of its file lines. When using the following scripts, if done on Windows, this difference can result in errors and failures of the scripts to run. A potential solution to this is to utilize the Windows Subsystem for Linux and the `dos2unix` package to reformat the script so it aligns with the Unix and Linux format standard.
 
-### Installing the XMDE Client Analyzer
+### Install the XMDE Client Analyzer
 
-Both versions of XMDE Client Analyzer, binary and Python, a self-contained package that must be downloaded and extracted before executing, and the complete set of steps for this process can be found:
+Download and extract the the XMDE Client Analyzer. You can use either the binary or Python version, as follows:
 
-- [Running the Binary version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
+- [Binary version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
+- [Python version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
 
-- [Running the Python version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux)
-
-Due to the limited commands available in Live Response the steps detailed must be executed in a bash script, and by splitting the installation and execution portion of these commands it's possible to run the install script once, while running the execution script multiple times.
+Due to the limited commands available in live response, the steps detailed must be executed in a bash script. By splitting the installation and execution portion of these commands, it's possible to run the install script once, and run the execution script multiple times.
 
 > [!IMPORTANT]
-> The example scripts assume the machine has direct internet access and can retrieve the XMDE Client Analyzer from Microsoft. If the machine does not have direct internet access then the installation scripts will need to be updated to fetch the XMDE Client Analyzer from a location the machines can access successfully.
+> The example scripts assume the machine has direct internet access and can retrieve the XMDE Client Analyzer from Microsoft. If the machine does not have direct internet access, then the installation scripts must be updated to fetch the XMDE Client Analyzer from a location the machines can access successfully.
 
-#### Binary Client Analyzer Install Script
+#### Binary client analyzer install script
 
 The following script performs the first six steps of the [Running the Binary version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux). When complete, the XMDE Client Analyzer binary is available from the `/tmp/XMDEClientAnalyzerBinary/ClientAnalyzer` directory.
 
@@ -85,7 +78,7 @@ The following script performs the first six steps of the [Running the Binary ver
 
    ```
 
-#### Python Client Analyzer Install Script
+#### Python client analyzer install script
 
 The following script performs the first six steps of the [Running the Python version of the Client Analyzer](/defender-endpoint/run-analyzer-macos-linux). When complete, the XMDE Client Analyzer Python scripts are available from the `/tmp/XMDEClientAnalyzer` directory.
 
@@ -113,9 +106,9 @@ The following script performs the first six steps of the [Running the Python ver
 
    ```
 
-#### Running the Client Analyzer Install Scripts
+#### Run the client analyzer install scripts
 
-1. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
+1. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you want to investigate.
 
 2. Select **Upload file to library**.
 
@@ -129,9 +122,9 @@ The following script performs the first six steps of the [Running the Python ver
    run InstallXMDEClientAnalyzer.sh
    ```
 
-### Running the XMDE Client Analyzer
+### Run the XMDE client analyzer
 
-Live Response doesn't support running the XMDE Client Analyzer or Python directly, so an execution script is necessary.
+Live response doesn't support running the XMDE Client Analyzer or Python directly, so an execution script is necessary.
 
 > [!IMPORTANT]
 > The following scripts assume the XMDE Client Analyzer was installed using the same locations from the scripts mentioned earlier. If your organization has chosen to install the scripts into a different location, then the following scripts need to be updated to align with your organization's chosen installation location.
