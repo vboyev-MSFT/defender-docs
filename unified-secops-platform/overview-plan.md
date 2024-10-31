@@ -1,6 +1,6 @@
 ---
-title: Plan for your unified security operations platform deployment | Microsoft Defender
-description: Plan to deploy a Microsoft unified security operations platform with the Microsoft Defender portal, Microsoft Sentinel, and other Microsoft Defender services.
+title: Plan to deploy Microsoft's unified security operations platform | Microsoft Defender
+description: Plan to deploy Microsoft's unified security operations platform with the Microsoft Defender portal, Microsoft Sentinel, and other Microsoft Defender services.
 author: batamig
 ms.author: bagol
 ms.service: unified-secops-platform
@@ -32,6 +32,11 @@ The unified security operations platform pulls Microsoft Sentinel and several Mi
 - **Microsoft Defender for Cloud Apps**: [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)
 - **Microsoft Defender for Endpoint**: [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)
 
+Complete your deployment planning by checking prerequisites for both Microsoft Entra ID Protection and Microsoft Defender for Cloud, which are separate from Microsoft Defender XDR and Microsoft Sentinel. For more information, see:
+
+- **Microsoft Entra ID Protection**: [Plan an ID Protection deployment](/entra/id-protection/how-to-deploy-identity-protection?form=MG0AV3)
+- **Microsoft Defender for Cloud**: [Start planning multicloud protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section.
+
 ## Design a governence strategy
 
 <!--shared from zt / ops content-->
@@ -44,9 +49,9 @@ For example, the Microsoft Sentinel workspace in the following diagram is in the
 
 ## Plan your Log Analytics workspace architecture
 
-To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements.
+To use Microsoft Sentinel, you need a Log Analytics workspace. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements.
 
-It's a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
+We recommend creating separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
 
 The unified security operations platform, which provides access to Microsoft Sentinel in the Defender portal, supports only a single workspace. <!--isn't this no longer true? if so we need to update in ZT too-->
 
@@ -98,38 +103,8 @@ For more information, see:
 
 ## Next step
 
-Deployment overview
+[Deploy Microsoft's unified security operations platform](overview-deploy.md)
 
-This article introduces the activities that help you plan your Microsft unified security operations platform deployment.
+## Related content
 
-
-1. Preparation and Planning
-Assess Requirements: Identify the specific security needs and objectives of your organization.
-Gather Resources: Ensure you have the necessary licenses, permissions, and access to the Microsoft Defender portal.
-Review Documentation: Familiarize yourself with the relevant documentation on Microsoft Learn, such as the An external link was removed to protect your privacy.1.
-2. Initial Setup
-Create a Microsoft Defender Portal Account: If you don't already have one, create an account and log in to the Microsoft Defender portal.
-Configure Basic Settings: Set up your organization's basic security settings and preferences in the portal.
-3. Deploy Microsoft Defender Services
-Microsoft Defender for Endpoint: Deploy and configure Microsoft Defender for Endpoint to protect your devices.
-Microsoft Defender for Office 365: Set up Microsoft Defender for Office 365 to secure your email and collaboration tools.
-Microsoft Defender for Identity: Implement Microsoft Defender for Identity to protect your identities and detect threats.
-Microsoft Defender for Cloud Apps: Integrate Microsoft Defender for Cloud Apps to secure your cloud applications.
-Microsoft Defender XDR: Deploy Microsoft Defender XDR to unify and enhance threat detection and response across all Defender services1.
-4. Integrate Microsoft Sentinel
-Connect Microsoft Sentinel: Integrate Microsoft Sentinel with the Defender portal to enhance threat detection and response capabilities.
-Configure Data Connectors: Set up data connectors to ingest data from various sources into Microsoft Sentinel.
-Create and Customize Workbooks: Use workbooks to visualize and analyze security data in Microsoft Sentinel.
-5. Advanced Configuration
-Set Up Advanced Hunting: Enable advanced hunting capabilities to query and analyze security data across your environment.
-Configure Automated Response: Set up automated response actions to quickly mitigate threats.
-Implement Security Playbooks: Create and deploy security playbooks to automate common response actions.
-6. Monitoring and Maintenance
-Continuous Monitoring: Regularly monitor your security operations platform for alerts and incidents.
-Update and Patch: Keep your security tools and systems up to date with the latest patches and updates.
-Review and Optimize: Periodically review your security configurations and optimize them based on new threats and best practices.
-7. Training and Support
-Provide Training: Ensure your security team is trained on using the Microsoft Defender portal and its features.
-Access Support: Utilize Microsoft support resources and community forums for assistance and troubleshooting.
-
-## Next step
+For more information, see [Use SIEM and XDR to respond to incidents with Zero Trust](/security/operations/siem-xdr-overview?bc=%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json&toc=%2Fsecurity%2Fzero-trust%2Ftoc.json&tabs=defender-portal).
