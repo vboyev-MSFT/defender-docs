@@ -122,7 +122,7 @@ The tool currently requires Python version 3 or later to be installed on your de
    chmod a+x mde_support_tool.sh
    ```
 
-6. Run as a non-root user to install required dependencies:
+6. Run as a nonroot user to install required dependencies:
 
    ```bash
    ./mde_support_tool.sh
@@ -160,7 +160,7 @@ Use the following command to get the machine diagnostic.
 
 Usage example: `sudo ./MDESupportTool -d`
 
-NOTE: The log level auto-reset feature only available in 2405 or newer client version.
+NOTE: The log level autoreset feature only available in 2405 or newer client version.
 
 ### Positional arguments
 
@@ -192,7 +192,7 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 
 On running this command for the first time, it installs a Profile configuration.
 
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
+To approve profile installation, see the [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
 
 Usage example `./mde_support_tool.sh trace --length 5`
 
