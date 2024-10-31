@@ -39,23 +39,23 @@
       - name: Prerequisites
         items:
         - name: Microsoft Defender XDR prerequisites
-          href: https://learn.microsoft.com/en-us/defender-xdr/prerequisites
+          href: /defender-xdr/prerequisites
         - name: Microsoft Sentinel prerequisites
-          href: https://learn.microsoft.com/en-us/azure/sentinel/prerequisites
+          href: /azure/sentinel/prerequisites
       - name: Workspace architecture
         items:
         - name: Design workspace architecture
-          href: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-design?toc=%2Fazure%2Fsentinel%2FTOC.json&bc=%2Fazure%2Fsentinel%2Fbreadcrumb%2Ftoc.json
+          href: /azure/azure-monitor/logs/workspace-design?toc=%2Fazure%2Fsentinel%2FTOC.json&bc=%2Fazure%2Fsentinel%2Fbreadcrumb%2Ftoc.json
         - name: Review sample workspace designs
-          href: https://learn.microsoft.com/en-us/azure/sentinel/sample-workspace-designs
+          href: /azure/sentinel/sample-workspace-designs
       - name: Prioritize data connectors
-        href: https://learn.microsoft.com/en-us/azure/sentinel/prioritize-data-connectors
+        href: /azure/sentinel/prioritize-data-connectors
       - name: Plan roles and permissions
         items:
         - name: Microsoft Defender XDR roles and permissions
-          href: https://learn.microsoft.com/en-us/defender-xdr/manage-rbac
+          href: /defender-xdr/manage-rbac
         - name: Microsoft Sentinel roles and permissions
-          href: https://learn.microsoft.com/en-us/azure/sentinel/roles
+          href: /azure/sentinel/roles
       - name: Plan costs and billing
         items:
         - name: Log retention plans in Microsoft Sentinel
@@ -65,11 +65,11 @@
     - name: Deploy unified security operations ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
       items:
       - name: Turn on Microsoft Defender XDR
-        href: https://learn.microsoft.com/en-us/defender-xdr/m365d-enable?view=o365-worldwide
+        href: /defender-xdr/m365d-enable?view=o365-worldwide
       - name: Deploy supported services
-        href: https://learn.microsoft.com/en-us/defender-xdr/deploy-supported-services?view=o365-worldwide
+        href: /defender-xdr/deploy-supported-services?view=o365-worldwide
       - name: Create your Log Analytics workspace
-        href: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal
+        href: /azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal
       - name: Connect Microsoft Sentinel to Microsoft Defender
         href: /defender-xdr/microsoft-sentinel-onboard
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX

@@ -35,7 +35,7 @@ The unified security operations platform pulls Microsoft Sentinel and several Mi
 Complete your deployment planning by checking prerequisites for both Microsoft Entra ID Protection and Microsoft Defender for Cloud, which are separate from Microsoft Defender XDR and Microsoft Sentinel. For more information, see:
 
 - **Microsoft Entra ID Protection**: [Plan an ID Protection deployment](/entra/id-protection/how-to-deploy-identity-protection?form=MG0AV3)
-- **Microsoft Defender for Cloud**: [Start planning multicloud protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section.
+- **Microsoft Defender for Cloud**: [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section.
 
 ## Design a governence strategy
 
@@ -74,14 +74,14 @@ For more information, see:
 
 - **Microsoft Defender XDR**:
 
-    - [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](https://learn.microsoft.com/en-us/defender-xdr/m365d-permissions)
-    - [Microsoft Defender XDR Unified role-based access control (RBAC)](https://learn.microsoft.com/en-us/defender-xdr/manage-rbac) <!--are these both relevant?-->
+    - [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/defender-xdr/m365d-permissions)
+    - [Microsoft Defender XDR Unified role-based access control (RBAC)](/defender-xdr/manage-rbac) <!--are these both relevant?-->
 
 - **Microsoft Sentinel**: [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)
-- **Microsoft Defender for Identity**: [Microsoft Defender for Identity role groups](https://learn.microsoft.com/en-us/defender-for-identity/role-groups)
-- **Microsoft Defender for Cloud Apps**: [Configure admin access](https://learn.microsoft.com/en-us/defender-cloud-apps/manage-admins)
-- **Microsoft Defender for Endpoint**: [Assign roles and permissions for Microsoft Defender for Endpoint deployment](https://learn.microsoft.com/en-us/defender-endpoint/prepare-deployment)
-- **Microsoft Defender for Office 365**: [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](https://learn.microsoft.com/en-us/defender-office-365/mdo-portal-permissions)
+- **Microsoft Defender for Identity**: [Microsoft Defender for Identity role groups](/defender-for-identity/role-groups)
+- **Microsoft Defender for Cloud Apps**: [Configure admin access](/defender-cloud-apps/manage-admins)
+- **Microsoft Defender for Endpoint**: [Assign roles and permissions for Microsoft Defender for Endpoint deployment](/defender-endpoint/prepare-deployment)
+- **Microsoft Defender for Office 365**: [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](/defender-office-365/mdo-portal-permissions)
 
 ## Plan Microsoft Sentinel costs
 

@@ -47,7 +47,7 @@ Configure Microsoft Entra ID Protection to enhance your security posture and add
 
 Complete deploying Microsoft Defender XDR tools by deploying Microsoft Defender for Cloud. Microsoft Defender for Cloud provides a unified security management experience for your cloud resources, and can also send signals to Microsoft Defender XDR. For example, you might want to start by connecting your Azure subscriptions to Microsoft Defender for Cloud, and then move on to other cloud environments.
 
-For more information, see [Connect your Azure subscriptions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-azure-subscription).
+For more information, see [Connect your Azure subscriptions](/azure/defender-for-cloud/connect-azure-subscription).
 
 ## Architect your workspace and onboard to Microsoft Sentinel
 
@@ -73,10 +73,10 @@ For more information, see [Connect Microsoft Sentinel to Microsoft Defender](../
 ## Post-deployment tasks
 
 
-Enable health and auditing https://learn.microsoft.com/en-us/azure/sentinel/enable-monitoring?tabs=azure-portal
-Configure content https://learn.microsoft.com/en-us/azure/sentinel/configure-content
-Enable User and Entity Behavior Analytics (UEBA)	Enable and use the UEBA feature to streamline the analysis process. https://learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?tabs=azure
-Set up interactive and long-term data retention	Set up interactive and long-term data retention, to make sure your organization retains the data that's important in the long term. https://learn.microsoft.com/en-us/azure/sentinel/configure-data-retention-archive
+Enable health and auditing /azure/sentinel/enable-monitoring?tabs=azure-portal
+Configure content /azure/sentinel/configure-content
+Enable User and Entity Behavior Analytics (UEBA)	Enable and use the UEBA feature to streamline the analysis process. /azure/sentinel/enable-entity-behavior-analytics?tabs=azure
+Set up interactive and long-term data retention	Set up interactive and long-term data retention, to make sure your organization retains the data that's important in the long term. /azure/sentinel/configure-data-retention-archive
 
 
 ### Ingest data sources
