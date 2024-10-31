@@ -84,7 +84,7 @@ There are several different types of exclusions to consider. Some types of exclu
 - **[Custom exclusions](#custom-exclusions)**: These are exclusions that you define for specific use cases or scenarios, and for certain operating systems, such as [Mac](#exclusions-on-mac), [Linux](#exclusions-on-linux), and [Windows](#exclusions-on-windows).
 - **[Preconfigured antivirus exclusions](#antivirus-preconfigured-exclusions)**: These are exclusions that you don't have to define, such as [automatic server role exclusions](#automatic-server-role-exclusions) and [built-in antivirus exclusions](#built-in-antivirus-exclusions). Even though you don't have to define these, it's helpful to know what they are and how they work.
 - **[Attack surface reduction exclusions](#attack-surface-reduction-exclusions)**: These are exclusions to prevent attack surface reduction capabilities from blocking legitimate applications that your organization might be using. 
-- **[Automation folder exclusions](#automation-folder-exclusions)**: These are exclusions that you define to prevent automated investigation and remediation capablities from applying to specific files or folders.
+- **[Automation folder exclusions](#automation-folder-exclusions)**: These are exclusions that you define to prevent automated investigation and remediation capabilities from applying to specific files or folders.
 - **[Controlled folder access exclusions](#controlled-folder-access-exclusions)**: These are exclusions to allow certain apps or executables to access protected folders.
 - **[Custom remediation actions](#custom-remediation-actions)**: These are actions that you specify for Microsoft Defender Antivirus when certain types of detections.
 
@@ -131,7 +131,7 @@ For more information, see [Configure and validate exclusions for Microsoft Defen
 
 #### Exclusions on Windows
 
-Microsoft Defender Antivirus can be configured to exclude combinations of processes, files, and extensions from scheduled scans, on-demdand scans and real-time protection. See [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
+Microsoft Defender Antivirus can be configured to exclude combinations of processes, files, and extensions from scheduled scans, on-demdand scans, and real-time protection. See [Configure custom exclusions for Microsoft Defender Antivirus](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).
 
 For more granular control that helps minimize protection gaps, consider using [Contextual file and process exclusions](/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus).  
 
@@ -246,7 +246,7 @@ For more information, see [automated investigation and remediation and indicator
 
 ## Other server workloads and exclusions
 
-If your organization is using other server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic server role exclusions](#automatic-server-role-exclusions) feature (and only when using their default installation location). You'll likely need to define antivirus exclusions for these other workloads, or for all workloads if you disable automatic exclusions.
+If your organization is using other server workloads, such as Exchange Server, SharePoint Server, or SQL Server, keep in mind that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic server role exclusions](#automatic-server-role-exclusions) feature (and only when using their default installation location). You'll likely need to define antivirus exclusions for these other workloads, or for all workloads if you disable automatic exclusions.
 
 Here are some examples of technical documentation to identify and implement the exclusions you need:
 
