@@ -16,6 +16,7 @@ ms.collection:
 - tier3
 ms.custom:
 - cx-ti
+- cx-ah
 ms.topic: error-reference
 ms.date: 10/29/2024
 ---
