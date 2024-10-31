@@ -127,11 +127,11 @@ The following script performs the first six steps of the [Running the Python ver
 Live response doesn't support running the XMDE Client Analyzer or Python directly, so an execution script is necessary.
 
 > [!IMPORTANT]
-> The following scripts assume the XMDE Client Analyzer was installed using the same locations from the scripts mentioned earlier. If your organization has chosen to install the scripts into a different location, then the following scripts need to be updated to align with your organization's chosen installation location.
+> The following scripts assume the XMDE Client Analyzer was installed using the same locations from the scripts mentioned earlier. If your organization has chosen to install the scripts into a different location, then the scripts must be updated to align with your organization's chosen installation location.
 
-#### Binary Client Analyzer Run Script
+#### Binary client analyzer run script
 
-The Binary Client Analyzer accepts command line parameters to perform different analysis tests. To provide similar capabilities during Live Response the execution script takes advantage of the `$@` bash variable to pass all input parameters provided to the script to the XMDE Client Analyzer.
+The binary version of the client analyzer accepts command line parameters to perform different analysis tests. To provide similar capabilities during live response, the execution script takes advantage of the `$@` bash variable to pass all input parameters provided to the script to the XMDE Client Analyzer.
 
 1. Create a bash file `MDESupportTool.sh` and paste the following content into it.
 
@@ -146,9 +146,9 @@ The Binary Client Analyzer accepts command line parameters to perform different 
 
    ```
 
-#### Python Client Analyzer Run Script
+#### Python client analyzer run script
 
-The Python Client Analyzer accepts command line parameters to perform different analysis tests. To provide similar capabilities during Live Response the execution script takes advantage of the `$@` bash variable to pass all input parameters provided to the script to the XMDE Client Analyzer.
+The Python version of the client analyzer accepts command line parameters to perform different analysis tests. To provide similar capabilities during live response, the execution script takes advantage of the `$@` bash variable to pass all input parameters provided to the script to the XMDE Client Analyzer.
 
 1. Create a bash file `MDESupportTool.sh` and paste the following content into it.
 
@@ -163,12 +163,12 @@ The Python Client Analyzer accepts command line parameters to perform different 
 
    ```
 
-#### Running the Client Analyzer Script
+#### Rung the client analyzer script
 
 > [!NOTE]
-> If you have an active Live Response session you can skip Step 1.
+> If you have an active live response session you can skip Step 1.
 
-1. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate. 
+1. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you want to investigate. 
 
 2. Select **Upload file to library**.
 
@@ -176,7 +176,7 @@ The Python Client Analyzer accepts command line parameters to perform different 
 
 4. Select the downloaded file named `MDESupportTool.sh`, and then select **Confirm**.
 
-5. While still in the Live Response session, use the following commands to run the analyzer and collect the resulting file:
+5. While still in the live response session, use the following commands to run the analyzer and collect the resulting file:
 
    ```
    run MDESupportTool.sh -parameters "--bypass-disclaimer -d"
@@ -187,7 +187,7 @@ The Python Client Analyzer accepts command line parameters to perform different 
 
 This section provides instructions on how to run the tool locally on the Linux machines.
 
-### Running the binary version of the client analyzer
+### Run the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.
 
@@ -222,29 +222,20 @@ This section provides instructions on how to run the tool locally on the Linux m
    - `SupportToolLinuxBinary.zip`: For all Linux devices
    - `SupportToolMacOSBinary.zip`: For Mac devices
 
-5. Unzip one of the above 2 zip files based on the machine you need to investigate.
+5. Depending on the operating system, unzip the appropriate file for the machine you want to investigate.
 
-   When using a terminal, unzip the file by entering one of the following commands based on OS type:
+   | OS type | Command |
+   |--|--|
+   | Linux | `unzip -q SupportToolLinuxBinary.zip` |
+   | Mac | `unzip -q SupportToolMacOSBinary.zip` |
 
-   - Linux
-
-     ```bash
-     unzip -q SupportToolLinuxBinary.zip
-     ```
-
-   - Mac
-
-     ```bash
-     unzip -q SupportToolMacOSBinary.zip
-     ```
-
-6. Run the tool as _root_ to generate diagnostic package:
+6. Run the tool as root to generate diagnostic package:
 
    ```bash
    sudo ./MDESupportTool -d
    ```
 
-## Running the Python-based client analyzer
+## Rung the Python-based client analyzer
 
 > [!NOTE]
 > - The analyzer depends on few extra PIP packages (`decorator`, `sh`, `distro`, `lxml`, and `psutil`) which are installed in the operating system when in root to produce the result output. If not installed, the analyzer attempts to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
@@ -256,28 +247,27 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
-    If you're using a terminal, download the tool by running the following command:
+   If you're using a terminal, download the tool by running the following command:
 
-    ```bash
-    wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
-    ```
+   ```bash
+   wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
+   ```
 
-1. Verify the download
+2. Verify the download.
 
-- Linux
+   ```bash
+   echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11 XMDEClientAnalyzer.zip' | sha256sum -c
+   ```
 
-       ```bash
-    echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11 XMDEClientAnalyzer.zip' | sha256sum -c
-    ```
+3. Extract the contents of `XMDEClientAnalyzer.zip` on the machine.
 
-3. Extract the contents of XMDEClientAnalyzer.zip on the machine.
-    If you're using a terminal, extract the files by using the following command:
+   If you're using a terminal, extract the files by using the following command:
 
-    ```bash
-    unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
-    ```
+   ```bash
+   unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
+   ```
 
-4. Change directory to the extracted location.
+4. Change your directory to the extracted location.
 
     ```bash
     cd XMDEClientAnalyzer
@@ -409,53 +399,26 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 ## Result package contents on Linux
 
-- report.html
+| File | Description |
+|--|--|
+| `report.html` | The main HTML output file that contains the findings and guidance from running the client analyzer tool on the device. This file is only generated when running the Python-based version of the client analyzer tool. |
+| `mde_diagnostic.zip` | Same diagnostic output that gets generated when running *mdatp diagnostic create* on [Linux](linux-resources.md#collect-diagnostic-information). |
+| `mde.xml` | XML output that is generated while running and is used to build the html report file. |
+| `Processes_information.txt` | Contains the details of the running Microsoft Defender for Endpoint related processes on the system. |
+| `Log.txt` | Contains the same log messages written on screen during the data collection. |
+| `Health.txt` | The same basic health output that is shown when running *mdatp health* command. |
+| `Events.xml` | Additional XML file used by the analyzer when building the HTML report. |
+| `Audited_info.txt` | Details on audited service and related components for [Linux](linux-resources.md) OS.| 
+| `perf_benchmark.tar.gz` | The performance test reports. You'll see this only if you're using the performance parameter. |
 
-  Description: The main HTML output file that contains the findings and guidance from running the client analyzer tool on the device. This file is only generated when running the Python-based version of the client analyzer tool.
-  
-- mde_diagnostic.zip
 
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on [Linux](linux-resources.md#collect-diagnostic-information).
-  
-- mde.xml
-
-  Description: XML output that is generated while running and is used to build the html report file.
-  
-- Processes_information.txt
-
-  Description: contains the details of the running Microsoft Defender for Endpoint related processes on the system.
-  
-- Log.txt
-
-  Description: contains the same log messages written on screen during the data collection.
-  
-- Health.txt
-
-  Description: The same basic health output that is shown when running *mdatp health* command.
-  
-- Events.xml
-
-  Description: Additional XML file used by the analyzer when building the HTML report.
-  
-- Audited_info.txt
-
-  Description: details on audited service and related components for [Linux](linux-resources.md) OS.
-  
-- perf_benchmark.tar.gz
-
-  Description: The performance test reports. You'll see this only if you're using the performance parameter.
-See also
+## See also
 
 - [Client analyzer overview](overview-client-analyzer.md)
-
 - [Download and run the client analyzer](download-client-analyzer.md)
-
 - [Run the client analyzer on Windows](run-analyzer-windows.md)
-
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
-
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
-
 - [Understand the analyzer HTML report](analyzer-report.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
