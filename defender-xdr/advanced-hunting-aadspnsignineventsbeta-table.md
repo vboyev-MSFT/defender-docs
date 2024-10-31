@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.custom: 
+ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
