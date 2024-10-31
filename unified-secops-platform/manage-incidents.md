@@ -157,10 +157,10 @@ You can export an incident's data to PDF through the **Export incident as PDF** 
 The incident data exported includes the following information:
 
 - An overview containing the incident details
-- The [attack story](investigate-incidents.md#attack-story) graph and threat categories
-- The impacted [assets](investigate-incidents.md#assets), covering up to 10 assets for each asset type
-- The [evidence list](investigate-incidents.md#evidence-and-response) covering up to 100 items
-- Supporting data, including all [related alerts](investigate-incidents.md#alerts) and activities recorded in the [activity log](#activity-log)
+- The [attack story](/defender-xdr/investigate-incidents#attack-story) graph and threat categories
+- The impacted [assets](/defender-xdr/investigate-incidents#assets), covering up to 10 assets for each asset type
+- The [evidence list](/defender-xdr/investigate-incidents#evidence-and-response) covering up to 100 items
+- Supporting data, including all [related alerts](/defender-xdr/investigate-incidents#alerts) and activities recorded in the [activity log](#activity-log)
 
 Here's an example of the exported PDF:
 
@@ -168,8 +168,8 @@ Here's an example of the exported PDF:
 
 If you have the [Copilot for Security](/security-copilot/microsoft-security-copilot) license, the exported PDF contains the following additional incident data:
 
-- [Incident summary](security-copilot-m365d-incident-summary.md)
-- [Incident report](security-copilot-m365d-create-incident-report.md)
+- [Incident summary](/defender-xdr/security-copilot-m365d-incident-summary)
+- [Incident report](/defender-xdr/security-copilot-m365d-create-incident-report)
 
 The export to PDF function is also available in the Copilot side panel. When you select the **More actions** ellipsis (...) on the upper right corner of the incident report results card, you can choose **Export incident as PDF**.
 
@@ -197,16 +197,16 @@ The report is cached for a couple of minutes. The system provides the previously
 
 ## Next steps
 
-For new incidents, begin your [investigation](investigate-incidents.md).
+For new incidents, begin your [investigation](/defender-xdr/investigate-incidents).
 
-For in-process incidents, continue your [investigation](investigate-incidents.md).
+For in-process incidents, continue your [investigation](/defender-xdr/investigate-incidents).
 
-For resolved incidents, perform a [post-incident review](respond-first-incident-remediate.md).
+For resolved incidents, perform a [post-incident review](/defender-xdr/respond-first-incident-remediate).
 
 ## See also
 
-- [Incidents overview](incidents-overview.md)
-- [Prioritize incidents](incident-queue.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Overview of incidents and alerts in the Microsoft Defender portal](incidents-alerts-overview.md)
+- [Prioritize incidents](prioritize-incidents.md)
+- [Investigate incidents](/defender-xdr/investigate-incidents)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]

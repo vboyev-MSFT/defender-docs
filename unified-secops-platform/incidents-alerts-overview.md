@@ -48,7 +48,7 @@ Instead, the correlation engines and algorithms in the Microsoft Defender portal
 - Collections of evidence supporting the attack story: bad actors' user accounts and device information and address, malicious files and processes, relevant threat intelligence, and so on
 - A textual summary of the attack story
 
-Incidents also provide you with a framework for managing and documenting your investigations and threat response. For more information about incidents' functionality in this regard, see [Manage incidents in Microsoft Defender](../defender-xdr/manage-incidents.md).
+Incidents also provide you with a framework for managing and documenting your investigations and threat response. For more information about incidents' functionality in this regard, see [Manage incidents in Microsoft Defender](manage-incidents.md).
 
 <!-- INCLUDE THIS?
 [!INCLUDE [unified-soc-preview](../includes/unified-soc-preview.md)]
