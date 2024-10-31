@@ -27,9 +27,9 @@ ms.date: 10/16/2024
 
 # Connect Microsoft Sentinel to the Microsoft Defender portal
 
-Microsoft Sentinel is generally available within Microsoft's unified security operations platform in the Microsoft Defender portal. When you onboard Microsoft Sentinel to the Defender portal with Microsoft Defender XDR, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
+Microsoft Sentinel is generally available within Microsoft's unified security operations (SecOps) platform in the Microsoft Defender portal. When you onboard Microsoft Sentinel to the Defender portal with Microsoft Defender XDR, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
 
-- Blog post: [General availability of the Microsoft unified security operations platform](https://aka.ms/unified-soc-announcement)
+- Blog post: [General availability of the Microsoft's unified security operations platform](https://aka.ms/unified-soc-announcement)
 - Blog post: [Frequently asked questions about the unified security operations platform](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/frequently-asked-questions-about-the-unified-security-operations/ba-p/4212048)
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 - [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
@@ -49,7 +49,7 @@ The Microsoft Defender portal supports a single Microsoft Entra tenant and the c
 
 ### Microsoft Sentinel prerequisites
 
-To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
+To onboard and use Microsoft Sentinel in the Defender portal, you must have the following resources and access:
 
 - A Log Analytics workspace that has Microsoft Sentinel enabled
 - The data connector for Microsoft Defender XDR enabled in Microsoft Sentinel for incidents and alerts. Install the Defender XDR solution and configure the data connector to connect Microsoft Sentinel to the Defender portal. For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy). <!--Question to Simaya about configuring the other options on this connector - would we still need that for unified SOC. Would they go  back and configure those settings? https://learn.microsoft.com/en-us/azure/sentinel/connect-microsoft-365-defender-->
@@ -65,14 +65,13 @@ To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must
 
   After you connect Microsoft Sentinel to the Defender portal, your existing Azure role-based access control (RBAC) permissions allow you to work with the Microsoft Sentinel features that you have access to. Continue to manage roles and permissions for your Microsoft Sentinel users from the Azure portal. Any Azure RBAC changes are reflected in the Defender portal. For more information about Microsoft Sentinel permissions, see [Roles and permissions in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource | Microsoft Learn](/azure/sentinel/resource-context-rbac).
 
-### Unified security operations platform prerequisites 
+### Microsoft's unified SecOps platform prerequisites 
 
-To unify capabilities with Microsoft Defender XDR in the unified security operations platform, you must have the following resources and access:
+To unify capabilities with Defender XDR in Microsoft's unified SecOps platform, you must have the following resources and access:
 
-- Microsoft Defender XDR onboarded to the Microsoft Entra tenant
-- Access to Microsoft Defender XDR in the Defender portal
-
-<!--Question to Simaya about configuring the other options on this connector - would we still need that for unified SOC. Would they go  back and configure those settings? https://learn.microsoft.com/en-us/azure/sentinel/connect-microsoft-365-defender-->
+- Licensing for Defender XDR, as described in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites)
+- Microsoft Defender XDR onboarded to the same Microsoft Entra tenant as the Microsoft Sentinel workspace
+- Access to Microsoft Defender XDR in the Defender portal, as described in in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites#required-permissions)
 
 ## Onboard Microsoft Sentinel
 
