@@ -14,21 +14,6 @@ ms.collection:
 
 ---
 
-<!-- --------------------------------------
-
-- Use this template with pattern instructions for:
-
-Concept
-
-- Before you sign off or merge:
-
-Remove all comments except the customer intent.
-
-- Feedback:
-
-https://aka.ms/patterns-feedback
-
--->
 
 
 # Unified security operations platform planning overview
@@ -102,7 +87,7 @@ For more information, see:
 - **Microsoft Defender for Endpoint**: [Assign roles and permissions for Microsoft Defender for Endpoint deployment](https://learn.microsoft.com/en-us/defender-endpoint/prepare-deployment)
 - **Microsoft Defender for Office 365**: [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](https://learn.microsoft.com/en-us/defender-office-365/mdo-portal-permissions)
 
-## Plan costs
+## Plan Microsoft Sentinel costs
 
 Start planning your budget, considering cost implications for each planned scenario. Make sure that your budget covers the cost of data ingestion for both Microsoft Sentinel and Azure Log Analytics, any playbooks that will be deployed, and so on.
 
@@ -147,69 +132,4 @@ Review and Optimize: Periodically review your security configurations and optimi
 Provide Training: Ensure your security team is trained on using the Microsoft Defender portal and its features.
 Access Support: Utilize Microsoft support resources and community forums for assistance and troubleshooting.
 
-<!-- Required: Article headline - H1
-
-Identify the product, service, or feature the
-article covers.
-
--->
-
-[Introduce and explain the purpose of the article.]
-
-<!-- Required: Introductory paragraphs (no heading)
-
-Write a brief introduction that can help the user
-determine whether the article is relevant for them
-and to describe the concept the article covers.
-
-For definitive concepts, it's better to lead with a
-sentence in the form, "X is a (type of) Y that does Z."
-
--->
-
-## Prerequisites
-
-<!--Optional: Prerequisites - H2
-
-If this section is needed, make "Prerequisites" your
-first H2 in the article.
-
-Use clear and unambiguous language and use
-an unordered list format. 
-
--->
-
-## [Main idea]
-
-[Describe a main idea.]
-
-<!-- Required: Main ideas - H2
-
-Use one or more H2 sections to describe the main ideas
-of the concept.
-
-Follow each H2 heading with a sentence about how
-the section contributes to the whole. Then, describe 
-the concept's critical features as you define what it is.
-
--->
-
-## Related content
-
-- [Related article title](link.md)
-- [Related article title](link.md)
-- [Related article title](link.md)
-
-<!-- Optional: Related content - H2
-
-Consider including a "Related content" H2 section that 
-lists links to 1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
+## Next step
