@@ -14,7 +14,9 @@ ms.collection:
   - tier1
   - essentials-get-started
 ms.topic: conceptual
-ms.custom: cx-ean
+ms.custom: 
+- cx-ti
+- cx-ean
 search.appverid: met150
 ms.date: 10/30/2024
 ---
