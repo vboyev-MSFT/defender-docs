@@ -479,6 +479,9 @@
             href: run-analyzer-windows.md
           - name: Run the client analyzer on macOS or Linux
             href: run-analyzer-macos-linux.md
+          - name: Run the client analyzer on Linux
+            href: run-analyzer-linux.md
+            displayName: xMDEClientAnalyzer xMDEClientAnalyzerBinary Linux
           - name: Data collection for advanced troubleshooting on Windows
             href: data-collection-analyzer.md
           - name: Understand the analyzer HTML report
