@@ -39,7 +39,7 @@ Monitor the coverage and configuration of physical and virtual workstations, ser
 
 ## Enterprise IoT Security
 
-IoT devices are often connected to endpoints, to one another or to the internet, which means they're potential targets for cyberattacks. It's imperative for businesses to monitor the security of their IoT devices, including their spread, configuration, connectivity, exposure, and behavior. This initiative provides overall visibility into the risk introduced by IoT devices in the enterprise and the resilience the organization has to mitigate it.
+IoT devices are often connected to endpoints, to one another or to the internet, which means they're potential targets for cyber attacks. It's imperative for businesses to monitor the security of their IoT devices, including their spread, configuration, connectivity, exposure, and behavior. This initiative provides overall visibility into the risk introduced by IoT devices in the enterprise and the resilience the organization has to mitigate it.
 
 ## External Attack Surface Protection
 
@@ -59,7 +59,7 @@ Ransomware attacks have become increasingly common in recent years, and they can
 
 ## SaaS Security
 
-This initiative focuses on displaying the current state of SaaS (software as a service) security coverage, health, configuration, and performance. It consists of metrics across multiple domains and disciplines to provide security managers with a high-level view into their SaaS security posture management. To make the most of this Initiative, activate application connectors for the following: Microsoft 365, Salesforce, ServiceNow, GitHub, Okta, Citrix ShareFile, DocuSign, Dropbox, Google Workspace, NetDocuments, Workplace (preview), Zendesk, Zoom (preview), Atlassian. Learn more on connectors enablement: https://aka.ms/AAs4lmg
+This initiative focuses on displaying the current state of SaaS (software as a service) security coverage, health, configuration, and performance. It consists of metrics across multiple domains and disciplines to provide security managers with a high-level view into their SaaS security posture management. To make the most of this Initiative, activate application connectors for the following: Microsoft 365, Salesforce, ServiceNow, GitHub, Okta, Citrix ShareFile, DocuSign, Dropbox, Google Workspace, NetDocuments, Workplace (preview), Zendesk, Zoom (preview), Atlassian. Learn more on connectors enablement: [https://aka.ms/AAs4lmg](https://aka.ms/AAs4lmg)
 
 ## Vulnerability Assessment
 
