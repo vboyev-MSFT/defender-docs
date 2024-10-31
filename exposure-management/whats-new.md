@@ -31,7 +31,7 @@ Security Exposure Management is currently in public preview.
 
 This new initiative aims at improving the security posture of cloud applications used by the organization. It allows practitioners to work on posture improvements as part of their efforts to enhance security measures
 
-For more information, see, [Review security initiatives](https://learn.microsoft.com/en-us/security-exposure-management/initiatives)
+For more information, see, [Review security initiatives](initiatives.md)
 
 ## October 2024
 
