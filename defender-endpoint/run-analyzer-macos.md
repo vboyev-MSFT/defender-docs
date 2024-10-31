@@ -1,16 +1,23 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Run the client analyzer on macOS
-description: Running the client analyzer on macOS
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+description: Learn how to use the MDE Client Analyzer on Mac to identify health or performance issue causes.
+author: denisebmsft
+ms.author: deniseb
+manager: deniseb
+ms.reviewer: yongrhee
 ms.service: defender-endpoint
-ms.topic: troubleshooting-general
-ms.date:     10/30/2024
 ms.subservice: macos
+ms.localizationpriority: medium
+ms.topic: troubleshooting-general
+ms.date: 10/31/2024
+ms.custom: partner-contribution
+ms.collection:
+- m365-security
+- tier3
+- mde-macos
+search.appverid: met150
+audience: ITPro
+f1.keywords: NOCSH 
 ---
 
 # Run the client analyzer on macOS
