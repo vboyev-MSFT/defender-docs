@@ -57,7 +57,7 @@ This article explains the various types of exclusions that you can define, how e
 
 ## Alternatives to creating exclusions and allow indicators
 
-Creating an exclusion or an allow indicator creates a protection gap. These techniques should only be used after determining the root cause of the issue.  Until that determination is made, consider these alternatives.
+Creating an exclusion or an allow indicator creates a protection gap. These techniques should only be used after determining the root cause of the issue. Until that determination is made, consider these alternatives.
 
 ### Submitting files for analysis
 
