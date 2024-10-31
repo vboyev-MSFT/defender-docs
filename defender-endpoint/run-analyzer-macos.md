@@ -269,8 +269,8 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 | `Processes_information.txt` | Contains the details of the running Microsoft Defender for Endpoint related processes on the system. |
 | `Log.txt` | Contains the same log messages written on screen during the data collection. |
 | `Health.txt` | The same basic health output that is shown when running *mdatp health* command. |
-| `Events.xml` | Additional XML file used by the analyzer when building the HTML report. |
+| `Events.xml` | Another XML file used by the analyzer when building the HTML report. |
 | `Audited_info.txt` | Details on audited service and related components for [Linux](linux-resources.md) OS. |
-| `perf_benchmark.tar.gz` | The performance test reports. You'll see this only if you're using the performance parameter. |
+| `perf_benchmark.tar.gz` | The performance test reports. You see this file only if you're using the performance parameter. |
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
