@@ -22,73 +22,63 @@ f1.keywords: NOCSH
 
 # Run the client analyzer on macOS
 
-The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running on macOS.
+If you're experiencing reliability or device health issues with Microsoft Defender for Endpoint on macOS, you can use the XMDE Client Analyzer to diagnose these issues. This article describes two ways to use the client analyzer tool:
 
-There are two ways to run the client analyzer tool:
+- [Use the binary version of the client analyzer](#use-the-binary-version-of-the-client-analyzer)
+- 
 
 1. Using a binary version (no external Python dependency)
 2. Using a Python-based solution
 
-## Running the binary version of the client analyzer
+## Use the binary version of the client analyzer
 
-1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS machine you need to investigate.  
-If you're using a terminal, download the tool by entering the following command:
+1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS machine you need to investigate. 
 
-       ```bash
-    wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
-    ```
+   If you're using a terminal, download the tool by running the following command:
 
-1. Verify the download.
+   ```bash
+   wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   ```
 
-- macOS
+2. Verify the download.
 
-       ```bash
-    echo '2A9BF0A6183831BE43C7BCB7917A40D772D226301B4CDA8EE4F258D00B6E4E97  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
-    ```
+   ```bash
+   echo '2A9BF0A6183831BE43C7BCB7917A40D772D226301B4CDA8EE4F258D00B6E4E97  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
+   ```
 
+2. Extract the contents of `XMDEClientAnalyzerBinary.zip` on the machine. 
 
-2. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
+   If you're using a terminal, extract the files by running the following command:
 
-    If you're using a terminal, extract the files by entering the following command:
+   ```bash
+   unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
+   ```
 
-    ```bash
-    unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
-    ```
+3. Change to the tool's directory by running the following command:
 
-3. Change to the tool's directory by entering the following command:
+   ```bash
+   cd XMDEClientAnalyzerBinary
+   ```
 
-    ```bash
-    cd XMDEClientAnalyzerBinary
-    ```
+4. Notice that the following two zipped files are produced:
 
-4. Two new zip files are produced:
+   - `SupportToolLinuxBinary.zip`: For all Linux devices
+   - `SupportToolMacOSBinary.zip`: For Mac devices
 
-   - **SupportToolLinuxBinary.zip** : For all Linux devices
-   - **SupportToolMacOSBinary.zip** : For Mac devices
+5. Depending on the machine you're investigating, unzip the appropriate file. 
 
-5. Unzip one of the above 2 zip files based on the machine you need to investigate.
+   | OS type | Terminal command |
+   |---|---|
+   | Linux | `unzip -q SupportToolLinuxBinary.zip` |
+   | Mac | `unzip -q SupportToolMacOSBinary.zip` |
 
-   When using a terminal, unzip the file by entering one of the following commands based on OS type:
-
-   - Linux
-
-     ```bash
-     unzip -q SupportToolLinuxBinary.zip
-     ```
-
-   - Mac
-
-     ```bash
-     unzip -q SupportToolMacOSBinary.zip
-     ```
-
-6. Run the tool as _root_ to generate diagnostic package:
+6. Run the tool as root to generate your diagnostic package:
 
    ```bash
    sudo ./MDESupportTool -d
    ```
 
-## Running the Python-based client analyzer
+## Use the Python-based client analyzer
 
 > [!NOTE]
 > - The analyzer depends on few extra PIP packages (`decorator`, `sh`, `distro`, `lxml`, and `psutil`) which are installed in the operating system when in root to produce the result output. If not installed, the analyzer attempts to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
