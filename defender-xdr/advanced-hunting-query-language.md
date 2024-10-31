@@ -17,6 +17,7 @@ ms.collection:
   - tier1
 ms.custom:
 - cx-ti
+- cx-ah
 ms.topic: how-to
 ms.date: 10/18/2024
 appliesto:

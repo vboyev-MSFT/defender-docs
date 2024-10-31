@@ -20,11 +20,6 @@ ms.date: 10/11/2024
 
 # Schedule an update of the Microsoft Defender for Endpoint (Linux)
 
-**Applies to:**
-
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
-
 To run an update on Microsoft Defender for Endpoint on Linux, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md).
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.

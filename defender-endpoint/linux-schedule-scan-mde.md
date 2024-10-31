@@ -20,11 +20,6 @@ ms.date: 10/11/2024
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
 
-**Applies to:**
-
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
-
 To run a scan for Linux, see [Supported Commands](linux-resources.md#supported-commands).
 
 For Linux (and Unix), you can use a tool called **crontab** (similar to Task Scheduler in Windows) to run scheduled tasks.

@@ -10,7 +10,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
-ms.custom: cx-dex
+ms.custom: 
+- cx-ti
+- cx-dex
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
