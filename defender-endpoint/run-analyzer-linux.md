@@ -22,36 +22,26 @@ f1.keywords: NOCSH
 
 # Run the client analyzer on Linux
 
-# 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender XDR](/defender-xdr)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-When contacting support, you might be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
+If you're experiencing reliability or device health issues with Defender for Endpoint on Linux, and you contact support, you might be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool. This article describes how to use the client analyzer tool locally on the device or together with live response. 
+
+
 
 The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running Linux.
 
-There are two different ways to run the client analyzer tool using live response or locally:
+There are two different ways to run the client analyzer tool using live response or locally. In both cases, you can use a Python-based solution or a binary version that has no external Python dependency. 
 
-1. Using a binary version (no external Python dependency)
-1. Using a Python-based solution
-
-## Collect support logs in Microsoft Defender for Endpoint using live response
-
-This section provides instructions on how to run the tool via Live Response on Linux machines.
-
-## Linux
+## Use live response in Defender for Endpoint to collect support logs
 
 The XMDE Client Analyzer tool can be downloaded as a [binary](https://aka.ms/XMDEClientAnalyzerBinary) or [Python](https://aka.ms/XMDEClientAnalyzer) package that can be extracted and executed on Linux machines. Both versions of the XMDE Client Analyzer can be executed during a Live Response session.
 
-### Prerequisites
-
-- For installation the `unzip` package is required.
-
-- For execution the `acl` package is required.
+- For installation, the `unzip` package is required.
+- For execution, the `acl` package is required.
 
 > [!IMPORTANT]
 > Window uses the Carriage Return and Line Feed invisible characters to represent the end of one line and beginning of a new line in a file, but Linux systems uses only the Line Feed invisible character at the end of its file lines. When using the following scripts, if done on Windows, this difference can result in errors and failures of the scripts to run. A potential solution to this is to utilize the Windows Subsystem for Linux and the `dos2unix` package to reformat the script so it aligns with the Unix and Linux format standard.
@@ -193,7 +183,7 @@ The Python Client Analyzer accepts command line parameters to perform different 
 
 4. Select the downloaded file named `MDESupportTool.sh`, and then select **Confirm**.
 
-1. While still in the Live Response session, use the following commands to run the analyzer and collect the resulting file.
+5. While still in the Live Response session, use the following commands to run the analyzer and collect the resulting file:
 
    ```
    run MDESupportTool.sh -parameters "--bypass-disclaimer -d"
@@ -204,41 +194,40 @@ The Python Client Analyzer accepts command line parameters to perform different 
 
 This section provides instructions on how to run the tool locally on the Linux machines.
 
-## Running the binary version of the client analyzer
+### Running the binary version of the client analyzer
 
-1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.  
-If you're using a terminal, download the tool by entering the following command:
+1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.
 
-```
+   If you're using a terminal, download the tool by entering the following command:
+
    ```bash
-wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
-```
-```1. Verify the download.
+   wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   ```
 
-- Linux
+2. Verify the download.
 
-       ```bash
-    echo '2A9BF0A6183831BE43C7BCB7917A40D772D226301B4CDA8EE4F258D00B6E4E97 XMDEClientAnalyzerBinary.zip' | sha256sum -c
-    ```
+   ```bash
+   echo '2A9BF0A6183831BE43C7BCB7917A40D772D226301B4CDA8EE4F258D00B6E4E97 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+   ```
 
-2. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
+3. Extract the contents of `XMDEClientAnalyzerBinary.zip` on the machine.
 
-    If you're using a terminal, extract the files by entering the following command:
+   If you're using a terminal, extract the files by entering the following command:
 
-    ```bash
-    unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
-    ```
+   ```bash
+   unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
+   ```
 
 3. Change to the tool's directory by entering the following command:
 
-    ```bash
-    cd XMDEClientAnalyzerBinary
-    ```
+   ```bash
+   cd XMDEClientAnalyzerBinary
+   ```
 
 4. Two new zip files are produced:
 
-   - **SupportToolLinuxBinary.zip** : For all Linux devices
-   - **SupportToolMacOSBinary.zip** : For Mac devices
+   - `SupportToolLinuxBinary.zip`: For all Linux devices
+   - `SupportToolMacOSBinary.zip`: For Mac devices
 
 5. Unzip one of the above 2 zip files based on the machine you need to investigate.
 
