@@ -200,7 +200,7 @@ or if your Linux server has internet access use wget to download the file
 wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
 ```
 
-1. Unzip the file that is downloaded, and then of the extracted files unzip again the SupportToolLinuxBinary.zip
+2. Unzip the file that is downloaded, and then of the extracted files unzip again the SupportToolLinuxBinary.zip
 
 
 ```bash
@@ -208,17 +208,17 @@ unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
 
 ```
 
-1. Run the binary
+3. Run the binary
 
    ```
    sudo ./MDESupportTool -d --mdatp-log debug
    ```
    
-1. Follow the on-screen instructions and then follow up with at the end of the log collection, the logs will be located in the /tmp directory
+4. Follow the on-screen instructions and then follow up with at the end of the log collection, the logs will be located in the /tmp directory
 
-1. The log set will be owned by root user so you may need root privileges to remove the log set
+5. The log set will be owned by root user so you may need root privileges to remove the log set
 
-1. Upload the file for the support engineer
+6. Upload the file for the support engineer
 
 Details:
 
