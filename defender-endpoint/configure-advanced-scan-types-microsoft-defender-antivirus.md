@@ -9,7 +9,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: deniseb
 ms.subservice: ngp
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ms.collection: 
 - m365-security
 - tier2
@@ -39,10 +39,7 @@ For details on configuring Microsoft Configuration Manager (current branch), see
 ## Use Group Policy to configure scanning options
 
 > [!TIP]
-> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects.
->
-> Here are the most recent versions:
->
+> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects. Here are the most recent versions:
 > - [Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
 > - [Group Policy Settings Reference Spreadsheet for Windows 11 October 2021 Update (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
@@ -68,7 +65,7 @@ For details on configuring Microsoft Configuration Manager (current branch), see
 |Scan mapped network drives<br/>**Scan** \> **Run full scan on mapped network drives**|Disabled|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Scan archive files (such as .zip or .rar files). <br/>**Scan** \> **Scan archive files**|Enabled|`-DisableArchiveScanning` <br/><br/>The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting.|
 |Scan files on the network <br/>**Scan** \> **Scan network files**|Disabled|`-DisableScanningNetworkFiles`|
-|Scan packed executables<br/>**Scan** \> **Scan packed executables**|Enabled|Not available <br/><br/>Scan packed executables were removed from the following templates:<br/>- Administrative Templates (.admx) for Windows 11 2022 Update (22H2)<br/>- Administrative Templates (.admx) for Windows 11 October 2021 Update (21H2)|
+|Scan packed executables<br/>**Scan** \> **Scan packed executables**|Enabled|Not available <br/><br/>Scan packed executables were removed from the following templates:<br/>- Administrative Templates (.admx) for Windows 11 2023 Update (23H2)<br/>- Administrative Templates (.admx) for Windows 11 2022 Update (22H2) - v3.0 <br/>- Administrative Templates (.admx) for Windows 11 2022 Update (22H2)<br/>- Administrative Templates (.admx) for Windows 11 October 2021 Update (21H2)|
 |Scan removable drives during full scans only<br/>**Scan** \> **Scan removable drives**|Disabled|`-DisableRemovableDriveScanning`|
 |Specify the level of subfolders within an archive folder to scan <p>**Scan** \> **Specify the maximum depth to scan archive files**|0|Not available|
 |Specify the maximum CPU load (as a percentage) during a scan. <p> **Scan** \> **Specify the maximum percentage of CPU utilization during a scan**|50|`-ScanAvgCPULoadFactor`<br/><br/> The maximum CPU load is not a hard limit, but is guidance for the scanning engine to not exceed the maximum on average. Manual scans ignore this setting and run without any CPU limits.|
@@ -93,11 +90,11 @@ See [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/wi
 
 Email scanning enables scanning of email files used by Outlook and other mail clients during on-demand and scheduled scans. Embedded objects within email (such as attachments and archived files) are also scanned. The following file format types can be scanned and remediated:
 
-- DBX
-- MBX
-- MIME
+- `DBX`
+- `MBX`
+- `MIME`
 
-PST files used by Outlook 2003 or older (where the archive type is set to non-unicode) are also scanned, but Microsoft Defender Antivirus cannot remediate threats that are detected inside PST files.
+`PST` files used by Outlook 2003 or older (where the archive type is set to non-unicode) are also scanned, but Microsoft Defender Antivirus cannot remediate threats that are detected inside `PST` files.
 
 If Microsoft Defender Antivirus detects a threat inside an email message, the following information is displayed to assist you in identifying the compromised email so you can remediate the threat manually:
 
