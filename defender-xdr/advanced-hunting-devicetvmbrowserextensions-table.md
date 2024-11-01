@@ -18,7 +18,7 @@ ms.topic: reference
 ms.date: 05/30/2024
 ---
 
-# DeviceTvmBrowserExtensions
+# DeviceTvmBrowserExtensions (Preview)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
