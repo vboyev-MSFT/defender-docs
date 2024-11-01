@@ -164,22 +164,42 @@ In this scenario, whenever a user runs a custom created application from a USB d
 
 ## Performanmce issues
 
-Customer Application writes log files locally
-How to alleviate: 
-*    IOC Allow for the application
-*    Add folder exclusions
-Customer Application times out
-How to alleviate:
-*    IOC Allow for the application
-*    Add Path and process exclusions for the application
-Customer Application opens files from network shares
-How to alleviate:
-*    Add folder exclusions
-Customer Application opens files from SMB network shares
-How to alleviate:
-*    Add folder exclusions
+### An application writes log files locally
+
+In this scenario, an application writes log files locally on the device, resulting in performance issues.
+
+**How to address**: Define appropriate exclusions or indicators.
+
+- Create an allow for the application
+- Add folder exclusions for Microsoft Defender Antivirus
+
+### An application times out
+
+In this scenario, an application stalls and times out.
+
+**How to address**: Define appropriate exclusions or indicators.
+
+- Create an allow indicator for the application
+- Add path and process exclusions for the application
+
+### An application opens files from network shares
+
+In this scenario, an application opens files stored on network shares, resulting in performance issues.
+
+**How to address**: Add folder exclusions for Microsoft Defender Antivirus.
+
+### An application opens files from SMB network shares
+
+In this scenario, an application opens files from Server Message Block (SMB) network shares, resulting in performance issues.
+
+**How to address**: Determine whether you're using any unnecessary services or features. If need be, define folder exclusions for Microsoft Defender Antivirus.
+
+- See [Performance tuning for SMB file servers](/windows-server/administration/performance-tuning/role/file-server/smb-file-server)
+- Add folder exclusions for Microsoft Defender Antivirus
 
 ## Application compatibility issues
+
+
 
 ## See also
 
