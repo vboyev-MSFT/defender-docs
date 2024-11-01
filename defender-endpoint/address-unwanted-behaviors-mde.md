@@ -197,6 +197,32 @@ In this scenario, an application opens files from Server Message Block (SMB) net
 - See [Performance tuning for SMB file servers](/windows-server/administration/performance-tuning/role/file-server/smb-file-server)
 - Add folder exclusions for Microsoft Defender Antivirus
 
+### An application copies files from one remote location to another
+
+In this scenario, an application copies files from one remote location to another, resulting in performance issues.
+
+**How to address**: Add folder exclusions for Microsoft Defender Antivirus
+
+### An application copies files from a remote NAS path to a device
+
+In this scenario, an application uses File Explorer in Windows to copy files from a remote share using an NAS Path to the device.
+
+**How to address**: Add folder exclusions for Microsoft Defender Antivirus
+
+<!---
+### A file opened from an SMB share causes an application to run slowly
+
+In this scenario, whenever a user opens a file with a certain extension from an SMB share, the application used to open the file runs slowly. 
+
+**How to address**: Add folder exclusions for Microsoft Defender Antivirus
+--->
+
+### A compiling application is taking too long to run
+
+In this scenario, whenever a certain application compiles, it takes a long time to run.
+
+**How to address**: Use a developer drive and if need be, add folder exclusions for Microsoft Defender Antivirus.
+
 ## Application compatibility issues
 
 
