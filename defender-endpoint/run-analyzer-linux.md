@@ -189,6 +189,39 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 ### Run the binary version of the client analyzer
 
+Summary:
+
+1. Obtain from [https://aka.ms/xmdeclientanalyzerbinary](https://aka.ms/xmdeclientanalyzerbinary)
+
+or if your Linux server has internet access use wget to download the file
+
+
+```bash
+wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+```
+
+1. Unzip the file that is downloaded, and then of the extracted files unzip again the SupportToolLinuxBinary.zip
+
+
+```bash
+unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
+
+```
+
+1. Run the binary
+
+   ```
+   sudo ./MDESupportTool -d --mdatp-log debug
+   ```
+   
+1. Follow the on-screen instructions and then follow up with at the end of the log collection, the logs will be located in the /tmp directory
+
+1. The log set will be owned by root user so you may need root privileges to remove the log set
+
+1. Upload the file for the support engineer
+
+Details:
+
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.
 
    If you're using a terminal, download the tool by entering the following command:
@@ -217,18 +250,17 @@ This section provides instructions on how to run the tool locally on the Linux m
    cd XMDEClientAnalyzerBinary
    ```
 
-4. Two new zip files are produced:
+1. Two new zip files are produced:
 
    - `SupportToolLinuxBinary.zip`: For all Linux devices
-   - `SupportToolMacOSBinary.zip`: For Mac devices
+   - `SupportToolMacOSBinary.zip`: For Mac devices, ignore this one.
+      
+1. Unzip the SupportToolLinuxBinary.zip for the Linux machine you want to investigate.
 
-5. Depending on the operating system, unzip the appropriate file for the machine you want to investigate.
-
-   | OS type | Command |
-   |--|--|
-   | Linux | `unzip -q SupportToolLinuxBinary.zip` |
-   | Mac | `unzip -q SupportToolMacOSBinary.zip` |
-
+   ```bash
+    unzip -q SupportToolLinuxBinary.zip 
+   ```
+   
 6. Run the tool as root to generate diagnostic package:
 
    ```bash
@@ -245,11 +277,11 @@ This section provides instructions on how to run the tool locally on the Linux m
 > [!WARNING]
 > Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 
-1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
+1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the Linux machine you need to investigate.
 
    If you're using a terminal, download the tool by running the following command:
 
-   ```bash
+      ```bash
    wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
    ```
 
