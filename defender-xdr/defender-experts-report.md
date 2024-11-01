@@ -12,7 +12,9 @@ author: vpattnai
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.custom: cx-dex
+ms.custom: 
+- cx-ti
+- cx-dex
 ms.collection: 
 - m365-security 
 - tier1
