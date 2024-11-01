@@ -29,9 +29,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+
 ## October 2024
 
 - [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
+- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries-preview), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## September 2024
 
@@ -107,7 +109,7 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) You can now query Microsoft Sentinel data using the [advanced hunting query API](/graph/api/security-security-runhuntingquery?view=graph-rest-1.0&tabs=http&preserve-view=true). You can use the `timespan` parameter to query Defender XDR and Microsoft Sentinel data that have longer data retention than the Defender XDR default of 30 days.
 
-- (Preview) In the unified Microsoft Defender portal, you can now create custom detections in querying data that spans Microsoft Sentinel and Defender XDR tables. Read [Create custom analytics and detection rules](advanced-hunting-microsoft-defender.md#create-custom-analytics-and-detection-rules) for more information.
+- (Preview) In the unified Microsoft Defender portal, you can now create custom detections in querying data that spans Microsoft Sentinel and Defender XDR tables. Read [Create custom analytics and detection rules](advanced-hunting-defender-use-custom-rules.md) for more information.
 
 - Updated [troubleshooting steps for Microsoft Defender Experts app permissions in Microsoft Teams](teams-restrictions-dexapp.md).
  
