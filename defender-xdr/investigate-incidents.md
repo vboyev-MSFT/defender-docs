@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 09/24/2024
+ms.date: 11/18/2024
 appliesto: 
 - Microsoft Defender XDR
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -97,7 +97,14 @@ The resulting logs or alerts can be linked to an incident by selecting a results
 :::image type="content" source="/defender/media/investigate-incidents/fig2-gohunt-attackstory.png" alt-text="Highlighting the link to incident option in go hunt query results" lightbox="/defender/media/investigate-incidents/fig2-gohunt-attackstory.png":::
 
 If the incident or related alerts were the result of an analytics rule you've set, you can also select ***Run query*** to see other related results.
- 
+
+(Preview) The incident graph also contains information about **critical attack paths**. These paths allows security analysts to identify what other entities an attacker is likely to target next. To view an attack path, you can click on an entity and select **View attack path**.
+
+Attack paths are available for entities with the **critical asset** tag.
+
+> [!NOTE]
+> To view the details of an attack path, you must have read access permissions in the Microsoft Defender portal. To view attack path details in the unified security operations platform, a *Sentinel Reader* role is required. To create new attack paths, the Security Administrator role is required.
+
 ## Alerts
 
 On the **Alerts** tab, you can view the alert queue for alerts related to the incident and other information about them like the following:
