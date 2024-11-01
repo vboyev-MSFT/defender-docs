@@ -163,7 +163,7 @@ The Python version of the client analyzer accepts command line parameters to per
 
    ```
 
-#### Rung the client analyzer script
+#### Run the client analyzer script
 
 > [!NOTE]
 > If you have an active live response session you can skip Step 1.
@@ -191,22 +191,17 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 #### Summary:
 
-1. Obtain from [https://aka.ms/xmdeclientanalyzerbinary](https://aka.ms/xmdeclientanalyzerbinary)
+1. Obtain from [https://aka.ms/xmdeclientanalyzerbinary](https://aka.ms/xmdeclientanalyzerbinary). Or, if your Linux server has internet access use `wget` to download the file:
 
-or if your Linux server has internet access use wget to download the file
-
-
-```bash
-wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
-```
+   ```bash
+   wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   ```
 
 2. Unzip the file that is downloaded, and then of the extracted files unzip again the SupportToolLinuxBinary.zip
 
-
-```bash
-unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
-
-```
+   ```bash
+   unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
+   ```
 
 3. Run the binary
 
@@ -214,11 +209,11 @@ unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
    sudo ./MDESupportTool -d --mdatp-log debug
    ```
    
-4. Follow the on-screen instructions and then follow up with at the end of the log collection, the logs will be located in the /tmp directory
+4. Follow the on-screen instructions and then follow up with at the end of the log collection, the logs will be located in the `/tmp` directory.
 
-5. The log set will be owned by root user so you may need root privileges to remove the log set
+5. The log set will be owned by root user so you may need root privileges to remove the log set.
 
-6. Upload the file for the support engineer
+6. Upload the file for the support engineer.
 
 #### Details:
 
