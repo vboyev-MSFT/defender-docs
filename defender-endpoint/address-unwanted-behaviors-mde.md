@@ -1,6 +1,6 @@
 ---
-title: Prevent unwanted behaviors in Microsoft Defender for Endpoint with exclusions, indicators, and other techniques            
-description: Learn how to use exclusions, indicators, and other techniques prevent unwanted behaviors in Microsoft Defender for Endpoint.
+title: Address unwanted behaviors in Microsoft Defender for Endpoint with exclusions, indicators, and other techniques            
+description: Learn how to use exclusions, indicators, and other techniques to address unwanted behaviors in Microsoft Defender for Endpoint.
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
@@ -20,7 +20,7 @@ ms.collection:
 - tier2
 ---
 
-# Prevent unwanted behaviors in Microsoft Defender for Endpoint with exclusions, indicators, and other techniques
+# Address unwanted behaviors in Microsoft Defender for Endpoint with exclusions, indicators, and other techniques
 
 The primary function of Defender for Endpoint is to prevent and detect access to malicious processes and files. Defender for Endpoint is designed to allow people in your organization to be protected from threats while remaining productive by default security settings and policies. Occasionally, unwanted behaviors might occur, such as:
 
@@ -28,7 +28,7 @@ The primary function of Defender for Endpoint is to prevent and detect access to
 - **Poor performance**: Applications experience performance issues when certain features of Defender for Endpoint are enabled
 - **Application incompatibility**: Applications don't function properly when certain features of Defender for Endpoint are enabled
 
-This article describes these types of issues and how to address them.
+This article describes these types of unwanted behaviors and how to address them. 
 
 ## How to address an unwanted behavior in Defender for Endpoint
 
@@ -39,11 +39,11 @@ At a high level, the general process for addressing an unwanted behavior in Defe
    - In the Microsoft Defender portal, you can investigate alerts, use advanced hunting, and view reports.
    - On the device, you can use performance analyzer tools, review the event log, and check your protection history
 
-2. Take actions to exclude or trust a process or file. Depending on your findings from step 1, you might take one or more of the following steps:
+2. Take actions to exclude or trust a process or file. Depending on your findings from the previous step, you might take one or more of the following steps:
 
    - Define exclusions for Microsoft Defender Antivirus
    - Create indicators for Defender for Endpoint
-   - Suppress alerts
+   - Suppress alerts in the Microsoft Defender portal
    - Define custom remediation actions
    - Submit a file to Microsoft for analysis
 
