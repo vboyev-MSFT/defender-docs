@@ -9,7 +9,7 @@ ms.service: defender-endpoint
 ms.subservice: macos
 ms.localizationpriority: medium
 ms.topic: troubleshooting-general
-ms.date: 10/31/2024
+ms.date: 11/01/2024
 ms.custom: partner-contribution
 ms.collection:
 - m365-security
@@ -197,7 +197,7 @@ Usage example `./mde_support_tool.sh trace --length 5`
 | File | Description |
 |---|---|
 | `report.html` | The main HTML output file that contains the findings and guidance from running the client analyzer tool on the device. This file is only generated when running the Python-based version of the client analyzer tool. |
-| `mde_diagnostic.zip` | Same diagnostic output that gets generated when running `mdatp diagnostic create` on either [macOS](mac-resources.md#collecting-diagnostic-information). |
+| `mde_diagnostic.zip` | Same diagnostic output that gets generated when running `mdatp diagnostic create` on [macOS](mac-resources.md#collecting-diagnostic-information). |
 | `mde.xml` | XML output that is generated while running and is used to build the html report file. |
 | `Processes_information.txt` | Contains the details of the running Microsoft Defender for Endpoint related processes on the system. |
 | `Log.txt` | Contains the same log messages written on screen during the data collection. |
