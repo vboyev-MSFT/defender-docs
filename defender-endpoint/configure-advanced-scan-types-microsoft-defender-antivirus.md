@@ -9,7 +9,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: deniseb
 ms.subservice: ngp
-ms.date: 07/10/2024
+ms.date: 11/01/2024
 ms.collection: 
 - m365-security
 - tier2
@@ -39,10 +39,7 @@ For details on configuring Microsoft Configuration Manager (current branch), see
 ## Use Group Policy to configure scanning options
 
 > [!TIP]
-> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects.
->
-> Here are the most recent versions:
->
+> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects. Here are the most recent versions:
 > - [Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
 > - [Group Policy Settings Reference Spreadsheet for Windows 11 October 2021 Update (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
@@ -93,11 +90,11 @@ See [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/wi
 
 Email scanning enables scanning of email files used by Outlook and other mail clients during on-demand and scheduled scans. Embedded objects within email (such as attachments and archived files) are also scanned. The following file format types can be scanned and remediated:
 
-- DBX
-- MBX
-- MIME
+- `DBX`
+- `MBX`
+- `MIME`
 
-PST files used by Outlook 2003 or older (where the archive type is set to non-unicode) are also scanned, but Microsoft Defender Antivirus cannot remediate threats that are detected inside PST files.
+`PST` files used by Outlook 2003 or older (where the archive type is set to non-unicode) are also scanned, but Microsoft Defender Antivirus cannot remediate threats that are detected inside `PST` files.
 
 If Microsoft Defender Antivirus detects a threat inside an email message, the following information is displayed to assist you in identifying the compromised email so you can remediate the threat manually:
 
