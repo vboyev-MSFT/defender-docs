@@ -127,7 +127,7 @@ In this scenario, a legitimate app is detected and identified as malicious by an
 
 <!---**How to observe**: CONTENT NEEDED--->
 
-**How to address**: <!---PLEASE VERIFY THESE STEPS--->
+**How to address**: 
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Reports**. Under **Reports**, select **Security report**.
 
@@ -143,7 +143,7 @@ In this scenario, whenever a user opens documents that were created by using Mic
 
 <!---**How to observe**: CONTENT NEEDED--->
 
-**How to address**: <!---PLEASE VERIFY THESE STEPS---->
+**How to address**:
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Reports**. Under **Reports**, select **Security report**.
 
