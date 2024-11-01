@@ -189,7 +189,7 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 ### Run the binary version of the client analyzer
 
-Summary:
+#### Summary:
 
 1. Obtain from [https://aka.ms/xmdeclientanalyzerbinary](https://aka.ms/xmdeclientanalyzerbinary)
 
@@ -220,7 +220,7 @@ unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
 
 6. Upload the file for the support engineer
 
-Details:
+#### Details:
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.
 
