@@ -54,7 +54,7 @@ On the **Select technique** page, select an available social engineering techniq
 - **OAuth Consent Grant**<sup>\*</sup>
 - **How-to Guide**<sup>\*</sup>
 
-<sup>\*</sup> This social engineering technique allows you to use QR codes (currently in Preview). For more information, see the [QR code simulations and training](#qr-code-simulations-and-training) section later in this article.
+<sup>\*</sup> This social engineering technique allows you to use QR codes. For more information, see the [QR code simulations and training](#qr-code-simulations-and-training) section later in this article.
 
 If you select the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -631,9 +631,6 @@ Back on the **Simulations** tab, the simulation that you created is now listed. 
 - **Scheduled** if you selected **Schedule this simulation to be launched later**.
 
 ## QR code simulations and training
-
-> [!TIP]
-> QR code payloads are currently in Preview, aren't available in all organizations, and are subject to change.
 
 You can select payloads with QR codes to use in simulations. The QR code replaces the phishing URL as the payload that's used in the simulation email message in the following social engineering techniques:
 
