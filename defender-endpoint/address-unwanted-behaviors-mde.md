@@ -4,7 +4,7 @@ description: Learn how to use exclusions, indicators, and other techniques preve
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
-ms.date: 10/18/2024
+ms.date: 11/01/2024
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
@@ -153,13 +153,14 @@ In this scenario, whenever a user opens documents that were created by using Mic
 
 4. Add exclusions. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
 
+<!---
 ### When a user runs a custom app from a USB drive, the app is blocked
 
 In this scenario, whenever a user runs a custom created application from a USB drive, the app is blocked by the "Block apps running from USB drive" configuration. 
 
-<!---**How to observe**: CONTENT NEEDED--->
+*How to observe**: CONTENT NEEDED
 
-**How to address**: <!---CONTENT NEEDED. Add an AV path exclusion doesn't work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions--->
+**How to address**: CONTENT NEEDED. Add an AV path exclusion doesn't work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions--->
 
 ## Performanmce issues
 
