@@ -39,7 +39,7 @@ To set up a site and associate the OT devices in your network to it:
     - **Site description**: Describe the purpose of the site, what activities occur there, the types and number of devices used, and other important information about the site.
     - **Owners**: The contact emails of any users administering the site who must be contacted when problems occur.
 
-    :::image type="content" source="media/set-up-sites/site-security-set-up-details-new.png" alt-text="Screenshot showing the details for creating a new site in the Site security page of Microsoft Defender for IoT in the Microsoft Defender portal.":::
+    :::image type="content" source="media/set-up-sites/site-security-set-up-details.png" alt-text="Screenshot showing the details for creating a new site in the Site security page of Microsoft Defender for IoT in the Microsoft Defender portal.":::
 
 1. When completed, select **Next** to associate devices to the site.
 
@@ -70,6 +70,15 @@ In this stage, you configure Defender for IoT to associate OT devices to the sit
 1. Select **Next** to review the site details.
 
 [!INCLUDE [defender-iot-site-association](includes/site-association.md)]
+
+## Preview devices
+
+A list of all devices that will be associated with this site appears. If you want to remove any of the devices from this list:
+
+1. Select the **Deselect devices from site** button. All of the devices will become accessible.
+1. Deselect the checkbox of the devices to be removed.
+    1. To reset the list, select **Discard all changes**.
+1. When you are finished, select **Next**, or **Skip** if you haven't made any changes.
 
 ## Review site details
 
