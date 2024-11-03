@@ -73,7 +73,7 @@ In this stage, you configure Defender for IoT to associate OT devices to the sit
 
 ## Preview devices
 
-A list of all devices that will be associated with this site appears. If you want to remove any of the devices from this list:
+A list of all devices to be associated with this site appears. If you need to remove any of the devices from this list:
 
 1. Select the **Deselect devices from site** button. All of the devices will become accessible.
 1. Deselect the checkbox of the devices to be removed.
