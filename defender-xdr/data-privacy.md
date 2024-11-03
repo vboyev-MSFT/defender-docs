@@ -32,7 +32,7 @@ Microsoft Defender XDR integrates with several different Microsoft security serv
 
 ## Collected data
 
-Data collected from integrated services includes *processsed data*, such as incidents and alerts, and *configuration data*, such as connector settings, rules and so on.
+Customer data collected from integrated services includes *processed data*, such as incidents and alerts, and *configuration data*, such as connector settings, rules and so on.
 
 ## Data storage location
 
