@@ -17,6 +17,19 @@ When you manage a site, you might need to edit or delete the site information li
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
+## Change site location of a device
+
+It's possible that Defender for IoT identifies a device located in the wrong site. To change the site listed for a device:
+
+1. Select **Assets -> Devices** to open the **Device Inventory**.
+1. Select the device to update. A list of actions appears at the top of the Device Inventory table.
+1. Select **Set site**.
+    :::image type="content" source="{source}" alt-text="{alt-text}":::
+1. In **Set site manually**, open the **Select site** drop down list and select the site to associate with this device. If you are unsure of the location, select **Unassigned**.
+1. Select **Save and close**.
+1. The Set site confirmation box appears. Select **Confirm** to finalize the change.
+1. Alternatively, you can also go to **Site security** and edit the site and change the devices associated it using the Edit site wizard.
+
 ## Edit or delete a site
 
 To edit or delete a site:
