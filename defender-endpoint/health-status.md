@@ -47,9 +47,9 @@ The following table provides information about the values that are returned when
 |`edr_machine_id`|Device identifier used in the Microsoft Defender portal.|
 |`engine_load_status`|Status of antivirus engine to determine whether it's running. Can be one of the following: <br/>- **Engine not loaded** - antivirus engine process is down<br/>- **Engine load succeeded** - antivirus engine process is up and running|
 |`engine_version`|Version of the antivirus engine.|
-|`healthy`|`True` if the product is healthy, `false` otherwise.|
+|`healthy`|`True` if the product is healthy; otherwise, `false`.|
 |`health_issues`|Lists health issues if any.|
-|`licensed`|`True` if the device is onboarded to a tenant, `false` otherwise.|
+|`licensed`|`True` if the device is onboarded to a tenant; otherwise, `false`.|
 |`log_level`|Current log level for the product. Can be one of the following values: <br/>- **info** <br/>- **debug**|
 |`machine_guid`|Unique machine identifier used by the antivirus component.|
 |`network_protection_enforcement_level`|Mode of network protection. <br/><br/>Can be one of the following: <br/>- **disabled** - all components associated with network protection are disabled<br/>- **block** - network protection prevents connection to malicious websites<br/>- **audit** - Check how blocks occur|
