@@ -16,19 +16,18 @@ ms.collection:
   - tier1
   - security-copilot
   - magic-ai-copilot
-ms.topic: conceptual
-ms.date: 04/01/2024
+ms.custom:
+- cx-ti
+- cx-ah
+ms.topic: how-to
+ms.date: 10/17/2024
+appliesto:
+- Microsoft Defender
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Microsoft Copilot for Security in advanced hunting
-
-
-**Applies to:**
-
-- Microsoft Defender
-- Microsoft Defender XDR
-
-## Copilot for Security in advanced hunting
 
 [Microsoft Copilot for Security in Microsoft Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting.
 
@@ -43,7 +42,7 @@ Users with access to Copilot for Security have access to this capability in adva
 
 ## Try your first request
 
-1. Open the **advanced hunting** page from the navigation bar in Microsoft Defender XDR. The Copilot for Security side pane for advanced hunting appears at the right hand side.
+1. Open the **advanced hunting** page from the navigation bar in the Microsoft Defender portal. The Copilot for Security side pane for advanced hunting appears at the right hand side.
 
     :::image type="content" source="/defender/media/advanced-hunting-security-copilot-pane.png" alt-text="Screenshot of the Copilot pane in advanced hunting." lightbox="/defender/media/advanced-hunting-security-copilot-pane-big.png":::
 
@@ -79,8 +78,7 @@ Users with access to Copilot for Security have access to this capability in adva
 > Providing feedback is an important way to let the Copilot for Security team know how well the query assistant was able to help in generating a useful KQL query. Feel free to articulate what could have made the query better, what adjustments you had to make before running the generated KQL query, or share the KQL query that you eventually used.
 
 
-> [!NOTE]
-> In the [unified Microsoft Defender portal](advanced-hunting-microsoft-defender.md), you can prompt Copilot for Security to generate advanced hunting queries for both Defender XDR and Microsoft Sentinel tables. Not all Microsoft Sentinel tables are currently supported, but support for these tables can be expected in the future.
+In the [Microsoft Defender portal](advanced-hunting-microsoft-defender.md), you can prompt Copilot for Security to generate advanced hunting queries for both Defender XDR and Microsoft Sentinel tables. Not all Microsoft Sentinel tables are currently supported, but support for these tables can be expected in the future.
 
 ## Query sessions
 

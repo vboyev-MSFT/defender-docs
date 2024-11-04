@@ -16,8 +16,11 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.custom: seo-marvel-apr2020
-ms.date: 02/16/2021
+ms.custom: 
+- cx-ti
+- cx-ta
+- seo-marvel-apr2020
+ms.date: 10/18/2024
 ---
 
 # Understand the analyst report in threat analytics in Microsoft Defender XDR

@@ -15,9 +15,12 @@ ms.collection:
 - m365initiative-m365-defender 
 - tier1
 ms.topic: conceptual
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- cx-ti
+- cx-ta
+- seo-marvel-apr2020
 search.appverid: met150
-ms.date: 09/18/2023
+ms.date: 10/18/2024
 ---
 
 # Threat analytics in Microsoft Defender XDR

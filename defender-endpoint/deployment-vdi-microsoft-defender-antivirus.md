@@ -2,7 +2,7 @@
 title: Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment
 description: Get an overview of how to configure Microsoft Defender Antivirus in a remote desktop or non-persistent virtual desktop environment.
 ms.localizationpriority: medium
-ms.date: 09/27/2024
+ms.date: 10/28/2024
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -31,8 +31,7 @@ search.appverid: met150
 
 - Windows
 
-> [!TIP]
-> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
+This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside other device protection capabilities), also go through [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
 
@@ -43,7 +42,7 @@ This guide describes how to configure Microsoft Defender Antivirus on your VMs f
 - [Use quick scans](#use-quick-scans)
 - [Prevent notifications](#prevent-notifications)
 - [Disable scans from occurring after every update](#disable-scans-after-an-update)
-- [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
+- [Scan out-of-date machines or machines that were offline for a while](#scan-vms-that-have-been-offline)
 - [Apply exclusions](#exclusions)
 
 > [!IMPORTANT]
@@ -67,7 +66,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 5. Enter `\\<Windows File Server shared location\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
-6. Select **OK**, and then deploy the GPO to the VMs you want to test.
+6. Select **OK**, and then deploy the Group Policy Object to the VMs you want to test.
 
 ### PowerShell
 
@@ -96,10 +95,9 @@ Start-Process -FilePath $vdmpackage -WorkingDirectory $vdmpath -ArgumentList "/x
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs receive the new update. We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
 
-Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it will increase the network overhead on your management machine for no benefit.
+Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it increases the network overhead on your management machine for no benefit.
 
-You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
-This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set up this configuration, follow these steps:
+You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption. This configuration is possible when the devices have share and read access (NTFS permissions) to the share so they can grab the updates. To set up this configuration, follow these steps:
 
 1. Create an SMB/CIFS file share.
 
@@ -122,7 +120,7 @@ This configuration is possible when the devices have the share and read access (
    
 ### Set a scheduled task to run the PowerShell script
 
-1. On the management machine, open the Start menu and type `Task Scheduler`. From the results, Task Scheduler and then select **Create task...** on the side panel.
+1. On the management machine, open the Start menu and type `Task Scheduler`. From the results, select Task Scheduler and then select **Create task...** in the side panel.
 
 2. Specify the name as `Security intelligence unpacker`. 
 
@@ -151,7 +149,7 @@ If you would prefer to do everything manually, here's what to do to replicate th
    Here's an example: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
    > [!NOTE]
-   > In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
+   > We set the script so that the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
 
 3. Download a security intelligence package from [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  into the GUID folder. The file should be named `mpam-fe.exe`.
 
@@ -164,7 +162,7 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a four-hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization causes Microsoft Defender Antivirus to start a scan on each machine within a four-hour window from the time set for the scheduled scan.
 
 See [Schedule scans](schedule-antivirus-scans.md) for other configuration options available for scheduled scans.
 
@@ -194,14 +192,14 @@ Sometimes, Microsoft Defender Antivirus notifications are sent to or persist acr
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft Defender portal](https://security.microsoft.com).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team sees the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated, and appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 
-Disabling a scan after an update will prevent a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
+Disabling a scan after an update prevents a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 > [!IMPORTANT]
-> Running scans after an update will help ensure your VMs are protected with the latest security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
+> Running scans after an update helps ensure your VMs are protected with the latest security intelligence updates. Disabling this option reduces the protection level of your VMs and should only be used when first creating or deploying the base image.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
@@ -239,7 +237,7 @@ For more information, see [Start the scheduled scan only when computer is on but
 
 5. Deploy your Group Policy Object as you usually do.
 
-This policy forces a scan if the VM has missed two or more consecutive scheduled scans.
+This policy forces a scan if the VM missed two or more consecutive scheduled scans.
 
 ## Enable headless UI mode
 
