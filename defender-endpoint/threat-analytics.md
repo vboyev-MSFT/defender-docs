@@ -14,6 +14,9 @@ ms.collection:
   - m365initiative-defender-endpoint
   - tier1
   - mde-edr
+ms.custom:
+- cx-ti
+- cx-ta
 ms.topic: conceptual
 ms.subservice: edr
 ms.date: 10/18/2024
