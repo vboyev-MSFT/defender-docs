@@ -391,10 +391,10 @@
 
       - name: Safeguard and manage your environment 
         items:
-          - name: Address common false-positive scenarios with exclusions
-            href: address-unwanted-behaviors-mde.md
           - name: Managing exclusions reference
             href: managing-exclusions.md
+          - name: Address unwanted behaviors with exclusions, indicators, and other techniques
+            href: address-unwanted-behaviors-mde.md
           - name: Safe deployment practices
             href: mde-sdp-strategy.md
 
