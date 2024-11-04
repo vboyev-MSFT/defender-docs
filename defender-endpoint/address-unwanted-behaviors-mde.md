@@ -30,14 +30,16 @@ The primary function of Defender for Endpoint is to prevent and detect access to
 
 This article describes how to address these types of unwanted behaviors and includes some example scenarios.
 
-## How to address an unwanted behavior in Defender for Endpoint
+## How to address unwanted behaviors with Defender for Endpoint
 
 At a high level, the general process for addressing an unwanted behavior in Defender for Endpoint is as follows:
 
 1. Identify which capability is causing the unwanted behavior. You need to know if there's a misconfiguration with Microsoft Defender Antivirus, endpoint detection and response, attack surface reduction, controlled folder access, and so on, in Defender for Endpoint. You can use information in the Microsoft Defender portal or on the device to make your determination.
 
-   - In the [Microsoft Defender portal](https://security.microsoft.com), you can [investigate alerts](alerts-queue.md), use [advanced hunting](../defender-xdr/advanced-hunting-overview.md), and [view reports](threat-protection-reports.md).
-   - On the device, you can use [performance analyzer tools](tune-performance-defender-antivirus.md), review the event log, and check your protection history.
+   | Location | What to do |
+   |---|---|
+   | The [Microsoft Defender portal](https://security.microsoft.com) | Take one or more of the following actions to help identify what's happening: <br/>- [Investigate alerts](alerts-queue.md) <br/>- [Use advanced hunting](../defender-xdr/advanced-hunting-overview.md) <br/>- [View reports](threat-protection-reports.md) |
+   | On the device | Take one or more of the following steps to identify the issue: <br/>- [Use performance analyzer tools](tune-performance-defender-antivirus.md) <br/>- [Review event logs and error codes](troubleshoot-microsoft-defender-antivirus.yml) <br/>- [Check your protection history](microsoft-defender-security-center-antivirus.md) |
 
 2. Take actions to exclude or trust a process or file. Depending on your findings from the previous step, you might take one or more of the following steps:
 
@@ -50,6 +52,8 @@ At a high level, the general process for addressing an unwanted behavior in Defe
 3. Verify that the change has addressed the issue. 
 
 ## Example scenarios
+
+This section includes several example scenarios that can be addressed by using exclusions and indicators. For more information about exclusions, see [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md).
 
 ### An app is detected by Microsoft Defender Antivirus when the application runs
 
@@ -92,7 +96,7 @@ In this scenario, an application is detected by Microsoft Defender Antivirus bec
 
 In this scenario, a user copies a nonmalicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.
 
-**How to observe**: AMSI detection in the Operational logs 
+**How to observe**: AMSI detection in the operational logs 
 
 **How to address**: Define a path exclusion with limitations. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
 
@@ -152,51 +156,6 @@ In this scenario, whenever a user opens documents that were created by using Mic
 3. Use the information to identify the files and folder locations to be excluded.
 
 4. Add exclusions. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
-
-### An application writes log files locally
-
-In this scenario, an application writes log files locally on the device, resulting in performance issues.
-
-**How to address**: Define appropriate exclusions or indicators.
-
-- Create an allow for the application
-- Add folder exclusions for Microsoft Defender Antivirus
-
-### An application times out
-
-In this scenario, an application stalls and times out.
-
-**How to address**: Define appropriate exclusions or indicators.
-
-- Create an allow indicator for the application
-- Add path and process exclusions for the application
-
-### An application opens files from network shares
-
-In this scenario, an application opens files stored on network shares, resulting in performance issues.
-
-**How to address**: Add folder exclusions for Microsoft Defender Antivirus.
-
-### An application opens files from SMB network shares
-
-In this scenario, an application opens files from Server Message Block (SMB) network shares, resulting in performance issues.
-
-**How to address**: Determine whether you're using any unnecessary services or features. If need be, define folder exclusions for Microsoft Defender Antivirus.
-
-- See [Performance tuning for SMB file servers](/windows-server/administration/performance-tuning/role/file-server/smb-file-server)
-- Add folder exclusions for Microsoft Defender Antivirus
-
-### An application copies files from one remote location to another
-
-In this scenario, an application copies files from one remote location to another, resulting in performance issues.
-
-**How to address**: Add folder exclusions for Microsoft Defender Antivirus
-
-### An application copies files from a remote NAS path to a device
-
-In this scenario, an application uses File Explorer in Windows to copy files from a remote share using an NAS Path to the device.
-
-**How to address**: Add folder exclusions for Microsoft Defender Antivirus
 
 ## See also
 

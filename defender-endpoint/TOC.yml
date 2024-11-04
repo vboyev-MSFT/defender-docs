@@ -715,6 +715,8 @@
           href: microsoft-defender-antivirus-on-windows-server.md
         - name: Enable and update Microsoft Defender Antivirus on Windows Server
           href: enable-update-mdav-to-latest-ws.md
+        - name: Microsoft Defender Antivirus in the Windows Security app
+          href: microsoft-defender-security-center-antivirus.md
         - name: Better together - Microsoft Defender Antivirus and Microsoft Defender for Endpoint
           href: why-use-microsoft-defender-antivirus.md
         - name: Better together - Microsoft Defender Antivirus and Office 365
