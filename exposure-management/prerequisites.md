@@ -6,16 +6,12 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 09/16/2024
+ms.date: 11/04/2024
 ---
 
 # Prerequisites and support
 
 This article describes the requirements and prerequisites for using Microsoft Security Exposure Management.
-
-Security Exposure Management is currently in public preview.
-
-[!INCLUDE [prerelease](../includes/prerelease.md)]
 
 ## Permissions
 
