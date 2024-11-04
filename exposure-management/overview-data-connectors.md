@@ -11,15 +11,23 @@ ms.date: 09/09/2024
 
 # Overview
 
-[Microsoft Security Exposure Management](microsoft-security-exposure-management.md) consolidates security posture data from all your digital assets, enabling you to map your attack surface and focus your security efforts on areas at greatest risk. Data from Microsoft Security products like Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud, Microsoft Entra ID, and others are automatically ingested and consolidated within Exposure Management. You can further enrich and extend this data by connecting to external data sources.
+[Microsoft Security Exposure Management](microsoft-security-exposure-management.md) consolidates security posture data from all your digital assets, enabling you to map your attack surface and focus your security efforts on areas at greatest risk. Data from Microsoft Security products like Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud, Microsoft Entra ID, and others are automatically ingested and consolidated within Exposure Management. You can further enrich and extend this data by connecting to a range of external data sources.
 
-To provide coverage of all your assets and security signals, Exposure Management provides data connectors that ingest data from other security or asset management products deployed in your environment.
-This means you're able to seamlessly integrate with existing security solutions to:
+To provide coverage of all your assets and security signals and to help you establish a comprehensive, single source of truth for your assets, Exposure Management provides data connectors that ingest data from other security or asset management products deployed in your environment.
 
-- Ingest data from external data sources
-- Consolidate all your asset and security posture data in Exposure Management
+Benefits include:
 
-The support for external solutions helps to further streamline, integrate, and orchestrate defenses from other vendors with Exposure Management; enabling security teams to effectively manage their posture and exposure across the entire attack surface.
+- Normalized within exposure graph
+- Enhanced device inventory
+- Mapping relationships
+- Revealing new attack paths
+- Providing comprehensive attack surface visibility
+- Incorporating asset criticality
+- Enriching context with business application or operational affiliation
+- Visualization through the Attack Map tool
+- Exploration using advanced hunting queries via KQL
+
+The support for external solutions helps to further streamline, integrate, and orchestrate defenses from other security vendors with Exposure Management. This enables security teams to effectively manage their posture and exposure across the entire attack surface.
 
 :::image type="content" source="media/connect-data-sources/data-connectors.png" alt-text="Screenshot of data connectors in MSEM" lightbox="media/connect-data-sources/data-connectors.png":::
 
@@ -27,7 +35,9 @@ Data Connectors in Microsoft Security Exposure Management is currently in public
 
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
-> **Note:** During the preview phase, use of the data connectors feature is free.
+> [!NOTE]
+> During the preview phase, use of the data connectors feature is free.
+
 
 ## Prerequisites
 

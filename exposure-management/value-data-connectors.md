@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 09/11/2024
+ms.date: 11/04/2024
 ---
 
 # Getting value from your data connectors
@@ -28,6 +28,18 @@ The asset information imported into Exposure Management includes data from exter
 The imported assets will appear in the device inventory and is incorporated into the exposure graph. Microsoft Security Exposure Management also offers integration with critical asset protection, attack paths, metrics, and initiatives. It provides insights into potential attack paths and entry points that could compromise critical assets. It also offers metrics and recommendations to help prioritize actions to protect these assets.
 
 :::image type="content" source="media/value-data-connectors/device inventory with 3P.png" alt-text="Screenshot of device inventory with discovery source highlighted" lightbox="media/value-data-connectors/device inventory with 3P.png":::
+
+Benefits of using the external data connectors include:
+
+- Normalized within exposure graph
+- Enhanced device inventory
+- Mapping relationships
+- Revealing new attack paths  
+- Providing comprehensive attack surface visibility
+- Incorporating asset criticality
+- Enriching context with business application or operational affiliation
+- Visualization through the Attack Map tool
+- Exploration using advanced hunting queries via KQL
 
 The information brought into the system includes:
 
