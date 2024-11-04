@@ -26,16 +26,16 @@ ms.date: 11/04/2024
 
 The following table provides information about the values that are returned when you run the `mdatp health` command and their corresponding descriptions.
 
-|Value|Description|
+| Value | Description |
 |---|---|
-|app_version|Running defender application version.|
-|automatic_definition_update_enabled|True if automatic antivirus definition updates are enabled, false otherwise.|
-|behavior_monitoring|Feature to detect real time threats and prevention by monitoring the behavior of applications, services, and files. Can be one of the following: <ul><li>**disabled** - default</li><li>**enabled**</li></ul>|
-|cloud_automatic_sample_submission_consent|Current sample submission level. Can be one of the following values: <ul><li>**None**: No suspicious samples are submitted to Microsoft.</li><li>**safe**: Only suspicious samples that don't contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.</li><li>**All**: All suspicious samples are submitted to Microsoft.</li></ul>|
-|cloud_diagnostic_enabled|True if optional diagnostic data collection is enabled, false otherwise. For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576).|
-|cloud_enabled|True if cloud-delivered protection is enabled, false otherwise.|
-|conflicting_applications|List of applications that are possibly conflicting with Microsoft Defender for Endpoint. This list includes, but isn't limited to, other security products and other applications known to cause compatibility issues.|
-|definitions_status|Status of antivirus definitions. Can be one of the following: <ul><li>**up_to_date**</li><li>**updating**</li><li>**unavailable**</li></ul>|
+| `app_version` | Displays Microsoft Defender application version.|
+|`automatic_definition_update_enabled`|`True` if automatic antivirus definition updates are enabled; otherwise, `false`.|
+|`behavior_monitoring`|Feature to detect real time threats and prevention by monitoring the behavior of applications, services, and files.<br/><br/>Can be one of the following: <br/>- **disabled** - default <br/>- **enabled** |
+|`cloud_automatic_sample_submission_consent`|Current sample submission level. <br/><br/>Can be one of the following values: <br/>- **None**: No suspicious samples are submitted to Microsoft.<br/>- **safe**: Only suspicious samples that don't contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.<br/>- **All**: All suspicious samples are submitted to Microsoft.|
+|`cloud_diagnostic_enabled`|`True` if optional diagnostic data collection is enabled; otherwise, `false`. <br/><br/>For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576).|
+|`cloud_enabled`|`True` if cloud-delivered protection is enabled; otherwise, `false`.|
+|`conflicting_applications`|List of applications that are possibly conflicting with Microsoft Defender for Endpoint. This list includes, but isn't limited to, other security products and other applications known to cause compatibility issues.|
+|definitions_status|Status of antivirus definitions. Can be one of the following: <br/>- **up_to_date**<br/>- **updating**<br/>- **unavailable**|
 |definitions_updated|Date and time of last antivirus definition update.|
 |definitions_updated_minutes_ago|Number of minutes since last antivirus definition update.|
 |definitions_version|Antivirus definition version.|
