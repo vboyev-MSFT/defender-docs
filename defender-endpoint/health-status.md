@@ -35,7 +35,7 @@ The following table provides information about the values that are returned when
 |`cloud_diagnostic_enabled`|`True` if optional diagnostic data collection is enabled; otherwise, `false`. <br/><br/>For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576).|
 |`cloud_enabled`|`True` if cloud-delivered protection is enabled; otherwise, `false`.|
 |`conflicting_applications`|List of applications that are possibly conflicting with Microsoft Defender for Endpoint. This list includes, but isn't limited to, other security products and other applications known to cause compatibility issues.|
-|definitions_status|Status of antivirus definitions. Can have one of the following values: <br/>- **up_to_date**<br/>- **updating**<br/>- **unavailable**|
+|`definitions_status`|Status of antivirus definitions. Can have one of the following values: <br/>- **up_to_date**<br/>- **updating**<br/>- **unavailable**|
 |`definitions_updated`|Date and time of last antivirus definition update.|
 |`definitions_updated_minutes_ago`|Number of minutes since last antivirus definition update.|
 |`definitions_version`|Antivirus definition version.|
