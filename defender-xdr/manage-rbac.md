@@ -30,6 +30,8 @@ search.appverid: met150
 - [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
+- [Microsoft Security Exposure Management](/security-exposure-management/)
+
 Microsoft Defender XDR provides integrated threat protection, detection, and response across endpoints, email, identities, applications, and data within a single portal. Controlling a user's permissions around their access to view data or complete tasks is essential for organizations to minimize the risks associated with unauthorized access.
 
 The Microsoft Defender XDR Unified role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to control user permissions across different security solutions.
