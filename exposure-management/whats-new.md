@@ -27,9 +27,9 @@ Security Exposure Management is currently in public preview.
 
 ## November 2024
 
-### Notification for upcoming version updates
+### Content versioning notifications
 
-The new versioning feature in MSEM will notify users about upcoming version updates providing visibility in advance into the expected metric changes and their impact on their related initiatives. A side panel will offer more details about the update, including the expected date of the change, release notes, and current and new metric values, as well as changes to the related initiatives' scores. Additionally, users will be able to provide feedback about the update directly through the platform.
+The new versioning feature in Microsoft Security Exposure Management offers proactive notifications about upcoming version updates, giving users advanced visibility into anticipated metric changes and their impact on their related initiatives. A dedicated side panel provides comprehensive details about each update, including the expected release date, release notes, current and new metric values, and any changes to related initiative scores. Additionally, users can share direct feedback on the updates within the platform, fostering continuous improvement and responsiveness to user needs.
 
 For more information on exposure insights, see [Overview - Exposure insights](exposure-insights-overview.md)
 
