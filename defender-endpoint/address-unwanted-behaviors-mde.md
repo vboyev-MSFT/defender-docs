@@ -36,8 +36,8 @@ At a high level, the general process for addressing an unwanted behavior in Defe
 
 1. Identify which capability is causing the unwanted behavior. You need to know if there's a misconfiguration with Microsoft Defender Antivirus, endpoint detection and response, attack surface reduction, controlled folder access, and so on, in Defender for Endpoint. You can use information in the Microsoft Defender portal or on the device to make your determination.
 
-   - In the Microsoft Defender portal, you can investigate alerts, use advanced hunting, and view reports.
-   - On the device, you can use performance analyzer tools, review the event log, and check your protection history
+   - In the [Microsoft Defender portal](https://security.microsoft.com), you can [investigate alerts](alerts-queue.md), use [advanced hunting](../defender-xdr/advanced-hunting-overview.md), and [view reports](threat-protection-reports.md).
+   - On the device, you can use [performance analyzer tools](tune-performance-defender-antivirus.md), review the event log, and check your protection history.
 
 2. Take actions to exclude or trust a process or file. Depending on your findings from the previous step, you might take one or more of the following steps:
 
