@@ -4,7 +4,7 @@ description: Learn how to use exclusions, indicators, and other techniques to ad
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
-ms.date: 11/01/2024
+ms.date: 11/04/2024
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
@@ -28,7 +28,7 @@ The primary function of Defender for Endpoint is to prevent and detect access to
 - **Poor performance**: Applications experience performance issues when certain features of Defender for Endpoint are enabled
 - **Application incompatibility**: Applications don't function properly when certain features of Defender for Endpoint are enabled
 
-This article describes these types of unwanted behaviors and how to address them. 
+This article describes how to address these types of unwanted behaviors and includes some example scenarios.
 
 ## How to address an unwanted behavior in Defender for Endpoint
 
@@ -41,15 +41,15 @@ At a high level, the general process for addressing an unwanted behavior in Defe
 
 2. Take actions to exclude or trust a process or file. Depending on your findings from the previous step, you might take one or more of the following steps:
 
-   - Define exclusions for Microsoft Defender Antivirus
-   - Create indicators for Defender for Endpoint
    - Suppress alerts in the Microsoft Defender portal
    - Define custom remediation actions
    - Submit a file to Microsoft for analysis
+   - Define exclusions for Microsoft Defender Antivirus
+   - Create indicators for Defender for Endpoint
 
 3. Verify that the change has addressed the issue. 
 
-## Common false positive scenarios
+## Example scenarios
 
 ### An app is detected by Microsoft Defender Antivirus when the application runs
 
@@ -153,17 +153,6 @@ In this scenario, whenever a user opens documents that were created by using Mic
 
 4. Add exclusions. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
 
-<!---
-### When a user runs a custom app from a USB drive, the app is blocked
-
-In this scenario, whenever a user runs a custom created application from a USB drive, the app is blocked by the "Block apps running from USB drive" configuration. 
-
-*How to observe**: CONTENT NEEDED
-
-**How to address**: CONTENT NEEDED. Add an AV path exclusion doesn't work as the USB may get mapped to a different drive name and ASR does not respect wildcards in AV path exclusions--->
-
-## Performanmce issues
-
 ### An application writes log files locally
 
 In this scenario, an application writes log files locally on the device, resulting in performance issues.
@@ -208,24 +197,6 @@ In this scenario, an application copies files from one remote location to anothe
 In this scenario, an application uses File Explorer in Windows to copy files from a remote share using an NAS Path to the device.
 
 **How to address**: Add folder exclusions for Microsoft Defender Antivirus
-
-<!---
-### A file opened from an SMB share causes an application to run slowly
-
-In this scenario, whenever a user opens a file with a certain extension from an SMB share, the application used to open the file runs slowly. 
-
-**How to address**: Add folder exclusions for Microsoft Defender Antivirus
---->
-
-### A compiling application is taking too long to run
-
-In this scenario, whenever a certain application compiles, it takes a long time to run.
-
-**How to address**: Use a developer drive and if need be, add folder exclusions for Microsoft Defender Antivirus.
-
-## Application compatibility issues
-
-
 
 ## See also
 
