@@ -38,7 +38,7 @@ At a high level, the general process for addressing an unwanted behavior in Defe
 
    | Location | What to do |
    |---|---|
-   | The [Microsoft Defender portal](https://security.microsoft.com) | Take one or more of the following actions to help identify what's happening: <br/>- [Investigate alerts](alerts-queue.md) <br/>- [Use advanced hunting](../defender-xdr/advanced-hunting-overview.md) <br/>- [View reports](threat-protection-reports.md) |
+   | The [Microsoft Defender portal](https://security.microsoft.com) | Take one or more of the following actions to help identify what's happening: <br/>- [Investigate alerts](alerts-queue.md) <br/>- [Use advanced hunting](/defender-xdr/advanced-hunting-overview) <br/>- [View reports](threat-protection-reports.md) |
    | On the device | Take one or more of the following steps to identify the issue: <br/>- [Use performance analyzer tools](tune-performance-defender-antivirus.md) <br/>- [Review event logs and error codes](troubleshoot-microsoft-defender-antivirus.yml) <br/>- [Check your protection history](microsoft-defender-security-center-antivirus.md) |
 
 2. Depending on your findings from the previous step, you might take one or more of the following actions:
