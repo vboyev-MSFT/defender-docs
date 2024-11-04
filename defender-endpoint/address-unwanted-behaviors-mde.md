@@ -41,7 +41,7 @@ At a high level, the general process for addressing an unwanted behavior in Defe
    | The [Microsoft Defender portal](https://security.microsoft.com) | Take one or more of the following actions to help identify what's happening: <br/>- [Investigate alerts](alerts-queue.md) <br/>- [Use advanced hunting](../defender-xdr/advanced-hunting-overview.md) <br/>- [View reports](threat-protection-reports.md) |
    | On the device | Take one or more of the following steps to identify the issue: <br/>- [Use performance analyzer tools](tune-performance-defender-antivirus.md) <br/>- [Review event logs and error codes](troubleshoot-microsoft-defender-antivirus.yml) <br/>- [Check your protection history](microsoft-defender-security-center-antivirus.md) |
 
-2. Take actions to exclude or trust a process or file. Depending on your findings from the previous step, you might take one or more of the following steps:
+2. Depending on your findings from the previous step, you might take one or more of the following actions:
 
    - [Suppress alerts in the Microsoft Defender portal](manage-suppression-rules.md)
    - [Define custom remediation actions](configure-remediation-microsoft-defender-antivirus.md)
@@ -49,7 +49,7 @@ At a high level, the general process for addressing an unwanted behavior in Defe
    - [Define exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
    - [Create indicators for Defender for Endpoint](indicator-manage.md)
 
-3. Verify that the change has addressed the issue. 
+3. Verify that your changes have addressed the issue. 
 
 ## Example scenarios
 
