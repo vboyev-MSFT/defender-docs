@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 09/18/2024
+ms.date: 11/04/2024
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
