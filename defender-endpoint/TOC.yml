@@ -11,7 +11,7 @@
     - name: Trial user guide - Microsoft Defender for Endpoint
       href: defender-endpoint-trial-user-guide.md
     - name: Pilot and deploy Defender for Endpoint
-      href: /defender-xdr/pilot-deploy-defender-endpoint?toc=/defender-xdr/TOC.json&bc=/defender-xdr/breadcrumb/toc.json
+      href: /defender-xdr/pilot-deploy-defender-endpoint?toc=/defender-endpoint/TOC.json&bc=/defender-endpoint/breadcrumb/toc.json
     - name: Minimum requirements
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
