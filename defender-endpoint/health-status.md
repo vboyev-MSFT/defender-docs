@@ -45,20 +45,20 @@ The following table provides information about the values that are returned when
 |`edr_early_preview_enabled`|Setting of edr early preview. Can be one of the following: <br/>- **disabled** <br/>- **enabled**|
 |`edr_group_ids`|Group ID that the device is associated with.|
 |`edr_machine_id`|Device identifier used in the Microsoft Defender portal.|
-|`engine_load_status`|Status of antivirus engine to determine whether it's running. Can be one of the following: <br/>- **Engine not loaded** - antivirus engine process is down<br/>- **Engine load succeeded** - antivirus engine process is up and running|
+|`engine_load_status`|Status of antivirus engine to determine whether it's running. <br/><br/>Can be one of the following: <br/>- **Engine not loaded** - antivirus engine process is down<br/>- **Engine load succeeded** - antivirus engine process is up and running|
 |`engine_version`|Version of the antivirus engine.|
 |`healthy`|`True` if the product is healthy; otherwise, `false`.|
 |`health_issues`|Lists health issues if any.|
 |`licensed`|`True` if the device is onboarded to a tenant; otherwise, `false`.|
-|`log_level`|Current log level for the product. Can be one of the following values: <br/>- **info** <br/>- **debug**|
+|`log_level`|Current log level for the product. <br/><br/>Can be one of the following values: <br/>- **info** <br/>- **debug**|
 |`machine_guid`|Unique machine identifier used by the antivirus component.|
 |`network_protection_enforcement_level`|Mode of network protection. <br/><br/>Can be one of the following: <br/>- **disabled** - all components associated with network protection are disabled<br/>- **block** - network protection prevents connection to malicious websites<br/>- **audit** - Check how blocks occur|
 |`network_protection_status`|Status of the network protection component (macOS only).<br/><br/> Can be one of the following values: <br/>- **starting** - Network protection is starting<br/>- **failed_to_start** - Network protection couldn't be started due to an error<br/>- **started** - Network protection is running on the device<br/>- **restarting** - Network protection is restarting<br/>- **stopping** - Network protection is stopping<br/>- **stopped** - Network protection isn't running|
 |`org_id`|Organization that the device is onboarded to. If the device isn't yet onboarded to any organization, it shows as `unavailable`. For more information on onboarding, see [Onboard to Microsoft Defender for Endpoint](onboarding.md).|
-|`passive_mode_enabled`|`True` if the antivirus component is set to run in passive mode, `false` otherwise.|
+|`passive_mode_enabled`|`True` if the antivirus component is set to run in passive mode; otherwise, `false`.|
 |`product_expiration`|Date and time when the current product version reaches end of support.|
-|`real_time_protection_available`|`True` if the real-time protection component is healthy, `false` otherwise.|
-|`real_time_protection_enabled`|`True` if real-time antivirus protection is enabled, `false` otherwise.|
+|`real_time_protection_available`|`True` if the real-time protection component is healthy; otherwise, `false`.|
+|`real_time_protection_enabled`|`True` if real-time antivirus protection is enabled; otherwise, `false`.|
 |`real_time_protection_subsystem`|Subsystem used to serve real-time protection. If real-time protection isn't operating as expected, it shows as `unavailable`.|
 |`release_ring`|Release ring. For more information, see [Deployment rings](onboarding.md).|
 |`supplementary_events_subsystem`|Subsystem that provides supplementary event data. Can be one of the following values: <br/>- **ebpf** - Default from app version: `101.2408.0000`<br/>- **auditd**|
