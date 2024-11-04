@@ -30,6 +30,8 @@ search.appverid: met150
 - [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
+- [Microsoft Security Exposure Management](/security-exposure-management/)
+
 ## Create a custom role
 
 The following steps guide you on how to create custom roles in Microsoft Defender XDR Unified RBAC.
