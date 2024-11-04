@@ -51,8 +51,8 @@ In order to properly diagnose and resolve issues, the first step is to determine
 
 Then, see the following articles:
 
-- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Managing exclusions reference](managing-exclusions.md)
+- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Address unwanted behaviors with exclusions, indicators, and other techniques](address-unwanted-behaviors-mde.md)
 
 ## Alternatives to creating exclusions and allow indicators
