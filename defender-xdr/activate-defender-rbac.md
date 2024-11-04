@@ -30,6 +30,8 @@ search.appverid: met150
 - [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
+- [Microsoft Security Exposure Management](/security-exposure-management/)
+
 For the Microsoft Defender XDR security portal to start enforcing the permissions and assignments configured in your new [custom roles](create-custom-rbac-roles.md) or [imported roles](import-rbac-roles.md), you must activate the Microsoft Defender XDR Unified RBAC model for some or all of your workloads.
 
 <a name='activate-microsoft-365-defender-unified-rbac'></a>
@@ -54,20 +56,19 @@ You can activate your workloads in two ways from the Permissions and roles page:
 :::image type="content" source="/defender/media/defender/m365-defender-rbac-activate-workloads1.png" alt-text="Screenshot of the activate workloads page" lightbox="/defender/media/defender/m365-defender-rbac-activate-workloads1.png":::
 
 1. **Activate workloads**
-   - Select **Activate workloads** on the banner above the list of roles to go directly to the **Activate workloads** screen.
-   - You must activate each workload one by one. Once you select the individual toggle, you activate (or deactivate) that workload.
 
-   :::image type="content" source="/defender/media/defender/defender-rbac-select-workload.png" alt-text="Screenshot of the choose workloads to activate screen":::
+- Select **Activate workloads** on the banner above the list of roles to go directly to the **Activate workloads** screen.
+- You must activate each workload one by one. Once you select the individual toggle, you activate (or deactivate) that workload.
+
+      :::image type="content" source="/defender/media/defender/defender-rbac-select-workload.png" alt-text="Screenshot of the choose workloads to activate screen":::
 
    > [!NOTE]
    > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft Defender XDR Unified RBAC.
-   >
-   > Microsoft Defender for Cloud is active by default with Microsoft Defender XDR Unified RBAC.
-   >
-   > Defender XDR Unified RBAC is automatically active for Secure Score access. Once a custom role with one of the permissions is created, it has an immediate impact on assigned users. There is no need to activate it.
+>    > Microsoft Defender for Cloud is active by default with Microsoft Defender XDR Unified RBAC.
+> > Defender XDR Unified RBAC is automatically active for Exposure Management access. Once a custom role with one of the Exposure Management permissions is created, it has an immediate impact on assigned users. There is no need to activate it.
    > 
    > To activate Exchange Online permissions in Microsoft Defender XDR Unified RBAC, Defender for Office 365 permissions must be active. 
-
+   
 2. **Workload settings**
     - Select **Workload settings**.
     - This brings you to the Microsoft Defender XDR **Permission and roles** page.
