@@ -27,6 +27,8 @@ The asset information imported into Exposure Management includes data from exter
 
 The imported assets will appear in the device inventory and is incorporated into the exposure graph. Microsoft Security Exposure Management also offers integration with critical asset protection, attack paths, metrics, and initiatives. It provides insights into potential attack paths and entry points that could compromise critical assets. It also offers metrics and recommendations to help prioritize actions to protect these assets.
 
+:::image type="content" source="media/value-data-connectors/device inventory with 3P.png" alt-text="Screenshot of device inventory with discovery source highlighted" lightbox="media/value-data-connectors/device inventory with 3P.png":::
+
 The information brought into the system includes:
 
 - Device and service data from systems
