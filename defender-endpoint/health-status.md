@@ -30,8 +30,8 @@ The following table provides information about the values that are returned when
 |---|---|
 | `app_version` | Displays Microsoft Defender application version.|
 |`automatic_definition_update_enabled`|`True` if automatic antivirus definition updates are enabled; otherwise, `false`.|
-|`behavior_monitoring`|Feature to detect real time threats and prevention by monitoring the behavior of applications, services, and files.<br/><br/>Can be one of the following: <br/>- **disabled** - default <br/>- **enabled** |
-|`cloud_automatic_sample_submission_consent`|Current sample submission level. <br/><br/>Can be one of the following values: <br/>- **None**: No suspicious samples are submitted to Microsoft.<br/>- **safe**: Only suspicious samples that don't contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.<br/>- **All**: All suspicious samples are submitted to Microsoft.|
+|`behavior_monitoring`|Feature to detect real time threats and prevention by monitoring the behavior of applications, services, and files.<br/><br/>Can have one of the following values: <br/>- **disabled** - default <br/>- **enabled** |
+|`cloud_automatic_sample_submission_consent`|Current sample submission level. <br/><br/>Can have one of the following values: <br/>- **None**: No suspicious samples are submitted to Microsoft.<br/>- **safe**: Only suspicious samples that don't contain personal data are submitted automatically. This value is the default value for this setting.<br/>- **All**: All suspicious samples are submitted to Microsoft.|
 |`cloud_diagnostic_enabled`|`True` if optional diagnostic data collection is enabled; otherwise, `false`. <br/><br/>For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576).|
 |`cloud_enabled`|`True` if cloud-delivered protection is enabled; otherwise, `false`.|
 |`conflicting_applications`|List of applications that are possibly conflicting with Microsoft Defender for Endpoint. This list includes, but isn't limited to, other security products and other applications known to cause compatibility issues.|
@@ -42,7 +42,7 @@ The following table provides information about the values that are returned when
 |`edr_client_version`|Version of the EDR client running on the device.|
 |`edr_configuration_version`|EDR configuration version.|
 |`edr_device_tags`|List of tags associated with the device.|
-|`edr_early_preview_enabled`|Setting of edr early preview. Can be one of the following: <br/>- **disabled** <br/>- **enabled**|
+|`edr_early_preview_enabled`|Setting of edr early preview. Can have one of the following values: <br/>- **disabled** <br/>- **enabled**|
 |`edr_group_ids`|Group ID that the device is associated with.|
 |`edr_machine_id`|Device identifier used in the Microsoft Defender portal.|
 |`engine_load_status`|Status of antivirus engine to determine whether it's running. <br/><br/>Can be one of the following: <br/>- **Engine not loaded** - antivirus engine process is down<br/>- **Engine load succeeded** - antivirus engine process is up and running|
