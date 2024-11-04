@@ -91,7 +91,7 @@ There are several different types of exclusions to consider. Some types of exclu
 - **[Controlled folder access exclusions](#controlled-folder-access-exclusions)**: These are exclusions to allow certain apps or executables to access protected folders.
 - **[Custom remediation actions](#custom-remediation-actions)**: These are actions that you specify for Microsoft Defender Antivirus when certain types of detections.
 
-If you're looking for information about indicators, see [Overview of indicators in Microsoft Defender for Endpoint](indicators-overview.md).
+For information about indicators, see [Overview of indicators in Microsoft Defender for Endpoint](indicators-overview.md).
 
 ### Custom exclusions
 
@@ -262,7 +262,7 @@ Depending on what you're using, you might need to refer to the documentation for
 ## See also
 
 - [Address common false-positive scenarios with exclusions](address-unwanted-behaviors-mde.md)
-- [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions)
+- [Configure exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Overview of indicators in Microsoft Defender for Endpoint](indicators-overview.md)
 
