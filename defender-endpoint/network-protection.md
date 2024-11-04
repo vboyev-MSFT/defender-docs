@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 10/24/2024
+ms.date: 11/04/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -392,6 +392,33 @@ Due to the environment where network protection runs, the feature might not be a
 
 > [!NOTE]
 > Before starting troubleshooting, make sure to set the QUIC protocol to disabled in browsers that are used. QUIC protocol is not supported with Network Protection functionality.
+
+####Would be helpful for customer if we provide instructions to disable####
+Because Global Secure Access doesn't currently support UDP traffic, UDP traffic to port 443 can't be tunneled. You can disable the QUIC protocol so that Global Secure Access clients fall back to using HTTPS (TCP traffic on port 443). You must make this change if the servers that you're trying to access do support QUIC (for example, through Microsoft Exchange Online). To disable QUIC, you can take one of the following actions:
+
+Disable QUIC in Windows Firewall
+
+The most generic method to disable QUIC is to disable that feature in Windows Firewall. This method affects all applications, including browsers and rich client apps (such as Microsoft Office). In PowerShell, run the following New-NetFirewallRule cmdlet to add a new firewall rule that disables QUIC for all outbound traffic from the device:
+
+PowerShell
+
+Copy
+$ruleParams = @{
+    DisplayName = "Block QUIC"
+    Direction = "Outbound"
+    Action = "Block"
+    RemoteAddress = "0.0.0.0/0"
+    Protocol = "UDP"
+    RemotePort = 443
+}
+New-NetFirewallRule @ruleParams
+Disable QUIC in a web browser
+
+You can disable QUIC at the web browser level. However, this method of disabling QUIC means that QUIC continues to work on non-browser applications. To disable QUIC in Microsoft Edge or Google Chrome, open the browser, locate the Experimental QUIC protocol setting (#enable-quic flag), and then change the setting to Disabled. The following table shows which URI to enter in the browser's address bar so that you can access that setting.
+
+Browser	URI
+Microsoft Edge	edge://flags/#enable-quic
+Google Chrome	chrome://flags/#enable-quic
 
 ## Optimizing network protection performance
 
