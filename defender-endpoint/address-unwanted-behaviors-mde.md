@@ -51,7 +51,7 @@ At a high level, the general process for addressing an unwanted behavior in Defe
 
 3. Verify that your changes have addressed the issue. 
 
-## Example scenarios
+## Examples of unwanted behaviors
 
 This section includes several example scenarios that can be addressed by using exclusions and indicators. For more information about exclusions, see [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md).
 
