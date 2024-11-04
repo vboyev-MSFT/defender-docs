@@ -68,6 +68,7 @@ The following table provides information about the values that are returned when
 You can get more detailed health information for different Defender's features with `mdatp health --details <feature>`. For example:
 
 ```bash
+
 mdatp health --details edr
 
 mdatp health --details definitions
