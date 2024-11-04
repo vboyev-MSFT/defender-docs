@@ -82,7 +82,7 @@ To learn more, see the following articles:
 
 ## Types of exclusions
 
-There are several different types of exclusions to consider. Some types of exclusions affect multiple capabilities in Defender for Endpoint, whereas other types are specific to Microsoft Defender Antivirus. This article describes the following types of exclusions:
+There are several different types of exclusions to consider. Some types of exclusions affect multiple capabilities in Defender for Endpoint, whereas other types are specific to Microsoft Defender Antivirus. 
 
 - **[Custom exclusions](#custom-exclusions)**: These are exclusions that you define for specific use cases or scenarios, and for certain operating systems, such as [Mac](#exclusions-on-mac), [Linux](#exclusions-on-linux), and [Windows](#exclusions-on-windows).
 - **[Preconfigured antivirus exclusions](#antivirus-preconfigured-exclusions)**: These are exclusions that you don't have to define, such as [automatic server role exclusions](#automatic-server-role-exclusions) and [built-in antivirus exclusions](#built-in-antivirus-exclusions). Even though you don't have to define these, it's helpful to know what they are and how they work.
