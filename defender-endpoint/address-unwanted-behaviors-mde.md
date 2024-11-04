@@ -41,11 +41,11 @@ At a high level, the general process for addressing an unwanted behavior in Defe
 
 2. Take actions to exclude or trust a process or file. Depending on your findings from the previous step, you might take one or more of the following steps:
 
-   - Suppress alerts in the Microsoft Defender portal
-   - Define custom remediation actions
-   - Submit a file to Microsoft for analysis
-   - Define exclusions for Microsoft Defender Antivirus
-   - Create indicators for Defender for Endpoint
+   - [Suppress alerts in the Microsoft Defender portal](manage-suppression-rules.md)
+   - [Define custom remediation actions](configure-remediation-microsoft-defender-antivirus.md)
+   - [Submit a file to Microsoft for analysis](admin-submissions-mde.md)
+   - [Define exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+   - [Create indicators for Defender for Endpoint](indicator-manage.md)
 
 3. Verify that the change has addressed the issue. 
 
@@ -90,7 +90,7 @@ In this scenario, an application is detected by Microsoft Defender Antivirus bec
 
 ### A nonmalicious PowerShell script file is incorrectly detected by Microsoft Defender Antivirus
 
-In this scenario, a user copies a nonmalicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.   
+In this scenario, a user copies a nonmalicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.
 
 **How to observe**: AMSI detection in the Operational logs 
 
