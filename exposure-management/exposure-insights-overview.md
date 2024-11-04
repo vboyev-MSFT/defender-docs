@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/20/2024
+ms.date: 11/04/2024
 ---
 
 # Overview - Exposure insights
