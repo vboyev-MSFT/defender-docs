@@ -75,7 +75,7 @@ Automatic attack disruption responds to threats by containing devices and contai
 
 The following image shows an example of an incident where automatic attack disruption was triggered.
 
-:::image type="content" source="media/overview-unified-security/attack-disrupt.png" alt-text="Screenshot of the incidents attack that triggered automatic attack disruption." lighthouse="media/overview-unified-security/attack-disrupt.png":::
+:::image type="content" source="media/overview-unified-security/attack-disrupt.png" alt-text="Screenshot of the incidents attack that triggered automatic attack disruption." lightbox="media/overview-unified-security/attack-disrupt.png":::
 
 For more information, see [Automatic attack disruption in Microsoft Defender XDR](/defender-xdr/automatic-attack-disruption).
 
