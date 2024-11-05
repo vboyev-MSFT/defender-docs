@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/04/2024
+ms.date: 11/05/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
@@ -17,25 +17,23 @@ ms.topic: overview
 
 # What is Microsoft's unified security operations platform?
 
-Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps). It integrates security information and event management (SIEM), security orchestration, automation, and response (SOAR), extended detection and response (XDR), posture and exposure management, cloud security, and threat intelligence.
+Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps). It integrates security information and event management (SIEM), security orchestration, automation, and response (SOAR), extended detection and response (XDR), posture and exposure management, cloud security, threat intelligence, and generative AI solutions.
 
 To cover all those capabilities, Microsoft's unified SecOps platform combines services like [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender), [Microsoft Sentinel](/azure/sentinel/overview), [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot) in the Microsoft Defender portal. The Defender portal provides a single location to monitor, detect, investigate, remediate, and respond against prebreach and postbreach cybersecurity risks and threats.
 
 :::image type="content" source="media/overview-unified-security/defender-portal-home.png" lightbox="media/overview-unified-security/defender-portal-home.png" alt-text="Screenshot of the home page of Microsoft's unified SecOps platform in the Defender portal.":::
 
-<!--- (Add something about zero trust into doc)--->
-
 ## Protect assets
 
-Protect a wide range of assets with the integration of Defender products in Microsoft's unified SecOps platform.
+Protect a wide range of assets with the integration of Defender XDR in Microsoft's unified SecOps platform.
 
 |Capability  |Security product  |
 |---------|---------|
-|Protect against threats posed by email messages, URL links, and Office 365 collaboration tools.     |   [Defender for Office 365](/defender-office-365/mdo-about)      |
+|Protect against threats posed by email messages, URL links, and Office 365 collaboration tools.     |   [Microsoft Defender for Office 365](/defender-office-365/mdo-about)      |
 |Monitor and protect endpoint devices. Monitor, detect, and investigate device breaches, and automatically respond to security threats.    |     [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)    |
 |Identify assets and software inventory, and assess device posture to find security vulnerabilities.|[Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)|
-|Protect and control access to SaaS cloud apps.|[Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)|
-|Identify, detect, and investigate Microsoft Entra ID threats.|[Defender for Identity](/defender-for-identity/what-is)|
+|Protect and control access to SaaS cloud apps.|[Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)|
+|Identify, detect, and investigate Microsoft Entra ID threats.|[Microsoft Defender for Identity](/defender-for-identity/what-is)|
 |Improve multicloud and on-premises security posture, and protect cloud workloads against threats.|[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)|
 |Discover and assess assets, and remediate risk to reduce attack surfaces.|[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)|
 |Identify and protect operational technology (OT) and IT resources by extending Defender XDR protection to OT environments.|[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)|
