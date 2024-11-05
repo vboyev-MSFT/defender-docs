@@ -57,6 +57,14 @@ Attack surface reduction rules only work on devices with the following condition
 
 If these prerequisites are met, proceed to the next step to test the rule in audit mode.
 
+## Best practice when setting up Attack Surface Reduction rules via Group Policy
+
+When setting up the Attack Surface Reduction rules via Group Policy, here are a few of the common mistakes:
+
+1. Make sure when adding the GUID for Attack Surface Reduction rules, there are **no double quotes** ("ASR Rules GUID") at the beginning or at the end of the GUID.
+
+1. Make sure that there are **no spaces** at the beginning or at the end when adding the GUID for Attack Surface Reduction rules
+
 ## Use audit mode to test the rule
 
 Follow these instructions in [Use the demo tool to see how attack surface reduction rules work](attack-surface-reduction-rules-deployment-test.md) to test the specific rule you're encountering problems with.
