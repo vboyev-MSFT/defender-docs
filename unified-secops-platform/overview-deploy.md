@@ -70,37 +70,21 @@ When you onboard Microsoft Sentinel to the Defender portal, you unify capabiliti
 
 For more information, see [Connect Microsoft Sentinel to Microsoft Defender](../defender-xdr/microsoft-sentinel-onboard.md).
 
-## Post-deployment tasks
+## Post-deployment system configuration
 
 After completing the full unified security operations platform deployment, you can start using the platform to monitor and respond to security incidents. Here are some tasks to start with:
 
-## Configure Microsoft Sentinel content
-
-Based on the [data sources you selected](overview-plan.md#prioritize-data-connectors) when planning your deployment, install Microsoft Sentinel solutions and configure your data connectors. 
-
-Microsoft Sentinel provides a wide range of built-in solutions and data connectors, but you can also build custom connectors and set up connectors to ingest CEF or Syslog logs. Many solutions also provide out-of-the-box analytics rule templates that you can use to create scheduled rules to start detecting threats in your environment.
-
-For more information, see:
-
-- [Configure content](/azure/sentinel/configure-content).
-- Microsoft Sentinel content hub catalog
-- Discover and manage Microsoft Sentinel out-of-the-box content
-- Set up free data sources
-
-
-
-Enable health and auditing /azure/sentinel/enable-monitoring?tabs=azure-portal
-Configure content /azure/sentinel/configure-content
-Enable User and Entity Behavior Analytics (UEBA)	Enable and use the UEBA feature to streamline the analysis process. /azure/sentinel/enable-entity-behavior-analytics?tabs=azure
-Set up interactive and long-term data retention	Set up interactive and long-term data retention, to make sure your organization retains the data that's important in the long term. /azure/sentinel/configure-data-retention-archive
+|Task  |Description  |
+|---------|---------|
+|**Enable health and auditing**     |  Monitor the health and audit the integrity of supported Microsoft Sentinel resources by turning on the auditing and health monitoring feature in Microsoft Sentinel's Settings page. Get insights on health drifts, such as the latest failure events or changes from success to failure states, and on unauthorized actions, and use this information to create notifications and other automated actions. <br><br>For more information, see [Turn on auditing and health monitoring for Microsoft Sentinel](/azure/sentinel/enable-monitoring?tabs=azure-portal).       |
+|**Configure Microsoft Sentinel content**     |  Based on the [data sources you selected](overview-plan.md#prioritize-data-connectors) when planning your deployment, install Microsoft Sentinel solutions and configure your data connectors. <br><br>Microsoft Sentinel provides a wide range of built-in solutions and data connectors, but you can also build custom connectors and set up connectors to ingest CEF or Syslog logs.  <br><br>For more information, see: <br> - [Configure content](/azure/sentinel/configure-content)<br>- [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy?tabs=azure-portal) <br>- [Find your data connector](/azure/sentinel/data-connectors-reference)       |
+|**Enable User and Entity Behavior Analytics (UEBA)**     | After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on. <br><Br>Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.<br><br>For more information, see [Enable UEBA in Microsoft Sentinel](/azure/sentinel/enable-entity-behavior-analytics?tabs=azure).        |
+|**Set up interactive and long-term data retention**     |   Set up interactive and long-term data retention to make sure your organization retains the data that's important in the long term.  <br><bFor more information, see [Configure interactive and long-term data retention](/azure/sentinel/configure-data-retention-archive).      |
 
 ### Configure incident detection and response
 
-After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on.
 
-Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
 
-For more information, see Identify threats with entity behavior analytics
 
 Step 3: Enable analytic rules
 The brains of Microsoft Sentinel come from the analytic rules. These are rules you set to tell Microsoft Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Microsoft Sentinel makes are based on user entity behavioral analytics (UEBA) and on correlations of data across multiple data sources.
