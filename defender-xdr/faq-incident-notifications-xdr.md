@@ -13,8 +13,11 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
+ms.custom: 
+- cx-ti
+- cx-dex
 search.appverid: met150
-ms.date: 04/29/2023
+ms.date: 10/30/2024
 ---
 
 # Understanding and managing Defender Experts for XDR incident updates

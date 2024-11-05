@@ -10,6 +10,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
+ms.custom: 
+- cx-ti
+- cx-dex
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,7 +22,7 @@ ms.collection:
   - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 10/16/2024
+ms.date: 10/31/2024
 ---
 
 # Collaborate with experts on demand
