@@ -369,7 +369,7 @@ For more information, see [Turn on network protection](enable-network-protection
 
 #### Network protection suggested registry keys
 
-For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified solution](/defender-endpoint/configure-server-endpoints#functionality-in-the-modern-unified-solution), Windows Server version 1803 or later, and Windows 10 Enterprise Multi-Session 1909 and later (used in Windows Virtual Desktop on Azure), enable additional registry keys, as follows:
+For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified solution](/defender-endpoint/configure-server-endpoints#functionality-in-the-modern-unified-solution), Windows Server version 1803 or later, and Windows 10 Enterprise Multi-Session 1909 and later (used in Windows Virtual Desktop on Azure), enable other registry keys, as follows:
 
 1. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**.
 
@@ -382,22 +382,26 @@ For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified sol
 > [!NOTE]
 > Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **NIS** > **Consumers** > **IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
 
-For additional information, see: [Turn on network protection](enable-network-protection.md)
+For more information, see: [Turn on network protection](enable-network-protection.md)
 
 #### Windows Servers and Windows Multi-session configuration requires PowerShell
 
-For Windows Servers and Windows Multi-session, there are additional items that you must enable by using PowerShell cmdlets. For Windows Server 2012 R2 and Windows Server 2016 unified client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure.
+For Windows Servers and Windows Multi-session, there are other items that you must enable by using PowerShell cmdlets. For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified solution](/defender-endpoint/configure-server-endpoints#functionality-in-the-modern-unified-solution), Windows Server version 1803 or later, and Windows 10 Enterprise Multi-Session 1909 and later, used in Windows Virtual Desktop on Azure, run the following PowerShell commands:
 
-1. Set-MpPreference -EnableNetworkProtection Enabled
+```powershell
 
-1. Set-MpPreference -AllowNetworkProtectionOnWinServer 1
+Set-MpPreference -EnableNetworkProtection Enabled
 
-1. Set-MpPreference -AllowNetworkProtectionDownLevel 1
+Set-MpPreference -AllowNetworkProtectionOnWinServer 1
 
-1. Set-MpPreference -AllowDatagramProcessingOnWinServer 1
+Set-MpPreference -AllowNetworkProtectionDownLevel 1
+
+Set-MpPreference -AllowDatagramProcessingOnWinServer 1
+
+```
 
 > [!NOTE]
-> In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
+> In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can affect network performance.
 
 ## Network protection troubleshooting
 
