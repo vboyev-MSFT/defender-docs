@@ -47,6 +47,10 @@ The Defender portal provides a single, centralized view of organizational securi
 
 Free up analyst time as unified security dashboards enable analysts to cross organization silos, prioritize the most critical threats, and hunt effectively for attempted breaches.
 
+The following image shows the unified incident queue in Microsoft's unified SecOps platform.
+
+:::image type="content" source="media/overview-unified-security/unified-incidents.png" alt-text="Screenshot of the unified incident queue that shows incidents with multiple service sources." lightbox="media/overview-unified-security/unified-incidents.png":::
+
 ## Reduce security risk and prevent attacks
 
 Consistently reduce security risk and prevent cybersecurity attacks as a part of your organizational risk management framework. Microsoft's unified SecOps platform offers comprehensive exposure management and cloud protection capabilities. With [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction):
@@ -57,6 +61,10 @@ Consistently reduce security risk and prevent cybersecurity attacks as a part of
 - Investigate and query to get insights into security posture.
 - Prioritize asset remediation, with the focus on critical resources, to reduce security gaps and attack surfaces.
 
+The following image shows the overview page for exposure management in Microsoft's unified SecOps platform.
+
+:::image type="content" source="media/overview-unified-security/exposure-management-overview.png" alt-text="Screenshot of the overview page in the exposure management of the Defender portal." lightbox="media/overview-unified-security/exposure-management-overview.png":::
+
 ## Reduce threat detection and response times
 
 Standard cybersecurity metrics focus on the time to detect (TTD) and time to respond (TTR). Time to detect (TTD) measures how long it takes security teams to discover an incident. Time to respond (TTR) measures the amount of time it takes to respond after a threat is detected. The shorter the TTD and TTR, the more effective your detection, and response strategy is.
@@ -64,6 +72,10 @@ Standard cybersecurity metrics focus on the time to detect (TTD) and time to res
 Microsoft's unified SecOps platform correlates millions of signals from Defender products, Microsoft Sentinel, Microsoft security research, and threat intelligence to identify attacks in progress. It initiates automatic attack disruption to automatically contain attacks, limiting lateral movement early and reducing attack impact. Automatic attack disruption helps to reduce costs associated with loss of productivity, provide control to the SecOps team control to investigate and remediate compromised assets.
 
 Automatic attack disruption responds to threats by containing devices and containing or disabling users to mitigate attacks. For more information, see [Automatic attack disruption in Microsoft Defender XDR](/defender-xdr/automatic-attack-disruption).
+
+The following image shows an example of an incident where automatic attack disruption was triggered.
+
+:::image type="content" source="media/overview-unified-security/attack-disrupt.png" alt-text="Screenshot of the incidents attack that triggered automatic attack disruption.":::
 
 ## Transform SOC productivity
 
@@ -74,6 +86,10 @@ Microsoft Security Copilot brings together the power of AI and human expertise t
 - **Empower analysts**:
     - Accelerate incident resolution with guided responses, automated remediation, and summary report generation.
     - Provide intelligent assistance with tailored prompts based on best practices that analyze malicious scripts and files, and suggest KQL queries.
+
+The following image shows the incidents integration of Microsoft Copilot in the Defender.
+
+:::image type="content" source="media/overview-unified-security/security-copilot.png" alt-text="Screenshot that shows the incidents integration of Microsoft Copilot in the Defender." lightbox="media/overview-unified-security/security-copilot.png":::
 
 For more information, see [Microsoft Copilot in Microsoft Defender](/defender-xdr/security-copilot-in-microsoft-365-defender).
 
