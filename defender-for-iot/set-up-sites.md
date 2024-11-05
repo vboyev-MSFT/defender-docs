@@ -78,6 +78,9 @@ A list of all devices to be associated with this site appears. If you need to re
 1. Select the **Deselect devices from site** button. All of the devices will become accessible.
 1. Deselect the checkbox of the devices to be removed.
     1. To reset the list, select **Discard all changes**.
+
+    :::image type="content" source="media/set-up-sites/site-security-associate-device-list-preview.png" alt-text="Screenshot of the site associtation preview devices page" lightbox="media/set-up-sites/site-security-associate-device-list-preview.png" :::
+
 1. When you are finished, select **Next**, or **Skip** if you haven't made any changes.
 
 ## Review site details
