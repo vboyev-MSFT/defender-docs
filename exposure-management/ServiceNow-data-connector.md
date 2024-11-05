@@ -11,7 +11,7 @@ ms.date: 09/24/2024
 
 # ServiceNow data connector
 
-To set up the ServiceNow integration, you need the hostname of your ServiceNow instance, such as “msft-xspm.service-now.com”. The connector authenticates with Basic Auth using username and password for read only access.
+To set up the ServiceNow integration, you need the hostname of your ServiceNow instance, such as “contoso.service-now.com”. The connector authenticates with Basic Auth using username and password for read only access.
 
 ## ServiceNow configuration
 
