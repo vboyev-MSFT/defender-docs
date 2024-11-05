@@ -140,16 +140,16 @@ A new, publicly available capability in network protection utilizes functions in
 
 A user visits a website:
 
-- If the url has an unknown or uncertain reputation, a toast notification will present the user with the following options:
+- If the url has an unknown or uncertain reputation, a toast notification presents the user with the following options:
 
   - **Ok** - The toast notification is released (removed), and the attempt to access the site is ended.
-  - **Unblock** - The user will have access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
+  - **Unblock** - The user has access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
     :::image type="content" source="media/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
   > [!NOTE]
-  > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
+  > The images shown in this article for both the `warn` experience and `block` experience use "blocked url" as example placeholder text. In a functioning environment, the actual url or domain is listed.  
 
 #### Block experience
 
