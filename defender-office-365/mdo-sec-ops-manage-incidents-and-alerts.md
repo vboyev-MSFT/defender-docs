@@ -106,7 +106,7 @@ Security teams can take wide variety of response actions on email using Defender
 
   You can take these actions from the following locations:
 
-  - The **Evidence and response** tab from the details of the incident on the **Incidents** page** at <https://security.microsoft.com/incidents> (recommended).
+  - The **Evidence and response** tab from the details of the incident on the **Incidents** page at <https://security.microsoft.com/incidents> (recommended).
   - **Threat Explorer** at <https://security.microsoft.com/threatexplorer>.
   - The unified **Action center** at  <https://security.microsoft.com/action-center/pending>.
 
