@@ -408,7 +408,7 @@ Set-MpPreference -AllowDatagramProcessingOnWinServer 1
 Due to the environment where network protection runs, the feature might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve the connectivity problem, [configure a static proxy for Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
 
 > [!NOTE]
-> Before starting troubleshooting, make sure to set the QUIC protocol to disabled in browsers that are used. QUIC protocol is not supported with Network Protection functionality.
+> Before starting troubleshooting, make sure to set the QUIC protocol to `disabled` in browsers that are used. QUIC protocol is not supported with network protection functionality.
 
 <!--- Would be helpful for customer if we provide instructions to disable--->
 
