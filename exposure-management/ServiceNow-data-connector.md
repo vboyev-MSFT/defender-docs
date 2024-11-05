@@ -78,7 +78,8 @@ Some common issues that might come up when configuring the ServiceNow CMDB conne
 
 ### 'The remote server name could not be resolved'
 
-Double-check your ServiceNow Instance hostname. Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
+Verify ServiceNow Instance hostname.
+Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
 ## 429 (Too Many Requests)
 The system periodically pulls data from the configured external providers. Which may have a limit on the number of concurrent requests. 
 We recommend creating a dedicated user / account for the connector to avoid reaching this limit.
