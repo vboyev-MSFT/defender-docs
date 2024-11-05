@@ -303,7 +303,7 @@ This procedure creates a custom view that filters to only show the following eve
 
 ## Network protection and the TCP three-way handshake
 
-With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, when a site is blocked by network protection, you might see an action type of `ConnectionSuccess` under [`DeviceNetworkEvents`](/defender-xdr/advanced-hunting-devicenetworkevents-table) in the Microsoft Defender portal, even though the site was blocked. `DeviceNetworkEvents` are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, access to the site is allowed or blocked by network protection.
+With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, when network protection blocks a site, you might see an action type of `ConnectionSuccess` under [`DeviceNetworkEvents`](/defender-xdr/advanced-hunting-devicenetworkevents-table) in the Microsoft Defender portal, even though the site was blocked. `DeviceNetworkEvents` are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, access to the site is allowed or blocked by network protection.
 
 Here's an example of how that works:
 
@@ -355,7 +355,7 @@ Verify whether network protection is enabled on a local device by using Registry
 1. Select **HKEY_LOCAL_MACHINE** from the side menu.
 1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows defender** > **Windows Defender Exploit Guard** > **Network Protection**.
 
-   (If the key is not present, navigate to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**)
+   (If the key isn't present, navigate to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**)
 
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
 
@@ -363,7 +363,7 @@ Verify whether network protection is enabled on a local device by using Registry
    - 1 = On (enabled)
    - 2 = Audit mode
 
-For additional information, see: [Turn on network protection](enable-network-protection.md)
+For more information, see [Turn on network protection](enable-network-protection.md).
 
 #### Network protection suggestion
 
