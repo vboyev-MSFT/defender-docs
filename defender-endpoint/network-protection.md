@@ -180,7 +180,7 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be in active mode to enable network protection.
 
-You can enable network protection in `audit` mode or `block` mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in audit mode, and gather data on what would be blocked. Audit mode logs whenever end users connect to an address or site that would otherwise have been blocked by network protection. Note that in order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in `block` mode.
+You can enable network protection in `audit` mode or `block` mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in audit mode, and gather data on what would be blocked. Audit mode logs whenever end users connect to an address or site that would otherwise have been blocked by network protection. In order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in `block` mode.
 
 For information about network protection for Linux and macOS see the following articles: 
 
@@ -189,7 +189,7 @@ For information about network protection for Linux and macOS see the following a
 
 ## Advanced hunting
 
-If you're using advanced hunting to identify audit events, you'll have up to 30 days history available from the console. See [Advanced hunting](/defender-xdr/advanced-hunting-overview).
+If you're using advanced hunting to identify audit events, you have up to 30 days history available from the console. See [Advanced hunting](/defender-xdr/advanced-hunting-overview).
 
 You can find the audit events in **Advanced hunting** in the Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)).  
 
@@ -221,7 +221,7 @@ DeviceEvents
 
 ```
 
-The Response category tells you what caused the event, for example:
+The Response category tells you what caused the event, as in this example:
 
 | ResponseCategory | Feature responsible for the event |
 |:---|:---|
@@ -233,7 +233,7 @@ The Response category tells you what caused the event, for example:
 
 For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks).
 
-Note that Microsoft Defender SmartScreen events for the Microsoft Edge browser specifically, needs a different query:
+Microsoft Defender SmartScreen events for the Microsoft Edge browser specifically needs a different query:
 
 ```kusto
 
@@ -244,13 +244,13 @@ DeviceEvents
 
 ```
 
-You can use the resulting list of URLs and IPs to determine what would have been blocked if the device was in block mode, and which feature blocked them. Review each item on the list to identify URLS or IPs whether any are necessary to your environment. If you find any entries that have been audited which are critical to your environment, create an Indicator to allow them in your network. Allow URL / IP indicators take precedence over any block.
+You can use the resulting list of URLs and IPs to determine what would be blocked if network protection is set to block mode on the device. You can also see which features would block URLs and IPs. Review the list to identify any URLS or IPs that are necessary for your environment. You can then create an allow indicator for those URLs or IP addresses. Allow indicators take precedence over any blocks.
 
-Once you've created an indicator, you can look at resolving the underlying issue:
+Once you've created an indicator, you can look at resolving the underlying issue as follows:
 
 - SmartScreen – request review
 - Indicator – modify existing indicator
-- MCA – review unsanctioned APP
+- MCA – review unsanctioned app
 - WCF – request recategorization
 
 Using this data you can make an informed decision on enabling Network protection in Block mode. See [Order of precedence for Network protection blocks](web-protection-overview.md#order-of-precedence).
