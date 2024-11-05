@@ -31,7 +31,7 @@ To establish a connection with any of the supported external products, follow th
 
 ## Allowlist IP addresses
 
-To ensure successful connections between your external products and our system, you may need to allowlist specific IP addresses. Follow these steps to allowlist IP addresses for your external products:
+To ensure successful connections between MSEM and external products, you may need to allowlist specific Microsoft IP addresses. Follow these steps to obtain the required IP addressed and configure it with the external products:
 
 1. Identify the IP addresses:
    1. Obtain the list of IP addresses that need to be allowlisted.
