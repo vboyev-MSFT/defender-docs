@@ -8,7 +8,7 @@ ms.service: microsoft-defender-iot
 
 > [!IMPORTANT]
 >
-> This article discusses the trial license for Microsoft Defender for IoT in the Defender portal (Preview). Nevertheless, the process to set up a trial license for the Azure portal is exactly the same and could also be completed following the instructions in this article.  
+> While this article discusses the trial license for Microsoft Defender for IoT in the Defender portal (Preview), the purchasing procedures apply to both the Defender portal and Azure portal.  
 >
 > If you're an existing customer working on the **classic Defender for IoT portal** (Azure portal), see the [Defender for IoT on Azure documentation](/azure/defender-for-iot/organizations/overview).
 >
