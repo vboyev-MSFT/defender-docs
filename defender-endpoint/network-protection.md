@@ -167,9 +167,9 @@ With indicators in Defender for Endpoint, administrators can allow end users to 
 
 :::image type="content" source="media/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
-Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft Defender portal](https://security.microsoft.com) using an "allow" indicator for IPs, URLs, and domains.
+Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft Defender portal](https://security.microsoft.com) using an allow indicator for IPs, URLs, and domains.
 
-:::image type="content" source="media/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
+:::image type="content" source="media/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration URL and IP form.":::
 
 See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -178,7 +178,7 @@ See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 Network protection is enabled per device, which is typically done using your management infrastructure. For supported methods, see [Turn on network protection](enable-network-protection.md).
 
 > [!NOTE]
-> Microsoft Defender Antivirus must be active to enable network protection.
+> Microsoft Defender Antivirus must be in active mode to enable network protection.
 
 You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection. Note that in order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in "Block mode"
 
