@@ -7,7 +7,7 @@ ms.date: 11/05/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: mkaminska
+ms.reviewer: 
 manager: deniseb
 ms.custom: asr
 ms.subservice: asr
@@ -40,13 +40,13 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](h
 
 Network protection helps protect devices from certain Internet-based events by preventing connections to malicious or suspicious sites. Network protection is an attack surface reduction capability that helps prevent people in your organization from accessing domains that are considered dangerous through applications. Examples of dangerous domains are domains that host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(S) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and nonbrowser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
 
 ### Network protection coverage
 
 The following table summarizes network protection areas of coverage.
 
-| Feature | Microsoft Edge | 3rd-party browsers | Non-browser processes <br> (e.g. PowerShell) |
+| Feature | Microsoft Edge | 3rd-party browsers | Nonbrowser processes <br> (for example, PowerShell) |
 |:---|:---|:---|:---|
 | Web Threat Protection | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
 | Custom Indicators | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
@@ -68,7 +68,13 @@ Watch this video to learn how Network protection helps reduce the attack surface
 
 ## Requirements for network protection
 
-Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server version 1803 or later, macOS version 11 or later, or Defender Supported Linux versions, and Microsoft Defender Antivirus real-time protection.
+Network protection requires devices running one of the following operating systems:
+- Windows 10 or 11 (Pro or Enterprise)
+- Windows Server, version 1803 or later
+- macOS (see )
+- Linux versions (see )
+
+Network protection also requires Microsoft Defender Antivirus with real-time protection enabled.
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
