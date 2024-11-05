@@ -80,9 +80,12 @@ Some common issues that might come up when configuring the ServiceNow CMDB conne
 
 Verify ServiceNow Instance hostname.
 Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
-## 429 (Too Many Requests)
-The system periodically pulls data from the configured external providers. Which may have a limit on the number of concurrent requests. 
-We recommend creating a dedicated user / account for the connector to avoid reaching this limit.
+
+### 429 (Too Many Requests)
+
+The system periodically pulls data from the configured external providers, which may have a limit on the number of concurrent requests.
+We recommend creating a dedicated user or account for the connector to avoid reaching this limit.
+
 ### 'Temporary disconnected' or 'Temporary failure' error
 
 In cases where the error message indicates this is a temporary issue, check again later to see if the issue was auto resolved.
@@ -96,8 +99,11 @@ If there's still missing data, please contact Support.
 ### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
 
 Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
-## Unable to connect/disconnect
-If you encounter an error message indicating there was an error connecting / disconnecting. Try again in a few minutes. if the issue persists, please contact Support.
+
+### Unable to connect/disconnect
+
+If you encounter an error message indicating there was an error connecting / disconnecting. Try again in a few minutes. If the issue persists, please contact Support.
+
 ## Next steps
 
 [Getting value from your data connectors](value-data-connectors.md).
