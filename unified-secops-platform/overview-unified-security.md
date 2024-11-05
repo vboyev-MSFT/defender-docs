@@ -25,7 +25,7 @@ To cover all those capabilities, Microsoft's unified SecOps platform combines se
 
 ## Protect assets
 
-Protect a wide range of assets with the integration of Defender XDR in Microsoft's unified SecOps platform.
+Protect a wide range of assets with the integration of Defender XDR and Microsoft Sentinel in Microsoft's unified SecOps platform.
 
 |Capability  |Security product  |
 |---------|---------|
@@ -37,7 +37,7 @@ Protect a wide range of assets with the integration of Defender XDR in Microsoft
 |Improve multicloud and on-premises security posture, and protect cloud workloads against threats.|[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)|
 |Discover and assess assets, and remediate risk to reduce attack surfaces.|[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)|
 |Identify and protect operational technology (OT) and IT resources by extending Defender XDR protection to OT environments.|[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)|
-|Monitor and protect non-Microsoft and on-premises devices, services, and solutions. Monitor, detect, and investigate breaches, and automatically respond to security threats. | [Microsoft Sentinel](/azure/sentinel/overview) |
+|Monitor and protect non-Microsoft and on-premises devices, services, and solutions. | [Microsoft Sentinel](/azure/sentinel/overview) |
 
 ## Simplify security management
 
