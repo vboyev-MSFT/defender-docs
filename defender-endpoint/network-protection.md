@@ -329,7 +329,7 @@ Due to the multi-user nature of Windows 10 Enterprise, keep the following points
 
 ### Alternative option for network protection
 
-For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
+For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified solution](/defender-endpoint/configure-server-endpoints#functionality-in-the-modern-unified-solution), Windows Server version 1803 or later, and Windows 10 Enterprise Multi-Session 1909 and later, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
 
 1. Use [Turn on network protection](enable-network-protection.md) and follow the instructions to apply your policy.
 
@@ -352,28 +352,32 @@ Following is information specific to Windows Servers.
 Verify whether network protection is enabled on a local device by using Registry Editor.
 
 1. Select the **Start** button in the task bar and type **regedit** to open the Registry Editor.
-1. Select **HKEY_LOCAL_MACHINE** from the side menu.
-1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows defender** > **Windows Defender Exploit Guard** > **Network Protection**.
+
+2. Select **HKEY_LOCAL_MACHINE** from the side menu.
+
+3. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**.
 
    (If the key isn't present, navigate to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**)
 
 4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
 
-   - 0 = Off
-   - 1 = On (enabled)
-   - 2 = Audit mode
+   - `0` = Off
+   - `1` = On (enabled)
+   - `2` = Audit mode
 
 For more information, see [Turn on network protection](enable-network-protection.md).
 
-#### Network protection suggestion
+#### Network protection suggested registry keys
 
-For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up (used in Windows Virtual Desktop on Azure), there are additional registry keys that must be enabled:
+For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified solution](/defender-endpoint/configure-server-endpoints#functionality-in-the-modern-unified-solution), Windows Server version 1803 or later, and Windows 10 Enterprise Multi-Session 1909 and later (used in Windows Virtual Desktop on Azure), enable additional registry keys, as follows:
 
-**HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
+1. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**.
 
-- **AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
-- **EnableNetworkProtection** (dword) 1 (hex)
-- **AllowNetworkProtectionDownLevel** (dword) 1 (hex) - Windows Server 2012R2 and Windows Server 2016 only
+2. Configure the following keys:
+
+   - `AllowNetworkProtectionOnWinServer` (DWORD) set to `1` (hex)
+   - `EnableNetworkProtection` (DWORD) set to `1` (hex)
+   - (On Windows Server 2012 R2 and Windows Server 2016 only) `AllowNetworkProtectionDownLevel` (DWORD) set to `1` (hex) 
 
 > [!NOTE]
 > Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **NIS** > **Consumers** > **IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
@@ -382,16 +386,18 @@ For additional information, see: [Turn on network protection](enable-network-pro
 
 #### Windows Servers and Windows Multi-session configuration requires PowerShell
 
-For Windows Servers and Windows Multi-session, there are additional items that you must enable by using PowerShell cmdlets. For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure.
+For Windows Servers and Windows Multi-session, there are additional items that you must enable by using PowerShell cmdlets. For Windows Server 2012 R2 and Windows Server 2016 unified client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure.
 
 1. Set-MpPreference -EnableNetworkProtection Enabled
+
 1. Set-MpPreference -AllowNetworkProtectionOnWinServer 1
+
 1. Set-MpPreference -AllowNetworkProtectionDownLevel 1
+
 1. Set-MpPreference -AllowDatagramProcessingOnWinServer 1
 
 > [!NOTE]
-> In some cases, depending on your infrastructure, volume of traffic, and other conditions, **Set-MpPreference -AllowDatagramProcessingOnWinServer 1** can have an effect on network performance.
-
+> In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
 
 ## Network protection troubleshooting
 
@@ -426,9 +432,11 @@ New-NetFirewallRule @ruleParams
 
 You can disable QUIC at the web browser level. However, this method of disabling QUIC means that QUIC continues to work on non-browser applications. To disable QUIC in Microsoft Edge or Google Chrome, open the browser, locate the Experimental QUIC protocol setting (#enable-quic flag), and then change the setting to Disabled. The following table shows which URI to enter in the browser's address bar so that you can access that setting.
 
-Browser    URI
-Microsoft Edge    edge://flags/#enable-quic
-Google Chrome    chrome://flags/#enable-quic
+| Browser | URI |
+|---|---|
+| Microsoft Edge | `edge://flags/#enable-quic` |
+| Google Chrome | `chrome://flags/#enable-quic` |
+
 
 ## Optimizing network protection performance
 
