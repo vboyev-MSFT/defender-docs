@@ -46,10 +46,13 @@ Once the Storage account is created, you'll need to:
 
 1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a ***Security Administrator*** at a minimum.
 
-  >[!IMPORTANT]
-  >Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
-2. Go to **Settings** \> **Microsoft Defender XDR** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
+> [!NOTE]
+> When using the Streaming API to an Azure Storage account, ensure the option "Allow trusted Microsoft services to access this storage account" is enabled in the storage account settings to allow for data to be streamed from Microsoft Defender for Endpoint.
+
+2. Go to **Settings** > **Microsoft Defender XDR** > **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
 
 3. Select **Add**.
 
@@ -120,4 +123,5 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 - [Microsoft Defender XDR Streaming API](streaming-api.md)
 - [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
