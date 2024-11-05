@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.date: 06/21/2024
 ---
 
-# Configure Microsoft Defender XDR to stream Advanced Hunting events to your Storage account
+# Stream Microsoft Defender XDR events to your storage account
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -30,13 +30,12 @@ ms.date: 06/21/2024
 
 ## Before you begin
 
-1. Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
-
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions** > **Your subscription** > **Resource Providers** > **Register to Microsoft.Insights**.
+- Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
+- Sign in to your [Azure tenant](https://ms.portal.azure.com/), and go to **Subscriptions** > **Your subscription** > **Resource Providers** > **Register to Microsoft.Insights**.
 
 ### Add contributor permissions
 
-Once the storage account is created, you'll need to define the user who is signing in as a contributor.
+Once the storage account is created, you need to define the user who is signing in as a contributor.
 
 1. Go to **Storage Account** > **Access control (IAM)**, and then select **Add**.
 
@@ -81,14 +80,14 @@ Once the storage account is created, you'll need to define the user who is signi
 
 - The schema of each row in a blob is the following JSON:
 
-  ```JSON
-  {
+   ```JSON
+   {
           "time": "<The time Microsoft Defender XDR received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
           "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
-  }
-  ```
+   }
+   ```
 
 - Each blob contains multiple rows.
 
