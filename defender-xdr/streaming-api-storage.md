@@ -32,27 +32,27 @@ ms.date: 06/21/2024
 
 1. Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
 
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
+2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions** > **Your subscription** > **Resource Providers** > **Register to Microsoft.Insights**.
 
 ### Add contributor permissions
 
-Once the Storage account is created, you'll need to:
+Once the storage account is created, you'll need to define the user who is signing in as a contributor.
 
-1. Define the user who is logging into Microsoft Defender XDR as Contributor.
+1. Go to **Storage Account** > **Access control (IAM)**, and then select **Add**.
 
-    Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
+2. Verify the user is listed under **Role assignments**.
 
 ## Enable raw data streaming
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a ***Security Administrator*** at a minimum.
+1. Go to the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in using an account with at least Security Administrator permissions.
 
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 > [!NOTE]
-> When using the Streaming API to an Azure Storage account, ensure the option "Allow trusted Microsoft services to access this storage account" is enabled in the storage account settings to allow for data to be streamed from Microsoft Defender for Endpoint.
+> When using the Streaming API to an Azure Storage account, ensure the option `Allow trusted Microsoft services to access this storage account` is enabled in the storage account settings to allow for data to be streamed from Microsoft Defender for Endpoint.
 
-2. Go to **Settings** > **Microsoft Defender XDR** > **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
+2. Go to **Settings** > **Microsoft Defender XDR** > **Streaming API**. To go directly to the **Streaming API** page, use [https://security.microsoft.com/settings/mtp_settings/raw_data_export](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
 3. Select **Add**.
 
