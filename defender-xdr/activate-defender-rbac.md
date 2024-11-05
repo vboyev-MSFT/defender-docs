@@ -63,6 +63,8 @@ You can activate your workloads in two ways from the Permissions and roles page:
    > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft Defender XDR Unified RBAC.
    >
    > Microsoft Defender for Cloud is active by default with Microsoft Defender XDR Unified RBAC.
+   >
+   > Defender XDR Unified RBAC is automatically active for Secure Score access. Once a custom role with one of the permissions is created, it has an immediate impact on assigned users. There is no need to activate it.
    > 
    > To activate Exchange Online permissions in Microsoft Defender XDR Unified RBAC, Defender for Office 365 permissions must be active. 
 
