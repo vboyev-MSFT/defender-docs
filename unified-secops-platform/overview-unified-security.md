@@ -75,7 +75,7 @@ Automatic attack disruption responds to threats by containing devices and contai
 
 The following image shows an example of an incident where automatic attack disruption was triggered.
 
-:::image type="content" source="media/overview-unified-security/attack-disrupt.png" alt-text="Screenshot of the incidents attack that triggered automatic attack disruption.":::
+:::image type="content" source="media/overview-unified-security/attack-disrupt.png" alt-text="Screenshot of the incidents attack that triggered automatic attack disruption." lighthouse="media/overview-unified-security/attack-disrupt.png":::
 
 ## Transform SOC productivity
 
