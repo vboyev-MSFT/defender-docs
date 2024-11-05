@@ -69,10 +69,10 @@ Watch this video to learn how Network protection helps reduce the attack surface
 ## Requirements for network protection
 
 Network protection requires devices running one of the following operating systems:
-- Windows 10 or 11 (Pro or Enterprise)
-- Windows Server, version 1803 or later
-- macOS (see )
-- Linux versions (see )
+- Windows 10 or 11 (Pro or Enterprise) (see [Supported Windows versions](minimum-requirements.md#supported-windows-versions))
+- Windows Server, version 1803 or later (see [Supported Windows versions](minimum-requirements.md#supported-windows-versions))
+- macOS version 12 (Monterey) or later (see [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md))
+- A supported Linux version (see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md))
 
 Network protection also requires Microsoft Defender Antivirus with real-time protection enabled.
 
