@@ -1,6 +1,6 @@
 ---
 title: "Overview - Improve security posture and reduce risk"
-description: Lists the new features and functionality in the Microsoft unified security operations platform
+description: Provides an overview of solutions for reducing security risk in the Microsoft unified security platform
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: cwatson
@@ -16,7 +16,7 @@ ms.topic: conceptual
 # customer intent: I want to learn how to proactively improve security posture and reduce risk exposure in my organization.
 ---
 
-# Overview - Improve security posture and reduce risk
+# Overview - Improve security posture and reduce security risk
 
 To battle increasingly bold, sophisticated, and well-resourced threat actors, security teams need a comprehensive strategy to both reduce vulnerabilities and prevent breaches before they occur, and to detect and mitigate threats in real-time.
 
