@@ -60,7 +60,7 @@ Safe Links protection by Safe Links policies is available in the following locat
   > - Safe Links doesn't provide protection for URLs in Rich Text Format (RTF) email messages.
   > - Safe Links supports only HTTP(S) and FTP formats.
   > - Safe Links ignores S/MIME signed messages.
-  > - Safe Links no longer wraps URLs pointing to SharePoint Online sites. SharePoint URLs are still processed by the Safe Links service. This change doesn't cause a degradation in the protection a tenant receives. It's intended to improve the performance of loading SharePoint URLs.
+  > - Safe Links no longer wraps URLs pointing to SharePoint or OneDrive sites, but the URLs are still processed by the Safe Links service. This change doesn't degrade protection. Instead, it improves the performance of loading SharePoint or OneDrive URLs.
   > - Using another service to wrap links before Defender for Office 365 might prevent Safe Links from process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels.
