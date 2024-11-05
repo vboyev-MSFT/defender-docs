@@ -11,6 +11,11 @@
         "redirect_document_id": true
     },
     {
+        "source_path": "defender-xdr/incident-queue.md",
+        "redirect_url": "/defender-xdr/prioritize-incidents",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "defender-xdr/eval-create-eval-environment.md",
         "redirect_url": "/defender-xdr/pilot-deploy-overview",
         "redirect_document_id": false
