@@ -96,7 +96,8 @@ If there's still missing data, please contact Support.
 ### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
 
 Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
-
+## Unable to connect/disconnect
+If you encounter an error message indicating there was an error connecting / disconnecting. Try again in a few minutes. if the issue persists, please contact Support.
 ## Next steps
 
 [Getting value from your data connectors](value-data-connectors.md).
