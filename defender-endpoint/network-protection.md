@@ -180,7 +180,7 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be in active mode to enable network protection.
 
-You can enable network protection in `audit` mode or `block` mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in audit mode, and gather data on what would be blocked. Audit mode logs whenever end users connect to an address or site that would otherwise have been blocked by network protection. In order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in `block` mode.
+You can enable network protection in `audit` mode or `block` mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in audit mode, and gather data on what would be blocked. Audit mode logs whenever end users connect to an address or site that would otherwise be blocked by network protection. In order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in `block` mode.
 
 For information about network protection for Linux and macOS see the following articles: 
 
@@ -233,7 +233,7 @@ The Response category tells you what caused the event, as in this example:
 
 For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks).
 
-Microsoft Defender SmartScreen events for the Microsoft Edge browser specifically needs a different query:
+If you're using the Microsoft Edge browser, use a different query for Microsoft Defender SmartScreen events:
 
 ```kusto
 
