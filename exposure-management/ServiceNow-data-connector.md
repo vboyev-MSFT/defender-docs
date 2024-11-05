@@ -95,7 +95,7 @@ If there's still missing data, please contact Support.
 
 ### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
 
-Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
+Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
 
 ## Next steps
 
