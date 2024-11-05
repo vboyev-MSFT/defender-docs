@@ -27,11 +27,11 @@ Security Exposure Management is currently in public preview.
 
 ## November 2024
 
-### New SSPM security initiative
+### SaaS security initiative
 
-This new initiative aims at improving the security posture of cloud applications used by the organization. It allows practitioners to work on posture improvements as part of their efforts to enhance security measures.
+The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.
 
-For more information, see, [SaaS security posture management (SSPM) - overview](/defender-cloud-apps/posture-overview)
+For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-security-initiative)
 
 ## October 2024
 
