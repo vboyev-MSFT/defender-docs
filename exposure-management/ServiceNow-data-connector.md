@@ -82,7 +82,8 @@ Double-check your ServiceNow Instance hostname. Learn more about authentication 
 
 ### 'Temporary disconnected' or 'Temporary failure' error
 
- **@Elad Iwanir - what should be the customer action here?**
+In cases where the error message indicates this is a temporary issue, check again later to see if the issue was auto resolved.
+Note: in some cases the issue will not be auto resolved and manual user intervention is required. if an elaborated error message is shown, please act accordingly. otherwise, please contact Support
 
 ### Not seeing ServiceNow CMDB CIs in the ingested data
 
