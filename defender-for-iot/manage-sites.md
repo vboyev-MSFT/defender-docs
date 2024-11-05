@@ -26,9 +26,11 @@ It's possible that Defender for IoT identifies a device located in the wrong sit
 1. Select **Set site**.
     :::image type="content" source="media/manage-sites/set-site-from-inventory-boxed.png" alt-text="Screenshot of the set site button in the device inventory table for changing the site location setting" lightbox="media/manage-sites/set-site-from-inventory-boxed.png":::
 1. In **Set site manually**, open the **Select site** drop down list and select the site to associate with this device. If you are unsure of the location, select **Unassigned**.
+    :::image type="content" source="media/manage-sites/device-set-site-manually.png" alt-text="Screenshot of the set site manually drop down list for changing the site location setting" lightbox="media/manage-sites/device-set-site-manually.png":::
 1. Select **Save and close**.
 1. The Set site confirmation box appears. Select **Confirm** to finalize the change.
-1. Alternatively, you can also go to **Site security** and edit the site and change the devices associated it using the Edit site wizard.
+
+Alternatively, you can also go to **Site security** and edit the site and change the devices associated to it using the **Edit site** wizard. For more information, see [link to site security](monitor-site-security.md). <!-- but this is more like removing a device from a specific site, not adding it to a different one instead?? AMIT-->
 
 ## Edit or delete a site
 
