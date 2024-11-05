@@ -25,6 +25,14 @@ Security Exposure Management is currently in public preview.
 >
 > `https://aka.ms/msem/rss`
 
+## November 2024
+
+### SaaS security initiative
+
+The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.
+
+For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-security-initiative)
+
 ## October 2024
 
 ### New in attack paths
