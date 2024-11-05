@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 11/04/2024
+ms.date: 11/05/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -124,9 +124,7 @@ Support for Command and Control servers (C2) is a key part of this ransomware ev
 
 ### New notifications for network protection determination
 
-A new, publicly available capability in network protection utilizes functions in SmartScreen to block phishing activities from malicious command and control sites.
-
-When an end user attempts to visit a website in an environment in which network protection is enabled, three scenarios are possible:
+A new, publicly available capability in network protection utilizes functions in SmartScreen to block phishing activities from malicious command and control sites. When an end user attempts to visit a website in an environment in which network protection is enabled, three scenarios are possible:
 
 - The URL has a **known good reputation** - In this case the user is permitted access without obstruction, and there's no toast notification presented on the endpoint. In effect, the domain or URL is set to _Allowed_.
 - The URL has an **unknown or uncertain reputation** - The user's access is blocked, but with the ability to circumvent (unblock) the block. In effect, the domain or url is set to _Audit_.
@@ -419,9 +417,9 @@ Disable QUIC in a web browser
 
 You can disable QUIC at the web browser level. However, this method of disabling QUIC means that QUIC continues to work on non-browser applications. To disable QUIC in Microsoft Edge or Google Chrome, open the browser, locate the Experimental QUIC protocol setting (#enable-quic flag), and then change the setting to Disabled. The following table shows which URI to enter in the browser's address bar so that you can access that setting.
 
-Browser	URI
-Microsoft Edge	edge://flags/#enable-quic
-Google Chrome	chrome://flags/#enable-quic
+Browser    URI
+Microsoft Edge    edge://flags/#enable-quic
+Google Chrome    chrome://flags/#enable-quic
 
 ## Optimizing network protection performance
 
