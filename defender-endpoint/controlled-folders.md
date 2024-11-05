@@ -92,12 +92,13 @@ The protected folders include common system folders (including boot sectors), an
 - `c:\Users\<username>\Favorites`
 
 Default folders appear in the user's profile, under **This PC**.
-   > [!div class="mx-imgBorder"]
-   > ![Protected Windows default systems folders](media/defaultfolders.png)
+> [!div class="mx-imgBorder"]
+> ![Protected Windows default systems folders](media/defaultfolders.png)
 
 > [!NOTE]
 > You can configure additional folders as protected, but you cannot remove the Windows system folders that are protected by default.
-
+> 
+> 
 ## Requirements for controlled folder access
 
 Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
@@ -148,6 +149,9 @@ You can use the Windows Security app to view the list of folders that are protec
 5. Do one of the following steps:
    - To add a folder, select **+ Add a protected folder**.
    - To remove a folder, select it, and then select **Remove**.
+
+> [!IMPORTANT]
+> Do not add local share paths (loopbacks) as protected folders. Use the local path instead. For example, if you have shared `C:\demo` as `\\mycomputer\demo`, do not add `\\mycomputer\demo` to the list of protected folders, instead add `C:\demo`.
 
 > [!NOTE]
 > [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list. Subfolders are also included in protection when you add a new folder to the list.
