@@ -5,10 +5,9 @@
     - name: 'Microsoft Defender for Endpoint'
       tocHref: /defender-endpoint/
       topicHref: /defender-endpoint/index
-      items:
-       - name: 'Microsoft Defender XDR'
-         tocHref: /defender-xdr/
-         topicHref: /defender-xdr/pilot-deploy-defender-office-365
     - name: 'Microsoft Defender for Endpoint'
       tocHref: /mem/intune/protect/
       topicHref: /mem/intune/protect/
+    - name: 'Microsoft Defender for Endpoint'
+      tocHref: /defender-xdr/
+      topicHref: /defender-xdr/pilot-deploy-defender-endpoint

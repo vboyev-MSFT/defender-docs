@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 10/07/2024
+ms.date: 11/05/2024
 search.appverid: met150
 ---
 
@@ -42,6 +42,7 @@ This article provides information about Microsoft Defender for Endpoint attack s
 - [Per-rule-descriptions](#per-rule-descriptions)
 
 [!Include[Prerelease information](../includes/prerelease.md)]
+
 [!Include [defender-endpoint-setup-guide.md](../includes/mde-automated-setup-guide.md)]
 
 ## Attack surface reduction rules by type
@@ -109,11 +110,10 @@ The following ASR rules DO NOT honor Microsoft Defender for Endpoint Indicators 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
 
 > [!NOTE]
-> Unless otherwise indicated, the minimum Windows10 build is version 1709 (RS3, build 16299) or later; the minimum WindowsServer build is version 1809 or later.
->
-> Attack surface reduction rules in WindowsServer2012R2 and WindowsServer2016 are available for devices onboarded using the modern unified solution package. For more information, see [New Windows Server 2012 R2 and 2016 functionality in the modern unified solution](configure-server-endpoints.md#functionality-in-the-modern-unified-solution).
+> Unless otherwise indicated, the minimum Windows10 build is version 1709 (RS3, build 16299) or later; the minimum Windows Server build is version 1809 or later.
+> Attack surface reduction rules in Windows Server 2012 R2 and Windows Server 2016 are available for devices onboarded using the modern unified solution package. For more information, see [New Windows Server 2012 R2 and 2016 functionality in the modern unified solution](configure-server-endpoints.md#functionality-in-the-modern-unified-solution).
 
-| Rule name| Windows11 <br>and<br> Windows10 | WindowsServer <br> 2022 <br>and<br>  WindowsServer <br> 2019 | Windows Server | WindowsServer <br> 2016 <sup>[[1, 2](#fn1)]</sup> | WindowsServer <br> 2012R2 <sup>[[1, 2](#fn1)]</sup> |
+| Rule name| Windows 11 <br>and<br> Windows 10 | Windows Server 2022 <br>and<br>  Windows Server 2019 | Windows Server | Windows Server 2016 <sup>[[1, 2](#fn1)]</sup> | Windows Server <br> 2012 R2 <sup>[[1, 2](#fn1)]</sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Enterprise Channel) or later | Y | Y |
 | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y <br> version 1809 or later <sup>[[3](#fn1)]</sup> | Y | Y | Y | Y |
@@ -137,7 +137,7 @@ The following table lists the supported operating systems for rules that are cur
 
 (<a id="fn1">1</a>) Refers to the modern unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
-(<a id="fn1">2</a>) For WindowsServer 2016 and WindowsServer 2012R2, the minimum required version of Microsoft Endpoint Configuration Manager is version 2111.
+(<a id="fn1">2</a>) For Windows Server 2016 and Windows Server 2012 R2, the minimum required version of Microsoft Endpoint Configuration Manager is version 2111.
 
 (<a id="fn1">3</a>) Version and build number apply only to Windows10.
 
@@ -258,9 +258,7 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 > [!NOTE]
 > You can configure this rule using Intune OMA-URI. See [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune) for configuring custom rules.
->
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
->
 > To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
@@ -333,11 +331,8 @@ By default the state of this rule is set to block. In most cases, many processes
 Enabling this rule doesn't provide additional protection if you have LSA protection enabled since the ASR rule and LSA protection work similarly. However, when LSA protection cannot be enabled, this rule can be configured to provide equivalent protection against malware that target `lsass.exe`.
 
 > [!NOTE]
->
 > In this scenario, the ASR rule is classified as "not applicable" in Defender for Endpoint settings in the Microsoft Defender portal. 
->
 > The *Block credential stealing from the Windows local security authority subsystem* ASR rule doesn't support WARN mode.
-> 
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
@@ -375,7 +370,6 @@ Dependencies: Microsoft Defender Antivirus
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
->
 > - Intune (Configuration Profiles): Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions).
 > - Configuration Manager: Block executable content download from email and webmail clients.
 > - Group Policy: Block executable content from email client and webmail.
@@ -386,9 +380,7 @@ This rule blocks executable files, such as .exe, .dll, or .scr, from launching. 
 
 > [!IMPORTANT]
 > You must [enable cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to use this rule.
->
 > The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID `01443614-cd74-433a-b99e-2ecdc07bfc25` is owned by Microsoft and is not specified by admins. This rule uses cloud-delivered protection to update its trusted list regularly.
->
 > You can specify individual files or folders (using folder paths or fully qualified resource names) but you can't specify which rules or exclusions apply to.
 
 Intune name: `Executables that don't meet a prevalence, age, or trusted list criteria`
@@ -408,8 +400,11 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 
 This rule detects suspicious properties within an obfuscated script.
   
+> [!NOTE]
+> PowerShell scripts are now supported for the "Block execution of potentially obfuscated scripts" rule.
+
 > [!IMPORTANT]
-> PowerShell scripts are now supported for the "Block execution of potentially obfuscated scripts" rule. 
+> You must enable cloud-delivered protection to use this rule.
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which hampers close scrutiny by humans and security software.
 
@@ -428,9 +423,7 @@ Dependencies: Microsoft Defender Antivirus, AntiMalware Scan Interface (AMSI)
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
-This rule prevents scripts from launching potentially malicious downloaded content. Malware written in JavaScript or VBScript often acts as a downloader to fetch and launch other malware from the Internet.
-
-Although not common, line-of-business applications sometimes use scripts to download and launch installers.
+This rule prevents scripts from launching potentially malicious downloaded content. Malware written in JavaScript or VBScript often acts as a downloader to fetch and launch other malware from the Internet. Although not common, line-of-business applications sometimes use scripts to download and launch installers.
 
 Intune name: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
@@ -447,9 +440,7 @@ Dependencies: Microsoft Defender Antivirus, AMSI
 
 ### Block Office applications from creating executable content
 
-This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
-
-Malware that abuses Office as a vector might attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique. This rule also blocks execution of untrusted files that may have been saved by Office macros that are allowed to run in Office files.
+This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk. Malware that abuses Office as a vector might attempt to break out of Office and save malicious components to disk. These malicious components would survive a computer reboot and persist on the system. Therefore, this rule defends against a common persistence technique. This rule also blocks execution of untrusted files that may have been saved by Office macros that are allowed to run in Office files.
 
 Intune name: `Office apps/macros creating executable content`
 
@@ -474,9 +465,7 @@ This rule blocks code injection attempts from Office apps into other processes.
 > [!IMPORTANT]
 > This rule requires restarting Microsoft 365 Apps (Office applications) for the configuration changes to take effect.
 
-Attackers might attempt to use Office apps to migrate malicious code into other processes through code injection, so the code can masquerade as a clean process.
-
-There are no known legitimate business purposes for using code injection.
+Attackers might attempt to use Office apps to migrate malicious code into other processes through code injection, so the code can masquerade as a clean process. There are no known legitimate business purposes for using code injection.
 
 This rule applies to Word, Excel, OneNote, and PowerPoint.
 
@@ -495,9 +484,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block Office communication application from creating child processes
 
-This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
-
-This rule protects against social engineering attacks and prevents exploiting code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
+This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions. This rule protects against social engineering attacks and prevents exploiting code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
 > [!NOTE]
 > This rule blocks DLP policy tips and ToolTips in Outlook. This rule applies to Outlook and Outlook.com only.
@@ -562,9 +549,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block rebooting machine in Safe Mode (preview)
  
-This rule prevents the execution of commands to restart machines in Safe Mode.
- 
-Safe Mode is a diagnostic mode that only loads the essential files and drivers needed for Windows to run. However, in Safe Mode, many security products are either disabled or operate in a limited capacity, which allows attackers to further launch tampering commands, or simply execute and encrypt all files on the machine. This rule blocks such attacks by preventing processes from restarting machines in Safe Mode.
+This rule prevents the execution of commands to restart machines in Safe Mode. Safe Mode is a diagnostic mode that only loads the essential files and drivers needed for Windows to run. However, in Safe Mode, many security products are either disabled or operate in a limited capacity, which allows attackers to further launch tampering commands, or simply execute and encrypt all files on the machine. This rule blocks such attacks by preventing processes from restarting machines in Safe Mode.
  
 > [!NOTE]
 > This capability is currently in preview. Additional upgrades to improve efficacy are under development.
@@ -607,9 +592,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block use of copied or impersonated system tools (preview)
  
-This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
- 
-Some malicious programs may try to copy or impersonate Windows system tools to avoid detection or gain privileges. Allowing such executable files can lead to potential attacks. This rule prevents propagation and execution of such duplicates and impostors of the system tools on Windows machines. 
+This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools. Some malicious programs may try to copy or impersonate Windows system tools to avoid detection or gain privileges. Allowing such executable files can lead to potential attacks. This rule prevents propagation and execution of such duplicates and impostors of the system tools on Windows machines. 
 
 > [!NOTE]
 > This capability is currently in preview. Additional upgrades to improve efficacy are under development.
@@ -632,9 +615,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block Webshell creation for Servers
 
-This rule blocks web shell script creation on Microsoft Server, Exchange Role.
- 
-A web shell script is a specifically crafted script that allows an attacker to control the compromised server. A web shell may include functionalities such as receiving and executing malicious commands, downloading and executing malicious files, stealing and exfiltrating credentials and sensitive information, identifying potential targets etc.
+This rule blocks web shell script creation on Microsoft Server, Exchange Role. A web shell script is a specifically crafted script that allows an attacker to control the compromised server. A web shell may include functionalities such as receiving and executing malicious commands, downloading and executing malicious files, stealing and exfiltrating credentials and sensitive information, identifying potential targets etc.
  
 Intune name: `Block Webshell creation for Servers`
  
@@ -644,9 +625,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block Win32 API calls from Office macros
 
-This rule prevents VBA macros from calling Win32 APIs.
-
-Office VBA enables Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
+This rule prevents VBA macros from calling Win32 APIs. Office VBA enables Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
 
 Intune name: `Win32 imports from Office macro code`
 

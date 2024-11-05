@@ -13,7 +13,7 @@ This article lists daily operational activities that we recommend you perform wi
 
 Alerts and incidents are two of the most important items your security operations (SOC) team should be reviewing on a daily basis.
 
-- Triage incidents and alerts regularly from the [incidents queue](https://security.microsoft.com/incidents-queue) in Microsoft Defender XDR, prioritizing high and medium severity alerts.
+- Triage incidents and alerts regularly from the [incidents queue](https://security.microsoft.com/incidents) in Microsoft Defender XDR, prioritizing high and medium severity alerts.
 
 - If you're working with a SIEM system, your SIEM system is usually the first stop for triage. SIEM systems provide more context with extra logs and SOAR functionality. Then, use Microsoft Defender XDR for a deeper understanding of an alert or incident timeline.
 
