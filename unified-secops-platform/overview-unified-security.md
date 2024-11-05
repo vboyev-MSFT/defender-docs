@@ -71,11 +71,13 @@ Standard cybersecurity metrics focus on the time to detect (TTD) and time to res
 
 Microsoft's unified SecOps platform correlates millions of signals from Defender products, Microsoft Sentinel, Microsoft security research, and threat intelligence to identify attacks in progress. It initiates automatic attack disruption to automatically contain attacks, limiting lateral movement early and reducing attack impact. Automatic attack disruption helps to reduce costs associated with loss of productivity, provide control to the SecOps team control to investigate and remediate compromised assets.
 
-Automatic attack disruption responds to threats by containing devices and containing or disabling users to mitigate attacks. For more information, see [Automatic attack disruption in Microsoft Defender XDR](/defender-xdr/automatic-attack-disruption).
+Automatic attack disruption responds to threats by containing devices and containing or disabling users to mitigate attacks. 
 
 The following image shows an example of an incident where automatic attack disruption was triggered.
 
 :::image type="content" source="media/overview-unified-security/attack-disrupt.png" alt-text="Screenshot of the incidents attack that triggered automatic attack disruption.":::
+
+For more information, see [Automatic attack disruption in Microsoft Defender XDR](/defender-xdr/automatic-attack-disruption).
 
 ## Transform SOC productivity
 
