@@ -83,7 +83,7 @@ If you've tested the rule with the demo tool and with audit mode, and attack sur
 
 If the attack surface reduction rule is blocking something that it shouldn't block (also known as a false positive), you can add exclusions to prevent attack surface reduction rules from evaluating the excluded files or folders.
 
-To add an exclusion, see [Customize Attack surface reduction](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
+To add an exclusion, see [Customize attack surface reduction](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
 
 > [!IMPORTANT]
 > You can specify individual files and folders to be excluded, but you cannot specify individual rules.
@@ -116,4 +116,5 @@ When you report a problem with attack surface reduction rules, you're asked to c
 - [Attack surface reduction rules](attack-surface-reduction.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 - [Evaluate attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
