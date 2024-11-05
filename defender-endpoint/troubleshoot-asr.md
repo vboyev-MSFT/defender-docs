@@ -97,7 +97,7 @@ Use the [Microsoft Security Intelligence web-based submission form](https://www.
 
 When you report a problem with attack surface reduction rules, you're asked to collect and submit diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues.
 
-1. Open an elevated command prompt and change to the Windows Defender directory:
+1. Open Command Prompt as an administrator and open the Windows Defender directory:
 
    ```console
    cd "c:\program files\Windows Defender"
