@@ -76,7 +76,7 @@ The following fields are ingested via the connector:
 
 Some common issues that might come up when configuring the ServiceNow CMDB connector.
 
-### 'Bad URL' error  upon trying to connect
+### 'The remote server name could not be resolved'
 
 Double-check your ServiceNow Instance hostname. Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
 ## 429 (Too Many Requests)
