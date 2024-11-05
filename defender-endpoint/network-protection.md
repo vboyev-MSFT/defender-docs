@@ -195,7 +195,7 @@ You can find the audit events in **Advanced hunting** in the Defender for Endpoi
 
 Audit events are in DeviceEvents with an ActionType of `ExploitGuardNetworkProtectionAudited`. Blocks are shown with an ActionType of `ExploitGuardNetworkProtectionBlocked`.  
 
-Here's an example query for viewing Network Protection events for third-party browsers:
+Here's an example query for viewing Network Protection events for non-Microsoft browsers:
 
 ```kusto
 
