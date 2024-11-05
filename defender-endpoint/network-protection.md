@@ -1,5 +1,5 @@
 ---
-title: Use network protection to help prevent connections to bad sites
+title: Use network protection to help prevent connections to malicious or suspicious sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Protect your network
+# Use network protection to help prevent connections to malicious or suspicious sites
 
 **Applies to:**
 
