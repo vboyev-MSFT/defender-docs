@@ -98,7 +98,7 @@ Once the storage account is created, you'll need to define the user who is signi
 
 ## Data types mapping
 
-In order to get the data types for our events properties do the following:
+To get the data types for events properties, follow these steps:
 
 1. Go to the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in.
 
