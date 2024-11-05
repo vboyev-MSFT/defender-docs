@@ -434,7 +434,7 @@ New-NetFirewallRule @ruleParams
 
 ### Disable QUIC in a web browser
 
-You can disable QUIC at the web browser level. However, this method of disabling QUIC means that QUIC continues to work on non-browser applications. To disable QUIC in Microsoft Edge or Google Chrome, open the browser, locate the Experimental QUIC protocol setting (`#enable-quic` flag), and then change the setting to `Disabled`. The following table shows which URI to enter in the browser's address bar so that you can access that setting.
+You can disable QUIC at the web browser level. However, this method of disabling QUIC means that QUIC continues to work on nonbrowser applications. To disable QUIC in Microsoft Edge or Google Chrome, open the browser, locate the Experimental QUIC protocol setting (`#enable-quic` flag), and then change the setting to `Disabled`. The following table shows which URI to enter in the browser's address bar so that you can access that setting.
 
 | Browser | URI |
 |---|---|
@@ -444,7 +444,7 @@ You can disable QUIC at the web browser level. However, this method of disabling
 
 ## Optimizing network protection performance
 
-Network protection now has a performance optimization that allows Block mode to start asynchronously inspecting long-lived connections, which might provide a performance improvement and can also help with app compatibility problems. This optimization capability is on by default. You can turn off this capability by using the following PowerShell cmdlet:
+Network protection includes performance optimization that allows `block` mode to asynchronously inspect long-lived connections, which might provide a performance improvement. This optimization can also help with app compatibility problems. This capability is on by default. You can turn off this capability by using the following PowerShell cmdlet:
 
 `Set-MpPreference -AllowSwitchToAsyncInspection $false`
 
