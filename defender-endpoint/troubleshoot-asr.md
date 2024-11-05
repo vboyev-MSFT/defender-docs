@@ -68,7 +68,7 @@ Follow these instructions in [Use the demo tool to see how attack surface reduct
 
 1. Enable audit mode for the specific rule you want to test. Use Group Policy to set the rule to `Audit mode` (value: `2`) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md). Audit mode allows the rule to report the file or process, but allows it to run.
 
-2. Perform the activity that is causing an issue (for example, open or execute the file or process that should be blocked but is being allowed).
+2. Perform the activity that is causing an issue. For example, open the file or run the process that should be blocked, but is allowed.
 
 3. [Review the attack surface reduction rule event logs](attack-surface-reduction.md) to see if the rule would block the file or process if the rule were set to `Enabled`.
 
