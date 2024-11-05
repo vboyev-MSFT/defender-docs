@@ -111,7 +111,7 @@ The network protection component of Defender for Endpoint identifies and blocks 
 
 In its initial form, ransomware is a commodity threat that's preprogrammed and focused on limited, specific outcomes (like encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes, like holding an entire organization's assets or data for ransom.
 
-Support for Command and Control servers (C2) is an important part of this ransomware evolution, and it's what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage. For additional information about C2 detection and remediation, see [Detecting and remediating command and control attacks at the network layer](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607).
+Support for Command and Control servers (C2) is an important part of this ransomware evolution, and it's what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage. For more information about C2 detection and remediation, see [Detecting and remediating command and control attacks at the network layer](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607).
 
 #### Network protection: New toast notifications
 
@@ -155,7 +155,7 @@ A user visits a website:
 
 A user visits a website:
 
-- If the url has a bad reputation, a toast notification will present the user with the following options:
+- If the url has a bad reputation, a toast notification presents the user with the following options:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
@@ -163,7 +163,7 @@ A user visits a website:
 
 ## SmartScreen Unblock
 
-With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL is blocked, when a SmartScreen block is encountered, it could offer the user the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification appears, permitting the user to select **Unblock**. In such cases, the URL or IP is unblocked for the specified period of time.  
 
 :::image type="content" source="media/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
