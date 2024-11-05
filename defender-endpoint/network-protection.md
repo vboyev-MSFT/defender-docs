@@ -412,11 +412,11 @@ Due to the environment where network protection runs, the feature might not be a
 
 <!--- Would be helpful for customer if we provide instructions to disable--->
 
-Because Global Secure Access doesn't currently support UDP traffic, UDP traffic to port 443 can't be tunneled. You can disable the QUIC protocol so that Global Secure Access clients fall back to using HTTPS (TCP traffic on port 443). You must make this change if the servers that you're trying to access do support QUIC (for example, through Microsoft Exchange Online). To disable QUIC, you can take one of the following actions:
+Because Global Secure Access doesn't currently support UDP traffic, UDP traffic to port `443` can't be tunneled. You can disable the QUIC protocol so that Global Secure Access clients fall back to using HTTPS (TCP traffic on port 443). You must make this change if the servers that you're trying to access do support QUIC (for example, through Microsoft Exchange Online). To disable QUIC, you can take one of the following actions:
 
 ### Disable QUIC in Windows Firewall
 
-The most generic method to disable QUIC is to disable that feature in Windows Firewall. This method affects all applications, including browsers and rich client apps (such as Microsoft Office). In PowerShell, run the `New-NetFirewallRule` cmdlet to add a new firewall rule that disables QUIC for all outbound traffic from the device:
+The most generic method to disable QUIC is to disable that feature in Windows Firewall. This method affects all applications, including browsers and client apps (such as Microsoft Office). In PowerShell, run the `New-NetFirewallRule` cmdlet to add a new firewall rule that disables QUIC for all outbound traffic from the device:
 
 
 ```powershell
