@@ -369,14 +369,14 @@ For more information, see [Turn on network protection](enable-network-protection
 
 For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up (used in Windows Virtual Desktop on Azure), there are additional registry keys that must be enabled:
 
-**HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**Windows Defender**\\**Windows Defender Exploit Guard**\\**Network Protection**
+**HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
 
 - **AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
 - **EnableNetworkProtection** (dword) 1 (hex)
 - **AllowNetworkProtectionDownLevel** (dword) 1 (hex) - Windows Server 2012R2 and Windows Server 2016 only
 
 > [!NOTE]
-> Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Policies**\\**Microsoft**\\**Windows Defender** \\**NIS**\\**Consumers**\\**IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
+> Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **NIS** > **Consumers** > **IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
 
 For additional information, see: [Turn on network protection](enable-network-protection.md)
 
@@ -404,7 +404,7 @@ Due to the environment where network protection runs, the feature might not be a
 
 Because Global Secure Access doesn't currently support UDP traffic, UDP traffic to port 443 can't be tunneled. You can disable the QUIC protocol so that Global Secure Access clients fall back to using HTTPS (TCP traffic on port 443). You must make this change if the servers that you're trying to access do support QUIC (for example, through Microsoft Exchange Online). To disable QUIC, you can take one of the following actions:
 
-Disable QUIC in Windows Firewall
+### Disable QUIC in Windows Firewall
 
 The most generic method to disable QUIC is to disable that feature in Windows Firewall. This method affects all applications, including browsers and rich client apps (such as Microsoft Office). In PowerShell, run the following New-NetFirewallRule cmdlet to add a new firewall rule that disables QUIC for all outbound traffic from the device:
 
@@ -422,7 +422,7 @@ $ruleParams = @{
 New-NetFirewallRule @ruleParams
 ```
 
-Disable QUIC in a web browser
+### Disable QUIC in a web browser
 
 You can disable QUIC at the web browser level. However, this method of disabling QUIC means that QUIC continues to work on non-browser applications. To disable QUIC in Microsoft Edge or Google Chrome, open the browser, locate the Experimental QUIC protocol setting (#enable-quic flag), and then change the setting to Disabled. The following table shows which URI to enter in the browser's address bar so that you can access that setting.
 
@@ -443,4 +443,5 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
 - [Network protection for macOS](network-protection-macos.md) | To learn more about Microsoft Network protection for macOS
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
