@@ -29,9 +29,7 @@ To establish a connection with Rapid7 in Exposure Management, follow these steps
 
 ## Retrieved data
 
-Exposure Management currently retrieves data on devices and reported vulnerabilities from Rapid7.
-
-Devices of type <> are ingested.
+Exposure Management retrieves data on compute devices from Rapid7, including machines and virtual machines. It also retrieves vulnerabilities reported by Rapid7 on those devices.
 
 Only devices that were actively scanned in the last 90 days are retrieved, based on assessing the "last_scan_end" field in the Rapid7 asset.
 
