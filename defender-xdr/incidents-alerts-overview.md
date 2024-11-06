@@ -13,6 +13,7 @@ ms.collection:
   - m365-security
   - tier1
   - usx-security
+  - sentinel-only
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
@@ -119,10 +120,13 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 
 The Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
-- [Microsoft Copilot in Defender](/defender-xdr/security-copilot-in-microsoft-365-defender) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across data from all sources.  
-***CHANGE TO "SECURITY COPILOT"? "SECURITY COPILOT IN DEFENDER"?***
+- [Microsoft Copilot in Defender](/defender-xdr/security-copilot-in-microsoft-365-defender) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across data from all sources.
 
     This capability is in addition to the other AI-based functionality that Microsoft Sentinel brings to the unified platform, in the areas of user and entity behavior analytics, anomaly detection, multi-stage threat detection, and more.
+
+<!-- 
+***CHANGE ABOVE TO "SECURITY COPILOT"? "SECURITY COPILOT IN DEFENDER"?*** 
+-->
 
 - Automated attack disruption uses high-confidence signals collected from Microsoft Defender XDR and Microsoft Sentinel to automatically disrupt active attacks at machine speed, containing the threat and limiting the impact.
 
