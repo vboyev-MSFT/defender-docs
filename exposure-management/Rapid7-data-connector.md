@@ -49,7 +49,7 @@ Only devices that were actively scanned in the last 90 days are retrieved, based
 
 ## Troubleshooting the Rapid7 data connector
 
-Some common issues that may come up when configuring the Rapid7 connector:
+Some common issues that might come up when configuring the Rapid7 connector:
 
 ### “Temporary connectivity issues”, or 'The remote name couldn't be resolved' error upon trying to connect
 

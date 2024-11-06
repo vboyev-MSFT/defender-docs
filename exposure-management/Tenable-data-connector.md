@@ -18,8 +18,8 @@ To integrate with Tenable, you need Tenable Vulnerability Management API access 
 Instructions for generating API keys for Tenable Vulnerability Management can be found [here](https://docs.tenable.com/vulnerability-management/Content/Settings/my-account/GenerateAPIKey.htm).
 
 1. To generate API keys for your own account, access the My Account page.
-2. Click the API Keys tab to view the API Keys section.
-3. Select Generate, and note that the **Generate API Keys** window appears with a warning that Any existing API keys are replaced when you click the Generate button
+2. Select the API Keys tab to view the API Keys section.
+3. Select Generate, and note that the **Generate API Keys** window appears with a warning that Any existing API keys are replaced when you select the Generate button
 4. Select **Generate.** Tenable Vulnerability Management generates new access and secret keys, and displays the new keys in the **Custom API Keys** section of the page.
 5. Copy the new access and secret keys to a safe location.
 
@@ -48,13 +48,13 @@ Only devices that were modified in the last 90 days are retrieved, based on asse
 
 Exposure Management also retrieves vulnerability findings from Tenable on those assets.
 
-The vulnerability data retrieved for Tenable is applicable to CVEs only, and not other types of vulnerabilities or misconfigurations. Tenable shows total vulnerability counts that include other non-CVE misconfigurations as well, so these counts are not applicable to the numbers of vulnerabilities ingested to Exposure Management.
+The vulnerability data retrieved for Tenable is applicable to CVEs only, and not other types of vulnerabilities or misconfigurations. Tenable shows total vulnerability counts that include other non-CVE misconfigurations as well, so these counts aren't applicable to the numbers of vulnerabilities ingested to Exposure Management.
 
 ### Assets/devices
 
 | Category         | Properties                                                                 |
 |------------------|----------------------------------------------------------------------------|
-| **Assets/devices** | - biosUuid<br>- Net Bios names<br>- Operating systems<br>- Cloud Provider ID (e.g. Azure VM ID)<br>- System Types<br>- Tenable Criticality<br>- Network interfaces (see below) |
+| **Assets/devices** | - biosUuid<br>- Net Bios names<br>- Operating systems<br>- Cloud Provider ID (for example, Azure VM ID)<br>- System Types<br>- Tenable Criticality<br>- Network interfaces (see below) |
 | **Network interface** | - IP information<br>- Mac address<br>- FQDNs |
 
 > [!NOTE]
@@ -67,11 +67,9 @@ Some common issues that might come up when configuring the Tenable connector.
 
 ### Temporary connection error (409) upon trying to connect
 
-Elad Iwanir - what is the action here? Check permissions?
 
 ### Too many requests error (429) upon trying to connect
 
-Elad Iwanir - what is the action here? Throttling? What to do?
 
 ### Unauthorized (401) or another permissions-related connection error when trying to connect
 
@@ -82,17 +80,17 @@ Elad Iwanir - what is the action here? Throttling? What to do?
 
 See [Retrieved data](#retrieved-data) for a description of the data expected to be retrieved by the Tenable connector.
 
-If there's still missing data, please contact Support.
+If there's still missing data, contact Support.
 
 ### Seeing only vulnerability management data imported, not data from other Tenable products
 
-The Tenable connector currently supports only vulnerability data from Tenable Vulnerability Management. If you're interested in other types of data, please enter a request through the **Request new connectors** feedback option on the **Data Connectors** page.
+The Tenable connector currently supports only vulnerability data from Tenable Vulnerability Management. If you're interested in other types of data, enter a request through the **Request new connectors** feedback option on the **Data Connectors** page.
 
 ### Not seeing any Tenable data ingested
 
 1. Ensure you Tenable connector is properly connected and not in an error state.
 2. Run queries on the Exposure Graph via Advanced Hunting (as described in [Getting value from your data connectors](value-data-connectors.md)) to check for the Tenable sourced data.
-3. If you're still not seeing any data ingested, please contact Support.
+3. If you're still not seeing any data ingested, contact Support.
 
 ### Configure Tenable allowed IPs to enable Exposure Management connectors to access Tenable
 

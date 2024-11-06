@@ -15,7 +15,7 @@ ms.date: 11/04/2024
 
 ## Imported assets and data types
 
-The intent of connecting to external products is to create complete visibility across all your digital assets and any security context that could impact your attack surface. The following asset types, context enrichment and vulnerability information is ingested for this purpose:
+The intent of connecting to external products is to create complete visibility across all your digital assets and any security context that could impact your attack surface. The following asset types, context enrichment, and vulnerability information are ingested for this purpose:
 
 - Devices
 - Cloud assets
@@ -23,13 +23,13 @@ The intent of connecting to external products is to create complete visibility a
 - Asset Criticality information
 - Asset risk assessment
 - Network details
-- Exposure insights (e.g. Internet exposure)
+- Exposure insights (for example, Internet exposure)
 - Users (future)
 - SaaS apps (future)
 
-The asset information and security context is imported into Exposure Management and consolidated to provide a comprehensive view of the security posture across all digital assets. Currently supported external data sources include Qualys, Rapid7 InsightVM, Tenable Vulnerability Management and ServiceNow CMDB.
+The asset information and security context are imported into Exposure Management and consolidated to provide a comprehensive view of the security posture across all digital assets. Currently supported external data sources include Qualys, Rapid7 InsightVM, Tenable Vulnerability Management, and ServiceNow CMDB.
 
-Data ingested from the Connectors gets normalized and incorporated into the Exposure Graph and Device Inventory. Exposure Management uses the valuable context and insights gained to generate a more accurate assessment of your attack surface, and provide you with a deeper understanding of your exposure risk. This data can be consumed in the Device Inventory, in Exposure Graph exploration tools like the Attack Surface Map and Advanced Hunting, and within Attack Paths that are discovered on the basis of enrichment data ingested by the connectors.
+Data ingested from the Connectors gets normalized and incorporated into the Exposure Graph and Device Inventory. Exposure Management uses the valuable context and insights gained to generate a more accurate assessment of your attack surface, and provide you with a deeper understanding of your exposure risk. This data can be consumed in the Device Inventory, in Exposure Graph exploration tools like the Attack Surface Map and Advanced Hunting, and within Attack Paths that are discovered based on enrichment data ingested by the connectors.
 
 Eventually this data will additionally serve to enhance security metrics that measure your exposure risk against a particular criteria, and it will also impact broader organizational initiatives that measure exposure risk across a workload or related to a specific threat area.
 
@@ -38,20 +38,20 @@ Eventually this data will additionally serve to enhance security metrics that me
 Benefits of using the external data connectors include:
 
 - Normalized within exposure graph
-- Enhanced device inventory
+- Enhancing device inventory
 - Mapping relationships
 - Revealing new attack paths
 - Providing comprehensive attack surface visibility
 - Incorporating asset criticality
 - Enriching context with business application or operational affiliation
-- Visualization through the Attack Map tool
-- Exploration using advanced hunting queries via KQL
+- Visualizing through the Attack Map tool
+- Exploring using advanced hunting queries via KQL
 
 ### Connectors data in the Device Inventory
 
-In the Device Inventory, you'll see the discovery sources for each device, which are the products from which we got any report on this device. These may include Microsoft Security products like MDE, MDC, and MDI, and also external data sources like Qualys or ServiceNow CMDB. You can filter on one or more discovery sources within the inventory to view devices that were discovered specifically by those sources.
+In the Device Inventory, you'll see the discovery sources for each device, which are the products from which we got any report on this device. These might include Microsoft Security products like MDE, MDC, and MDI, and also external data sources like Qualys or ServiceNow CMDB. You can filter on one or more discovery sources within the inventory to view devices that were discovered specifically by those sources.
 
-[scrnshot]
+[Screenshot]
 
 ### Critical Asset Management
 
@@ -59,19 +59,19 @@ Identifying critical assets is key in helping ensure that the most important ass
 
 Enrichment information on criticality of assets is retrieved from the data connectors, based on the criticality assessments calculated in those external products. As this data is ingested, Critical Asset Management contains built-in rules to transform the criticality value retrieved from the third-party product to the Exposure Management criticality value for each asset. You can view these classifications and enable or disable them in the Critical Asset Management experience.
 
-[scrnshot]
+[Screenshot]
 
 ### Exposure graph
 
-To explore your assets and enrichment data retrieved from external data products you can also view this information in the Exposure Graph. Within the Attack Surface map, you can view the nodes representing assets discovered by your connectors, with built-in icons showing the discovery sources for each asset.
+To explore your assets and enrichment data retrieved from external data products, you can also view this information in the Exposure Graph. Within the Attack Surface map, you can view the nodes representing assets discovered by your connectors, with built-in icons showing the discovery sources for each asset.
 
-[scrnshot]
+[Screenshot]
 
-(show the 'Discovery sources' layer)
+(Show the 'Discovery sources' layer)
 
 By opening the side pane for the asset, you can also view the detailed data retrieved from the connector for each asset.
 
-[scrnshot]
+[Screenshot]
 
 ### Advanced Hunting
 
@@ -113,7 +113,7 @@ Security Exposure Management automatically generates attack paths based on the d
 
 As you explore attack paths in your environment, you can view the discovery sources that contributed to this attack path based on the graphical view of the path:
 
-[scrnshot]
+[Screenshot]
 
 ## Next steps
 

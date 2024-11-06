@@ -52,20 +52,20 @@ The following fields are ingested via the connector:
 
 Some common issues that might come up when configuring the ServiceNow CMDB connector.
 
-### 'The remote server name could not be resolved'
+### 'The remote server name couldn't be resolved'
 
 Verify ServiceNow Instance hostname.
 Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
 
 ### 429 (Too Many Requests)
 
-The system periodically pulls data from the configured external providers, which may have a limit on the number of concurrent requests.
+The system periodically pulls data from the configured external providers, which might have a limit on the number of concurrent requests.
 We recommend creating a dedicated user or account for the connector to avoid reaching this limit.
 
 ### 'Temporary disconnected' or 'Temporary failure' error
 
 In cases where the error message indicates this is a temporary issue, check again later to see if the issue was auto resolved.
-Note: in some cases the issue will not be auto resolved and manual user intervention is required. if an elaborated error message is shown, please act accordingly. otherwise, please contact Support
+Note: in some cases the issue won't be auto resolved and manual user intervention is required. If an elaborated error message is shown,  act accordingly. Otherwise, contact Support.
 
 ### Not seeing ServiceNow CMDB CIs in the ingested data
 
@@ -78,7 +78,7 @@ Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addr
 
 ### Unable to connect/disconnect
 
-If you encounter an error message indicating there was an error connecting / disconnecting. Try again in a few minutes. If the issue persists, please contact Support.
+If you encounter an error message indicating there was an error connecting / disconnecting. Try again in a few minutes. If the issue persists, contact Support.
 
 ## Next steps
 
