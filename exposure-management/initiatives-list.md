@@ -6,12 +6,12 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: reference
 ms.service: exposure-management
-ms.date: 10/09/2024
+ms.date: 11/06/2024
 ---
 
 # Security Initiatives
 
-This is a list of security initiatives in Microsoft Security Exposure Management. Each initiative is designed to help you manage and improve the security posture of your organization.
+This is a catalog of security initiatives in Microsoft Security Exposure Management. Each initiative is designed to help you manage and improve the security posture of your organization.
 
 ## Business Email Compromise - Financial fraud
 
@@ -29,11 +29,7 @@ This initiative aims to reflect the status around cloud security coverage, ROI, 
 
 Critical asset protection refers to the strategies, processes, and technologies implemented to safeguard an organization's most valuable and important assets from various threats and risks. It involves identifying, prioritizing, and applying targeted security measures to ensure the resilience and integrity of these critical assets.
 
-## Cryptographic Assessment
-
-The Cryptographic Assessment initiative involves discovering and managing cryptographic assets inside your organization to ensure cryptographic risk management, post quantum safety, and cryptographic agility. It addresses the complexity of cryptography dispersed throughout IT architectures, embedded into various components across your organization.
-
-Endpoint Security
+## Endpoint Security
 
 Monitor the coverage and configuration of physical and virtual workstations, servers, and mobile phones.
 
@@ -49,15 +45,11 @@ Microsoft Defender External Attack Surface Management (Defender EASM) continuous
 
 Identity security is the practice of protecting the digital identities of individuals and organizations. This includes protecting passwords, usernames, and other credentials that can be used to access sensitive data or systems. Identity security is essential for protecting against a wide range of cyber threats, including phishing, malware, and data breaches. By taking proactive steps, organizations can help to protect their digital identities and sensitive data from cyber threats.
 
-## OT Security
-
-Monitors and safeguards Operational Technology (OT) environments within the organization by employing network layer monitoring. This initiative identifies devices across physical sites, pinpoints their risks, and ensures comprehensive protection and security management of OT systems.
-
 ## Ransomware Protection
 
 Ransomware attacks have become increasingly common in recent years, and they can have a devastating impact on organizations. Organizations can and should be proactive in managing a good security posture against ransomware. One of the first steps is to ensure that recommended controls are in place and are utilized and configured properly, hence reducing the risk of a successful ransomware attack making way into corporate networks and assets.
 
-## SaaS Security
+## SaaS Security [Preview]
 
 This initiative focuses on displaying the current state of SaaS (software as a service) security coverage, health, configuration, and performance. It consists of metrics across multiple domains and disciplines to provide security managers with a high-level view into their SaaS security posture management. To make the most of this Initiative, activate application connectors for the following: Microsoft 365, Salesforce, ServiceNow, GitHub, Okta, Citrix ShareFile, DocuSign, Dropbox, Google Workspace, NetDocuments, Workplace (preview), Zendesk, Zoom (preview), Atlassian. Learn more on connectors enablement: [https://aka.ms/AAs4lmg](https://aka.ms/AAs4lmg)
 
