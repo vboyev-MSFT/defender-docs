@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr
-ms.date: 09/19/2024
+ms.date: 10/25/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -28,6 +28,26 @@ search.appverid: met150
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions reduces to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
 
 ## Engine and platform updates
+
+### June-2024 (Platform: 4.18.24060.7 | Engine: 1.1.24060.5)
+
+- Security intelligence update version: **1.415.1.0**
+- Release date: **July 9, 2024** (Engine) / **July 15, 2024** (Platform)
+- Platform: **4.18.24060.7**
+- Engine: **1.1.24060.5**
+- Support phase: **Technical upgrade support (only)**
+
+#### What's new
+
+- Fixed issue where Microsoft Defender Antivirus was not properly changing state when non-Microsoft antivirus/antimalware software was installed and [Windows Defender Application Control](/windows/security/application-security/application-control/windows-defender-application-control/wdac) (WDAC) with [Intelligent Security Graph](/windows/security/application-security/application-control/windows-defender-application-control/design/use-wdac-with-intelligent-security-graph) were enabled.
+- Fixed deadlock issue on [VDI](deployment-vdi-microsoft-defender-antivirus.md) that occurred when loading corrupted update files from UNC share.
+- Custom scans started with [Start-MpScan](/powershell/module/defender/start-mpscan) are now reported in the event log.
+- Fixed potential deadlock that occurred on volume mount scanning.
+- Fixed issue where Microsoft Defender Antivirus did not allow applications to clean up temporary files.
+- Fixed potentially packet loss due to [network protection](network-protection.md) shutdown that could lead to deadlock.
+- Implemented performance improvements for scenarios where WDAC is enabled with Intelligent Security Graph.
+- Fixed an issue where an Outlook exclusion for the ASR rule [Block Office applications from injecting code into other processes](/defender-endpoint/attack-surface-reduction-rules-reference#block-office-applications-from-injecting-code-into-other-processes) was not honored.
+- Fixed a race condition during the startup of [endpoint data loss prevention](/purview/endpoint-dlp-getting-started) such that, in certain environments, some system files could be corrupted.
 
 ### May-2024 (Engine: 1.1.24050.5 | Platform: 4.18.24050.7)
 

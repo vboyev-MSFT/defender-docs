@@ -129,11 +129,15 @@
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
         - name: Overview
-          href: /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
-        - name: Alerts, incidents, and correlation
-          href: /defender-xdr/alerts-incidents-correlation
+          href: /unified-secops-platform/incidents-alerts-overview ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
+        - name: Correlation and merging
+          href: /unified-secops-platform/alerts-incidents-correlation-merging ## YL: replaces /defender-xdr/alerts-incidents-correlation
         - name: Manage incidents
-          href: /defender-xdr/manage-incidents
+          href: /unified-secops-platform/manage-incidents
+        - name: Prioritize incidents
+          href: /unified-secops-platform/prioritize-incidents
+        - name: Export incidents queue
+          href: /unified-secops-platform/export-incidents-queue
         - name: Investigate alerts
           href: /defender-xdr/investigate-alerts
         - name: Investigate incidents in Copilot for Security ## This article is specific to Sentinel in the context of using outside of USX and with XDR in USX. We don't think it applies to Sentinel only but need to confirm with PM.  Austin thought title w/o mentioning Sentinel is misleading. We might need to leave this out of TOC or as part of plan/deploy to integrate Sentinel w/ Copilot features.

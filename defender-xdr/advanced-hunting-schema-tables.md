@@ -58,9 +58,10 @@ The following reference lists all the tables in the schema. Each table name link
 | **[AADSpnSignInEventsBeta](advanced-hunting-aadspnsignineventsbeta-table.md)** | Microsoft Entra service principal and managed identity sign-ins |
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Files, IP addresses, URLs, users, or devices associated with alerts |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity, including severity information and threat categorization  |
-| **[BehaviorEntities](advanced-hunting-behaviorentities-table.md)** (Preview) | Behavior data types in Microsoft Defender for Cloud Apps |
-| **[BehaviorInfo](advanced-hunting-behaviorinfo-table.md)** (Preview) | Alerts from Microsoft Defender for Cloud Apps |
+| **[BehaviorEntities](advanced-hunting-behaviorentities-table.md)** (Preview) | Behavior data types in Microsoft Defender for Cloud Apps (not available for GCC) |
+| **[BehaviorInfo](advanced-hunting-behaviorinfo-table.md)** (Preview) | Alerts from Microsoft Defender for Cloud Apps (not available for GCC) |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Events involving accounts and objects in Office 365 and other cloud apps and services |
+| **[CloudAuditEvents](advanced-hunting-cloudauditevents-table.md)** | Cloud audit events for various cloud platforms protected by the organization's Microsoft Defender for Cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Multiple event types, including events triggered by security controls such as Microsoft Defender Antivirus and exploit protection |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Certificate information of signed files obtained from certificate verification events on endpoints |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | File creation, modification, and other file system events |
