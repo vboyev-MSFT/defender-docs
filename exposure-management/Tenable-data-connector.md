@@ -52,21 +52,10 @@ The vulnerability data retrieved for Tenable is applicable to CVEs only, and not
 
 ### Assets/devices
 
-**Assets/devices, for each device we retrieve:**
-
-- biosUuid
-- Net Bios names
-- Operating systems
-- Cloud Provider ID (e.g. Azure VM ID)
-- System Types
-- Tenable Criticality
-- Network interfaces (see below)
-
-**Network interface**
-
-- IP information
-- Mac address
-- FQDNs
+| Category         | Properties                                                                 |
+|------------------|----------------------------------------------------------------------------|
+| **Assets/devices** | - biosUuid<br>- Net Bios names<br>- Operating systems<br>- Cloud Provider ID (e.g. Azure VM ID)<br>- System Types<br>- Tenable Criticality<br>- Network interfaces (see below) |
+| **Network interface** | - IP information<br>- Mac address<br>- FQDNs |
 
 > [!NOTE]
 >
