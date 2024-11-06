@@ -16,9 +16,9 @@ ms.collection:
 
 
 
-# Unified security operations platform planning overview
+# Microsoft's unified security operations platform planning overview
 
-This article outlines activities for planning a deployment of Microsoft's unified security operations platform for end-to-end security operations (SecOps). Microsoft's unified security operations platform helps you reduce risk, prevent attacks, detect and disrupt cyberthreats in real time, and respond faster with AI-enhanced security capabilities, all from the [Microsoft Defender portal](https://security.microsoft.com).
+This article outlines activities to plan a deployment of Microsoft's security products to Microsoft's unified security operations platform for end-to-end security operations (SecOps). Unify your SecOps on Microsoft's platform to help you reduce risk, prevent attacks, detect and disrupt cyberthreats in real time, and respond faster with AI-enhanced security capabilities, all from the [Microsoft Defender portal](https://security.microsoft.com).
 
 <!--need to update links so that they stay in the TOC if we're including them-->
 
