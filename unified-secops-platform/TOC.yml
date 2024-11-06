@@ -57,7 +57,7 @@
           - name: Data storage and privacy
             href: /defender-xdr/secure-score-data-storage-privacy.md
     - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
-      href: /azure/sentinel/threat-detection ## PLACEHOLDER LINK
+      href: detect-threats.md
     - name: Hunt for threats ## Seperating this out because per PM hunting might happen in different scenarios. Also wanting it higher level as advanced hunting is one of the things highlighted for USX. 
       items:
       - name: Overview
