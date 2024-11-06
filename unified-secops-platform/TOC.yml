@@ -14,12 +14,12 @@
           href: overview-defender-portal.md
         - name: Microsoft Defender XDR
           href: /defender-xdr/microsoft-365-defender ##PLACEHOLDER LINK?
-        - name: Security Exposure Management
-          href: /security-exposure-management/microsoft-security-exposure-management?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Microsoft Sentinel
           href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
         - name: Microsoft Copilot in the Defender portal
           href: /defender-xdr/security-copilot-in-microsoft-365-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
+        - name: Microsoft Security Exposure Management
+          href: /security-exposure-management/microsoft-security-exposure-management?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Microsoft Defender for Cloud
           href: /defender-xdr/microsoft-365-security-center-defender-cloud?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Microsoft Defender for IoT
