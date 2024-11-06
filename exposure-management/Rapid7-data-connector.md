@@ -6,22 +6,21 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 09/24/2024
+ms.date: 11/06/2024
 ---
 
 # Rapid7 data connector
 
-To set up the Rapid7 integration, you need the endpoint of your server, such as “us.api.insight.rapid7.com”. The connector authenticates with API Key Auth using an Endpoint and API Key.
+To set up the Rapid7 integration, you need the endpoint of your Rapid7 Platform API, such as “us.api.insight.rapid7.com”. The connector authenticates with API Key Auth using an Endpoint and API Key.
 
 ## Rapid7 configuration
 
-1. **Endpoint** - Find your Rapid7 endpoint. Follow the instructions [here](https://docs.rapid7.com/insight/navigate-the-insight-platform/#check-your-data-region).
-
+1. **Endpoint** - Find your Rapid7 endpoint. Follow the instructions [here](https://docs.rapid7.com/insight/api-overview#endpoint )
 2. **API Key** – This integration needs a user API key for a user that has permissions to fetch assets. To generate an API key, see details at [this link.](https://docs.rapid7.com/insight/managing-platform-api-keys/#api-keys-based-on-your-insight-account-role)
 
    > **Note:** *We have found that connecting with an organization key has been more successful than connecting with a user key. We recommend you opt for an organization key to increase the likelihood of a successful connection.*
 
-## Establish ServiceNow connection in Exposure Management
+## Establish Rapid7 connection in Exposure Management
 
 To establish a connection with Rapid7 in Exposure Management, follow these steps:
 
@@ -32,9 +31,11 @@ To establish a connection with Rapid7 in Exposure Management, follow these steps
 
 Exposure Management currently retrieves data on devices and reported vulnerabilities from Rapid7.
 
-The following fields are ingested via the connector: [Rapid7AssetInfoAdditionalData.json - Repos (azure.com)](https://dev.azure.com/msazure/CESEC/_git/XSPM-Orion-IngestionClientContracts?path=/src/EnterpriseGraphDataModel/DataModelDefinitions/AdditionalData/Rapid7AssetInfoAdditionalData.json&version=GBmain&_a=contents)
+Devices of type <> are ingested.
 
-Assets/devices unique identifiers:
+Only devices that were actively scanned in the last 90 days are retrieved, based on assessing the "last_scan_end" field in the Rapid7 asset.
+
+**Assets/devices, and data per each identifier**:
 
 - Rapid7 ID
 - Hostname
@@ -44,7 +45,9 @@ Assets/devices unique identifiers:
 - Rapid7 risk score
 - Tags
 - Rapid7 criticality data
-- Vulnerability findings - only CVEs
+- Cloud platform
+
+**Vulnerability findings**: Rapid7 retrieves CVE findings on the assets that it ingests.
 
 ## Troubleshooting the Rapid7 data connector
 
