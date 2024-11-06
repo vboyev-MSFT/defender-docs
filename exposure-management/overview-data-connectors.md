@@ -36,7 +36,7 @@ Data Connectors in Microsoft Security Exposure Management is currently in public
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
 > [!NOTE]
-> During the preview phase, use of the data connectors feature is free.
+> During the preview phase, use of the data connectors feature is free. Once data connectors become generally available, you will be billed per connector based on the amount of data ingested from that product to Exposure Management. The charge will be according to volume of ingested assets, where each 1000 assets will incur a charge of $29 USD.
 
 
 ## Prerequisites
@@ -45,24 +45,23 @@ The following prerequisites are required to integrate external data connecters t
 
 ### Roles & permissions
 
-For full access, you need one of the following Microsoft Entra ID roles:
+For full access to connect and disconnect you need one of the following Microsoft Entra ID roles:
 
 - Global Admin (read and write permissions)
-- Global Reader (read permissions)
 - Security Admin (read and write permissions)
 - Security Operator (read and limited write permissions)
+
+
+To view the status of the connectors you can use one of the following roles:
+
+- Global Reader (read permissions)
 - Security Reader (read permissions)
-
-Support for URBAC (User Role-Based Access Control) is available in Exposure Management. The following roles are supported:
-
-- Add role
-- Add role
 
 You can find more details about the permission levels here, [Prerequisites, and support](prerequisites.md).
 
 ### Cloud support
 
-- Exposure Management is available in Commercial Clouds (Azure, AWS, and GCP).
+- Data Connectors supports data from the public Commercial Clouds (including Azure and AWS).
 - Nation/Sovereign Clouds: Exposure Management isn't available in US Gov, China Gov, or other Gov clouds.
 
 ## Next steps
