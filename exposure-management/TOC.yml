@@ -34,7 +34,7 @@
         href: classify-critical-assets.md
       - name: Predefined classifications
         href: predefined-classification-rules-and-levels.md
-    -  name: Data Connectors
+    -  name: Data connectors (preview)
        items:
        - name: Overview
          href: overview-data-connectors.md
