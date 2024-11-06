@@ -11,25 +11,30 @@ ms.date: 09/24/2024
 
 # ServiceNow data connector
 
-To set up the ServiceNow integration, you need the hostname of your ServiceNow instance, such as “contoso.service-now.com”. The connector authenticates with Basic Auth using username and password for read only access.
+To set up the ServiceNow CMDB integration, you need to provide the hostname of your ServiceNow instance and valid credentials. The connector authenticates with Basic Authentication using username and password for read only access.
+
+> [!Note]
+> We recommend creating a dedicated user for use with data connectors in Exposure Management.
 
 ## ServiceNow configuration
 
+1. Find the hostname of your ServiceNow instance. For example, "contoso.service-now.com". This can be found at: [ADD LINK]  
 1. Create a New ServiceNow user:
    1. Follow the steps [here](https://docs.servicenow.com/en-US/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html) to create a new user.
    2. Keep the **username (User Id) and password** you provided for future use.
    3. If there’s no password field, submit the form to create the user. Afterwards, when you select on the new user, you receive the **Set Password** option.
-   4. Check the **Web service access only** box.
-2. Assign a **cmdb_read** role to the user you have created. Detailed instructions can be found [here](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+   4. As you create the user, check the **Web service access only** box such that the user will be of dedicated use only for this integration.
+1. Assign a **cmdb_read** role to the user you have created. Detailed instructions can be found [here](https://docs.servicenow.com/bundle/vancouver-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
-> **Note:** The ServiceNow connector only supports Basic Authentication. OAuth authentication will be made available at a later time.
+> [!Note]
+> The ServiceNow connector only supports Basic Authentication. OAuth authentication will be made available at a later time.
 
 ## Establish ServiceNow connection in Exposure Management
 
 To establish a connection with ServiceNow in Exposure Management, follow these steps:
 
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the ServiceNow CMDB tile.
-1. Enter your ServiceNow instance **details** (created in the ServiceNow configuration) and select **Connect**.
+1. Enter your ServiceNow **instance details** and **credentials** (created in the ServiceNow configuration) and select **Connect**.
 
 ## Retrieved data
 
@@ -37,40 +42,11 @@ Exposure Management currently retrieves data on devices, their business applicat
 
 The following fields are ingested via the connector:
 
- **Devices**:
-
-- properties
-  - os
-  - osVersion
-  - osServicePack
-  - cpuType
-  - category
-  - assetTag
-  - virtual
-  - serviceNowCriticality
-  - usedFor
-  - networkAdapters
-  - lastLoggedOnUser
-  - mostFrequentUser
-  - sysClassName
-  - uPrimaryBusinessApplication
-
-**networkAdapter**:
-
-- properties:
-  - name
-  - sysId
-  - macAddress
-  - ipAddress
-  - ipDefaultGateway
-
- **businessApplication**:
-
-- properties:
-  - sysId
-  - number
-  - uCriticality
-  - businessCriticality
+| **Category**          | **Properties**                                                                 |
+|-----------------------|--------------------------------------------------------------------------------|
+| **Devices**           | - os<br>- osVersion<br>- osServicePack<br>- cpuType<br>- category<br>- assetTag<br>- virtual<br>- serviceNowCriticality<br>- usedFor<br>- networkAdapters (see details below)<br>- lastLoggedOnUser<br>- mostFrequentUser<br>- sysClassName<br>- uPrimaryBusinessApplication (see details below) |
+| **Network Adapter**   | - name<br>- sysId<br>- macAddress<br>- ipAddress<br>- ipDefaultGateway                           |
+| **Business Application** | - sysId<br>- number<br>- uCriticality<br>- businessCriticality                              |
 
 ## Troubleshooting the connector
 
