@@ -24,9 +24,13 @@ It's possible that Defender for IoT identifies a device located in the wrong sit
 1. Select **Assets -> Devices** to open the **Device Inventory**.
 1. Select the device to update. A list of actions appears at the top of the Device Inventory table.
 1. Select **Set site**.
+
     :::image type="content" source="media/manage-sites/set-site-from-inventory-boxed.png" alt-text="Screenshot of the set site button in the device inventory table for changing the site location setting" lightbox="media/manage-sites/set-site-from-inventory-boxed.png":::
+
 1. In **Set site manually**, open the **Select site** drop down list and select the site to associate with this device. If you are unsure of the location, select **Unassigned**.
+
     :::image type="content" source="media/manage-sites/device-set-site-manually.png" alt-text="Screenshot of the set site manually drop down list for changing the site location setting" lightbox="media/manage-sites/device-set-site-manually.png":::
+
 1. Select **Save and close**.
 1. The Set site confirmation box appears. Select **Confirm** to finalize the change.
 
