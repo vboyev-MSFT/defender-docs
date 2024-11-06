@@ -141,7 +141,7 @@
               - name: Overview
                 href: incident-response-overview.md
               - name: Prioritize incidents
-                href: prioritize-incidents.md
+                href: incident-queue.md
               - name: Manage incidents
                 href: manage-incidents.md
               - name: Export incidents queue to CSV file
