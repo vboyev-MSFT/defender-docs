@@ -51,7 +51,7 @@ Benefits of using the external data connectors include:
 
 In the Device Inventory, you'll see the discovery sources for each device, which are the products from which we got any report on this device. These may include Microsoft Security products like MDE, MDC, and MDI, and also external data sources like Qualys or ServiceNow CMDB. You can filter on one or more discovery sources within the inventory to view devices that were discovered specifically by those sources.
 
-<scrnshot>
+[scrnshot]
 
 ### Critical Asset Management
 
@@ -59,19 +59,19 @@ Identifying critical assets is key in helping ensure that the most important ass
 
 Enrichment information on criticality of assets is retrieved from the data connectors, based on the criticality assessments calculated in those external products. As this data is ingested, Critical Asset Management contains built-in rules to transform the criticality value retrieved from the third-party product to the Exposure Management criticality value for each asset. You can view these classifications and enable or disable them in the Critical Asset Management experience.
 
-<scrnshot>
+[scrnshot]
 
 ### Exposure graph
 
 To explore your assets and enrichment data retrieved from external data products you can also view this information in the Exposure Graph. Within the Attack Surface map, you can view the nodes representing assets discovered by your connectors, with built-in icons showing the discovery sources for each asset.
 
-<scrnshot>
+[scrnshot]
 
 (show the 'Discovery sources' layer)
 
 By opening the side pane for the asset, you can also view the detailed data retrieved from the connector for each asset.
 
-<scrnshot> 
+[scrnshot]
 
 ### Advanced Hunting
 
@@ -113,8 +113,7 @@ Security Exposure Management automatically generates attack paths based on the d
 
 As you explore attack paths in your environment, you can view the discovery sources that contributed to this attack path based on the graphical view of the path:
 
-<scrnshot>
-
+[scrnshot]
 
 ## Next steps
 
