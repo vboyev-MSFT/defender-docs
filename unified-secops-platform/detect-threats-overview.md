@@ -18,7 +18,8 @@ ms.topic: conceptual
 
 # Overview - Detect threats
 
-Threat intelligence
+Threat intelligence helps detect threats, but infrastructure chaining is a type of hunt
+
 Threat detection vs. threat protection
 Sentinel - /azure/sentinel/threat-detection
 Defender XDR - defender-xdr/incident-response-overview [looking at narrower slice here though to focus on detection vs. the response]

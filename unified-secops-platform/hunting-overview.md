@@ -18,7 +18,11 @@ ms.topic: conceptual
 # customer intent: I want to learn detecting threats with the tools available in the Microsoft unified security platform. Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments
 ---
 
+# Overview - Hunting in the Microsoft unified security platform
+
 Need to answer this for reader - How is hunting differentiated from detection?
+Threat intelligence helps detect threats, but infrastructure chaining is a type of hunt
+
 Hunting is proactive activity, but can also be reactive. More flexible tools to use complex ideas and patterns. Hunting can also include finding gaps.
 
 Advanced hunting, custom detections, hunts in Sentinel
