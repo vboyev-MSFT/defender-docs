@@ -23,9 +23,9 @@ To establish a connection with any of the supported external products, follow th
      - Palo Alto (coming soon)
 
 2. Go to **Data Connectors** in the Exposure Management navigation.
-1. Select **Connect** on the selected data connector from the external connectors catalog.
-1. A side pane opens with the relevant connectivity details. Fill in the required fields and select **Connect**.
-1. The data connector is now connected and will start ingesting data from the external source.
+3. Select **Connect** on the selected data connector from the external connectors catalog.
+4. A side pane opens with the relevant connectivity details. Fill in the required fields and select **Connect**.
+5. The data connector is now connected and will start ingesting data from the external source.
 
 > [!Note]
 > It may take up to an hour for data to start flowing after the data connector is configured.

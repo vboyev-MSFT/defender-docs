@@ -50,7 +50,7 @@ Qualys connector retrieves data on compute devices, including machines and virtu
 
 Only devices that were modified in the last 90 days are retrieved, based on assessing the "modified" field in the Qualys asset.
 
-**Assets/devices**
+### Assets/devices
 
 - Gateway address
 - FQDN
@@ -60,7 +60,6 @@ Only devices that were modified in the last 90 days are retrieved, based on asse
 - Qualys criticality data
 
 **Vulnerability findings**: Qualys retrieves CVE findings on the assets that it ingests.
-
 
 ## Troubleshooting the Qualys data connector
 
