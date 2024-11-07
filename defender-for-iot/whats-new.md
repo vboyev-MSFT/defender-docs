@@ -16,6 +16,12 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
+## November 2024
+
+|Service area  |Updates  |
+|---------|---------|
+| **OT networks** | - [Update site association of a device or group of devices](manage-sites.md#manually-update-device-site-association)|
+
 ## September 2024
 
 |Service area  |Updates  |
