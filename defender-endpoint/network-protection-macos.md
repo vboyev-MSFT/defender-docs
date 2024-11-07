@@ -38,7 +38,7 @@ search.appverid: met150
 - Microsoft Edge for macOS browser
 
 > [!NOTE]
-> Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection provides this protection to Microsoft Edge for macOS if network protection is enabled.
+> SmartScreen in Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection provides this protection to Microsoft Edge for macOS if network protection is enabled.
 
 ## Overview
 
