@@ -71,7 +71,7 @@ To onboard and use Microsoft Sentinel in the Defender portal, you must have the 
 To unify capabilities with Defender XDR in Microsoft's unified SecOps platform, you must have the following resources and access:
 
 - Licensing for Defender XDR, as described in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites)
-- Microsoft Defender XDR onboarded to the same Microsoft Entra tenant as Microsoft Sentinel
+- Account for Defender XDR is a member of the same Microsoft Entra tenant with which Microsoft Sentinel is associated
 - Access to Microsoft Defender XDR in the Defender portal, as described in in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites#required-permissions)
 
 ## Onboard Microsoft Sentinel
