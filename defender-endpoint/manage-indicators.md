@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 11/05/2024
 ---
 
 # Create indicators
@@ -150,9 +150,10 @@ The functionality of pre-existing IoCs won't change. However, the indicators wer
 The IoC API schema and the threat IDs in advance hunting are updated to align with the renaming of the IoC response actions. The API scheme changes apply to all IoC Types.
 
 > [!NOTE]
->
-> There is a limit of 15,000 indicators per tenant. File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
->
+> There is a limit of 15,000 indicators per tenant. Increases to this limit are not supported.
+> 
+> File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
+> 
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
 ## Known issues and limitations
