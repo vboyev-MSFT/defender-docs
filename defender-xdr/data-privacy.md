@@ -71,7 +71,9 @@ Microsoft Defender XDR shares data among the following Microsoft products, also 
 
 ## Data retention
 
-Microsoft Defender XDR data is retained for 180 days, and is visible across the Microsoft Defender portal during that time, except for in **Advanced hunting** queries. In the Microsoft Defender portal's **Advanced hunting** page, data is accessible via queries for only 30 days, unless it's streamed through [Microsoft's unified security operations platform with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration?toc=%2Fdefender-xdr%2Ftoc.json&bc=%2Fdefender-xdr%2Fbreadcrumb%2Ftoc.json&tabs=defender-portal&view=o365-worldwide), where retention periods may be longer.
+Microsoft Defender XDR data is retained for 180 days, and is visible across the Microsoft Defender portal during that time, except for in **Advanced hunting** queries. 
+
+In the Microsoft Defender portal's **Advanced hunting** page, data is accessible via queries for only 30 days, unless it's streamed through [Microsoft's unified security operations platform with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration?toc=%2Fdefender-xdr%2Ftoc.json&bc=%2Fdefender-xdr%2Fbreadcrumb%2Ftoc.json&tabs=defender-portal&view=o365-worldwide), where retention periods may be longer.
 
 Data continues to be retained and visible, even when a license is under a grace period or in supspended mode. At the end of any grace period or suspension, and no later than 180 days from a contract termination or expiration, data is deleted from Microsoft's systems and is unrecoverable.
 
