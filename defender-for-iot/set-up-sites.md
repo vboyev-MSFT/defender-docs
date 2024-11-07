@@ -75,11 +75,13 @@ In this stage, you configure Defender for IoT to associate OT devices to the sit
 
 In this stage, you review all of the devices discovered by the system. This gives admins the opportunity to review and remove devices before confirming the site creation.
 
+To manage devices in bulk, use the search bar to find devices by their name, IP, or MAC address. Once found, select multiple devices for removal from the site or to reset their association. <!-- IM not sure where this should go, here or at the end. Limor .   I am also unclear why we mention resetting association, i didnt think that that happens here? Amit -->
+
 A list of all devices to be associated with this site appears. To remove any of the devices from this list:
 
 1. Select the **Deselect devices from site** button. All of the devices become editable.
 1. Deselect the checkbox of the devices to be removed.
-    1. To reset the list, select **Discard all changes**.
+    1. To reset the list, select **Discard all changes**. <!-- amit asked to write this: "If you want to reset the device list to its original state, select ‘Discard all changes.’ This will undo any device exclusions and restore the initial device selection." - but i think that my line is ok? - Limor>
 
     :::image type="content" source="media/set-up-sites/site-security-associate-device-list-preview.png" alt-text="Screenshot of the site associtation preview devices page" lightbox="media/set-up-sites/site-security-associate-device-list-preview.png" :::
 
@@ -93,7 +95,7 @@ A list of all devices to be associated with this site appears. To remove any of 
 >
 >By removing the device's association with a site, its automatic site association based on network parameters will be disabled. If the device is relocated to another site, you'll need to manually update it's site settings. <!-- or the device or the site? Amit-->
 >
->If a site is deleted or a suggestion<!-- what does this refer to? Amit--> is de-associated, devices that are excluded in this process will be included in future site suggestions, as they were initially.
+>Once a site is deleted or a suggestion<!-- what does this refer to? Amit--> is de-associated, devices that were excluded in this process will again be included in future site suggestions.
 
 ## Review site details
 
