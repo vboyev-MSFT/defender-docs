@@ -54,7 +54,7 @@ In the query editor, enter *arg("").* followed by the Azure Resource Graph table
 
 For example:
 
-:::image type="content" source="../defender/media/arg-operator2.png" alt-text="Screenshot of arg operator in advanced hunting." lightbox="../defender/media/arg-operator2.png":::
+:::image type="content" source="defender\media\arg-operator2.png" alt-text="Screenshot of arg operator in advanced hunting." lightbox="defender\media\arg-operator2.png":::
 
 You can also, for instance, filter a query that searches over Microsoft Sentinel data based on the results of an Azure Resource Graph query:
 
