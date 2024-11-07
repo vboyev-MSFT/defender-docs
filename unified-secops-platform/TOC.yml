@@ -43,7 +43,7 @@
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
       items:
         - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
-          href: /azure/sentinel/sap/deployment-attack-disrupt ## PLACEHOLDER LINK
+          href: reduce-risk-overview.md 
         - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section. Or because this is going away, we just link in all the articles? Or put them in reference?
           items:
           - name: Overview
