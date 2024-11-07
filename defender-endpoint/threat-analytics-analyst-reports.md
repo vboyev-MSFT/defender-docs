@@ -13,6 +13,9 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
+ms.custom:
+- cx-ti
+- cx-ta
 ms.subservice: edr
 search.appverid: met150
 ms.date: 10/18/2024

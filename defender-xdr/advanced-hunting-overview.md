@@ -16,6 +16,7 @@ ms.collection:
   - tier1
 ms.custom:
 - cx-ti
+- cx-ah
 - seo-marvel-apr2020
 ms.topic: overview
 search.appverid: met150

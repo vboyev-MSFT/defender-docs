@@ -18,6 +18,7 @@ ms.collection:
   - magic-ai-copilot
 ms.custom:
 - cx-ti
+- cx-ah
 ms.topic: how-to
 ms.date: 10/17/2024
 appliesto:
