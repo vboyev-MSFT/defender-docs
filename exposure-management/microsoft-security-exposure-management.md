@@ -51,7 +51,7 @@ With Security Exposure Management you can:
     - You can also focus on choke points through which many attack paths flow.
     - Actionable recommendations help you to mitigate identified attack paths.
 
-- **Connect your data**: Security Exposure Management supports a variety of data connectors to integrate with different security solutions and data sources. These connectors help you to gather and consolidate security data from various environments, providing a comprehensive view of your security posture. 
+- **Connect your data**: Security Exposure Management supports a variety of data connectors to integrate with different security solutions and data sources.
   - Consolidate security data from multiple sources into a single, unified view.
   - Gain deeper insights into your security posture by integrating data from various environments.
   - Leverage comprehensive data to detect and respond to threats more effectively.
