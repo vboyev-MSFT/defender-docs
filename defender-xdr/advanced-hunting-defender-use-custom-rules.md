@@ -52,13 +52,11 @@ Read [Query data in Azure Resource Graph by using arg()](/azure/azure-monitor/lo
 
 In the query editor, enter *arg("").* followed by the Azure Resource Graph table name. 
 
-```Kusto
-arg("").<Azure-Resource-Graph-table-name>
-```
+For example:
 
 :::image type="content" source="/defender/media/arg-operator.png" alt-text="Screenshot of arg operator in advanced hunting." lightbox="/defender/media/arg-operator.png":::
 
-You can then, for instance, filter a query that searches over Microsoft Sentinel data based on the results of an Azure Resource Graph query:
+You can also, for instance, filter a query that searches over Microsoft Sentinel data based on the results of an Azure Resource Graph query:
 
 ```Kusto
 arg("").Resources 
