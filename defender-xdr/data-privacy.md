@@ -52,23 +52,6 @@ Customer data stored by integrated services might also be stored in the followin
 - The original location for the relevant service.
 - A region defined by data storage rules of an integrated serice, if Microsoft Defender XDR shares data with that service.
 
-## Data sharing
-
-Microsoft Defender XDR shares data among the following Microsoft products, also licensed by the customer:
-
-- Microsoft Defender for Cloud
-- Microsoft Defender for Identity
-- Microsoft Defender for Endpoint
-- Microsoft Defender for Cloud Apps
-- Microsoft Defender for Office 365
-- Microsoft Defender for IoT
-- Microsoft Sentinel
-- Microsoft Intune
-- Microsoft Purview
-- Microsoft Entra
-- Microsoft Defender Vulnerability Management
-- Microsoft Copilot for Security
-
 ## Data retention
 
 Microsoft Defender XDR data is retained for 180 days, and is visible across the Microsoft Defender portal during that time, except for in **Advanced hunting** queries. 
@@ -87,6 +70,23 @@ The following table provides data retention periods for other services available
 |Microsoft Defender for Cloud Apps|180 days|[Defender for Cloud Apps data storage and privacy](/defender-cloud-apps/cas-compliance-trust)|
 |Microsoft Entra|Varies according to feature and license|[Microsoft Entra data storage and privacy](/entra/identity/monitoring-health/reference-reports-data-retention)|
 |Microsoft Sentinel|90 days for Basic logs, varies depending on pricing|[Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel/)|
+
+## Data sharing
+
+Microsoft Defender XDR shares data among the following Microsoft products, also licensed by the customer:
+
+- Microsoft Defender for Cloud
+- Microsoft Defender for Identity
+- Microsoft Defender for Endpoint
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Office 365
+- Microsoft Defender for IoT
+- Microsoft Sentinel
+- Microsoft Intune
+- Microsoft Purview
+- Microsoft Entra
+- Microsoft Defender Vulnerability Management
+- Microsoft Copilot for Security
 
 ## Related content
 
