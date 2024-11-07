@@ -17,13 +17,13 @@ When you manage a site, you might need to edit or delete the site information li
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
-## Manually change the site location/association of a device or multiple devices <!--location/association? Amit-->
+## Manually update device site association
 
 Security admininstrators can manually assign or modify the site location for a device. Manually assigning a site overrides the automatic site association created when making the site. Therefore, once a site is set manually, this device <!-- surely: once the device is set manually, it will no longer.... AMIT? --> will no longer appear in the automatic site association suggestions in the Site set up process, until the manual association is reset.<!-- why do i need to add this, if the device is already associated with a site, why would it appear in a list anyway? Amit -->
 
 To quickly update a group of devices, select multiple devices from the inventory and set the site for all of the selected devices simulataneously.<!-- The 'Set site' action can be used for bulk management by selecting multiple devices from the inventory and setting the site for all selected devices simultaneously. This allows for quick updates to site associations when managing a group of devices. this was Amits wording, i think this is better. but should i use the words bulk management? Should this be added at the end instead of the beginning? Limor-->
 
-To change the site associated with a device:
+**To change the site associated with a device**:
 
 1. Select **Assets -> Devices** to open the **Device Inventory**.
 1. Select the device, or group of devices, to update. A list of action buttons appear at the top of the Device Inventory table.
@@ -36,9 +36,9 @@ To change the site associated with a device:
     :::image type="content" source="media/manage-sites/device-set-site-manually.png" alt-text="Screenshot of the set site manually drop down list for changing the site location setting" lightbox="media/manage-sites/device-set-site-manually.png":::
 
 1. Select **Save and close**.
-1. The Set site confirmation box appears. Select **Confirm** to finalize the change. Finalizing the change prevents automatic site reassignment based on existing site security rules and remains until the device is reset manually.
+1. The Set site confirmation box appears. Select **Confirm** to finalize the change. Finalizing the change prevents automatic site reassignment based on existing site security rules. This change remains until the device is reset manually.
 
-Alternatively, for managing multiple device or making site wide changes, it is recommended to go to **Site security** and use the **Edit site** wizard to more efficiently manage the site and the devices associated to it. For more information, see [link to site security](monitor-site-security.md). <!-- but this is more like removing a device from a specific site, not adding it to a different one instead?? how is this different from the bulk management mentioned above? AMIT-->
+Alternatively, for managing multiple device or making site wide changes, it is recommended to go to **Site security** and use the **Edit site** wizard to more efficiently manage the site and the devices associated to it. For more information, see [Site security](monitor-site-security.md). <!-- but this is more like removing a device from a specific site, not adding it to a different one instead?? how is this different from the bulk management mentioned above? AMIT-->
 
 ## Edit or delete a site
 
