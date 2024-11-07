@@ -109,7 +109,7 @@ Security Exposure Management categorizes recommendations by compliance status, a
 - **Mitigated by organization**: Displays when steps to mitigate recommendations were taken elsewhere, and Security Exposure Management can't know whether recommendations are compliant. For example, by changing a status in Secure score.
 - **Not available**: Means there isn't enough information to determine the compliance status.
 
-:::image type="content" source="./media//exposure-insights-overview/recommendation-ransomeware-advanced-protection.png" alt-text="Screenshot of the ransomware advanced protection recommendation details ":::
+:::image type="content" source="./media//exposure-insights-overview/recommendation-ransomware-advanced-protection.png" alt-text="Screenshot of the ransomware advanced protection recommendation details ":::
 
 ### Secure score
 
