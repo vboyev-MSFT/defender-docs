@@ -24,18 +24,18 @@ Microsoft's unified security operations platform combines the capabilities of Mi
 
     For more information, see [Unified security operations platform planning overview](overview-plan.md).
 
-## Pilot and deploy Microsoft Defender services
+## Deploy Microsoft Defender XDR services
 
-The Microsoft Defender portal unifies your incident response process by integrating key capabilities across services such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft Defender portal.
+Microsoft Defender XDR unifies incident response by integrating key capabilities across services, including Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft Defender portal.
 
 1. Microsoft Defender XDR automatically turns on when eligible customers with the required permissions visit Microsoft Defender portal. For more information, see [Turn on Microsoft Defender XDR](../defender-xdr/m365d-enable.md).
 
-1. Continue by piloting and deploying Microsoft Defender services. We recommend using the following order:
+1. Continue by deploying Microsoft Defender XDR services. We recommend using the following order:
 
-    1. [Pilot and deploy Microsoft Defender for Identity](../defender-xdr/pilot-deploy-defender-identity.md)
-    1. [Pilot and deploy Defender for Office 365](../defender-xdr/pilot-deploy-defender-office-365.md)
-    1. [Pilot and deploy Microsoft Defender for Endpoint](../defender-xdr/pilot-deploy-defender-endpoint.md)
-    1. [Pilot and deploy Microsoft Defender for Cloud Apps](../defender-xdr/pilot-deploy-defender-cloud-apps.md)
+    1. Deploy Microsoft Defender for Identity
+    1. Deploy Microsoft Defender for Office 365
+    1. Deploy Microsoft Defender for Endpoint
+    1. Deploy Microsoft Defender for Cloud Apps
 
 <!--what about the others?-->
 

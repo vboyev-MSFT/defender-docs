@@ -33,7 +33,28 @@
         - name: Microsoft Defender for IoT
           href: /azure/defender-for-iot/organizations/concept-zero-trust
     - name: Plan for unified security operations ## Leverage existing zero trust articles? One article for USX all up planning (like guide that links out).
-      href: overview-plan.md
+      items:
+      - name: Overview
+        href: overview-plan.md
+        displayName: plan
+      - name: Zero Trust
+        items:
+        - name: Zero trust security ## Discuss principles around Zero Trust security, link to the Zero Trust doc set as needed.
+          items:
+          - name: Microsoft Sentinel and Microsoft Defender XDR
+            href: /security/operations/siem-xdr-overview
+          - name: Microsoft Defender XDR
+            href: /defender-xdr/zero-trust-with-microsoft-365-defender
+          - name: Microsoft Defender for Cloud
+            href: /azure/defender-for-cloud/zero-trust
+          - name: Microsoft Defender for Cloud Apps
+            href: /defender-cloud-apps/zero-trust
+          - name: Microsoft Defender for Identity
+            href: /defender-for-identity/zero-trust
+          - name: Microsoft Defender for IoT
+            href: /azure/defender-for-iot/organizations/concept-zero-trust
+      - name: US Government customers
+        href: gov-support.md
     - name: Deploy unified security operations ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
       href: overview-deploy.md
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX

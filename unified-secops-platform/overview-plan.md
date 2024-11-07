@@ -20,17 +20,22 @@ This article outlines activities to plan a deployment of Microsoft's security pr
 
 ## Plan your deployment
 
-Microsoft's unified SecOps platform combines services like Microsoft Defender XDR, Microsoft Sentinel, Microsoft Security Exposure Management, and more in the Microsoft Defender portal.
+Microsoft's unified SecOps platform combines services like Microsoft Defender XDR, Microsoft Sentinel, Microsoft Security Exposure Management, and Microsoft Copilot for Security in the Microsoft Defender portal.
 
 The first step in planning your deployment is to select the services you want to use.
 
-As a basic prerequisite, you'll need both [Microsoft Sentinel](/azure/sentinel/overview) and [Microsoft Defender XDR](../defender-xdr/microsoft-365-defender.md) to monitor and protect both Microsoft and non-Microsoft services and solutions, including both cloud and on-premises resources. <!--is this correct?-->
+As a basic prerequisite, you'll need both [Microsoft Sentinel](/azure/sentinel/overview) and [Microsoft Defender XDR](../defender-xdr/microsoft-365-defender.md) to monitor and protect both Microsoft and non-Microsoft services and solutions, including both cloud and on-premises resources.
 
 Deploy any of the following services to add security across your endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks:
 
+Microsoft Defender XDR services:
+
+- [Microsoft Defender for Office 365](/defender-office-365/mdo-about)
+- 
+
 |Capability  |Security product  |
 |---------|---------|
-|Protect against threats posed by email messages, URL links, and Office 365 collaboration tools.     |   [Microsoft Defender for Office 365](/defender-office-365/mdo-about)      |
+|Protect against threats posed by email messages, URL links, and Office 365 collaboration tools.     |         |
 |Monitor and protect endpoint devices. Monitor, detect, and investigate device breaches, and automatically respond to security threats.    |     [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)    |
 |Identify assets and software inventory, and assess device posture to find security vulnerabilities.|[Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)|
 |Protect and control access to SaaS cloud apps.|[Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)|
