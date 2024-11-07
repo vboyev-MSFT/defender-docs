@@ -55,8 +55,9 @@ To onboard and use Microsoft Sentinel in the Defender portal, you must have the 
 - The data connector for Microsoft Defender XDR enabled in Microsoft Sentinel for incidents and alerts. Install the Defender XDR solution and configure the data connector to connect Microsoft Sentinel to the Defender portal. For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy). <!--Question to Simaya about configuring the other options on this connector - would we still need that for unified SOC. Would they go  back and configure those settings? https://learn.microsoft.com/en-us/azure/sentinel/connect-microsoft-365-defender-->
 - An Azure account with the appropriate roles to onboard, use, and create support requests for Microsoft Sentinel in the Defender portal. The following table highlights some of the key roles needed.
 
-  |Task |Azure built-in role required |Scope  |
+  |Task |Microsoft Entra or Azure built-in role required |Scope  |
   |---------|---------|---------|
+  |Onboard Microsoft Sentinel to the Defender portal|[Global administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or [security administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator) in Microsoft Entra ID|Tenant|
   |Connect or disconnect a workspace with Microsoft Sentinel enabled|[Owner](/azure/role-based-access-control/built-in-roles#owner) or </br>[User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) and [Microsoft Sentinel Contributor](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-contributor) |- Subscription for Owner or User Access Administrator roles </br></br>- Subscription, resource group, or workspace resource for Microsoft Sentinel Contributor |
   |View Microsoft Sentinel in the Defender portal|[Microsoft Sentinel Reader](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-reader) |Subscription, resource group, or workspace resource  |
   |Query Sentinel data tables or view incidents  |[Microsoft Sentinel Reader](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-reader) or a role with the following actions:</br>- Microsoft.OperationalInsights/workspaces/read</br>- Microsoft.OperationalInsights/workspaces/query/read</br>- Microsoft.SecurityInsights/Incidents/read</br>- Microsoft.SecurityInsights/incidents/comments/read</br>- Microsoft.SecurityInsights/incidents/relations/read</br>- Microsoft.SecurityInsights/incidents/tasks/read|Subscription, resource group, or workspace resource       |
@@ -70,8 +71,8 @@ To onboard and use Microsoft Sentinel in the Defender portal, you must have the 
 To unify capabilities with Defender XDR in Microsoft's unified SecOps platform, you must have the following resources and access:
 
 - Licensing for Defender XDR, as described in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites)
-- Microsoft Defender XDR onboarded to the same Microsoft Entra tenant as the Microsoft Sentinel workspace
-- Access to Microsoft Defender XDR in the Defender portal, as described in in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites#required-permissions)
+- Account for Defender XDR is a member of the same Microsoft Entra tenant with which Microsoft Sentinel is associated
+- Access to Microsoft Defender XDR in the Defender portal, as described in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites#required-permissions)
 
 ## Onboard Microsoft Sentinel
 
