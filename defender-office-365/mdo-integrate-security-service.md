@@ -53,7 +53,9 @@ Some non-Microsoft services authenticate and use the Microsoft Graph API to scan
 
 This configuration allows the MX record to point to Microsoft 365. However, the non-Microsoft service operates *after* Microsoft 365 email protection and processing as shown in the following diagram:
 
-:::image type="content" source="media/mdo-mail-flow-with-additional-security-service.png" alt-text="A diagram showing mail flow with a non-Microsoft security service being used with Microsoft 365." lightbox="media/mdo-mail-flow-with-non-Microsoft-security-service.png":::
+:::image type="content" source="media/mdo-mail-flow-with-additional-security-service.png" alt-text=" diagram showing mail flow with a non-Microsoft security service being used after mail delivery to Microsoft 365." lightbox="media/mdo-mail-flow-with-additional-security-service.png":::
+
+:::image type="content" source="media/mdo-mail-flow-with-additional-security-service.png" alt-text="A" lightbox="media/mdo-mail-flow-with-non-Microsoft-security-service.png":::
 
 > [!TIP]
 > [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) doesn't work with this configuration. Enhanced Filtering for Connectors is designed for scenarios where the non-Microsoft service is **before** Microsoft 365 as previously explained in the [Integration via DNS mail routing](#integration-via-dns-mail-routing-mx-record-points-to-the-non-microsoft-service) section. The non-Microsoft service before Microsoft 365 allows the full email protection stack to operate, while intelligently preventing spoofing false positives related to the non-Microsoft service's sending infrastructure. You can't use Enhanced Filtering for Connectors to inherently trust all messages from Microsoft 365 IP addresses.
@@ -93,4 +95,4 @@ Defender for Office 365 has [user reported settings](submissions-user-reported-m
 
 Knowing that non-Microsoft security services might include their own tools and processes for reporting false positives and false negatives (including user education/awareness efforts), Defender for Office 365 supports submissions from [third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools). This support helps streamline reporting [false positives and false negatives to Microsoft](submissions-admin.md), and empowers your SecOps team to take advantage of Microsoft Defender XDR [incident management](/defender-xdr/incidents-overview) and [automated investigations and response (AIR)](air-about.md).
 
-For more information, see [Options for third-party reporting tools](hsubmissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools).
+For more information, see [Options for third-party reporting tools](submissions-user-reported-messages-custom-mailbox.md#options-for-third-party-reporting-tools).
