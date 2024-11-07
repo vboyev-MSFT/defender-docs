@@ -19,13 +19,15 @@ ms.topic: conceptual
 
 Microsoft Defender XDR is part of Microsoft's unified SecOps platform, providing a cloud-based solution that coordinates threat prevention, detection, investigation, and response across a broad range of assets, including devices and endpoints, identities, email, and Microsoft 365 cloud apps. Defender XDR cosolidates threat signals from these assets, so that you can manage your organizational threat protection strategy from a single portal.
 
-Defender XDR combined a number of Microsoft security services into [Microsoft Defender portal](https://security.microsoft.com). 
+Defender XDR combines Microsoft security services into the [Microsoft Defender portal](https://security.microsoft.com). 
 
-**[Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources. 
-**[Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
-**[Defender for Identity](/defender-xdr/microsoft-365-security-center-mdi)** | Provides a cloud-based security solution that uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-**[Defender for Cloud Apps](/defender-xdr/microsoft-365-security-center-defender-cloud-app)** | Provides a comprehensive cross-SaaS and PaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
-**[Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)** Microsoft Sentinel is a cloud services that enables security information and event management (SIEM) and Provides in the Defender portal, Microsoft Sentinel integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution and security orchestration automation response. Sentinel integrates with Defender XDR to provided a unified security platform for threat detection, investigation, hunting, and response.
+*Service** | **Details**
+--- | ---
+**[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources. 
+**[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
+**[Protect Active Directory with Defender for Identity](/defender-xdr/microsoft-365-security-center-mdi)** | Provides a cloud-based security solution that uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+**[Protect SaaS cloud apps with Defender for Cloud Apps](/defender-xdr/microsoft-365-security-center-defender-cloud-app)** | Provides a comprehensive cross-SaaS and PaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+**[Protect against a broad range of threats with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)** Microsoft Sentinel is a cloud services that enables security information and event management (SIEM) and Provides in the Defender portal, Microsoft Sentinel integrates with Defender XDR to provide threat protection in the unified security operations platform. Microsoft Sentinel is a a cloud-native security information and event management (SIEM) solution and security orchestration automation response. Sentinel integrates with Defender XDR to provided a unified security platform for threat detection, investigation, hunting, and response.
 
 
 ## Investigate incidents and alerts
