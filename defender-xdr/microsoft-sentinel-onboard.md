@@ -72,7 +72,7 @@ To unify capabilities with Defender XDR in Microsoft's unified SecOps platform, 
 
 - Licensing for Defender XDR, as described in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites)
 - Account for Defender XDR is a member of the same Microsoft Entra tenant with which Microsoft Sentinel is associated
-- Access to Microsoft Defender XDR in the Defender portal, as described in in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites#required-permissions)
+- Access to Microsoft Defender XDR in the Defender portal, as described in [Microsoft Defender XDR prerequisites](/microsoft-365/security/mtp/prerequisites#required-permissions)
 
 ## Onboard Microsoft Sentinel
 
