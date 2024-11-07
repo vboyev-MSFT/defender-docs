@@ -38,16 +38,16 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 3. Select an antivirus profile. If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
 
-4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+4. Next to **Configuration settings**, choose **Edit**.
 
-5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
+5. Scroll down to **Cloud Block Level**, and select one of the following:
 
     - **Not configured**: Default state.
     - **High**: Applies a strong level of detection.
-    - **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
-    - **Zero tolerance**: Blocks all unknown executables.
+    - **High Plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
+    - **Zero Tolerance**: Blocks all unknown executables.
 
-6. Choose **Review + save**, and then choose **Save**.
+6. Choose **Next**, and then choose **Save**.
 
 > [!TIP]
 > Need some help? See the following resources:
