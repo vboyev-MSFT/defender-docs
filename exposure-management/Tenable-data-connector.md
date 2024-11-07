@@ -63,42 +63,19 @@ The vulnerability data retrieved for Tenable is applicable to CVEs only, and not
 
 ## Troubleshooting the connector
 
-Some common issues that might come up when configuring the Tenable connector.
+Here are some common issues that may arise when configuring the Tenable Connector, and suggestions for how to resolve them.
 
-### Temporary connection error (409) upon trying to connect
-
-
-### Too many requests error (429) upon trying to connect
-
-
-### Unauthorized (401) or another permissions-related connection error when trying to connect
-
-1. Make sure your Tenable.io account has Tenable Administrator role permissions
-2. Try recreating your Access Key and Secret Key, following the instructions [here](https://docs.tenable.com/vulnerability-management/Content/Settings/my-account/GenerateAPIKey.htm)
-
-### Not seeing my assets or the vulnerabilities reported by Tenable in the ingested data
-
-See [Retrieved data](#retrieved-data) for a description of the data expected to be retrieved by the Tenable connector.
-
-If there's still missing data, contact Support.
-
-### Seeing only vulnerability management data imported, not data from other Tenable products
-
-The Tenable connector currently supports only vulnerability data from Tenable Vulnerability Management. If you're interested in other types of data, enter a request through the **Request new connectors** feedback option on the **Data Connectors** page.
-
-### Not seeing any Tenable data ingested
-
-1. Ensure you Tenable connector is properly connected and not in an error state.
-2. Run queries on the Exposure Graph via Advanced Hunting (as described in [Getting value from your data connectors](value-data-connectors.md)) to check for the Tenable sourced data.
-3. If you're still not seeing any data ingested, contact Support.
-
-### Configure Tenable allowed IPs to enable Exposure Management connectors to access Tenable
-
-Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
-
-### I'm using Tenable Security Center (the on-premises version), can I connect to that via the Tenable connector?
-
-We currently support only Tenable Vulnerability Management and don't support Tenable SC. We're working to add Tenable.sc in the future.
+| **Error Type**                                                    | **Troubleshooting Action**                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Error code** 401: Authorization failure                    | An authorization failure indicates that credentials may not be correct, or there may not be sufficient permissions to access the Tenable data. Check your credentials and make sure they are correct and valid. Make sure your Tenable.io account has sufficient permissions to read the data. See the Tenable [configuration section](#tenable-configuration) for details on how to properly generate the API keys. |
+| **Error code 403:** Access forbidden error                   | This error indicates that the provided credentials lack the necessary permissions to run the requested APIs. Update your credentials/ API keys with the proper permissions as described in the [configuration section](#tenable-configuration). |
+| **Error code 409**: Possible insufficient permissions or temporary connection error | In the case where this error message appears without any additional information, verify the connector configuration (API endpoint and Keys). If these are valid and the issue does not resolve on its own, contact Support. |
+| **Error code 429** 'Too many requests"                       | The system periodically pulls data from the configured external providers, which may have a limit on the number of concurrent requests. We recommend creating a dedicated account for the connector to avoid reaching this limit. |
+| Not seeing my assets or the vulnerabilities reported by Tenable in the ingested data | See [Retrieved data](#retrieved-data) for a description of the data expected to be retrieved by the Tenable connector.Note that Tenable counts the number of reported vulnerabilities differently than Exposure Management (since only CVEs are ingested to Exposure Management), so these numbers may not match. If there's still missing data, contact Support. |
+| Seeing only vulnerability management data imported, not data from other Tenable products | The Tenable connector currently supports only vulnerability data from Tenable Vulnerability Management. If you're interested in other types of data, enter a request through the Request new connectors feedback option on the Data Connectors page. |
+| Not seeing any Tenable data ingested                         | Ensure you Tenable connector is properly connected and not in an error state.Run queries on the Exposure Graph via Advanced Hunting (as described in Getting value from your data connectors, [Advanced Hunting](value-data-connectors.md#advanced-hunting)) to check for the Tenable sourced data. If you're still not seeing any data ingested, contact Support. |
+| Configure Tenable allowed IPs to enable Exposure Management connectors to access Tenable | Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)|
+| I'm using Tenable Security Center (the on-premises version), can I connect to that via the Tenable connector? | We currently support only Tenable Vulnerability Management and don't support Tenable SC. We're working to add Tenable.sc in the future. |
 
 ## Next steps
 

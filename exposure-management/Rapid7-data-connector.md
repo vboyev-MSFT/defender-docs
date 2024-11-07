@@ -33,41 +33,24 @@ Exposure Management retrieves data on compute devices from Rapid7, including mac
 
 Only devices that were actively scanned in the last 90 days are retrieved, based on assessing the "last_scan_end" field in the Rapid7 asset.
 
-**Assets/devices, and data per each identifier**:
-
-- Rapid7 ID
-- Hostname
-- IP address
-- mac Address
-- OS information
-- Rapid7 risk score
-- Tags
-- Rapid7 criticality data
-- Cloud platform
-
-**Vulnerability findings**: Rapid7 retrieves CVE findings on the assets that it ingests.
+| Category               | Properties                                                                 |
+|------------------------|----------------------------------------------------------------------------|
+| **Assets/devices, and data per each identifier** | - Rapid7 ID<br>- Hostname<br>- IP address<br>- mac Address<br>- OS information<br>- Rapid7 risk score<br>- Tags<br>- Rapid7 criticality data<br>- Cloud platform |
+| **Vulnerability findings** | Rapid7 retrieves CVE findings on the assets that it ingests.             |
 
 ## Troubleshooting the Rapid7 data connector
 
-Some common issues that might come up when configuring the Rapid7 connector:
+Here are some common issues that may arise when configuring the Rapid7 Connector, and suggestions for how to resolve them.
 
-### “Temporary connectivity issues”, or 'The remote name couldn't be resolved' error upon trying to connect
-
-Check the URL, make sure it aligns with instructions here [InsightVM Cloud Integrations API (rapid7.com)](https://nam06.safelinks.protection.outlook.com/?url=https:%2f%2fhelp.rapid7.com%2finsightvm%2fen-us%2fapi%2fintegrations.html&data=05|02|ronitr@microsoft.com|613676725a324b099c8508dcd8b812ae|72f988bf86f141af91ab2d7cd011db47|1|0|638623532338702698|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|0|||&sdata=YRvrsZ6xNm%2f1v1TvK2XeX0B7xWSjBaXHuf86yelRmTI%3D&reserved=0)
-
-### Permissions-related connection error when trying to connect
-
-Double check that your API Auth key has sufficient permissions for the connection. We have found that connecting with an organization key is more likely to enable establishing a connection successfully.
-
-### Not seeing my assets or the vulnerabilities reported by Rapid7 in the ingested data
-
-See [Retrieved data](#retrieved-data) for a description of the expected data to be retrieved by the Rapid7 connector.
-
-If there's still missing data, please contact Support.
-
-### Configure Rapid7 allowed IPs to enable Exposure Management connectors to access Rapid7
-
-Read how to add the set of IPs to add to your allowlist here:[Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses).
+| **Error Type**                                                    | **Troubleshooting Action**                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 'The remote server name could not be resolved' error message | Verify the Rapid7 endpoint. Learn more about how to determine your Rapid7 API endpoint [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.rapid7.com%2Finsight%2Fapi-overview%23endpoint&data=05\|02\|dlanger@microsoft.com\|16df3effc63244b6236808dcfe9c61d1\|72f988bf86f141af91ab2d7cd011db47\|1\|0\|638665194889184920\|Unknown\|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D\|0\|\|\|&sdata=s1lGW1eKqmNLGqe%2FNxbMZvszhRwRzGM6AD6Gv0w26IU%3D&reserved=0). |
+| **Error code 401**: Authorization failure                    | An authorization failure indicates that credentials may not be correct, or there may not be sufficient permissions to access the Rapid7 data. Check your API key and verify that it is valid, and that the account is not locked.In some cases, we have found that using an organization key works more successfully than generating a user key. Try testing the connection with an organization key.You can test your credentials by running the following commands: curl -l --request POST --location '[https://%3cregion%3e.api.insight.rapid7.com/vm/v4/integration/assets?size=2&includeSame=true]https://<region>.api.insight.rapid7.com/vm/v4/integration/assets?size=2&includeSame=true' --header 'X-API-Key:<key>' --header 'Content-Type: application/json' –header ‘Accept: application/json’ curl -l --request POST --location '[https://%3cregion%3e.api.insight.rapid7.com/vm/v4/integration/vulnerabilities?size=2]https://<region>.api.insight.rapid7.com/vm/v4/integration/vulnerabilities?size=2’ --header 'X-API-Key:<key>' --header 'Content-Type: application/json' –header ‘Accept: application/json’ If these fail and describe the error, refer to the Rapid7 documentation to mitigate. |
+| **Error code 403:** Access forbidden error                   | This error indicates that the provided credentials lack the necessary permissions to run the requested APIs. Ensure that your API key is generated with a user that has sufficient permissions to access the Rapid7 data. |
+| **Error code 404:** Not found error                          | This error indicates that the requested endpoint was not found to be reachable. Verify that your Rapid7 endpoint is correct. Learn more about how to determine your Rapid7 API endpoint [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.rapid7.com%2Finsight%2Fapi-overview%23endpoint&data=05\|02\|dlanger@microsoft.com\|16df3effc63244b6236808dcfe9c61d1\|72f988bf86f141af91ab2d7cd011db47\|1\|0\|638665194889196555\|Unknown\|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D\|0\|\|\|&sdata=2aWPJYDlYwjkR6RFf3hrzT0daw%2BmFGE53W4rLf3zpY8%3D&reserved=0). |
+| 'Temporary connectivity issues' error message                | Check the configuration details (endpoint URL and API Key) and make sure they are valid. Review the Rapid7 the [configuration section](#rapid7-configuration) for details. |
+| Not seeing my assets or the vulnerabilities reported by Rapid7 in the ingested data | See [Retrieved data](#retrieved-data) for a description of the expected data to be retrieved by the Rapid7 connector.If there's still missing data, contact Support. |
+| Rapid7 allowed IPs need to be configured to enable Exposure Management connectors to access Rapid7 | Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses). |
 
 ## Next steps
 

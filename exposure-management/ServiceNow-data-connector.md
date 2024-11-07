@@ -50,35 +50,20 @@ The following fields are ingested via the connector:
 
 ## Troubleshooting the connector
 
-Some common issues that might come up when configuring the ServiceNow CMDB connector.
+Here are some common issues that may arise when configuring the ServiceNow Connector, and suggestions for how to resolve them.
 
-### 'The remote server name couldn't be resolved'
-
-Verify ServiceNow Instance hostname.
-Learn more about authentication to ServiceNow here: [Authentication (servicenow.com)](https://docs.servicenow.com/bundle/vancouver-platform-security/page/integrate/single-sign-on/concept/c_Authentication.html)
-
-### 429 (Too Many Requests)
-
-The system periodically pulls data from the configured external providers, which might have a limit on the number of concurrent requests.
-We recommend creating a dedicated user or account for the connector to avoid reaching this limit.
-
-### 'Temporary disconnected' or 'Temporary failure' error
-
-In cases where the error message indicates this is a temporary issue, check again later to see if the issue was auto resolved.
-Note: in some cases the issue won't be auto resolved and manual user intervention is required. If an elaborated error message is shown,  act accordingly. Otherwise, contact Support.
-
-### Not seeing ServiceNow CMDB CIs in the ingested data
-
-See [Retrieved data](#retrieved-data) for a description of the  data expected to be retrieved by the ServiceNow CMDB connector.
-If there's still missing data, please contact Support.
-
-### Configure ServiceNow allowed IPs to enable Exposure Management connectors to access ServiceNow
-
-Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)
-
-### Unable to connect/disconnect
-
-If you encounter an error message indicating there was an error connecting / disconnecting. Try again in a few minutes. If the issue persists, contact Support.
+| **Error Type**                                               | **Troubleshooting Action**                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 'The remote server name could not be resolved' error message | Verify ServiceNow Instance hostname. Learn more about authentication to ServiceNow here: Authentication (servicenow.com) |
+| **Error code 401**: Authorization failure                    | An authorization failure indicates that credentials may not be correct, or there may not be sufficient permissions to access the ServiceNow data. Check your credentials and make sure they are correct and valid. Also check that your credentials have the required permissions. See the ServiceNow [configuration section](#servicenow-configuration)  for details on how to ensure the cmdb_read role is assigned.Another possible reason for this failure is the that your ServiceNow instance is configured to accept connections only from a limited range of IP addresses. In this case, see the guidance for adding the right set of IPs to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses) |
+| **Error code 403:** Access forbidden error                   | This error indicates that the provided credentials lack the necessary permissions to run the requested APIs. Update your credentials with the proper permissions as described in the [configuration section](#servicenow-configuration), and make sure they have at minimum cmdb_read role assigned. |
+| **Error code 404:** Not found error                          | This error indicates that the requested endpoint was not found to be reachable. Verify that your ServiceNow Instance hostname is correct. |
+| **Error code 429** 'Too many requests"                       | The system periodically pulls data from the configured external providers, which may have a limit on the number of concurrent requests. We recommend creating a dedicated user or account for the connector to avoid reaching this limit. |
+| Bad URL error message                                        | This error indicates that the requested endpoint was not found to be reachable. Verify that your ServiceNow Instance hostname is correct. |
+| 'Temporary disconnected' or 'Temporary failure' error        | In the case where this error message appears without any additional information, verify the connector configuration (hostname and credentials). If these are valid and the issue does not resolve on its own, please contact Support. |
+| Not seeing some ServiceNow CMDB CIs or assets in the ingested data | See [Retrieved data](#retrieved-data) (link) for a description of the data expected to be retrieved by the ServiceNow CMDB connector. If there's still missing data, please contact Support. |
+| Not seeing any data ingested from ServiceNow CMDB            | Review your connection status to ensure there are no errors. Validate that there are valid entries in your ServiceNow CMDB that correspond with the data we are retrieving. Run the sample [Advanced Hunting query](value-data-connectors.md#advanced-hunting) to check if any ServiceNow assets can be found in the Exposure Graph tables.If you are still unable to find your ServiceNow CMDB data, please contact Support. |
+| ServiceNow allowed IPs need to be configured to enable Exposure Management connectors to access ServiceNow | Read how to add the set of IPs to add to your allowlist here: [Allowlist IP addresses](configure-data-connectors.md#allowlist-ip-addresses)|
 
 ## Next steps
 
