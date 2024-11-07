@@ -35,7 +35,7 @@ This article provides instructions on how to run the tool via Live Response on W
 
    For example, to get the basic sensor and device health logs, fetch `..\Tools\MDELiveAnalyzer.ps1`.
    - If you require additional logs related to Microsoft Defender Antivirus, then use `..\Tools\MDELiveAnalyzerAV.ps1`.
-   - If you require [Microsoft Endpoint Data Loss Prevention](https://learn.microsoft.com/purview/endpoint-dlp-learn-about), then use `..\Tools\MDELiveAnalyzerDLP.ps1`.
+   - If you require [Microsoft Endpoint Data Loss Prevention](https://learn.microsoft.com/purview/endpoint-dlp-learn-about) related logs, then use `..\Tools\MDELiveAnalyzerDLP.ps1`.
    - If you require network and [Windows Filter Platform](https://learn.microsoft.com/windows-hardware/drivers/network/windows-filtering-platform-architecture-overview) related logs, then use `..\Tools\MDELiveAnalyzerNet.ps1`.
    - If you require [Process Monitor](https://learn.microsoft.com/sysinternals/downloads/procmon) logs, then use `..\Tools\MDELiveAnalyzerDLP.ps1`.
 
