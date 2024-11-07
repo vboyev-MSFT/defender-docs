@@ -73,19 +73,31 @@ In this stage, you configure Defender for IoT to associate OT devices to the sit
 
 ## Preview devices
 
-A list of all devices to be associated with this site appears. If you need to remove any of the devices from this list:
+In this stage, you review all of the devices discovered by the system. This gives admins the opportunity to review and remove devices before confirming the site creation.
 
-1. Select the **Deselect devices from site** button. All of the devices will become accessible.
+A list of all devices to be associated with this site appears. To remove any of the devices from this list:
+
+1. Select the **Deselect devices from site** button. All of the devices become editable.
 1. Deselect the checkbox of the devices to be removed.
     1. To reset the list, select **Discard all changes**.
 
     :::image type="content" source="media/set-up-sites/site-security-associate-device-list-preview.png" alt-text="Screenshot of the site associtation preview devices page" lightbox="media/set-up-sites/site-security-associate-device-list-preview.png" :::
 
-1. When you are finished, select **Next**, or **Skip** if you haven't made any changes.
+1. When you're finished, select **Next**. The confirmation box appears.
+
+    1. Select **Confirm** to make the changes to the list of devices to associate with this site and removal of any unchecked devices. Removing devices from the site will disable their automatic association with the site in the future. Once you remove a device from the site, it will no longer be automatically associated with any future site suggestions in the **Set up site** wizard, unless manually assigned to by an admin."
+
+    1. If you haven't made changes, select **Skip**.
+
+>[!Important]
+>
+>By removing the device's association with a site, its automatic site association based on network parameters will be disabled. If the device is relocated to another site, you'll need to manually update it's site settings. <!-- or the device or the site? Amit-->
+>
+>If a site is deleted or a suggestion<!-- what does this refer to? Amit--> is de-associated, devices that are excluded in this process will be included in future site suggestions, as they were initially.
 
 ## Review site details
 
-Review that information for the site you want to create:
+Review the information for the site you want to create:
 
 1. Review the selected OT devices. If needed, select **Edit devices** to return to the **Associate devices** screen.
 1. Select **Complete**.
