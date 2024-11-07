@@ -52,20 +52,22 @@ Customer data stored by integrated services might also be stored in the followin
 - The original location for the relevant service.
 - A region defined by data storage rules of an integrated serice, if Microsoft Defender XDR shares data with that service.
 
-  Microsoft Defender XDR shares data with the following Microsoft services, as licensed by the customer:
+## Data sharing
 
-  - Microsoft Defender for Cloud
-  - Microsoft Defender for Cloud Apps
-  - Microsoft Defender for Identity
-  - Microsoft Defender for IoT
-  - Microsoft Defender for Endpoint
-  - Microsoft Defender for Office 365
-  - Microsoft Entra
-  - Microsoft Intune
-  - Microsoft Purview
-  - Microsoft Sentinel
-  - Microsoft Defender Vulnerability Management
-  - Microsoft Copilot for Security
+Microsoft Defender XDR shares data among the following Microsoft products, also licensed by the customer:
+
+- Microsoft Defender for Cloud
+- Microsoft Defender for Identity
+- Microsoft Defender for Endpoint
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Office 365
+- Microsoft Defender for IoT
+- Microsoft Sentinel
+- Microsoft Intune
+- Microsoft Purview
+- Microsoft Entra
+- Microsoft Defender Vulnerability Management
+- Microsoft Copilot for Security
 
 ## Data retention
 
