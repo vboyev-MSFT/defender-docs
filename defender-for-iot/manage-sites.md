@@ -17,24 +17,28 @@ When you manage a site, you might need to edit or delete the site information li
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
-## Change site location of a device
+## Manually change the site location/association of a device or multiple devices <!--location/association? Amit-->
 
-It's possible that Defender for IoT identifies a device located in the wrong site. To change the site listed for a device:
+Security admininstrators can manually assign or modify the site location for a device. Manually assigning a site overrides the automatic site association created when making the site. Therefore, once a site is set manually, this device <!-- surely: once the device is set manually, it will no longer.... AMIT? --> will no longer appear in the automatic site association suggestions in the Site set up process, until the manual association is reset.<!-- why do i need to add this, if the device is already associated with a site, why would it appear in a list anyway? Amit -->
+
+To quickly update a group of devices, select multiple devices from the inventory and set the site for all of the selected devices simulataneously.<!-- The 'Set site' action can be used for bulk management by selecting multiple devices from the inventory and setting the site for all selected devices simultaneously. This allows for quick updates to site associations when managing a group of devices. this was Amits wording, i think this is better. but should i use the words bulk management? Should this be added at the end instead of the beginning? Limor-->
+
+To change the site associated with a device:
 
 1. Select **Assets -> Devices** to open the **Device Inventory**.
-1. Select the device to update. A list of actions appears at the top of the Device Inventory table.
-1. Select **Set site**.
+1. Select the device, or group of devices, to update. A list of action buttons appear at the top of the Device Inventory table.
+1. Select **Set site**. The **Set site** pane opens.
 
     :::image type="content" source="media/manage-sites/set-site-from-inventory-boxed.png" alt-text="Screenshot of the set site button in the device inventory table for changing the site location setting" lightbox="media/manage-sites/set-site-from-inventory-boxed.png":::
 
-1. In **Set site manually**, open the **Select site** drop down list and select the site to associate with this device. If you are unsure of the location, select **Unassigned**.
+1. In **Set site manually**, open the **Select site** drop down list and select the site to associate with this device. If you want to leave a device unassociated with a specific site, select **Unassigned**.
 
     :::image type="content" source="media/manage-sites/device-set-site-manually.png" alt-text="Screenshot of the set site manually drop down list for changing the site location setting" lightbox="media/manage-sites/device-set-site-manually.png":::
 
 1. Select **Save and close**.
-1. The Set site confirmation box appears. Select **Confirm** to finalize the change.
+1. The Set site confirmation box appears. Select **Confirm** to finalize the change. Finalizing the change prevents automatic site reassignment based on existing site security rules and remains until the device is reset manually.
 
-Alternatively, you can also go to **Site security** and edit the site and change the devices associated to it using the **Edit site** wizard. For more information, see [link to site security](monitor-site-security.md). <!-- but this is more like removing a device from a specific site, not adding it to a different one instead?? AMIT-->
+Alternatively, for managing multiple device or making site wide changes, it is recommended to go to **Site security** and use the **Edit site** wizard to more efficiently manage the site and the devices associated to it. For more information, see [link to site security](monitor-site-security.md). <!-- but this is more like removing a device from a specific site, not adding it to a different one instead?? how is this different from the bulk management mentioned above? AMIT-->
 
 ## Edit or delete a site
 
