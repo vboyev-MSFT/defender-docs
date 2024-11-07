@@ -89,7 +89,7 @@ In some cases, metrics display grayed out because the underlying data for the me
 Grayed out metrics aren't considered for score calculation.
 
 > [!NOTE]
-> The versioning feature in Exposure Management provides proactive notifications to user about upcoming version updates, providing advanced visibility into the expected metric changes and their impact on related initiatives.
+> The versioning feature in Exposure Management provides proactive notifications to users about upcoming version updates, providing advanced visibility into the expected metric changes and their impact on related initiatives.
 > A dedicated side panel offers more details about the update, including the expected date of the change, release notes, and current and new metric values, as well as changes to the related initiatives' scores.
 > Users can share feedback about the update directly through the platform.
 > The information is dynamic and may vary depending on when it is accessed.
