@@ -73,6 +73,17 @@ Microsoft Defender XDR data is retained for 180 days, and is visible across the 
 
 Data continues to be retained and visible, even when a license is under a grace period or in supspended mode. At the end of any grace period or suspension, and no later than 180 days from a contract termination or expiration, data is deleted from Microsoft's systems and is unrecoverable.
 
+The following table provides data retention periods for other services available in the Microsoft Defender portal. See the relevant service docs for detailed information.
+
+|Product|Default data retention period|More information|
+|:---|:---|:---|
+|Microsoft Defender for Endpoint|180 days|[Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)|
+|Microsoft Defender for Office 365|Varies according to feature and license|[Defender for Office 365 data retention information](/defender-office-365/mdo-data-retention)|
+|Microsoft Defender for Identity|180 days|[Defender for Identity data storage and privacy](/defender-for-identity/privacy-compliance)|
+|Microsoft Defender for Cloud Apps|180 days|[Defender for Cloud Apps data storage and privacy](/defender-cloud-apps/cas-compliance-trust)|
+|Microsoft Entra|Varies according to feature and license|[Microsoft Entra data storage and privacy](/entra/identity/monitoring-health/reference-reports-data-retention)|
+|Microsoft Sentinel|90 days for Basic logs, varies depending on pricing|[Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel/)|
+
 ## Related content
 
 For more information, see:
