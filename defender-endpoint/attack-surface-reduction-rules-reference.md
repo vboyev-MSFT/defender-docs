@@ -348,6 +348,15 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
+Known issues: These applications and "Block Office applications from injecting code into other processes" rule, are incompatible:
+
+|Application name|For information|
+| -------- | -------- |
+||
+|Avecto (BeyondTrust) Privilege Guard|[September-2024 (Platform: 4.18.24090.11 | Engine 1.1.24090.11)](/defender-endpoint/microsoft-defender-antivirus-updates).  |
+
+Note: Please contact the third-party independent software vendor's about support.
+
 ### Block executable content from email client and webmail
 
 This rule blocks email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers from propagating the following file types:
@@ -481,6 +490,15 @@ Advanced hunting action type:
 - `AsrOfficeProcessInjectionBlocked`
 
 Dependencies: Microsoft Defender Antivirus
+
+Known issues: These applications and "Block Office applications from injecting code into other processes" rule, are incompatible:
+
+|Application name|For information|
+| -------- | -------- |
+|Avecto (BeyondTrust) Privilege Guard|[September-2024 (Platform: 4.18.24090.11 | Engine 1.1.24090.11)](/defender-endpoint/microsoft-defender-antivirus-updates).  |
+|Heimdal security|n/a|
+
+Note: Please contact the third-party independent software vendor's about support.
 
 ### Block Office communication application from creating child processes
 
