@@ -681,7 +681,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
         <key>PayloadOrganization</key>
         <string>Microsoft</string>
         <key>PayloadIdentifier</key>
-        <string>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadDisplayName</key>
         <string>Microsoft Defender for Endpoint settings</string>
         <key>PayloadDescription</key>
