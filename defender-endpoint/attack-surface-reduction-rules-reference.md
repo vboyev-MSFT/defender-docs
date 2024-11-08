@@ -352,12 +352,9 @@ Known issues: These applications and "Block credential stealing from the Windows
 
 |Application name|For information|
 | -------- | -------- |
-||
 |Quest Dirsync Password Sync|[Dirsync Password Sync isn’t working when Windows Defender is installed, error: "VirtualAllocEx failed: 5" (4253914)](https://support.quest.com/kb/4253914/dirsync-password-sync-isn-t-working-when-windows-defender-is-installed-error-virtualallocex-failed-5)|
 
 Note: Please contact the third-party independent software vendor's about support.
-
-### Block executable content from email client and webmail
 
 This rule blocks email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers from propagating the following file types:
 
