@@ -356,6 +356,8 @@ Known issues: These applications and "Block credential stealing from the Windows
 
 Note: Please contact the third-party independent software vendor's about support.
 
+### Block executable content from email client and webmail
+
 This rule blocks email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers from propagating the following file types:
 
 - Executable files (such as .exe, .dll, or .scr)
