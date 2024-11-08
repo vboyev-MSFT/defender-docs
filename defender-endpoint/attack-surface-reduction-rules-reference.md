@@ -348,12 +348,12 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
-Known issues: These applications and "Block Office applications from injecting code into other processes" rule, are incompatible:
+Known issues: These applications and "Block credential stealing from the Windows local security authority subsystem" rule, are incompatible:
 
 |Application name|For information|
 | -------- | -------- |
 ||
-|Avecto (BeyondTrust) Privilege Guard|[September-2024 (Platform: 4.18.24090.11 | Engine 1.1.24090.11)](/defender-endpoint/microsoft-defender-antivirus-updates).  |
+|Quest Dirsync Password Sync|[Dirsync Password Sync isn’t working when Windows Defender is installed, error: "VirtualAllocEx failed: 5" (4253914)](https://support.quest.com/kb/4253914/dirsync-password-sync-isn-t-working-when-windows-defender-is-installed-error-virtualallocex-failed-5)|
 
 Note: Please contact the third-party independent software vendor's about support.
 
