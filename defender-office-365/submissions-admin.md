@@ -288,7 +288,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
        For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
 
-       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email message is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email message is clean.
+       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email message is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email message is clean. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
 
      - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 
@@ -306,7 +306,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 > - If the sender email address is not found to be malicious by our filtering system, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
 > - When an allowed domain or email address, spoofed sender, URL, or file (_entity_) is encountered again, all filters that are associated with the entity are skipped. For email messages, all other entities are still evaluated by the filtering system before making a decision.
 > - During mail flow, if messages from the allowed domain or email address pass other checks in the filtering stack, the messages are delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), a message from an allowed sender email address are delivered.
-> - By default, allow entries for domains and email addresses are kept for 45 days after the filtering system determines that the entity is clean, and then the allow entry is removed. Or you can set allow entries to expire up to 30 days after you create them. By default, allow entries for spoofed senders never expire.
+> - By default, allow entries for domains and email addresses are kept for 45 days after the filtering system determines that the entity is clean, and then the allow entry is removed. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. By default, allow entries for spoofed senders never expire.
 > - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 > - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
@@ -348,7 +348,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
        - **30 days**
        - **Specific date**: The maximum value is 30 days from today.
 
-       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email attachment is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email attachment is clean.
+       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email attachment is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email attachment is clean. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
 
      - **Allow entry note (optional)**: Enter optional information about why you're allowing this item.
 
@@ -362,7 +362,7 @@ After a few moments, the allow entry is available on the **Files** tab on the **
 
 > [!IMPORTANT]
 >
-> - By default, allow entries for files are kept for 45 days after the filtering system determines that the entity is clean, and then the allow entry is removed. Or you can set allow entries to expire up to 30 days after you create them.
+> - By default, allow entries for files are kept for 45 days after the filtering system determines that the entity is clean, and then the allow entry is removed. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
 > - When the file is encountered again during mail flow, [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks and all other file-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message are delivered.
 > - During selection, all file-based filters, including [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks are overridden, allowing user access to the file.
 
@@ -406,7 +406,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
        - **30 days**
        - **Specific date**: The maximum value is 30 days from today.
 
-       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious URL is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the URL is clean.
+       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious URL is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the URL is clean. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
 
      - **Allow entry note (optional)**: Enter optional information about why you're allowing this item.
 
@@ -420,7 +420,7 @@ After a few moments, the allow entry is available on the **URL** tab on the **Te
 
 > [!NOTE]
 >
-> - By default, allow entries for URLs are kept for 45 days after the filtering system determines that the entity is clean, and then the allow entry is removed. Or you can set allow entries to expire up to 30 days after you create them.
+> - By default, allow entries for URLs are kept for 45 days after the filtering system determines that the entity is clean, and then the allow entry is removed. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
 > - When the URL is encountered again during mail flow, [Safe Links](safe-links-about.md) detonation or URL reputation checks and all other URL-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message are delivered.
 > - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user access to content at the URL.
 
@@ -1100,7 +1100,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, do the following 
         - **30 days**
         - **Specific date**: The maximum value is 30 days from today.
 
-       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email message is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email message is clean.
+       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email message is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email message is clean. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
 
       - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 
