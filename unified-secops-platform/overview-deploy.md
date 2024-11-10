@@ -72,13 +72,13 @@ For more information, see [Onboard Microsoft Sentinel](/azure/sentinel/quickstar
 
 ## Configure roles and permissions
 
-Provision your users. To comply with Zero Trust principles, we recommend that you use role-based access control (RBAC) to provide user access only to the resources that are allowed and relevant for each user, instead of providing access to the entire environment.
+Provision your users based on the access plan you'd [prepared earlier](overview-plan.md#plan-roles-and-permissions). To comply with Zero Trust principles, we recommend that you use role-based access control (RBAC) to provide user access only to the resources that are allowed and relevant for each user, instead of providing access to the entire environment.
 
 For more information, see:
 
-<!--find better xrefs for all this-->
-
-- [Grant a user access - Portal](/azure/role-based-access-control/quickstart-assign-role-user-portal) and [Plan roles and permissions](overview-plan.md#plan-roles-and-permissions).
+- [Activate Microsoft Defender XDR Unified role-based access control (RBAC)](../defender-xdr/activate-defender-rbac.md)
+- [Assign Microsoft Entra ID roles to users](/entra/identity/role-based-access-control/manage-roles-portal)
+- [Grant a user access to Azure roles](/azure/role-based-access-control/quickstart-assign-role-user-portal)
 
 ## Onboard to unified SecOps
 
@@ -88,14 +88,14 @@ For more information, see [Connect Microsoft Sentinel to Microsoft Defender](../
 
 ## Fine-tune system configurations
 
-Use the following configuration options to fine-tune your deployment:
+Use the following Microsoft Sentinel configuration options to fine-tune your deployment:
 
 |Task  |Description  |
 |---------|---------|
 |**Enable health and auditing**     |  Monitor the health and audit the integrity of supported Microsoft Sentinel resources by turning on the auditing and health monitoring feature in Microsoft Sentinel's Settings page. Get insights on health drifts, such as the latest failure events or changes from success to failure states, and on unauthorized actions, and use this information to create notifications and other automated actions. <br><br>For more information, see [Turn on auditing and health monitoring for Microsoft Sentinel](/azure/sentinel/enable-monitoring?tabs=azure-portal).       |
 |**Configure Microsoft Sentinel content**     |  Based on the [data sources you selected](overview-plan.md#prioritize-data-connectors) when planning your deployment, install Microsoft Sentinel solutions and configure your data connectors. <br><br>Microsoft Sentinel provides a wide range of built-in solutions and data connectors, but you can also build custom connectors and set up connectors to ingest CEF or Syslog logs.  <br><br>For more information, see: <br> - [Configure content](/azure/sentinel/configure-content)<br>- [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy?tabs=azure-portal) <br>- [Find your data connector](/azure/sentinel/data-connectors-reference)       |
 |**Enable User and Entity Behavior Analytics (UEBA)**     | After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior that could lead to phishing exploits and eventually attacks such as ransomware. <br><br>For more information, see [Enable UEBA in Microsoft Sentinel](/azure/sentinel/enable-entity-behavior-analytics?tabs=azure).        |
-|**Set up interactive and long-term data retention**     |   Set up interactive and long-term data retention to make sure your organization retains the data that's important in the long term.  <br><bFor more information, see [Configure interactive and long-term data retention](/azure/sentinel/configure-data-retention-archive).      |
+|**Set up interactive and long-term data retention**     |   Set up interactive and long-term data retention to make sure your organization retains the data that's important in the long term.  <br><br>For more information, see [Configure interactive and long-term data retention](/azure/sentinel/configure-data-retention-archive).      |
 |**Avoid duplicate incidents**     |  After you [connect Microsoft Sentinel to Microsoft Defender](../defender-xdr/microsoft-sentinel-onboard.md), a bi-directional sync between Microsoft Defender XDR incidents and Microsoft Sentinel is automatically established. <br><br>To avoid creating duplicate incidents for the same alerts, we recommend that you turn off all Microsoft incident creation rules for Microsoft Defender XDR-integrated products, including Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection. <br><br>For more information, see [Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration?tabs=azure-portal).|
 
 ## Next step
