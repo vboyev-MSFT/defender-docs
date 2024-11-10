@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 11/05/2024
+ms.date: 11/10/2024
 search.appverid: met150
 ---
 
@@ -348,6 +348,14 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
+Known issues: These applications and "Block credential stealing from the Windows local security authority subsystem" rule, are incompatible:
+
+|Application name|For information|
+| -------- | -------- |
+|Quest Dirsync Password Sync|[Dirsync Password Sync isn’t working when Windows Defender is installed, error: "VirtualAllocEx failed: 5" (4253914)](https://support.quest.com/kb/4253914/dirsync-password-sync-isn-t-working-when-windows-defender-is-installed-error-virtualallocex-failed-5)|
+
+For technical support, contact the software vendor.
+
 ### Block executable content from email client and webmail
 
 This rule blocks email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers from propagating the following file types:
@@ -481,6 +489,15 @@ Advanced hunting action type:
 - `AsrOfficeProcessInjectionBlocked`
 
 Dependencies: Microsoft Defender Antivirus
+
+Known issues: These applications and "Block Office applications from injecting code into other processes" rule, are incompatible:
+
+|Application name|For information|
+| -------- | -------- |
+|Avecto (BeyondTrust) Privilege Guard|[September-2024 (Platform: 4.18.24090.11 | Engine 1.1.24090.11)](/defender-endpoint/microsoft-defender-antivirus-updates).  |
+|Heimdal security|n/a|
+
+For technical support, contact the software vendor.
 
 ### Block Office communication application from creating child processes
 
