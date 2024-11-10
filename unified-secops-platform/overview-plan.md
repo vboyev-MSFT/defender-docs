@@ -155,7 +155,7 @@ For more information about implementing Zero Trust principles in Microsoft's uni
 - [Microsoft Defender for Identity](/defender-for-identity/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
 - [Microsoft Defender for Cloud Apps](/defender-cloud-apps/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
 - [Microsoft Defender for Endpoint](../defender-endpoint/zero-trust-with-microsoft-defender-endpoint.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- Microsoft Security Exposure Management <!--find xref-->
+- [Microsoft Security Exposure Management](https://techcommunity.microsoft.com/blog/microsoftsecurityandcompliance/respond-to-trending-threats-and-adopt-zero-trust-with-exposure-management/4130133)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
 - [Microsoft Copilot for Security](/security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security)
 - [Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection)
