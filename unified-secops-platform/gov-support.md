@@ -1,5 +1,5 @@
 ---
-title: Microsoft's unified SecOps platform for US Government customers
+title: Support for US Government customers
 description: Learn about support for Microsoft's unified SecOps platform for US Government clouds.
 author: batamig
 ms.author: bagol
