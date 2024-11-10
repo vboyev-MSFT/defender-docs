@@ -11,39 +11,66 @@ ms.date: 09/24/2024
 
 # Tenable data connector
 
-To integrate with Tenable, you need to create an Access Key and Secret Key on Tenable.io. You additionally need to have a Tenable.io account with the role of Tenable Administrator to successfully set up the integration.
+To integrate with Tenable, you need Tenable Vulnerability Management API access and secret keys for authentication. To generate the secret keys, you must have  Basic, Scan Operator, Standard, Scan Manager, or Administrator user roles in Tenable Vulnerability Management.
 
 ## Tenable configuration
 
-For more information on generating your access and secret keys, see [here](https://docs.tenable.com/tenableio/Content/Platform/Settings/MyAccount/GenerateAPIKey.htm).
+Instructions for generating API keys for Tenable Vulnerability Management can be found [here](https://docs.tenable.com/vulnerability-management/Content/Settings/my-account/GenerateAPIKey.htm).
+
+1. To generate API keys for your own account, access the My Account page.
+2. Click the API Keys tab to view the API Keys section.
+3. Select Generate, and note that the **Generate API Keys** window appears with a warning that Any existing API keys are replaced when you click the Generate button
+4. Select **Generate.** Tenable Vulnerability Management generates new access and secret keys, and displays the new keys in the **Custom API Keys** section of the page.
+5. Copy the new access and secret keys to a safe location.
+
+> [!CAUTION]
+>
+> Be sure to copy the access and secret keys before you close the API Keys tab. After you close this tab, you cannot retrieve the keys from Tenable Vulnerability Management.
+
+ 6. If you have an Administrator account, you can generate API keys for any user account.
+
+### For more information
+
+To understand the Tenable API authorization model, see: [Authorization (tenable.com)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.tenable.com%2Fdocs%2Fauthorization&data=05|02|dlanger@microsoft.com|2f15f56aca59477d800108dcfdb761d8|72f988bf86f141af91ab2d7cd011db47|1|0|638664211268030543|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=HMJD9P0Nqfot0ghZx9ZC7mmremd58oPuuKkVqGDmf1A%3D&reserved=0)
 
 ## Establish Tenable connection in Exposure Management
 
 To establish a connection with Tenable in Exposure Management, follow these steps:
 
 1. Open the [Data Connectors](https://security.microsoft.com/exposure-data-connectors) from the Exposure Management navigation and select **Connect** in the Tenable tile.
-1. Enter your Tenable Secret key and Access key details and select **Connect**.
+1. Enter your Tenable Access key and Secret key details and select **Connect**.
 
 ## Retrieved data
 
-Exposure Management currently retrieves data on devices and vulnerabilities from Tenable.
+Exposure Management retrieves data on compute devices from Tenable, including machines and virtual machines. It also retrieves some networking data to identify those devices.
 
-The following fields are ingested via the connector: [TenableAssetInfoAdditionalData.json - Repos (azure.com)](https://dev.azure.com/msazure/CESEC/_git/XSPM-Orion-IngestionClientContracts?path=/src/EnterpriseGraphDataModel/DataModelDefinitions/AdditionalData/TenableAssetInfoAdditionalData.json&version=GBmain&_a=contents)
+Only devices that were modified in the last 90 days are retrieved, based on assessing the "updated_at" field in the Tenable asset.
 
-#### Assets/devices
+Exposure Management also retrieves vulnerability findings from Tenable on those assets.
 
-- IP info
-- FQDN
+The vulnerability data retrieved for Tenable is applicable to CVEs only, and not other types of vulnerabilities or misconfigurations. Tenable shows total vulnerability counts that include other non-CVE misconfigurations as well, so these counts are not applicable to the numbers of vulnerabilities ingested to Exposure Management.
 
-#### Network adapter
+### Assets/devices
 
+**Assets/devices, for each device we retrieve:**
+
+- biosUuid
+- Net Bios names
+- Operating systems
+- Cloud Provider ID (e.g. Azure VM ID)
+- System Types
+- Tenable Criticality
+- Network interfaces (see below)
+
+**Network interface**
+
+- IP information
 - Mac address
-- OS
-- Hostnames
+- FQDNs
 
-#### Vulnerability findings
-
-- CVEs
+> [!NOTE]
+>
+> To retrieve the data on criticality of your Tenable assets (Tenable [Asset Criticality Rating](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.tenable.com%2Fvulnerability-management%2FContent%2FLumin%2FLuminMetrics.htm%23ACR&data=05|02|dlanger@microsoft.com|2f15f56aca59477d800108dcfdb761d8|72f988bf86f141af91ab2d7cd011db47|1|0|638664211268041890|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=vvsho76yIUdOqtQjjHLFvz8wyZ%2BD5Z694b6USengAso%3D&reserved=0)), you must have a [Tenable Lunin license](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.tenable.com%2Fvulnerability-management%2FContent%2FLumin%2FLuminGetStarted.htm&data=05|02|dlanger@microsoft.com|2f15f56aca59477d800108dcfdb761d8|72f988bf86f141af91ab2d7cd011db47|1|0|638664211268053146|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=Jn%2FcNYVEFw4RdsRkHK4hF6f9%2FR9NPiSf9GQxAaz8zFQ%3D&reserved=0) with Tenable. See details here. Criticality on devices is used by Exposure Management to discover attack paths to the most critical devices in your environment.
 
 ## Troubleshooting the connector
 
