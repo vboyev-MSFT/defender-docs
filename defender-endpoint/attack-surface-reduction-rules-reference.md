@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 11/05/2024
+ms.date: 11/10/2024
 search.appverid: met150
 ---
 
@@ -354,7 +354,7 @@ Known issues: These applications and "Block credential stealing from the Windows
 | -------- | -------- |
 |Quest Dirsync Password Sync|[Dirsync Password Sync isn’t working when Windows Defender is installed, error: "VirtualAllocEx failed: 5" (4253914)](https://support.quest.com/kb/4253914/dirsync-password-sync-isn-t-working-when-windows-defender-is-installed-error-virtualallocex-failed-5)|
 
-Note: Please contact the third-party independent software vendor's about support.
+For technical support, contact the software vendor.
 
 ### Block executable content from email client and webmail
 
