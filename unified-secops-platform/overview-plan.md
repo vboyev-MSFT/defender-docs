@@ -121,7 +121,7 @@ For the following services, use the different roles available, or create custom 
 | Security service         | Link to role requirements                  |
 | ------------------------ | ------------------------------------------- |
 | **Required for unified SecOps**                                                   |                           |
-| Microsoft Defender XDR  | - [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/defender-xdr/m365d-permissions)               |
+| Microsoft Defender XDR  | [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/defender-xdr/m365d-permissions)               |
 | Microsoft Sentinel                                       | [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)            |
 | **Optional Microsoft Defender XDR services**                |  
 | Microsoft Defender for Office | [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](/defender-office-365/mdo-portal-permissions) |    |
@@ -155,7 +155,7 @@ For more information about implementing Zero Trust principles in Microsoft's uni
 - [Microsoft Defender for Identity](/defender-for-identity/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
 - [Microsoft Defender for Cloud Apps](/defender-cloud-apps/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
 - [Microsoft Defender for Endpoint](../defender-endpoint/zero-trust-with-microsoft-defender-endpoint.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- Microsoft Security Exposure Management
+- Microsoft Security Exposure Management <!--find xref-->
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
 - [Microsoft Copilot for Security](/security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security)
 - [Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection)

@@ -34,14 +34,11 @@ Microsoft Defender XDR unifies incident response by integrating key capabilities
 
 1. Continue by deploying Microsoft Defender XDR services. We recommend using the following order: <!--fix order in overview-->
 
-    1. [Deploy Microsoft Defender for Identity](/defender-for-identity/deploy/quick-installation-guide)
-    1. [Deploy Microsoft Defender for Office 365](../defender-xdr/pilot-deploy-defender-office-365.md)
-    1. [Deploy Microsoft Defender for Endpoint](../defender-endpoint/mde-planning-guide.md). Add the following services as relevant:
+    1. [Deploy Microsoft Defender for Identity](/defender-for-identity/deploy/quick-installation-guide).
+    1. [Deploy Microsoft Defender for Office 365](../defender-xdr/pilot-deploy-defender-office-365.md).
+    1. [Deploy Microsoft Defender for Endpoint](../defender-endpoint/mde-planning-guide.md). Add [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/get-defender-vulnerability-management.md) and / or [Enterprise monitoring for IoT devices](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint) as relevant for your environment.
 
-        1. [Enterprise monitoring for IoT devices](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint)
-        1. [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/get-defender-vulnerability-management.md)
-
-    1. [Deploy Microsoft Defender for Cloud Apps](/defender-cloud-apps/general-setup)
+    1. [Deploy Microsoft Defender for Cloud Apps](/defender-cloud-apps/general-setup).
 
 ## Configure Microsoft Entra ID Protection
 
