@@ -10,7 +10,7 @@ ms.reviewer: yongrhee
 manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 11/10/2024
 ms.collection: 
 - m365-security
 - tier2
