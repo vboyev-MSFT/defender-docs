@@ -497,7 +497,7 @@ Known issues: These applications and "Block Office applications from injecting c
 |Avecto (BeyondTrust) Privilege Guard|[September-2024 (Platform: 4.18.24090.11 | Engine 1.1.24090.11)](/defender-endpoint/microsoft-defender-antivirus-updates).  |
 |Heimdal security|n/a|
 
-Note: Please contact the third-party independent software vendor's about support.
+For technical support, contact the software vendor.
 
 ### Block Office communication application from creating child processes
 
