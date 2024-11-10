@@ -28,7 +28,9 @@
       items:
         - name: Overview
           href: overview-plan.md
-          displayName: plan
+          displayName: plan, zero trust
+        - name: US Government customers
+          href: gov-support.md
         - name: Zero trust security
           items:
           - name: Microsoft Sentinel and Microsoft Defender XDR
