@@ -3,7 +3,7 @@ title: Use network protection to help prevent macOS connections to bad sites
 description: Protect your network by preventing macOS users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 09/27/2024
+ms.date: 11/10/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
