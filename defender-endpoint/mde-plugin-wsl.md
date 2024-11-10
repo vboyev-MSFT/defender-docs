@@ -253,7 +253,9 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-### If you see an error on launching WSL, such as `A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND`, it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
+### Installation failure
+
+If you see an error on launching WSL, such as `A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND`, it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
 
 - In Control Panel, go to **Programs** > **Programs and Features**.
       
@@ -366,7 +368,7 @@ Collect the networking logs by following these steps:
 
 ### WSL1 vs WSL2
 
-- Microsoft Defender Endpoint plug-in for WSL supports Linux distributions running on WSL 2. If they're associated with WSL 1, you might encounter issues. Therefore, it's advised to disable WSL 1. To do so with the Intune policy, perform the following steps:
+Microsoft Defender Endpoint plug-in for WSL supports Linux distributions running on WSL 2. If they're associated with WSL 1, you might encounter issues. Therefore, it's advised to disable WSL 1. To do so with the Intune policy, perform the following steps:
 
    1. Go to your [Microsoft Intune admin center](https://intune.microsoft.com).
 
