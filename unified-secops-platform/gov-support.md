@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 ms.service: unified-secops-platform
 ms.topic: concept-article #Don't change.
-ms.date: 11/07/2024
+ms.date: 11/10/2024
 ms.collection:
 - usx-security
 
@@ -20,9 +20,8 @@ This article provides information about Microsoft's unified security operations 
 
 ## Feature availability
 
-- All features in Microsoft's SecOps platform that are in general availability are available in both commercial and GCC High clouds. 
+- All features in Microsoft's SecOps platform that are in general availability are available in both commercial and GCC High and DoD clouds. 
 - Features still in preview are available only in the commercial cloud.
-- Microsoft's unified SecOps platform is not available in DoD clouds.
 
 While [automatic attack disruption](../defender-xdr/automatic-attack-disruption.md) with Microsoft Defender XDR is generally available, [SAP support for attack disruption](../defender-xdr/automatic-attack-disruption.md) with Microsoft's unified SecOps platform is available only in the commercial cloud.
 
@@ -39,7 +38,7 @@ The following are the Microsoft Defender portal URLs for US Government customers
 - **GCC High**:	https://security.microsoft.us
 - **DoD**:	https://security.apps.mil
 
-<!--shouldn't this be in the endpoint docs?-->If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
+If you are a GCC customer and are in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
 
 ## API access
 
