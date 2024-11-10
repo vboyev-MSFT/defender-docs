@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 10/15/2024
+ms.date: 11/06/2024
 ---
 
 # Configure your data connectors
@@ -14,7 +14,7 @@ ms.date: 10/15/2024
 To establish a connection with any of the supported external products, follow these steps:
 
 1. Complete the applicable prerequisite steps for your external data connectors.
-    1. Each of the connectors have explicit instructions for setting up valid credentials and creating the connection.
+   Each of the connectors have explicit instructions for setting up valid credentials and creating the connection.
      - [ServiceNow CMDB](ServiceNow-data-connector.md)
      - [Qualys VM](Qualys-data-connector.md)
      - [Rapid7 VM](Rapid7-data-connector.md)
@@ -22,20 +22,20 @@ To establish a connection with any of the supported external products, follow th
      - Wiz (coming soon)
      - Palo Alto (coming soon)
 
+2. Go to **Data Connectors** in the Exposure Management navigation.
+3. Select **Connect** on the selected data connector from the external connectors catalog.
+4. A side pane opens with the relevant connectivity details. Fill in the required fields and select **Connect**.
+5. The data connector is now connected and will start ingesting data from the external source.
+
 > [!Note]
 > It may take up to an hour for data to start flowing after the data connector is configured.
 
-2. Go to **Data Connectors** in the Exposure Management navigation.
-1. Select **Connect** on the selected data connector from the external connectors catalog.
-1. A side pane opens with the relevant connectivity details. Fill in the required fields and select **Connect**.
-1. The data connector is now connected and will start ingesting data from the external source.
-
 ## Allowlist IP addresses
 
-To ensure successful connections between MSEM and external products, you may need to allowlist specific Microsoft IP addresses. Follow these steps to obtain the required IP addressed and configure it with the external products:
+To ensure successful connections between Exposure Management and external products, you may need to allowlist specific Microsoft IP addresses. Follow these steps to obtain the required IP addresses and configure it with the external products:
 
 1. Identify the IP addresses:
-   1. Obtain the list of IP addresses that need to be allowlisted.
+   1. Obtain and copy the list of the IPs for your allowlist from the IP ranges under "Scuba" in the public IP ranges reference here: [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 2. Access the external product's configuration settings:
    1. Log in to the external product's administration or configuration portal.
    2. Navigate to the section where you can manage network settings or security settings.
@@ -49,9 +49,6 @@ To ensure successful connections between MSEM and external products, you may nee
 5. Troubleshooting:
    1. If you encounter any issues, double-check the IP addresses and ensure they are correctly entered.
    2. Refer to the external product's documentation for additional troubleshooting steps or contact their support team for assistance.
-
-> **Note:** If you are restricting access to your target product based on IPs or IP ranges, ensure that your allowed IP list includes the source IPs used by Exposure Management to connect. Add the IPs listed under "Scuba" to your allow list from the following public IP ranges:  
-> [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 
 For specific instructions on allowlisting IP addresses for each external product, please refer to their respective documentation or support resources.
 

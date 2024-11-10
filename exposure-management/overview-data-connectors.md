@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 09/09/2024
+ms.date: 11/06/2024
 ---
 
 # Overview
@@ -18,14 +18,14 @@ To provide coverage of all your assets and security signals and to help you esta
 Benefits include:
 
 - Normalized within exposure graph
-- Enhanced device inventory
+- Enhancing device inventory
 - Mapping relationships
 - Revealing new attack paths
 - Providing comprehensive attack surface visibility
 - Incorporating asset criticality
 - Enriching context with business application or operational affiliation
-- Visualization through the Attack Map tool
-- Exploration using advanced hunting queries via KQL
+- Visualizing through the Attack Map tool
+- Exploring using advanced hunting queries via KQL
 
 The support for external solutions helps to further streamline, integrate, and orchestrate defenses from other security vendors with Exposure Management. This enables security teams to effectively manage their posture and exposure across the entire attack surface.
 
@@ -38,21 +38,19 @@ Data Connectors in Microsoft Security Exposure Management is currently in public
 > [!NOTE]
 > During the preview phase, use of the data connectors feature is free. Once data connectors become generally available, you will be billed per connector based on the amount of data ingested from that product to Exposure Management. The charge will be according to volume of ingested assets, where each 1000 assets will incur a charge of $29 USD.
 
-
 ## Prerequisites
 
 The following prerequisites are required to integrate external data connecters to Microsoft Security Exposure Management.
 
 ### Roles & permissions
 
-For full access to connect and disconnect you need one of the following Microsoft Entra ID roles:
+For full access to connect and disconnect the data connectors you need one of the following Microsoft Entra ID roles:
 
 - Global Admin (read and write permissions)
 - Security Admin (read and write permissions)
 - Security Operator (read and limited write permissions)
 
-
-To view the status of the connectors you can use one of the following roles:
+To view the status of the connectors, you can use one of the following roles:
 
 - Global Reader (read permissions)
 - Security Reader (read permissions)

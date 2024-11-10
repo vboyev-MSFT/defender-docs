@@ -25,6 +25,20 @@ Security Exposure Management is currently in public preview.
 >
 > `https://aka.ms/msem/rss`
 
+## November 2024
+
+### External data connectors
+
+We have introduced new external data connectors to enhance data integration capabilities, allowing seamless ingestion of security data from other security vendors.  Data collected through these connectors is normalized within our exposure graph, enhancing your device inventory, mapping relationships, and revealing new attack paths for comprehensive attack surface visibility. These connectors help you to consolidate security posture data from various sources, providing a comprehensive view of your security posture.
+
+For more information, see [Data connectors overview](overview-data-connectors.md).
+
+### SaaS security initiative
+
+The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.
+
+For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-security-initiative)
+
 ## October 2024
 
 ### New in attack paths
