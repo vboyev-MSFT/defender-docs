@@ -41,11 +41,9 @@ Be aware of the following considerations before you start:
 
 3. Running a custom kernel and custom kernel command line is not supported. Although the plug-in does not block running in that configuration, it does not guarantee visibility within WSL when you're running a custom kernel and custom kernel command line. We recommend to block such configurations with help of [Microsoft Intune wsl settings](/windows/wsl/intune).
 
-4. OS Distribution is displayed **None** in the **Device overview** page of a WSL device in the Microsoft Defender portal.
+4. The plug-in is not supported on machines with ARM64 processor.
 
-5. The plug-in is not supported on machines with ARM64 processor.
-
-6. The plug-in provides visibility into events from WSL, but other features like antimalware, threat and vulnerability management, and response commands are not available for the WSL logical device.
+5. The plug-in provides visibility into events from WSL, but other features like antimalware, threat and vulnerability management, and response commands are not available for the WSL logical device.
 
 ## Software prerequisites
 
@@ -255,6 +253,15 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
+### If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
+
+- In Control Panel, go to **Programs** > **Programs and Features**.
+      
+- Search for and select **Microsoft Defender for Endpoint plug-in for WSL**. Then select **Repair**.  This action should fix the problem by placing the right files in the expected directories.
+
+   :::image type="content" source="media/mdeplugin-wsl/plug-in-repair-control-panel.png" alt-text="Screenshot showing MDE plug-in for WSL repair option in control panel." lightbox="media/mdeplugin-wsl/plug-in-repair-control-panel.png":::
+
+
 ### The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in five minutes."
 
 :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
@@ -357,7 +364,9 @@ Collect the networking logs by following these steps:
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check-overview.png":::
 
-2. Microsoft Defender Endpoint for WSL supports Linux distributions running on WSL 2. If they're associated with WSL 1, you might encounter issues. Therefore, it's advised to disable WSL 1. To do so with the Intune policy, perform the following steps:
+### WSL1 vs WSL2
+
+- Microsoft Defender Endpoint plug-in for WSL supports Linux distributions running on WSL 2. If they're associated with WSL 1, you might encounter issues. Therefore, it's advised to disable WSL 1. To do so with the Intune policy, perform the following steps:
 
    1. Go to your [Microsoft Intune admin center](https://intune.microsoft.com).
 
@@ -369,29 +378,25 @@ Collect the networking logs by following these steps:
 
    5. Set the **Allow WSL1** setting to **Disabled**, to ensure that only WSL 2 distributions can be used.
 
-      Alternately, if you want to keep using WSL 1, or not use the Intune Policy, you can selectively associate your installed distributions to run on WSL 2, by running the command in PowerShell:
+   Alternately, if you want to keep using WSL 1, or not use the Intune Policy, you can selectively associate your installed distributions to run on WSL 2, by running the command in PowerShell:
 
-      ```powershell
-      wsl --set-version <YourDistroName> 2
-      ```
+   ```powershell
+   wsl --set-version <YourDistroName> 2
+   ```
 
-      To have WSL 2 as your default WSL version for new distributions to be installed in the system, run the following command in PowerShell:
+   To have WSL 2 as your default WSL version for new distributions to be installed in the system, run the following command in PowerShell:
 
-      ```powershell
-      wsl --set-default-version 2
-      ```
+   ```powershell
+   wsl --set-default-version 2
+   ```
 
-3. The plug-in uses the Windows EDR ring by default. If you wish to switch to an earlier ring, set `OverrideReleaseRing` to one of the following under registry and restart WSL:
+### Override Release ring
+
+- The plug-in uses the Windows EDR ring by default. If you wish to switch to an earlier ring, set `OverrideReleaseRing` to one of the following under registry and restart WSL:
 
    - **Name**: `OverrideReleaseRing`
    - **Type**: `REG_SZ`
    - **Value**: `Dogfood or External or InsiderFast or Production`
    - **Path**:  `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Defender for Endpoint plug-in for WSL`
 
-4. If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
 
-   1. In Control Panel, go to **Programs** > **Programs and Features**.
-      
-   2. Search for and select **Microsoft Defender for Endpoint plug-in for WSL**. Then select **Repair**. This action should fix the problem by placing the right files in the expected directories.
-
-      :::image type="content" source="media/mdeplugin-wsl/plug-in-repair-control-panel.png" alt-text="Screenshot showing MDE plug-in for WSL repair option in control panel." lightbox="media/mdeplugin-wsl/plug-in-repair-control-panel.png":::
