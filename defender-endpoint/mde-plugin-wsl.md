@@ -253,7 +253,7 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-### If you see an error on launching WSL, such as "A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND", it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
+### If you see an error on launching WSL, such as `A fatal error was returned by plugin 'DefenderforEndpointPlug-in' Error code: Wsl/Service/CreateInstance/CreateVm/Plugin/ERROR_FILE_NOT_FOUND`, it means the Defender for Endpoint plug-in for WSL installation is faulty. To repair it, follow these steps:
 
 - In Control Panel, go to **Programs** > **Programs and Features**.
       
