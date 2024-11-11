@@ -36,7 +36,7 @@ Data Connectors in Microsoft Security Exposure Management is currently in public
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
 > [!NOTE]
-> During the preview phase, use of the data connectors feature is free. Once data connectors become generally available, you will be billed per connector based on the amount of data ingested from that product to Exposure Management. The charge will be according to volume of ingested assets, where each 1000 assets will incur a charge of $29 USD.
+> During the preview phase, use of the data connectors feature is free. Once data connectors become generally available, there will be a cost for each connector based on consumption from that product to Exposure Management. The charge will be according to volume of ingested billable assets, where a billable asset is any asset (device, container, identity, application) on which data is reported from that connector. Each connector will have clearly defined applicable assets and guidance on how to determine the numbers.
 
 ## Prerequisites
 
@@ -56,11 +56,6 @@ To view the status of the connectors, you can use one of the following roles:
 - Security Reader (read permissions)
 
 You can find more details about the permission levels here, [Prerequisites, and support](prerequisites.md).
-
-### Cloud support
-
-- Data Connectors supports data from the public Commercial Clouds (including Azure and AWS).
-- Nation/Sovereign Clouds: Exposure Management isn't available in US Gov, China Gov, or other Gov clouds.
 
 ## Next steps
 
