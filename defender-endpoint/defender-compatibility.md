@@ -36,7 +36,7 @@ The Microsoft Defender for Endpoint agent depends on Microsoft Defender Antiviru
 For optimal protection, configure the following settings for devices that are onboarded to Defender for Endpoint, whether Microsoft Defender Antivirus is the active antimalware solution or not:
 
 - [Security intelligence updates](microsoft-defender-antivirus-updates.md#security-intelligence-updates) (which also updates the scan engine)
-- [Platform updates](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
+- [Platform updates](microsoft-defender-antivirus-updates.md#platform-and-engine-releases)
 
 For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 

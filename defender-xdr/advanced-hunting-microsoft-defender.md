@@ -18,6 +18,7 @@ ms.collection:
   - usx-security
 ms.custom:
 - cx-ti
+- cx-ah
 ms.topic: conceptual
 appliesto:
     - Microsoft Defender XDR

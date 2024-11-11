@@ -25,6 +25,29 @@ Security Exposure Management is currently in public preview.
 >
 > `https://aka.ms/msem/rss`
 
+## November 2024
+
+### SaaS security initiative
+
+The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.
+
+For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-security-initiative)
+
+## October 2024
+
+### New in attack paths
+
+We have introduced four new features designed to enhance your security management and risk mitigation efforts. These features provide valuable insights into the attack paths identified within your environment, enabling you to prioritize risk mitigation strategies effectively and reduce the impact of potential threats. 
+
+The new features include:
+
+- **Attack path widget on exposure management overview page**: Provides users with an at-a-glance, high-level view of discovered attack paths. It displays a timeline of newly identified paths, key entry points, target types, and more, ensuring security teams stay informed about emerging threats and can respond quickly.
+- **Attack path dashboard**: Provides a high-level overview of all identified attack paths within the environment. This feature enables security teams to gain valuable insights into the types of paths identified, top entry points, target assets, and more, helping to prioritize risk mitigation efforts effectively.
+- **Choke points**: Highlights critical assets that multiple attack paths intersect, identifying them as key vulnerabilities within the environment. By focusing on these choke points, security teams can efficiently reduce risk by addressing high-impact assets, thus preventing attackers from progressing through various paths.
+- **Blast radius**: Allows users to visually explore the paths from a choke point. It provides a detailed visualization showing how the compromise of one asset could affect others, enabling security teams to assess the broader implications of an attack and prioritize mitigation strategies more effectively.
+ 
+For more information, see [Overview of attack paths](work-attack-paths-overview.md).
+
 ## September 2024
 
 ### New Enterprise IoT Security Initiative
