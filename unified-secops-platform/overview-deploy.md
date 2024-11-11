@@ -30,13 +30,13 @@ Microsoft Security Exposure Management and Microsoft Threat Intelligence are ava
 
 Microsoft Defender XDR unifies incident response by integrating key capabilities across services, including Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft Defender portal.
 
-1. Microsoft Defender XDR automatically turns on when eligible customers with the required permissions visit Microsoft Defender portal. For more information, see [Turn on Microsoft Defender XDR](../defender-xdr/m365d-enable.md).
+1. Microsoft Defender XDR automatically turns on when eligible customers with the required permissions visit Microsoft Defender portal. For more information, see [Turn on Microsoft Defender XDR](/defender-xdr/m365d-enable).
 
 1. Continue by deploying Microsoft Defender XDR services. We recommend using the following order: <!--fix order in overview-->
 
     1. [Deploy Microsoft Defender for Identity](/defender-for-identity/deploy/quick-installation-guide).
-    1. [Deploy Microsoft Defender for Office 365](../defender-xdr/pilot-deploy-defender-office-365.md).
-    1. [Deploy Microsoft Defender for Endpoint](../defender-endpoint/mde-planning-guide.md). Add [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/get-defender-vulnerability-management.md) and / or [Enterprise monitoring for IoT devices](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint) as relevant for your environment.
+    1. [Deploy Microsoft Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365?toc=%2Fdefender-office-365%2FTOC.json&bc=%2Fdefender-office-365%2Fbreadcrumb%2Ftoc.json).
+    1. [Deploy Microsoft Defender for Endpoint](/defender-endpoint/mde-planning-guide). Add [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/get-defender-vulnerability-management) and / or [Enterprise monitoring for IoT devices](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint), as relevant for your environment.
 
     1. [Deploy Microsoft Defender for Cloud Apps](/defender-cloud-apps/general-setup).
 
@@ -73,7 +73,7 @@ Provision your users based on the access plan you'd [prepared earlier](overview-
 
 For more information, see:
 
-- [Activate Microsoft Defender XDR Unified role-based access control (RBAC)](../defender-xdr/activate-defender-rbac.md)
+- [Activate Microsoft Defender XDR Unified role-based access control (RBAC)](/defender-xdr/activate-defender-rbac)
 - [Assign Microsoft Entra ID roles to users](/entra/identity/role-based-access-control/manage-roles-portal)
 - [Grant a user access to Azure roles](/azure/role-based-access-control/quickstart-assign-role-user-portal)
 
@@ -81,7 +81,7 @@ For more information, see:
 
 When you onboard Microsoft Sentinel to the Defender portal, you unify capabilities with Microsoft Defender XDR like incident management and advanced hunting, creating a unified SecOps platform.
 
-For more information, see [Connect Microsoft Sentinel to Microsoft Defender](../defender-xdr/microsoft-sentinel-onboard.md).
+For more information, see [Connect Microsoft Sentinel to Microsoft Defender](defender-xdr/microsoft-sentinel-onboard).
 
 ## Fine-tune system configurations
 
@@ -93,8 +93,4 @@ Use the following Microsoft Sentinel configuration options to fine-tune your dep
 |**Configure Microsoft Sentinel content**     |  Based on the [data sources you selected](overview-plan.md#prioritize-data-connectors) when planning your deployment, install Microsoft Sentinel solutions and configure your data connectors. <br><br>Microsoft Sentinel provides a wide range of built-in solutions and data connectors, but you can also build custom connectors and set up connectors to ingest CEF or Syslog logs.  <br><br>For more information, see: <br> - [Configure content](/azure/sentinel/configure-content)<br>- [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy?tabs=azure-portal) <br>- [Find your data connector](/azure/sentinel/data-connectors-reference)       |
 |**Enable User and Entity Behavior Analytics (UEBA)**     | After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior that could lead to phishing exploits and eventually attacks such as ransomware. <br><br>For more information, see [Enable UEBA in Microsoft Sentinel](/azure/sentinel/enable-entity-behavior-analytics?tabs=azure).        |
 |**Set up interactive and long-term data retention**     |   Set up interactive and long-term data retention to make sure your organization retains the data that's important in the long term.  <br><br>For more information, see [Configure interactive and long-term data retention](/azure/sentinel/configure-data-retention-archive).      |
-|**Avoid duplicate incidents**     |  After you [connect Microsoft Sentinel to Microsoft Defender](../defender-xdr/microsoft-sentinel-onboard.md), a bi-directional sync between Microsoft Defender XDR incidents and Microsoft Sentinel is automatically established. <br><br>To avoid creating duplicate incidents for the same alerts, we recommend that you turn off all Microsoft incident creation rules for Microsoft Defender XDR-integrated products, including Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection. <br><br>For more information, see [Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration?tabs=azure-portal).|
-
-## Next step
-
-<!--xref to our prevent attacks doc - tbd. make sure the rest of the docs include analytic rules, using anomaly rules,  use the Msft Threat Intelligence analytics rule, Conduct a MITRE Att&ck crosswalk, create and customize workbooks, set up advanced hunting (what's there to set up?) configure automated response and implement security playbooks-->
+|**Avoid duplicate incidents**     |  After you [connect Microsoft Sentinel to Microsoft Defender](defender-xdr/microsoft-sentinel-onboard), a bi-directional sync between Microsoft Defender XDR incidents and Microsoft Sentinel is automatically established. <br><br>To avoid creating duplicate incidents for the same alerts, we recommend that you turn off all Microsoft incident creation rules for Microsoft Defender XDR-integrated products, including Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection. <br><br>For more information, see [Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration?tabs=azure-portal).|
