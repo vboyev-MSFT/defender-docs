@@ -73,7 +73,7 @@ In this stage, you configure Defender for IoT to associate OT devices to the sit
 
 ## Preview devices
 
-In this stage, you review all of the devices discovered by the system. This gives admins the opportunity to review and remove devices before confirming the site creation.
+In this stage, you review all of the devices discovered by the system. This gives admins the opportunity to review and remove devices before confirming the site creation. If, during your editing, you want to reset the device list to its original state, **Discard all changes** undoes any device exclusions and restore the initial device selection.
 
 To manage devices in bulk, use the search bar to find devices by their name, IP, or MAC address. Once found, select multiple devices for removal from the site or to reset their association. <!-- IM not sure where this should go, here or at the end. Limor .   I am also unclear why we mention resetting association, i didnt think that that happens here? Amit -->
 
@@ -81,7 +81,7 @@ A list of all devices to be associated with this site appears. To remove any of 
 
 1. Select the **Deselect devices from site** button. All of the devices become editable.
 1. Deselect the checkbox of the devices to be removed.
-    1. To reset the list, select **Discard all changes**. <!-- amit asked to write this: "If you want to reset the device list to its original state, select ‘Discard all changes.’ This will undo any device exclusions and restore the initial device selection." - but i think that my line is ok? - Limor>
+    1. To reset the device list to its original state, select **Discard all changes**.
 
     :::image type="content" source="media/set-up-sites/site-security-associate-device-list-preview.png" alt-text="Screenshot of the site associtation preview devices page" lightbox="media/set-up-sites/site-security-associate-device-list-preview.png" :::
 
