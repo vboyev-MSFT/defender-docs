@@ -29,6 +29,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## November 2024
+
+- (Preview) Cloud-native investigation and response actions are now available for container-related alerts in the Microsoft Defender portal. Security operations center (SOC) analysts can now investigate and respond to container-related alerts in near real-time with cloud-native response actions and investigation logs to hunt for related activities. For more information, see [Investigate and respond to container threats in the Microsoft Defender portal](investigate-respond-container-threats.md).
 
 ## October 2024
 
