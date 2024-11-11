@@ -19,25 +19,32 @@ ms.topic: overview
 
 Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps). It integrates security information and event management (SIEM), security orchestration, automation, and response (SOAR), extended detection and response (XDR), posture and exposure management, cloud security, threat intelligence, and generative AI solutions.
 
-To cover all those capabilities, Microsoft's unified SecOps platform combines services like [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender), [Microsoft Sentinel](/azure/sentinel/overview), [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot) in the Microsoft Defender portal. The Defender portal provides a single location to monitor, detect, investigate, remediate, and respond against pre- and post-breach cybersecurity risks and threats.
+To cover all those capabilities, Microsoft's unified SecOps platform combines services like [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender), [Microsoft Sentinel](/azure/sentinel/overview), [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management), and [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot) in the Microsoft Defender portal. Integrate more Microsoft Defender services to add security and provide integrated protection against sophisticated attacks. The Defender portal provides a single location to monitor, detect, investigate, remediate, and respond against pre- and post-breach cybersecurity risks and threats.
 
 :::image type="content" source="media/overview-unified-security/defender-portal-home.png" lightbox="media/overview-unified-security/defender-portal-home.png" alt-text="Screenshot of the home page of Microsoft's unified SecOps platform in the Defender portal.":::
 
 ## Protect assets
 
-Protect a wide range of assets with the integration of Defender XDR and Microsoft Sentinel in Microsoft's unified SecOps platform.
+Protect a wide range of assets by integrating Defender XDR, Microsoft Sentinel, and other Defender services in Microsoft's unified SecOps platform.
+
+Microsoft Defender XDR services include the following asset protection capabilities:
 
 |Capability  |Security product  |
 |---------|---------|
+|Identify, detect, and investigate Microsoft Entra ID threats.|[Microsoft Defender for Identity](/defender-for-identity/what-is)|
 |Protect against threats posed by email messages, URL links, and Office 365 collaboration tools.     |   [Microsoft Defender for Office 365](/defender-office-365/mdo-about)      |
 |Monitor and protect endpoint devices. Monitor, detect, and investigate device breaches, and automatically respond to security threats.    |     [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)    |
+|Identify and protect operational technology (OT) and IT resources by extending Defender XDR protection to OT environments.|[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)|
 |Identify assets and software inventory, and assess device posture to find security vulnerabilities.|[Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)|
 |Protect and control access to SaaS cloud apps.|[Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)|
-|Identify, detect, and investigate Microsoft Entra ID threats.|[Microsoft Defender for Identity](/defender-for-identity/what-is)|
-|Improve multicloud and on-premises security posture, and protect cloud workloads against threats.|[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)|
-|Discover and assess assets, and remediate risk to reduce attack surfaces.|[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)|
-|Identify and protect operational technology (OT) and IT resources by extending Defender XDR protection to OT environments.|[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)|
+
+Asset protection for services not licensed with Microsoft Defender XDR includes the following capabilities:
+
+|Capability  |Security product  |
+|---------|---------|
 |Monitor and protect non-Microsoft and on-premises devices, services, and solutions. | [Microsoft Sentinel](/azure/sentinel/overview) |
+|Discover and assess assets, and remediate risk to reduce attack surfaces.|[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)|
+|Improve multicloud and on-premises security posture, and protect cloud workloads against threats.|[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)|
 
 ## Simplify security management
 
@@ -67,7 +74,7 @@ The following image shows the overview page for exposure management in Microsoft
 
 ## Reduce threat detection and response times
 
-Standard cybersecurity metrics focus on the time to detect (TTD) and time to respond (TTR). Time to detect (TTD) measures how long it takes security teams to discover an incident. Time to respond (TTR) measures the amount of time it takes to respond after a threat is detected. The shorter the TTD and TTR, the more effective your detection and response strategy is.
+Standard cybersecurity metrics focus on the time to detect (TTD) and time to respond (TTR). Time to detect (TTD) measures how long it takes security teams to discover an incident. Time to respond (TTR) measures the amount of time it takes to respond after a threat is detected. The shorter the TTD and TTR, the more effective your detection, and response strategy is.
 
 Microsoft's unified SecOps platform correlates millions of signals from Defender products, Microsoft Sentinel, Microsoft security research, and threat intelligence to identify attacks in progress. It initiates automatic attack disruption to automatically contain attacks, limiting lateral movement early and reducing attack impact. Automatic attack disruption helps to reduce costs associated with loss of productivity, provide control to the SecOps team control to investigate and remediate compromised assets.
 
@@ -98,3 +105,5 @@ For more information, see [Microsoft Copilot in Microsoft Defender](/defender-xd
 ## Related content
 
 - Blog post: [AI-powered, unified SecOps](https://www.microsoft.com/security/business/solutions/ai-powered-unified-secops-platform)
+- [Microsoft's unified security operations platform planning overview](overview-plan.md)
+- [Deploy Microsoft's unified security operations platform](overview-deploy.md)
