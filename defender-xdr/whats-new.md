@@ -29,6 +29,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## November 2024
+- (Preview) The [CloudProcessEvents](advanced-hunting-cloudprocessevents-table.md) table is now available for preivew in advanced hunting. It contains information about process events in multicloud hosted environments. You can use it to discover threats that can be observed through process details, like malicious processes or command-line signatures. 
 
 ## October 2024
 

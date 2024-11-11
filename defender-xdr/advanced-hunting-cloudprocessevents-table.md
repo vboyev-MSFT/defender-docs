@@ -1,6 +1,6 @@
 ---
 title: CloudProcessEvents table in the advanced hunting schema
-description: Learn about 
+description: Learn about the CloudProcessEvents table in the advanced hunting schema, which contains information about process events in multicloud hosted environments.
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
@@ -18,49 +18,70 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 11/08/2024
+ms.date: 11/11/2024
 ---
 
-# CloudProcessEvents
+# CloudProcessEvents (Preview)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
 
-The `CloudProcessEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving accounts and objects in Office 365 and other [cloud apps and services](#apps-and-services-covered). Use this reference to construct queries that return information from this table.
+The `CloudProcessEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about process events in multicloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine. Use this reference to construct queries that return information from this table.
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
-| `ActionType` | `string` | Type of activity that triggered the event |
-| `Application` | `string` | Application that performed the recorded action |
-| `ApplicationId` | `int` | Unique identifier for the application |
+| `AzureResourceId` | `string` | 	Unique identifier of the Azure resource associated with the process |
+| `AwsResourceName` | `string` | Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name|
+| `GcpFullResourceName` | `string` | Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP |
+| `ContainerImageName` | `string` | UThe container image name or ID, if it exists |
+| `KubernetesNamespace` | `string` | The Kubernetes namespace name |
+| `KubernetesPodName` | `string` | The Kubernetes pod name | 	
+| `KubernetesResource` | `string` | Identifier value that includes namespace, resource type and name | 	 
+| `ContainerName` | `string` | Name of the container in Kubernetes or another runtime environment | 	 
+| `ContainerId`	 | `string` | The container identifier in Kubernetes or another runtime environment|  	 
+| `ActionType` | `string` | Type of activity that triggered the event. See the in-portal schema reference for details.| 	 
+| `FileName` | `string` | Name of the file that the recorded action was applied to | 	 
+| `FolderPath` | `string` | Folder containing the file that the recorded action was applied to| 	 
+| `ProcessId` | `long` | Process ID (PID) of the newly created process | 	 
+| `ProcessName` | `string` | The name of the process  | 	 
+| `ParentProcessName` | `string` | The name of the parent process | 	 
+| `ParentProcessId` | `string` | The process ID (PID) of the parent process| 	 
+| `ProcessCommandLine` | `string` | Command line used to create the new process| 	 
+| `ProcessCreationTime` | `datetime` | Date and time the process was created | 	 
+| `ProcessCurrentWorkingDirectory` | `string` | Current working directory of the running process | 	 
+| `AccountName` | `string` | User name of the account | 	 
+| `LogonId` | `long` | Identifier for a logon session. This identifier is unique on the same pod or container between restarts.	| 	 
+| `InitiatingProcessId` | `string` | Process ID (PID) of the process that initiated the event | 	 
+| `AdditionalFields` | `string` | Additional information about the event in JSON array format | 	 
 
 
+## Sample queries
 
+You can use this table to get detailed information on processes invoked in a cloud environment. The information is useful in hunting scenarios and can discover threats that can be observed through process details, like malicious processes or command-line signatures. 
 
-## Apps and services covered
+You can also investigate security alerts provided by Defender for Cloud that make use of the cloud process events data in advanced hunting to understand details in the process tree for processes that include a security alert.
 
-The __CloudAppEvents__ table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps, such as:
-- Office 365 and Microsoft Applications, including:
-   - Exchange Online
-   - SharePoint Online
-   - Microsoft Teams
-   - Dynamics 365
-   - Skype for Business
-   - Viva Engage
-   - Power Automate
-   - Power BI
-   - Dropbox
-   - Salesforce
-   - GitHub
-   - Atlassian
+### Process events by command-line arguments
+To hunt for process events including a given term (represented by "x" in the query below) in the command-line arguments:
 
-Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app's user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
+```kusto
+CloudProcessEvents | where ProcessCommandLine has "x"
+```
+
+### Rare process events for a pod in a Kuberentes cluster
+To investigate unusual process events invoked as part of a pod in a Kubernetes cluster: 
+
+```kusto
+CloudProcessEvents | where AzureResourceId = "x" and KubernetesNamespace = "y" and KubernetesPodName = "z" | summarize count() by ProcessName | top 10 by count_ asc
+```
 
 ## Related topics
 
