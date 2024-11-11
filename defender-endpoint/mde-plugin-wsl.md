@@ -95,6 +95,7 @@ If your Windows Subsystem for Linux isn't installed yet, follow these steps:
 
 > [!NOTE]
 > If `WslService` is running, it stops during the installation process. You do not need to onboard the subsystem separately. Instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
+> Microsoft Defender for Endpoint update for plug-in for WSL [KB Update](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-plug-in-for-wsl-9f4b2ddc-c47f-4c59-bd02-a3456c667966).
 
 ## Installation validation checklist
 
