@@ -4,8 +4,8 @@ description: Learn how to assign, update the status,
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
-ms.author: diannegali
-author: diannegali
+ms.author: yelevin
+author: yelevin
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -13,8 +13,9 @@ ms.collection:
   - m365-security
   - usx-security
   - tier1
+  - sentinel-only
 ms.custom: admindeeplinkDEFENDER
-ms.topic: conceptual
+ms.topic: how-to
 search.appverid: 
   - MOE150
   - MET150
@@ -30,51 +31,124 @@ appliesto:
 
 Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
 
-You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+Manage your incidents from **Investigation & response > Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="/defender/media/incidents-queue/fig1-manageincidents.png" alt-text="Screenshot highlighting the manage incident option within the incident queue and quick launch pane in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig1-manageincidents.png":::
+:::image type="content" source="./media/manage-incidents/incidents-queue.png" alt-text="Screenshot showing the incident queue and quick launch pane in the Microsoft Defender portal." lightbox="./media/manage-incidents/incidents-queue.png":::
 
-Here are the ways you can manage your incidents:
+This article shows you how to perform various incident management tasks associated with different stages in an incident's lifecycle.
 
-- [Edit the incident name](#edit-the-incident-name).
+**Incident triage:**
+- [Assign the incident to an owner](#assign-an-incident-to-an-owner).
 - [Assign or change severity](#assign-or-change-incident-severity).
 - [Add incident tags](#add-incident-tags).
-- [Assign the incident to a user account](#assign-an-incident).
-- [Resolve them](#resolve-an-incident).
-- [Specify its classification](#specify-the-classification).
-- [Add comments](#add-comments).
+- [Change the incident status](#change-the-incident-status).
+
+**Incident resolution:**
+- [Specify an incident's classification](#specify-the-classification).
+- [Resolve an incident](#resolve-an-incident).
+- [Add comments to an incident](#add-comments).
+
+**Incident logging and reporting:**
+- [Edit the incident name](#edit-the-incident-name).
 - Assess the activity audit and add comments in the [Activity log](#activity-log).
 - [Export incident data to PDF](#export-incident-data-to-pdf).
 
-You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
+## Access the *Manage incident* pane
 
-:::image type="content" source="/defender/media/incidents-queue/fig2-new-manageincidents.png" alt-text="Screenshot showing the Manage incident pane in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig2-new-manageincidents.png":::
+Most of these tasks are accessible from the **Manage incident** pane for an incident. You can reach this pane from any of several locations.
 
-You can display this pane from the **Manage incident** link on the:
+### From the incident queue
 
-- **Alert story** page.
-- Properties pane of an incident in the incident queue.
-- **Summary** page of an incident.
-- Manage incident option located on the upper right side of the Incident page.
+1. Select **Investigation & response > Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal.
 
-In cases where you want to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+1. From the incident queue, access the **Manage incident** pane in one of two ways:
 
-## Edit the incident name
+    - Select the check box of an incident, and select **Manage incidents** from the toolbar above the filters. Manage many incidents at once by selecting multiple check boxes.
+    - Select the row of an incident (without selecting the incident name), so that the incident details pane appears, and select **Manage incident** from the incident details pane.
 
-Microsoft Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. The incident name allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+    :::image type="content" source="./media/manage-incidents/manage-incidents-from-queue.png" alt-text="Screenshot showing how to manage incidents from the incidents queue in the Microsoft Defender portal." lightbox="./media/manage-incidents/select-manage-incident.png":::
 
-You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
+### From the incident page
 
-> [!NOTE]
-> Incidents that existed before the rollout of the automatic incident naming feature will retain their name.
+1. Select **Investigation & response > Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal.
 
-## Assign or change incident severity
+1. Select the name of an incident from the queue. Or, select the row of an incident in the queue and then select **Open incident page** from the incident details pane.
 
-You can assign or change the severity of an incident from the **Severity** field on the **Manage incident** pane. The severity of an incident is determined by the highest severity of the alerts associated with it. The severity of an incident can be set to *high*, *medium*, *low*, or *informational*.
+1. From the incident page, select **Manage incident** from the top panel.
 
-## Add incident tags
+    If **Manage incident** isn't visible, select the three dots in the upper right corner (visible in the following screenshot next to "Manage incident"), and select it from the menu that appears.
 
-You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic. You can later filter the incident queue for all incidents that contain a specific tag.
+    :::image type="content" source="./media/manage-incidents/select-manage-incident.png" alt-text="Screenshot showing how to manage an incident from the incident page in the Microsoft Defender portal." lightbox="./media/manage-incidents/select-manage-incident.png":::
+
+## Incident triage
+
+The following management tasks are closely associated with incident triage, though they can be performed at any time.
+
+### Assign an incident to an owner
+
+By default, new incidents are created with no owner. Ideally, your SecOps team should have mechanisms and procedures in place to automatically assign incidents to owners. You might need to reassign an incident in the case of escalation or mistaken original assignment.
+
+#### Assign an owner
+
+To manually assign a new owner to an incident, take the following steps:
+
+1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
+
+1. Select the **Assign to** box. A drop-down list of suggested assignees appears.
+
+1. If you see the user or group account you want to assign the incident to, select it.
+
+   Otherwise, begin typing the name or account ID of the desired user or group in the text box at the top of the list. The list is dynamically updated, filtered by what you type. When you see the user or group you want, select it.
+
+1. To remove an existing assignment, including any you just added, select the **X** next to the account name. Then, select the **Assign to** box if you want to add another assignment.
+
+   Only one user or group account can be assigned to an incident.
+
+1. Select **Save**.
+
+Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
+
+   :::image type="content" source="./media/manage-incidents/assign-incident.png" alt-text="Screenshot showing how to assign an owner in the Manage incident pane in the Microsoft Defender portal.":::
+
+#### View incidents assigned to a particular owner
+
+To see the list of incidents assigned to a particular user or group, filter the incident queue:
+
+1. From the incident queue, select the **Incident assignment** filter. A drop-down list of suggested assignees appears.
+
+    If you don't see **Incident assignment** among the filters, select **Add filter**, select **Incident assignment** from the drop-down list, and select **Add**.
+
+1. If you see the user account whose assigned incidents you want to display, select it.
+
+   Otherwise, begin typing the name or account ID of the desired user or group in the text box at the top of the list. The list is dynamically updated, filtered by what you type. When you see the user or group you want, select it.
+
+   Unlike assigning incidents, here you can select more than one assignee to filter the list by. To add another user or group account to the filter, select the text box (next to the existing account in the filter), and the list of suggested assignees appears again.
+
+1. Select **Apply**.
+
+   :::image type="content" source="./media/manage-incidents/assignment-filter.png" alt-text="Screenshot showing how to view incidents assigned to an owner in the incident queue page in the Microsoft Defender portal.":::
+
+To save a link to the incident queue with the current filters applied, select **Copy list link** from the toolbar on the incident queue page. Create a shortcut in your favorites or on your desktop and paste the link into it.
+
+### Assign or change incident severity
+
+The severity of an incident is determined by the highest severity of the alerts associated with it. The severity of an incident can be set to *high*, *medium*, *low*, or *informational*.
+
+To manually assign or change the severity of an incident, take the following steps:
+
+1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
+
+1. Select the severity value you want to apply from the **Severity** drop-down on the **Manage incident** pane.
+
+1. Select **Save**.
+
+### Add incident tags
+
+Custom tags add information to lend context to an incident. For example, a tag can label a group of incidents with a common characteristic. Tags are a criteria for filtering, so you can later filter the incident queue for all incidents that contain a specific tag. To apply a tag to an incident:
+
+1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
+
+1. In the **Incident tags** field, begin typing the name of the tag you want to apply. As you type, a list of previously used and selected tags appears. If you see the tag you want to apply in the list, select it.
 
 The option to select from a list of previously used and selected tags appear after you start typing.
 
@@ -88,19 +162,15 @@ An incident can have system tags and/or custom tags with certain color backgroun
 > [!TIP]
 > Microsoft's Security Exposure Management, based on predefined classifications, automatically tags devices, identities, and cloud resources as a **critical asset**. This out-of-the-box capability ensures the protection of an organization's valuable and most important assets. It also helps security operations teams to prioritize investigation and remediation. Know more about [critical asset management](/security-exposure-management/critical-asset-management).
 
-## Assign an incident
+### Change the incident status
 
-You can select the **Assign to** box and specify the user account to assign an incident. To reassign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
 
-You can get a list of incidents assigned to you by filtering the incident queue. 
 
-1. From the incident queue, select **Filters**.
-2. In the **Incident assignment** section, clear **Select all**. Select **Assigned to me**, **Assigned to another user**, or **Assigned to a user group**.
-3. Select **Apply**, and then close the **Filters** pane.
+## Incident resolutions
 
-You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
+The following management tasks are closely associated with incident resolution, though they can be performed at any time.
 
-## Resolve an incident
+### Resolve an incident
 
 When an incident is remediated and resolved, select **Resolved** from the **Status** drop-down list. Resolving an incident also resolves all the linked and active alerts related to the incident.
 
@@ -114,7 +184,7 @@ On both the incidents queue page and the incident page of a resolved incident, y
 
 Resolving an incident also resolves all the linked and active alerts related to the incident. An incident that isn't resolved displays as **Active**.
 
-## Specify the classification
+### Specify the classification
 
 From the **Classification** field, you specify whether the incident is:
 
