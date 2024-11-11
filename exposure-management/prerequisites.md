@@ -20,8 +20,7 @@ Security Exposure Management is currently in public preview.
 ## Permissions
 
 > [!IMPORTANT]
-> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization.  
-> Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## Manage permissions with Microsoft Defender XDR Unified role-based access control (RBAC)
 
@@ -53,7 +52,8 @@ Users with restricted access to some of the organization's device groups can:
 - Access the Security Exposure Management attack surface map and advanced hunting schemas (ExposureGraphNodes and ExposureGraphEdges) for the device groups they have access to.
 
 > [!NOTE]
-> Access with manage permissions to **Critical asset management**, under **System \ Settings \ Microsoft Defender XDR** requires users to have access to all Defender for Endpoint device groups.
+> Access with manage permissions to **Critical asset management**, under **System> Settings> Microsoft Defender XDR** requires users to have access to all Defender for Endpoint device groups.
+
 ## Access with Microsoft Entra ID roles
 
 An alternative to managing access with Microsoft Defender XDR Unified RBAC permissions, access to Microsoft Security Exposure Management data and actions is also possible with [Microsoft Entra ID Roles](/entra/identity/role-based-access-control/custom-overview). You need a tenant with at least one Global Admin or Security Admin to create a Security Exposure Management workspace.
