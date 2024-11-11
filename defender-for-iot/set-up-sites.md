@@ -73,11 +73,13 @@ In this stage, you configure Defender for IoT to associate OT devices to the sit
 
 ## Preview devices
 
-In this stage, you review all of the devices discovered by the system. This gives admins the opportunity to review and remove devices before confirming the site creation. If, during your editing, you want to reset the device list to its original state, **Discard all changes** undoes any device exclusions and restore the initial device selection.
+In this stage, you review all of the devices discovered by the system. This gives admins the opportunity to review and remove devices before confirming the site creation. A list of all devices to be associated with this site is displayed.
 
-To manage devices in bulk, use the search bar to find devices by their name, IP, or MAC address. Once found, select multiple devices for removal from the site or to reset their association. <!-- IM not sure where this should go, here or at the end. Limor .   I am also unclear why we mention resetting association, i didnt think that that happens here? Amit -->
+To manage devices in bulk, use the search bar to find devices by their name, IP, or MAC address.
 
-A list of all devices to be associated with this site appears. To remove any of the devices from this list:
+If, during your editing, you want to reset the device list to its original state, selecting **Discard all changes** undoes any device exclusions and restores the initial device selection.
+
+To remove any of the devices from this list:
 
 1. Select the **Deselect devices from site** button. All of the devices become editable.
 1. Deselect the checkbox of the devices to be removed.
@@ -93,9 +95,9 @@ A list of all devices to be associated with this site appears. To remove any of 
 
 >[!Important]
 >
->By removing the device's association with a site, its automatic site association based on network parameters will be disabled. If the device is relocated to another site, you'll need to manually update it's site settings. <!-- or the device or the site? Amit-->
+>By removing the device's association with a site, its automatic site association based on network parameters will be disabled. If the device is relocated to another site, you'll need to manually update it's site settings.
 >
->Once a site is deleted or a suggestion<!-- what does this refer to? Amit--> is de-associated, devices that were excluded in this process will again be included in future site suggestions.
+>Once a site is deleted devices that were excluded in this process will again be included in future site suggestions.
 
 ## Review site details
 
