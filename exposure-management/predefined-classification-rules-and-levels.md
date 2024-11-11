@@ -23,6 +23,9 @@ Current asset types are:
 * [Identity](#identity)
 * [Cloud resource](#cloud-resource)
 
+> [!Note]
+> If you add any external data connectors and they contain criticality context, those criticality rules will be applied to the Exposure Management critical asset classifications.
+
 ##### Device
 
 | Classification             | Asset type | Default criticality level | Description                                                  |
