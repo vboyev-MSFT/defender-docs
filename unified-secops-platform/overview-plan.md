@@ -113,15 +113,15 @@ For the following services, use the different roles available, or create custom 
 | **Required for unified SecOps**                                                   |                           |
 | Microsoft Defender XDR  | [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/defender-xdr/m365d-permissions)               |
 | Microsoft Sentinel                                       | [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)            |
-| **Optional Microsoft Defender XDR services**                |  
+| **Optional Microsoft Defender XDR services**                |  |
 | Microsoft Defender for Identity                          | [Microsoft Defender for Identity role groups](/defender-for-identity/role-groups)          |
-| Microsoft Defender for Office | [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](/defender-office-365/mdo-portal-permissions) |    |
-| Microsoft Defender for Endpoint                          | [Assign roles and permissions for Microsoft Defender for Endpoint deployment](/defender-endpoint/prepare-deployment)                                                 |
-| Microsoft Defender Vulnerability Management              | [Relevant permission options for Microsoft Defender Vulnerability Management ](/defender-vulnerability-management/tvm-prerequisites#relevant-permission-options)       |
-| Microsoft Defender for Cloud Apps                        | [Configure admin access for Microsoft Defender for Cloud Apps](/defender-cloud-apps/manage-admins)             |
-| **Other services supported in the Microsoft Defender portal**             |                                                                                                         |
-| Microsoft Security Exposure Management                   | [Permissions for Microsoft Security Exposure Management](/exposure-management/prerequisites)               |
-| Microsoft Defender for Cloud                             | [User roles and permissions](/azure/defender-for-cloud/permissions) |
+| Microsoft Defender for Office | [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](/defender-office-365/mdo-portal-permissions) |
+| Microsoft Defender for Endpoint      | [Assign roles and permissions for Microsoft Defender for Endpoint deployment](/defender-endpoint/prepare-deployment)       |
+| Microsoft Defender Vulnerability Management   | [Relevant permission options for Microsoft Defender Vulnerability Management ](/defender-vulnerability-management/tvm-prerequisites#relevant-permission-options)       |
+| Microsoft Defender for Cloud Apps           | [Configure admin access for Microsoft Defender for Cloud Apps](/defender-cloud-apps/manage-admins)      |
+| **Other services supported in the Microsoft Defender portal**             |             |
+| Microsoft Security Exposure Management     | [Permissions for Microsoft Security Exposure Management](/exposure-management/prerequisites)   |
+| Microsoft Defender for Cloud      | [User roles and permissions](/azure/defender-for-cloud/permissions) |
 
 ## Plan Zero Trust activities
 
