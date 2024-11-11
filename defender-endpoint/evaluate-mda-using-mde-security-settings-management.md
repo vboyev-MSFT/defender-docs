@@ -12,9 +12,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.custom: 
+- cx-ti
+- cx-ean
 ms.subservice: edr
 search.appverid: met150
-ms.date: 05/13/2024
+ms.date: 10/30/2024
 ---
 
 # Evaluate Microsoft Defender Antivirus using Microsoft Defender Endpoint Security Settings Management (Endpoint security policies)
