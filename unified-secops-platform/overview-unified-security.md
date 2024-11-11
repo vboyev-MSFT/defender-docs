@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/05/2024
+ms.date: 11/11/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
@@ -47,7 +47,7 @@ The Defender portal provides a single, centralized view of organizational securi
 
 Free up analyst time as unified security dashboards enable analysts to cross organization silos, prioritize the most critical threats, and hunt effectively for attempted breaches.
 
-The following image shows the unified incident queue in Microsoft's unified SecOps platform, with incidents streaming in from ... <!--where?-->.
+The following image shows the unified incident queue in Microsoft's unified SecOps platform, with incidents from multiple service sources.
 
 :::image type="content" source="media/overview-unified-security/unified-incidents.png" alt-text="Screenshot of the unified incident queue that shows incidents with multiple service sources." lightbox="media/overview-unified-security/unified-incidents.png":::
 
