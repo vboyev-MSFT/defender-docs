@@ -75,7 +75,6 @@ Currently, Security Exposure Management consolidates security posture informatio
 In addition to Microsoft services, Security Exposure Management allows you to connect to external data sources to further enrich and extend your security posture management.
 For more information on data connectors, see [Data connectors overview](overview-data-connectors.md).
 
-
 ## Next steps
 
 Review [prerequisites](prerequisites.md) to get started with Security Exposure Management.

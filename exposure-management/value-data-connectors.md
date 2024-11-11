@@ -33,7 +33,7 @@ Data ingested from the Connectors gets normalized and incorporated into the Expo
 
 Eventually this data will additionally serve to enhance security metrics that measure your exposure risk against a particular criteria, and it will also impact broader organizational initiatives that measure exposure risk across a workload or related to a specific threat area.
 
-:::image type="content" source="media/value-data-connectors/device inventory with 3P.png" alt-text="Screenshot of device inventory with discovery source highlighted" lightbox="media/value-data-connectors/device inventory with 3P.png":::
+:::image type="content" source="media/value-data-connectors/device inventory with 3P.png" alt-text="Screenshot of device inventory with discovery source" lightbox="media/value-data-connectors/device inventory with 3P.png":::
 
 Benefits of using the external data connectors include:
 
@@ -66,7 +66,7 @@ Enrichment information on criticality of assets is retrieved from the data conne
 
 To explore your assets and enrichment data retrieved from external data products, you can also view this information in the Exposure Graph. Within the Attack Surface map, you can view the nodes representing assets discovered by your connectors, with built-in icons showing the discovery sources for each asset.
 
-:::image type="content" source="media/value-data-connectors/exposure graph data connectors main.png" alt-text="Screenshot of data connectors in exposure graph" lightbox="media/value-data-connectors/exposure graph data connectors main.png":::
+:::image type="content" source="media/value-data-connectors/exposure graph data connectors main.png" alt-text="Screenshot of data connectors in exposure graph shown" lightbox="media/value-data-connectors/exposure graph data connectors main.png":::
 
 By opening the side pane for the asset, you can also view the detailed data retrieved from the connector for each asset.
 

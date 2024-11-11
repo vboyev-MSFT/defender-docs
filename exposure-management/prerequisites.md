@@ -23,10 +23,10 @@ Permissions are based on [Microsoft Entra ID Roles](/entra/identity/role-based-a
 
 - For full Security Exposure Management access, user roles need access to all Defender for Endpoint  [device groups](/microsoft-365/security//defender-endpoint/machine-groups).
 - Users who have access restricted to some of the organization's device groups (and not to all), can:
-    - Access global exposure insights data.
-    - View affected assets under metrics, recommendations, events, and initiatives history only within users' scope
-    - View devices in attack paths that are within the users' scope
-    - Access the Security Exposure Management attack surface map and advanced hunting schemas (ExposureGraphNodes and ExposureGraphEdges) for the device groups to which they have access
+      - Access global exposure insights data.
+      - View affected assets under metrics, recommendations, events, and initiatives history only within users' scope
+      - View devices in attack paths that are within the users' scope
+      - Access the Security Exposure Management attack surface map and advanced hunting schemas (ExposureGraphNodes and ExposureGraphEdges) for the device groups to which they have access
 
 ### Permissions for Security Exposure Management tasks
 
@@ -73,13 +73,11 @@ You can access Security Exposure Management in the Microsoft Defender portal usi
 
     You can check which sensor version a device is running as follows:
 
-    - On a specific device, browse to the MsSense.exe file in
+  - On a specific device, browse to the MsSense.exe file in
 C:\Program Files\Windows Defender Advanced Threat Protection. Right-click the file, and select **Properties**. On the **Details** tab, check the file version.
-    - For multiple devices, it's easier to run an [advanced hunting Kusto query](/defender-xdr/advanced-hunting-query-language) to check device sensor versions, as follows:
+  - For multiple devices, it's easier to run an [advanced hunting Kusto query](/defender-xdr/advanced-hunting-query-language) to check device sensor versions, as follows:
 
-        ``` DeviceInfo | project DeviceName, ClientVersion ```
-
-
+       ``` DeviceInfo | project DeviceName, ClientVersion ```
 
 ## Getting support
 

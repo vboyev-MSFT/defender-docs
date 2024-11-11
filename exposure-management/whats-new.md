@@ -43,7 +43,7 @@ For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-
 
 ### New in attack paths
 
-We have introduced four new features designed to enhance your security management and risk mitigation efforts. These features provide valuable insights into the attack paths identified within your environment, enabling you to prioritize risk mitigation strategies effectively and reduce the impact of potential threats. 
+We have introduced four new features designed to enhance your security management and risk mitigation efforts. These features provide valuable insights into the attack paths identified within your environment, enabling you to prioritize risk mitigation strategies effectively and reduce the impact of potential threats.
 
 The new features include:
 
@@ -51,7 +51,7 @@ The new features include:
 - **Attack path dashboard**: Provides a high-level overview of all identified attack paths within the environment. This feature enables security teams to gain valuable insights into the types of paths identified, top entry points, target assets, and more, helping to prioritize risk mitigation efforts effectively.
 - **Choke points**: Highlights critical assets that multiple attack paths intersect, identifying them as key vulnerabilities within the environment. By focusing on these choke points, security teams can efficiently reduce risk by addressing high-impact assets, thus preventing attackers from progressing through various paths.
 - **Blast radius**: Allows users to visually explore the paths from a choke point. It provides a detailed visualization showing how the compromise of one asset could affect others, enabling security teams to assess the broader implications of an attack and prioritize mitigation strategies more effectively.
- 
+
 For more information, see [Overview of attack paths](work-attack-paths-overview.md).
 
 ## September 2024
@@ -75,7 +75,6 @@ The following predefined classification rule was added to the critical assets li
 This change now allows users who have been granted access to only some of the organization's devices to see the list of affected assets in metrics, recommendations, events, and initiative history within their specific scope.
 
 For more information, see [Prerequisites and support](prerequisites.md).
-
 
 ### Proactively manage your security posture
 
@@ -151,7 +150,7 @@ The following predefined classification rules were added to the critical assets 
 | **Azure Virtual Machine has a Critical Signed-in user**            | This rule applies to Azure Virtual Machines with a Critical user signed in protected by Defender for Endpoint with high or very high-criticality users signed in. |
 | **Azure Key Vaults with Many Connected Identities**          | This rule applies to Azure Key Vaults with high access compared to others, indicating critical workload usage. |
 
-For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md) 
+For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md)
 
 ## May 2024
 
