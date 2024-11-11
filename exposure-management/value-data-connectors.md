@@ -106,7 +106,7 @@ ExposureGraphEdges
 ```
 
 > [!NOTE]
-> When troubleshooting Advanced Hunting (AH) queries that don't work or yield no results, note that the `reportedBy` field is case-sensitive. For example, valid values include `rapid7`, `tenable`, etc.
+> When troubleshooting Advanced Hunting (AH) queries that don't work or yield no results, note that the "reportedBy" field is case-sensitive. For example, valid values include "rapid7", "tenable", etc.
 
 ### Attack paths
 
