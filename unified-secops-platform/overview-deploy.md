@@ -32,7 +32,7 @@ Microsoft Defender XDR unifies incident response by integrating key capabilities
 
 1. Microsoft Defender XDR automatically turns on when eligible customers with the required permissions visit Microsoft Defender portal. For more information, see [Turn on Microsoft Defender XDR](/defender-xdr/m365d-enable).
 
-1. Continue by deploying Microsoft Defender XDR services. We recommend using the following order: <!--fix order in overview-->
+1. Continue by deploying Microsoft Defender XDR services. We recommend using the following order:
 
     1. [Deploy Microsoft Defender for Identity](/defender-for-identity/deploy/quick-installation-guide).
     1. [Deploy Microsoft Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365?toc=%2Fdefender-office-365%2FTOC.json&bc=%2Fdefender-office-365%2Fbreadcrumb%2Ftoc.json).
