@@ -48,7 +48,7 @@ The *arg()* operator can be used to query across deployed Azure resources like s
 
 This feature was previously only available in log analytics in Microsoft Sentinel. In the Microsoft Defender portal, the `arg()` operator works over Microsoft Sentinel data (that is, Defender XDR tables are not supported). This allows users to use the operator in advanced hunting without needing to manually open a Microsoft Sentinel window. 
 
-Read [Query data in Azure Resource Graph by using arg()](/azure/azure-monitor/logs/azure-monitor-data-explorer-proxy#query-data-in-azure-resource-graph-by-using-arg-preview) for more details.
+Note that queries using the `arg()` operator return the first 1,000 records only. Read [Query data in Azure Resource Graph by using arg()](/azure/azure-monitor/logs/azure-monitor-data-explorer-proxy#query-data-in-azure-resource-graph-by-using-arg-preview) for more details.
 
 In the query editor, enter *arg("").* followed by the Azure Resource Graph table name. 
 
