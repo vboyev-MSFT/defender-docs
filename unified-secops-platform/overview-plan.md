@@ -24,7 +24,7 @@ Microsoft's unified SecOps platform combines services like Microsoft Defender XD
 
 The first step in planning your deployment is to select the services you want to use.
 
-As a basic prerequisite, you'll need both [Microsoft Defender XDR](defender-xdr/microsoft-365-defender) and [Microsoft Sentinel](/azure/sentinel/overview) to monitor and protect both Microsoft and non-Microsoft services and solutions, including both cloud and on-premises resources.
+As a basic prerequisite, you'll need both [Microsoft Defender XDR](/defender-xdr/microsoft-365-defender) and [Microsoft Sentinel](/azure/sentinel/overview) to monitor and protect both Microsoft and non-Microsoft services and solutions, including both cloud and on-premises resources.
 
 Deploy any of the following services to add security across your endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
@@ -43,30 +43,29 @@ Other services supported in the Microsoft Defender portal as part of Microsoft's
 
 | Service | Description |
 | ------- | ----------- |
-| [**Microsoft Security Exposure Management**](exposure-management/microsoft-security-exposure-management) | Provides a unified view of security posture across company assets and workloads, enriching asset information with security context. |
+| [**Microsoft Security Exposure Management**](/exposure-management/microsoft-security-exposure-management) | Provides a unified view of security posture across company assets and workloads, enriching asset information with security context. |
 | [**Microsoft Copilot for Security**](/copilot/security/microsoft-security-copilot) | Provides AI-driven insights and recommendations to enhance your security operations. |
 | [**Microsoft Defender for Cloud**](/azure/defender-for-cloud/) | Protects multi-cloud and hybrid environments with advanced threat detection and response. |
-| [**Microsoft Defender Threat Intelligence**](defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | Streamlines threat intelligence workflows by aggregating and enriching critical data sources to correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. |
+| [**Microsoft Defender Threat Intelligence**](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | Streamlines threat intelligence workflows by aggregating and enriching critical data sources to correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. |
 | [**Microsoft Entra ID Protection**](/entra/id-protection/overview-identity-protection) | Evaluates risk data from sign-in attempts to evaluate the risk of each sign-in to your environment. |
 
 ## Review service prerequisites
 
 Before you deploy Microsoft's unified security operations platform, review the prerequisites for each service you plan to use. The following table lists the services and links to their prerequisites:
 
-
 | Security service         | Link to prerequisites                  |
 | ------------------------ | --------------------------------------- |
-| **Required for unified SecOps**                                                   |                                                                                                              |
-| Microsoft Defender XDR and Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites)                                                                            |
-| Microsoft Sentinel                                       | [Prerequisites to deploy Microsoft Sentinel](/azure/sentinel/prerequisites)                                  |
-| **Optional Microsoft Defender XDR services**                |                                                 |
-| Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)                                                   |
-| Microsoft Defender for Endpoint                          | [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)                                                  |
-| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Enterprise IoT security](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint#prerequisites)                     |
-| Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)       |
-| Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)                                                         |
-| **Other services supported in the Microsoft Defender portal**             |                                                           |
-| Microsoft Security Exposure Management                   | [Prerequisites and support](/exposure-management/prerequisites)                                                                           |
+| **Required for unified SecOps**       |      |
+| Microsoft Defender XDR and Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) |
+| Microsoft Sentinel                                       | [Prerequisites to deploy Microsoft Sentinel](/azure/sentinel/prerequisites)  |
+| **Optional Microsoft Defender XDR services**              |                                                 |
+| Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)  |
+| Microsoft Defender for Endpoint                          | [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)   |
+| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Enterprise IoT security](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint#prerequisites)   |
+| Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)   |
+| Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   |
+| **Other services supported in the Microsoft Defender portal**   |   |
+| Microsoft Security Exposure Management                   | [Prerequisites and support](/exposure-management/prerequisites)  |
 | Microsoft Copilot for Security                           | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  |
 | Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. |
 | Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) |
@@ -107,6 +106,7 @@ Use Microsoft Entra role based access control (RBAC) to create and assign roles 
 The Microsoft Defender XDR Unified role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to control user permissions across several security solutions. For more information, see [Microsoft Defender XDR Unified role-based access control (RBAC)](/defender-xdr/manage-rbac).
 
 For the following services, use the different roles available, or create custom roles, to give you fine-grained control over what users can see and do. For more information, see:
+
 
 | Security service         | Link to role requirements                  |
 | ------------------------ | ------------------------------------------- |
