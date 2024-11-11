@@ -44,15 +44,19 @@ For editable functions, more options are available when you select the vertical 
 - **Delete** – deletes the function
 
 ### Use arg() operator for Azure Resource Graph queries (Preview)
-Preview customers can use the *arg()* operator to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. Read [Create alerts with Azure Resource Graph and Log Analytics](/azure/governance/resource-graph/alerts-query-quickstart?tabs=azure-resource-graph) for more details.
+The *arg()* operator can be used to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. 
+
+This feature was previously only available in log analytics in Microsoft Sentinel. In the Microsoft Defender portal, the `arg()` operator works over Microsoft Sentinel data (that is, Defender XDR tables are not supported). This allows users to use the operator in advanced hunting without needing to manually open a Microsoft Sentinel window. 
+
+Note that queries using the `arg()` operator return the first 1,000 records only. Read [Query data in Azure Resource Graph by using arg()](/azure/azure-monitor/logs/azure-monitor-data-explorer-proxy#query-data-in-azure-resource-graph-by-using-arg-preview) for more details.
 
 In the query editor, enter *arg("").* followed by the Azure Resource Graph table name. 
 
-```Kusto
-arg("").<Azure-Resource-Graph-table-name>
-```
+For example:
 
-You can then, for instance, filter a query that searches over Microsoft Sentinel data based on the results of an Azure Resource Graph query:
+:::image type="content" source="/defender-xdr/media/arg-operator2.png" alt-text="Screenshot of arg operator in advanced hunting." lightbox="/defender-xdr/media/arg-operator2.png":::
+
+You can also, for instance, filter a query that searches over Microsoft Sentinel data based on the results of an Azure Resource Graph query:
 
 ```Kusto
 arg("").Resources 
