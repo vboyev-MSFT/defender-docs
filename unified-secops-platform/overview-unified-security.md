@@ -47,7 +47,7 @@ The Defender portal provides a single, centralized view of organizational securi
 
 Free up analyst time as unified security dashboards enable analysts to cross organization silos, prioritize the most critical threats, and hunt effectively for attempted breaches.
 
-The following image shows the unified incident queue in Microsoft's unified SecOps platform.
+The following image shows the unified incident queue in Microsoft's unified SecOps platform, with incidents streaming in from ... <!--where?-->.
 
 :::image type="content" source="media/overview-unified-security/unified-incidents.png" alt-text="Screenshot of the unified incident queue that shows incidents with multiple service sources." lightbox="media/overview-unified-security/unified-incidents.png":::
 
@@ -89,7 +89,7 @@ Microsoft Security Copilot brings together the power of AI and human expertise t
     - Accelerate incident resolution with guided responses, automated remediation, and summary report generation.
     - Provide intelligent assistance with tailored prompts based on best practices that analyze malicious scripts and files, and suggest KQL queries.
 
-The following image shows the incidents integration of Microsoft Copilot in the Defender.
+The following image shows the integration of Microsoft Copilot in an incident page in the Defender portal.
 
 :::image type="content" source="media/overview-unified-security/security-copilot.png" alt-text="Screenshot that shows the incidents integration of Microsoft Copilot in the Defender." lightbox="media/overview-unified-security/security-copilot.png":::
 
