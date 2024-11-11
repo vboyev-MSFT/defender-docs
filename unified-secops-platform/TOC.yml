@@ -16,7 +16,7 @@
           href: /defender-xdr/microsoft-365-defender ##PLACEHOLDER LINK?
         - name: Microsoft Sentinel
           href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
-        - name: Microsoft Copilot in the Defender portal
+        - name: Microsoft Copilot
           href: /defender-xdr/security-copilot-in-microsoft-365-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Microsoft Security Exposure Management
           href: /security-exposure-management/microsoft-security-exposure-management?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
@@ -26,26 +26,13 @@
           href: /defender-for-iot/microsoft-defender-iot?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
     - name: Plan
       items:
-        - name: Zero trust security
-          items:
-          - name: Microsoft Sentinel and Microsoft Defender XDR
-            href: /security/operations/siem-xdr-overview?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender XDR
-            href: /defender-xdr/zero-trust-with-microsoft-365-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for Cloud
-            href: /azure/defender-for-cloud/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for Cloud Apps
-            href: /defender-cloud-apps/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for Identity
-            href: /defender-for-identity/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for IoT
-            href: /azure/defender-for-iot/organizations/concept-zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Plan for unified security operations ## NEW article that covers specific to USX all up and link out to service topics
-          href: /defender-xdr/prerequisites ## PLACEHOLDER LINK
+        - name: Plan your deployment
+          href: overview-plan.md
+          displayName: plan, zero trust
+        - name: US Government customers
+          href: gov-support.md
     - name: Deploy ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
-      Items:
-        - name: Connect Microsoft Sentinel to Microsoft Defender ## This is to be deleted out and replaced with Batami's article. PLACEHOLDER LINK.
-          href: /defender-xdr/microsoft-sentinel-onboard
+      href: overview-deploy.md
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
       items:
         - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
