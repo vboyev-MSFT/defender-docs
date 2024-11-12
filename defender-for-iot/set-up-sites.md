@@ -89,15 +89,15 @@ To remove any of the devices from this list:
 
 1. When you're finished, select **Next**. The confirmation box appears.
 
-    1. Select **Confirm** to make the changes to the list of devices to associate with this site and removal of any unchecked devices. Removing devices from the site will disable their automatic association with the site in the future. Once you remove a device from the site, it will no longer be automatically associated with any future site suggestions in the **Set up site** wizard, unless manually assigned to by an admin."
+    1. Select **Confirm** to change the list of devices to associate with this site and removal of any unchecked devices.
 
     1. If you haven't made changes, select **Skip**.
 
 >[!Important]
 >
->By removing the device's association with a site, its automatic site association based on network parameters will be disabled. If the device is relocated to another site, you'll need to manually update it's site settings.
+>By removing the device's association with a site, it's automatic site association based on network parameters will be disabled n the **Set up site** wizard. If the device is relocated to another site, you'll need to manually update it's site settings.
 >
->Once a site is deleted devices that were excluded in this process will again be included in future site suggestions.
+>Once a site is deleted, devices that were excluded in this process will again be included in future site suggestions.
 
 ## Review site details
 
