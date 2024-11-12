@@ -55,10 +55,10 @@ This article describes how admins can manage entries for email senders in the Mi
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/defender-xdr/manage-rbac) (If **Email & collaboration** \> **Defender for Office 365** permissions is :::image type="icon" source="media/scc-toggle-on.png" border="false"::: **Active**. Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Detection tuning (manage)** or **Authorization and settings/Security settings/Core security settings (read)**.
-  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) in the  **Exchange admin center** at <https://admin.exchange.microsoft.com> \> **Roles** \> **Admin Roles**:
     - *Add and remove entries from the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
-      - **Security Operator** (Tenant AllowBlockList Manager).
+      - **Security Operator** (Tenant AllowBlockList Manager role)
     - *Read-only access to the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Global Reader**
       - **Security Reader**
