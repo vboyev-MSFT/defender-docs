@@ -72,6 +72,6 @@ A range of solutions within Microsoft's unified security operations platform hel
 **Microsoft XDR**<br/><br/> Provides real-time threat protection, and some security posture capabilities for Microsft 365 environments, including, devices, identities, email, and collaboration apps. | Defender for Endpoint in Defender XDR reduces attack surfaces with features such as hardware-based isolation, application control, controlled folder access, network protection, exploit protection, and attack surface reduction rules.<br/><br/>- Defender Vulnerability Management continuously identifies vulnerabilities and misconfigurations, providing contextual insights into potential threats, and recommendations to mitigate them.
 
 
-\
+
  
 
