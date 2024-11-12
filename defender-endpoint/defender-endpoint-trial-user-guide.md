@@ -118,7 +118,7 @@ After you have onboarded devices, [run a detection test](run-detection-test.md).
 The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is a central location where you can view onboarded devices, security recommendations, detected threats, alerts, and more. To get started, see [Microsoft Defender portal](/defender-xdr/microsoft-365-defender-portal).   
 
 > [!IMPORTANT]
-> If you decide not to renew your trial, it's important to ensure that the device is offboarded prior to the expiration of the trial period.
+> If you decide not to renew your trial or purchase a subscription, make sure to offboard devices before your trial expires.
 
 ## See also
 
