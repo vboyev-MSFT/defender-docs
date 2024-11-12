@@ -84,10 +84,7 @@ From the graph, you can:
 
 - Hunt for entity information of a device, file, IP address, URL, user, email, mailbox, or cloud resource.
 
-> [!IMPORTANT]
-> Some information in this article relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
-
-### Go hunt (Preview)
+### Go hunt
 
 The ***go hunt*** option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
 
@@ -103,7 +100,10 @@ The resulting logs or alerts can be linked to an incident by selecting a results
 
 If the incident or related alerts were the result of an analytics rule you've set, you can also select ***Run query*** to see other related results.
 
-### Critical attack path (Preview)
+> [!IMPORTANT]
+> Some information in this article relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
+### Critical attack paths
 
 The incident graph also contains information about **critical attack paths**. These paths allows security analysts to identify what other entities an attacker is likely to target next. To view an attack path, you can click on an entity and select **View attack path**.
 
