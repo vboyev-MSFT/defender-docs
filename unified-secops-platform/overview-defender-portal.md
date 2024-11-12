@@ -15,12 +15,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Defender portal
+# Overview - Defender portal
 
-[Microsoft's unified security SecOps platform](overview-unified-security.md) combines Microsoft security services in the [Microsoft Defender portal](https://security.microsoft.com). The portal provides a single location to monitor, manage, and configure pre-breach and post-breach security 
+[Microsoft's unified security SecOps platform](overview-unified-security.md) combines Microsoft security services in the [Microsoft Defender portal](https://security.microsoft.com).
 
-- **Pre-breach security**: Visualize, monitor, assess, and improve security posture to reduce attack surfaces.
-- **Post-breach security**: Continuously monitor, detect, investigate, and respond to real-time and emerging cybersecurity threats.
+The portal provides a single location to monitor, manage, and configure pre-breach and post-breach security across on-premises and multicloud assets.
+
+- **Pre-breach security**: Visualize, monitor, assess, and improve asset security posture to reduce attack surfaces.
+- **Post-breach security**: Continuously monitor, detect, investigate, and respond to real-time and emerging cybersecurity threats against organizational assets.
 
 ## Portal services
 

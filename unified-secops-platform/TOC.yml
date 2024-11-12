@@ -16,7 +16,7 @@
           href: defender-xdr-portal.md
         - name: Microsoft Sentinel
           href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
-        - name: Microsoft Copilot in the Defender portal
+        - name: Microsoft Copilot
           href: /defender-xdr/security-copilot-in-microsoft-365-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Microsoft Security Exposure Management
           href: /security-exposure-management/microsoft-security-exposure-management?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
@@ -26,42 +26,19 @@
           href: /defender-for-iot/microsoft-defender-iot?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
     - name: Plan
       items:
-        - name: Zero trust security
-          items:
-          - name: Microsoft Sentinel and Microsoft Defender XDR
-            href: /security/operations/siem-xdr-overview?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender XDR
-            href: /defender-xdr/zero-trust-with-microsoft-365-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for Cloud
-            href: /azure/defender-for-cloud/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for Cloud Apps
-            href: /defender-cloud-apps/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for Identity
-            href: /defender-for-identity/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Microsoft Defender for IoT
-            href: /azure/defender-for-iot/organizations/concept-zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Plan for unified security operations ## NEW article that covers specific to USX all up and link out to service topics
-          href: /defender-xdr/prerequisites ## PLACEHOLDER LINK
+        - name: Plan your deployment
+          href: overview-plan.md
+          displayName: plan, zero trust
+        - name: US Government customers
+          href: gov-support.md
     - name: Deploy ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
-      Items:
-        - name: Connect Microsoft Sentinel to Microsoft Defender ## This is to be deleted out and replaced with Batami's article. PLACEHOLDER LINK.
-          href: /defender-xdr/microsoft-sentinel-onboard
+      href: overview-deploy.md
     - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
       items:
         - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
-          href: reduce-risk-overview.md 
+          href: reduce-risk-overview.md
         - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section. Or because this is going away, we just link in all the articles? Or put them in reference?
-          items:
-          - name: Overview
-            href: /defender-xdr/microsoft-secure-score.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: What's new
-            href: /defender-xdr/microsoft-secure-score-whats-new.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Assess your security posture
-            href: /defender-xdr/microsoft-secure-score-improvement-actions.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Track your score history and meet goals
-            href: /defender-xdr/microsoft-secure-score-history-metrics-trends.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Data storage and privacy
-            href: /defender-xdr/secure-score-data-storage-privacy.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
+          href: /defender-xdr/microsoft-secure-score.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
     - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
       href: /azure/sentinel/threat-detection ## PLACEHOLDER LINK
     - name: Hunt for threats ## Seperating this out because per PM hunting might happen in different scenarios. Also wanting it higher level as advanced hunting is one of the things highlighted for USX. 
@@ -69,63 +46,17 @@
       - name: Overview
         href: /defender-xdr/advanced-hunting-overview ## PLACEHOLDER - Need overview article about the hunting features across services. Advanced hunting, custom detections, hunts in Sentinel
       - name: Search with advanced hunting 
-        items:
-        - name: Overview
-          href: /defender-xdr/advanced-hunting-overview?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Advanced hunting in the Microsoft Defender portal
-          href: /defender-xdr/advanced-hunting-microsoft-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Guided and advanced modes
-          href: /defender-xdr/advanced-hunting-modes?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Generate KQL queries with Security Copilot
-          href: /defender-xdr/advanced-hunting-security-copilot?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Build hunting queries using guided mode
-          href: /defender-xdr/advanced-hunting-query-builder?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Use shared queries
-          href: /defender-xdr/advanced-hunting-shared-queries?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Work with query results
-          href: /defender-xdr/advanced-hunting-query-results?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Take action on query results
-          href: /defender-xdr/advanced-hunting-take-action?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Hunt for ransomware
-          href: /defender-xdr/advanced-hunting-find-ransomware?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Learn the query language
-          href: /defender-xdr/advanced-hunting-query-language?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Get expert training
-          href: /defender-xdr/advanced-hunting-expert-training?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
+        href: /defender-xdr/advanced-hunting-overview?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json        
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
         - name: Overview
           href: /unified-secops-platform/incidents-alerts-overview ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
         - name: Correlation and merging
           href: /unified-secops-platform/alerts-incidents-correlation-merging ## YL: replaces /defender-xdr/alerts-incidents-correlation
-        - name: Manage incidents
-          href: /unified-secops-platform/manage-incidents
-        - name: Prioritize incidents
-          href: /unified-secops-platform/prioritize-incidents
-        - name: Export incidents queue
-          href: /unified-secops-platform/export-incidents-queue
-        - name: Investigate alerts
-          href: /defender-xdr/investigate-alerts?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Investigate incidents in Copilot for Security ## This article is specific to Sentinel in the context of using outside of USX and with XDR in USX. We don't think it applies to Sentinel only but need to confirm with PM.  Austin thought title w/o mentioning Sentinel is misleading. We might need to leave this out of TOC or as part of plan/deploy to integrate Sentinel w/ Copilot features.
           href: /azure/sentinel/sentinel-security-copilot?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Investigate with Microsoft Copilot in Microsoft Defender ## Copied entire section from XDR TOC
-          items:
-          - name: Overview
-            href: /defender-xdr/security-copilot-in-microsoft-365-defender.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Summarize incidents
-            href: /defender-xdr/security-copilot-m365d-incident-summary.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Run script analysis
-            href: /defender-xdr/security-copilot-m365d-script-analysis.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Analyze files
-            href: /defender-xdr/copilot-in-defender-file-analysis.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Generate device summaries
-            href: /defender-xdr/copilot-in-defender-device-summary.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Use guided responses
-            href: /defender-xdr/security-copilot-m365d-guided-response.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Generate KQL queries
-            href: /defender-xdr/advanced-hunting-security-copilot.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Create incident reports
-            href: /defender-xdr/security-copilot-m365d-create-incident-report.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
+          href: /defender-xdr/security-copilot-in-microsoft-365-defender.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Investigate entities
           items: 
           - name: Overview
@@ -138,16 +69,10 @@
             href: /defender-xdr/entity-page-ip.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
     - name: Respond to threats
       items:
-        - name: Overview
+        - name: Overview ## Need to replace with different topic. Need Yechiels input. 
           href: /defender-xdr/incidents-overview?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Automatic attack disruption 
-          items:
-          - name: Overview
-            href: /defender-xdr/automatic-attack-disruption?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: Configure capabilities
-            href: /defender-xdr/configure-attack-disruption?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-          - name: View results
-            href: /defender-xdr/autoad-results?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
+          href: /defender-xdr/automatic-attack-disruption?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Review remediations in the action center
           href: /defender-xdr/m365d-action-center?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
     - name: Optimize your security operations 
