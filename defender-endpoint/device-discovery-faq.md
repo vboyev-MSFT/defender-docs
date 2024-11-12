@@ -15,7 +15,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 11/12/2024
 ---
 
 # Device discovery frequently asked questions
