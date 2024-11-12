@@ -6,7 +6,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 10/17/2024
+ms.date: 11/13/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,6 +29,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## November 2024
+
+- (GA) Microsoft Defender XDR customers can now export incident data to PDF. Use the exported data to easily capture and share incident data to other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
+- (GA) The [***go hunt***](investigate-incidents.md#go-hunt) action from the attack story graph and the **last update time** column in the [incident queue](incident-queue.md#incident-queue) are now generally available.
 
 ## October 2024
 

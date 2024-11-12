@@ -18,7 +18,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/21/2024
+ms.date: 11/13/2024
 appliesto: 
 - Microsoft Defender XDR
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -146,11 +146,6 @@ You can also add your own comments using the comment box available within the ac
 :::image type="content" source="/defender/media/incidents-queue/fig5-res-manageincidents.png" alt-text="Screenshot highlighting the comment box from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig5-manageincidents.png":::
 
 ## Export incident data to PDF
-
-> [!IMPORTANT]
-> Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> The export incident data feature is currently available to Microsoft Defender XDR and Microsoft unified security operations center (SOC) platform customers with the Microsoft Copilot for security license.
 
 You can export an incident's data to PDF through the **Export incident as PDF** function and save it into PDF format. This function allows security teams to review an incident's details offline at any given time.
 

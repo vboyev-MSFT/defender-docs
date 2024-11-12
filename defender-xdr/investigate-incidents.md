@@ -84,7 +84,9 @@ From the graph, you can:
 
 - Hunt for entity information of a device, file, IP address, or URL.
 
-The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
+### Go hunt
+
+The ***go hunt*** action takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
 
   - See all available queries – the option returns all available queries for the entity type you're investigating.
   - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.
@@ -96,7 +98,7 @@ The resulting logs or alerts can be linked to an incident by selecting a results
 
 :::image type="content" source="/defender/media/investigate-incidents/fig2-gohunt-attackstory.png" alt-text="Highlighting the link to incident option in go hunt query results" lightbox="/defender/media/investigate-incidents/fig2-gohunt-attackstory.png":::
 
-If the incident or related alerts were the result of an analytics rule you've set, you can also select **Run query** to see other related results.
+If the incident or related alerts were the result of an analytics rule you've set, you can also select ***Run query*** to see other related results.
  
 ## Summary
 
