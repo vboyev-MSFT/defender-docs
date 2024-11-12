@@ -31,6 +31,7 @@ You can also get product updates and important notifications through the [messag
 
 ## November 2024
 - (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
+- (Preview) Device events ingested into Microsoft Sentinel are now visible in the *Timeline* tab on the [Device entity page](./entity-page-device.md) in the Defender portal, in addition to remaining visible on the *Sentinel events* tab.
 
 ## October 2024
 
