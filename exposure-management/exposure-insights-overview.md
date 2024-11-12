@@ -51,12 +51,12 @@ Security Exposure Management provides initiatives that currently include:
 
 ### Initiative elements
 
-**Element** | **Goal** | **Details**
---- | --- | ---
-**Initiative** | Initiatives help you to gather security projects that have similar resources and workloads, and to assess and remediate the security posture of each project.| Each security initiative provides an all-up score that provides a fast measure of how strong security posture is for the initiative at the current point in time.<br/><br/> The all-up score also provides a target score indicator, the number of critical assets affected, and shows how the score has moved over the last 24 hours.
-**Metric** | Metrics in security initiatives help you to measure exposure risk for different areas within the initiative.| Each metric gathers together one or more recommendations for similar assets.<br/><br/>Metrics can be associated with one or more initiatives.<br/><br/>**Important**: Threat analytics initiatives don't have metrics. They have recommendations only.
-**Recommendations** |Security recommendations help you to understand the compliance state for a specific security initiative.  | All security initiatives have recommendations associated with them.<br/><br/>Recommendations can be associated with one or more initiatives.<br/><br/> Within initiatives, recommendations are assigned a compliance state.
-**Events** | Events help you to  monitor initiative changes.  | Events notify you when there's a drop in an all-up initiative score or metric score, indicating that exposure risk grew.
+|**Element** | **Goal** | **Details**|
+|--- | --- | ---|
+|**Initiative** |Initiatives help you to gather security projects that have similar resources and workloads, and to assess and remediate the security posture of each project.|Each security initiative provides an all-up score that provides a fast measure of how strong security posture is for the initiative at the current point in time.<br/><br/>The all-up score also provides a target score indicator, the number of critical assets affected, and shows how the score has moved over the last 24 hours.|
+|**Metric** |Metrics in security initiatives help you to measure exposure risk for different areas within the initiative.|Each metric gathers together one or more recommendations for similar assets.<br/><br/>Metrics can be associated with one or more initiatives.<br/><br/>**Important**: Threat analytics initiatives don't have metrics. They have recommendations only.|
+|**Recommendations** |Security recommendations help you to understand the compliance state for a specific security initiative.  |All security initiatives have recommendations associated with them.<br/><br/>Recommendations can be associated with one or more initiatives.<br/><br/>Within initiatives, recommendations are assigned a compliance state.|
+|**Events** |Events help you to  monitor initiative changes.  |Events notify you when there's a drop in an all-up initiative score or metric score, indicating that exposure risk grew.|
 
 ## Working with initiatives
 
