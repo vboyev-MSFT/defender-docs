@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/20/2024
+ms.date: 11/04/2024
 ---
 
 # Overview - Exposure insights
@@ -88,6 +88,12 @@ In some cases, metrics display grayed out because the underlying data for the me
 
 Grayed out metrics aren't considered for score calculation.
 
+> [!NOTE]
+> The versioning feature in Exposure Management provides proactive notifications to users about upcoming version updates, providing advanced visibility into the expected metric changes and their impact on related initiatives.
+> A dedicated side panel offers more details about the update, including the expected date of the change, release notes, and current and new metric values, as well as changes to the related initiatives' scores.
+> Users can share feedback about the update directly through the platform.
+> The information is dynamic and may vary depending on when it is accessed.
+
 ## Working with recommendations
 
 Security Exposure Management ingests security recommendations from multiple sources, including Microsoft Defender for Cloud running the  [Defender for Cloud Security Posture Management (CSPM) plan](/azure/defender-for-cloud/concept-cloud-security-posture-management), [Microsoft Secure Score](/defender-xdr/microsoft-secure-score), Microsoft threat analytics, and other Microsoft workloads. Security Exposure Management integrates all of these recommendations into a single security catalog.
@@ -103,7 +109,7 @@ Security Exposure Management categorizes recommendations by compliance status, a
 - **Mitigated by organization**: Displays when steps to mitigate recommendations were taken elsewhere, and Security Exposure Management can't know whether recommendations are compliant. For example, by changing a status in Secure score.
 - **Not available**: Means there isn't enough information to determine the compliance status.
 
-:::image type="content" source="./media//exposure-insights-overview/recommendation-ransomeware-advanced-protection.png" alt-text="Screenshot of the ransomware advanced protection recommendation details ":::
+:::image type="content" source="./media//exposure-insights-overview/recommendation-ransomware-advanced-protection.png" alt-text="Screenshot of the ransomware advanced protection recommendation details ":::
 
 ### Secure score
 
@@ -145,9 +151,9 @@ When you drill down into a specific change, you can see the percentage effects o
 - **Metric removed** - The metric is no longer relevant for that specific initiative. For instance, if a better suggestion is introduced or it becomes irrelevant.
 - **Metric depreciated** - The metric is removed globally.
 
-Selecting the metric that changed provides more details about the change. For instance, it might display the new weight of a property change, or the number of affected assets before or after the change.
+Selecting the metric that changed provides more details about the change. For instance, it might display the new weight of a property change, and the number of affected assets before and after the change. It also offers a dropdown for changes to exposed assets, displaying up to the top 100 assets and indicating whether the asset exposure was added or removed.
 
-:::image type="content" source="media/exposure-insights-overview/initiatives-history-details.png" alt-text="Screenshot of the metric change side panel in the Initiatives history tab." lightbox="media/exposure-insights-overview/initiatives-history-details.png":::
+:::image type="content" source="media/exposure-insights-overview/Initiatives-history-updated.png" alt-text="Screenshot of initative history side panel" lightbox="media/exposure-insights-overview/Initiatives-history-updated.png":::
 
 You can't control the metric or score changes in advance.
 
