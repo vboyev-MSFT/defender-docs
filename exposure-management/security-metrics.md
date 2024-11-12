@@ -43,22 +43,27 @@ Security Exposure Management is currently in public preview.
     - **State**: Current state of metric.
     - **Last state update**: The last time metric state was updated.
     - **Current value**: Current exposure score from significant to no/low exposure.
-    - **Affected items**. The number of affected items in the total items.
-    - **Weight**: Metric weight or maximum metric score possible.
+   - **Affected assets**. The number of affected assets out of the total assets.
+      
+   - **Weight**: Metric weight which affects the metric impact on initiative score.
+      
     - **Score impact**: Possible score gain.
     - **Security recommendations**: Recommendations associated with the metric.
 
 ## Edit the metric value
 
-You can customize metric values for your business needed.
+You can customize metric weight according to your business needs.
 
-1. To edit the metric value, select a specific metric.
-1. In the metric properties page, select weight, change the value, and apply.
-1. To accept the risk described by the metric, set the weight to zero.
+1. To edit the metric weight, select a specific metric.
+
+1. In the metric properties side panel, select Edit metric, then change the metric weight and apply.
+
+1. To accept the risk described by the metric, set the metric weight to Risk accepted.
 
 ## Next steps
 
 - [Priority exposure items](exposure-insights-overview.md)
 - [Security events](security-events.md)
+
 - [Security recommendations](security-recommendations.md)
 - [Review attack paths](work-attack-paths-overview.md)
