@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 10/08/2024
+ms.date: 11/12/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
