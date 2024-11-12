@@ -48,7 +48,7 @@ Device entities can be found in the following areas:
 - Advanced hunting queries
 - Action center
 
-You can select devices whenever you see them in the portal to open the device's entity page, which displays more details about the device. For example, you can see the details of devices listed in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Devices**.
+You can select devices whenever you see them in the portal to open the device's entity page, which displays more details about the device. For example, you can see the details of devices listed in the alerts of an incident in the Microsoft Defender portal at **Investigation & response > Incidents & alerts > Incidents > *incident* > Assets > Devices**.
 
 :::image type="content" source="/defender/media/entity-page-device/device-incident-assets.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal.":::
 
@@ -134,6 +134,8 @@ You can govern the time period for which events are displayed by sliding the bor
 You can export up to seven days' worth of events to a CSV file, for download.
 
 Drill down into the details of individual events by selecting and event and viewing its details in the resulting flyout panel. See [Event details](#event-details) below.
+
+As of November 2024, if you onboarded Microsoft Sentinel to the Defender portal, device activity events ingested to Microsoft Sentinel also appear in this timeline.
 
 > [!NOTE]
 > For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
@@ -230,15 +232,17 @@ Selecting an item opens a flyout that links to the update.
 
 ### *Sentinel events* tab
 
-If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the device entity page. This tab imports the [Host entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
+If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the device entity page. This tab imports the [Host entity page from Microsoft Sentinel](/azure/sentinel/entity-pages), and displays the following sections:
 
-### Sentinel timeline
+#### Sentinel timeline
 
 This timeline shows alerts associated with the device entity, known in Microsoft Sentinel as the *host* entity. These alerts include those seen on the **Incidents and alerts** tab and those created by Microsoft Sentinel from third-party, non-Microsoft data sources.
 
-This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from other investigations that reference this user entity, user activity events from external data sources, and unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
+This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from other investigations that reference this user entity, device activity events from external data sources, and unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
 
-### Insights
+As of November 2024, device activity events that appear on this timeline also appear on the main [Timeline tab](#timeline-tab).
+
+#### Insights
 
 Entity insights are queries defined by Microsoft security researchers to help you investigate more efficiently and effectively. These insights automatically ask the big questions about your device entity, providing valuable security information in the form of tabular data and charts. The insights include data regarding sign-ins, group additions, process executions, anomalous events and more, and include advanced machine learning algorithms to detect anomalous behavior.
 
