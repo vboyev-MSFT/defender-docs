@@ -43,7 +43,7 @@ For editable functions, more options are available when you select the vertical 
 - **Edit details** – opens the function side pane to allow you to edit details about the function (except folder names for Sentinel functions)
 - **Delete** – deletes the function
 
-### Use arg() operator for Azure Resource Graph queries (Preview)
+### Use arg() operator for Azure Resource Graph queries
 The *arg()* operator can be used to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. 
 
 This feature was previously only available in log analytics in Microsoft Sentinel. In the Microsoft Defender portal, the `arg()` operator works over Microsoft Sentinel data (that is, Defender XDR tables are not supported). This allows users to use the operator in advanced hunting without needing to manually open a Microsoft Sentinel window. 
