@@ -60,6 +60,5 @@ You can customize metric weight according to your business needs.
 
 - [Priority exposure items](exposure-insights-overview.md)
 - [Security events](security-events.md)
-
 - [Security recommendations](security-recommendations.md)
 - [Review attack paths](work-attack-paths-overview.md)
