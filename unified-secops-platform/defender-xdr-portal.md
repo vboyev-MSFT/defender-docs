@@ -21,7 +21,7 @@ Microsoft Defender XDR is part of Microsoft's unified SecOps platform, providing
 
 Defender XDR combines Microsoft security services into the [Microsoft Defender portal](https://security.microsoft.com). 
 
-*Service** | **Details**
+**Service** | **Details**
 --- | ---
 **[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources. 
 **[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
