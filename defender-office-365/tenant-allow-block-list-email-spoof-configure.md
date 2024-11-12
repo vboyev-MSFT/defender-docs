@@ -58,7 +58,7 @@ This article describes how admins can manage entries for email senders in the Mi
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - *Add and remove entries from the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
-      - **Security Operator** (Tenant AllowBlockList Manager).
+      - **Security Operator** (Tenant AllowBlockList Manager) - **Exchange Online Portal** \> **Roles** \> **Admin Roles**
     - *Read-only access to the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Global Reader**
       - **Security Reader**
