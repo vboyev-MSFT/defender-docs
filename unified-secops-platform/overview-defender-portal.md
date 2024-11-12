@@ -25,7 +25,7 @@ The portal provides a single location to monitor, manage, and configure pre-brea
 - **Post-breach security**: Continuously monitor, detect, investigate, and respond to real-time and emerging cybersecurity threats against organizational assets.
 
 
-:::image type="content" source="media/overview-defender-portal/defender-portal.png" alt-text="Screenshot of Microsoft Defender portal landing page" lightbox="media/overview-defender-portal/defender-portal.png":::
+:::image type="content" source="media/defender-portal.png" alt-text="Screenshot of Microsoft Defender portal landing page" lightbox="media/overview-defender-portal/defender-portal.png":::
 
 
 ## Portal services
