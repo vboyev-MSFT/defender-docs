@@ -148,9 +148,17 @@ Custom tags add information to lend context to an incident. For example, a tag c
 
 1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
 
-1. In the **Incident tags** field, begin typing the name of the tag you want to apply. As you type, a list of previously used and selected tags appears. If you see the tag you want to apply in the list, select it.
+1. In the **Incident tags** field, begin typing the name of the tag you want to apply. As you type, a list of previously used and selected tags appears. If you see the tag you want to apply in the list, select it. 
 
-The option to select from a list of previously used and selected tags appear after you start typing.
+    :::image type="content" source="media/manage-incidents/create-incident-tag.png" alt-text="Screenshot showing how to create an incident tag in the Manage incidents pane.":::
+
+    If you typed a tag name that hasn't been used before, select the last entry in the list, which is the text you typed followed by "(Create new)."
+
+    :::image type="content" source="media/manage-incidents/select-tag.png" alt-text="Screenshot showing how to select a tag to apply to an incident in the Manage incidents pane.":::
+
+    The tag then appears as a label inside the Incident tags field. Repeat this step to add more tags as you like.
+
+    :::image type="content" source="media/manage-incidents/selected-tag.png" alt-text="Screenshot showing how a selected tag appears in the Incident tags field.":::
 
 An incident can have system tags and/or custom tags with certain color backgrounds. Custom tags use the white background while system tags typically use red or black background colors. System tags identify the following in an incident:
 
@@ -164,7 +172,7 @@ An incident can have system tags and/or custom tags with certain color backgroun
 
 ### Change the incident status
 
-
+Incidents begin life with a status of **Active**. When you're working on an incident, change the **Status** to **In progress**.
 
 ## Incident resolutions
 
