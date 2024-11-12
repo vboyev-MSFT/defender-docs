@@ -43,7 +43,7 @@ This article shows you how to perform various incident management tasks associat
 - [Add incident tags](#add-incident-tags).
 - [Change the incident status](#change-the-incident-status).
 
-**Incident resolution:**
+**Incident investigation and resolution:**
 - [Specify an incident's classification](#specify-the-classification).
 - [Resolve an incident](#resolve-an-incident).
 - [Add comments to an incident](#add-comments).
@@ -174,7 +174,7 @@ An incident can have system tags and/or custom tags with certain color backgroun
 
 Incidents begin life with a status of **Active**. When you're working on an incident, change the **Status** to **In progress**.
 
-## Incident resolutions
+## Incident investigation and resolution
 
 The following management tasks are closely associated with incident resolution, though they can be performed at any time.
 
@@ -192,7 +192,7 @@ On both the incidents queue page and the incident page of a resolved incident, y
 
 Resolving an incident also resolves all the linked and active alerts related to the incident. An incident that isn't resolved displays as **Active**.
 
-### Specify the classification
+### Specify the incident's classification
 
 From the **Classification** field, you specify whether the incident is:
 
@@ -203,13 +203,15 @@ From the **Classification** field, you specify whether the incident is:
 
 Classifying incidents and specifying their status and type helps tune Microsoft Defender XDR to provide better detection determination over time.
 
-## Add comments
+### Add comments to an incident
 
 You can add multiple comments to an incident with the **Comment** field. The comment field supports text and formatting, links, and images. Each comment is limited to 30,000 characters.
 
 All comments are added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
-## Activity log
+## Incident logging and reporting
+
+### View the activity log of an incident
 
 The **Activity log** displays a list of all the comments and actions performed on the incident, known as *Audits and comments*. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. The activity log is available from the **Activity log** option on the incident page or on the incident side pane.
 
@@ -223,7 +225,7 @@ You can also add your own comments using the comment box available within the ac
 
 :::image type="content" source="/defender/media/incidents-queue/fig5-res-manageincidents.png" alt-text="Screenshot highlighting the comment box from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig5-manageincidents.png":::
 
-## Export incident data to PDF
+### Export incident data to PDF
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
