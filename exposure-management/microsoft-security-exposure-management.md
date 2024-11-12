@@ -67,6 +67,25 @@ Currently, Security Exposure Management consolidates security posture informatio
 
 In addition to Microsoft services, Security Exposure Management will connect to non-Microsoft data sources over time.
 
+## How to get Microsoft Security Exposure Management
+
+Exposure Management is available in the Microsoft Defender portal at [https://security.microsoft.com](https://security.microsoft.com/)
+
+Access to the exposure management blade and features in the Microsoft Defender portal is available with any of the following licenses:
+
+- Microsoft 365 E5 or A5
+- Microsoft 365 E3
+- Microsoft 365 E3 with the Microsoft Enterprise Mobility + Security E5 add-on
+- Microsoft 365 A3 with the Microsoft 365 A5 security add-on
+- Microsoft Enterprise Mobility + Security E5 or A5
+- Microsoft Defender for Endpoint (Plan 1 and 2)
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Office 365 (Plans 1 and 2)
+- Microsoft Defender Vulnerability Management  
+
+Integration of data from the above tools, as well as other Microsoft security tools like Microsoft Defender for Cloud, Microsoft Defender Cloud Security Posture Management, and Microsoft Defender External Attack Surface Management, is available with these licenses.
+
 ## Next steps
 
 Review [prerequisites](prerequisites.md) to get started with Security Exposure Management.
