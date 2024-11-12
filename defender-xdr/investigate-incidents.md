@@ -1,6 +1,6 @@
 ---
-title: Investigate incidents in Microsoft Defender XDR
-description: Investigate incidents related to devices, users, and mailboxes.
+title: Investigate incidents in the Microsoft Defender portal
+description: Investigate incidents on various assets from correlated signals of various Defender services and other Microsoft security products like Microsoft Sentinel.
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
@@ -16,20 +16,19 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 12/04/2023
+ms.date: 11/13/2024
+appliesto:
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Investigate incidents in Microsoft Defender XDR
+# Investigate incidents in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
+The Microsoft Defender portal presents correlated alerts, assets, investigations, and evidence from across all your assets into an incident to give you a comprehensive look into the entire breadth of an attack.
 
-- Microsoft Defender XDR
-
-Microsoft Defender XDR aggregates all related alerts, assets, investigations, and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
-
-Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
+Within an incident, you analyze the alerts, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
 ## Initial investigation
 
