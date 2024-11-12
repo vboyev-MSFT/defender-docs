@@ -29,11 +29,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## November 2024
+- (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
 
 ## October 2024
 
 - [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
-- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries-preview), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
+- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## September 2024
 
@@ -337,7 +339,7 @@ The security operations team can view all actions pending approval, and the stip
 
 ## June 2021
 
-- (Preview) [View reports per threat tags](threat-analytics.md#view- reports-by-category)
+- (Preview) [View reports per threat tags](threat-analytics.md#view-reports-by-category)
 
   Threat tags help you focus on specific threat categories and review the most relevant reports.
 

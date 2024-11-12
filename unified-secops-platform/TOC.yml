@@ -13,7 +13,7 @@
         - name: Overview
           href: overview-defender-portal.md
         - name: Microsoft Defender XDR
-          href: /defender-xdr/microsoft-365-defender ##PLACEHOLDER LINK?
+          href: defender-xdr-portal.md
         - name: Microsoft Sentinel
           href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json&tabs=defender-portal
         - name: Microsoft Copilot
