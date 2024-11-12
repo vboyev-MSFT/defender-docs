@@ -47,7 +47,9 @@ Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 
 **What's new**
 
-- Stay tuned
+- Support added for hardened installations on non-executable /var partitions. AV signatures will be installed to /opt/microsoft/mdatp/definitions.noindex by default from this release instead of /var/opt/microsoft/mdatp/definitions.noindex. During upgrades the installer will attempt migrating older definitions to the new path unless it detects that the path is already customized (using 'mdatp definitions path set').
+
+- From this release, executable permission for /var/log are no longer mandatory. If these permissions are not available, log files will automatically be redirected to /opt
 
 </details>
 
@@ -1614,10 +1616,9 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
   <p>What's new</b></p>
 
 - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-   - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+
+  - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
    - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
   - Performance improvements & bug fixes
-
-   </details>
 
 </details><!--This </details> closes "2021 releases"-->
