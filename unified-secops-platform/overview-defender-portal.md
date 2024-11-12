@@ -239,7 +239,7 @@ In the portal, you can start with a general security report, and branch into spe
 
 ## Trials
 
-Review available trial solutions, design to help you make decisions about upgrades and purchases.
+Review trial solutions, design to help you make decisions about upgrades and purchases.
 
 :::image type="content" source="media/trials-page.png" alt-text="Screenshot of the  page iMicrosoft Security Trials page in the Microsoft Defender portal" lightbox="media/trials-page.png":::
 
