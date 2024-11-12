@@ -36,7 +36,7 @@ Customer data collected from integrated services includes *processed data*, such
 
 ## Data storage location
 
-Microsoft Defender XDR operatins in Microsoft Azure data centers in the following geographical regions:
+Microsoft Defender XDR operations in Microsoft Azure data centers in the following geographical regions:
 
 - **European Union**: North Europe and West Europe
 - **United Kingdom**: UK South and UK West
@@ -50,7 +50,7 @@ Once created, the Microsoft Defender XDR tenant isn't movable to a different reg
 Customer data stored by integrated services might also be stored in the following locations:
 
 - The original location for the relevant service.
-- A region defined by data storage rules of an integrated serice, if Microsoft Defender XDR shares data with that service.
+- A region defined by data storage rules of an integrated service, if Microsoft Defender XDR shares data with that service.
 
 ## Data retention
 
@@ -58,9 +58,9 @@ Microsoft Defender XDR data is retained for 180 days, and is visible across the 
 
 In the Microsoft Defender portal's **Advanced hunting** page, data is accessible via queries for only 30 days, unless it's streamed through [Microsoft's unified security operations platform with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration?toc=%2Fdefender-xdr%2Ftoc.json&bc=%2Fdefender-xdr%2Fbreadcrumb%2Ftoc.json&tabs=defender-portal), where retention periods may be longer.
 
-Data continues to be retained and visible, even when a license is under a grace period or in supspended mode. At the end of any grace period or suspension, and no later than 180 days from a contract termination or expiration, data is deleted from Microsoft's systems and is unrecoverable.
+Data continues to be retained and visible, even when a license is under a grace period or in suspended mode. At the end of any grace period or suspension, and no later than 180 days from a contract termination or expiration, data is deleted from Microsoft's systems and is unrecoverable.
 
-Most Defender services also have a default data retention period of 180 days. More information on data retention period per product are found in [relevant service docs](#related-content).
+Most Defender services also have a default data retention period of 180 days. More information on data retention period per product is found in [relevant service docs](#related-content).
 
 ## Data sharing
 
