@@ -54,7 +54,7 @@ Users with provisioned access to [Microsoft Security Copilot](/copilot/security/
 To perform any of the response actions, users must have the following permissions for Microsoft Defender for Cloud in the Microsoft Defender XDR unified role-based access control:
 
 |Permission name|Level|
-|:---:|:---:|
+|:---|:---|
 |Alerts|Manage|
 |Response|Manage|
 
