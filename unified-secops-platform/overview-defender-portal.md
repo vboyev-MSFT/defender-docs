@@ -42,7 +42,11 @@ The Defender portal combines a number of Microsoft security services.
 
 ## Accessing the portal
 
-Access to the Defender portal can be controlled with a range of permission systems.
+In the **Permissions** page, control access to the Defender portal. 
+
+:::image type="content" source="/defender/media/microsoft-365-defender-portal/defender-portal-permissions.png" alt-text="Screenshot of the permissions page in the Microsoft Defender portal" lightbox="/defender/media/microsoft-365-defender-portal/defender-portal-permissions.png":::
+
+Access to the Defender portal can be controlled with a range of permission systems. 
 
 **Role type** | **Details**
 --- | ---
@@ -50,9 +54,7 @@ Access to the Defender portal can be controlled with a range of permission syste
 [Custom roles](/defender-xdr/custom-roles) | Allow access to specific data, tasks, and features using custom roles. Custom roles are more granular, and can be used together with Entra global roles.
 [Unified RBAC](/defender-xdr/manage-rbac) | Unified RBAC provides a single permissions management model for controlling user permissions in the Defender portal, and across services within the portal.
 
-Portal permissions are configured and managed on the Permissions page of the Defender portal.
 
-:::image type="content" source="/defender/media/microsoft-365-defender-portal/defender-portal-permissions.png" alt-text="Screenshot of the permissions page in the Microsoft Defender portal" lightbox="/defender/media/microsoft-365-defender-portal/defender-portal-permissions.png":::
 
 ### Microsoft Sentinel permissions
 
@@ -60,7 +62,7 @@ When you connect Microsoft Sentinel to the Defender portal, existing Azure RBAC 
 
 ## Working in the portal
 
-When you open the Defender portal, you see the services included in your subscriptions, and settings based on your portal permissions.
+On the **Home** page, your view is determined by the services included in your subscriptions, and access settings based on your portal permissions.
 
 :::image type="content" source="media/home-page.png" alt-text="Screenshot of the Home page in the Microsoft Defender portal" lightbox="media/home-page.png":::
 
@@ -93,7 +95,7 @@ In **Exposure management**, review the overall state of your security posture, e
 
 ## Investigation and response 
 
-The Defender portal provides a single location for investigating incidents and responding to threats across the enterprise.
+The **Investigation and response** section provides a single location for investigating incidents and responding to threats across the enterprise.
 
 
 ### Investigate incidents and alerts
@@ -130,6 +132,8 @@ Threat protection features result in remediation actions. Actions might be autom
 
 ## Partner catalog
 
+The **Partner catalog** section provides information about Defender partners.
+
 :::image type="content" source="media/technology-partners-page.png" alt-text="Screenshot of the Technology Partners page in the Microsoft Defender portal" lightbox="media/technology-partners-page.png":::
 
 The Defender portal has a couple of kinds of partner integration:
@@ -139,7 +143,7 @@ The Defender portal has a couple of kinds of partner integration:
 
 ## Threat intelligence
 
-In the Defender portal, you can get direct visibility into active and ongoing threat campaigns, and access threat intelligence provided by Defender Threat Intelligence.
+In the **Threat intelligence** section of the portal, get direct visibility into active and ongoing threat campaigns, and access threat intelligence provided by the Defender Threat Intelligence platform.
 
 :::image type="content" source="media/threat-analytics-page.png" alt-text="Screenshot of the Threat Analytics page in the Microsoft Defender portal" lightbox="media/threat-analytics-page.png":::
 
@@ -152,7 +156,7 @@ In the Defender portal, you can get direct visibility into active and ongoing th
 
 ## Assets
 
-The Assets page provides a unified view of all your discovered and protected assets, including devices, users, mailboxes, and apps. You can see the total number of assets of each types, and drill down into specific asset details.
+The **Assets** page provides a unified view of all your discovered and protected assets, including devices, users, mailboxes, and apps. You can see the total number of assets of each types, and drill down into specific asset details.
 
 :::image type="content" source="media/device-inventory-page.png" alt-text="Screenshot of the Device Inventory page in the Microsoft Defender portal" lightbox="media/device-inventory-page.png":::
 
@@ -165,7 +169,7 @@ The Assets page provides a unified view of all your discovered and protected ass
 
 ## Microsoft Sentinel
 
-Onboarding Microsoft Sentinel to Defender XDR in the Defender portal creates a unified platofrm that brings together full Microsoft Sentinel and Defender XDR capabilities.
+Access Microsoft Sentinel capabilities in the Defender portal with an unified platform that brings together full Microsoft Sentinel and Defender XDR capabilities.
 
 :::image type="content" source="media/sentinel-search-page.png" alt-text="Screenshot of the Sentinel Search page in the Microsoft Defender portal" lightbox="media/sentinel-search-page.png":::
 
@@ -178,7 +182,7 @@ Onboarding Microsoft Sentinel to Defender XDR in the Defender portal creates a u
 
 ## Identities
 
-In the Identities section of the Defender portal, monitor user and account health, and proactively monitor and manage identity-related risks.
+In the **Identities** section of the Defender portal, monitor user and account health, and proactively monitor and manage identity-related risks.
 
 :::image type="content" source="media/identity-dashboard.png" alt-text="Screenshot of the Identity Dashboard page in the Microsoft Defender portal" lightbox="media/identity-dashboard.png":::
 
@@ -188,7 +192,7 @@ In the Identities section of the Defender portal, monitor user and account healt
 
 ## Endpoints
 
-In the Endpoints section of the portal, monitor and manage asset vulnerabilities with Microsoft Defender Vulnerability Management.
+In the **Endpoints** section of the portal, monitor and manage asset vulnerabilities with Microsoft Defender Vulnerability Management.
 
 :::image type="content" source="media/vulnerability-management-dashboard.png" alt-text="Screenshot of the Microsoft Defender Vulnerability Management dashboard in the Microsoft Defender portal" lightbox="media/vulnerability-management-dashboard.png":::
 
@@ -199,7 +203,7 @@ In the Endpoints section of the portal, monitor and manage asset vulnerabilities
 
 ## Email and collaboration
 
-Monitor, investigate, and manage security threats and responses to email and collaboration apps. 
+In the **Email & collaboration** section, monitor, investigate, and manage security threats and responses to email and collaboration apps. 
 
 
 :::image type="content" source="media/email-investigations.png" alt-text="Screenshot of the Email Investigations page in the Microsoft Defender portal" lightbox="media/email-investigations.png":::
@@ -215,7 +219,7 @@ Monitor, investigate, and manage security threats and responses to email and col
 
 ## Cloud apps
 
-In this section, review security to minimize risk and exposure to cloud apps using the Defender for Cloud Apps service.
+In the **Cloud apps** section, review security to minimize risk and exposure to cloud apps using the Defender for Cloud Apps service.
 
 ::image type="content" source="media/cloud-apps-sample-report.png" alt-text="Screenshot of a Cloud Apps sample report in the Microsoft Defender portal" lightbox="media/cloud-apps-sample-report.png":::
 
@@ -229,17 +233,19 @@ In this section, review security to minimize risk and exposure to cloud apps usi
 
 ## SOC optimization
 
+In the **SOC optimization** page, tighten up security controls to close threat coverage gaps, and tighten data ingestion rates.
+
 :::image type="content" source="media/soc-optimization-page.png" alt-text="Screenshot of the SOC Optimization page in the Microsoft Defender portal" lightbox="media/soc-optimization-page.png":::
 
 ## Reports
 
-In the portal, you can start with a general security report, and branch into specific reports. Report links are dynamically generated based on  your configuration.
+In the **Reports** page, review security reports across all areas, assets, and workloads.
 
 :::image type="content" source="media/reports-page.png" alt-text="Screenshot of the Reports page in the Microsoft Defender portal" lightbox="media/reports-page.png":::
 
 ## Trials
 
-Review trial solutions, design to help you make decisions about upgrades and purchases.
+In the **Trials** page, review trial solutions, designed to help you make decisions about upgrades and purchases.
 
 :::image type="content" source="media/trials-page.png" alt-text="Screenshot of the  page iMicrosoft Security Trials page in the Microsoft Defender portal" lightbox="media/trials-page.png":::
 
