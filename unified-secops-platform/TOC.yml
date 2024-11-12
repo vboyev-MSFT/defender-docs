@@ -50,9 +50,9 @@
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
         - name: Overview
-          href: /unified-secops-platform/incidents-alerts-overview ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
+          href: /defender-xdr/incidents-alerts-overview ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
         - name: Correlation and merging
-          href: /unified-secops-platform/alerts-incidents-correlation-merging ## YL: replaces /defender-xdr/alerts-incidents-correlation
+          href: /defender-xdr/alerts-incidents-correlation-merging ## YL: replaces /defender-xdr/alerts-incidents-correlation
         - name: Investigate incidents in Copilot for Security ## This article is specific to Sentinel in the context of using outside of USX and with XDR in USX. We don't think it applies to Sentinel only but need to confirm with PM.  Austin thought title w/o mentioning Sentinel is misleading. We might need to leave this out of TOC or as part of plan/deploy to integrate Sentinel w/ Copilot features.
           href: /azure/sentinel/sentinel-security-copilot?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Investigate with Microsoft Copilot in Microsoft Defender ## Copied entire section from XDR TOC
@@ -123,11 +123,3 @@
           href: /defender-xdr/virus-initiative-criteria?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
         - name: Microsoft security portals
           href: /defender-xdr/portals?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-        - name: Operation guides
-          items:
-            - name: Incident response
-              items:
-              - name: Overview
-                href: incident-response-overview.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
-              - name: Incident response
-                href: incident-response-planning.md?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json
