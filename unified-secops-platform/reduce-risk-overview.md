@@ -44,7 +44,7 @@ Microsoft strategies and technologies contribute to the key activities essential
 
 **Activity** | **Details**
 --- | ---
-**Protecting assets and workloads**: Cloud security posture management helps to protect cloud workloads from code to runtime by continually assessing and remediating workload configurations.
+**Protecting assets and workloads** | Cloud security posture management helps to protect cloud workloads from code to runtime by continually assessing and remediating workload configurations.
 **Discovering and assessing assets** | Discovering and assessing your assets is the first step in understanding your security posture.<br/><br/>By creating a comprehensive resource inventory, you can identify what needs protection and where potential vulnerabilities might exist.<br/><br/>Discovery and assessment must be continuously integrated into a centralized, up-to-date inventory, with ongoing assessment continuously identifying key areas for improvement with detailed, actionable security recommendations.
 **Aggregating security data** | Aggregate data and threat intelligence to discover security gaps and weaknesses, including potential attack paths.
 **Adhering to compliance standards** | Compliance standards provide structured, well-known guidelines around security controls and measures. Adhering to these standards ensures that your organization meets regulatory requirements 

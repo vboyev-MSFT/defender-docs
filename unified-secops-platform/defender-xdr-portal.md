@@ -17,7 +17,11 @@ ms.topic: conceptual
 
 # Defender XDR in the Defender portal
 
-Microsoft Defender XDR is part of Microsoft's unified SecOps platform, providing a cloud-based solution that coordinates threat prevention, detection, investigation, and response across a broad range of assets, including devices and endpoints, identities, email, and Microsoft 365 cloud apps. Defender XDR cosolidates threat signals from these assets, so that you can manage your organizational threat protection strategy from a single portal.
+Microsoft Defender XDR is part of Microsoft's unified SecOps platform.
+
+Defender XDR provides a cloud-based solution that coordinates threat prevention, detection, investigation, and response across a broad range of assets, including devices and endpoints, identities, email, and Microsoft 365 cloud apps. 
+
+Defender XDR cosolidates threat signals from these assets, so that you can monitor and manage organizational threat protection from a single portal.
 
 Defender XDR combines Microsoft security services into the [Microsoft Defender portal](https://security.microsoft.com). 
 
