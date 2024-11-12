@@ -186,6 +186,8 @@ In the **Identities** section of the Defender portal, monitor user and account h
 
 :::image type="content" source="media/identity-dashboard.png" alt-text="Screenshot of the Identity Dashboard page in the Microsoft Defender portal" lightbox="media/identity-dashboard.png":::
 
+**Feature** | **Details**
+--- | ---
 **ITDR dashboard** | On the [Identity threat detection and response (ITDR) dashboard](/defender-for-identity/dashboard), you can get insights and real-time data about the security state of users and accounts.<br/><br/> The dashboard includes information about Defender for Identity deployment, information about highly privileged identities, and information about identity-related incidents. Drill down into information about different types of users.<br/><br/> If there's a problem with a Defender for Identity workspace, it's raised as an issue on the [Health issues page](/defender-for-identity/health-alerts).
 **Health issues** | Any Defender for Identity global or sensor-based health issues are displayed on this page.
 **Tools** | You can access common tools to help you manage Defender for Identity on this page.
@@ -196,6 +198,8 @@ In the **Endpoints** section of the portal, monitor and manage asset vulnerabili
 
 :::image type="content" source="media/vulnerability-management-dashboard.png" alt-text="Screenshot of the Microsoft Defender Vulnerability Management dashboard in the Microsoft Defender portal" lightbox="media/vulnerability-management-dashboard.png":::
 
+**Feature** | **Details**
+--- | ---
 **Vulnerability management** | Review exposure and vulnerability state in the dashboard. Get recommendations based on vulnerability assessment of devices, and remediate vulnerabilities.<br/><br/> Review your organization's software inventory, including vulnerable components, certificates, and hardware.<br/><br/> Review CVEs and security advisories.<br/><br/> Review the event timeline for vulnerability impacts.<br/><br/> Use security baseline profiles to assess devices against security benchmarks.
 **Connected applications** | Get information about the [Microsoft Entra applications connected to Defender for Endpoint](/defender-endpoint/connected-applications).
 **API explorer** | [Use the API explorer](/defender-endpoint/api/api-explorer) to construct and run API queries, test, and sent requests for available Defender for Endpoint API endpoints. 
@@ -208,6 +212,8 @@ In the **Email & collaboration** section, monitor, investigate, and manage secur
 
 :::image type="content" source="media/email-investigations.png" alt-text="Screenshot of the Email Investigations page in the Microsoft Defender portal" lightbox="media/email-investigations.png":::
 
+**Feature** | **Details**
+--- | ---
 **Investigations** | Run and review automated investigations.
 **Explorer** | Hunt, investigate, and explore threats to emails and documents. Drill down into specific types of threats, including malware, phishing, and campaigns.
 **Review** | Manage quarantined items and restricted senders.
@@ -223,6 +229,8 @@ In the **Cloud apps** section, review security to minimize risk and exposure to 
 
 ::image type="content" source="media/cloud-apps-sample-report.png" alt-text="Screenshot of a Cloud Apps sample report in the Microsoft Defender portal" lightbox="media/cloud-apps-sample-report.png":::
 
+**Feature** | **Details**
+--- | ---
 **Cloud discovery** | Get a overview of cloud app security with discovery reports. Review a sample report, and create new reports.
 **Cloud app catalog** | Get an overview of well-known cloud apps and their associated risk. You can sanction and unsanction apps as needed.
 **OAuth apps** | Get visibility in OAuth apps. Review apps, and filter settings to drill down.
