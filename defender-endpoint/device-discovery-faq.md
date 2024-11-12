@@ -69,7 +69,7 @@ ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, MSSQL, NBNS, SSDP
 
 ## Which protocols do you use for active probing in Standard discovery?
 When a device is configured to run Standard discovery, exposed services are being probed by using the following protocols:
-ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
+ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, IphoneSync, WinRM, VNC, SLP, LDAP
 
 In addition, device discovery might also scan other commonly used ports to improve classification accuracy & coverage.
 
