@@ -38,12 +38,12 @@ Customer data collected from integrated services includes *processed data*, such
 
 Microsoft Defender XDR operatins in Microsoft Azure data centers in the following geographical regions:
 
-- Australia
-- European Union
-- India
-- Switzerland
-- United Kingdom
-- United States
+- **European Union**: North Europe and West Europe
+- **United Kingdom**: UK South and UK West
+- **United States**: East US 2 and Central US
+- **Australia**: Australia East and Australia Southeast
+- **Switzerland**: Switzerland North and Switzerland West
+- **India**: Central India and South India
 
 Once created, the Microsoft Defender XDR tenant isn't movable to a different region. Your geographical region is shown in the Microsoft Defender portal, under **Settings > Microsoft Defender XDR > Account**.
 
@@ -60,14 +60,7 @@ In the Microsoft Defender portal's **Advanced hunting** page, data is accessible
 
 Data continues to be retained and visible, even when a license is under a grace period or in supspended mode. At the end of any grace period or suspension, and no later than 180 days from a contract termination or expiration, data is deleted from Microsoft's systems and is unrecoverable.
 
-Most Defender services also have a default data retention period of 180 days. More information on data retention period per product are found in the following pages:
-
-- [Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
-- [Defender for Office 365 data retention information](/defender-office-365/mdo-data-retention)
-- [Defender for Identity data storage and privacy](/defender-for-identity/privacy-compliance)
-- [Defender for Cloud Apps data storage and privacy](/defender-cloud-apps/cas-compliance-trust)
-- [Microsoft Entra data storage and privacy](/entra/identity/monitoring-health/reference-reports-data-retention)
-- [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel/)
+Most Defender services also have a default data retention period of 180 days. More information on data retention period per product are found in [relevant service docs](#related-content).
 
 ## Data sharing
 
