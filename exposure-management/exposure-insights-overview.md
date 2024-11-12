@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/20/2024
+ms.date: 11/04/2024
 ---
 
 # Overview - Exposure insights
@@ -88,6 +88,12 @@ In some cases, metrics display grayed out because the underlying data for the me
 
 Grayed out metrics aren't considered for score calculation.
 
+> [!NOTE]
+> The versioning feature in Exposure Management provides proactive notifications to users about upcoming version updates, providing advanced visibility into the expected metric changes and their impact on related initiatives.
+> A dedicated side panel offers more details about the update, including the expected date of the change, release notes, and current and new metric values, as well as changes to the related initiatives' scores.
+> Users can share feedback about the update directly through the platform.
+> The information is dynamic and may vary depending on when it is accessed.
+
 ## Working with recommendations
 
 Security Exposure Management ingests security recommendations from multiple sources, including Microsoft Defender for Cloud running the  [Defender for Cloud Security Posture Management (CSPM) plan](/azure/defender-for-cloud/concept-cloud-security-posture-management), [Microsoft Secure Score](/defender-xdr/microsoft-secure-score), Microsoft threat analytics, and other Microsoft workloads. Security Exposure Management integrates all of these recommendations into a single security catalog.
@@ -103,7 +109,7 @@ Security Exposure Management categorizes recommendations by compliance status, a
 - **Mitigated by organization**: Displays when steps to mitigate recommendations were taken elsewhere, and Security Exposure Management can't know whether recommendations are compliant. For example, by changing a status in Secure score.
 - **Not available**: Means there isn't enough information to determine the compliance status.
 
-:::image type="content" source="./media//exposure-insights-overview/recommendation-ransomeware-advanced-protection.png" alt-text="Screenshot of the ransomware advanced protection recommendation details ":::
+:::image type="content" source="./media//exposure-insights-overview/recommendation-ransomware-advanced-protection.png" alt-text="Screenshot of the ransomware advanced protection recommendation details ":::
 
 ### Secure score
 
