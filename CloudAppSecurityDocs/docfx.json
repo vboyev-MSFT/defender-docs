@@ -42,7 +42,10 @@
       "ms.author": "bagol",
       "ms.collection": "M365-security-compliance",
       "ms.service": "defender-for-cloud-apps",
-      "ms.suite": "ems"
+      "ms.suite": "ems",
+      "contributors_to_exclude": [
+        "beccarobins"
+      ]
     },
     "fileMetadata": {},
     "template": [],
