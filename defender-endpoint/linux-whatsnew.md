@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.reviewer: kumasumit, gopkr
 ms.localizationpriority: medium
-ms.date: 10/14/2024
+ms.date: 11/13/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -47,9 +47,9 @@ Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 
 **What's new**
 
-- Support added for hardened installations on non-executable /var partitions. AV signatures will be installed to /opt/microsoft/mdatp/definitions.noindex by default from this release instead of /var/opt/microsoft/mdatp/definitions.noindex. During upgrades the installer will attempt migrating older definitions to the new path unless it detects that the path is already customized (using 'mdatp definitions path set').
+- Support added for hardened installations on non-executable `/var` partitions. Beginning with this release, antivirus signatures are installed at `/opt/microsoft/mdatp/definitions.noindex` by default, instead of `/var/opt/microsoft/mdatp/definitions.noindex`. During upgrades, the installer attempts to migrate older definitions to the new path unless it detects that the path is already customized (using `mdatp definitions path set`).
 
-- Starting this version, Defender for Endpoint on Linux will no longer need executable permission for /var/log. If these permissions are not available, log files will automatically be redirected to /opt.
+- Beginning with this version, Defender for Endpoint on Linux no longer needs executable permissions for `/var/log`. If these permissions are not available, log files are automatically be redirected to `/opt`.
 
 </details>
 
