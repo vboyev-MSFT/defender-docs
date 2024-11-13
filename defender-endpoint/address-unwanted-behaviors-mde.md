@@ -113,11 +113,7 @@ In this scenario, an app is detected as PUA, and you want to allow it to run.
 
 In this scenario, a legitimate app is blocked from writing to folders that are protected by controlled folder access.
 
-**How to address**: Define an "allow" indicator for files or certificates, and define a path exclusion. See the following articles:
-
-- [Create indicators for files](indicator-file.md)
-- [Create indicators based on certificates](indicator-certificates.md)
-- [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+**How to address**: Define an "allow" indicator for the file. See [Create indicators for files](indicator-file.md).
 
 ### A third-party app is detected as malicious by Microsoft Defender Antivirus
 
