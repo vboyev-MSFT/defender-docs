@@ -24,7 +24,7 @@ Current asset types are:
 * [Cloud resource](#cloud-resource)
 
 > [!Note]
-> If you add any external data connectors and they contain criticality context, those criticality rules will be applied to the Exposure Management critical asset classifications.
+> We also utilize criticality context retrieved from external data connectors. This context will be presented as classifications in the predefined critical asset management classification library.
 
 ##### Device
 
