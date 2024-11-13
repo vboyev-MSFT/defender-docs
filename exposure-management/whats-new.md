@@ -27,11 +27,23 @@ Security Exposure Management is currently in public preview.
 
 ## November 2024
 
-## Announcing the General Availability of Microsoft Security Exposure Management
+### Announcing the General Availability of Microsoft Security Exposure Management
 
 We are excited to announce the general availability of Microsoft Security Exposure Management. This powerful tool helps organizations focus on their most critical exposures and act swiftly. By integrating security insights across the entire digital estate, it provides a comprehensive view of risk posture, enabling faster, more informed decisions to reduce exposure before attackers can exploit it.
 
 With this GA release, you can now build and enhance a Continuous Threat Exposure Management (CTEM) program, continuously identifying, prioritizing, and mitigating risks across your digital landscape.
+
+### Content versioning notifications
+
+The new versioning feature in Microsoft Security Exposure Management offers proactive notifications about upcoming version updates, giving users advanced visibility into anticipated metric changes and their impact on their related initiatives. A dedicated side panel provides comprehensive details about each update, including the expected release date, release notes, current and new metric values, and any changes to related initiative scores. Additionally, users can share direct feedback on the updates within the platform, fostering continuous improvement and responsiveness to user needs.
+
+For more information on exposure insights, see [Overview - Exposure insights](exposure-insights-overview.md)
+
+### Exposure history for metrics
+
+User can investigate metric changes by reviewing the asset exposure change details. From the initiative's **History** tab, by selecting a specific metric, you can now see the list of assets where exposure has been either added or removed, providing clearer insight into exposure shifts over time.
+
+For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
 
 ### SaaS security initiative
 
