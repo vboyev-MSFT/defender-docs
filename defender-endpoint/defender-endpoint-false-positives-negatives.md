@@ -6,7 +6,7 @@ ms.subservice: ngp
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 07/18/2023
+ms.date: 11/12/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -197,11 +197,11 @@ An exclusion is an entity, such as a file or URL, that you specify as an excepti
 
 To define exclusions across Microsoft Defender for Endpoint, perform the following tasks:
 
-- [Define exclusions for Microsoft Defender Antivirus](#exclusions-for-microsoft-defender-antivirus)
 - [Create "allow" indicators for Microsoft Defender for Endpoint](#indicators-for-defender-for-endpoint)
+- [Define exclusions for Microsoft Defender Antivirus](#exclusions-for-microsoft-defender-antivirus)
 
 > [!NOTE]
-> Microsoft Defender Antivirus exclusions apply only to antivirus protection, not across other Microsoft Defender for Endpoint capabilities. To exclude files broadly, use exclusions for Microsoft Defender Antivirus and [custom indicators](indicators-overview.md) for Microsoft Defender for Endpoint.
+> Microsoft Defender Antivirus exclusions apply only to antivirus protection, not across other Microsoft Defender for Endpoint capabilities. To exclude files broadly, use [custom indicators](indicators-overview.md) for Microsoft Defender for Endpoint and exclusions for Microsoft Defender Antivirus.
 
 The procedures in this section describe how to define exclusions and indicators.
 
