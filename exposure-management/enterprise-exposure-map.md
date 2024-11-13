@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/20/2024
+ms.date: 11/13/2024
 ---
 
 # Explore with the attack surface map
