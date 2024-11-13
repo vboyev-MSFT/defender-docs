@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/04/2024
+ms.date: 11/12/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -24,7 +24,7 @@ search.appverid: met150
 
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) and [Defender for Business](/defender-business/mdb-overview) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. Microsoft preconfigures the product to perform well on the operating system that it's installed. No other changes should be needed. Despite preconfigured settings, sometimes unexpected behaviors occur. Here are some examples:
 
-- **False positives**: Files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
+- **False positives**: Files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not a threat. 
 - **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
