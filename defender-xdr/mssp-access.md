@@ -25,6 +25,10 @@ ms.date: 06/21/2024
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
+
+> [!IMPORTANT]
+> This procedure uses features that require at a minimum Microsoft Entra ID P2 license [for each user under scope of management](https://learn.microsoft.com/en-us/entra/id-governance/licensing-fundamentals#how-can-i-license-usage-of-microsoft-entra-id-governance-features-for-business-guests).
+
 **Applies to:**
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
