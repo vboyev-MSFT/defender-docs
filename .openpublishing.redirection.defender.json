@@ -115,16 +115,6 @@
       "redirect_url": "/defender-endpoint/indicators-overview",
       "redirect_document_id": true
     },
-    { 
-      "source_path": "defender-xdr/pilot-deploy-defender-endpoint.md",
-      "redirect_url": "/defender-endpoint/pilot-deploy-defender-endpoint",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "defender-xdr/pilot-deploy-defender-office-365.md",
-      "redirect_url": "/defender-office-365/pilot-deploy-defender-office-365",
-      "redirect_document_id": false
-    },
     {
       "source_path": "defender-endpoint/techniques-device-timeline.md",
       "redirect_url": "/defender-endpoint/device-timeline-event-flag#techniques-in-the-device-timeline",
