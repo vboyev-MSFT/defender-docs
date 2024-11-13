@@ -6,7 +6,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 09/23/2024
+ms.date: 10/17/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -28,6 +28,14 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Sentinel](/azure/sentinel/whats-new)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## November 2024
+- (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
+
+## October 2024
+
+- [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
+- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## September 2024
 
@@ -101,7 +109,7 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) You can now query Microsoft Sentinel data using the [advanced hunting query API](/graph/api/security-security-runhuntingquery?view=graph-rest-1.0&tabs=http&preserve-view=true). You can use the `timespan` parameter to query Defender XDR and Microsoft Sentinel data that have longer data retention than the Defender XDR default of 30 days.
 
-- (Preview) In the unified Microsoft Defender portal, you can now create custom detections in querying data that spans Microsoft Sentinel and Defender XDR tables. Read [Create custom analytics and detection rules](advanced-hunting-microsoft-defender.md#create-custom-analytics-and-detection-rules) for more information.
+- (Preview) In the unified Microsoft Defender portal, you can now create custom detections in querying data that spans Microsoft Sentinel and Defender XDR tables. Read [Create custom analytics and detection rules](advanced-hunting-defender-use-custom-rules.md) for more information.
 
 - Updated [troubleshooting steps for Microsoft Defender Experts app permissions in Microsoft Teams](teams-restrictions-dexapp.md).
  
@@ -331,7 +339,7 @@ The security operations team can view all actions pending approval, and the stip
 
 ## June 2021
 
-- (Preview) [View reports per threat tags](threat-analytics.md#view- reports-by-category)
+- (Preview) [View reports per threat tags](threat-analytics.md#view-reports-by-category)
 
   Threat tags help you focus on specific threat categories and review the most relevant reports.
 

@@ -18,7 +18,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/01/2024
+ms.date: 10/14/2024
 appliesto:
 - Microsoft Defender XDR
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -30,13 +30,27 @@ appliesto:
 
 Microsoft Defender XDR applies the capabilities of [Copilot for Security](/security-copilot/microsoft-security-copilot) to summarize incidents, delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can often be time-consuming as it involves numerous steps. Incident response teams need to understand how the attack happened: sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
 
-Incident responders can easily gain the right context to investigate and remediate incidents through Defender XDR's correlation capabilities and Copilot for Security's AI-powered data processing and contextualization. With an incident summary, responders can quickly get important information to help in their investigation.
-
-The incident summary capability is available in the Microsoft Defender portal through the [Copilot for Security license](/security-copilot/faq-security-copilot). This capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin.
-
 This guide outlines what to expect and how to access the summarizing capability of Copilot in Defender, including information on providing feedback.
 
-## Summarize an incident
+## Know before you begin
+
+If you're new to Copilot for Security, you should familiarize yourself with it by reading the following articles:
+
+- [What is Copilot for Security?](/security-copilot/microsoft-security-copilot)
+- [Copilot for Security experiences](/security-copilot/experiences-security-copilot)
+- [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
+- [Understand authentication in Copilot for Security](/security-copilot/authentication)
+- [Prompting in Copilot for Security](/security-copilot/prompting-security-copilot)
+
+Incident responders can easily gain the right context to investigate and remediate incidents through Defender XDR's correlation capabilities and Copilot for Security's AI-powered data processing and contextualization. With an incident summary, responders can quickly get important information to help in their investigation.
+
+## Copilot for Security integration in Microsoft Defender
+
+The incident summary capability is available in the Microsoft Defender portal for customers who have provisioned access to Copilot for Security.
+
+This capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+
+## Key features
 
 Incidents containing up to 100 alerts can be summarized into one incident summary. An incident summary, depending on the availability of the data, includes the following:
 
@@ -58,23 +72,28 @@ To summarize an incident, perform the following steps:
    > [!TIP]
    > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the evidence in the results.
 
-1. Select the **More actions** ellipsis (...) at the top of the incident summary card to copy or regenerate the summary, or view the summary in the Copilot for Security portal. Selecting **Open in Copilot for Security** opens a new tab to the Copilot for Security standalone portal where you can input prompts and access other plugins.
+3. Select the **More actions** ellipsis (...) at the top of the incident summary card to copy or regenerate the summary, or view the summary in the Copilot for Security portal. Selecting **Open in Copilot for Security** opens a new tab to the Copilot for Security standalone portal where you can input prompts and access other plugins.
 
    :::image type="content" source="/defender/media/copilot-in-defender/incident-summary/copilot-defender-incident-summary-more-actions.png" alt-text="Screenshot that shows the actions available on the incident summary card." lightbox="/defender/media/copilot-in-defender/incident-summary/copilot-defender-incident-summary-more-actions.png":::
 
-1. Review the summary and use the information to guide your investigation and response to the incident. You can provide feedback on the summary by selecting the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](/defender/media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom of the Copilot pane.
+4. Review the summary and use the information to guide your investigation and response to the incident.
+
+## Sample incident summary prompt
+
+In the Copilot for Security standalone portal, you can use the following prompt to generate incident summaries:
+
+- *Provide a summary for Defender incident {incident ID}.*
+
+> [!TIP]
+> When generating an incident summary in the Copilot for Security portal, Microsoft recommends including the word ***Defender*** in your prompts to ensure that the incident summary capability delivers the results.
+
+## Provide feedback
+
+Microsoft highly encourages you to provide feedback to Copilot, as it’s crucial for a capability’s continuous improvement. You can provide feedback on the summary by selecting the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](/defender/media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom of the Copilot pane.
 
 ## See also
 
-- [Run script analysis](security-copilot-m365d-script-analysis.md)
-- [Analyze files](copilot-in-defender-file-analysis.md)
-- [Generate device summary](copilot-in-defender-device-summary.md)
-- [Use guided responses when responding to threats](security-copilot-m365d-guided-response.md)
-- [Generate KQL queries](advanced-hunting-security-copilot.md)
-- [Create incident reports](security-copilot-m365d-create-incident-report.md)
-- [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot)
 - [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
-- Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins)
-- [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
+- [Privacy and data security in Copilot for Security](/copilot/security/privacy-data-security)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]

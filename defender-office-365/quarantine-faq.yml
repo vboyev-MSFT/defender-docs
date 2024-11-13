@@ -141,6 +141,8 @@ sections:
 
           - Some mail flow rules that quarantined a message can cause the released message to be quarantined again.
 
+          - Inform admins that routing released quarantine messages to onpremises recipients can cause messages to lose anti-spam headers, which makes the messages land in quarantine again after release.
+
           Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
       - question: |
@@ -218,6 +220,8 @@ sections:
           > If you select every four hours, and a message is quarantined _just after_ the last notification generation, the recipient will receive the quarantine notification _slightly more than_ four hours later.
           >
           > For messages quarantined by zero-hour auto purge (ZAP), quarantine notifications are generated based on when the message was quarantined, not when the message was delivered to the mailbox.
+
+          You can also set up quarantine notifications for internal (intra-organization) messages only in quarantine policies.
 
       - question: |
           Why aren't users receiving notifications about their quarantined messages?

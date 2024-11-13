@@ -25,6 +25,41 @@ Security Exposure Management is currently in public preview.
 >
 > `https://aka.ms/msem/rss`
 
+## November 2024
+
+### Content versioning notifications
+
+The new versioning feature in Microsoft Security Exposure Management offers proactive notifications about upcoming version updates, giving users advanced visibility into anticipated metric changes and their impact on their related initiatives. A dedicated side panel provides comprehensive details about each update, including the expected release date, release notes, current and new metric values, and any changes to related initiative scores. Additionally, users can share direct feedback on the updates within the platform, fostering continuous improvement and responsiveness to user needs.
+
+For more information on exposure insights, see [Overview - Exposure insights](exposure-insights-overview.md)
+
+### Exposure history for metrics
+
+User can investigate metric changes by reviewing the asset exposure change details. From the initiative's **History** tab, by selecting a specific metric, you can now see the list of assets where exposure has been either added or removed, providing clearer insight into exposure shifts over time.
+
+For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
+
+### SaaS security initiative
+
+The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.
+
+For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-security-initiative)
+
+## October 2024
+
+### New in attack paths
+
+We have introduced four new features designed to enhance your security management and risk mitigation efforts. These features provide valuable insights into the attack paths identified within your environment, enabling you to prioritize risk mitigation strategies effectively and reduce the impact of potential threats. 
+
+The new features include:
+
+- **Attack path widget on exposure management overview page**: Provides users with an at-a-glance, high-level view of discovered attack paths. It displays a timeline of newly identified paths, key entry points, target types, and more, ensuring security teams stay informed about emerging threats and can respond quickly.
+- **Attack path dashboard**: Provides a high-level overview of all identified attack paths within the environment. This feature enables security teams to gain valuable insights into the types of paths identified, top entry points, target assets, and more, helping to prioritize risk mitigation efforts effectively.
+- **Choke points**: Highlights critical assets that multiple attack paths intersect, identifying them as key vulnerabilities within the environment. By focusing on these choke points, security teams can efficiently reduce risk by addressing high-impact assets, thus preventing attackers from progressing through various paths.
+- **Blast radius**: Allows users to visually explore the paths from a choke point. It provides a detailed visualization showing how the compromise of one asset could affect others, enabling security teams to assess the broader implications of an attack and prioritize mitigation strategies more effectively.
+ 
+For more information, see [Overview of attack paths](work-attack-paths-overview.md).
+
 ## September 2024
 
 ### New Enterprise IoT Security Initiative

@@ -17,7 +17,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/30/2024
+ms.date: 10/25/2024
 appliesto: 
 - Microsoft Defender XDR 
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -103,7 +103,7 @@ Even when the correlation logic indicates that two incidents should be merged, D
 
 - One of the incidents has a status of "Closed". Incidents that are resolved don't get reopened.
 - The two incidents eligible for merging are assigned to two different people.
-- Merging the two incidents would raise the number of entities in the merged incident above the maximum allowed.
+- Merging the two incidents would raise the number of entities in the merged incident above the maximum of 50 entities per incident allowed.
 - The two incidents contain devices in different [device groups](/defender-endpoint/machine-groups) as defined by the organization. <br>(This condition is not in effect by default; it must be enabled.)
 
 ### What happens when incidents are merged?

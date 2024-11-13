@@ -14,15 +14,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 09/10/2024
+ms.date: 10/28/2024
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
-
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
 This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
@@ -167,8 +162,6 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
 |RHEL 7.x, RHEL 8.x, and RHEL 9.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows|
-|RHEL 6.x|TALPA kernel driver|
-
 ## 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus.
