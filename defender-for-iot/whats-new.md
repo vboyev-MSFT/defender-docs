@@ -22,7 +22,7 @@ This article describes features available in Microsoft Defender for IoT in the D
 |---------|---------|
 | **OT networks** | - [Preview and edit the devices list during the site set up process](#preview-and-edit-the-devices-list-during-the-site-set-up-process)|
 
-## Preview and edit the devices list during the site set up process
+### Preview and edit the devices list during the site set up process
 
 Before completing the site association process, preview the list of devices you have chosen to associate with the site, and remove any devices that aren't to be included in this site. For more information, see [preview devices](set-up-sites.md#preview-devices).
 
