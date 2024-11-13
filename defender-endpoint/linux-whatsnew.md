@@ -49,7 +49,7 @@ Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 
 - Support added for hardened installations on non-executable /var partitions. AV signatures will be installed to /opt/microsoft/mdatp/definitions.noindex by default from this release instead of /var/opt/microsoft/mdatp/definitions.noindex. During upgrades the installer will attempt migrating older definitions to the new path unless it detects that the path is already customized (using 'mdatp definitions path set').
 
-- From this release, executable permission for /var/log are no longer mandatory. If these permissions are not available, log files will automatically be redirected to /opt
+- Starting this version, Defender for Endpoint on Linux will no longer need executable permission for /var/log. If these permissions are not available, log files will automatically be redirected to /opt.
 
 </details>
 
