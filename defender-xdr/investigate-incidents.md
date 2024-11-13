@@ -105,9 +105,15 @@ If the incident or related alerts were the result of an analytics rule you've se
 
 ### Attack paths
 
-The incident graph also contains information about **attack paths**. These paths allows security analysts to identify what other entities an attacker is likely to target next. To view an attack path, you can click on an entity in the incident graph and select **Show attack paths**.
+The incident graph also contains information about **attack paths**. These paths allows security analysts to identify what other entities an attacker is likely to target next. To view an attack path, you can click on an entity in the incident graph and select **Show attack paths**. Attack paths are available for entities with the **critical asset** tag.
 
-Attack paths are available for entities with the **critical asset** tag.
+:::image type="content" source="/defender/media/investigate-incidents/attack-path-small.png" alt-text="Highlighting the Show attack paths action in the incident graph." lightbox="/defender/media/investigate-incidents/attack-path.png":::
+
+Upon selecting **Show attack paths**, a side pane opens, displaying a list of attack paths for the selected entity. The attack paths are displayed in a table format, showing the attack path name, entry point, entry point type, target, target type, the target criticality.
+
+Selecting an attack path from the list displays the attack path graph, which shows the attack path from the entry point to the target. Selecting **View map** opens a new window to view the attack path in full.
+
+:::image type="content" source="/defender/media/investigate-incidents/attack-path-pane-small.png" alt-text="An example of the attack path graph shown in the side pane." lightbox="/defender/media/investigate-incidents/attack-path-pane.png":::
 
 > [!NOTE]
 > To view the details of an attack path, you must have read access permissions in the Microsoft Defender portal. To view attack path details in the unified security operations platform, a *Sentinel Reader* role is required. To create new attack paths, the Security Administrator role is required.
