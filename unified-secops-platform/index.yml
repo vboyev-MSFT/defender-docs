@@ -12,7 +12,7 @@ metadata:
   ms.collection: usx-security # Optional; Remove if no collection is used.
   author: cwatson-cat #Required; your GitHub user alias, with correct capitalization.
   ms.author: cwatson #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/30/2024 #Required; mm/dd/yyyy format.
+  ms.date: 11/13/2024 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -26,8 +26,31 @@ landingContent:
         links:
           - text: "What is Microsoft's unified SecOps platform?"
             url: overview-unified-security.md
+          - text: "Microsoft Defender portal overview"
+            url: overview-defender-portal.md
       - linkListType: whats-new
         links:
           - text: "What's new in Microsoft's unified SecOps platform"
             url: whats-new.md
 
+  # Card 
+  - title: Get started
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: "Plan your deployment"
+            url: overview-plan.md
+          - text: "Deploy Microsoft's unified security operations platform"
+            url: overview-deploy.md
+
+    # Card 
+  - title: Prevent, detect, and hunt for threats
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Prevent attacks"
+            url: reduce-risk-overview.md
+          - text: "Detect threats"
+            url: overview-deploy.md ## Need to replace link when available
+          - text: "Hunt for threats"
+            url: overview-deploy.md ## Need to replace link when available
