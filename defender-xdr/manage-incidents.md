@@ -160,6 +160,8 @@ Custom tags add information to lend context to an incident. For example, a tag c
 
     :::image type="content" source="media/manage-incidents/selected-tag.png" alt-text="Screenshot showing how a selected tag appears in the Incident tags field.":::
 
+1. Select **Save**.
+
 An incident can have system tags and/or custom tags with certain color backgrounds. Custom tags use the white background while system tags typically use red or black background colors. System tags identify the following in an incident:
 
 - A **type of attack**, like credential phishing or BEC fraud
@@ -180,32 +182,58 @@ The following management tasks are closely associated with incident resolution, 
 
 ### Resolve an incident
 
-When an incident is remediated and resolved, select **Resolved** from the **Status** drop-down list. Resolving an incident also resolves all the linked and active alerts related to the incident.
+When an incident is remediated and resolved, take the following actions to record the resolution:
 
-When you change an incident's status to **Resolved**, a new field is displayed immediately following the **Status** field. Enter a note in this field that explains why you consider the incident resolved. This note is visible in the activity log of the incident, near the entry recording the incident's resolution.
+1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
 
-:::image type="content" source="/defender/media/incidents-queue/resolve-incidents.png" alt-text="Screenshot of incident management panel with incident resolution note.":::
+1. Change the status. Select **Resolved** from the **Status** drop-down list. When you change an incident's status to **Resolved**, a new field is displayed immediately following the **Status** field.
 
-On both the incidents queue page and the incident page of a resolved incident, you can see the incident resolution note in the side panel, in the *Incident details* section.
+1. Enter a note in this field that explains why you consider the incident resolved. This note is visible in the activity log of the incident, near the entry recording the incident's resolution.
 
-:::image type="content" source="/defender/media/incidents-queue/resolution-note-in-side-panel.png" alt-text="Screenshot of appearance of resolution note in the incident details panel." lightbox="/defender/media/incidents-queue/resolution-note-in-side-panel.png":::
+    :::image type="content" source="media/manage-incidents/resolve-incidents.png" alt-text="Screenshot of incident management panel with incident resolution note.":::
+
+    The resolution note is also visible in the *Incident details* panel on both the incidents queue page and the incident page of a resolved incident.
+
+    :::image type="content" source="media/manage-incidents/resolution-note-in-side-panel.png" alt-text="Screenshot of appearance of resolution note in the incident details panel." lightbox="media/manage-incidents/resolution-note-in-side-panel.png":::
+
+1. Select **Save**.
 
 Resolving an incident also resolves all the linked and active alerts related to the incident. An incident that isn't resolved displays as **Active**.
 
 ### Specify the incident's classification
 
-From the **Classification** field, you specify whether the incident is:
+When you resolve an incident, or at any point in an incident's investigation, as soon as you become aware of how the incident should be classified, set the **Classification** field accordingly.
 
-- **Not set** (the default).
-- **True positive** with a type of threat. Use this classification for incidents that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
-- **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
-- **False positive** for types of incidents that you determine can be ignored because they're technically inaccurate or misleading.
+1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
 
-Classifying incidents and specifying their status and type helps tune Microsoft Defender XDR to provide better detection determination over time.
+1. Choose the appropriate value from the **Classification** drop-down list:
+
+    - **Not set** (the default).
+    - **True positive** with a type of threat. Use this classification for incidents that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
+    - **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
+    - **False positive** for types of incidents that you determine can be ignored because they're technically inaccurate or misleading.
+
+    See the available types of activities and threats for each of these classifications in the following screenshot.
+
+1. Select **Save**.
+
+    :::image type="content" source="media/manage-incidents/incident-classification.png" alt-text="Screenshot showing the classification options for incidents.":::
+
+Classifying incidents and specifying their status and type helps tune Microsoft Defender to provide better detection determination over time.
 
 ### Add comments to an incident
 
-You can add multiple comments to an incident with the **Comment** field. The comment field supports text and formatting, links, and images. Each comment is limited to 30,000 characters.
+Over the course of investigating and incident, add comments to record your activities, insights, and conclusions.
+
+1. Open the incident's activity log. From the incident page, select the three dots in the upper right corner, and from the resulting menu, select **Activity log**.
+
+    :::image type="content" source="media/manage-incidents/activity-log.png" alt-text="Screenshot showing how to access an incident's activity log." lightbox="media/manage-incidents/activity-log.png":::
+
+1. Type your comment in the text field. The comment field supports text and formatting, links, and images. Each comment is limited to 30,000 characters.
+
+    :::image type="content" source="media/manage-incidents/add-comments.png" alt-text="Screenshot showing how to add a comment to an incident.":::
+
+1. Select **Save**.
 
 All comments are added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
