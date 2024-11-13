@@ -4,7 +4,7 @@ description: Learn how to use exclusions, indicators, and other techniques to ad
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
-ms.date: 11/04/2024
+ms.date: 11/12/2024
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
@@ -65,7 +65,7 @@ In this scenario, whenever a user runs a certain application, the application is
 
 ### A custom, self-signed app is detected by Microsoft Defender Antivirus when the application runs
 
-In this scenario, whenever a custom app that is periodically updated run, it's detected by Microsoft Defender Antivirus as a potential threat, even though it's signed.
+In this scenario, a custom app is detected by Microsoft Defender Antivirus as a potential threat. The app is updated periodically and is self-signed. 
 
 **How to address**: Create "allow" indicators for certificates or files. See the following articles:
 
