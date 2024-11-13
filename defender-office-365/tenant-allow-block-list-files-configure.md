@@ -36,14 +36,10 @@ This article describes how admins can manage entries for files in the Microsoft 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
-
-  ```DOS
-  certutil.exe -hashfile "<Path>\<Filename>" SHA256
+- You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in Powershell:
+  ```powershell
+   Get-FileHash -Path "<Path>\Filename>" -Algorithm SHA25
   ```
-```powershell
- Get-FileHash -Path "<Path>\Filename>" -Algorithm SHA25
-```
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values aren't supported.
 
