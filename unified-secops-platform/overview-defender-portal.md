@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/12/2024
+ms.date: 11/13/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 The portal provides a single location to monitor, manage, and configure pre-breach and post-breach security across on-premises and multicloud assets.
 
-- **Pre-breach security**: Visualize, monitor, assess, and improve asset security posture to reduce attack surfaces.
+- **Pre-breach security**: Proactively visualize, assess, remediate, and monitor organizational security posture to reduce attack surfaces.
 - **Post-breach security**: Continuously monitor, detect, investigate, and respond to real-time and emerging cybersecurity threats against organizational assets.
 
 
@@ -34,31 +34,32 @@ The Defender portal combines a number of Microsoft security services.
 
 **Service** | **Details**
 --- | ---
-**[Microsoft Defender XDR](/defender-xdr/microsoft-365-defender)** | Defender XDR's suite of services protect assets and workloads against security threats.<br/><br/> Defender XDR integrates threat detection, prevention, investigation, and response for organizational resources that include endpoint devices, identities, email, apps, and OT/IoT assets.
-**[Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)** | Defender Threat Intelligence adds additional features to the threat intelligence capabilities included in Defender XDR and Microsoft Sentinel.<br/><br/> The Defender Threat Intelligence platform gathers data from multiple sources to provide a pool of threat intelligence data and signals that security teams can use to effectively understand adversary activities, and analyze and hunt for security threats.  
-**[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)** | Security Exposure Management provides single location for managing organizational security posture. It continuously discovers assets and workloads, and gathers discovered data into a unified view of security posture.<br/><br/>Security Exposure Management adds context to gathered data, so that you can effectively visualize, query, and analyze attack surfaces to remediate organizational risk.
-**[Microsoft Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud)** | Defender for Cloud improves multicloud and on-premises security posture, and protect cloud workloads against security threats.<br/><br/> Defender for Cloud is an Azure service, but it integrates into the Defender portal so that security teams can access Defender for Cloud alerts in the portal, providing a single location for security investigations.
-**[Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot)** | Defender for IoT integrates into the Defender portal, extending Defender XDR protection to OT/Enteprise IoT environments.
+**Microsoft Defender XDR**<br/><br/> Detect and respond to cybersecurity threats.| Stop cybersecurity threats.<br/><br/> [Defender XDR's suite of services](/defender-xdr/microsoft-365-defender) provides unified protection across endpoints and devices, identities, email, apps, and OT/IoT assets.<br/><br/> Monitor, collect, correlate, and analyze threat data. Investigate and manage threat alerts and incidents.<br/><br/>Respond to threats, and automatically disrupt attacks.
+**Microsoft Defender Threat Intelligence**<br/><br/> Integrate threat intelligence into SOC operations. | The [Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) platform extends threat intelligence capabilities included in Defender XDR and Microsoft Sentinel.<br/><br/> Gather data from multiple sources to provide a pool of threat intelligence data and signals.<br/><br/> Security teams use data and signals to understand adversary activities, analyze attacks, and hunt for security threats.  
+**Microsoft Security Exposure Management**<br/><br/> Proactively reduce security risk.| Use [Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management)to reduce attack surfaces.<br/><br/> Continuously discover assets and get a unified view of security posture.<br/><br/>Add context to gathered data. Visualize, query, and analyze, and remediate attack surfaces to reduce organizational risk.
+**Microsoft Defender for Cloud**<br/><br/> Protect cloud workloads. | [Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud) improves multicloud and on-premises security posture, and protects cloud workloads against security threats.<br/><br/> Defender for Cloud in the Azure portal, integrates into the Defender portal for a unified view of security alerts, providing a single location for investigations.
+**Microsoft Defender for IoT**<br/><br/> Protect OT/IoT assets | [Defender for IoT](/defender-for-iot/microsoft-defender-iot) integrates into the Defender portal, extending Defender XDR protection to OT/Enteprise IoT environments.
 
 ## Accessing the portal
 
 In the **Permissions** page, control access to the Defender portal. 
 
-:::image type="content" source="/defender/media/microsoft-365-defender-portal/defender-portal-permissions.png" alt-text="Screenshot of the permissions page in the Microsoft Defender portal" lightbox="/defender/media/microsoft-365-defender-portal/defender-portal-permissions.png":::
+Portal access can use a variety of permission methods.
 
-Access to the Defender portal can be controlled with a range of permission systems. 
 
-**Role type** | **Details**
+**Methods** | **Details**
 --- | ---
 [Global Microsoft Entra roles](/defender-xdr/m365d-permissions) | Accounts assigned the following Global Microsoft Entra roles can access Microsoft Defender XDR functionality and data: Global administrator, Security administrator, Security Operator, Global Reader, Security Reader.
 [Custom roles](/defender-xdr/custom-roles) | Allow access to specific data, tasks, and features using custom roles. Custom roles are more granular, and can be used together with Entra global roles.
 [Unified RBAC](/defender-xdr/manage-rbac) | Unified RBAC provides a single permissions management model for controlling user permissions in the Defender portal, and across services within the portal.
 
 
-
 ### Microsoft Sentinel permissions
 
-When you connect Microsoft Sentinel to the Defender portal, existing Azure RBAC permissions allow you to work with the Microsoft Sentinel features in the Defender portal for which you have access.  Continue to manage roles and permissions for your Microsoft Sentinel users from the Azure portal. Any Azure RBAC changes are reflected in the Defender portal.
+When Microsoft Sentinel is connected to the Defender portal, existing Azure RBAC permissions are used to work with Microsoft Sentinel features in the Defender portal.
+
+- Manage roles and permissions for Microsoft Sentinel users in the Azure portal.
+- Any Azure RBAC changes are reflected in the Defender portal.
 
 ## Working in the portal
 
