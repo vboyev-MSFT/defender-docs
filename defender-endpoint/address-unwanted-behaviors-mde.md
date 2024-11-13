@@ -30,6 +30,9 @@ The primary function of Defender for Endpoint is to prevent and detect access to
 
 This article describes how to address these types of unwanted behaviors and includes some example scenarios.
 
+> [!NOTE]
+> Creating an indicator or an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
+
 ## How to address unwanted behaviors with Defender for Endpoint
 
 At a high level, the general process for addressing an unwanted behavior in Defender for Endpoint is as follows:
@@ -48,6 +51,8 @@ At a high level, the general process for addressing an unwanted behavior in Defe
    - [Submit a file to Microsoft for analysis](admin-submissions-mde.md)
    - [Define exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
    - [Create indicators for Defender for Endpoint](indicator-manage.md)
+
+   Keep in mind that tamper protection affects whether exclusions can be modified or added. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on).
 
 3. Verify that your changes have addressed the issue. 
 
@@ -113,7 +118,7 @@ In this scenario, an app is detected as PUA, and you want to allow it to run.
 
 In this scenario, a legitimate app is blocked from writing to folders that are protected by controlled folder access.
 
-**How to address**: Define an "allow" indicator for the file. See [Create indicators for files](indicator-file.md).
+**How to address**: Add the app to the "allowed" list for controlled folder access. See [Allow specific apps to make changes to controlled folders](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders).
 
 ### A third-party app is detected as malicious by Microsoft Defender Antivirus
 
