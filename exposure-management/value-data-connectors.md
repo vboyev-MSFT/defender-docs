@@ -114,8 +114,6 @@ Security Exposure Management automatically generates attack paths based on the d
 
 As you explore attack paths in your environment, you can view the discovery sources that contributed to this attack path based on the graphical view of the path:
 
-[Screenshot]
-
 ## Next steps
 
 - [Overview of attack paths](work-attack-paths-overview.md)
