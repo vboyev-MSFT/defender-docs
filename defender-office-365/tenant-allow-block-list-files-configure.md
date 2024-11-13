@@ -38,7 +38,7 @@ This article describes how admins can manage entries for files in the Microsoft 
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in Powershell:
   ```powershell
-   Get-FileHash -Path "<Path>\Filename>" -Algorithm SHA25
+   Get-FileHash -Path "<Path>\Filename>" -Algorithm SHA256
   ```
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values aren't supported.
