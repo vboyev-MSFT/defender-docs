@@ -31,7 +31,7 @@ search.appverid: met150
 Creating an exclusion is one possible approach for addressing these types of issues. This article also includes [Alternatives to creating exclusions and allow indicators](#alternatives-to-creating-exclusions-and-allow-indicators).  
 
 > [!NOTE]
-> Creating an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
+> Creating an indicator or an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
 
 ## Examples of issues and steps to consider
 
