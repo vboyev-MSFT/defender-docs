@@ -95,9 +95,8 @@ To remove any of the devices from this list:
 
 >[!Important]
 >
->By removing the device's association with a site, it's automatic site association based on network parameters will be disabled n the **Set up site** wizard. If the device is relocated to another site, you'll need to manually update it's site settings.
+>When you exclude a specific device from site association, it is no longer assigned to sites based on network parameters. If the device is later moved to a different location, you’ll need to manually update its site settings, as automatic updates will not apply.
 >
->Once a site is deleted, devices that were excluded in this process will again be included in future site suggestions.
 
 ## Review site details
 
