@@ -42,7 +42,7 @@ Defender XDR automatically aggregates related alerts and security signals into [
 
 A [single incident queue](/defender-xdr/incident-queue) provides full visibility into the latest alerts and incidents, and historical data. You can search and query the incident queue to drill down, and prioritize response based on alert severity.
 
-:::image type="content" source="media/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="media/incidents-page.png":::
+:::image type="content" source="media/defender-xdr-portal/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="media/defender-xdr-portal/incidents-page.png":::
 
 
 ### Detecting lateral movement attacks
