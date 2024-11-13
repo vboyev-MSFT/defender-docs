@@ -7,7 +7,7 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dolmont
-ms.date: 10/25/2024
+ms.date: 11/12/2024
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: ngp
@@ -90,7 +90,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
     1. Select **Apply**.
 
-    :::image type="content" source="media/procmon-motw.png" alt-text="The Remove MOTW page" lightbox="media/procmon-motw.png":::
+    :::image type="content" source="media/procmon-motw.png" alt-text="Screenshot showing the Remove MOTW page" lightbox="media/procmon-motw.png":::
 
 3. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
 
@@ -104,21 +104,21 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
         Since logging starts automatically, select the magnifying glass icon  to stop the current capture or use the keyboard shortcut **Ctrl+E**.
 
-        :::image type="content" source="media/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="media/procmon-magglass.png":::
+        :::image type="content" source="media/procmon-magglass.png" alt-text="Screenshot showing the magnifying glass icon" lightbox="media/procmon-magglass.png":::
 
         To verify that you've stopped the capture, check if the magnifying glass icon now appears with a red X.
 
-        :::image type="content" source="media/procmon-magglass-stop.png" alt-text="The red slash" lightbox="media/procmon-magglass-stop.png":::
+        :::image type="content" source="media/procmon-magglass-stop.png" alt-text="Screenshot showing a red slash" lightbox="media/procmon-magglass-stop.png":::
 
         Next, to clear the earlier capture, select the eraser icon.
 
-        :::image type="content" source="media/procmon-eraser-clear.png" alt-text="The clear icon" lightbox="media/procmon-eraser-clear.png":::
+        :::image type="content" source="media/procmon-eraser-clear.png" alt-text="Screenshot showing the clear icon" lightbox="media/procmon-eraser-clear.png":::
 
         Or use the keyboard shortcut **Ctrl+X**.
 
     2. The second way is to run the **command line** as admin, then from the Process Monitor path, run:
 
-       :::image type="content" source="media/cmd-procmon.png" alt-text="The cmd procmon" lightbox="media/cmd-procmon.png":::
+       :::image type="content" source="media/cmd-procmon.png" alt-text="Screenshot showing the cmd procmon" lightbox="media/cmd-procmon.png":::
 
         ```console
         Procmon.exe /AcceptEula /Noconnect /Profiling
@@ -127,11 +127,11 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
         > [!TIP]
         > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
         >
-        > :::image type="content" source="media/procmon-minimize.png" alt-text="The page displaying a minimize Procmon" lightbox="media/procmon-minimize.png":::
+        > :::image type="content" source="media/procmon-minimize.png" alt-text="Screenshot showing the page with Procmon minimized" lightbox="media/procmon-minimize.png":::
 
 7. After following one of the procedures in step 6, you'll next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
 
-   :::image type="content" source="media/procmon-filter-options.png" alt-text="The page on which System Exclude is chosen as the Filter out Process Name" lightbox="media/procmon-filter-options.png":::
+   :::image type="content" source="media/procmon-filter-options.png" alt-text="Screenshot showing the page where System Exclude is chosen as the Filter out Process Name" lightbox="media/procmon-filter-options.png":::
 
 8. To start the capture, select the magnifying glass icon again.
 
@@ -144,7 +144,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
 11. To save the capture with a unique name and with the `.pml` format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
-    :::image type="content" source="media/procmon-savesettings1.png" alt-text="The save settings page" lightbox="media/procmon-savesettings1.png":::
+    :::image type="content" source="media/procmon-savesettings1.png" alt-text="Screenshot showing the save settings page" lightbox="media/procmon-savesettings1.png":::
 
 12. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
 
@@ -176,25 +176,25 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 2. Under *Windows Kits*, right-click **Windows Performance Recorder**.
 
-   :::image type="content" source="media/wpr-01.png" alt-text="The Start menu" lightbox="media/wpr-01.png":::
+   :::image type="content" source="media/wpr-01.png" alt-text="Screenshow showing the Start menu" lightbox="media/wpr-01.png":::
 
     Select **More**. Select **Run as administrator**.
 
 3. When the User Account Control dialog box appears, select **Yes**.
 
-   :::image type="content" source="media/wpt-yes.png" alt-text="The UAC page" lightbox="media/wpt-yes.png":::
+   :::image type="content" source="media/wpt-yes.png" alt-text="Screenshot showing the UAC page" lightbox="media/wpt-yes.png":::
 
 4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder like `C:\temp`.
 
 5. On the WPR dialog box, select **More options**.
 
-   :::image type="content" source="media/wpr-03.png" alt-text="The page on which you can select more options" lightbox="media/wpr-03.png":::
+   :::image type="content" source="media/wpr-03.png" alt-text="Screenshot showing the page where you can select more options" lightbox="media/wpr-03.png":::
 
 6. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
 
 7. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
 
-   :::image type="content" source="media/wpr-infile.png" alt-text="The in-file" lightbox="media/wpr-infile.png":::
+   :::image type="content" source="media/wpr-infile.png" alt-text="Screenshot showing the in-file" lightbox="media/wpr-infile.png":::
 
     > [!WARNING]
     > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**.
@@ -217,14 +217,14 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 9. Now you're ready to collect data. Exit all the applications that aren't relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
 
-   :::image type="content" source="media/wpr-08.png" alt-text="The Hide options" lightbox="media/wpr-08.png":::
+   :::image type="content" source="media/wpr-08.png" alt-text="Screenshot showing the Hide options" lightbox="media/wpr-08.png":::
 
    > [!TIP]
    > Try starting the trace at whole number seconds. For instance, 01:30:00. This will make it easier to analyze the data. Also try to keep track of the timestamp of exactly when the issue is reproduced.
 
 10. Select **Start**.
 
-   :::image type="content" source="media/wpr-09.png" alt-text="The Record system information page" lightbox="media/wpr-09.png":::
+   :::image type="content" source="media/wpr-09.png" alt-text="Screenshot showing the Record system information page" lightbox="media/wpr-09.png":::
 
 11. Reproduce the issue.
 
@@ -233,11 +233,11 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 12. Select **Save**.
 
-   :::image type="content" source="media/wpr-10.png" alt-text="The Save option" lightbox="media/wpr-10.png":::
+   :::image type="content" source="media/wpr-10.png" alt-text="Screenshot showing the Save option" lightbox="media/wpr-10.png":::
 
 13. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
 
-   :::image type="content" source="media/wpr-12.png" alt-text="The pane in which you fill" lightbox="media/wpr-12.png":::
+   :::image type="content" source="media/wpr-12.png" alt-text="Screenshot showing the pane in which you fill" lightbox="media/wpr-12.png":::
 
    1. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
     
@@ -245,15 +245,15 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 14. Wait while the trace is being merged.
 
-   :::image type="content" source="media/wpr-13.png" alt-text="The WPR gathering general trace" lightbox="media/wpr-13.png":::
+   :::image type="content" source="media/wpr-13.png" alt-text="Screenshot showing the WPR gathering general trace" lightbox="media/wpr-13.png":::
 
 15. Once the trace is saved, select **Open folder**.
 
-   :::image type="content" source="media/wpr-14.png" alt-text="The page displaying the notification that WPR trace has been saved" lightbox="media/wpr-14.png":::
+   :::image type="content" source="media/wpr-14.png" alt-text="Screenshot that displays the notification that WPR trace has been saved" lightbox="media/wpr-14.png":::
 
    Include both the file and the folder in your submission to Microsoft Support.
 
-   :::image type="content" source="media/wpr-15.png" alt-text="The details of the file and the folder" lightbox="media/wpr-15.png":::
+   :::image type="content" source="media/wpr-15.png" alt-text="Screenshot showing the details of the file and the folder" lightbox="media/wpr-15.png":::
 
 ### Capture performance logs using the WPR CLI
 
@@ -268,7 +268,9 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 4. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
    ```console
+   
    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
+  
    ```
 
    > [!WARNING]
