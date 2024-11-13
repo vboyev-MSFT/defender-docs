@@ -33,11 +33,12 @@ You can also get product updates and important notifications through the [messag
 
 - (GA) Microsoft Defender XDR customers can now export incident data to PDF. Use the exported data to easily capture and share incident data to other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
 - (GA) The [***go hunt***](investigate-incidents.md#go-hunt) action from the attack story graph and the **last update time** column in the [incident queue](incident-queue.md#incident-queue) are now generally available.
+- (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
 
 ## October 2024
 
 - [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
-- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries-preview), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
+- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries), Microsoft Defender portal users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources. You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## September 2024
 
@@ -341,7 +342,7 @@ The security operations team can view all actions pending approval, and the stip
 
 ## June 2021
 
-- (Preview) [View reports per threat tags](threat-analytics.md#view- reports-by-category)
+- (Preview) [View reports per threat tags](threat-analytics.md#view-reports-by-category)
 
   Threat tags help you focus on specific threat categories and review the most relevant reports.
 
