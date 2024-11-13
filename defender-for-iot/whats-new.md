@@ -20,7 +20,11 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 |Service area  |Updates  |
 |---------|---------|
-| **OT networks** | - [Update site association of a device or group of devices](manage-sites.md#manually-update-device-site-association)|
+| **OT networks** | - [Manually update the site association of a device](#manually-update-the-site-association-of-a-device)|
+
+### Manually update the site association of a device
+
+Manually assign or modify the site location for a specific device or set of devices. For more information, see [manually update device site association](manage-sites.md#manually-update-device-site-association).
 
 ## September 2024
 
