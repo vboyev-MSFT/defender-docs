@@ -31,11 +31,11 @@
           displayName: plan, zero trust
         - name: US Government customers
           href: gov-support.md
-    - name: Deploy ## Need new high level article. Put post deployment links at the end of article. Single article outlining deployment steps for Defender portal services. Point to services for more details. NEW article title: Deploy the Microsoft unified security operations 
+    - name: Deploy 
       href: overview-deploy.md
-    - name: Prevent attacks ## (Pre-breach) - Renamed from reduce risks. one article that summarizes how to do that with USX
+    - name: Prevent attacks
       items:
-        - name: Overview ## NEW Single article or perhaps a couple of articles that summarize our pre-breach protection philosophy, with links to relevant service articles. The article should align with the info about preventing attacks that;s in the datasheet. "Through a single portal, continuously monitor your digital environment, assess risk, and implement posture improvements using security controls across all platforms, cloud, and hybrid infrastructure". 
+        - name: Overview 
           href: reduce-risk-overview.md
         - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section. Or because this is going away, we just link in all the articles? Or put them in reference?
           href: /defender-xdr/microsoft-secure-score.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
@@ -50,12 +50,12 @@
     - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
       items:
         - name: Overview
-          href: /unified-secops-platform/incidents-alerts-overview ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
+          href: /defender-xdr/investigate-incidents ## Update link as needed when YL changes are in main. incident-alerts-overview? ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
         - name: Correlation and merging
-          href: /unified-secops-platform/alerts-incidents-correlation-merging ## YL: replaces /defender-xdr/alerts-incidents-correlation
-        - name: Investigate incidents in Copilot for Security ## This article is specific to Sentinel in the context of using outside of USX and with XDR in USX. We don't think it applies to Sentinel only but need to confirm with PM.  Austin thought title w/o mentioning Sentinel is misleading. We might need to leave this out of TOC or as part of plan/deploy to integrate Sentinel w/ Copilot features.
+          href: /defender-xdr/alerts-incidents-correlation ## CW Update links as needed when changes merged to main.alerts-incidents-correlation-merging? ## YL: replaces /defender-xdr/alerts-incidents-correlation
+        - name: Investigate incidents in Copilot for Security 
           href: /azure/sentinel/sentinel-security-copilot?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-        - name: Investigate with Microsoft Copilot in Microsoft Defender ## Copied entire section from XDR TOC
+        - name: Investigate with Microsoft Copilot in Microsoft Defender
           href: /defender-xdr/security-copilot-in-microsoft-365-defender.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
         - name: Investigate entities
           items: 
@@ -85,7 +85,7 @@
           href: /azure/sentinel/soc-optimization/soc-optimization-reference?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
     - name: Manage your unified SOC ## Need article w/ overview about settings? What else needs to go here? Several other things like permissions and costs would get referenced by planning guide.
       items:
-        - name: Manage multiple tenants ## Work will start soon to integrate Sentinel into one or more of these articles. Copied in entire section from XDR library
+        - name: Manage multiple tenants
           items: 
             - name: Overview
               href: /defender-xdr/mto-overview?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
@@ -123,11 +123,3 @@
           href: /defender-xdr/virus-initiative-criteria?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
         - name: Microsoft security portals
           href: /defender-xdr/portals?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-        - name: Operation guides
-          items:
-            - name: Incident response
-              items:
-              - name: Overview
-                href: incident-response-overview.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-              - name: Incident response
-                href: incident-response-planning.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json

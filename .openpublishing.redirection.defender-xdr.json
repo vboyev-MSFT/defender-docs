@@ -156,31 +156,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "defender-xdr/incidents-overview.md",
-      "redirect_url": "/unified-secops-platform/incidents-alerts-overview",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "defender-xdr/alerts-incidents-correlation.md",
-      "redirect_url": "/unified-secops-platform/alerts-incidents-correlation-merging",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "defender-xdr/incident-queue.md",
-      "redirect_url": "/unified-secops-platform/prioritize-incidents",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "defender-xdr/manage-incidents.md",
-      "redirect_url": "/unified-secops-platform/manage-incidents",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "defender-xdr/export-incidents-queue.md",
-      "redirect_url": "/unified-secops-platform/export-incidents-queue",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "defender-xdr/tickets.md",
       "redirect_url": "/defender-xdr/troubleshoot",
       "redirect_document_id": true
