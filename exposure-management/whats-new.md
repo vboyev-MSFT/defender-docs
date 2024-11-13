@@ -33,6 +33,18 @@ We have introduced new external data connectors to enhance data integration capa
 
 For more information, see [Data connectors overview](overview-data-connectors.md).
 
+### Content versioning notifications
+
+The new versioning feature in Microsoft Security Exposure Management offers proactive notifications about upcoming version updates, giving users advanced visibility into anticipated metric changes and their impact on their related initiatives. A dedicated side panel provides comprehensive details about each update, including the expected release date, release notes, current and new metric values, and any changes to related initiative scores. Additionally, users can share direct feedback on the updates within the platform, fostering continuous improvement and responsiveness to user needs.
+
+For more information on exposure insights, see [Overview - Exposure insights](exposure-insights-overview.md)
+
+### Exposure history for metrics
+
+User can investigate metric changes by reviewing the asset exposure change details. From the initiative's **History** tab, by selecting a specific metric, you can now see the list of assets where exposure has been either added or removed, providing clearer insight into exposure shifts over time.
+
+For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
+
 ### SaaS security initiative
 
 The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.

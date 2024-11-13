@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: reference
 ms.service: exposure-management
-ms.date: 09/16/2024
+ms.date: 11/16/2024
 ---
 
 # Predefined classifications
@@ -67,7 +67,7 @@ Current asset types are:
 | Partner Tier2 Support                         | Identity   | Very High                 | Identities in this role can reset passwords for all users (including Global Administrators), update credentials for applications, create and delete users, and create OAuth2 permission grants. This role has been deprecated and will be removed from Microsoft Entra ID in the future. Don't use - not intended for general use. |
 | Password Administrator                        | Identity   | Very High                 | Identities in this role can reset passwords for nonadministrators and Password Administrators. |
 | Privileged Authentication Administrator       | Identity   | Very High                 | Identities in this role can view, set, and reset authentication method information for any user (admin or nonadmin). |
-| Privileged Role Administrator                 | Identity   | High                      | Identities in this role can manage role assignments in Microsoft Entra ID, and all aspects of Privileged Identity Management. |
+| Privileged Role Administrator                 | Identity   | Very High                 | Identities in this role can manage role assignments in Microsoft Entra ID, and all aspects of Privileged Identity Management. |
 | Security Administrator                        | Identity   | High                      | Identities in this role can read security information and reports, and manage configuration in Microsoft Entra ID and Office 365. |
 | Security Operator                             | Identity   | High                      | Identities in this role can create and manage security events.    |
 | Security Reader                               | Identity   | High                      | Identities in this role can read security information and reports in Microsoft Entra ID and Office 365. |
