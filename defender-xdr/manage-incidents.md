@@ -145,6 +145,9 @@ You can also add your own comments using the comment box available within the ac
 
 :::image type="content" source="/defender/media/incidents-queue/fig5-res-manageincidents.png" alt-text="Screenshot highlighting the comment box from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig5-manageincidents.png":::
 
+> [!IMPORTANT]
+> Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 ## Export incident data to PDF
 
 You can export an incident's data to PDF through the **Export incident as PDF** function and save it into PDF format. This function allows security teams to review an incident's details offline at any given time.
@@ -192,9 +195,7 @@ The report is cached for a couple of minutes. The system provides the previously
 
 ## Next steps
 
-For new incidents, begin your [investigation](investigate-incidents.md).
-
-For in-process incidents, continue your [investigation](investigate-incidents.md).
+For new and in-process incidents, continue your [incident investigation](investigate-incidents.md).
 
 For resolved incidents, perform a [post-incident review](respond-first-incident-remediate.md).
 

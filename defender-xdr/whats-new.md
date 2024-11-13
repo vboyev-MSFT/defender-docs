@@ -31,8 +31,8 @@ You can also get product updates and important notifications through the [messag
 
 ## November 2024
 
-- (GA) Microsoft Defender XDR customers can now export incident data to PDF. Use the exported data to easily capture and share incident data to other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
-- (GA) The [***go hunt***](investigate-incidents.md#go-hunt) action from the attack story graph and the **last update time** column in the [incident queue](incident-queue.md#incident-queue) are now generally available.
+- (Preview) Microsoft Defender XDR customers can now export incident data to PDF. Use the exported data to easily capture and share incident data to other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
+- (GA) The **last update time** column in the [incident queue](incident-queue.md#incident-queue) is now generally available.
 - (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
 
 ## October 2024
