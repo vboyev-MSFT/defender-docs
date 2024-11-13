@@ -30,6 +30,8 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 ## November 2024
+
+- (Preview) **Attack paths** in the incident graph are now available in the Microsoft Defender portal. The attack story now includes potential attack paths that show the paths that attackers can potentially take after compromising a device. This feature helps you prioritize your response efforts. For more information, see [attack paths in the attack story](investigate-incidents.md#attack-paths).
 - (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
 
 ## October 2024
