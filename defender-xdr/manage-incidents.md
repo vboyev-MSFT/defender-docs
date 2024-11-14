@@ -225,7 +225,7 @@ Classifying incidents and specifying their status and type helps tune Microsoft 
 
 Over the course of investigating and incident, add comments to record your activities, insights, and conclusions.
 
-1. Open the incident's activity log. From the incident page, select the three dots in the upper right corner, and from the resulting menu, select **Activity log**.
+1. Open the incident's activity log. From the incident page, or from the incident details panel on the incident queue page, select the three dots in the upper right corner, and from the resulting menu, select **Activity log**.
 
     :::image type="content" source="media/manage-incidents/activity-log.png" alt-text="Screenshot showing how to access an incident's activity log." lightbox="media/manage-incidents/activity-log.png":::
 
@@ -241,7 +241,7 @@ All comments are added to the historical events of the incident. You can see the
 
 ### View the activity log of an incident
 
-The **Activity log** displays a list of all the comments and actions performed on the incident, known as *Audits and comments*. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. The activity log is available from the **Activity log** option on the incident page or on the incident side pane.
+When doing a postmortem of an incident, view the incident's **Activity log** to see the history of actions performed on the incident and any comments recorded. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. The activity log is available from the **Activity log** option on the incident page or on the incident side pane.
 
 :::image type="content" source="/defender/media/incidents-queue/fig3-manageincidents-new.png" alt-text="Screenshot highlighting the activity log option from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig3-manageincidents-new.png":::
 
