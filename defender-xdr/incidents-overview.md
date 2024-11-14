@@ -1,5 +1,5 @@
 ---
-title: Overview of incidents and alerts in the Microsoft Defender portal
+title: Incidents and alerts in the Microsoft Defender portal
 description: An introduction to incidents and alerts, and the differences between them, in the unified security operations platform in the Microsoft Defender portal.
 ms.service: defender-xdr
 f1.keywords:
@@ -19,13 +19,13 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 06/05/2024
+ms.date: 11/14/2024
 appliesto: 
 - Microsoft Defender XDR
 - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Overview of incidents and alerts in the Microsoft Defender portal
+# Incidents and alerts in the Microsoft Defender portal
 
 The Microsoft Defender portal brings together a unified set of security services to reduce your exposure to security threats, improve your organizational security posture, detect security threats, and investigate and respond to breaches. These services collect and produce signals that are displayed in the portal. The two main kinds of signals are:
 
