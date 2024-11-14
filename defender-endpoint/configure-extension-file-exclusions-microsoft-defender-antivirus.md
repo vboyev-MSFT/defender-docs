@@ -38,7 +38,7 @@ You can define exclusions for Microsoft Defender Antivirus that apply to [schedu
 > [!IMPORTANT]
 > Microsoft Defender Antivirus exclusions do apply to some Microsoft Defender for Endpoint capabilities, such as [attack surface reduction rules](attack-surface-reduction.md). Some Microsoft Defender Antivirus exclusions are applicable to some ASR rule exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
 > Files that you exclude using the methods described in this article can still trigger Endpoint Detection and Response (EDR) alerts and other detections.
-> To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](manage-indicators.md).
+> To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](indicators-overview.md).
 
 ## Before you begin
 
@@ -74,7 +74,7 @@ The following table lists some examples of exclusions based on file extension an
 
 - Folders that are reparse points are created after the Microsoft Defender Antivirus service starts, and those that were added to the exclusion list aren't included. Restart the service by restarting Windows for new reparse points to be recognized as a valid exclusion target.
 
-- Exclusions apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across all Defender for Endpoint capabilities. To define exclusions across Defender for Endpoint, use [custom indicators](manage-indicators.md).
+- Exclusions apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across all Defender for Endpoint capabilities. To define exclusions across Defender for Endpoint, use [custom indicators](indicators-overview.md).
 
 - By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) are merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists take precedence when there are conflicts. In addition, exclusion list changes made with Group Policy are visible in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
