@@ -59,7 +59,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
 - Select **Activate workloads** on the banner above the list of roles to go directly to the **Activate workloads** screen.
 - You must activate each workload one by one. Once you select the individual toggle, you activate (or deactivate) that workload.
 
-:::image type="content" source="/defender/media/defender/defender-rbac-select-workload.png.png" alt-text="Screenshot of the choose workloads to activate screen":::
+:::image type="content" source="/defender/media/defender/urbac-activate-workloads.png" alt-text="Screenshot of the choose workloads to activate screen":::
 
    > [!NOTE]
    > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft Defender XDR Unified RBAC.
