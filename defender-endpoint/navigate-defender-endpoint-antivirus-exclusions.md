@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/12/2024
+ms.date: 11/14/2024
 ms.reviewer: joshbregman
 manager: deniseb
 ms.collection: 
@@ -28,7 +28,7 @@ search.appverid: met150
 - **Performance issues**: Systems experience an unexpected performance impact when running with Defender for Endpoint
 - **Application compatibility issues**: Applications experience unexpected behavior when running with Defender for Endpoint 
 
-Creating an exclusion is one possible approach for addressing these types of issues. This article also includes [Alternatives to creating exclusions and allow indicators](#alternatives-to-creating-exclusions-and-allow-indicators).  
+Creating an exclusion is one possible approach for addressing these types of issues. But often there are other steps you can take. In addition to providing an overview of indicators and exclsuions, this article includes [Alternatives to creating exclusions and allow indicators](#alternatives-to-creating-exclusions-and-allow-indicators).  
 
 > [!NOTE]
 > Creating an indicator or an exclusion should only be considered after thoroughly understanding the root cause of the unexpected behavior.
