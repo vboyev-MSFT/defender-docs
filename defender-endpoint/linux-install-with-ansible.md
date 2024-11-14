@@ -34,7 +34,19 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
 
-## Prerequisites and system requirements
+## Introduction
+
+Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automate the deployment process for machines at scale. Following are the two methods to automate.
+
+1.        Using installer script (recommended)
+
+This method greatly simplifies the automation process and helps to install the MDE agent  as well as onboard the device to security portal using just a few steps without having to configure for different distros separately.
+
+2.        Manually configuring repositories for each distro
+
+This method allows to automate the deployment process by manually configuring repositories, installing the agent and onboarding the device for each distro. This method  gives more granular control over the deployment process.
+
+## Prerequisites and system requirements applicable to both the Methods
 
 Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
@@ -60,7 +72,7 @@ In addition, for Ansible deployment, you need to be familiar with Ansible admini
     ansible -m ping all
     ```
 
-## Download the onboarding package
+## Download the onboarding package applicable to both the methods
 
 Download the onboarding package from Microsoft Defender portal.
 
@@ -89,43 +101,171 @@ Download the onboarding package from Microsoft Defender portal.
     inflating: mdatp_onboard.json
     ```
 
-## Create Ansible YAML files
+## Deploy MDE using mde_installer.sh with Ansible
 
-Create a subtask or role files that contribute to a playbook or task.
+Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy MDE using installer bash script
 
-- Create the onboarding task, `onboarding_setup.yml`:
+### Download the installer bash script
 
-    ```bash
-    - name: Create MDATP directories
-      file:
-        path: /etc/opt/microsoft/mdatp/
-        recurse: true
-        state: directory
-        mode: 0755
-        owner: root
-        group: root
+Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation) from Microsoft Github Repository or use the below command to download
 
-    - name: Register mdatp_onboard.json
-      stat:
-        path: /etc/opt/microsoft/mdatp/mdatp_onboard.json
-      register: mdatp_onboard
+ ```bash
+   wget https://raw.githubusercontent.com/microsoft/mdatp-xplat/refs/heads/master/linux/installation/mde_installer.sh
+ ```
 
-    - name: Extract WindowsDefenderATPOnboardingPackage.zip into /etc/opt/microsoft/mdatp
-      unarchive:
-        src: WindowsDefenderATPOnboardingPackage.zip
-        dest: /etc/opt/microsoft/mdatp
-        mode: 0600
-        owner: root
-        group: root
-      when: not mdatp_onboard.stat.exists
-    ```
+### Create Ansible YAML files
+
+Create installation YAML file
+
+```bash
+- name: Install and Onboard MDE
+  hosts: servers
+  tasks:
+   - name: Create a directory if it does not exist
+     ansible.builtin.file:
+       path: /tmp/mde_install
+       state: directory
+       mode: '0755'
+
+   - name: Copy Onboarding script
+     ansible.builtin.copy:
+       src: "{{ onboarding_script }}"
+       dest: /tmp/mde_install/mdatp_onboard.json
+   - name: Install MDE on host
+     ansible.builtin.script: "{{ mde_installer_script }} --install --channel {{ channel | default('insiders-fast') }} --onboard /tmp/mde_install/mdatp_onboard.json"
+     register: script_output
+     args:
+       executable: sudo
+
+   - name: Display the installation output
+     debug:
+       msg: "Return code [{{ script_output.rc }}] {{ script_output.stdout }}"
+
+   - name: Display any installation errors
+     debug:
+       msg: "{{ script_output.stderr }}"
+
+```
+
+### Deploy MDE using the above playbook using the command
+
+Replace the corresponding paths and channel in the below command as per your requirement
+
+```bash
+ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml --extra-vars "onboarding_script=<path to mdatp_onboard.json > mde_installer_script=<path to mde_installer.sh> channel=<channel to deploy for: insiders-fast / insiders-slow / prod> "
+
+
+```
+
+### Verify deployment
+
+a.     Go to __[Microsoft Defender Security Portal]()__   inventory. It might take 5-20 mins for the device to show up on the portal.
+
+b.    Perform the below post-installation checks which includes checks like health, connectivity, AV/EDR detection tests to ensure successful deployment and working of MDE
+
+```bash
+
+- name: Run post-installation basic MDE test
+  hosts: myhosts
+  tasks:
+    - name: Check health
+      ansible.builtin.command: mdatp health --field healthy
+      register: health_status
+
+    - name: MDE health test failed
+      fail: msg="MDE is not healthy. health status => \n{{ health_status.stdout       }}\nMDE deployment not complete"
+      when: health_status.stdout != "true"
+
+    - name: Run connectivity test
+      ansible.builtin.command: mdatp connectivity test
+      register: connectivity_status
+
+    - name: Connectivity failed
+      fail: msg="Connectivity failed. Connectivity result => \n{{ connectivity_status.stdout }}\n MDE deployment not complete"
+      when: connectivity_status.rc != 0
+
+    - name: Check RTP status
+      ansible.builtin.command: mdatp health --field real_time_protection_enabled
+      register: rtp_status
+
+    - name: Enable RTP
+      ansible.builtin.command: mdatp config real-time-protection --value enabled
+      become: yes
+      become_user: root
+      when: rtp_status.stdout != "true"
+
+    - name: Pause for 5 second to enable RTP
+      ansible.builtin.pause:
+        seconds: 5
+
+    - name: Download EICAR
+      ansible.builtin.get_url:
+        url: https://secure.eicar.org/eicar.com.txt
+        dest: /tmp/eicar.com.txt
+
+    - name: Pause for 5 second to detect eicar 
+      ansible.builtin.pause:
+        seconds: 5
+
+    - name: Check for EICAR file
+      stat: path=/tmp/eicar.com.txt
+      register: eicar_test
+
+    - name: EICAR test failed
+      fail: msg="EICAR file not deleted. MDE deployment not complete"
+      when: eicar_test.stat.exists
+
+    - name: MDE Deployed
+      debug:
+      msg: "MDE succesfully deployed"
+
+
+```
+
+### How to uninstall Microsoft Defender for Endpoint on Linux Servers
+
+Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml)  which uses mde_installer.sh
+
+```bash
+
+- name: Uninstall MDE
+  hosts: myhosts
+  tasks:
+   - name: Uninstall MDE
+     ansible.builtin.script: "{{ mde_installer_script }} --remove"
+     register: script_output
+     args:
+       executable: sudo
+
+
+- name: Display the installation output
+  debug:
+    msg: "Return code [{{ script_output.rc }}] {{ script_output.stdout }}"
+
+- name: Display any installation errors
+  debug:
+    msg: "{{ script_output.stderr }}"
+
+```
+
+Run the below command to uninstall MDE using the above playbook
+
+```bash
+ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/uninstall_mdatp.yml --extra-vars "mde_installer_script=<path to mde_installer.sh>"
+```
+
+## Deploy MDE using Ansible by configuring repositories manually
+
+Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy MDE by manually configuring the repositories for each Linux distribution
+
+### Create Ansible YAML files
 
 - Add the Defender for Endpoint repository and key, `add_apt_repo.yml`:
 
-    Defender for Endpoint on Linux can be deployed from one of the following channels:
-    - *insiders-fast*, denoted as `[channel]`
-    - *insiders-slow*, denoted as `[channel]`
-    - *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
+- Defender for Endpoint on Linux can be deployed from one of the following channels:
+- *insiders-fast*, denoted as `[channel]`
+  - *insiders-slow*, denoted as `[channel]`
+  - *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
 
     Each channel corresponds to a Linux software repository.
 
@@ -134,17 +274,17 @@ Create a subtask or role files that contribute to a playbook or task.
 
     In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
-    > [!WARNING]
+      > [!WARNING]
     > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
+      Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
-    In the following commands, replace *[distro]* and *[version]* with the information you've identified.
+      In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
-    > [!NOTE]
+      > [!NOTE]
     > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle Linux, replace *[version]* with the version of Oracle Linux.
 
-  ```bash
+    ```bash
   - name: Add Microsoft APT key
     apt_key:
       url: https://packages.microsoft.com/keys/microsoft.asc
