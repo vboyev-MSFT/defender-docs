@@ -32,6 +32,8 @@ You can also get product updates and important notifications through the [messag
 ## November 2024
 - (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
 
+- If you're using Microsoft's unified security operations (SecOps) platform, with both Microsoft Sentinel and Microsoft Defender XDR, Microsoft Sentinel workbooks are now available directly in the Microsoft Defender portal, and a new tab no longer opens to the Azure portal. For more information, see [Visualize and monitor your data by using workbooks in Microsoft Sentinel](/azure/sentinel/monitor-your-data?tabs=azure-portal).
+
 ## October 2024
 
 - [Microsoft Unified RBAC roles](experts-on-demand.md#required-permissions-for-using-ask-defender-experts) are added with new permission levels for Microsoft Threat Experts customers to use Ask Defender experts capability.
