@@ -4,7 +4,7 @@ description: Learn how to use exclusions, indicators, and other techniques to ad
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
-ms.date: 11/12/2024
+ms.date: 11/14/2024
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
@@ -96,14 +96,6 @@ In this scenario, an application is detected by Microsoft Defender Antivirus bec
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-
-### A nonmalicious PowerShell script file is incorrectly detected by Microsoft Defender Antivirus
-
-In this scenario, a user copies a nonmalicious PowerShell script file onto an endpoint, and the script file is incorrectly detected by Microsoft Defender Antivirus.
-
-**How to observe**: AMSI detection in the operational logs 
-
-**How to address**: Define a path exclusion with limitations. See [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
 
 ### An app is considered a potentially unwanted application (PUA)
 
