@@ -42,19 +42,6 @@ Creating an exclusion is one possible approach for addressing these types of iss
 | [Compatibility issues](microsoft-defender-antivirus-compatibility.md) with non-Microsoft antivirus products. <br/>Example: Defender for Endpoint relies on security intelligence updates for devices, whether they're running Microsoft Defender Antivirus or a non-Microsoft antivirus solution.  | 1. If you're using a non-Microsoft antivirus product as your primary antivirus/antimalware solution, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).<br/>2. If you're switching from a non-Microsoft antivirus/antimalware solution to Defender for Endpoint, see [Make the switch to Defender for Endpoint](switch-to-mde-overview.md). This guidance includes:<br/>- [Exclusions you might need to define for the non-Microsoft antivirus/antimalware solution](switch-to-mde-phase-2.md#step-3-add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution);<br/>- [Exclusions you might need to define for Microsoft Defender Antivirus](switch-to-mde-phase-2.md#step-4-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus); and <br/>- [Troubleshooting information](switch-to-mde-troubleshooting.md) (just in case something goes wrong while migrating). |
 | Compatibility with applications. <br/>Example: Applications are crashing or experiencing unexpected behaviors after a device is onboarded to Microsoft Defender for Endpoint.  |  1. Identify which component is causing unexpected behavior (described in the [next section](#identify-which-component-is-causing-unexpected-behavior)). <br/>2. See [Address unwanted behaviors in Microsoft Defender for Endpoint with exclusions, indicators, and other techniques](address-unwanted-behaviors-mde.md). |
 
-## Identify which component is causing unexpected behavior
-
-In order to properly diagnose and resolve issues, the first step is to determine if the issue is being caused by Defender Antivirus or Defender for Endpoint.
-
-- In the [Microsoft Defender portal](https://security.microsoft.com), look at the detection source.
-- On a device, see if there's high CPU usage with `MsSense.exe` `SenseNDR.exe` or `SenseTVM.exe`
-
-Then, see the following articles:
-
-- [Managing exclusions reference](managing-exclusions.md)
-- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
-- [Address unwanted behaviors with exclusions, indicators, and other techniques](address-unwanted-behaviors-mde.md)
-
 ## Alternatives to creating exclusions and allow indicators
 
 Creating an exclusion or an allow indicator creates a protection gap. These techniques should only be used after determining the root cause of the issue. Until that determination is made, consider these alternatives:
