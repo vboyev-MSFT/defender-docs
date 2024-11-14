@@ -1224,7 +1224,7 @@ The filterable properties that are available in the **File name** box in the **C
 |Site|Text. Separate multiple values by commas.|✔|✔|
 |File owner|Text. Separate multiple values by commas.|✔|✔|
 |Last modified by|Text. Separate multiple values by commas.|✔|✔|
-|SHA256|Integer. Separate multiple values by commas. <br/><br/> To find the SHA256 hash value of a file in Windows, run the following command in Windows PowerShell: `Get-FileHash -Path "<Path>\Filename>" -Algorithm SHA256`.|✔|✔|
+|SHA256|Integer. Separate multiple values by commas. <br/><br/> To find the SHA256 hash value of a file in Windows, run the following command in Windows PowerShell: `Get-FileHash -Path "<Path>\<Filename>" -Algorithm SHA256`.|✔|✔|
 |Malware family|Text. Separate multiple values by commas.|✔|✔|
 |Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra-org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
 |Threat type|Select one or more values: <ul><li>**Block**</li><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
