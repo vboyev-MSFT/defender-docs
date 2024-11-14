@@ -97,7 +97,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Fixed an issue with Security Intelligence Update disk cleanup.
 - Fixed an issue where the Signature date information on the Security Health report wasn't accurate.
 - Introduced performance improvements when processing paths for exclusions.
-- Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
+- Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](indicators-overview.md).
 - Improved resilience in processing [attack surface reduction](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
 - Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occurred when MAPS is disabled.
 - A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
@@ -116,7 +116,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Improved reporting in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for block-only remediations
 - Reduced the number of false positives for [attack surface reduction rules](attack-surface-reduction.md) for known trusted processes
 - Improved [Get-MpPreference](/powershell/module/defender/get-mppreference) logic for proxy bypass settings
-- Extended the toast notification support for [Indicators of Compromise](manage-indicators.md#indicator-of-compromise-ioc-overview) (IoC) detections
+- Extended the toast notification support for [Indicators of Compromise](indicators-overview.md#indicator-of-compromise-ioc-overview) (IoC) detections
 
 #### Known issues
 

@@ -81,7 +81,7 @@ You can control the following attributes about the folder that you'd like to be 
 
 ## Related articles
 
-- [Manage automation allowed/blocked lists](manage-indicators.md)
+- [Manage automation allowed/blocked lists](indicators-overview.md)
 - [Manage automation file uploads](manage-automation-file-uploads.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 
