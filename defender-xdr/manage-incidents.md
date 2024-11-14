@@ -53,7 +53,7 @@ This article shows you how to perform various incident management tasks associat
 **[Incident logging and reporting:](#incident-logging-and-reporting)**
 
 - [Edit the incident name](#edit-the-incident-name).
-- Assess the activity audit and add comments in the [Activity log](#activity-log).
+- Assess the activity audit and add comments in the [Activity log](#view-the-activity-log-of-an-incident).
 - [Export incident data to PDF](#export-incident-data-to-pdf).
 
 ## Access the *Manage incident* pane
@@ -296,7 +296,7 @@ The incident data exported includes the following information:
 - The [attack story](investigate-incidents.md#attack-story) graph and threat categories
 - The impacted [assets](investigate-incidents.md#assets), covering up to 10 assets for each asset type
 - The [evidence list](investigate-incidents.md#evidence-and-response) covering up to 100 items
-- Supporting data, including all [related alerts](investigate-incidents.md#alerts) and activities recorded in the [activity log](#activity-log)
+- Supporting data, including all [related alerts](investigate-incidents.md#alerts) and activities recorded in the [activity log](#view-the-activity-log-of-an-incident)
 
 Here's an example of the exported PDF:
 
