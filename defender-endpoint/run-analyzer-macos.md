@@ -29,12 +29,12 @@ If you're experiencing reliability or device health issues with Microsoft Defend
 
 ## Use the binary version of the client analyzer
 
-1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS machine you need to investigate. 
+1. Download the [XMDE Client Analyzer Binary](https://go.microsoft.com/fwlink/?linkid=2297517) tool to the macOS machine you need to investigate. 
 
    If you're using a terminal, download the tool by running the following command:
 
    ```bash
-   wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   wget --quiet -O XMDEClientAnalyzerBinary.zip https://go.microsoft.com/fwlink/?linkid=2297517
    ```
 
 2. Verify the download.
