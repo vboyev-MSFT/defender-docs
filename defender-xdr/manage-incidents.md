@@ -37,18 +37,21 @@ Manage your incidents from **Investigation & response > Incidents & alerts > Inc
 
 This article shows you how to perform various incident management tasks associated with different stages in an incident's lifecycle.
 
-**Incident triage:**
+**[Incident triage:](#incident-triage)**
+
 - [Assign the incident to an owner](#assign-an-incident-to-an-owner).
 - [Assign or change severity](#assign-or-change-incident-severity).
 - [Add incident tags](#add-incident-tags).
 - [Change the incident status](#change-the-incident-status).
 
-**Incident investigation and resolution:**
-- [Specify an incident's classification](#specify-the-classification).
-- [Resolve an incident](#resolve-an-incident).
-- [Add comments to an incident](#add-comments).
+**[Incident investigation and resolution:](#incident-investigation-and-resolution)**
 
-**Incident logging and reporting:**
+- [Specify an incident's classification](#specify-the-incidents-classification).
+- [Resolve an incident](#resolve-an-incident).
+- [Add comments to an incident](#add-comments-to-an-incident).
+
+**[Incident logging and reporting:](#incident-logging-and-reporting)**
+
 - [Edit the incident name](#edit-the-incident-name).
 - Assess the activity audit and add comments in the [Activity log](#activity-log).
 - [Export incident data to PDF](#export-incident-data-to-pdf).
@@ -83,6 +86,11 @@ Most of these tasks are accessible from the **Manage incident** pane for an inci
 ## Incident triage
 
 The following management tasks are closely associated with incident triage, though they can be performed at any time.
+
+- [Assign the incident to an owner](#assign-an-incident-to-an-owner).
+- [Assign or change severity](#assign-or-change-incident-severity).
+- [Add incident tags](#add-incident-tags).
+- [Change the incident status](#change-the-incident-status).
 
 ### Assign an incident to an owner
 
@@ -239,19 +247,39 @@ All comments are added to the historical events of the incident. You can see the
 
 ## Incident logging and reporting
 
+### Edit the incident name
+
+Microsoft Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. The incident name allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+
+To edit the incident name, take the following steps:
+
+1. Follow the instructions in the opening section to [Access the *Manage incident* pane](#access-the-manage-incident-pane).
+
+1. Type a new name in the **Incident name** field on the **Manage incident** pane.
+
+1. Select **Save**.
+
+> [!NOTE]
+>
+> - Incidents that existed before the rollout of the automatic incident naming feature retain their names.
+>
+> - If another incident is merged into a renamed incident, Defender gives the incident a new name, overwriting any custom name you gave it beforehand.
+
 ### View the activity log of an incident
 
-When doing a postmortem of an incident, view the incident's **Activity log** to see the history of actions performed on the incident and any comments recorded. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. The activity log is available from the **Activity log** option on the incident page or on the incident side pane.
+When doing a postmortem of an incident, view the incident's **Activity log** to see the history of actions performed on the incident (called "Audits") and any comments recorded. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. 
 
-:::image type="content" source="/defender/media/incidents-queue/fig3-manageincidents-new.png" alt-text="Screenshot highlighting the activity log option from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig3-manageincidents-new.png":::
+1. Open the incident's activity log. From the incident page, or from the incident details panel on the incident queue page, select the three dots in the upper right corner, and from the resulting menu, select **Activity log**.
 
-You can filter the activities within the log by comments and actions. Click the **Content: Audits, Comments** then select the content type to filter activities. Here's an example.
+    :::image type="content" source="media/manage-incidents/activity-log.png" alt-text="Screenshot highlighting the activity log option from the incident page in the Microsoft Defender portal." lightbox="media/manage-incidents/activity-log.png":::
 
-:::image type="content" source="/defender/media/incidents-queue/fig4-manageincidents.png" alt-text="Screenshot highlighting the filter options within the activity log pane from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig4-manageincidents.png":::
+1. Filter the activities within the log by comments and actions. Select **Content: Audits, Comments** then select the content type to filter activities. Here's an example.
 
-You can also add your own comments using the comment box available within the activity log. The comment box accepts text and formatting, links, and images.
+    :::image type="content" source="media/manage-incidents/filter-activity-log.png" alt-text="Screenshot highlighting the filter options within the activity log pane from the incident page in the Microsoft Defender portal." lightbox="media/manage-incidents/filter-activity-log.png":::
 
-:::image type="content" source="/defender/media/incidents-queue/fig5-res-manageincidents.png" alt-text="Screenshot highlighting the comment box from the incident page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/fig5-manageincidents.png":::
+1. Select **Apply**.
+
+You can also [add your own comments](#add-comments-to-an-incident) using the comment box available within the activity log. The comment box accepts text and formatting, links, and images.
 
 ### Export incident data to PDF
 
@@ -272,7 +300,7 @@ The incident data exported includes the following information:
 
 Here's an example of the exported PDF:
 
-:::image type="content" source="/defender/media/incidents-queue/export-results-small.png" alt-text="Screenshot of the exported PDF's first page." lightbox="/defender/media/incidents-queue/export-results.png":::
+:::image type="content" source="media/manage-incidents/export-results-small.png" alt-text="Screenshot of the exported PDF's first page." lightbox="media/manage-incidents/export-results.png":::
 
 If you have the [Copilot for Security](/security-copilot/microsoft-security-copilot) license, the exported PDF contains the following additional incident data:
 
@@ -281,25 +309,25 @@ If you have the [Copilot for Security](/security-copilot/microsoft-security-copi
 
 The export to PDF function is also available in the Copilot side panel. When you select the **More actions** ellipsis (...) on the upper right corner of the incident report results card, you can choose **Export incident as PDF**.
 
-![Screenshot of additional actions in the incident report results card.](/defender/media/incidents-queue/export-incident-more-actions1.png)
+   :::image type="content" source="media/manage-incidents/export-incident-more-actions1.png" alt-text="Screenshot of additional actions in the incident report results card.":::
 
 To generate the PDF, perform the following steps:
 
 1. Open an incident page. Select the **More actions** ellipsis (...) on the upper right corner and choose **Export incident as PDF**.
 
-   :::image type="content" source="/defender/media/incidents-queue/export-ellipsis-small.png" alt-text="Screenshot highlighting the More actions ellipsis on the incident page." lightbox="/defender/media/incidents-queue/export-ellipsis.png":::
+   :::image type="content" source="media/manage-incidents/export-ellipsis-small.png" alt-text="Screenshot highlighting the More actions ellipsis on the incident page." lightbox="media/manage-incidents/export-ellipsis.png":::
 
 1. In the dialog box that appears next, confirm the incident information that you want to include or exclude in the PDF. All incident information is selected by default. Select **Export PDF** to proceed.
 
-   :::image type="content" source="/defender/media/incidents-queue/export-options.png" alt-text="Screenshot highlighting the export incident to PDF option.":::
+   :::image type="content" source="media/manage-incidents/export-options.png" alt-text="Screenshot highlighting the export incident to PDF option.":::
 
 1. A status message indicating the current state of the download appears below the incident title. The export process may take a few minutes depending on the incident's complexity and the amount of data to be exported.
 
-   :::image type="content" source="/defender/media/incidents-queue/export-prepare-small.png" alt-text="Screenshot highlighting export message and status before download." lightbox="/defender/media/incidents-queue/export-prepare.png":::
+   :::image type="content" source="media/manage-incidents/export-prepare-small.png" alt-text="Screenshot highlighting export message and status before download." lightbox="media/manage-incidents/export-prepare.png":::
 
 1. Another dialog box appears indicating that the PDF is ready. Select **Download** from the dialog box to save the PDF to your device. The status message below the incident title also updates to indicate that the download is available.
 
-   :::image type="content" source="/defender/media/incidents-queue/export-download-small.png" alt-text="Screenshot highlighting export message and status when download is available." lightbox="/defender/media/incidents-queue/export-download.png":::
+   :::image type="content" source="media/manage-incidents/export-download-small.png" alt-text="Screenshot highlighting export message and status when download is available." lightbox="media/manage-incidents/export-download.png":::
 
 The report is cached for a couple of minutes. The system provides the previously generated PDF if you try to export the same incident again within a short time frame. To generate a newer version of the PDF, wait for a few minutes for the cache to expire.
 
