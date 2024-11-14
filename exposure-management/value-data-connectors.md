@@ -80,16 +80,22 @@ To explore your discovered and ingested data from the external data sources, you
 
 **Examples**:
 
+This query will return all assets retrieved from ServiceNow CMDB and their detailed metadata.
+
 ```kusto
 ExposureGraphNodes
 | where NodeProperties contains ("serviceNowCmdbAssetInfo")
 | extend SnowInfo = NodeProperties.rawData.serviceNowCmdbAssetInfo
 ```
 
+This query will return all assets retrieved from Qualys.
+
 ```kusto
 ExposureGraphNodes
 | where EntityIds contains ("QualysAssetId")
 ```
+
+This query will return all vulnerabilities (CVEs) reported by Rapid7 on ingested assets.
 
 ```kusto
 ExposureGraphEdges
@@ -97,6 +103,8 @@ ExposureGraphEdges
 | where tostring(EdgeProperties.rawData.reportInfo.reportedBy) == "rapid7"
 | project AssetName = TargetNodeName, CVE = SourceNodeName
 ```
+
+This query will return all vulnerabilities (CVEs) reported by Tenable on ingested assets.
 
 ```kusto
 ExposureGraphEdges
@@ -107,6 +115,7 @@ ExposureGraphEdges
 
 > [!NOTE]
 > When troubleshooting Advanced Hunting (AH) queries that don't work or yield no results, note that the "reportedBy" field is case-sensitive. For example, valid values include "rapid7", "tenable", etc.
+>
 
 ### Attack paths
 
