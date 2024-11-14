@@ -81,6 +81,7 @@ While Microsoft Defender already uses advanced correlation mechanisms, you might
 ## Next steps
 
 To learn more about prioritizing and managing incidents, see the following articles:
+
 - [Prioritize incidents in the Microsoft Defender portal](incident-queue.md)
 - [Manage incidents in Microsoft Defender](manage-incidents.md)
 
