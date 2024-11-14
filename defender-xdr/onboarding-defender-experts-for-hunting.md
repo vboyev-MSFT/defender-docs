@@ -73,7 +73,7 @@ You can filter your incidents and alerts if you want to only see the Defender Ex
 
 ### Set up Defender Experts email notifications
 
-You can set up Microsoft Defender XDR to notify you or your staff with an email about new incidents or updates to existing incidents, including those observed by Microsoft Defender Experts. [Learn more about getting incident notifications by email](incidents-overview.md#incident-notifications-by-email)
+You can set up Microsoft Defender XDR to notify you or your staff with an email about new incidents or updates to existing incidents, including those observed by Microsoft Defender Experts. [Learn more about getting incident notifications by email](m365d-notifications-incidents.md)
 
 1. In the Microsoft Defender XDR navigation pane, select **Settings** > **Microsoft Defender XDR** > **Email notifications** > **Incidents**.
 2. Update your existing email notification rules or create a new one. For more information, see [Auditing](auditing.md).
