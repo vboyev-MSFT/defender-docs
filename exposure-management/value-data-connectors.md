@@ -121,7 +121,9 @@ ExposureGraphEdges
 
 Security Exposure Management automatically generates attack paths based on the data collected across assets and workloads, including data from external connectors. It simulates attack scenarios, and identifies vulnerabilities and weaknesses that an attacker could exploit.
 
-As you explore attack paths in your environment, you can view the discovery sources that contributed to this attack path based on the graphical view of the path:
+As you explore attack paths in your environment, you can view the discovery sources that contributed to this attack path based on the graphical view of the path.
+
+:::image type="content" source="media/value-data-connectors/attack paths data connectors.png" alt-text="Screensot of attach path with discovery source" lightbox="media/value-data-connectors/attack paths data connectors.png":::
 
 ## Next steps
 

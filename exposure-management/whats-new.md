@@ -33,6 +33,12 @@ We have introduced new external data connectors to enhance data integration capa
 
 For more information, see [Data connectors overview](overview-data-connectors.md).
 
+### Discovery sources available in the inventory and attack surface map
+
+The Device Inventory and Attack Surface Map now display the data sources for each discovered asset. This feature provides an overview of which tools or products reported each asset, including Microsoft and external connectors like Tenable or ServiceNow CMDB. In the inventory, use the **Discovery Sources** column to filter devices by reporting sources. In the **Attack Surface Map**, toggle the **Discovery Sources** view using the **Layers** option. You can also query **Discovery Sources** in the **Device Info** table via Advanced Hunting.
+
+For more information on understanding data from external sources, see [Getting value from your data connectors](value-data-connectors.md)
+
 ### Content versioning notifications
 
 The new versioning feature in Microsoft Security Exposure Management offers proactive notifications about upcoming version updates, giving users advanced visibility into anticipated metric changes and their impact on their related initiatives. A dedicated side panel provides comprehensive details about each update, including the expected release date, release notes, current and new metric values, and any changes to related initiative scores. Additionally, users can share direct feedback on the updates within the platform, fostering continuous improvement and responsiveness to user needs.
