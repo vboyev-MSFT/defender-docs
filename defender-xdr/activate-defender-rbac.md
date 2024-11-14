@@ -12,7 +12,7 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: how-to
-ms.date: 11/11/2024
+ms.date: 11/17/2024
 ms.reviewer: 
 search.appverid: met150
 ---
@@ -52,7 +52,7 @@ Sign in to the [Microsoft Defender portal](https://security.microsoft.com). In t
 
 You can activate your workloads in two ways from the Permissions and roles page:
 
-:::image type="content" source="/defender/media/defender/m365-defender-rbac-activate-workloads1.png" alt-text="Screenshot of the activate workloads page" lightbox="/defender/media/defender/m365-defender-rbac-activate-workloads1.png":::
+:::image type="content" source="/defender/media/defender/urbac-activate-workloads.png" alt-text="Screenshot of the activate workloads page" lightbox="/defender/media/defender/m365-defender-rbac-activate-workloads1.png":::
 
 1. **Activate workloads**
 
