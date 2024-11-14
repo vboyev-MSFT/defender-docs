@@ -46,8 +46,8 @@ This article shows you how to perform various incident management tasks associat
 
 **[Incident investigation and resolution:](#incident-investigation-and-resolution)**
 
-- [Specify an incident's classification](#specify-the-incidents-classification).
 - [Resolve an incident](#resolve-an-incident).
+- [Specify an incident's classification](#specify-the-incidents-classification).
 - [Add comments to an incident](#add-comments-to-an-incident).
 
 **[Incident logging and reporting:](#incident-logging-and-reporting)**
@@ -186,7 +186,11 @@ Incidents begin life with a status of **Active**. When you're working on an inci
 
 ## Incident investigation and resolution
 
-The following management tasks are closely associated with incident resolution, though they can be performed at any time.
+The following management tasks are closely associated with incident investigation and resolution, though they can be performed at any time.
+
+- [Resolve an incident](#resolve-an-incident).
+- [Specify an incident's classification](#specify-the-incidents-classification).
+- [Add comments to an incident](#add-comments-to-an-incident).
 
 ### Resolve an incident
 
@@ -246,6 +250,12 @@ Over the course of investigating and incident, add comments to record your activ
 All comments are added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
 ## Incident logging and reporting
+
+The following management tasks can be associated with auditing and reporting on incident investigations, though they can be performed at any time.
+
+- [Edit the incident name](#edit-the-incident-name).
+- Assess the activity audit and add comments in the [Activity log](#view-the-activity-log-of-an-incident).
+- [Export incident data to PDF](#export-incident-data-to-pdf).
 
 ### Edit the incident name
 
