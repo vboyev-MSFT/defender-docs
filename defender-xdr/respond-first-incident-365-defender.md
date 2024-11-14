@@ -79,7 +79,7 @@ You might assign a high priority to the incident using the information above. Yo
 
 You can contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. When you add information to the following filters from when you triage and analyze each incident, you provide further context to that incident that other responders can take advantage of:
 
-- [Classifying incidents and alerts](manage-incidents.md#specify-the-classification)
+- [Classifying incidents and alerts](manage-incidents.md#specify-the-incidents-classification)
 - Naming incidents
 - Adding tags
 - Providing comments
