@@ -28,7 +28,7 @@ To establish a connection with any of the supported external products, follow th
 5. The data connector is now connected and will start ingesting data from the external source.
 
 > [!Note]
-> It may take up to an hour for data to start flowing after the data connector is configured.
+> It may take several hours for the connectors data to propagate to all experiences after the data connector is configured.
 
 ## Allowlist IP addresses
 
