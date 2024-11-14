@@ -133,9 +133,9 @@
     - name: Investigate and respond to threats
       items:
        - name: Overview
-         href: incidents-alerts-overview.md
+         href: incidents-overview.md
        - name: Correlation and merging
-         href: alerts-incidents-correlation-merging.md
+         href: alerts-incidents-correlation.md
        - name: Respond to incidents
          items:
               - name: Overview

@@ -26,7 +26,7 @@ appliesto:
 
 # Alert correlation and incident merging in the Microsoft Defender portal
 
-This article continues your introduction to how alerts and incidents work, and what they represent, in the Microsoft Defender portal. For the beginning of this introduction, see [Incidents and alerts in the Microsoft Defender portal: an overview](incidents-alerts-overview.md).
+This article continues your introduction to how alerts and incidents work, and what they represent, in the Microsoft Defender portal. For the beginning of this introduction, see [Incidents and alerts in the Microsoft Defender portal: an overview](incidents-overview.md).
 
 ## Incident creation and alert correlation
 
