@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/23/2024
+ms.date: 11/15/2024
 ---
 
 # Microsoft Defender for Endpoint on Linux
@@ -105,7 +105,8 @@ If you experience any installation failures, see [Troubleshooting installation f
   - Mariner 2
     
   > [!NOTE]
-  > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+  > The workstation versions of these distributions are unsupported.
+  > Other distributions and versions that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
   > Microsoft Defender Vulnerablity Management is not supported on Rocky and Alma currently.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
