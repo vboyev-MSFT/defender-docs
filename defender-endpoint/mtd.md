@@ -137,7 +137,7 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - Alerts appear in dashboard: Verify that alerts for the detection tests mentioned earlier appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
-Need help in deploying or configuring Defender for Endpoint on Android & iOS? If you have at least 150 licenses for the product, use your [FastTrack benefits](/microsoft-365/fasttrack/introduction). Learn more about FastTrack at [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Need help with deploying or configuring Defender for Endpoint on Android & iOS? If you have at least 150 licenses for the product, use your [FastTrack benefits](/microsoft-365/fasttrack/introduction). Learn more about FastTrack at [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 ## Configure
 
