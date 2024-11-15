@@ -133,13 +133,13 @@
     - name: Investigate and respond to threats
       items:
        - name: Overview
-         href: incident-response-overview.md
-       - name: Alerts, incidents, and correlation
+         href: incidents-overview.md
+       - name: Correlation and merging
          href: alerts-incidents-correlation.md
        - name: Respond to incidents
          items:
               - name: Overview
-                href: incidents-overview.md
+                href: incident-response-overview.md
               - name: Prioritize incidents
                 href: incident-queue.md
               - name: Manage incidents
