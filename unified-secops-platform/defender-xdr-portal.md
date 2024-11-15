@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender XDR in the Defender portal 
-description: Learn about the services and features available with Microsoft Defender XDR in the Defender portal.
+description: Learn about the services and features available with Microsoft Defender XDR in the Microsoft Defender portal.
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: cwatson
@@ -12,7 +12,9 @@ ms.collection:
 - M365-security-compliance
 - tier1
 - usx-security
-ms.topic: conceptual
+ms.topic: concept-article
+
+# customer intent: As a security operations center leader, I want to learn about the services and features available with Defender XDR to help me determine whether it meets my organization's requirements.
 ---
 
 # Microsoft Defender XDR in the Defender portal
