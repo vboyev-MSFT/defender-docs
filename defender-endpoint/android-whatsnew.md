@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: android
 search.appverid: met150
-ms.date: 08/26/2024
+ms.date: 11/15/2024
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -29,17 +29,16 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 **Ending support for Device Administrator enrolled devices**
 
-Microsoft Intune and MDE will be ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
+Microsoft Intune and Defender for Endpoint are ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
 
 **For devices with access to GMS**
 
-After Intune and MDE ends support for Android device administrator, devices with access to GMS will be impacted in the following ways: 
+After Intune and Defender for Endpoint ends support for Android device administrator, devices with access to GMS will be impacted in the following ways: 
 
-1. Intune and MDE won’t make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
+- Intune and Defender for Endpoint won’t make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
+- Intune and Defender for Endpoint technical support will no longer support these devices.
 
-1. Intune and MDE technical support will no longer support these devices.
-
-Refer to [this article](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443) for more information.
+For more information, see [Tech Community blog: Intune ending support for Android device administrator on devices with GMS in December 2024](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443).
 
 **Aug-2024 (version: 1.0.6812.0101)**
 
