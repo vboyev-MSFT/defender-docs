@@ -18,7 +18,7 @@ ms.topic: concept-article
 
 # What's new in Microsoft's unified security operations platform
 
-This article lists recent features added into Microsoft's unifed SecOps platform within the Microsoft Defender portal, and new features in related services that provide an enhanced user experience in the platform.
+This article lists recent features added into Microsoft's unified SecOps platform within the Microsoft Defender portal, and new features in related services that provide an enhanced user experience in the platform.
 
 ## November 2024
 
