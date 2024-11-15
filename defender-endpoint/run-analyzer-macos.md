@@ -9,7 +9,7 @@ ms.service: defender-endpoint
 ms.subservice: macos
 ms.localizationpriority: medium
 ms.topic: troubleshooting-general
-ms.date: 11/01/2024
+ms.date: 11/15/2024
 ms.custom: partner-contribution
 ms.collection:
 - m365-security
@@ -126,22 +126,21 @@ The tool currently requires Python version 3 or later to be installed on your de
    
 1. When you download files on macOS, it automatically adds a new extended attribut called com.apple.quarantine which is scanned by Gatekeeper.  Before running, you will want to remove this extended attribute:
 
+   ```bash
+   xattr -c MDESupportTools
+   ```
 
-```bash
-xattr -c MDESupportTools
-```
+   Otherwise you might get the following warning:
 
-Otherwise you might get the following warning:
+      "You might get a "MDESupportTool" Not Opened
 
-"You might get a "MDESupportTool" Not Opened
-
-Apple could not verify "MDESupportTool" is free of malware that may harm your Mac or compromise your privacy"
+      Apple could not verify "MDESupportTool" is free of malware that may harm your Mac or compromise your privacy"
 
 1. To collect actual diagnostic package and generate the result archive file, run again as root:
 
-      ```bash
+   ```bash
    sudo ./mde_support_tool.sh -d
-      ```
+   ```
       
 ## Command line options
 
