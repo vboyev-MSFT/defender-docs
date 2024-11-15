@@ -206,7 +206,7 @@ Microsoft Defender Vulnerability Management's block vulnerable application featu
 
 ## See also
 
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)

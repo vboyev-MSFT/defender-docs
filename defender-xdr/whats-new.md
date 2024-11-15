@@ -31,6 +31,7 @@ You can also get product updates and important notifications through the [messag
 
 ## November 2024
 - (GA) The `arg()` operator in [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-arg-operator-for-azure-resource-graph-queries) in Microsoft Defender portal is now generally available. Users can now use the *arg()* operator for Azure Resource Graph queries to search over Azure resources, and no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if already in Microsoft Defender.
+- (Preview) The [CloudProcessEvents](advanced-hunting-cloudprocessevents-table.md) table is now available for preview in advanced hunting. It contains information about process events in multicloud hosted environments. You can use it to discover threats that can be observed through process details, like malicious processes or command-line signatures. 
 
 ## October 2024
 
