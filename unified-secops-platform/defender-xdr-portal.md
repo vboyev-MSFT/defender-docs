@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 10/08/2024
+ms.date: 11/13/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
@@ -17,63 +17,70 @@ ms.topic: conceptual
 
 # Defender XDR in the Defender portal
 
-Microsoft's unified security platform combines services in the [Microsoft Defender portal](https://security.microsoft.com). In the Defender portal, you can monitor and manage pre-breach and post-breach security across your organization's on-premises and multicloud assets and workloads.
+Microsoft Defender XDR in the Microsoft unified SecOps platform unifies and coordinates threat prevention, detection, investigation, and response across a broad range of assets, including devices and endpoints, identities, email, Microsoft 365 services, and SaaS apps.
 
-Defender XDR in the Defender portal combines protection, detection, investigation, and response to threats across your entire organization and all its components, in a central place. Defender XDR combines a number of Microsoft's security services into a single location.
-
-
-**[Defender for Office 365](/defender-office-365/mdo-about)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources. 
-**[Defender for Endpoint](/defender-endpoint/)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
-**[Defender for Identity](/defender-for-identity/what-is)** | Provides a cloud-based security solution that uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-**[Defender for Cloud Apps](/cloud-app-security/)** | Provides a comprehensive cross-SaaS and PaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
-
-> [!NOTE]
-> When you open the portal, you see only the security services included in your subscriptions. For example, if you have Defender for Office 365 but not Defender for Endpoint, you see features and capabilities for Defender for Office 365, but not for device protection. 
+Defender XDR consolidates threat signals and data across assets, so that you can monitor and manage organizational threat protection from a single location in the [Microsoft Defender portal](https://security.microsoft.com). 
 
 
-## Investigate incidents and alerts
+Defender XDR combines a number of Microsoft security services.
 
-Centralizing security information creates a single place to investigate security incidents across your entire organization and all its components including:
-
-- Hybrid identities
-- Endpoints
-- Cloud apps
-- Business apps
-- Email and docs
-- IoT
-- Network
-- Business applications
-- Operational technology (OT)
-- Infrastructure and cloud workloads
-
-A primary example is **Incidents** under **Incidents & alerts**.
-
-:::image type="content" source="/defender/media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="/defender/media/incidents-queue/incidents-ss-incidents.png":::
-
-Selecting an incident name displays a page that demonstrates the value of centralizing security information as you get better insights into the full extend of a threat, from email, to identity, to endpoints.
-
-<!-- commenting this out as the file path will move soon and I don't want to fight with this broken link anymore. File path is changing anyway. :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png"::: -->
-
-Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
-
-Learn more about [incidents in the Defender portal](/defender-xdr/incidents-overview), and [managing incidents and alerts](/defender-xdr/manage-incidents).
-
-## Hunt for threats
-
-You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
-
-Learn about [proactive threat hunting](/defender-xdr/advanced-hunting-overview), and [hunting for threats across devices, emails, apps, and identities](/defender-xdr/advanced-hunting-query-emails-devices).
+**Service** | **Details**
+--- | ---
+**[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps secure organizations with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources. 
+**[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, automated investigation, and response for devices in the organization.
+**[Protect Active Directory with Defender for Identity](/defender-xdr/microsoft-365-security-center-mdi)** | Provides a cloud-based security solution that uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+**[Protect SaaS cloud apps with Defender for Cloud Apps](/defender-xdr/microsoft-365-security-center-defender-cloud-app)** | Provides a comprehensive cross-SaaS and PaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+**[Protect against a broad range of threats with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)** | Microsoft Sentinel is a cloud security solution for security information and event management (SIEM) and security orchestration, automation, and response (SOAR).<br/><br/> Collect security data from a broad range of Microsoft and third-party services and products.<br/><br/> Microsoft Sentinel seamlessly integrates with Defender XDR in the Defender portal to combine the capabilities of both products into a unified security platform for threat detection, investigation, hunting, and response.
 
 
-## Respond to emerging threats
 
-Threat analytics is the Microsoft threat intelligence solution from expert Microsoft security researchers.In the portal, track and respond to emerging threats with these threat analytics:
+## Detecting threats
 
-- Active threat actors and their campaigns
-- Popular and new attack techniques
-- Critical vulnerabilities
-- Common attack surfaces
-- Prevalent malware
+Defender XDR provides continuous monitoring our enterprise and detects security threats. When threats are detected [security alerts](/defender-xdr/alerts-incidents-correlation) are created. 
 
-Learn about [tracking and responding to emerging threats with threat analytics](/defender-xdr/threat-analytics).
+Defender XDR automatically aggregates related alerts and security signals into [security incidents](/defender-xdr/alerts-incidents-correlation#incident-creation-and-alert-correlation). Incidents enable your SOC teams to quickly get the full picture of an attack, understand the attack scope and progress, and review all involved entities and assets. This information helps SOC teams to respond to attacks more efficiently and effectively. 
+
+A [single incident queue](/defender-xdr/incident-queue) provides full visibility into the latest alerts and incidents, and historical data. You can search and query the incident queue to drill down, and prioritize response based on alert severity.
+
+:::image type="content" source="media/defender-xdr-portal/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="media/defender-xdr-portal/incidents-page.png":::
+
+
+### Detecting lateral movement attacks
+
+Defender for XDR includes [deception capability](/defender-xdr/deception-overview) to detection human-operated lateral movement, often used for common attacks such as ransomware and business email compromise. 
+
+The deception capability generates decoy assets. When attackers interact with these assets, the deception capability raise high-confidence alerts. You can review deception-related alerts in the Alerts page in the portal.
+
+## Automatically disrupting threats
+
+Defender XDR uses [automatic attack disruption](/defender-xdr/automatic-attack-disruption) to contain attacks in progress, limiting the attack impact, and providing more time for security teams to remediate attacks.
+
+Automatic disruption relies on the high-fidelity signals uses incidnt correlation across million of Defender product signals, and continuous investigation insights from Microsoft's security research team, to ensure a high signal-to-noise ratio (SNR)
+
+Automatic disruption uses Defender XDR response actions, including containing devices, and disabling or containing user accounts.
+
+It's easy to identify attack disruptions in the Defender XDR incident queue and on specific incident pages.
+
+
+## Hunting for threats
+
+Threat hunting is a proactive approach to inspect and investigate security events and data to locate known and potential threats. 
+
+Defender XDR provides threat hunting capabilities in the Defender portal. 
+
+Using [advanced hunting](/defender-xdr/advanced-hunting-overview), SOC teams can create custom queries and rules to hunt for threats across the enterprise. Using Kusto Query Language (KQL), analysts can search for indicators of compromise, anomalies, and suspicious activities across Defender XDR data sources. Data can be filtered, aggregated, and analyzed. 
+
+For those who aren't familiar with KQL, Defender XDR provides a guided mode to create queries visually. Predefined query templates are also available.
+
+In addition to advanced hunting, SOC teams can create [custom detection rules](/defender-xdr/custom-detections-overview) to proactively monitor and respond to events and system states. Rules can trigger alerts or automatic response actions.
+
+## Responding to threats
+
+Defender for XDR provides [automated investigation and response](/defender-xdr/m365d-autoir) capabilities, reducing the volume of alerts to which SOC teams must respond. 
+
+As alerts create inciidents, automated investigation results in a verdict that determines whether a threat was found. For suspicious and malicious threats, remediation can include actions such as sending a file to quarantine, stopping a process, blocking a URL, or isolating a device. 
+
+You can view a summary of automated investigations and responses in the Home page of the portal. Pending remediation actions are handled in the portal Action Center.
+
+
 

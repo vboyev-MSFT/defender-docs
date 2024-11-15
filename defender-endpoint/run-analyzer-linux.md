@@ -32,7 +32,7 @@ If you're experiencing reliability or device health issues with Defender for End
 
 ## Use live response in Defender for Endpoint to collect support logs
 
-The XMDE Client Analyzer tool can be downloaded as a [binary](https://aka.ms/XMDEClientAnalyzerBinary) or [Python](https://aka.ms/XMDEClientAnalyzer) package that can be extracted and executed on Linux machines. Both versions of the XMDE Client Analyzer can be executed during a Live Response session.
+The XMDE Client Analyzer tool can be downloaded as a [binary](https://go.microsoft.com/fwlink/?linkid=2297517) or [Python](https://aka.ms/XMDEClientAnalyzer) package that can be extracted and executed on Linux machines. Both versions of the XMDE Client Analyzer can be executed during a Live Response session.
 
 - For installation, the `unzip` package is required.
 - For execution, the `acl` package is required.
@@ -65,7 +65,7 @@ The following script performs the first six steps of the [Running the Binary ver
    whoami
 
    echo "Getting XMDEClientAnalyzerBinary"
-   wget --quiet -O /tmp/XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   wget --quiet -O /tmp/XMDEClientAnalyzerBinary.zip https://go.microsoft.com/fwlink/?linkid=2297517
    echo '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469 /tmp/XMDEClientAnalyzerBinary.zip' | sha256sum -c
 
    echo "Unzipping XMDEClientAnalyzerBinary.zip"
@@ -191,10 +191,10 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 #### Summary:
 
-1. Obtain from [https://aka.ms/xmdeclientanalyzerbinary](https://aka.ms/xmdeclientanalyzerbinary). Or, if your Linux server has internet access use `wget` to download the file:
+1. Obtain from [https://go.microsoft.com/fwlink/?linkid=2297517](https://go.microsoft.com/fwlink/?linkid=2297517). Or, if your Linux server has internet access use `wget` to download the file:
 
    ```bash
-   wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   wget --quiet -O XMDEClientAnalyzerBinary.zip https://go.microsoft.com/fwlink/?linkid=2297517
    ```
 
 2. Unzip the file that is downloaded, and then of the extracted files unzip again the SupportToolLinuxBinary.zip
@@ -217,12 +217,12 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 #### Details:
 
-1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the Linux machine you need to investigate.
+1. Download the [XMDE Client Analyzer Binary](https://go.microsoft.com/fwlink/?linkid=2297517) tool to the Linux machine you need to investigate.
 
    If you're using a terminal, download the tool by entering the following command:
 
    ```bash
-   wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+   wget --quiet -O XMDEClientAnalyzerBinary.zip https://go.microsoft.com/fwlink/?linkid=2297517
    ```
 
 2. Verify the download.

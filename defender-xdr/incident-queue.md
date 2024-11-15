@@ -133,7 +133,7 @@ From the **Search for name or ID** box above the list of incidents, you can sear
 
 ### Search by incident name or ID
 
-Search directly for an incident by typing the incident ID or the incident name. When you select an incident from the list of search results, the Microsoft Defender portal opens a new tab with the properties of the incident, from which you can start your [investigation](/defender-xdr/investigate-incidents).
+Search directly for an incident by typing the incident ID or the incident name. When you select an incident from the list of search results, the Microsoft Defender portal opens a new tab with the properties of the incident, from which you can start your [investigation](investigate-incidents.md).
 
 ### Search by impacted assets
 
@@ -156,11 +156,11 @@ The default list of incidents is for those that occurred in the last six months.
 After you've determined which incident requires the highest priority, select it and:
 
 - [Manage](manage-incidents.md) the properties of the incident for tags, assignment, immediate resolution for false positive incidents, and comments.
-- Begin your [investigations](/defender-xdr/investigate-incidents).
+- Begin your [investigations](investigate-incidents.md).
 
 ## See also
 
-- [Overview of incidents and alerts in the Microsoft Defender portal](incidents-alerts-overview.md)
+- [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
-- [Investigate incidents](/defender-xdr/investigate-incidents)
+- [Investigate incidents](investigate-incidents.md)
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]

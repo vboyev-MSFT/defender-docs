@@ -47,7 +47,7 @@ Web protection categorizes malicious and unwanted websites as:
 
 - **Phishing** - websites that contain spoofed web forms and other phishing mechanisms designed to trick users into divulging credentials and other sensitive information
 - **Malicious** - websites that host malware and exploit code
-- **Custom indicator** - websites whose URLs or domains you've added to your [custom indicator list](manage-indicators.md) for blocking
+- **Custom indicator** - websites whose URLs or domains you've added to your [custom indicator list](indicators-overview.md) for blocking
 
 ## View the domain list
 
