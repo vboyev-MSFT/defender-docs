@@ -1,6 +1,6 @@
 ---
 title: "Overview - Improve security posture and reduce risk"
-description: Provides an overview of solutions for reducing security risk in the Microsoft unified security platform
+description: Provides an overview of solutions to reduce security risk in the Microsoft unified security platform
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: cwatson
