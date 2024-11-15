@@ -38,7 +38,7 @@ Learn how to deploy Defender for Endpoint on Android on Microsoft Intune Company
 
 ## Deploy on Device Administrator enrolled devices
 
-Intune and Defender for Endpoint arbe ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024. For more informaation, see [Tech Community blog: Intune ending support for Android device administrator on devices with GMS in December 2024](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443).
+Intune and Defender for Endpoint are ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024. For more information, see [Tech Community blog: Intune ending support for Android device administrator on devices with GMS in December 2024](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443).
 
 Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Company Portal - Device Administrator enrolled devices.
 
@@ -297,7 +297,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://intune
 
 3. On the settings page, in **'Configuration settings format'**, select **'Use configuration designer'** and select **Add**. From the list of configurations that are displayed, select **'Microsoft Defender in Personal profile'**.
 
-4. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear informing the admin about the same. Click on **Next**.
+4. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear to inform the admin about the same. Click on **Next**.
 
 5. **Assign** the configuration policy to a group of users. **Review and create** the policy.
 
