@@ -28,7 +28,7 @@ This article lists recent features added into Microsoft's unifed SecOps platform
 
 We previously announced Microsoft Sentinel is generally available within Microsoft's unified security operations platform in the Microsoft Defender portal. For preview, Microsoft Sentinel is now available in the Defender portal without Microsoft Defender XDR or an E5 license. For more information, see:
 
- - [Microsoft Sentinel in the Microsoft Defender portal](microsoft-sentinel-defender-portal.md)
+ - [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
  - [Connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard)
 
 ## Related content

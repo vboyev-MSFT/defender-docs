@@ -16,7 +16,7 @@ ms.topic: concept-article
 # customer intent: As a security administrator, I want to learn how to proactively improve security posture and reduce risk exposure in my organization.
 ---
 
-# Improving security posture and reducing security risk in Microsoft's unified security operations platform
+# Improving security posture and reducing security risk
 
 To battle increasingly sophisticated and well-resourced threat actors, security teams need a comprehensive strategy to both reduce vulnerabilities and prevent breaches before they occur, in addition to detecting and mitigating threats in real-time.
 
