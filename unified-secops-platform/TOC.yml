@@ -34,11 +34,7 @@
     - name: Deploy 
       href: overview-deploy.md
     - name: Prevent attacks
-      items:
-        - name: Overview 
-          href: reduce-risk-overview.md
-        - name: Microsoft Secure Score ## Write a single article or two that condenses all the info in the Protect against threats/Microsoft Secure Score section. Or because this is going away, we just link in all the articles? Or put them in reference?
-          href: /defender-xdr/microsoft-secure-score.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+      href: reduce-risk-overview.md
     - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
       href: /azure/sentinel/threat-detection ## PLACEHOLDER LINK
     - name: Hunt for threats ## Seperating this out because per PM hunting might happen in different scenarios. Also wanting it higher level as advanced hunting is one of the things highlighted for USX. 
@@ -47,26 +43,16 @@
         href: /defender-xdr/advanced-hunting-overview ## PLACEHOLDER - Need overview article about the hunting features across services. Advanced hunting, custom detections, hunts in Sentinel
       - name: Search with advanced hunting 
         href: /defender-xdr/advanced-hunting-overview?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json        
-    - name: Investigate incidents ## could be incidents, threats, posture findings. Need an overview article for USX. Current overviews (XDR/Sentinel) don't appear to be updated for USX.
+    - name: Investigate incidents
       items:
         - name: Overview
-          href: /defender-xdr/investigate-incidents ## Update link as needed when YL changes are in main. incident-alerts-overview? ## YL: replaces /defender-xdr/investigate-incidents ## Would need update to apply to USX. Per Dianne, this isn't XDR specific.
+          href: /defender-xdr/incidents-overview
         - name: Correlation and merging
-          href: /defender-xdr/alerts-incidents-correlation ## CW Update links as needed when changes merged to main.alerts-incidents-correlation-merging? ## YL: replaces /defender-xdr/alerts-incidents-correlation
+          href: /defender-xdr/alerts-incidents-correlation
         - name: Investigate incidents in Copilot for Security 
           href: /azure/sentinel/sentinel-security-copilot?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
         - name: Investigate with Microsoft Copilot in Microsoft Defender
-          href: /defender-xdr/security-copilot-in-microsoft-365-defender.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-        - name: Investigate entities
-          items: 
-          - name: Overview
-            href: /azure/sentinel/entity-pages.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-          - name: User entity pages
-            href: /defender-xdr/investigate-users.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-          - name: Device entity pages
-            href: /defender-xdr/entity-page-device.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-          - name: IP entity pages
-            href: /defender-xdr/entity-page-ip.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+          href: /defender-xdr/security-copilot-in-microsoft-365-defender?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
     - name: Respond to threats automatically
       items:
         - name: Automatic attack disruption 
@@ -76,14 +62,8 @@
         - name: Automated investigation and response in Microsoft Defender XDR
           href: /defender-xdr/m365d-autoir?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
     - name: Optimize your security operations 
-      items:
-        - name: Overview
-          href: /azure/sentinel/soc-optimization/soc-optimization-access?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-        - name: Interact with recommendations programatically 
-          href: /azure/sentinel/soc-optimization/soc-optimization-api?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-        - name: SOC optimization reference
-          href: /azure/sentinel/soc-optimization/soc-optimization-reference?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-    - name: Manage your unified SOC ## Need article w/ overview about settings? What else needs to go here? Several other things like permissions and costs would get referenced by planning guide.
+      href: /azure/sentinel/soc-optimization/soc-optimization-access?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+    - name: Manage your unified SOC
       items:
         - name: Manage multiple tenants
           items: 
@@ -94,23 +74,23 @@
             - name: Manage incidents and alerts
               href: /defender-xdr/mto-incidents-alerts?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
             - name: Advanced hunting
-              href: /defender-xdr/mto-advanced-hunting.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+              href: /defender-xdr/mto-advanced-hunting?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
             - name: Multitenant devices
-              href: /defender-xdr/mto-tenant-devices.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+              href: /defender-xdr/mto-tenant-devices?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
             - name: Vulnerability management
-              href: /defender-xdr/mto-dashboard.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+              href: /defender-xdr/mto-dashboard?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
             - name: Manage tenants
-              href: /defender-xdr/mto-tenants.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+              href: /defender-xdr/mto-tenants?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
             - name: Manage endpoint security policies
-              href: /defender-xdr/mto-endpoint-security-policy.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+              href: /defender-xdr/mto-endpoint-security-policy?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
             - name: Manage content distribution with tenant groups
-              href: /defender-xdr/mto-tenantgroups.md?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+              href: /defender-xdr/mto-tenantgroups?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
         - name: Configure notifications
           items:
           - name: Get incident notifications
             href: /defender-xdr/m365d-notifications-incidents?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
           - name: Configure alert notifications
-            href: /defender-xdr/configure-email-notifications ?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+            href: /defender-xdr/configure-email-notifications?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
     - name: Resources
       items:
         - name: Threat actor naming
