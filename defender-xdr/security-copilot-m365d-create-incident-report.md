@@ -62,7 +62,7 @@ Copilot in Defender creates an incident report containing the following informat
   - Incident creation and closure
   - First and last logs, whether the log was analyst-driven or automated, captured in the incident
 - The analysts involved in incident response
-- [Incident classification](manage-incidents.md#specify-the-classification), including the analyst's reason for classification that Copilot summarizes
+- [Incident classification](manage-incidents.md#specify-the-incidents-classification), including the analyst's reason for classification that Copilot summarizes
 - Investigation and remediation actions
 - Follow up actions like recommendations, open issues, or next steps noted by the analysts in the incident logs
 
@@ -103,9 +103,9 @@ You can follow the steps in [export incident data to PDF](manage-incidents.md#ex
 Here are some recommendations to consider to ensure that Copilot generates a comprehensive and complete incident report:
 
 - Classify and resolve the incident before generating the incident report.
-- Ensure that you write and save comments in the Microsoft Sentinel activity log or in the [Microsoft Defender XDR incident activity log](manage-incidents.md#activity-log) to include the comments in the incident report.
+- Ensure that you write and save comments in the Microsoft Sentinel activity log or in the [Microsoft Defender XDR incident activity log](manage-incidents.md#view-the-activity-log-of-an-incident) to include the comments in the incident report.
 - Write comments using comprehensive and clear language. In-depth and clear comments provide better context about the response actions. See the following steps to know how to access the comments field:
-  - [Add comments to incidents in the Microsoft Defender portal](manage-incidents.md#add-comments)
+  - [Add comments to incidents in the Microsoft Defender portal](manage-incidents.md#add-comments-to-an-incident)
   - Add comments to incidents in Microsoft Sentinel
 - For ServiceNow users, [enable the Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) to get more robust incident data.
 - Copy the generated incident report and post it to the activity log in the Microsoft Defender portal to ensure that the incident report is saved in the incident page.
