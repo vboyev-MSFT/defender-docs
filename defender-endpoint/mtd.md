@@ -77,7 +77,7 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 ### Unsupported Android enrollment scenarios
 
-These scenarios are not currently supported:
+These scenarios aren't currently supported:
 
 - **Android Enterprise corporate-owned Personal profile**
 - **Android Enterprise corporate owned dedicated devices (COSU) (Kiosk/Shared)**
@@ -87,14 +87,14 @@ These scenarios are not currently supported:
 
 |Scenarios|Company portal app required on the device?|Protection Profile/Prerequisites|How to deploy|
 | -------- | -------- | -------- | -------- |
-|Supervised Devices (ADE and Apple Configurator Enrollment|Yes|Protects the entire device. For ADE, if users who use Just in Time (JIT) registration, the Company portal app is not required because app will enroll the device automatically by connecting to Intune server| [Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune](ios-install.md#deployment-steps-applicable-for-both-supervised-and-unsupervised-devices)   |
-|Unsupervised Devices (Device Enrollment)|Yes|Protects the entire device. For web-based device enrollment, the company portal app is not required because after the managed app signs in, the app downloads configuration policies directly and not the company portal app)|[Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune](ios-install.md#deployment-steps-applicable-for-both-supervised-and-unsupervised-devices)|
+|Supervised Devices (ADE and Apple Configurator Enrollment|Yes|Protects the entire device. For ADE, if users who use Just in Time (JIT) registration, the Company portal app isn't required because app enrolls the device automatically by connecting to Intune server| [Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune](ios-install.md#deployment-steps-applicable-for-both-supervised-and-unsupervised-devices)   |
+|Unsupervised Devices (Device Enrollment)|Yes|Protects the entire device. For web-based device enrollment, the company portal app isn't required because after the managed app signs in, the app downloads configuration policies directly and not the company portal app)|[Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune](ios-install.md#deployment-steps-applicable-for-both-supervised-and-unsupervised-devices)|
 |Unsupervised Devices (User Enrollment)|Yes|Protects work data only. The VPN has access to entire device, and the VPN can scan all app traffic|[Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune](ios-install.md#user-enrollment-setup-only-for-intune-user-enrolled-devices)|
 |MAM|No|Protects only enrolled apps. The VPN has access to entire device and can scan all app traffic)|[Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Management](ios-install-unmanaged.md)|
 
 ### Unsupported iOS enrollment scenarios
 
-iOS Dedicated/shared/kiosk device enrollment is not supported.
+iOS Dedicated/shared/kiosk device enrollment isn't supported.
 
 ### Android low touch onboarding supported scenarios
 
@@ -129,13 +129,13 @@ While evaluating mobile threat defense with Microsoft Defender for Endpoint, you
 
 This helps reduce potential issues that could arise while rolling out the service. Here are some tests and exit criteria that might help:
 
-- Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [security console](https://security.microsoft.com).
+- Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [Microsoft Defender portal](https://security.microsoft.com).
 <!---
 - Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here's an example app that can be used for this test: (We are working on new one, it will be updated soon). Note that on Android Enterprise with a work profile, only the work profile is supported. --->
 
-- Run a phishing test: Browse to `https://smartscreentestratings2.net` and verify that it gets blocked by Microsoft Defender for Endpoint. Note that on Android Enterprise with a work profile, only the work profile is supported.
+- Run a phishing test: Browse to `https://smartscreentestratings2.net` and verify that it gets blocked by Microsoft Defender for Endpoint. On Android Enterprise with a work profile, only the work profile is supported.
 
-- Alerts appear in dashboard: Verify that alerts for above detection tests appear on the [security console](https://security.microsoft.com).
+- Alerts appear in dashboard: Verify that alerts for the detection tests mentioned earlier appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
 Need help in deploying or configuring Defender for Endpoint on Android & iOS? If you have at least 150 licenses for the product, use your [FastTrack benefits](/microsoft-365/fasttrack/introduction). Learn more about FastTrack at [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
