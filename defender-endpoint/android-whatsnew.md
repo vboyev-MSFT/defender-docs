@@ -27,6 +27,20 @@ ms.date: 08/26/2024
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+**Ending support for Device Administrator enrolled devices**
+
+Microsoft Intune and MDE will be ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
+
+**For devices with access to GMS**
+
+After Intune and MDE ends support for Android device administrator, devices with access to GMS will be impacted in the following ways: 
+
+1. Intune and MDE won’t make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
+
+1. Intune and MDE technical support will no longer support these devices.
+
+Refer to [this article](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443) for more information.
+
 **Aug-2024 (version: 1.0.6812.0101)**
 
 - Network Protection feature is enabled by default for all users
@@ -115,7 +129,7 @@ Notify your users and helpdesk (as applicable) that users will need to accept th
 
 2. Tap **Begin**.
 
-3. Tap the toggle for **Allow access to manage all files.**
+1. Tap the toggle for **Allow access to manage all files.**
 
 4. The device is now protected.
 
