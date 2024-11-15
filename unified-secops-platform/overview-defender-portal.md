@@ -1,12 +1,12 @@
 ---
 title: Microsoft Defender portal overview
-description: Learn about the Microsoft Defender portal
+description: Learn about the Microsoft services and features available in the Microsoft Defender portal.
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/13/2024
+ms.date: 11/14/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Overview - Defender portal
+# Microsoft Defender portal
 
 [Microsoft's unified security SecOps platform](overview-unified-security.md) combines Microsoft security services in the [Microsoft Defender portal](https://security.microsoft.com).
 
@@ -93,6 +93,7 @@ In **Exposure management**, review the overall state of your security posture, e
 **Secure score** | Review posture metrics based on [Microsoft Secure Score](/defender-xdr/microsoft-secure-score). [Compare the differences](/exposure-management/compare-secure-score-security-exposure-management) between Secure Score and Security Exposure Management. 
 **Data connectors** | Connect third-party products to Security Exposure Management, and request new connectors.
 
+For more information, see [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management).
 
 ## Investigation and response 
 
@@ -101,12 +102,16 @@ The **Investigation and response** section provides a single location for invest
 
 ### Investigate incidents and alerts
 
+Manage and investigate security incidents in a single location and from a single queue in the Defender portal. The Alerts queue shows the current set of alerts from different Microsoft security solutions.
+
 :::image type="content" source="media/overview-defender-portal/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/incidents-page.png":::
 
 **Feature** | **Details**
 --- | ---
 **Incidents** | An incident is a set of correlated alerts and associated data that make up an attack. On the Incidents dashboard, you can review a list of the latest incidents and prioritize those with high severity. Drill down into a specific incident to get a full attack story, including information about associated alerts, devices, users, investigations, and evidence.
-**Alerts** | Alerts are signals that result from threat detection activity across services in the Defender portal. In the Alerts dashboard, review alerts that have been issued by portal services.<br/><br/> The alerts queue disaplays new and in progress alerts from the last seven days, with the most recent alerts at the top of the list. You can filter on alerts to investigate as needed. 
+**Alerts** | Alerts are signals that result from threat detection activity across services in the Defender portal. In the Alerts dashboard, review alerts that have been issued by portal services.<br/><br/> The alerts queue disaplays new and in progress alerts from the last seven days, with the most recent alerts at the top of the list. You can filter on alerts to investigate as needed.
+
+For more information, see [Incidents and alerts in the Microsoft Defender portal](incidents-alerts-overview.md).
 
 ### Hunt for threats
 
@@ -130,6 +135,8 @@ Threat protection features result in remediation actions. Actions might be autom
 --- | ---
 **Action center** | Review the list of actions that need attention. Approve or reject actions one at a time, or in bulk. You can review action history to track remediation.
 **Submissions** | Submit suspect spam, URLs, email issues and more to Microsoft.
+
+For more information, see [Automated investigation and response](/defender-xdr/m365d-autoir) and [The Action center](/defender-xdr/m365d-action-center).
 
 ## Partner catalog
 
@@ -155,6 +162,8 @@ In the **Threat intelligence** section of the portal, get direct visibility into
 **Intel Explorer** | Review threat intelligence, and drill down to search and investigate.
 **Intel projects** | Review and create porjects to organize indicators of interest and indicators of compromize from an investigation. A project includes associated artifacts and a detailed history of names, descriptions, collaborators, and monitoring profiles.
 
+For more information, see [Threat analytics](/defender-xdr/threat-analytics).
+
 ## Assets
 
 The **Assets** page provides a unified view of all your discovered and protected assets, including devices, users, mailboxes, and apps. You can see the total number of assets of each types, and drill down into specific asset details.
@@ -164,8 +173,8 @@ The **Assets** page provides a unified view of all your discovered and protected
 
 **Feature** | **Details**
 --- | ---
-[**Devices**](/defender-xdr/mto-tenant-devices) | On the Tenants page, review each tenant you have access to. Tenant information includes the number of devices and device types, devices that are highly exposed, and devices that aren't yet onboarded to the Defender portal.<br/><br/> On the Device Inventory page, get an overview of discovered devices in each tenant you have access to. Review devices by type, understand which devices are high risk or critical.<br/><br/> You can group devices logically by adding tags for context, exclude devices you don't want to assess, or start an automated investigation for devices.
-**Identities** | Get a summary of user and account inventory.
+[**Devices**](/defender-xdr/entity-page-device) |On the Device Inventory page, get an overview of discovered devices in each tenant you have access to. Review devices by type, understand which devices are high risk or critical.<br/><br/> You can group devices logically by adding tags for context, exclude devices you don't want to assess, or start an automated investigation for devices.
+[**Identities**](/defender-xdr/investigate-users) | Get a summary of user and account inventory.
 
 
 ## Microsoft Sentinel
@@ -178,12 +187,14 @@ Access Microsoft Sentinel capabilities in the Defender portal with an unified pl
 --- | ---
 **Search** | Search across logs, and access past searches.
 **Threat management** | Visualize and monitor connected data with [workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal).<br/><br/>[Investigate incidents](/azure/sentinel/investigate-incidents) and [classify alerts with entities](/azure/sentinel/customize-entity-activities?tabs=defender).<br/><br/>Proactively [hunt for threats](/azure/sentinel/hunts) and [use notebooks](/azure/sentinel/hunting?tabs=azure-portal#notebooks-to-power-investigations) to power investigations.<br/><br/> [Integrate threat intelligence](/azure/sentinel/threat-intelligence-integration) into threat detection, and [use the MITRE ATT&CK framework](/azure/sentinel/mitre-coverage) in analytics and incidents.
-**Content management** | Use the [Content hub](/azure/sentinel/sentinel-solutions#discover-and-manage-microsoft-sentinel-content) to discover and install out-of-the-box (OOTB) content.<br/><br/> Use [Microsoft Sentinel repositories](/azure/sentinel/ci-cd-custom-content) to connect to external source systems for continuous integration and delivery (CI/CD) rather than manually deploying and updating custom content.<br/><br/>Community - TBD
-**Configuration** | [Use data connectors](/azure/sentinel/best-practices-data) to ingest data.<br/><br/>[Create watchlists](/azure/sentinel/watchlists) to correlate and organize data sources.<br/><br/>[Set up analytics rules](/azure/sentinel/threat-detection) to query and analyze collected data.<br/><br/> [Automate](/azure/sentinel/automation/automation#automation-with-the-unified-security-operations-platform) threat responses.<br/><br/> Settings - TBD
+**Content management** | Use the [Content hub](/azure/sentinel/sentinel-solutions#discover-and-manage-microsoft-sentinel-content) to discover and install out-of-the-box (OOTB) content.<br/><br/> Use [Microsoft Sentinel repositories](/azure/sentinel/ci-cd-custom-content) to connect to external source systems for continuous integration and delivery (CI/CD) rather than manually deploying and updating custom content.
+**Configuration** | [Use data connectors](/azure/sentinel/best-practices-data) to ingest data.<br/><br/>[Create watchlists](/azure/sentinel/watchlists) to correlate and organize data sources.<br/><br/>[Set up analytics rules](/azure/sentinel/threat-detection) to query and analyze collected data.<br/><br/> [Automate](/azure/sentinel/automation/automation#automation-with-the-unified-security-operations-platform) threat responses.
+
+For more information, see [Microsoft Sentinel](/azure/sentinel/overview) and [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal).
 
 ## Identities
 
-In the **Identities** section of the Defender portal, monitor user and account health, and proactively monitor and manage identity-related risks.
+In the **Identities** section of the Defender portal, monitor user and account health, and proactively monitor and manage identity-related risks with Microsoft Defender for Identity.
 
 :::image type="content" source="media/overview-defender-portal/identity-dashboard.png" alt-text="Screenshot of the Identity Dashboard page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/identity-dashboard.png":::
 
@@ -192,6 +203,8 @@ In the **Identities** section of the Defender portal, monitor user and account h
 **ITDR dashboard** | On the [Identity threat detection and response (ITDR) dashboard](/defender-for-identity/dashboard), you can get insights and real-time data about the security state of users and accounts.<br/><br/> The dashboard includes information about Defender for Identity deployment, information about highly privileged identities, and information about identity-related incidents. Drill down into information about different types of users.<br/><br/> If there's a problem with a Defender for Identity workspace, it's raised as an issue on the [Health issues page](/defender-for-identity/health-alerts).
 **Health issues** | Any Defender for Identity global or sensor-based health issues are displayed on this page.
 **Tools** | You can access common tools to help you manage Defender for Identity on this page.
+
+For more information, see [Microsoft Defender for Identity](/defender-for-identity).
 
 ## Endpoints
 
@@ -205,10 +218,11 @@ In the **Endpoints** section of the portal, monitor and manage asset vulnerabili
 **Connected applications** | Get information about the [Microsoft Entra applications connected to Defender for Endpoint](/defender-endpoint/connected-applications).
 **API explorer** | [Use the API explorer](/defender-endpoint/api/api-explorer) to construct and run API queries, test, and sent requests for available Defender for Endpoint API endpoints. 
 
+For more information, see [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) and [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint).
 
 ## Email and collaboration
 
-In the **Email & collaboration** section, monitor, investigate, and manage security threats and responses to email and collaboration apps. 
+In the **Email & collaboration** section, monitor, investigate, and manage security threats and responses to email and collaboration apps with Microsoft Defender for Office 365. 
 
 
 :::image type="content" source="media/overview-defender-portal/email-investigations.png" alt-text="Screenshot of the Email Investigations page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/email-investigations.png":::
@@ -222,11 +236,11 @@ In the **Email & collaboration** section, monitor, investigate, and manage secur
 **Threat tracker** | Review saved and tracked queries, and follow trending campaigns.
 **Policies and rules** | Configure and manage security policies to protect against threats, and receive activity alerts.
 
-
+For more information, see [Microsoft Defender for Office 365](/defender-office-365/mdo-about).
 
 ## Cloud apps
 
-In the **Cloud apps** section, review security to minimize risk and exposure to cloud apps using the Defender for Cloud Apps service.
+In the **Cloud apps** section, review security to minimize risk and exposure to cloud apps using Microsoft Defender for Cloud Apps.
 
 :::image type="content" source="media/overview-defender-portal/cloud-apps-sample-report.png" alt-text="Screenshot of a Cloud Apps sample report in the Microsoft Defender portal" lightbox="media/overview-defender-portal/cloud-apps-sample-report.png":::
 
@@ -239,12 +253,15 @@ In the **Cloud apps** section, review security to minimize risk and exposure to 
 **Governance log** | Revuew governance tasks.
 **Policies** | Configure security policies for cloud apps. 
 
+For more information, see [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps).
 
 ## SOC optimization
 
-In the **SOC optimization** page, tighten up security controls to close threat coverage gaps, and tighten data ingestion rates.
+In the **SOC optimization** page, tighten up security controls to close threat coverage gaps, and tighten data ingestion rates  based on high-fidelity and actionable recommendations. SOC optimizations are tailored to your environment and based on your current coverage and threat landscape.
 
 :::image type="content" source="media/overview-defender-portal/soc-optimization-page.png" alt-text="Screenshot of the SOC Optimization page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/soc-optimization-page.png":::
+
+For more information, see [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access).
 
 ## Reports
 
