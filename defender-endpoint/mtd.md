@@ -7,7 +7,7 @@ ms.subservice: onboard
 ms.author: denishdonga
 author: denishdonga27 
 ms.localizationpriority: medium
-ms.date: 10/11/2024
+ms.date: 11/15/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -58,7 +58,8 @@ Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsof
 
 ### Deploy
 
-The following table summarizes how to deploy Microsoft Defender for Endpoint on Android and iOS. For detailed documentation, see 
+The following table summarizes how to deploy Microsoft Defender for Endpoint on Android and iOS. For detailed documentation, see the following articles:
+
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md), and
 - [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
@@ -75,7 +76,9 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 
 ### Unsupported Android enrollment scenarios
+
 These scenarios are not currently supported:
+
 - **Android Enterprise corporate-owned Personal profile**
 - **Android Enterprise corporate owned dedicated devices (COSU) (Kiosk/Shared)**
 - **Android Open-Source Project (AOSP)**
@@ -90,18 +93,19 @@ These scenarios are not currently supported:
 |MAM|No|Protects only enrolled apps. The VPN has access to entire device and can scan all app traffic)|[Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Management](ios-install-unmanaged.md)|
 
 ### Unsupported iOS enrollment scenarios
+
 iOS Dedicated/shared/kiosk device enrollment is not supported.
 
 ### Android low touch onboarding supported scenarios
 
-1. Android Enterprise personally owned devices using a work profile
-1. Android Enterprise corporate owned work profile (COPE)
-1. Android Enterprise corporate owned fully managed - No work profile (COBO)
+- Android Enterprise personally owned devices using a work profile
+- Android Enterprise corporate owned work profile (COPE)
+- Android Enterprise corporate owned fully managed - No work profile (COBO)
 
 ### iOS zero touch onboarding supported scenarios
 
-1. Supervised Devices (ADE and Apple Configurator Enrollment)
-1. Unsupervised Devices (Device Enrollment)
+- Supervised devices (ADE and Apple Configurator Enrollment)
+- Unsupervised devices (Device Enrollment)
 
 ### End-user onboarding
 
