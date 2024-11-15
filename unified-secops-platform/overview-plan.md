@@ -137,14 +137,14 @@ Zero Trust security is designed to protect modern digital environments by levera
 
 For more information about implementing Zero Trust principles in Microsoft's unified SecOps platform, see Zero Trust content for the following services:
 
-- [Microsoft Defender XDR](/defender-xdr/zero-trust-with-microsoft-365-defender?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- [Microsoft Sentinel](/security/operations/siem-xdr-overview?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- [Microsoft Defender for Identity](/defender-for-identity/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- [Microsoft Defender for Office 365](/defender-office-365/zero-trust-with-microsoft-365-defender-office-365?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- [Microsoft Defender for Endpoint](/defender-endpoint/zero-trust-with-microsoft-defender-endpoint?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
-- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
+- [Microsoft Defender XDR](/defender-xdr/zero-trust-with-microsoft-365-defender?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
+- [Microsoft Sentinel](/security/operations/siem-xdr-overview?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
+- [Microsoft Defender for Identity](/defender-for-identity/zero-trust?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
+- [Microsoft Defender for Office 365](/defender-office-365/zero-trust-with-microsoft-365-defender-office-365?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
+- [Microsoft Defender for Endpoint](/defender-endpoint/zero-trust-with-microsoft-defender-endpoint?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
+- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/zero-trust?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
 - [Microsoft Security Exposure Management](https://techcommunity.microsoft.com/blog/microsoftsecurityandcompliance/respond-to-trending-threats-and-adopt-zero-trust-with-exposure-management/4130133)
-- [Microsoft Defender for Cloud](/azure/defender-for-cloud/zero-trust?toc=/unified-soc-platform/toc.json&bc=/unified-soc-platform/breadcrumb/toc.json)
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/zero-trust?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json)
 - [Microsoft Copilot for Security](/security/zero-trust/copilots/zero-trust-microsoft-copilot-for-security)
 - [Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection)
 
