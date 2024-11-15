@@ -111,7 +111,7 @@ Manage and investigate security incidents in a single location and from a single
 **Incidents** | An incident is a set of correlated alerts and associated data that make up an attack. On the Incidents dashboard, you can review a list of the latest incidents and prioritize those with high severity. Drill down into a specific incident to get a full attack story, including information about associated alerts, devices, users, investigations, and evidence.
 **Alerts** | Alerts are signals that result from threat detection activity across services in the Defender portal. In the Alerts dashboard, review alerts that have been issued by portal services.<br/><br/> The alerts queue disaplays new and in progress alerts from the last seven days, with the most recent alerts at the top of the list. You can filter on alerts to investigate as needed.
 
-For more information, see [Incidents and alerts in the Microsoft Defender portal](incidents-alerts-overview.md).
+For more information, see [Incidents and alerts in the Microsoft Defender portal](incidents-overview.md).
 
 ### Hunt for threats
 
@@ -124,6 +124,7 @@ Hunting allows you to proactively inspect security events and data to locate kno
 **Advanced hunting** | Explore and query up to 30 days of raw data. You can query using a guided query tool, use sample queries, or use KQL to build your own queries
 **Custom detection rules** | Create custom detection rules to proactively monitor and respond to events and system states. Use custom detection rules to trigger alerts or automatic response actions.
 
+For more information, see [Proactively hunt for threats with advanced hunting](/defender-xdr/advanced-hunting-overview) and [Custom detections overview](/defender-xdr/custom-detections-overview).
 
 ### Review pending threat remediations
 
@@ -173,9 +174,10 @@ The **Assets** page provides a unified view of all your discovered and protected
 
 **Feature** | **Details**
 --- | ---
-[**Devices**](/defender-xdr/entity-page-device) |On the Device Inventory page, get an overview of discovered devices in each tenant you have access to. Review devices by type, understand which devices are high risk or critical.<br/><br/> You can group devices logically by adding tags for context, exclude devices you don't want to assess, or start an automated investigation for devices.
-[**Identities**](/defender-xdr/investigate-users) | Get a summary of user and account inventory.
+**Devices** |On the Device Inventory page, get an overview of discovered devices in each tenant you have access to. Review devices by type, understand which devices are high risk or critical.<br/><br/> You can group devices logically by adding tags for context, exclude devices you don't want to assess, or start an automated investigation for devices.
+**Identities** | Get a summary of user and account inventory.
 
+For more information, see [Device entity page](/defender-xdr/entity-page-device) and [User entity page](/defender-xdr/investigate-users).
 
 ## Microsoft Sentinel
 
@@ -185,10 +187,10 @@ Access Microsoft Sentinel capabilities in the Defender portal with an unified pl
 
 **Feature** | **Details**
 --- | ---
-**Search** | Search across logs, and access past searches.
+**Search** | [Search](/azure/sentinel/investigate-large-datasets) across logs, and access past searches.
 **Threat management** | Visualize and monitor connected data with [workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal).<br/><br/>[Investigate incidents](/azure/sentinel/investigate-incidents) and [classify alerts with entities](/azure/sentinel/customize-entity-activities?tabs=defender).<br/><br/>Proactively [hunt for threats](/azure/sentinel/hunts) and [use notebooks](/azure/sentinel/hunting?tabs=azure-portal#notebooks-to-power-investigations) to power investigations.<br/><br/> [Integrate threat intelligence](/azure/sentinel/threat-intelligence-integration) into threat detection, and [use the MITRE ATT&CK framework](/azure/sentinel/mitre-coverage) in analytics and incidents.
-**Content management** | Use the [Content hub](/azure/sentinel/sentinel-solutions#discover-and-manage-microsoft-sentinel-content) to discover and install out-of-the-box (OOTB) content.<br/><br/> Use [Microsoft Sentinel repositories](/azure/sentinel/ci-cd-custom-content) to connect to external source systems for continuous integration and delivery (CI/CD) rather than manually deploying and updating custom content.
-**Configuration** | [Use data connectors](/azure/sentinel/best-practices-data) to ingest data.<br/><br/>[Create watchlists](/azure/sentinel/watchlists) to correlate and organize data sources.<br/><br/>[Set up analytics rules](/azure/sentinel/threat-detection) to query and analyze collected data.<br/><br/> [Automate](/azure/sentinel/automation/automation#automation-with-the-unified-security-operations-platform) threat responses.
+**Content management** | Discover and install out-of-the-box (OOTB) content from the [Content hub](/azure/sentinel/sentinel-solutions#discover-and-manage-microsoft-sentinel-content).<br/><br/> Connect to external source systems for continuous integration and delivery (CI/CD) rather than manually deploying and updating custom content by using [Microsoft Sentinel repositories](/azure/sentinel/ci-cd-custom-content).
+**Configuration** | Ingest data by using [data connectors](/azure/sentinel/best-practices-data).<br/><br/>[Create watchlists](/azure/sentinel/watchlists) to correlate and organize data sources.<br/><br/>[Set up analytics rules](/azure/sentinel/threat-detection) to query and analyze collected data.<br/><br/> [Automate](/azure/sentinel/automation/automation#automation-with-the-unified-security-operations-platform) threat responses.
 
 For more information, see [Microsoft Sentinel](/azure/sentinel/overview) and [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal).
 
