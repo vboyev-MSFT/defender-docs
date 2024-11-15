@@ -133,7 +133,7 @@ You can also get product updates and important notifications through the [messag
 
 - (GA) **Dark mode** is now available in the Microsoft Defender portal. In the Defender portal, on the top right-hand side of the homepage, select **Dark mode**. Select **Light mode** to change the color mode back to the default.
 
-- (GA) **Assigning severity to incidents**, **assigning an incident to a group**, and the ***go hunt*** option from the attack story graph are now generally available. Guides to learn how to [assign or change incident severity](manage-incidents.md#assign-or-change-incident-severity) and [assign an incident to a group](manage-incidents.md#assign-an-incident) are in the [Manage incidents](manage-incidents.md) page. Learn how you can use the *go hunt* option by exploring [attack story](investigate-incidents.md#attack-story).
+- (GA) **Assigning severity to incidents**, **assigning an incident to a group**, and the ***go hunt*** option from the attack story graph are now generally available. Guides to learn how to [assign or change incident severity](manage-incidents.md#assign-or-change-incident-severity) and [assign an incident to a group](manage-incidents.md#assign-an-owner) are in the [Manage incidents](manage-incidents.md) page. Learn how you can use the *go hunt* option by exploring [attack story](investigate-incidents.md#attack-story).
 
 - (Preview) **[Custom detection rules in Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)** are now available. Create advanced hunting custom detection rules specific to your org to proactively monitor for threats and take action.
 
@@ -155,7 +155,7 @@ You can also get product updates and important notifications through the [messag
 
 - (GA) Microsoft Defender for Cloud alerts integration with Microsoft Defender XDR is now generally available. Learn more about the integration in [Microsoft Defender for Cloud in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud.md).
 
-- (GA) **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log).
+- (GA) **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#view-the-activity-log-of-an-incident).
 
 - (Preview) **[Query history](advanced-hunting-query-history.md) in advanced hunting** is now available. You can now rerun or refine queries you have run recently. Up to 30 queries in the past 28 days can be loaded in the query history pane.
 
@@ -169,7 +169,7 @@ You can also get product updates and important notifications through the [messag
 
 - The Microsoft Defender portal's incident queue has updated filters, search, and added a new function where you can create your own filter sets. For details, see [Available filters](incident-queue.md#available-filters).
 
-- You can now assign incidents to a user group or another user. For details, see [Assign an incident](manage-incidents.md#assign-an-incident).
+- You can now assign incidents to a user group or another user. For details, see [Assign an incident](manage-incidents.md#assign-an-owner).
 
 ## November 2023
 

@@ -53,7 +53,7 @@ This article describes how admins can manage entries for IPv6 addresses in the M
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
-      - **Security Operator** (Tenant AllowBlockList Manager).
+      - **Security Operator** (Tenant AllowBlockList Manager role): This permission works only when assigned directly in the **Exchange admin center** at <https://admin.exchange.microsoft.com> \> **Roles** \> **Admin Roles**.
     - _Read-only access to the Tenant Allow/Block List_: Membership in one of the following role groups:
       - **Global Reader**
       - **Security Reader**
