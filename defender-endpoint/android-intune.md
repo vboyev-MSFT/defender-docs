@@ -159,7 +159,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     5. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format.
 
-      :::image type="content" alt-text="Image of android create app configuration policy." source="media/configurationformat.png" lightbox="media/configurationformat.png":::
+       :::image type="content" alt-text="Image of android create app configuration policy." source="media/configurationformat.png" lightbox="media/configurationformat.png":::
 
     6. Select **Add** to view a list of supported configurations. Select the required configuration and select **Ok**.
 
@@ -177,9 +177,9 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
        The app configuration policy for Defender for Endpoint is now assigned to the selected user group.
 
-   10. Select **Microsoft Defender** app in the list \> **Properties** \> **Assignments** \> **Edit**.
+10. Select **Microsoft Defender** app in the list \> **Properties** \> **Assignments** \> **Edit**.
 
-       :::image type="content" source="media/mda-properties.png" alt-text="The Edit option on the Properties page" lightbox="media/mda-properties.png":::
+    :::image type="content" source="media/mda-properties.png" alt-text="The Edit option on the Properties page" lightbox="media/mda-properties.png":::
 
 11. Assign the app as a *Required* app to a user group. It's automatically installed in the *work profile* during the next sync of the device via Company Portal app. This assignment can be done by navigating to the *Required* section \> **Add group**, selecting the appropriate user group, and then choosing **Select**.
 
