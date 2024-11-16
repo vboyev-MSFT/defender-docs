@@ -1,28 +1,30 @@
 ---
 title: Microsoft Defender XDR in the Defender portal 
-description: Learn about Microsoft Defender XDR in the Defender portal
+description: Learn about the services and features available with Microsoft Defender XDR in the Microsoft Defender portal.
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/13/2024
+ms.date: 11/15/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - tier1
 - usx-security
-ms.topic: conceptual
+ms.topic: concept-article
+
+# customer intent: As a security operations center leader, I want to learn about the services and features available with Defender XDR to help me determine whether it meets my organization's requirements.
 ---
 
-# Defender XDR in the Defender portal
+# Microsoft Defender XDR in the Defender portal
 
 Microsoft Defender XDR in the Microsoft unified SecOps platform unifies and coordinates threat prevention, detection, investigation, and response across a broad range of assets, including devices and endpoints, identities, email, Microsoft 365 services, and SaaS apps.
 
 Defender XDR consolidates threat signals and data across assets, so that you can monitor and manage organizational threat protection from a single location in the [Microsoft Defender portal](https://security.microsoft.com). 
 
 
-Defender XDR combines a number of Microsoft security services.
+Defender XDR combines many Microsoft security services.
 
 **Service** | **Details**
 --- | ---
@@ -49,13 +51,13 @@ A [single incident queue](/defender-xdr/incident-queue) provides full visibility
 
 Defender for XDR includes [deception capability](/defender-xdr/deception-overview) to detection human-operated lateral movement, often used for common attacks such as ransomware and business email compromise. 
 
-The deception capability generates decoy assets. When attackers interact with these assets, the deception capability raise high-confidence alerts. You can review deception-related alerts in the Alerts page in the portal.
+The deception capability generates decoy assets. When attackers interact with these assets, the deception capability raises high-confidence alerts. You can review deception-related alerts in the Alerts page in the portal.
 
 ## Automatically disrupting threats
 
-Defender XDR uses [automatic attack disruption](/defender-xdr/automatic-attack-disruption) to contain attacks in progress, limiting the attack impact, and providing more time for security teams to remediate attacks.
+Defender XDR uses [automatic attack disruption](/defender-xdr/automatic-attack-disruption) to contain attacks in progress, which limit the attack impact, and provide more time for security teams to remediate attacks.
 
-Automatic disruption relies on the high-fidelity signals uses incidnt correlation across million of Defender product signals, and continuous investigation insights from Microsoft's security research team, to ensure a high signal-to-noise ratio (SNR)
+Automatic disruption relies on the high-fidelity signals that use incident correlation across million of Defender product signals, and continuous investigation insights from Microsoft's security research team, to ensure a high signal-to-noise ratio (SNR).
 
 Automatic disruption uses Defender XDR response actions, including containing devices, and disabling or containing user accounts.
 
@@ -68,7 +70,7 @@ Threat hunting is a proactive approach to inspect and investigate security event
 
 Defender XDR provides threat hunting capabilities in the Defender portal. 
 
-Using [advanced hunting](/defender-xdr/advanced-hunting-overview), SOC teams can create custom queries and rules to hunt for threats across the enterprise. Using Kusto Query Language (KQL), analysts can search for indicators of compromise, anomalies, and suspicious activities across Defender XDR data sources. Data can be filtered, aggregated, and analyzed. 
+By using [advanced hunting](/defender-xdr/advanced-hunting-overview), SOC teams can create custom queries and rules to hunt for threats across the enterprise. By using Kusto Query Language (KQL), analysts can search for indicators of compromise, anomalies, and suspicious activities across Defender XDR data sources. Data can be filtered, aggregated, and analyzed. 
 
 For those who aren't familiar with KQL, Defender XDR provides a guided mode to create queries visually. Predefined query templates are also available.
 
@@ -78,7 +80,7 @@ In addition to advanced hunting, SOC teams can create [custom detection rules](/
 
 Defender for XDR provides [automated investigation and response](/defender-xdr/m365d-autoir) capabilities, reducing the volume of alerts to which SOC teams must respond. 
 
-As alerts create inciidents, automated investigation results in a verdict that determines whether a threat was found. For suspicious and malicious threats, remediation can include actions such as sending a file to quarantine, stopping a process, blocking a URL, or isolating a device. 
+As alerts create incidents, automated investigation results in a verdict that determines whether a threat was found. For suspicious and malicious threats, remediation can include actions such as sending a file to quarantine, stopping a process, blocking a URL, or isolating a device. 
 
 You can view a summary of automated investigations and responses in the Home page of the portal. Pending remediation actions are handled in the portal Action Center.
 

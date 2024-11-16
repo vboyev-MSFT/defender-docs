@@ -6,24 +6,32 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 07/16/2024
+ms.date: 11/15/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - tier1
 - usx-security
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # What's new in Microsoft's unified security operations platform
 
-<!--Need to define when something goes here versus other what's new articles. Maybe we just focus on updates within this library and things tied directly to USX (features that unblock onboarding, parity features with Sentinel, enhancements to core USX features?) -->
+This article lists recent features added into Microsoft's unified SecOps platform within the Microsoft Defender portal, and new features in related services that provide an enhanced user experience in the platform.
 
-This article lists recent features added into the Microsoft's unifed SecOps platform within the Microsoft Defender portal, and new features in related services that provide an enhanced user experience in the platform.
+## November 2024
 
-The listed features were released in the last three months. For information about earlier features delivered, see our [Tech Community blogs](https://techcommunity.microsoft.com/t5/azure-sentinel/bg-p/AzureSentinelBlog/label-name/What's%20New).
+- [Microsoft Sentinel availability in Microsoft Defender portal](#microsoft-sentinel-availability-in-microsoft-defender-portal)
 
+### Microsoft Sentinel availability in Microsoft Defender portal
+
+We previously announced Microsoft Sentinel is generally available within Microsoft's unified security operations platform in the Microsoft Defender portal. For preview, Microsoft Sentinel is now available in the Defender portal without Microsoft Defender XDR or an E5 license. For more information, see:
+
+ - [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
+ - [Connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard)
+
+## Related content
 For more information on what's new with other Microsoft Defender security products and Microsoft Sentinel, see:
 
 - [What's new in Microsoft Sentinel](/azure/sentinel/whats-new)

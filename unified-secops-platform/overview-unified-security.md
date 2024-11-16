@@ -6,13 +6,15 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/11/2024
+ms.date: 11/15/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - tier1
 - usx-security
 ms.topic: overview
+
+# customer intent: As a security operations center leader, I want to learn about the services and features available with Microsoft's unified security operations platform to help me determine whether it meets my organization's requirements.
 ---
 
 # What is Microsoft's unified security operations platform?
