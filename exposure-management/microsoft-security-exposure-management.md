@@ -18,6 +18,9 @@ Security Exposure Management is currently in public preview.
 
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
+> [!NOTE]
+> Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD.
+
 ## Who uses Security Exposure Management?
 
 Security Exposure Management is aimed at:
