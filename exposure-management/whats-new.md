@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/14/2024
+ms.date: 11/12/2024
 ---
 
 # What's new in Microsoft Security Exposure Management?
@@ -26,6 +26,16 @@ Security Exposure Management is currently in public preview.
 > `https://aka.ms/msem/rss`
 
 ## November 2024
+
+### Microsoft Security Exposure Management is now supported in Microsoft Defender XDR Unified role-based access control (RBAC)
+
+Access control to Microsoft Security Exposure Management can now be managed using Microsoft Defender XDR Unified Role-Based Access Control (RBAC) permissions model with dedicated and granular permissions.
+
+This new capability enables admins to grant their posture managers with access to Exposure Management data and experiences with the least privilege access approach rather than the Microsoft Azure Entra ID roles, which is still supported and can be used if needed.
+
+To learn more about Microsoft Security Exposure Management access management using Microsoft Defender XDR Unified RBAC permissions model, see [Prerequisites and support](/security-exposure-management/prerequisites). 
+
+To learn more about creating new custom roles in Microsoft Defender XDR Unified RBAC, see [Create custom roles in Microsoft Defender XDR Unified RBAC](/defender-xdr/create-custom-rbac-roles).
 
 ### Content versioning notifications
 
