@@ -27,6 +27,12 @@ Security Exposure Management is currently in public preview.
 
 ## November 2024
 
+### OT security initiative
+
+The new Operational Technology (OT) security initiative equips practitioners with a powerful tool to identify, monitor, and mitigate risks across the OT environment, ensuring both operational reliability and safety. This initiative aims to identify devices across physical sites, assess their associated risks, and provide faster, more effective protection for OT systems.
+
+For more information, see, [Review security initiatives](initiatives.md)
+
 ### Microsoft Security Exposure Management is now supported in Microsoft Defender XDR Unified role-based access control (RBAC)
 
 Access control to Microsoft Security Exposure Management can now be managed using Microsoft Defender XDR Unified Role-Based Access Control (RBAC) permissions model with dedicated and granular permissions.

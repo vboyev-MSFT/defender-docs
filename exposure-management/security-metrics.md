@@ -9,9 +9,9 @@ ms.service: exposure-management
 ms.date: 11/12/2024
 ---
 
-# Investigate security metrics
+# Investigate security initiative metrics
 
-Security metrics in [Microsoft Security Exposure Management](microsoft-security-exposure-management.md) measure security exposure for a specific scope of assets or resources within a [security initiative](exposure-insights-overview.md). Most security initiatives (but not all) have metrics associated with them.
+Security initiative metrics in [Microsoft Security Exposure Management](microsoft-security-exposure-management.md) measure security exposure for a specific scope of assets or resources within a [security initiative](exposure-insights-overview.md). Most security initiatives (but not all) have metrics associated with them.
 
 Security Exposure Management is currently in public preview.
 
@@ -32,7 +32,7 @@ Security Exposure Management is currently in public preview.
 
 ## Review security metrics
 
-1. In the [Microsoft Defender portal](https://security.microsoft.com), select **Exposure management -> Exposure insights ->Metrics** to open the [Metrics](https://security.microsoft.com/exposure-metrics) page.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), select **Exposure management -> Exposure insights -> Metrics** to open the [Metrics](https://security.microsoft.com/exposure-metrics) page.
 
     :::image type="content" source="./media/metrics.png" alt-text="Screenshot of the metrics page in Microsoft Security Exposure management.":::
 
