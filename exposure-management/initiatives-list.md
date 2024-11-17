@@ -25,7 +25,7 @@ The CIS Microsoft 365 Foundations Benchmark (v3.0.0) is a set of security assess
 
 This initiative aims to reflect the status around cloud security coverage, ROI, health, configuration, and performance. It consists of measurements across multiple domains and disciplines to provide security managers with a high-level view into how posture is enforced in cloud ops.
 
-## Critical Asset Protection [Preview]
+## Critical Asset Protection
 
 Critical asset protection refers to the strategies, processes, and technologies implemented to safeguard an organization's most valuable and important assets from various threats and risks. It involves identifying, prioritizing, and applying targeted security measures to ensure the resilience and integrity of these critical assets.
 
@@ -49,7 +49,7 @@ Microsoft Defender External Attack Surface Management (Defender EASM) continuous
 
 Identity security is the practice of protecting the digital identities of individuals and organizations. This includes protecting passwords, usernames, and other credentials that can be used to access sensitive data or systems. Identity security is essential for protecting against a wide range of cyber threats, including phishing, malware, and data breaches. By taking proactive steps, organizations can help to protect their digital identities and sensitive data from cyber threats.
 
-## OT Security
+## OT Security [Preview]
 
 Monitors and safeguards Operational Technology (OT) environments within the organization by employing network layer monitoring. This initiative identifies devices across physical sites, pinpoints their risks, and ensures comprehensive protection and security management of OT systems.
 
@@ -57,7 +57,7 @@ Monitors and safeguards Operational Technology (OT) environments within the orga
 
 Ransomware attacks have become increasingly common in recent years, and they can have a devastating impact on organizations. Organizations can and should be proactive in managing a good security posture against ransomware. One of the first steps is to ensure that recommended controls are in place and are utilized and configured properly, hence reducing the risk of a successful ransomware attack making way into corporate networks and assets.
 
-## SaaS Security [Preview]
+## SaaS Security
 
 This initiative focuses on displaying the current state of SaaS (software as a service) security coverage, health, configuration, and performance. It consists of metrics across multiple domains and disciplines to provide security managers with a high-level view into their SaaS security posture management. To make the most of this Initiative, activate application connectors for the following: Microsoft 365, Salesforce, ServiceNow, GitHub, Okta, Citrix ShareFile, DocuSign, Dropbox, Google Workspace, NetDocuments, Workplace (preview), Zendesk, Zoom (preview), Atlassian. Learn more on connectors enablement: [https://aka.ms/AAs4lmg](https://aka.ms/AAs4lmg)
 
