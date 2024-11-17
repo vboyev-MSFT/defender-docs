@@ -81,7 +81,7 @@ If, during your editing, you want to reset the device list to its original state
 
 To remove any of the devices from this list:
 
-1. Select the **Deselect devices from site** button. All of the devices become editable.
+1. Select **Deselect devices from site**. All of the devices become editable.
 1. Deselect the checkbox of the devices to be removed.
     1. To reset the device list to its original state, select **Discard all changes**.
 
