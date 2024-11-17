@@ -67,7 +67,7 @@ Currently, Security Exposure Management consolidates security posture informatio
 
 In addition to Microsoft services, Security Exposure Management will connect to non-Microsoft data sources over time.
 
-## How do you buy Microsoft Security Exposure Management?
+## How do I buy Microsoft Security Exposure Management?
 
 Exposure Management is available in the Microsoft Defender portal at [https://security.microsoft.com](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecurity.microsoft.com%2F&data=05|02|dlanger@microsoft.com|535bfb9f198d4313d96108dd05e1a9d4|72f988bf86f141af91ab2d7cd011db47|1|0|638673189066169502|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=vOA7%2FeI4WU4tRMWSPiHTs4jrZX8%2B%2FN70wheiTBFPSDk%3D&reserved=0)
 
