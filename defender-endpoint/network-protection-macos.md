@@ -3,7 +3,7 @@ title: Use network protection to help prevent macOS connections to bad sites
 description: Protect your network by preventing macOS users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 09/27/2024
+ms.date: 11/10/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -38,7 +38,7 @@ search.appverid: met150
 - Microsoft Edge for macOS browser
 
 > [!NOTE]
-> Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection provides this protection to Microsoft Edge for macOS if network protection is enabled.
+> SmartScreen in Microsoft Edge for macOS does not currently support web content filtering, custom indicators, or other enterprise features. However, network protection provides this protection to Microsoft Edge for macOS if network protection is enabled.
 
 ## Overview
 
@@ -391,7 +391,7 @@ For this page, we recommend that your organization uses a basic SharePoint site.
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)
 - [Web protection](web-protection-overview.md)
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Web content filtering](web-content-filtering.md)
 
 

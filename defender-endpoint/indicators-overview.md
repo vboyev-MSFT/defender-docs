@@ -1,5 +1,5 @@
 ---
-title: Create indicators
+title: Overview of indicators in Microsoft Defender for Endpoint
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 ms.service: defender-endpoint
 ms.author: diannegali
@@ -15,10 +15,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 11/05/2024
+ms.date: 11/10/2024
 ---
 
-# Create indicators
+# Overview of indicators in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -117,11 +117,11 @@ The `EnableFileHashComputation` setting computes the file hash for the cert and 
 
 When your security team creates a new indicator (IoC), the following actions are available:
 
-- **Allow** – the IoC is allowed to run on your devices.
-- **Audit** – an alert is triggered when the IoC runs.
-- **Warn** – the IoC prompts a warning that the user can bypass
-- **Block execution** - the IoC won't be allowed to run.
-- **Block and remediate** - the IoC won't be allowed to run and a remediation action will be applied to the IoC.
+- **Allow**: the IoC is allowed to run on your devices.
+- **Audit**: an alert is triggered when the IoC runs.
+- **Warn**: the IoC prompts a warning that the user can bypass
+- **Block execution**: the IoC won't be allowed to run.
+- **Block and remediate**: the IoC won't be allowed to run and a remediation action will be applied to the IoC.
 
 > [!NOTE]
 > Using Warn mode will prompt your users with a warning if they open a risky app or website. The prompt won't block them from allowing the application or website to run, but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need. For more information, see Govern apps discovered by Microsoft Defender for Endpoint.
@@ -160,11 +160,11 @@ The IoC API schema and the threat IDs in advance hunting are updated to align wi
 
 Customers might experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts aren't created or are created with inaccurate information. Each issue is investigated by our engineering team.
 
-- **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (that is, custom title and severity) aren't fired in these cases.
-- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results aren't deterministic due to an issue with the alert detection logic. In some cases, customers might see a generic alert, whereas a custom alert might show in other cases.
-- **Allow** – No alerts are generated (by design).
-- **Audit** - Alerts are generated based on the severity provided by the customer.
-- In some cases, alerts coming from EDR detections might take precedence over alerts stemming from antivirus blocks, in which case an information alert will be generated.
+- **Block indicators**: Generic alerts with informational severity only will be fired. Custom alerts (that is, custom title and severity) aren't fired in these cases.
+- **Warn indicators**: Generic alerts and custom alerts are possible in this scenario, however, the results aren't deterministic due to an issue with the alert detection logic. In some cases, customers might see a generic alert, whereas a custom alert might show in other cases.
+- **Allow**: No alerts are generated (by design).
+- **Audit**: Alerts are generated based on the severity provided by the customer.
+- In some cases, alerts coming from EDR detections might take precedence over alerts stemming from antivirus blocks, in which case an information alert is generated.
 
 Microsoft Store apps cannot be blocked by Defender because they're signed by Microsoft.
 
@@ -174,7 +174,6 @@ Microsoft Store apps cannot be blocked by Defender because they're signed by Mic
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](api/ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)
-
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
