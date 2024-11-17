@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/14/2024
+ms.date: 11/12/2024
 ---
 
 # What's new in Microsoft Security Exposure Management?
@@ -38,6 +38,16 @@ For more information, see [Data connectors overview](overview-data-connectors.md
 The Device Inventory and Attack Surface Map now display the data sources for each discovered asset. This feature provides an overview of which tools or products reported each asset, including Microsoft and external connectors like Tenable or ServiceNow CMDB. In the inventory, use the **Discovery Sources** column to filter devices by reporting sources. In the **Attack Surface Map**, toggle the **Discovery Sources** view using the **Layers** option. You can also query **Discovery Sources** in the **Device Info** table via Advanced Hunting.
 
 For more information on understanding data from external sources, see [Getting value from your data connectors](value-data-connectors.md)
+
+### Microsoft Security Exposure Management is now supported in Microsoft Defender XDR Unified role-based access control (RBAC)
+
+Access control to Microsoft Security Exposure Management can now be managed using Microsoft Defender XDR Unified Role-Based Access Control (RBAC) permissions model with dedicated and granular permissions.
+
+This new capability enables admins to grant their posture managers with access to Exposure Management data and experiences with the least privilege access approach rather than the Microsoft Azure Entra ID roles, which is still supported and can be used if needed.
+
+To learn more about Microsoft Security Exposure Management access management using Microsoft Defender XDR Unified RBAC permissions model, see [Prerequisites and support](/security-exposure-management/prerequisites). 
+
+To learn more about creating new custom roles in Microsoft Defender XDR Unified RBAC, see [Create custom roles in Microsoft Defender XDR Unified RBAC](/defender-xdr/create-custom-rbac-roles).
 
 ### Content versioning notifications
 

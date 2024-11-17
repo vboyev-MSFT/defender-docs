@@ -109,7 +109,7 @@ The static proxy settings are configurable through group policy (GP), both setti
 
 ## Configure a static proxy for Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) provides near-instant, automated protection against new and emerging threats. Connectivity is required for [custom indicators](manage-indicators.md) when Microsoft Defender Antivirus is your active anti-malware solution and [EDR in block mode](edr-in-block-mode.md), which provides a fallback option when a non-Microsoft solution didn't perform a block.
+Microsoft Defender Antivirus [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) provides near-instant, automated protection against new and emerging threats. Connectivity is required for [custom indicators](indicators-overview.md) when Microsoft Defender Antivirus is your active anti-malware solution and [EDR in block mode](edr-in-block-mode.md), which provides a fallback option when a non-Microsoft solution didn't perform a block.
 
 Configure the static proxy using the Group Policy available in Administrative Templates:
 
