@@ -36,7 +36,7 @@ Data Connectors in Microsoft Security Exposure Management is currently in public
 [!INCLUDE [prerelease](../includes//prerelease.md)]
 
 > [!NOTE]
-> During the preview phase, use of the data connectors feature is free. Once data connectors become generally available, there will be a cost for each connector based on consumption from that product to Exposure Management. The charge will be according to volume of ingested billable assets, where a billable asset is any asset (device, container, identity, application) on which data is reported from that connector. Each connector will have clearly defined applicable assets and guidance on how to determine the numbers.
+> During the preview phase, use of the data connectors feature is free. Once data connectors become generally available, there will be a consumption-based cost for each non-Microsoft data connector based on number of assets retrieved from the connected security tool. The charge will be according to volume of ingested billable assets, where a billable asset is any asset (device, container, identity, application) on which data is reported from that connector. Each connector will have clearly defined applicable assets and guidance on how to determine the numbers. Pricing will be announced before billing of external connectors starts at GA.  
 
 ## Prerequisites
 
