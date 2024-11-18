@@ -30,11 +30,11 @@ There are two ways to run the client analyzer tool:
 
 ## Running the binary version of the client analyzer
 
-1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
+1. Download the [XMDE Client Analyzer Binary](https://go.microsoft.com/fwlink/?linkid=2297517) tool to the macOS or Linux machine you need to investigate.\
 If you're using a terminal, download the tool by entering the following command:
 
     ```bash
-    wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+    wget --quiet -O XMDEClientAnalyzerBinary.zip https://go.microsoft.com/fwlink/?linkid=2297517
     ```
 
 1. Verify the download.

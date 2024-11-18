@@ -391,7 +391,7 @@ For this page, we recommend that your organization uses a basic SharePoint site.
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)
 - [Web protection](web-protection-overview.md)
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Web content filtering](web-content-filtering.md)
 
 
