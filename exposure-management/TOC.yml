@@ -1,4 +1,4 @@
-- name: Microsoft Security Exposure Management (preview)
+- name: Microsoft Security Exposure Management
   href: index.yml
   expanded: true
   items: 
