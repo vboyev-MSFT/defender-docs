@@ -163,7 +163,4 @@ Events measure the score drop or worsening in the metric status. Events include:
 
 ## Next steps
 
-- [Review security initiatives](initiatives.md)
-- [Investigate security metrics](security-metrics.md)
-- [Review security recommendations](security-recommendations.md)
-- [Explore security events](security-events.md)
+- [Investigate security initiative metrics](security-metrics.md)
