@@ -13,10 +13,6 @@ ms.date: 11/04/2024
 
 Exposure insights in [Microsoft Security Exposure Management](microsoft-security-exposure-management.md) continuously aggregate security posture data and insights across workloads and resources, into a single pipeline.
 
-Security Exposure Management is currently in public preview.
-
-[!INCLUDE [prerelease](../includes//prerelease.md)]
-
 ## Exposure insights
 
 Exposure insights provide rich context around the security posture state of your asset inventory.
@@ -38,7 +34,7 @@ Security initiatives provide a simple way to assess security readiness for a spe
 Security Exposure Management provides initiatives that currently include:
 
 - **Workload initiatives**: Assess and manage the risk associated with specific workload domains, such as security for endpoints, identity resources, and cloud assets.
-- **Horizontal threat initiatives**: Assess and manage risk for specific threat areas, such as ransomware protection, or financial fraud.
+- **Horizontal threat initiatives**: Assess and manage risk for specific threat areas, such as ransomware protection, or business email compromise - financial fraud.
 - **Threat analytics initiatives**: Assess threat risk  with initiatives that are based on up-to-date research from Microsoft threat analytics. Microsoft threat analytics is a set of reports from expert Microsoft security researchers that provide information about real and relevant threats. These threat initiatives focus on:
 
   - Threat actors and threat vectors.
@@ -167,7 +163,4 @@ Events measure the score drop or worsening in the metric status. Events include:
 
 ## Next steps
 
-- [Review security initiatives](initiatives.md)
-- [Investigate security metrics](security-metrics.md)
-- [Review security recommendations](security-recommendations.md)
-- [Explore security events](security-events.md)
+- [Investigate security initiative metrics](security-metrics.md)
