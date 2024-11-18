@@ -25,6 +25,12 @@ Use the dashboard as a starting point for a snapshot of organizational posture a
 
 :::image type="content" source="./media/get-started-exposure-management/exposure-management-overview.png" alt-text="Screenshot of the security exposure management overview page." lightbox="./media/get-started-exposure-management/exposure-management-overview.png":::
 
+## Connecting your external security and asset management products
+
+To get the most out of Security Exposure Management, connect your external security and asset management products.
+
+By integrating these products, you can enhance visibility and gain deeper insights into your security posture. Data connectors allow for seamless data flow and aggregation, providing a more comprehensive view of potential vulnerabilities and threats.
+
 ## Review assets
 
 Get a quick view of your organization's exposed assets.
