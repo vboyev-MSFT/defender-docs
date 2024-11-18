@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Security Copilot for threat intelligence
 description: Learn about Security Copilot embedded experience in Microsoft Defender for Microsoft Defender Threat Intelligence.
-keywords: security copilot, threat intelligence, defender threat intelligence, defender ti, copilot for security, embedded experience, vulnerability impact assessment, threat actor profile, plugins, Microsoft plugins
+keywords: security copilot, threat intelligence, defender threat intelligence, defender ti, Security Copilot, embedded experience, vulnerability impact assessment, threat actor profile, plugins, Microsoft plugins
 ms.service: defender-xdr
 ms.author: pauloliveria
 author: poliveria
@@ -25,7 +25,7 @@ ms.date: 11/18/2024
 - [Microsoft Defender XDR](/defender-xdr)
 
 >[!IMPORTANT] 
-> On June 30, 2024, The Microsoft Defender Threat Intelligence (Defender TI) standalone portal (`https://ti.defender.microsoft.com`) was retired and is no longer accessible. Customers can continue using Defender TI in the [Microsoft Defender portal](https://aka.ms/mdti-intel-explorer) or with [Microsoft Security Copilot](security-copilot-and-defender-threat-intelligence.md). [Learn more](https://aka.ms/mdti-standaloneportal)
+> On June 30, 2024, The Microsoft Defender Threat Intelligence (Defender TI) standalone portal (https://ti.defender.microsoft.com) was retired and is no longer accessible. Customers can continue using Defender TI in the [Microsoft Defender portal](https://aka.ms/mdti-intel-explorer) or with [Microsoft Security Copilot](security-copilot-and-defender-threat-intelligence.md). [Learn more](https://aka.ms/mdti-standaloneportal)
 
 Microsoft Copilot in Defender applies the capabilities of [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot) to deliver Microsoft Defender Threat Intelligence (Defender TI) information about threat actors and tools, as well as contextual threat intelligence, directly into the Microsoft Defender portal. Based on threat analytics reports, intel profiles, and other available Defender TI content, you can use Copilot in Defender to summarize the latest threats affecting your organization, know which threats to prioritize based on your exposure level, or gain more knowledge about your organization's or the global threat landscape.
 
@@ -66,7 +66,7 @@ You can experience Security Copilot's capability to look up threat intelligence 
 6. To start a new chat session with Copilot, select the **New chat** icon ![Screenshot that shows the New chat icon in Copilot in Defender.](media/defender-ti-and-copilot/copilot-defender-new-chat.png).
 
 > [!NOTE]
-> Copilot saves your sessions from the Defender portal in the [Security Copilot standalone portal](https://securitycopilot.microsoft.com/). To see the previous sessions, from the Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**. [Learn more about navigating Microsoft Security Copilot](/copilot/security/navigating-security-copilot)
+> Copilot saves your sessions from the Defender portal in the [Security Copilot standalone portal](https://go.microsoft.com/fwlink/?linkid=2247989). To see the previous sessions, from the Copilot [Home menu](/copilot/security/navigating-security-copilot#home-menu), go to **My sessions**. [Learn more about navigating Microsoft Security Copilot](/copilot/security/navigating-security-copilot)
 
 > [!IMPORTANT]
 > Copilot in Defender starts a new chat session every time you navigate to a different *Threat intelligence* page (for example, when you go from *Threat analytics* to *Intel profiles*) in the Defender portal. If you wish to go back or continue a previous session, go to the Security Copilot standalone portal.
