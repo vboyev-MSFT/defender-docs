@@ -42,7 +42,7 @@ To be considered for the MVI program, your organization must meet all the follow
 |[AV-Test](https://www.av-test.org/en/about-the-institute/certification)|Real-World Protection Test for MVI, AV-Test |97% (Real-World Protection test for MVI)/Certified (AV-Test Home)/ Approved (AV-Test Enterprise)|
 |[SE Labs](https://selabs.uk/en/reports/)|Endpoint Security (EPS) or Enterprise Advanced Security (EAS)|AAA|
 |[SKD Labs](https://www.skdlabs.com/html/english/)|Starcheck Anti-malware Real-time protection and cleaning|Starcheck Certified|
-|<u>[VB 100](https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1)</u>|VB100|Detection rate of 95% with Grade C or above|
+|[VB 100](https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1)|VB100|Detection rate of 95% with Grade C or above|
 |[West Coast Labs](https://www.westcoastlabs.com/wclvalid)|WCL Validated for Malware Detection and Malware Remediation technologies|Product Rating A|
 
 ## Apply now
