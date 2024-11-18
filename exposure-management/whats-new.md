@@ -26,6 +26,12 @@ Learn more about MSEM by reading the blogs, [here](https://techcommunity.microso
 
 ## November 2024
 
+### Announcing the General Availability of Microsoft Security Exposure Management
+
+We are excited to announce the general availability of Microsoft Security Exposure Management. This powerful tool helps organizations focus on their most critical exposures and act swiftly. By integrating security insights across the entire digital estate, it provides a comprehensive view of risk posture, enabling faster, more informed decisions to reduce exposure before attackers can exploit it.
+
+With this GA release, you can now build and enhance a Continuous Threat Exposure Management (CTEM) program, continuously identifying, prioritizing, and mitigating risks across your digital landscape.
+
 ### External data connectors
 
 We have introduced new external data connectors to enhance data integration capabilities, allowing seamless ingestion of security data from other security vendors.  Data collected through these connectors is normalized within our exposure graph, enhancing your device inventory, mapping relationships, and revealing new attack paths for comprehensive attack surface visibility. These connectors help you to consolidate security posture data from various sources, providing a comprehensive view of your security posture.
