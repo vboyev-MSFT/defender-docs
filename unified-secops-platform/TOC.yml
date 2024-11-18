@@ -15,7 +15,11 @@
         - name: Microsoft Defender XDR
           href: defender-xdr-portal.md
         - name: Microsoft Sentinel
-          href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json&tabs=defender-portal
+          items:
+          - name: Integration overview
+            href: /azure/sentinel/microsoft-365-defender-sentinel-integration?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json&tabs=defender-portal
+          - name: Experience in the Defender portal
+            href: /azure/sentinel/microsoft-sentinel-defender-portal?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json&tabs=defender-portal
         - name: Microsoft Copilot
           href: /defender-xdr/security-copilot-in-microsoft-365-defender?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
         - name: Microsoft Security Exposure Management
@@ -31,8 +35,12 @@
           displayName: plan, zero trust
         - name: US Government customers
           href: gov-support.md
-    - name: Deploy 
-      href: overview-deploy.md
+    - name: Deploy
+      items:
+      - name: Overview
+        href: overview-deploy.md
+      - name: Connect Microsoft Sentinel to Microsoft Defender
+        href: /defender-xdr/microsoft-sentinel-onboard
     - name: Prevent attacks
       href: reduce-risk-overview.md
     - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
