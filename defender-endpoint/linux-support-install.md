@@ -22,11 +22,6 @@ ms.date: 10/11/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## Verify that the installation succeeded
@@ -68,6 +63,9 @@ Verify that the package you're installing matches the host distribution and vers
 
 For [manual deployment](linux-install-manually.md), make sure the correct distro and version are selected.
 
+> [!NOTE]
+> MDE Linux no longer ships a solution for RHEL 6.
+
 ## Installation failed due to dependency error
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies. 
@@ -75,7 +73,6 @@ If the Microsoft Defender for Endpoint installation fails due to missing depende
 The following external package dependencies exist for the mdatp package:
 
 - The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage`, `selinux-policy-targeted`, `mde-netfilter` 
-- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, `mde-netfilter` 
 - For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, `mde-netfilter` 
 
 The mde-netfilter package also has the following package dependencies:

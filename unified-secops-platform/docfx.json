@@ -46,8 +46,8 @@
       "feedback_system": "Standard",
       "feedback_product_url": "https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance",
       "uhfHeaderId": "MSDocsHeader-MicrosoftDefender",
-      "titleSuffix": "Microsoft unified SecOps platform",
-      "searchScope": ["Microsoft unified SecOps platform"],
+      "titleSuffix": "Microsoft's unified security operations platform",
+      "searchScope": ["Microsoft's unified security operations platform"],
       "contributors_to_exclude": [
         "dstrome",
         "shdyas",
@@ -58,11 +58,12 @@
         "v-stchambers",
         "Stacyrch140",
         "garycentric",
-        "alekyaj"
+        "alekyaj",
+        "beccarobins"
       ]
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "defender-business"
+    "dest": "unified-secops-platform"
   }
 }

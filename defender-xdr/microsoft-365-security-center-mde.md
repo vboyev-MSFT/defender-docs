@@ -39,7 +39,7 @@ To use Microsoft Defender for Endpoint in the Microsoft Defender portal, you nee
 
 In addition, confirm that you have the requirements on hardware and software, browser, network connectivity, and compatibility with Microsoft Defender Antivirus. For more information, see [Microsoft Defender for Endpoint minimum requirements](/defender-endpoint/minimum-requirements).
 
-You also need to have the required permissions to access the Microsoft Defender portal. For more information, see [Use basic permissions to access the portal](/defender-endpoint/basic-permissions.md).
+You also need to have the required permissions to access the Microsoft Defender portal. For more information, see [Use basic permissions to access the portal](/defender-endpoint/basic-permissions).
 
 ## What to expect
 
@@ -67,7 +67,7 @@ The [Action center](m365d-action-center.md) shows you the investigations created
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/action-center-mde-small.png" alt-text="Screenshot of the Action center in the Microsoft Defender portal." lightbox="/defender/media/portal/mde-in-portal/action-center-mde.png":::
 
-You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](/defender-endpoint/admin-submissions-mde.md). You can also view the status of the submissions and the results of the analysis. Navigate to the submssions page under **Investigation & response > Actions & submissions > Submissions**.
+You can submit files, email attachments, and URLs to Microsoft Defender for analysis in the [Submission portal](/defender-endpoint/admin-submissions-mde). You can also view the status of the submissions and the results of the analysis. Navigate to the submssions page under **Investigation & response > Actions & submissions > Submissions**.
 
 ### Threat intelligence
 
@@ -83,7 +83,7 @@ The **Assets > Devices** page contains the [device inventory](/defender-endpoint
 
 ### Microsoft Defender for Vulnerability Management and endpoint configuration management
 
-You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. Defender for Vulnerability Management helps you discover, prioritize, and remediate vulnerabilities in your network. Know more about [prerequisites and permissions](/defender-vulnerability-management/tvm-prerequisites) and how to [onboard devices to Defender Vulnerability Management](/defender-vulnerability-management/mdvm-onboard-devices.md).
+You can find [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) dashboard under **Endpoints > Vulnerability management**. Defender for Vulnerability Management helps you discover, prioritize, and remediate vulnerabilities in your network. Know more about [prerequisites and permissions](/defender-vulnerability-management/tvm-prerequisites) and how to [onboard devices to Defender Vulnerability Management](/defender-vulnerability-management/mdvm-onboard-devices).
 
 The device configuration dashboard is found in **Endpoints > Configuration management > Dashboard**. You can view device security, onboarding via Microsoft Intune and Microsoft Defender for Endpoint, web protection coverage, and attack surface management at a glance.
 
@@ -105,7 +105,7 @@ In the **Settings > Device discovery** page, you can configure device discovery 
 
 #### Endpoint settings
 
-Navigate to the **Settings > Endpoints** page to configure settings for Microsoft Defender for Endpoint, including [advanced features](/defender-endpoint/advanced-features.md), email notifications, permissions, and more.
+Navigate to the **Settings > Endpoints** page to configure settings for Microsoft Defender for Endpoint, including [advanced features](/defender-endpoint/advanced-features), email notifications, permissions, and more.
 
 :::image type="content" source="/defender/media/portal/mde-in-portal/settings-mde-small.png" alt-text="Screenshot of the Settings page in the Microsoft Defender portal where endpoint settings are highlighted." lightbox="/defender/media/portal/mde-in-portal/settings-mde.png":::
 

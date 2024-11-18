@@ -12,8 +12,11 @@ ms.collection:
   - Tier1
   - security-copilot
   - magic-ai-copilot
+ms.custom:
+- cx-ti
+- cx-mdti
 ms.topic: conceptual
-ms.date: 12/04/2023
+ms.date: 11/18/2024
 ---
 
 # Microsoft Security Copilot in Microsoft Defender Threat Intelligence
@@ -54,7 +57,7 @@ Security Copilot delivers information about threat actors, indicators of comprom
     > [!NOTE]
     > For a walkthrough on Copilot, including the pin and share feature, read [Navigate Microsoft Security Copilot](/security-copilot/navigating-security-copilot).
 
-[Learn more about creating effective prompts](/security-copilot/prompting-tips)
+[Learn more about creating effective prompts](/copilot/security/prompting-tips)
 
 ## Key features
 
@@ -98,11 +101,13 @@ To view the list of built-in system capabilities for Defender TI:
 
       ![Screenshot of the prompt bar in Microsoft Security Copilot with the Prompts icon highlighted.](media/defender-ti-and-copilot/copilot-prompts-bar-prompts.png)
 
-2.	Select **See all system capabilities**. The *Microsoft Defender Threat Intelligence* section lists all the available capabilities for Defender TI that you can use.
+2.	Select **See all system capabilities**. The *Microsoft Threat Intelligence* section lists all the available capabilities for Defender TI that you can use.
 
 Copilot also has the following promptbooks that also deliver information from Defender TI:
-- **Threat actor profile** – Generates a report profiling a known threat actor, including suggestions to defend against their common tools and tactics.
-- **Vulnerability impact assessment** – Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
+- [**Check impact of an external threat article**](/copilot/security/using-promptbooks#check-impact-of-an-external-threat-article) – Analyzes an external or third-party (that is, not published in Defender TI) article to extract related IOCs, summarize the intelligence, and generate hunting queries so you can assess the potential impact of the threat reported in the article to your organization.
+- [**Threat actor profile**](/copilot/security/using-promptbooks#threat-actor-profile) – Generates a report profiling a known threat actor, including suggestions to defend against their common tools and tactics.
+- [**Threat Intelligence 360 report based on MDTI article**](/copilot/security/using-promptbooks#threat-intelligence-360-report-based-on-mdti-article) – Analyzes a [Defender TI article](what-is-microsoft-defender-threat-intelligence-defender-ti.md#articles) to extract related IOCs, summarize the intelligence, and generate hunting queries so you can assess the potential impact of the threat reported in the article to your organization.
+- [**Vulnerability impact assessment**](/copilot/security/using-promptbooks#vulnerability-impact-assessment) – Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 
 To view these promptbooks, in the prompt bar, select the **Prompts** icon then select **See all promptbooks**. 
 
@@ -110,7 +115,7 @@ To view these promptbooks, in the prompt bar, select the **Prompts** icon then s
 
 You can use many prompts to get information from Defender TI. This section lists some ideas and examples.
 
-#### General information about threat intelligence trends
+### General information about threat intelligence trends
 
 Get threat intelligence from threat articles and threat actors.
 
@@ -120,16 +125,7 @@ Get threat intelligence from threat articles and threat actors.
 - Show me the latest threat articles.
 - Get threat articles related to ransomware in the last six months.
 
-#### IP address and host contextual information in relation to threat intelligence
-
-Get information on datasets associated with IP addresses and hosts, such as ports, reputation scores, components, certificates, cookies, services, and host pairs.
-
-**Sample prompts**:
-
-- Show me the reputation of the host _\<host name\>_.
-- Get resolutions for IP address _\<IP address\>_.
-
-#### Threat actor mapping and infrastructure
+### Threat actor mapping and infrastructure
 Get information on threat actors and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
 
 **Sample prompts**:
@@ -139,9 +135,9 @@ Get information on threat actors and the tactics, techniques, and procedures (TT
 - Share the TTPs associated with Silk Typhoon.
 - Share threat actors associated with Russia.
 
-#### Vulnerability data by CVE
+### Vulnerability data by CVE
 
-Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs).
+Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs), which are derived from Defender TI articles, [threat analytics reports](/defender-xdr/threat-analytics), and data from [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) and [Microsoft Defender Endpoint Attack Surface Management](/azure/external-attack-surface-management/overview).
 
 **Sample prompts**:
 
@@ -150,6 +146,20 @@ Get contextual information and threat intelligence on Common Vulnerabilities and
 - Show me the latest CVEs.
 - Show me threat actors associated with CVE-2021-44228.
 - Show me the threat articles associated with CVE-2021-44228.
+
+### Indicator data in relation to threat intelligence
+
+Get detailed information about an indicator (for example, IP addresses, domains, and file hashes) based on the numerous [data sets](data-sets.md) available in Defender TI, including reputation scores, WHOIS information, domain name system (DNS), host pairs, and certificates. 
+
+**Sample prompts**:
+
+- What can you tell me about the domain _\<domain name\>_?
+- Show me indicators related to _\<domain name\>_.
+- Show me all resolutions for _\<domain name\>_.
+- Show me host pairs related to _\<domain name\>_.
+- Show me the reputation of the host _\<host name\>_.
+- Show me all resolutions for IP address _\<IP address\>_.
+- Show me the open services in _\<IP address\>_.
 
 ## Provide feedback
 
@@ -160,6 +170,7 @@ Your feedback on the Defender TI integration in Security Copilot helps with deve
 
 For each feedback button, you can provide more information in the next dialog box that appears. Whenever possible, and when the result is **Needs improvement**, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
 
+## Privacy and data security in Security Copilot
 
 ## Privacy and data security in Security Copilot
 

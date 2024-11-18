@@ -16,8 +16,15 @@ ms.collection:
   - tier1
   - security-copilot
   - magic-ai-copilot
-ms.topic: conceptual
-ms.date: 04/01/2024
+ms.custom:
+- cx-ti
+- cx-ah
+ms.topic: how-to
+ms.date: 10/17/2024
+appliesto:
+- Microsoft Defender
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Microsoft Security Copilot in advanced hunting

@@ -20,7 +20,7 @@ ms.collection:
 # Manage the schedule for when protection updates should be downloaded and applied
 
 > [!IMPORTANT]
-> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).
+> Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it is recommended to reboot machines after applying update. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#platform-and-engine-releases).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)

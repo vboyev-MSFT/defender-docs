@@ -1,17 +1,17 @@
-- name: 'Microsoft Defender'
+- name: "Microsoft Defender"
   tocHref: /defender/
   topicHref: /defender/index
   items:
-  - name: 'Microsoft Sentinel'
+  - name: "Microsoft's unified security operations platform"
     tocHref: /unified-secops-platform/
     topicHref: /unified-secops-platform/index
     
 ## Azure override
-- name: 'Microsoft Defender'
+- name: "Microsoft Defender"
   tocHref: /azure/
   topicHref: /defender/index
   items:
-  - name: 'Microsoft Sentinel'
+  - name: "Microsoft's unified security operations platform"
     tocHref: /azure/sentinel/
     topicHref: /unified-secops-platform/index
 
