@@ -32,6 +32,7 @@ Security Exposure Management is aimed at:
 With Security Exposure Management you can:
 
 - **Get a unified view across the organization**: Security Exposure Management continuously discovers assets and workloads, and gathers discovered data into a unified and up-to-date view of your inventory and attack surface.
+
 - **Manage and investigate attack surfaces**: Visualize, analyze, and manage cross-workload attack surfaces.
   - The enterprise exposure graph gathers information to provide a comprehensive view of security posture and exposure across the business.
   - Graph schemas provide contextual information about specific organizational entities such as devices, identities, machines, and storage.
@@ -50,6 +51,11 @@ With Security Exposure Management you can:
     - You can also focus on choke points through which many attack paths flow.
     - Actionable recommendations help you to mitigate identified attack paths.
 
+- **Connect your data**: Security Exposure Management supports a variety of data connectors to integrate with different security solutions and data sources.
+  - Consolidate security data from multiple sources into a single, unified view.
+  - Gain deeper insights into your security posture by integrating data from various environments.
+  - Simplify the management of security data across different platforms and solutions.
+
 ## What's integrated into Security Exposure Management?
 
 Currently, Security Exposure Management consolidates security posture information and insights from workloads that include:
@@ -65,7 +71,8 @@ Currently, Security Exposure Management consolidates security posture informatio
 - Microsoft Entra ID  
 - Microsoft Defender External Attack Surface Management (EASM)
 
-In addition to Microsoft services, Security Exposure Management will connect to non-Microsoft data sources over time.
+In addition to Microsoft services, Security Exposure Management allows you to connect to external data sources to further enrich and extend your security posture management.
+For more information on data connectors, see [Data connectors overview](overview-data-connectors.md).
 
 ## Next steps
 

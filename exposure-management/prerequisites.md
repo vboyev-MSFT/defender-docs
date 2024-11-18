@@ -88,6 +88,8 @@ Permission levels are summarized in the table.
 |  **Create criticality rule**  | ✔       |    -    |   ✔      | - | - |
 |  **Turn criticality rule on/off**  | ✔       |    -    |   ✔      | ✔ | - |
 |  **Run a query on exposure graph data**  |    ✔    |   ✔     |  ✔       | ✔ | ✔ |
+| **Configure data connectors** |  ✔    |      |   ✔   |    ✔  |      |
+| **View data connectors**     |  ✔   |   ✔   |  ✔    |     ✔ |   ✔   |
 
 ## Browser requirements
 
