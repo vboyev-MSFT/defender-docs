@@ -6,7 +6,7 @@ author: deniseb
 ms.author: deniseb
 manager: deniseb
 ms.localizationpriority: medium
-ms.date: 10/30/2024
+ms.date: 11/18/2024
 audience: ITPro
 ms.collection:
 - m365-security
