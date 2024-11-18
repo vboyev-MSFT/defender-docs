@@ -156,7 +156,7 @@ To further inspect the event and related events, you can quickly run an [advance
 
 :::image type="content" source="/defender/media/entity-page-device/entity-device-event-details.png" alt-text="Screenshot of the event details panel.":::
 
-### *Security recommendations* tab
+## *Security recommendations* tab
 
 The **Security recommendations** tab lists actions you can take to protect the device. Selecting an item on this list opens a flyout where you can get instructions on how to apply the recommendation.
 
@@ -168,11 +168,11 @@ Learn more about [security recommendations](/defender-vulnerability-management/t
 
 :::image type="content" source="/defender/media/entity-page-device/entity-device-recommendations-tab.png" alt-text="Screenshot of the Security recommendations tab for the device entity page." lightbox="/defender/media/entity-page-device/entity-device-recommendations-tab.png":::
 
-### *Inventories* tab
+## *Inventories* tab
 
 This tab displays inventories of four types of components: Software, vulnerable components, browser extensions, and certificates.
 
-#### Software inventory
+### Software inventory
 
 This card lists software installed on the device.
 
@@ -184,7 +184,7 @@ This list can be filtered by product code, weaknesses, and the presence of threa
 
 :::image type="content" source="/defender/media/entity-page-device/entity-device-inventories-tab.png" alt-text="Screenshot of the Software inventory tab for device profile in the Microsoft Defender portal" lightbox="/defender/media/entity-page-device/entity-device-inventories-tab.png":::
 
-#### Vulnerable components
+### Vulnerable components
 
 This card lists software components that contain vulnerabilities.
 
@@ -192,13 +192,13 @@ The default view and filtering options are the same as for software.
 
 Select an item to display more information in a flyout.
 
-#### Browser extensions
+### Browser extensions
 
 This card shows the browser extensions installed on the device. The default fields displayed are the extension name, the browser for which it's installed, the version, the permission risk (based on the type of access to devices or sites requested by the extension), and the status. Optionally, the vendor can also be displayed.
 
 Select an item to display more information in a flyout.
 
-#### Certificates
+### Certificates
 
 This card displays all the certificates installed on the device.
 
@@ -208,7 +208,7 @@ The list can be filtered by status, self-signed or not, key size, signature hash
 
 Select a certificate to display more information in a flyout.
 
-### *Discovered vulnerabilities* tab
+## *Discovered vulnerabilities* tab
 
 This tab lists any Common Vulnerabilities and Exploits (CVEs) that may affect the device.
 
@@ -220,7 +220,7 @@ Selecting an item from this list opens a flyout that describes the CVE.
 
 :::image type="content" source="/defender/media/entity-page-device/entity-device-vulnerabilities-tab.png" alt-text="Screenshot of the Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="/defender/media/entity-page-device/entity-device-vulnerabilities-tab.png":::
 
-### *Missing KBs* tab
+## *Missing KBs* tab
 
 The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the device. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query), which describe these updates; for example, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
@@ -230,19 +230,25 @@ The choice of columns to be displayed can be customized.
 
 Selecting an item opens a flyout that links to the update.
 
-### *Sentinel events* tab
+## *Sentinel events* tab
 
 If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the device entity page. This tab imports the [Host entity page from Microsoft Sentinel](/azure/sentinel/entity-pages), and displays the following sections:
 
-#### Sentinel timeline
+### Sentinel timeline
 
-This timeline shows alerts associated with the device entity, known in Microsoft Sentinel as the *host* entity. These alerts include those seen on the **Incidents and alerts** tab and those created by Microsoft Sentinel from third-party, non-Microsoft data sources.
+This timeline shows four types of messages associated with the device entity, known in Microsoft Sentinel as the *host* entity, and they can be found on the [Microsoft Sentinel entity page](/azure/sentinel/entity-pages?tabs=defender-portal#the-timeline) for the device. The four message types are:
 
-This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from other investigations that reference this user entity, device activity events from external data sources, and unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
+- Alerts created by Microsoft Sentinel [analytics rules](/azure/sentinel/threat-detection) from Azure services and third-party, non-Microsoft data sources.
 
-As of November 2024, device activity events that appear on this timeline also appear on the main [Timeline tab](#timeline-tab).
+- [Bookmarked hunts](/azure/sentinel/bookmarks) from other Microsoft Sentinel investigations that reference this device entity.
 
-#### Insights
+- Device activity events collected from Azure services and third-party, non-Microsoft data sources.
+
+- Unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
+
+**As of November 2024**, device activity events that appear on this timeline *are also displayed* on the main [Timeline tab](#timeline-tab), so they can be viewed together with events recorded by other Microsoft Defender services in a single context.
+
+### Insights
 
 Entity insights are queries defined by Microsoft security researchers to help you investigate more efficiently and effectively. These insights automatically ask the big questions about your device entity, providing valuable security information in the form of tabular data and charts. The insights include data regarding sign-ins, group additions, process executions, anomalous events and more, and include advanced machine learning algorithms to detect anomalous behavior.
 
