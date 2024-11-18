@@ -13,31 +13,44 @@ ms.collection:
   - m365-security
   - tier1
   - security-copilot
+  - magic-ai-copilot
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 08/22/2024
+ms.date: 10/14/2024
+appliesto:
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Triage and investigate incidents with guided responses from Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- Microsoft Defender XDR
-- Microsoft Defender unified security operations center (SOC) platform
-
 [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in the Microsoft Defender portal supports incident response teams in immediately resolving incidents with guided responses. Copilot in Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
-
-Responding to incidents in the Microsoft Defender portal often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
-
-Guided responses are available in the Microsoft Defender portal through the [Copilot for Security license](/security-copilot/faq-security-copilot). Guided responses are also available in the Copilot for Security standalone experience through the Defender XDR plugin.
 
 This guide outlines how to access the guided response capability, including information on providing feedback about the responses.
 
-## Apply guided responses to resolve incidents
+## Know before you begin
+
+If you're new to Copilot for Security, you should familiarize yourself with it by reading the following articles:
+
+- [What is Copilot for Security?](/security-copilot/microsoft-security-copilot)
+- [Copilot for Security experiences](/security-copilot/experiences-security-copilot)
+- [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
+- [Understand authentication in Copilot for Security](/security-copilot/authentication)
+- [Prompting in Copilot for Security](/security-copilot/prompting-security-copilot)
+
+Responding to incidents in the Microsoft Defender portal often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
+
+## Copilot for Security integration in Microsoft Defender
+
+Guided responses are available in the Microsoft Defender portal for customers who have provisioned access to Copilot for Security.
+
+Guided responses are also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+
+## Key features
 
 Guided responses recommend actions in the following categories:
 
@@ -83,15 +96,22 @@ The **View similar incidents** action becomes available when there are other inc
 
 The **View similar emails** action, which is specific to phishing incidents, takes you to the [advanced hunting](advanced-hunting-overview.md) page, where a KQL query to list similar emails within the organization is automatically generated. This automatic query generation related to an incident helps incident response teams further investigate other emails that might be related to the incident. You can review the query and modify it as needed.
 
+## Sample guided responses prompt
+
+In the Copilot for Security standalone portal, you can use the following prompt to generate guided responses:
+
+- *Generate guided responses and recommendations for Defender incident {incident ID}.*
+
+> [!TIP]
+> When generating guided responses in the Copilot for Security portal, Microsoft recommends including the word ***Defender*** in your prompts to ensure that the guided responses capability delivers the results.
+
+## Provide feedback
+
+Microsoft highly encourages you to provide feedback to Copilot, as it’s crucial for a capability’s continuous improvement. To provide feedback, navigate to the bottom of the Copilot side panel and select the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](/defender/media/copilot-in-defender/create-report/copilot-defender-feedback.png).
+
 ## See also
 
-- [Summarize an incident](security-copilot-m365d-incident-summary.md)
-- [Analyze files](copilot-in-defender-file-analysis.md)
-- [Run script analysis](security-copilot-m365d-script-analysis.md)
-- [Create an incident report](security-copilot-m365d-create-incident-report.md)
-- [Generate KQL queries](advanced-hunting-security-copilot.md)
-- [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot)
 - [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
-- Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins)
+- [Privacy and data security in Copilot for Security](/copilot/security/privacy-data-security)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]

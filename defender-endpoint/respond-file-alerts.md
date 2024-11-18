@@ -193,7 +193,7 @@ This feature doesn't work if sample submission is turned off. If automatic sampl
 > Download quarantined file requirements:
 >
 > - Your organization uses Microsoft Defender Antivirus in active mode
-> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
+> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#platform-and-engine-releases)
 > - Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Sample submission is turned on
 > - Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019, or Windows Server 2022, or Windows 11
@@ -251,7 +251,7 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 
 Files automatically blocked by an indicator don't show up in the file's Action center, but the alerts are still visible in the Alerts queue.
 
-See [manage indicators](manage-indicators.md) for more details on blocking and raising alerts on files.
+See [Overview of indicators](indicators-overview.md) for more details on blocking and raising alerts on files.
 
 To stop blocking a file, remove the indicator. You can do so via the **Edit Indicator** action on the file's profile page. This action is visible in the same position as the **Add Indicator** action, before you added the indicator.
 

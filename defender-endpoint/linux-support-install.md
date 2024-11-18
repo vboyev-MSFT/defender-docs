@@ -3,8 +3,8 @@ title: Troubleshoot installation issues for Microsoft Defender for Endpoint on L
 ms.reviewer: gopkr
 description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: deniseb
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -15,18 +15,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 05/01/2024
+ms.date: 10/11/2024
 ---
 
 # Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -69,6 +63,9 @@ Verify that the package you're installing matches the host distribution and vers
 
 For [manual deployment](linux-install-manually.md), make sure the correct distro and version are selected.
 
+> [!NOTE]
+> MDE Linux no longer ships a solution for RHEL 6.
+
 ## Installation failed due to dependency error
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies. 
@@ -76,7 +73,6 @@ If the Microsoft Defender for Endpoint installation fails due to missing depende
 The following external package dependencies exist for the mdatp package:
 
 - The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage`, `selinux-policy-targeted`, `mde-netfilter` 
-- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, `mde-netfilter` 
 - For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, `mde-netfilter` 
 
 The mde-netfilter package also has the following package dependencies:

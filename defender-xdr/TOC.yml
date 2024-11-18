@@ -133,13 +133,13 @@
     - name: Investigate and respond to threats
       items:
        - name: Overview
-         href: incident-response-overview.md
-       - name: Alerts, incidents, and correlation
+         href: incidents-overview.md
+       - name: Correlation and merging
          href: alerts-incidents-correlation.md
        - name: Respond to incidents
          items:
               - name: Overview
-                href: incidents-overview.md
+                href: incident-response-overview.md
               - name: Prioritize incidents
                 href: incident-queue.md
               - name: Manage incidents
@@ -154,6 +154,8 @@
                    href: dlp-investigate-alerts-defender.md
                  - name: Investigate data loss prevention alerts with Microsoft Sentinel
                    href: dlp-investigate-alerts-sentinel.md
+                 - name: Investigate and respond to container threats
+                   href: investigate-respond-container-threats.md  
                  - name: Alerts
                    href: investigate-alerts.md
                  - name: Alert classification playbooks
@@ -222,8 +224,14 @@
                href: advanced-hunting-modes.md
              - name: Generate KQL queries with Security Copilot
                href: advanced-hunting-security-copilot.md
-             - name: Advanced hunting in the Microsoft Defender portal
-               href: advanced-hunting-microsoft-defender.md
+             - name: Hunt over Microsoft Sentinel data
+               items:
+                 - name: Microsoft Sentinel data in advanced hunting
+                   href: advanced-hunting-microsoft-defender.md
+                 - name: Use functions, saved queries, and custom rules
+                   href: advanced-hunting-defender-use-custom-rules.md
+                 - name: Work with results containing Microsoft Sentinel data
+                   href: advanced-hunting-defender-results.md
              - name: Build queries using guided mode
                items:
                  - name: Get started with query builder
@@ -296,6 +304,8 @@
                   href: advanced-hunting-cloudappevents-table.md
                 - name: CloudAuditEvents
                   href: advanced-hunting-cloudauditevents-table.md
+                - name: CloudProcessEvents
+                  href: advanced-hunting-cloudprocessevents-table.md                  
                 - name: DeviceEvents
                   href: advanced-hunting-deviceevents-table.md
                 - name: DeviceFileCertificateInfo
@@ -374,10 +384,10 @@
          items:
               - name: Threat analytics overview
                 href: threat-analytics.md
-              - name: Defender Threat Intelligence in Microsoft Defender XDR
-                href: defender-threat-intelligence.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
+              - name: Defender Threat Intelligence in Microsoft Defender XDR
+                href: defender-threat-intelligence.md
        - name: Endpoint Attack Notifications
          href: /defender-endpoint/endpoint-attack-notifications
        - name: Collaborate with Microsoft Defender Experts for Hunting
@@ -444,6 +454,8 @@
                 href: copilot-in-defender-file-analysis.md
               - name: Generate device summaries
                 href: copilot-in-defender-device-summary.md
+              - name: Summarize identities
+                href: security-copilot-defender-identity-summary.md                
               - name: Use guided responses
                 href: security-copilot-m365d-guided-response.md
               - name: Generate KQL queries
@@ -547,20 +559,14 @@
                 href: configure-email-notifications.md
             - name: Set time zone
               href: m365d-time-zone.md
-            - name: View device profiles
-              href: device-profile.md
-            - name: Troubleshoot service issues
-              href: troubleshoot.md
             - name: Set up dynamic rules for devices
               href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
               href: mssp-access.md
-            - name: Create ServiceNow tickets and tasks
-              items:
-              - name: ServiceNow integration overview
-                href: ./tickets.md
+        - name: Troubleshoot service issues
+          href: troubleshoot.md              
         - name: Microsoft Defender XDR APIs
           items:
             - name: Overview
@@ -627,8 +633,6 @@
                  href: /defender-endpoint/technological-partners
                - name: Professional services supported by Microsoft Defender XDR
                  href: /defender-endpoint/professional-services
-            - name: Understand threat intelligence concepts
-              href: /defender-endpoint/threat-indicator-concepts
         - name: Bi-directional connector for Microsoft Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
     - name: Resources
@@ -641,8 +645,8 @@
           href: criteria.md
         - name: Submit files for analysis
           href: submission-guide.md
-        - name: Troubleshoot MSI portal errors caused by admin block
-          href: portal-submission-troubleshooting.md
+        - name: Understand threat intelligence concepts
+          href: /defender-endpoint/threat-indicator-concepts          
         - name: Microsoft virus initiative
           href: virus-initiative-criteria.md
         - name: Software developer FAQ

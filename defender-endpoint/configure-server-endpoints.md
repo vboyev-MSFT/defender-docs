@@ -3,8 +3,8 @@ title: Onboard Windows servers to the Microsoft Defender for Endpoint service
 description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
 search.appverid: met150
 ms.service: defender-endpoint
-author: siosulli
-ms.author: siosulli
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 ms.date: 05/20/2024
@@ -116,7 +116,7 @@ If you intend to use a third-party anti-malware solution, you'll need to run Mic
 
 #### Update packages for Microsoft Defender for Endpoint on Windows Server 2016 and Windows Server 2012 R2
 
-To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).
+To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md#platform-and-engine-releases).
 
 If you're using Windows Server Update Services (WSUS) and/or Microsoft Endpoint Configuration Manager, this new "Microsoft Defender for Endpoint update for EDR Sensor" is available under the category "Microsoft Defender for Endpoint".
 

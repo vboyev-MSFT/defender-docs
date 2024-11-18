@@ -65,7 +65,7 @@ Watch this short video to learn more about Attack simulation training.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations). Attack simulation training is available in the following regions: APC, EUR, and NAM. Countries within these regions where Attack simulation training is available include ARE, AUS, BRA, CAN, CHE, DEU, ESP, FRA, GBR, IND, ISR, ITA, JPN, KOR, LAM, MEX, NOR, POL, QAT, SGP, SWE, and ZAF.
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations). Attack simulation training is available in the following regions: APC, EUR, and NAM. Countries within these regions where Attack simulation training is available include ARE, AUS, BRA, CAN, CHE, DEU, ESP, FRA, GBR, IND, ISR, ITA, JPN, KOR, LAM, MEX, NOR, POL, QAT, SGP, SWE, TWN and ZAF.
 
   > [!NOTE]
   > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry are available in these regions. We're working to enable the features and we'll notify customers as soon as reported email telemetry becomes available.
@@ -102,7 +102,7 @@ The following social engineering techniques are available:
 
 - **How-to Guide**: A teaching guide that contains instructions for users (for example, how to report phishing messages).
 
-<sup>\*</sup> The link can be a URL or a QR code. QR code support in Attack simulation training is currently in preview.
+<sup>\*</sup> The link can be a URL or a QR code.
 
 The URLs that are used by Attack simulation training are listed in the following table:
 
@@ -179,9 +179,6 @@ Although Attack simulation training contains many built-in payloads for the avai
 In simulations that use **Credential Harvest** or **Link in Attachment** social engineering techniques, _login pages_ are part of the payload that you select. The login page is the web page where users enter their credentials. Each applicable payload uses a default login page, but you can change the login page that's used. You can select from built-in login pages, custom login pages that you already created, or you can create a new login page to use during the creation of the simulation or the payload. To create login pages, see [Login pages in Attack simulation training](attack-simulation-training-login-pages.md).
 
 The best training experience for simulated phishing messages is to make them as close as possible to real phishing attacks that your organization might experience. What if you could capture and use harmless versions of real-world phishing messages that were detected in Microsoft 365 and use them in simulated phishing campaigns? You can, with _payload automations_ (also known as _payload harvesting_). To create payload automations, see [Payload automations for Attack simulation training](attack-simulation-training-payload-automations.md).
-
-> [!TIP]
-> QR code payloads are currently in Preview, aren't available in all organizations, and are subject to change.
 
 Attack simulation training also supports using QR codes in payloads. You can choose from the list of built-in QR code payloads, or you can create custom QR code payloads. For more information, see [QR code payloads in Attack simulation training](attack-simulation-training-payloads.md#qr-code-payloads).
 

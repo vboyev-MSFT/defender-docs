@@ -2,8 +2,8 @@
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: deniseb
 ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
@@ -15,19 +15,13 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 09/07/2024
+ms.date: 10/11/2024
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- 
 > [!NOTE]
 > Starting with Defender for Endpoint on Linux, version `101.2408.0000`, AuditD is no longer be supported as a supplementary event provider. For more information, see the FAQs at the end of this article.
 
@@ -202,7 +196,7 @@ The extended Berkeley Packet Filter (eBPF) for Microsoft Defender for Endpoint o
 
 - Resource Efficiency: eBPF uses fewer resources, which helps maintain system stability even under heavy load conditions.
 
-- Scalability: eBPF’s architecture is more scalable, making it a better choice for environments with growing or complex workloads.
+- Scalability: eBPF's architecture is more scalable, making it a better choice for environments with growing or complex workloads.
 
 - Modern Technology: eBPF represents a modern, forward-looking technology that aligns with future Linux kernel developments, ensuring better long-term support.
 

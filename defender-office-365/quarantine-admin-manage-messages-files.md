@@ -18,7 +18,7 @@ ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.service: defender-office-365
-ms.date: 09/11/2024
+ms.date: 09/16/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -288,7 +288,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 >
 > - Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 >
-> - Selecting **Move to mailbox folder** \> **Inbox** on quarantined messages in :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** from other Defender for Office 365 features (for example, Explorer (Threat Explorer) or the Email entity page) also allows you to release messages from quarantine. For more information, see [Threat hunting: The Take action wizard](threat-explorer-threat-hunting.md#the-take-action-wizard).
+> - Selecting **Move or delete** \> **Inbox** on quarantined messages in :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** from other Defender for Office 365 features (for example, Explorer (Threat Explorer) or the Email entity page) also allows you to release messages from quarantine. For more information, see [Threat hunting: The Take action wizard](threat-explorer-threat-hunting.md#the-take-action-wizard).
 
 After you select the message, use either of the following methods to release it:
 
@@ -637,7 +637,10 @@ If you don't release or delete the file from quarantine, the file is removed fro
 
 After you select the file, select :::image type="icon" source="media/m365-cc-sc-check-mark-icon.png" border="false"::: **Release file** in the file details flyout that opens.
 
-In the **Release files and report them to Microsoft** flyout that opens, view the file details in the **Report files to Microsoft for analysis** section, decide whether to select **Report files to Microsoft for analysis**, and then select **Release**.
+In the **Release files and report them to Microsoft** flyout that opens, view the file details in the **Release the following files** section, and then select **Release**.
+
+> [!TIP]
+> Currently, you can't report quarantined files to Microsoft as you release them.
 
 In the **Files have been released** flyout that opens, select **Done**.
 

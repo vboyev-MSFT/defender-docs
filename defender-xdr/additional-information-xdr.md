@@ -16,8 +16,11 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
+ms.custom: 
+- cx-ti
+- cx-dex
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 10/30/2024
 ---
 
 # Important considerations for Microsoft Defender Experts for XDR

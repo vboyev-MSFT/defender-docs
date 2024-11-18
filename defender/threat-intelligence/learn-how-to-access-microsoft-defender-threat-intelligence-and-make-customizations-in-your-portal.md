@@ -6,8 +6,11 @@ ms.author: aroland
 manager: dolmont
 ms.service: threat-intelligence 
 ms.topic: quickstart
-ms.date: 04/19/2024
-ms.custom: template-quickstart
+ms.date: 10/18/2024
+ms.custom: 
+- template-overview
+- cx-ti
+- cx-mdti
 ms.collection: essentials-get-started
 ---
 

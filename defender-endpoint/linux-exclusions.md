@@ -2,8 +2,8 @@
 title: Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 description: Provide and validate exclusions for Microsoft Defender for Endpoint on Linux. Exclusions can be set for files, folders, and processes.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.reviewer: gopkr, ardeshmukh
 ms.localizationpriority: medium
 manager: deniseb
@@ -15,25 +15,19 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 07/31/2024
+ms.date: 10/14/2024
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article provides information on how to define antivirus and global exclusions for Microsoft Defender for Endpoint. Antivirus exclusions apply to on-demand scans, real-time protection (RTP), and behavior monitoring (BM). Global exclusions apply to real-time protection (RTP), behavior monitoring (BM), and endpoint detection and response (EDR), thus stopping all the associated antivirus detections, EDR alerts, and visibility for the excluded item.
 
 > [!IMPORTANT]
-> The antivirus exclusions described in this article apply to only antivirus capabilities and not endpoint detection and response (EDR). Files that you exclude using the antivirus exclusions described in this article can still trigger EDR alerts and other detections. Whereas the global exclusions described in this section apply to antivirus as well as endpoint detection and response capabilities thus stopping all associated AV protection, EDR alerts and detection. Global exclusions are available from Defender for Endpoint version `101.23092.0012` or later till Insider Slow Ring.  For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
+> The antivirus exclusions described in this article apply to only antivirus capabilities and not to endpoint detection and response (EDR). Files that you exclude using the antivirus exclusions described in this article can still trigger EDR alerts and other detections. Global exclusions described in this section apply to antivirus **and** endpoint detection and response capabilities, thus stopping all associated antivirus protection, EDR alerts, and detections. Global exclusions are currently in public preview, and are available in Defender for Endpoint version `101.23092.0012` or later, in the Insiders Slow and Production rings. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
 
 You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux.
 
@@ -141,7 +135,7 @@ For more information, see [Set preferences for Defender for Endpoint on Linux](l
 Run the following command to see the available switches for managing exclusions:
 
 > [!NOTE]
-> `--scope` is an optional flag with accepted value as `epp` or `global`. It provides the same scope used while adding the exclusion to remove the same exclusion. In the command line approach, if the scope isn’t mentioned, the scope value is set as `epp`.
+> `--scope` is an optional flag with accepted value as `epp` or `global`. It provides the same scope used while adding the exclusion to remove the same exclusion. In the command line approach, if the scope isn't mentioned, the scope value is set as `epp`.
 > Exclusions added through CLI before the introduction of `--scope` flag remain unaffected and their scope is considered `epp`.
 
 ```bash

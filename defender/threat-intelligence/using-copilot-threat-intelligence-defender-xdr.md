@@ -11,8 +11,12 @@ audience: ITPro
 ms.collection: 
   - Tier1
   - security-copilot
+  - magic-ai-copilot
+ms.custom:
+- cx-ti
+- cx-mdti
 ms.topic: conceptual
-ms.date: 04/01/2024
+ms.date: 10/18/2024
 ---
 
 # Using Microsoft Copilot for Security for threat intelligence
@@ -26,7 +30,7 @@ ms.date: 04/01/2024
 Microsoft Copilot in Defender applies the capabilities of [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) to deliver Microsoft Defender Threat Intelligence (Defender TI) information about threat actors and tools, as well as contextual threat intelligence, directly into the Microsoft Defender portal. Based on threat analytics reports, intel profiles, and other available Defender TI content, you can use Copilot in Defender to summarize the latest threats affecting your organization, know which threats to prioritize based on your exposure level, or gain more knowledge about your organization's or the global threat landscape.
 
 > [!NOTE]
-> Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Defender Threat Intelligence plugin. [Learn more about Defender TI integration with Copilot for Security](security-copilot-and-defender-threat-intelligence.md)
+> Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Threat Intelligence plugin. [Learn more about Defender TI integration with Copilot for Security](security-copilot-and-defender-threat-intelligence.md)
 
 ## Technical requirements
 
@@ -48,7 +52,7 @@ You can experience Copilot for Security's capability to look up threat intellige
    :::image type="content" source="/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-defender-side-pane.png" alt-text="Screenshot that shows the Microsoft Defender portal Threat analytics page with the open Microsoft Copilot in Defender side pane highlighted." lightbox="/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-defender-side-pane.png":::
 
    You can also reopen Copilot by selecting the **Copilot icon** ![Screenshot that shows the Copilot icon in the Microsoft Defender portal.](media/defender-ti-and-copilot/copilot-defender-icon.png) at the top of the page.
-2. In the Copilot prompt bar, ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, then select the **Send message** icon ![Screenshot that shows the Send message icon in Copilot in Defender.](media/defender-ti-and-copilot/copilot-defender-arrow.png) or press **Enter**. [See sample prompts for Defender TI](security-copilot-and-defender-threat-intelligence.md#sample-prompts-for-defender-ti).
+2. In the Copilot prompt bar, ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, then select the **Send message** icon ![Screenshot that shows the Send message icon in Copilot in Defender.](media/defender-ti-and-copilot/copilot-defender-arrow.png) or press **Enter**. [See sample prompts for Defender TI](security-copilot-and-defender-threat-intelligence.md#sample-defender-ti-prompts).
 
 3. Copilot generates a response from your text instruction or question. While Copilot is generating, you can cancel the response by selecting **Stop generating**.
    

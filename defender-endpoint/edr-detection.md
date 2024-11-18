@@ -2,8 +2,8 @@
 title: EDR detection test for verifying device's onboarding and reporting service
 description: EDR detection test to verify the device's proper onboarding and reporting to the service.
 ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -139,7 +139,7 @@ If you're experiencing issues with application compatibility or performance, you
 - [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md)
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Manage suppression rules](manage-suppression-rules.md)
-- [Create indicators of compromise (IoC)](manage-indicators.md)
+- [Create indicators of compromise (IoC)](indicators-overview.md)
 - [Create and manage custom detections rules](/defender-xdr/custom-detection-rules)
 
 Also, see the [Microsoft Defender for Endpoint Security Operations Guide](mde-sec-ops-guide.md).

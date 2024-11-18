@@ -3,8 +3,8 @@ title: Configure Offline Security Intelligence Update for Microsoft Defender for
 description: Offline Security Intelligence Update in Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
 ms.subservice: linux
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: deniseb
 ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
@@ -15,18 +15,12 @@ ms.collection:
 - mde-linux
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/27/2024
+ms.date: 10/11/2024
 ---
 
 # Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-
-- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 
 This document describes the Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux.
 
@@ -177,22 +171,22 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 
 - Use the following sample `mdatp_managed.json` and update the parameters as per the configuration and copy the file to the location `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
 
-```json
-{
-  "cloudService": {
-    "automaticDefinitionUpdateEnabled": true,
-    "definitionUpdatesInterval": 1202
-  },
-  "antivirusEngine": {
-    "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/",
-    "offlineDefintionUpdateFallbackToCloud":false,
-    "offlineDefinitionUpdate": "enabled"
-  },
-"features": {
-"offlineDefinitionUpdateVerifySig": "enabled"
-}
-}
-```
+    ```json
+    {
+      "cloudService": {
+        "automaticDefinitionUpdateEnabled": true,
+        "definitionUpdatesInterval": 1202
+      },
+      "antivirusEngine": {
+        "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/",
+        "offlineDefintionUpdateFallbackToCloud":false,
+        "offlineDefinitionUpdate": "enabled"
+      },
+    "features": {
+    "offlineDefinitionUpdateVerifySig": "enabled"
+    }
+    }
+    ```
 
 | Field Name                                | Values               | Comments                                            |
 |-------------------------------------------|----------------------|-----------------------------------------------------|
