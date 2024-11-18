@@ -19,7 +19,7 @@ ms.topic: how-to
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/21/2024
+ms.date: 11/18/2024
 appliesto: 
 - Microsoft Defender XDR
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -291,12 +291,10 @@ When doing a postmortem of an incident, view the incident's **Activity log** to 
 
 You can also [add your own comments](#add-comments-to-an-incident) using the comment box available within the activity log. The comment box accepts text and formatting, links, and images.
 
-### Export incident data to PDF
-
 > [!IMPORTANT]
 > Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> The export incident data feature is currently available to Microsoft Defender XDR and Microsoft unified security operations center (SOC) platform customers with the Microsoft Copilot for security license.
+
+## Export incident data to PDF
 
 You can export an incident's data to PDF through the **Export incident as PDF** function and save it into PDF format. This function allows security teams to review an incident's details offline at any given time.
 
@@ -343,9 +341,7 @@ The report is cached for a couple of minutes. The system provides the previously
 
 ## Next steps
 
-For new incidents, begin your [investigation](investigate-incidents.md).
-
-For in-process incidents, continue your [investigation](investigate-incidents.md).
+For new and in-process incidents, continue your [incident investigation](investigate-incidents.md).
 
 For resolved incidents, perform a [post-incident review](respond-first-incident-remediate.md).
 

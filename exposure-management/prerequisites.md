@@ -6,16 +6,13 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 11/11/2024
+ms.date: 11/18/2024
+
 ---
 
 # Prerequisites and support
 
 This article describes the requirements and prerequisites for using Microsoft Security Exposure Management.
-
-Security Exposure Management is currently in public preview.
-
-[!INCLUDE [prerelease](../includes/prerelease.md)]
 
 ## Permissions
 
@@ -88,6 +85,8 @@ Permission levels are summarized in the table.
 |  **Create criticality rule**  | ✔       |    -    |   ✔      | - | - |
 |  **Turn criticality rule on/off**  | ✔       |    -    |   ✔      | ✔ | - |
 |  **Run a query on exposure graph data**  |    ✔    |   ✔     |  ✔       | ✔ | ✔ |
+| **Configure data connectors** |  ✔    |      |   ✔   |    ✔  |      |
+| **View data connectors**     |  ✔   |   ✔   |  ✔    |     ✔ |   ✔   |
 
 ## Browser requirements
 

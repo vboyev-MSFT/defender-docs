@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: reference
 ms.service: exposure-management
-ms.date: 09/16/2024
+ms.date: 11/16/2024
 ---
 
 # Predefined classifications
@@ -22,6 +22,9 @@ Current asset types are:
 * [Device](#device)
 * [Identity](#identity)
 * [Cloud resource](#cloud-resource)
+
+> [!Note]
+> We also utilize criticality context retrieved from external data connectors. This context will be presented as classifications in the predefined critical asset management classification library.
 
 ##### Device
 
