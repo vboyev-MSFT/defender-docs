@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Review security initiatives
 
-[Security initiatives](../exposure-management/initiatives.md) offer a focused, metric-driven way of tracking exposure in specific security areas using security initiatives.
+[Security initiatives](/security-exposure-management/exposure-insights-overview#security-initiatives) offer a focused, metric-driven way of tracking exposure in specific security areas using security initiatives.
 
 Microsoft Defender for IoT in the Defender portal allows you to review security initiatives dedicated to OT and enterprise IoT device security.
 
@@ -32,7 +32,7 @@ If you haven't yet onboarded Defender for IoT, in the security initiative, follo
 
 ## Review initiatives
 
-1. Follow the procedure to [open the Initiatives page and review an initiative](../security-exposure-management/initiatives#view-initiatives-page). In step 6, search for and select either the **OT Security** or the **Enterprise IoT Security** initiative.
+1. Follow the procedure to [open the Initiatives page and review an initiative](/security-exposure-management/initiatives#view-initiatives-page). In step 6, search for and select either the **OT Security** or the **Enterprise IoT Security** initiative.
 1. Review the data in the initiative page, including the initiative score, top metrics, and more (learn more about [initiatives](/security-exposure-management/exposure-insights-overview). For example, this **OT Security** initiative page shows an initiative score of 87%, and 30.87% of the detected OT devices are unprotected.
 
     Image
