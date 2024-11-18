@@ -1,6 +1,6 @@
 ---
-title: Investigate incidents in Microsoft Defender XDR
-description: Investigate incidents related to devices, users, and mailboxes.
+title: Investigate incidents in the Microsoft Defender portal
+description: Investigate incidents on various assets from correlated signals of various Defender services and other Microsoft security products like Microsoft Sentinel.
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
@@ -16,20 +16,19 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 12/04/2023
+ms.date: 11/13/2024
+appliesto:
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Investigate incidents in Microsoft Defender XDR
+# Investigate incidents in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
+The Microsoft Defender portal presents correlated alerts, assets, investigations, and evidence from across all your assets into an incident to give you a comprehensive look into the entire breadth of an attack.
 
-- Microsoft Defender XDR
-
-Microsoft Defender XDR aggregates all related alerts, assets, investigations, and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
-
-Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
+Within an incident, you analyze the alerts, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
 ## Initial investigation
 
@@ -84,7 +83,9 @@ From the graph, you can:
 
 - Hunt for entity information of a device, file, IP address, or URL.
 
-The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
+### Go hunt
+
+The ***go hunt*** action takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
 
   - See all available queries – the option returns all available queries for the entity type you're investigating.
   - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.
@@ -96,7 +97,7 @@ The resulting logs or alerts can be linked to an incident by selecting a results
 
 :::image type="content" source="/defender/media/investigate-incidents/fig2-gohunt-attackstory.png" alt-text="Highlighting the link to incident option in go hunt query results" lightbox="/defender/media/investigate-incidents/fig2-gohunt-attackstory.png":::
 
-If the incident or related alerts were the result of an analytics rule you've set, you can also select **Run query** to see other related results.
+If the incident or related alerts were the result of an analytics rule you've set, you can also select ***Run query*** to see other related results.
  
 ## Summary
 
