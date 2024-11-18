@@ -75,7 +75,7 @@ For more information on data connectors, see [Data connectors overview](overview
 
 ## How do I buy Microsoft Security Exposure Management?
 
-Exposure Management is available in the Microsoft Defender portal at [https://security.microsoft.com](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecurity.microsoft.com%2F&data=05|02|dlanger@microsoft.com|535bfb9f198d4313d96108dd05e1a9d4|72f988bf86f141af91ab2d7cd011db47|1|0|638673189066169502|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=vOA7%2FeI4WU4tRMWSPiHTs4jrZX8%2B%2FN70wheiTBFPSDk%3D&reserved=0)
+Exposure Management is available in the Microsoft Defender portal at [https://security.microsoft.com](https://security.microsoft.com)
 
 Access to the exposure management blade and features in the Microsoft Defender portal is available with any of these licenses:
 
@@ -100,7 +100,7 @@ We currently ingest and process supported data from first-party Microsoft produc
 
 Microsoft product data is retained for no less than 14 days in the enterprise exposure graph and/or Microsoft Security Exposure Management. Only the latest data snapshot received from Microsoft products is retained; we do not store historical data.
 
-Some enterprise exposure graph and/or Microsoft Security Exposure Management experiences data is available for querying via Advanced Hunting and is subject to [Advanced Hunting service limitations](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdefender-xdr%2Fadvanced-hunting-limits&data=05|02|dlanger@microsoft.com|2eeaacf0c0f2494a51a308dd06ea1a99|72f988bf86f141af91ab2d7cd011db47|1|0|638674324732464247|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=cPz7p6NX%2BvUWkVwR4Wx0%2F5pJ0wbP6h8ZXsFSa4JrLxA%3D&reserved=0).
+Some enterprise exposure graph and/or Microsoft Security Exposure Management experiences data is available for querying via Advanced Hunting and is subject to [Advanced Hunting service limitations](https://learn.microsoft.com/defender-xdr/advanced-hunting-limits).
 
 We reserve the right to modify some or all of these parameters in the future, including:
 
