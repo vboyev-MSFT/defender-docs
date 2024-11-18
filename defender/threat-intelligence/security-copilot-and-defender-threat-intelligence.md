@@ -170,7 +170,6 @@ Your feedback on the Defender TI integration in Security Copilot helps with deve
 
 For each feedback button, you can provide more information in the next dialog box that appears. Whenever possible, and when the result is **Needs improvement**, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
 
-## Privacy and data security in Security Copilot
 
 ## Privacy and data security in Security Copilot
 
