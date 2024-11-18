@@ -26,6 +26,19 @@ Learn more about MSEM by reading the blogs, [here](https://techcommunity.microso
 
 ## November 2024
 
+### New predefined classifications
+
+The following predefined classification rules were added to the critical assets list:
+
+| Classification                                       | Description                                                  |
+| :--------------------------------------------------- | :----------------------------------------------------------- |
+| Locked Azure Kubernetes Service cluster              | This rule applies to Azure Kubernetes service clusters that are safeguarded by a lock. |
+| Premium tier Azure Kubernetes Service cluster        | This rule applies to premium tier Azure Kubernetes service clusters. |
+| Azure Kubernetes Service cluster with multiple nodes | This rule applies to Azure Kubernetes service clusters with multiple nodes. |
+| Azure Arc Kubernetes cluster with multiple nodes     | This rule applies to Azure Arc clusters with multiple nodes. |
+
+For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md)
+
 ### Announcing the General Availability of Microsoft Security Exposure Management
 
 We are excited to announce the general availability of Microsoft Security Exposure Management. This powerful tool helps organizations focus on their most critical exposures and act swiftly. By integrating security insights across the entire digital estate, it provides a comprehensive view of risk posture, enabling faster, more informed decisions to reduce exposure before attackers can exploit it.
@@ -108,6 +121,8 @@ The following predefined classification rule was added to the critical assets li
 | Classification                                               | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Hyper-V Server**                                                 | This rule applies to devices identified as Hyper-V servers within a domain. These servers are essential for running and managing virtual machines within your infrastructure, serving as the core platform for their creation and management. |
+
+For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md)
 
 ### Enhanced visibility for scoped users
 
