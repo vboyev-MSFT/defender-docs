@@ -40,7 +40,7 @@ Defender XDR combines multiple Microsoft security services.
 
 Defender XDR provides continuous threat monitoring. When threats are detected [security alerts](/defender-xdr/alerts-incidents-correlation) are created. Defender XDR automatically aggregates related alerts and security signals into [security incidents](/defender-xdr/alerts-incidents-correlation#incident-creation-and-alert-correlation).
 
-Incidents form a complete picture of an attack. SOC teams can understand attack scope and progress, review the entities and assets involved in an attack, and respond effectively.
+Incidents define a complete picture of an attack. From an incident, SOC teams can understand attack scope and progress, review the entities and assets involved in an attack, and respond effectively.
 
 A [single incident queue](/defender-xdr/incident-queue) in the Defender portal provides full visibility into the latest alerts and incidents, and historical data. You can search and query the incident queue, and prioritize responses based on severity.
 
@@ -55,7 +55,7 @@ Deception capability generates decoy assets. When attackers interact with these 
 
 ## Automatically disrupting threats
 
-Defender XDR uses [automatic attack disruption](/defender-xdr/automatic-attack-disruption) to contain attacks in progress, limiting attack impact, and providing more time for security teams to respond.
+Defender XDR uses [automatic attack disruption](/defender-xdr/automatic-attack-disruption) for containing attacks in progress, limiting attack impact, and providing more time for security teams to respond.
 
 Automatic disruption relies on high-fidelity signals that are produced by incident correlation across million of Defender product signals and continuous investigation insights from Microsoft's security research team, to ensure a high signal-to-noise ratio.
 
@@ -70,7 +70,7 @@ Proactive hunting inspects and investigates security events and data to locate k
 
 Defender XDR provides threat hunting capabilities in the Defender portal. 
 
-- **Advanced hunting**: By using [advanced hunting](/defender-xdr/advanced-hunting-overview) with the Kusto Query Language (KQL) in the portal, SOC teams can create custom queries and rules to hunt for threats across the enterprise. Analysts can search for indicators of compromise, anomalies, and suspicious activities across Defender XDR data sources.
+- **Advanced hunting**: SOC teams can use [advanced hunting](/defender-xdr/advanced-hunting-overview) with the Kusto Query Language (KQL) in the portal to create custom queries and rules for threat hunting across the enterprise. Analysts can search for indicators of compromise, anomalies, and suspicious activities across Defender XDR data sources.
 
     If you're not familiar with KQL, Defender XDR provides a guided mode to create queries visually, and predefined query templates.
 
