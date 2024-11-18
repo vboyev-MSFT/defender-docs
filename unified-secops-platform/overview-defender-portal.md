@@ -32,26 +32,26 @@ The portal provides a single location to monitor, manage, and configure pre-brea
 
 ## Portal services
 
-The Defender portal combines many Microsoft security services. 
+The Defender portal combines many Microsoft security services.
 
 **Service** | **Details**
 --- | ---
-**Microsoft Defender XDR**<br/><br/> Detect and respond to cybersecurity threats. | [Defender XDR includes a suite of services](/defender-xdr/microsoft-365-defender) that come together in the Defender portal to provide unified threat protection across the enterprise.<br/><br/> Defender XDR collects, correlates, and analyzes threat data and signals across endpoints and devices, identities, email, apps, and OT/IoT assets.<br/><br/> In the portal you can review, investigate, and respond to security alerts and incidents, automatically disrupt attacks, and proactively hunt for threats. [Learn more](defender-xdr-portal.md) about Defender XDR in the Defender portal.
-**Microsoft Sentinel**<br/><br/> Collect, analyze, and manage security data at scale using automation and orchestration.| Microsoft Sentinel fully integrates with Defender XDR in the Defender portal, providing additional threat protection capabilities such as attack disruption, unified entities and incidents, and SOC optimization.<br/><br/> Alternatively, you can opt to use the Defender XDR connector to stream Defender XDR incidents, alerts, and events into Microsoft Sentinel, and view sychronized events in both portals. [Learn more](/azure/sentinel/microsoft-sentinel-defender-portal) about Microsoft Sentinel in the Defender portal.
-**Microsoft Defender Threat Intelligence**<br/><br/> Integrate threat intelligence into SOC operations. | The [Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) platform extends threat intelligence capabilities that are included in Defender XDR and Microsoft Sentinel.<br/><br/> Gather data from multiple sources to provide a pool of threat intelligence signals and data. Security teams use the data understand adversary activities, analyze attacks, and hunt for security threats.  
-**Microsoft Security Exposure Management**<br/><br/> Proactively reduce security risk.| Use [Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) to reduce organizational attack surfaces and remediate security posture.<br/><br/> Continuously discover assets and data to get a unified view of security state. Use the additional data context that Security Exposure Management provides to visualize, analyze, and remediate weak areas of security.
-**Microsoft Defender for Cloud**<br/><br/> Protect cloud workloads. | [Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud) improves multicloud security posture, and protects cloud workloads against security threats.<br/><br/> Defender for Cloud integrates into the Defender portal to provide an integrated view of cloud security alerts, and a single location for investigations.
+**Microsoft Defender XDR**<br/><br/> Detect and respond to cybersecurity threats. | [Defender XDR includes a suite of services](/defender-xdr/microsoft-365-defender) that come together in the Defender portal to provide unified threat protection across the enterprise.<br/><br/> Defender XDR collects, correlates, and analyzes threat data and signals across endpoints and devices, identities, email, apps, and OT/IoT assets. In the portal you can review, investigate, and respond to security alerts and incidents, automatically disrupt attacks, and proactively hunt for threats.<br/><br/>[Learn more](defender-xdr-portal.md) about Defender XDR in the Defender portal.
+**Microsoft Sentinel**<br/><br/> Collect, analyze, and manage security data at scale using automation and orchestration.| Microsoft Sentinel fully integrates with Defender XDR in the Defender portal, providing additional threat protection capabilities such as attack disruption, unified entities and incidents, and SOC optimization.<br/><br/> Alternatively, you can opt to use the Defender XDR connector to stream Defender XDR alerts into Microsoft Sentinel, and view sychronized events in both portals.<br/><br/>[Learn more](/azure/sentinel/microsoft-sentinel-defender-portal) about Microsoft Sentinel in the Defender portal.
+**Microsoft Defender Threat Intelligence**<br/><br/> Integrate threat intelligence into SOC operations. | The [Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) platform extends the threat intelligence capabilities that are included in Defender XDR and Microsoft Sentinel.<br/><br/> Gather data from multiple sources to provide a pool of threat intelligence signals and data. Security teams use this to data to understand adversary activities, analyze attacks, and hunt for security threats.  
+**Microsoft Security Exposure Management**<br/><br/> Proactively reduce security risk.| Use [Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) to reduce organizational attack surfaces and remediate security posture.<br/><br/> Continuously discover assets and data to get a comprehensive view of security across business assets. With the additional data context that Security Exposure Management provides, you can clearly visualize, analyze, and remediate weak areas of security.
+**Microsoft Defender for Cloud**<br/><br/> Protect cloud workloads. | [Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud) improves multicloud security posture, and protects cloud workloads against threats.<br/><br/> Defender for Cloud integrates into the Defender portal to provide a unified view of cloud security alerts, and a single location for investigations.
 
 ## Accessing the portal
 
-In the **Permissions** page, control access to the Defender portal. 
+In the **Permissions** page, configure access to the Defender portal. 
 
 
 **Methods** | **Details**
 --- | ---
 [Global Microsoft Entra roles](/defender-xdr/m365d-permissions) | Accounts with these Global Microsoft Entra roles can access Microsoft Defender XDR functionality and data: Global administrator, Security administrator, Security Operator, Global Reader, Security Reader.
 [Custom roles](/defender-xdr/custom-roles) | Allow access to specific data, tasks, and features using custom roles. Custom roles control granular access, and can be used together with Microsoft Entra global roles.
-[Unified RBAC](/defender-xdr/manage-rbac) | Unified role-based access control (RBAC) provides a single permissions management model for controlling user permissions in the Defender portal, and across services within the portal.
+[Unified RBAC](/defender-xdr/manage-rbac) | Unified role-based access control (RBAC) provides a permissions management model for controlling user permissions in the Defender portal, and across services within the portal.
 
 
 ### Microsoft Sentinel permissions
@@ -90,7 +90,7 @@ In **Exposure management**, review the overall state of security posture, exposu
 **Feature** | **Details**
 --- | ---
 **Exposure management overview** | This dashboard provides a quick view of devices and cloud resources, including internet-facing devices and critical assets. Learn how well your key security initiatives are doing, and drill down into top metrics for high-value vulnerabilities. Get exposure levels for different types of resources, and track security progress over time.
-**Attack surfaces** | Visualize exposure data with the attack surface map.<br/>Explore assets and connections on the map, and drill down to focus on specific assets.<br/>In the Attack path management dashboard, review potential attack paths across your organization that attackers might exploit, together with choke points and critical assets in the path.
+**Attack surfaces** | Visualize exposure data with the attack surface map.<br/>Explore resources and connections on the map, and drill down to focus on specific assets.<br/>In the Attack path management dashboard, review potential attack paths across your organization that attackers might exploit, together with choke points and critical assets in the path.
 **Exposure insights** | Review and explore aggregated security posture data and insights across resources and workloads.<br/>Assess posture and readiness for your most important security projects, and track project metrics over time.<br/>Get security recommendations to remediate exposure issues.
 **Secure score** | Review posture metrics based on [Microsoft Secure Score](/defender-xdr/microsoft-secure-score). 
 **Data connectors** | Connect third-party products to Security Exposure Management, and request new connectors.
@@ -110,8 +110,8 @@ Manage and investigate security incidents in a single location and from a single
 
 **Feature** | **Details**
 --- | ---
-**Incidents** | On the Incidents dashboard, you can review a list of the latest incidents and prioritize those marked high severity. Drill down into a specific incident to get a full attack story, including information about associated alerts, devices, users, investigations, and evidence.
-**Alerts** | In the Alerts dashboard, review alerts that have been issued by portal services.<br/><br/> The alerts queue displays new and in progress alerts from the last seven days, with the most recent alerts at the top. Filter on alerts to investigate as needed.
+**Incidents** | On the Incidents dashboard, review a list of the latest incidents and prioritize those marked high severity. An incident groups correlated alerts and associated data that makes up an attack. Drill down in an incident to get a full attack story, including information about associated alerts, devices, users, investigations, and evidence.
+**Alerts** | In the Alerts dashboard, review alerts. Alerts are signals issued by portal services in response to threat detection activity.<br/><br/> The unified alerts queue displays new and in progress alerts from the last seven days, with the most recent alerts at the top. Filter on alerts to investigate as needed.
 
 For more information, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
