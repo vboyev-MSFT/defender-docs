@@ -92,7 +92,7 @@ Access to the exposure management blade and features in the Microsoft Defender p
 
 Integration of data from the above tools and other Microsoft Security tools like Microsoft Defender for Cloud, Microsoft Defender Cloud Security Posture Management and Microsoft Defender External Attack Surface Management is available with those licenses.
 
-Integration of non-Microsoft security tools will be a consumption-based cost based on number of assets in the connected security tool. The external connectors are in public preview with plan to be generally available (GA) end of Q1 2025. Pricing will be announced before billing of external connectors starts at GA.
+Integration of non-Microsoft security tools will be a consumption-based cost based on number of assets in the connected security tool. The external connectors are free during public preview, and pricing will be announced before starting to bill for external connectors at GA.
 
 ### Data freshness, retention, and related functionality
 
