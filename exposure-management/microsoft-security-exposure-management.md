@@ -77,6 +77,44 @@ Currently, Security Exposure Management consolidates security posture informatio
 In addition to Microsoft services, Security Exposure Management allows you to connect to external data sources to further enrich and extend your security posture management.
 For more information on data connectors, see [Data connectors overview](overview-data-connectors.md).
 
+## How do I buy Microsoft Security Exposure Management?
+
+Exposure Management is available in the Microsoft Defender portal at [https://security.microsoft.com](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecurity.microsoft.com%2F&data=05|02|dlanger@microsoft.com|535bfb9f198d4313d96108dd05e1a9d4|72f988bf86f141af91ab2d7cd011db47|1|0|638673189066169502|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=vOA7%2FeI4WU4tRMWSPiHTs4jrZX8%2B%2FN70wheiTBFPSDk%3D&reserved=0)
+
+Access to the exposure management blade and features in the Microsoft Defender portal is available with any of these licenses:
+
+- Microsoft 365 E5 o*r A5*
+- Microsoft 365 E3
+- Microsoft 365 E3 with the Microsoft Enterprise Mobility + Security E5 add-on
+- Microsoft 365 A3 with the Microsoft 365 A5 security add-on
+- Microsoft Enterprise Mobility + Security E5 or A5
+- Microsoft Defender for Endpoint (Plan 1 and 2)
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Office 365 (Plans 1 and 2)
+- Microsoft Defender Vulnerability Management
+
+Integration of data from the above tools and other Microsoft Security tools like Microsoft Defender for Cloud, Microsoft Defender Cloud Security Posture Management and Microsoft Defender External Attack Surface Management is available with those licenses.
+
+Integration of non-Microsoft security tools will be a consumption-based cost based on number of assets in the connected security tool. The external connectors are in public preview with plan to be generally available (GA) end of Q1 2025. Pricing will be announced before billing of external connectors starts at GA.
+
+### Data freshness, retention, and related functionality
+
+We currently ingest and process supported data from first-party Microsoft products, making it available within the enterprise exposure graph and applicable Microsoft Security Exposure Management experiences built on top of graph data within 72 hours of its production at the source product.
+
+Microsoft product data is retained for no less than 14 days in the enterprise exposure graph and/or Microsoft Security Exposure Management. Only the latest data snapshot received from Microsoft products is retained; we do not store historical data.
+
+Some enterprise exposure graph and/or Microsoft Security Exposure Management experiences data is available for querying via Advanced Hunting and is subject to [Advanced Hunting service limitations](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdefender-xdr%2Fadvanced-hunting-limits&data=05|02|dlanger@microsoft.com|2eeaacf0c0f2494a51a308dd06ea1a99|72f988bf86f141af91ab2d7cd011db47|1|0|638674324732464247|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D|0|||&sdata=cPz7p6NX%2BvUWkVwR4Wx0%2F5pJ0wbP6h8ZXsFSa4JrLxA%3D&reserved=0).
+
+We reserve the right to modify some or all of these parameters in the future, including:
+
+- Data ingestion frequency and freshness: We may increase the current 72-hour latency (decrease the frequency of data ingestion) for some or all Microsoft data sources.
+- Data retention period: We may decrease the current 14-day data retention period.
+- Service features and functionality: We may alter, limit, or discontinue specific features, capabilities, or functionalities of the service built on top of the enterprise exposure graph and/or Microsoft Security Exposure Management data.
+- Data query limits: We may impose limitations on the number, frequency, or type of data queries that can be performed against enterprise exposure graph or Microsoft Security Exposure Management data.
+
+ We will make reasonable efforts to provide advance notice of any significant changes to the service. However, you acknowledge and agree that you are solely responsible for monitoring any such notifications.
+
 ## Next steps
 
 Review [prerequisites](prerequisites.md) to get started with Security Exposure Management.
