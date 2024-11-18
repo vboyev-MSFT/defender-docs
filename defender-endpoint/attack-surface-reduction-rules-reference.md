@@ -330,6 +330,11 @@ By default the state of this rule is set to block. In most cases, many processes
 
 Enabling this rule doesn't provide additional protection if you have LSA protection enabled since the ASR rule and LSA protection work similarly. However, when LSA protection cannot be enabled, this rule can be configured to provide equivalent protection against malware that target `lsass.exe`.
 
+> [!TIP]
+> 1. The ASR Audit events do not generate toast notifications. However, since the LSASS ASR rule produces large volume of audit events and almost all of which are safe to ignore when the rule is enabled in Block mode, customers can choose to skip the Audit mode evaluation and jump to the Block mode deployment starting with the small set of devices and gradually moving to cover the rest.
+> 1. The rule is designed to suppress the block reports/toasts for the friendly processes. It is also designed to drop the reports for duplicate blocks. As such, the rule is perfectly fine to be enabled in Block mode irrespective of the state of the Toast Notifications (enabled or disabled). 
+> 1. However, ASR Warn mode is designed to present users a block toast notification with "Unblock" button. Due to the "safe to ignore" nature of the LSASS ASR blocks and their large volume, WARN mode is not advisable for this rule (irrespective of the state of the Toast Notifications (enabled or disabled)).
+
 > [!NOTE]
 > In this scenario, the ASR rule is classified as "not applicable" in Defender for Endpoint settings in the Microsoft Defender portal. 
 > The *Block credential stealing from the Windows local security authority subsystem* ASR rule doesn't support WARN mode.
