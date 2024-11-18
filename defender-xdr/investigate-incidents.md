@@ -1,6 +1,6 @@
 ---
 title: Investigate incidents in the Microsoft Defender portal
-description: Investigate incidents related to devices, users, and mailboxes.
+description: Investigate incidents on various assets from correlated signals of various Defender services and other Microsoft security products like Microsoft Sentinel.
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
@@ -26,9 +26,9 @@ appliesto:
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-All related alerts, assets, investigations, and evidence from across your devices, users, mailboxes, cloud apps, and cloud resources are aggregated into an incident to give you a comprehensive look into the entire breadth of an attack. Learn more about correlation of alerts in [alerts, incidents, and correlation in Microsoft Defender XDR](alerts-incidents-correlation.md)
+The Microsoft Defender portal presents correlated alerts, assets, investigations, and evidence from across all your assets into an incident to give you a comprehensive look into the entire breadth of an attack.
 
-Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
+Within an incident, you analyze the alerts, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
 ## Initial investigation
 
@@ -45,7 +45,7 @@ When you do, a summary pane opens with key information about the incident, like 
 From here, you can select **Open incident page**. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. You can also open the main page for an incident by selecting the incident name from the incident queue.
 
 > [!NOTE]
-> Microsoft Copilot for Security users will see the Copilot pane on the right side of the screen when they open an incident. Copilot provides real-time insights and recommendations to help you investigate and respond to incidents. For more information, see [Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md).
+> Users with provisioned access to Microsoft Security Copilot will see the Copilot pane on the right side of the screen when they open an incident. Copilot provides real-time insights and recommendations to help you investigate and respond to incidents. For more information, see [Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md).
 
 ## Attack story
 
@@ -86,7 +86,7 @@ From the graph, you can:
 
 ### Go hunt
 
-The ***go hunt*** option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
+The ***go hunt*** action takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
 
   - See all available queries – the option returns all available queries for the entity type you're investigating.
   - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.

@@ -154,6 +154,8 @@
                    href: dlp-investigate-alerts-defender.md
                  - name: Investigate data loss prevention alerts with Microsoft Sentinel
                    href: dlp-investigate-alerts-sentinel.md
+                 - name: Investigate and respond to container threats
+                   href: investigate-respond-container-threats.md  
                  - name: Alerts
                    href: investigate-alerts.md
                  - name: Alert classification playbooks
@@ -302,6 +304,8 @@
                   href: advanced-hunting-cloudappevents-table.md
                 - name: CloudAuditEvents
                   href: advanced-hunting-cloudauditevents-table.md
+                - name: CloudProcessEvents
+                  href: advanced-hunting-cloudprocessevents-table.md                  
                 - name: DeviceEvents
                   href: advanced-hunting-deviceevents-table.md
                 - name: DeviceFileCertificateInfo
