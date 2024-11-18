@@ -6,7 +6,8 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 11/12/2024
+ms.date: 11/18/2024
+
 ---
 
 # What's new in Microsoft Security Exposure Management?
@@ -17,8 +18,6 @@ Microsoft Security Exposure Management (MSEM) is in active development and recei
 This page is updated frequently with the latest updates in Microsoft Security Exposure Management.
 
 Learn more about MSEM by reading the blogs, [here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/bg-p/MicrosoftSecurityandCompliance).
-
-Security Exposure Management is currently in public preview.
 
 > [!TIP]
 > Get notified when this page is updated by copying and pasting the following URL into your feed reader:

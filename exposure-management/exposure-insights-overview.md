@@ -13,10 +13,6 @@ ms.date: 11/04/2024
 
 Exposure insights in [Microsoft Security Exposure Management](microsoft-security-exposure-management.md) continuously aggregate security posture data and insights across workloads and resources, into a single pipeline.
 
-Security Exposure Management is currently in public preview.
-
-[!INCLUDE [prerelease](../includes//prerelease.md)]
-
 ## Exposure insights
 
 Exposure insights provide rich context around the security posture state of your asset inventory.
