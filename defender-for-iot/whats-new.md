@@ -16,6 +16,18 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
+## November 2024
+
+|Service area  |Updates  |
+|---------|---------|
+| **OT networks** | - [Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page](#review-unmanaged-enterprise-iot-devices-in-microsoft-security-exposure-management-initiatives-page) |
+
+### Review unmanaged OT devices in Microsoft Security Exposure Management Initiatives page
+
+You can now review the new **OT Security** initiative in the Microsoft Security Exposure Management **Initiatives** page. This new initiative provides a metric-driven way of tracking exposure about unmanaged OT devices.
+
+For more information, see the [Microsoft Security Exposure Management release notes](/security-exposure-management/whats-new#).
+
 ## September 2024
 
 |Service area  |Updates  |
@@ -24,7 +36,7 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 ### Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page
 
-You can now review the new Enterprise IoT Security initiative in the Microsoft Security Exposure Management Initiatives page. This new initiative provides a metric-driven way of tracking exposure about unmanaged enterprise IoT devices.
+You can now review the new **Enterprise IoT Security** initiative in the Microsoft Security Exposure Management **Initiatives** page. This new initiative provides a metric-driven way of tracking exposure about unmanaged enterprise IoT devices.
 
 For more information, see the [Microsoft Security Exposure Management release notes](/security-exposure-management/whats-new#new-enterprise-iot-security-initiative).
 
