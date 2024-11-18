@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 08/14/2024
+ms.date: 11/12/2024
 ---
 
 # What's new in Microsoft Security Exposure Management?
@@ -25,11 +25,59 @@ Security Exposure Management is currently in public preview.
 >
 > `https://aka.ms/msem/rss`
 
+## November 2024
+
+### External data connectors
+
+We have introduced new external data connectors to enhance data integration capabilities, allowing seamless ingestion of security data from other security vendors.  Data collected through these connectors is normalized within our exposure graph, enhancing your device inventory, mapping relationships, and revealing new attack paths for comprehensive attack surface visibility. These connectors help you to consolidate security posture data from various sources, providing a comprehensive view of your security posture.
+
+For more information, see [Data connectors overview](overview-data-connectors.md).
+
+### Discovery sources available in the inventory and attack surface map
+
+The Device Inventory and Attack Surface Map now display the data sources for each discovered asset. This feature provides an overview of which tools or products reported each asset, including Microsoft and external connectors like Tenable or ServiceNow CMDB. In the inventory, use the **Discovery Sources** column to filter devices by reporting sources. In the **Attack Surface Map**, toggle the **Discovery Sources** view using the **Layers** option. You can also query **Discovery Sources** in the **Device Info** table via Advanced Hunting.
+
+For more information on understanding data from external sources, see [Getting value from your data connectors](value-data-connectors.md)
+
+### OT security initiative
+
+The new Operational Technology (OT) security initiative equips practitioners with a powerful tool to identify, monitor, and mitigate risks across the OT environment, ensuring both operational reliability and safety. This initiative aims to identify devices across physical sites, assess their associated risks, and provide faster, more effective protection for OT systems.
+
+For more information, see, [Review security initiatives](initiatives.md)
+
+### Microsoft Security Exposure Management is now supported in Microsoft Defender XDR Unified role-based access control (RBAC)
+
+Access control to Microsoft Security Exposure Management can now be managed using Microsoft Defender XDR Unified Role-Based Access Control (RBAC) permissions model with dedicated and granular permissions.
+
+This new capability enables admins to grant their posture managers with access to Exposure Management data and experiences with the least privilege access approach rather than the Microsoft Azure Entra ID roles, which is still supported and can be used if needed.
+
+To learn more about Microsoft Security Exposure Management access management using Microsoft Defender XDR Unified RBAC permissions model, see [Prerequisites and support](/security-exposure-management/prerequisites). 
+
+To learn more about creating new custom roles in Microsoft Defender XDR Unified RBAC, see [Create custom roles in Microsoft Defender XDR Unified RBAC](/defender-xdr/create-custom-rbac-roles).
+
+### Content versioning notifications
+
+The new versioning feature in Microsoft Security Exposure Management offers proactive notifications about upcoming version updates, giving users advanced visibility into anticipated metric changes and their impact on their related initiatives. A dedicated side panel provides comprehensive details about each update, including the expected release date, release notes, current and new metric values, and any changes to related initiative scores. Additionally, users can share direct feedback on the updates within the platform, fostering continuous improvement and responsiveness to user needs.
+
+For more information on exposure insights, see [Overview - Exposure insights](exposure-insights-overview.md)
+
+### Exposure history for metrics
+
+User can investigate metric changes by reviewing the asset exposure change details. From the initiative's **History** tab, by selecting a specific metric, you can now see the list of assets where exposure has been either added or removed, providing clearer insight into exposure shifts over time.
+
+For more information, see, [Reviewing initiative history](exposure-insights-overview.md#reviewing-initiative-history)
+
+### SaaS security initiative
+
+The SaaS Security initiative delivers a clear view of your SaaS security coverage, health, configuration, and performance. Through metrics spanning multiple domains, it gives security managers a high-level understanding of their SaaS security posture.
+
+For more information, see, [SaaS security initiative](/defender-cloud-apps/saas-security-initiative)
+
 ## October 2024
 
 ### New in attack paths
 
-We have introduced four new features designed to enhance your security management and risk mitigation efforts. These features provide valuable insights into the attack paths identified within your environment, enabling you to prioritize risk mitigation strategies effectively and reduce the impact of potential threats. 
+We have introduced four new features designed to enhance your security management and risk mitigation efforts. These features provide valuable insights into the attack paths identified within your environment, enabling you to prioritize risk mitigation strategies effectively and reduce the impact of potential threats.
 
 The new features include:
 
@@ -37,7 +85,7 @@ The new features include:
 - **Attack path dashboard**: Provides a high-level overview of all identified attack paths within the environment. This feature enables security teams to gain valuable insights into the types of paths identified, top entry points, target assets, and more, helping to prioritize risk mitigation efforts effectively.
 - **Choke points**: Highlights critical assets that multiple attack paths intersect, identifying them as key vulnerabilities within the environment. By focusing on these choke points, security teams can efficiently reduce risk by addressing high-impact assets, thus preventing attackers from progressing through various paths.
 - **Blast radius**: Allows users to visually explore the paths from a choke point. It provides a detailed visualization showing how the compromise of one asset could affect others, enabling security teams to assess the broader implications of an attack and prioritize mitigation strategies more effectively.
- 
+
 For more information, see [Overview of attack paths](work-attack-paths-overview.md).
 
 ## September 2024
@@ -61,7 +109,6 @@ The following predefined classification rule was added to the critical assets li
 This change now allows users who have been granted access to only some of the organization's devices to see the list of affected assets in metrics, recommendations, events, and initiative history within their specific scope.
 
 For more information, see [Prerequisites and support](prerequisites.md).
-
 
 ### Proactively manage your security posture
 
@@ -137,7 +184,7 @@ The following predefined classification rules were added to the critical assets 
 | **Azure Virtual Machine has a Critical Signed-in user**            | This rule applies to Azure Virtual Machines with a Critical user signed in protected by Defender for Endpoint with high or very high-criticality users signed in. |
 | **Azure Key Vaults with Many Connected Identities**          | This rule applies to Azure Key Vaults with high access compared to others, indicating critical workload usage. |
 
-For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md) 
+For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md)
 
 ## May 2024
 

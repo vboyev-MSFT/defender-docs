@@ -46,7 +46,10 @@
       "layout": "Conceptual",
       "breadcrumb_path": "/advanced-threat-analytics/bread/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["ATA"]
+      "searchScope": ["ATA"],
+      "contributors_to_exclude": [
+        "beccarobins"
+      ]
     },
     "markdownEngineName": "markdig"
   }

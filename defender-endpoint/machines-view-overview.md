@@ -136,6 +136,7 @@ The available device properties to use as filters vary based on the device inven
 |**Device subtype**|<ul><li>**All devices**</li><li>**IoT/OT**</li></ul>|The subtype value assigned to the device. Enter a value or select an available value (for example, **Video conference**).|
 |**Device type**|<ul><li>**All devices**</li><li>**IoT/OT**</li></ul>|The type value assigned to the device. Enter a value or select an available value (for example, **Audio and Video**).|
 |**Device value**|All|The assigned value of the device. The available values are **High** and **Low**.|
+|**Discovery sources**|All|The source reporting on the device.|
 |**Exclusion state**|All|The available values are **Not excluded** and **Excluded**. For more information, see [Exclude devices](exclude-devices.md).|
 |**Exposure level**|All|The exposure level of the device based on pending security recommendations. The available values are: <ul><li>**High**</li><li>**Medium**</li><li>**Low**: Devices are less vulnerable to exploitation.</li><li>**No data available**: Possible causes for this value include: <ul><li>The device is inactive (stopped reporting for more than 30 days).</li><li>The OS on the device isn't supported. For more information, see [minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).</li><li>The agent software on the device is stale (unlikely).</li></ul></li></ul>|
 |**First seen**|All tabs except **Network devices**|How long ago the device was first seen on the network or when it was first reported by the Microsoft Defender for Endpoint sensor. The available values are **Last 7 days** or **Over 7 days ago**.|
@@ -178,6 +179,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **OS version**<sup\*</sup>
   - **Sensor health state**<sup\*</sup>
   - **Onboarding status**<sup\*</sup>
+  - **Discovery sources**
   - **First seen**
   - **Last device update**<sup\*</sup>
   - **Tags**<sup\*</sup>
@@ -204,6 +206,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **Criticality level**<sup\*</sup>
   - **Sensor health state**<sup\*</sup>
   - **Onboarding status**<sup\*</sup>
+  - **Discovery sources**
   - **Last device update**<sup\*</sup>
   - **First seen**
   - **Tags**<sup\*</sup>
@@ -219,6 +222,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **Vendor**<sup>\*</sup>
   - **Model**<sup>\*</sup>
   - **Name**<sup>\*</sup>
+  - **Discovery sources**
   - **Domain**
   - **Device type**
   - **Device subtype**
@@ -241,6 +245,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **Model**<sup>\*</sup>
   - **Risk level**<sup>\*</sup>
   - **Exposure level**<sup>\*</sup>
+  - **Discovery sources**
   - **OS distribution**<sup>\*</sup>
   - **OS version**<sup>\*</sup>
   - **First seen**
@@ -253,6 +258,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **Name**<sup>\*</sup>
   - **Vendor**<sup>\*</sup>
   - **IP**<sup>\*</sup>
+  - **Discovery sources**
   - **MAC address**
   - **Risk level**
   - **Exposure level**
