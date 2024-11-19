@@ -6,16 +6,13 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 11/13/2024
+ms.date: 11/18/2024
+
 ---
 
 # Explore with the attack surface map
 
 To visualize exposure data, use the attack surface map in [Microsoft Security Exposure Management](microsoft-security-exposure-management.md), together with the enterprise exposure graph schema.
-
-Security Exposure Management is currently in public preview.
-
-[!INCLUDE [prerelease](../includes//prerelease.md)]
 
 ## Prerequisites
 
@@ -42,8 +39,9 @@ The exposure map gives you visibility into asset connections.
     - **Asset details**: To view details, select the asset icon.
     - **Focus on asset**: Provides a way to refocus the graph visualization on the specific node you want to explore, similar to the **Graph** view when selecting an individual [attack path](review-attack-paths.md).
     - **Search**: Helps you to discover items by node type. By selecting **all results**, search the particular type for specific results. You can also filter your search by devices, identity, or cloud assets from the initial screen.
+    - **Discovery source**: Use the layer option to show or hide the origin of the data directly on the attack surface map.
 
-    :::image type="content" source="./media/enterprise-exposure-map/attack-surface-exposure-map.png" alt-text="Screenshot of the attack surface exposure map." lightbox="./media/enterprise-exposure-map/attack-surface-exposure-map.png":::
+:::image type="content" source="media/value-data-connectors/attack map data connectors.png" alt-text="Screenshot of the attack surface exposure map." lightbox="media/value-data-connectors/attack map data connectors.png":::
 
 1. Open the side panel to view asset details.
    - **General**: View general information about the asset, including **Type**, **IDs**, and **Discovery source**.
