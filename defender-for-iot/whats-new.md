@@ -16,6 +16,25 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
+## November 2024
+
+|Service area  |Updates  |
+|---------|---------|
+| **OT networks** | - [Secure site-linked devices in Microsoft Security Exposure Management Initiatives page](#secure-site-linked-devices-in-microsoft-security-exposure-management-initiatives-page) |
+
+### Secure site-linked devices in Microsoft Security Exposure Management Initiatives page
+
+You can now review the new **OT Security** initiative in the Microsoft Security Exposure Management **Initiatives** page. This new initiative provides a metric-driven way of tracking exposure about unmanaged OT devices.
+
+:::image type="content" source="media/review-security-initiatives/ot-security-initiative.png" alt-text="Screenshot showing the OT Security initiative in Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/review-security-initiatives/ot-security-initiative.png":::
+
+This new initiative serves as a powerful tool to improve your OT site security posture. The initiative aims to monitor and safeguard OT environments within the organization by employing network layer monitoring. This initiative identifies devices and ensures that systems are working correctly, and data is protected.
+
+For more information, see: 
+
+- [Review security initiatives](review-security-initiatives.md)
+- [Microsoft Security Exposure Management release notes](/security-exposure-management/whats-new#ot-security-initiative).
+
 ## September 2024
 
 |Service area  |Updates  |
@@ -24,7 +43,7 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 ### Review unmanaged enterprise IoT devices in Microsoft Security Exposure Management Initiatives page
 
-You can now review the new Enterprise IoT Security initiative in the Microsoft Security Exposure Management Initiatives page. This new initiative provides a metric-driven way of tracking exposure about unmanaged enterprise IoT devices.
+You can now review the new **Enterprise IoT Security** initiative in the Microsoft Security Exposure Management **Initiatives** page. This new initiative provides a metric-driven way of tracking exposure about unmanaged enterprise IoT devices.
 
 For more information, see the [Microsoft Security Exposure Management release notes](/security-exposure-management/whats-new#new-enterprise-iot-security-initiative).
 
