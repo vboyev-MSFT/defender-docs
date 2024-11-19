@@ -28,19 +28,19 @@ Defender XDR combines multiple Microsoft security services.
 
 **Service** | **Details**
 --- | ---
-**[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps protect email and Office 365 resources. 
-**[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, and automated investigation and response for organizational devices.
+**[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps protect email and Office 365 resources.
+**[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, and automated investigation and response for
+organizational devices.
 **[Protect Active Directory with Defender for Identity](/defender-xdr/microsoft-365-security-center-mdi)** | Uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions.
 **[Protect SaaS cloud apps with Defender for Cloud Apps](/defender-xdr/microsoft-365-security-center-defender-cloud-app)** | Provides deep visibility, strong data controls, and enhanced threat protection for SaaS and PaaS cloud apps.
-**[Protect against a broad range of threats with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)** |  Microsoft Sentinel seamlessly integrates with Defender XDR to combine the capabilities of both products into a rich, unified security platform for threat detection, investigation, hunting, and response.
-
+**[Protect against a broad range of threats with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)** |  Microsoft Sentinel seamlessly integrates with Defender XDR to combine the capabilities of both products into a unified security platform for threat detection, investigation, hunting, and response.
 
 
 ## Detecting threats
 
-Defender XDR provides continuous threat monitoring. When threats are detected [security alerts](/defender-xdr/alerts-incidents-correlation) are created. Defender XDR automatically aggregates related alerts and security signals into [security incidents](/defender-xdr/alerts-incidents-correlation#incident-creation-and-alert-correlation).
+Defender XDR provides continuous threat monitoring. When threats are detected [security alerts](/defender-xdr/alerts-incidents-correlation) are created. Defender automatically aggregates related alerts and security signals into [security incidents](/defender-xdr/alerts-incidents-correlation#incident-creation-and-alert-correlation).
 
-Incidents define a complete picture of an attack. From an incident, SOC teams can understand attack scope and progress, review the entities and assets involved in an attack, and respond effectively.
+Incidents define a complete picture of an attack. Incidents help SOC teams to understand attacks and respond more quickly. Incidents gather together related alerts, information about attack scope and progress, and the entities and assets involved in an attack.
 
 A [single incident queue](/defender-xdr/incident-queue) in the Defender portal provides full visibility into the latest alerts and incidents, and historical data. You can search and query the incident queue, and prioritize responses based on severity.
 
