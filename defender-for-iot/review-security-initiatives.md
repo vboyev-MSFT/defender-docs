@@ -19,7 +19,7 @@ In this article, you learn how to review security initiatives so that your secur
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
-## OT security initiatives
+### OT security initiatives
 
 The **OT Security** initiative improves your OT site security posture by monitoring and protecting OT environments in the organization, and employing network layer monitoring. This initiative identifies devices and ensures that systems are working correctly, and data is protected.
 
@@ -28,7 +28,7 @@ Your security teams can use the **OT Security** initiative to:
 - Identify unprotected devices.
 - Harden posture across sites through vulnerability assessments, with actionable guidance to help remediate at-risk devices.
 
-## Enterprise IoT security initiatives
+### Enterprise IoT security initiatives
 
 The **Enterprise IoT Security** initiative allows you to identify unmanaged IoT devices and enhance your organization's security. With continuous monitoring, vulnerability assessments, and tailored recommendations specifically designed for enterprise IoT devices, you gain comprehensive visibility into the risks posed by these devices. This initiative not only helps you understand the potential threats but also strengthens your organization's resilience in mitigating them.
 
