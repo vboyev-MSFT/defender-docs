@@ -36,31 +36,39 @@ Review the full [security initiatives catalog](/security-exposure-management/ini
 
 ## Prerequisites
 
-Onboard Defender for IoT and set up sites:
+- Review the Defender for IoT [prerequisites](prerequisites.md).
+- Review the [prerequisites for the **OT Security** initiative](#prerequisites-for-ot-security-initiative).
+    
+### Prerequisites for OT Security initiative
 
-- [Onboard Defender for IoT in the Defender portal](get-started.md)
-- [Set up sites](set-up-sites.md)
+When you view the **OT security** initiative small overview, if you haven't yet onboarded Defender for IoT and set up sites, the **More data is required to support this initiative** section is displayed. 
+
+:::image type="content" source="media/review-security-initiatives/more-data-required.png" alt-text="Screenshot showing the **More data is required to support this initiative** section in Microsoft Defender for IoT in the Microsoft Defender portal.":::
+
+Follow these steps to add more data:
+
+1. Review the **Unprotected OT devices** metric to understand the impact on your network. For example, the **Unprotected OT devices** metric shows 24 affected assets.
+
+    :::image type="content" source="media/review-security-initiatives/unprotected-ot-devices.png" alt-text="Screenshot showing the Unprotected OT devices metric **Overview** tab in Microsoft Defender for IoT in the Microsoft Defender portal.":::
+
+1. Select **Get started with Microsoft Defender for IoT** and follow the procedure to [onboard Defender for IoT in the Defender portal](get-started.md). 
+
+1. Select **create new sites** to [set up sites](set-up-sites.md).
 
 ## Review initiatives
 
 1. Follow the procedure to [open the Initiatives page and review an initiative](/security-exposure-management/initiatives#view-initiatives-page).
-1. If you haven't yet onboarded Defender for IoT and set up sites, the **More data is required to support this initiative** section is displayed in the initiative small overview.
-    1. Review the **Unprotected OT devices** metric to understand the impact on your network. For example, this **Unprotected OT devices** metric shows 24 affected assets, and 3.81 score impact.
-
-        :::image type="content" source="media/review-security-initiatives/unprotected-ot-devices.png" alt-text="Screenshot showing the Unprotected OT devices metric **General** tab in Microsoft Defender for IoT in the Microsoft Defender portal.":::
-
-    1. If you want to onboard Defender for IoT: 
-        1. Select **Get started with Microsoft Defender for IoT** and follow the procedure to [onboard Defender for IoT in the Defender portal](get-started.md). 
-        1. Select **create new sites** to [Set up sites](set-up-sites.md).
-
-    :::image type="content" source="media/review-security-initiatives/more-data-required.png" alt-text="Screenshot showing the **More data is required to support this initiative** section in Microsoft Defender for IoT in the Microsoft Defender portal.":::
+1. For the **OT Security** initiative, if you haven't yet onboarded Defender for IoT and set up sites, the **More data is required to support this initiative** section is displayed. In this case, see the [prerequisites for the OT Security initiative](#prerequisites-for-ot-security-initiative).
 
 1. Review the data in the initiative page, including the initiative score, top metrics, and more (learn more about [initiatives](/security-exposure-management/exposure-insights-overview)). For example, this **OT Security** initiative page shows an initiative score of 83%, and shows that 61.9% of the detected OT devices are protected.
 
     :::image type="content" source="media/review-security-initiatives/ot-security-initiative.png" alt-text="Screenshot showing the OT Security initiative in Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/review-security-initiatives/ot-security-initiative.png":::
 
 1. Select the metric from the **Top metrics** area in the initiative page or from the **Related metrics** area in the small overview. 
-    - Review the **Overview** tab to drill down into additional security data and recommendations, including the weight of the metrics, affected assets, and score impact.
+    - Review the **Overview** tab to drill down into additional security data and recommendations, including the weight of the metrics, affected assets, and score impact. For example, the **Unprotected OT devices** metric shows 24 affected assets, and 3.81 score impact.
+
+        :::image type="content" source="media/review-security-initiatives/unprotected-ot-devices.png" alt-text="Screenshot showing the Unprotected OT devices metric **Overview** tab in Microsoft Defender for IoT in the Microsoft Defender portal.":::
+
     - Review the recommendations in the **Security recommendations** tab. For example, for the **Site-linked devices using insecure protocols** metric, you're recommended to disable the Telnet administration protocol, and remove the SNMP V1 and SNMP V2 administration protocols.
     
         :::image type="content" source="media/review-security-initiatives/security-recommendations.png" alt-text="Screenshot showing the **Security recommendations** tab for a metric in Microsoft Defender for IoT in the Microsoft Defender portal.":::
