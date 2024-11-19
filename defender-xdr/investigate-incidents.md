@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 11/18/2024
+ms.date: 11/19/2024
 appliesto: 
 - Microsoft Defender XDR
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -101,7 +101,7 @@ The resulting logs or alerts can be linked to an incident by selecting a results
 If the incident or related alerts were the result of an analytics rule you've set, you can also select ***Run query*** to see other related results.
 
 > [!IMPORTANT]
-> Some information in this article relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.]
+> Some information in this article relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ### Attack paths
 
