@@ -21,7 +21,7 @@ search.appverid:
 ms.date: 10/14/2024
 appliesto:
 - Microsoft Defender XDR
-- Microsoft Sentinel in the Microsoft Defender portal
+- Microsoft Sentinel with Defender XDR in the Microsoft Defender portal
 ---
 
 # Summarize identity information with Microsoft Copilot in Microsoft Defender
