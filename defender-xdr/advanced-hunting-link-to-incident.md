@@ -44,11 +44,10 @@ You can use the link to incident feature to add advanced hunting query results t
 
 3. Find the **Alert details** section in the Link to incident pane, then select **Create new incident** to convert the events to alerts and group them to a new incident:
 
-    :::image type="content" source="/defender/media/link-to-incident-3-create-new.png" alt-text="The Alert details section in the Link to incident pane in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-3-create-new.png":::
     
     Or select **Link to an existing incident** to add the selected records to an existing one. Choose the related incident from the dropdown list of existing incidents. You can also enter the first few characters of the incident name or ID to find the existing incident. 
 
-    :::image type="content" source="/defender/media/link-to-incident-3-link-to-existing.png" alt-text="The Alert details section in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-3-link-to-existing.png":::
+   :::image type="content" source="/defender/media/advanced-hunting-results-link4.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link4.png":::
 
 4. For either selection, provide the following details, then select **Next**:
       - **Alert title** - provide a descriptive title for the results that your incident responders can understand. This descriptive title becomes the alert title.
@@ -57,31 +56,60 @@ You can use the link to incident feature to add advanced hunting query results t
       - **Description** - Give a helpful description for the grouped alerts.
       - **Recommended actions** - Provide remediation actions.
 
-5. In the **Impacted entities** section, select the main affected or impacted entity. Only the applicable entities based on the query results appear in this section. In our example, we used a query to find events related to a possible email exfiltration incident, therefore the Sender is the impacted entity. If there are four different senders, for instance, four alerts are created and linked to the chosen incident.
+5. In the **Entities** section, select the entities that are involved in the suspicious events. Those entities are used to correlate other alerts to the linked incident and are visible from the incident page. 
 
-     :::image type="content" source="/defender/media/link-to-incident-4-impacted-entities.png" alt-text="The impacted entity in the Link to incident section in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-4-impacted-entities.png":::
+      For Microsoft Defender XDR data, the entities are automatically selected. If the data is from Microsoft Sentinel, you need to select the entities manually.
 
-1. Select **Next**.
-1. Review the details you've provided in the **Summary** section.
-   :::image type="content" source="/defender/media/link-to-incident-5-summary.png" alt-text="The results page in the Link to incident section in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-5-summary.png":::
-     
-1. Select **Done**.
+      There are two sections for which you can select entities:
 
-## View linked records in the incident
+    a. **Impacted assets** – impacted assets that appear in the selected events should be added here. The following types of assets can be added: 
+    - Account
+    - Device
+    - Mailbox
+    - Cloud application
+    - Azure resource
+    - Amazon Web Services resource
+    - Google Cloud Platform resource
 
-You can select the incident name to view the incident that the events are linked to.
-:::image type="content" source="/defender/media/link-to-incident-6-incident-pg.png" alt-text="The event details screen in the Summary tab in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-6-incident-pg.png":::
+    b. **Related evidence** – non-assets that appear in the selected events can be added in this section. The supported entity types are:
+    - Process
+    - File
+    - Registry value
+    - IP
+    - OAuth application
+    - DNS
+    - Security group
+    - URL
+    - Mail cluster
+    - Mail message
 
-In our example, the four alerts, representing the four selected events, were linked successfully to a new incident. 
+    After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
+    
+    :::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
+    
+    In our example, we used a query to find events related to a possible email exfiltration incident, therefore the recipient's mailbox and recipient's account are the impacted entities, and the sender's IP as well as email message are related evidence.
+    
+    :::image type="content" source="/defender/media/advanced-hunting-results-link6.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link6.png":::
+    
+    A different alert is created for each record with a unique combination of impacted entities. In our example, if there are three different recipient mailboxes and recipient object ID combinations, for instance, then three alerts are created and linked to the chosen incident.
 
-In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and query results view.
-:::image type="content" source="/defender/media/link-to-incident-7-alert-story.png" alt-text="The full details of an event in the Timeline tab in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-7-alert-story.png":::
+6. Select **Next**.
+7. Review the details you've provided in the Summary section. 
+8.	Select **Done**.
 
-You can also select the event to open the **Inspect record** pane.
-:::image type="content" source="/defender/media/link-to-incident-7-inspect-record.png" alt-text="The inspect record details of an event in the Timeline tab in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-7-inspect-record.png":::
+### View linked records in the incident
+You can select the generated link from the summary step of the wizard or select the incident name from the incident queue, to view the incident to which the events are linked.
 
-## Filter for events added using advanced hunting
-You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
+:::image type="content" source="/defender/media/advanced-hunting-results-link7.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link7.png":::
 
-:::image type="content" source="/defender/media/link-to-incident-8-filter.png" alt-text="The manual filtering of Incidents and Alerts queue in the Filters page in the Microsoft Defender portal " lightbox="/defender/media/link-to-incident-8-filter.png":::
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
+In our example, the three alerts, representing the three selected events, were linked successfully to a new incident.
+In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and the query results view. 
+
+You can also select the event from the timeline view or from the query results view to open the **Inspect record** pane.
+
+:::image type="content" source="/defender/media/advanced-hunting-results-link8.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link8.png":::
+
+### Filter for events added using advanced hunting
+You can view which alerts were generated from advanced hunting by filtering incidents and alerts by **Manual** detection source 
+
+:::image type="content" source="/defender/media/advanced-hunting-results-link9.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link9.png":::

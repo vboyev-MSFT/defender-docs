@@ -61,9 +61,7 @@ You can use the link to incident feature to add advanced hunting query results t
 
 3.	In the **Alert details** section in the Link to incident pane, select **Create new incident** to convert the events to alerts and group them to a new incident:
 
-[IMAGE]
-
-    You can also select **Link to an existing incident** to add the selected records to an existing incident. Choose the related incident from the dropdown list of existing incidents. You can also enter the first few characters of the incident name or ID to find the incident you want.
+    You can also select **Link to an existing incident** to add the selected records to an existing incident. Choose the related incident from the dropdown list of existing incidents. You can also enter the first few characters of the incident name or ID to find the incident you want.<br>
    :::image type="content" source="/defender/media/advanced-hunting-results-link4.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link4.png":::
 4.	For either selection, provide the following details, then select **Next**:
     - **Alert title** – a descriptive title for the results that your incident responders can understand; this descriptive title becomes the alert title
@@ -97,20 +95,20 @@ You can use the link to incident feature to add advanced hunting query results t
     - URL
     - Mail cluster
     - Mail message
-
-> [!NOTE]
-> For queries containing only XDR data, only entity types that are available in XDR tables are shown.
-After an entity type is selected, select an identifier type that exists in the selected records so that it can be used to identify this entity. Each entity type has a list of supported identifiers, as can be seen in the relevant drop down. Read the description displayed when hovering on each identifier to better understand it. 
-
-After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
-
-:::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
-
-In our example, we used a query to find events related to a possible email exfiltration incident, therefore the recipient's mailbox and recipient's account are the impacted entities, and the sender's IP as well as email message are related evidence.
-
-:::image type="content" source="/defender/media/advanced-hunting-results-link6.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link6.png":::
-
-A different alert is created for each record with a unique combination of impacted entities. In our example, if there are three different recipient mailboxes and recipient object ID combinations, for instance, then three alerts are created and linked to the chosen incident.
+    <br>
+    > [!NOTE]
+  > For queries containing only XDR data, only entity types that are available in XDR tables are shown.
+    After an entity type is selected, select an identifier type that exists in the selected records so that it can be used to identify this entity. Each entity type has a list of supported identifiers, as can be seen in the relevant drop down. Read the description displayed when hovering on each identifier to better understand it. 
+    
+    After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
+    
+    :::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
+    
+    In our example, we used a query to find events related to a possible email exfiltration incident, therefore the recipient's mailbox and recipient's account are the impacted entities, and the sender's IP as well as email message are related evidence.
+    
+    :::image type="content" source="/defender/media/advanced-hunting-results-link6.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link6.png":::
+    
+    A different alert is created for each record with a unique combination of impacted entities. In our example, if there are three different recipient mailboxes and recipient object ID combinations, for instance, then three alerts are created and linked to the chosen incident.
 
 6. Select **Next**.
 7. Review the details you've provided in the Summary section. 
