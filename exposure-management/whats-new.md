@@ -45,7 +45,7 @@ on-premises and cloud environments, or vice versa. This feature equips security 
 
 This capability bridges a critical gap in securing hybrid environments by offering end-to-end visibility into interconnected attack paths.
 
-#### **DACL-based path analysis**
+##### **DACL-based path analysis**
 
 Our attack path calculations now include support for **Discretionary Access Control Lists (DACLs)**, providing a more accurate representation of potential attack paths by incorporating group-based permissions. This enhancement enables defenders to:
 
