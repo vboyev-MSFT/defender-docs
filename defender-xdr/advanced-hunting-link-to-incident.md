@@ -29,7 +29,7 @@ ms.date: 11/19/2024
 
 **Applies to:**
 - Microsoft Defender XDR
-- Microsoft Defender portal
+
 
 You can use the link to incident feature to add advanced hunting query results to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities, which enables you to create a richer timeline or context of events regarding an incident. 
 
@@ -57,13 +57,9 @@ You can use the link to incident feature to add advanced hunting query results t
       - **Description** - Give a helpful description for the grouped alerts.
       - **Recommended actions** - Provide remediation actions.
 
-5. In the **Entities** section, select the entities that are involved in the suspicious events. Those entities are used to correlate other alerts to the linked incident and are visible from the incident page. 
+5. In the **Entities** section, you can find which entities are used to correlate other alerts to the linked incident. They also appear in the incident page. You can review the preselected entities categorized as follows:
 
-      For Microsoft Defender XDR data, the entities are automatically selected. If the data is from Microsoft Sentinel, you need to select the entities manually.
-
-      There are two sections for which you can select entities:
-
-    a. **Impacted assets** – impacted assets that appear in the selected events should be added here. The following types of assets can be added: 
+    a. **Impacted assets** – assets impacted by the selected events, can be: 
     - Account
     - Device
     - Mailbox
@@ -72,7 +68,7 @@ You can use the link to incident feature to add advanced hunting query results t
     - Amazon Web Services resource
     - Google Cloud Platform resource
 
-    b. **Related evidence** – non-assets that appear in the selected events can be added in this section. The supported entity types are:
+    b. **Related evidence** – non-assets that appear in the selected events. The supported entity types are:
     - Process
     - File
     - Registry value
