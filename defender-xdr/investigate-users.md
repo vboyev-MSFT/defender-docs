@@ -10,16 +10,16 @@ author: diannegali
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security
-  - tier2
-  - usx-security
+- m365-security
+- tier2
+- usx-security
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 03/29/2024
+ms.date: 09/30/2024
 appliesto:
-    - Microsoft Defender XDR
-    - Microsoft Sentinel in the Microsoft Defender portal
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # User entity page in Microsoft Defender
@@ -56,8 +56,10 @@ The user page shows the Microsoft Entra organization as well as groups, helping 
 
 ### Entity details
 
-The **Entity details** panel on the left side of the page provides information about the user, such as the Microsoft Entra identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You see other details depending on the integration features you enabled.
+The **Entity details** panel on the left side of the page provides information about the user, such as the Microsoft Entra identity risk level, the insider risk severity level (Preview), the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You see other details depending on the integration features you enabled.
 
+> [!NOTE]
+> (Preview) Microsoft Defender XDR users with access to [Microsoft Purview Insider Risk Management](/purview/insider-risk-management-solution-overview) can now see a user's insider risk severity and gain insights on a user's suspicious activities in the user page. Select the **insider risk severity** under Entity details to see the risk insights about the user.
 ### Visual view of incidents and alerts
 
 This card includes all incidents and alerts associated with the user entity, grouped by severity.

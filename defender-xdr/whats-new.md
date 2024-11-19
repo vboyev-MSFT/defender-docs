@@ -97,6 +97,8 @@ You can also get product updates and important notifications through the [messag
 
 ## May 2024
 
+- (Preview) Security analysts can now investigate a user's insider risk in the Microsoft Defender portal with **insider risk severity and insights** available for Microsoft Defender XDR users with provisioned access to Microsoft Purview Insider Risk Management. See the [entity details in the user page](investigate-users.md#entity-details) for more information.
+
 - (GA) The endpoint security policies page is now available in multitenant management in Microsoft Defender XDR. Create, edit, and delete security policies for your tenants' devices from the **Endpoint security policies** page. For more information, see [Endpoint security policies in multitenant management](mto-endpoint-security-policy.md).
 
 - Create alert tuning rules using **Alert severity** and **Alert title** values as conditions. Alert tuning can help you streamline the alert queue, saving triage time by hiding or resolving alerts automatically, each time a certain expected organizational behavior occurs, and rule conditions are met. For more information, see [Tune an alert](investigate-alerts.md#tune-an-alert).
