@@ -29,8 +29,7 @@ Defender XDR combines multiple Microsoft security services.
 **Service** | **Details**
 --- | ---
 **[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps protect email and Office 365 resources.
-**[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, and automated investigation and response for
-organizational devices.
+**[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, and automated investigation and response for devices.
 **[Protect Active Directory with Defender for Identity](/defender-xdr/microsoft-365-security-center-mdi)** | Uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions.
 **[Protect SaaS cloud apps with Defender for Cloud Apps](/defender-xdr/microsoft-365-security-center-defender-cloud-app)** | Provides deep visibility, strong data controls, and enhanced threat protection for SaaS and PaaS cloud apps.
 **[Protect against a broad range of threats with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)** |  Microsoft Sentinel seamlessly integrates with Defender XDR to combine the capabilities of both products into a unified security platform for threat detection, investigation, hunting, and response.
