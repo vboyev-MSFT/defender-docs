@@ -19,7 +19,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: how-to
-ms.date: 04/22/2024
+ms.date: 11/19/2024
 ---
 
 # Link query results to an incident
@@ -29,6 +29,7 @@ ms.date: 04/22/2024
 
 **Applies to:**
 - Microsoft Defender XDR
+- Microsoft Defender portal
 
 You can use the link to incident feature to add advanced hunting query results to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities, which enables you to create a richer timeline or context of events regarding an incident. 
 
@@ -36,11 +37,11 @@ You can use the link to incident feature to add advanced hunting query results t
 
 1. In the advanced hunting query page, first enter your query in the query field provided then select **Run query** to get your results.
 
-    :::image type="content" source="/defender/media/link-to-incident-1.png" alt-text="The Query page in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-1.png":::
+    :::image type="content" source="/defender/media/link-to-incident-1.png" alt-text="Screenshot of the advanced hunting page in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-1.png":::
 
 2. In the Results page, select the events or records that are related to a new or current investigation you're working on, then select **Link to incident**.
 
-    :::image type="content" source="/defender/media/link-to-incident-1b.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-1b.png":::
+    :::image type="content" source="/defender/media/link-to-incident-1b.png" alt-text="Screenshot of the link to incident feature in advanced hunting in the Microsoft Defender portal" lightbox="/defender/media/link-to-incident-1b.png":::
 
 3. Find the **Alert details** section in the Link to incident pane, then select **Create new incident** to convert the events to alerts and group them to a new incident:
 
@@ -85,11 +86,11 @@ You can use the link to incident feature to add advanced hunting query results t
 
     After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
     
-    :::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
+    :::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the link to incident wizard entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
     
     In our example, we used a query to find events related to a possible email exfiltration incident, therefore the recipient's mailbox and recipient's account are the impacted entities, and the sender's IP as well as email message are related evidence.
     
-    :::image type="content" source="/defender/media/advanced-hunting-results-link6.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link6.png":::
+    :::image type="content" source="/defender/media/advanced-hunting-results-link6.png" alt-text="Screenshot of the link to incident wizard full entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link6.png":::
     
     A different alert is created for each record with a unique combination of impacted entities. In our example, if there are three different recipient mailboxes and recipient object ID combinations, for instance, then three alerts are created and linked to the chosen incident.
 
@@ -100,16 +101,16 @@ You can use the link to incident feature to add advanced hunting query results t
 ### View linked records in the incident
 You can select the generated link from the summary step of the wizard or select the incident name from the incident queue, to view the incident to which the events are linked.
 
-:::image type="content" source="/defender/media/advanced-hunting-results-link7.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link7.png":::
+:::image type="content" source="/defender/media/advanced-hunting-results-link7.png" alt-text="Screenshot of the summary step in the link to incident wizard in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link7.png":::
 
 In our example, the three alerts, representing the three selected events, were linked successfully to a new incident.
 In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and the query results view. 
 
 You can also select the event from the timeline view or from the query results view to open the **Inspect record** pane.
 
-:::image type="content" source="/defender/media/advanced-hunting-results-link8.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link8.png":::
+:::image type="content" source="/defender/media/advanced-hunting-results-link8.png" alt-text="Screenshot of the incident page in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link8.png":::
 
 ### Filter for events added using advanced hunting
 You can view which alerts were generated from advanced hunting by filtering incidents and alerts by **Manual** detection source 
 
-:::image type="content" source="/defender/media/advanced-hunting-results-link9.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link9.png":::
+:::image type="content" source="/defender/media/advanced-hunting-results-link9.png" alt-text="Screenshot of the filter dropdown in advanced hunting in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link9.png":::
