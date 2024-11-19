@@ -116,7 +116,8 @@ Selecting an attack path from the list displays the attack path graph, which sho
 :::image type="content" source="/defender/media/investigate-incidents/attack-path-pane-small.png" alt-text="An example of the attack path graph shown in the side pane." lightbox="/defender/media/investigate-incidents/attack-path-pane.png":::
 
 > [!NOTE]
-> To view the details of an attack path, you must have read access permissions in the Microsoft Defender portal. To view attack path details in the unified security operations platform, a *Sentinel Reader* role is required. To create new attack paths, the Security Administrator role is required.
+> To view the details of an attack path, you must have read access permissions in the Microsoft Defender portal and the license for [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management). </br></br>
+> To view attack path details in the unified security operations platform, a *Sentinel Reader* role is required. To create new attack paths, the Security Administrator role is required.
 
 ## Alerts
 
