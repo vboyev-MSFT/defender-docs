@@ -13,13 +13,13 @@ ms.topic: how-to
 
 [Security initiatives](/security-exposure-management/exposure-insights-overview#security-initiatives) offer a focused, metric-driven way of tracking exposure in specific security areas using security initiatives.
 
-Microsoft Defender for IoT in the Defender portal allows you to review security initiatives dedicated to OT and enterprise IoT device security.
+Microsoft Defender for IoT in the Defender portal allows you to review Microsoft Security Exposure Management security initiatives dedicated to OT and enterprise IoT device protection.
 
 In this article, you learn how to review security initiatives so that your security teams can prioritize, discover, and validate OT-related security findings across your sites.
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
-### OT Security initiative
+## OT Security initiative
 
 The **OT Security** initiative improves your OT site security posture by monitoring and protecting OT environments in the organization, and employing network layer monitoring. This initiative identifies devices and ensures that systems are working correctly, and data is protected.
 
@@ -28,7 +28,7 @@ Your security teams can use the **OT Security** initiative to:
 - Identify unprotected devices.
 - Harden posture across sites through vulnerability assessments, with actionable guidance to help remediate at-risk devices.
 
-### Enterprise IoT Security initiative
+## Enterprise IoT Security initiative
 
 The **Enterprise IoT Security** initiative allows you to identify unmanaged IoT devices and enhance your organization's security. With continuous monitoring, vulnerability assessments, and tailored recommendations specifically designed for enterprise IoT devices, you gain comprehensive visibility into the risks posed by these devices. This initiative not only helps you understand the potential threats but also strengthens your organization's resilience in mitigating them.
 
@@ -41,17 +41,17 @@ Review the full [security initiatives catalog](/security-exposure-management/ini
     
 ### Prerequisites for OT Security initiative
 
-When you view the **OT security** initiative small overview, if you haven't yet onboarded Defender for IoT and set up sites, the **More data is required to support this initiative** section is displayed. 
+When you view the **OT security** initiative, if you haven't yet onboarded Defender for IoT and set up sites, the **More data is required to support this initiative** section is displayed.
 
 :::image type="content" source="media/review-security-initiatives/more-data-required.png" alt-text="Screenshot showing the **More data is required to support this initiative** section in Microsoft Defender for IoT in the Microsoft Defender portal.":::
 
-Follow these steps to add more data:
+If the **More data is required to support this initiative** section is displayed:
 
 1. Review the **Unprotected OT devices** metric to understand the impact on your network. For example, the **Unprotected OT devices** metric shows 24 affected assets.
 
     :::image type="content" source="media/review-security-initiatives/unprotected-ot-devices.png" alt-text="Screenshot showing the Unprotected OT devices metric **Overview** tab in Microsoft Defender for IoT in the Microsoft Defender portal.":::
 
-1. Select **Get started with Microsoft Defender for IoT** and follow the procedure to [onboard Defender for IoT in the Defender portal](get-started.md). 
+1. Select **Get started with Microsoft Defender for IoT** and follow the procedure to [onboard Defender for IoT in the Defender portal](get-started.md).
 
 1. Select **create new sites** to [set up sites](set-up-sites.md).
 
