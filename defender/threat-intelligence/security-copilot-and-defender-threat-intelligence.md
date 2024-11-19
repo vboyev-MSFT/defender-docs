@@ -74,7 +74,7 @@ You can also select any of the built-in prompts that are available in the Defend
 [Learn more about using Copilot in Defender for threat intelligence](using-copilot-threat-intelligence-defender-xdr.md)
 
 
-## Enable the Security Copilot integration in Defender TI
+## Turn on the Security Copilot integration in Defender TI
 
 1. Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
 2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png).
