@@ -16,7 +16,7 @@ search.appverid:
 ms.collection: 
 - m365-security
 - tier2 
-ms.date: 06/21/2024
+ms.date: 11/19/2024
 ---
 
 # Provide managed security service provider (MSSP) access 
