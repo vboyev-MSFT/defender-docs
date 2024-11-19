@@ -22,11 +22,13 @@ This article describes features available in Microsoft Defender for IoT in the D
 |---------|---------|
 | **OT networks** | - [Review unmanaged OT devices in Microsoft Security Exposure Management Initiatives page](#review-unmanaged-ot-devices-in-microsoft-security-exposure-management-initiatives-page) |
 
-### Review unmanaged OT devices in Microsoft Security Exposure Management Initiatives page
+### Secure site-linked devices in Microsoft Security Exposure Management Initiatives page
 
 You can now review the new **OT Security** initiative in the Microsoft Security Exposure Management **Initiatives** page. This new initiative provides a metric-driven way of tracking exposure about unmanaged OT devices.
 
 :::image type="content" source="media/review-security-initiatives/ot-security-initiative.png" alt-text="Screenshot showing the OT Security initiative in Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/review-security-initiatives/ot-security-initiative.png":::
+
+This new initiative serves as a powerful tool to improve your OT site security posture. The initiative aims to monitor and safeguard OT environments within the organization by employing network layer monitoring. This initiative identifies devices and ensures that systems are working correctly, and data is protected.
 
 For more information, see: 
 
