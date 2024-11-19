@@ -84,7 +84,7 @@ You can use the link to incident feature to add advanced hunting query results t
     - Mail cluster
     - Mail message
 
-    After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
+6. After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
     
     :::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the link to incident wizard entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
     

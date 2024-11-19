@@ -95,13 +95,12 @@ You can use the link to incident feature to add advanced hunting query results t
     - URL
     - Mail cluster
     - Mail message
-    <br>
+ 
     > [!NOTE]
   > For queries containing only XDR data, only entity types that are available in XDR tables are shown.
 
-    After an entity type is selected, select an identifier type that exists in the selected records so that it can be used to identify this entity. Each entity type has a list of supported identifiers, as can be seen in the relevant drop down. Read the description displayed when hovering on each identifier to better understand it. 
-    <br><br>
-    After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
+6. After an entity type is selected, select an identifier type that exists in the selected records so that it can be used to identify this entity. Each entity type has a list of supported identifiers, as can be seen in the relevant drop down. Read the description displayed when hovering on each identifier to better understand it.
+1. After selecting the identifier, select a column from the query results that contain the selected identifier. You can click on the schema icon to open the schema reference and read the description on every column, to make sure you chose the right column that matches the selected identifier. 
      <br>
     :::image type="content" source="/defender/media/advanced-hunting-results-link5.png" alt-text="Screenshot of the link to incident wizard entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link5.png":::
      <br>
