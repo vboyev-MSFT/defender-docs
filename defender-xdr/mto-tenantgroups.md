@@ -99,7 +99,7 @@ To sync content across tenant groups for the tenants you have permission for:
 
 5. If you experience a partial success or failure, select the value in the **Last Sync Results** column to investigate the cause.  
 
-Sync results display the number of synced tenants and synced content. The number of synced tenants shows the number of tenants where all the custom detection rules applied successfully. For example, if you have 3 tenants in a tenant group and all 3 tenants have the same custom detection rules applied successfully, the number of synced tenants is 3. If only 2 out of 3 tenants have the custom detection rules applied successfully, the number of synced tenants is 2. The number of synced content shows the number of custom detection rules that are synced across all target tenants.
+Sync results show the number of synced tenants and content. Synced tenants indicate how many tenants had custom detection rules applied successfully. For example, if all rules are applied in 3 out of 3 tenants, the count is 3; if only 2 tenants succeed, the count is 2. Synced content represents the total custom detection rules synced across all target tenants.
 
 ## Edit tenant groups
 
