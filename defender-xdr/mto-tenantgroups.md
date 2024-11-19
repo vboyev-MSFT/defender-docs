@@ -92,12 +92,11 @@ To sync content across tenant groups for the tenants you have permission for:
 2. Select the checkbox next to the tenant group you want to sync, then select **Sync tenant group**.
 3. Select **Sync** on the prompt that appears.
 4. Once the sync is completed, you see one of the following statuses:
+   - Success
+   - Partially successful
+   - Failure
 
-- Success
-- Partially successful
-- Failure
-
-5. If you experience a partial success or failure, select the value in the **Last Sync Results** column to investigate the cause.  
+5. If you experience a partial success or failure, select the value in the **Last sync result** column to investigate the cause.  
 
 Sync results show the number of synced tenants and content. Synced tenants indicate how many tenants had custom detection rules applied successfully. For example, if all rules are applied in 3 out of 3 tenants, the count is 3; if only 2 tenants succeed, the count is 2. Synced content represents the total custom detection rules synced across all target tenants.
 
