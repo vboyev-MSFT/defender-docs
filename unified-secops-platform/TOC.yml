@@ -41,7 +41,7 @@
         href: overview-deploy.md
       - name: Connect Microsoft Sentinel to Microsoft Defender
         href: /defender-xdr/microsoft-sentinel-onboard?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
-    - name: Prevent attacks
+    - name: Reduce security risk
       href: reduce-risk-overview.md
     - name: Detect threats ## Have each writer provide article and then we summarize in one article. Our outline and scope should align to datasheet: "Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments"
       href: /azure/sentinel/threat-detection ## PLACEHOLDER LINK
