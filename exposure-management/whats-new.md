@@ -32,6 +32,29 @@ We are excited to announce the general availability of Microsoft Security Exposu
 
 With this GA release, you can now build and enhance a Continuous Threat Exposure Management (CTEM) program, continuously identifying, prioritizing, and mitigating risks across your digital landscape.
 
+### Attack path enhancements
+
+##### **Hybrid attack paths: On-Prem to Cloud**
+
+We now support the discovery and visualization of hybrid attack paths that originate from on-premises environments and traverse into cloud infrastructures. We have introduced a new **Type column** for the attack paths to display the support for hybrid paths that transition between
+on-premises and cloud environments, or vice versa. This feature equips security teams to:
+
+- **Identify cross-environment attack vectors:** See how vulnerabilities in on-prem environments can be leveraged to target assets in the cloud.
+- **Prioritize remediation effectively:** Gain clarity on the potential risks to critical cloud assets stemming from your hybrid infrastructure.
+- **Enhance hybrid defense strategies:** Use these insights to strengthen both on-prem and cloud security postures.
+
+This capability bridges a critical gap in securing hybrid environments by offering end-to-end visibility into interconnected attack paths.
+
+#### **DACL-based path analysis**
+
+Our attack path calculations now include support for **Discretionary Access Control Lists (DACLs)**, providing a more accurate representation of potential attack paths by incorporating group-based permissions. This enhancement enables defenders to:
+
+- Make more informed decisions when addressing risks related to permission structures.
+- View risks in the environment the same way attackers do
+- Identify low hanging fruit chokepoints that significantly expose the environment to risk
+ 
+For more information, see, [Review attack paths](review-attack-paths.md)
+
 ### External data connectors
 
 We have introduced new external data connectors to enhance data integration capabilities, allowing seamless ingestion of security data from other security vendors.  Data collected through these connectors is normalized within our exposure graph, enhancing your device inventory, mapping relationships, and revealing new attack paths for comprehensive attack surface visibility. These connectors help you to consolidate security posture data from various sources, providing a comprehensive view of your security posture.
