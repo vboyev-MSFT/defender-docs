@@ -27,7 +27,7 @@ ms.date: 11/19/2024
 
 
 > [!IMPORTANT]
-> This procedure uses features that require at a minimum Microsoft Entra ID P2 license [for each user under scope of management](https://learn.microsoft.com/en-us/entra/id-governance/licensing-fundamentals#how-can-i-license-usage-of-microsoft-entra-id-governance-features-for-business-guests).
+> Procedures in this article use features that require at a minimum Microsoft Entra ID P2 [for each user under scope of management](/entra/id-governance/licensing-fundamentals#how-can-i-license-usage-of-microsoft-entra-id-governance-features-for-business-guests).
 
 **Applies to:**
 
