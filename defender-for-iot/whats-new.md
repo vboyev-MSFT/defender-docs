@@ -20,7 +20,7 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 |Service area  |Updates  |
 |---------|---------|
-| **OT networks** | - [Review unmanaged OT devices in Microsoft Security Exposure Management Initiatives page](#review-unmanaged-ot-devices-in-microsoft-security-exposure-management-initiatives-page) |
+| **OT networks** | - [Secure site-linked devices in Microsoft Security Exposure Management Initiatives page](#secure-site-linked-devices-in-microsoft-security-exposure-management-initiatives-page) |
 
 ### Secure site-linked devices in Microsoft Security Exposure Management Initiatives page
 

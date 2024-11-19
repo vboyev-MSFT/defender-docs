@@ -46,7 +46,7 @@ Onboard Defender for IoT and set up sites:
 1. Follow the procedure to [open the Initiatives page and review an initiative](/security-exposure-management/initiatives#view-initiatives-page).
 1. If you haven't yet onboarded Defender for IoT and set up sites, the **More data is required to support this initiative** section is displayed in the initiative's small overview. Select **Get started with Microsoft Defender for IoT** to [onboard Defender for IoT in the Defender portal](get-started.md) and then **create new sites** to [Set up sites](set-up-sites.md).
 
-    :::image type="content" source="media/review-security-initiatives/more-data-required.png" alt-text="Screenshot showing the OT Security initiative in Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/review-security-initiatives/ot-security-initiative.png":::
+    :::image type="content" source="media/review-security-initiatives/more-data-required.png" alt-text="Screenshot showing the **More data is required to support this initiative** section in Microsoft Defender for IoT in the Microsoft Defender portal.":::
 
 1. Review the data in the initiative page, including the initiative score, top metrics, and more (learn more about [initiatives](/security-exposure-management/exposure-insights-overview)). For example, this **OT Security** initiative page shows an initiative score of 87%, and shows that 30.87% of the detected OT devices are unprotected.
 
