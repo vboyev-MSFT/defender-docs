@@ -27,6 +27,19 @@ ms.date: 11/15/2024
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> [!IMPORTANT]
+> **Ending support for Device Administrator enrolled devices**
+> Microsoft Intune and Defender for Endpoint are ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
+> 
+> **For devices with access to GMS**
+> 
+> After Intune and Defender for Endpoint ends support for Android device administrator, devices with access to GMS will be impacted in the following ways: 
+> 
+> - Intune and Defender for Endpoint won’t make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
+> - Intune and Defender for Endpoint technical support will no longer support these devices.
+> 
+> For more information, see [Tech Community blog: Intune ending support for Android device administrator on devices with GMS in December 2024](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443).
+
 
 **Aug-2024 (version: 1.0.6812.0101)**
 
