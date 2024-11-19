@@ -56,7 +56,7 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Compa
    - **Publisher** as Microsoft.
    - **App store URL** as https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play Store URL)
 
-   Other fields are optional. Then Select **Next**.
+   Other fields are optional. Then select **Next**.
 
    :::image type="content" source="media/mda-addappinfo.png" alt-text=" The Add App page displaying the application's publisher and URL information in the Microsoft Intune admin center portal" lightbox="media/mda-addappinfo.png":::
 
@@ -64,7 +64,7 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Compa
 
     The selected user group should consist of Intune enrolled users.
     
-    :::image type="content" source="media/363bf30f7d69a94db578e8af0ddd044b.png" alt-text="The Add group pane in the Add App page in the Microsoft Intune admin center portal" lightbox="media/363bf30f7d69a94db578e8af0ddd044b.png":::
+    :::image type="content" source="media/363bf30f7d69a94db578e8af0ddd044b.png" alt-text="Screenshot that shows the Add group pane in the Add App page in the Microsoft Intune admin center portal." lightbox="media/363bf30f7d69a94db578e8af0ddd044b.png":::
 
 4. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
