@@ -6,7 +6,8 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 11/12/2024
+ms.date: 11/18/2024
+
 ---
 
 # What's new in Microsoft Security Exposure Management?
@@ -18,14 +19,18 @@ This page is updated frequently with the latest updates in Microsoft Security Ex
 
 Learn more about MSEM by reading the blogs, [here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/bg-p/MicrosoftSecurityandCompliance).
 
-Security Exposure Management is currently in public preview.
-
 > [!TIP]
 > Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 >
 > `https://aka.ms/msem/rss`
 
 ## November 2024
+
+### Announcing the General Availability of Microsoft Security Exposure Management
+
+We are excited to announce the general availability of Microsoft Security Exposure Management. This powerful tool helps organizations focus on their most critical exposures and act swiftly. By integrating security insights across the entire digital estate, it provides a comprehensive view of risk posture, enabling faster, more informed decisions to reduce exposure before attackers can exploit it.
+
+With this GA release, you can now build and enhance a Continuous Threat Exposure Management (CTEM) program, continuously identifying, prioritizing, and mitigating risks across your digital landscape.
 
 ### External data connectors
 
