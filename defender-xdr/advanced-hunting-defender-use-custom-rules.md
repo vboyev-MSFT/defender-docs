@@ -43,6 +43,10 @@ For editable functions, more options are available when you select the vertical 
 - **Edit details** – opens the function side pane to allow you to edit details about the function (except folder names for Sentinel functions)
 - **Delete** – deletes the function
 
+### Use adx() operator for Azure Data Explorer queries
+The *adx()* operator can be used to query 
+
+
 ### Use arg() operator for Azure Resource Graph queries
 The *arg()* operator can be used to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. 
 
