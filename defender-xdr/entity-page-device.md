@@ -135,7 +135,7 @@ You can export up to seven days' worth of events to a CSV file, for download.
 
 Drill down into the details of individual events by selecting and event and viewing its details in the resulting flyout panel. See [Event details](#event-details) below.
 
-As of November 2024, if you onboarded Microsoft Sentinel to the Defender portal, device activity events ingested to Microsoft Sentinel also appear in this timeline.
+As of December 2024, if you onboarded Microsoft Sentinel to the Defender portal, device activity events ingested to Microsoft Sentinel also appear in this timeline.
 
 > [!NOTE]
 > For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
@@ -248,7 +248,7 @@ This timeline shows four types of messages associated with the device entity, kn
 
 - Unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
 
-**As of November 2024**, device activity events that appear on this timeline *are also displayed* on the main [Timeline tab](#timeline-tab), so they can be viewed together with events recorded by other Microsoft Defender services in a single context.
+**As of December 2024**, device activity events that appear on this timeline *are also displayed* on the main [Timeline tab](#timeline-tab), so they can be viewed together with events recorded by other Microsoft Defender services in a single context.
 
 ### Insights
 

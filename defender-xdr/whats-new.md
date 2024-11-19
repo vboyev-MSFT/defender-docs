@@ -29,9 +29,12 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
-## November 2024
+## December 2024
 
 - (Preview) Device events ingested into Microsoft Sentinel are now visible in the *Timeline* tab on the [Device entity page](./entity-page-device.md) in the Defender portal, in addition to remaining visible on the *Sentinel events* tab.
+
+## November 2024
+
 - (Preview) Microsoft Defender XDR customers can now export incident data to PDF. Use the exported data to easily capture and share incident data to other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
 - (GA) The **last update time** column in the [incident queue](incident-queue.md#incident-queue) is now generally available.
 - (Preview) Cloud-native investigation and response actions are now available for container-related alerts in the Microsoft Defender portal. Security operations center (SOC) analysts can now investigate and respond to container-related alerts in near real-time with cloud-native response actions and investigation logs to hunt for related activities. For more information, see [Investigate and respond to container threats in the Microsoft Defender portal](investigate-respond-container-threats.md).
