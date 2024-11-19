@@ -49,7 +49,9 @@ Onboard Defender for IoT and set up sites:
 
         :::image type="content" source="media/review-security-initiatives/unprotected-ot-devices.png" alt-text="Screenshot showing the Unprotected OT devices metric **General** tab in Microsoft Defender for IoT in the Microsoft Defender portal.":::
 
-    1. If you want to onboard Defender for IoT, select **Get started with Microsoft Defender for IoT** to [onboard Defender for IoT in the Defender portal](get-started.md) and then **create new sites** to [Set up sites](set-up-sites.md).
+    1. If you want to onboard Defender for IoT: 
+        1. Select **Get started with Microsoft Defender for IoT** and follow the procedure to [onboard Defender for IoT in the Defender portal](get-started.md). 
+        1. Select **create new sites** to [Set up sites](set-up-sites.md).
 
     :::image type="content" source="media/review-security-initiatives/more-data-required.png" alt-text="Screenshot showing the **More data is required to support this initiative** section in Microsoft Defender for IoT in the Microsoft Defender portal.":::
 
@@ -58,7 +60,7 @@ Onboard Defender for IoT and set up sites:
     :::image type="content" source="media/review-security-initiatives/ot-security-initiative.png" alt-text="Screenshot showing the OT Security initiative in Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/review-security-initiatives/ot-security-initiative.png":::
 
 1. Select the metric from the **Top metrics** area in the initiative page or from the **Related metrics** area in the small overview. 
-    - Review the **General** tab to drill down into additional security data and recommendations.
+    - Review the **Overview** tab to drill down into additional security data and recommendations, including the weight of the metrics, affected assets, and score impact.
     - Review the recommendations in the **Security recommendations** tab. For example, for the **Site-linked devices using insecure protocols** metric, you're recommended to disable the Telnet administration protocol, and remove the SNMP V1 and SNMP V2 administration protocols.
     
         :::image type="content" source="media/review-security-initiatives/security-recommendations.png" alt-text="Screenshot showing the **Security recommendations** tab for a metric in Microsoft Defender for IoT in the Microsoft Defender portal.":::
