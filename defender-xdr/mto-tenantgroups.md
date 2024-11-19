@@ -78,11 +78,11 @@ To create a new tenant group:
 
 Your newly created tenant group appears in the Tenant groups page after creation. Select the tenant group from the list to add or remove content, add, edit, or remove tenants, or sync the tenant group.
 
-    :::image type="content" source="/defender-xdr/media/multi-tenant/tenant-groups/mto-group-sample-small.png" alt-text="Screenshot of a tenant group page and the actions available within the page." lightbox="/defender-xdr/media/multi-tenant/tenant-groups/mto-group-sample.png":::
+:::image type="content" source="/defender-xdr/media/multi-tenant/tenant-groups/mto-group-sample-small.png" alt-text="Screenshot of a tenant group page and the actions available within the page." lightbox="/defender-xdr/media/multi-tenant/tenant-groups/mto-group-sample.png":::
 
 Check the sync results under the **Last sync result** column. If the result is *partially successful* or *failed*, select the result to investigate the cause. When selecting the result, a side pane containing the errors, recommendations, and impacted assets appears. Here’s an example.
 
-    :::image type="content" source="/defender-xdr/media/multi-tenant/tenant-groups/mto-sync-results-small.png" alt-text="Screenshot of sync results side pane." lightbox="/defender-xdr/media/multi-tenant/tenant-groups/mto-sync-results.png":::
+:::image type="content" source="/defender-xdr/media/multi-tenant/tenant-groups/mto-sync-results-small.png" alt-text="Screenshot of sync results side pane." lightbox="/defender-xdr/media/multi-tenant/tenant-groups/mto-sync-results.png":::
 
 ## Syncing content among tenant groups
 
