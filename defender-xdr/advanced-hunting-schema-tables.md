@@ -62,6 +62,7 @@ The following reference lists all the tables in the schema. Each table name link
 | **[BehaviorInfo](advanced-hunting-behaviorinfo-table.md)** (Preview) | Alerts from Microsoft Defender for Cloud Apps (not available for GCC) |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Events involving accounts and objects in Office 365 and other cloud apps and services |
 | **[CloudAuditEvents](advanced-hunting-cloudauditevents-table.md)** (Preview)| Cloud audit events for various cloud platforms protected by the organization's Microsoft Defender for Cloud |
+| **[CloudProcessEvents](advanced-hunting-cloudprocessevents-table.md)** (Preview)| Cloud process events for various cloud platforms protected by the organization's Microsoft Defender for Containers |
 | **[DeviceBaselineComplianceAssessment](advanced-hunting-devicebaselinecomplianceassessment-table.md)** (Preview) | Baseline compliance assessment snapshot, which indicates the status of various security configurations related to baseline profiles on devices |
 | **[DeviceBaselineComplianceAssessmentKB](advanced-hunting-devicebaselinecomplianceassessmentkb-table.md)** (Preview) | Information about various security configurations used by baseline compliance to assess devices |
 | **[DeviceBaselineComplianceProfiles](advanced-hunting-devicebaselinecomplianceprofiles-table.md)** (Preview) | Baseline profiles used for monitoring device baseline compliance |

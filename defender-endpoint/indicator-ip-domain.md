@@ -186,7 +186,7 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 
 ## Related articles
 
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
