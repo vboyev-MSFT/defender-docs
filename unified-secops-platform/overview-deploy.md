@@ -1,5 +1,5 @@
 ---
-title: Deploy unified SecOps | Microsoft Defender
+title: Deploy Microsoft's unified SecOps platform | Microsoft Defender
 description: Deploy Microsoft's unified security operations platform with the Microsoft Defender portal, Microsoft Sentinel, and other Microsoft Defender services.
 author: batamig
 ms.author: bagol
@@ -14,7 +14,7 @@ ms.collection:
 
 ---
 
-# Deploy Microsoft's unified security operations platform
+# Deploy Microsoft's unified SecOps platform
 
 Microsoft's unified security operations platform combines the capabilities of Microsoft Defender portal, Microsoft Sentinel, and other Microsoft Defender services. This platform provides a comprehensive view of your organization's security posture and helps you to detect, investigate, and respond to threats across your organization.
 
