@@ -2,8 +2,9 @@
 title: Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux (preview)
 description: Offline Security Intelligence Update in Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.subservice: linux
+ms.author: deniseb
+author: deniseb
 ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
@@ -14,23 +15,14 @@ ms.collection:
 - mde-linux
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/17/2024
+ms.date: 10/11/2024
 ---
 
 # Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
 This document describes the Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux.
-
-> [!IMPORTANT]
-> Information in this article relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This feature enables an organization to update the security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints with limited or no exposure to the internet using a local hosting server (termed as *Mirror Server* in this document).
 
@@ -44,7 +36,7 @@ Key benefits include:
 - Local server can run any of the three OS - Windows, Mac, Linux, and isn't required to install Defender for Endpoint.
 - Provides the most up to date antivirus protection as signatures are always downloaded along with the latest compatible AV engine.
 - In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there's any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
-- On the rare occasion the offline update fails, you can also choose to fallback to online updates from Microsoft cloud(traditional method).
+- On the rare occasion the offline update fails, you can also choose to fall back to online updates from Microsoft cloud(traditional method).
 
 ## How Offline Security Intelligence Update works
 
@@ -179,22 +171,22 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 
 - Use the following sample `mdatp_managed.json` and update the parameters as per the configuration and copy the file to the location `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
 
-```json
-{
-  "cloudService": {
-    "automaticDefinitionUpdateEnabled": true,
-    "definitionUpdatesInterval": 1202
-  },
-  "antivirusEngine": {
-    "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/",
-    "offlineDefintionUpdateFallbackToCloud":false,
-    "offlineDefinitionUpdate": "enabled"
-  },
-"features": {
-"offlineDefinitionUpdateVerifySig": "enabled"
-}
-}
-```
+    ```json
+    {
+      "cloudService": {
+        "automaticDefinitionUpdateEnabled": true,
+        "definitionUpdatesInterval": 1202
+      },
+      "antivirusEngine": {
+        "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/",
+        "offlineDefintionUpdateFallbackToCloud":false,
+        "offlineDefinitionUpdate": "enabled"
+      },
+    "features": {
+    "offlineDefinitionUpdateVerifySig": "enabled"
+    }
+    }
+    ```
 
 | Field Name                                | Values               | Comments                                            |
 |-------------------------------------------|----------------------|-----------------------------------------------------|

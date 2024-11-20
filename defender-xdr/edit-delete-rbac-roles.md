@@ -29,6 +29,7 @@ search.appverid: met150
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Microsoft Security Exposure Management](/security-exposure-management/)
 
 In Microsoft Defender XDR Unified role-based access control (RBAC), you can edit and delete custom roles or roles that were imported from Defender for Endpoint, Defender for Identity, or Defender for Office 365.
 
@@ -77,12 +78,12 @@ The Export feature enables you to export the following roles data:
 
 When a role has multiple assignments, each assignment will be represented as a separate row in the CSV file.
 
-The CSV also includes a snapshot of the Unified RBAC activation status for each workload available on the tenant.
+The CSV also includes a snapshot of the Defender XDR Unified RBAC activation status for each workload available on the tenant.
 
 The following steps guide you on how to export roles in Microsoft Defender XDR Unified RBAC:
 
 > [!NOTE]
-> To export roles, you must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have the **Authorization (manage)** permission assigned for all data sources in Microsoft Defender XDR Unified RBAC and have at least one workload activated for Unified RBAC.
+> To export roles, you must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have the **Authorization (manage)** permission assigned for all data sources in Microsoft Defender XDR Unified RBAC and have at least one workload activated for Defender XDR Unified RBAC.
 >
 >For more information on permissions, see [Permission pre-requisites](manage-rbac.md#permissions-prerequisites).
 

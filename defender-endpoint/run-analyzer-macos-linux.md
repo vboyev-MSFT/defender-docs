@@ -4,10 +4,10 @@ description: Learn how to run the Microsoft Defender for Endpoint Client Analyze
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 06/18/2024
+ms.date: 10/21/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -21,105 +21,93 @@ search.appverid: met150
 
 # Run the client analyzer on macOS and Linux
 
-**Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
 The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running either Linux, or macOS.
 
 There are two ways to run the client analyzer tool:
 
-1. Using a binary version (no Python dependency)
+1. Using a binary version (no external Python dependency)
 2. Using a Python-based solution
-
 
 ## Running the binary version of the client analyzer
 
-1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
+1. Download the [XMDE Client Analyzer Binary](https://go.microsoft.com/fwlink/?linkid=2297517) tool to the macOS or Linux machine you need to investigate.\
 If you're using a terminal, download the tool by entering the following command:
 
-    ```console
-    wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+    ```bash
+    wget --quiet -O XMDEClientAnalyzerBinary.zip https://go.microsoft.com/fwlink/?linkid=2297517
     ```
 
-2. Verify the download.
-
-    > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '51EC534507729D3A5056D596644FE5768BF1CCED266C8AC514CFCF11A6F12B97'
+1. Verify the download.
 
    - Linux
 
-    ```console
-    echo '51EC534507729D3A5056D596644FE5768BF1CCED266C8AC514CFCF11A6F12B97 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    ```bash
+    echo '2A9BF0A6183831BE43C7BCB7917A40D772D226301B4CDA8EE4F258D00B6E4E97 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
    - macOS
 
-    ```console
-    echo '51EC534507729D3A5056D596644FE5768BF1CCED266C8AC514CFCF11A6F12B97  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
+    ```bash
+    echo '2A9BF0A6183831BE43C7BCB7917A40D772D226301B4CDA8EE4F258D00B6E4E97  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
     ```
 
 
-3. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
+2. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
 
     If you're using a terminal, extract the files by entering the following command:
 
-    ```console
+    ```bash
     unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
     ```
 
-4. Change to the tool's directory by entering the following command:
+3. Change to the tool's directory by entering the following command:
 
-    ```console
+    ```bash
     cd XMDEClientAnalyzerBinary
     ```
 
-5. Three new zip files are produced:
+4. Two new zip files are produced:
 
    - **SupportToolLinuxBinary.zip** : For all Linux devices
    - **SupportToolMacOSBinary.zip** : For Mac devices
 
-6. Unzip one of the above 2 zip files based on the machine you need to investigate.\
-When using a terminal, unzip the file by entering one of the following commands based on OS type:
+5. Unzip one of the above 2 zip files based on the machine you need to investigate.
+
+   When using a terminal, unzip the file by entering one of the following commands based on OS type:
 
    - Linux
 
-     ```console
+     ```bash
      unzip -q SupportToolLinuxBinary.zip
      ```
 
    - Mac
 
-     ```console
+     ```bash
      unzip -q SupportToolMacOSBinary.zip
      ```
 
-7. Run the tool as _root_ to generate diagnostic package:
+6. Run the tool as _root_ to generate diagnostic package:
 
-   ```console
+   ```bash
    sudo ./MDESupportTool -d
    ```
 
 ## Running the Python-based client analyzer
 
 > [!NOTE]
->
-> - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
->
->   >[!WARNING]
->   >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
->
-> - In addition, the tool currently requires Python version 3 or later to be installed.
->
-> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
-.
->   `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> - The analyzer depends on few extra PIP packages (`decorator`, `sh`, `distro`, `lxml`, and `psutil`) which are installed in the operating system when in root to produce the result output. If not installed, the analyzer attempts to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
+> - In addition, the tool currently requires Python version 3 or later to be installed on your device.
+> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the `mde_support_tool.sh` script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`.
+
+> [!WARNING]
+> Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
     If you're using a terminal, download the tool by running the following command:
 
-    ```console
+    ```bash
     wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
     ```
 
@@ -127,44 +115,44 @@ When using a terminal, unzip the file by entering one of the following commands 
 
    - Linux
 
-    ```console
-    echo '2B8EBB39857BA24E84E332366B42E041B46AB130F8C8FD4E6D68B195022FD61E XMDEClientAnalyzer.zip' | sha256sum -c
+    ```bash
+    echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11 XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
    - macOS
 
-    ```console
-    echo '2B8EBB39857BA24E84E332366B42E041B46AB130F8C8FD4E6D68B195022FD61E  XMDEClientAnalyzer.zip' | shasum -a 256 -c
+    ```bash
+    echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.
     If you're using a terminal, extract the files by using the following command:
 
-    ```console
+    ```bash
     unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
     ```
 
 4. Change directory to the extracted location.
 
-    ```console
+    ```bash
     cd XMDEClientAnalyzer
     ```
 
 5. Give the tool executable permission:
 
-    ```console
+    ```bash
     chmod a+x mde_support_tool.sh
     ```
 
 6. Run as a non-root user to install required dependencies:
 
-    ```console
+    ```bash
     ./mde_support_tool.sh
     ```
 
 7. To collect actual diagnostic package and generate the result archive file, run again as root:
 
-    ```console
+    ```bash
     sudo ./mde_support_tool.sh -d
     ```
 
@@ -298,35 +286,35 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 - report.html
 
   Description: The main HTML output file that contains the findings and guidance from running the client analyzer tool on the device. This file is only generated when running the Python-based version of the client analyzer tool.
-
+  
 - mde_diagnostic.zip
 
   Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information).
-
+  
 - mde.xml
 
   Description: XML output that is generated while running and is used to build the html report file.
-
+  
 - Processes_information.txt
 
   Description: contains the details of the running Microsoft Defender for Endpoint related processes on the system.
-
+  
 - Log.txt
 
   Description: contains the same log messages written on screen during the data collection.
-
+  
 - Health.txt
 
   Description: The same basic health output that is shown when running *mdatp health* command.
-
+  
 - Events.xml
 
   Description: Additional XML file used by the analyzer when building the HTML report.
-
+  
 - Audited_info.txt
 
   Description: details on audited service and related components for [Linux](linux-resources.md) OS.
-
+  
 - perf_benchmark.tar.gz
 
   Description: The performance test reports. You'll see this only if you're using the performance parameter.
