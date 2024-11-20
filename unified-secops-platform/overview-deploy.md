@@ -81,7 +81,9 @@ For more information, see:
 
 When you onboard Microsoft Sentinel to the Defender portal, you unify capabilities with Microsoft Defender XDR like incident management and advanced hunting, creating a unified SecOps platform.
 
-For more information, see [Connect Microsoft Sentinel to Microsoft Defender](/defender-xdr/microsoft-sentinel-onboard).
+1. Install the **Microsoft Defender XDR** solution for Microsoft Sentinel from the **Content hub**. For more information, see [Deploy and manage out-of-the-box-content](/azure/sentinel/sentinel-solutions-deploy).
+1. Enable the **Microsoft Defender XDR** data connector to collect incidents and alerts. For more information, see [Connect data from Microsoft Defender XDR to Microsoft Sentinel](connect-microsoft-365-defender.md).
+1. Onboard to Microsoft's unified SecOps platform. For more information, see [Connect Microsoft Sentinel to Microsoft Defender](/defender-xdr/microsoft-sentinel-onboard).
 
 ## Fine-tune system configurations
 
