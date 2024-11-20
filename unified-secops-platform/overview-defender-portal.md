@@ -26,9 +26,7 @@ The portal provides a single location to monitor, manage, and configure pre-brea
 - **Pre-breach security**: Proactively visualize, assess, remediate, and monitor organizational security posture to reduce security risk and attack surfaces.
 - **Post-breach security**: Continuously monitor, detect, investigate, and respond to real-time and emerging cybersecurity threats against organizational assets.
 
-
 :::image type="content" source="./media/overview-defender-portal/defender-portal.png" alt-text="Screenshot of Microsoft Defender portal landing page" lightbox="./media/overview-defender-portal/defender-portal.png":::
-
 
 ## Portal services
 
@@ -36,27 +34,25 @@ The Defender portal combines many Microsoft security services.
 
 **Service** | **Details**
 --- | ---
-**Microsoft Defender XDR**<br/><br/> Detect and respond to cybersecurity threats. | [Defender XDR includes a suite of services](/defender-xdr/microsoft-365-defender) that come together in the Defender portal to provide unified threat protection across the enterprise.<br/><br/> Defender XDR collects, correlates, and analyzes threat data and signals across endpoints and devices, identities, email, apps, and OT/IoT assets. In the portal you can review, investigate, and respond to security alerts and incidents, automatically disrupt attacks, and proactively hunt for threats.<br/><br/>[Learn more](defender-xdr-portal.md) about Defender XDR in the Defender portal.
-**Microsoft Sentinel**<br/><br/> Collect, analyze, and manage security data at scale using automation and orchestration.| Microsoft Sentinel fully integrates with Defender XDR in the Defender portal, providing additional threat protection capabilities such as attack disruption, unified entities and incidents, and SOC optimization.<br/><br/> Alternatively, you can opt to use the Defender XDR connector to stream Defender XDR alerts into Microsoft Sentinel, and view synchronized events in both portals.<br/><br/>[Learn more](/azure/sentinel/microsoft-sentinel-defender-portal) about Microsoft Sentinel in the Defender portal.
+**Microsoft Defender XDR**<br/><br/> Detect and respond to cybersecurity threats. | [Defender XDR includes a suite of services](/defender-xdr/microsoft-365-defender) that come together in the Defender portal to provide unified threat protection across the enterprise.<br/><br/> Defender XDR services collect, correlate, and analyze threat data and signals across endpoints and devices, identities, email, apps, and OT/IoT assets. In the portal you can review, investigate, and respond to security alerts and incidents, automatically disrupt attacks, and proactively hunt for threats.<br/><br/>[Learn more](defender-xdr-portal.md) about Defender XDR in the Defender portal.
+**Microsoft Sentinel**<br/><br/> Collect, analyze, and manage security data at scale using automation and orchestration.| Microsoft Sentinel fully integrates with Defender XDR in the Defender portal, providing additional threat protection capabilities such as attack disruption, unified entities and incidents, and SOC optimization.<br/><br/> Alternatively, choose to stream Defender XDR alerts into Microsoft Sentinel, and view synchronized events in both portals.<br/><br/>[Learn more](/azure/sentinel/microsoft-sentinel-defender-portal) about Microsoft Sentinel in the Defender portal.
 **Microsoft Defender Threat Intelligence**<br/><br/> Integrate threat intelligence into SOC operations. | The [Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) platform extends the threat intelligence capabilities that are included in Defender XDR and Microsoft Sentinel.<br/><br/> Gather data from multiple sources to provide a pool of threat intelligence signals and data. Security teams use this to data to understand adversary activities, analyze attacks, and hunt for security threats.  
 **Microsoft Security Exposure Management**<br/><br/> Proactively reduce security risk.| Use [Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) to reduce organizational attack surfaces and remediate security posture.<br/><br/> Continuously discover assets and data to get a comprehensive view of security across business assets. With the additional data context that Security Exposure Management provides, you can clearly visualize, analyze, and remediate weak areas of security.
 **Microsoft Defender for Cloud**<br/><br/> Protect cloud workloads. | [Defender for Cloud](/defender-xdr/microsoft-365-security-center-defender-cloud) improves multicloud security posture, and protects cloud workloads against threats.<br/><br/> Defender for Cloud integrates into the Defender portal to provide a unified view of cloud security alerts, and a single location for investigations.
 
 ## Accessing the portal
 
-In the **Permissions** page, configure access to the Defender portal. 
-
+In the Defender portal **Permissions** page, use the following methods to configure user access:
 
 **Methods** | **Details**
 --- | ---
-[Global Microsoft Entra roles](/defender-xdr/m365d-permissions) | Accounts with these Global Microsoft Entra roles can access Microsoft Defender XDR functionality and data: Global administrator, Security administrator, Security Operator, Global Reader, Security Reader.
+[Global Microsoft Entra roles](/defender-xdr/m365d-permissions) | Accounts with the following Global Microsoft Entra roles can access Microsoft Defender XDR functionality and data: <ul><li>Global administrator</li><li>Security administrator</li><li>Security Operator</li><li>Global Reader</li><li>Security Reader</li>
 [Custom roles](/defender-xdr/custom-roles) | Allow access to specific data, tasks, and features using custom roles. Custom roles control granular access, and can be used together with Microsoft Entra global roles.
 [Unified RBAC](/defender-xdr/manage-rbac) | Unified role-based access control (RBAC) provides a permissions management model for controlling user permissions in the Defender portal, and across services within the portal.
 
-
 ### Microsoft Sentinel permissions
 
-When Microsoft Sentinel is connected to the Defender portal, existing Azure RBAC permissions are used to work with Microsoft Sentinel features in the Defender portal.
+When you're onboarded to Microsoft's unified SecOps platform, existing Azure RBAC permissions are used to work with Microsoft Sentinel features in the Defender portal.
 
 - Manage roles and permissions for Microsoft Sentinel users in the Azure portal.
 - Any Azure RBAC changes are reflected in the Defender portal.
@@ -65,31 +61,29 @@ For more information, see [Roles and permissions in Microsoft Sentinel](/azure/s
 
 ## Working in the portal
 
-On the **Home** page, your view is determined by the services included in your subscriptions, and access settings based on your portal permissions.
+On the **Home** page, your view is determined by the services included in your subscriptions. Access settings are based on your [portal permissions](#accessing-the-portal).
 
 :::image type="content" source="./media/overview-defender-portal/home-page.png" alt-text="Screenshot of the Home page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/home-page.png":::
 
 **Feature** | **Details**
 --- | ---
-**Home page** | The Home page provides a view of security state. Review active threats, resources at risk, and a summary of all-up security posture. Use the dashboard for an up-to-date snapshot, and drill down to details as needed.
-**Portal notifications** | Portal notifications keep you up-to-date with important information, including updates, events, complete or in-progress actions, and warnings and errors.<br/><br/> Notifications are sorted by their generated time in the notification panel, with the most recent displayed first.
+**Home page** | The Home page provides a view of your environment's security state. Review active threats, resources at risk, and a summary of all-up security posture. Use the dashboard for an up-to-date snapshot, and drill down to details as needed.
+**Portal notifications** | Portal notifications keep you up-to-date with important information, including updates, events, complete or in-progress actions, and warnings and errors.<br/><br/> Notifications are sorted by their generated time in the notification panel, with the most recent displayed first. For more information, see [Configure alert notifications](/defender-xdr/configure-email-notifications?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/).
 **Search** | As you search the portal, results are categorized by sections related to your search terms.<br/><br/> Search provides results from within the portal, from the Microsoft Tech Community, and from Microsoft Learn documentation. Search history is stored in your browser and is accessible for 30 days.
 **Guided tour** | Get a guided tour of managing endpoint security, or managing email and collaboration security.
-**What's new** | Links to the [Microsoft Defender XDR blog](https://techcommunity.microsoft.com/category/microsoftsecurityandcompliance/blog/microsoftthreatprotectionblog).
-**Community** | Links to the [security discussion spaces](https://techcommunity.microsoft.com/category/MicrosoftSecurityandCompliance) on Tech Community.
-**Add cards** | Customize the Home page to get information that's most important to you.
-
-
+**What's new** | Learn about the latest updates from the [Microsoft Defender XDR blog](https://techcommunity.microsoft.com/category/microsoftsecurityandcompliance/blog/microsoftthreatprotectionblog).
+**Community** | Learn from others in [Microsoft security discussion spaces](https://techcommunity.microsoft.com/category/MicrosoftSecurityandCompliance) on Tech Community.
+**Add cards** | Customize the **Home** page to get information that's most important to you.
 
 ## Exposure management
 
-In **Exposure management**, review the overall state of security posture, exposure, and risk.
+In **Exposure management**, review the overall state of your security posture, exposure, and risk.
 
 :::image type="content" source="./media/overview-defender-portal/exposure-management-page.png" alt-text="Screenshot of the Exposure Management page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/exposure-management-page.png":::
 
 **Feature** | **Details**
 --- | ---
-**Exposure management overview** | This dashboard provides a quick view of devices and cloud resources, including internet-facing devices and critical assets. Learn how well your key security initiatives are doing, and drill down into top metrics for high-value vulnerabilities. Get exposure levels for different types of resources, and track security progress over time.
+**Exposure management overview** | This dashboard provides a quick view of devices and cloud resources, including internet-facing devices and critical assets. Learn how well your key security initiatives are doing and drill down into top metrics for high-value vulnerabilities. Get exposure levels for different types of resources, and track security progress over time.
 **Attack surfaces** | Visualize exposure data with the attack surface map.<br/>Explore resources and connections on the map, and drill down to focus on specific assets.<br/>In the Attack path management dashboard, review potential attack paths across your organization that attackers might exploit, together with choke points and critical assets in the path.
 **Exposure insights** | Review and explore aggregated security posture data and insights across resources and workloads.<br/>Assess posture and readiness for your most important security projects, and track project metrics over time.<br/>Get security recommendations to remediate exposure issues.
 **Secure score** | Review posture metrics based on [Microsoft Secure Score](/defender-xdr/microsoft-secure-score). 
@@ -104,33 +98,33 @@ The **Investigation and response** section provides a single location for invest
 
 ### Investigate incidents and alerts
 
-Manage and investigate security incidents in a single location and from a single queue in the Defender portal. The Alerts queue shows current security alerts across the portal. 
+Manage and investigate security incidents in a single location and from a single queue in the Defender portal. The **Incidents** and **Alerts** queues shows current security incidents and alerts across your services.
 
 :::image type="content" source="./media/overview-defender-portal/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/incidents-page.png":::
 
 **Feature** | **Details**
 --- | ---
-**Incidents** | On the Incidents dashboard, review a list of the latest incidents and prioritize those marked as high severity. An incident groups correlated alerts and associated data that makes up an attack. Drill down in an incident to get a full attack story, including information about associated alerts, devices, users, investigations, and evidence.
-**Alerts** | In the Alerts dashboard, review alerts. Alerts are signals issued by portal services in response to threat detection activity.<br/><br/> The unified alerts queue displays new and in progress alerts from the last seven days, with the most recent alerts at the top. Filter on alerts to investigate as needed.
+**Incidents** | On the **Incidents** dashboard, review a list of the latest incidents and prioritize those marked as high severity. Each incident groups correlated alerts and associated data that makes up an attack. Drill down in an incident to get a full attack story, including information about associated alerts, devices, users, investigations, and evidence.
+**Alerts** | In the **Alerts** dashboard, review alerts. Alerts are signals issued by portal services in response to threat detection activity.<br/><br/> The unified alerts queue displays new and in progress alerts from the last seven days, with the most recent alerts at the top. Filter on alerts to investigate as needed.
 
 For more information, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
 ### Hunt for threats
 
-Hunting allows you to proactively inspect security events and data to locate known and potential threats. 
+The **Hunting** area allows you to proactively inspect security events and data to locate known and potential threats. 
 
 :::image type="content" source="./media/overview-defender-portal/advanced-hunting-page.png" alt-text="Screenshot of the Advanted Hunting page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/advanced-hunting-page.png":::
 
 **Feature** | **Details**
 --- | ---
-**Advanced hunting** | Explore and query up to 30 days of raw data. You can query using a guided query tool, use sample queries, or use KQL to build your own queries
+**Advanced hunting** | Explore and query up to 30 days of raw data. You can query using a guided query tool, use sample queries, or use [Kusto Query Language (KQL)](/kusto/query/?view=microsoft-sentinel) to build your own queries.
 **Custom detection rules** | Create custom detection rules to proactively monitor and respond to events and system states. Use custom detection rules to trigger security alerts or automatic response actions.
 
 For more information, see [Proactively hunt for threats with advanced hunting](/defender-xdr/advanced-hunting-overview) and [Custom detections overview](/defender-xdr/custom-detections-overview).
 
 ### Review pending threat remediations
 
-Threat protection activity results in actions to remediate threats. Actions can be automated or manual. Actions that need approval or manual intervention are available in the Action center.
+Threat protection activity results in actions to remediate threats. Actions can be automated or manual. Actions that need approval or manual intervention are available in the **Action center**.
 
 :::image type="content" source="./media/overview-defender-portal/action-center-page.png" alt-text="Screenshot of the Action Center page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/action-center-page.png":::
 
@@ -147,10 +141,10 @@ The **Partner catalog** section provides information about Defender partners.
 
 :::image type="content" source="./media/overview-defender-portal/technology-partners-page.png" alt-text="Screenshot of the Technology Partners page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/technology-partners-page.png":::
 
-The Defender portal has a couple of kinds of partner integration:
+The Defender portal supports the following types of partner integrations:
 
-- Third-party integrations to help secure users with effective threat protection.
-- Professional services that enhance detection, investigation, and threat intelligence capabilities.
+- **Third-party integrations** to help secure users with effective threat protection.
+- **Professional services** that enhance detection, investigation, and threat intelligence capabilities.
 
 ## Threat intelligence
 
@@ -176,7 +170,7 @@ The **Assets** page provides a unified view of discovered and protected assets, 
 
 **Feature** | **Details**
 --- | ---
-**Devices** |On the Device Inventory page, get an overview of discovered devices in each tenant to which you have access. Review devices by type, and focus on high risk or critical devices.<br/><br/> Group devices logically by adding tags for context, and exclude devices you don't want to assess. Start an automated investigation for devices.
+**Devices** |On the **Device Inventory** page, get an overview of discovered devices in each tenant to which you have access. Review devices by type, and focus on high risk or critical devices.<br/><br/> Group devices logically by adding tags for context, and exclude devices you don't want to assess. Start an automated investigation for devices.
 **Identities** | Get a summary of your user and account inventory.
 
 For more information, see [Device entity page](/defender-xdr/entity-page-device) and [User entity page](/defender-xdr/investigate-users).
