@@ -1,5 +1,5 @@
 ---
-title: Deploy unified SecOps | Microsoft Defender
+title: Deploy Microsoft's unified SecOps platform | Microsoft Defender
 description: Deploy Microsoft's unified security operations platform with the Microsoft Defender portal, Microsoft Sentinel, and other Microsoft Defender services.
 author: batamig
 ms.author: bagol
@@ -14,7 +14,7 @@ ms.collection:
 
 ---
 
-# Deploy Microsoft's unified security operations platform
+# Deploy Microsoft's unified SecOps platform
 
 Microsoft's unified security operations platform combines the capabilities of Microsoft Defender portal, Microsoft Sentinel, and other Microsoft Defender services. This platform provides a comprehensive view of your organization's security posture and helps you to detect, investigate, and respond to threats across your organization.
 
@@ -81,7 +81,9 @@ For more information, see:
 
 When you onboard Microsoft Sentinel to the Defender portal, you unify capabilities with Microsoft Defender XDR like incident management and advanced hunting, creating a unified SecOps platform.
 
-For more information, see [Connect Microsoft Sentinel to Microsoft Defender](/defender-xdr/microsoft-sentinel-onboard).
+1. Install the **Microsoft Defender XDR** solution for Microsoft Sentinel from the **Content hub**. For more information, see [Deploy and manage out-of-the-box-content](/azure/sentinel/sentinel-solutions-deploy).
+1. Enable the **Microsoft Defender XDR** data connector to collect incidents and alerts. For more information, see [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender).
+1. Onboard to Microsoft's unified SecOps platform. For more information, see [Connect Microsoft Sentinel to Microsoft Defender](/defender-xdr/microsoft-sentinel-onboard).
 
 ## Fine-tune system configurations
 

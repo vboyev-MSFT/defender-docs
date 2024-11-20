@@ -40,7 +40,7 @@ landingContent:
         links:
           - text: "Plan your deployment"
             url: overview-plan.md
-          - text: "Deploy Microsoft's unified security operations platform"
+          - text: "Deploy Microsoft's unified SecOps platform"
             url: overview-deploy.md
 
     # Card 
@@ -54,3 +54,24 @@ landingContent:
             url: overview-deploy.md ## Need to replace link when available
           - text: "Hunt for threats"
             url: overview-deploy.md ## Need to replace link when available
+
+  - title: Investigate and respond
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Investigate incidents"
+            url: /defender-xdr/investigate-incidents?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json   
+          - text: "Respond to threats"
+            url: /defender-xdr/incidents-overview?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+
+  - title: Optimize and manage security operations
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Optimize your SOC"
+            url: /azure/sentinel/soc-optimization/soc-optimization-access?tabs=defender-portal&branch=main?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json   
+          - text: "Manage multiple tenants"
+            url: /defender-xdr/mto-overview?branch=main?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+
+
+
