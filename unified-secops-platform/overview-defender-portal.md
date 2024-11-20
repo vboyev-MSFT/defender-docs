@@ -27,7 +27,7 @@ The portal provides a single location to monitor, manage, and configure pre-brea
 - **Post-breach security**: Continuously monitor, detect, investigate, and respond to real-time and emerging cybersecurity threats against organizational assets.
 
 
-:::image type="content" source="media/overview-defender-portal/defender-portal.png" alt-text="Screenshot of Microsoft Defender portal landing page" lightbox="media/overview-defender-portal/defender-portal.png":::
+:::image type="content" source="./media/overview-defender-portal/defender-portal.png" alt-text="Screenshot of Microsoft Defender portal landing page" lightbox="./media/overview-defender-portal/defender-portal.png":::
 
 
 ## Portal services
@@ -67,7 +67,7 @@ For more information, see [Roles and permissions in Microsoft Sentinel](/azure/s
 
 On the **Home** page, your view is determined by the services included in your subscriptions, and access settings based on your portal permissions.
 
-:::image type="content" source="media/overview-defender-portal/home-page.png" alt-text="Screenshot of the Home page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/home-page.png":::
+:::image type="content" source="./media/overview-defender-portal/home-page.png" alt-text="Screenshot of the Home page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/home-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -85,7 +85,7 @@ On the **Home** page, your view is determined by the services included in your s
 
 In **Exposure management**, review the overall state of security posture, exposure, and risk.
 
-:::image type="content" source="media/overview-defender-portal/exposure-management-page.png" alt-text="Screenshot of the Exposure Management page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/exposure-management-page.png":::
+:::image type="content" source="./media/overview-defender-portal/exposure-management-page.png" alt-text="Screenshot of the Exposure Management page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/exposure-management-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -106,7 +106,7 @@ The **Investigation and response** section provides a single location for invest
 
 Manage and investigate security incidents in a single location and from a single queue in the Defender portal. The Alerts queue shows current security alerts across the portal. 
 
-:::image type="content" source="media/overview-defender-portal/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/incidents-page.png":::
+:::image type="content" source="./media/overview-defender-portal/incidents-page.png" alt-text="Screenshot of the Incidents page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/incidents-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -119,7 +119,7 @@ For more information, see [Incidents and alerts in the Microsoft Defender portal
 
 Hunting allows you to proactively inspect security events and data to locate known and potential threats. 
 
-:::image type="content" source="media/overview-defender-portal/advanced-hunting-page.png" alt-text="Screenshot of the Advanted Hunting page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/advanced-hunting-page.png":::
+:::image type="content" source="./media/overview-defender-portal/advanced-hunting-page.png" alt-text="Screenshot of the Advanted Hunting page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/advanced-hunting-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -132,7 +132,7 @@ For more information, see [Proactively hunt for threats with advanced hunting](/
 
 Threat protection activity results in actions to remediate threats. Actions can be automated or manual. Actions that need approval or manual intervention are available in the Action center.
 
-:::image type="content" source="media/overview-defender-portal/action-center-page.png" alt-text="Screenshot of the Action Center page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/action-center-page.png":::
+:::image type="content" source="./media/overview-defender-portal/action-center-page.png" alt-text="Screenshot of the Action Center page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/action-center-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -145,7 +145,7 @@ For more information, see [Automated investigation and response](/defender-xdr/m
 
 The **Partner catalog** section provides information about Defender partners.
 
-:::image type="content" source="media/overview-defender-portal/technology-partners-page.png" alt-text="Screenshot of the Technology Partners page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/technology-partners-page.png":::
+:::image type="content" source="./media/overview-defender-portal/technology-partners-page.png" alt-text="Screenshot of the Technology Partners page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/technology-partners-page.png":::
 
 The Defender portal has a couple of kinds of partner integration:
 
@@ -156,7 +156,7 @@ The Defender portal has a couple of kinds of partner integration:
 
 In the **Threat intelligence** section of the portal, get direct visibility into active and ongoing threat campaigns, and access threat intelligence information provided by the Defender Threat Intelligence platform.
 
-:::image type="content" source="media/overview-defender-portal/threat-analytics-page.png" alt-text="Screenshot of the Threat Analytics page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/threat-analytics-page.png":::
+:::image type="content" source="./media/overview-defender-portal/threat-analytics-page.png" alt-text="Screenshot of the Threat Analytics page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/threat-analytics-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -171,7 +171,7 @@ For more information, see [Threat analytics](/defender-xdr/threat-analytics).
 
 The **Assets** page provides a unified view of discovered and protected assets, including devices, users, mailboxes, and apps. Review the total number of assets of each type, and drill down into specific asset details.
 
-:::image type="content" source="media/overview-defender-portal/device-inventory-page.png" alt-text="Screenshot of the Device Inventory page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/device-inventory-page.png":::
+:::image type="content" source="./media/overview-defender-portal/device-inventory-page.png" alt-text="Screenshot of the Device Inventory page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/device-inventory-page.png":::
 
 
 **Feature** | **Details**
@@ -185,7 +185,7 @@ For more information, see [Device entity page](/defender-xdr/entity-page-device)
 
 Access Microsoft Sentinel capabilities in the Defender portal.
 
-:::image type="content" source="media/overview-defender-portal/sentinel-search-page.png" alt-text="Screenshot of the Sentinel Search page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/sentinel-search-page.png":::
+:::image type="content" source="./media/overview-defender-portal/sentinel-search-page.png" alt-text="Screenshot of the Sentinel Search page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/sentinel-search-page.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -200,7 +200,7 @@ For more information, see [Microsoft Sentinel](/azure/sentinel/overview) and [Mi
 
 In the **Identities** section of the Defender portal, monitor user and account health, and proactively manage identity-related risks with Defender for Identity.
 
-:::image type="content" source="media/overview-defender-portal/identity-dashboard.png" alt-text="Screenshot of the Identity Dashboard page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/identity-dashboard.png":::
+:::image type="content" source="./media/overview-defender-portal/identity-dashboard.png" alt-text="Screenshot of the Identity Dashboard page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/identity-dashboard.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -214,7 +214,7 @@ For more information, see [Microsoft Defender for Identity](/defender-for-identi
 
 In the **Endpoints** section of the portal, monitor and manage asset vulnerabilities with Microsoft Defender Vulnerability Management.
 
-:::image type="content" source="media/overview-defender-portal/vulnerability-management-dashboard.png" alt-text="Screenshot of the Microsoft Defender Vulnerability Management dashboard in the Microsoft Defender portal" lightbox="media/overview-defender-portal/vulnerability-management-dashboard.png":::
+:::image type="content" source="./media/overview-defender-portal/vulnerability-management-dashboard.png" alt-text="Screenshot of the Microsoft Defender Vulnerability Management dashboard in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/vulnerability-management-dashboard.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -229,7 +229,7 @@ For more information, see [Microsoft Defender Vulnerability Management](/defende
 In the **Email & collaboration** section, monitor, investigate, and manage security threats and responses to email and collaboration apps with Microsoft Defender for Office 365. 
 
 
-:::image type="content" source="media/overview-defender-portal/email-investigations.png" alt-text="Screenshot of the Email Investigations page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/email-investigations.png":::
+:::image type="content" source="./media/overview-defender-portal/email-investigations.png" alt-text="Screenshot of the Email Investigations page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/email-investigations.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -246,7 +246,7 @@ For more information, see [Microsoft Defender for Office 365](/defender-office-3
 
 In the **Cloud apps** section, review security to minimize risk and exposure to cloud apps using Microsoft Defender for Cloud Apps.
 
-:::image type="content" source="media/overview-defender-portal/cloud-apps-sample-report.png" alt-text="Screenshot of a Cloud Apps sample report in the Microsoft Defender portal" lightbox="media/overview-defender-portal/cloud-apps-sample-report.png":::
+:::image type="content" source="./media/overview-defender-portal/cloud-apps-sample-report.png" alt-text="Screenshot of a Cloud Apps sample report in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/cloud-apps-sample-report.png":::
 
 **Feature** | **Details**
 --- | ---
@@ -263,7 +263,7 @@ For more information, see [Microsoft Defender for Cloud Apps](/defender-cloud-ap
 
 In the **SOC optimization** page, tighten up security controls to close threat coverage gaps, and tighten data ingestion rates  based on high-fidelity and actionable recommendations. SOC optimizations are tailored to your environment and based on your current coverage and threat landscape.
 
-:::image type="content" source="media/overview-defender-portal/soc-optimization-page.png" alt-text="Screenshot of the SOC Optimization page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/soc-optimization-page.png":::
+:::image type="content" source="./media/overview-defender-portal/soc-optimization-page.png" alt-text="Screenshot of the SOC Optimization page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/soc-optimization-page.png":::
 
 For more information, see [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access).
 
@@ -271,13 +271,13 @@ For more information, see [Optimize your security operations](/azure/sentinel/so
 
 In the **Reports** page, review security reports across all areas, assets, and workloads.
 
-:::image type="content" source="media/overview-defender-portal/reports-page.png" alt-text="Screenshot of the Reports page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/reports-page.png":::
+:::image type="content" source="./media/overview-defender-portal/reports-page.png" alt-text="Screenshot of the Reports page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/reports-page.png":::
 
 ## Trials
 
 In the **Trials** page, review trial solutions, designed to help you make decisions about upgrades and purchases.
 
-:::image type="content" source="media/overview-defender-portal/trials-page.png" alt-text="Screenshot of the  page iMicrosoft Security Trials page in the Microsoft Defender portal" lightbox="media/overview-defender-portal/trials-page.png":::
+:::image type="content" source="./media/overview-defender-portal/trials-page.png" alt-text="Screenshot of the  page iMicrosoft Security Trials page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/trials-page.png":::
 
 
 
