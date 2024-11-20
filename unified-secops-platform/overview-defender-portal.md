@@ -84,7 +84,7 @@ In **Exposure management**, review the overall state of your security posture, e
 **Feature** | **Details**
 --- | ---
 **Exposure management overview** | This dashboard provides a quick view of devices and cloud resources, including internet-facing devices and critical assets. Learn how well your key security initiatives are doing and drill down into top metrics for high-value vulnerabilities. Get exposure levels for different types of resources, and track security progress over time.
-**Attack surfaces** | Visualize exposure data with the attack surface map.<br/>Explore resources and connections on the map, and drill down to focus on specific assets.<br/>In the Attack path management dashboard, review potential attack paths across your organization that attackers might exploit, together with choke points and critical assets in the path.
+**Attack surfaces** | Visualize exposure data with the attack surface map.<br/>Explore resources and connections on the map, and drill down to focus on specific assets.<br/>In the **Attack path management** dashboard, review potential attack paths across your organization that attackers might exploit, together with choke points and critical assets in the path.
 **Exposure insights** | Review and explore aggregated security posture data and insights across resources and workloads.<br/>Assess posture and readiness for your most important security projects, and track project metrics over time.<br/>Get security recommendations to remediate exposure issues.
 **Secure score** | Review posture metrics based on [Microsoft Secure Score](/defender-xdr/microsoft-secure-score). 
 **Data connectors** | Connect third-party products to Security Exposure Management, and request new connectors.
@@ -184,9 +184,9 @@ Access Microsoft Sentinel capabilities in the Defender portal.
 **Feature** | **Details**
 --- | ---
 **Search** | [Search](/azure/sentinel/investigate-large-datasets) across logs, and access past searches.
-**Threat management** | Visualize and monitor connected data with [workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal).<br/><br/>[Investigate incidents](/azure/sentinel/investigate-incidents) and [classify alerts with entities](/azure/sentinel/customize-entity-activities?tabs=defender).<br/><br/>Proactively [hunt for threats](/azure/sentinel/hunts) and [use notebooks](/azure/sentinel/hunting?tabs=azure-portal#notebooks-to-power-investigations) to power investigations.<br/><br/> [Integrate threat intelligence](/azure/sentinel/threat-intelligence-integration) into threat detection, and [use the MITRE ATT&CK framework](/azure/sentinel/mitre-coverage) in analytics and incidents.
-**Content management** | Discover and install out-of-the-box (OOTB) content from the [Content hub](/azure/sentinel/sentinel-solutions#discover-and-manage-microsoft-sentinel-content).<br/><br/> Use [Microsoft Sentinel repositories](/azure/sentinel/ci-cd-custom-content) to connect to external source systems for continuous integration and delivery (CI/CD), rather than manually deploying and updating custom content.
-**Configuration** | Ingest data by using [data connectors](/azure/sentinel/best-practices-data).<br/><br/>[Create watchlists](/azure/sentinel/watchlists) to correlate and organize data sources.<br/><br/>[Set up analytics rules](/azure/sentinel/threat-detection) to query and analyze collected data.<br/><br/> [Automate](/azure/sentinel/automation/automation#automation-with-the-unified-security-operations-platform) threat responses.
+**Threat management** | Visualize and monitor connected data with [workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal).<br/>[Investigate incidents](/azure/sentinel/investigate-incidents) and [classify alerts with entities](/azure/sentinel/customize-entity-activities?tabs=defender).<br/>Proactively [hunt for threats](/azure/sentinel/hunts) and [use notebooks](/azure/sentinel/hunting?tabs=azure-portal#notebooks-to-power-investigations) to power investigations.<br/> [Integrate threat intelligence](/azure/sentinel/threat-intelligence-integration) into threat detection, and [use the MITRE ATT&CK framework](/azure/sentinel/mitre-coverage) in analytics and incidents.
+**Content management** | Discover and install out-of-the-box (OOTB) content from the [Content hub](/azure/sentinel/sentinel-solutions#discover-and-manage-microsoft-sentinel-content).<br/> Use [Microsoft Sentinel repositories](/azure/sentinel/ci-cd-custom-content) to connect to external source systems for continuous integration and delivery (CI/CD), rather than manually deploying and updating custom content.
+**Configuration** | Ingest data by using [data connectors](/azure/sentinel/best-practices-data).<br/>[Create watchlists](/azure/sentinel/watchlists) to correlate and organize data sources.<br/>[Set up analytics rules](/azure/sentinel/threat-detection) to query and analyze collected data.<br/> [Automate](/azure/sentinel/automation/automation#automation-with-the-unified-security-operations-platform) threat responses.
 
 For more information, see [Microsoft Sentinel](/azure/sentinel/overview) and [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal).
 
@@ -212,16 +212,17 @@ In the **Endpoints** section of the portal, monitor and manage asset vulnerabili
 
 **Feature** | **Details**
 --- | ---
-**Vulnerability management** | Review vulnerability state in the dashboard. Get recommendations based on vulnerability assessment of devices, and remediate as needed.<br/><br/> Review your organizational [software inventory](/defender-vulnerability-management/tvm-software-inventory), including vulnerable components, certificates, and hardware.<br/><br/> Review [CVEs and security advisories](/defender-vulnerability-management/tvm-weaknesses-security-advisories).<br/><br/> Review the [event timeline](/defender-vulnerability-management/threat-and-vuln-mgt-event-timeline) to determine the impact of vulnerabilities.<br/><br/> Use [security baseline assessment](/defender-vulnerability-management/tvm-security-baselines) to assess devices against security benchmarks.
+**Vulnerability management** | Review vulnerability state in the dashboard. Get recommendations based on vulnerability assessment of devices, and remediate as needed.<br/> Review your organizational [software inventory](/defender-vulnerability-management/tvm-software-inventory), including vulnerable components, certificates, and hardware.<br/>Review [CVEs and security advisories](/defender-vulnerability-management/tvm-weaknesses-security-advisories).<br/> Review the [event timeline](/defender-vulnerability-management/threat-and-vuln-mgt-event-timeline) to determine the impact of vulnerabilities.<br/> Use [security baseline assessment](/defender-vulnerability-management/tvm-security-baselines) to assess devices against security benchmarks.
 **Connected applications** | Get information about the [Microsoft Entra applications connected to Defender for Endpoint](/defender-endpoint/connected-applications).
-**API explorer** | [Use the API explorer](/defender-endpoint/api/api-explorer) to construct and run API queries, test, and sent requests for available Defender for Endpoint API endpoints. 
+**API explorer** | [Use the API explorer](/defender-endpoint/api/api-explorer) to construct and run API queries, test, and sent requests for available Defender for Endpoint API endpoints.
 
 For more information, see [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) and [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint).
 
 ## Email and collaboration
 
-In the **Email & collaboration** section, monitor, investigate, and manage security threats and responses to email and collaboration apps with Microsoft Defender for Office 365. 
+In the **Email & collaboration** section, monitor, investigate, and manage security threats and responses to email and collaboration apps with Microsoft Defender for Office 365.
 
+<!--can we get a better screenshot here?-->
 
 :::image type="content" source="./media/overview-defender-portal/email-investigations.png" alt-text="Screenshot of the Email Investigations page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/email-investigations.png":::
 
@@ -263,7 +264,7 @@ For more information, see [Optimize your security operations](/azure/sentinel/so
 
 ## Reports
 
-In the **Reports** page, review security reports across all areas, assets, and workloads.
+In the **Reports** page, review security reports across all areas, assets, and workloads. Available reports depend on the security services you have access to.
 
 :::image type="content" source="./media/overview-defender-portal/reports-page.png" alt-text="Screenshot of the Reports page in the Microsoft Defender portal" lightbox="./media/overview-defender-portal/reports-page.png":::
 
