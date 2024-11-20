@@ -9,7 +9,6 @@ ms.localizationpriority: medium
 ms.date: 11/19/2024
 audience: ITPro
 ms.collection:
-
 - M365-security-compliance
 - tier1
 - usx-security

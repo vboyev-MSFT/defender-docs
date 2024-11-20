@@ -51,6 +51,6 @@ For more information, see [Security alerts and incidents](/azure/defender-for-cl
 
 ## Related content
 
-[Protect assets](overview-unified-security.md#protect-assets)
-[Microsoft Defender for Cloud integration with Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365)
-[Microsoft Sentinel integration with Microsoft Defender XDR](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Protect assets](overview-unified-security.md#protect-assets)
+- [Microsoft Defender for Cloud integration with Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365)
+- [Microsoft Sentinel integration with Microsoft Defender XDR](/azure/sentinel/microsoft-365-defender-sentinel-integration)
