@@ -48,7 +48,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: "Prevent attacks"
+          - text: "Reduce security risks"
             url: reduce-risk-overview.md
           - text: "Detect threats"
             url: overview-deploy.md ## Need to replace link when available
