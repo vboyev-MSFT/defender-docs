@@ -26,10 +26,11 @@ ms.date: 10/11/2024
 
 This article describes how to deploy Defender for Endpoint on Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
-- [Download the onboarding package](#download-the-onboarding-package)
-- [Create Ansible YAML files](#create-ansible-yaml-files)
-- [Deployment](#deployment)
-- [References](#references)
+- [Prerequisites and system requirements](#prerequisites-and-system-requirements-applicable-to-both-the-methods)
+- [Download the onboarding package](#download-the-onboarding-package-applicable-to-both-the-methods)
+- [Deploy MDE using mde_installer.sh with Ansible](#deploy-mde-using-mde-installer-sh-with-ansible)
+- [Deploy MDE using Ansible by configuring repositories manually](#deploy-mde-using-ansible-by-configuring-repositories-manually)
+
 
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
@@ -46,7 +47,7 @@ This method greatly simplifies the automation process and helps to install the M
 
 This method allows to automate the deployment process by manually configuring repositories, installing the agent and onboarding the device for each distro. This method  gives more granular control over the deployment process.
 
-## Prerequisites and system requirements applicable to both the Methods
+## Prerequisites and system requirements applicable to both the methods
 
 Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
