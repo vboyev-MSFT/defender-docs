@@ -31,7 +31,14 @@ We previously announced Microsoft Sentinel is generally available within Microso
  - [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
  - [Connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard)
 
+### Feature availability for Government clouds
+
+In the Defender portal, all Microsoft Sentinel features for unified SeCops that are in general availability are now available in both commercial and GCC High and DoD clouds. Features still in preview are available only in the commercial cloud.
+
+For more information, see [Microsoft Sentinel feature support for Azure commercial/other clouds](/azure/sentinel/feature-availability#experience-in-the-defender-portal) and [Microsoft Defender XDR for US Government customers](/defender-xdr/usgov).
+
 ## Related content
+
 For more information on what's new with other Microsoft Defender security products and Microsoft Sentinel, see:
 
 - [What's new in Microsoft Sentinel](/azure/sentinel/whats-new)

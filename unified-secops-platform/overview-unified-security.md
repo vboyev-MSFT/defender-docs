@@ -88,7 +88,7 @@ The following image shows an example of an incident where automatic attack disru
 
 For more information, see [Automatic attack disruption in Microsoft Defender XDR](/defender-xdr/automatic-attack-disruption).
 
-## Transform SOC productivity
+## Transform SOC productivity with AI
 
 Microsoft Security Copilot brings together the power of AI and human expertise to help your SOC team respond to attacks faster and more effectively. Security Copilot is embedded in the Defender portal to enable security teams to efficiently summarize incidents, analyze scripts and codes, analyze files, summarize device information, use guided responses to resolve incidents, generate KQL queries, and create incident reports. Security Copilot helps you to:
 
