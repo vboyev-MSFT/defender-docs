@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 05/30/2024
+ms.date: 11/20/2024
 ---
 
 # DeviceBaselineComplianceAssessment (Preview)
@@ -51,10 +51,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `RecommendedValue` | `dynamic` | Set of expected values for the current device setting to be compliant |
 | `CurrentValue` | `dynamic` | Set of detected values found on the device |
 | `IsExempt` | `boolean` | Indicates whether the device is exempt from having the baseline configuration |
-| `TenantId` | `string` |  |
-| `Type` | `string` |  |
-| `SourceSystem` | `string` |  |
-| `MachineGroup` | `string` |  |
+
 
 ## Related topics
 

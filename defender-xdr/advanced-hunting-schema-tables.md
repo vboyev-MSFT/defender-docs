@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 04/22/2024
+ms.date: 11/20/2024
 ---
 
 # Understand the advanced hunting schema
@@ -77,7 +77,7 @@ The following reference lists all the tables in the schema. Each table name link
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Process creation and related events |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creation and modification of registry entries |
 | **[DeviceTvmBrowserExtensions](advanced-hunting-devicetvmbrowserextensions-table.md)** (Preview)| Browser extension installations found on devices from Microsoft Defender Vulnerability Management |
-| **[DeviceTvmBrowserExtensionsKB](advanced-hunting-devicebrowserextensionskb-table.md)** (Preview)| Browser extension details and permission information used in the Microsoft Defender Vulnerability Management browser extensions page|
+| **[DeviceTvmBrowserExtensionsKB](advanced-hunting-devicetvmbrowserextensionskb-table.md)** (Preview)| Browser extension details and permission information used in the Microsoft Defender Vulnerability Management browser extensions page|
 | **[DeviceTvmCertificateInfo](advanced-hunting-devicetvmcertificateinfo-table.md)** (Preview)| Certificate information for devices in the organization from Microsoft Defender Vulnerability Management |
 | **[DeviceTvmHardwareFirmware](advanced-hunting-devicetvmhardwarefirmware-table.md)** | Hardware and firmware information of devices as checked by Defender Vulnerability Management |
 | **[DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)** | Defender Vulnerability Management assessment events including configuration and attack surface area states |

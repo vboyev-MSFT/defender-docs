@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 05/30/2024
+ms.date: 11/20/2024
 ---
 
 # DeviceTvmBrowserExtensionsKB (Preview)
@@ -50,10 +50,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `PermissionDescription` | `string` | Explanation of what the permission is supposed to do |
 | `PermissionRisk` | `string` | Risk level for the permission based on the type of access it would allow |
 | `IsPermissionRequired` | `string` | Whether the permission is required for the extension to run, or optional |
-| `TenantId` | `string` |  |
-| `Type` | `string` |  |
-| `SourceSystem` | `string` |  |
-| `MachineGroup` | `string` |  |
+
 
 ## Related topics
 

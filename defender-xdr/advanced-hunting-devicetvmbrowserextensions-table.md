@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 05/30/2024
+ms.date: 11/20/2024
 ---
 
 # DeviceTvmBrowserExtensions (Preview)
@@ -48,10 +48,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ExtensionVendor` | `string` | Name of the vendor offering the extension |
 | `IsActivated` | `string` | Whether the extension is turned on or off on the devices |
 | `InstallationTime` | `datetime` | Date and time when the browser extension was first installed |
-| `TenantId` | `string` |  |
-| `Type` | `string` |  |
-| `SourceSystem` | `string` |  |
-| `MachineGroup` | `string` |  |
+
 
 ## Related topics
 

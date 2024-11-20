@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 05/30/2024
+ms.date: 11/20/2024
 ---
 
 # DeviceTvmCertificateInfo (Preview)
@@ -53,10 +53,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `SubjectType` | `string` | Indicates if the holder of the certificate is a CA or end entity |
 | `KeyUsage` | `string` | The valid cryptographic uses of the certificate's public key |
 | `ExtendedKeyUsage` | `string` | Other valid uses for the certificate |
-| `TenantId` | `string` |  |
-| `Type` | `string` |  |
-| `SourceSystem` | `string` |  |
-| `MachineGroup` | `string` |  |
+
 
 ## Related topics
 

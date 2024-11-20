@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ah
 ms.topic: reference
-ms.date: 05/30/2024
+ms.date: 11/20/2024
 ---
 
 # DeviceBaselineComplianceProfiles (Preview)
@@ -52,10 +52,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `CreatedOn` | `datetime` | Date and time when the profile was created |
 | `LastUpdatedBy` | `string` | Identity of the user account who last updated the profile |
 | `LastUpdatedOn` | `datetime` | Date and time when the profile was last updated |
-| `TenantId` | `string` |  |
-| `Type` | `string` |  |
-| `SourceSystem` | `string` |  |
-| `MachineGroup` | `string` |  |
+
 
 ## Related topics
 
