@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: 
 search.appverid: met150
-ms.date: 08/26/2024
+ms.date: 10/23/2024
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -81,7 +81,7 @@ URL/IP allow and block requires that the Microsoft Defender for Endpoint compone
 
 ### Custom network indicators requirements
 
-To start blocking IP addresses and/or URL's, turn on "**Custom network indicators"** feature in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features**. For more information, see [Advanced features](advanced-features.md).
+To start blocking IP addresses and/or URLs, turn on "**Custom network indicators"** feature in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](ios-configure-features.md#configure-custom-indicators).
 
@@ -102,6 +102,9 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
 - In the case of URL indicator policy conflicts, the longer path may not be applied due to redirection. In such cases, register a non-redirected URL.
+
+> [!NOTE]
+> Custom Indicators of Compromise and Web Content Filtering features are currently not supported in Application Guard sessions of Microsoft Edge. These containerized browser sessions can only enforce web threat blocks via the built-in SmartScreen protection. They cannot enforce any enterprise web protection policies.
 
 ## Network protection and the TCP three-way handshake
 
@@ -142,7 +145,7 @@ In the case where multiple different action types are set on the same indicator 
 2. Warn
 3. Block
 
-_Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, `Microsoft.com` would be allowed.
+"Allow" overrides "warn," which overrides "block", as follows: `Allow` > `Warn` > `Block`. Therefore, in the previous example, `Microsoft.com` would be allowed.
 
 ### Defender for Cloud Apps Indicators
 
@@ -150,7 +153,7 @@ If your organization has enabled integration between Defender for Endpoint and D
 
 ## Policy precedence
 
-Microsoft Defender for Endpoint policy has precedence over Microsoft Defender Antivirus policy. In situations when Defender for Endpoint is set to **Allow**, but Microsoft Defender Antivirus is set to **Block**, the policy will default to **Allow**.
+Microsoft Defender for Endpoint policy has precedence over Microsoft Defender Antivirus policy. In situations when Defender for Endpoint is set to `Allow`, but Microsoft Defender Antivirus is set to `Block`, the policy defaults to `Allow`.
 
 ### Precedence for multiple active policies
 
@@ -178,12 +181,12 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 
 5. Review the details in the **Summary** tab, then select **Save**.
 
-> [!NOTE]
-> There may be up to 2 hours of latency between the time a policy is created and the URL or IP being blocked on the device.
+> [!IMPORTANT]
+> It can take up to 48 hours after a policy is created for a URL or IP address to be blocked on a device.
 
 ## Related articles
 
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)

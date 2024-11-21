@@ -6,7 +6,7 @@ author: deniseb
 ms.author: deniseb
 manager: deniseb
 ms.localizationpriority: medium
-ms.date: 09/26/2024
+ms.date: 11/18/2024
 audience: ITPro
 ms.collection:
 - m365-security
@@ -41,20 +41,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - In macOS Sonoma 14.3.1, Apple made a change to the [handling of Bluetooth devices](https://developer.apple.com/forums/thread/738748) that impacts Defender for Endpoint device control's ability to intercept and block access to Bluetooth devices.  At this time, the recommended mitigation is to use a version of macOS earlier than 14.3.1.
 
+- In macOS Sequoia (version 15.0), if you have Network Protection enabled, you might see crashes of the network extension (NetExt). This issue results in intermittent network connectivity issues for end users. Please upgrade to macOS Sequoia version 15.1 or newer.
+
 ## Sequoia support
 
-- In macOS Sequoia (version 15.0), if you have Network Protection enabled, you might see crashes of the network extension (NetExt). This issue results in intermittent network connectivity issues for end users. 
-
-   > [!NOTE]
-   > The core functionalities of antivirus, endpoint detection & response, and threat and vulnerability management continue functioning.
-
-- We're recommending that customers who have Network Protection enabled in their organization to either:
-
-   1. Delay updating to macOS Sequoia (version 15.0); or
-
-   2. Use the instructions to disable Network Extension as described in [Troubleshoot NetExt issues in Microsoft Defender for Endpoint on Mac](mac-troubleshoot-netext-mde.md).  This causes Network Protection, Web Content Filtering, and IP address/URL Indicators to be nonfunctional.
-
-- Microsoft Defender is collaborating with Apple to provide our mutual customers a solution when Network Protection is enabled in Microsoft Defender for Endpoint on macOS Sequoia (version 15.0).
+- Microsoft Defender for Endpoint supports version 15.0.1 or newer.
 
 ## macOS Deprecation
 
@@ -66,6 +57,30 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 ### Behavior Monitoring for macOS is now in public preview
 
 Behavior monitoring monitors process behavior to detect and analyze potential threats based on the behavior of the applications, daemons, and files within the system. As behavior monitoring observes how the software behaves in real-time, it can adapt quickly to new and evolving threats and block them. To learn more, see [Behavior Monitoring in Microsoft Defender for Endpoint on macOS](behavior-monitor-macos.md).
+
+### Oct-2024 (Build: 101.24092.0004  | Release version: 20.124092.4.0)
+
+| Build:             | **101.24092.0004**         |
+|--------------------|-----------------------|
+| Release version:   | **20.124092.4.0** |
+| Engine version:    | **1.1.24080.11**       |
+| Signature version: | **1.421.14.0**      |
+
+##### What's new
+
+- Bug and performance fixes
+
+### Oct-2024 (Build: 101.24082.0009  | Release version: 20.124082.9.0)
+
+| Build:             | **101.24082.0009**    |
+|--------------------|-----------------------|
+| Release version:   | **20.124082.9.0**     |
+| Engine version:    | **1.1.24080.9**       |
+| Signature version: | **1.411.410.0**       |
+
+##### What's new
+
+- Product improvements and performance fixes
 
 ### Sep-2024 (Build: 101.24072.0007  | Release version: 20.124072.7)
 

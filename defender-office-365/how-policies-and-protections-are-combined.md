@@ -55,11 +55,10 @@ There are two major factors that determine which policy is applied to a message:
 
   1. The anti-spam, anti-malware, anti-phishing, Safe Links<sup>\*</sup>, and Safe Attachments<sup>\*</sup> policies in the [Strict preset security policy](preset-security-policies.md#profiles-in-preset-security-policies) (when enabled).
   2. The anti-spam, anti-malware, anti-phishing, Safe Links<sup>\*</sup>, and Safe Attachments<sup>\*</sup> policies in the [Standard preset security policy](preset-security-policies.md#profiles-in-preset-security-policies) (when enabled).
-  3. Custom anti-spam, anti-malware, anti-phishing, Safe Links<sup>\*</sup>, and Safe Attachments<sup>\*</sup> policies (when created).
+  3. Anti-phishing, Safe Links, and Safe Attachments in [Defender for Office 365 evaluation policies](try-microsoft-defender-for-office-365.md#audit-mode-vs-blocking-mode-for-defender-for-office-365) (when enabled).
+  4. Custom anti-spam, anti-malware, anti-phishing, Safe Links<sup>\*</sup>, and Safe Attachments<sup>\*</sup> policies (when created).
 
      Custom policies are assigned a default priority value when you create the policy (newer equals higher), but you can change the priority value at any time. This priority value affects the order that *custom policies* of that type (anti-spam, anti-malware, anti-phishing, etc.) are applied, but doesn't affect where custom policies are applied in the overall order.
-
-  4. Anti-phishing, Safe Links, and Safe Attachments in [Defender for Office 365 evaluation policies](try-microsoft-defender-for-office-365.md#audit-mode-vs-blocking-mode-for-defender-for-office-365) (when enabled).
 
   5. Of equal value:
      - The Safe Links and Safe Attachments policies in the [Built-in protection preset security policy](preset-security-policies.md#profiles-in-preset-security-policies)<sup>\*</sup>.
@@ -69,7 +68,8 @@ There are two major factors that determine which policy is applied to a message:
 
   <sup>\*</sup> Defender for Office 365 only.
 
-  The priority order matters if you have the same recipient intentionally or unintentionally included in multiple policies, because *only* the first policy of that type (anti-spam, anti-malware, anti-phishing, etc.) is applied to that recipient, regardless of how many other policies that the recipient is included in. There's never a merging or combining of the settings in multiple policies for the recipient. The recipient is unaffected by the settings of the remaining policies of that type.
+  > [!IMPORTANT]
+  > The priority order matters if you have the same recipient intentionally or unintentionally included in multiple policies, because *only* the first policy of that type (anti-spam, anti-malware, anti-phishing, etc.) is applied to that recipient, regardless of how many other policies that the recipient is included in. There's never a merging or combining of the settings in multiple policies for the recipient. The recipient is unaffected by the settings of the remaining policies of that type.
 
 For example, the group named "Contoso Executives" is included in the following policies:
 

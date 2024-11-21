@@ -10,6 +10,8 @@
       href: zero-trust-with-microsoft-defender-endpoint.md
     - name: Trial user guide - Microsoft Defender for Endpoint
       href: defender-endpoint-trial-user-guide.md
+    - name: Pilot and deploy Defender for Endpoint
+      href: /defender-xdr/pilot-deploy-defender-endpoint?toc=/defender-endpoint/TOC.json&bc=/defender-endpoint/breadcrumb/toc.json
     - name: Minimum requirements
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
@@ -59,41 +61,43 @@
     - name: Antivirus solution compatibility with Defender for Endpoint
       href: defender-compatibility.md
 
-  - name: Microsoft Defender for Endpoint demonstrations
+  - name: Microsoft Defender for Endpoint demonstrations and evaluation
     items:
-    - name: Microsoft Defender for Endpoint demonstrations
+    - name: Evaluate Microsoft Defender Antivirus
+      href: evaluate-microsoft-defender-antivirus.md
       items:
-      - name: Overview
-        href: evaluate-microsoft-defender-antivirus.md
       - name: Evaluate Microsoft Defender Antivirus using PowerShell
         href: microsoft-defender-antivirus-using-powershell.md
       - name: Evaluate Microsoft Defender Antivirus using Microsoft Defender Endpoint Security Settings Management
         href: evaluate-mda-using-mde-security-settings-management.md
       - name: Evaluate Microsoft Defender Antivirus using Group Policy 
         href: evaluate-mdav-using-gp.md  
-      - name: Microsoft Defender for Endpoint demonstration scenarios
-        href: defender-endpoint-demonstrations.md
+    - name: Demonstration scenarios
+      href: defender-endpoint-demonstrations.md
+      items:
+      - name: AMSI demonstrations
+        href: mde-demonstration-amsi.md
+      - name: Antimalware validation demonstration
+        href: validate-antimalware.md
+      - name: Attack surface reduction rules demonstration
+        href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
       - name: App reputation demonstration
         href: defender-endpoint-demonstration-app-reputation.md
-      - name: Behavior monitoring demonstrations
+      - name: Behavior monitoring demonstration
         href: demonstration-behavior-monitoring.md
-      - name: Validate antimalware
-        href: validate-antimalware.md
-      - name: Attack surface reduction rules demonstrations
-        href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
-      - name: Cloud-delivered protection demonstration
+      - name: Cloud-delivered protection
         href: defender-endpoint-demonstration-cloud-delivered-protection.md
-      - name: Controlled folder access (CFA) demonstration (block script)
+      - name: Controlled folder access (block script) demonstration
         href: defender-endpoint-demonstration-controlled-folder-access-test-tool.md
-      - name: Controlled folder access (CFA) demonstrations (block ransomware)
+      - name: Controlled folder access (block ransomware) demonstration
         href: defender-endpoint-demonstration-controlled-folder-access.md
-      - name: EDR detections
+      - name: EDR detections demonstration
         href: edr-detection.md
-      - name: Exploit protection (EP) demonstrations
+      - name: Exploit protection demonstration
         href: defender-endpoint-demonstration-exploit-protection.md
-      - name: Network protection demonstrations
+      - name: Network protection demonstration
         href: defender-endpoint-demonstration-network-protection.md
-      - name: Potentially unwanted applications (PUA) demonstration
+      - name: Potentially unwanted applications demonstration
         href: defender-endpoint-demonstration-potentially-unwanted-applications.md
       - name: URL reputation demonstrations
         href: defender-endpoint-demonstration-smartscreen-url-reputation.md
@@ -196,17 +200,17 @@
               href: mac-install-manually.md
           - name: Configure Defender for Endpoint on macOS
             items:
-              - name: Configure and validate exclusions
+              - name: Configure and validate exclusions on Mac
                 href: mac-exclusions.md
-              - name: Set preferences
+              - name: Set preferences on Mac
                 href: mac-preferences.md 
-              - name: Detect and block Potentially Unwanted Applications
+              - name: Detect and block potentially unwanted applications on Mac
                 href: mac-pua.md
               - name: Protect macOS security settings using tamper protection
                 href: tamperprotection-macos.md
               - name: Device control
                 items:
-                - name: Device control overview
+                - name: Device control overview on Mac
                   href: mac-device-control-overview.md
                 - name: JAMF examples
                   href: mac-device-control-jamf.md
@@ -214,7 +218,7 @@
                   href: mac-device-control-intune.md
                 - name: macOS Device Control frequently asked questions (FAQ)
                   href: mac-device-control-faq.md
-              - name: Schedule scans
+              - name: Schedule scans on Mac
                 href: mac-schedule-scan.md
           - name: Update Defender for Endpoint on macOS
             href: mac-updates.md
@@ -267,7 +271,7 @@
               href: mde-linux-deployment-on-sap.md
           - name: Configure Defender for Endpoint on Linux
             items:
-            - name: Configure and validate exclusions
+            - name: Configure and validate exclusions on Linux
               href: linux-exclusions.md
             - name: Static proxy configuration
               href: linux-static-proxy-configuration.md
@@ -346,29 +350,28 @@
               href: machine-groups.md
             - name: Create and manage device tags
               href: machine-tags.md
-        - name: Rules and Exclusions
+        - name: Rules and exclusions
           items:
           - name: Exclusions overview
             href: navigate-defender-endpoint-antivirus-exclusions.md
-          - name: Using submissions, suppressions and exclusions
-            href: submissions-suppressions-exclusions.md
           - name: Manage suppression rules
             href: manage-suppression-rules.md
-          - name: Create indicators
-            href: manage-indicators.md
+          - name: Indicators
             items:
-              - name: Create indicators for files
-                href: indicator-file.md
-              - name: Create indicators for IPs and URLs/domains
-                href: indicator-ip-domain.md
-              - name: Create indicators for certificates
-                href: indicator-certificates.md
-              - name: Manage indicators
-                href: indicator-manage.md
-              - name: Manage automation file uploads
-                href: manage-automation-file-uploads.md
-              - name: Manage automation folder exclusions
-                href: manage-automation-folder-exclusions.md
+            - name: Overview of indicators
+              href: indicators-overview.md
+            - name: Create indicators for files
+              href: indicator-file.md
+            - name: Create indicators for IPs and URLs/domains
+              href: indicator-ip-domain.md
+            - name: Create indicators for certificates
+              href: indicator-certificates.md
+            - name: Manage indicators
+              href: indicator-manage.md
+            - name: Manage automation file uploads
+              href: manage-automation-file-uploads.md
+            - name: Manage automation folder exclusions
+              href: manage-automation-folder-exclusions.md
 
         - name: Device management
           items:
@@ -388,6 +391,10 @@
 
       - name: Safeguard and manage your environment 
         items:
+          - name: Managing exclusions reference
+            href: managing-exclusions.md
+          - name: Address unwanted behaviors with exclusions, indicators, and other techniques
+            href: address-unwanted-behaviors-mde.md
           - name: Safe deployment practices
             href: mde-sdp-strategy.md
 
@@ -455,8 +462,6 @@
             href: health-status.md
           - name: Troubleshoot cloud connectivity issues
             href: linux-support-connectivity.md
-          - name: Troubleshoot RHEL 6 installation issues
-            href: linux-support-rhel.md
           - name: Troubleshoot performance issues
             href: linux-support-perf.md
           - name: Troubleshoot missing events issues
@@ -479,6 +484,10 @@
             href: run-analyzer-windows.md
           - name: Run the client analyzer on macOS or Linux
             href: run-analyzer-macos-linux.md
+          - name: Run the client analyzer on Linux
+            href: run-analyzer-linux.md
+          - name: Run the client analyzer on macOS
+            href: run-analyzer-macos.md
           - name: Data collection for advanced troubleshooting on Windows
             href: data-collection-analyzer.md
           - name: Understand the analyzer HTML report
@@ -706,6 +715,8 @@
           href: microsoft-defender-antivirus-on-windows-server.md
         - name: Enable and update Microsoft Defender Antivirus on Windows Server
           href: enable-update-mdav-to-latest-ws.md
+        - name: Microsoft Defender Antivirus in the Windows Security app
+          href: microsoft-defender-security-center-antivirus.md
         - name: Better together - Microsoft Defender Antivirus and Microsoft Defender for Endpoint
           href: why-use-microsoft-defender-antivirus.md
         - name: Better together - Microsoft Defender Antivirus and Office 365

@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.reviewer: kumasumit, gopkr
 ms.localizationpriority: medium
-ms.date: 09/20/2024
+ms.date: 11/13/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -23,26 +23,55 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
 This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on Linux.
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 > [!IMPORTANT]
-> Starting with version `101.2408.0000`, Microsoft defender for Endpoint for Linux no longer supports the Auditd event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023 and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options: 
+> Starting with version `101.2408.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023, and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
 > 
-> 1.	Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
+> 1. Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
 >
-> 2.	If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
+> 2. If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
 >
 > Review your current Defender for Endpoint on Linux deployment, and begin planning your migration to the eBPF-supported build. For more information on eBPF and how it works, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf).
 >
 > If you have any concerns or need assistance during this transition, contact support.
+
+<details> <summary> Nov-2024 (Build: 101.24092.0002 | Release version: 30.124092.0002.0)</summary>
+
+Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
+
+ Released: **November 14, 2024**  Published: **November 14, 2024**  Build: **101.24092.0002**  Release version: **30.124092.0002**  Engine version: 1.1.24080.9  Signature version: 1.417.659.0
+
+**What's new**
+
+- Support added for hardened installations on non-executable `/var` partitions. Beginning with this release, antivirus signatures are installed at `/opt/microsoft/mdatp/definitions.noindex` by default, instead of `/var/opt/microsoft/mdatp/definitions.noindex`. During upgrades, the installer attempts to migrate older definitions to the new path unless it detects that the path is already customized (using `mdatp definitions path set`).
+
+- Beginning with this version, Defender for Endpoint on Linux no longer needs executable permissions for `/var/log`. If these permissions are not available, log files are automatically be redirected to `/opt`.
+
+</details>
+
+<details>
+<summary> Oct-2024 (Build: 101.24082.0004 | Release version: 30.124082.0004.0)</summary>
+
+## Sept-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
+
+&ensp;Released: **October 15, 2024**<br/>
+&ensp;Published: **October 15, 2024**<br/>
+&ensp;Build: **101.24082.0004**<br/>
+&ensp;Release version: **30.124082.0004**<br/>
+&ensp;Engine version: **1.1.24080.9**<br/>
+&ensp;Signature version: **1.417.659.0**<br/>
+
+**What's new**
+
+- Starting this version, Defender for Endpoint on Linux no longer supports `AuditD` as a supplementary event provider. For improved stability and performance, we have completely transitioned to eBPF. If you disable eBPF, or in the event eBPF is not supported on any specific kernel, Defender for Endpoint on Linux automatically switches back to Netlink as a fallback supplementary event provider. Netlink provides reduced functionality and tracks only process-related events. In this case, all process operations continue to flow seamlessly, but you could miss specific file and socket-related events that eBPF would otherwise capture. For more details, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md). If you have any concerns or need assistance during this transition, contact support.
+- Stability and performance improvements
+- Other bug fixes
+
+</details>
 
 <details>
 <summary> Sept-2024 (Build: 101.24072.0001 | Release version: 30.124072.0001.0)</summary>
@@ -196,6 +225,9 @@ There are multiple fixes and new changes in this release:
 - Bug fixes.
 
 </details>
+
+
+
 
 
 <details>
@@ -384,6 +416,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## October-2023 Build: 101.23082.0009 | Release version: 30.123082.0009.0
 
 &ensp;Released: **October 9,2023**<br/>
@@ -423,6 +467,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -504,6 +560,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## September-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
 
 &ensp;Released: **September 11,2023**<br/>
@@ -548,6 +616,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -611,6 +691,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## July-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
 
 &ensp;Released: **July 10,2023**<br/>
@@ -655,6 +747,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> June-2023 (Build: 101.98.89 | Release version: 30.123042.19889.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -706,6 +810,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -765,6 +881,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
 &ensp;Released: **April 20,2023**<br/>
@@ -817,6 +945,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1362,7 +1502,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
   <p><b>What's new</b></p>
 
-
   - Beginning with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
     - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
@@ -1437,7 +1576,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <p><b>What's new</b></p>
 
-
 - Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
    - Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
    - Performance improvements & other bug fixes
@@ -1451,7 +1589,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
    Release version: <b>30.121022.12563.0</b></p>
 
    <p><b>What's new</b></p>
-
 
 - Performance improvements & bug fixes
 
@@ -1478,12 +1615,10 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
   <p>What's new</b></p>
 
-
 - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-   - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+
+  - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
    - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
   - Performance improvements & bug fixes
-
-   </details>
 
 </details><!--This </details> closes "2021 releases"-->

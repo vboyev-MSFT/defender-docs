@@ -10,6 +10,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
+ms.custom: 
+- cx-ti
+- cx-dex
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,7 +22,7 @@ ms.collection:
   - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/12/2024
+ms.date: 10/31/2024
 ---
 
 # Collaborate with experts on demand
@@ -51,6 +54,13 @@ You need to select one of the following Microsoft Entra ID roles to view and sub
 | Global Admin, Security Admin, Security Operator | Read and submit inquiries |
 
 To learn more about how Microsoft Entra ID roles map to Microsoft Defender Unified RBAC permissions, see [Microsoft Entra Global roles access](compare-rbac-roles.md#microsoft-entra-global-roles-access).
+
+Microsoft Threat Experts customers using Ask Defender Experts capability will also be able to use the following permissions from [Microsoft Defender XDR Unified RBAC](../defender-xdr/custom-permissions-details.md).
+
+|Microsoft Defender XDR Unified RBAC role|Permission level|
+|---|---|---|
+| Security data basics | Read |
+| Alerts, Response | Read and submit |
 
 ### Where to submit inquiries to Ask Defender Experts
 

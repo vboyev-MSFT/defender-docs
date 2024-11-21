@@ -631,7 +631,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-          NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that might have been changed by the malware:
+          Note: Whenever Microsoft Defender Antivirus, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that might have been changed by the malware:
 
              - Default Internet Explorer or Microsoft Edge setting
 

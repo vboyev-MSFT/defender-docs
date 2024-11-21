@@ -14,8 +14,11 @@ ms.collection:
   - tier1
   - essentials-manage
 ms.topic: conceptual
+ms.custom: 
+- cx-ti
+- cx-dex
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 10/30/2024
 ---
 
 # Auditing

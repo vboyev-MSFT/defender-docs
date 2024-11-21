@@ -22,10 +22,6 @@ ms.custom:
 
 # Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
 This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. This article includes recommended SAP OSS (Online Services System) notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions, and guidance on scheduling antivirus scans.
 
 Conventional security defenses that have been commonly used to protect SAP systems, such as isolating infrastructure behind firewalls and limiting interactive operating system logons, are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The enterprise security administrators should contact the SAP Basis team prior to deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
