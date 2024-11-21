@@ -61,7 +61,26 @@ For more information, see [Detect threats in Microsoft Sentinel](/azure/sentinel
 
 Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into Microsoft Defender XDR for correlation and severity classification. Although Defender for cloud is licensed separately from Defender for XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender XDR. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
 
-Defender for Cloud detects threats across 
+Defender for Cloud detects threats across a wide variety of workloads. The following table gives some examples of threats it detects.
+
+| Defender for Cloud category | Threat detection specialty |
+|---|---|
+| [Alerts for Windows machines](alerts-windows-machines.md) | |
+| [Alerts for Linux machines](alerts-linux-machines.md) | |
+| [Alerts for DNS](alerts-dns.md) | |
+| [Alerts for Azure VM extensions](alerts-azure-vm-extensions.md) | |
+| [Alerts for Azure App Service](alerts-azure-app-service.md) | |
+| [Alerts for containers - Kubernetes clusters](alerts-containers.md) | |
+| [Alerts for SQL Database and Azure Synapse Analytics](alerts-sql-database-and-azure-synapse-analytics.md) | |
+| [Alerts for open-source relational databases](alerts-open-source-relational-databases.md) | |
+| [Alerts for Resource Manager](alerts-resource-manager.md) | |
+| [Alerts for Azure Storage](alerts-azure-storage.md) | |
+| [Alerts for Azure Cosmos DB](alerts-azure-cosmos-db.md) | |
+| [Alerts for Azure network layer](alerts-azure-network-layer.md) | |
+| [Alerts for Azure Key Vault](alerts-azure-key-vault.md) | |
+| [Alerts for Azure DDoS Protection](alerts-azure-ddos-protection.md) | |
+| [Alerts for Defender for APIs](alerts-defender-for-apis.md) | |
+| [Alerts for AI workloads](alerts-ai-workloads.md) | Detects jailbreak attempts, sensitive data exposure, corrupted AI and more across generative AI applications. |
 
 For more information, see [Security alerts and incidents](/azure/defender-for-cloud/alerts-overview).
 
