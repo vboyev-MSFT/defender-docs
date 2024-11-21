@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 # Threat detection in Microsoft's unified SecOps platform
 
-Cybersecurity threats abound in the current technology landscape. A lot of noise is created by the constant spectre of breach and an abundance of signals available to security operation centers. Microsoft's unified SecOps platform separates actionable threats from the noise. Each service in Microsoft's unified SecOps platform adds its own finely tuned detections to match the complexion of the solution it provides and puts it all together into a single dashboard.
+Cybersecurity threats abound in the current technology landscape. A lot of noise is created by the constant specter of breach and an abundance of signals available to security operation centers. Microsoft's unified SecOps platform separates actionable threats from the noise. Each service in Microsoft's unified SecOps platform adds its own finely tuned detections to match the complexion of the solution it provides and puts it all together into a single dashboard.
 
 The more services that send data to Microsoft's unified security platform, the greater the focus and clarity your security teams have to understand and prioritize a response. High confidence threats are neutralized quickly with near-real time detections and automated responses to neutralize high confidence threats quickly.
 
@@ -28,14 +28,16 @@ Security teams need focus and clarity to eliminate false positives. Microsoft De
 
 :::image type="content" source="media/detect-threats-overview/defender-xdr-multiple-source-example.png" alt-text="Screenshot showing an incident stitched together from multiple detection streams." lightbox="media/detect-threats-overview/defender-xdr-multiple-source-example.png":::
 
+The following table gives examples of how each Defender XDR security service is tuned to detect threats for its solution.
+
 | Defender XDR service | Threat detection specialty |
 |---|---|
 | [**Microsoft Defender for Endpoint**](/defender-endpoint/microsoft-defender-endpoint) | Microsoft Defender antivirus detects polymorphic malware with behavior-based and heuristic analytics on endpoints such as mobile devices, desktops, and more.|
-| [**Microsoft Defender for Office 365**](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) | Detects phishing, malware, weaponized links in email, Teams, and OneDrive.|
+| [**Microsoft Defender for Office 365**](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) | Detects phishing, malware, weaponized links and more in email, Teams, and OneDrive.|
 | [**Microsoft Defender for Identity**](/defender-for-identity/what-is) | Detects privilege escalation, lateral movement, discovery, defense evasion, persistence, and more across on-premises identities.|
 | [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps) | Detects suspicious activities through user and entity behavioral analytics (UEBA) across cloud applications.|
 | [**Microsoft Defender Vulnerability Management**](/defender-vulnerability-management/defender-vulnerability-management) | Detects vulnerabilities in devices providing meaningful context for investigations.|
-| [**Microsoft Entra ID Protection**](/azure/active-directory/identity-protection/overview-identity-protection) | Detects risks associated with sign-ins like impossible travel, verified threat actor IP, leaked credentials, password sprays and more.| 
+| [**Microsoft Entra ID Protection**](/azure/active-directory/identity-protection/overview-identity-protection) | Detects risks associated with sign-ins like impossible travel, verified threat actor IPs, leaked credentials, password sprays and more.|
 | [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp) | Detects risks and behavior associated with oversharing and exfiltration of sensitive information across Microsoft 365 services, Office applications, endpoints, and more.|
 | [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance) | Detects anomalies in cloud app activity, especially when noncompliant, malicious, or risky apps are used.|
 
@@ -51,14 +53,15 @@ Microsoft Sentinel enables data collection from all your Microsoft and non-Micro
 | Analytics | Rules constantly dig through your data to generate alerts and incidents and integrates those signals in the Defender portal. | [Detect threats out-of-the-box](/azure/sentinel/threat-detection) |
 | Watchlists | Curate meaningful relationships in your environment to improve the quality and prioritization of detections. | [Watchlists in Microsoft Sentinel](/azure/sentinel/watchlists) |
 | Workbooks | Detect threats with visual insights, especially to monitor the health of your data collection and understand gaps that prevent proper threat detection. | [Visualize your data with workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal) |
+| Summary rules | Optimizes noisy, high volume logs to detect threat in low-security value data. | [Generate alerts on threat intelligence matches against network data](/azure/sentinel/summary-rules#generate-alerts-on-threat-intelligence-matches-against-network-data) |
 
 For more information, see [Detect threats in Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal#detect-threats).
 
 ## Microsoft Defender for Cloud threat detection
 
-Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into Microsoft Defender XDR for correlation and severity classification. Although Defender for cloud is licensed separately from Defender for XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender XDR.
+Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into Microsoft Defender XDR for correlation and severity classification. Although Defender for cloud is licensed separately from Defender for XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender XDR. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
 
-/azure/defender-for-cloud/concept-integration-365
+Defender for Cloud detects threats across 
 
 For more information, see [Security alerts and incidents](/azure/defender-for-cloud/alerts-overview).
 
