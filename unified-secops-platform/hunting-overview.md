@@ -1,6 +1,6 @@
 ---
-title: "Overview - Hunt for threats"
-description: Provides an overview of threat hunting features across the Microsoft unified security platform
+title: Threat hunting features across the Microsoft unified security platform
+description: Learn about threat hunting features across the Microsoft unified security platform
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: austinmc
@@ -17,7 +17,9 @@ ms.topic: conceptual
 # customer intent: I want to learn detecting threats with the tools available in the Microsoft unified security platform. Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments
 ---
 
-# Overview - Hunting in the Microsoft unified security platform
+# Hunting in the Microsoft unified security platform
+
+
 
 Need to answer this for reader - How is hunting differentiated from detection?
 Threat intelligence helps detect threats, but infrastructure chaining is a type of hunt

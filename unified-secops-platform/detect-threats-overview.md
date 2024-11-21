@@ -1,6 +1,6 @@
 ---
-title: "Overview - Detect threats"
-description: Provides an overview of the features that help detect threats in the Microsoft unified security platform
+title: Threat detection features across the Microsoft unified security platform
+description: Learn about the features that help detect threats in the Microsoft unified security platform
 search.appverid: met150
 ms.service: unified-secops-platform
 ms.author: austinmc
@@ -18,21 +18,23 @@ ms.topic: conceptual
 
 # Threat detection in Microsoft's unified SecOps platform
 
-Each portion of your organization that sends data to Microsoft's unified security platform increases the ability to detect threats in your environment. When a security gap or threat is detected, automated and manual responses can be unleashed to neutralize them.
+Cybersecurity threats abound in the current technology landscape. A lot of noise is created though by this constant spectre of breach and an abundance of signals available to security operation centers. Microsoft's unified SecOps platform separates the noise from actionable threats. Each service in Microsoft's unified SecOps platform adds its own finely tuned detections to match the complexion of the solution it provides all together into a single dashboard.
 
-:::image type="content" source="/azure/defender-for-cloud/media/alerts-overview/security-center-detection-capabilities.png" alt-text="Diagram showing ":::
-
-Microsoft's unified SecOps platform in the Microsoft Defender portal brings together threat detection from all your Microsoft security services into a single dashboard.
+The more services that send data to Microsoft's unified security platform, the greater the focus and clarity your security teams have to understand and prioritize a response. With near-real time detections and automated responses, high confidence threats are neutralized quickly.
 
 ## Microsoft Defender XDR threat detection
 
-Threat detection is sourced from the many services that are part of Microsoft Defender XDR as well as unifying threat detection from Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization of the alerts and incidents highlighting threats. For the current list of Microsoft security products that natively add their detections to Microsoft Defender XDR, see [What is Microsoft Defender XDR?](/defender-xdr/microsoft-365-defender). For each of those Microsoft security products enabled, more signals are unlocked and streamed into Defender XDR.
+Security teams need focus and clarity to eliminate false positives. Microsoft Defender XDR correlates and merges alerts and incidents from its suite of security services as well as unifying threat detection from Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
+
+:::image type="content" source="media/detect-threats-overview/defender-xdr-multiple-source-example.png" alt-text="Screenshot showing an incident stitched together from multiple detection streams." lightbox="media/detect-threats-overview/defender-xdr-multiple-source-example.png":::
+
+For the current list of Microsoft security products that natively add their detections to Microsoft Defender XDR, see [What is Microsoft Defender XDR?](/defender-xdr/microsoft-365-defender). For each of those Microsoft security products enabled, more signals are unlocked and streamed into Defender XDR.
 
 For more information on how these signals are stitched together and prioritized, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
 ## Microsoft Sentinel threat detection
 
-Microsoft Sentinel enables data collection from all your Microsoft and 3rd party sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
+Microsoft Sentinel enables data collection from all your Microsoft and third party sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
 
 | Threat management feature | Detection capability | For more information |
 |---|---|---|
@@ -41,7 +43,7 @@ Microsoft Sentinel enables data collection from all your Microsoft and 3rd party
 | Watchlists | Curate meaningful relationships in your environment to improve the quality and prioritization of detections. | [Watchlists in Microsoft Sentinel](/azure/sentinel/watchlists) |
 | Workbooks | Detect threats with visual insights, especially to monitor the health of your data collection and understand gaps that prevent proper threat detection. | [Visualize your data with workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal) |
 
-For more information, see [Detect threats in Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal#detect-threats).
+
 
 ## Microsoft Defender for Cloud threat detection
 
