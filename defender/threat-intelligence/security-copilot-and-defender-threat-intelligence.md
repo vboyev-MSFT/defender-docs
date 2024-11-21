@@ -22,7 +22,7 @@ ms.date: 11/18/2024
 # Microsoft Security Copilot in Microsoft Defender Threat Intelligence
 
 >[!IMPORTANT] 
-> On June 30, 2024, The Microsoft Defender Threat Intelligence (Defender TI) standalone portal (https://ti.defender.microsoft.com) was retired and is no longer accessible. Customers can continue using Defender TI in the [Microsoft Defender portal](https://aka.ms/mdti-intel-explorer) or with [Microsoft Security Copilot](security-copilot-and-defender-threat-intelligence.md). [Learn more](https://aka.ms/mdti-standaloneportal)
+> On June 30, 2024, The Microsoft Defender Threat Intelligence (Defender TI) standalone portal (`https://ti.defender.microsoft.com`) was retired and is no longer accessible. Customers can continue using Defender TI in the [Microsoft Defender portal](https://aka.ms/mdti-intel-explorer) or with [Microsoft Security Copilot](security-copilot-and-defender-threat-intelligence.md). [Learn more](https://aka.ms/mdti-standaloneportal)
 
 Microsoft Security Copilot is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, read [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot).
 
@@ -74,7 +74,7 @@ You can also select any of the built-in prompts that are available in the Defend
 [Learn more about using Copilot in Defender for threat intelligence](using-copilot-threat-intelligence-defender-xdr.md)
 
 
-## Enable the Security Copilot integration in Defender TI
+## Turn on the Security Copilot integration in Defender TI
 
 1. Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
 2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png).
