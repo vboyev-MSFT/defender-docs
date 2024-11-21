@@ -30,3 +30,7 @@ Advanced hunting, custom detections, hunts in Sentinel
 Sentinel - /azure/sentinel/hunting
 Defender XDR - /defender-xdr/advanced-hunting-overview
 Defender for Cloud - Advanced hunting (Preview) Information about cloud audit events for various cloud platforms protected by the organization's Defender for Cloud is available through the CloudAuditEvents table in advanced hunting.
+
+https://review.learn.microsoft.com/en-us/azure/defender-for-cloud/concept-integration-365?branch=main#advanced-hunting-in-xdr
+
+https://review.learn.microsoft.com/en-us/defender-office-365/threat-explorer-threat-hunting?branch=main
