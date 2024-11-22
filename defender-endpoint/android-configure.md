@@ -57,7 +57,7 @@ This feature provides protection against rogue Wi-Fi related threats and rogue c
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center and add trusted certificates. Admins can enable [privacy controls](android-configure.md#privacy-controls) to configure the data sent to Defender for Endpoint from Android devices.
 
-Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
+Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
 In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
 
