@@ -53,7 +53,7 @@ For more information, see [What is Microsoft Defender XDR?](/defender-xdr/micros
 
 Microsoft Sentinel enables data collection from a vast number of Microsoft and non-Microsoft sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
 
-:::image type="content" source="/azure/sentinel/media/overview/mitre-coverage-defender.png" alt-text="Screenshot showing " lightbox="/azure/sentinel/media/overview/mitre-coverage-defender.png":::
+:::image type="content" source="/azure/sentinel/media/overview/mitre-coverage-defender.png" alt-text="Screenshot showing MITRE ATT&CK coverage in Microsoft Sentinel." lightbox="/azure/sentinel/media/overview/mitre-coverage-defender.png":::
 
 | Threat management feature | Detection capability | For more information |
 |---|---|---|
