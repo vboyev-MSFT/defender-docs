@@ -14,7 +14,7 @@ ms.collection:
 - usx-security
 ms.topic: conceptual
 
-# customer intent: I want to learn detecting threats with the tools available in the Microsoft unified security platform. Get visiblity into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments
+# customer intent: I want to learn detecting threats with the tools available in the Microsoft unified security platform. Get visibility into, and disrupt attacks in real time across identities, endpoints, email, cloud apps, data in hybrid and multicloud environments
 ---
 
 # Hunting in the Microsoft unified security platform
