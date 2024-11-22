@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: austinmc
 author: austinmccollum
 ms.localizationpriority: medium
-ms.date: 11/19/2024
+ms.date: 11/22/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
