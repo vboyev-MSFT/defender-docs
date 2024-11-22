@@ -20,15 +20,21 @@ ms.topic: conceptual
 
 Cybersecurity threats abound in the current technology landscape. A lot of noise is created by the constant specter of breach and an abundance of signals available to security operation centers. Microsoft's unified SecOps platform separates actionable threats from the noise. Each service in Microsoft's unified SecOps platform adds its own finely tuned detections to match the complexion of the solution it provides and puts it all together into a single dashboard.
 
-The more services that send data to Microsoft's unified security platform, the greater the focus and clarity your security teams have to understand and prioritize a response. High confidence threats are neutralized quickly with near-real time detections and automated responses to neutralize high confidence threats quickly.
+The Microsoft Defender portal pulls detections together in the form of alerts and incidents from Microsoft Defender XDR, Microsoft Defender for Cloud and Microsoft Sentinel.
 
-## Microsoft Defender XDR threat detection
+## Threat detection in the Microsoft Defender portal
 
-Security teams need focus and clarity to eliminate false positives. Microsoft Defender XDR correlates and merges alerts and incidents from its suite of security services as well as unifying threat detection from Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
+Security teams need focus and clarity to eliminate false positives. Microsoft Defender portal correlates and merges alerts and incidents from its suite of security services as well as unifying threat detection from Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
+
+The following screenshot shows the dashboard where an AiTM incident correlates signals from multiple sources, and includes the individual alerts under it for a complete attack story.
 
 :::image type="content" source="media/detect-threats-overview/defender-xdr-multiple-source-example.png" alt-text="Screenshot showing an incident stitched together from multiple detection streams." lightbox="media/detect-threats-overview/defender-xdr-multiple-source-example.png":::
 
-The following table gives examples of how each Defender XDR security service is tuned to detect threats for its solution.
+Each Microsoft security product enabled unlocks more signals to stream into the Defender portal. For more information on how these signals are stitched together and prioritized, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
+
+## Microsoft Defender XDR threat detection
+
+The following table gives examples of how each Defender XDR security service is tuned to detect threats matching the character of its solution. Defender XDR has a unique correlation capability that provides another layer of data analysis and threat detection.
 
 | Defender XDR service | Threat detection specialty |
 |---|---|
@@ -41,11 +47,13 @@ The following table gives examples of how each Defender XDR security service is 
 | [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp) | Detects risks and behavior associated with oversharing and exfiltration of sensitive information across Microsoft 365 services, Office applications, endpoints, and more.|
 | [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance) | Detects anomalies in cloud app activity, especially when noncompliant, malicious, or risky apps are used.|
 
-Each Microsoft security product enabled unlocks more signals to stream into Defender XDR. For more information on how these signals are stitched together and prioritized, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
+
 
 ## Microsoft Sentinel threat detection
 
 Microsoft Sentinel enables data collection from all your Microsoft and non-Microsoft sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
+
+:::image type="content" source="/azure/sentinel/media/overview/mitre-coverage-defender.png" alt-text="Screenshot showing " lightbox="/azure/sentinel/media/overview/mitre-coverage-defender.png":::
 
 | Threat management feature | Detection capability | For more information |
 |---|---|---|
@@ -54,8 +62,6 @@ Microsoft Sentinel enables data collection from all your Microsoft and non-Micro
 | Watchlists | Curate meaningful relationships in your environment to improve the quality and prioritization of detections. | [Watchlists in Microsoft Sentinel](/azure/sentinel/watchlists) |
 | Workbooks | Detect threats with visual insights, especially to monitor the health of your data collection and understand gaps that prevent proper threat detection. | [Visualize your data with workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal) |
 | Summary rules | Optimizes noisy, high volume logs to detect threat in low-security value data. | [Generate alerts on threat intelligence matches against network data](/azure/sentinel/summary-rules#generate-alerts-on-threat-intelligence-matches-against-network-data) |
-
-![Detect threats in Microsoft Sentinel](/azure/sentinel/media/overview/mitre-coverage-defender.png#lightbox)
 
 ## Microsoft Defender for Cloud threat detection
 
