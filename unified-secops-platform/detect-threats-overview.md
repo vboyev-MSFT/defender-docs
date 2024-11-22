@@ -26,7 +26,7 @@ The Microsoft Defender portal pulls detections together in the form of alerts an
 
 Security teams need focus and clarity to eliminate false positives. Microsoft Defender portal correlates and merges alerts and incidents from all Microsoft security and compliance solutions as well as unifying threat detection from external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
 
-The following screenshot shows the dashboard where an AiTM incident correlates signals from multiple sources, and includes the individual alerts under it for a complete attack story.
+The following image shows the incidents dashboard correlating signals from multiple services, including the individual detection sources for a complete AiTM attack story.
 
 :::image type="content" source="media/detect-threats-overview/defender-xdr-multiple-source-example.png" alt-text="Screenshot showing an incident stitched together from multiple detection streams." lightbox="media/detect-threats-overview/defender-xdr-multiple-source-example.png":::
 
