@@ -47,8 +47,6 @@
       href: detect-threats-overview.md
     - name: Hunt for threats ## Separating this out because per PM hunting might happen in different scenarios. Also wanting it higher level as advanced hunting is one of the things highlighted for USX. 
       items:
-      - name: Overview
-        href: hunting-overview.md
       - name: Search with advanced hunting 
         href: /defender-xdr/advanced-hunting-overview?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json        
     - name: Investigate incidents
