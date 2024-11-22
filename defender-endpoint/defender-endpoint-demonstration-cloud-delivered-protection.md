@@ -14,7 +14,7 @@ ms.collection:
 - demo
 ms.topic: article
 ms.subservice: ngp
-ms.date: 10/21/2022
+ms.date: 11/22/2024
 ---
 
 # Cloud-delivered protection demonstration
@@ -39,7 +39,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 ### Scenario
 
-1. Download the [test file](https://aka.ms/ioavtest). Important: The test file isn't malicious, it's just a harmless file simulating a virus.
+1. Download the [test file](https://go.microsoft.com/fwlink/?linkid=2298135). Important: The test file isn't malicious, it's just a harmless file simulating a virus.
 
 2. If you see file blocked by Microsoft Defender SmartScreen, select on "View downloads" button.
 
