@@ -117,7 +117,7 @@ The **Hunting** area allows you to proactively inspect security events and data 
 
 **Feature** | **Details**
 --- | ---
-**Advanced hunting** | Explore and query up to 30 days of raw data. You can query using a guided query tool, use sample queries, or use [Kusto Query Language (KQL)](/kusto/query/?view=microsoft-sentinel) to build your own queries.
+**Advanced hunting** | Explore and query up to 30 days of raw data. You can query using a guided query tool, use sample queries, or use [Kusto Query Language (KQL)](/kusto/query/?view=microsoft-sentinel&preserve-view=true) to build your own queries.
 **Custom detection rules** | Create custom detection rules to proactively monitor and respond to events and system states. Use custom detection rules to trigger security alerts or automatic response actions.
 
 For more information, see [Proactively hunt for threats with advanced hunting](/defender-xdr/advanced-hunting-overview) and [Custom detections overview](/defender-xdr/custom-detections-overview).

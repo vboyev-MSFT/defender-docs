@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: austinmc
 author: austinmccollum
 ms.localizationpriority: medium
-ms.date: 11/19/2024
+ms.date: 11/22/2024
 audience: ITPro
 ms.collection:
 - M365-security-compliance
@@ -20,7 +20,7 @@ ms.topic: conceptual
 
 Cybersecurity threats abound in the current technology landscape. A lot of noise is created by the constant specter of breach and an abundance of signals available to security operation centers. Microsoft's unified SecOps platform separates actionable threats from the noise. Each service in Microsoft's unified SecOps platform adds its own finely tuned detections to match the complexion of the solution it provides and puts it all together into a single dashboard.
 
-The Microsoft Defender portal pulls detections together in the form of alerts and incidents from Microsoft Defender XDR, Microsoft Defender for Cloud and Microsoft Sentinel.
+Microsoft's unified SecOps platform in the Microsoft Defender portal pulls detections together in the form of alerts and incidents from Microsoft Defender XDR, Microsoft Sentinel, and Microsoft Defender for Cloud.
 
 ## Threat detection in the Microsoft Defender portal
 
