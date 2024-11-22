@@ -24,7 +24,7 @@ The Microsoft Defender portal pulls detections together in the form of alerts an
 
 ## Threat detection in the Microsoft Defender portal
 
-Security teams need focus and clarity to eliminate false positives. Microsoft Defender portal correlates and merges alerts and incidents from its suite of security services as well as unifying threat detection from Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
+Security teams need focus and clarity to eliminate false positives. Microsoft Defender portal correlates and merges alerts and incidents from all Microsoft security and compliance solutions as well as unifying threat detection from external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
 
 The following screenshot shows the dashboard where an AiTM incident correlates signals from multiple sources, and includes the individual alerts under it for a complete attack story.
 
@@ -34,7 +34,7 @@ Each Microsoft security product enabled unlocks more signals to stream into the 
 
 ## Microsoft Defender XDR threat detection
 
-The following table gives examples of how each Defender XDR security service is tuned to detect threats matching the character of its solution. Defender XDR has a unique correlation capability that provides another layer of data analysis and threat detection.
+Defender XDR has a unique correlation capability that provides another layer of data analysis and threat detection. The following table gives examples of how each Defender XDR security service is tuned to detect threats matching the character of its solution.
 
 | Defender XDR service | Threat detection specialty |
 |---|---|
@@ -47,11 +47,11 @@ The following table gives examples of how each Defender XDR security service is 
 | [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp) | Detects risks and behavior associated with oversharing and exfiltration of sensitive information across Microsoft 365 services, Office applications, endpoints, and more.|
 | [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance) | Detects anomalies in cloud app activity, especially when noncompliant, malicious, or risky apps are used.|
 
-
+For more information, see [What is Microsoft Defender XDR?](/defender-xdr/microsoft-365-defender)
 
 ## Microsoft Sentinel threat detection
 
-Microsoft Sentinel enables data collection from all your Microsoft and non-Microsoft sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
+Microsoft Sentinel enables data collection from a vast number of Microsoft and non-Microsoft sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
 
 :::image type="content" source="/azure/sentinel/media/overview/mitre-coverage-defender.png" alt-text="Screenshot showing " lightbox="/azure/sentinel/media/overview/mitre-coverage-defender.png":::
 
@@ -67,22 +67,18 @@ Microsoft Sentinel enables data collection from all your Microsoft and non-Micro
 
 Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into Microsoft Defender XDR for correlation and severity classification. Although Defender for cloud is licensed separately from Defender for XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender XDR. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
 
-Defender for Cloud detects threats across a wide variety of workloads. The following table gives examples of some of the threats it detects.
+Defender for Cloud detects threats across a wide variety of workloads. The following table gives examples of some of the threats it detects. For more information on specific alerts, see [Security alerts reference list](/azure/defender-for-cloud/alerts-reference).
 
-| Defender for Cloud category | Threat detection specialty |
+| Defender for Cloud plan | Threat detection specialty |
 |---|---|
-| [Defender for Servers](/azure/defender-for-cloud/tutorial-enable-servers-plan) |  |
-| [Defender for Storage](/azure/defender-for-cloud/tutorial-enable-storage-plan) | |
-| [Defender for Containers](/azure/defender-for-cloud/tutorial-enable-containers-azure) | |
-| [Defender for Databases](/azure/defender-for-cloud/tutorial-enable-databases-plan) | |
-| [Defender for APIs](/azure/defender-for-cloud/defender-for-apis-introduction) | |
-| [AI threat protection](/azure/defender-for-cloud/ai-threat-protection) | Detects jailbreak attempts, sensitive data exposure, corrupted AI and more across generative AI applications. |
+| [Defender for Servers](/azure/defender-for-cloud/tutorial-enable-servers-plan) | Detects threats for Linux and Windows based on antimalware failures, fileless attacks, crypto mining and ransomware attacks, brute force attacks and many more. |
+| [Defender for Storage](/azure/defender-for-cloud/tutorial-enable-storage-plan) | Detects phishing content and malware distribution, suspicious access and discovery, unusual data extraction and more. |
+| [Defender for Containers](/azure/defender-for-cloud/tutorial-enable-containers-azure) | Detects threats at the control plane and workload runtime for risky exposure, malicious or crypto mining activity, web shell activity, custom simulations and more. |
+| [Defender for Databases](/azure/defender-for-cloud/tutorial-enable-databases-plan) | Detects SQL injection, fuzzing, unusual access, brute force attempts and more.  |
+| [Defender for APIs](/azure/defender-for-cloud/defender-for-apis-introduction) | Detects suspicious spikes in traffic, access from malicious IPs, discovery and enumeration techniques of API endpoints and more. |
+| [AI threat protection](/azure/defender-for-cloud/ai-threat-protection) | Detects threats across generative AI applications for jailbreak attempts, sensitive data exposure, corrupted AI and more. |
 
 For more information, see [Security alerts and incidents](/azure/defender-for-cloud/alerts-overview).
-
-## Improve detections with threat intelligence
-
-Enter text here.
 
 ## Related content
 
