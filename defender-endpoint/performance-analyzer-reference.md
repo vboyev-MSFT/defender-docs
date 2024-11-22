@@ -198,18 +198,18 @@ This flag can accompany all other Top Path options. If missing, a default value 
 ```
 
 | flag | definition |
-|:---|:---|  
-|  -`TopScansPerPath` | Specifies how many top scans to specify for each top path. |
-|  -`TopFilesPerPath` | Specifies how many top files to specify for each top path. |
-|  -`TopScansPerFilePerPath` | Specifies how many top scans to output for each top file for each top path, sorted by "Duration" |
-|  -`TopExtensionsPerPath` | Specifies how many top extensions to output for each top path |
-|  -`TopScansPerExtensionPerPath` | Specifies how many top scans to output for each top extension for each top path |
-|  -`TopProcessesPerPath` | Specifies how many top processes to output for each top path |
-|  -`TopScansPerProcessPerPath` | Specifies how many top scans to output for each top process for each top path |
-|  -`TopPathsPerExtension` | Specifies how many top paths to output for each top extension |
-|  -`TopScansPerPathPerExtension` | Specifies how many top scans to output for each top path for each top extension |
-|  -`TopPathsPerProcess` | Specifies how many top paths to output for each top process |
-|  -`TopScansPerPathPerProcess` | Specifies how many top scans to output for each top path for each top process |
+|---|---|  
+|  `-TopScansPerPath` | Specifies how many top scans to specify for each top path. |
+|  `-TopFilesPerPath` | Specifies how many top files to specify for each top path. |
+|  `-TopScansPerFilePerPath` | Specifies how many top scans to output for each top file for each top path, sorted by "Duration" |
+|  `-TopExtensionsPerPath` | Specifies how many top extensions to output for each top path |
+|  `-TopScansPerExtensionPerPath` | Specifies how many top scans to output for each top extension for each top path |
+|  `-TopProcessesPerPath` | Specifies how many top processes to output for each top path |
+|  `-TopScansPerProcessPerPath` | Specifies how many top scans to output for each top process for each top path |
+|  `-TopPathsPerExtension` | Specifies how many top paths to output for each top extension |
+|  `-TopScansPerPathPerExtension` | Specifies how many top scans to output for each top path for each top extension |
+|  `-TopPathsPerProcess` | Specifies how many top paths to output for each top process |
+|  `-TopScansPerPathPerProcess` | Specifies how many top scans to output for each top path for each top process |
 
 ##### -MinDuration
 
