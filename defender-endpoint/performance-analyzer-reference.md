@@ -1,23 +1,32 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: Performance Analyzer reference
+title: Microsoft Defender Antivirus Performance Analyzer reference
 description: Microsoft Defender Antivirus Performance Analyzer reference
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: troubleshooting
-ms.date:     11/22/2024
+ms.date: 11/22/2024
 ms.subservice: ngp
+manager: deniseb
+ms.localizationpriority: medium
+audience: ITPro
+ms.collection: 
+- m365-security
+- tier2
+- mde-ngp 
+ms.custom: 
+- partner-contribution
+f1.keywords: NOCSH 
+audience: ITPro
+ai-usage: human-only
 ---
 
-# Performance analyzer reference
+# Microsoft Defender Antivirus Performance Analyzer reference
 
 ## PowerShell reference
 
-There are two new PowerShell cmdlets used to tune performance of Microsoft Defender Antivirus:
+You can use the following new PowerShell cmdlets to tune the performance of Microsoft Defender Antivirus:
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
