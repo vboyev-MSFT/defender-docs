@@ -896,7 +896,7 @@
         - name: Troubleshooting mode scenarios
           href: troubleshooting-mode-scenarios.md
 
-      - name: Diagnostics and performance for Microsoft Defender Antivirus
+      - name: Diagnostics for Microsoft Defender Antivirus
         items:
         - name: Device health reports
           href: device-health-reports.md
