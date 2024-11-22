@@ -65,7 +65,7 @@ Microsoft Sentinel enables data collection from a vast number of Microsoft and n
 
 ## Microsoft Defender for Cloud threat detection
 
-Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into Microsoft Defender XDR for correlation and severity classification. Although Defender for cloud is licensed separately from Defender for XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender XDR. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
+Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into the Defender portal for correlation and severity classification. Although Defender for cloud is licensed separately from Defender for XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender portal. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
 
 Defender for Cloud detects threats across a wide variety of workloads. The following table gives examples of some of the threats it detects. For more information on specific alerts, see [Security alerts reference list](/azure/defender-for-cloud/alerts-reference).
 
