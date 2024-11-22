@@ -37,7 +37,10 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 ### Scenario
 
-1. Download the [test file](https://go.microsoft.com/fwlink/?linkid=2298135). Important: The test file isn't malicious, it's just a harmless file simulating a virus.
+1. Download and extract the [zipped folder that contains the test file](https://go.microsoft.com/fwlink/?linkid=2298135). The password is *infected*.
+
+   > [!IMPORTANT]
+   > The test file isn't malicious, it's just a harmless file simulating a virus.
 
 2. If you see file blocked by Microsoft Defender SmartScreen, select on "View downloads" button.
 
