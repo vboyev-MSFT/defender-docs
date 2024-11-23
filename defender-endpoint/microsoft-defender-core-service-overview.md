@@ -32,6 +32,8 @@ To enhance your endpoint security experience, Microsoft is releasing the Microso
    - Mid April 2024 to Enterprise customers running Windows clients.
    - Beginning of July 2024 to U.S. Government customers running Windows clients.
       
+   - Mid January 2025 to Enterprise customers running Windows Server.
+      
 3. If you're using the Microsoft Defender for Endpoint **streamlined** device connectivity experience, you don't need to add any other URLs.
 
 4. If you're using the Microsoft Defender for Endpoint **standard** device connectivity experience:
