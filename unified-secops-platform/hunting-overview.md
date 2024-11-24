@@ -35,8 +35,8 @@ Maximize the full extent of your team's hunting prowess with the following hunti
 
 | **Hunting tool** | **Description** |
 |---|---|
-|[**Advanced hunting**](/defender-xdr/advanced-hunting-microsoft-defender) | View and query data sources available within Microsoft's unified SecOps platform and share queries with your team. |
-|[**Microsoft Sentinel hunting**](/azure/sentinel/hunting) | Search and query tools to hunt for security threats across data sources.|
+|[**Advanced hunting**](/defender-xdr/advanced-hunting-microsoft-defender) | View and query data sources available within Microsoft's unified SecOps platform and share queries with your team. Use all your existing Microsoft Sentinel workspace content, including queries and functions. |
+|[**Microsoft Sentinel hunting**](/azure/sentinel/hunting) | Hunt for security threats across data sources. Use specialized search and query tools like **hunts**, **bookmarks** and **livestream**. |
 |[**Go hunt**](/defender-xdr/advanced-hunting-go-hunt) | Quickly pivot an investigation to entities found within an incident. |
 |[**Hunts**](/azure/sentinel/hunts) | An end-to-end, proactive threat hunting process with collaboration features. |
 |[**Bookmarks**](/azure/sentinel/bookmarks) | Preserve queries and their results, adding notes and contextual observations.|
