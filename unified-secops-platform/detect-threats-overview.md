@@ -30,7 +30,7 @@ The following image shows the incidents dashboard correlating signals from multi
 
 :::image type="content" source="media/detect-threats-overview/defender-xdr-multiple-source-example.png" alt-text="Screenshot showing an incident stitched together from multiple detection streams." lightbox="media/detect-threats-overview/defender-xdr-multiple-source-example.png":::
 
-Each Microsoft security product enabled unlocks more signals to stream into the Defender portal. For more information on how these signals are stitched together and prioritized, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
+Each supported Microsoft security product enabled unlocks more signals to stream into the Defender portal. For more information on how these signals are stitched together and prioritized, see [Incidents and alerts in the Microsoft Defender portal](/defender-xdr/incidents-overview).
 
 ## Microsoft Defender XDR threat detection
 
@@ -50,7 +50,7 @@ For more information, see [What is Microsoft Defender XDR?](/defender-xdr/micros
 
 ## Microsoft Sentinel threat detection
 
-Microsoft Sentinel enables data collection from a vast number of Microsoft and non-Microsoft sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
+Microsoft Sentinel connected to the Defender portal enables data collection from a vast number of Microsoft and non-Microsoft sources, but doesn't stop there. With Microsoft Sentinel's threat management capabilities, you gain the tools needed to detect and organize threats to your environment.
 
 :::image type="content" source="/azure/sentinel/media/overview/mitre-coverage-defender.png" alt-text="Screenshot showing MITRE ATT&CK coverage in Microsoft Sentinel." lightbox="/azure/sentinel/media/overview/mitre-coverage-defender.png":::
 
@@ -62,9 +62,11 @@ Microsoft Sentinel enables data collection from a vast number of Microsoft and n
 | Workbooks | Detect threats with visual insights, especially to monitor the health of your data collection and understand gaps that prevent proper threat detection. | [Visualize your data with workbooks](/azure/sentinel/monitor-your-data?tabs=defender-portal) |
 | Summary rules | Optimizes noisy, high volume logs to detect threat in low-security value data. | [Generate alerts on threat intelligence matches against network data](/azure/sentinel/summary-rules#generate-alerts-on-threat-intelligence-matches-against-network-data) |
 
+For more information, see [Connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard).
+
 ## Microsoft Defender for Cloud threat detection
 
-Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into the Defender portal for correlation and severity classification. Although Defender for Cloud is licensed separately from Defender XDR, each extra plan enabled in Defender for Cloud adds to the detection signals streamed into Defender portal. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
+Defender for Cloud provides threat detection to generate alerts and incidents by continuously monitoring your clouds' assets with advanced security analytics. Those signals are integrated directly into the Defender portal for correlation and severity classification. Each plan enabled in Defender for Cloud adds to the detection signals streamed into Defender portal. For more information, see [Alerts and incidents in Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).
 
 Defender for Cloud detects threats across a wide variety of workloads. The following table gives examples of some of the threats it detects. For more information on specific alerts, see [Security alerts reference list](/azure/defender-for-cloud/alerts-reference).
 
