@@ -24,7 +24,7 @@ Microsoft's unified SecOps platform in the Microsoft Defender portal pulls detec
 
 ## Threat detection in the Microsoft Defender portal
 
-Security teams need focus and clarity to eliminate false positives. Microsoft Defender portal correlates and merges alerts and incidents from all Microsoft security and compliance solutions as well as unifying threat detection from external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender XDR puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
+Security teams need focus and clarity to eliminate false positives. Microsoft Defender portal correlates and merges alerts and incidents from all Microsoft security and compliance solutions as well as unifying threat detection from external solutions through Microsoft Sentinel and Microsoft Defender for Cloud. The correlation and merging of these signals brings rich context and prioritization. For example, an Adversary-in-The-Middle (AiTM) phishing attack might have pieces of the threat puzzle scattered across multiple sources. Defender portal puts those pieces together into an attack story while providing attack disrupt and guided response to remediate the threat.
 
 The following image shows the incidents dashboard correlating signals from multiple services, including the individual detection sources for a complete AiTM attack story.
 
