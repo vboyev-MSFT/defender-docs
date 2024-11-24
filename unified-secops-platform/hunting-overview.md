@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # Hunting in the Microsoft unified security platform
 
-Hunting for security threats is a highly customizable activity that is most effective when accomplished in all three stages: proactive, reactive and post incident. Microsoft's unified SecOps platform provides effective hunting tools for every stage of threat hunting. These tools are well fit for analysts just starting out in their career or experienced threat hunters using advance hunting methods. Threat hunters of all levels benefit from hunting tool features that allow them to share their techniques, queries and findings with their team along the way.
+Hunting for security threats is a highly customizable activity that is most effective when accomplished in all three stages: proactive, reactive, and post incident. Microsoft's unified SecOps platform provides effective hunting tools for every stage of threat hunting. These tools are well fit for analysts just starting out in their career or experienced threat hunters using advance hunting methods. Threat hunters of all levels benefit from hunting tool features that allow them to share their techniques, queries, and findings with their team along the way.
 
 ## Hunting stages
 
@@ -27,7 +27,7 @@ Make the most of your hunting tools in three stages. Refer to **bolded terms** f
 
 |**Hunting stage**|**Hunting tools**|
 |---|---|
-| **Proactive** - Find the weak areas in your environment before threat actors do. | - Take proactive steps to build and test queries against data from new or updated sources.<br> - Conduct end-to-end **hunts**.<br> - **Advanced hunting** has many ways to find attacks just beginning or detect threats not alerted to yet.<br> - Use the **MITRE ATT&CK map** to identify gaps in your detection coverage by running predefined hunting queries for specific techniques as a starting point to develop new logic.<br> - Plug new threat intelligence into proven queries to tune your detections and confirm if a compromise is in process.|
+| **Proactive** - Find the weak areas in your environment before threat actors do. | - Take proactive steps to build and test queries against data from new or updated sources.<br> - Conduct end-to-end **hunts**.<br> - **Advanced hunting** has many ways to find attacks just beginning or detect threats not alerted to yet.<br> - Use the **MITRE ATT&CK map** to identify gaps in your detection coverage by running predefined hunting queries for specific techniques as a starting point to develop new logic.<br> - Insert new threat intelligence into proven queries to tune your detections and confirm if a compromise is in process.|
 | **Reactive** - Hunting tools to use during an active investigation. | - Use **livestream** to run specific queries at consistent intervals to actively monitor events.<br> - Defender portal incidents pivot quickly with **go hunt** to search more broadly for suspicious entities found during an investigation.<br> - Hunt through threat intelligence to perform **infrastructure chaining**<br> - Tap into **Security Copilot in advanced hunting** to generate queries at machine speed and scale.|
 | **Post incident** - Improve coverage and insight to prevent similar incidents. | - Turn successful hunting queries into new analytics and detection rules or refine existing ones.<br> - **Restore historical data** and **search large datasets** for specialized hunting as part of full incident investigations.|
 
@@ -41,7 +41,7 @@ Kusto Query Language (KQL) is a powerful and flexible language optimized for sea
 - [**Content hub**](/azure/sentinel/sentinel-solutions-deploy?tabs=azure-portal#hunting-query) provides expert queries to match out-of-the-box solutions in Microsoft Sentinel.
 - [Microsoft Defender Experts for Hunting](/defender-xdr/advanced-hunting-overview) compliments even the best threat hunters that want assistance.
 
-Explore the following hunting tools in Defender portal to maximize the full extent of your team's hunting prowess:
+Maximize the full extent of your team's hunting prowess with the following hunting tools in Defender portal:
 
 | **Hunting tool** | **Description** |
 |---|---|
