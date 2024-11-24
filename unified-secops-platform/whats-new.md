@@ -6,7 +6,7 @@ ms.service: unified-secops-platform
 ms.author: cwatson
 author: cwatson-cat
 ms.localizationpriority: medium
-ms.date: 11/15/2024
+ms.date: 11/24/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,6 +23,7 @@ This article lists recent features added into Microsoft's unified SecOps platfor
 ## November 2024
 
 - [Microsoft Sentinel availability in Microsoft Defender portal](#microsoft-sentinel-availability-in-microsoft-defender-portal)
+- [Feature availability for Government clouds](#feature-availability-for-government-clouds)
 
 ### Microsoft Sentinel availability in Microsoft Defender portal
 
