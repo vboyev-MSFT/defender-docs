@@ -46,10 +46,10 @@ When using a US government cloud, you need to use the following URIs instead of 
 
 - **Login**:
 
-    - **GCC**: https://login.microsoftonline.com
-    - **GCC High and DoD**: https://login.microsoftonline.us
+  - **GCC**: https://login.microsoftonline.com
+  - **GCC High and DoD**: https://login.microsoftonline.us
 
 - **Microsoft Defender XDR API**:
 
-    - **GCC**: https://api-gcc.security.microsoft.us
-    - **GCC High and DoD**: https://api-gov.security.microsoft.us
+  - **GCC**: https://api-gcc.security.microsoft.us
+  - **GCC High and DoD**: https://api-gov.security.microsoft.us

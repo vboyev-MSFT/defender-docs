@@ -26,7 +26,7 @@ Defender XDR consolidates threat signals and data across assets, so that you can
 
 Defender XDR combines multiple Microsoft security services.
 
-**Service** | **Details**
+Service | Details
 --- | ---
 **[Protect against email threats with Defender for Office 365](/defender-office-365/mdo-sec-ops-guid)** | Helps protect email and Office 365 resources.
 **[Protect devices with Defender for Endpoint](/defender-endpoint/mde-sec-ops-guide)** | Delivers preventative protection, post-breach detection, and automated investigation and response for devices.
@@ -71,7 +71,7 @@ Defender XDR provides threat hunting capabilities in the Defender portal.
 
 - **Advanced hunting**: SOC teams can use [advanced hunting](/defender-xdr/advanced-hunting-overview) with the Kusto Query Language (KQL) in the portal to create custom queries and rules for threat hunting across the enterprise. Analysts can search for indicators of compromise, anomalies, and suspicious activities across Defender XDR data sources.
 
-    If you're not familiar with KQL, Defender XDR provides a guided mode to create queries visually, and predefined query templates.
+  If you're not familiar with KQL, Defender XDR provides a guided mode to create queries visually, and predefined query templates.
 
 - **Custom detection rules**: In addition to advanced hunting, SOC teams can create [custom detection rules](/defender-xdr/custom-detections-overview) to proactively monitor and respond to events and system states. Rules can trigger alerts or automatic response actions.
 
@@ -82,6 +82,3 @@ Defender for XDR provides [automated investigation and response](/defender-xdr/m
 As alerts create incidents, automated investigations produce a verdict that determines whether a threat was found. When suspicious and malicious threats are identified, remediation actions include sending a file to quarantine, stopping a process, blocking a URL, or isolating a device.
 
 You can view a summary of automated investigations and responses in the Home page of the portal. Pending remediation actions are handled in the portal Action Center.
-
-
-
