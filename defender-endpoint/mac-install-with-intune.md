@@ -337,7 +337,7 @@ For more information, see [Set preferences for Microsoft Defender for Endpoint o
 
 ### Step 10: Network protection for Microsoft Defender for Endpoint on macOS
 
-In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
+In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
 
