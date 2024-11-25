@@ -32,9 +32,9 @@ The following predefined classification rules were added to the critical assets 
 
 | Classification                                       | Description                                                  |
 | :--------------------------------------------------- | :----------------------------------------------------------- |
-| Locked Azure Kubernetes Service cluster              | This rule applies to Azure Kubernetes service clusters that are safeguarded by a lock. |
-| Premium tier Azure Kubernetes Service cluster        | This rule applies to premium tier Azure Kubernetes service clusters. |
-| Azure Kubernetes Service cluster with multiple nodes | This rule applies to Azure Kubernetes service clusters with multiple nodes. |
+| Locked Azure Kubernetes Service cluster              | This rule applies to Azure Kubernetes Service clusters that are safeguarded by a lock. |
+| Premium tier Azure Kubernetes Service cluster        | This rule applies to premium tier Azure Kubernetes Service clusters. |
+| Azure Kubernetes Service cluster with multiple nodes | This rule applies to Azure Kubernetes Service clusters with multiple nodes. |
 | Azure Arc Kubernetes cluster with multiple nodes     | This rule applies to Azure Arc clusters with multiple nodes. |
 
 For more information, see, [Predefined classifications](predefined-classification-rules-and-levels.md)
