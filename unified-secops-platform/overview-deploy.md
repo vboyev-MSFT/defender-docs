@@ -24,7 +24,7 @@ Microsoft Security Exposure Management and Microsoft Threat Intelligence are ava
 
 - Before you deploy Microsoft's unified security operations platform, make sure that you have a plan in place, including a workspace design and an understanding of Microsoft Sentinel costs and billing.
 
-    For more information, see [Unified security operations platform planning overview](overview-plan.md).
+  For more information, see [Unified security operations platform planning overview](overview-plan.md).
 
 ## Deploy Microsoft Defender XDR services
 

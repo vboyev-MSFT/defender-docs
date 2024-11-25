@@ -95,8 +95,8 @@ Microsoft Security Copilot brings together the power of AI and human expertise t
 - **Reduce exposure and improve posture**. Prevent breaches with insights to uncover critical exposure risk, and risk reduction recommendations.
 - **Prevent and disrupt threats**. Identify and prioritize with incident summaries MITRE ATT&CK framework mapping, and automatic alert enrichment.
 - **Empower analysts**:
-    - Accelerate incident resolution with guided responses, automated remediation, and summary report generation.
-    - Provide intelligent assistance with tailored prompts based on best practices that analyze malicious scripts and files, and suggest KQL queries.
+  - Accelerate incident resolution with guided responses, automated remediation, and summary report generation.
+  - Provide intelligent assistance with tailored prompts based on best practices that analyze malicious scripts and files, and suggest KQL queries.
 
 The following image shows the integration of Microsoft Copilot in an incident page in the Defender portal.
 

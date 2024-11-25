@@ -7,10 +7,13 @@
     topicHref: /unified-secops-platform/index
   - name: "Microsoft's unified SecOps platform"
     tocHref: /security/zero-trust/
-    topicHref: /defender-xdr/unified-secops-platform/index
+    topicHref: /unified-secops-platform/index
   - name: "Microsoft's unified SecOps platform"
     tocHref: /defender-for-identity/
-    topicHref: /defender-xdr/unified-secops-platform/index
+    topicHref: /unified-secops-platform/index
+  - name: "Microsoft's unified SecOps platform"
+    tocHref: /defender-xdr/
+    topicHref: /unified-secops-platform/index
     
 ## Azure override
 - name: "Microsoft Defender"
