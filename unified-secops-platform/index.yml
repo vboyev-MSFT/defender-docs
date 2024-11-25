@@ -51,10 +51,12 @@ landingContent:
           - text: "Reduce security risks"
             url: reduce-risk-overview.md
           - text: "Detect threats"
-            url: overview-deploy.md ## Need to replace link when available
-          - text: "Hunt for threats"
-            url: overview-deploy.md ## Need to replace link when available
-
+            url: detect-threats-overview.md
+          - text: "Advanced hunting"
+            url: /defender-xdr/advanced-hunting-overview?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json
+          - text: Hunting in Microsoft Sentinel
+            url: /azure/sentinel/hunting?toc=/unified-secops-platform/toc.json&bc=/unified-secops-platform/breadcrumb/toc.json&tabs=defender-portal
+            
   - title: Investigate and respond
     linkLists:
       - linkListType: concept
