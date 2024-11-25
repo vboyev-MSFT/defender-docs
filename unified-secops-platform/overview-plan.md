@@ -101,7 +101,7 @@ Microsoft's unified SecOps platform ingests data from first-party Microsoft serv
 
 ## Plan roles and permissions
 
-Use Microsoft Entra role based access control (RBAC) to create and assign roles within your security operations team to grant appropriate access to services incuded in Microsoft's unified SecOps platform.
+Use Microsoft Entra role based access control (RBAC) to create and assign roles within your security operations team to grant appropriate access to services included in Microsoft's unified SecOps platform.
 
 The Microsoft Defender XDR Unified role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to control user permissions across several security solutions. For more information, see [Microsoft Defender XDR Unified role-based access control (RBAC)](/defender-xdr/manage-rbac).
 
