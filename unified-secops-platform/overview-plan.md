@@ -88,16 +88,16 @@ Microsoft's unified SecOps platform ingests data from first-party Microsoft serv
 
 - **Determine the full set of data sources you'll be ingesting data from, and the data size requirements** to help you accurately project your deployment's budget and timeline.
 
-    You might determine this information during your business use case review, or by evaluating a current SIEM that you already have in place. If you already have a SIEM in place, analyze your data to understand which data sources provide the most value and should be ingested into Microsoft Sentinel.
+  You might determine this information during your business use case review, or by evaluating a current SIEM that you already have in place. If you already have a SIEM in place, analyze your data to understand which data sources provide the most value and should be ingested into Microsoft Sentinel.
 
-    For more information, see [Prioritize data connectors](/azure/sentinel/prioritize-data-connectors).
+  For more information, see [Prioritize data connectors](/azure/sentinel/prioritize-data-connectors).
 
 - **Plan your Microsoft Sentinel budget, considering cost implications for each planned scenario**.
 
-    Make sure that your budget covers the cost of data ingestion for both Microsoft Sentinel and Azure Log Analytics, any playbooks that will be deployed, and so on.  For more information, see:
+  Make sure that your budget covers the cost of data ingestion for both Microsoft Sentinel and Azure Log Analytics, any playbooks that will be deployed, and so on.  For more information, see:
 
-    - [Log retention plans in Microsoft Sentinel](/azure/sentinel/log-plans)
-    - [Plan costs and understand Microsoft Sentinel pricing and billing](/azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers)
+  - [Log retention plans in Microsoft Sentinel](/azure/sentinel/log-plans)
+  - [Plan costs and understand Microsoft Sentinel pricing and billing](/azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers)
 
 ## Plan roles and permissions
 

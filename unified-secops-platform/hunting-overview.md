@@ -33,7 +33,7 @@ The foundation of hunting queries in the Defender portal rests on Kusto Query La
 
 Maximize the full extent of your team's hunting prowess with the following hunting tools in the Defender portal:
 
-| **Hunting tool** | **Description** |
+| Hunting tool | Description |
 |---|---|
 |[**Advanced hunting**](/defender-xdr/advanced-hunting-microsoft-defender) | View and query data sources available within Microsoft's unified SecOps platform and share queries with your team. Use all your existing Microsoft Sentinel workspace content, including queries and functions. |
 |[**Microsoft Sentinel hunting**](/azure/sentinel/hunting) | Hunt for security threats across data sources. Use specialized search and query tools like **hunts**, **bookmarks** and **livestream**. |
@@ -52,7 +52,7 @@ Maximize the full extent of your team's hunting prowess with the following hunti
 
 The following table describes how you can make the most of the Defender portal's hunting tools across all stages of threat hunting:
 
-| **Hunting stage** | **Hunting tools** |
+| Hunting stage | Hunting tools |
 | --- | --- |
 | **Proactive** - Find the weak areas in your environment before threat actors do. Detect suspicious activity extra early. | - Regularly conduct end-to-end [hunts](/azure/sentinel/hunts) to proactively seek out undetected threats and malicious behaviors, validate hypotheses, and act on findings by creating new detections, incidents, or threat intelligence.<br><br> - Use the [MITRE ATT&CK map](/azure/sentinel/mitre-coverage#use-the-mitre-attck-framework-in-analytics-rules-and-incidents) to identify detection gaps, and then run predefined hunting queries for highlighted techniques.<br><br> - Insert new threat intelligence into proven queries to tune detections and confirm if a compromise is in process.<br><br> - Take proactive steps to build and test queries against data from new or updated sources.<br><br> - Use [advanced hunting](/defender-xdr/advanced-hunting-microsoft-defender) to find early-stage attacks or threats that don't have alerts. |
 | **Reactive** - Use hunting tools during an active investigation. | - Use [livestream](/azure/sentinel/livestream) to run specific queries at consistent intervals to actively monitor events.<br><br> - Quickly pivot on incidents with the [**Go hunt**](/defender-xdr/advanced-hunting-go-hunt) button to search broadly for suspicious entities found during an investigation.<br><br> - Hunt through threat intelligence to perform [infrastructure chaining](/defender/threat-intelligence/infrastructure-chaining).<br><br> - Use [Security Copilot in advanced hunting](/defender-xdr/advanced-hunting-security-copilot) to generate queries at machine speed and scale. |
