@@ -115,7 +115,7 @@ In this step, we go over *Preferences* so you can configure anti-malware and EDR
 
 1. Follow the guidance in [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) before setting the security policies using Microsoft Defender.
 
-2. In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47), go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
+2. In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage), go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
 
 3. Under **Select Platform**, select **macOS**.
 
