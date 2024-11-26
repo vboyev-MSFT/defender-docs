@@ -6,16 +6,12 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 06/24/2024
+ms.date: 11/04/2024
 ---
 
 # Start using Microsoft Security Exposure Management
 
 This article describes how to start working with the [Microsoft Security Exposure Management](microsoft-security-exposure-management.md) dashboard.
-
-Security Exposure Management is currently in public preview. Initially, your data uses default settings in Security Exposure Management.
-
-[!INCLUDE [prerelease](../includes//prerelease.md)]
 
 ## Reviewing security exposure state
 

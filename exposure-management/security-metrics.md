@@ -6,7 +6,8 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 11/13/2024
+ms.date: 11/18/2024
+
 ---
 
 # Investigate security initiative metrics

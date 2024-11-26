@@ -6,16 +6,13 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: overview
 ms.service: exposure-management
-ms.date: 11/13/2024
+ms.date: 11/18/2024
+
 ---
 
 # Explore with the attack surface map
 
 To visualize exposure data, use the attack surface map in [Microsoft Security Exposure Management](microsoft-security-exposure-management.md), together with the enterprise exposure graph schema.
-
-Security Exposure Management is currently in public preview.
-
-[!INCLUDE [prerelease](../includes//prerelease.md)]
 
 ## Prerequisites
 
