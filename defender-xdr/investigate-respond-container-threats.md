@@ -99,11 +99,9 @@ To determine the full scope of a container attack, you can deepen your investiga
 
 In the [Advanced hunting](advanced-hunting-overview.md) page, you can extend your search for container-related activities using the **CloudProcessEvents** and **CloudAuditEvents** tables.
 
-:::image type="content" source="/defender/media/defender-containers/adv-hunting-cloud-small.png" alt-text="Highlighting the advanced hunting tables related to cloud events." lightbox="/defender/media/defender-containers/adv-hunting-cloud.png":::
+The [CloudProcessEvents](advanced-hunting-cloudprocessevents-table.md) table contains information about process events in multi-cloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine.
 
-The **CloudProcessEvents** table contains information about process events in multi-cloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine.
-
-The **CloudAuditEvents table** contains cloud audit events from cloud platforms protected by Microsoft Defender for Cloud. It also contains Kubeaudit logs, which holds information about Kubernetes-related events.
+The [CloudAuditEvents](advanced-hunting-cloudauditevents-table.md) table contains cloud audit events from cloud platforms protected by Microsoft Defender for Cloud. It also contains Kubeaudit logs, which holds information about Kubernetes-related events.
 
 ## See also
 
