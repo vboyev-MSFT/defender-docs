@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
 ms.service: defender-office-365
-ms.date: 07/18/2024
+ms.date: 11/08/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -288,7 +288,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
        For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
 
-       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email message is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email message is clean. For all other values like 1 day, 7 days, 30 days, specific date the allow entry expire at the defined date. 
+       When **45 days after last used date** is selected, the last used date of the allow entry is updated when the malicious email message is encountered during mail flow. The allow entry is kept for 45 days after the filtering system determines that the email message is clean. For all other values, the allow entry exipres on the defined date (**1 day**, **7 days**, **30 days**, or the **Specific date**).
 
      - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 
