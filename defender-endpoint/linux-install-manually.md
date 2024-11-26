@@ -502,8 +502,8 @@ The following external package dependencies exist for the mdatp package:
 - For Mariner the mdatp package requires `attr`,  `diffutils`, `libacl`, `libattr`, `libselinux-utils`, `selinux-policy`, `policycoreutils`, `mde-netfilter`
 
 > [!NOTE]
-> > If you are using Defender for Endpoint on Linux version `101.24072.000` or lower, and using the `Auditd` event provider,
-> The following external package dependencies exist for the mdatp package:
+> Starting with version `101.2408.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
+> If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.000` or lower, the following additional dependency on the auditd package exists for mdatp:
 > - The mdatp RPM package requires `audit`
 > - For DEBIAN the mdatp package requires `auditd`
 > - For Mariner the mdatp package requires `audit`
