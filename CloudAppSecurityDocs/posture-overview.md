@@ -32,14 +32,16 @@ Follow these steps to ensure that your application connector is set to show data
 1. Use the filter to locate the application where you want to turn on security recommendations.
 
 1. Open the instance drawer and note whether 'Security recommendations' are turned on or off. For example, the following example shows that 'Security recommendations' are turned on for **Okta Contoso EU** instance:
-![Screenshot of an instance where Secure Score recommendations are turned on.](media/posture-overview/screenshot-of-an-instance-where-secure-score-recommendations-are-turned-on.png)
 
-    If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on 'Security recommendations'**. For example:
-![Screenshot of the Turn on Secure Score or 'Exposure management' recommendations option.](media/posture-overview/screenshot-of-the-turn-on-secure-score-or-exposure-management-recommendations-option.png)
+   ![Screenshot of an instance where Secure Score recommendations are turned on.](media/posture-overview/screenshot-of-an-instance-where-secure-score-recommendations-are-turned-on.png)
 
-    > [!NOTE]
-    > If you have multiple instances of the same app, you can send security recommendations for each instance separately.
-Security recommendations for the selected instance are added to Microsoft Security Exposure Management in addition to the current recommendations.
+   If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on 'Security recommendations'**. For example:
+
+   ![Screenshot of the Turn on Secure Score or 'Exposure management' recommendations option.](media/posture-overview/screenshot-of-the-turn-on-secure-score-or-exposure-management-recommendations-option.png)
+
+   > [!NOTE]
+   > If you have multiple instances of the same app, you can send security recommendations for each instance separately.
+   > Security recommendations for the selected instance are added to Microsoft Security Exposure Management in addition to the current recommendations.
 
 Security recommendations are shown automatically in [Microsoft Security Exposure Management](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and might take up to 24 hours to update.
 
@@ -56,9 +58,7 @@ For more information, see [Assess your security posture with Microsoft Secure Sc
 > [!IMPORTANT]
 > Since Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD, it is recommended for these environments to consume SaaS security posture recommendations in [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) as explained above.
 
-To effectively manage your organization's SaaS security posture, we recommend beginning with the SaaS Security initiative. This initiative consolidates best practices and measurable metrics specifically for securing SaaS applications, allowing you to prioritize and address the most impactful recommendations for SaaS environments. For more information, see:
-
-- [SaaS Security Initiative](/defender-cloud-apps/saas-security-initiative)
+To effectively manage your organization's SaaS security posture, we recommend beginning with the SaaS Security initiative. This initiative consolidates best practices and measurable metrics specifically for securing SaaS applications, allowing you to prioritize and address the most impactful recommendations for SaaS environments. For more information, see [SaaS Security Initiative](/defender-cloud-apps/saas-security-initiative).
 
 In addition you can find a variety of SSPM recommendations under different initiatives. Key initiatives include:
 
