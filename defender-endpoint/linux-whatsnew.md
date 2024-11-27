@@ -38,6 +38,7 @@ This article is updated frequently to let you know what's new in the latest rele
 > Review your current Defender for Endpoint on Linux deployment, and begin planning your migration to the eBPF-supported build. For more information on eBPF and how it works, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf).
 >
 > If you have any concerns or need assistance during this transition, contact support.
+
 <details> <summary> Nov-2024 (Build: 101.24092.0002 | Release version: 30.124092.0002.0)</summary>
 
 Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
