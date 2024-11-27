@@ -187,6 +187,7 @@
   "redirection_files": [
     ".openpublishing.redirection.defender.json",
     ".openpublishing.redirection.defender-cloud-apps.json",
-    ".openpublishing.redirection.defender-xdr.json"
+    ".openpublishing.redirection.defender-xdr.json",
+    ".openpublishing.redirection.ata-atp.json"
   ]
 }
