@@ -92,6 +92,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
     - Description: **Microsoft Defender for Cloud Apps API Connector** (you can also choose another description).
     - Company: **Microsoft Defender for Cloud Apps** (you can also choose another company).
     - Unique identifier: **microsoft_cloud_app_security** (you can also choose another unique identifier).
+    - Client Kind: **Confidential**
     - Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
 
       > [!NOTE]
