@@ -528,9 +528,6 @@ Dependencies: Microsoft Defender Antivirus
 
 This rule prevents malware from abusing WMI to attain persistence on a device.
 
-> [!IMPORTANT]
-> File and folder exclusions don't apply to this attack surface reduction rule.
-
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
 > [!NOTE]
