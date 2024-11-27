@@ -14,7 +14,7 @@ One of Microsoft Defender for Cloud Apps’ core pillars is SaaS Security Postur
 
 ![Screenshot of the SalesForce recommendations in Secure Score.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
 
-![Screenshot of the SaaS security initiative.](<media/posture-overview/screenshot-of-the-saas-security-initiative-home-page.png>)
+![Screenshot of the SaaS security initiative.](media/posture-overview/screenshot-of-the-saas-security-initiative-home-page.png)
 
 ## Prerequisites
 
@@ -33,10 +33,10 @@ Follow these steps to ensure that your application connector is set to show data
 1. Use the filter to locate the application where you want to turn on security recommendations.
 
 1. Open the instance drawer and note whether 'Security recommendations' are turned on or off. For example, the following example shows that 'Security recommendations' are turned on for **Okta Contoso EU** instance:
-![Screenshot of an instance where Secure Score recommendations are turned on.](<media/posture-overview/screenshot-of-an-instance-where-secure-score-recommendations-are-turned-on.png>)
+![Screenshot of an instance where Secure Score recommendations are turned on.](media/posture-overview/screenshot-of-an-instance-where-secure-score-recommendations-are-turned-on.png)
 
     If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on 'Security recommendations'**. For example:
-![Screenshot of the Turn on Secure Score or 'Exposure management' recommendations option.](<media/posture-overview/screenshot-of-the-turn-on-secure-score-or-exposure-management-recommendations-option.png>)
+![Screenshot of the Turn on Secure Score or 'Exposure management' recommendations option.](media/posture-overview/screenshot-of-the-turn-on-secure-score-or-exposure-management-recommendations-option.png)
 
     > [!NOTE]
     > If you have multiple instances of the same app, you can send security recommendations for each instance separately.
