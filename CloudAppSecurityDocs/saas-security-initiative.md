@@ -11,7 +11,8 @@ ms.date: 10/31/2024
 
 The SaaS Security Initiative provides a centralized place for SaaS security best practices, enabling organizations to manage and prioritize security recommendations effectively. By focusing on the most impactful metrics, organizations can enhance their SaaS security posture efficiently.
 
-![Screenshot of the SaaS security initiative home page.](<media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png>)
+![Screenshot of the SaaS security initiative home page.](media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png)
+
 
 ## What is the SaaS Security Initiative?
 
@@ -39,5 +40,7 @@ Once selected, you can click on any of the **Non-Compliant** recommendations to 
 
 ## Additional Information
 
-- Each metric includes a list of associated app connectors, encouraging organizations to enable more connectors for enhanced visibility. If you're interested in recommendations for specific applications, navigate to the **Security Recommendations** tab and filter by the relevant application.
-- To learn more about Exposure Management initiatives visit [here](/security-exposure-management/initiatives).
+Each metric includes a list of associated app connectors, encouraging organizations to enable more connectors for enhanced visibility. If you're interested in recommendations for specific applications, navigate to the **Security Recommendations** tab and filter by the relevant application.
+
+To learn more about Exposure Management initiatives, see [Review security initiatives](/security-exposure-management/initiatives).
+
