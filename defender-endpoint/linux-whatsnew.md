@@ -29,11 +29,11 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 > [!IMPORTANT]
-> Starting with version `101.2408.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023, and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
+> Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023, and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
 > 
-> 1. Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
+> 1. Continue to use Defender for Endpoint on Linux build `101.24072.0001` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
 >
-> 2. If you are on versions later than `101.24072.0000`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
+> 2. If you are on versions later than `101.24072.0001`, Defender for Endpoint on Linux relies on `netlink` as a backup supplementary event provider. In the event of a fallback, all process operations continue to flow seamlessly. 
 >
 > Review your current Defender for Endpoint on Linux deployment, and begin planning your migration to the eBPF-supported build. For more information on eBPF and how it works, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf).
 >
@@ -41,9 +41,14 @@ This article is updated frequently to let you know what's new in the latest rele
 
 <details> <summary> Nov-2024 (Build: 101.24092.0002 | Release version: 30.124092.0002.0)</summary>
 
-Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
+## Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 
- Released: **November 14, 2024**  Published: **November 14, 2024**  Build: **101.24092.0002**  Release version: **30.124092.0002**  Engine version: 1.1.24080.9  Signature version: 1.417.659.0
+&ensp;Released: **November 14, 2024**<br/>
+&ensp;Published: **November 14, 2024**<br/>
+&ensp;Build: **101.24092.0002**<br/>
+&ensp;Release version: **30.124092.0002**<br/>
+&ensp;Engine version: **1.1.24080.9**<br/>
+&ensp;Signature version: **1.417.659.0**<br/>
 
 **What's new**
 
