@@ -15,10 +15,10 @@ To establish a connection with any of the supported external products, follow th
 
 1. Complete the applicable prerequisite steps for your external data connectors.
    Each of the connectors have explicit instructions for setting up valid credentials and creating the connection.
-     - [ServiceNow CMDB](ServiceNow-data-connector.md)
-     - [Qualys VM](Qualys-data-connector.md)
-     - [Rapid7 VM](Rapid7-data-connector.md)
-     - [Tenable](Tenable-data-connector.md)
+     - [ServiceNow CMDB](servicenow-data-connector.md)
+     - [Qualys VM](qualys-data-connector.md)
+     - [Rapid7 VM](rapid7-data-connector.md)
+     - [Tenable](tenable-data-connector.md)
      - Wiz (coming soon)
      - Palo Alto (coming soon)
 
@@ -56,6 +56,6 @@ For specific instructions on allowlisting IP addresses for each external product
 
 Select the external data connector you want to configure and follow the steps to connect it to Exposure Management.
 
-- [CMDB data connectors](ServiceNow-data-connector.md)
-- [Vulnerability management data connectors](Qualys-data-connector.md)
+- [CMDB data connectors](servicenow-data-connector.md)
+- [Vulnerability management data connectors](qualys-data-connector.md)
 - Cloud security data connectors (coming soon)
