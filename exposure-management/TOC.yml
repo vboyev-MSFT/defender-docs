@@ -43,7 +43,7 @@
        - name: CMDB data connectors
          items:
            - name: ServiceNow
-             href: servicenow-data-connector.md
+             href: ServiceNow-data-connector.md
        - name: Vulnerability Management data connectors
          items:
            - name: Qualys
