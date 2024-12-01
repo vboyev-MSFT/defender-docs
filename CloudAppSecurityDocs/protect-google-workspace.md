@@ -184,8 +184,8 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
     1. Upload the P12 **Certificate** file that you saved earlier.
 
-    1. Enter email of your **Google Workspace Super Admin**.
-       - Deploying with an account that is not a Google Workspace Super Admin will lead to failure in the API test and does not allow Defender for Cloud Apps to correctly function. We request specific scopes so even as Super Admin, MDA is still limited.
+    1. Enter the email address of your **Google Workspace Super Admin**.
+        Deploying with an account that is not a Google Workspace Super Admin will lead to failure in the API test and does not allow Defender for Cloud Apps to correctly function. We request specific scopes so even as Super Admin, Defender for Cloud Apps is still limited.
 
     1. If you have a Google Workspace Business or Enterprise account, select the check box. For information about which features are available in Defender for Cloud Apps for Google Workspace Business or Enterprise, see [Enable instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
