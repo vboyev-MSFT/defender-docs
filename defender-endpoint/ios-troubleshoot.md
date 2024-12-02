@@ -87,12 +87,12 @@ In addition, a notification is shown on the iOS device. Tapping on the notificat
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="media/ios-phish-alert.png" alt-text="The site reported as unsafe notification" lightbox="media/ios-phish-alert.png":::
 
-## Device not seen on the Defender for Endpoint console after onboarding
+## Device not seen in the Microsoft Defender portal after onboarding
 
-After onboarding, it takes few hours for device to show up in the Device inventory in the Defender for Endpoint security console. Also, ensure that device is registered correctly with Microsoft Entra ID and device has internet connectivity. For successful onboarding, the device has to be registered via Microsoft Authenticator or Intune Company Portal and the user needs to sign-in using the same account with which device is registered with Microsoft Entra ID.
+After onboarding, it takes few hours for device to show up in the Device inventory in the Microsoft Defender portal. Also, ensure that device is registered correctly with Microsoft Entra ID and device has internet connectivity. For successful onboarding, the device has to be registered via Microsoft Authenticator or Intune Company Portal and the user needs to sign-in using the same account with which device is registered with Microsoft Entra ID.
 
 > [!NOTE]
-> Sometimes, the device name is not consistent with that in Microsoft Intune admin center. The device name in Defender for Endpoint console is of the format <username_iPhone/iPad*>. You can also use Microsoft Entra device ID to identify the device in the Defender for Endpoint console.
+> Sometimes, the device name is not consistent with that in Microsoft Intune admin center. The device name in the Microsoft Defender portal is of the format <username_iPhone/iPad*>. You can also use your Microsoft Entra device ID to identify the device in the Microsoft Defender portal.
 
 ## Data and Privacy
 
