@@ -116,7 +116,9 @@ Post reboot, run the following command to check if audit rules were cleared:
 The output of previous command should show no rules or any user added rules. In case where the rules weren't removed, do the following steps to clear the audit rules file:
 
 1. Switch to ebpf mode.
+
 2. Remove the file `/etc/audit/rules.d/mdatp.rules`.
+
 3. Reboot the machine.
 
 ### Troubleshooting and Diagnostics
@@ -131,23 +133,23 @@ uname -a
 
 1. Enabling eBPF on RHEL 8.1 version with SAP might result in kernel panic. To mitigate this issue, you can take one of the following steps:
 
-    - Use a distro version higher than RHEL 8.1.
-    - Switch to AuditD mode if you need to use RHEL 8.1 version.
+   - Use a distro version higher than RHEL 8.1.
+   - Switch to AuditD mode if you need to use RHEL 8.1 version.
 
 2. Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result in kernel panic. To mitigate this issue, you can take one of the following steps:
 
-    - Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. The minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4.
-    - Switch to AuditD mode if you need to use the same kernel version
+   - Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. The minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4.
+   - Switch to AuditD mode if you need to use the same kernel version
 
-        ```bash
-        sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
-        ```
+      ```bash
+      sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
+      ```
 
-    - The following two sets of data help analyze potential issues and determine the most effective resolution options.
+   - The following two sets of data help analyze potential issues and determine the most effective resolution options.
 
-          1. Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
+      1. Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
 
-          2. Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information).
+      2. Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information).
 
 3. System hangs on Oracle Linux 7.9 running Defender for Linux when ksplice is used for live kernel patching. 
 
