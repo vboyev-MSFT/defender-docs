@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 09/30/2024
+ms.date: 12/02/2024
 ---
 
 # Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
