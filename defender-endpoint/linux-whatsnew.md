@@ -56,7 +56,7 @@ Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 <details>
 <summary> Oct-2024 (Build: 101.24082.0004 | Release version: 30.124082.0004.0)</summary>
 
-## Sept-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
+## OCT-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
 
 &ensp;Released: **October 15, 2024**<br/>
 &ensp;Published: **October 15, 2024**<br/>
