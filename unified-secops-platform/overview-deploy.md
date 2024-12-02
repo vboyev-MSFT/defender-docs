@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 ms.service: unified-secops-platform
 ms.topic: how-to #Don't change.
-ms.date: 11/10/2024
+ms.date: 12/02/2024
 ms.collection:
 - usx-security
 
@@ -52,11 +52,11 @@ Microsoft Defender for Cloud provides a unified security management experience f
 
 For more information, see [Connect your Azure subscriptions](/azure/defender-for-cloud/connect-azure-subscription).
 
-## Onboard to Microsoft Copilot for Security
+## Onboard to Microsoft Security Copilot
 
-Onboard to Microsoft Copilot for Security to enhance your security operations by leveraging advanced AI capabilities. Copilot for Security assists in threat detection, investigation, and response, providing actionable insights and recommendations to help you stay ahead of potential threats. Use Copilot for Security to automate routine tasks, reduce the time to detect and respond to incidents, and improve the overall efficiency of your security team.
+Onboard to Microsoft Security Copilot to enhance your security operations by leveraging advanced AI capabilities. Security Copilot assists in threat detection, investigation, and response, providing actionable insights and recommendations to help you stay ahead of potential threats. Use Security Copilot to automate routine tasks, reduce the time to detect and respond to incidents, and improve the overall efficiency of your security team.
 
-For more information, see [Get started with Copilot for Security](/copilot/security/get-started-security-copilot).
+For more information, see [Get started with Security Copilot](/copilot/security/get-started-security-copilot).
 
 ## Architect your workspace and onboard to Microsoft Sentinel
 
