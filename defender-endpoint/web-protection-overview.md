@@ -33,7 +33,7 @@ ms.subservice: asr
 
 ## About web protection
 
-Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](manage-indicators.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender portal by going to **Reports > Web protection**.
+Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](indicators-overview.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender portal by going to **Reports > Web protection**.
 
 :::image type="content" source="media/web-protection.png" alt-text="The web protection cards" lightbox="media/web-protection.png":::
 

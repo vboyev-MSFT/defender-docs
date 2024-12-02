@@ -82,7 +82,7 @@ Watch this video to learn how Microsoft Defender for Endpoint provides multiple 
 
 ## See also
 
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Create indicators based on certificates](indicator-certificates.md)

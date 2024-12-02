@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to malicious or suspic
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 11/05/2024
+ms.date: 11/10/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -40,13 +40,13 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](h
 
 Network protection helps protect devices from certain Internet-based events by preventing connections to malicious or suspicious sites. Network protection is an attack surface reduction capability that helps prevent people in your organization from accessing domains that are considered dangerous through applications. Examples of dangerous domains are domains that host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(S) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and nonbrowser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](indicators-overview.md) that you can use to block specific domains or host names.
 
 ### Network protection coverage
 
 The following table summarizes network protection areas of coverage.
 
-| Feature | Microsoft Edge | 3rd-party browsers | Nonbrowser processes <br> (for example, PowerShell) |
+| Feature | Microsoft Edge | Non-Microsoft browsers | Nonbrowser processes <br/> (for example, PowerShell) |
 |:---|:---|:---|:---|
 | Web Threat Protection | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
 | Custom Indicators | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
@@ -63,7 +63,8 @@ The following table summarizes network protection areas of coverage.
 >
 > There might be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
-Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
+Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
 ## Requirements for network protection
@@ -138,28 +139,25 @@ A new, publicly available capability in network protection utilizes functions in
 
 #### Warn experience
 
-A user visits a website:
+A user visits a website. If the url has an unknown or uncertain reputation, a toast notification presents the user with the following options:
 
-- If the url has an unknown or uncertain reputation, a toast notification presents the user with the following options:
+- **Ok**: The toast notification is released (removed), and the attempt to access the site is ended.
+- **Unblock**: The user has access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
+- **Feedback**: The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-  - **Ok** - The toast notification is released (removed), and the attempt to access the site is ended.
-  - **Unblock** - The user has access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
-  - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
+:::image type="content" source="media/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
-    :::image type="content" source="media/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
-
-  > [!NOTE]
-  > The images shown in this article for both the `warn` experience and `block` experience use "blocked url" as example placeholder text. In a functioning environment, the actual url or domain is listed.  
+> [!NOTE]
+> The images shown in this article for both the `warn` experience and `block` experience use "blocked url" as example placeholder text. In a functioning environment, the actual url or domain is listed.  
 
 #### Block experience
 
-A user visits a website:
+A user visits a website. If the url has a bad reputation, a toast notification presents the user with the following options:
 
-- If the url has a bad reputation, a toast notification presents the user with the following options:
-  - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
-  - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
+- **Ok**: The toast notification is released (removed), and the attempt to access the site is ended.
+- **Feedback**: The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-    :::image type="content" source="media/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="media/network-protection-phishing-blocked.png":::
+:::image type="content" source="media/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="media/network-protection-phishing-blocked.png":::
 
 ## SmartScreen Unblock
 
@@ -297,9 +295,9 @@ This procedure creates a custom view that filters to only show the following eve
 
 |Event ID|Description|
 |---|---|
-|5007|Event when settings are changed|
-|1125|Event when network protection fires in audit mode|
-|1126|Event when network protection fires in block mode|
+|`5007`|Event when settings are changed|
+|`1125`|Event when network protection fires in audit mode|
+|`1126`|Event when network protection fires in block mode|
 
 ## Network protection and the TCP three-way handshake
 

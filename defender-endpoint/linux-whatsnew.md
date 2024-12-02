@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.reviewer: kumasumit, gopkr
 ms.localizationpriority: medium
-ms.date: 10/14/2024
+ms.date: 12/02/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -39,10 +39,24 @@ This article is updated frequently to let you know what's new in the latest rele
 >
 > If you have any concerns or need assistance during this transition, contact support.
 
+<details> <summary> Nov-2024 (Build: 101.24092.0002 | Release version: 30.124092.0002.0)</summary>
+
+Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
+
+ Released: **November 14, 2024**  Published: **November 14, 2024**  Build: **101.24092.0002**  Release version: **30.124092.0002**  Engine version: 1.1.24080.9  Signature version: 1.417.659.0
+
+**What's new**
+
+- Support added for hardened installations on non-executable `/var` partitions. Beginning with this release, antivirus signatures are installed at `/opt/microsoft/mdatp/definitions.noindex` by default, instead of `/var/opt/microsoft/mdatp/definitions.noindex`. During upgrades, the installer attempts to migrate older definitions to the new path unless it detects that the path is already customized (using `mdatp definitions path set`).
+
+- Beginning with this version, Defender for Endpoint on Linux no longer needs executable permissions for `/var/log`. If these permissions are not available, log files are automatically be redirected to `/opt`.
+
+</details>
+
 <details>
 <summary> Oct-2024 (Build: 101.24082.0004 | Release version: 30.124082.0004.0)</summary>
 
-## Sept-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
+## Oct-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
 
 &ensp;Released: **October 15, 2024**<br/>
 &ensp;Published: **October 15, 2024**<br/>
@@ -211,6 +225,9 @@ There are multiple fixes and new changes in this release:
 - Bug fixes.
 
 </details>
+
+
+
 
 
 <details>
@@ -399,6 +416,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## October-2023 Build: 101.23082.0009 | Release version: 30.123082.0009.0
 
 &ensp;Released: **October 9,2023**<br/>
@@ -438,6 +467,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -519,6 +560,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## September-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
 
 &ensp;Released: **September 11,2023**<br/>
@@ -563,6 +616,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -626,6 +691,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## July-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
 
 &ensp;Released: **July 10,2023**<br/>
@@ -670,6 +747,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> June-2023 (Build: 101.98.89 | Release version: 30.123042.19889.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -721,6 +810,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -780,6 +881,18 @@ sudo systemctl disable mdatp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
 &ensp;Released: **April 20,2023**<br/>
@@ -832,6 +945,18 @@ sudo systemctl disable mdatp
 
 <details>
     <summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1377,7 +1502,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
   <p><b>What's new</b></p>
 
-
   - Beginning with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
     - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
@@ -1452,7 +1576,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <p><b>What's new</b></p>
 
-
 - Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
    - Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
    - Performance improvements & other bug fixes
@@ -1466,7 +1589,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
    Release version: <b>30.121022.12563.0</b></p>
 
    <p><b>What's new</b></p>
-
 
 - Performance improvements & bug fixes
 
@@ -1493,12 +1615,10 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
   <p>What's new</b></p>
 
-
 - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-   - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+
+  - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
    - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
   - Performance improvements & bug fixes
-
-   </details>
 
 </details><!--This </details> closes "2021 releases"-->
