@@ -135,7 +135,7 @@ The available device properties to use as filters vary based on the device inven
 |**Device category**|**All devices**|The category value assigned to the device. Enter a value or select from the available values: <ul><li>**BMS**</li><li>**Computers and Mobile**</li><li>**IoT**</li><li>**Medical**</li><li>**Network Device**</li><li>**OT**</li><li>**Unknown**</li></ul>|
 |**Device subtype**|<ul><li>**All devices**</li><li>**IoT/OT**</li></ul>|The subtype value assigned to the device. Enter a value or select an available value (for example, **Video conference**).|
 |**Device type**|<ul><li>**All devices**</li><li>**IoT/OT**</li></ul>|The type value assigned to the device. Enter a value or select an available value (for example, **Audio and Video**).|
-|**Device role**|All|The specific role of the device within the organization. For detailed descriptions of each role, see [Predefined classifications](/security-exposure-management/predefined-classification-rules-and-levels)|
+|**Device role**|All|The specific role of the device within the organization. For detailed descriptions of each role, see [Predefined classifications](/security-exposure-management/predefined-classification-rules-and-levels).|
 |**Device value**|All|The assigned value of the device. The available values are **High** and **Low**.|
 |**Discovery sources**|All|The source reporting on the device.|
 |**Exclusion state**|All|The available values are **Not excluded** and **Excluded**. For more information, see [Exclude devices](exclude-devices.md).|
