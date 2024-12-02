@@ -129,7 +129,6 @@ The available device properties to use as filters vary based on the device inven
 
 |Property|Tabs|Description|
 |---|---|---|
-|**Antivirus status**|<ul><li>**All devices**</li><li>**Computers & mobile**</li></ul>|The antivirus status of the device. The available values are: <ul><li>**Disabled**</li><li>**Not updated**</li><li>**Unknown**</li></ul>|
 |**Cloud platforms**|<ul><li>**All devices**</li><li>**Computers & mobile**</li></ul>|The cloud platform that the device belongs to. The available values are: <ul><li>**Azure**</li><li>**AWS**</li><li>**GCP**</li><li>**Arc**</li><li>**None**</li></ul>|
 |**Criticality level**|<ul><li>**All devices**</li><li>**Computers & mobile**</li></ul>|The assigned criticality level of the device (how critical a device is for your organization). The available values are: <ul><li>**Very high**: The device is considered a business critical asset</li><li>**High**</li><li>**Medium**</li><li>**Low**</li><li>**None**</li></ul> <br/> For more information, see [Overview of critical asset management](/security-exposure-management/critical-asset-management).|
 |**Device category**|**All devices**|The category value assigned to the device. Enter a value or select from the available values: <ul><li>**BMS**</li><li>**Computers and Mobile**</li><li>**IoT**</li><li>**Medical**</li><li>**Network Device**</li><li>**OT**</li><li>**Unknown**</li></ul>|
@@ -167,6 +166,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **MAC address**
   - **Criticality level**<sup\*</sup>
   - **Device category**<sup\*</sup>
+  - **Device role**
   - **Device type**<sup\*</sup>
   - **Device subtype**
   - **Vendor**
@@ -196,6 +196,7 @@ You can sort the entries by clicking on an available column header. Select :::im
   - **Name**<sup\*</sup>
   - **Domain**<sup\*</sup>
   - **Device AAD id**<sup\*</sup>
+  - **Device role**
   - **Device type**
   - **Device subtype**
   - **Risk level**<sup\*</sup>
