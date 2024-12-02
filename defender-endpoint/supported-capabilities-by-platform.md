@@ -71,7 +71,7 @@ The following table gives information about the supported Microsoft Defender for
 
 <sup>[5]</sup> Endpoint & network device discovery is supported on Windows Server 2019 or later, Windows 10, and Windows 11.
 
-<sup>[6]</sup>  Microsoft Defender Vulnerablity Management is not supported on Rocky and Alma currently.
+<sup>[6]</sup>  Microsoft Defender Vulnerability Management is not supported on Rocky and Alma currently.
 > [!NOTE]
 > Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and antivirus using System Center Endpoint Protection (SCEP).
 
