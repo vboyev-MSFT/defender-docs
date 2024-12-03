@@ -209,13 +209,16 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 - Isolating devices from the network is supported for macOS for client version 101.98.84 and above. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
-- You can use the device isolation capability on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements). Ensure that the following prerequisites are enabled: iptables, ip6tables, and Linux kernel with CONFIG_NETFILTER, CONFID_IP_NF_IPTABLES, and CONFIG_IP_NF_MATCH_OWNER.
+- You can use the device isolation capability on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements). Ensure that the following prerequisites are enabled:
+   - `iptables`
+   - `ip6tables`
+   - Linux kernel with `CONFIG_NETFILTER`, `CONFID_IP_NF_IPTABLES`, and `CONFIG_IP_NF_MATCH_OWNER`
 - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 - The feature supports VPN connection.
 - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
-> - Exclusion such as e-mail, messaging application and other applications for both macOS and Linux isolation are not supported.
+- Exclusion such as e-mail, messaging application and other applications for both macOS and Linux isolation are not supported.
 - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
 - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
