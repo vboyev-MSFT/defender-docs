@@ -43,9 +43,9 @@ Response actions run along the top of a specific device page and include:
 - Consult a threat expert
 - Action center
 
-[![Image of response actions.](media/response-actions.png)](media/response-actions.png#lightbox)
+[![Screenshot that shows response actions across the top of a device page in the Microsoft Defender portal.](media/response-actions.png)](media/response-actions.png#lightbox)
 
-> [!IMPORTANT]
+> [!NOTE]
 > [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) includes only the following manual response actions:
 > - Run antivirus scan
 > - Isolate device
@@ -217,7 +217,6 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 > - Exclusion such as e-mail, messaging application and other applications for both macOS and Linux isolation are not supported.
 - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
 - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
-
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
