@@ -35,7 +35,7 @@ Microsoft Defender XDR services include:
 | [**Microsoft Defender for Identity**](/defender-for-identity/what-is) | Identifies, detects, and investigates threats from both on-premises Active Directory and cloud identities like Microsoft Entra ID. |
 | [**Microsoft Defender for Office 365**](/defender-office-365/mdo-about) | Protects against threats posed by email messages, URL links, and Office 365 collaboration tools. |
 | [**Microsoft Defender for Endpoint**](/defender-endpoint/microsoft-defender-endpoint) | Monitors and protects endpoint devices, detects and investigates device breaches, and automatically responds to security threats. |
-| **Enterprise IoT monitoring** from [Microsoft Defender for IoT](/defender-for-iot/organizations/concept-enterprise) | Provides both IoT device discovery and security value for IoT devices. |
+| **Enterprise IoT monitoring** from [Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot) | Provides both IoT device discovery and security value for IoT devices. |
 | [**Microsoft Defender Vulnerability Management**](/defender-vulnerability-management/defender-vulnerability-management) | Identifies assets and software inventory, and assesses device posture to find security vulnerabilities. |
 | [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps) | Protects and controls access to SaaS cloud apps. |
 
@@ -43,7 +43,7 @@ Other services supported in the Microsoft Defender portal as part of Microsoft's
 
 | Service | Description |
 | ------- | ----------- |
-| [**Microsoft Security Exposure Management**](/exposure-management/microsoft-security-exposure-management) | Provides a unified view of security posture across company assets and workloads, enriching asset information with security context. |
+| [**Microsoft Security Exposure Management**](/security-exposure-management/microsoft-security-exposure-management) | Provides a unified view of security posture across company assets and workloads, enriching asset information with security context. |
 | [**Microsoft Copilot for Security**](/copilot/security/microsoft-security-copilot) | Provides AI-driven insights and recommendations to enhance your security operations. |
 | [**Microsoft Defender for Cloud**](/azure/defender-for-cloud/) | Protects multi-cloud and hybrid environments with advanced threat detection and response. |
 | [**Microsoft Defender Threat Intelligence**](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | Streamlines threat intelligence workflows by aggregating and enriching critical data sources to correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. |
@@ -65,7 +65,7 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)   |
 | Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   |
 | **Other services supported in the Microsoft Defender portal**   |   |
-| Microsoft Security Exposure Management                   | [Prerequisites and support](/exposure-management/prerequisites)  |
+| Microsoft Security Exposure Management                   | [Prerequisites and support](/security-exposure-management/prerequisites)  |
 | Microsoft Copilot for Security                           | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  |
 | Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. |
 | Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) |
@@ -120,7 +120,7 @@ For the following services, use the different roles available, or create custom 
 | Microsoft Defender Vulnerability Management   | [Relevant permission options for Microsoft Defender Vulnerability Management ](/defender-vulnerability-management/tvm-prerequisites#relevant-permission-options)       |
 | Microsoft Defender for Cloud Apps           | [Configure admin access for Microsoft Defender for Cloud Apps](/defender-cloud-apps/manage-admins)      |
 | **Other services supported in the Microsoft Defender portal**             |             |
-| Microsoft Security Exposure Management     | [Permissions for Microsoft Security Exposure Management](/exposure-management/prerequisites)   |
+| Microsoft Security Exposure Management     | [Permissions for Microsoft Security Exposure Management](/security-exposure-management/prerequisites)   |
 | Microsoft Defender for Cloud      | [User roles and permissions](/azure/defender-for-cloud/permissions) |
 
 ## Plan Zero Trust activities
