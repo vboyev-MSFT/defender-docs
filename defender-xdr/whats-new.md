@@ -30,7 +30,7 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 ## December 2024
-- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-adx-operator-for-azure-data-explorer-queries), Microsoft Defender portal users can now use the *adx()* operator for Azure Data Explorer queries to         . You no longer need to go to Log Analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
+- (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-adx-operator-for-azure-data-explorer-queries), Microsoft Defender portal users can now use the *adx()* operator to query tables stored in Azure Data Explorer. You no longer need to go to log analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 
 ## November 2024
 

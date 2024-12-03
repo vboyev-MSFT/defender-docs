@@ -52,13 +52,14 @@ In the query editor, enter the query in the following format:
 ```Kusto
 adx('<Cluster URI>/<Database Name>').<Table Name>
 ```
-In the query editor, enter 
+
+For example:
 
 :::image type="content" source="/defender-xdr/media/adx-sample.png" alt-text="Screenshot of adx operator in advanced hunting." lightbox="/defender-xdr/media/adx-sample.png":::
 
 
 ### Use arg() operator for Azure Resource Graph queries
-The *arg()* operator can be used to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. 
+The `arg()` operator can be used to query across deployed Azure resources like subscriptions, virtual machines, CPU, storage, and the like. 
 
 This feature was previously only available in log analytics in Microsoft Sentinel. In the Microsoft Defender portal, the `arg()` operator works over Microsoft Sentinel data (that is, Defender XDR tables are not supported). This allows users to use the operator in advanced hunting without needing to manually open a Microsoft Sentinel window. 
 
