@@ -143,7 +143,7 @@ The following table lists the contents of the collection packages for Mac and Li
 |Object|macOS|Linux|
 |---|---|---|
 |Applications|A list of all installed applications|Not applicable|
-|Disk volume|- Amount of free space<br/>- List of all mounted disk volumes<br/>- List of all partitions</li>|- Amount of free space<br/>- List of all mounted disk volumes<br/>- List of all partitions</li>|
+|Disk volume|- Amount of free space<br/>- List of all mounted disk volumes<br/>- List of all partitions</li>|- Amount of free space<br/>- List of all mounted disk volumes<br/>- List of all partitions|
 |File|A list of all open files with the corresponding processes using these files|A list of all open files with the corresponding processes using these files|
 |History|Shell history|Not applicable|
 |Kernel modules|All loaded modules|Not applicable|
