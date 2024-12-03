@@ -360,7 +360,7 @@ After a user is contained, you can investigate the potential threat by viewing t
 
 :::image type="content" source="/defender/media/defender-endpoint/event-blocked by-contained-user.png" alt-text="Shows blocked event details for a contained users" lightbox="/defender/media/defender-endpoint/event-blocked by-contained-user.png":::
 
-In addition, you can expand the investigation by using Advanced Hunting. Look for any action type starting with *contain* in the "DeviceEvents" table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
+In addition, you can expand the investigation by using Advanced Hunting. Look for any action type starting with *contain* in the `DeviceEvents` table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
 
 :::image type="content" source="/defender/media/defender-endpoint/user-contain-advanced-hunting.png" alt-text="Shows advanced hunting for user contain events" lightbox="/defender/media/defender-endpoint/user-contain-advanced-hunting.png":::
 
