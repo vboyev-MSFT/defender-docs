@@ -31,7 +31,7 @@ You can also get product updates and important notifications through the [messag
 
 ## December 2024
 - (Preview) The [Link to incident](advanced-hunting-defender-results.md#link-query-results-to-an-incident) feature in Microsoft Defender advanced hunting now allows linking of Microsoft Sentinel query results. In both the Microsoft Defender unified experience and in [Defender XDR advanced hunting](advanced-hunting-link-to-incident.md), you can now specify whether an entity is an impacted asset or related evidence.
-- 
+
 ## November 2024
 
 - (Preview) **Attack paths** in the incident graph are now available in the Microsoft Defender portal. The attack story now includes potential attack paths that show the paths that attackers can potentially take after compromising a device. This feature helps you prioritize your response efforts. For more information, see [attack paths in the attack story](investigate-incidents.md#attack-paths).
