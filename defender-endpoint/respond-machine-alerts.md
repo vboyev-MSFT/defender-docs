@@ -169,8 +169,8 @@ One you have selected **Run antivirus scan**, select the scan type that you'd li
 The Action center shows the scan information and the device timeline include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender Antivirus alerts reflect any detections that surfaced during the scan.
 
 > [!NOTE]
-> When triggering a scan using Defender for Endpoint response action, Microsoft Defender antivirus 'ScanAvgCPULoadFactor' value still applies and limits the CPU impact of the scan.
-> If ScanAvgCPULoadFactor is not configured, the default value is a limit of 50% maximum CPU load during a scan.
+> When triggering a scan using Defender for Endpoint response action, Microsoft Defender antivirus `ScanAvgCPULoadFactor` value applies and limits the CPU impact of the scan.
+> If `ScanAvgCPULoadFactor` is not configured, the default value is a limit of 50% maximum CPU load during a scan.
 > For more information, see [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## Restrict app execution
