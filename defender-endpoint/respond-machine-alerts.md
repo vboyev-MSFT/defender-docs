@@ -249,16 +249,16 @@ There's a downloadable script for these instances that you can run to forcibly r
 To forcibly release device from isolation:
 
 1. On the device page, select **Download script to force-release a device from isolation** from the action menu.
-1. On the right-hand side wizard, select **Download script**.
 
-#### Minimum requirements
+1. In the pane on the right, select **Download script**.
 
-The minimum requirements for 'forcibly release device from isolation' feature are:
+#### Minimum requirements for forcible device release
 
-- Windows only. The following versions are supported:
-  - Windows 10 21H2 and 22H2 with KB KB5023773.
-  - Windows 11 version 21H2, all editions with KB5023774.
-  - Windows 11 version 22H2, all editions with KB5023778.
+To forcibly release a device from isolation, the device must be running Windows. The following versions are supported:
+
+- Windows 10 21H2 and 22H2 with KB KB5023773.
+- Windows 11 version 21H2, all editions with KB5023774.
+- Windows 11 version 22H2, all editions with KB5023778.
 
 ### Notification on device user
 
