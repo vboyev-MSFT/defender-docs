@@ -23,7 +23,7 @@ The SaaS Security Initiative serves as the main hub for SaaS security posture ma
 
 The page that appears lists the 12 metrics that categorize hundreds of best-practice recommendations.
 
-:::image type="content" source="media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png" alt-text="Screenshot of the SaaS Security Initiative home page.":::
+:::image type="content" source="media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png" alt-text="Screenshot of the SaaS Security Initiative home page." lightbox="media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png":::
 
 We recommend that you prioritize metrics with the highest **Impact on Initiative Score** level. This composite measure considers both the **Weight** value of each recommendation and the percentage of **Non-Compliant** recommendations.
 
