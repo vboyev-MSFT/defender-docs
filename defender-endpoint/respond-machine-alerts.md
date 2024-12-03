@@ -33,8 +33,8 @@ Quickly respond to detected attacks by isolating devices or collecting an invest
 Response actions run along the top of a specific device page and include:
 
 - Manage tags
-- Initiate Automated Investigation
-- Initiate Live Response Session
+- Initiate automated investigation
+- Initiate live response Session
 - Collect investigation package
 - Run antivirus scan
 - Restrict app execution
@@ -71,7 +71,7 @@ Add or manage tags to create a logical group affiliation. Device tags support pr
 
 For more information on device tagging, see [Create and manage device tags](machine-tags.md).
 
-## Initiate Automated Investigation
+## Initiate automated investigation
 
 You can start a new general purpose automated investigation on the device if needed. While an investigation is running, any other alert generated from the device will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
 
@@ -89,7 +89,7 @@ For more information on live response, see [Investigate entities on devices usin
 
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
 
-To download the package (Zip file) and investigate the events that occurred on a device:
+To download the package (zipped folder) and investigate the events that occurred on a device, follow these steps:
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.
 
@@ -97,27 +97,29 @@ To download the package (Zip file) and investigate the events that occurred on a
 
 3. The zip file downloads.
 
-Alternate steps:
+Or, use this alternate procecure:
 
 1. Select **Collect Investigation Package** from the response actions section of the device page.
 
    ![Image of collect investigation package](media/collect-investigation-package.png)
    
-1. Add comments and select **Confirm**.
+2. Add comments and then select **Confirm**.
 
    ![Image of confirm comment](media/comments-confirm.png)
    
-1. Select **Action center** from the response actions section of the device page.
+3. Select **Action center** from the response actions section of the device page.
 
    ![Image of action center](media/action-center-selected.png)
    
-1. Click the **Package collection package available** to download the collection package.
+4. Select **Package collection package available** to download the collection package.
 
    ![Image of download package](media/download-package.png)
    
-      For Windows devices, the package contains the following folders:
+### Investigation package contents for Windows devices
 
-   |Folder|Description|
+For Windows devices, the package contains the folders described in the following table:
+
+|Folder|Description|
 |---|---|
 |Autoruns|Contains a set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker's persistency on the device. <p> <div class="alert"><b>NOTE:</b> If the registry key is not found, the file will contain the following message: "ERROR: The system was unable to find the specified registry key or value."<div>|
 |Installed programs|This .CSV file contains the list of installed programs that can help identify what is currently installed on the device. For more information, see [Win32_Product class](https://go.microsoft.com/fwlink/?linkid=841509).|
@@ -134,9 +136,11 @@ Alternate steps:
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 
-      The collection packages for macOS and Linux devices contain the following:
+### Investigation package contents for Mac and Linux devices
 
-   |Object|macOS|Linux|
+The following table lists the contents of the collection packages for Mac and Linux devices:
+
+|Object|macOS|Linux|
 |---|---|---|
 |Applications|A list of all installed applications|Not applicable|
 |Disk volume|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|
