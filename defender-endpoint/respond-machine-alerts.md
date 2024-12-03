@@ -372,7 +372,7 @@ See [Configure and manage Endpoint Attack Notifications](configure-microsoft-thr
 
 ## Check activity details in Action center
 
-The **Action center** provides information on actions that were taken on a device or file. You'll be able to view the following details:
+The Action center in the Microsoft Defender portal provides information on actions that were taken on a device or file. You'll be able to view the following details:
 
 - Investigation package collection
 - Antivirus scan
