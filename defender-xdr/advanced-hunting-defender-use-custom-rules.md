@@ -46,7 +46,7 @@ For editable functions, more options are available when you select the vertical 
 ### Use adx() operator for Azure Data Explorer queries (Preview)
 Use the `adx()` operator to query tables stored in Azure Data Explorer. Read [What is Azure Data Explorer?](/azure/data-explorer/data-explorer-overview) for more details.
 
-This feature was previously only available in log analytics in Microsoft Sentinel. Users can now use the operator in advanced hunting without needing to manually open a Microsoft Sentinel window. 
+This feature was previously only available in log analytics in Microsoft Sentinel. Users can now use the operator in advanced hunting in the unified Microsoft Defender portal without needing to manually open a Microsoft Sentinel window. 
 
 In the query editor, enter the query in the following format:
 ```Kusto
