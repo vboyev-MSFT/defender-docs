@@ -100,19 +100,36 @@ If you experience any installation failures, see [Troubleshooting installation f
   - Fedora 33-38 
   - Rocky 8.7 and higher
   - Rocky 9.2 and higher 
-  - Alma 8.4 and higher
+  - Alma 8.4 and higher 
+    
   - Alma 9.2 and higher 
   - Mariner 2
+
+- The following Linux server distributions on ARM64 are in Public Preview:
+  - Ubuntu 20.04 ARM64 (Preview)
     
+  - Ubuntu 22.04 ARM64 (Preview)
+    
+  - Amazon Linux 2 ARM64 (Preview)
+    
+  - Amazon Linux 2023 ARM64 (Preview)
+    
+  > [!IMPORTANT]
+  > Support for Microsoft Defender for Endpoint on ARM64 based Linux distributions as mentioned above is now in Public Preview. To begin testing, kindly install the latest agent version **"101.24102.000"** from **Insiders-Fast** channel via [Installer script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation),or manually [deploy using command line tool](/defender-endpoint/linux-install-manually), or via 3rd Party tool-[Ansible](/defender-endpoint/linux-install-with-ansible), [Chef](/defender-endpoint/linux-deploy-defender-for-endpoint-with-chef), [Puppet](/defender-endpoint/linux-install-with-puppet), [Saltstack](/defender-endpoint/linux-install-with-saltack). You can also deploy using ARC via Microsoft Defender for Cloud. 
+  >Support for more distributions will be gradually added as we progress into Public Preview. 
+  >[System requirement](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-linux#system-requirements) is same as for x86 based Linux server.
+  >Please reach out to us on **"mdearmsupport@microsoft.com"** to share your feedback or get support on deployment and testing.
+
+   
   > [!NOTE]
   > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
   > Microsoft Defender Vulnerablity Management is not supported on Rocky and Alma currently.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
-
+  
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system that use `fanotify` in blocking mode, applications are listed in the `conflicting_applications` field of the `mdatp health` command output. The Linux **FAPolicyD** feature uses `fanotify` in blocking mode, and is therefore unsupported when running Defender for Endpoint in active mode. You can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality Real Time Protection Enabled to [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
-
+  
 - List of supported filesystems for RTP, Quick, Full, and Custom Scan.
 
    |RTP, Quick, Full Scan| Custom Scan|
