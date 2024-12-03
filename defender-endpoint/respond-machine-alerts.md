@@ -216,15 +216,13 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 - The feature supports VPN connection.
-- You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
+- You must have at least the `Active remediation actions` role assigned. For more information, see [Create and manage roles](user-roles.md).
 - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
-- Exclusion such as e-mail, messaging application and other applications for both macOS and Linux isolation are not supported.
-- An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
+- Exclusions, such as e-mail, messaging application and other applications for both macOS and Linux isolation are not supported.
+- An isolated device is removed from isolation when an administrator modifies or adds a new `iptable` rule to the isolated device.
 - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
-This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
-
-On Windows 10, version 1709 or later, you'll have more control over the network isolation level. You can also choose to enable Outlook, Microsoft Teams, and Skype for Business connectivity (a.k.a 'Selective Isolation').
+The device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device. On Windows 10, version 1709 or later, you can use selective isolation for more control over the network isolation level. You can also choose to enable Outlook and Microsoft Teams connectivity.
 
 > [!NOTE]
 > You'll be able to reconnect the device back to the network at any time. The button on the device page will change to say **Release from isolation**, and then you take the same steps as isolating the device.
