@@ -346,8 +346,9 @@ Furthermore, after an identity is considered "contained", that user will be bloc
 
 You can release the blocks and containment on a user at any time:
 
-1. Select the **Contain User** action in the **Action Center**. In the side pane select **Undo**
-2. Select the user from either the user inventory, Incident page side pane or alert side pane and select **Undo**
+1. Select the **Contain User** action in the **Action Center**. In the side pane select **Undo**.
+
+2. Select the user from either the user inventory, Incident page side pane or alert side pane and select **Undo**.
 
 This action will restore this user's connection to the network.
 
