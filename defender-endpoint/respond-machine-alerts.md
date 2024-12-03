@@ -143,15 +143,15 @@ The following table lists the contents of the collection packages for Mac and Li
 |Object|macOS|Linux|
 |---|---|---|
 |Applications|A list of all installed applications|Not applicable|
-|Disk volume|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|
+|Disk volume|- Amount of free space<br/>- List of all mounted disk volumes<br/>- List of all partitions</li>|- Amount of free space<br/>- List of all mounted disk volumes<br/>- List of all partitions</li>|
 |File|A list of all open files with the corresponding processes using these files|A list of all open files with the corresponding processes using these files|
 |History|Shell history|Not applicable|
 |Kernel modules|All loaded modules|Not applicable|
-|Network connections|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Interface configuration</li><li>Proxy settings</li><li>VPN settings</li></ul>|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>IP list</li><li>Proxy settings</li></ul>|
+|Network connections|- Active connections<br/>- Active listening connections<br/>- ARP table<br/>- Firewall rules<br/>- Interface configuration<br/>- Proxy settings<br/>- VPN settings|- Active connections<br/>- Active listening connections<br/>- ARP table<br/>- Firewall rules<br/>- IP list<br/>- Proxy settings|
 |Processes|A list of all running processes|A list of all running processes|
-|Services and scheduled tasks|<ul><li>Certificates</li><li>Configuration profiles</li><li>Hardware information|<ul><li>CPU details</li><li>Hardware information</li><li>Operating system information</li>|
-|System security information|<ul><li>Extensible Firmware Interface (EFI) integrity information</li><li>Firewall status</li><li>Malware Removal Tool (MRT) information</li><li>System Integrity Protection (SIP) status</li>|Not applicable|
-|Users and groups|<ul><li>Login history</li><li>Sudoers</li></ul>|<ul><li>Login history</li><li>Sudoers</li></ul>|
+|Services and scheduled tasks|- Certificates<br/>- Configuration profiles<br/>- Hardware information|- CPU details<br/>- Hardware information<br/>- Operating system information</li>|
+|System security information|- Extensible Firmware Interface (EFI) integrity information<br/>- Firewall status<br/>- Malware Removal Tool (MRT) information<br/>- System Integrity Protection (SIP) status</li>|Not applicable|
+|Users and groups|- Login history<br/>- Sudoers|- Login history<br/>- Sudoers|
 
 ## Run Microsoft Defender Antivirus scan on devices
 
