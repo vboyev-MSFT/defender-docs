@@ -356,7 +356,7 @@ This action restores the user's connection to the network.
 
 ### Investigation capabilities with Contain User
 
-After a user is contained, you can investigate the potential threat by viewing the blocked actions by the compromised user. In the Device timeline view, you can see information about specific events, including protocol and interface granularity, and the relevant MITRE Technique associated it.
+After a user is contained, you can investigate the potential threat by viewing the blocked actions by the compromised user. In the device timeline view, you can see information about specific events, including protocol and interface granularity, and the relevant MITRE Technique associated it.
 
 :::image type="content" source="/defender/media/defender-endpoint/event-blocked by-contained-user.png" alt-text="Shows blocked event details for a contained users" lightbox="/defender/media/defender-endpoint/event-blocked by-contained-user.png":::
 
