@@ -35,7 +35,7 @@ Microsoft Defender XDR services include:
 | [**Microsoft Defender for Identity**](/defender-for-identity/what-is) | Identifies, detects, and investigates threats from both on-premises Active Directory and cloud identities like Microsoft Entra ID. |
 | [**Microsoft Defender for Office 365**](/defender-office-365/mdo-about) | Protects against threats posed by email messages, URL links, and Office 365 collaboration tools. |
 | [**Microsoft Defender for Endpoint**](/defender-endpoint/microsoft-defender-endpoint) | Monitors and protects endpoint devices, detects and investigates device breaches, and automatically responds to security threats. |
-| **Enterprise IoT monitoring** from [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/concept-enterprise) | Provides both IoT device discovery and security value for IoT devices. |
+| **Enterprise IoT monitoring** from [Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot) | Provides both IoT device discovery and security value for IoT devices. |
 | [**Microsoft Defender Vulnerability Management**](/defender-vulnerability-management/defender-vulnerability-management) | Identifies assets and software inventory, and assesses device posture to find security vulnerabilities. |
 | [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps) | Protects and controls access to SaaS cloud apps. |
 
@@ -66,7 +66,7 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   |
 | **Other services supported in the Microsoft Defender portal**   |   |
 | Microsoft Security Exposure Management                   | [Prerequisites and support](/security-exposure-management/prerequisites)  |
-| Microsoft Security Copilot                       | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  |
+| Microsoft Security Copilot                               | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  |
 | Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. |
 | Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) |
 | Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) |
