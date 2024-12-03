@@ -83,11 +83,11 @@ You can use the link to incident feature to add advanced hunting query results t
 6. After an entity type is selected, select an identifier type that exists in the selected records so that it can be used to identify this entity. Each entity type has a list of supported identifiers, as can be seen in the relevant drop down. Read the description displayed when hovering on each identifier to better understand it.
 7. After selecting the identifier, select a column from the query results that contain the selected identifier. You can select **Explore query and results** to open the advanced hunting context panel. This allows you to explore your query and results to make sure you chose the right column for the selected identifier. 
      <br>
-    :::image type="content" source="/defender/media/advanced-hunting-results-identifier.png" alt-text="Screenshot of the link to incident wizard entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-identifier.png":::
+    :::image type="content" source="/defender/media/advanced-hunting-defender-results-identifier.png" alt-text="Screenshot of the link to incident wizard entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-defender-results-identifier.png":::
      <br>
     In our example, we used a query to find events related to a possible email exfiltration incident, therefore the recipient's mailbox and recipient's account are the impacted entities, and the sender's IP as well as email message are related evidence.
     
-    :::image type="content" source="/defender/media/advanced-hunting-results-link-entities.png" alt-text="Screenshot of the link to incident wizard full entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-results-link-entities.png":::
+    :::image type="content" source="/defender/media/advanced-hunting-defender-results-link-entities.png" alt-text="Screenshot of the link to incident wizard full entities branch in the Microsoft Defender portal" lightbox="/defender/media/advanced-hunting-defender-results-link-entities.png":::
     
     A different alert is created for each record with a unique combination of impacted entities. In our example, if there are three different recipient mailboxes and recipient object ID combinations, for instance, then three alerts are created and linked to the chosen incident.
 
