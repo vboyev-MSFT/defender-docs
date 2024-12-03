@@ -205,7 +205,8 @@ When an app is restricted, the following notification is displayed to inform the
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
-> [!IMPORTANT]
+**Important points to keep in mind**: 
+
 - Isolating devices from the network is supported for macOS for client version 101.98.84 and above. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
 - You can use the device isolation capability on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements). Ensure that the following prerequisites are enabled: iptables, ip6tables, and Linux kernel with CONFIG_NETFILTER, CONFID_IP_NF_IPTABLES, and CONFIG_IP_NF_MATCH_OWNER.
