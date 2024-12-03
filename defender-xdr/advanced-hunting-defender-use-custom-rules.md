@@ -53,7 +53,7 @@ In the query editor, enter the query in the following format:
 adx('<Cluster URI>/<Database Name>').<Table Name>
 ```
 
-For example:
+For example, to get the first 10 rows of data from the `StormEvents` table stored in a certain URI:
 
 :::image type="content" source="/defender-xdr/media/adx-sample.png" alt-text="Screenshot of adx operator in advanced hunting." lightbox="/defender-xdr/media/adx-sample.png":::
 
