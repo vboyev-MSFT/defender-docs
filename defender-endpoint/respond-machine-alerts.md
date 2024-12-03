@@ -5,7 +5,7 @@ ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 09/09/2024
+ms.date: 12/03/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -47,7 +47,6 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 > [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) includes only the following manual response actions:
->
 > - Run antivirus scan
 > - Isolate device
 > - Stop and quarantine a file
@@ -64,7 +63,7 @@ Response actions run along the top of a specific device page and include:
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 > [!IMPORTANT]
-> For information on availability and support for each response action, please refer to the supported/minimum operating system requirements found under each feature.
+> For information on availability and support for each response action, see the supported minimum operating system requirements for each feature.
 
 ## Manage tags
 
