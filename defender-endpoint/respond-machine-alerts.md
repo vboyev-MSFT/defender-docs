@@ -129,12 +129,12 @@ For Windows devices, the package contains the folders described in the following
 |Scheduled tasks|Contains a .CSV file listing the scheduled tasks, which can be used to identify routines performed automatically on a chosen device to look for suspicious code that was set to run automatically.|
 |Security event log|Contains the security event log, which contains records of sign-in or sign-out activity, or other security-related events specified by the system's audit policy. <br/><br/>Open the event log file using Event viewer.|
 |Services|Contains a .CSV file that lists services and their states.|
-|Windows Server Message Block (SMB) sessions|Lists shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement.<br/><br/>Contains files for `SMBInboundSessions` and `SMBOutboundSession`. If there are no sessions (inbound or outbound), you'll get a text file that tells you that there are no SMB sessions found.|
+|Windows Server Message Block (SMB) sessions|Lists shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement.<br/><br/>Contains files for `SMBInboundSessions` and `SMBOutboundSession`. If there are no sessions (inbound or outbound), you get a text file that tells you that there are no SMB sessions found.|
 |System Information|Contains a `SystemInformation.txt` file that lists system information such as OS version and network cards.|
-|Temp Directories|Contains a set of text files that lists the files located in `%Temp%` for every user in the system. This can help to track suspicious files that an attacker may have dropped on the system. <br/><br/>If the file contains the following message: "The system cannot find the path specified", it means that there is no temp directory for this user, and might be because the user didn't log in to the system.|
+|Temp Directories|Contains a set of text files that lists the files located in `%Temp%` for every user in the system. This can help to track suspicious files that an attacker might have dropped on the system. <br/><br/>If the file contains the following message: "The system cannot find the path specified", it means that there's no temp directory for this user, and might be because the user didn't sign in to the system.|
 |Users and Groups|Provides a list of files that each represent a group and its members.|
 |WdSupportLogs|Provides the `MpCmdRunLog.txt` and `MPSupportFiles.cab`. This folder is only created on Windows 10, version 1709 or later with February 2020 update rollup or more recent versions installed: <br/><br/>- Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)<br/><br/>- Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)<br/><br/>- Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)<br/><br/>- Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)|
-|CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
+|CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there's failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 
 ### Investigation package contents for Mac and Linux devices
 
@@ -151,7 +151,7 @@ The following table lists the contents of the collection packages for Mac and Li
 |Processes|A list of all running processes|A list of all running processes|
 |Services and scheduled tasks|- Certificates<br/>- Configuration profiles<br/>- Hardware information|- CPU details<br/>- Hardware information<br/>- Operating system information</li>|
 |System security information|- Extensible Firmware Interface (EFI) integrity information<br/>- Firewall status<br/>- Malware Removal Tool (MRT) information<br/>- System Integrity Protection (SIP) status</li>|Not applicable|
-|Users and groups|- Login history<br/>- Sudoers|- Login history<br/>- Sudoers|
+|Users and groups|- Sign-in history<br/>- Sudoers|- Sign-in history<br/>- Sudoers|
 
 ## Run Microsoft Defender Antivirus scan on devices
 
