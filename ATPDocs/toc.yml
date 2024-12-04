@@ -156,8 +156,6 @@ items:
       href: remediation-actions.md
   - name: Security posture
     items:
-    - name: Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)
-      href: prevent-certificate-enrollment-esc15.md
     - name: Accounts with non-default Primary Group ID
       href: accounts-with-non-default-pgid.md
     - name: Built-in Active Directory Guest account is enabled
@@ -218,6 +216,8 @@ items:
       href: security-assessment-edit-misconfigured-enrollment-agent.md
     - name: Overly permissive certificate template with privileged EKU (ESC2)
       href: security-assessment-edit-overly-permissive-template.md
+    - name: Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)
+      href: prevent-certificate-enrollment-esc15.md
     - name: Prevent requests for certificates valid for arbitrary users  (ESC1)
       href: security-assessment-prevent-users-request-certificate.md
     - name: Remove local admins on identity assets
