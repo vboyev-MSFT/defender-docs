@@ -156,6 +156,8 @@ items:
       href: remediation-actions.md
   - name: Security posture
     items:
+    - name: Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)
+      href: prevent-certificate-enrollment-esc15.md
     - name: Accounts with non-default Primary Group ID
       href: accounts-with-non-default-pgid.md
     - name: Built-in Active Directory Guest account is enabled
