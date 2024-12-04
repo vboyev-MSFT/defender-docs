@@ -50,9 +50,13 @@ Attackers use several fileless techniques that can make malware implants stealth
 
 > [!NOTE]
 > Do not disable PowerShell as a means to block fileless malware. PowerShell is a powerful and secure management tool and is important for many system and IT functions. Attackers use malicious PowerShell scripts as post-exploitation technique that can only take place after an initial compromise has already occurred. Its misuse is a symptom of an attack that begins with other malicious actions like software exploitation, social engineering, or credential theft. The key is to prevent an attacker from getting into the position where they can misuse PowerShell.
+> 
+> [!TIP]
+> Reducing the number of unsigned Powershell scripts in your environment helps with increasing your security posture.
+> Here are instructions on how you could add signing to the Powershell scripts used in your environment
+> [Hey, Scripting Guy! How Can I Sign Windows PowerShell Scripts with an Enterprise Windows PKI? (Part 2 of 2) | Scripting Blog](https://devblogs.microsoft.com/scripting/hey-scripting-guy-how-can-i-sign-windows-powershell-scripts-with-an-enterprise-windows-pki-part-2-of-2/)
 
 - **WMI persistence** Some attackers use the Windows Management Instrumentation (WMI) repository to store malicious scripts that are then invoked periodically using WMI bindings.
-
 Microsoft Defender Antivirus blocks most malware using generic, heuristic, and behavior-based detections, as well as local and cloud-based machine learning models. Microsoft Defender Antivirus protects against fileless malware through these capabilities:
 
 - Detecting script-based techniques by using AMSI, which provides the capability to inspect PowerShell and other script types, even with multiple layers of obfuscation
