@@ -12,7 +12,7 @@ ms.topic: article
 ms.date:     12/04/2024
 ---
 
-# Security assessment: Prevent Certificate Enrollment with arbitrary Application Policies (ESC15) (Preview)
+# Security assessment: Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)
 
 This article describes Microsoft Defender for Identity's Prevent Certificate Enrollment with arbitrary Application Policies (ESC15) security posture assessment report.
 
