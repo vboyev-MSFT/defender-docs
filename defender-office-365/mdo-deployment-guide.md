@@ -34,7 +34,7 @@ The steps to configure EOP and Defender for Office 365 are described in the foll
 
 :::image type="content" source="media/mdo-deployment-guide.png" alt-text="A conceptual diagram showing the steps to configure Defender for Office 365." lightbox="media/mdo-deployment-guide.png":::
 
-[!INCLUDE [defender-office-setup-guide.md](includes/defender-office-setup-guide.md)]
+[!INCLUDE [MDO Setup guide](../includes/mdo-setup-guide.md)]
 
 ## Requirements
 
