@@ -30,17 +30,17 @@ This assessment is available only to customers who installed a sensor on an AD C
 
 ## How do I use this security assessment to improve my organizational security posture?
 
-1. Review the recommended action at [https://security.microsoft.com/securescore?viewid=actions](https://security.microsoft.com/securescore?viewid=actions) for Prevent Certificate Enrollment with arbitrary Application Policies (ESC15). For example:
+1. Review the recommended action at [https://security.microsoft.com/securescore?viewid=actions](https://security.microsoft.com/securescore?viewid=actions) for Prevent Certificate Enrollment with arbitrary Application Policies (ESC15). For example:  
+![Screenshot of the report on the portal.](media/prevent-certificate-enrollment-esc15/image.png)
 
-Research why the templates have a privileged EKU.
+1. Identify the vulnerable certificate templates:
 
-Remediate the issue by doing the following:
+- Remove enrollment permission for unprivileged users. 
 
-   - Restrict the template's overly permissive permissions.
-   
-      - Enforce extra mitigations like adding *Manager approval* and signing requirements if possible.
-      
-Make sure to test your settings in a controlled environment before turning them on in production.
+- Disable the “Supply in the request” option.
+
+    3. Identify the AD CS servers which are vulnerable to CVE-2024-49019 and apply the relevant patch. For example:  
+![Screenshot from the portal.](media/prevent-certificate-enrollment-esc15/image1.png)
 
 
 
