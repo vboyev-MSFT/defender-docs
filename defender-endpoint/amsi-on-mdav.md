@@ -47,7 +47,7 @@ Because memory is volatile, and fileless malware doesn't place files on disk, es
 
 Attackers use several fileless techniques that can make malware implants stealthy and evasive. These techniques include:
 
-- **Reflective DLL injection**: Reflective DLL injection involves the manual loading of malicious DLLs into a process memory without the need for said DLLs to be on disk. The malicious DLL can be hosted on a remote attacker-controlled machine and delivered through a staged network channel (for example, Transport Layer Security (TLS) protocol), or embedded in obfuscated form inside infection vectors, like macros and scripts. This configuration results in the evasion of the OS mechanism that monitors and keeps track of loading executable modules. An example of malware that uses Reflective DLL injection is HackTool:Win32/Mikatz!dha.
+- **Reflective DLL injection**: Reflective DLL injection involves the manual loading of malicious DLLs into a process memory without the need for said DLLs to be on disk. The malicious DLL can be hosted on a remote attacker-controlled machine and delivered through a staged network channel (for example, Transport Layer Security (TLS) protocol), or embedded in obfuscated form inside infection vectors, like macros and scripts. This configuration results in the evasion of the OS mechanism that monitors and keeps track of loading executable modules. An example of malware that uses Reflective DLL injection is `HackTool:Win32/Mikatz!dha`.
 
 - **Memory exploits**: Adversaries use fileless memory exploits to run arbitrary code remotely on victim machines. For example, the UIWIX threat uses the EternalBlue exploit, which was used by both Petya and WannaCry, to install the DoublePulsar backdoor, and lives entirely in the kernel's memory (SMB Dispatch Table). Unlike Petya and Wannacry, UIWIX doesn't drop any files on disk.
 
@@ -81,15 +81,15 @@ AMSI provides a deeper level of inspection for malicious software that employs o
 - .NET Framework 4.8 or newer (scanning of all assemblies)
 - Windows Management Instrumentation (WMI)
 
-If you use Microsoft Office 365, AMSI also supports JavaScript, VBA, and XLM.
+If you use Microsoft 365 Apps, AMSI also supports JavaScript, VBA, and XLM.
 
 AMSI doesn't currently support Python or Perl.
 
 ### Enabling AMSI
 
-To enable AMSI, you need to enable Script scanning. See [Configure scanning options for Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+To enable AMSI, you need to enable script scanning. See [Configure scanning options for Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md).
 
-Also see [Defender Policy CSP - Windows Client Management](/windows/client-management/mdm/policy-csp-defender)
+Also see [Defender Policy CSP - Windows Client Management](/windows/client-management/mdm/policy-csp-defender).
 
 ### AMSI resources
 
