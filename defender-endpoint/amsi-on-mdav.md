@@ -9,14 +9,15 @@ ms.date: 12/05/2024
 ms.topic: conceptual
 ms.service: defender-endpoint
 ms.subservice: ngp
-ms.custom: QuickDraft
+ms.custom: 
+- QuickDraft
+- partner-contribution
 search.appverid: MET150
 f1.keywords:
 audience: ITPro
-s.collection: 
+ms.collection: 
 - m365-security
 - tier2
-search.appverid: met150
 ai-usage: ai-assisted
 ---
 
