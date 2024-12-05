@@ -82,4 +82,3 @@ Also, on the details panel on an alert details page, the **Link alerts to anothe
 ## See also
 
 - [Alert correlation and incident merging in the Microsoft Defender portal](alerts-incidents-correlation.md)
-- [Merge incidents manually in the Microsoft Defender portal](merge-incidents-manually.md)
