@@ -4,7 +4,7 @@
 # For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
 title: 'Security Assessment: Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)'
-description: 'This recommendation directly addresses the recently published CVE-2024-49019 , which highlights security risks associated with vulnerable AD CS configurations. '
+description: 'This recommendation directly addresses the recently published CVE-2024-49019, which highlights security risks associated with vulnerable AD CS configurations. '
 author:      LiorShapiraa # GitHub alias
 ms.author: liorshapira
 ms.service: microsoft-defender-for-identity
@@ -28,19 +28,21 @@ These certificate templates expose organizations to significant risks, as they e
 
 This assessment is available only to customers who installed a sensor on an AD CS server. For more information, see [New sensor type for Active Directory Certificate Services (AD CS)](/defender-for-identity/whats-new).
 
-## How do I use this security assessment to improve my organizational security posture?
+## **How do I use this security assessment to improve my organizational security posture?**
 
-1. Review the recommended action at [https://security.microsoft.com/securescore?viewid=actions](https://security.microsoft.com/securescore?viewid=actions) for Prevent Certificate Enrollment with arbitrary Application Policies (ESC15). 
+1. **Review the recommended action**  
+   Visit [Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)](https://security.microsoft.com/securescore?viewid=actions) in Secure Score to review the recommended action.
 
-1. Identify the vulnerable certificate templates:
+2. **Identify the vulnerable certificate templates:**  
+   - Remove enrollment permission for unprivileged users.  
+   - Disable the **“Supply in the request”** option.
 
-  - Remove enrollment permission for unprivileged users.
-  
-  - Disable the “Supply in the request” option.
-  
-1. Identify the AD CS servers which are vulnerable to CVE-2024-49019 and apply the relevant patch. For example:  
-  
-![Screenshot of servers.](media/prevent-certificate-enrollment-esc15/image.png)
+3. **Identify the AD CS servers vulnerable to CVE-2024-49019:**  
+   - Apply the relevant patch to these servers.  
+
+   For example:  
+
+   :::image type="content" source="media/prevent-certificate-enrollment-esc15/image.png" alt-text="Screenshot of servers." lightbox="media/prevent-certificate-enrollment-esc15/image.png":::
 
 ## Next steps
 
