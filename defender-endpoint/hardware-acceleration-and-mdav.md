@@ -7,7 +7,7 @@ manager: deniseb
 ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: overview
-ms.date: 09/18/2024
+ms.date: 12/05/2024
 ms.subservice: ngp
 ms.localizationpriority: medium
 ms.custom: partner-contribution
