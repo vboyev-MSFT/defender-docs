@@ -30,15 +30,13 @@ This assessment is available only to customers who installed a sensor on an AD C
 
 ## **How do I use this security assessment to improve my organizational security posture?**
 
-1. **Review the recommended action**  
-   Visit [Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)](https://security.microsoft.com/securescore?viewid=actions) in Secure Score to review the recommended action.
+1. Review the recommended action at [Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)](https://security.microsoft.com/securescore?viewid=actions). 
 
 2. **Identify the vulnerable certificate templates:**  
    - Remove enrollment permission for unprivileged users.  
    - Disable the **“Supply in the request”** option.
 
-3. **Identify the AD CS servers vulnerable to CVE-2024-49019:**  
-   - Apply the relevant patch to these servers.  
+3. Identify the AD CS servers which are vulnerable to CVE-2024-49019 and apply the relevant patch. 
 
    For example:  
 
