@@ -30,7 +30,7 @@ This assessment is available only to customers who installed a sensor on an AD C
 
 ## **How do I use this security assessment to improve my organizational security posture?**
 
-1. Review the recommended action at [Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)](https://security.microsoft.com/securescore?viewid=actions). 
+1. Review the recommended action at [Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)](https://security.microsoft.com/securescore?viewid=actions).  
 
 2. **Identify the vulnerable certificate templates:**  
    - Remove enrollment permission for unprivileged users.  
