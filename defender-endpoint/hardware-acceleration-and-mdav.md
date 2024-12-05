@@ -7,8 +7,12 @@ manager: deniseb
 ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: overview
-ms.date: 09/18/2024
+ms.date: 12/05/2024
 ms.subservice: ngp
+ms.collection: 
+- m365-security
+- tier2
+audience: ITPro
 ms.localizationpriority: medium
 ms.custom: partner-contribution
 search.appverid: MET150
