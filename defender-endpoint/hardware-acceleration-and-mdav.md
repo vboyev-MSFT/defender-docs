@@ -44,9 +44,9 @@ This table shows the Intel TDT technologies Microsoft collaborated with Intel on
 
 |Available since |Intel TDT technology | Intel Threat Detection Technology (TDT) available on|
 |:---|:---|:---|
-|2018|Intel TDT – Accelerated Memory Scanning (AMS)|Intel integrated graphic 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
-|2021|Intel TDT - Cryptojacking detector| Intel 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
-|2022|Intel TDT - Ransomware detector| Intel 8th Gen Core or newer family of processors.|
+|2018|Intel TDT – Accelerated Memory Scanning (AMS)|Intel integrated graphic sixth Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
+|2021|Intel TDT - Cryptojacking detector| Intel sixth Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
+|2022|Intel TDT - Ransomware detector| Intel eighth Gen Core or newer family of processors.|
 
 **Intel Threat Detection Technology (TDT) - Accelerated Memory Scanning (AMS):** Introduced extra memory scanning capabilities to detect fileless attacks that are expensive on the Central Processing Unit (CPU), and then offload them to the integrated Graphics Processor Unit (integrated GPU). Two benefits are:
 
@@ -65,7 +65,7 @@ The regular Microsoft Defender Antivirus Event ID **1116**.
 
 ### What type of attacks does it help with?
 
-- We use the Intel TDT - Cryptojacking detector to thwart various cryptojacking malwares. The following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector: [YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
+- We use the Intel TDT - Cryptojacking detector to thwart various cryptojacking malware. The following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector: [YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
 
 - We use the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employ Defender behavior monitoring to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
 
