@@ -18,7 +18,7 @@ This article describes Microsoft Defender for Identity's Prevent Certificate Enr
 
 ## Why is it important to review the Certificate templates?
 
-This recommendation directly addresses the recently published [CVE-2024-49019](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2024-49019), which highlights security risks associated with vulnerable AD CS configurations. This security posture assessment lists all vulnerable certificate templates found in customer environments due to unpatched AD CS servers.
+This recommendation directly addresses the recently published [CVE-2024-49019](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2024-49019)__,__ which highlights security risks associated with vulnerable AD CS configurations. This security posture assessment lists all vulnerable certificate templates found in customer environments due to unpatched AD CS servers.
 
 Certificate templates that are vulnerable to [CVE-2024-49019](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2024-49019) allow an attacker to issue a certificate with arbitrary Application Policies and Subject Alternative Name. The certificate can be used to escalate privileges, possibly resulting with full domain compromise. 
 
@@ -30,19 +30,17 @@ This assessment is available only to customers who installed a sensor on an AD C
 
 ## How do I use this security assessment to improve my organizational security posture?
 
-1. Review the recommended action at [https://security.microsoft.com/securescore?viewid=actions](https://security.microsoft.com/securescore?viewid=actions) for Prevent Certificate Enrollment with arbitrary Application Policies (ESC15). For example:  
-![Screenshot of the report on the portal.](media/prevent-certificate-enrollment-esc15/image.png)
+1. Review the recommended action at [https://security.microsoft.com/securescore?viewid=actions](https://security.microsoft.com/securescore?viewid=actions) for Prevent Certificate Enrollment with arbitrary Application Policies (ESC15). 
 
 1. Identify the vulnerable certificate templates:
 
-- Remove enrollment permission for unprivileged users. 
-
-- Disable the “Supply in the request” option.
-
-    3. Identify the AD CS servers which are vulnerable to CVE-2024-49019 and apply the relevant patch. For example:  
-![Screenshot from the portal.](media/prevent-certificate-enrollment-esc15/image1.png)
-
-
+  - Remove enrollment permission for unprivileged users.
+  
+  - Disable the “Supply in the request” option.
+  
+1. Identify the AD CS servers which are vulnerable to CVE-2024-49019 and apply the relevant patch. For example:  
+  
+![Screenshot of servers.](media/prevent-certificate-enrollment-esc15/image.png)
 
 ## Next steps
 
