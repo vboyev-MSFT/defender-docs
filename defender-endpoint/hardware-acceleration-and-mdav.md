@@ -17,7 +17,6 @@ ms.localizationpriority: medium
 ms.custom: partner-contribution
 search.appverid: MET150
 f1 keywords: NOCSH
-audience: ITPro
 ---
 
 # Hardware acceleration and Microsoft Defender Antivirus
