@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: android
 search.appverid: met150
-ms.date: 11/15/2024
+ms.date: 12/06/2024
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -27,41 +27,42 @@ ms.date: 11/15/2024
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**December - 2024**
+## Android low-touch onboarding is now GA
 
-## Android low touch onboarding is now GA
+**December 2024**
 
 **Key benefits**
 
-1. **Faster setup on Android devices** – Simplified Android onboarding supports silent sign-on and auto-granting of certain permissions on a user’s device. As such, users will only be required to grant necessary permissions to completely onboard Defender for Endpoint.  
+1. **Faster setup on Android devices** – Simplified Android onboarding supports silent sign-on and auto-granting of certain permissions on a user's device. As such, users will only be required to grant necessary permissions to completely onboard Defender for Endpoint.  
 
-1. **Intuitive guidance** - A clear and intuitive flow to guide users through each step. 
+2. **Intuitive guidance** - A clear and intuitive flow to guide users through each step. 
 
-1. **Broad coverage with support across multiple Android profiles** – Android enterprise BYOD, COPE, and fully-managed. 
+3. **Broad coverage with support across multiple Android profiles** – Android enterprise BYOD, COPE, and fully-managed. 
 
-**Configuring Low Touch Onboarding** 
+**Configuring low-touch onboarding** 
 
-Although Low Touch onboarding is disabled by default, organization admins can enable it through app configuration policies on Intune by following the steps mentioned in the link [Android Low Touch Onboarding](/defender-endpoint/android-intune).
+Although low-touch onboarding is disabled by default, security administrators can enable it through app configuration policies in Intune. See [Android low-touch onboarding](/defender-endpoint/android-intune).
 
 > [!IMPORTANT]
-> **Ending support for Device Administrator enrolled devices**
-> Microsoft Intune and Defender for Endpoint are ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
+> **Ending support for device administrator enrolled devices**
+> 
+> Microsoft Intune and Defender for Endpoint are ending support for device administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
 > 
 > **For devices with access to GMS**
 > 
-> After Intune and Defender for Endpoint ends support for Android device administrator, devices with access to GMS will be impacted in the following ways: 
+> After support ends for device administrator enrolled devices, devices with access to GMS will be afffected in the following ways: 
 > 
-> - Intune and Defender for Endpoint won’t make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
-> - Intune and Defender for Endpoint technical support will no longer support these devices.
+> - Intune and Defender for Endpoint won't make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
+> - Intune and Defender for Endpoint technical support will no longer support devices with access to GMS.
 > 
 > For more information, see [Tech Community blog: Intune ending support for Android device administrator on devices with GMS in December 2024](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443).
 
 
+## Network protection
+
 **Aug-2024 (version: 1.0.6812.0101)**
 
 - Network Protection feature is enabled by default for all users
-
-## Network protection
 
 Network protection on Microsoft Defender for Endpoint is now generally available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices, and rogue certificates. It notifies the user if a related threat is detected. Users also see a guided experience to connect to secure networks and change networks when they're connected to an unsecure connection.
 
@@ -98,7 +99,6 @@ Microsoft Defender for Endpoint on Android enables **Optional Permissions** in t
 
 Microsoft Defender for Endpoint is now supported on Android Enterprise personal profile (BYOD only) with all the key features including malware scanning, protection from phishing links, network protection and vulnerability management. This support is coupled with [privacy controls](android-configure.md#privacy-controls) to ensure user privacy on personal profile. For more information, read the [announcement](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) and the [deployment guide](android-intune.md#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
 
-
 ## Microsoft Defender on Android app updates
 
 Microsoft Defender is no longer supported for versions 1.0.3011.0302 or earlier. Users are requested to upgrade to latest versions to keep their devices secure.
@@ -127,7 +127,7 @@ Release Build: `1.0.3501.0301`
 Release month: Nov 2021
 Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. This change prompts users seeking access to [new storage permission](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play), for devices running Android 11 or later. Users need to accept this new storage permission once they update Defender app with the release build 1.0.3501.0301 or later. This update ensures that Defender for Endpoint's app security feature to function without any disruption. For more information, review the following sections.
 
-**How will this affect your organization:** These changes take effect if you're using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender for Endpoint to release build 1.0.3501.0301 or later.
+**How this affects your organization:** These changes take effect if you're using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender for Endpoint to release build 1.0.3501.0301 or later.
 
 > [!NOTE]
 > The new storage permissions cannot be configured by admin to auto approve through Microsoft Intune. User will need to take action to provide access to this permission.
@@ -145,11 +145,11 @@ Notify your users and helpdesk (as applicable) that users will need to accept th
 
 2. Tap **Begin**.
 
-1. Tap the toggle for **Allow access to manage all files.**
+3. Tap the toggle for **Allow access to manage all files.** 
 
-4. The device is now protected.
+   The device is now protected.
 
-  > [!NOTE]
-  > This permission allows Microsoft Defender for Endpoint to access storage on user's device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. On devices with a Work Profile, Defender for Endpoint only scans work-related files.
+   > [!NOTE]
+   > This permission allows Microsoft Defender for Endpoint to access storage on user's device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. On devices with a Work Profile, Defender for Endpoint only scans work-related files.
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
