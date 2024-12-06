@@ -37,7 +37,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 2. **Intuitive guidance** - A clear and intuitive flow to guide users through each step. 
 
-3. **Broad coverage with support across multiple Android profiles** – Android enterprise BYOD, COPE, and fully-managed. 
+3. **Broad coverage with support across multiple Android profiles** – Android enterprise BYOD, COPE, and fully managed. 
 
 **Configuring low-touch onboarding** 
 
@@ -67,12 +67,12 @@ Although low-touch onboarding is disabled by default, security administrators ca
 Network protection on Microsoft Defender for Endpoint is now generally available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices, and rogue certificates. It notifies the user if a related threat is detected. Users also see a guided experience to connect to secure networks and change networks when they're connected to an unsecure connection.
 
 > [!IMPORTANT]
-> **This feature is now enabled by default for all users.** As a result, users will be able to see a network protection card in the Defender for Endpoint app, along with App Protection and Web Protection. Users are also required to provide location permission to complete the set up. Admins can change the default value for network protection if they decide not to use it via the Intune App Configuration policies. 
+> **This feature is now enabled by default for all users.** As a result, users will be able to see a network protection card in the Defender for Endpoint app, along with App Protection and Web Protection. Users are also required to provide location permission to complete the set up. Administrators can change the default value for network protection if they decide not to use it via the Intune App Configuration policies. 
 There are also several admin controls to offer flexibility, including privacy controls to configure the data that's sent by Defender for Endpoint from Android devices. For more information, see [network protection](android-configure.md).
 
 ## Device Tagging
 
-Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the user installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory.
+Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the administrators to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the user installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory.
 
 This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices. For more information, see [Device Tagging (MDM)](android-configure.md#device-tagging) and [Device Tagging (MAM)](android-configure-mam.md#device-tagging).
 
@@ -83,13 +83,13 @@ Defender for Endpoint is now generally available on AE COPE devices. Enterprises
 - Phishing and web protection.
 - Malware scanning.
 - Network protection (preview).
-- Additional breach prevention through integration with Microsoft Intune and Conditional Access.
+- More breach prevention through integration with Microsoft Intune and Conditional Access.
 
 Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
 
 ## Privacy Controls
 
-Microsoft Defender for Endpoint on Android enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) and unenrolled (MAM) devices. Admins can configure the privacy in the alert report while End Users can configure the information shared to their organization. For more information, see [privacy controls(MDM)](android-configure.md#privacy-controls) and [privacy controls (MAM)](android-configure-mam.md#configure-privacy-controls).
+Microsoft Defender for Endpoint on Android enables privacy controls for both administrators and end users, and includes controls for enrolled (MDM) and unenrolled (MAM) devices. Administrators can configure the privacy in the alert report while End Users can configure the information shared to their organization. For more information, see [privacy controls(MDM)](android-configure.md#privacy-controls) and [privacy controls (MAM)](android-configure-mam.md#configure-privacy-controls).
 
 ## Optional Permissions and Disable Web Protection
 
