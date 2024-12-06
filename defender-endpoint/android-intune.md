@@ -46,7 +46,7 @@ Learn how to deploy Defender for Endpoint on Android by using the Microsoft Intu
 
    :::image type="content" source="media/mda-addandroidstoreapp.png" alt-text="The Add Android store application pane in the Microsoft Intune admin center portal"  lightbox="media/mda-addandroidstoreapp.png":::
 
-2. On the **Add app** page, in the **App Information** section specify the following detais:
+2. On the **Add app** page, in the **App Information** section specify the following details:
 
    - **Name**
    - **Description**
@@ -299,7 +299,7 @@ Administrators can use the [Microsoft Intune admin center](https://intune.micros
 
 Administrators also can set up privacy controls in the Microsoft Intune admin center to control what data is sent by the Microsoft Defender app to the Microsoft Defender portal. For more information, see [configure privacy controls](android-configure.md).
 
-Organizations can communicate to their users to protect their personal profile by using the Microsoft Defender app on their enrolled BYOD devices. The Microsoft Defender app must be installed and active, using their work profile for Microsoft Defender to enabled in personal profiles.
+Organizations can communicate to their users to protect their personal profile by using the Microsoft Defender app on their enrolled BYOD devices. The Microsoft Defender app must be installed and active, using their work profile for Microsoft Defender to be enabled in personal profiles.
 
 ### Finish onboarding a device
 
