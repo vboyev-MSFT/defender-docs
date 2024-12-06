@@ -135,13 +135,13 @@ Microsoft Defender for Endpoint has released this update required by [Google](ht
 **User experience:** Users receive a notification indicating a missing permission for app security. If the user denies this permission, app security functionality is turned off on the device. If user doesn't accept or deny permission, they continue to receive the prompt when unlocking their device or opening the app, until it's approved.
 
 > [!NOTE]
-> If your organization is previewing the tamper protection feature and if the new storage permissions are not granted by the user within 7 days of updating to the latest version, the user might lose access to corporate resources.
+> If your organization is previewing the tamper protection feature and if the new storage permissions are not granted by the user within seven days of updating to the latest version, the user might lose access to corporate resources.
 
 **What you need to do to prepare:**
 
-Notify your users and helpdesk (as applicable) that users will need to accept the new permissions when prompted after they have updated Defender for Endpoint to build 1.0.3501.0301 or later version. To accept the permissions, users should:
+Notify your users and helpdesk (as applicable) that users will need to accept the new permissions when prompted after they have updated Defender for Endpoint to build `1.0.3501.0301` or later. To accept the permissions, users should:
 
-1. Tap on the Defender for Endpoint in-app notification or open the Defender for Endpoint app. Users see a screen that lists the permissions needed. A green check mark is missing next to the Storage permission.
+1. Tap on the Defender for Endpoint in-app notification or open the Defender for Endpoint app. Users see a screen that lists the permissions needed. A green check mark is missing next to **Storage permission**.
 
 2. Tap **Begin**.
 
