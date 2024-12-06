@@ -76,7 +76,7 @@ Learn how to deploy Defender for Endpoint on Android with the Microsoft Intune C
 
 ### Complete onboarding and check status
 
-1. Once Defender for Endpoint on Android has been installed on the device, you should see the app icon.
+1. After Defender for Endpoint on Android has been installed on the device, you should see the app icon.
 
    :::image type="content" source="media/7cf9311ad676ec5142002a4d0c2323ca.jpg" alt-text="The Microsoft Defender ATP icon listed in the Search pane" lightbox="media/7cf9311ad676ec5142002a4d0c2323ca.jpg":::
 
