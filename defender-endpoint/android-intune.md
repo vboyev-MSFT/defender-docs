@@ -71,7 +71,7 @@ Learn how to deploy Defender for Endpoint on Android by using the Microsoft Intu
 
 5. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation completed successfully.
 
-    :::image type="content" source="media/513cf5d59eaaef5d2b5bc122715b5844.png" alt-text="The Device install status page in the Microsoft Defender 365 portal" lightbox="media/513cf5d59eaaef5d2b5bc122715b5844.png":::
+    :::image type="content" source="media/513cf5d59eaaef5d2b5bc122715b5844.png" alt-text="The Device install status page in the Microsoft Defender portal" lightbox="media/513cf5d59eaaef5d2b5bc122715b5844.png":::
 
 ### Complete onboarding and check status
 
@@ -111,7 +111,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 4. When you're prompted to approve permissions for Defender for Endpoint obtains, review the information, and then select **Approve**.
 
-   :::image type="content" source="media/206b3d954f06cc58b3466fb7a0bd9f74.png" alt-text="The permissions approval page in the Microsoft Defender 365 portal" lightbox="media/206b3d954f06cc58b3466fb7a0bd9f74.png":::
+   :::image type="content" source="media/206b3d954f06cc58b3466fb7a0bd9f74.png" alt-text="The permissions approval page in the Microsoft Defender portal" lightbox="media/206b3d954f06cc58b3466fb7a0bd9f74.png":::
 
 5. On the **Approval settings** page, review your preference to handle new app permissions that Defender for Endpoint on Android might ask. Review the choices, and then select your preferred option. Then, select **Done**.
 
@@ -121,23 +121,23 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 6. After the permissions handling selection is made, select **Sync** to sync Microsoft Defender for Endpoint to your apps list.
 
-   :::image type="content" source="media/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender 365 portal" lightbox="media/34e6b9a0dae125d085c84593140180ed.png":::
+   :::image type="content" source="media/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender portal" lightbox="media/34e6b9a0dae125d085c84593140180ed.png":::
 
-7. The sync completes in a few minutes.
+   The sync completes in a few minutes.
 
-   :::image type="content" source="media/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="The application sync status pane in the Android apps page in the Microsoft Defender 365 portal"  lightbox="media/9fc07ffc150171f169dc6e57fe6f1c74.png":::
+   :::image type="content" source="media/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="The application sync status pane in the Android apps page in the Microsoft Defender portal"  lightbox="media/9fc07ffc150171f169dc6e57fe6f1c74.png":::
 
-8. Select the **Refresh** button in the Android apps screen and Microsoft Defender for Endpoint should be visible in the apps list.
+7. Select the **Refresh** button in the Android apps screen. Microsoft Defender for Endpoint should be visible in the apps list.
 
    :::image type="content" source="media/fa4ac18a6333335db3775630b8e6b353.png" alt-text="The page displaying the synced application" lightbox="media/fa4ac18a6333335db3775630b8e6b353.png":::
 
-9. Defender for Endpoint supports App configuration policies for managed devices via Microsoft Intune. This capability can be used to select different configurations for Defender for Endpoint.
+8. Defender for Endpoint supports app configuration policies for managed devices using Microsoft Intune. This capability can be used to select different configurations for Defender for Endpoint.
 
    1. In the **Apps** page, go to **Policy** > **App configuration policies** > **Add** > **Managed devices**.
 
       :::image type="content" source="media/android-mem.png" alt-text="The App configuration policies pane in the Microsoft Intune admin center portal" lightbox="media/android-mem.png":::
 
-   2. In the **Create app configuration policy** page, enter the following details:
+   2. In the **Create app configuration policy** page, specify the following details:
 
       - Name: **Microsoft Defender for Endpoint**.
       - Choose **Android Enterprise** as platform.
@@ -154,11 +154,11 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
       - **Auto grant** - Automatically approves without notifying the user.
       - **Auto deny** - Automatically denies without notifying the user.
 
-    5. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format.
+    5. Go to the **Configuration settings** section, and choose **Use configuration designer**.
 
        :::image type="content" alt-text="Image of android create app configuration policy." source="media/configurationformat.png" lightbox="media/configurationformat.png":::
 
-    6. Select **Add** to view a list of supported configurations. Select the required configuration and select **Ok**.
+    6. Select **Add** to view a list of supported configurations. Select the required configuration, and then select **Ok**.
 
        :::image type="content" alt-text="Image of selecting configuration policies for android." source="media/selectconfigurations.png" lightbox="media/selectconfigurations.png":::
 
@@ -166,27 +166,27 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
        :::image type="content" alt-text="Image of selected configuration policies." source="media/listedconfigurations.png" lightbox="media/listedconfigurations.png":::
 
-    8. In the **Assignments** page, select the user group to which this app config policy would be assigned. Select **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+    8. In the **Assignments** page, select the user group to which this app config policy would be assigned. Select **Select groups to include**, select a group, and then select **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
        :::image type="content" source="media/android-select-group.png" alt-text="The Selected groups pane" lightbox="media/android-select-group.png":::
 
-    9. In the **Review + Create** page that comes up next, review all the information and then select **Create**.
+    9. In the **Review + Create** page that comes up next, review all the information, and then select **Create**.
 
        The app configuration policy for Defender for Endpoint is now assigned to the selected user group.
 
-10. Select **Microsoft Defender** app in the list \> **Properties** \> **Assignments** \> **Edit**.
+9. Select **Microsoft Defender** app in the list \> **Properties** \> **Assignments** \> **Edit**.
 
     :::image type="content" source="media/mda-properties.png" alt-text="The Edit option on the Properties page" lightbox="media/mda-properties.png":::
 
-11. Assign the app as a *Required* app to a user group. It's automatically installed in the *work profile* during the next sync of the device via Company Portal app. This assignment can be done by navigating to the *Required* section \> **Add group**, selecting the appropriate user group, and then choosing **Select**.
+10. Assign the app as a required app to a user group. It's automatically installed in the work profile during the next sync of the device via Company Portal app. Navigate to the **Required** section, select **Add group**, select the appropriate user group, and then choose **Select**.
 
     :::image type="content" source="media/ea06643280075f16265a596fb9a96042.png" alt-text="The Edit application page" lightbox="media/ea06643280075f16265a596fb9a96042.png":::
 
-12. In the **Edit Application** page, review all the information that was entered earlier. Then select **Review + Save** and then **Save** again to commence assignment.
+11. In the **Edit Application** page, review all the information that was specified earlier. Select **Review + Save**, and then select **Save** to commence assignment.
 
-### Auto Setup of Always-on VPN
+### Auto setup of always-on VPN
 
-Defender for Endpoint supports Device configuration policies for managed devices via Microsoft Intune. This capability can be used to **Auto setup of Always-on VPN** on Android Enterprise enrolled devices, so the end user doesn't need to set up VPN service while onboarding.
+Defender for Endpoint supports device configuration policies for managed devices with Microsoft Intune. This capability enables you to use auto setup of always-on VPN on Android Enterprise enrolled devices, so the end user doesn't need to set up a VPN service while onboarding.
 
 1. On **Devices**, select **Configuration Profiles** \> **Create Profile** \> **Platform** \> **Android Enterprise**. Select **Device restrictions** under one of the following, based on your device enrollment type:
 
@@ -201,22 +201,22 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
    :::image type="content" source="media/2autosetupofvpn.png" alt-text="The devices configuration profile Name and Description fields in the Basics pane" lightbox="media/2autosetupofvpn.png":::
 
-3. Select **Connectivity** and configure your VPN:
+3. Select **Connectivity**, and then configure your VPN.
 
    1. Enable **Always-on VPN**. Set up a VPN client in the work profile to automatically connect and reconnect to the VPN whenever possible. Only one VPN client can be configured for always-on VPN on a given device, so be sure to have no more than one always-on VPN policy deployed to a single device.
 
-   2. Select **Custom** in VPN client dropdown list. Custom VPN in this case is Defender for Endpoint VPN, which is used to provide the Web Protection feature.
+   2. In the **VPN client** list, select **Custom**. In this case, the custom VPN is the Defender for Endpoint VPN, which provides Web Protection.
 
       > [!NOTE]
-      > Microsoft Defender for Endpoint app must be installed on user's device, in order to functioning of auto setup of this VPN.
+      > The Microsoft Defender for Endpoint app must be installed on user's device for automatic VPN setup to occur.
 
-   3. Enter **Package ID** of the Microsoft Defender for Endpoint app in Google Play store. For the [Defender app URL](https://play.google.com/store/apps/details?id=com.microsoft.scmx), the package ID is `com.microsoft.scmx`.
+   3. Specify the **Package ID** of the Microsoft Defender for Endpoint app in Google Play store. For the [Microsoft Defender app URL](https://play.google.com/store/apps/details?id=com.microsoft.scmx), the package ID is `com.microsoft.scmx`.
 
    4. Set **Lockdown mode** to **Not configured (Default)**.
 
       :::image type="content" source="media/3autosetupofvpn.png" alt-text="The Connectivity pane under the Configuration settings tab" lightbox="media/3autosetupofvpn.png":::
 
-4. **Assignment**. On the **Assignments** page, select the user group to which this app config policy would be assigned. Choose **Select groups** to include and selecting the applicable group and then select **Next**. 
+4. **Assignment**. On the **Assignments** page, select the user group to which this app config policy would be assigned. Choose **Select groups** to include, select the applicable group, and then select **Next**. 
 
    The group to select is typically the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
@@ -229,30 +229,28 @@ The device configuration profile is now assigned to the selected user group.
 
 ## Check status and complete onboarding
 
-1. Confirm the installation status of Microsoft Defender for Endpoint on Android by clicking on the **Device Install Status**. Verify that the device is displayed here.
+1. Confirm the installation status of Microsoft Defender for Endpoint on Android by tapping **Device Install Status**. Verify that the device is displayed here.
 
    :::image type="content" source="media/900c0197aa59f9b7abd762ab2b32e80c.png" alt-text="The device installation status pane" lightbox="media/900c0197aa59f9b7abd762ab2b32e80c.png":::
 
-2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you're enrolled to the **Personally owned devices with work profile**. If you're enrolled to a **Corporate-owned, fully managed user device**, you have a single profile on the device where you can confirm that Defender for Endpoint is available.
+2. On the device, you can validate the onboarding status by going to the work profile. Confirm that Defender for Endpoint is available, and that you're enrolled using the **Personally owned devices with work profile**. If you're enrolled using a **Corporate-owned, fully managed user device**, you have a single profile on the device where you can confirm that Defender for Endpoint is available.
 
    :::image type="content" source="media/c2e647fc8fa31c4f2349c76f2497bc0e.png" alt-text="The application display pane" lightbox="media/c2e647fc8fa31c4f2349c76f2497bc0e.png":::
 
-3. When the app is installed, open the app and accept the permissions and then your onboarding should be successful.
+3. When the app is installed, open the app, and then accept the permissions. Onboarding should successfully complete.
 
    :::image type="content" source="media/MDE-new.png" alt-text="Th display of a Microsoft Defender for Endpoint application on a mobile device" lightbox="media/MDE-new.png":::
 
-4. At this point, the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft Defender portal](https://security.microsoft.com) by navigating to the **Device Inventory** page.
+4. Verify onboarding status in the [Microsoft Defender portal](https://security.microsoft.com). Navigate to **Device inventory** page.
 
    :::image type="content" source="media/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="The Microsoft Defender for Endpoint portal" lightbox="media/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
 ## Configure low-touch onboarding
 
 > [!NOTE]
-> Android low touch onboarding is now GA'ed.
+> Android low touch onboarding is now GA.
 
-Admins can configure Microsoft Defender for Endpoint in low touch onboarding mode. In this scenario, administrators creates a deployment profile and the user is required to provide a reduced set of permissions to complete onboarding. 
-
-Android low touch onboarding is disabled by default. Admins can enable it through app configuration policies on Intune by following these steps:
+Administrators can configure Microsoft Defender for Endpoint in low-touch onboarding mode. In this scenario, administrators creates a deployment profile, and the user is required to provide a reduced set of permissions to complete onboarding. Android low-touch onboarding is disabled by default. Administrators can enable it through app configuration policies on Intune by following these steps:
 
 1. Push the Defender app to target user group by following the steps in the section, [Add Microsoft Defender for Endpoint on Android as a Managed Google Play app](#add-microsoft-defender-for-endpoint-on-android-as-a-managed-google-play-app) (in this article).
 
