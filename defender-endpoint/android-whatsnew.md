@@ -97,7 +97,7 @@ Microsoft Defender for Endpoint on Android enables **Optional Permissions** in t
 
 ## Microsoft Defender on Android enterprise BYOD personal profile
 
-Microsoft Defender for Endpoint is now supported on Android Enterprise personal profile (BYOD only) with all the key features including malware scanning, protection from phishing links, network protection and vulnerability management. This support is coupled with [privacy controls](android-configure.md#privacy-controls) to ensure user privacy on personal profile. For more information, read the [announcement](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) and the [deployment guide](android-intune.md#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
+Microsoft Defender for Endpoint is now supported on Android Enterprise personal profile (BYOD only) with all the key features including malware scanning, protection from phishing links, network protection, and vulnerability management. This support is coupled with [privacy controls](android-configure.md#privacy-controls) to ensure user privacy on personal profile. For more information, read the [announcement](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) and the [deployment guide](android-intune.md#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
 
 ## Microsoft Defender on Android app updates
 
@@ -139,7 +139,7 @@ Microsoft Defender for Endpoint has released this update required by [Google](ht
 
 **What you need to do to prepare:**
 
-Notify your users and help desk (as applicable) that end users must accept the new permissions when prompted after they have updated Defender for Endpoint to build `1.0.3501.0301` or later. To accept the permissions, users should follow these steps:
+Notify your users and help desk (as applicable) that end users must accept the new permissions when prompted after they update Defender for Endpoint to build `1.0.3501.0301` or later. To accept the permissions, users should follow these steps:
 
 1. Tap on the Defender for Endpoint in-app notification or open the Defender for Endpoint app. Users see a screen that lists the permissions needed. A green check mark is missing next to **Storage permission**.
 
