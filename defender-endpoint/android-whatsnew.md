@@ -33,7 +33,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 **Key benefits**
 
-1. **Faster setup on Android devices** – Simplified Android onboarding supports silent sign-on and auto-granting of certain permissions on a user's device. As such, users will only be required to grant necessary permissions to completely onboard Defender for Endpoint.  
+1. **Faster setup on Android devices** – Simplified Android onboarding supports silent sign-on and autogranting of certain permissions on a user's device. As such, users are required to grant only the necessary permissions to onboard to Defender for Endpoint.  
 
 2. **Intuitive guidance** - A clear and intuitive flow to guide users through each step. 
 
