@@ -68,11 +68,11 @@ Network protection on Microsoft Defender for Endpoint is now generally available
 
 > [!IMPORTANT]
 > **This feature is now enabled by default for all users.** As a result, users will be able to see a network protection card in the Defender for Endpoint app, along with App Protection and Web Protection. Users are also required to provide location permission to complete the set up. Administrators can change the default value for network protection if they decide not to use it via the Intune App Configuration policies. 
-There are also several admin controls to offer flexibility, including privacy controls to configure the data that's sent by Defender for Endpoint from Android devices. For more information, see [network protection](android-configure.md).
+There are also several administrator controls to offer flexibility, including privacy controls to configure the data that's sent by Defender for Endpoint from Android devices. For more information, see [network protection](android-configure.md).
 
 ## Device Tagging
 
-Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the administrators to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the user installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory.
+Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the administrators to set up tags via Intune. Administrators can configure the device tags through Intune via configuration policies and push them to user's devices. Once the user installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory.
 
 This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices. For more information, see [Device Tagging (MDM)](android-configure.md#device-tagging) and [Device Tagging (MAM)](android-configure-mam.md#device-tagging).
 
@@ -93,7 +93,7 @@ Microsoft Defender for Endpoint on Android enables privacy controls for both adm
 
 ## Optional Permissions and Disable Web Protection
 
-Microsoft Defender for Endpoint on Android enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, admin can deploy Defender for Endpoint on devices without enforcing the mandatory **VPN** and **Accessibility** permissions during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for unenrolled devices (MAM). For more information, see [optional permissions](android-configure-mam.md#optional-permissions).
+Microsoft Defender for Endpoint on Android enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, administrators can deploy Defender for Endpoint on devices without enforcing the mandatory **VPN** and **Accessibility** permissions during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for unenrolled devices (MAM). For more information, see [optional permissions](android-configure-mam.md#optional-permissions).
 
 ## Microsoft Defender on Android enterprise BYOD personal profile
 
@@ -130,7 +130,7 @@ Microsoft Defender for Endpoint has released this update required by [Google](ht
 **How this affects your organization:** These changes take effect if you're using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender for Endpoint to release build 1.0.3501.0301 or later.
 
 > [!NOTE]
-> The new storage permissions cannot be configured by admin to auto approve through Microsoft Intune. User will need to take action to provide access to this permission.
+> The new storage permissions cannot be configured by administrators to auto approve through Microsoft Intune. Users must take action to provide access to this permission.
 
 **User experience:** Users receive a notification indicating a missing permission for app security. If the user denies this permission, app security functionality is turned off on the device. If user doesn't accept or deny permission, they continue to receive the prompt when unlocking their device or opening the app, until it's approved.
 
@@ -139,7 +139,7 @@ Microsoft Defender for Endpoint has released this update required by [Google](ht
 
 **What you need to do to prepare:**
 
-Notify your users and helpdesk (as applicable) that users will need to accept the new permissions when prompted after they have updated Defender for Endpoint to build `1.0.3501.0301` or later. To accept the permissions, users should:
+Notify your users and help desk (as applicable) that end users must accept the new permissions when prompted after they have updated Defender for Endpoint to build `1.0.3501.0301` or later. To accept the permissions, users should follow these steps:
 
 1. Tap on the Defender for Endpoint in-app notification or open the Defender for Endpoint app. Users see a screen that lists the permissions needed. A green check mark is missing next to **Storage permission**.
 
