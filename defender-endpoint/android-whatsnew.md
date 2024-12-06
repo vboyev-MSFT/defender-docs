@@ -27,6 +27,22 @@ ms.date: 11/15/2024
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+**December - 2024**
+
+## Android low touch onboarding is now GA
+
+**Key benefits**
+
+1. **Faster setup on Android devices** – Simplified Android onboarding supports silent sign-on and auto-granting of certain permissions on a user’s device. As such, users will only be required to grant necessary permissions to completely onboard Defender for Endpoint.  
+
+1. **Intuitive guidance** - A clear and intuitive flow to guide users through each step. 
+
+1. **Broad coverage with support across multiple Android profiles** – Android enterprise BYOD, COPE, and fully-managed. 
+
+**Configuring Low Touch Onboarding** 
+
+Although Low Touch onboarding is disabled by default, organization admins can enable it through app configuration policies on Intune by following the steps mentioned in the link [Android Low Touch Onboarding](/defender-endpoint/android-intune).
+
 > [!IMPORTANT]
 > **Ending support for Device Administrator enrolled devices**
 > Microsoft Intune and Defender for Endpoint are ending support for Device Administrator enrolled devices with access to [Google Mobile Services](/mem/intune/apps/manage-without-gms) (GMS), beginning December 31, 2024.
