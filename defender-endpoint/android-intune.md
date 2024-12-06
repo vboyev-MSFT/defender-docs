@@ -251,7 +251,7 @@ The device configuration profile is now assigned to the selected user group.
 ## Configure low-touch onboarding
 
 > [!NOTE]
-> This feature is currently in preview. Information in this section relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Android low touch onboarding is now GA'ed.
 
 Admins can configure Microsoft Defender for Endpoint in low touch onboarding mode. In this scenario, administrators creates a deployment profile and the user is required to provide a reduced set of permissions to complete onboarding. 
 
