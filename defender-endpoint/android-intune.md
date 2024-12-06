@@ -291,17 +291,15 @@ Administrators can use the [Microsoft Intune admin center](https://intune.micros
    - For **Profile type**, select **Personally-owned work profile only**
    - For **Targeted app**, select **Microsoft Defender**.
 
-3. On the settings page, in **'Configuration settings format'**, select **'Use configuration designer'** and select **Add**. From the list of configurations that are displayed, select **'Microsoft Defender in Personal profile'**.
+2. On the settings page, in **Configuration settings format**, select **Use configuration designer**, and then select **Add**. From the list of configurations that are displayed, select **Microsoft Defender in Personal profile**.
 
-4. The selected configuration is listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification appears to inform the admin about the same. Select on **Next**.
+3. The selected configuration is listed. Change the configuration value to `1` to enable Microsoft Defender support personal profiles. A notification appears to inform the administrator. Select **Next**.
 
-5. **Assign** the configuration policy to a group of users. **Review and create** the policy.
+4. Assign the configuration policy to a group of users. Review and create the policy.
 
-Admins also can set up **privacy controls** from the Microsoft Intune admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
+Administrators also can set up privacy controls in the Microsoft Intune admin center to control what data is sent by the Microsoft Defender app to the Microsoft Defender portal. For more information, see [configure privacy controls](android-configure.md).
 
-Organizations can communicate to their users to protect Personal profile with Microsoft Defender on their enrolled BYOD devices.
-
-Microsoft Defender must be already installed and active in work profile to enabled Microsoft Defender in personal profiles.
+Organizations can communicate to their users to protect their personal profile by using the Microsoft Defender app on their enrolled BYOD devices. The Microsoft Defender app must be installed and active, using their work profile for Microsoft Defender to enabled in personal profiles.
 
 ### Finish onboarding a device
 
