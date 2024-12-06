@@ -311,8 +311,8 @@ Organizations can communicate to their users to protect their personal profile b
 
 4. After signing in successfully, users see the following screens:
 
-   - **EULA screen**: Presented only if the user hasn't consented already in the Work profile.
-   - **Notice screen**: Users need to provide consent on this screen to move forward with onboarding the application. This is required only during the first run of the app.
+   - **EULA screen**: Presented only if the user hasn't consented already in their work profile.
+   - **Notice screen**: Users must provide consent on this screen to move forward with onboarding the application. This is required only during the first run of the app.
 
 5. Provide the required permissions to complete onboarding.
 
