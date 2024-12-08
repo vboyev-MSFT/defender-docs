@@ -2,7 +2,7 @@
 title:       Protect your Workplace environment | Microsoft Defender for Cloud Apps
 description: Learn how about connecting your Workplace app to Defender for Cloud Apps using the API connector.
 ms.topic:    how-to
-ms.date: 12/06/2023
+ms.date: 12/08/2024
 ---
 
 # How Defender for Cloud Apps helps protect your Workplace environment (Preview)
@@ -96,6 +96,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
    > - The first connection can take up to 4 hours to get all users and their activities.
    > - The activities that will show are the activities that were generated from the moment the connector is connected.
    > - After the connector's **Status** is marked as **Connected**, the connector is live and works.
+   > - Before deleting the app in Workplace, make sure to disconnect the connector in the Defender for Cloud Apps portal.
 
 ## Next steps
 
