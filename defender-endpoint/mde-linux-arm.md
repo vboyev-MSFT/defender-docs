@@ -96,16 +96,17 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
 6. Validate the deployment by following these steps:
 
-   1. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. 
-   
-      It can take approximately 20 minutes for the device to show up in the portal.
-
-   2. On the device, run the following command to check the health status. A return value of `true` denotes that the product is functioning as expected:
+   1. On the device, run the following command to check the health status. A return value of `true` denotes that the product is functioning as expected:
 
       `$ mdatp health --field healthy`
 
+   2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
+
 7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
  
+### Deploy using installer script with Ansible
+
+
 
 ## Troubleshoot deploymemt issues
 
