@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint on Linux for ARM devices (preview)
-description: Defender for Endpoint on Linux now supports ARM devices. Read this article to learn more.            
+description: Defender for Endpoint on Linux now supports ARM devices. Learn how it works and how to deploy it.            
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
@@ -22,7 +22,7 @@ audience: ITPro
 ai-usage: human-only
 ---
 
-# Microosft Defender for Endpoint on Linux for ARM devices (preview)
+# Microsoft Defender for Endpoint on Linux for ARM devices (preview)
 
 Now in [preview](/defender-xdr/preview), Microsoft Defender for Endpoint on Linux supports ARM64-based Linux servers. Read this article to get an overview of this new capability, how to deploy it on ARM64-based Linux servers, and how to troubleshoot issues that you might encounter.
 
@@ -52,11 +52,10 @@ Initially, the following Linux distributions are supported in preview:
 
 You can choose from several methods to deploy Defender for Endpoint on Linux on your ARM64-based device:
 
-- Installer script
-- Ansible
-- Puppet
-- Saltstack
-- Microsoft Defender for Cloud
+- [Installer script](#deploy-using-the-installer-script)
+- [Ansible](#deploy-using-installer-script-with-ansible)
+- [Puppet](#deploy-using-the-installer-script-with-puppet)
+- [Microsoft Defender for Cloud](#deploy-defender-for-endpoint-on-linux-using-microsoft-defender-for-cloud)
 
 ### Before you begin
 
@@ -72,7 +71,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
 ### Deploy using the installer script
 
-1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. In the onboarding screen, select the following options:
 
@@ -80,7 +79,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    2. In the **Connectivity type** list, select **Streamlined**. Or, if necessary, you can select **Standard**. (For more information, see [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md).)
 
-   3. In the **Deployment method** list, select **Local Sript (Python)**.
+   3. In the **Deployment method** list, select **Local Script (Python)**.
 
    4. Select **Download onboarding package**.
 
@@ -102,11 +101,11 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
-7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
+7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deploymemt-issues) (in this article).
  
 ### Deploy using installer script with Ansible
 
-1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. In the onboarding screen, select the following options:
 
@@ -226,11 +225,11 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
-7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
+7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deploymemt-issues) (in this article).
 
 ### Deploy using the installer script with Puppet
 
-1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. In the onboarding screen, select the following options:
 
@@ -281,7 +280,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
           └── init.pp
       ```
 
-6. Use the Puppet manifeset to install Defender for Endpoint on Linux on your device.
+6. Use the Puppet manifest to install Defender for Endpoint on Linux on your device.
 
    ```bash
    
@@ -343,7 +342,36 @@ See these articles:
 - [Connect your non-Azure machines to Microsoft Defender for Cloud: Onboard your Linux server](/azure/defender-for-cloud/quickstart-onboard-machines#onboard-your-linux-server)
 
 
-## Troubleshoot deploymemt issues
+## Troubleshoot deployment issues
+
+1. Using Bash, download the [XMDE Client Analyzer ARM Preview](https://go.microsoft.com/fwlink/?linkid=2299668). 
+
+   ```bash
+   wget --quiet -O XMDEClientAnalyzerARMPreview.zip https://go.microsoft.com/fwlink/?linkid=2299668
+   ```
+2. Run the support tool.
+
+   ```bash
+   sudo ./MDESupportTool -d --mdatp-log debug
+   ```
+3. Follow the on-screen instructions and then follow up with at the end of the log collection. The logs are located in the `/tmp` directory.
+
+   The log set is owned by the root user, so you might need root privileges to remove the log set.
+
+### Common issues and how to resolve them
+
+The following table summarizes common issues and how to resolve them.
+
+| Error message or issue | What to do |
+|--|--|
+| `mdatp not found` | The repository might not be configured correctly. Check to see if the channel is set to `insiders-slow` in the installer script |
+| `mdatp health` indicates a missing license | Make sure you're passing the correct onboarding script or json file to your automation script or tool |
+| `edr_configuration_version` is unavailable after onboarding and installation. | This issue can occur if you uninstall and reinstall private and public preview features, and then try to onboard the same machine twice. Offboard mdatp, and then uninstall and reinstall it again. If the problem persists, contact us at `mdearmsupport@microsoft.com`. |
+| Exclusions aren't working as expected | If you had exclusions working on other devices, but they're not working on your ARM64-based Linux servers, contact us at `mdearmsupport@microsoft.com`. You need your client analyzer logs. |
+| You want help with tuning mdatp. | Contact us at `mdearmsupport@microsoft.com`. |
+
+> [!TIP]
+> When you contact us at `mdearmsupport@microsoft.com`, make sure to describe the issue in detail. Include screenshots if possible, and your client analyzer logs.
 
 ## See also
 
