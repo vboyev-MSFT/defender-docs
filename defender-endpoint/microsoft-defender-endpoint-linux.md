@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/04/2024
+ms.date: 12/09/2024
 ---
 
 # Microsoft Defender for Endpoint on Linux
@@ -105,20 +105,17 @@ If you experience any installation failures, see [Troubleshooting installation f
   - Alma 9.2 and higher 
   - Mariner 2
 
-- The following Linux server distributions on ARM64 are in Public Preview:
-  - Ubuntu 20.04 ARM64 (Preview)
-    
-  - Ubuntu 22.04 ARM64 (Preview)
-    
-  - Amazon Linux 2 ARM64 (Preview)
-    
-  - Amazon Linux 2023 ARM64 (Preview)
+- The following Linux server distributions on ARM64 are now supported in preview:
+  - Ubuntu 20.04 ARM64
+  - Ubuntu 22.04 ARM64
+  - Amazon Linux 2 ARM64
+  - Amazon Linux 2023 ARM64
     
   > [!IMPORTANT]
-  > Support for Microsoft Defender for Endpoint on ARM64 based Linux distributions as mentioned above is now in Public Preview. To begin testing, kindly install the latest agent version **"101.24102.000"** from **Insiders-Fast** channel via [Installer script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation),or manually [deploy using command line tool](/defender-endpoint/linux-install-manually), or via 3rd Party tool-[Ansible](/defender-endpoint/linux-install-with-ansible), [Chef](/defender-endpoint/linux-deploy-defender-for-endpoint-with-chef), [Puppet](/defender-endpoint/linux-install-with-puppet), [Saltstack](/defender-endpoint/linux-install-with-saltack). You can also deploy using ARC via Microsoft Defender for Cloud. 
-  >Support for more distributions will be gradually added as we progress into Public Preview. 
-  >[System requirement](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-linux#system-requirements) is same as for x86 based Linux server.
-  >Please reach out to us on **"mdearmsupport@microsoft.com"** to share your feedback or get support on deployment and testing.
+  > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. To begin testing, make sure to install the latest agent, version `101.24102.000` from the **Insiders-Fast** channel by using the [installer script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation), or manually [deploy using the command line tool](/defender-endpoint/linux-install-manually), or by using a non-Microsoft tool, such as [Ansible](/defender-endpoint/linux-install-with-ansible), [Chef](/defender-endpoint/linux-deploy-defender-for-endpoint-with-chef), or [Puppet](/defender-endpoint/linux-install-with-puppet), [Saltstack](/defender-endpoint/linux-install-with-saltack). You can also deploy using ARC via Microsoft Defender for Cloud. 
+  > Support for more distributions will be gradually added as we progress into Public Preview. 
+  > [System requirements](/defender-endpoint/microsoft-defender-endpoint-linux#system-requirements) is same as for x86 based Linux server.
+  > Please reach out to us at `mdearmsupport@microsoft.com` to share your feedback or get support on deployment and testing.
 
    
   > [!NOTE]
