@@ -24,11 +24,9 @@ ai-usage: human-only
 
 # Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)
 
-Now in [preview](/defender-xdr/preview), Microsoft Defender for Endpoint on Linux supports ARM64-based Linux servers. Read this article to get an overview of this new capability, how to deploy it, and how to troubleshoot issues that you might encounter.
-
 ## Overview of Defender for Endpoint on Linux for ARM64-based devices
 
-As you might already know, [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) is a unified endpoint security solution that helps you protect your server devices from advanced threats. Now in preview, Defender for Endpoint on Linux currently supports ARM64-based Linux servers. Similar to x64-based Linux servers (including Intel and AMD 64-bit platform), the following capabilities are included: 
+As you might already know, [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) is a unified endpoint security solution that helps you protect your server devices from advanced threats. Now in [preview](/defender-xdr/preview), Defender for Endpoint on Linux currently supports ARM64-based Linux servers. Similar to x64-based Linux servers (including Intel and AMD 64-bit platform), the following capabilities are included: 
 
 - Microsoft Defender Antivirus
 - Endpoint detection and response (EDR)
@@ -48,7 +46,7 @@ Initially, the following Linux distributions are supported in preview:
 > [!NOTE]
 > Support for more Linux distributions is planned as part of this preview program.
 
-## Deploy Defender for Endpoint on Linux for ARM devices
+## Deploy Defender for Endpoint on Linux for ARM64-based devices
 
 You can choose from several methods to deploy Defender for Endpoint on Linux to your ARM64-based device:
 
@@ -69,7 +67,6 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
    - Microsoft Defender for Endpoint for Servers
 
    [Learn more about Defender for Endpoint licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
-
 
 ### Deploy using the installer script
 
