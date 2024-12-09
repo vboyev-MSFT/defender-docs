@@ -72,14 +72,15 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
 |Write permissions |Read permissions |
 |----|----|
-| **Defender Permissions**: Core security settings scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **Defender Permissions**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
-
+| **MDE Roles**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **MDE Roles**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
+<!-- Limor do we remove global admin? -->
 **For RBAC version 2**:
 
 |Write permissions |Read permissions |
 |----|----|
-| **MDE roles**: Manage security settings in Security Center & scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **MDE roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
-
+| **MDE roles**: Manage security settings in Security Center and scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator.| Write roles (including roles that are non-scoped to all device groups). <br> **MDE roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
+<!-- Limor do we remove global admin? -->
+<!-- Hadar the entra id roles are not listed for the write roles is that correct? -->
 ## Next steps
 
 Once you have set up the RBAC roles and permissions, [set up a site](set-up-sites.md) so that Microsoft Defender for IoT can begin sending data to the Defender portal.
