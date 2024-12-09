@@ -59,6 +59,8 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
 - Make sure the [prerequisites](microsoft-defender-endpoint-linux.md#prerequisites) are met for Defender for Endpoint on Linux
 
+- Confirm that you have preview features turned on. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Advanced features** > **Preview features**. For more information, see [Preview features](/defender-xdr/preview).
+
 - Make sure to install the agent version `101.24102.0002` from the insiders-slow channel on the ARM64-based device. (See [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).) 
 
 - To onboard servers to Defender for Endpoint, [server licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint) are required. You can choose from these options:
