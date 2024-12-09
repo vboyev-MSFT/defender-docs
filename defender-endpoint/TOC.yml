@@ -255,7 +255,7 @@
           items:
           - name: Deploy Defender for Endpoint on Linux
             items:
-            - name: Defender for Endpoint on Linux ARM
+            - name: Defender for Endpoint on Linux for ARM64-based devices (preview)
               href: mde-linux-arm.md
             - name: Puppet based deployment
               href: linux-install-with-puppet.md
