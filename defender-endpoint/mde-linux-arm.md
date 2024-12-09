@@ -228,7 +228,6 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
 7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
 
-
 ### Deploy using the installer script with Puppet
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
@@ -322,6 +321,27 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
    }
    }
    ```
+
+### Deploy Defender for Endpoint on Linux using Microsoft Defender for Cloud
+
+If your organization is using Defender for Cloud, you can use it to deploy Defender for Endpoint on Linux.
+
+1. We recommend enabling automatic deployment on your ARM64-based Linux devices. To enable automatic deployment, under `.bashrc` as a root user or `/etc/profile` on your device, set the environment variables as follows:
+
+   - `OPT_FOR_MDE_ARM_PREVIEW=1`
+   - `OPT_FOR_MDE_ARM_PREVIEW=true`
+
+2. Wait for 1-6 hours for onboarding to occur.
+
+3. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux devices you just onboarded.
+
+**Need help with Defender for Cloud?**
+
+See these articles:
+
+- [Enable the Defender for Endpoint integration: Linux](/azure/defender-for-cloud/enable-defender-for-endpoint#linux)
+- [Connect your non-Azure machines to Microsoft Defender for Cloud: Onboard your Linux server](/azure/defender-for-cloud/quickstart-onboard-machines#onboard-your-linux-server)
+
 
 ## Troubleshoot deploymemt issues
 
