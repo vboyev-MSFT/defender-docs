@@ -66,11 +66,17 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-role
 1. Select **Next** to **Review and finish**.
 1. Select **Submit**.
 
-### Summary of roles and permissions for site security
+### Summary of Unified RBAC roles and permissions for site security
 
 |Write permissions |Read permissions |
 |----|----|
 | **Defender Permissions**: Core security settings scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **Defender Permissions**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
+
+### Summary of V2 RBAC roles and permissions for site security
+
+|Write permissions |Read permissions |
+|----|----|
+| **MDE Roles**: Manage security settings in Security Center & scoped to all device groups .<br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **Defender Permissions**: MDE Roles: View data - Security operations (read) <br>**Entra ID roles**: Global Reader, Security Reader.|
 
 ## Next steps
 
