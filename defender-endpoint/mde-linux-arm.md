@@ -99,7 +99,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
       `$ mdatp health --field healthy`
 
-   2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
+   2. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
 7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deploymemt-issues) (in this article).
  
@@ -223,7 +223,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
       ```
 
-   2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
+   2. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
 7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deploymemt-issues) (in this article).
 
@@ -332,7 +332,7 @@ If your organization is using Defender for Cloud, you can use it to deploy Defen
 
 2. Wait for 1-6 hours for onboarding to occur.
 
-3. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux devices you just onboarded.
+3. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux devices you just onboarded.
 
 **Need help with Defender for Cloud?**
 
