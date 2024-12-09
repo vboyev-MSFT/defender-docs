@@ -106,7 +106,54 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
  
 ### Deploy using installer script with Ansible
 
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
+2. In the onboarding screen, select the following options:
+
+   1. In the **Select operating system to start onboarding process** list, select **Linux Server**.
+
+   2. In the **Connectivity type** list, select **Streamlined**. Or, if necessary, you can select **Standard**. (For more information, see [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md).)
+
+   3. In the **Deployment method** list, select **Your preferred Linux configuration management tool**.
+
+   4. Select **Download onboarding package**.
+
+3. In a new browser window, download the [Defender for Endpoint installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh).
+
+4. Create an installation YAML file on your Ansible server. For example, `/etc/ansible/playbooks/install_mdatp.yml`, using the `mde_installer.sh` you downloaded in step 3.
+
+   ```yml
+   
+   name: Install and Onboard MDE
+   hosts: servers
+   tasks:
+   - name: Create a directory if it does not exist
+     ansible.builtin.file:
+       path: /tmp/mde_install
+       state: directory
+       mode: '0755'
+
+   - name: Copy Onboarding script
+     ansible.builtin.copy:
+       src: "{{ onboarding_script }}"
+       dest: /tmp/mde_install/mdatp_onboard.json
+   - name: Install MDE on host
+     ansible.builtin.script: "{{ mde_installer_script }} --install --channel {{ channel | default('insiders-slow') }} --onboard /tmp/mde_install/mdatp_onboard.json"
+     register: script_output
+     args:
+       executable: sudo
+
+   - name: Display the installation output
+     debug:
+       msg: "Return code [{{ script_output.rc }}] {{ script_output.stdout }}"
+
+   - name: Display any installation errors
+     debug:
+       msg: "{{ script_output.stderr }}"
+
+   ```
+   
+   
 
 ## Troubleshoot deploymemt issues
 
