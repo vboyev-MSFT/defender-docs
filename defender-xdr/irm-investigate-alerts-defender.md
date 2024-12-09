@@ -28,7 +28,7 @@ appliesto:
 > [!IMPORTANT]
 > Some information in this article relates to a prereleased product, which may be substantially modified before it’s commercially released. Microsoft makes no warranties expressed or implied, with respect to the information provided here.
 
-[Microsoft Purview Insider Risk Management alerts](/purview/insider-risk-management-activities?tabs=purview-portal#alert-dashboard) in the Microsoft Defender portal are vital for protecting an organization's sensitive information and maintaining security. The data helps identify and mitigate internal threats like data leaks and intellectual property theft, by employees or contractors. Monitoring these alerts allows organizations to address security incidents proactively, ensuring sensitive data remains protected and compliance requirements are met.
+[Microsoft Purview Insider Risk Management alerts](/purview/insider-risk-management-activities?tabs=purview-portal#alert-dashboard) in the Microsoft Defender portal are vital for protecting an organization's sensitive information and maintaining security. These alerts and insights from Microsoft Purview Insider Risk Management help identify and mitigate internal threats like data leaks and intellectual property theft by employees or contractors. Monitoring these alerts allows organizations to address security incidents proactively, ensuring sensitive data remains protected and compliance requirements are met.
 
 One key benefit of monitoring insider risk alerts is the unified view of all alerts related to a user, allowing security operations center (SOC) analysts to correlate alerts from [Microsoft Purview Insider Risk Management](/purview/insider-risk-management-solution-overview) with other Microsoft security solutions. Additionally, having these alerts in the Microsoft Defender portal enables seamless integration with advanced hunting capabilities, enhancing the ability to investigate and respond to incidents effectively.
 
@@ -55,7 +55,7 @@ If you’re new to Microsoft Purview and insider risk management, consider readi
 
 To investigate insider risk management alerts in the Microsoft Defender portal, you need to do the following:
 
-- Confirm your Microsoft 365 subscription supports insider risk management access. Know more about [subscription and licensing](purview/insider-risk-management-configure?tabs=purview-portal#subscriptions-and-licensing).
+- Confirm your Microsoft 365 subscription supports insider risk management access. Know more about [subscription and licensing](/purview/insider-risk-management-configure?tabs=purview-portal#subscriptions-and-licensing).
 - Confirm your access to Microsoft Defender XDR. See [Microsoft Defender XDR licensing requirements](prerequisites.md#licensing-requirements).
 
 Data sharing with other security solutions must be turned on in the **Data sharing** settings in Microsoft Purview Insider Risk Management. Turning on **Share user risk details with other security solutions** allows users with the correct permissions to review user risk details in the user entity pages in the Microsoft Defender portal. See [Share alert severity levels with other Microsoft security solutions](/purview/insider-risk-management-settings-dlp-sync?tabs=purview-portal#share-alert-severity-levels-with-other-microsoft-security-solutions) for more information.
@@ -105,8 +105,8 @@ Use advanced hunting to further investigate insider risk events and behaviors. R
 
 |Table name|Description|
 |:---|:---|
-|AlertInfo|Insider risk management alerts are available as part the AlertInfo table, which contains information about alerts from various Microsoft security solutions.|
-|AlertEvidence|Insider risk management alerts are available as part of the AlertEvidence table, which contains information about entities associated with alerts from various Microsoft security solutions.|
+|[AlertInfo](advanced-hunting-alertinfo-table.md)|Insider risk management alerts are available as part the AlertInfo table, which contains information about alerts from various Microsoft security solutions.|
+|[AlertEvidence](advanced-hunting-alertevidence-table.md)|Insider risk management alerts are available as part of the AlertEvidence table, which contains information about entities associated with alerts from various Microsoft security solutions.|
 |DataSecurityBehaviors|This table contains insights into potentially suspicious user behavior that violates the default or customer-defined policies in Microsoft Purview.|
 |DataSecurityEvents|This table contains enriched events about user activities that violate the default or customer-defined policies in Microsoft Purview.|
 
@@ -118,12 +118,12 @@ Refer to the table below to find insider risk management data in specific APIs.
 
 |Table name|Description|Mode|
 |:---|:---|:---|
-|Incidents|Includes all insider risk incidents in the Defender XDR unified incident queue|Read/Write|
-|Alerts|Includes all insider risk alerts shared with Defender XDR unified alert queue|Read/Write|
-|Advanced hunting|Includes all insider risk management data in advanced hunting including Alerts, Behaviors, and Events|Read|
+|[Incidents](/graph/api/resources/security-incident)|Includes all insider risk incidents in the Defender XDR unified incident queue|Read/Write|
+|[Alerts](/graph/api/resources/security-alert)|Includes all insider risk alerts shared with Defender XDR unified alert queue|Read/Write|
+|[Advanced hunting](/graph/api/security-security-runhuntingquery)|Includes all insider risk management data in advanced hunting including Alerts, Behaviors, and Events|Read|
 
 > [!NOTE]
-> Insider risk alert information can be accessed in both the Alerts and Advanced hunting graph namespace. Insider risk behaviors and events in advanced hunting can be accessed in the Graph API by [passing KQL queries in the API](/graph/api/security-security-runhuntingquery?view=graph-rest-1.0&tabs=http).
+> Insider risk alert information can be accessed in both the Alerts and Advanced hunting graph namespace. Insider risk behaviors and events in advanced hunting can be accessed in the Graph API by [passing KQL queries in the API](/graph/api/security-security-runhuntingquery).
 
 For customers using [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference), we recommend migrating to Microsoft Security Graph API to ensure richer metadata and bi-directional support for IRM data.
 
