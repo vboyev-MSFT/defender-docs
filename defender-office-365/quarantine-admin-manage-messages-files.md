@@ -18,7 +18,7 @@ ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.service: defender-office-365
-ms.date: 09/16/2024
+ms.date: 12/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -89,6 +89,9 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Email** tab. Or, to go directly to the **Email** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Email>.
 
 By default, only the first 100 entries are shown until you scroll down to the bottom of the list, which loads more results.
+
+> [!TIP]
+> For answers to frequently asked questions about quarantined messages, select :::image type="icon" source="media/m365-cc-sc-refresh-icon.png" border="false"::: **Resolution to common issues** at the top of the page.
 
 On the **Email** tab, you can decrease the vertical spacing in the list by clicking :::image type="icon" source="media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal** and then selecting :::image type="icon" source="media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
