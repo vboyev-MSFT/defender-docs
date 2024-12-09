@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 07/18/2024
+ms.date: 12/15/2024
 ---
 
 # Investigate alerts in Microsoft Defender XDR
