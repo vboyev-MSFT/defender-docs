@@ -42,7 +42,7 @@ Depending on your tenant, you might have access to RBAC version 1 or 2 instead o
 If you're using the Defender portal for the first time, you need to set up all of your roles and permissions. For more information, see [manage portal access using role-based access control](/defender-xdr/manage-rbac).
 
 ## Set up Defender XDR Unified RBAC roles for site security
-
+<!-- to change the above title, remove unified? or  -->
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
 1. In the Defender portal, select **Settings** \> **Microsoft XDR** \> **Permissions and roles**.
@@ -74,11 +74,11 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 |----|----|
 | **Defender Permissions**: Core security settings scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **Defender Permissions**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
 
-**For Unified RBAC**:
+**For RBAC version 2**:
 
 |Write permissions |Read permissions |
 |----|----|
-| **MDE Roles**: Manage security settings in Security Center & scoped to all device groups .<br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **Defender Permissions**: MDE Roles: View data - Security operations (read) <br>**Entra ID roles**: Global Reader, Security Reader.|
+| **MDE Roles**: Manage security settings in Security Center & scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **MDE Roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
 
 ## Next steps
 
