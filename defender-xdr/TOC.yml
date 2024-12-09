@@ -152,10 +152,12 @@
                    href: investigate-incidents.md
                  - name: Investigate data loss prevention alerts with Microsoft Defender XDR
                    href: dlp-investigate-alerts-defender.md
-                 - name: Investigate data loss prevention alerts with Microsoft Sentinel
+                 - name: Investigate data loss prevention alerts with Microsoft Sentinel                
                    href: dlp-investigate-alerts-sentinel.md
+                 - name: Investigate insider risk threats
+                   href: irm-investigate-alerts-defender.md                    
                  - name: Investigate and respond to container threats
-                   href: investigate-respond-container-threats.md  
+                   href: investigate-respond-container-threats.md                   
                  - name: Alerts
                    href: investigate-alerts.md
                  - name: Alert classification playbooks
