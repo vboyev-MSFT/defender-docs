@@ -6,7 +6,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 12/03/2024
+ms.date: 12/15/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -30,6 +30,8 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 ## December 2024
+
+- (Preview) Users with provisioned access to Microsoft Purview Insider Risk Management can now view and manage insider risk management alerts and hunt for insider risk management events and behaviors in the Microsoft Defender portal. For more information, see [Investigate insider risk threats in the Microsoft Defender portal with insights from Microsoft Purview Insider Risk Management](irm-investigate-alerts-defender.md).
 - (Preview) The [Link to incident](advanced-hunting-defender-results.md#link-query-results-to-an-incident) feature in Microsoft Defender advanced hunting now allows linking of Microsoft Sentinel query results. In both the Microsoft Defender unified experience and in [Defender XDR advanced hunting](advanced-hunting-link-to-incident.md), you can now specify whether an entity is an impacted asset or related evidence.
 - (Preview) In [advanced hunting](advanced-hunting-defender-use-custom-rules.md#use-adx-operator-for-azure-data-explorer-queries-preview), Microsoft Defender portal users can now use the `adx()` operator to query tables stored in Azure Data Explorer. You no longer need to go to log analytics in Microsoft Sentinel to use this operator if you are already in Microsoft Defender.
 -  New documentation library for Microsoft's unified security operations platform. Find centralized documentation about [Microsoft's unified SecOps platform in the Microsoft Defender portal](/unified-secops-platform/overview-unified-security). Microsoft's unified SecOps platform brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, Microsoft Security Exposure Management, and generative AI into the Defender portal. Learn about the features and functionality available with Microsoft's unified SecOps platform, then start to plan your deployment.
