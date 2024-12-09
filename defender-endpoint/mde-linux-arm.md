@@ -68,6 +68,23 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    [Learn more about Defender for Endpoint licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
+- Make sure to install the agent version `101.24102.0002` from the insiders-slow channel on the ARM device. (See [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).) 
+
+### Deploy using the installer script
+
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+
+2. In the onboarding screen, select the following options:
+
+   1. In the **Select operating system to start onboarding process** list, select **Linux Server**.
+
+   2. In the **Connectivity type** list, select **Streamlined**. Or, if necessary, you can select **Standard**. (For more information, see [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md).)
+
+   3. In the **Deployment method** list, select **Local Sript (Python)**.
+
+3.  as the operating system. In the third drop-down menu, select Local Script as the deployment method.
+o    Select Download onboarding package to download package on your device
+
 
 ## See also
 
