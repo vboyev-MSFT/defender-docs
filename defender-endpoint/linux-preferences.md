@@ -18,8 +18,6 @@ ms.subservice: linux
 search.appverid: met150
 ---
 
-LATEST
-
 # Set preferences for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
@@ -527,9 +525,9 @@ When this feature is enabled, Defender for Endpoint will scan files for which ow
 > [!NOTE] 
 > Available in Defender for Endpoint version `101.23062.0010` or later.
 
-##### Configure scanning of raw socket events
+##### Configure scanning of network socket events
 
-When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. 
+When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets / UDP sockets, or setting socket option. 
 
 > [!NOTE]
 > This feature is applicable only when Behavior Monitoring is enabled.
@@ -810,7 +808,7 @@ Determines whether open events from specific paths in filesystems such as `procf
 |**Key**|enableOtherFsOpenEvents|*Not available*|
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0000` or later.|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 #### Fanotify sensor configurations
 
@@ -877,7 +875,7 @@ Determines whether fork process events are scanned by the behavior monitoring an
 |**Key**|notifyForks|*Not available*|
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0000` or later.|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 #### Throttling configurations
 
@@ -982,7 +980,7 @@ Determines whether an optimization for caching process details in the antivirus 
 |**Key**|enableAntivirusEngineCache|*Not available*|
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0002` or later.|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 #### Enable Scanning of Network Protection BM Events
 
@@ -996,7 +994,7 @@ Determines whether network protection events are sent to the BM engine for scann
 |**Key**|nriMpengineMetadata|*Not available*|
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0002` or later.|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 #### EDR Early Filtering Configurations
 
@@ -1017,7 +1015,7 @@ Determines whether events are filtered early before sending to the EDR process i
 |**Key**|enableEarlyFilteringPassive|*Not available*|
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0000` or later.|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 ##### Configure EDR Early Filtering in Real Time Mode
 
@@ -1028,7 +1026,7 @@ Determines whether events are filtered early before sending to the EDR process i
 |**Key**|enableEarlyFilteringRtp|*Not available*|
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0000` or later.|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 ### Network protection configurations
 
