@@ -24,7 +24,7 @@ ai-usage: human-only
 
 # Microosft Defender for Endpoint on Linux for ARM devices (preview)
 
-Now in [preview](../defender-xdr/preview.md), Microsoft Defender for Endpoint on Linux supports ARM64-based Linux servers. Read this article to get an overview of this new capability, how to deploy it on ARM64-based Linux servers, and how to troubleshoot issues that you might encounter.
+Now in [preview](/defender-xdr/preview), Microsoft Defender for Endpoint on Linux supports ARM64-based Linux servers. Read this article to get an overview of this new capability, how to deploy it on ARM64-based Linux servers, and how to troubleshoot issues that you might encounter.
 
 ## Overview of Defender for Endpoint on Linux for ARM devices
 
@@ -50,9 +50,24 @@ Initially, the following Linux distributions are supported in preview:
 
 ## Deploy Defender for Endpoint on Linux for ARM devices
 
-You can choose from several methods to deploy Defender for Endpoint on Linux on 
+You can choose from several methods to deploy Defender for Endpoint on Linux on your ARM64-based device:
+
+- Installer script
+- Ansible
+- Puppet
+- Saltstack
+- Microsoft Defender for Cloud
 
 ### Before you begin
+
+- Make sure to meet the prerequisites for Defender for Endpoint on Linux: [Prerequisites](microsoft-defender-endpoint-linux.md#prerequisites)
+
+- To onboard servers to Defender for Endpoint, server licenses are required. You can choose from these options:
+   - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering
+   - Microsoft Defender for Endpoint for Servers
+
+   [Learn more about Defender for Endpoint licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
+
 
 ## See also
 
