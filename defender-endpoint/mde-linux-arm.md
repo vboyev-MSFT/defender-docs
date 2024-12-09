@@ -51,7 +51,7 @@ Initially, the following Linux distributions are supported in preview:
 You can choose from several methods to deploy Defender for Endpoint on Linux to your ARM64-based device:
 
 - [Installer script](#deploy-using-the-installer-script)
-- [Ansible](#deploy-using-installer-script-with-ansible)
+- [Ansible](#deploy-using-the-installer-script-with-ansible)
 - [Puppet](#deploy-using-the-installer-script-with-puppet)
 - [Microsoft Defender for Cloud](#deploy-defender-for-endpoint-on-linux-using-microsoft-defender-for-cloud)
 
