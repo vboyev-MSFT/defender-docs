@@ -225,7 +225,11 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
            msg: "MDE succesfully deployed"
 
       ```
-      
+
+   2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
+
+7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
+
 
 ## Troubleshoot deploymemt issues
 
