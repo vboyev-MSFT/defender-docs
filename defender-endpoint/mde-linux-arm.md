@@ -72,3 +72,5 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 ## See also
 
 [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+
+[Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
