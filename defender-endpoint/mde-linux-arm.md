@@ -82,9 +82,32 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    3. In the **Deployment method** list, select **Local Sript (Python)**.
 
-3.  as the operating system. In the third drop-down menu, select Local Script as the deployment method.
-o    Select Download onboarding package to download package on your device
+   4. Select **Download onboarding package**.
 
+3. In a new browser window, download the [Defender for Endpoint installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh).
+
+4. Use the following command to grant the necessary permissions for the script:
+
+   `$chmod +x /mde_installer.sh`
+
+5. Run the following command to execute the installer script:
+
+   `$sudo ~/mde_installer.sh --install --channel insiders-slow --onboard ~/MicrosoftDefenderATPOnboardingLinuxServer.py`
+
+6. Validate the deployment by following these steps:
+
+   1. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. 
+   
+      It can take approximately 20 minutes for the device to show up in the portal.
+
+   2. On the device, run the following command to check the health status. A return value of `true` denotes that the product is functioning as expected:
+
+      `$ mdatp health --field healthy`
+
+7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
+ 
+
+## Troubleshoot deploymemt issues
 
 ## See also
 
