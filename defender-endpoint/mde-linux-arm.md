@@ -4,7 +4,7 @@ description: Defender for Endpoint on Linux now supports ARM devices. Learn how 
 author: denisebmsft
 ms.author: deniseb
 manager: deniseb 
-ms.date: 12/06/2024
+ms.date: 12/09/2024
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: linux
