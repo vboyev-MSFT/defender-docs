@@ -103,7 +103,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
    2. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
-7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deploymemt-issues) (in this article).
+7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deployment-issues) (in this article).
  
 ### Deploy using installer script with Ansible
 
@@ -227,7 +227,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
    2. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
-7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deploymemt-issues) (in this article).
+7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deployment-issues) (in this article).
 
 ### Deploy using the installer script with Puppet
 
