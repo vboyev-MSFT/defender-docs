@@ -21,7 +21,7 @@ appliesto:
 - ✅ <a href="https://learn.microsoft.com/defender-xdr/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 - <a href="https://learn.microsoft.com/unified-secops-platform/" target="_blank">Microsoft's unified security operations platform</a>
 ---
-# Investigate insider risk threats in the Microsoft Defender portal with insights from Microsoft Purview Insider Risk Management
+# Investigate insider risk threats in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
