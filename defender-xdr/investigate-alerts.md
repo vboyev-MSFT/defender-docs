@@ -136,6 +136,7 @@ Microsoft Defender XDR alerts come from solutions like Microsoft Defender for En
 | Microsoft Data Loss Prevention | `dl{GUID}` |
 | Microsoft Defender for Cloud | `dc{GUID}` |
 | Microsoft Sentinel | `sn{GUID}` |
+| Microsoft Purview Insider Risk Management | `ir{GUID}` |
 
 <a name='configure-aad-ip-alert-service'></a>
 
