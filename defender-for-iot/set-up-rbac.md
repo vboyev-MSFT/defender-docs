@@ -43,7 +43,7 @@ If you're using the Defender portal for the first time, you need to set up all o
 
 ## Set up Defender XDR Unified RBAC roles for site security
 
-Assign RBAC permissions and roles, based on the [summary table](#summary-of-roles-and-permissions-for-site-security), to give users access to site security features:
+Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
 1. In the Defender portal, select **Settings** \> **Microsoft XDR** \> **Permissions and roles**.
 1. Enable **Endpoints & Vulnerability Management**.
@@ -66,13 +66,15 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-role
 1. Select **Next** to **Review and finish**.
 1. Select **Submit**.
 
-### Summary of Unified RBAC roles and permissions for site security
+### Summary of RBAC roles and permissions for site security
+
+**For Unified RBAC**:
 
 |Write permissions |Read permissions |
 |----|----|
 | **Defender Permissions**: Core security settings scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **Defender Permissions**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
 
-### Summary of V2 RBAC roles and permissions for site security
+**For Unified RBAC**:
 
 |Write permissions |Read permissions |
 |----|----|
