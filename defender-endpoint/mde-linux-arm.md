@@ -167,62 +167,62 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    1. On the device, run the following commands to check for device health, connectivity, antivirus, and EDR detections:
 
-      ```bash
+      ```YAML
       
       - name: Run post-installation basic MDE test
         hosts: myhosts
         tasks:
     
-      - name: Check health
-        ansible.builtin.command: mdatp health --field healthy
-        register: health_status
+         - name: Check health
+           ansible.builtin.command: mdatp health --field healthy
+           register: health_status
 
-      - name: MDE health test failed
-        fail: msg="MDE is not healthy. health status => \n{{ health_status.stdout       }}\nMDE deployment not complete"
-        when: health_status.stdout != "true"
+         - name: MDE health test failed
+           fail: msg="MDE is not healthy. health status => \n{{ health_status.stdout       }}\nMDE deployment not complete"
+           when: health_status.stdout != "true"
 
-      - name: Run connectivity test
-        ansible.builtin.command: mdatp connectivity test
-        register: connectivity_status
+         - name: Run connectivity test
+           ansible.builtin.command: mdatp connectivity test
+           register: connectivity_status
 
-      - name: Connectivity failed
-        fail: msg="Connectivity failed. Connectivity result => \n{{ connectivity_status.stdout }}\n MDE deployment not complete"
-        when: connectivity_status.rc != 0
+         - name: Connectivity failed
+           fail: msg="Connectivity failed. Connectivity result => \n{{ connectivity_status.stdout }}\n MDE deployment not complete"
+           when: connectivity_status.rc != 0
 
-      - name: Check RTP status
-        ansible.builtin.command: mdatp health --field real_time_protection_enabled
-        register: rtp_status
+         - name: Check RTP status
+           ansible.builtin.command: mdatp health --field real_time_protection_enabled
+           register: rtp_status
 
-      - name: Enable RTP
-        ansible.builtin.command: mdatp config real-time-protection --value enabled
-        become: yes
-        become_user: root
-        when: rtp_status.stdout != "true"
+         - name: Enable RTP
+           ansible.builtin.command: mdatp config real-time-protection --value enabled
+           become: yes
+           become_user: root
+           when: rtp_status.stdout != "true"
 
-      - name: Pause for 5 second to enable RTP
-        ansible.builtin.pause:
-        seconds: 5
+         - name: Pause for 5 second to enable RTP
+           ansible.builtin.pause:
+           seconds: 5
 
-      - name: Download EICAR
-        ansible.builtin.get_url:
-        url: https://secure.eicar.org/eicar.com.txt
-        dest: /tmp/eicar.com.txt
+         - name: Download EICAR
+           ansible.builtin.get_url:
+           url: https://secure.eicar.org/eicar.com.txt
+           dest: /tmp/eicar.com.txt
 
-      - name: Pause for 5 second to detect eicar 
-        ansible.builtin.pause:
-        seconds: 5
+         - name: Pause for 5 second to detect eicar 
+           ansible.builtin.pause:
+           seconds: 5
 
-      - name: Check for EICAR file
-        stat: path=/tmp/eicar.com.txt
-        register: eicar_test
+         - name: Check for EICAR file
+           stat: path=/tmp/eicar.com.txt
+           register: eicar_test
 
-      - name: EICAR test failed
-        fail: msg="EICAR file not deleted. MDE deployment not complete"
-        when: eicar_test.stat.exists
+         - name: EICAR test failed
+           fail: msg="EICAR file not deleted. MDE deployment not complete"
+           when: eicar_test.stat.exists
 
-      - name: MDE Deployed
-        debug:
-        msg: "MDE succesfully deployed"
+         - name: MDE Deployed
+           debug:
+           msg: "MDE succesfully deployed"
 
       ```
       
