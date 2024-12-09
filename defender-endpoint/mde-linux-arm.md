@@ -61,12 +61,10 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
 - Make sure to install the agent version `101.24102.0002` from the insiders-slow channel on the ARM64-based device. (See [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).) 
 
-- To onboard servers to Defender for Endpoint, server licenses are required. You can choose from these options:
+- To onboard servers to Defender for Endpoint, [server licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint) are required. You can choose from these options:
 
    - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering; or
    - Microsoft Defender for Endpoint for Servers
-
-   [Learn more about Defender for Endpoint licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 ### Deploy using the installer script
 
@@ -102,7 +100,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
 7. If you run into an issue, see [Troubleshoot deployment issues](#troubleshoot-deployment-issues) (in this article).
  
-### Deploy using installer script with Ansible
+### Deploy using the installer script with Ansible
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
