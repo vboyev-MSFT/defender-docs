@@ -346,6 +346,10 @@ See these articles:
 
 ## Troubleshoot deployment issues
 
+If you run into any issues deploying Defender for Endpoint on Linux to your ARM64-based devices, help is available. First, get the XMDE Client Analyzer, and then review our list of common issues and how to resolve them. 
+
+### XMDE Client Analyzer ARM Preview
+
 1. Using Bash, download the [XMDE Client Analyzer ARM Preview](https://go.microsoft.com/fwlink/?linkid=2299668). 
 
    ```bash
@@ -372,8 +376,9 @@ The following table summarizes common issues and how to resolve them.
 | Exclusions aren't working as expected | If you had exclusions working on other devices, but they're not working on your ARM64-based Linux servers, contact us at `mdearmsupport@microsoft.com`. You need your client analyzer logs. |
 | You want help with tuning mdatp. | Contact us at `mdearmsupport@microsoft.com`. |
 
-> [!TIP]
-> When you contact us at `mdearmsupport@microsoft.com`, make sure to describe the issue in detail. Include screenshots if possible, and your client analyzer logs.
+### Contact us if you need help
+
+When you contact us at `mdearmsupport@microsoft.com`, make sure to describe the issue in detail. Include screenshots if possible, and your client analyzer logs.
 
 ## See also
 
