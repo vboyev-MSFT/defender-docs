@@ -153,7 +153,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    ```
    
-5. Deploy Defender for Endpoint on Linux by using the following command:
+5. Deploy Defender for Endpoint on Linux by using the following command. Edit the corresponding paths and channel, as appropriate.
 
    ```bash
    
@@ -161,14 +161,12 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
 
    ```
 
-   Edit the corresponding paths and channel, as appropriate. 
-
 6. Validate your deployment by following these steps:
 
    1. On the device, run the following commands to check for device health, connectivity, antivirus, and EDR detections:
 
       ```YAML
-      
+
       - name: Run post-installation basic MDE test
         hosts: myhosts
         tasks:
@@ -229,6 +227,61 @@ You can choose from several methods to deploy Defender for Endpoint on Linux on 
    2. In the [Microsoft Defender portal](https://security.microsoft.cm), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
 
 7. If you run into an issue, see [Troubleshoot deploymemt issues](#troubleshoot-deploymemt-issues) (in this article).
+
+
+### Deploy using the installer script with Puppet
+
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+
+2. In the onboarding screen, select the following options:
+
+   1. In the **Select operating system to start onboarding process** list, select **Linux Server**.
+
+   2. In the **Connectivity type** list, select **Streamlined**. Or, if necessary, you can select **Standard**. (For more information, see [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md).)
+
+   3. In the **Deployment method** list, select **Your preferred Linux configuration management tool**.
+
+   4. Select **Download onboarding package**. Save the file as `WindowsDefenderATPOnboardingPackage.zip`.
+
+3. Extract the contents of the onboarding package by using the following command:
+
+   `unzip WindowsDefenderATPOnboardingPackage.zip`
+
+   You should see the following output:
+
+   ```
+   Archive:  WindowsDefenderATPOnboardingPackage.zip
+   inflating: mdatp_onboard.json
+   ```
+
+4. In a new browser window, download the [Defender for Endpoint installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) (this script is called `mde_installer.sh`).
+
+5. Create a Puppet manifest by using the following procedure, which uses the `mde_installer.sh` script from step 4.
+
+   1. In the **modules** folder of your Puppet installation, create the following folders:
+
+      - `install_mdatp/files` 
+      - `install_mdatp/manifests`
+      
+      The **modules** folder is typically located at `/etc/puppetlabs/code/environments/production/modules` on your Puppet server.
+
+   2. Copy the `mdatp_onboard.json` file created earlier to the `install_mdatp/files` folder.
+
+   3. Copy `mde_installer.sh` to `install_mdatp/files folder`.
+
+   4. Create an `init.pp` file inside `install_mdatp/manifests` that contains the following deployment instructions:
+
+      ```bash
+      tree install_mdatp
+      Output: 
+      install_mdatp
+      ├── files
+      │   ├── mdatp_onboard.sh
+      │   └── mde_installer.sh
+      └── manifests
+          └── init.pp
+      ```
+
 
 
 ## Troubleshoot deploymemt issues
