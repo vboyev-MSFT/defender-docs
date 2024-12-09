@@ -78,7 +78,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
 |Write permissions |Read permissions |
 |----|----|
-| **MDE Roles**: Manage security settings in Security Center & scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **MDE Roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
+| **MDE roles**: Manage security settings in Security Center & scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator scoped to all device groups.| Write roles (including roles that aren't scoped to all device groups). <br> **MDE roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
 
 ## Next steps
 
