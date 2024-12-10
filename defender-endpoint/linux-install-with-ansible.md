@@ -38,9 +38,9 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 
 Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automate the deployment process for machines at scale. Following are the two methods to automate.
 
-1. Using the installer script (recommended). This method greatly simplifies the automation process and helps to install the MDE agent  as well as onboard the device to security portal using just a few steps without having to configure for different distros separately.
+1. Using the installer script (recommended). This method greatly simplifies the automation process and helps to install the Defender for Endpoint agent and onboard the device to the Microsoft Defender portal using just a few steps without having to configure for different distros separately.
 
-2. Manually configuring repositories for each distro. This method allows to automate the deployment process by manually configuring repositories, installing the agent and onboarding the device for each distro. This method  gives more granular control over the deployment process.
+2. Manually configuring repositories for each distro. This method allows to automate the deployment process by manually configuring repositories, installing the agent, and onboarding the device for each distro. This method  gives more granular control over the deployment process.
 
 ## Prerequisites and system requirements applicable to both the methods
 
@@ -50,11 +50,11 @@ In addition, for Ansible deployment, you need to be familiar with Ansible admini
 
 - Ansible needs to be installed on at least one computer (Ansible calls this the control node).
 
-- SSH must be configured for an administrator account between the control node and all managed nodes (devices that will have Defender for Endpoint installed on them), and it is recommended to be configured with public key authentication.
+- SSH must be configured for an administrator account between the control node and all managed nodes (devices that have Defender for Endpoint installed on them), and it's recommended to be configured with public key authentication.
 
 - The following software must be installed on all managed nodes:
   - curl
-  - python-apt (if you are deploying on distributions using apt as a package manager)
+  - python-apt (if you're deploying on distributions using apt as a package manager)
 
 - All managed nodes must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
 
@@ -103,7 +103,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 ## Deploy Defender for Endpoint using mde_installer.sh with Ansible
 
-Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy Defender for Endpoint using installer bash script
+Use the following procedures [downloading the onboarding package]() and completing [pre-requisites]() to deploy Defender for Endpoint using the installer bash script.
 
 ### Download the installer bash script
 
