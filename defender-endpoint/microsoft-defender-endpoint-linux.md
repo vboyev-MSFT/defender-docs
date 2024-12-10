@@ -90,7 +90,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
   - Amazon Linux 2023 ARM64
     
   > [!IMPORTANT]
-  > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux.arm.md). 
+  > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md). 
    
   > [!NOTE]
   > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
