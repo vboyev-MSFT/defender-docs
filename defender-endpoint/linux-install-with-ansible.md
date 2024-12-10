@@ -80,7 +80,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 
-3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
+3. Select **Download onboarding package**. Save the file as `WindowsDefenderATPOnboardingPackage.zip`.
 
    :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="media/portal-onboarding-linux-2.png":::
 
@@ -101,9 +101,9 @@ Download the onboarding package from Microsoft Defender portal.
     inflating: mdatp_onboard.json
     ```
 
-## Deploy MDE using mde_installer.sh with Ansible
+## Deploy Defender for Endpoint using mde_installer.sh with Ansible
 
-Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy MDE using installer bash script
+Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy Defender for Endpoint using installer bash script
 
 ### Download the installer bash script
 
@@ -147,7 +147,7 @@ Create installation YAML file
 
 ```
 
-### Deploy MDE using the above playbook using the command
+### Deploy Defender for Endpoint using the playbook and command
 
 Replace the corresponding paths and channel in the below command as per your requirement
 
@@ -159,9 +159,9 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml
 
 ### Verify deployment
 
-a.     Go to __[Microsoft Defender Security Portal]()__   inventory. It might take 5-20 mins for the device to show up on the portal.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), open the device inventory. It might take 5-20 mins for the device to show up in the portal.
 
-b.    Perform the below post-installation checks which includes checks like health, connectivity, AV/EDR detection tests to ensure successful deployment and working of MDE
+2. Perform the following post-installation checks which includes checks like health, connectivity, antivirus, and EDR detection tests to ensure successful deployment and working of Defender for Endpoint.
 
 ```bash
 
