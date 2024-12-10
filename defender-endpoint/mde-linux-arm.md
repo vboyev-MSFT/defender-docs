@@ -320,6 +320,8 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
    }
    ```
 
+7. Validate your deployment. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux device you just onboarded. It can take approximately 20 minutes for the device to show up in the portal.
+
 ### Deploy Defender for Endpoint on Linux using Microsoft Defender for Cloud
 
 If your organization is using Defender for Cloud, you can use it to deploy Defender for Endpoint on Linux.
@@ -379,6 +381,6 @@ When you contact us at `mdearmsupport@microsoft.com`, make sure to describe the 
 
 ## See also
 
-[Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
-[Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
+- [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
