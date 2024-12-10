@@ -55,7 +55,7 @@ If you’re new to Microsoft Purview and insider risk management, consider readi
 
 To investigate insider risk management alerts in the Microsoft Defender portal, you need to do the following:
 
-- Confirm your Microsoft 365 subscription supports insider risk management access. Know more about [subscription and licensing](/purview/insider-risk-management-configure?tabs=purview-portal#subscriptions-and-licensing).
+- Confirm your Microsoft 365 subscription supports insider risk management access. Know more about [subscription and licensing](/purview/insider-risk-management-configure#subscriptions-and-licensing).
 - Confirm your access to Microsoft Defender XDR. See [Microsoft Defender XDR licensing requirements](prerequisites.md#licensing-requirements).
 
 Data sharing with other security solutions must be turned on in the **Data sharing** settings in Microsoft Purview Insider Risk Management. Turning on **Share user risk details with other security solutions** allows users with the correct permissions to review user risk details in the user entity pages in the Microsoft Defender portal. See [Share alert severity levels with other Microsoft security solutions](/purview/insider-risk-management-settings-dlp-sync#share-alert-severity-levels-with-other-microsoft-security-solutions) for more information.
