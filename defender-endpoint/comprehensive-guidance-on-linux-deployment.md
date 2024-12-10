@@ -87,22 +87,23 @@ Add the Microsoft Defender for Endpoint URLs and/or IP addresses to the allowed 
 
 Use the following steps to check the network connectivity of Microsoft Defender for Endpoint:
 
-1. See [Step 1: Allow destinations for the Microsoft Defender for Endpoint traffic](#step-1-allow-destinations-for-the-microsoft-defender-for-endpoint-traffic) that are allowed for the Microsoft Defender for Endpoint traffic.
+1. See [Allow destinations for the Microsoft Defender for Endpoint traffic](#step-1-allow-destinations-for-the-microsoft-defender-for-endpoint-traffic).
 
-2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#step-2-set-up-proxy-settings).
+2. If the Linux servers are behind a proxy, set proxy settings. For more information, see [Set up proxy settings](#step-2-set-up-proxy-settings).
 
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
 > [!NOTE]
-> - Traffic for Defender for Endpoint should NOT be inspected by SSL inspection (TLS inspection). This applies to all supported operating systems (Windows, Linux, and MacOS).
+> - Traffic for Defender for Endpoint should NOT be inspected by SSL inspection (TLS inspection). This applies to all supported operating systems (Windows, Linux, and Mac).
 > - To allow connectivity to the consolidated set of URLs or IP addresses, ensure your devices are running the latest component versions. See [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md) for more information.
 
-For more information see [Troubleshoot cloud connectivity issues](#troubleshoot-cloud-connectivity-issues).
+For more information, see [Troubleshoot cloud connectivity issues](#troubleshoot-cloud-connectivity-issues).
 
 #### Step 1: Allow destinations for the Microsoft Defender for Endpoint traffic
 
-1. Go to [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md) to find the relevant destinations that need to be accessible to devices inside your network environment
-2. Configure your Firewall/Proxy/Network to allow the relevant URLs and/or IP addresses
+1. See [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md) to find the relevant destinations that need to be accessible to devices inside your network environment
+
+2. Configure your Firewall/Proxy/Network to allow the relevant URLs and/or IP addresses.
 
 #### Step 2: Set up proxy settings
 
@@ -122,7 +123,7 @@ The following table lists the supported proxy settings:
 
 #### Step 3: Verify SSL inspection isn't being performed on the network traffic
 
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You must bypass SSL inspection for Microsoft Defender for Endpoint URLs. For additional information about the certificate pinning process, see [enterprise-certificate-pinning](/windows/security/identity-protection/enterprise-certificate-pinning).
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You must bypass SSL inspection for Microsoft Defender for Endpoint URLs. For more information about the certificate pinning process, see [enterprise-certificate-pinning](/windows/security/identity-protection/enterprise-certificate-pinning).
 
 ##### Troubleshoot cloud connectivity issues
 
@@ -130,7 +131,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
 ## 2. Capture performance data from the endpoint
 
-Capture performance data from the endpoints that have Defender for Endpoint installed. This includes disk space availability on all mounted partitions, memory usage, process list, and CPU usage (aggregate across all cores).
+Capture performance data from the endpoints that have Defender for Endpoint installed. This data includes disk space availability on all mounted partitions, memory usage, process list, and CPU usage (aggregate across all cores).
 
 ## 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk)
 
@@ -154,11 +155,11 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 |---|---|
 |Disk space |Minimum: 2 GB <br> NOTE: More disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
-|CPU |If the Linux system is running only one vcpu, we recommend it be increased to two vcpu's<br> 4 cores are preferred |
+|CPU |If the Linux system is running only one vcpu, we recommend it be increased to two vcpu's<br> Four cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
-|RHEL 7.x, RHEL 8.x, and RHEL 9.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows|
+|RHEL 7.x, RHEL 8.x, and RHEL 9.x |No kernel filter driver, the `fanotify` kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows|
 ## 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus.
@@ -166,9 +167,9 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
 
-- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product uses fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
+- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product uses `fanotify`, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
 
-- To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
+- To check if there's a non-Microsoft antimalware that is running `fanotify`, you can run `mdatp health`, then check the result:
 
   :::image type="content" source="media/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
@@ -196,7 +197,6 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 When you add [exclusions to Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions.
 
 > [!NOTE]
->
 > - Antivirus exclusions apply to the antivirus engine.
 > - Indicators allow/block apply to the antivirus engine.
 
