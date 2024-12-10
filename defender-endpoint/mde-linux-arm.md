@@ -331,7 +331,7 @@ If your organization is using Defender for Cloud, you can use it to deploy Defen
    - `OPT_FOR_MDE_ARM_PREVIEW=1`
    - `OPT_FOR_MDE_ARM_PREVIEW=true`
 
-2. Wait for 1-6 hours for onboarding to occur.
+2. Wait for 1-6 hours for onboarding to complete.
 
 3. In the [Microsoft Defender portal](https://security.microsoft.com), under **Assets** > **Devices**, look for the Linux devices you just onboarded.
 
