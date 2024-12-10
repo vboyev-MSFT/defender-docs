@@ -112,7 +112,7 @@ If you experience any installation failures, see [Troubleshooting installation f
   - Amazon Linux 2023 ARM64
     
   > [!IMPORTANT]
-  > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. To begin testing, make sure to install the latest agent, version `101.24102.000` from the **Insiders-Fast** channel by using the [installer script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation), or manually [deploy using the command line tool](/defender-endpoint/linux-install-manually), or by using a non-Microsoft tool, such as [Ansible](/defender-endpoint/linux-install-with-ansible), [Chef](/defender-endpoint/linux-deploy-defender-for-endpoint-with-chef), or [Puppet](/defender-endpoint/linux-install-with-puppet), [Saltstack](/defender-endpoint/linux-install-with-saltack). You can also deploy using ARC via Microsoft Defender for Cloud. 
+  > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux.arm.md). 
   > Support for more distributions will be gradually added as we progress into Public Preview. 
   > [System requirements](/defender-endpoint/microsoft-defender-endpoint-linux#system-requirements) is same as for x86 based Linux server.
   > Please reach out to us at `mdearmsupport@microsoft.com` to share your feedback or get support on deployment and testing.
