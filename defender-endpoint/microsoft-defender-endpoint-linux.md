@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/09/2024
+ms.date: 12/10/2024
 ---
 
 # Microsoft Defender for Endpoint on Linux
@@ -46,24 +46,6 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 
 > [!NOTE]
 > Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
-
-### Installation instructions
-
-There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux. Before you begin, make sure the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md) are met.
-
-You can use one of the following methods to deploy Microsoft Defender for Endpoint on Linux:
-
-- To use command-line tool, see [Manual deployment](linux-install-manually.md)
-- To use Puppet, see [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
-- To use Ansible, see [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
-- To use Chef, see [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
-- To use Saltstack, see [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
-
-If you experience any installation failures, see [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
-
-> [!IMPORTANT]
-> Installing Microsoft Defender for Endpoint in any location other than the default install path is not supported.
-> Microsoft Defender for Endpoint on Linux creates an `mdatp` user with random UID and GID. If you want to control the UID and GID, create an `mdatp` user prior to installation using the  `/usr/sbin/nologin` shell option. Here's an example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
 
 ### System requirements
 
@@ -150,6 +132,24 @@ If you experience any installation failures, see [Troubleshooting installation f
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+
+### Installation instructions
+
+There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux. Before you begin, make sure the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md) are met.
+
+You can use one of the following methods to deploy Microsoft Defender for Endpoint on Linux:
+
+- To use command-line tool, see [Manual deployment](linux-install-manually.md)
+- To use Puppet, see [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
+- To use Ansible, see [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
+- To use Chef, see [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
+- To use Saltstack, see [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
+
+If you experience any installation failures, see [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+
+> [!IMPORTANT]
+> Installing Microsoft Defender for Endpoint in any location other than the default install path is not supported.
+> Microsoft Defender for Endpoint on Linux creates an `mdatp` user with random UID and GID. If you want to control the UID and GID, create an `mdatp` user prior to installation using the  `/usr/sbin/nologin` shell option. Here's an example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
 
 ### External package dependency
 
