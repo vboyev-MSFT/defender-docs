@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: android
 search.appverid: met150
-ms.date: 10/18/2024
+ms.date: 11/22/2024
 ---
 
 # Configure Defender for Endpoint on Android features
@@ -38,7 +38,7 @@ For more information about how to set up Defender for Endpoint on Android and Co
 > [!NOTE]
 > Defender for Endpoint on Android only supports creating custom indicators for IP addresses and URLs/domains.
 
-Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Manage indicators](manage-indicators.md).
+Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Overview of indicators](indicators-overview.md).
 
 ## Configure web protection
 
@@ -57,7 +57,7 @@ This feature provides protection against rogue Wi-Fi related threats and rogue c
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center and add trusted certificates. Admins can enable [privacy controls](android-configure.md#privacy-controls) to configure the data sent to Defender for Endpoint from Android devices.
 
-Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
+Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
 In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
 
