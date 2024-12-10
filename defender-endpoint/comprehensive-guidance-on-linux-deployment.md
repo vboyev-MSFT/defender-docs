@@ -33,20 +33,17 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 ## Deployment summary
 
-Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment.
+Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment. Some of the steps are optional and aren't specific to Defender for Endpoint; however, consider doing all the steps for best results.
 
 1. [Prepare your network environment](#1-prepare-your-network-environment).
 
 2. [Capture performance data from the endpoint](#2-capture-performance-data-from-the-endpoint).
 
-   > [!NOTE]
-   > Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
+3. (Optional) [Check for filesystem errors 'fsck' (akin to chkdsk)](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk).
 
-3. [(Optional) Check for filesystem errors 'fsck' (akin to chkdsk)](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk).
+4. (Optional) [Update storage subsystem drivers](#4-optional-update-storage-subsystem-drivers).
 
-4. [(Optional) Update storage subsystem drivers](#4-optional-update-storage-subsystem-drivers).
-
-5. [(Optional) Update nic drivers](#5-optional-update-nic-drivers).
+5. (Optional) [Update nic drivers](#5-optional-update-nic-drivers).
 
 6. [Confirm system requirements and resource recommendations are met](#6-confirm-system-requirements-and-resource-recommendations-are-met).
 
@@ -85,7 +82,6 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 ## 1. Prepare your network environment
 
 Add the Microsoft Defender for Endpoint URLs and/or IP addresses to the allowed list, and prevent traffic from being SSL inspected.
-
 
 ### Network connectivity of Microsoft Defender for Endpoint
 
