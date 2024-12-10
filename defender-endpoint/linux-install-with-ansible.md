@@ -161,7 +161,7 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), open the device inventory. It might take 5-20 mins for the device to show up in the portal.
 
-2. Perform the following post-installation checks which includes checks like health, connectivity, antivirus, and EDR detection tests to ensure successful deployment and working of Defender for Endpoint.
+2. Perform the following post-installation checks, which include checks like health, connectivity, antivirus, and EDR detection tests to ensure successful deployment and working of Defender for Endpoint.
 
 ```bash
 
