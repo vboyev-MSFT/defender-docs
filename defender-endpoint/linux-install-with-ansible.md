@@ -103,11 +103,11 @@ Download the onboarding package from Microsoft Defender portal.
 
 ## Deploy Defender for Endpoint using mde_installer.sh with Ansible
 
-Use the following procedures [downloading the onboarding package]() and completing [pre-requisites]() to deploy Defender for Endpoint using the installer bash script.
+Use the following procedures [downloading the onboarding package]() and completing [prerequisites]() to deploy Defender for Endpoint using the installer bash script.
 
 ### Download the installer bash script
 
-Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation) from Microsoft Github Repository or use the below command to download
+Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation) from Microsoft GitHub Repository or use the following command to download it.
 
  ```bash
    wget https://raw.githubusercontent.com/microsoft/mdatp-xplat/refs/heads/master/linux/installation/mde_installer.sh
