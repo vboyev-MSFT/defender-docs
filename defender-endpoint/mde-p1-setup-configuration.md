@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: onboard
 ms.localizationpriority: medium
-ms.date: 09/26/2024
-ms.reviewer: 
+ms.date: 12/10/2024
+ms.reviewer: yonghree, pahuijbr
 f1.keywords: NOCSH
 ms.collection: 
 - m365-security
