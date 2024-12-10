@@ -46,6 +46,8 @@ Initially, the following Linux distributions are supported in preview:
 > [!NOTE]
 > Support for more Linux distributions is planned as part of this preview program.
 
+The installation procedures in this article install the agent version `101.24102.0002` from the insiders-slow channel on the ARM64-based device. (See [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).) 
+
 ## Deploy Defender for Endpoint on Linux for ARM64-based devices
 
 You can choose from several methods to deploy Defender for Endpoint on Linux to your ARM64-based device:
@@ -58,8 +60,6 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 ### Before you begin
 
 - Make sure the [prerequisites](microsoft-defender-endpoint-linux.md#prerequisites) are met for Defender for Endpoint on Linux
-
-- Make sure to install the agent version `101.24102.0002` from the insiders-slow channel on the ARM64-based device. (See [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).) 
 
 - To onboard servers to Defender for Endpoint, [server licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint) are required. You can choose from these options:
 
