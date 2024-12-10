@@ -14,10 +14,13 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/28/2024
+ms.date: 12/10/2024
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
+
+> [!TIP]
+> We are excited to share that Microsoft Defender for Endpoint on Linux now extends support for ARM64-based Linux servers in preview! For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md).
 
 This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
@@ -169,7 +172,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 - Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product uses `fanotify`, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
 
-- To check if there's a non-Microsoft antimalware that is running `fanotify`, you can run `mdatp health`, then check the result:
+- To check if there's a non-Microsoft antimalware that is running `fanotify`, you can run `mdatp health`, then check the results:
 
   :::image type="content" source="media/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
