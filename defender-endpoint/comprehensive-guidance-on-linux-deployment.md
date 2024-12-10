@@ -29,6 +29,7 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 - [Puppet based deployment](linux-install-with-puppet.md)
 - [Ansible based deployment](linux-install-with-ansible.md)
 - [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+- [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md)
 
 ## Deployment summary
 
