@@ -64,7 +64,7 @@ To ensure that Windows clients and servers allow your Defender for Identity Dire
 
 This procedure describes how to use the [Microsoft Intune admin center](https://intune.microsoft.com/) to configure the policies in a Device profile if you're working with Microsoft Entra hybrid joined devices.
 
-1. In the Microsoft Intune admin center, create a new Device profile, define the following values:
+1. In the Microsoft Intune admin center, create a new Device profile, defining the following values:
 
     - **Platform**: Windows 10 or later
     - **Profile type**: Settings catalog
