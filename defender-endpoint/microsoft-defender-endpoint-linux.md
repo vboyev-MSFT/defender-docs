@@ -49,17 +49,9 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 
 ### System requirements
 
-- Disk space: 2 GB
+- 1 CPU core minimum. For high-performance workloads, more cores are recommended.
 
-  > [!NOTE]
-  > An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections. Please make sure that you have free disk space in /var.
-
-- Cores: One minimum, four preferred
-
-  > [!NOTE]
-  > If you are on Passive or RTP ON mode, at least two Cores are required. Four Cores are preferred. If you are turning on BM, then at least four Cores are required.
-
-- Memory: 1 GB minimum, 4 GB preferred
+- Memory: At least 1 GB of RAM. For high-performance workloads, more memory might be needed.
 
 - The following Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions are supported:
   - Red Hat Enterprise Linux 7.2 or higher
