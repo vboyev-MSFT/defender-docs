@@ -106,6 +106,8 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
 2. In the onboarding screen, select the following options:
 
+   :::image type="content" source="media/mde-linux-arm-ansible.png" alt-text="Screenshot showing MDE onboarding screen to use Ansible.":::
+
    1. In the **Select operating system to start onboarding process** list, select **Linux Server**.
 
    2. In the **Connectivity type** list, select **Streamlined**. Or, if necessary, you can select **Standard**. (For more information, see [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](configure-device-connectivity.md).)
