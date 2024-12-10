@@ -42,7 +42,7 @@ Depending on your tenant, you might have access to RBAC version 1 or 2 instead o
 If you're using the Defender portal for the first time, you need to set up all of your roles and permissions. For more information, see [manage portal access using role-based access control](/defender-xdr/manage-rbac).
 
 ## Set up Defender XDR Unified RBAC roles for site security
-<!-- to change the above title, remove unified? or  -->
+<!-- to change the above title, remove unified? or give general title for this section? -->
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
 1. In the Defender portal, select **Settings** \> **Microsoft XDR** \> **Permissions and roles**.
