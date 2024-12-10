@@ -72,7 +72,7 @@ If you experience any installation failures, see [Troubleshooting installation f
   > [!NOTE]
   > An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections. Please make sure that you have free disk space in /var.
 
-- Cores: Two minimum, four preferred
+- Cores: One minimum, four preferred
 
   > [!NOTE]
   > If you are on Passive or RTP ON mode, at least two Cores are required. Four Cores are preferred. If you are turning on BM, then at least four Cores are required.
