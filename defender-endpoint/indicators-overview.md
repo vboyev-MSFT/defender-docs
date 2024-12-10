@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 11/10/2024
+ms.date: 12/10/2024
 ---
 
 # Overview of indicators in Microsoft Defender for Endpoint
@@ -155,6 +155,8 @@ The IoC API schema and the threat IDs in advance hunting are updated to align wi
 > File and certificate indicators do not block [exclusions defined for Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indicators are not supported in Microsoft Defender Antivirus when it is in passive mode.
 > 
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
+>
+> If indicators are synced to the Indicator in the MDE portal from MDCA sanctioned/unsanctioned applications, the 'Generate Alert' option will be enabled by default in the MDE portal. If you try to uncheck the 'Generate Alert' option in MDE, it will be re-enabled after some time as the MDCA policy will override it.
 
 ## Known issues and limitations
 
