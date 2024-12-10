@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
-ms.date: 10/10/2024
+ms.date: 12/10/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -44,7 +44,7 @@ There are some minimum requirements for onboarding devices to the Defender for E
 - To [onboard servers](onboard-windows-server.md) to the standalone versions of Defender for Endpoint, server licenses are required. You can choose from:   
 
    - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering
-   - Microsoft Defender for Endpoint for Servers
+   - Microsoft Defender for Endpoint Server
    - [Microsoft Defender for Business servers](/defender-business/get-defender-business) (for small and medium-sized businesses only)
  
 For more detailed information about licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
