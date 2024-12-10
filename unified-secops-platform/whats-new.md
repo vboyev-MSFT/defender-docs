@@ -22,7 +22,7 @@ This article lists recent features added into Microsoft's unified SecOps platfor
 
 ## December 2024
 
-- [New SOC optimization recommendation based on similar customers](#new-soc-optimization-recommendation-based-on-similar-customers-preview)
+- [New SOC optimization recommendation based on similar organizations (Preview)](#new-soc-optimization-recommendation-based-on-similar-organizations-preview)
 
 ### New SOC optimization recommendation based on similar organizations (Preview)
 
