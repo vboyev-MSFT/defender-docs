@@ -140,6 +140,7 @@ You can use one of the following methods to deploy Microsoft Defender for Endpoi
 - To use Ansible, see [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
 - To use Chef, see [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
 - To use Saltstack, see [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
+- To install on ARM64-based Linux servers, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md).
 
 If you experience any installation failures, see [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
