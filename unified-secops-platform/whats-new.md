@@ -20,16 +20,6 @@ ms.topic: concept-article
 
 This article lists recent features added into Microsoft's unified SecOps platform within the Microsoft Defender portal, and new features in related services that provide an enhanced user experience in the platform.
 
-## December 2024
-
-- [New SOC optimization recommendation based on similar organizations (Preview)](#new-soc-optimization-recommendation-based-on-similar-organizations-preview)
-
-### New SOC optimization recommendation based on similar organizations (Preview)
-
-SOC optimizations now include new recommendations for adding data sources to your workspace based on the security posture of other organizations in similar industries and sectors as you, and with similar data ingestion patterns.
-	
-For more information, see [SOC optimization reference of recommendations](/azure/sentinel/soc-optimization/soc-optimization-reference).
- 
 ## November 2024
 
 - [Microsoft Sentinel availability in Microsoft Defender portal](#microsoft-sentinel-availability-in-microsoft-defender-portal)
