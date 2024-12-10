@@ -28,8 +28,8 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements-applicable-to-both-the-methods)
 - [Download the onboarding package](#download-the-onboarding-package-applicable-to-both-the-methods)
-- [Deploy Defender for Endpoint on Linux using mde_installer.sh with Ansible](#deploy-mde-using-mde_installersh-with-ansible)
-- [Deploy Defender for Endpoint on Linux using Ansible by configuring repositories manually](#deploy-mde-using-ansible-by-configuring-repositories-manually)
+- [Deploy Defender for Endpoint on Linux using mde_installer.sh with Ansible](#deploy-defender-for-endpoint-using-mde_installersh-with-ansible)
+- [Deploy Defender for Endpoint on Linux using Ansible by configuring repositories manually](#deploy-defender-for-endpoint-using-ansible-by-configuring-repositories-manually)
 
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
@@ -254,37 +254,38 @@ Run the below command to uninstall MDE using the above playbook
 ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/uninstall_mdatp.yml --extra-vars "mde_installer_script=<path to mde_installer.sh>"
 ```
 
-## Deploy MDE using Ansible by configuring repositories manually
+## Deploy Defender for Endpoint using Ansible by configuring repositories manually
 
-Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy MDE by manually configuring the repositories for each Linux distribution
+Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy Defender for Endpoint by manually configuring the repositories for each Linux distribution.
 
 ### Create Ansible YAML files
 
 - Add the Defender for Endpoint repository and key, `add_apt_repo.yml`:
 
 - Defender for Endpoint on Linux can be deployed from one of the following channels:
-- *insiders-fast*, denoted as `[channel]`
-  - *insiders-slow*, denoted as `[channel]`
-  - *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
 
-    Each channel corresponds to a Linux software repository.
+   - *insiders-fast*, denoted as `[channel]`
+   - *insiders-slow*, denoted as `[channel]`
+   - *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
 
-    The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow*, and lastly by *prod*.
+   Each channel corresponds to a Linux software repository.
+
+   The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow*, and lastly by *prod*.
 
 
-    In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
+   In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
-      > [!WARNING]
-    > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+   > [!WARNING]
+   > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-      Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
+   Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
-      In the following commands, replace *[distro]* and *[version]* with the information you've identified.
+   In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
-      > [!NOTE]
-    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle Linux, replace *[version]* with the version of Oracle Linux.
+   > [!NOTE]
+   > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle Linux, replace *[version]* with the version of Oracle Linux.
 
-    ```bash
+   ```bash
   - name: Add Microsoft APT key
     apt_key:
       url: https://packages.microsoft.com/keys/microsoft.asc
@@ -432,4 +433,5 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## See also
 - [Investigate agent health issues](health-status.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
