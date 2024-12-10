@@ -27,7 +27,7 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
-There are some minimum requirements for onboarding devices to the Defender for Endpoint service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
+There are some minimum requirements for onboarding devices to the Defender for Endpoint service. Learn about the licensing, hardware, and software requirements, and other configuration settings to onboard devices to the service.
 
 > [!TIP]
 >
@@ -70,7 +70,7 @@ Devices on your network must be running one of these editions. New features or c
 > [!IMPORTANT]
 > Windows 11 Home devices that have been upgraded to one of the below supported editions might require you to run the following command before onboarding: 
 > `DISM /online /Add-Capability /CapabilityName:Microsoft.Windows.Sense.Client~~~~`. 
-> For more information about edition upgrades and features, see [Features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true))
+> For more information about edition upgrades and features, see ([Features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true))
 
 - Windows 11 Enterprise
 - Windows 11 IoT Enterprise
@@ -149,7 +149,7 @@ Alternatively, if you must use an IPv6-only configuration, consider adding dynam
 
 #### Internet connectivity
 
-Internet connectivity on devices is required either directly or through proxy.
+Internet connectivity on devices is required either directly or through a proxy.
 
 For more information on other proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
