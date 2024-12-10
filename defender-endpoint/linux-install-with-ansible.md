@@ -28,9 +28,8 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements-applicable-to-both-the-methods)
 - [Download the onboarding package](#download-the-onboarding-package-applicable-to-both-the-methods)
-- [Deploy MDE using mde_installer.sh with Ansible](#deploy-mde-using-mde-installer-sh-with-ansible)
-- [Deploy MDE using Ansible by configuring repositories manually](#deploy-mde-using-ansible-by-configuring-repositories-manually)
-
+- [Deploy Defender for Endpoint on Linux using mde_installer.sh with Ansible](#deploy-mde-using-mde_installersh-with-ansible)
+- [Deploy Defender for Endpoint on Linux using Ansible by configuring repositories manually](#deploy-mde-using-ansible-by-configuring-repositories-manually)
 
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
@@ -39,13 +38,9 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 
 Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automate the deployment process for machines at scale. Following are the two methods to automate.
 
-1.        Using installer script (recommended)
+1. Using the installer script (recommended). This method greatly simplifies the automation process and helps to install the MDE agent  as well as onboard the device to security portal using just a few steps without having to configure for different distros separately.
 
-This method greatly simplifies the automation process and helps to install the MDE agent  as well as onboard the device to security portal using just a few steps without having to configure for different distros separately.
-
-2.        Manually configuring repositories for each distro
-
-This method allows to automate the deployment process by manually configuring repositories, installing the agent and onboarding the device for each distro. This method  gives more granular control over the deployment process.
+2. Manually configuring repositories for each distro. This method allows to automate the deployment process by manually configuring repositories, installing the agent and onboarding the device for each distro. This method  gives more granular control over the deployment process.
 
 ## Prerequisites and system requirements applicable to both the methods
 
@@ -54,7 +49,9 @@ Before you get started, see [the main Defender for Endpoint on Linux page](micro
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
 - Ansible needs to be installed on at least one computer (Ansible calls this the control node).
+
 - SSH must be configured for an administrator account between the control node and all managed nodes (devices that will have Defender for Endpoint installed on them), and it is recommended to be configured with public key authentication.
+
 - The following software must be installed on all managed nodes:
   - curl
   - python-apt (if you are deploying on distributions using apt as a package manager)
@@ -79,8 +76,10 @@ Download the onboarding package from Microsoft Defender portal.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../includes/repackaging-warning.md)]
 
-1. In Microsoft Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
+
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
    :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="media/portal-onboarding-linux-2.png":::
