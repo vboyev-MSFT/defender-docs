@@ -26,7 +26,7 @@ ai-usage: human-only
 
 ## Overview of Defender for Endpoint on Linux for ARM64-based devices
 
-As you might already know, [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) is a unified endpoint security solution that helps you protect your server devices from advanced threats. Now in preview, Defender for Endpoint on Linux currently supports ARM64-based Linux servers. Similar to x64-based Linux servers (including Intel and AMD 64-bit platform), the following capabilities are included: 
+As you might already know, [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) is a unified endpoint security solution that helps you protect your server devices from advanced threats. Defender for Endpoint on Linux is now extending support for ARM64-based Linux servers in preview. Similar to x64-based Linux servers (including Intel and AMD 64-bit platform), the following capabilities are included: 
 
 - Microsoft Defender Antivirus
 - Endpoint detection and response (EDR)
