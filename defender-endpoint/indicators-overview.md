@@ -156,7 +156,7 @@ The IoC API schema and the threat IDs in advance hunting are updated to align wi
 > 
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 >
-> If indicators are synced to the Indicator in the MDE portal from MDCA sanctioned/unsanctioned applications, the 'Generate Alert' option will be enabled by default in the MDE portal. If you try to uncheck the 'Generate Alert' option in MDE, it will be re-enabled after some time as the MDCA policy will override it.
+> If indicators are synced to the Microsoft Defender portal from Microsoft Defender for Cloud Apps for sanctioned or unsanctioned applications, the `Generate Alert` option is enabled by default in the Microsoft Defender portal. If you try to clear the `Generate Alert` option for Defender for Endpoint, it is re-enabled after some time because the Defender for Cloud Apps policy overrides it.
 
 ## Known issues and limitations
 
