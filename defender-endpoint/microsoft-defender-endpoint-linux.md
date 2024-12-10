@@ -152,7 +152,7 @@ If the Microsoft Defender for Endpoint installation fails due to missing depende
 - For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, and `mde-netfilter`
 - For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, and `mde-netfilter`
 
-The mde-netfilter package also has the following package dependencies:
+The`mde-netfilter` package also has the following package dependencies:
 
 - For DEBIAN the mde-netfilter package requires `libnetfilter-queue1`, and `libglib2.0-0`
 - For RPM the mde-netfilter package requires `libmnl`, `libnfnetlink`, `libnetfilter_queue`, and `glib2`
