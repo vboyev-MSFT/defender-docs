@@ -53,6 +53,8 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 
 - Memory: At least 1 GB of RAM. For high-performance workloads, more memory might be needed.
 
+- Performance tuning might be needed based on workloads. See [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
+
 - The following Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions are supported:
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
