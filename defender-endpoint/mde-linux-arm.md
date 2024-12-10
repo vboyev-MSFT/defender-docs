@@ -26,7 +26,7 @@ ai-usage: human-only
 
 ## Overview of Defender for Endpoint on Linux for ARM64-based devices
 
-As you might already know, [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) is a unified endpoint security solution that helps you protect your server devices from advanced threats. Now in [preview](/defender-xdr/preview), Defender for Endpoint on Linux currently supports ARM64-based Linux servers. Similar to x64-based Linux servers (including Intel and AMD 64-bit platform), the following capabilities are included: 
+As you might already know, [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) is a unified endpoint security solution that helps you protect your server devices from advanced threats. Now in preview, Defender for Endpoint on Linux currently supports ARM64-based Linux servers. Similar to x64-based Linux servers (including Intel and AMD 64-bit platform), the following capabilities are included: 
 
 - Microsoft Defender Antivirus
 - Endpoint detection and response (EDR)
@@ -58,8 +58,6 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 ### Before you begin
 
 - Make sure the [prerequisites](microsoft-defender-endpoint-linux.md#prerequisites) are met for Defender for Endpoint on Linux
-
-- Confirm that you have preview features turned on. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Advanced features** > **Preview features**. For more information, see [Preview features](/defender-xdr/preview).
 
 - Make sure to install the agent version `101.24102.0002` from the insiders-slow channel on the ARM64-based device. (See [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).) 
 
