@@ -66,7 +66,7 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 - To onboard servers to Defender for Endpoint, [server licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint) are required. You can choose from these options:
 
    - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering; or
-   - Microsoft Defender for Endpoint for Servers
+   - Microsoft Defender for Endpoint Server
 
 ### Deploy using the installer script
 
