@@ -324,10 +324,9 @@ You can choose from several methods to deploy Defender for Endpoint on Linux to 
 
 If your organization is using Defender for Cloud, you can use it to deploy Defender for Endpoint on Linux.
 
-1. We recommend enabling automatic deployment on your ARM64-based Linux devices. To enable automatic deployment, under `.bashrc` as a root user or `/etc/profile` on your device, set the environment variables as follows:
+1. We recommend enabling automatic deployment on your ARM64-based Linux devices. After VM provisioning, define a variable under the file `/etc/mde.arm.d/mde.conf` on your device as follows:
 
-   - `OPT_FOR_MDE_ARM_PREVIEW=1`
-   - `OPT_FOR_MDE_ARM_PREVIEW=true`
+   `OPT_FOR_MDE_ARM_PREVIEW=1`
 
 2. Wait for 1-6 hours for onboarding to complete.
 
@@ -343,7 +342,22 @@ See these articles:
 
 ## Troubleshoot deployment issues
 
-If you run into any issues deploying Defender for Endpoint on Linux to your ARM64-based devices, help is available. First, get the XMDE Client Analyzer, and then review our list of common issues and how to resolve them. 
+If you run into any issues deploying Defender for Endpoint on Linux to your ARM64-based devices, help is available. First, review our list of common issues and how to resolve them. If the problem persists, contact us.
+
+### Common issues and how to resolve them
+
+The following table summarizes common issues and how to resolve them.
+
+| Error message or issue | What to do |
+|--|--|
+| `mdatp not found` | The repository might not be configured correctly. Check to see if the channel is set to `insiders-slow` in the installer script |
+| `mdatp health` indicates a missing license | Make sure you're passing the correct onboarding script or json file to your automation script or tool |
+| Exclusions aren't working as expected | If you had exclusions working on other devices, but they're not working on your ARM64-based Linux servers, contact us at `mdearmsupport@microsoft.com`. You need your client analyzer logs. |
+| You want help with tuning mdatp. | Contact us at `mdearmsupport@microsoft.com`. |
+
+### Contact us if you need help
+
+When you contact us at `mdearmsupport@microsoft.com`, make sure to describe the issue in detail. Include screenshots if possible, and your client analyzer logs.
 
 ### XMDE Client Analyzer ARM Preview
 
@@ -360,22 +374,6 @@ If you run into any issues deploying Defender for Endpoint on Linux to your ARM6
 3. Follow the on-screen instructions and then follow up with at the end of the log collection. The logs are located in the `/tmp` directory.
 
    The log set is owned by the root user, so you might need root privileges to remove the log set.
-
-### Common issues and how to resolve them
-
-The following table summarizes common issues and how to resolve them.
-
-| Error message or issue | What to do |
-|--|--|
-| `mdatp not found` | The repository might not be configured correctly. Check to see if the channel is set to `insiders-slow` in the installer script |
-| `mdatp health` indicates a missing license | Make sure you're passing the correct onboarding script or json file to your automation script or tool |
-| `edr_configuration_version` is unavailable after onboarding and installation. | This issue can occur if you uninstall and reinstall private and public preview features, and then try to onboard the same machine twice. Offboard mdatp, and then uninstall and reinstall it again. If the problem persists, contact us at `mdearmsupport@microsoft.com`. |
-| Exclusions aren't working as expected | If you had exclusions working on other devices, but they're not working on your ARM64-based Linux servers, contact us at `mdearmsupport@microsoft.com`. You need your client analyzer logs. |
-| You want help with tuning mdatp. | Contact us at `mdearmsupport@microsoft.com`. |
-
-### Contact us if you need help
-
-When you contact us at `mdearmsupport@microsoft.com`, make sure to describe the issue in detail. Include screenshots if possible, and your client analyzer logs.
 
 ## See also
 
