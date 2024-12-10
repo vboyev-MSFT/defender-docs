@@ -6,7 +6,7 @@ author: dlanger
 manager: rayne-wiselman
 ms.topic: reference
 ms.service: exposure-management
-ms.date: 09/16/2024
+ms.date: 11/16/2024
 ---
 
 # Predefined classifications
@@ -22,6 +22,9 @@ Current asset types are:
 * [Device](#device)
 * [Identity](#identity)
 * [Cloud resource](#cloud-resource)
+
+> [!Note]
+> We also utilize criticality context retrieved from external data connectors. This context will be presented as classifications in the predefined critical asset management classification library.
 
 ##### Device
 
@@ -105,5 +108,5 @@ Current asset types are:
 | Azure Virtual Machine with High Availability and Performance | Cloud resource | Low                       | This rule applies to Azure virtual machines that use premium Azure storage and are configured with an availability set. Premium storage is used for machines with high performance requirements, such as production workloads. Availability sets improve resilience and are often indicated for business critical VMs that need high availability. |
 | Immutable Azure Storage                                      | Cloud resource | Medium                    | This rule applies to Azure storage accounts that have immutability support enabled. Immutability stores business data in a write once read many (WORM) state, and usually indicates that the storage account holds critical or sensitive data that must be protected from modification. |
 | Immutable and Locked Azure Storage                           | Cloud resource | High                      | This rule applies to Azure storage accounts that have immutability support enabled with a locked policy. Immutability stores business data in a write once read many (WORM). Data protection is increased with a locked policy to ensure that data can’t be deleted or its retention time shortened. These settings usually indicate that the storage account holds critical or sensitive data that must be protected from modification or deletion. Data might also need to align with compliance policies for data protection. |
-| Azure Virtual Machine with a Critical User Signed-in         | Cloud resource | High                      | This rule applies to virtual machines protected by Defender for Endpoint, where a user with a high or very high criticality level is signed in. The signed-in user can be through a joined or registered device, an active browser session, or other means. |
+| Azure Virtual Machine with a Critical User Signed In         | Cloud resource | High                      | This rule applies to virtual machines protected by Defender for Endpoint, where a user with a high or very high criticality level is signed in. The signed-in user can be through a joined or registered device, an active browser session, or other means. |
 | Azure Key Vaults with Many Connected Identities              | Cloud resource | High                      | This rule identifies Key Vaults that can be accessed by a large number of identities, compared to other Key Vaults. This often indicates that the Key Vault is used by critical workloads, such as production services. |
