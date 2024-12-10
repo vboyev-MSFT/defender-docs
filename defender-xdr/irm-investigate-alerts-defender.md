@@ -129,7 +129,7 @@ For customers using [Office 365 Management Activity API](/office/office-365-mana
 
 ## Impact to Microsoft Sentinel users
 
-Microsoft Sentinel customers [exporting Microsoft Purview Insider Risk Management alert information](/purview/insider-risk-management-settings-dlp-sync?tabs=purview-portal#export-alert-information-to-siem-solutions) to integrate insider risk alert data are advised to migrate to the [Microsoft Defender XDR-Microsoft Sentinel connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
+Microsoft Sentinel customers [exporting Microsoft Purview Insider Risk Management alert information](/purview/insider-risk-management-settings-dlp-sync#export-alert-information-to-siem-solutions) to integrate insider risk alert data are advised to migrate to the [Microsoft Defender XDR-Microsoft Sentinel connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
 
 If the Defender XDR-Microsoft Sentinel connector is turned on, insider risk management alerts are automatically integrated into Microsoft Sentinel. The schema for alerts is the same schema exposed in Graph API. The alert schema exposed through the Defender XDR-Microsoft Sentinel connector covers all existing fields exported and provides additional metadata for insider risk management alerts.
 
