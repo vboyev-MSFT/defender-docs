@@ -22,7 +22,7 @@ This article lists recent features added into Microsoft's unified SecOps platfor
 
 ## December 2024
 
-- [Microsoft Sentinel workbooks now available to view directly in the Microsoft Defender portal](microsoft-sentinel-workbooks-now-available-to-view-directly-in-the-microsoft-defender-portal)
+- [Microsoft Sentinel workbooks now available to view directly in the Microsoft Defender portal](#microsoft-sentinel-workbooks-now-available-to-view-directly-in-the-microsoft-defender-portal)
 
 ### Microsoft Sentinel workbooks now available to view directly in the Microsoft Defender portal
 
@@ -30,7 +30,7 @@ Microsoft Sentinel workbooks are now available for viewing directly in the Micro
 
 Microsoft Sentinel workbooks are based on Azure Monitor workbooks, and help you visualize and monitor the data ingested to Microsoft Sentinel. Workbooks add tables and charts with analytics for your logs and queries to the tools already available.
 
-For more information, see [Visualize and monitor your data by using workbooks in Microsoft Sentinel](/azure/sentinel/monitor-your-data.md) and [Connect Microsoft Sentinel to Microsoft Defender XDR](/defender-xdr/microsoft-sentinel-onboard).
+For more information, see [Visualize and monitor your data by using workbooks in Microsoft Sentinel](/azure/sentinel/monitor-your-data) and [Connect Microsoft Sentinel to Microsoft Defender XDR](/defender-xdr/microsoft-sentinel-onboard).
 
 ## November 2024
 
