@@ -47,9 +47,9 @@ ms.date: 12/11/2024
    > [!NOTE]
    > Apple does not allow redirecting users to download other apps from the app store so this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.
 
-   Device(s) are registered with Microsoft Entra ID. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+   Devices are registered with Microsoft Entra ID. This configuration requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
-- **For unenrolled devices**: Device(s) are registered with Microsoft Entra ID. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+- **For unenrolled devices**: Devices are registered with Microsoft Entra ID. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 - For more information on how to assign licenses, see [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
