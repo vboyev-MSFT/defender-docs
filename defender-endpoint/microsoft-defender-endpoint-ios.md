@@ -62,27 +62,27 @@ ms.date: 12/11/2024
 - Access to the Microsoft Defender portal.
 
 - Access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
+
   - Deploy the app to enrolled user groups in your organization.
   - Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
 
-    > [!NOTE]
-    >
-    > - Microsoft Defender for Endpoint now extends protection to an organization's data within a managed application for those who aren't using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
-    > - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).
-
-
+> [!NOTE]
+>
+> - Microsoft Defender for Endpoint now extends protection to an organization's data within a managed application for those who aren't using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
+> - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).
 
 ### System Requirements
 
-- Device running iOS/iPadOS 15.0 (ending support January 31st, 2025) and above. iPads are also supported.
+- Device running iOS/iPadOS 15.0 (ending support January 31, 2025) and later.
 
 - The device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or is registered with Microsoft Entra ID through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) with the same account.
 
 > [!IMPORTANT]
-> Microsoft Defender will end support for devices running iOS/iPadOS 15 on January 31st, 2025. Moving forward, only devices running iOS/iPadOS 16 and later will be supported.
+> Microsoft Defender for Endpoint is ending support for devices running iOS/iPadOS 15 and previous versions on January 31, 2025. Moving forward, only devices running iOS/iPadOS 16 and later are supported.
 
 > [!NOTE]
 > - Microsoft Defender for Endpoint on iOS isn't supported on user-less or shared devices.
+
 ## Installation instructions
 
 Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft Intune and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
@@ -102,6 +102,6 @@ Deployment of Microsoft Defender for Endpoint on iOS can be done via Microsoft I
 - [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 - [Configure Conditional Access policy based on device risk score from Microsoft Defender for Endpoint](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
-
 - [Mobile Application Management (MAM) basics](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
