@@ -30,6 +30,20 @@ search.appverid: met150
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
+## Microsoft Defender now supports iOS/iPadOS 16.x as the minimum version
+
+Microsoft Defender will be ending support for iOS/iPadOS 15, as iOS/iPadOS 18 is available since September, and we typically support (n-2) versions. This change will take effect from January 31st, 2025.
+
+**How does this affect you or your users?**
+
+New users will not be able to install the Defender app, and existing users will be unable to upgrade to the latest version of the app.
+
+To check which devices, support iOS 16 or iPadOS 16 (if applicable), see the following Apple documentation:
+
+[Supported iPhone Models](https://support.apple.com/en-in/guide/iphone/iphe3fa5df43/16.0/ios/16.0)
+
+[Supported iPad Models](https://support.apple.com/en-in/guide/ipad/ipad213a25b2/16.0/ipados/16.0)
+
 ## User Enrollment
 
 Microsoft Defender for Endpoint iOS can now be deployed on Intune User Enrolled devices. This new feature offers security and IT teams the flexibility to deploy Defender for Endpoint for iOS to user-enrolled devices so that work data and applications are protected, while end-user privacy is upheld on those devices. For more information, see [User Enrollment setup](ios-install.md#user-enrollment-setup-only-for-intune-user-enrolled-devices).  
