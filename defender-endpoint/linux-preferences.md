@@ -666,7 +666,10 @@ The following settings can be used to configure certain advanced supplementary s
 |**Data type**|Dictionary (nested preference)|*n/a*|
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
-##### Configure monitoring of namespace events [preview]
+##### Configure monitoring of namespace Events
+
+> [!NOTE]
+> This is a preview feature.
 
 Determines whether creation of namespaces (via `clone` / `unshare` system calls) are monitored.
 
@@ -823,7 +826,10 @@ Determines whether events corresponding to files being opened to be executed are
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.98.89` or later.|
 
-##### Configure monitoring of mount namespace events [preview]
+##### Configure monitoring of mount namespace events
+
+> [!NOTE]
+> This is a preview feature.
 
 Determines whether file events in namespace mount points are monitored.
 
@@ -870,7 +876,10 @@ Determines whether suspicious events from Antivirus are reported to EDR.
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
 
-#### Enable Quarantining of files within a namespace [preview]
+#### Enable Quarantining of files within a namespace
+
+> [!NOTE]
+> This is a preview feature.
 
 Determines whether malicious files detected within a namespace are quarantined or not.
 
@@ -881,9 +890,10 @@ Determines whether malicious files detected within a namespace are quarantined o
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.24042.0002` or later.|
 
-#### Enable Scanning of Network Protection BM Events [preview]
+#### Enable Scanning of Network Protection BM Events
 
 > [!NOTE]
+> This is a preview feature.
 > This feature is applicable only when Behavior Monitoring is enabled.
 > For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
 
@@ -896,12 +906,13 @@ Determines whether network protection events are sent to the BM engine for scann
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
-### Network protection configurations [preview]
-
-The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
+### Network protection configurations
 
 > [!NOTE]
+> This is a preview feature.
 > For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
+
+The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
