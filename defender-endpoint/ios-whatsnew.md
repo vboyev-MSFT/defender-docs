@@ -36,7 +36,7 @@ Defender for Endpoint on iOS is ending support for iOS/iPadOS 15, as iOS/iPadOS 
 
 **How does this affect you or your users?**
 
-New users will not be able to install the Microsoft Defender app on devices running iOS/iPadOS 15 and earlier versions. Similarly, existing users won't be to upgrade to the latest version of the app.
+New users won't be able to install the Microsoft Defender app on devices running iOS/iPadOS 15 and earlier versions. Similarly, existing users won't be to upgrade to the latest version of the app.
 
 To check which devices support iOS 16 or iPadOS 16 (if applicable), see the following Apple documentation:
 
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint iOS can now be deployed on Intune User Enrolled 
 
 ## Device tagging
 
-Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](ios-configure-features.md#device-tagging).
+Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the administrators to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](ios-configure-features.md#device-tagging).
 
 ## Vulnerability assessment of apps
 
@@ -59,7 +59,7 @@ Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is n
 
 Network Protection on Microsoft Defender for Endpoint is now generally available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices and notifies the user if a related threat is detected. Users also see a guided experience to connect to secure networks and change networks when they're connected to an unsecure connection.
 
-**This feature is now enabled by default for all users.** As a result, users will be able to see the Network Protection Card in the Defender for Endpoint iOS app along with App Protection and Web Protection. Users are also required to provide **Local Network** permission. This permission is needed to enhance the existing rogue wifi detection. Admins can change the default value for the Network Protection feature if they decide not to use it via the Intune App Configuration policies. 
+**This feature is now enabled by default for all users.** As a result, users are able to see the Network Protection Card in the Defender for Endpoint iOS app along with App Protection and Web Protection. Users are also required to provide **Local Network** permission. This permission is needed to enhance the existing rogue wifi detection. Administrators can change the default value for the Network Protection feature if they decide not to use it via the Intune App Configuration policies. 
 
 There are also several admin controls to offer flexibility, including privacy controls to configure the data that's sent by Defender for Endpoint from iOS devices. For more information, read [Configure Network Protection](ios-configure-features.md#configure-network-protection).
 
@@ -71,11 +71,11 @@ Microsoft Defender for Endpoint on iOS enables Privacy Controls for both adminis
 
 Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, admin can deploy Defender for Endpoint on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
-With **Disable Web Protection**, customers who don't want to set up a VPN can configure to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features will continue to work. This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices.
+With **Disable Web Protection**, customers who don't want to set up a VPN can configure to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features continue to work. This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices.
 
 ## Integration with Tunnel
 
-Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app.  Integration with Tunnel provides a simpler, secure VPN experience on iOS with just one app. This feature was earlier available only on Android. For more information, [see the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+Microsoft Defender for Endpoint on iOS can now integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Integration with Tunnel provides a simpler, secure VPN experience on iOS with just one app. This feature was earlier available only on Android. For more information, [see the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## Improved experience on supervised iOS devices
 
@@ -138,4 +138,5 @@ On January 25, 2022, we announced the general availability of Vulnerability mana
 
 - With this version, we're announcing support for iPadOS/iPad devices.
 - Bug fixes.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
