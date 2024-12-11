@@ -154,11 +154,11 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 1. Establish an internal procedure to ensure that the connection remains alive. A couple of days before the expected expiration of the refresh token lifespan.
 Revoke to the old refresh token. We don't recommend keeping old keys for security reasons.
 
-    1. On the ServiceNow pane, search for System OAuth, and then select Manage Tokens.
+    1. On the ServiceNow pane, search for **System OAuth**, and then select **Manage Tokens**.
 
     1. Select the old token from the list according to the OAuth name and expiration date.
 
-    1. Select Revoke Access > Revoke.
+    1. Select **Revoke Access > Revoke**.
       
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
