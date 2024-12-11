@@ -83,7 +83,7 @@ Use this reference to construct queries that return information from the table. 
 |`NetworkLocationDetails`|`string`|Network location details of the authentication processor of the sign-in event|
 |`RequestId`|`string`|Unique identifier of the request|
 |`ReportId`|`string`|Unique identifier for the event|
-|`EndpointCall`|`string`|Indicates the endpoint called during a login event. Possible values: "Login:reprocess", "Kmsi:kmsi"|
+|`EndpointCall`|`string`|Information about the Microsoft Entra ID endpoint that the request was sent to and the type of request sent during sign in.|
 
 ## Related articles
 
