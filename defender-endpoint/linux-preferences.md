@@ -785,31 +785,6 @@ Determines whether creation of namespaces (via `clone` / `unshare` system calls)
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.24032.0007` or later.|
 
-##### Configure eBPF source enrichment
-
-Determines whether eBPF source enrichment of events is enabled. // no sense config for this so far
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableEbpfSourceEnrichment|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
-
-##### Configure open events from specific filesystems
-
-Determines whether open events from specific paths in filesystems such as `procfs` and `devfs` are monitored. // no sense config for this so far
-
-> [!NOTE]
-> This feature is independent of `muteOpenFileEvents`.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableOtherFsOpenEvents|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
-
 #### Fanotify sensor configurations
 
 The following settings can be used to configure certain advanced fanotify sensor features.
@@ -842,9 +817,9 @@ Determines whether events corresponding to files being opened to be executed are
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.98.89` or later.|
 
-##### Configure monitoring of mount namespace events
+##### Configure monitoring of mount namespace events [preview]
 
-Determines whether file close modified events in namespace mount points are monitored. // no sense config for this so far
+Determines whether file events in namespace mount points are monitored. // no sense config for this so far
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -877,77 +852,6 @@ Determines whether fork process events are scanned by the behavior monitoring an
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
-#### Throttling configurations
-
-The following settings can be used to configure throttling of different types of events.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|throttlingConfigurations|*Not available*|
-|**Data type**|Dictionary (nested preference)|*n/a*|
-|**Comments**|See the following sections for a description of the dictionary contents.|
-
-##### Configure throttling of file events
-
-Determines whether file events are throttled when they hit a certain limit.  // enabled only till dogfood
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|fileEventsThrottling|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-##### Configure throttling of process connector events
-
-Determines whether process connector events are throttled when they hit a certain limit.  // enabled till prod, but we are disabling it in mitre..
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|processConnectorThrottling|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-##### Configure throttling of supplementary events
-
-Determines whether supplementary events are throttled when they hit a certain limit.  // enabled till prod, but we are disabling it in mitre..
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|supplementaryEventsThrottling|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-##### Configure throttling of eBPF events at per syscall level
-
-Determines whether eBPF events are throttled at a per syscall level when they hit a certain limit.  // enabled till prod, but we are disabling it in mitre..
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|ebpfPerSyscallThrottling|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-##### Configure throttling of fanotify events pre- and post-smart filters
-
-Determines whether fanotify events are throttled either pre- or post-smart filters, when they hit a certain limit. // enabled till prod, but we are disabling it in mitre..
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|fanotifyPreSmartfilterThrottling|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|fanotifyPostSmartfilterThrottling|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
 
 #### Report AV Suspicious Events to EDR
 
@@ -971,21 +875,11 @@ Determines whether malicious files detected within a namespace are quarantined o
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.24042.0002` or later.|
 
-#### Enable Antivirus Engine Cache
-
-Determines whether an optimization for caching process details in the antivirus engine process is enabled. // no sense config pr for this so far
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableAntivirusEngineCache|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
-
-#### Enable Scanning of Network Protection BM Events
+#### Enable Scanning of Network Protection BM Events [preview]
 
 > [!NOTE]
 > This feature is applicable only when Behavior Monitoring is enabled.
+> For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
 
 Determines whether network protection events are sent to the BM engine for scanning. // enabled upto dogfood via sense
 
@@ -996,39 +890,7 @@ Determines whether network protection events are sent to the BM engine for scann
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
-#### EDR Early Filtering Configurations
-
-The following settings can be used to filter out events before being sent to the EDR process for further processing. // describe in how much detail?
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|edrEarlyFiltering|*Not available*|
-|**Data type**|Dictionary (nested preference)|*n/a*|
-|**Comments**|See the following sections for a description of the dictionary contents.|
-
-##### Configure EDR Early Filtering in Passive Mode
-
-Determines whether events are filtered early before sending to the EDR process in the passive enforcement level. // This is enabled till insider slow as of now
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableEarlyFilteringPassive|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
-
-##### Configure EDR Early Filtering in Real Time Mode
-
-Determines whether events are filtered early before sending to the EDR process in the real time enforcement level. // This is only enabled till dogfood and i think this is not going to be further rolled out. Should we expose this or not?
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableEarlyFilteringRtp|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
-
-### Network protection configurations
+### Network protection configurations [preview]
 
 The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
 
