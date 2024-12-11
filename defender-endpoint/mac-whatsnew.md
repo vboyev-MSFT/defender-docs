@@ -43,7 +43,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - In macOS Sequoia (version 15.0), if you have Network Protection enabled, you might see crashes of the network extension (NetExt). This issue results in intermittent network connectivity issues for end users. Please upgrade to macOS Sequoia version 15.1 or newer.
 
-- On macOS Sequoia (Version 15.0 - 15.1.1), users may encounter prompts about incoming network connections from applications when the native firewall is active.  If end user encounter a prompt for Defender for Endpoint on macOS processes such as *wdavdaemon_enterprise* or *Microsoft Defender Helper,* the end user can safely choose Deny option. This selection will not impact Defender's functionality.
+- On macOS Sequoia (Version 15.0 - 15.1.1), users may encounter prompts about incoming network connections from applications when the native firewall is active.  
+
+![Uploaded Image](media/mac-whatsnew/image.png)
+
+If end user encounters a prompt for Defender for Endpoint on macOS processes such as *wdavdaemon_enterprise* or *Microsoft Defender Helper,* the end user can safely choose Deny option. This selection will not impact Defender's functionality.
 
 ## Sequoia support
 
