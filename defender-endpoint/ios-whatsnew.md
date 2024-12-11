@@ -65,13 +65,13 @@ There are also several admin controls to offer flexibility, including privacy co
 
 ## Privacy Controls
 
-Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) and unenrolled (MAM) devices. Admins can configure the privacy in the phish alert report while End Users can configure the information shared to their organization.
+Microsoft Defender for Endpoint on iOS enables Privacy Controls for both administrators and end users. These controls include the controls for enrolled (MDM) and unenrolled (MAM) devices. Administrators can configure the privacy in the phish alert report, and end users can configure the information shared to their organization.
 
 ## Optional permissions and Disable Web Protection
 
-Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
+Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by Defender for Endpoint are mandatory in the onboarding flow. With this feature, admin can deploy Defender for Endpoint on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
-With **Disable Web Protection**, customers who don't want to set up a VPN can configure to disable **Web Protection** and deploy MDE without that feature. Other MDE features will continue to work. This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices.
+With **Disable Web Protection**, customers who don't want to set up a VPN can configure to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features will continue to work. This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices.
 
 ## Integration with Tunnel
 
