@@ -139,7 +139,7 @@ Admins deploy any one of the given profiles.
 
 1. **Zero touch (Silent) Control Filter** - This profile enables silent onboarding for users. Download the config profile from [ControlFilterZeroTouch](https://download.microsoft.com/download/f/8/e/f8ed3484-b665-4c3c-9ae9-272c8a04159b/Microsoft_Defender_for_Endpoint_Control_Filter_Zerotouch.mobileconfig).
 
-2. **Control Filter** - Download the config profile from [ControlFilter]('https://download.microsoft.com/download/f/8/e/f8ed3484-b665-4c3c-9ae9-272c8a04159b/Microsoft_Defender_for_Endpoint_Control_Filter 1.mobileconfig').
+2. **Control Filter** - Download the config profile from [ControlFilter](https://download.microsoft.com/download/f/8/e/f8ed3484-b665-4c3c-9ae9-272c8a04159b/Microsoft_Defender_for_Endpoint_Control_Filter_1.mobileconfig).
 
 Once the profile has been downloaded, deploy the custom profile. Follow the steps below:
 
