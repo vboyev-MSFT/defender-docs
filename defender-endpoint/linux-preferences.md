@@ -74,7 +74,10 @@ Specifies the enforcement preference of antivirus engine. There are three values
 > Available in Defender for Endpoint version `101.10.72` or later. Default is changed from `real_time` to `passive` in Defender for Endpoint version `101.23062.0001` or later.
 > It is recommended to also use [scheduled scans](/defender-endpoint/linux-schedule-scan-mde) as per requirement.
 
-#### Enable/disable behavior monitoring 
+#### Enable/disable behavior monitoring [only if RTP is enabled]
+
+> [!IMPORTANT]
+> This feature only works when the enforcement level is set to `real-time`.
 
 Determines whether behavior monitoring and blocking capability is enabled on the device or not. 
 
@@ -86,9 +89,12 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 
 > [!NOTE]
 > Available in Defender for Endpoint version `101.45.00` or later.
-> This feature is applicable only when real-time protection is enabled.
+
 
 #### Run a scan after definitions are updated
+
+> [!IMPORTANT]
+> This feature only works when the enforcement level is set to `real-time`.
 
 Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting triggers an antivirus scan on the running processes of the device.
 
@@ -100,7 +106,6 @@ Specifies whether to start a process scan after new security intelligence update
 
 > [!NOTE]
 > Available in Defender for Endpoint version `101.45.00` or later.
-> This feature only works when the enforcement level is set to `real-time`.
 
 #### Scan archives (on-demand antivirus scans only)
 
@@ -491,7 +496,7 @@ Specifies a process for which all file activity is excluded from scanning. The p
 
 The following settings can be configured to enable certain advanced scanning features. 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
 
 ##### Configure scanning of file modify permissions events
@@ -526,6 +531,7 @@ When this feature is enabled, Defender for Endpoint will scan files for which ow
 > Available in Defender for Endpoint version `101.23062.0010` or later.
 
 ##### Configure scanning of network socket events
+
 
 When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets / UDP sockets, or setting socket option. 
 
@@ -627,7 +633,7 @@ Depending on the enforcement level, the automatic security intelligence updates 
 
 The following settings can be configured to enable certain advanced features.
 
->[!NOTE]
+>[!IMPORTANT]
 >Enabling these features might impact device performance. It is recommended to keep the defaults.
 
 |Description|JSON Value|Defender Portal Value|
@@ -659,6 +665,17 @@ The following settings can be used to configure certain advanced supplementary s
 |**Key**|supplementarySensorConfigurations|*Not available*|
 |**Data type**|Dictionary (nested preference)|*n/a*|
 |**Comments**|See the following sections for a description of the dictionary contents.|
+
+##### Configure monitoring of namespace events [preview]
+
+Determines whether creation of namespaces (via `clone` / `unshare` system calls) are monitored.
+
+|Description|JSON Value|Defender Portal Value|
+|---|---|---|
+|**Key**|enableNamespaceEvents|*Not available*|
+|**Data type**|String|*n/a*|
+|**Possible values**|disabled (default) <p> enabled|*n/a*|
+|**Comments**|Available in Defender for Endpoint version `101.24032.0007` or later.|
 
 ##### Configure monitoring of file modify permissions events
 
@@ -774,17 +791,6 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.68.80` or later.|
 
-##### Configure monitoring of namespace events
-
-Determines whether creation of namespaces (via `clone` / `unshare` system calls) are monitored. // no sense config so far
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableNamespaceEvents|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24032.0007` or later.|
-
 #### Fanotify sensor configurations
 
 The following settings can be used to configure certain advanced fanotify sensor features.
@@ -808,7 +814,7 @@ Determines whether file open events are monitored.
 
 ##### Configure monitoring of open exec file events
 
-Determines whether events corresponding to files being opened to be executed are monitored. // only test org dogfood sense config
+Determines whether events corresponding to files being opened to be executed are monitored.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -819,7 +825,7 @@ Determines whether events corresponding to files being opened to be executed are
 
 ##### Configure monitoring of mount namespace events [preview]
 
-Determines whether file events in namespace mount points are monitored. // no sense config for this so far
+Determines whether file events in namespace mount points are monitored.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -843,7 +849,7 @@ The following settings can be used to configure certain advanced behavior monito
 
 ##### Configure scanning of fork events
 
-Determines whether fork process events are scanned by the behavior monitoring antivirus engine. // enabled only on mac till insider slow
+Determines whether fork process events are scanned by the behavior monitoring antivirus engine.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -864,9 +870,9 @@ Determines whether suspicious events from Antivirus are reported to EDR.
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
 
-#### Enable Quarantining of files within a namespace
+#### Enable Quarantining of files within a namespace [preview]
 
-Determines whether malicious files detected within a namespace are quarantined or not. // no sense config pr for this so far
+Determines whether malicious files detected within a namespace are quarantined or not.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -881,7 +887,7 @@ Determines whether malicious files detected within a namespace are quarantined o
 > This feature is applicable only when Behavior Monitoring is enabled.
 > For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
 
-Determines whether network protection events are sent to the BM engine for scanning. // enabled upto dogfood via sense
+Determines whether network protection events are sent to the BM engine for scanning.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
