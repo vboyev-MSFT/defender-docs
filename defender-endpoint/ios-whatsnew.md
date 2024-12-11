@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.reviewer: sunasing
 ms.localizationpriority: medium
-ms.date: 06/12/2024
+ms.date: 12/11/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -30,25 +30,24 @@ search.appverid: met150
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-## Microsoft Defender now supports iOS/iPadOS 16.x as the minimum version
+## Defender for Endpoint on iOS now supports iOS/iPadOS 16.x as the minimum version
 
-Microsoft Defender will be ending support for iOS/iPadOS 15, as iOS/iPadOS 18 is available since September, and we typically support (n-2) versions. This change will take effect from January 31st, 2025.
+Defender for Endpoint on iOS is ending support for iOS/iPadOS 15, as iOS/iPadOS 18 became available in September 2024. Microsoft typically supports the current version and two previous versions (n-2). This change takes effect beginning on January 31, 2025.
 
 **How does this affect you or your users?**
 
-New users will not be able to install the Defender app, and existing users will be unable to upgrade to the latest version of the app.
+New users will not be able to install the Microsoft Defender app on devices running iOS/iPadOS 15 and earlier versions. Similarly, existing users won't be to upgrade to the latest version of the app.
 
-To check which devices, support iOS 16 or iPadOS 16 (if applicable), see the following Apple documentation:
+To check which devices support iOS 16 or iPadOS 16 (if applicable), see the following Apple documentation:
 
-[Supported iPhone Models](https://support.apple.com/en-in/guide/iphone/iphe3fa5df43/16.0/ios/16.0)
+- [Supported iPhone Models](https://support.apple.com/en-in/guide/iphone/iphe3fa5df43/16.0/ios/16.0)
+- [Supported iPad Models](https://support.apple.com/en-in/guide/ipad/ipad213a25b2/16.0/ipados/16.0)
 
-[Supported iPad Models](https://support.apple.com/en-in/guide/ipad/ipad213a25b2/16.0/ipados/16.0)
-
-## User Enrollment
+## User enrollment
 
 Microsoft Defender for Endpoint iOS can now be deployed on Intune User Enrolled devices. This new feature offers security and IT teams the flexibility to deploy Defender for Endpoint for iOS to user-enrolled devices so that work data and applications are protected, while end-user privacy is upheld on those devices. For more information, see [User Enrollment setup](ios-install.md#user-enrollment-setup-only-for-intune-user-enrolled-devices).  
 
-## Device Tagging
+## Device tagging
 
 Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](ios-configure-features.md#device-tagging).
 
@@ -68,7 +67,7 @@ There are also several admin controls to offer flexibility, including privacy co
 
 Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) and unenrolled (MAM) devices. Admins can configure the privacy in the phish alert report while End Users can configure the information shared to their organization.
 
-## Optional Permissions and Disable Web Protection
+## Optional permissions and Disable Web Protection
 
 Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
