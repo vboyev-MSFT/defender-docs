@@ -29,10 +29,12 @@ ms.date: 12/12/2024
 
 You can choose from several options to onboard client devices running Windows or Mac. Make sure to review the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md), and then select a deployment method in the following table:
 
-|Endpoint|Deployment tool|
+|Operating system | Deployment method |
 |---|---|
-|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Mac** <br/>(see [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md))|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
+| **Windows** | |
+| Windows 11<br/>Windows 10 <br/>Windows 365| [Local script (up to 10 devices)](configure-endpoints-script.md) <br/>[Microsoft Intune / Mobile Device Management](configure-endpoints-mdm.md) <br/> [Microsoft Configuration Manager](configure-endpoints-sccm.md)<br/>[Group Policy](configure-endpoints-gp.md)<br/> [VDI scripts](configure-endpoints-vdi.md)|
+| Windows 8.1 Enterprise or Pro<br/>Windows 7 SP1 Enterprise or Pro| [Microsoft Monitoring Agent](update-agent-mma-windows.md) |
+|**Mac** <br/>(see [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md))|[Local script](mac-install-manually.md) (also referred to as manual deployment) <br/> [Microsoft Intune](mac-install-with-intune.md) <br/> [JAMF Pro](mac-install-with-jamf.md) <br/> [Mobile Device Management](mac-install-with-other-mdm.md)|
 
 ## See also
 
