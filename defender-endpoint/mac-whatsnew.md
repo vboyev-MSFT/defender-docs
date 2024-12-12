@@ -45,7 +45,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 - On macOS Sequoia (Version 15.0 - 15.1.1), users may encounter prompts about incoming network connections from applications when the native firewall is active.  
 
-![Uploaded Image](media/mac-whatsnew/image.png)
+   ![Screenshot showing prompts about incoming network connections](media/mac-whatsnew/image.png)
 
 If an end user encounters a prompt for Defender for Endpoint on macOS processes such as `wdavdaemon_enterprise` or `Microsoft Defender Helper`, the end user can safely choose the **Deny** option. This selection doesn't impact Defender for Endpoint's functionality.  Enterprises can also add *Microsoft Defender* to allow [incoming connections](https://support.apple.com/en-ca/guide/deployment/dep8d306275f/web).  This issue is fixed in macOS Sequoia 15.2.
 
