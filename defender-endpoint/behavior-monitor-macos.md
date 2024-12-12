@@ -248,9 +248,9 @@ NRI has a low impact on network performance. Instead of holding the connection a
 1. E-mail us at `NRIonMacOS@microsoft.com` with information about your Microsoft Defender for Endpoint OrgID where you would like to have Network Real-Time Inspection (NRI) for macOS enabled. 
 
    > [!IMPORTANT]
-   > In order to evaluate NRI for macOS, send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We are enabling this feature on a per-request basis for each tenant.
+   > In order to evaluate NRI for macOS, send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We're enabling this feature on a per-request basis for each tenant.
  
-2. Using Terminal, enable Behavior Monitoring if it's not already enabled:
+2. Using Terminal, enable behavior monitoring if it's not already enabled:
 
    `sudo mdatp config behavior-monitoring --value enabled`
  
@@ -266,7 +266,7 @@ NRI has a low impact on network performance. Instead of holding the connection a
 
 ### What if I see an increase in cpu utilization or memory utilization?
 
-Disable Behavior Monitoring and see if the issue goes away.
+Disable behavior monitoring and see if the issue goes away.
 
-- If the issue doesn't go away, it is not related to Behavior Monitoring.
-- If the issue goes away, take an aka.ms/xMDEClientAnalyzer and contact Microsoft support.
+- If the issue doesn't go away, it isn't related to behavior monitoring.
+- If the issue goes away, download the [Client Analyzer](https://aka.ms/xMDEClientAnalyzer), and then contact Microsoft support.
