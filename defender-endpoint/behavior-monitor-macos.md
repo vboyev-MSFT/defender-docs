@@ -54,7 +54,7 @@ Behavior monitoring monitors process behavior to detect and analyze potential th
 To deploy behavior monitoring in Microsoft Defender for Endpoint on macOS, you must change the behavior monitoring policy using one of the following methods:
 
 - [Intune](#intune-deployment)
-- [JamF or other non-Microsoft MDM](#via-jamf-deployment)
+- [JamF or other non-Microsoft MDM](#jamf-deployment)
 - [Manually](#manual-deployment)
 
 The following sections describe each of these methods in detail.
