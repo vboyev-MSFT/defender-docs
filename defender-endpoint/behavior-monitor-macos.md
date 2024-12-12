@@ -222,8 +222,7 @@ sudo mdatp threat list
 > [!IMPORTANT]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-
-The network real-time inspection (NRI) for macOS feature enhances real-time protection (RTP) by using behavior monitoring in concert with file, process, and other events to detect suspicious activity. Behavior monitoring triggers both telemetry and sample submissions on suspicious files for Microsoft to analyze from the cloud protection backend, and is delivered to the client device, resulting in a removal of the threat.
+The network real-time inspection (NRI) for macOS feature enhances real-time protection (RTP) by using [behavior monitoring](behavior-monitor-macos.md) in concert with file, process, and other events to detect suspicious activity. Behavior monitoring triggers both telemetry and sample submissions on suspicious files for Microsoft to analyze from the cloud protection backend, and is delivered to the client device, resulting in a removal of the threat.
 
 ### Is there an impact on performance?
 
@@ -237,7 +236,7 @@ NRI has a low impact on network performance. Instead of holding the connection a
 - The device must onboarded to Microsoft Defender for Endpoint.
 - Preview features must be enabled in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the Beta channel (formerly `InsiderFast`).
-- The mininum version number for Defender for Endpoint version number must be `Beta (Insiders-Fast): 101.24092.0004` or newer. The version number refers to the app version (also known as Platform update).
+- The mininum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the app version (also known as Platform update).
 - Real-Time Protection (RTP) must be enabled.
 - Behavior Monitoring (BM) must be enabled.
 - Cloud-delivered protection must be enabled.
