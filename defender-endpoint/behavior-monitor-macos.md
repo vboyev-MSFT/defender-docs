@@ -45,7 +45,7 @@ Behavior monitoring monitors process behavior to detect and analyze potential th
 - [Preview features](/defender-endpoint/preview) must be enabled in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the [Beta channel](/defender-endpoint/mac-updates) (formerly `InsiderFast`). 
 - The minimum Microsoft Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24042.0002](/defender-endpoint/mac-whatsnew#may-2024-build-101240420008---release-version-2012404280) or newer. The version number refers to the `app_version` (also known as **Platform update**).
-- Real-time protection (RTP) must bee enabled.
+- Real-time protection (RTP) must be enabled.
 - [Cloud-delivered protection](/defender-endpoint/mac-preferences) must be enabled.
 - The device must be explicitly enrolled in the preview program.
 
@@ -244,7 +244,7 @@ NRI should have a low impact on network performance. Instead of holding the conn
 
 ### Requirements for NRI for macOS
 
-- The device must onboarded to Microsoft Defender for Endpoint.
+- The device must be onboarded to Microsoft Defender for Endpoint.
 - Preview features must be turned on in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the Beta channel (formerly `InsiderFast`).
 - The minimum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the `app version` (also known as Platform update).
