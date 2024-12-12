@@ -219,6 +219,15 @@ sudo mdatp threat list
 
 ```
 
+### Frequently Asked Questions (FAQ)
+
+#### What if I see an increase in cpu utilization or memory utilization?
+
+Disable behavior monitoring and see if the issue goes away.
+
+- If the issue doesn't go away, it isn't related to behavior monitoring.
+- If the issue goes away, download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer), and then contact Microsoft support.
+
 ## Network real-time inspection for macOS
 
 > [!IMPORTANT]
@@ -275,11 +284,3 @@ NRI should have a low impact on network performance. Instead of holding the conn
    
    ```
 
-## Frequently Asked Questions (FAQ)
-
-### What if I see an increase in cpu utilization or memory utilization?
-
-Disable behavior monitoring and see if the issue goes away.
-
-- If the issue doesn't go away, it isn't related to behavior monitoring.
-- If the issue goes away, download the [Client Analyzer](https://aka.ms/xMDEClientAnalyzer), and then contact Microsoft support.
