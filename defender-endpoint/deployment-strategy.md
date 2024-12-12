@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 04/03/2024
+ms.date: 12/12/2024
 ---
 
 # Identify Defender for Endpoint architecture and deployment method
@@ -49,14 +49,14 @@ Once you have determined the architecture of your environment and have created a
 
 |Endpoint|Deployment tool|
 |---|---|
-|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Windows servers<br>Linux servers** | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
-|**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
-|**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
+|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br/>  [Group Policy](configure-endpoints-gp.md) <br/>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br/>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br/> [VDI scripts](configure-endpoints-vdi.md)|
+|**Windows servers<br/>Linux servers** <br/>(Requires a server license) | [Onboard Windows devices using a local script](configure-endpoints-script.md)[Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+|**macOS**|[Local script](mac-install-manually.md) <br/> [Microsoft Intune](mac-install-with-intune.md) <br/> [JAMF Pro](mac-install-with-jamf.md) <br/> [Mobile Device Management](mac-install-with-other-mdm.md)|
+|**Linux servers**|[Local script](linux-install-manually.md) <br/> [Puppet](linux-install-with-puppet.md) <br/> [Ansible](linux-install-with-ansible.md) <br/> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br/> [Saltstack](linux-install-with-saltack.md)<br/>[Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md)|
 |**Android**|[Microsoft Intune](android-intune.md)|
-|**iOS**|[Microsoft Intune](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
+|**iOS**|[Microsoft Intune](ios-install.md) <br/> [Mobile Application Manager](ios-install-unmanaged.md) |
 
->[!Note]
+> [!NOTE]
 > For devices that aren't managed by Microsoft Intune or Microsoft Configuration Manager, you can use the Security Management for Microsoft Defender for Endpoint to receive security configurations for Microsoft Defender directly from Intune.
 
 ## Next step
