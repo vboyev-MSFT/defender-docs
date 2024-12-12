@@ -236,7 +236,7 @@ NRI has a low impact on network performance. Instead of holding the connection a
 - The device must onboarded to Microsoft Defender for Endpoint.
 - Preview features must be enabled in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the Beta channel (formerly `InsiderFast`).
-- The mininum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the app version (also known as Platform update).
+- The minimum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the app version (also known as Platform update).
 - Real-Time Protection (RTP) must be enabled.
 - Behavior Monitoring (BM) must be enabled.
 - Cloud-delivered protection must be enabled.
@@ -247,7 +247,8 @@ NRI has a low impact on network performance. Instead of holding the connection a
 
 1. E-mail us at `NRIonMacOS@microsoft.com` with information about your Microsoft Defender for Endpoint OrgID where you would like to have Network Real-Time Inspection (NRI) for macOS enabled. 
 
-   In order to evaluate NRI for macOS, please send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We are enabling this feature on a per-request basis for each tenant.
+   > [!IMPORTANT]
+   > In order to evaluate NRI for macOS, send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We are enabling this feature on a per-request basis for each tenant.
  
 2. Using Terminal, enable Behavior Monitoring if it's not already enabled:
 
