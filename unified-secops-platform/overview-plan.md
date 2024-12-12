@@ -94,30 +94,11 @@ For more information, see [Prioritize data connectors](/azure/sentinel/prioritiz
 
 For example, you might want to use any of the following recommended data sources:
 
-- **Azure services**: If any of the following services are deployed in Azure, use the following connectors to send these resources' Diagnostic Logs to Microsoft Sentinel:
-  
-    - **Azure Firewall**
-    - **Azure Application Gateway**
-    - **Keyvault**
-    - **Azure Kubernetes Service**
-    - **Azure SQL**
-    - **Network Security Groups**
-    - **Azure-Arc Servers**
-  
-  We recommend that you set up Azure Policy to require that their logs be forwarded to the underlying Log Analytics workspace. For more information, see [Create diagnostic settings at scale using Azure Policy](/azure/azure-monitor/essentials/diagnostic-settings-policy)..
-
-- **Virtual machines**: For virtual machines hosted on-premises or in other clouds that require their logs collected, use the following data connectors:
-  
-    - **Windows Security Events using AMA**
-    - Events via **Defender for Endpoint** (for server)
-    - **Syslog**
-
-- **Network virtual appliances / on-premises sources**: For network virtual appliances or other on-premises sources that generate Common Event Format (CEF) or SYSLOG logs, use the following data connectors:
-
-    - **Syslog via AMA**
-    - **Common Event Format (CEF) via AMA**
-
-  For more information, see [Ingest Syslog and CEF messages to Microsoft Sentinel with the Azure Monitor Agent](/azure/sentinel/connect-cef-syslog-ama?branch=main&tabs=single%2Ccef%2Cportal).
+  |Scenario  |Data sources  |
+  |---------|---------|
+  |**Azure services**     | If any of the following services are deployed in Azure, use the following connectors to send these resources' Diagnostic Logs to Microsoft Sentinel: <br><br>    - **Azure Firewall** <br>- **Azure Application Gateway** <br>- **Keyvault**<br>    - **Azure Kubernetes Service**<br> - **Azure SQL**<br>- **Network Security Groups**<br>    - **Azure-Arc Servers** <br><br>We recommend that you set up Azure Policy to require that their logs be forwarded to the underlying Log Analytics workspace. For more on information, see [Create diagnostic settings at scale using Azure Policy](/azure/azure-monitor/essentials/diagnostic-settings-policy).        |
+  |**Virtual machines**     |  For virtual machines hosted on-premises or in other clouds that require their logs collected, use the following data connectors: <br><br>    - **Windows Security Events using AMA**<br>    - Events via **Defender for Endpoint** (for server)<br>- **Syslog**       |
+  |**Network virtual appliances / on-premises sources**     |   For network virtual appliances or other on-premises sources that generate Common Event Format (CEF) or SYSLOG logs, use the following data connectors: <br><br>- **Syslog via AMA** <br>- **Common Event Format (CEF) via AMA** <br><br>   For more information, see [Ingest Syslog and CEF messages to Microsoft Sentinel with the Azure Monitor Agent](/azure/sentinel/connect-cef-syslog-ama?branch=main&tabs=single%2Ccef%2Cportal).    |
 
 ### Plan your budget
 
