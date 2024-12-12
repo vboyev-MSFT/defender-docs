@@ -37,15 +37,15 @@ f1.keywords: NOCSH
 
 ## Prerequisites
 
-- Device is onboarded to Microsoft Defender for Endpoint.
-- [Preview features](/defender-endpoint/preview) is enabled in the Microsoft XDR portal ([https://security.microsoft.com](https://security.microsoft.com)).
-- Device must be in the [Beta channel](/defender-endpoint/mac-updates) (formerly InsiderFast).
-- Minimal Microsoft Defender for Endpoint version number must be Beta (Insiders-Fast): 101.24042.0002 or newer. Version number refers to the **app_version** (also known as **Platform update**).
-- Ensure that Real-Time Protection (RTP) is enabled.
-- Ensure [cloud-delivered protection](/defender-endpoint/mac-preferences) is enabled.
-- Device must be explicitly enrolled into the preview.
+- The device must be onboarded to Microsoft Defender for Endpoint.
+- [Preview features](/defender-endpoint/preview) are enabled in the [Microsoft Defender portal](https://security.microsoft.com).
+- The device must be in the [Beta channel](/defender-endpoint/mac-updates) (formerly `InsiderFast`).
+- The minimum Microsoft Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24042.0002](/defender-endpoint/mac-whatsnew#may-2024-build-101240420008---release-version-2012404280) or newer. The version number refers to the `app_version` (also known as **Platform update**).
+- Real-time protection (RTP) must bee enabled.
+- [Cloud-delivered protection](/defender-endpoint/mac-preferences) must be enabled.
+- The device must be explicitly enrolled in the preview program.
 
-## Overview
+## Overview of behavior monitoring
 
 Behavior monitoring monitors process behavior to detect and analyze potential threats based on the behavior of the applications, daemons, and files within the system. As behavior monitoring observes how the software behaves in real-time, it can adapt quickly to new and evolving threats and block them.
 
@@ -148,7 +148,7 @@ The following sections describe each of these methods in detail.
 
 8. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices or to a Device Group or User Group.**
 
-#### Via JamF deployment
+#### JamF deployment
 
 1. Copy the following XML to create a _.plist_ file and save it as **Save as BehaviorMonitoring_for_MDE_on_macOS.plist**
 
@@ -209,12 +209,14 @@ For more information, see: [Resources for Microsoft Defender for Endpoint on mac
 
 See [Behavior Monitoring demonstration](demonstration-behavior-monitoring.md).
 
-### Verifying Behavior Monitoring detection
+### Verifying behavior monitoring detections
 
 The existing Microsoft Defender for Endpoint on macOS command line interface can be used to review behavior monitoring details and artifacts.
 
 ```bash
+
 sudo mdatp threat list
+
 ```
 
 ## Network real-time inspection for macOS
@@ -226,7 +228,7 @@ The network real-time inspection (NRI) for macOS feature enhances real-time prot
 
 ### Is there an impact on performance?
 
-NRI has a low impact on network performance. Instead of holding the connection and blocking, NRI makes a copy of the packet as it crosses the network, and NRI performs an asynchronous inspection.
+NRI should have a low impact on network performance. Instead of holding the connection and blocking, NRI makes a copy of the packet as it crosses the network, and NRI performs an asynchronous inspection.
 
 > [!NOTE]
 > When network real-time inspection (NRI) for macOS is enabled, you might see an increase in memory utilization. We are exploring ways to further optimize memory utilization.
@@ -236,7 +238,7 @@ NRI has a low impact on network performance. Instead of holding the connection a
 - The device must onboarded to Microsoft Defender for Endpoint.
 - Preview features must be turned on in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the Beta channel (formerly `InsiderFast`).
-- The minimum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the app version (also known as Platform update).
+- The minimum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the `app version` (also known as Platform update).
 - Real-time protection must be enabled.
 - Behavior monitoring must be enabled.
 - Cloud-delivered protection must be enabled.
@@ -249,7 +251,7 @@ NRI has a low impact on network performance. Instead of holding the connection a
    > [!IMPORTANT]
    > In order to evaluate NRI for macOS, send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We're enabling this feature on a per-request basis for each tenant.
  
-2. Using Terminal, enable behavior monitoring if it's not already enabled:
+2. Enable behavior monitoring if it's not already enabled:
 
    ```Bash
 
@@ -257,7 +259,7 @@ NRI has a low impact on network performance. Instead of holding the connection a
    
    ```
  
-3. Using Terminal, enable network protection in block mode:
+3. Enable network protection in block mode:
 
    ```Bash
 
@@ -265,10 +267,10 @@ NRI has a low impact on network performance. Instead of holding the connection a
    
    ```
 
-4. Using Terminal, enable network real-time inspection (NRI):
+4. Enable network real-time inspection (NRI):
 
    ```Bash
-   
+
    sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"
    
    ```
