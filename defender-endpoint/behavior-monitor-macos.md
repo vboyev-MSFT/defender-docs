@@ -217,7 +217,7 @@ The existing Microsoft Defender for Endpoint on macOS command line interface can
 sudo mdatp threat list
 ```
 
-## Network real-time inspection for Mac
+## Network real-time inspection for macOS
 
 > [!IMPORTANT]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -226,26 +226,25 @@ The network real-time inspection (NRI) for macOS feature enhances real-time prot
 
 ### Is there an impact on performance?
 
-NRI has a low impact on network performance. Instead of holding the connection and blocking, NRI makes a copy of the packet as it crosses the network and performs an asynchronous inspection.
+NRI has a low impact on network performance. Instead of holding the connection and blocking, NRI makes a copy of the packet as it crosses the network, and NRI performs an asynchronous inspection.
 
 > [!NOTE]
 > When network real-time inspection (NRI) for macOS is enabled, you might see an increase in memory utilization. We are exploring ways to further optimize memory utilization.
 
-### Prerequisites for NRI
+### Requirements for NRI for macOS
 
 - The device must onboarded to Microsoft Defender for Endpoint.
-- Preview features must be enabled in the [Microsoft Defender portal](https://security.microsoft.com).
+- Preview features must be turned on in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the Beta channel (formerly `InsiderFast`).
 - The minimum version number for Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24092.0004](/defender-endpoint/mac-whatsnew#oct-2024-build-101240920004---release-version-2012409240) or newer. The version number refers to the app version (also known as Platform update).
-- Real-Time Protection (RTP) must be enabled.
-- Behavior Monitoring (BM) must be enabled.
+- Real-time protection must be enabled.
+- Behavior monitoring must be enabled.
 - Cloud-delivered protection must be enabled.
 - The device must be explicitly enrolled into the preview.
 
-
 ### Instructions
 
-1. E-mail us at `NRIonMacOS@microsoft.com` with information about your Microsoft Defender for Endpoint OrgID where you would like to have Network Real-Time Inspection (NRI) for macOS enabled. 
+1. E-mail us at `NRIonMacOS@microsoft.com` with information about your Microsoft Defender for Endpoint OrgID where you would like to have network real-time inspection (NRI) for macOS enabled. 
 
    > [!IMPORTANT]
    > In order to evaluate NRI for macOS, send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We're enabling this feature on a per-request basis for each tenant.
@@ -254,11 +253,11 @@ NRI has a low impact on network performance. Instead of holding the connection a
 
    `sudo mdatp config behavior-monitoring --value enabled`
  
-3. Using Terminal, enable Network Protection in block mode for macOS:
+3. Using Terminal, enable network protection in block mode:
 
    `sudo mdatp config network-protection enforcement-level --value block`
 
-4. Using Terminal, enable Network Real-Time Inspection (NRI) for macOS:
+4. Using Terminal, enable network real-time inspection (NRI):
 
    `sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"`
 
