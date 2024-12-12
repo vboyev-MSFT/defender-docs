@@ -251,15 +251,27 @@ NRI has a low impact on network performance. Instead of holding the connection a
  
 2. Using Terminal, enable behavior monitoring if it's not already enabled:
 
-   `sudo mdatp config behavior-monitoring --value enabled`
+   ```Bash
+
+   sudo mdatp config behavior-monitoring --value enabled
+   
+   ```
  
 3. Using Terminal, enable network protection in block mode:
 
-   `sudo mdatp config network-protection enforcement-level --value block`
+   ```Bash
+
+   sudo mdatp config network-protection enforcement-level --value block
+   
+   ```
 
 4. Using Terminal, enable network real-time inspection (NRI):
 
-   `sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"`
+   ```Bash
+   
+   sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"
+   
+   ```
 
 ## Frequently Asked Questions (FAQ)
 
