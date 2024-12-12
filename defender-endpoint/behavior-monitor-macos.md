@@ -244,29 +244,23 @@ NRI has a low impact on network performance. Instead of holding the connection a
 - The device must be explicitly enrolled into the preview.
 
 
+### Instructions
 
-Instructions
-Step 1) E-mail us with information about your Microsoft Defender for Endpoint (MDE) OrgID where you would like to have Network Real-Time Inspection (NRI) for macOS enabled.
-Important
-In order to evaluate network response inspection (NRI) for macOS, please send email to "NRIonMacOS@microsoft.comNRIonMacOS@microsoft.com" with your MDE Org ID. We will enable the feature on your tenant per request basis.
- 
-Step 2) Enable Behavior Monitoring if not already enabled
- 
-Terminal
-sudo mdatp config behavior-monitoring --value enabled
- 
-Step 3) Enable Network Protection in block mode for macOS
- 
-Terminal
-sudo mdatp config network-protection enforcement-level --value block
- 
-Step 4) Enable Network Real-Time Inspection (NRI) for macOS
- 
-Terminal
-sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"
+1. E-mail us at `NRIonMacOS@microsoft.com` with information about your Microsoft Defender for Endpoint OrgID where you would like to have Network Real-Time Inspection (NRI) for macOS enabled. 
 
+   In order to evaluate NRI for macOS, please send email to `NRIonMacOS@microsoft.com`. Include your Defender for Endpoint Org ID. We are enabling this feature on a per-request basis for each tenant.
+ 
+2. Using Terminal, enable Behavior Monitoring if it's not already enabled:
 
+   `sudo mdatp config behavior-monitoring --value enabled`
+ 
+3. Using Terminal, enable Network Protection in block mode for macOS:
 
+   `sudo mdatp config network-protection enforcement-level --value block`
+
+4. Using Terminal, enable Network Real-Time Inspection (NRI) for macOS:
+
+   `sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"`
 
 ## Frequently Asked Questions (FAQ)
 
