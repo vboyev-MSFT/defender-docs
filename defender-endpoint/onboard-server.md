@@ -26,17 +26,19 @@ ms.date: 12/18/2020
 - Microsoft Defender for Endpoint Server
 - Microsoft Defender for Servers
 
-You can choose from several options to onboard a server to Microsoft Defender for Endpoint. Make sure to review the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md). To onboard servers to Defender for Endpoint, [server licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint) are required. You can choose from these options:
+You can choose from several options to onboard a server to Microsoft Defender for Endpoint. Make sure to review the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md). 
+
+To onboard servers to Defender for Endpoint, [server licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint) are required. You can choose from these options:
 
 - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering; or
 - Microsoft Defender for Endpoint Server
 
 The following table lists deployment methods for onboarding servers:
 
-
 |Operating system|Deployment method|
 |---|---|
 |**Windows Server** |
-| Windows Server 2022 <br/>Windows Server 2019<br/>Windows Server, version 1803 | [Local script](configure-endpoints-script.md)<br/>[Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers), which [integrates with Defender for Endpoint](azure-server-integration.md)<br/>Microsoft Configuration Manager <br/> Group Policy <br/>VDI scripts |
-|**Linux Servers**|[Local script](linux-install-manually.md) <br/> [Puppet](linux-install-with-puppet.md) <br/> [Ansible](linux-install-with-ansible.md) <br/> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br/> [Saltstack](linux-install-with-saltack.md)<br/>[Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md)|
+| Windows Server 2022 <br/>Windows Server 2019<br/>Windows Server, version 1803 | [Local script](configure-endpoints-script.md)<br/>[Defender for Cloud](/azure/defender-for-cloud/plan-defender-for-servers), which [integrates with Defender for Endpoint](azure-server-integration.md)<br/> Microsoft Configuration Manager <br/> Group Policy <br/>VDI scripts |
+| Windows Server 2016 <br/>Windows Server 2012 R2 | WHAT |
+|**Linux Server** <br/>(see ) |[Local script](linux-install-manually.md) (also referred to as manual deployment) <br/> [Puppet](linux-install-with-puppet.md) <br/> [Ansible](linux-install-with-ansible.md) <br/> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br/> [Saltstack](linux-install-with-saltack.md)<br/>[Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md)|
 
