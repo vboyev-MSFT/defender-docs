@@ -28,5 +28,11 @@ ms.date: 12/18/2020
 - [Microsoft Defender XDR](/defender-xdr)
 - Microsoft Defender for Servers
 
+You can choose from several options to onboard a server to Microsoft Defender for Endpoint.
 
+
+|Endpoint|Deployment tool|
+|---|---|
+|**Windows Server** <br/>(Requires a server license) | [Onboard Windows devices using a local script](configure-endpoints-script.md)<br/>[Integration with Microsoft Defender for Cloud](azure-server-integration.md) |
+|**Linux Servers**|[Local script](linux-install-manually.md) <br/> [Puppet](linux-install-with-puppet.md) <br/> [Ansible](linux-install-with-ansible.md) <br/> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br/> [Saltstack](linux-install-with-saltack.md)<br/>[Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md)|
 
