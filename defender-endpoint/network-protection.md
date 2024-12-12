@@ -55,14 +55,15 @@ The following table summarizes network protection areas of coverage.
 > [!NOTE]
 > On Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
 > On Windows, network protection does not monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
-> - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
-> - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
-> - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
+- IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+- Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
+- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
 > - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, can only be blocked on first party browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
 > - Full URL path blocks can be applied for unencrypted URLs.
->
+> 
 > There might be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
-
+> 
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
