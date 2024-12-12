@@ -42,7 +42,7 @@ Behavior monitoring monitors process behavior to detect and analyze potential th
 ## Prerequisites
 
 - The device must be onboarded to Microsoft Defender for Endpoint.
-- [Preview features](/defender-endpoint/preview) are enabled in the [Microsoft Defender portal](https://security.microsoft.com).
+- [Preview features](/defender-endpoint/preview) must be enabled in the [Microsoft Defender portal](https://security.microsoft.com).
 - The device must be in the [Beta channel](/defender-endpoint/mac-updates) (formerly `InsiderFast`). 
 - The minimum Microsoft Defender for Endpoint version number must be Beta (Insiders-Fast): [101.24042.0002](/defender-endpoint/mac-whatsnew#may-2024-build-101240420008---release-version-2012404280) or newer. The version number refers to the `app_version` (also known as **Platform update**).
 - Real-time protection (RTP) must bee enabled.
