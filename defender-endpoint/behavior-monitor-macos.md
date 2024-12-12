@@ -223,7 +223,7 @@ sudo mdatp threat list
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-The network real-time inspection (NRI) for macOS feature enhances real-time protection (RTP) by using Behavior Monitoring (BM) in concert with file, process, and other events to detect suspicious activity. Behavior monitoring triggers both telemetry and sample submissions on suspicious files for Microsoft to analyze from Cloud Protection (CP) backend, delivered to the client, resulting in a removal of the threat.
+The network real-time inspection (NRI) for macOS feature enhances real-time protection (RTP) by using behavior monitoring in concert with file, process, and other events to detect suspicious activity. Behavior monitoring triggers both telemetry and sample submissions on suspicious files for Microsoft to analyze from Cloud Protection (CP) backend, delivered to the client, resulting in a removal of the threat.
 
 ### Is there an impact on performance?
 
