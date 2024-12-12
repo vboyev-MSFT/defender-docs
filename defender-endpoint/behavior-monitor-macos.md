@@ -35,6 +35,10 @@ f1.keywords: NOCSH
 > [!IMPORTANT]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+## Overview of behavior monitoring
+
+Behavior monitoring monitors process behavior to detect and analyze potential threats based on the behavior of the applications, daemons, and files within the system. As behavior monitoring observes how the software behaves in real-time, it can adapt quickly to new and evolving threats and block them.
+
 ## Prerequisites
 
 - The device must be onboarded to Microsoft Defender for Endpoint.
@@ -45,11 +49,7 @@ f1.keywords: NOCSH
 - [Cloud-delivered protection](/defender-endpoint/mac-preferences) must be enabled.
 - The device must be explicitly enrolled in the preview program.
 
-## Overview of behavior monitoring
-
-Behavior monitoring monitors process behavior to detect and analyze potential threats based on the behavior of the applications, daemons, and files within the system. As behavior monitoring observes how the software behaves in real-time, it can adapt quickly to new and evolving threats and block them.
-
-## Deployment instructions
+## Deployment instructions for behavior monitoring
 
 To deploy behavior monitoring in Microsoft Defender for Endpoint on macOS, you must change the behavior monitoring policy using one of the following methods:
 
@@ -244,7 +244,7 @@ NRI should have a low impact on network performance. Instead of holding the conn
 - Cloud-delivered protection must be enabled.
 - The device must be explicitly enrolled into the preview.
 
-### Instructions
+### Deployment instructions for NRI for macOS
 
 1. E-mail us at `NRIonMacOS@microsoft.com` with information about your Microsoft Defender for Endpoint OrgID where you would like to have network real-time inspection (NRI) for macOS enabled. 
 
