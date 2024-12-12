@@ -230,7 +230,7 @@ The network real-time inspection (NRI) for macOS feature enhances real-time prot
 NRI has a low impact on network performance. Instead of holding the connection and blocking, NRI makes a copy of the packet as it crosses the network and performs an asynchronous inspection.
 
 > [!NOTE]
-> When Network Real-Time Inspection (NRI) for macOS is enabled you might see an increased memory utilization.  We are looking at further optimizing the memory utilization.
+> When network real-time inspection (NRI) for macOS is enabled, you might see an increase in memory utilization. We are exploring ways to further optimize memory utilization.
 
 ### Prerequisites for NRI
 
