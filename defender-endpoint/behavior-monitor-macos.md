@@ -1,12 +1,12 @@
 ---
 title: Behavior Monitoring in Microsoft Defender Antivirus on macOS
 description: Behavior Monitoring in Microsoft Defender Antivirus on macOS
-author: YongRhee-MSFT
-ms.author: yongrhee
+author: denisebmsft
+ms.author: deniseb
 manager: deniseb
 ms.service: defender-endpoint
 ms.topic: overview
-ms.date: 05/29/2024
+ms.date: 12/11/2024
 ms.subservice: ngp
 audience: ITPro
 ms.collection:
@@ -217,9 +217,60 @@ The existing Microsoft Defender for Endpoint on macOS command line interface can
 sudo mdatp threat list
 ```
 
-### Frequently Asked Questions (FAQ)
+## Network real-time inspection for Mac
 
-#### What if I see an increase in cpu utilization or memory utilization?
+> [!IMPORTANT]
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+
+The network real-time inspection (NRI) for macOS feature enhances real-time protection (RTP) by using Behavior Monitoring (BM) in concert with file, process, and other events to detect suspicious activity. Behavior monitoring triggers both telemetry and sample submissions on suspicious files for Microsoft to analyze from Cloud Protection (CP) backend, delivered to the client, resulting in a removal of the threat.
+
+### Is there an impact on performance?
+
+NRI has a low impact on network performance. Instead of holding the connection and blocking, NRI makes a copy of the packet as it crosses the network and performs an asynchronous inspection.
+
+> [!NOTE]
+> When Network Real-Time Inspection (NRI) for macOS is enabled you might see an increased memory utilization.  We are looking at further optimizing the memory utilization.
+
+### Prerequisites for NRI
+
+- The device must onboarded to Microsoft Defender for Endpoint.
+- Preview features must be enabled in the [Microsoft Defender portal](https://security.microsoft.com).
+- The device must be in the Beta channel (formerly `InsiderFast`).
+- The mininum version number for Defender for Endpoint version number must be `Beta (Insiders-Fast): 101.24092.0004` or newer. The version number refers to the app version (also known as Platform update).
+- Real-Time Protection (RTP) must be enabled.
+- Behavior Monitoring (BM) must be enabled.
+- Cloud-delivered protection must be enabled.
+- The device must be explicitly enrolled into the preview.
+
+
+
+Instructions
+Step 1) E-mail us with information about your Microsoft Defender for Endpoint (MDE) OrgID where you would like to have Network Real-Time Inspection (NRI) for macOS enabled.
+Important
+In order to evaluate network response inspection (NRI) for macOS, please send email to "NRIonMacOS@microsoft.comNRIonMacOS@microsoft.com" with your MDE Org ID. We will enable the feature on your tenant per request basis.
+ 
+Step 2) Enable Behavior Monitoring if not already enabled
+ 
+Terminal
+sudo mdatp config behavior-monitoring --value enabled
+ 
+Step 3) Enable Network Protection in block mode for macOS
+ 
+Terminal
+sudo mdatp config network-protection enforcement-level --value block
+ 
+Step 4) Enable Network Real-Time Inspection (NRI) for macOS
+ 
+Terminal
+sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"
+
+
+
+
+## Frequently Asked Questions (FAQ)
+
+### What if I see an increase in cpu utilization or memory utilization?
 
 Disable Behavior Monitoring and see if the issue goes away.
 
