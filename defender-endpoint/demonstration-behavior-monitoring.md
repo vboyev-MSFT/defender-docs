@@ -156,7 +156,7 @@ To demonstrate how Behavior Monitoring blocks a payload:
 
    `zsh: killed      sudo bash BM_test.sh`
 
-   The file was quarantined by Defender for Endpoint on macOS. Use the following command to list all the detected threats:
+   The file is quarantined by Defender for Endpoint on macOS. Use the following command to list all the detected threats:
 
    ```bash
    mdatp threat list
