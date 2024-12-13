@@ -387,7 +387,7 @@ For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified sol
 > [!NOTE]
 > Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **NIS** > **Consumers** > **IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
 
-For more information, see: [Turn on network protection](enable-network-protection.md)
+For more information, see: [Turn on network protection](enable-network-protection.md).
 
 #### Windows Servers and Windows Multi-session configuration requires PowerShell
 
