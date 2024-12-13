@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 12/13/2024
 ---
 
 # Onboard servers to Microsoft Defender for Endpoint
@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 **Applies to:**
 
 - Microsoft Defender for Endpoint Server
-- Microsoft Defender for Servers
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
 You can choose from several options to onboard a server to Microsoft Defender for Endpoint. Make sure to review the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md). 
 
