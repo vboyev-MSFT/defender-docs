@@ -123,11 +123,11 @@ Support for Command and Control servers (C2) is an important part of this ransom
 
 | New mapping  | Response category  | Sources |
 | :--- | :--- | :--- |
-| `phishing` | Phishing | `SmartScreen` |
-| `malicious` | Malicious | `SmartScreen` |
-| `command and control` | C2 | `SmartScreen` |
-| `command and control` | COCO | `SmartScreen` |
-| `malicious` | Untrusted | `SmartScreen` |
+| `phishing` | `Phishing` | `SmartScreen` |
+| `malicious` | `Malicious` | `SmartScreen` |
+| `command and control` | `C2` | `SmartScreen` |
+| `command and control` | `COCO` | `SmartScreen` |
+| `malicious` | `Untrusted` | `SmartScreen` |
 | `by your IT admin` | `CustomBlockList` |   |
 | `by your IT admin` | `CustomPolicy` |   |
 
