@@ -56,7 +56,7 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 
 ## Prerequisites
 
-- Defender for Endpoint version "101.24022.0001", or higher, needs to be installed on the Linux endpoints.
+- Defender for Endpoint version `101.24022.0001` or later must be installed on the Linux endpoints.
 - The Linux endpoints need to have connectivity to the mirror server.
 - The Linux endpoint must be running any of the Defender for Endpoint-supported distributions.
 - The mirror server can be either an HTTP/HTTPS server or a network share server, for example, an NFS Server.
