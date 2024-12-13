@@ -44,7 +44,7 @@ You can create a detection rule on a Configuration Manager application to contin
 
 ## Configure sample collection settings
 
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
+For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through the Microsoft Defender portal to submit a file for deep analysis.
 
 > [!NOTE]
 > These configuration settings are typically done through Configuration Manager.
@@ -70,9 +70,7 @@ The default value in case the registry key doesn't exist is 1.
 
 For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## Onboard Windows devices using Microsoft Configuration Manager
-
-### Collection creation
+## Create a collection
 
 To onboard Windows devices with Microsoft Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
 
@@ -122,15 +120,7 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 After completing this task you have a device collection with all the Windows endpoints in the environment.
 
-## Other recommended configuration settings
-
-After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
-
-### Device collection configuration
-
-If you're using Configuration Manager, version 2002 or later, you can choose to broaden the deployment to include servers or down-level clients.
-
-### Next generation protection configuration
+## Configure next generation protection
 
 The configuration settings listed in the following table are recommended:
 
@@ -147,21 +137,28 @@ To deploy Microsoft Defender Antivirus and attack surface reduction policies thr
 - Install the Endpoint Protection client from a command prompt.
 - Verify the Endpoint Protection client installation.
 
-##### Enable Endpoint Protection and configure custom client settings
+### Enable Endpoint Protection and configure custom client settings
 
 Follow the steps to enable endpoint protection and configuration of custom client settings:
 
 1. In the Configuration Manager console, click **Administration.**
+
 1. In the **Administration** workspace, click **Client Settings.**
+
 1. On the **Home** tab, in the **Create** group, click **Create Custom Client Device Settings.**
+
 1. In the **Create Custom Client Device Settings** dialog box, provide a name and a description for the group of settings, and then select **Endpoint Protection.**
+
 1. Configure the Endpoint Protection client settings that you require. For a full list of Endpoint Protection client settings that you can configure, see the Endpoint Protection section in [About client settings.](/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
 
     > [!IMPORTANT]
     > Install the Endpoint Protection site system role before you configure client settings for Endpoint Protection.
 
+
 1. Click **OK** to close the **Create Custom Client Device Settings** dialog box. The new client settings are displayed in the **Client Settings** node of the **Administration** workspace.
+
 1. Next, deploy the custom client settings to a collection. Select the custom client settings you want to deploy. In the **Home** tab, in the **Client Settings** group, click **Deploy.**
+
 1. In the **Select Collection** dialog box, choose the collection to which you want to deploy the client settings and then click **OK.** The new deployment is shown in the **Deployments** tab of the details pane.
 
 Clients are configured with these settings when they next download client policy. For more information, see [Initiate policy retrieval for a Configuration Manager client.](/mem/configmgr/core/clients/manage/manage-clients)
@@ -169,12 +166,13 @@ Clients are configured with these settings when they next download client policy
 > [!NOTE]
 > For Windows Server 2012 R2 and Windows Server 2016 managed by Configuration Manager 2207 and later versions, onboard using the [Microsoft Defender for Endpoint (MDE) Client (recommended)](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#bkmk_2207) setting. Alternatively, you can use older versions of Configuration Manager to perform a migration. For more information, see [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md).
      
+### Install the Endpoint Protection client using Command Prompt
 
-##### Installation of Endpoint Protection client from a command prompt
 Follow the steps to complete installation of endpoint protection client from the command prompt.
 
 1. Copy **scepinstall.exe** from the **Client** folder of the Configuration Manager installation folder to the computer on which you want to install the Endpoint Protection client software.
-1. Open a command prompt as an administrator. Change directory to the folder with the installer. Then run ```scepinstall.exe```, adding any extra command-line properties that you require:
+
+1. Open Command Prompt as an administrator. Change directory to the folder with the installer. Then run ```scepinstall.exe```, adding any extra command-line properties that you require:
 
      |**Property**  |**Description**  |
      |---------|---------|
@@ -185,6 +183,7 @@ Follow the steps to complete installation of endpoint protection client from the
      |```/sqmoptin```|Opt-in to the Microsoft Customer Experience Improvement Program (CEIP)|
 
 1. Follow the on-screen instructions to complete the client installation.
+
 1. If you downloaded the latest update definition package, copy the package to the client computer, and then double-click the definition package to install it.
 
      > [!NOTE]
@@ -194,21 +193,25 @@ Follow the steps to complete installation of endpoint protection client from the
 
 ```scepinstall.exe /policy <full path>\<policy file>```
 
-##### Verify the Endpoint Protection client installation
+
+### Verify the Endpoint Protection client installation
 
 After you install the Endpoint Protection client on your reference computer, verify that the client is working correctly.
 
 1. On the reference computer, open **System Center Endpoint Protection** from the Windows notification area.
+
 1. On the **Home** tab of the **System Center Endpoint Protection** dialog box, verify that **Real-time protection** is set to **On.**
+
 1. Verify that **up to date** is displayed for **Virus and spyware definitions.**
+
 1. To make sure that your reference computer is ready for imaging, under **Scan options,** select **Full,** and then click **Scan now.**
 
 
-#### Network protection
+## Configure network protection
 
 Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
-#### Controlled folder access
+## Configure controlled folder access
 
 Enable the feature in audit mode for at least 30 days. After this period, review detections and create a list of applications that are allowed to write to protected directories.
 
@@ -286,11 +289,9 @@ Value: "1"
 
 For more information, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## Related topics
-- [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows devices using a local script](configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
-- [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+## Related articles
+
+- [Onboard servers to Microsoft Defender for Endpoint](onboard-server.md)
+- [Onboard Windows and Mac client devices to Microsoft Defender for Endpoint](onboard-client.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
