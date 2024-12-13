@@ -22,6 +22,11 @@ ms.date: 12/02/2024
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+**Applies to**:
+
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
+
 This document describes the Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux.
 
 This feature enables an organization to update the security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints with limited or no exposure to the internet using a local hosting server (termed as *Mirror Server* in this document).
