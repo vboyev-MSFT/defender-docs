@@ -12,7 +12,7 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 05/20/2024
+ms.date: 12/13/2024
 ms.subservice: onboard
 search.appverid: met150
 ---
@@ -21,40 +21,28 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-- [Microsoft Defender XDR](/defender-xdr)
-- Microsoft Configuration Manager current branch
-- System Center 2012 R2 Configuration Manager
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
-
-## Prerequisites
-- [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
-
-> [!IMPORTANT]
-> The Endpoint Protection point site system role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints.  Without this role, the endpoints in the device collection won't receive the configured antivirus and attack surface reduction policies.
 
 You can use Configuration Manager to onboard endpoints to the Microsoft Defender for Endpoint service. 
 
 There are several options you can use to onboard devices using Configuration Manager:
+
 - [Onboard devices using System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
 - [Tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started)
 
-
 > [!NOTE]
 > Defender for Endpoint doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](/windows-hardware/test/assessments/out-of-box-experience) phase. Make sure users complete OOBE after running Windows installation or upgrading.
->
-> Note that it's possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
-> If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
->
-> This behavior can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
-> This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
-For more information, see [Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
 
-### Configure sample collection settings
+You can create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program. If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager reattempts to onboard the device until the rule detects the status change. For more information, see [Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
+
+
+## Prerequisites
+
+- See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
+
+- [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role). This role is required so that antivirus and attack surface reduction policies are properly deployed to the targeted endpoints. Without this role, endpoints in the device collection won't receive the configured antivirus and attack surface reduction policies.
+
+## Configure sample collection settings
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
@@ -82,7 +70,7 @@ The default value in case the registry key doesn't exist is 1.
 
 For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-### Onboard Windows devices using Microsoft Configuration Manager
+## Onboard Windows devices using Microsoft Configuration Manager
 
 ### Collection creation
 
@@ -144,35 +132,23 @@ If you're using Configuration Manager, version 2002 or later, you can choose to 
 
 ### Next generation protection configuration
 
-The following configuration settings are recommended:
+The configuration settings listed in the following table are recommended:
 
-#### Scan
+| Setting | Description |
+|--|--|
+| Scan | Scan removable storage devices such as USB drives: Yes |
+| Real-time Protection | Enable Behavioral Monitoring: Yes <br/><br/>Enable protection against Potentially Unwanted Applications at download and prior to installation: Yes |
+| Cloud Protection Service | Cloud Protection Service membership type: Advanced membership |
+| Attack surface reduction | Configure all available rules to Audit. <br/><br/>Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections. |
 
-- Scan removable storage devices such as USB drives: Yes
-
-#### Real-time Protection
-
-- Enable Behavioral Monitoring: Yes
-- Enable protection against Potentially Unwanted Applications at download and prior to installation: Yes
-
-#### Cloud Protection Service
-
-- Cloud Protection Service membership type: Advanced membership
-
-#### Attack surface reduction
-
-Configure all available rules to Audit.
-
-> [!NOTE]
-> Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
-
-For deploying Microsoft Defender Antivirus and attack surface reduction policies through Microsoft Configuration Manager (SCCM) follow the steps:
+To deploy Microsoft Defender Antivirus and attack surface reduction policies through Microsoft Configuration Manager (SCCM) follow the steps:
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.
 - Verify the Endpoint Protection client installation.
 
 ##### Enable Endpoint Protection and configure custom client settings
+
 Follow the steps to enable endpoint protection and configuration of custom client settings:
 
 1. In the Configuration Manager console, click **Administration.**
