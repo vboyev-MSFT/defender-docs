@@ -62,7 +62,7 @@ Here are a few important points to keep in mind:
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
 - Encrypted URLs (full path) are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge).
 - Encrypted URLs (FQDN only) are blocked in non-Microsoft browsers.
-- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
+- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDNs, are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
 - Full URL path blocks are applied for unencrypted URLs.
  
 There might be up to two hours of latency (usually less) between the time when the action is taken and the URL/IP is blocked.
