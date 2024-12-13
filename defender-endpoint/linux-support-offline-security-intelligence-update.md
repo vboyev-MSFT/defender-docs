@@ -106,7 +106,7 @@ Perform the following steps to get the downloader script:
 - Extract the zip.
 
 > [!NOTE]
-> Schedule a [cron job](#scheduling-a-cron-job) to keep the repo/downloaded zip file updated to the latest version at regular intervals.
+> Schedule a cron job to keep the repo/downloaded zip file updated to the latest version at regular intervals.
 
 After cloning the repo/downloaded zip file, the local directory structure should be as follows:
 
@@ -153,7 +153,7 @@ To manually execute the downloader script, configure the parameters in the `sett
   ```
 
 > [!NOTE]
-> Schedule a [cron job](#scheduling-a-cron-job) to execute this script to download the latest security intelligence updates in the mirror server at regular intervals.
+> Schedule a cron job to execute this script to download the latest security intelligence updates in the mirror server at regular intervals.
 
 ### Host the offline security intelligence updates on the mirror server
 
