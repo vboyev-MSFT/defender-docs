@@ -7,7 +7,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
-ms.date: 05/20/2024
+ms.date: 12/13/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -23,12 +23,8 @@ ms.subservice: onboard
 
 **Applies to:**
 
-- Windows Server 2016 and Windows Server 2012 R2
-- Windows Server Semi-Annual Enterprise Channel
-- Windows Server 2019 and later
-- Windows Server 2019 core edition
-- Windows Server 2022
-- [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
