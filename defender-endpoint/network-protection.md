@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to malicious or suspic
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 12/12/2024
+ms.date: 12/13/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -53,17 +53,20 @@ The following table summarizes network protection areas of coverage.
 | Web Content Filtering | SmartScreen must be enabled | Network protection must be in block mode | Not supported |
 
 > [!NOTE]
-> On Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
+> On Mac and Linux, you must have network protection in block mode for these features to be supported in the Microsoft Edge browser.
 > On Windows, network protection does not monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
-- IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
+
+Here are a few important points to keep in mind:
+
+- IP is supported for all three protocols (`TCP`, `HTTP`, and `HTTPS` (TLS)).
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
-- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
-> - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
-> - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, can only be blocked on first party browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
-> - Full URL path blocks can be applied for unencrypted URLs.
-> 
-> There might be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
-> 
+- Encrypted URLs (full path) are only blocked on Microsoft browsers (Internet Explorer, Edge).
+- Encrypted URLs (FQDN only) are blocked in non-Microsoft browsers.
+- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, are only blocked on Microsoft browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
+- Full URL path blocks are applied for unencrypted URLs.
+ 
+There might be up to two hours of latency (usually less) between the time when the action is taken and the URL/IP is blocked.
+ 
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
@@ -71,6 +74,7 @@ Watch this video to learn how Network protection helps reduce the attack surface
 ## Requirements for network protection
 
 Network protection requires devices running one of the following operating systems:
+
 - Windows 10 or 11 (Pro or Enterprise) (see [Supported Windows versions](minimum-requirements.md#supported-windows-versions))
 - Windows Server, version 1803 or later (see [Supported Windows versions](minimum-requirements.md#supported-windows-versions))
 - macOS version 12 (Monterey) or later (see [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md))
@@ -119,13 +123,13 @@ Support for Command and Control servers (C2) is an important part of this ransom
 
 | New mapping  | Response category  | Sources |
 | :--- | :--- | :--- |
-| phishing | Phishing | SmartScreen |
-| malicious | Malicious | SmartScreen |
-| command and control | C2 | SmartScreen |
-| command and control | COCO | SmartScreen |
-| malicious | Untrusted | SmartScreen |
-| by your IT admin | CustomBlockList |   |
-| by your IT admin | CustomPolicy |   |
+| `phishing` | Phishing | `SmartScreen` |
+| `malicious` | Malicious | `SmartScreen` |
+| `command and control` | C2 | `SmartScreen` |
+| `command and control` | COCO | `SmartScreen` |
+| `malicious` | Untrusted | `SmartScreen` |
+| `by your IT admin` | `CustomBlockList` |   |
+| `by your IT admin` | `CustomPolicy` |   |
 
 > [!NOTE]
 > **customAllowList** does not generate notifications on endpoints.
@@ -224,11 +228,11 @@ The Response category tells you what caused the event, as in this example:
 
 | ResponseCategory | Feature responsible for the event |
 |:---|:---|
-| CustomPolicy |  WCF  |
-| CustomBlockList  |   Custom indicators   |
-| CasbPolicy   |   Defender for Cloud Apps   |
-| Malicious   |   Web threats  |
-| Phishing  |   Web threats  |
+| `CustomPolicy` |  WCF  |
+| `CustomBlockList`  |   Custom indicators   |
+| `CasbPolicy`   |   Defender for Cloud Apps   |
+| `Malicious`   |   Web threats  |
+| `Phishing`  |   Web threats  |
 
 For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks).
 
@@ -247,12 +251,12 @@ You can use the resulting list of URLs and IPs to determine what would be blocke
 
 Once you've created an indicator, you can look at resolving the underlying issue as follows:
 
-- SmartScreen – request review
-- Indicator – modify existing indicator
-- MCA – review unsanctioned app
-- WCF – request recategorization
+- **SmartScreen**: request review
+- **Indicator**: modify existing indicator
+- **MCA**: review unsanctioned app
+- **WCF**: request recategorization
 
-Using this data you can make an informed decision on enabling Network protection in Block mode. See [Order of precedence for Network protection blocks](web-protection-overview.md#order-of-precedence).
+Using this data you can make an informed decision on enabling network protection in Block mode. See [Order of precedence for Network protection blocks](web-protection-overview.md#order-of-precedence).
 
 > [!NOTE]
 > As this is a per-device setting, if there are devices that cannot move to Block mode you can simply leave them on audit until you can rectify the challenge and you will still receive the auditing events.
@@ -339,8 +343,8 @@ For Windows Server 2012 R2 and Windows Server 2016 using the [modern unified sol
    - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
    - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
-     > [!NOTE]
-     > In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
+   > [!NOTE]
+   > In some cases, depending on your infrastructure, volume of traffic, and other conditions, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` can have an effect on network performance.
 
 ### Network protection for Windows Servers
 
@@ -350,7 +354,7 @@ Following is information specific to Windows Servers.
 
 Verify whether network protection is enabled on a local device by using Registry Editor.
 
-1. Select the **Start** button in the task bar and type **regedit** to open the Registry Editor.
+1. Select the **Start** button in the task bar and type `regedit` to open Registry Editor.
 
 2. Select **HKEY_LOCAL_MACHINE** from the side menu.
 
@@ -419,6 +423,7 @@ The most generic method to disable QUIC is to disable that feature in Windows Fi
 
 
 ```powershell
+
 Copy
 $ruleParams = @{
     DisplayName = "Block QUIC"
@@ -429,6 +434,7 @@ $ruleParams = @{
     RemotePort = 443
 }
 New-NetFirewallRule @ruleParams
+
 ```
 
 ### Disable QUIC in a web browser
