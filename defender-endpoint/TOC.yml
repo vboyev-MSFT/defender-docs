@@ -137,7 +137,7 @@
             - name: Migrating devices to streamlined method
               href: migrate-devices-streamlined.md
 
-        - name: Onboard client devices (Windows and Mac)
+        - name: Onboard client devices
           href: onboard-client.md
           items:
           - name: Onboarding Windows client overview
@@ -159,7 +159,7 @@
           - name: Onboard previous versions of Windows
             href: onboard-downlevel.md
 
-        - name: Onboarding server devices (Windows and Linux)
+        - name: Onboarding server devices
           href: onboard-server.md
           items:
           - name: Onboarding Windows Server overview
