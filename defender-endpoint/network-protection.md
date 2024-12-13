@@ -40,7 +40,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](h
 
 Network protection helps protect devices from certain Internet-based events by preventing connections to malicious or suspicious sites. Network protection is an attack surface reduction capability that helps prevent people in your organization from accessing domains that are considered dangerous through applications. Examples of dangerous domains are domains that host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(S) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and nonbrowser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](indicators-overview.md) that you can use to block specific domains or host names.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for [Web Content Filtering](web-content-filtering.md) (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and nonbrowser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](indicators-overview.md) that you can use to block specific domains or host names.
 
 ### Network protection coverage
 
@@ -48,13 +48,13 @@ The following table summarizes network protection areas of coverage.
 
 | Feature | Microsoft Edge | Non-Microsoft browsers | Nonbrowser processes <br/> (for example, PowerShell) |
 |:---|:---|:---|:---|
-| Web Threat Protection | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
-| Custom Indicators | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
-| Web Content Filtering | SmartScreen must be enabled | Network protection must be in block mode | Not supported |
+| [Web Threat Protection](web-threat-protection.md) | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
+| [Custom Indicators](indicators-overview.md) | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
+| [Web Content Filtering](web-content-filtering.md) | SmartScreen must be enabled | Network protection must be in block mode | Not supported |
 
 > [!NOTE]
 > On Mac and Linux, you must have network protection in block mode for these features to be supported in the Microsoft Edge browser.
-> On Windows, network protection does not monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
+> On Windows, network protection doesn't monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
 
 Here are a few important points to keep in mind:
 
@@ -67,7 +67,7 @@ Here are a few important points to keep in mind:
  
 There might be up to two hours of latency (usually less) between the time when the action is taken and the URL/IP is blocked.
  
-Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
+Watch this video to learn how network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
@@ -85,7 +85,7 @@ Network protection also requires Microsoft Defender Antivirus with real-time pro
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
 | Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), [behavior monitoring](behavior-monitor.md), and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
-| Windows Server 2012 R2 and Windows Server 2016 using the modern unified agent | Platform update version `4.18.2001.x.x` or newer |
+| Windows Server 2012 R2 and Windows Server 2016 using the [modern unified agent](/defender-endpoint/configure-server-endpoints#functionality-in-the-modern-unified-solution) | Platform update version `4.18.2001.x.x` or newer |
 
 ## Why network protection is important
 
