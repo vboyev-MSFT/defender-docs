@@ -89,7 +89,7 @@ Network protection also requires Microsoft Defender Antivirus with real-time pro
 
 ## Why network protection is important
 
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables the network layer to block URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections. By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
+Network protection is a part of the [attack surface reduction](overview-attack-surface-reduction.md) group of solutions in Microsoft Defender for Endpoint. Network protection enables the network layer to block URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections. By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
 - Block IP/URL addresses from your own threat intelligence ([indicators](indicator-ip-domain.md))
 - Block unsanctioned services from [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
@@ -136,11 +136,13 @@ Support for Command and Control servers (C2) is an important part of this ransom
 
 ### New notifications for network protection determination
 
-A new, publicly available capability in network protection utilizes functions in SmartScreen to block phishing activities from malicious command and control sites. When an end user attempts to visit a website in an environment in which network protection is enabled, three scenarios are possible:
+New capabilities in network protection use functions in SmartScreen to block phishing activities from malicious command and control sites. When an end user attempts to visit a website in an environment in which network protection is enabled, three scenarios are possible, as outlined in the following table:
 
-- The URL has a **known good reputation** - In this case the user is permitted access without obstruction, and there's no toast notification presented on the endpoint. In effect, the domain or URL is set to _Allowed_.
-- The URL has an **unknown or uncertain reputation** - The user's access is blocked, but with the ability to circumvent (unblock) the block. In effect, the domain or url is set to _Audit_.
-- The URL has a **known bad (malicious) reputation** - The user is prevented from access. In effect, the domain or url is set to _Block_.
+| Scenario | What happens |
+|--|--|
+| The URL has a known good reputation | The user is permitted access without obstruction, and there's no toast notification presented on the endpoint. In effect, the domain or URL is set to *Allowed*. |
+| The URL has an unknown or uncertain reputation | The user's access is blocked, but with the ability to circumvent (unblock) the block. In effect, the domain or url is set to *Audit*. |
+| The URL has a known bad (malicious) reputation | The user is prevented from access. In effect, the domain or url is set to *Block*. |
 
 #### Warn experience
 
