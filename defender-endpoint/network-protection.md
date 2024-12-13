@@ -40,7 +40,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](h
 
 Network protection helps protect devices from certain Internet-based events by preventing connections to malicious or suspicious sites. Network protection is an attack surface reduction capability that helps prevent people in your organization from accessing domains that are considered dangerous through applications. Examples of dangerous domains are domains that host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(S) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](indicators-overview.md) that you can use to block specific domains or host names.
+Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and nonbrowser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](indicators-overview.md) that you can use to block specific domains or host names.
 
 ### Network protection coverage
 
@@ -60,9 +60,9 @@ Here are a few important points to keep in mind:
 
 - IP is supported for all three protocols (`TCP`, `HTTP`, and `HTTPS` (TLS)).
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
-- Encrypted URLs (full path) are only blocked on Microsoft browsers (Internet Explorer, Edge).
+- Encrypted URLs (full path) are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge).
 - Encrypted URLs (FQDN only) are blocked in non-Microsoft browsers.
-- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, are only blocked on Microsoft browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
+- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
 - Full URL path blocks are applied for unencrypted URLs.
  
 There might be up to two hours of latency (usually less) between the time when the action is taken and the URL/IP is blocked.
@@ -84,8 +84,8 @@ Network protection also requires Microsoft Defender Antivirus with real-time pro
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), [behavior monitoring](behavior-monitor.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
-| Windows Server 2012 R2 and Windows Server 2016 with the unified agent | Platform Update version 4.18.2001.x.x or newer |
+| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), [behavior monitoring](behavior-monitor.md), and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
+| Windows Server 2012 R2 and Windows Server 2016 using the modern unified agent | Platform update version `4.18.2001.x.x` or newer |
 
 ## Why network protection is important
 
