@@ -159,7 +159,7 @@
           - name: Onboard previous versions of Windows
             href: onboard-downlevel.md
 
-        - name: Onboarding server devices
+        - name: Onboard server devices
           href: onboard-server.md
           items:
           - name: Onboarding Windows Server overview
