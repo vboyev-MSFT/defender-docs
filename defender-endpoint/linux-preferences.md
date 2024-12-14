@@ -1008,8 +1008,8 @@ When you run the `mdatp health` command for the first time, the value for the ta
    }
    ```
 
-> [!NOTE]
-> Add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`.
+   > [!NOTE]
+   > Add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`.
  
 ## Configuration profile validation
 
@@ -1039,6 +1039,6 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` file.
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
