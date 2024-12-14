@@ -40,7 +40,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You'll need to complete the following general steps to successfully onboard servers.
 
-:::image type="content" source="media/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices" lightbox="media/server-onboarding-tools-methods.png":::
+:::image type="content" source="media/server-onboarding-tools-methods.png" alt-text="An illustration of onboarding flow for Windows Servers and Windows 10 devices.":::
 
 > [!NOTE]
 > Windows Hyper-V Server editions are not supported.
@@ -231,7 +231,7 @@ This script can be used in various scenarios, including those scenarios describe
 8. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. The [installer script](server-migration.md#installer-script) handles the installation, and immediately perform the onboarding step after installation completes. Select *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* then provide the arguments:
 
     ```powershell
-     -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
+    -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
     ```
 
     > [!NOTE]
@@ -257,7 +257,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
     - Type: `REG_DWORD`
     - Value: `1`
 
-   :::image type="content" source="media/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="media/atp-verify-passive-mode.png":::
+   :::image type="content" source="media/atp-verify-passive-mode.png" alt-text="Screenshot of the passive mode verification result.":::
 
 #### Known issues and limitations in the new, unified solution package for Windows Server 2016 and Windows Server 2012 R2
 
