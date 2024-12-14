@@ -61,7 +61,8 @@ During installation, the `HTTPS_PROXY` environment variable must be passed to th
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 
-Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry won't be submitted, and the operation could take longer due to network timeouts.
+> [!NOTE]
+> Installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry won't be submitted, and the operation could take longer due to network timeouts.
 
 ## Post installation configuration
 
@@ -69,7 +70,8 @@ After installation, configure Defender for Endpoint with a static proxy. This ca
 
 ### 1. Using mdatp command-line tool
 
-Run  the following command on the endpoint to configure proxy for Defender for Endpoint
+Run the following command on the endpoint to configure proxy for Defender for Endpoint.
+
 ```bash
 mdatp config proxy set --value http://address:port
 ```
@@ -77,7 +79,8 @@ mdatp config proxy set --value http://address:port
 ### 2. Using managed configuration
 
 Set the proxy in the managed configuration at `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`. This is an example of the json schema:
-```
+
+```json
 {
   "cloudService":{
     "proxy": "http://proxy.server:port/"
