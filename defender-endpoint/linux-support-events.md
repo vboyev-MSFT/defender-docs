@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint utilized `audit` framework from linux to track n
 
     expected output:
 
-    ```output
+    ```console
     ● auditd.service - Security Auditing Service
     Loaded: loaded (/usr/lib/systemd/system/auditd.service; enabled; vendor preset: enabled)
     Active: active (running) since Mon 2020-12-21 10:48:02 IST; 2 weeks 0 days ago

@@ -87,7 +87,6 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 
 > [!NOTE]
 > - The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment.
->
 > - The Mirror Server does not need to have Defender for Endpoint installed.
 
 ### Get the offline security intelligence downloader script
