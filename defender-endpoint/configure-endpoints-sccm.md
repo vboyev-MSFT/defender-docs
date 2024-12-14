@@ -84,39 +84,39 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
 
-    :::image type="content" source="media/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1." lightbox="media/configmgr-device-collections.png":::
+    :::image type="content" source="media/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1.":::
 
 2. Select and hold (or right-click) **Device Collection** and select **Create Device Collection**.
 
-    :::image type="content" source="media/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2." lightbox="media/configmgr-create-device-collection.png":::
+    :::image type="content" source="media/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2.":::
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    :::image type="content" source="media/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3." lightbox="media/configmgr-limiting-collection.png":::
+    :::image type="content" source="media/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3.":::
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    :::image type="content" source="media/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." lightbox="media/configmgr-query-rule.png":::
+    :::image type="content" source="media/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." :::
 
 5. Select **Next** on the **Direct Membership Wizard** and then select **Edit Query Statement**.
 
-    :::image type="content" source="media/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5." lightbox="media/configmgr-direct-membership.png":::
+    :::image type="content" source="media/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5.":::
 
 6. Select **Criteria** and then choose the star icon.
 
-    :::image type="content" source="media/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6." lightbox="media/configmgr-criteria.png":::
+    :::image type="content" source="media/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6.":::
 
 7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393**, and select **OK**.
 
-    :::image type="content" source="media/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7." lightbox="media/configmgr-simple-value.png":::
+    :::image type="content" source="media/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7.":::
 
 8. Select **Next** and **Close**.
 
-    :::image type="content" source="media/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8." lightbox="media/configmgr-membership-rules.png":::
+    :::image type="content" source="media/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8.":::
 
 9. Select **Next**.
 
-    :::image type="content" source="media/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9." lightbox="media/configmgr-confirm.png":::
+    :::image type="content" source="media/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9.":::
 
 After completing this task you have a device collection with all the Windows endpoints in the environment.
 
@@ -141,13 +141,13 @@ To deploy Microsoft Defender Antivirus and attack surface reduction policies thr
 
 Follow the steps to enable endpoint protection and configuration of custom client settings:
 
-1. In the Configuration Manager console, click **Administration.**
+1. In the Configuration Manager console, click **Administration**.
 
-1. In the **Administration** workspace, click **Client Settings.**
+1. In the **Administration** workspace, click **Client Settings**.
 
-1. On the **Home** tab, in the **Create** group, click **Create Custom Client Device Settings.**
+1. On the **Home** tab, in the **Create** group, click **Create Custom Client Device Settings**.
 
-1. In the **Create Custom Client Device Settings** dialog box, provide a name and a description for the group of settings, and then select **Endpoint Protection.**
+1. In the **Create Custom Client Device Settings** dialog box, provide a name and a description for the group of settings, and then select **Endpoint Protection**.
 
 1. Configure the Endpoint Protection client settings that you require. For a full list of Endpoint Protection client settings that you can configure, see the Endpoint Protection section in [About client settings.](/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
 
@@ -157,9 +157,9 @@ Follow the steps to enable endpoint protection and configuration of custom clien
 
 1. Click **OK** to close the **Create Custom Client Device Settings** dialog box. The new client settings are displayed in the **Client Settings** node of the **Administration** workspace.
 
-1. Next, deploy the custom client settings to a collection. Select the custom client settings you want to deploy. In the **Home** tab, in the **Client Settings** group, click **Deploy.**
+1. Next, deploy the custom client settings to a collection. Select the custom client settings you want to deploy. In the **Home** tab, in the **Client Settings** group, click **Deploy**.
 
-1. In the **Select Collection** dialog box, choose the collection to which you want to deploy the client settings and then click **OK.** The new deployment is shown in the **Deployments** tab of the details pane.
+1. In the **Select Collection** dialog box, choose the collection to which you want to deploy the client settings and then click **OK**.The new deployment is shown in the **Deployments** tab of the details pane.
 
 Clients are configured with these settings when they next download client policy. For more information, see [Initiate policy retrieval for a Configuration Manager client.](/mem/configmgr/core/clients/manage/manage-clients)
 
@@ -200,9 +200,9 @@ After you install the Endpoint Protection client on your reference computer, ver
 
 1. On the reference computer, open **System Center Endpoint Protection** from the Windows notification area.
 
-1. On the **Home** tab of the **System Center Endpoint Protection** dialog box, verify that **Real-time protection** is set to **On.**
+1. On the **Home** tab of the **System Center Endpoint Protection** dialog box, verify that **Real-time protection** is set to **On**.
 
-1. Verify that **up to date** is displayed for **Virus and spyware definitions.**
+1. Verify that **up to date** is displayed for **Virus and spyware definitions**.
 
 1. To make sure that your reference computer is ready for imaging, under **Scan options,** select **Full,** and then click **Scan now.**
 
@@ -271,7 +271,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    :::image type="content" source="media/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="media/sccm-deployment.png":::
+    :::image type="content" source="media/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors":::
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 
