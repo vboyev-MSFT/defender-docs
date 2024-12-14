@@ -57,7 +57,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 3. Select **Download onboarding package**. Save the file as `WindowsDefenderATPOnboardingPackage.zip`.
 
-   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package" lightbox="media/portal-onboarding-linux-2.png":::
+   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package.":::
 
 4. From a command prompt, verify that you have the file. 
 
@@ -65,7 +65,7 @@ Download the onboarding package from Microsoft Defender portal.
     ls -l
     ```
 
-    ```Output
+    ```console
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
@@ -76,7 +76,7 @@ Download the onboarding package from Microsoft Defender portal.
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
 
-    ```Output
+    ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -95,7 +95,7 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
    pwd
    ```
    
-   ```Output
+   ```console
    /etc/puppetlabs/code/environments/production/modules
    ```
    
@@ -103,7 +103,7 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
    tree install_mdatp
    ```
    
-   ```Output
+   ```console
    install_mdatp
    ├── files
    │   └── mdatp_onboard.json
@@ -210,7 +210,7 @@ Include the above manifest in your `site.pp` file:
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
 
-```Output
+```console
 node "default" {
     include install_mdatp
 }
@@ -226,7 +226,7 @@ On the agent device, you can also check the onboarding status by running:
 mdatp health
 ```
 
-```Output
+```console
 ...
 licensed                                : true
 org_id                                  : "[your organization identifier]"
