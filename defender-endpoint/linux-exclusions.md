@@ -81,13 +81,14 @@ Wildcard|Description|Examples|
 ?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not`file123.log`
 
 > [!NOTE]
-For antivirus exclusions, when using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
+> For antivirus exclusions, when using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
 
 ## How to configure the list of exclusions
 
 ### Using the management console
 
 To configure exclusions from Puppet, Ansible, or another management console, please refer to the following sample `mdatp_managed.json`.
+
 ```JSON
 {
    "exclusionSettings":{
@@ -166,7 +167,7 @@ Examples:
     mdatp exclusion extension remove --name .txt
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -203,6 +204,7 @@ Examples:
     ```console
     File exclusion removed successfully"
     ```
+
 - Add/Remove an exclusion for a folder:
 
     ```bash
@@ -221,7 +223,7 @@ Examples:
     Folder exclusion removed successfully
     ```
 
-  ```bash
+    ```bash
     mdatp exclusion folder add --path /var/log/ --scope global
     ```
 
@@ -264,6 +266,7 @@ Examples:
     mdatp exclusion folder add --path "/var/" --scope epp
     ```
     OR
+
     ```bash
     mdatp exclusion folder add --path "/var/*/" --scope epp
     ```
@@ -289,7 +292,7 @@ Examples:
     mdatp exclusion process remove --name /usr/bin/cat  --scope global
     ```
 
-    ```Output
+    ```console
     Process exclusion removed successfully
     ```
 
@@ -306,7 +309,7 @@ Examples:
     mdatp exclusion process remove --name /usr/bin/cat  --scope epp
     ```
 
-    ```Output
+    ```console
     Process exclusion removed successfully
     ```
 
@@ -362,4 +365,5 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
