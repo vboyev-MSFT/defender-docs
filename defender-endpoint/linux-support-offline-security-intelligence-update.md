@@ -53,6 +53,7 @@ Key benefits include:
 - The status of the update can be seen on the mdatp CLI.
 
 :::image type="content" source="./media/offline-update-diag-1.png" alt-text="Process flow diagram on the Mirror Server for downloading the security intelligence updates" lightbox="./media/offline-update-diag-2.png":::
+
 Fig. 1: Process flow diagram on the Mirror Server for downloading the security intelligence updates
 
 :::image type="content" source="./media/offline-update-diag-2.png" alt-text="Process flow diagram on the Linux endpoint for security intelligence updates" lightbox="./media/offline-update-diag-2.png":::
@@ -85,10 +86,9 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 ## Configuring the Mirror Server
 
 > [!NOTE]
-> The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment.
-
-> [!NOTE]
-> The Mirror Server does not need to have Defender for Endpoint installed.
+> - The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment.
+>
+> - The Mirror Server does not need to have Defender for Endpoint installed.
 
 ### Get the offline security intelligence downloader script
 
@@ -176,24 +176,24 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 
 ## Configure the Endpoints
 
-- Use the following sample `mdatp_managed.json` and update the parameters as per the configuration and copy the file to the location `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
+Use the following sample `mdatp_managed.json` and update the parameters as per the configuration and copy the file to the location `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
 
-    ```json
-    {
-      "cloudService": {
-        "automaticDefinitionUpdateEnabled": true,
-        "definitionUpdatesInterval": 1202
-      },
-      "antivirusEngine": {
-        "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/",
-        "offlineDefintionUpdateFallbackToCloud":false,
-        "offlineDefinitionUpdate": "enabled"
-      },
-      "features": {
-        "offlineDefinitionUpdateVerifySig": "enabled"
-      }
-    }
-    ```
+```json
+{
+  "cloudService": {
+    "automaticDefinitionUpdateEnabled": true,
+    "definitionUpdatesInterval": 1202
+  },
+  "antivirusEngine": {
+    "offlineDefinitionUpdateUrl": "http://172.22.199.67:8000/linux/production/",
+    "offlineDefintionUpdateFallbackToCloud":false,
+    "offlineDefinitionUpdate": "enabled"
+  },
+  "features": {
+    "offlineDefinitionUpdateVerifySig": "enabled"
+  }
+}
+```
 
 | Field Name                                | Values               | Comments                                            |
 |-------------------------------------------|----------------------|-----------------------------------------------------|
@@ -217,7 +217,7 @@ mdatp health --details definitions
 
 A sample output would look like the following code snippet:
 
-```output
+```console
 user@vm:~$ mdatp health --details definitions
 automatic_definition_update_enabled         : true [managed]
 definitions_updated                         : Mar 14, 2024 at 12:13:17 PM
