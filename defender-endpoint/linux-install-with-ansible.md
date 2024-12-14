@@ -75,21 +75,21 @@ Download the onboarding package from Microsoft Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="media/portal-onboarding-linux-2.png":::
+   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option":::
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
     ```bash
     ls -l
     ```
-    ```Output
+    ```console
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
-    ```Output
+    ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -255,27 +255,27 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 
 - Installation:
 
-    ```bash
-    ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
-    ```
+  ```bash
+  ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
+  ```
 
-> [!IMPORTANT]
-> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
+  > [!IMPORTANT]
+  > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
 
 - Validation/configuration:
 
-    ```bash
-    ansible -m shell -a 'mdatp connectivity test' all
-    ```
-    ```bash
-    ansible -m shell -a 'mdatp health' all
-    ```
+  ```bash
+  ansible -m shell -a 'mdatp connectivity test' all
+  ```
+  ```bash
+  ansible -m shell -a 'mdatp health' all
+  ```
 
 - Uninstallation:
 
-    ```bash
-    ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
-    ```
+  ```bash
+  ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
+  ```
 
 ## Log installation issues
 
