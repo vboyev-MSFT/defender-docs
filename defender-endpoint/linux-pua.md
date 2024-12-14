@@ -64,7 +64,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### Use the management console to configure PUA protection:
 
-In your enterprise, you can configure PUA protection from a management console, such as Puppet or Ansible, similarly to how other product settings are configured. For more information, see the [Threat type settings](linux-preferences.md#threat-type-settings) section of the [Set preferences for Defender for Endpoint on Linux](linux-preferences.md) article.
+In your enterprise, you can configure PUA protection from a management console, such as Puppet or Ansible, similarly to how other product settings are configured. For more information, see [Threat type settings](linux-preferences.md#threat-type-settings) in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 ## Related articles
 
