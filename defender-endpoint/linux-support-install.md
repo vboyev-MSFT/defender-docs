@@ -34,15 +34,15 @@ ms.date: 10/11/2024
 An error in installation might or might not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
 ```bash
- sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
+sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
- grep 'postinstall end' installation.log
+grep 'postinstall end' installation.log
 ```
 
-```Output
- microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
+```console
+microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
 ```
 
 An output from the previous command with correct date and time of installation indicates success.
@@ -93,7 +93,7 @@ Check if the Defender for Endpoint service is running:
 service mdatp status
 ```
 
-```Output
+```console
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
    Active: active (running) since Thu 2020-03-26 10:37:30 IST; 23h ago
@@ -138,7 +138,8 @@ service mdatp status
     where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian distributions and /usr/lib/systemd/system` for Rhel, CentOS, Oracle, and SLES. Then rerun step 2.
 
 4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to `permissive` or `disabled` in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
-Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
+
+   Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
 5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`.
 
@@ -148,7 +149,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     ls -l /opt/microsoft/mdatp/sbin/wdavdaemon
     ```
 
-    ```Output
+    ```console
     -rwxr-xr-x 2 root root 15502160 Mar  3 04:47 /opt/microsoft/mdatp/sbin/wdavdaemon
     ```
 
@@ -188,9 +189,10 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     sudo mdatp diagnostic create
     ```
 
-    ```Output
+    ```console
     Diagnostic file created: <path to file>
     ```
 
     Path to a zip file that contains the logs are displayed as an output. Reach out to our customer support with these logs.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]

@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint utilized `audit` framework from linux to track n
 
     if the following line is present, remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.
 
-    ```output
+    ```console
     -a task, never
     ```
 
@@ -93,4 +93,5 @@ List the filesystems on the machine with:
 ```bash
 df -Th
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]

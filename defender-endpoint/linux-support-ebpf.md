@@ -166,11 +166,11 @@ uname -a
 
 If you see increased resource consumption by Microsoft Defender on your endpoints, it's important to identify the process/mount-point/files that are causing most of the CPU/Memory utilization. You can then apply the necessary exclusions. After applying possible antivirus exclusions, if `wdavdaemon` (parent process) is still consuming the resources, use the ebpf-statistics command to get the top system call count:
 
-```Bash
+```bash
 sudo mdatp diagnostic  ebpf-statistics
 ```
 
-```Output
+```console
 Output
 Monitor 20 seconds
 Top file paths:
