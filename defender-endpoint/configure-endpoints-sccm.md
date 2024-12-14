@@ -55,7 +55,7 @@ This rule should be a *remediating* compliance rule configuration item that sets
 
 The configuration is set through the following registry key entry:
 
-```text
+```console
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -172,15 +172,15 @@ Follow the steps to complete installation of endpoint protection client from the
 
 1. Copy **scepinstall.exe** from the **Client** folder of the Configuration Manager installation folder to the computer on which you want to install the Endpoint Protection client software.
 
-1. Open Command Prompt as an administrator. Change directory to the folder with the installer. Then run ```scepinstall.exe```, adding any extra command-line properties that you require:
+1. Open Command Prompt as an administrator. Change directory to the folder with the installer. Then run `scepinstall.exe`, adding any extra command-line properties that you require:
 
-     |**Property**  |**Description**  |
+     |  Property  |  Description  |
      |---------|---------|
-     |```/s```      |Run the installer silently|
-     |```/q```      |Extract the setup files silently|
-     |```/i```      |Run the installer normally|
-     |```/policy``` |Specify an antimalware policy file to configure the client during installation|
-     |```/sqmoptin```|Opt-in to the Microsoft Customer Experience Improvement Program (CEIP)|
+     |  `/s`        |Run the installer silently|
+     |  `/q`        |Extract the setup files silently|
+     |  `/i`        |Run the installer normally|
+     |  `/policy`   |Specify an antimalware policy file to configure the client during installation|
+     |  `/sqmoptin` |Opt-in to the Microsoft Customer Experience Improvement Program (CEIP)|
 
 1. Follow the on-screen instructions to complete the client installation.
 
@@ -191,7 +191,7 @@ Follow the steps to complete installation of endpoint protection client from the
 
 **Example: install the client with an antimalware policy**
 
-```scepinstall.exe /policy <full path>\<policy file>```
+`scepinstall.exe /policy <full path>\<policy file>`
 
 
 ### Verify the Endpoint Protection client installation
