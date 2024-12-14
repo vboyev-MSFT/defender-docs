@@ -51,7 +51,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
    mdatp config real-time-protection --value disabled
    ```
 
-   ```Output
+   ```console
    Configuration property updated
    ```
 
@@ -83,7 +83,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
    mdatp config real-time-protection --value enabled
    ```
 
-   ```Output
+   ```console
    Configuration property updated
    ```
 
@@ -106,7 +106,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
    The output of this command should be similar to the following:
 
-   ```Output
+   ```console
    --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.xxx.xxx| :443... connected.
@@ -124,7 +124,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
    The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is the process name, and the last column is the number of scanned files, sorted by impact. For example, the output of the command will be something like the below:
 
-   ```Output
+   ```console
    ... > mdatp diagnostic real-time-protection-statistics --output json | python high_cpu_parser.py | head
    27432 None 76703
    73467 actool    1249
@@ -227,7 +227,7 @@ The XMDEClientAnalyzer support tool contains syntax that can be used to add Audi
 
 AuditD exclusion – support tool syntax help:
 
-:::image type="content" source="media/auditd-exclusion-support-tool-syntax-help.png" alt-text="syntax that can be used to add AuditD exclusion configuration rules" lightbox="media/auditd-exclusion-support-tool-syntax-help.png":::
+:::image type="content" source="media/auditd-exclusion-support-tool-syntax-help.png" alt-text="Screenshot of the syntax that can be used to add AuditD exclusion configuration rules.":::
 
 **By initiator**
 
