@@ -39,7 +39,7 @@ mdatp connectivity test
 
 Expected output:
 
-```output
+```console
 Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
 Testing connection with https://eu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
 Testing connection with https://wu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
@@ -70,7 +70,7 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
 
 The output from this command should be similar to:
 
-```Output
+```console
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping
 ```
@@ -107,5 +107,6 @@ If the problem persists, contact customer support.
 
 ## Resources
 
-- For more information about how to configure the product to use a static proxy, see [Configure Microsoft Defender for Endpoint for static proxy discovery](linux-static-proxy-configuration.md).
+For more information about how to configure the product to use a static proxy, see [Configure Microsoft Defender for Endpoint for static proxy discovery](linux-static-proxy-configuration.md).
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
