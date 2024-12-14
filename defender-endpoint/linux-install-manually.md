@@ -228,14 +228,16 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
 - Install the Microsoft GPG public key:
   - For Debian 11 and earlier, run the following command.
  
-  ```bash
-  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
-  ```
-For Debian 12 and later, run the following command.
+    ```bash
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+    ```
 
-```bash
-curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
-```
+  - For Debian 12 and later, run the following command.
+
+    ```bash
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
+    ```
+
 - Install the HTTPS driver if not already installed:
 
   ```bash
@@ -379,7 +381,7 @@ Download the onboarding package from Microsoft Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="media/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft Defender portal" lightbox="media/portal-onboarding-linux.png":::
+   :::image type="content" source="media/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft Defender portal":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
@@ -488,7 +490,7 @@ Download the onboarding package from Microsoft Defender portal.
      
 1. Run an EDR detection test and simulate a detection to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-- Verify that the onboarded Linux server appears in Microsoft Defender XDR. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
+   - Verify that the onboarded Linux server appears in Microsoft Defender XDR. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
 
    - Download and extract the [script file](https://aka.ms/MDE-Linux-EDR-DIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
 
