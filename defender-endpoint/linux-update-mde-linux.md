@@ -69,13 +69,13 @@ sudo crontab -e
 
 You might see:
 
-```output
+```console
 0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
 ```
 
 And
 
-```output
+```console
 0 2 * * sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
