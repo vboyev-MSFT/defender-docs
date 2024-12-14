@@ -39,7 +39,7 @@ If you can reproduce a problem, first increase the logging level, run the system
    mdatp log level set --level debug
    ```
 
-   ```Output
+   ```console
    Log level configured successfully
    ```
 
@@ -53,7 +53,7 @@ If you can reproduce a problem, first increase the logging level, run the system
 
     This command will also print out the file path to the backup after the operation succeeds:
 
-   ```Output
+   ```console
    Diagnostic file created: <path to file>
    ```
 
@@ -63,7 +63,7 @@ If you can reproduce a problem, first increase the logging level, run the system
    mdatp log level set --level info
    ```
 
-   ```Output
+   ```console
    Log level configured successfully
    ```
 
