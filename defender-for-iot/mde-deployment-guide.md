@@ -45,7 +45,7 @@ Theo can we add an intro sentence here
 
 - Network Traffic Type<!-- Theo - do these need to be capitalised, are they a name? --> required: the MDE agent needs to receive unicast traffic between the discovered OT devices and the device with the agent.<!-- Theo - what does this mean? -->
 
-:::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png" alt-text="A diagram showing the passive monitoring of a subnet.":::
+:::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png" alt-text="A diagram showing the passive monitoring of a subnet." lightbox="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png":::
 
 ## Standard Probing
 
@@ -53,6 +53,6 @@ Theo can we add an intro sentence here
 
 - Functionality: Broadcast packets cause<!-- ?? allow?  --> the MDE agent to create the device, <!-- Theo - what does this mean? create the device in the inventory? link to it?find it? identify it? -->though not necessarily with all the information needed for OT classification and CVEs. Based on the initial information discovered, the agent uses standard probing to complete the necessary information using appropriate protocols.
 
-:::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-2.png" alt-text="A diagram showing the standard probing discovery process.":::
+:::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-2.png" alt-text="A diagram showing the standard probing discovery process." lightbox="media/mde-agent-deployment-guide/mde-agent-deployment-guide-2.png":::
 
 These guidelines could ensure that the MDE agent is effectively deployed to maximize its value for OT discovery.
