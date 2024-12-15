@@ -22,6 +22,11 @@ ms.date: 10/11/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
+**Applies to**:
+
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
+
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Defender for Endpoint on Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
@@ -52,7 +57,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 3. Select **Download onboarding package**. Save the file as `WindowsDefenderATPOnboardingPackage.zip`.
 
-   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package" lightbox="media/portal-onboarding-linux-2.png":::
+   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package.":::
 
 4. From a command prompt, verify that you have the file. 
 
@@ -60,7 +65,7 @@ Download the onboarding package from Microsoft Defender portal.
     ls -l
     ```
 
-    ```Output
+    ```console
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
@@ -71,7 +76,7 @@ Download the onboarding package from Microsoft Defender portal.
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
 
-    ```Output
+    ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -90,7 +95,7 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
    pwd
    ```
    
-   ```Output
+   ```console
    /etc/puppetlabs/code/environments/production/modules
    ```
    
@@ -98,7 +103,7 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
    tree install_mdatp
    ```
    
-   ```Output
+   ```console
    install_mdatp
    ├── files
    │   └── mdatp_onboard.json
@@ -205,7 +210,7 @@ Include the above manifest in your `site.pp` file:
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
 
-```Output
+```console
 node "default" {
     include install_mdatp
 }
@@ -221,7 +226,7 @@ On the agent device, you can also check the onboarding status by running:
 mdatp health
 ```
 
-```Output
+```console
 ...
 licensed                                : true
 org_id                                  : "[your organization identifier]"
