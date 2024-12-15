@@ -137,9 +137,10 @@
             - name: Migrating devices to streamlined method
               href: migrate-devices-streamlined.md
 
-        - name: Onboarding Windows Client
+        - name: Onboard client devices
+          href: onboard-client.md
           items:
-          - name: Onboarding Windows Client overview
+          - name: Onboarding Windows client overview
             href: onboard-windows-client.md
           - name: Defender for Endpoint plug-in for WSL
             href: mde-plugin-wsl.md
@@ -158,7 +159,8 @@
           - name: Onboard previous versions of Windows
             href: onboard-downlevel.md
 
-        - name: Onboarding Windows Server
+        - name: Onboard server devices
+          href: onboard-server.md
           items:
           - name: Onboarding Windows Server overview
             href: onboard-windows-server.md
@@ -255,6 +257,8 @@
           items:
           - name: Deploy Defender for Endpoint on Linux
             items:
+            - name: Defender for Endpoint on Linux for ARM64-based devices (preview)
+              href: mde-linux-arm.md
             - name: Puppet based deployment
               href: linux-install-with-puppet.md
             - name: Ansible based deployment

@@ -23,6 +23,11 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
+**Applies to**:
+
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
+
 This article is updated frequently to let you know what's new in the latest releases of Microsoft Defender for Endpoint on Linux.
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
@@ -349,9 +354,9 @@ There are multiple fixes and new changes in this release:
 
 - Support added to restore threat based on original path using the following command:
   
- ```bash
- sudo mdatp threat quarantine restore threat-path --path [threat-original-path] --destination-path [destination-folder]
-```
+  ```bash
+  sudo mdatp threat quarantine restore threat-path --path [threat-original-path] --destination-path [destination-folder]
+  ```
 - Starting with this release, Microsoft Defender for Endpoint on Linux will no longer be shipping a solution for RHEL 6.
   
     RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run Defender for Endpoint on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
@@ -392,18 +397,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
 Some customers (<1%) experience issues with this method.
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -448,18 +454,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
 Some customers (<1%) experience issues with this method.
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -536,11 +543,12 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
@@ -597,11 +605,12 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
@@ -667,18 +676,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
 Some customers (<1%) experience issues with this method.
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -728,18 +738,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
 Some customers (<1%) experience issues with this method.
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -791,18 +802,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading. 
 Some customers (<1%) experience issues with this method. 
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -857,18 +869,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
 
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading. 
 Caution: Some customers (<1%) experience issues with this method. 
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -916,10 +929,10 @@ sudo systemctl disable mdatp
 
 - While upgrading mdatp to version `101.94.13` or later, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
-```bash
-echo -c >> /etc/audit/rules.d/audit.rules
-augenrules --load
-```
+  ```bash
+  echo -c >> /etc/audit/rules.d/audit.rules
+  augenrules --load
+  ```
 
 - While upgrading from mdatp version `101.75.43` or `101.78.13`, you could encounter a kernel hang. Run the following commands before attempting to upgrade to version `101.98.05`. For more information, see [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
@@ -927,17 +940,19 @@ There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
     
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
+   Example:
+
+   ```bash
+   sudo apt purge mdatp
+   sudo apt-get install mdatp
+   ```
+
 2. As an alternative you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading. 
 Caution: Some customers (<1%) experience issues with this method. 
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -981,14 +996,14 @@ sudo systemctl disable mdatp
 
 The issue could be mitigated by running the following commands.
 
-```
+```bash
 sudo ausearch -c 'mdatp_audisp_pl' --raw | sudo audit2allow -M my-mdatpaudisppl_v1
 sudo semodule -i my-mdatpaudisppl_v1.pp
 ```
 
 Here, my-mdatpaudisppl_v1 represents the policy module name. After you run the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
 
-```
+```bash
 sudo service auditd stop
 sudo systemctl stop mdatp
 cd /var/log/audit
@@ -1037,27 +1052,30 @@ There are multiple fixes and new changes in this release.
 
 - While upgrading mdatp to version 101.94.13, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Make sure to back up following file: `/etc/audit/rules.d/audit.rules`` as these steps are only to identify failures.
 
-```bash
-echo -c >> /etc/audit/rules.d/audit.rules
-augenrules --load
-```
+  ```bash
+  echo -c >> /etc/audit/rules.d/audit.rules
+  augenrules --load
+  ```
 
 - While upgrading from mdatp version `101.75.43` or `101.78.13`, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version `101.98.05`. For more information, see [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
 
 There are two ways to mitigate the problem in upgrading.
 
 Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
+
 Example:
+
 ```bash
 sudo apt purge mdatp
 sudo apt-get install mdatp
 ```
+
 As an alternative, you can follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
 Caution: Some customers(<1%) are experiencing issues with this method. 
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -1094,10 +1112,10 @@ sudo systemctl disable mdatp
 
 - While upgrading mdatp to version `101.94.13`, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take a backup of following file: `/etc/audit/rules.d/audit.rules` as these steps are only to identify failures.
 
-```bash
-echo -c >> /etc/audit/rules.d/audit.rules
-augenrules --load
-```
+  ```bash
+  echo -c >> /etc/audit/rules.d/audit.rules
+  augenrules --load
+  ```
 
 - While upgrading from mdatp version `101.75.43` or `101.78.13`, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.94.13. For more information, see [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
 
@@ -1117,7 +1135,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](l
 In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade.
 Caution: Some customers(<1%) are experiencing issues with this method.
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -1167,7 +1185,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade.
 Caution: Some customers(<1%) are experiencing issues with this method.
 
- ```bash
+```bash
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
@@ -1194,10 +1212,10 @@ sudo systemctl disable mdatp
 
 - When upgrading from mdatp version `101.75.43` or `101.78.13`, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version `101.80.97`. This action should prevent the issue from occurring.
 
-```
-sudo mdatp config real-time-protection --value=disabled
-sudo systemctl disable mdatp
-```
+  ```bash
+  sudo mdatp config real-time-protection --value=disabled
+  sudo systemctl disable mdatp
+  ```
 
 After executing the commands, use your package manager to perform the upgrade.
 
@@ -1257,7 +1275,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history
 - Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was sometimes not properly terminated when the service was stopped
 - Other bug fixes
-</br>
 
 <br/><br/>
 <br/><br/>
@@ -1285,7 +1302,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - From this build onwards, the product has the new antimalware engine by default
 - Performance improvements for file copy operations
 - Bug fixes
-</br>
 
 <br/><br/>
 <br/><br/>
@@ -1340,7 +1356,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Fixed a bug where the product sometimes was incorrectly detecting files inside the quarantine folder
 - Fixed an issue where the `mdatp` command-line tool wasn't working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
-</br>
 
 <br/><br/>
 <br/><br/>
@@ -1470,8 +1485,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 <details><summary> 2021 releases</summary>
   <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
 
-  <p><b>
-  Build: 101.52.57 <br>
+  <p><b>Build: 101.52.57 <br>
   Release version: 30.121092.15257.0</b></p>
 
   <p><b> What's new </b></p>
@@ -1496,8 +1510,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.45.13 | Release version: 30.121082.14513.0)</summary>
 
-  <p>
-  Build: <b>101.45.13 </b>  <br>
+  <p>Build: <b>101.45.13 </b>  <br>
   Release version:<b> 30.121082.14513.0 </b></p>
 
   <p><b>What's new</b></p>
@@ -1514,8 +1527,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
 
-   <p>
-   Build:<b> 101.45.00</b> <br>
+   <p>Build:<b> 101.45.00</b> <br>
    Release version: <b>30.121072.14500.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1530,8 +1542,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
 
-   <p>
-   Build: <b>101.39.98 </b><br>
+   <p>Build: <b>101.39.98 </b><br>
    Release version: <b>30.121062.13998.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1542,8 +1553,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
 
-   <p>
-   Build:<b> 101.34.27</b> <br>
+   <p>Build:<b> 101.34.27</b> <br>
    Release version: <b>30.121052.13427.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1554,8 +1564,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
 
-   <p>
-   Build:<b> 101.29.64 </b><br>
+   <p>Build:<b> 101.29.64 </b><br>
    Release version:<b> 30.121042.12964.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1570,8 +1579,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
 
-   <p>
-   Build:<b> 101.25.72</b> <br>
+   <p>Build:<b> 101.25.72</b> <br>
    Release version: <b>30.121022.12563.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1584,8 +1592,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
 
-   <p>
-   Build:<b> 101.25.63</b> <br>
+   <p>Build:<b> 101.25.63</b> <br>
    Release version: <b>30.121022.12563.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1596,8 +1603,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
 
-   <p>
-   Build:<b> 101.23.64 </b><br>
+   <p>Build:<b> 101.23.64 </b><br>
    Release version: 30.121021.12364.0</b></p>
 
    <p><b>What's new</b></p>
@@ -1610,8 +1616,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
    <details><summary>(Build: 101.18.53)</summary>
 
-  <p>
-  Build:<b> 101.18.53 </b><br>
+  <p>Build:<b> 101.18.53 </b><br>
 
   <p>What's new</b></p>
 
