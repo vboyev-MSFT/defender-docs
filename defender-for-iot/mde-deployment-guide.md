@@ -3,6 +3,8 @@ title: MDE agent deployment guide for OT discovery - Microsoft Defender for IoT
 description: Learn how to deploy an MDE agent on your OT network sensors.
 ms.date: 12/19/2024
 ms.topic: how-to
+author: limwainstein
+ms.author: lwainstein
 ---
 <!-- This isnt really a how-to but a concept - is that correct? Limor-->
 # MDE Agent Deployment Guide for OT Discovery
