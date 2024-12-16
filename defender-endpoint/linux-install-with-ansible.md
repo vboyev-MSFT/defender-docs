@@ -22,6 +22,11 @@ ms.date: 10/11/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
+**Applies to**:
+
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
+
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Defender for Endpoint on Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
@@ -82,21 +87,21 @@ Download the onboarding package from Microsoft Defender portal.
 
 3. Select **Download onboarding package**. Save the file as `WindowsDefenderATPOnboardingPackage.zip`.
 
-   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="media/portal-onboarding-linux-2.png":::
+   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option":::
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
     ```bash
     ls -l
     ```
-    ```Output
+    ```console
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
-    ```Output
+    ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -416,27 +421,27 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 
 - Installation:
 
-    ```bash
-    ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
-    ```
+  ```bash
+  ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
+  ```
 
-> [!IMPORTANT]
-> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
+  > [!IMPORTANT]
+  > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
 
 - Validation/configuration:
 
-    ```bash
-    ansible -m shell -a 'mdatp connectivity test' all
-    ```
-    ```bash
-    ansible -m shell -a 'mdatp health' all
-    ```
+  ```bash
+  ansible -m shell -a 'mdatp connectivity test' all
+  ```
+  ```bash
+  ansible -m shell -a 'mdatp health' all
+  ```
 
 - Uninstallation:
 
-    ```bash
-    ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
-    ```
+  ```bash
+  ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
+  ```
 
 ## Troubleshoot installation issues
 For self-troubleshooting, do the following
