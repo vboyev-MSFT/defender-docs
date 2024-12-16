@@ -13,7 +13,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 10/10/2024
+ms.date: 12/16/2024
 ---
 
 # Professional services supported by Microsoft Defender XDR
