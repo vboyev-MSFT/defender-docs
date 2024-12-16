@@ -45,7 +45,7 @@ Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automat
 
 1. Using the installer script (recommended). This method greatly simplifies the automation process and helps to install the Defender for Endpoint agent and onboard the device to the Microsoft Defender portal using just a few steps without having to configure for different distros separately.
 
-2. Manually configuring repositories for each distro. This method allows to automate the deployment process by manually configuring repositories, installing the agent, and onboarding the device for each distro. This method  gives more granular control over the deployment process.
+2. Manually configuring repositories for each distro. This method allows you to automate the deployment process by manually configuring repositories, installing the agent, and onboarding the device for each distro. This method  gives more granular control over the deployment process.
 
 ## Prerequisites and system requirements applicable to both the methods
 
@@ -53,7 +53,7 @@ Before you get started, see [the main Defender for Endpoint on Linux page](micro
 
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
-- Ansible needs to be installed on at least one computer (Ansible calls this the control node).
+- Ansible needs to be installed on at least one computer (Ansible calls this computer the control node).
 
 - SSH must be configured for an administrator account between the control node and all managed nodes (devices that have Defender for Endpoint installed on them), and it's recommended to be configured with public key authentication.
 
@@ -151,9 +151,9 @@ Create installation YAML file. You can also download the file directly from [Git
        msg: "{{ script_output.stderr }}"
 ```
 
-### Apply the above playbook using the following command
+### Apply the playbook
 
-Replace the corresponding paths and channel in the below command as per your requirement
+Apply the playbook by using the following command, replacing the corresponding paths and channel per your requirements:
 
 ```bash
 ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml --extra-vars "onboarding_json=<path to mdatp_onboard.json > mde_installer_script=<path to mde_installer.sh> channel=<channel to deploy for: insiders-fast / insiders-slow / prod> "
