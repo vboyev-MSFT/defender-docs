@@ -33,8 +33,8 @@ This article describes how to deploy Defender for Endpoint on Linux using Puppet
 
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Puppet manifest](#create-a-puppet-manifest)
-- [Deployment](#deployment)
-- [Check onboarding status](#check-onboarding-status)
+- [Deployment (include the manifest inside the site.pp file)](#include-the-manifest-inside-the-sitepp-file)
+- [Monitor your Puppet deployment](#monitor-puppet-deployment)
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
 
@@ -72,14 +72,14 @@ Download the onboarding package from Microsoft Defender portal.
 
 5. Extract the contents of the archive.
 
-    ```bash
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    ```
+   ```bash
+   unzip WindowsDefenderATPOnboardingPackage.zip
+   ```
 
-    ```console
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: mdatp_onboard.json
-    ```
+   ```console
+   Archive:  WindowsDefenderATPOnboardingPackage.zip
+   inflating: mdatp_onboard.json
+   ```
 
 ## Create a Puppet manifest
 
@@ -115,15 +115,16 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
 
 There are two ways to create manifest file:
 
-1. create manifest using installer script
+1. Create manifest using installer script.
 
-1. create manifest by configuring repositories manually
+2. Create manifest by configuring repositories manually.
 
 #### Create manifest to deploy Defender for Endpoint using Installer Script
 
-Add below contents to the `install_mdatp/manifests/init.pp` file. You can also download the file directly from [GitHub](https://teams.microsoft.com/l/message/19:2c1dc910-b8b7-415a-a9fd-2cd04843b43c_cb7ab2ef-8a66-4fcf-8c66-1723507f52df@unq.gbl.spaces/1734343607885?context=%7B%22contextType%22%3A%22chat%22%7D)
+Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download the file directly from [GitHub](https://teams.microsoft.com/l/message/19:2c1dc910-b8b7-415a-a9fd-2cd04843b43c_cb7ab2ef-8a66-4fcf-8c66-1723507f52df@unq.gbl.spaces/1734343607885?context=%7B%22contextType%22%3A%22chat%22%7D)
 
-```puppet
+```bash
+
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
 
@@ -150,7 +151,7 @@ class install_mdatp (
     mode   => '0777',
   }
 
-  #Install MDE on the host using an external script
+  # Install MDE on the host using an external script
   exec { 'install_mde':
     command     => "/tmp/mde_install/mde_installer.sh --install --channel ${channel} --onboard /tmp/mde_install/mdatp_onboard.json",
     path        => '/bin:/usr/bin',
@@ -187,7 +188,7 @@ In the below commands, replace *[distro]* and *[version]* with the information y
 
 Add below contents to the `install_mdatp/manifests/init.pp` file
 
-```puppet
+```bash
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
 
