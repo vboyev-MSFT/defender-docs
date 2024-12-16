@@ -28,7 +28,7 @@ ms.date: 11/11/2024
 **Applies to:**
 - Microsoft Defender XDR
 
-The `CloudProcessEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about process events in multicloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine. Use this reference to construct queries that return information from this table.
+The `CloudProcessEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about process events in multicloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine as protected by the organization's [Microsoft Defender for Cloud](/azure/defender-for-cloud/concept-integration-365#advanced-hunting-in-xdr). Use this reference to construct queries that return information from this table.
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
