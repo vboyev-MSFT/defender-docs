@@ -44,7 +44,7 @@ Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automat
 
 ## Prerequisites and system requirements applicable to both the methods
 
-Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements.
 
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
@@ -103,7 +103,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 ## Deploy Defender for Endpoint using mde_installer.sh with Ansible
 
-Use the following procedures [downloading the onboarding package]() and completing [prerequisites]() to deploy Defender for Endpoint using the installer bash script.
+Before you begin, make sure to download [onboarding package]() and complete [prerequisites]() to deploy Defender for Endpoint using the installer bash script.
 
 ### Download the installer bash script
 
@@ -147,7 +147,7 @@ Create installation YAML file
 
 ```
 
-### Deploy Defender for Endpoint using the playbook and command
+### Apply the above playbook using the following command
 
 Replace the corresponding paths and channel in the below command as per your requirement
 
@@ -157,7 +157,7 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml
 
 ```
 
-### Verify deployment
+### Verify if the deployment is successful
 
 1. In the [Microsoft Defender portal](https://security.microsoft.com), open the device inventory. It might take 5-20 mins for the device to show up in the portal.
 
@@ -260,32 +260,60 @@ Follow the steps below after [downloading the onboarding package]() and completi
 
 ### Create Ansible YAML files
 
+Create a subtask or role files that contribute to a playbook or task.
+
+- Create the onboarding task, `onboarding_setup.yml`:
+
+    ```bash
+    - name: Create MDATP directories
+      file:
+        path: /etc/opt/microsoft/mdatp/
+        recurse: true
+        state: directory
+        mode: 0755
+        owner: root
+        group: root
+
+    - name: Register mdatp_onboard.json
+      stat:
+        path: /etc/opt/microsoft/mdatp/mdatp_onboard.json
+      register: mdatp_onboard
+
+    - name: Extract WindowsDefenderATPOnboardingPackage.zip into /etc/opt/microsoft/mdatp
+      unarchive:
+        src: WindowsDefenderATPOnboardingPackage.zip
+        dest: /etc/opt/microsoft/mdatp
+        mode: 0600
+        owner: root
+        group: root
+      when: not mdatp_onboard.stat.exists
+    ```
+
 - Add the Defender for Endpoint repository and key, `add_apt_repo.yml`:
 
-- Defender for Endpoint on Linux can be deployed from one of the following channels:
+    Defender for Endpoint on Linux can be deployed from one of the following channels:
+    - *insiders-fast*, denoted as `[channel]`
+    - *insiders-slow*, denoted as `[channel]`
+    - *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
 
-   - *insiders-fast*, denoted as `[channel]`
-   - *insiders-slow*, denoted as `[channel]`
-   - *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
+    Each channel corresponds to a Linux software repository.
 
-   Each channel corresponds to a Linux software repository.
-
-   The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow*, and lastly by *prod*.
+    The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow*, and lastly by *prod*.
 
 
-   In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
+    In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
-   > [!WARNING]
-   > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+    > [!WARNING]
+    > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-   Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
+    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
-   In the following commands, replace *[distro]* and *[version]* with the information you've identified.
+    In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
-   > [!NOTE]
-   > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle Linux, replace *[version]* with the version of Oracle Linux.
+    > [!NOTE]
+    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle Linux, replace *[version]* with the version of Oracle Linux.
 
-   ```bash
+  ```bash
   - name: Add Microsoft APT key
     apt_key:
       url: https://packages.microsoft.com/keys/microsoft.asc
@@ -385,7 +413,7 @@ Follow the steps below after [downloading the onboarding package]() and completi
                 state: absent
         ```
 
-## Deployment
+## Apply the above playbook using the following command
 
 Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 
@@ -413,9 +441,17 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## Log installation issues
+## Troubleshoot installation issues
+-For log installation issues, see  for more information on 
+For self-troubleshooting, do the following
+1.	Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+2.	Refer to  [Installation issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
+3.	If health of the device is false, refer to [MDE agent health issues](https://learn.microsoft.com/en-us/defender-endpoint/health-status)
+4.	For product performance issues, refer to [Troubleshoot performance issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-perf), [performance tuning](https://review.learn.microsoft.com/en-us/defender-endpoint/linux-support-perf?branch=main)
+5.	For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-connectivity)
 
-See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](https://learn.microsoft.com/en-us/defender-endpoint/run-analyzer-macos-linux)
+
 
 ## Operating system upgrades
 
@@ -432,6 +468,6 @@ When upgrading your operating system to a new major version, you must first unin
 - [Manage apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
 ## See also
-- [Investigate agent health issues](health-status.md)
+- [Missing event issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-events)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
