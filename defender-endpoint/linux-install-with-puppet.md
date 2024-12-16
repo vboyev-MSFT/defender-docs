@@ -41,7 +41,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Puppet
 
 ## Prerequisites and system requirements
 
- For a description of prerequisites and system requirements, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md).
+ For a description of prerequisites and system requirements, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
 
 In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
@@ -51,7 +51,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../includes/repackaging-warning.md)]
 
-1. In Microsoft Defender portal, go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 
@@ -83,9 +83,9 @@ Download the onboarding package from Microsoft Defender portal.
 
 ## Create a Puppet manifest
 
-You need to create a Puppet manifest for deploying Defender for Endpoint on Linux to devices managed by a Puppet server. This example makes use of the `apt` and `yumrepo` modules available from puppetlabs, and assumes that the modules have been installed on your Puppet server.
+You need to create a Puppet manifest for deploying Defender for Endpoint on Linux to devices managed by a Puppet server. This example makes use of the `apt` and `yumrepo` modules available from `puppetlabs`, and assumes that the modules are installed on your Puppet server.
 
-1. Create the folders `install_mdatp/files` and `install_mdatp/manifests` under the modules folder of your Puppet installation. This folder is typically located in `/etc/puppetlabs/code/environments/production/modules` on your Puppet server. 
+1. Under the **modules** folder if your Puppet installation, create the folders `install_mdatp/files` and `install_mdatp/manifests`. The **modules** folder is typically located at `/etc/puppetlabs/code/environments/production/modules` on your Puppet server. 
 
 2. Copy the `mdatp_onboard.json` file created earlier to the `install_mdatp/files` folder. 
 
@@ -111,15 +111,14 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
        └── init.pp
    ```
 
-### Create manifest file
+### Create a manifest file
 
-There are two ways to create manifest file:
+There are two ways to create a manifest file:
 
-1. Create manifest using installer script.
+- Use an installer script; or
+- Configure your repositories manually.
 
-2. Create manifest by configuring repositories manually.
-
-#### Create manifest to deploy Defender for Endpoint using Installer Script
+#### Create a manifest to deploy Defender for Endpoint using an installer script
 
 Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download the file directly from [GitHub](https://teams.microsoft.com/l/message/19:2c1dc910-b8b7-415a-a9fd-2cd04843b43c_cb7ab2ef-8a66-4fcf-8c66-1723507f52df@unq.gbl.spaces/1734343607885?context=%7B%22contextType%22%3A%22chat%22%7D)
 
@@ -161,8 +160,9 @@ class install_mdatp (
   }
 
 }
+
 ```
-#### Create manifest to deploy Defender for Endpoint by configuring repositories manually
+#### Create a manifest to deploy Defender for Endpoint by configuring repositories manually
 
 Defender for Endpoint on Linux can be deployed from one of the following channels:
 
@@ -174,7 +174,7 @@ Each channel corresponds to a Linux software repository.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow*, and lastly by *prod*.
 
-In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
+In order to preview new features and provide early feedback, we recommend that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
@@ -186,7 +186,7 @@ In the below commands, replace *[distro]* and *[version]* with the information y
 > [!NOTE]
 > In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, replace *[distro]* with 'rhel'.
 
-Add below contents to the `install_mdatp/manifests/init.pp` file
+Add the following content to the `install_mdatp/manifests/init.pp` file:
 
 ```bash
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
@@ -288,7 +288,7 @@ class install_mdatp (
 
 ## Include the manifest inside the site.pp file
 
-Include the above manifest in your `site.pp` file:
+Include the manifest described earlier in this article in your `site.pp` file:
 
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
@@ -300,11 +300,11 @@ node "default" {
 }
 ```
 
-Enrolled agent devices periodically poll the Puppet Server and install new configuration profiles and policies as soon as they are detected.
+Enrolled agent devices periodically poll the Puppet Server and install new configuration profiles and policies as soon as they're detected.
 
 ## Monitor Puppet deployment
 
-On the agent device, you can also check the deployment status by running:
+On the agent device, you can also check the deployment status by running the following command:
 
 ```bash
 mdatp health
@@ -319,37 +319,37 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **healthy:** This confirm that Defender for Endpoint is successfully deployed and operational
-
-- **health_issues**: This states the issues which caused the healthy status to become false.
-
-- **licensed**: This confirms that the device is tied to your organization.
-
-- **orgId**: This is your Defender for Endpoint organization identifier.
+- `healthy`: Confirm that Defender for Endpoint is successfully deployed and operational.
+- `health_issues`: States the issues which caused the healthy status to become false.
+- `licensed`: Confirms that the device is tied to your organization.
+- `orgId`: Your Defender for Endpoint organization identifier.
 
 ## Troubleshoot installation issues
 
-For self-troubleshooting, do the following
+If you encounter issues during installation, try these self-troubleshooting steps:
 
-1. Refer to [Log installation issues](https://github.com/meghapriyams/defender-docs-pr/blob/docs-editor/linux-install-with-ansible-1731590880/defender-endpoint/linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+1. Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
-1. Refer to [Installation issues](/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
+2. Refer to [Installation issues](/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
 
-1. If health of the device is false, refer to [MDE agent health issues](/defender-endpoint/health-status)
+3. If health of the device is false, refer to [MDE agent health issues](/defender-endpoint/health-status)
 
-1. For product performance issues, refer to [Troubleshoot performance issues](/defender-endpoint/linux-support-perf), [performance tuning](/defender-endpoint/linux-support-perf?branch=main)
+4. For product performance issues, refer to [Troubleshoot performance issues](/defender-endpoint/linux-support-perf), [performance tuning](/defender-endpoint/linux-support-perf?branch=main)
 
-1. For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity)
+5. For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity)
 
-To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](/defender-endpoint/run-analyzer-macos-linux)
+To get support from Microsoft, raise a support ticket and provide log files by using the [client analyser](/defender-endpoint/run-analyzer-macos-linux)
 
 ## How to configure policies for Microsoft Defender on Linux
 
-You can configure AV/EDR settings on your endpoints using following methods 3. Refer to [set preferences](/defender-endpoint/linux-preferences) to learn more about the available settings 4. Refer to [security settings management](/mem/intune/protect/mde-security-integration) to configure settings via Microsoft Defender Portal
+You can configure antivirus and EDR settings on your endpoints using following methods:
+
+- See [Set preferences for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-preferences) to learn more about the available settings 
+- See [security settings management](/mem/intune/protect/mde-security-integration) to configure settings in the Microsoft Defender portal.
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and then reconfigure Defender for Endpoint on Linux on your device.
 
 ## Uninstallation
 
