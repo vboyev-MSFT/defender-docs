@@ -120,7 +120,7 @@ Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/tree/m
 
 ### Create Ansible YAML files
 
-Create installation YAML file. You can also download the file directly from [GitHub](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-events)
+Create installation YAML file. You can also download the file directly from [GitHub](/defender-endpoint/linux-support-events)
 
 ```bash
 - name: Install and Onboard MDE
@@ -226,7 +226,7 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml
 
 ### How to uninstall Microsoft Defender for Endpoint on Linux Servers
 
-Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml) which uses mde_installer.sh. You can also download the file directly from [GitHub](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-events)
+Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml) which uses mde_installer.sh. You can also download the file directly from [GitHub](/defender-endpoint/linux-support-events)
 
 ```bash
 
@@ -445,18 +445,18 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 
 ## Troubleshoot installation issues
 For self-troubleshooting, do the following
-1.	Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
-2.	Refer to  [Installation issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
-3.	If health of the device is false, refer to [MDE agent health issues](https://learn.microsoft.com/en-us/defender-endpoint/health-status)
-4.	For product performance issues, refer to [Troubleshoot performance issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-perf), [performance tuning](https://review.learn.microsoft.com/en-us/defender-endpoint/linux-support-perf?branch=main)
-5.	For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-connectivity)
+1.    Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+2.    Refer to  [Installation issues](/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
+3.    If health of the device is false, refer to [MDE agent health issues](/defender-endpoint/health-status)
+4.    For product performance issues, refer to [Troubleshoot performance issues](/defender-endpoint/linux-support-perf), [performance tuning](https://review.learn.microsoft.com/en-us/defender-endpoint/linux-support-perf?branch=main)
+5.    For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity)
 
-To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](https://learn.microsoft.com/en-us/defender-endpoint/run-analyzer-macos-linux)
+To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](/defender-endpoint/run-analyzer-macos-linux)
 
 ## How to configure policies for Microsoft Defender on Linux
 You can configure AV/EDR settings on your endpoints using following methods
-3.	Refer to [set preferences](https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences) to learn more about the available settings
-4.	Refer to [security settings management](https://learn.microsoft.com/en-us/mem/intune/protect/mde-security-integration) to configure settings via Microsoft Defender Portal
+3.    Refer to [set preferences](/defender-endpoint/linux-preferences) to learn more about the available settings
+4.    Refer to [security settings management](/mem/intune/protect/mde-security-integration) to configure settings via Microsoft Defender Portal
 
 
 ## Operating system upgrades
@@ -474,6 +474,6 @@ When upgrading your operating system to a new major version, you must first unin
 - [Manage apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
 ## See also
-- [Missing event issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-events)
+- [Missing event issues](/defender-endpoint/linux-support-events)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
