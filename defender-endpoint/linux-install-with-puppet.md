@@ -25,7 +25,7 @@ ms.date: 10/11/2024
 **Applies to**:
 
 - Microsoft Defender for Endpoint Server
-- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint) 
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -113,7 +113,7 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
 
 ### Create manifest file
 
-There are two ways to create manifest:
+There are two ways to create manifest file:
 
 1. create manifest using installer script
 
@@ -190,65 +190,96 @@ Add below contents to the `install_mdatp/manifests/init.pp` file
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, the distro variable should be 'rhel'.
-# @param version The Linux distribution release number, e.g. 7.4.
 
-class install_mdatp (
-  $channel = 'insiders-fast',
-  $distro = undef,
-  $version = undef
-) {
-  case $facts['os']['family'] {
-    'Debian' : {
-      $release = $channel ? {
-        'prod'  => $facts['os']['distro']['codename'],
-        default => $channel
-      }
-      apt::source { 'microsoftpackages' :
-        location => "https://packages.microsoft.com/${distro}/${version}/prod",
-        release  => $release,
-        repos    => 'main',
-        key      => {
-          'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
-          'server' => 'keyserver.ubuntu.com',
-        },
-      }
+class install_mdatp::configure_debian_repo (
+  String $channel,
+  String $distro,
+  String $version ) {
+  # Configure the APT repository for Debian-based systems
+
+  $release = $channel ? {
+    'prod'  => $facts['os']['distro']['codename'],
+    default => $channel
     }
-    'RedHat' : {
-      yumrepo { 'microsoftpackages' :
-        baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
-        descr    => "packages-microsoft-com-prod-${channel}",
-        enabled  => 1,
-        gpgcheck => 1,
-        gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc',
-      }
-    }
-    default : { fail("${facts['os']['family']} is currently not supported.") }
+  
+  apt::source { 'microsoftpackages':
+    location => "https://packages.microsoft.com/${distro}/${version}/prod",
+    release  => $release,
+    repos    => 'main',
+    key      => {
+      'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',
+      'server' => 'keyserver.ubuntu.com',
+    },
+  }
+}
+
+class install_mdatp::configure_redhat_repo (
+  String $channel,
+  String $distro,
+  String $version) {
+  # Configure the Yum repository for RedHat-based systems
+  
+  yumrepo { 'microsoftpackages':
+    baseurl  => "https://packages.microsoft.com/rhel/${version}/prod",
+    descr    => 'packages-microsoft-com-prod',
+    enabled  => 1,
+    gpgcheck => 1,
+    gpgkey   => 'https://packages.microsoft.com/keys/microsoft.asc',
+  }
+}
+
+class install_mdatp::install {
+  # Common configurations for both Debian and RedHat
+  
+  file { ['/etc/opt', '/etc/opt/microsoft', '/etc/opt/microsoft/mdatp']:
+    ensure  => directory,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0755',
   }
 
+  file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
+    source  => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0600',
+    require => File['/etc/opt/microsoft/mdatp'],
+  }
+
+  # Install mdatp package
+  package { 'mdatp':
+    ensure  => installed,
+    require => [
+      File['/etc/opt/microsoft/mdatp/mdatp_onboard.json'],
+    ],
+  }
+}
+
+
+class install_mdatp (
+  $channel = 'prod'
+) {
+  # Include the appropriate class based on the OS family
+  
+  $distro = downcase($facts['os']['name'])
+  $version = $facts['os']['release']['major']
+  
   case $facts['os']['family'] {
-    /(Debian|RedHat)/: {
-      file { ['/etc/opt', '/etc/opt/microsoft', '/etc/opt/microsoft/mdatp']:
-        ensure => directory,
-        owner  => root,
-        group  => root,
-        mode   => '0755',
-      }
-
-      file { '/etc/opt/microsoft/mdatp/mdatp_onboard.json':
-        source  => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
-        owner   => root,
-        group   => root,
-        mode    => '0600',
-        require => File['/etc/opt/microsoft/mdatp'],
-      }
-
-      package { 'mdatp':
-        ensure  => 'installed',
-        require => File['/etc/opt/microsoft/mdatp/mdatp_onboard.json'],
-      }
+    'Debian': {
+      class { 'install_mdatp::configure_debian_repo':
+        channel => 'prod',
+        distro => $distro,
+        version => $version
+        } -> class { 'install_mdatp::install': }
     }
-    default : { fail("${facts['os']['family']} is currently not supported.") }
+    'RedHat': {
+      class { 'install_mdatp::configure_redhat_repo':
+        channel => 'prod',
+        distro => $distro,
+        version => $version,
+        } -> class { 'install_mdatp::install': }
+    }
+    default: { fail("${facts['os']['family']} is currently not supported.")}
   }
 }
 
@@ -272,7 +303,7 @@ Enrolled agent devices periodically poll the Puppet Server and install new confi
 
 ## Monitor Puppet deployment
 
-On the agent device, you can also check the onboarding status by running:
+On the agent device, you can also check the deployment status by running:
 
 ```bash
 mdatp health
@@ -280,32 +311,20 @@ mdatp health
 
 ```console
 ...
+healthy                                 : true
+health_issues                           : []
 licensed                                : true
 org_id                                  : "[your organization identifier]"
 ...
 ```
 
+- **healthy:** This confirm that Defender for Endpoint is successfully deployed and operational
+
+- **health_issues**: This states the issues which caused the healthy status to become false.
+
 - **licensed**: This confirms that the device is tied to your organization.
 
 - **orgId**: This is your Defender for Endpoint organization identifier.
-
-## Check onboarding status
-
-You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
-
-```bash
-mdatp health --field healthy
-```
-
-The above command prints `1` if the product is onboarded and functioning as expected.
-
-> [!IMPORTANT]
-> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes. During this time the above command returns a value of `0`.
-
-If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
-
-- `1` if the device isn't onboarded yet.
-- `3` if the connection to the daemon cannot be established.
 
 ## Troubleshoot installation issues
 
