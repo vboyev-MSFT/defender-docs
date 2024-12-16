@@ -115,7 +115,7 @@ Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/tree/m
 
 ### Create Ansible YAML files
 
-Create installation YAML file
+Create installation YAML file. You can also download the file directly from [GitHub](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-events)
 
 ```bash
 - name: Install and Onboard MDE
@@ -129,7 +129,7 @@ Create installation YAML file
 
    - name: Copy Onboarding script
      ansible.builtin.copy:
-       src: "{{ onboarding_script }}"
+       src: "{{ onboarding_json }}"
        dest: /tmp/mde_install/mdatp_onboard.json
    - name: Install MDE on host
      ansible.builtin.script: "{{ mde_installer_script }} --install --channel {{ channel | default('insiders-fast') }} --onboard /tmp/mde_install/mdatp_onboard.json"
@@ -144,7 +144,6 @@ Create installation YAML file
    - name: Display any installation errors
      debug:
        msg: "{{ script_output.stderr }}"
-
 ```
 
 ### Apply the above playbook using the following command
@@ -152,9 +151,7 @@ Create installation YAML file
 Replace the corresponding paths and channel in the below command as per your requirement
 
 ```bash
-ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml --extra-vars "onboarding_script=<path to mdatp_onboard.json > mde_installer_script=<path to mde_installer.sh> channel=<channel to deploy for: insiders-fast / insiders-slow / prod> "
-
-
+ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml --extra-vars "onboarding_json=<path to mdatp_onboard.json > mde_installer_script=<path to mde_installer.sh> channel=<channel to deploy for: insiders-fast / insiders-slow / prod> "
 ```
 
 ### Verify if the deployment is successful
@@ -224,7 +221,7 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml
 
 ### How to uninstall Microsoft Defender for Endpoint on Linux Servers
 
-Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml)  which uses mde_installer.sh
+Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml) which uses mde_installer.sh. You can also download the file directly from [GitHub](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-events)
 
 ```bash
 
@@ -442,7 +439,6 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
     ```
 
 ## Troubleshoot installation issues
--For log installation issues, see  for more information on 
 For self-troubleshooting, do the following
 1.	Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 2.	Refer to  [Installation issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
@@ -451,6 +447,11 @@ For self-troubleshooting, do the following
 5.	For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-connectivity)
 
 To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](https://learn.microsoft.com/en-us/defender-endpoint/run-analyzer-macos-linux)
+
+## How to configure policies for Microsoft Defender on Linux
+You can configure AV/EDR settings on your endpoints using following methods
+3.	Refer to [set preferences](https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences) to learn more about the available settings
+4.	Refer to [security settings management](https://learn.microsoft.com/en-us/mem/intune/protect/mde-security-integration) to configure settings via Microsoft Defender Portal
 
 
 ## Operating system upgrades
