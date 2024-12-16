@@ -79,6 +79,6 @@ sudo apt-get install --only-upgrade mdatp
 > [!IMPORTANT]
 > When Defender for Cloud is provisioning the Microsoft Defender for Endpoint agent to Linux servers, it keeps the client updated automatically.
 
-To schedule an update of Microsoft Defender for Endpoint on Linux, see [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-mde-linux.md).
+To schedule an update of Microsoft Defender for Endpoint on Linux, see [Schedule an update for Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]

@@ -15,7 +15,7 @@ ms.collection:
 - mde-linux
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 12/02/2024
+ms.date: 12/16/2024
 ---
 
 # Configure offline security intelligence update for Microsoft Defender for Endpoint on Linux 
@@ -60,6 +60,12 @@ Fig. 1: Process flow diagram on the Mirror Server for downloading the security i
 
 Fig. 2: Process flow diagram on the Linux endpoint for security intelligence updates
 
+The mirror server can run any of the following operating systems:
+
+- Linux (any flavor)
+- Windows (any version)
+- Mac (any version)
+
 ## Prerequisites
 
 - Defender for Endpoint version `101.24022.0001` or later must be installed on the Linux endpoints.
@@ -69,10 +75,6 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 - The mirror server needs to have access to the following URLs:
   - `https://github.com/microsoft/mdatp-xplat.git`
   - `https://go.microsoft.com/fwlink/?linkid=2144709`
-- The following operating systems are supported on the mirror server:
-  - Linux (any flavor)
-  - Windows (any version)
-  - Mac (any version)
 - The mirror server should support bash or PowerShell.
 - The following minimum system specifications are required for the mirror server:
 
@@ -110,7 +112,7 @@ Perform the following steps to get the downloader script:
 - Extract the zip.
 
 > [!NOTE]
-> Schedule a cron job to keep the repo/downloaded zip file updated to the latest version at regular intervals.
+> Schedule a [cron job](linux-update-mde-linux.md#to-set-the-cron-job) to keep the repo/downloaded zip file updated to the latest version at regular intervals.
 
 After cloning the repo/downloaded zip file, the local directory structure should be as follows:
 
@@ -157,7 +159,7 @@ To manually execute the downloader script, configure the parameters in the `sett
   ```
 
 > [!NOTE]
-> Schedule a cron job to execute this script to download the latest security intelligence updates in the mirror server at regular intervals.
+> Schedule a [cron job](linux-update-mde-linux.md#to-set-the-cron-job) to execute this script to download the latest security intelligence updates in the mirror server at regular intervals.
 
 ### Host the offline security intelligence updates on the mirror server
 
