@@ -41,7 +41,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Puppet
 
 ## Prerequisites and system requirements
 
- For a description of prerequisites and system requirements for the current software version, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md).
+ For a description of prerequisites and system requirements, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md).
 
 In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Refer to the [Puppet documentation](https://puppet.com/docs) for details.
 
@@ -111,7 +111,57 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
        └── init.pp
    ```
 
-### Contents of `install_mdatp/manifests/init.pp`
+### Create manifest file
+
+There are two ways to create manifest:
+
+1. create manifest using installer script
+
+1. create manifest by configuring repositories manually
+
+#### Create manifest to deploy Defender for Endpoint using Installer Script
+
+Add below contents to the `install_mdatp/manifests/init.pp` file. You can also download the file directly from [GitHub](https://teams.microsoft.com/l/message/19:2c1dc910-b8b7-415a-a9fd-2cd04843b43c_cb7ab2ef-8a66-4fcf-8c66-1723507f52df@unq.gbl.spaces/1734343607885?context=%7B%22contextType%22%3A%22chat%22%7D)
+
+```puppet
+# Puppet manifest to install Microsoft Defender for Endpoint on Linux.
+# @param channel The release channel based on your environment, insider-fast or prod.
+
+class install_mdatp (
+  $channel = 'prod',
+) {
+  # Ensure that the directory /tmp/mde_install exists
+  file { '/tmp/mde_install':
+    ensure => directory,
+    mode   => '0755',
+  }
+
+  # Copy the installation script to the destination
+  file { '/tmp/mde_install/mde_installer.sh':
+    ensure => file,
+    source => 'puppet:///modules/install_mdatp/mde_installer.sh',
+    mode   => '0777',
+  }
+
+  # Copy the onboarding script to the destination
+  file { '/tmp/mde_install/mdatp_onboard.json':
+    ensure => file,
+    source => 'puppet:///modules/install_mdatp/mdatp_onboard.json',
+    mode   => '0777',
+  }
+
+  #Install MDE on the host using an external script
+  exec { 'install_mde':
+    command     => "/tmp/mde_install/mde_installer.sh --install --channel ${channel} --onboard /tmp/mde_install/mdatp_onboard.json",
+    path        => '/bin:/usr/bin',
+    user        => 'root',
+    logoutput   => true,
+    require     => File['/tmp/mde_install/mde_installer.sh', '/tmp/mde_install/mdatp_onboard.json'], # Ensure the script is copied before running the installer
+  }
+
+}
+```
+#### Create manifest to deploy Defender for Endpoint by configuring repositories manually
 
 Defender for Endpoint on Linux can be deployed from one of the following channels:
 
@@ -134,6 +184,8 @@ In the below commands, replace *[distro]* and *[version]* with the information y
 
 > [!NOTE]
 > In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, replace *[distro]* with 'rhel'.
+
+Add below contents to the `install_mdatp/manifests/init.pp` file
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
@@ -202,7 +254,7 @@ class install_mdatp (
 
 ```
 
-## Deployment
+## Include the manifest inside the site.pp file
 
 Include the above manifest in your `site.pp` file:
 
@@ -255,9 +307,25 @@ If the product is not healthy, the exit code (which can be checked through `echo
 - `1` if the device isn't onboarded yet.
 - `3` if the connection to the daemon cannot be established.
 
-## Log installation issues
+## Troubleshoot installation issues
 
- For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
+For self-troubleshooting, do the following
+
+1. Refer to [Log installation issues](https://github.com/meghapriyams/defender-docs-pr/blob/docs-editor/linux-install-with-ansible-1731590880/defender-endpoint/linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
+1. Refer to [Installation issues](/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
+
+1. If health of the device is false, refer to [MDE agent health issues](/defender-endpoint/health-status)
+
+1. For product performance issues, refer to [Troubleshoot performance issues](/defender-endpoint/linux-support-perf), [performance tuning](/defender-endpoint/linux-support-perf?branch=main)
+
+1. For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity)
+
+To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](/defender-endpoint/run-analyzer-macos-linux)
+
+## How to configure policies for Microsoft Defender on Linux
+
+You can configure AV/EDR settings on your endpoints using following methods 3. Refer to [set preferences](/defender-endpoint/linux-preferences) to learn more about the available settings 4. Refer to [security settings management](/mem/intune/protect/mde-security-integration) to configure settings via Microsoft Defender Portal
 
 ## Operating system upgrades
 
