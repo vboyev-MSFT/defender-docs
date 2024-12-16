@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AzureResourceId` | `string` | 	Unique identifier of the Azure resource associated with the process |
 | `AwsResourceName` | `string` | Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name|
 | `GcpFullResourceName` | `string` | Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP |
-| `ContainerImageName` | `string` | UThe container image name or ID, if it exists |
+| `ContainerImageName` | `string` | The container image name or ID, if it exists |
 | `KubernetesNamespace` | `string` | The Kubernetes namespace name |
 | `KubernetesPodName` | `string` | The Kubernetes pod name | 	
 | `KubernetesResource` | `string` | Identifier value that includes namespace, resource type and name | 	 
@@ -76,7 +76,7 @@ To hunt for process events including a given term (represented by "x" in the que
 CloudProcessEvents | where ProcessCommandLine has "x"
 ```
 
-### Rare process events for a pod in a Kuberentes cluster
+### Rare process events for a pod in a Kubernetes cluster
 To investigate unusual process events invoked as part of a pod in a Kubernetes cluster: 
 
 ```kusto
