@@ -22,6 +22,11 @@ ms.date: 10/11/2024
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
 
+**Applies to**:
+
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
+
 Before you begin: Install unzip if it's not already installed.
 
 The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that's used to deploy to Defender for Endpoint on Chef managed Linux servers.
