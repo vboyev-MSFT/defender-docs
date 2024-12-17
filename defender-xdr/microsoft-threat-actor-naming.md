@@ -55,7 +55,7 @@ The table below shows how the family names map to the threat actors that we trac
 The table below lists publicly disclosed threat actor names with their origin or threat actor category, previous names, and corresponding names used by other security vendors where available. This page will be updated as more info on other vendors’ names become available.  
 
 |Threat actor name|Origin/Threat actor category|Other names|
-|:---:|:---:|:---:|
+|:----|:----|:---|
 |Amethyst Rain|Lebanon|Volatile Cedar|
 |[Antique Typhoon](https://www.microsoft.com/en-us/security/blog/2023/07/14/analysis-of-storm-0558-techniques-for-unauthorized-email-access/)|China|Storm-0558|
 |[Aqua Blizzard](https://www.microsoft.com/en-us/security/blog/2022/02/04/actinium-targets-ukrainian-organizations/)|Russia|ACTINIUM, Gamaredon, Armageddon, UNC530, shuckworm, SectorC08, Primitive Bear|
