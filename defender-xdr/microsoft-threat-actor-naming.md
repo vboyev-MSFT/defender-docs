@@ -30,9 +30,9 @@ Microsoft categorizes threat actors into five key groups:
 
 **Nation-state actors:** cyber operators acting on behalf of or directed by a nation/state-aligned program, irrespective of whether for espionage, financial gain, or retribution. Microsoft observed that most nation state actors continue to focus operations and attacks on government agencies, intergovernmental organizations, nongovernmental organizations, and think tanks for traditional espionage or surveillance objectives.
 
-**Financially motivated actors:** cyber campaigns/groups directed by a criminal organization/person with motivations of financial gain and are not associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
+**Financially motivated actors:** cyber campaigns/groups directed by a criminal organization/person with motivations of financial gain and aren't associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
 
-**Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools were observed targeting and surveilling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens, threatening many global human rights efforts.
+**Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools were observed targeting and surveiling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens, threatening many global human rights efforts.
 
 **Influence operations:** information campaigns communicated online or offline in a manipulative fashion to shift perceptions, behaviors, or decisions by target audiences to further a group or a nation's interests and objectives.
 
@@ -40,12 +40,12 @@ Microsoft categorizes threat actors into five key groups:
 
 In our new taxonomy, a weather event or *family name* represents one of the above categories. For nation-state actors, we assigned a family name to a country/region of origin tied to attribution. For example, Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors.
 
-Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, we use a temporary designation of Storm and a four-digit number where there is a newly discovered, unknown, emerging, or developing cluster of threat activity.
+Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, we use a temporary designation of Storm and a four-digit number where there's a newly discovered, unknown, emerging, or developing cluster of threat activity.
 
 The table that follows shows how the family names map to the threat actors that we track.
 
-|Actor category|Type|Family name|
-|:---:|:---:|:---:|
+|Threat actor category|Type|Family name|
+|:---|:---|:---|
 |Nation-state|China<br>Iran<br>Lebanon<br>North Korea<br>Russia<br>South Korea<br>Turkey<br>Vietnam|Typhoon<br>Sandstorm<br>Rain<br>Sleet<br>Blizzard<br>Hail<br>Dust<br>Cyclone|
 |Financially motivated|Financially motivated|Tempest|
 |Private sector offensive actors|PSOAs|Tsunami|
@@ -55,7 +55,7 @@ The table that follows shows how the family names map to the threat actors that 
 The table that follows lists publicly disclosed threat actor names with their origin or threat actor category, previous names, and corresponding names used by other security vendors where available. This page will be updated as more info on other vendors’ names become available.  
 
 |Threat actor name|Origin/Threat actor category|Other names|
-|:----|:----|:---|
+|:-----|:-----|:---|
 |Amethyst Rain|Lebanon|Volatile Cedar|
 |[Antique Typhoon](https://www.microsoft.com/en-us/security/blog/2023/07/14/analysis-of-storm-0558-techniques-for-unauthorized-email-access/)|China|Storm-0558|
 |[Aqua Blizzard](https://www.microsoft.com/en-us/security/blog/2022/02/04/actinium-targets-ukrainian-organizations/)|Russia|ACTINIUM, Gamaredon, Armageddon, UNC530, shuckworm, SectorC08, Primitive Bear|
