@@ -226,7 +226,7 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/install_mdatp.yml
 
 ### How to uninstall Microsoft Defender for Endpoint on Linux Servers
 
-Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml) which uses mde_installer.sh. You can also download the file directly from [GitHub](/defender-endpoint/linux-support-events)
+Create uninstallation YAML file (for example: /etc/ansible/playbooks/uninstall_mdatp.yml) which uses mde_installer.sh. You can also download the file directly from [GitHub](/defender-endpoint/linux-support-events)
 
 ```bash
 
@@ -250,7 +250,7 @@ Create uninstallation YAML file (eg: /etc/ansible/playbooks/uninstall_mdatp.yml)
 
 ```
 
-Run the below command to uninstall MDE using the above playbook
+Run the following command to uninstall Defender for Endpoint by using the playbook:
 
 ```bash
 ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/uninstall_mdatp.yml --extra-vars "mde_installer_script=<path to mde_installer.sh>"
@@ -258,7 +258,7 @@ ansible-playbook -i  /etc/ansible/hosts /etc/ansible/playbooks/uninstall_mdatp.
 
 ## Deploy Defender for Endpoint using Ansible by configuring repositories manually
 
-Follow the steps below after [downloading the onboarding package]() and completing [pre-requisites]() to deploy Defender for Endpoint by manually configuring the repositories for each Linux distribution.
+Follow the steps in this section after downloading the onboarding package and meeting prerequisites to deploy Defender for Endpoint by manually configuring the repositories for each Linux distribution.
 
 ### Create Ansible YAML files
 
@@ -349,7 +349,7 @@ Create a subtask or role files that contribute to a playbook or task.
 
 - Create the Ansible install and uninstall YAML files.
 
-    - For apt-based distributions use the following YAML file:
+    - For apt-based distributions, use the following YAML file:
 
         ```bash
         cat install_mdatp.yml
@@ -382,7 +382,7 @@ Create a subtask or role files that contribute to a playbook or task.
                 state: absent
         ```
 
-    - For dnf-based distributions use the following YAML file:
+    - For dnf-based distributions, use the following YAML file:
 
         ```bash
         cat install_mdatp_dnf.yml
@@ -415,9 +415,9 @@ Create a subtask or role files that contribute to a playbook or task.
                 state: absent
         ```
 
-## Apply the above playbook using the following command
+## Apply the playbook
 
-Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
+In this step, you apply the playbook. Run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
 
 - Installation:
 
@@ -444,26 +444,33 @@ Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.
   ```
 
 ## Troubleshoot installation issues
-For self-troubleshooting, do the following
-1.    Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
-2.    Refer to  [Installation issues](/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
-3.    If health of the device is false, refer to [MDE agent health issues](/defender-endpoint/health-status)
-4.    For product performance issues, refer to [Troubleshoot performance issues](/defender-endpoint/linux-support-perf), [performance tuning](https://review.learn.microsoft.com/en-us/defender-endpoint/linux-support-perf?branch=main)
-5.    For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity)
 
-To get support from Microsoft, raise a support ticket and provide log dump by [running client analyser](/defender-endpoint/run-analyzer-macos-linux)
+For self-troubleshooting, do the following
+
+1. For information on how to find the log that's generated automatically when an installation error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
+
+2. For information about common installation issues, see [Installation issues](/defender-endpoint/linux-support-install).
+
+3. If health of the device is `false`, see [Defender for Endpoint agent health issues](/defender-endpoint/health-status).
+
+4. For product performance issues, see [Troubleshoot performance issues](/defender-endpoint/linux-support-perf).
+
+5. For proxy and connectivity issues, see [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity).
+
+6. To get support from Microsoft, open a support ticket, and provide the log files created by using the [client analyser](/defender-endpoint/run-analyzer-macos-linux).
 
 ## How to configure policies for Microsoft Defender on Linux
-You can configure AV/EDR settings on your endpoints using following methods
-3.    Refer to [set preferences](/defender-endpoint/linux-preferences) to learn more about the available settings
-4.    Refer to [security settings management](/mem/intune/protect/mde-security-integration) to configure settings via Microsoft Defender Portal
 
+You can configure antivirus or EDR settings on your endpoints using following methods:
+
+- See [Set preferences for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-preferences).
+- See [security settings management](/mem/intune/protect/mde-security-integration) to configure settings in the Microsoft Defender portal.
 
 ## Operating system upgrades
 
 When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on Linux on your device.
 
-## References
+## See also
 
 - [Add or remove YUM repositories](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
@@ -473,7 +480,6 @@ When upgrading your operating system to a new major version, you must first unin
 
 - [Manage apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## See also
 - [Missing event issues](/defender-endpoint/linux-support-events)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
