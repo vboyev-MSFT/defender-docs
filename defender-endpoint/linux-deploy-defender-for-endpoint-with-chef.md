@@ -107,7 +107,7 @@ directory "#{mdatp}" do
   recursive true
 end
 
-#Extract WindowsDefenderATPOnbaordingPackage.zip into /etc/opt/microsoft/mdatp
+#Extract WindowsDefenderATPOnboardingPackage.zip into /etc/opt/microsoft/mdatp
 
 bash 'Extract Onboarding Json MDATP' do
   code <<-EOS
