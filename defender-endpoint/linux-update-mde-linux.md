@@ -1,6 +1,6 @@
 ---
-title: How to schedule an update of the Microsoft Defender for Endpoint (Linux)
-description: Learn how to schedule an update of the Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
+title: How to schedule an update for Microsoft Defender for Endpoint on Linux
+description: Learn how to schedule an update for Microsoft Defender for Endpoint on Linux to better protect your organization's assets.
 ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
@@ -15,10 +15,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/11/2024
+ms.date: 12/16/2024
 ---
 
-# Schedule an update of the Microsoft Defender for Endpoint (Linux)
+# Schedule an update for Microsoft Defender for Endpoint on Linux
 
 **Applies to**:
 

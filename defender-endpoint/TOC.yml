@@ -287,7 +287,7 @@
               href: linux-schedule-scan-mde.md
             - name: Schedule antivirus scan in Defender for Endpoint on Linux
               href: schedule-antivirus-scan-in-mde.md
-            - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
+            - name: Schedule an update for Microsoft Defender for Endpoint on Linux
               href: linux-update-MDE-Linux.md
             - name: Configure eBPF-based sensor
               href: linux-support-ebpf.md 
