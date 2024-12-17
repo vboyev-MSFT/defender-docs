@@ -22,7 +22,7 @@ ms.date: 12/17/2024
 
 # How Microsoft names threat actors
 
-Microsoft shifted to a new naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with the new taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves and aid security researchers already confronted with an overwhelming amount of threat intelligence data.
+Microsoft shifted to a new naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with the new taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves. We also aim to aid security researchers, who are already confronted with an overwhelming amount of threat intelligence data.
 
 :::image type="content" source="/defender/media/threat-actor-naming/threat-actor-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="/defender/media/threat-actor-naming/threat-actor-categories-lg.png":::
 
@@ -38,11 +38,11 @@ Microsoft categorizes threat actors into five key groups:
 
 **Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity. This designation allows Microsoft to track a group as a discrete set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
 
-In our new taxonomy, a weather event or *family name* represents one of the above categories. For nation-state actors, we have assigned a family name to a country/region of origin tied to attribution, like Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors.
+In our new taxonomy, a weather event or *family name* represents one of the above categories. For nation-state actors, we assigned a family name to a country/region of origin tied to attribution. For example, Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors.
 
 Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, we use a temporary designation of Storm and a four-digit number where there is a newly discovered, unknown, emerging, or developing cluster of threat activity.
 
-The table below shows how the family names map to the threat actors that we track.
+The table that follows shows how the family names map to the threat actors that we track.
 
 |Actor category|Type|Family name|
 |:---:|:---:|:---:|
@@ -52,7 +52,7 @@ The table below shows how the family names map to the threat actors that we trac
 |Influence operations|Influence operations|Flood|
 |Groups in development|Groups in development|Storm|
 
-The table below lists publicly disclosed threat actor names with their origin or threat actor category, previous names, and corresponding names used by other security vendors where available. This page will be updated as more info on other vendors’ names become available.  
+The table that follows lists publicly disclosed threat actor names with their origin or threat actor category, previous names, and corresponding names used by other security vendors where available. This page will be updated as more info on other vendors’ names become available.  
 
 |Threat actor name|Origin/Threat actor category|Other names|
 |:----|:----|:---|
