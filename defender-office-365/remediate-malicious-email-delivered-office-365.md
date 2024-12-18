@@ -27,6 +27,13 @@ Remediation means to take a prescribed action against a threat. Malicious email 
 
 ## What you need to know before you begin
 
+- There are throttling limits for large-scale remediations that help ensure stability and performance of the service:
+  - **Organization limits**: The maximum number of active, concurrent email remediations is 50. Once the limit is reached. no new remediations are triggered until some actions are completed.
+  - **Email message limits**: If an active remediation involves more than one million email messages, no new email remediations are allowed.
+  - **Recipient requirements in remediations**: The total percentage of selected recipients must be at least 40% of the total email message count in the remediation. For example, if the remediation requires the deletion of 5000 email messages, the remediation must target at least 2000 recipients.
+    - If the recipient count is less than 40% of the total email message count, ensure that the percentage of email messages per recipient doesn't exceed 20% of the total number of email messages submitted.
+    - If the recipient count is less than 40% of the total email message count, the remediation can't be used to delete more than 1000 messages that were sent to a single recipient.
+
 - You need to be assigned permissions before you can do the procedures in this article. Admins can take the required action on email messages, but the **Search and Purge** role is required to get those actions approved. To assign the **Search and Purge** role, you have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/defender-xdr/manage-rbac) (If **Email & collaboration** \> **Defender for Office 365** permissions is :::image type="icon" source="media/scc-toggle-on.png" border="false"::: **Active**. Affects the Defender portal only, not PowerShell): **Security operations/Security data/Email & collaboration advanced actions (manage)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** or **Data Investigator** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
