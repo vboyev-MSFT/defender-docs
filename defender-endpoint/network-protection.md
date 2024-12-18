@@ -63,8 +63,11 @@ Here are a few important points to keep in mind:
 - Encrypted URLs (full path) are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge).
 - Encrypted URLs (FQDN only) are blocked in non-Microsoft browsers.
 - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDNs, are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
+
+- Network Protection will block connections on both standard and non-standard ports.
+
 - Full URL path blocks are applied for unencrypted URLs.
- 
+
 There might be up to two hours of latency (usually less) between the time when the action is taken and the URL/IP is blocked.
  
 Watch this video to learn how network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
