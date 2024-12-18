@@ -122,10 +122,10 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
    |`vfat`||
    |`xfs`||
     
-- Audit framework (`auditd`) must be enabled if you're using auditd as your primary event provider.
-
   > [!NOTE]
-  > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
+  > Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
+  > If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or lower, then Audit framework (`auditd`) must be enabled on your system.
+  > If you are using Auditd, then system events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
@@ -152,9 +152,16 @@ If you experience any installation failures, see [Troubleshooting installation f
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies. The following external package dependencies exist for the mdatp package:
 
-- The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage` `selinux-policy-targeted`, and `mde-netfilter`
-- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, and `mde-netfilter`
-- For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, and `mde-netfilter`
+- The mdatp RPM package requires `glibc >= 2.17`, `policycoreutils`, `selinux-policy-targeted`, and `mde-netfilter`
+- For RHEL6 the mdatp RPM package requires `policycoreutils`, `libselinux`, and `mde-netfilter`
+- For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, and `mde-netfilter`
+
+> [!NOTE]
+> Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
+> If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or lower, the following additional dependency on the auditd package exists for mdatp:
+> - The mdatp RPM package requires `audit`, `semanage`.
+> - For DEBIAN the mdatp package requires `auditd`.
+> - For Mariner the mdatp package requires `audit`.
 
 The`mde-netfilter` package also has the following package dependencies:
 
