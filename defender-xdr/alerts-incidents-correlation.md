@@ -78,10 +78,6 @@ Even when the correlation logic indicates that two incidents should be merged, D
 - Merging the two incidents would raise the number of entities in the merged incident above the allowed maximum of 50 entities per incident.
 - The two incidents contain devices in different [device groups](/defender-endpoint/machine-groups) as defined by the organization. <br>(This condition is not in effect by default; it must be enabled.)
 
-## Manual correlation
-
-While Microsoft Defender already uses advanced correlation mechanisms, you might want to decide differently whether a given alert belongs with a particular incident or not. In such a case, you can unlink an alert from one incident and link it to another. Every alert must belong to an incident, so you can either link the alert to another existing incident, or to a new incident that you create on the spot.
-
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
 
 ## Next steps
