@@ -15,12 +15,17 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/11/2024
+ms.date: 12/16/2024
 ---
 
 # Deploy Defender for Endpoint on Linux with Chef
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
+
+**Applies to**:
+
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
 Before you begin: Install unzip if it's not already installed.
 
@@ -102,7 +107,7 @@ directory "#{mdatp}" do
   recursive true
 end
 
-#Extract WindowsDefenderATPOnbaordingPackage.zip into /etc/opt/microsoft/mdatp
+#Extract WindowsDefenderATPOnboardingPackage.zip into /etc/opt/microsoft/mdatp
 
 bash 'Extract Onboarding Json MDATP' do
   code <<-EOS
@@ -130,7 +135,7 @@ end
 
 To include this step as part of the recipe just add `include_recipe ':: settings_mdatp` to your default.rb file within the recipe folder.
 
-You can also use crontab to schedule automatic updates [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md).
+You can also use crontab to schedule automatic updates [Schedule an update for Microsoft Defender for Endpoint on Linux](linux-update-MDE-Linux.md).
 
 Uninstall MDATP cookbook:
 
