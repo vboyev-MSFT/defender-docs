@@ -8,7 +8,7 @@ ms.author: chrisda
 author: chrisda
 manager: deniseb
 ms.localizationpriority: medium
-ms.date: 10/09/2024
+ms.date: 12/17/2024
 audience: ITPro
 ms.collection:
   - m365-security
@@ -41,7 +41,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## December 2024
 
- - [Considerations for integrating non-Microsoft security services with Microsoft 365](mdo-integrate-security-service.md): considerations and recommendations for deploying a defense-in-depth email security strategy using third-party security services. 
+ - [Considerations for integrating non-Microsoft security services with Microsoft 365](mdo-integrate-security-service.md): Considerations and recommendations for deploying a defense-in-depth email security strategy using third-party security services.
 
 ## November 2024
 
