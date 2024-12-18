@@ -39,7 +39,7 @@ General recommendations to set up the MDE agent as an OT discovery data source a
 
 ## Passive Monitoring
 
-Theo can we add an intro sentence here
+Passive monitoring involves silently analyzing network traffic using known endpoints and traffic patterns, for example, MDE passively monitors network traffic to discover OT devices.
 
 - Requirement: An MDE agent must be running on the LAN or subnet to be monitored.
 
@@ -49,7 +49,11 @@ Theo can we add an intro sentence here
 
 ## Standard Probing
 
-- Requirement: MDE needs to be <!-- running on? Theo? not inside-->inside the interesting LAN or subnet.
+Standard probing involves actively probing observed devices in the network to enrich collected data.
+
+This mode leverages common discovery protocols that use multicast queries in the network to identify other devices not located using passive monitoring. For example, MDE can use standard probing to actively find devices in your network, which helps build a reliable and coherent device inventory.<!-- this doesnt show and example for this type of probing?-->
+
+- Requirement: An MDE agent must be running on the LAN or subnet to be monitored.
 
 - Functionality: Broadcast packets allow the MDE agent to create the device, <!-- Theo - what does this mean? create the device in the inventory? link to it?find it? identify it? -->though not necessarily with all the information needed for OT classification and CVEs. Based on the initial information discovered, the agent uses standard probing to complete the necessary information using appropriate protocols.
 
