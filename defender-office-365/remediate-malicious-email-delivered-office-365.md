@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Threat remediation
 ms.service: defender-office-365
-ms.date: 1/16/2024
+ms.date: 12/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
