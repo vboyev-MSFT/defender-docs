@@ -17,12 +17,12 @@ ms.custom:
 - cx-ti
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 12/17/2024
+ms.date: 12/19/2024
 ---
 
 # How Microsoft names threat actors
 
-Microsoft's naming taxonomy for threat actors aligns with the theme of weather. We intend to bring better clarity to customers and other security researchers with this taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves. We also aim to aid security researchers, who are already confronted with an overwhelming amount of threat intelligence data.
+Microsoft uses a naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with this taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves. We also aim to aid security researchers, who are already confronted with an overwhelming amount of threat intelligence data.
 
 :::image type="content" source="/defender/media/threat-actor-naming/threat-actor-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="/defender/media/threat-actor-naming/threat-actor-categories-lg.png":::
 
