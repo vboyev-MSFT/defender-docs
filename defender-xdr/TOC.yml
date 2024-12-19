@@ -438,8 +438,8 @@
                   href: defender-experts-for-hunting.md
                 - name: Auditing
                   href: auditing.md
-              - name: Defender Experts Scoped coverage
-                href: dex-scoped-coverage.md    
+                - name: Defender Experts Scoped coverage
+                  href: defender-experts-scoped-coverage.md  
               - name: Frequently asked questions
                 items:
                 - name: General information
