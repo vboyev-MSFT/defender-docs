@@ -26,11 +26,11 @@ ms.date: 12/19/2024
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 
-Defender experts scoped coverage for XDR is for customers who wish to have Defender Experts cover only a section of their organization (for e.g., specific geography, subsidiary, or function) that requires security operations (SOC) support or where their security support is limited.
+Defender experts scoped coverage for XDR is for customers who wish to have Defender Experts cover only a section of their organization (for e.g., specific geography, subsidiary, or function) that requires security operations (SOC) support or, where their security support is limited.
 
 ## Assets to be customized
 
-You can define a specific set of devices and/or users for which Defender Experts would offer support. Any incident that impacts any of these defined set of devices and users would be considered in scope and would be offered the necessary response actions to mitigate the threat.
+You can define a specific set of devices and/or users for which Defender Experts would offer support. Any incident that impacts any of the defined set of devices and users would be considered in scope and would be provided the necessary response actions to mitigate the threat.
 
 ## How to use scoped coverage by Microsoft Defender Experts for XDR
 
@@ -49,11 +49,11 @@ Devices and users that are out of scope are not supported by Defender Experts. H
 
 ## Frequently asked questions
 
-1. **What actions are not in scope for this service**
+1. **What actions are not in scope for this service?**
 
 - Our pricing structure will not change. Customers would still pay for DEX based on E5 (and servers, MDC, OpenXDR) for their desired userbase.
-- We won't support scoping by Defender products i.e. more granular pricing and coverage for individual Defender products like MDE, MDO or MDC. Our min baseline will continue to be E5.
-- In Defender Experts for XDR, there is no change in permissions for analysts. Defender Experts Analysts will still have access to the entire tenant and not just the scoped assets.
+- We won't be supporting scoping by Defender products i.e. more granular pricing and coverage for individual Defender products like Microsoft Defender for Endpoint (MDE), Microsoft Defender for Office (MDO), or Microsoft Defender for Cloud (MDC). Our minimum baseline will continue to be E5.
+- In Defender Experts for XDR, there is no change in permissions for analysts. Defender Experts analysts will still have access to the entire tenant and not just the scoped assets.
 
 2.**Will customers be allowed to change the scoped assets later?**
 
@@ -61,4 +61,4 @@ You are allowed to change the scoped assets based on your needs. Keep in mind th
 
 3.**What type of response actions would be provided?**
 
-There will be no changes to existing response actions that are in scope, which are already defined at [FAQs related to Microsoft Defender Experts for XDR Managed response](../defender-xdr/frequently-asked-questions.md)
+There will be no changes to existing response actions that are in scope, which are already defined at [FAQs related to Microsoft Defender Experts for XDR Managed response](../defender-xdr/frequently-asked-questions.md).
