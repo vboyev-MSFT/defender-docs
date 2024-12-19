@@ -26,7 +26,7 @@ ms.date: 12/19/2024
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 
-Defender experts scoped coverage for XDR is for customers who wish to have Defender Experts cover only a section of their organization (e.g., specific geo, subsidiary or function) that requires SOC support or where their SOC support is limited.
+Defender experts scoped coverage for XDR is for customers who wish to have Defender Experts cover only a section of their organization (for e.g., specific geography, subsidiary, or function) that requires security operations (SOC) support or where their security support is limited.
 
 ## Assets to be customized
 
@@ -61,4 +61,4 @@ You are allowed to change the scoped assets based on your needs. Keep in mind th
 
 3.**What type of response actions would be provided?**
 
-There will be no changes to existing response actions that are in scope, which are already defined at [FAQs related to Microsoft Defender Experts for XDR Managed response]()
+There will be no changes to existing response actions that are in scope, which are already defined at [FAQs related to Microsoft Defender Experts for XDR Managed response](../defender-xdr/frequently-asked-questions.md)
