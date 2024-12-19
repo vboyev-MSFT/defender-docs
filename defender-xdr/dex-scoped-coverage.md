@@ -36,7 +36,7 @@ You can define a specific set of devices and/or users for which Defender Experts
 
 Defender Experts would create a pre-defined device and user group to which you can add devices and users which would then be considered as the set of assets that are in scope for this service. Currently, we do not offer support to rename this group nor have the option to support nested groups. The devices and users would have to be added individually to the groups created. 
 
-<[!NOTE]
+> [!NOTE]
 > The device group must also be in the highest order of priority for the devices under that group to be considered in scope. (This is a known product limitation).
 
 ## How to initiate scoped coverage
