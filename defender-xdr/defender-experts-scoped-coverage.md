@@ -50,7 +50,7 @@ You can also set up this service as part of your onboarding. [Learn more about g
 
 1. **What actions are covered in this service?**
    - This service doesn't change our pricing structure. You still pay for Defender Experts service based on E5 (and servers, Microsoft Defender for Cloud, and Open XDR) for your desired user base.
-   - This service doesn't scope according to individual Microsoft Defender products and services (such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, or Microsoft Defender for Cloud). That is, the minimum baseline for scoped coverage will continue to be E5 license. 
+   - This service doesn't scope according to individual Microsoft Defender products and services (such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, or Microsoft Defender for Cloud). That is, the minimum baseline for scoped coverage will continue to be E5 license.
    - There's no change in permissions for analysts in Defender Experts for XDR. Defender Experts analysts will still have access to your entire tenant and not just the scoped assets.
 
 2. **Can I change the scoped assets later?**
@@ -60,3 +60,11 @@ You can also set up this service as part of your onboarding. [Learn more about g
 3. **What type of response actions does this service provide?**
 
    There's no changes to existing response actions that are in scope. Read our [FAQs related to Microsoft Defender Experts for XDR Managed response](../defender-xdr/frequently-asked-questions.md) to learn more.
+
+### See also
+
+[Get started with Microsoft Defender Experts for XDR service](managed-detection-and-response-xdr.md)
+
+### Next step
+
+[Frequently asked questions](faq-incident-notifications-xdr.md)
