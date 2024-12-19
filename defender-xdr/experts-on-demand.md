@@ -3,8 +3,7 @@ title: Collaborate with Experts on Demand using Ask Defender Experts
 ms.reviewer:
 description: Select Ask Defender Experts directly inside the Microsoft Defender security portal to get swift and accurate responses to all your threat hunting questions.
 search.product: Windows 10
-ms.service: defender-experts
-ms.subservice: dex-hunting
+ms.service: defender-experts-for-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
