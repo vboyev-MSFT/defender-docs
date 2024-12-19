@@ -2,7 +2,8 @@
 title: Defender Experts scoped coverage
 ms.reviewer:
 description: Defender Experts scoped coverage covers a specific section of the organization where SOC support is limited
-ms.service: defender-experts-for-hunting
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
