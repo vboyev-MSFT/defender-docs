@@ -41,14 +41,13 @@ Currently, we do not offer support to rename this group nor have the option to s
 > [!IMPORTANT]
 > The device group must also be in the highest order of priority for the devices under it to be considered in scope. This is a known product limitation.
 
-To set up scoped coverage, in the Microsoft Defender XDR portal, go to **System** > **Settings** > **Defender Experts** > (Missing info here. Where exactly)
+To set up scoped coverage, in the Microsoft Defender XDR portal, we will create a pre-defined Microsoft Defender for Endpoint (MDE) device group or Microsoft Entra ID user group. It is recommended that you do not change the name of the user/device group.
 
 You can also set up this service as part of your onboarding. [Learn more about getting started with Microsoft Defender Experts for XDR](get-started-xdr.md)
 
+The following section lists down questions that you or your SOC team might have regarding scoped coverage.
 
-## Frequently asked questions
-
-1. **What actions are covered in this service?**
+1. **What aspects of the XDR service remain consistent with Defender Experts Scoped coverage?**
    - This service doesn't change our pricing structure. You still pay for Defender Experts service based on E5 (and servers, Microsoft Defender for Cloud, and Open XDR) for your desired user base.
    - This service doesn't scope according to individual Microsoft Defender products and services (such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, or Microsoft Defender for Cloud). That is, the minimum baseline for scoped coverage will continue to be E5 license.
    - There's no change in permissions for analysts in Defender Experts for XDR. Defender Experts analysts will still have access to your entire tenant and not just the scoped assets.
