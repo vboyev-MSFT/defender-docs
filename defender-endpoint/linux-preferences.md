@@ -671,20 +671,6 @@ The following settings can be used to configure certain advanced supplementary s
 |**Data type**|Dictionary (nested preference)|*n/a*|
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
-##### Configure monitoring of namespace Events
-
-> [!NOTE]
-> This is a preview feature.
-
-Determines whether creation of namespaces (via `clone` / `unshare` system calls) are monitored.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableNamespaceEvents|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24032.0007` or later.|
-
 ##### Configure monitoring of file modify permissions events
 
 Determines whether file modify permissions events (`chmod`) are monitored. 
@@ -727,21 +713,6 @@ Determines whether network socket events involving creation of raw sockets / pac
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-##### Configure monitoring of UDP socket events
-
-Determines whether network socket events involving creation of UDP sockets are monitored.
-
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
-> When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-network-socket-events) section above for more details.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableUdpSocketEvent|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 ##### Configure monitoring of boot loader events
 
@@ -830,20 +801,6 @@ Determines whether events corresponding to files being opened to be executed are
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.98.89` or later.|
-
-##### Configure monitoring of mount namespace events
-
-> [!NOTE]
-> This is a preview feature.
-
-Determines whether file events in namespace mount points are monitored.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableMountNamespaces|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24022.0001` or later.|
 
 #### Behavior monitoring configurations
 
