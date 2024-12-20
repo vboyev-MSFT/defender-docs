@@ -44,7 +44,7 @@ This article is updated frequently to let you know what's new in the latest rele
 >
 > If you have any concerns or need assistance during this transition, contact support.
 
-## Releases for Defender for Endpoint on Mac
+## Releases for Defender for Endpoint on Linux
 
 ### Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 
@@ -52,11 +52,11 @@ This article is updated frequently to let you know what's new in the latest rele
 |--------------------|-----------------------|
 | Released:          | **November 14, 2024** |
 | Published:         | **November 14, 2024** |
-| Release version:   | **30.124092.0002** |
+| Release version:   | **30.124092.0002.0** |
 | Engine version:    | **1.1.24080.9**       |
 | Signature version: | **1.417.659.0**      |
 
-#### What's new**
+#### What's new
 
 - Support added for hardened installations on non-executable `/var` partitions. Beginning with this release, antivirus signatures are installed at `/opt/microsoft/mdatp/definitions.noindex` by default, instead of `/var/opt/microsoft/mdatp/definitions.noindex`. During upgrades, the installer attempts to migrate older definitions to the new path unless it detects that the path is already customized (using `mdatp definitions path set`).
 
@@ -135,11 +135,11 @@ There are multiple fixes and new changes in this release.
 
 ## May-2024 Build: 101.24042.0002 | Release version: 30.124042.0002.0
 
-| Build:             | **101.24052.0002**         |
+| Build:             | **101.24042.0002**         |
 |--------------------|-----------------------|
 | Released:          | **May 29, 2024** |
 | Published:         | **May 29, 2024** |
-| Release version:   | **30.124052.0002.0** |
+| Release version:   | **30.124042.0002.0** |
 | Engine version:    | **1.1.24030.4**       |
 | Signature version: | **1.407.521.0**      |
 
@@ -1174,148 +1174,138 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Performance improvements & bug fixes
 
 
-<details><summary> 2021 releases</summary>
-  <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
+### 2021 releases
 
-  <p><b>Build: 101.52.57 <br>
-  Release version: 30.121092.15257.0</b></p>
+#### (Build: 101.52.57 | Release version: 30.121092.15257.0)
 
-  <p><b> What's new </b></p>
+| Build:             | **101.52.57**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121092.15257.0** |
+
+##### What's new 
 
 - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
 
-   </details>
+#### (Build: 101.47.76  | Release version: 30.121092.14776.0)
 
-  <details><summary>(Build: 101.47.76  | Release version: 30.121092.14776.0)</summary>
-
-  <p><b>
-  Build: 101.47.76 <br>
-  Release version: 30.121092.14776.0</b></p>
-
-  <p><b>What's new</b></p>
+| Build:             | **101.47.76**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121092.14776.0** |
+  
+##### What's new
 
 - Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through mdatp config scan-archives --value [enabled/disabled]. By default, this setting is set to enabled.
 
-   - Bug fixes
+- Bug fixes
 
-   </details>
+#### (Build: 101.45.13 | Release version: 30.121082.14513.0)
 
-   <details><summary>(Build: 101.45.13 | Release version: 30.121082.14513.0)</summary>
+| Build:             | **101.45.13**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121082.14513.0** |
 
-  <p>Build: <b>101.45.13 </b>  <br>
-  Release version:<b> 30.121082.14513.0 </b></p>
+##### What's new</b></p>
 
-  <p><b>What's new</b></p>
+- Beginning with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
-  - Beginning with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
+  - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+  - Amazon Linux 2
+  - Fedora 33 or higher
 
-    - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
-    - Amazon Linux 2
-    - Fedora 33 or higher
+- Bug fixes
 
-  - Bug fixes
+#### (Build: 101.45.00 | Release version: 30.121072.14500.0)
 
-   </details>
+| Build:             | **101.45.00**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121072.14500.0** |
 
-   <details><summary>(Build: 101.45.00 | Release version: 30.121072.14500.0)</summary>
-
-   <p>Build:<b> 101.45.00</b> <br>
-   Release version: <b>30.121072.14500.0</b></p>
-
-   <p><b>What's new</b></p>
+##### What's new
 
   - Added new switches to the command-line tool:
-    - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
-    - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this setting is set to `enabled`.
+  - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
+  - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this setting is set to `enabled`.
   - Changing the product log level now requires elevation
   - Bug fixes
 
-   </details>
+#### (Build: 101.39.98 | Release version: 30.121062.13998.0)
 
-   <details><summary>(Build: 101.39.98 | Release version: 30.121062.13998.0)</summary>
+| Build:             | **101.39.98**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121062.13998.0** |
 
-   <p>Build: <b>101.39.98 </b><br>
-   Release version: <b>30.121062.13998.0</b></p>
-
-   <p><b>What's new</b></p>
-
-- Performance improvements & bug fixes
-
-   </details>
-
-   <details><summary>(Build: 101.34.27 | Release version: 30.121052.13427.0)</summary>
-
-   <p>Build:<b> 101.34.27</b> <br>
-   Release version: <b>30.121052.13427.0</b></p>
-
-   <p><b>What's new</b></p>
+##### What's new
 
 - Performance improvements & bug fixes
 
-   </details>
+#### (Build: 101.34.27 | Release version: 30.121052.13427.0)
 
-   <details><summary>(Build: 101.29.64 | Release version: 30.121042.12964.0)</summary>
+| Build:             | **101.34.27**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121052.13427.0** |
 
-   <p>Build:<b> 101.29.64 </b><br>
-   Release version:<b> 30.121042.12964.0</b></p>
+##### What's new
 
-   <p><b>What's new</b></p>
+- Performance improvements & bug fixes
 
-   - Beginning with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
-   - `mdatp diagnostic real-time-protection-statistics` now supports two more switches:
-     - `--sort`: sorts the output descending by total number of files scanned
-     - `--top N`: displays the top N results (only works if `--sort` is also specified)
-   - Performance improvements & bug fixes
+#### (Build: 101.29.64 | Release version: 30.121042.12964.0)
 
-   </details>
+| Build:             | **101.29.64**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121042.12964.0** |
 
-   <details><summary>(Build: 101.25.72 | Release version: 30.121022.12563.0)</summary>
+##### What's new
 
-   <p>Build:<b> 101.25.72</b> <br>
-   Release version: <b>30.121022.12563.0</b></p>
+- Beginning with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+- `mdatp diagnostic real-time-protection-statistics` now supports two more switches:
+- `--sort`: sorts the output descending by total number of files scanned
+- `--top N`: displays the top N results (only works if `--sort` is also specified)
+- Performance improvements & bug fixes
 
-   <p><b>What's new</b></p>
+#### (Build: 101.25.72 | Release version: 30.121022.12563.0)
+
+| Build:             | **101.25.72**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121022.12563.0** |
+
+
+##### What's new
 
 - Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
-   - Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
-   - Performance improvements & other bug fixes
+- Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
+- Performance improvements & other bug fixes
+   
+#### (Build: 101.25.63 | Release version: 30.121022.12563.0)
 
-   </details>
+| Build:             | **101.25.63**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121022.12563.0** |
 
-   <details><summary>(Build: 101.25.63 | Release version: 30.121022.12563.0)</summary>
-
-   <p>Build:<b> 101.25.63</b> <br>
-   Release version: <b>30.121022.12563.0</b></p>
-
-   <p><b>What's new</b></p>
+##### What's new
 
 - Performance improvements & bug fixes
 
-   </details>
+#### (Build: 101.23.64 | Release version: 30.121021.12364.0)
 
-   <details><summary>(Build: 101.23.64 | Release version: 30.121021.12364.0)</summary>
+| Build:             | **101.23.64**         |
+|--------------------|-----------------------|
+| Release version:   | **30.121021.12364.0** |
 
-   <p>Build:<b> 101.23.64 </b><br>
-   Release version: 30.121021.12364.0</b></p>
-
-   <p><b>What's new</b></p>
+##### What's new
 
 - Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, the product processed file activity originating from the mount point. Beginning with this version, file activity for excluded mount points is suppressed, leading to better product performance
-   - Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
-   - Other performance improvements & bug fixes
+- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
+- Other performance improvements & bug fixes
 
-   </details>
+#### (Build: 101.18.53)
 
-   <details><summary>(Build: 101.18.53)</summary>
+Build: **101.18.53**<br>
 
-  <p>Build:<b> 101.18.53 </b><br>
-
-  <p>What's new</b></p>
+##### What's new
 
 - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 
-  - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
-   - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
-  - Performance improvements & bug fixes
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
+- Performance improvements & bug fixes
 
-</details><!--This </details> closes "2021 releases"-->
