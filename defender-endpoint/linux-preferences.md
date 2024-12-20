@@ -535,14 +535,14 @@ When this feature is enabled, Defender for Endpoint will scan files for which ow
 > [!NOTE] 
 > Available in Defender for Endpoint version `101.23062.0010` or later.
 
-##### Configure scanning of network socket events
+##### Configure scanning of raw socket events
 
 
-When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets / UDP sockets, or setting socket option. 
+When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. 
 
 > [!NOTE]
 > This feature is applicable only when Behavior Monitoring is enabled.
-> This feature is applicable only when the `enableRawSocketEvent` feature or the `enableUdpSocketEvent` feature is enabled. For more information, see [Advanced optional features for raw socket events](linux-preferences.md#configure-monitoring-of-raw-socket-events) or [Advanced optional features for UDP socket events](linux-preferences.md#configure-monitoring-of-udp-socket-events) sections below for details.
+> This feature is applicable only when the `enableRawSocketEvent` feature is enabled. For more information, see [Advanced optional features for raw socket events](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -705,7 +705,7 @@ Determines whether network socket events involving creation of raw sockets / pac
 
 > [!NOTE]
 > This feature is applicable only when Behavior Monitoring is enabled.
-> When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-network-socket-events) section above for more details.
+> When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above for more details.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -770,63 +770,6 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.68.80` or later.|
 
-#### Fanotify sensor configurations
-
-The following settings can be used to configure certain advanced fanotify sensor features.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|fanotifySensorConfigurations|*Not available*|
-|**Data type**|Dictionary (nested preference)|*n/a*|
-|**Comments**|See the following sections for a description of the dictionary contents.|
-
-##### Configure mute open file events feature
-
-Determines whether file open events are monitored.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|muteOpenFileEvents|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|enabled (default) <p> disabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.68.80` or later.||
-
-##### Configure monitoring of open exec file events
-
-Determines whether events corresponding to files being opened to be executed are monitored.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|openexecFileEvents|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.98.89` or later.|
-
-#### Behavior monitoring configurations
-
-The following settings can be used to configure certain advanced behavior monitoring features.
-
-> [!NOTE]
-> The features under this section are applicable only when Behavior Monitoring is enabled.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|behaviorMonitoringConfigurations|*Not available*|
-|**Data type**|Dictionary (nested preference)|*n/a*|
-|**Comments**|See the following sections for a description of the dictionary contents.|
-
-##### Configure scanning of fork events
-
-Determines whether fork process events are scanned by the behavior monitoring antivirus engine.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|notifyForks|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
-
-
 #### Report AV Suspicious Events to EDR
 
 Determines whether suspicious events from Antivirus are reported to EDR.
@@ -837,36 +780,6 @@ Determines whether suspicious events from Antivirus are reported to EDR.
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.23062.0010` or later.|
-
-#### Enable Quarantining of files within a namespace
-
-> [!NOTE]
-> This is a preview feature.
-
-Determines whether malicious files detected within a namespace are quarantined or not.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|enableQuarantineInsideNamespace|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24042.0002` or later.|
-
-#### Enable Scanning of Network Protection BM Events
-
-> [!NOTE]
-> This is a preview feature.
-> This feature is applicable only when Behavior Monitoring is enabled.
-> For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
-
-Determines whether network protection events are sent to the BM engine for scanning.
-
-|Description|JSON Value|Defender Portal Value|
-|---|---|---|
-|**Key**|nriMpengineMetadata|*Not available*|
-|**Data type**|String|*n/a*|
-|**Possible values**|disabled (default) <p> enabled|*n/a*|
-|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 ### Network protection configurations
 
