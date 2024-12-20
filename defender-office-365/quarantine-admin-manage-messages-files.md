@@ -18,7 +18,7 @@ ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.service: defender-office-365
-ms.date: 09/16/2024
+ms.date: 12/20/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -43,7 +43,7 @@ You view and manage quarantined messages in the Microsoft Defender portal or in 
 
 Watch this short video to learn how to manage quarantined messages as an admin.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGGPF]
 
 [!INCLUDE [MDO Setup guide](../includes/mdo-setup-guide.md)]
 
