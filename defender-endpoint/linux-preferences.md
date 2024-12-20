@@ -537,12 +537,11 @@ When this feature is enabled, Defender for Endpoint will scan files for which ow
 
 ##### Configure scanning of raw socket events
 
-
 When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. 
 
 > [!NOTE]
 > This feature is applicable only when Behavior Monitoring is enabled.
-> This feature is applicable only when the `enableRawSocketEvent` feature is enabled. For more information, see [Advanced optional features for raw socket events](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
+> This feature is applicable only when the `enableRawSocketEvent` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -769,6 +768,39 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Data type**|String|*n/a*|
 |**Possible values**|disabled (default) <p> enabled|*n/a*|
 |**Comments**|Available in Defender for Endpoint version `101.68.80` or later.|
+
+##### Configure monitoring of open events from specific filesystems using eBPF
+
+Determines whether open events from procfs and devfs are monitored by eBPF.
+
+|Description|JSON Value|Defender Portal Value|
+|---|---|---|
+|**Key**|enableOtherFsOpenEvents|*Not available*|
+|**Data type**|String|*n/a*|
+|**Possible values**|disabled (default) <p> enabled|*n/a*|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
+
+##### Configure source enrichment of events using eBPF
+
+Determines whether events are enriched with metadata from source in eBPF.
+
+|Description|JSON Value|Defender Portal Value|
+|---|---|---|
+|**Key**|enableEbpfSourceEnrichment|*Not available*|
+|**Data type**|String|*n/a*|
+|**Possible values**|disabled (default) <p> enabled|*n/a*|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
+
+#### Enable Antivirus Engine Cache
+
+Determines whether metadata of events being scanned by the antivirus engine are cached or not.
+
+|Description|JSON Value|Defender Portal Value|
+|---|---|---|
+|**Key**|enableAntivirusEngineCache|*Not available*|
+|**Data type**|String|*n/a*|
+|**Possible values**|disabled (default) <p> enabled|*n/a*|
+|**Comments**|Available in Defender for Endpoint version `101.24072.0001` or later.|
 
 #### Report AV Suspicious Events to EDR
 
