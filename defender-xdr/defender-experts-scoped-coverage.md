@@ -41,7 +41,11 @@ Currently, we do not offer support to rename this group nor have the option to s
 > [!IMPORTANT]
 > The device group must also be in the highest order of priority for the devices under it to be considered in scope. This is a known product limitation.
 
-To set up scoped coverage, in the Microsoft Defender XDR portal, we will create a pre-defined Microsoft Defender for Endpoint (MDE) device group or Microsoft Entra ID user group. The default name assigned to a device or user group is **Defender_Experts_Scoped_Coverage_.**. It is recommended that you do not change the name of the user/device group.
+To set up scoped coverage, in the Microsoft Defender XDR portal, we will create a pre-defined Microsoft Defender for Endpoint (MDE) device group or Microsoft Entra ID user group. The default name assigned to a device or user group is **Defender_Experts_Scoped_Coverage_**. 
+
+:::image type="content" source="media/defender_scoped_devices.png" alt-text="Screenshot of Defender Experts Scoped devices." lightbox="media/defender_scoped_devices.png":::
+
+You require the **System Administrator** permissions to create such device and user groups, however it is recommended that you do not change the name of the user/device group created by Defender Experts.
 
 The following section lists down questions that you or your SOC team might have regarding scoped coverage.
 
