@@ -130,16 +130,16 @@ The service has the following limitations:
 
 - Inquiries related to custom detections in the above products cannot be handled in Ask Defender Experts because our experts typically do not have access to such telemetry or visibility into how these custom policies were set up. Examples of such policies include:
 
-  - Alerts with policy source = Custom
-  - Detection source = Custom TI
-  - Alert title = Anomaly Indicator
-  - Threat family = Custom Enterprise Block Only
+  - **Alerts with policy source** = **Custom**
+  - **Detection source** = **Custom TI**
+  - **Alert title** = **Anomaly Indicator**
+  - **Threat family** = **Custom Enterprise Block Only**
 
 - Defender Experts will not be able to handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for ioT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other thrid-party cybersecurity products.
 
 - Defender Experts will not be able to assist you with inquiries regarding bugs in your product experience in the Defender XDR portal, such as, missing data on the alert or incident page or a recommended action not completing when you action it. You can reach out to Microsoft Support via the [Services Hub](https://serviceshub.microsoft.com/home) regarding such issues.
 
-- Ask Defender Experts is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+- Ask Defender Experts is not a security incident response service. It is intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 ### Next step
 
