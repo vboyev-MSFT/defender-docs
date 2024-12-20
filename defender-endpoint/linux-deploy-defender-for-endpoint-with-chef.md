@@ -46,7 +46,7 @@ For a description of prerequisites and system requirements, see [Microsoft Defen
 
 3. Select **Download onboarding package** and save the file as `WindowsDefenderATPOnboardingPackage.zip`.
 
-   ![The option to download the onboarded package.](https://learn.microsoft.com/defender-endpoint/media/portal-onboarding-linux-2.png)
+   ![The option to download the onboarded package.](/defender-endpoint/media/portal-onboarding-linux-2.png)
    
 4. Extract the contents of the archive using the following command:
 
