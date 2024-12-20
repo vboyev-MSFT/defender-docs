@@ -47,16 +47,19 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (for manual deployment)
 
-> [!NOTE]
-> Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
+  >[!NOTE]
+  > Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
 
 ### System requirements
 
-- 1 CPU core minimum. For high-performance workloads, more cores are recommended.
+- CPU: 1 CPU core minimum. For high-performance workloads, more cores are recommended.
 
-- Memory: At least 1 GB of RAM. For high-performance workloads, more memory might be needed.
+- Disk Space: 2 GB minimum. 
 
-- Performance tuning might be needed based on workloads. See [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
+- Memory: 1 GB of RAM minimum. For high-performance workloads, more memory might be needed.
+
+  >[!NOTE]
+  >Performance tuning might be needed based on workloads. See [Troubleshoot performance issues for Microsoft Defender for Endpoint on  Linux](linux-support-perf.md).
 
 - The following Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions are supported:
   - Red Hat Enterprise Linux 7.2 or higher
