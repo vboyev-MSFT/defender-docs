@@ -133,7 +133,7 @@ There are multiple fixes and new changes in this release.
 - Stability and performance improvements.
 - Other bug fixes.
 
-## May-2024 Build: 101.24042.0002 | Release version: 30.124042.0002.0
+### May-2024 Build: 101.24042.0002 | Release version: 30.124042.0002.0
 
 | Build:             | **101.24042.0002**         |
 |--------------------|-----------------------|
@@ -151,7 +151,7 @@ There are multiple fixes and new changes in this release:
 - Stability and performance improvements.
 - Other bug fixes.
 
-## May-2024 Build: (101.24032.0007 | Release version: 30.124032.0007.0)
+### May-2024 Build: (101.24032.0007 | Release version: 30.124032.0007.0)
 
 | Build:             | **101.24032.0007**         |
 |--------------------|-----------------------|
@@ -191,7 +191,7 @@ There are multiple fixes and new changes in this release:
    ```
     **The issue has been fixed in Build: 101.24042.0002**
 
-## March-2024 Build: (101.24022.0001 | Release version: 30.124022.0001.0)
+### March-2024 Build: (101.24022.0001 | Release version: 30.124022.0001.0)
 
 | Build:             | **101.24022.0001**         |
 |--------------------|-----------------------|
@@ -209,7 +209,7 @@ There are multiple fixes and new changes in this release:
 - Stability and performance improvements.
 - Bug fixes.
 
-## March-2024 Build: (101.24012.0001 | Release version: 30.124012.0001.0)
+### March-2024 Build: (101.24012.0001 | Release version: 30.124012.0001.0)
 
 | Build:             | **101.24012.0001**         |
 |--------------------|-----------------------|
@@ -662,7 +662,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-## May-2023 Build: (101.98.64 | Release version: 30.123032.19864.0)
+### May-2023 Build: (101.98.64 | Release version: 30.123032.19864.0)
 
 | Build:             | **101.98.64**         |
 |--------------------|-----------------------|
@@ -1173,10 +1173,9 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Performance improvements & bug fixes
 
-
 ### 2021 releases
 
-#### (Build: 101.52.57 | Release version: 30.121092.15257.0)
+#### Build: 101.52.57 | Release version: 30.121092.15257.0
 
 | Build:             | **101.52.57**         |
 |--------------------|-----------------------|
@@ -1186,7 +1185,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
 
-#### (Build: 101.47.76  | Release version: 30.121092.14776.0)
+#### Build: 101.47.76  | Release version: 30.121092.14776.0
 
 | Build:             | **101.47.76**         |
 |--------------------|-----------------------|
@@ -1198,7 +1197,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Bug fixes
 
-#### (Build: 101.45.13 | Release version: 30.121082.14513.0)
+#### Build: 101.45.13 | Release version: 30.121082.14513.0
 
 | Build:             | **101.45.13**         |
 |--------------------|-----------------------|
@@ -1214,7 +1213,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Bug fixes
 
-#### (Build: 101.45.00 | Release version: 30.121072.14500.0)
+#### Build: 101.45.00 | Release version: 30.121072.14500.0
 
 | Build:             | **101.45.00**         |
 |--------------------|-----------------------|
@@ -1228,7 +1227,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
   - Changing the product log level now requires elevation
   - Bug fixes
 
-#### (Build: 101.39.98 | Release version: 30.121062.13998.0)
+#### Build: 101.39.98 | Release version: 30.121062.13998.0
 
 | Build:             | **101.39.98**         |
 |--------------------|-----------------------|
@@ -1238,7 +1237,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Performance improvements & bug fixes
 
-#### (Build: 101.34.27 | Release version: 30.121052.13427.0)
+#### Build: 101.34.27 | Release version: 30.121052.13427.0
 
 | Build:             | **101.34.27**         |
 |--------------------|-----------------------|
@@ -1248,7 +1247,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Performance improvements & bug fixes
 
-#### (Build: 101.29.64 | Release version: 30.121042.12964.0)
+#### Build: 101.29.64 | Release version: 30.121042.12964.0
 
 | Build:             | **101.29.64**         |
 |--------------------|-----------------------|
@@ -1262,7 +1261,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - `--top N`: displays the top N results (only works if `--sort` is also specified)
 - Performance improvements & bug fixes
 
-#### (Build: 101.25.72 | Release version: 30.121022.12563.0)
+#### Build: 101.25.72 | Release version: 30.121022.12563.0
 
 | Build:             | **101.25.72**         |
 |--------------------|-----------------------|
@@ -1275,7 +1274,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
 - Performance improvements & other bug fixes
    
-#### (Build: 101.25.63 | Release version: 30.121022.12563.0)
+#### Build: 101.25.63 | Release version: 30.121022.12563.0
 
 | Build:             | **101.25.63**         |
 |--------------------|-----------------------|
@@ -1285,7 +1284,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Performance improvements & bug fixes
 
-#### (Build: 101.23.64 | Release version: 30.121021.12364.0)
+#### Build: 101.23.64 | Release version: 30.121021.12364.0
 
 | Build:             | **101.23.64**         |
 |--------------------|-----------------------|
@@ -1297,7 +1296,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
 - Other performance improvements & bug fixes
 
-#### (Build: 101.18.53)
+#### Build: 101.18.53
 
 Build: **101.18.53**<br>
 
