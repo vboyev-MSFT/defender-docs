@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to malicious or suspic
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 12/13/2024
+ms.date: 12/18/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -63,8 +63,11 @@ Here are a few important points to keep in mind:
 - Encrypted URLs (full path) are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge).
 - Encrypted URLs (FQDN only) are blocked in non-Microsoft browsers.
 - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDNs, are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
+
+- Network Protection will block connections on both standard and non-standard ports.
+
 - Full URL path blocks are applied for unencrypted URLs.
- 
+
 There might be up to two hours of latency (usually less) between the time when the action is taken and the URL/IP is blocked.
  
 Watch this video to learn how network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content:
