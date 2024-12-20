@@ -156,8 +156,11 @@ class install_mdatp (
   }
 
 }
-
 ```
+>[!NOTE]
+>Installer script also supports other parameters such as channel, realtime protection, version, etc. To select from the list of available options, check help.
+>`./mde_installer.sh --help`
+
 #### Create a manifest to deploy Defender for Endpoint by configuring repositories manually
 Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download it from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/puppet.install_mdatp_manual.init.pp). 
 
