@@ -96,7 +96,7 @@ Cookbook can be created via two methods:
 
 ### Create a cookbook using Installer script
 
-1. Download the installer bash script. Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation) from Microsoft GitHub Repository or use the following command to download it.
+1. Download the installer bash script. Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) from Microsoft GitHub Repository or use the following command to download it.
 
 
 ```bash
