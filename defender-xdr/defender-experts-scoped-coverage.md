@@ -43,7 +43,7 @@ You can create a predefined Microsoft Defender for Endpoint device group or a Mi
 
 The devices and users you add to these groups are then considered as the set of assets that are in scope for this service.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Defender Experts need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts)
 
 > [!TIP]
