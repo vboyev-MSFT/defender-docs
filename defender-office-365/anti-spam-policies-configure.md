@@ -615,3 +615,5 @@ Include the following GTUBE text in an email message on a single line, without a
 ```console
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
+
+To understand how Threat Protection works in Defender for Office 365, see [Step-by-step threat protection in Microsoft Defender for Office 365](protection-stack-microsoft-defender-for-office365.md).
