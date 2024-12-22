@@ -20,7 +20,7 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 |Service area  |Updates  |
 |---------|---------|
-| **Site security** | - [Secure site-linked devices in Microsoft Security Exposure Management Initiatives page](#secure-site-linked-devices-in-microsoft-security-exposure-management-initiatives-page) |
+| **Site security** | - [Site association search in Site security page now supports various device types](#site-association-search-in-site-security-page-now-supports-various-device-types) |
 
 ### Site association search in Site security page now supports various device types
 
