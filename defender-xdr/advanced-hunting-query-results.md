@@ -179,7 +179,7 @@ Select the three dots to the right of any column in the **Inspect record** panel
 > Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Add items to Favorites
-You can add schemas, functions, queries, and detection rules to the Favorites section of each tab in the advanced hunting page. 
+You can add your frequently used schemas, functions, queries, and detection rules to the Favorites section of each tab in the advanced hunting page for quick access.
 
 :::image type="content" source="/defender/media/faves-1.png" alt-text="Screenshot of the advanced hunting page with the Favorites section highlighted." lightbox="/defender/media/faves-1.png":::
 
