@@ -78,7 +78,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - Stability and performance improvements
 - Other bug fixes
 
-### Sept-2024 Build: (101.24072.0001 | Release version: 30.124072.0001.0)
+### Sept-2024 Build: 101.24072.0001 | Release version: 30.124072.0001.0
 
 | Build:             | **101.24072.0001**         |
 |--------------------|-----------------------|
@@ -93,7 +93,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - Added support for Ubuntu 24.04
 - Updated default engine version to `1.1.24060.6` and default signatures version to `1.415.228.0`.
 
-### July-2024 Build: (101.24062.0001 | Release version: 30.124062.0001.0)
+### July-2024 Build: 101.24062.0001 | Release version: 30.124062.0001.0
 
 | Build:             | **101.24072.0001**         |
 |--------------------|-----------------------|
@@ -114,7 +114,7 @@ There are multiple fixes and new changes in this release.
 - Stability and performance improvements.
 - Other bug fixes.
 
-### June-2024 Build: (101.24052.0002 | Release version: 30.124052.0002.0)
+### June-2024 Build: 101.24052.0002 | Release version: 30.124052.0002.0
 
 | Build:             | **101.24052.0002**         |
 |--------------------|-----------------------|
@@ -151,7 +151,7 @@ There are multiple fixes and new changes in this release:
 - Stability and performance improvements.
 - Other bug fixes.
 
-### May-2024 Build: (101.24032.0007 | Release version: 30.124032.0007.0)
+### May-2024 Build: 101.24032.0007 | Release version: 30.124032.0007.0
 
 | Build:             | **101.24032.0007**         |
 |--------------------|-----------------------|
@@ -191,7 +191,7 @@ There are multiple fixes and new changes in this release:
    ```
     **The issue has been fixed in Build: 101.24042.0002**
 
-### March-2024 Build: (101.24022.0001 | Release version: 30.124022.0001.0)
+### March-2024 Build: 101.24022.0001 | Release version: 30.124022.0001.0
 
 | Build:             | **101.24022.0001**         |
 |--------------------|-----------------------|
@@ -209,7 +209,7 @@ There are multiple fixes and new changes in this release:
 - Stability and performance improvements.
 - Bug fixes.
 
-### March-2024 Build: (101.24012.0001 | Release version: 30.124012.0001.0)
+### March-2024 Build: 101.24012.0001 | Release version: 30.124012.0001.0
 
 | Build:             | **101.24012.0001**         |
 |--------------------|-----------------------|
@@ -227,7 +227,7 @@ There are multiple fixes and new changes in this release:
 - Stability and performance improvements.
 - Bug fixes.
 
-### February-2024 Build: (101.23122.0002 | Release version: 30.123122.0002.0)
+### February-2024 Build: 101.23122.0002 | Release version: 30.123122.0002.0
 
 | Build:             | **101.23122.0002**         |
 |--------------------|-----------------------|
@@ -263,7 +263,7 @@ If you already have Defender for Endpoint running on any of these distros and fa
 > - Live Response and Threat Vulnerability Management are currently not supported (work in progress).
 > - Operating system info for devices is not visible in the Microsoft Defender portal
 
-### January-2024 Build: (101.23112.0009 | Release version: 30.123112.0009.0)
+### January-2024 Build: 101.23112.0009 | Release version: 30.123112.0009.0
 
 | Build:             | **101.23112.0009**         |
 |--------------------|-----------------------|
@@ -280,7 +280,7 @@ If you already have Defender for Endpoint running on any of these distros and fa
 - Bug fix for behavior monitoring configuration.
 - Bug fixes.
 
-### November-2023 Build: (101.23102.0003 | Release version: 30.123102.0003.0)
+### November-2023 Build: 101.23102.0003 | Release version: 30.123102.0003.0
 
 | Build:             | **101.23102.0003**         |
 |--------------------|-----------------------|
@@ -298,7 +298,7 @@ If you already have Defender for Endpoint running on any of these distros and fa
 - General stability and performance improvements.
 - Bug fixes.
 
-### November-2023 Build: (101.23092.0012 | Release version: 30.123092.0012.0)
+### November-2023 Build: 101.23092.0012 | Release version: 30.123092.0012.0
 
 | Build:             | **101.23092.0012**         |
 |--------------------|-----------------------|
@@ -328,7 +328,7 @@ There are multiple fixes and new changes in this release:
 
 - CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md) for details and Mitigation options.
 
-### November-2023 Build: (101.23082.0011 | Release version: 30.123082.0011.0)
+### November-2023 Build: 101.23082.0011 | Release version: 30.123082.0011.0
 
 | Build:             | **101.23082.0011**         |
 |--------------------|-----------------------|
@@ -370,7 +370,7 @@ Some customers (<1%) experience issues with this method.
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
-### October-2023 Build: (101.23082.0009 | Release version: 30.123082.0009.0)
+### October-2023 Build: 101.23082.0009 | Release version: 30.123082.0009.0
 
 | Build:             | **101.23082.0009**         |
 |--------------------|-----------------------|
@@ -409,7 +409,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### October-2023 Build: (101.23082.0006 | Release version: 30.123082.0006.0)
+### October-2023 Build: 101.23082.0006 | Release version: 30.123082.0006.0
 
 | Build:             | **101.23082.0006**         |
 |--------------------|-----------------------|
@@ -522,7 +522,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### July-2023 Build: (101.23062.0010 | Release version: 30.123062.0010.0)
+### July-2023 Build: 101.23062.0010 | Release version: 30.123062.0010.0
 
 | Build:             | **101.23062.0010**         |
 |--------------------|-----------------------|
@@ -574,7 +574,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### July-2023 Build: (101.23052.0009 | Release version: 30.123052.0009.0)
+### July-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
 
 | Build:             | **101.23052.0009**         |
 |--------------------|-----------------------|
@@ -617,7 +617,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### June-2023 Build: (101.98.89 | Release version: 30.123042.19889.0)
+### June-2023 Build: 101.98.89 | Release version: 30.123042.19889.0
 
 | Build:             | **101.98.89**         |
 |--------------------|-----------------------|
@@ -662,7 +662,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### May-2023 Build: (101.98.64 | Release version: 30.123032.19864.0)
+### May-2023 Build: 101.98.64 | Release version: 30.123032.19864.0
 
 | Build:             | **101.98.64**         |
 |--------------------|-----------------------|
@@ -710,7 +710,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### April-2023 Build: (101.98.58 | Release version: 30.123022.19858.0)
+### April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
 | Build:             | **101.98.58**         |
 |--------------------|-----------------------|
@@ -762,7 +762,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### March-2023 Build: (101.98.30 | Release version: 30.123012.19830.0)
+### March-2023 Build: 101.98.30 | Release version: 30.123012.19830.0
 
 | Build:             | **101.98.30**         |
 |--------------------|-----------------------|
@@ -803,7 +803,7 @@ mdatp health
 
 In case the issue reappears with some different denials. We need to run the mitigation again with a different module name (for example, my-mdatpaudisppl_v2).
 
-### March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
+### March-2023 Build: 101.98.05 | Release version: 30.123012.19805.0
 
 | Build:             | **101.98.05**         |
 |--------------------|-----------------------|
@@ -864,7 +864,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)
+### Jan-2023 Build: 101.94.13 | Release version: 30.122112.19413.0
 
 | Build:             | **101.94.13**         |
 |--------------------|-----------------------|
@@ -920,7 +920,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)
+### Nov-2022 Build: 101.85.27 | Release version: 30.122092.18527.0
 
 | Build:             | **101.85.27**         |
 |--------------------|-----------------------|
@@ -966,7 +966,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-### Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)
+### Sep-2022 Build: 101.80.97 | Release version: 30.122072.18097.0
 
 | Build:             | **101.80.97**         |
 |--------------------|-----------------------|
@@ -994,7 +994,7 @@ After executing the commands, use your package manager to perform the upgrade.
 As an alternative approach, follow the instructions to [uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux), then [install](linux-install-manually.md#application-installation) the latest version of the package.
 
 
-### Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)
+### Aug-2022 Build: 101.78.13 | Release version: 30.122072.17813.0
 
 | Build:             | **101.78.13**         |
 |--------------------|-----------------------|
@@ -1026,7 +1026,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was sometimes not properly terminated when the service was stopped
 - Other bug fixes
 
-### Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)
+### Jul-2022 Build: 101.73.77 | Release version: 30.122062.17377.0
 
 | Build:             | **101.73.77**         |
 |--------------------|-----------------------|
@@ -1044,7 +1044,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Bug fixes
 
 
-### Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
+### Jun-2022 Build: 101.71.18 | Release version: 30.122052.17118.0
 
 | Build:             | **101.71.18**         |
 |--------------------|-----------------------|
@@ -1063,7 +1063,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Bug fixes
 
 
-### May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)
+### May-2022 Build: 101.68.80 | Release version: 30.122042.16880.0
 
 | Build:             | **101.68.80**         |
 |--------------------|-----------------------|
@@ -1081,7 +1081,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Fixed an issue where the `mdatp` command-line tool wasn't working when `/opt` was mounted as a soft-link
 - Performance improvements & bug fixes
 
-### May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)
+### May-2022 Build: 101.65.77 | Release version: 30.122032.16577.0
 
 | Build:             | **101.65.77**         |
 |--------------------|-----------------------|
@@ -1109,7 +1109,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Bug fixes
 
 
-### Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)
+### Mar-2022 Build: 101.60.93 | Release version: 30.122012.16093.0
 
 | Build:             | **101.60.93**         |
 |--------------------|-----------------------|
@@ -1122,7 +1122,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
 
 
-### Mar-2022 (Build: 101.60.05 | Release version: 30.122012.16005.0)
+### Mar-2022 Build: 101.60.05 | Release version: 30.122012.16005.0
 
 | Build:             | **101.60.05**         |
 |--------------------|-----------------------|
@@ -1135,7 +1135,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Added support for kernel version 2.6.32-754.43.1.el6.x86_64 for RHEL 6.10
 - Bug fixes
 
-### Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)
+### Feb-2022 Build: 101.58.80 | Release version: 30.122012.15880.0
 
 | Build:             | **101.58.80**         |
 |--------------------|-----------------------|
@@ -1149,7 +1149,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Beginning with this version, network protection for Linux can be evaluated on demand
 - Bug fixes
 
-### Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)
+### Jan-2022 Build: 101.56.62 | Release version: 30.121122.15662.0
 
 | Build:             | **101.56.62**         |
 |--------------------|-----------------------|
@@ -1161,7 +1161,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 - Fixed a product crash introduced in 101.53.02 and that has impacted multiple customers
 
-### Jan-2022 (Build: 101.53.02 | Release version: 30.121112.15302.0)
+### Jan-2022 Build: 101.53.02 | Release version: 30.121112.15302.0
 
 | Build:             | **101.53.02**         |
 |--------------------|-----------------------|
@@ -1203,7 +1203,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 |--------------------|-----------------------|
 | Release version:   | **30.121082.14513.0** |
 
-##### What's new</b></p>
+##### What's new
 
 - Beginning with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
@@ -1297,8 +1297,6 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 - Other performance improvements & bug fixes
 
 #### Build: 101.18.53
-
-Build: **101.18.53**<br>
 
 ##### What's new
 
