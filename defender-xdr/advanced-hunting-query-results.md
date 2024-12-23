@@ -191,7 +191,7 @@ A notification appears to inform you that the item was successfully added to Fav
 
 ![Screenshot of notification that a new item was added to Favorites in advanced hunting.](/defender/media/faves-3.png)
 
-You can do the same for your favorites in the Favorites sections under the Functions, Queries, and Detection rules tabs.
+You can do the same for your saved functions, queries, and custom detections in their respective Favorites sections right under each tab (**Functions**, **Queries**, and **Detection Rules**).
 
 ## Related topics
 
