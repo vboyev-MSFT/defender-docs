@@ -44,7 +44,7 @@ The devices and users you add to these groups are then considered as the set of 
 :::image type="content" source="media/defender_scoped_devices.png" alt-text="Screenshot of Defender Experts Scoped devices." lightbox="media/defender_scoped_devices.png":::
 
 > [!NOTE]
-> Defender Experts need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts)
+> Defender Experts need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
 > [!TIP]
 > The device group should be in the highest order of priority for the devices under it, to be considered in scope. This is a known product limitation.
