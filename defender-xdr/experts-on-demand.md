@@ -135,7 +135,7 @@ The service does not cover the following scenarios:
   - **Alert title** = **Anomaly Indicator**
   - **Threat family** = **Custom Enterprise Block Only**
 
-- Defender Experts will not be able to handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for ioT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other thrid-party cybersecurity products.
+- Defender Experts will not be able to handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for ioT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other third-party cybersecurity products.
 
 - Defender Experts will not be able to assist you with inquiries regarding bugs in your product experience in the Defender XDR portal, such as, missing data on the alert or incident page or a recommended action not completing when you action it. You can reach out to Microsoft Support via the [Services Hub](https://serviceshub.microsoft.com/home) regarding such issues.
 
