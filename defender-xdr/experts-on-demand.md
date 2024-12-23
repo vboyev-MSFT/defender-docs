@@ -71,15 +71,15 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 - **Device inventory page flyout menu**:
 
-  :::image type="content" source="/defender/media/mte/defenderexperts/device-inventory-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal.." lightbox="/defender/media/mte/defenderexperts/device-inventory-flyout-menu.png":::
+  :::image type="content" source="/defender/media/mte/defenderexperts/device-inventory-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal." lightbox="/defender/media/mte/defenderexperts/device-inventory-flyout-menu.png":::
 
 - **Alerts page flyout menu**:
 
-  :::image type="content" source="/defender/media/mte/defenderexperts/alerts-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal.." lightbox="/defender/media/mte/defenderexperts/alerts-flyout-menu.png":::
+  :::image type="content" source="/defender/media/mte/defenderexperts/alerts-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal." lightbox="/defender/media/mte/defenderexperts/alerts-flyout-menu.png":::
 
 - **Incidents page actions menu**:
 
-  :::image type="content" source="/defender/media/mte/defenderexperts/incidents-page-actions-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.." lightbox="/defender/media/mte/defenderexperts/incidents-page-actions-menu.png":::
+  :::image type="content" source="/defender/media/mte/defenderexperts/incidents-page-actions-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal." lightbox="/defender/media/mte/defenderexperts/incidents-page-actions-menu.png":::
 
 ## Where to view responses from Defender Experts
 
@@ -135,7 +135,7 @@ The service doesn't cover the following scenarios:
   - **Alert title** = **Anomaly Indicator**
   - **Threat family** = **Custom Enterprise Block Only**
 
-- Defender Experts won't be able to handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for ioT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other third-party cybersecurity products.
+- Defender Experts won't be able to handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other third-party cybersecurity products.
 
 - Defender Experts won't be able to assist you with inquiries regarding bugs in your product experience in the Defender XDR portal, such as, missing data on the alert or incident page or a recommended action not completing when you action it. You can reach out to Microsoft Support via the [Services Hub](https://serviceshub.microsoft.com/home) regarding such issues.
 
