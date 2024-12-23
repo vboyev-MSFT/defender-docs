@@ -173,7 +173,7 @@ Select the three dots to the right of any column in the **Inspect record** panel
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with`, and `ends with`
 
-:::image type="content" source="/defender/media/work-with-query-tweak-query.png" alt-text="Screenshot of the advanced hunting page with the Favorites section highlighted." lightbox="/defender/media/work-with-query-tweak-query.png":::
+:::image type="content" source="/defender/media/work-with-query-tweak-query.png" alt-text="Screenshot of the Action Type pane on the Inspect record page in the Microsoft Defender portal." lightbox="/defender/media/work-with-query-tweak-query.png":::
 
 
 
