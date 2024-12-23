@@ -173,7 +173,7 @@ Select the three dots to the right of any column in the **Inspect record** panel
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with`, and `ends with`
 
-:::image type="content" source="/defender/media/faves-1.png" alt-text="Screenshot of the advanced hunting page with the Favorites section highlighted." lightbox="/defender/media/faves-1.png":::
+:::image type="content" source="/defender/media/work-with-query-tweak-query.png" alt-text="Screenshot of the advanced hunting page with the Favorites section highlighted." lightbox="/defender/media/work-with-query-tweak-query.png":::
 
 > [!NOTE]
 > Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
