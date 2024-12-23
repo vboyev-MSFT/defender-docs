@@ -20,10 +20,10 @@ ms.date: 10/11/2024
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
 
-**Applies to:**
+**Applies to**:
 
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
 To run a scan for Linux, see [Supported Commands](linux-resources.md#supported-commands).
 
@@ -68,7 +68,7 @@ sudo crontab -e
 
 You might see:
 
-```outbou
+```console
 0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
 ```
 
@@ -94,7 +94,7 @@ Type "`:wq`" without the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="/defender/media/linux-mdatp-1.png" alt-text="The linux mdatp page" lightbox="/defender/media/linux-mdatp-1.png":::
+:::image type="content" source="/defender/media/linux-mdatp-1.png" alt-text="Screenshot of the linux mdatp page.":::
 
 #### To inspect cron job runs
 
@@ -148,7 +148,7 @@ Resource Type: salt.states.cron
 
 **Example:**
 
-```yml
+```yaml
 mdatp scan quick > /tmp/mdatp_scan_log.log:
   cron.present:
     - special: '@hourly'
@@ -223,7 +223,7 @@ crontab -u username -r
 
 ### Explanation
 
-```
+```console
 +—————- minute (values: 0 - 59) (special characters: , \- \* /)  <br>
 | +————- hour (values: 0 - 23) (special characters: , \- \* /) <br>
 | | +———- day of month (values: 1 - 31) (special characters: , \- \* / L W C)  <br>

@@ -7,7 +7,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.reviewer: tdoucette
 ms.localizationpriority: medium
-ms.date: 10/23/2024
+ms.date: 12/18/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -33,7 +33,7 @@ ms.subservice: asr
 
 ## About web protection
 
-Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](manage-indicators.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender portal by going to **Reports > Web protection**.
+Web protection in Microsoft Defender for Endpoint is a capability made up of [Web threat protection](web-threat-protection.md), [Web content filtering](web-content-filtering.md), and [Custom indicators](indicators-overview.md). Web protection lets you secure your devices against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender portal by going to **Reports > Web protection**.
 
 :::image type="content" source="media/web-protection.png" alt-text="The web protection cards" lightbox="media/web-protection.png":::
 
@@ -53,6 +53,8 @@ Web threat protection includes:
 > - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
 > - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
 > - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
+> - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDNs, are only blocked on Microsoft browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
+> - Network Protection will block connections on both standard and non-standard ports.
 > - Full URL path blocks can be applied for unencrypted URLs.
 
 There might be up to two hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked. For more information, see [Web threat protection](web-threat-protection.md).

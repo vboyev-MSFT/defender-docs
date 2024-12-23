@@ -22,10 +22,10 @@ ms.date: 10/14/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
+**Applies to**:
 
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -81,13 +81,14 @@ Wildcard|Description|Examples|
 ?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not`file123.log`
 
 > [!NOTE]
-For antivirus exclusions, when using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
+> For antivirus exclusions, when using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
 
 ## How to configure the list of exclusions
 
 ### Using the management console
 
 To configure exclusions from Puppet, Ansible, or another management console, please refer to the following sample `mdatp_managed.json`.
+
 ```JSON
 {
    "exclusionSettings":{
@@ -166,7 +167,7 @@ Examples:
     mdatp exclusion extension remove --name .txt
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -203,6 +204,7 @@ Examples:
     ```console
     File exclusion removed successfully"
     ```
+
 - Add/Remove an exclusion for a folder:
 
     ```bash
@@ -221,7 +223,7 @@ Examples:
     Folder exclusion removed successfully
     ```
 
-  ```bash
+    ```bash
     mdatp exclusion folder add --path /var/log/ --scope global
     ```
 
@@ -264,6 +266,7 @@ Examples:
     mdatp exclusion folder add --path "/var/" --scope epp
     ```
     OR
+
     ```bash
     mdatp exclusion folder add --path "/var/*/" --scope epp
     ```
@@ -289,7 +292,7 @@ Examples:
     mdatp exclusion process remove --name /usr/bin/cat  --scope global
     ```
 
-    ```Output
+    ```console
     Process exclusion removed successfully
     ```
 
@@ -306,7 +309,7 @@ Examples:
     mdatp exclusion process remove --name /usr/bin/cat  --scope epp
     ```
 
-    ```Output
+    ```console
     Process exclusion removed successfully
     ```
 
@@ -362,4 +365,5 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]

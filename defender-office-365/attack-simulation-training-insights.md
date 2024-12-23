@@ -281,9 +281,6 @@ For more information about the **Users** and **Details** tabs, see the following
 
 ### Reporting for QR code simulations
 
-> [!TIP]
-> QR code payloads are currently in Preview, aren't available in all organizations, and are subject to change.
-
 You can select QR code payloads to use in simulations. The QR code replaces the phishing URL as the payload that's used in the simulation email message. For more information, see [QR code payloads](attack-simulation-training-payloads.md#qr-code-payloads).
 
 Because QR codes are a different type of a phishing URL, user events around read, delete, compromise, and click events remain the same. For example, scanning the QR code opens the phishing URL, so the event is tracked as a click event. The existing mechanisms for tracking compromise, deletes, and report events remain the same.
@@ -426,7 +423,7 @@ When you export information from the reports, the CSV file contains more informa
 |EmailLinkClicked_Browser|The web browser that was used to click the link payload in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. This information comes from UserAgent.|
 |EmailLinkClicked_IP|The IP address where the link payload was clicked in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. This information comes from UserAgent.|
 |EmailLinkClicked_Device|The device where the link payload was clicked in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. This information comes from UserAgent.|
-|EmailLinkClicked_ClickSource|Whether the payload link was selected by clicking on a URL or scanning a QR Code in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. Values are `PhishingURL` or `QRCode`. QR code support is currently in Preview.|
+|EmailLinkClicked_ClickSource|Whether the payload link was selected by clicking on a URL or scanning a QR Code in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. Values are `PhishingURL` or `QRCode`.|
 |CredSupplied_TimeStamp(Compromised)|When the user entered their credentials.|
 |CredSupplied_Browser|The web browser that was used when the user entered their credentials. This information comes from UserAgent.|
 |CredSupplied_IP|The IP address where the user entered their credentials. This information comes from UserAgent.|
@@ -472,7 +469,7 @@ How user activity signals are captured is described in the following table.
 |Deleted message|The user deleted the message.|The signal comes from the Outlook activity of the user. If the user reports the message as phishing, the message might be moved to the Deleted Items folder, which is identified as a deletion.|
 |Permissions granted|The user shared permissions in an **OAuth Consent Grant** simulation.||
 
-¹ The clicked link can be a selected URL or a scanned QR code (QR code support in Attack simulation training is currently in Preview).
+¹ The clicked link can be a selected URL or a scanned QR code.
 
 ## Related Links
 

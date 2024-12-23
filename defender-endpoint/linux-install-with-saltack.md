@@ -15,17 +15,17 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/11/2024
+ms.date: 12/04/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
+**Applies to**:
 
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
+- Microsoft Defender for Endpoint Server
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -48,7 +48,7 @@ Here are a few important points:
 
 - Saltstack is installed on at least one computer (Saltstack calls the computer as the master).
 - The Saltstack master accepted the managed nodes (Saltstack calls the nodes as minions) connections.
-- The Saltstack minions are able to resolve communication to the Saltstack master (be default the minions try to communicate with a machine named 'salt').
+- The Saltstack minions are able to resolve communication to the Saltstack master (by default the minions try to communicate with a machine named *salt*).
 - Run the following ping test: `sudo salt '*' test.ping`
 - The Saltstack master has a file server location where the Microsoft Defender for Endpoint files can be distributed from (by default Saltstack uses the `/srv/salt` folder as the default distribution point)
 
@@ -62,7 +62,7 @@ Here are a few important points:
 
 3. Select **Download onboarding package**. Save the file as `WindowsDefenderATPOnboardingPackage.zip`.
 
-   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="media/portal-onboarding-linux-2.png":::
+   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option":::
 
 4. On the SaltStack Master, extract the contents of the archive to the SaltStack Server's folder (typically `/srv/salt`):
 
@@ -70,7 +70,7 @@ Here are a few important points:
     ls -l
     ```
 
-    ```Output
+    ```console
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
@@ -79,7 +79,7 @@ Here are a few important points:
     unzip WindowsDefenderATPOnboardingPackage.zip -d /srv/salt/mde
     ```
 
-    ```Output
+    ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: /srv/salt/mde/mdatp_onboard.json
     ```
@@ -115,7 +115,7 @@ In this step, you create a SaltState state file in your configuration repository
    cat /srv/salt/install_mdatp.sls
    ```
 
-   ```output
+   ```console
    add_ms_repo:
      pkgrepo.managed:
        - humanname: Microsoft Defender Repository
@@ -136,7 +136,7 @@ In this step, you create a SaltState state file in your configuration repository
 
 2. Add the package installed state to `install_mdatp.sls` after the `add_ms_repo` state as previously defined.
 
-   ```Output
+   ```console
    install_mdatp_package:
      pkg.installed:
        - name: matp
@@ -145,7 +145,7 @@ In this step, you create a SaltState state file in your configuration repository
 
 4. Add the onboarding file deployment to `install_mdatp.sls` after the `install_mdatp_package` as previously defined.
 
-   ```Output
+   ```console
    copy_mde_onboarding_file:
      file.managed:
        - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
@@ -155,7 +155,7 @@ In this step, you create a SaltState state file in your configuration repository
 
    The completed install state file should look similar to this output:
 
-   ```Output
+   ```console
    add_ms_repo:
    pkgrepo.managed:
    - humanname: Microsoft Defender Repository
@@ -193,7 +193,7 @@ In this step, you create a SaltState state file in your configuration repository
    cat /srv/salt/uninstall_mdatp.sls
    ```
 
-   ```Output
+   ```console
    remove_mde_onboarding_file:
      file.absent:
        - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
@@ -201,7 +201,7 @@ In this step, you create a SaltState state file in your configuration repository
 
 6. Add the offboarding file deployment to the `uninstall_mdatp.sls` file after the `remove_mde_onboarding_file` state defined in the previous section.
 
-   ```Output
+   ```console
     offboard_mde:
      file.managed:
        - name: /etc/opt/microsoft/mdatp/mdatp_offboard.json
@@ -210,7 +210,7 @@ In this step, you create a SaltState state file in your configuration repository
 
 7. Add the removal of the MDATP package to the `uninstall_mdatp.sls` file after the `offboard_mde` state defined in the previous section.
 
-   ```Output
+   ```console
    remove_mde_packages:
      pkg.removed:
        - name: mdatp
@@ -218,7 +218,7 @@ In this step, you create a SaltState state file in your configuration repository
 
    The complete uninstall state file should look similar to the following output:
 
-   ```Output
+   ```console
    remove_mde_onboarding_file:
      file.absent:
        - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json

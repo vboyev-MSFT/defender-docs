@@ -14,9 +14,12 @@ ms.collection:
   - m365initiative-defender-endpoint
   - tier1
   - mde-edr
+ms.custom:
+- cx-ti
+- cx-ta
 ms.topic: conceptual
 ms.subservice: edr
-ms.date: 10/18/2024
+ms.date: 11/12/2024
 ---
 
 # Track and respond to emerging threats through threat analytics
@@ -57,21 +60,16 @@ Each report provides an analysis of a tracked threat and extensive guidance on h
 
 ## Required roles and permissions
 
-The following table outlines the roles and permissions required to access threat analytics. Roles defined in the table refer to custom roles in individual portals and aren't connected to global roles in Microsoft Entra ID, even if similarly named.
+The following roles and permissions are required to access Threat analytics in the Defender portal: 
+- **Security data basics (read)**—to view threat analytics report, related incidents and alerts, and impacted assets
+- **Vulnerability management (read)** and **Secure Score (read)**—to see related exposure data and recommended actions
 
-| **One of the following roles are required for Microsoft Defender XDR**  | **One of the following roles are required for Microsoft Defender for Endpoint**  | **One of the following roles are required for Microsoft Defender for Office 365** | **One of the following roles are required for Microsoft Defender for Cloud Apps and Microsoft Defender for Identity** |  **One of the following roles is required for Microsoft Defender for Cloud** | 
-|---------|---------|---------|---------|---------|
-| Threat analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul> | <ul><li>Global admin</li><li>Security admin</li></ul> |
+By default, access to services available in the Defender portal are managed collectively using [Microsoft Entra global roles](/defender-xdr/m365d-permissions). If you need greater flexibility and control over access to specific product data, and aren't yet using the [Microsoft Defender XDR Unified role-based access control (RBAC)](/defender-xdr/manage-rbac) for centralized permissions management, we recommend creating custom roles for each service. [Learn more about creating custom roles](/defender-xdr/custom-roles)
 
 >[!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 >
-> You'll have visibility to all threat analytics reports even if you have just one of the products and its corresponding roles described in the previous table. However, you're required to have each product and roles to see that product’s specific incidents, assets, exposure, and recommended actions associated with the threat. 
-
-Learn more:
-- [Custom roles in role-based access control for Microsoft Defender XDR](/defender-xdr/custom-roles)
-- [Microsoft Defender XDR Unified role-based access control (RBAC)](/defender-xdr/manage-rbac)
-
+> You'll have visibility to all threat analytics reports even if you have just one of the products supported. However, you're required to have each product and role to see that product’s specific incidents, assets, exposure, and recommended actions associated with the threat. 
 
 ## View the threat analytics dashboard
 

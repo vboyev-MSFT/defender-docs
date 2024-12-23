@@ -21,11 +21,6 @@ ms.date: 10/08/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- Microsoft Defender for Servers
-- Microsoft Defender XDR
-
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -212,7 +207,7 @@ Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR und
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)
 - [Web protection](web-protection-overview.md)
-- [Create indicators](manage-indicators.md)
+- [Create indicators](indicators-overview.md)
 - [Web content filtering](web-content-filtering.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 

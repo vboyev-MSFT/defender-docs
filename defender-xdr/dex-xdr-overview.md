@@ -2,8 +2,7 @@
 title: What is Microsoft Defender Experts for XDR offering
 ms.reviewer:
 description: The Defender Experts for XDR service augments your SOC with a combination of automation and human expertise.
-ms.service: defender-experts
-ms.subservice: dex-xdr
+ms.service: defender-experts-for-xdr
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -14,8 +13,11 @@ ms.collection:
   - tier1
   - essentials-overview
 ms.topic: conceptual
+ms.custom: 
+- cx-ti
+- cx-dex
 search.appverid: met150
-ms.date: 04/25/2024
+ms.date: 10/30/2024
 ---
 
 # Microsoft Defender Experts for XDR
