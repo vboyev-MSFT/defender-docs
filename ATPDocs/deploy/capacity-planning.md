@@ -11,7 +11,7 @@ This article describes how to use the Microsoft Defender for Identity sizing too
 
 While domain controller performance may not be affected if the server doesn't have required resources, the Defender for Identity sensor may not operate as expected. For more information, see [Microsoft Defender for Identity prerequisites](prerequisites.md).
 
-The sizing tool measures the capacity needed for domain controllers only. There is no need to run it against AD FS / AD CS servers, as the performance impact on AD FS / AD CS servers is extremely minimal to not existent.
+The sizing tool measures the capacity needed for domain controllers only. There is no need to run it against AD FS / AD CS / Entra Connect servers, as the performance impact on these servers is extremely minimal to not existent.
 
 > [!TIP]
 > By default, Defender for Identity supports up to 350 sensors. To install more sensors, contact Defender for Identity support.
