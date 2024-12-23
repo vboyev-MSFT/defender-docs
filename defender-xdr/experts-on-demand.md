@@ -126,7 +126,7 @@ If you included contact email addresses when submitting your inquiry, they will 
 
 Ask Defender Experts is focused on products that are only included in Microsoft Defender XDR i.e. Microsoft Defender for Endpoint, Microsoft Defender for Office, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
 
-The service has the following limitations:
+The service does not cover the following scenarios:
 
 - Inquiries related to custom detections in the above products cannot be handled in Ask Defender Experts because our experts typically do not have access to such telemetry or visibility into how these custom policies were set up. Examples of such policies include:
 
