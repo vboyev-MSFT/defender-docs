@@ -34,7 +34,7 @@ Devices and users that are out of scope won't be supported by Defender Experts. 
 
 ## Using Defender Experts scoped coverage
 
-You can create a predefined Microsoft Defender for Endpoint device group or a Microsoft Entra ID user group in the Microsoft Defender portal to which you can add devices and users, respectively. The name assigned to the created device or user group must begin with:
+You can create a predefined Microsoft Defender for Endpoint device group or a Microsoft Entra ID user group in the Microsoft Defender portal to which you can add devices and users, respectively. The name assigned to the created device or user group should be:
 
 - **Defender_Experts_Scoped_Coverage_Devices**
 - **Defender_Experts_Scoped_Coverage_Users**
