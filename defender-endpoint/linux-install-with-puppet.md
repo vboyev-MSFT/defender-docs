@@ -162,6 +162,7 @@ class install_mdatp (
 >`./mde_installer.sh --help`
 
 #### Create a manifest to deploy Defender for Endpoint by configuring repositories manually
+
 Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download it from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/puppet.install_mdatp_manual.init.pp). 
 
 ```bash
@@ -261,13 +262,14 @@ class install_mdatp (
 }
 
 ```
+
 > [!NOTE]
-> Defender for Endpoint on Linux can be deployed from one of the following channels: **insiders-fast, insiders-slow, prod**. Each channel corresponds to a Linux software repository.
-> The choice of the channel determines the type and frequency of the updates that are offered to your device. Devices in insiders-fast are the first ones to receive updates and new features in preview, followed later by insiders-slow, and lastly by prod.
+> Defender for Endpoint on Linux can be deployed from one of the following channels: **insiders-fast, insiders-slow, prod**. Each channel corresponds to a Linux software repository. The choice of the channel determines the type and frequency of the updates that are offered to your device. Devices in `insiders-fast` are the first ones to receive updates and new features in preview, followed by `insiders-slow`, and lastly by `prod`.
+>
 > Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/[version]`.
 
->[!Warning]
->Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+> [!Warning]
+> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
 ## Include the manifest inside the site.pp file
 
@@ -312,9 +314,13 @@ org_id                                  : "[your organization identifier]"
 If you encounter issues during installation, try these self-troubleshooting steps:
 
 1. Refer to [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+
 2. Refer to [Installation issues](/defender-endpoint/linux-support-install) for more information on commonly occurring installation issues
+
 3. If health of the device is false, refer to [MDE agent health issues](/defender-endpoint/health-status)
+
 4. For product performance issues, refer to [Troubleshoot performance issues](/defender-endpoint/linux-support-perf), [performance tuning](/defender-endpoint/linux-support-perf?branch=main)
+
 5. For proxy and connectivity issues, refer to [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity)
 
 To get support from Microsoft, raise a support ticket and provide log files by using the [client analyzer](/defender-endpoint/run-analyzer-macos-linux)
