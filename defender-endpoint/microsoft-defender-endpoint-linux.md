@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
 
 - CPU: 1 CPU core minimum. For high-performance workloads, more cores are recommended.
 
-- Disk Space: 2 GB minimum. 
+- Disk Space: 2 GB minimum. For high-performance workloads, more disk space might be needed.
 
 - Memory: 1 GB of RAM minimum. For high-performance workloads, more memory might be needed.
 
