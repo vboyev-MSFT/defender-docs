@@ -64,16 +64,7 @@ Here are a few important points:
 
    :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option":::
 
-4. On the SaltStack Master, extract the contents of the archive to the SaltStack Server's folder (typically `/srv/salt`):
-
-    ```bash
-    ls -l
-    ```
-
-    ```console
-    total 8
-    -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    ```
+1. On the SaltStack Master, extract the contents of the archive to the SaltStack Server's folder (typically `/srv/salt`):
 
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip -d /srv/salt/mde
@@ -85,6 +76,36 @@ Here are a few important points:
     ```
 
 ## Create Saltstack state files
+
+There are two ways you can create the Saltstack state files:
+
+1. **Installer Script (recommended):** In this method, the script will automate deployment by installing the agent as well as onboarding the device to the security portal and also configure the repositories to pick the correct agent compatible with your linux distribution.
+
+1. **Manually configuring the repositories:** In this method,  repositories need to be configured manually along with selecting agent version compatible with your linux distribution. It gives more granular control over the deployment process.
+
+### Create Saltstack state files using Installer Script
+
+1. Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) from Microsoft GitHub Repository or use the following command to download it:
+
+   ```bash
+   wget https://raw.githubusercontent.com/microsoft/mdatp-xplat/refs/heads/master/linux/installation/mde_installer.sh /srv/salt/mde/
+   ```
+
+
+1. Create the state file `/srv/salt/install_mdatp.sls` with the following content. The same can be downloaded from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/salt.install_mdatp_simplified.sls)
+
+   ```bash
+   #Download the mde_installer.sh: https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh
+    install_mdatp_package:
+    cmd.run:
+     - name: /srv/salt/mde/mde_installer.sh --install --onboard /srv/salt/mde/mdatp_onboard.json
+     - shell: /bin/bash
+     - unless: 'pgrep -f mde_installer.sh'
+   ```
+  
+
+
+### Create Saltstack state files by manually configuring repositories
 
 In this step, you create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to deploy and onboard Defender for Endpoint. Then, you add the Defender for Endpoint repository and key: `install_mdatp.sls`.
 
