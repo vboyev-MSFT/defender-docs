@@ -31,6 +31,7 @@ ms.date: 12/04/2024
 
 This article describes how to deploy Defender for Endpoint on Linux using Saltstack. A successful deployment requires the completion of all of the following tasks:
 
+- [Prerequisites and system requirements](#Prerequisites and system requirements)
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Saltstack state files](#create-saltstack-state-files)
 - [Deployment](#deployment)
@@ -92,18 +93,20 @@ There are two ways you can create the Saltstack state files:
    ```
 
 
-1. Create the state file `/srv/salt/install_mdatp.sls` with the following content. The same can be downloaded from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/salt.install_mdatp_simplified.sls)
+2. Create the state file `/srv/salt/install_mdatp.sls` with the following content. The same can be downloaded from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/salt.install_mdatp_simplified.sls)
 
    ```bash
    #Download the mde_installer.sh: https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh
     install_mdatp_package:
-    cmd.run:
-     - name: /srv/salt/mde/mde_installer.sh --install --onboard /srv/salt/mde/mdatp_onboard.json
-     - shell: /bin/bash
-     - unless: 'pgrep -f mde_installer.sh'
+      cmd.run:
+        - name: /srv/salt/mde/mde_installer.sh --install --onboard /srv/salt/mde/mdatp_onboard.json
+        - shell: /bin/bash
+        - unless: 'pgrep -f mde_installer.sh'
    ```
   
-
+> [!NOTE]
+> The installer script also supports other parameters such as channel (insiders-fast, insiders-slow, prod (default) ), realtime protection, version, etc. To select from the list of available options, check help through the following command:
+>```./mde_installer.sh --help```
 
 ### Create Saltstack state files by manually configuring repositories
 
@@ -254,7 +257,7 @@ In this step, you create a SaltState state file in your configuration repository
         - name: mdatp
    ```
 
-## Deployment
+## Deploy Defender on Endpoint using the state files created above, applicable to both methods
 
 In this step, you apply the state to the minions. The following command applies the state to machines with the name that begins with `mdetest`.
 
@@ -284,9 +287,24 @@ In this step, you apply the state to the minions. The following command applies 
    salt 'mdetest*' state.apply uninstall_mdatp
    ```
 
-## Log installation issues
+## Troubleshoot installation issues
 
-For more information on how to find the automatically generated log that's created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
+To troubleshoot issues:
+
+1. For information on how to find the log that's generated automatically when an installation error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
+2. For information about common installation issues, see [Installation issues](/defender-endpoint/linux-support-install).
+3. If the health of the device is `false`, see [Defender for Endpoint agent health issues](/defender-endpoint/health-status).
+4. For product performance issues, see [Troubleshoot performance issues](/defender-endpoint/linux-support-perf).
+5. For proxy and connectivity issues, see [Troubleshoot cloud connectivity issues](/defender-endpoint/linux-support-connectivity).
+
+To get support from Microsoft, open a support ticket, and provide the log files created by using the [client analyzer](/defender-endpoint/run-analyzer-macos-linux).
+
+## How to configure policies for Microsoft Defender on Linux
+
+You can configure antivirus or EDR settings on your endpoints using any of the following methods:
+
+- See [Set preferences for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-preferences).
+- See [security settings management](/mem/intune/protect/mde-security-integration) to configure settings in the Microsoft Defender portal.
 
 ## Operating system upgrades
 
