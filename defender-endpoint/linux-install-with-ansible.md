@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/11/2024
+ms.date: 12/24/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Ansible
@@ -89,18 +89,16 @@ Download the onboarding package from Microsoft Defender portal.
 
    :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option":::
 
-1. From a command prompt, verify that you have the file. Extract the contents of the archive:
+4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
-    ```bash
-   
-    ```
-       ```bash
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    ```
-       ```console
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: mdatp_onboard.json
-    ```
+   ```bash
+   unzip WindowsDefenderATPOnboardingPackage.zip
+   ```
+
+   ```console
+   Archive:  WindowsDefenderATPOnboardingPackage.zip
+   inflating: mdatp_onboard.json
+   ```
 
 ## Deploy Defender for Endpoint using mde_installer.sh with Ansible
 
