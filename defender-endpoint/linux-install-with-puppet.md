@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/16/2024
+ms.date: 12/24/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Puppet
@@ -70,7 +70,7 @@ Download the onboarding package from Microsoft Defender portal.
    inflating: mdatp_onboard.json
    ```
 
-## Create a directory structure
+## Create a Puppet manifest
 
 You need to create a Puppet manifest for deploying Defender for Endpoint on Linux to devices managed by a Puppet server. This example makes use of the `apt` and `yumrepo` modules available from `puppetlabs`, and assumes that the modules are installed on your Puppet server.
 
