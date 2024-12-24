@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/04/2024
+ms.date: 12/24/2024
 ---
 
 **Applies to**:
@@ -37,7 +37,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Saltst
 
 Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-In addition, for Saltstack deployment, you need to be familiar with Saltstack administration, have Saltstack installed, configure the Master and Minions, and know how to apply states. Saltstack has many ways to complete the same task. These instructions assume availability of supported Saltstack modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Saltstack documentation](https://docs.saltproject.io/) for details.
+In addition, for Saltstack deployment, you need to be familiar with Saltstack administration, have Saltstack installed, configure the Master and Minions, and know how to apply states. Saltstack has many ways to complete the same task. These instructions assume availability of supported Saltstack modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. For more information, see [Saltstack documentation](https://docs.saltproject.io/).
 
 Here are a few important points:
 
