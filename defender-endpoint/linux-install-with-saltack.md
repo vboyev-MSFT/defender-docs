@@ -18,10 +18,6 @@ search.appverid: met150
 ms.date: 12/04/2024
 ---
 
-# Deploy Microsoft Defender for Endpoint on Linux with Saltstack
-
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
 **Applies to**:
 
 - Microsoft Defender for Endpoint Server
@@ -29,13 +25,11 @@ ms.date: 12/04/2024
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This article describes how to deploy Defender for Endpoint on Linux using Saltstack. A successful deployment requires the completion of all of the following tasks:
+# Deploy Microsoft Defender for Endpoint on Linux with Saltstack
 
-- [Prerequisites and system requirements](#Prerequisites and system requirements)
-- [Download the onboarding package](#download-the-onboarding-package)
-- [Create Saltstack state files](#create-saltstack-state-files)
-- [Deployment](#deployment)
-- [Reference](#reference)
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
+
+This article describes how to deploy Defender for Endpoint on Linux using Saltstack. A successful deployment requires the completion of all of the steps in this article.
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../includes/support.md)]
 
@@ -308,14 +302,10 @@ You can configure antivirus or EDR settings on your endpoints using any of the f
 
 ## Operating system upgrades
 
-When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on Linux on your device.
+When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on your Linux device.
 
 ## Reference
 
 - [SALT Project documentation](https://docs.saltproject.io/en/latest/topics/about_salt_project.html)
-
-## See also
-
-- [Investigate agent health issues](health-status.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
