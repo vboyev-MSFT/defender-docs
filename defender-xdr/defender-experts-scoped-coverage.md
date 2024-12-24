@@ -17,7 +17,7 @@ ms.custom:
 - cx-ti
 - cx-dex
 search.appverid: met150
-ms.date: 12/20/2024
+ms.date: 12/24/2024
 ---
 
 # Scoped coverage in Microsoft Defender Experts for XDR
@@ -34,17 +34,19 @@ Devices and users that are out of scope won't be supported by Defender Experts. 
 
 ## Using Defender Experts scoped coverage
 
-You can create a predefined Microsoft Defender for Endpoint device group or a Microsoft Entra ID user group in the Microsoft Defender portal to which you can add devices and users, respectively. The default name assigned to the created device or user group is:
+You can create a predefined Microsoft Defender for Endpoint device group or a Microsoft Entra ID user group in the Microsoft Defender portal to which you can add devices and users, respectively. The name assigned to the created device or user group should be the following:
 
 - **Defender_Experts_Scoped_Coverage_Devices**
 - **Defender_Experts_Scoped_Coverage_Users**
 
-The devices and users you add to these groups are then considered as the set of assets that are in scope for this service.
-
 :::image type="content" source="media/defender_scoped_devices.png" alt-text="Screenshot of Defender Experts Scoped devices." lightbox="media/defender_scoped_devices.png":::
 
+:::image type="content" source="media/defender-experts-scoped-users.png" alt-text="Screenshot of Defender Experts Scoped users." lightbox="media/defender-experts-scoped-users.png":::
+
+The devices and users you add to these groups are then considered as the set of assets that are in scope for this service.
+
 > [!NOTE]
-> Defender Experts need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
+> You need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
 > [!TIP]
 > The device group should be in the highest order of priority for the devices under it, to be considered in scope. This is a known product limitation.
@@ -54,8 +56,8 @@ Currently, the service doesn't offer support to rename these predefined groups, 
 The following section lists down questions that you or your SOC team might have regarding scoped coverage:
 
 1. **What aspects of the XDR service remain consistent with Defender Experts scoped coverage?**
-   - This service doesn't change our pricing structure. You still pay for Defender Experts service based on E5 (Microsoft Defender for Servers) for your desired user base.
-   - This service doesn't scope according to individual Microsoft Defender products and services (such as Defender for Endpoint, Microsoft Defender for Office 365, or Microsoft Defender for Cloud). That is, the minimum baseline for scoped coverage is still the E5 license.
+   - This service doesn't change our pricing structure. You still pay for Defender Experts service based on [E5](before-you-begin-xdr.md#eligibility-and-licensing) and Microsoft Defender for Endpoint for Servers for your desired user base.
+   - This service doesn't scope according to individual Microsoft Defender products and services (such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, or Microsoft Defender for Cloud). That is, the minimum baseline for scoped coverage is still the E5 license.
    - There's no change in permissions for analysts in Defender Experts for XDR. Defender Experts analysts will still have access to your entire tenant and not just the scoped assets.
 
 2. **Can I change the scoped assets later?**
