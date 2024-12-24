@@ -135,7 +135,7 @@ After you [connect Microsoft Sentinel to Microsoft Defender](/defender-xdr/micro
 
 For more information, see [Microsoft incident creation ](/azure/sentinel/microsoft-365-defender-sentinel-integration?tabs=azure-portal).
 
-### Conduct a MITRE Att&ck crosswalk
+### Conduct a MITRE ATT&CK crosswalk
 
 With fusion, anomaly, and threat intelligence analytic rules enabled, conduct a MITRE Att&ck crosswalk to help you decide which remaining analytic rules to enable and to finish implementing a mature XDR (extended detection and response) process. This empowers you to detect and respond throughout the lifecycle of an attack.
 
