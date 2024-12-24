@@ -43,7 +43,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Puppet
 
  For a description of prerequisites and system requirements, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
 
-In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Refer to the [Puppet documentation](https://puppet.com/docs) for details.
+In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. For more information, see [Puppet documentation](https://puppet.com/docs).
 
 ## Download the onboarding package
 
