@@ -89,19 +89,15 @@ Download the onboarding package from Microsoft Defender portal.
 
    :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option":::
 
-4. From a command prompt, verify that you have the file. Extract the contents of the archive:
+1. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
     ```bash
-    ls -l
+   
     ```
-    ```console
-    total 8
-    -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    ```
-    ```bash
+       ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
-    ```console
+       ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
@@ -150,6 +146,10 @@ Create installation YAML file. You can also download the file directly from [Git
      debug:
        msg: "{{ script_output.stderr }}"
 ```
+
+> [!NOTE]
+> The installer script also supports other parameters such as channel, realtime protection, version, etc. To select from the list of available options, check help through the following command:
+>```./mde_installer.sh --help```
 
 ### Apply the playbook
 
