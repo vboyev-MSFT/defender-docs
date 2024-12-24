@@ -41,11 +41,11 @@ This article describes how to deploy Defender for Endpoint on Linux using Ansibl
 
 ## Introduction
 
-Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automate the deployment process for machines at scale. Following are the two methods to automate.
+Deploy Microsoft Defender for Endpoint on Linux Servers using Ansible to automate the deployment process for machines at scale. Following are the two methods to automate:
 
-1. Using the installer script (recommended). This method greatly simplifies the automation process and helps to install the Defender for Endpoint agent and onboard the device to the Microsoft Defender portal using just a few steps without having to configure for different distros separately.
+- Use the installer script (recommended). This method greatly simplifies the automation process and helps to install the Defender for Endpoint agent and onboard the device to the Microsoft Defender portal using just a few steps without having to configure for different distros separately.
 
-2. Manually configuring repositories for each distro. This method allows you to automate the deployment process by manually configuring repositories, installing the agent, and onboarding the device for each distro. This method  gives more granular control over the deployment process.
+- Manually configure repositories for each distro. This method allows you to automate the deployment process by manually configuring repositories, installing the agent, and onboarding the device for each distro. This method  gives more granular control over the deployment process.
 
 ## Prerequisites and system requirements applicable to both the methods
 
