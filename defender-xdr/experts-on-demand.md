@@ -85,7 +85,7 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 ### In portal
 
-You can view responses to inquiries submitted to Ask Defender Experts from up to six months ago by navigating to **Reports** > **Defender Experts messages**. You'll also be able to ask follow-up questions or reply with more information to Defender Experts from this page.
+You can view responses to inquiries submitted to Ask Defender Experts from up to six months ago by navigating to **Reports** > **Defender Experts messages**. You can also ask follow-up questions or reply with more information to Defender Experts from this page.
 
 :::image type="content" source="media/inportal-managed-response.png" alt-text="Screenshot of in-portal managed response." lightbox="media/inportal-managed-response.png":::
 
@@ -124,22 +124,22 @@ If you included contact email addresses when submitting your inquiry, they'll re
 
 ## Services that aren't in scope for Defender Experts
 
-Ask Defender Experts is focused on products that are only included in Microsoft Defender XDR, i.e., Microsoft Defender for Endpoint, Microsoft Defender for Office, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
+Ask Defender Experts is focused on products that are only included in Microsoft Defender XDR, that is, Microsoft Defender for Endpoint, Microsoft Defender for Office, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
 
 The service doesn't cover the following scenarios:
 
-- Inquiries related to custom detections in the above products can't be handled in Ask Defender Experts because our experts typically don't have access to such telemetry or visibility into how these custom policies were set up. Examples of such policies include:
+- **Inquiries related to custom detections**- Inquiries related to custom detections in the above products can't be handled in Ask Defender Experts because our experts typically don't have access to such telemetry or visibility into how these custom policies were set up. Examples of such policies include:
 
   - **Alerts with policy source** = **Custom**
   - **Detection source** = **Custom TI**
   - **Alert title** = **Anomaly Indicator**
   - **Threat family** = **Custom Enterprise Block Only**
 
-- Defender Experts won't be able to handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other third-party cybersecurity products.
+- **Inquiries related to non-Microsoft Defender XDR products**- Defender Experts don't handle inquiries on non-Defender XDR products such as Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Sentinel, Microsoft Purview, Microsoft Priva, and other third-party cybersecurity products.
 
-- Defender Experts won't be able to assist you with inquiries regarding bugs in your product experience in the Defender XDR portal, such as, missing data on the alert or incident page or a recommended action not completing when you action it. You can reach out to Microsoft Support via the [Services Hub](https://serviceshub.microsoft.com/home) regarding such issues.
+- **Inquiries regarding bugs**- Defender Experts don't handle inquiries regarding bugs in your product experience in the Defender XDR portal, such as, missing data on the alert or incident page or a recommended action not completing when you action it. You can reach out to Microsoft Support via the [Services Hub](https://serviceshub.microsoft.com/home) regarding such issues.
 
-- Ask Defender Experts isn't a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+- **Inquiries related to security incident response issues**- Ask Defender Experts isn't a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 ### Next step
 
