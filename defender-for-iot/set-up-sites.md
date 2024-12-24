@@ -54,7 +54,7 @@ In this stage, you configure Defender for IoT to associate devices to the site, 
 
     A list of suggested sites appears in the table.
 
-1. If you don't know any of the OT device addresses:
+1. If you don't know any of the site's device addresses:
 
     1. Select **Show all suggestions**.
 

@@ -28,6 +28,8 @@ To support searching across all relevant sites and device types, the **Site secu
 
 The suggested sites list now shows all relevant sites that match the search criteria across all device types. When you expand each site, you can view all relevant devices under the site, including the device name and type.
 
+:::image type="content" source="media/set-up-sites/site-security-associate-group.png" alt-text="Screenshot showing the associate devices screen and the suggested list of OT devices per location with the Group column in the site set-up page of Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/set-up-sites/site-security-associate-group.png":::
+
 ## November 2024
 
 |Service area  |Updates  |
