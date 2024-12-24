@@ -34,19 +34,19 @@ Devices and users that are out of scope won't be supported by Defender Experts. 
 
 ## Using Defender Experts scoped coverage
 
-You can create a predefined Microsoft Defender for Endpoint device group or a Microsoft Entra ID user group in the Microsoft Defender portal to which you can add devices and users, respectively. The default name assigned to the created device or user group is:
+You can create a predefined Microsoft Defender for Endpoint device group or a Microsoft Entra ID user group in the Microsoft Defender portal to which you can add devices and users, respectively. The name assigned to the created device or user group must begin with:
 
 - **Defender_Experts_Scoped_Coverage_Devices**
 - **Defender_Experts_Scoped_Coverage_Users**
-
-The devices and users you add to these groups are then considered as the set of assets that are in scope for this service.
 
 :::image type="content" source="media/defender_scoped_devices.png" alt-text="Screenshot of Defender Experts Scoped devices." lightbox="media/defender_scoped_devices.png":::
 
 :::image type="content" source="media/defender-experts-scoped-users.png" alt-text="Screenshot of Defender Experts Scoped users." lightbox="media/defender-experts-scoped-users.png":::
 
+The devices and users you add to these groups are then considered as the set of assets that are in scope for this service.
+
 > [!NOTE]
-> Defender Experts need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
+> You need **Security admin** permissions to create the device and user groups. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
 > [!TIP]
 > The device group should be in the highest order of priority for the devices under it, to be considered in scope. This is a known product limitation.
