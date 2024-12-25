@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/16/2024
+ms.date: 12/24/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Puppet
@@ -43,7 +43,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Puppet
 
  For a description of prerequisites and system requirements, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
 
-In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. Refer to the [Puppet documentation](https://puppet.com/docs) for details.
+In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported Puppet modules, such as *apt* to help deploy the package. Your organization might use a different workflow. For more information, see [Puppet documentation](https://puppet.com/docs).
 
 ## Download the onboarding package
 
@@ -59,18 +59,7 @@ Download the onboarding package from Microsoft Defender portal.
 
    :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package.":::
 
-4. From a command prompt, verify that you have the file. 
-
-    ```bash
-    ls -l
-    ```
-
-    ```console
-    total 8
-    -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    ```
-
-5. Extract the contents of the archive.
+4. Extract the contents of the archive.
 
    ```bash
    unzip WindowsDefenderATPOnboardingPackage.zip
@@ -111,7 +100,7 @@ You need to create a Puppet manifest for deploying Defender for Endpoint on Linu
        └── init.pp
    ```
 
-### Create a manifest file
+## Create a manifest file
 
 There are two ways to create a manifest file:
 
@@ -120,7 +109,14 @@ There are two ways to create a manifest file:
 
 #### Create a manifest to deploy Defender for Endpoint using an installer script
 
-Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download the file directly from [GitHub](https://teams.microsoft.com/l/message/19:2c1dc910-b8b7-415a-a9fd-2cd04843b43c_cb7ab2ef-8a66-4fcf-8c66-1723507f52df@unq.gbl.spaces/1734343607885?context=%7B%22contextType%22%3A%22chat%22%7D)
+1. Download the installer bash script. Pull the [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) from Microsoft GitHub Repository or use the following command to download it.
+
+
+```bash
+wget https://raw.githubusercontent.com/microsoft/mdatp-xplat/refs/heads/master/linux/installation/mde_installer.sh /etc/puppetlabs/code/environments/production/modules/install_mdatp/files/
+```
+
+2. Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download the file directly from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/puppet.install_mdatp_simplified.init.pp)
 
 ```bash
 
@@ -160,33 +156,14 @@ class install_mdatp (
   }
 
 }
-
 ```
+>[!NOTE]
+>Installer script also supports other parameters such as channel, realtime protection, version, etc. To select from the list of available options, check help.
+>`./mde_installer.sh --help`
+
 #### Create a manifest to deploy Defender for Endpoint by configuring repositories manually
 
-Defender for Endpoint on Linux can be deployed from one of the following channels:
-
-- *insiders-fast*, denoted as `[channel]`
-- *insiders-slow*, denoted as `[channel]`
-- *prod*, denoted as `[channel]` using the version name (see [Linux Software Repository for Microsoft Products](/linux/packages))
-
-Each channel corresponds to a Linux software repository.
-
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow*, and lastly by *prod*.
-
-In order to preview new features and provide early feedback, we recommend that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
-
-> [!WARNING]
-> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
-
-Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
-
-In the below commands, replace *[distro]* and *[version]* with the information you've identified:
-
-> [!NOTE]
-> In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, replace *[distro]* with 'rhel'.
-
-Add the following content to the `install_mdatp/manifests/init.pp` file:
+Add the following content to the `install_mdatp/manifests/init.pp` file. You can also download it from [GitHub](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/third_party_installation_playbooks/puppet.install_mdatp_manual.init.pp). 
 
 ```bash
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
@@ -285,6 +262,14 @@ class install_mdatp (
 }
 
 ```
+
+> [!NOTE]
+> Defender for Endpoint on Linux can be deployed from one of the following channels: **insiders-fast, insiders-slow, prod**. Each channel corresponds to a Linux software repository. The choice of the channel determines the type and frequency of the updates that are offered to your device. Devices in `insiders-fast` are the first ones to receive updates and new features in preview, followed by `insiders-slow`, and lastly by `prod`.
+>
+> Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/[version]`.
+
+> [!Warning]
+> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
 ## Include the manifest inside the site.pp file
 
