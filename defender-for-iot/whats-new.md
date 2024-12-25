@@ -30,6 +30,8 @@ The suggested sites list now shows all relevant sites that match the search crit
 
 :::image type="content" source="media/set-up-sites/site-security-associate-group.png" alt-text="Screenshot showing the associate devices screen and the suggested list of OT devices per location with the Group column in the site set-up page of Microsoft Defender for IoT in the Microsoft Defender portal." lightbox="media/set-up-sites/site-security-associate-group.png":::
 
+For more information, see [Associate devices](set-up-sites.md#associate-devices).
+
 ## November 2024
 
 |Service area  |Updates  |
