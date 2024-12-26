@@ -39,7 +39,7 @@ Like any other system in an IT environment, these too should have an Endpoint De
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
+> **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
 
 ## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
@@ -184,71 +184,7 @@ After onboarding devices to the service, it's important to take advantage of the
 
 ### Next generation protection configuration
 
-The following configuration settings are recommended:
-
-#### Cloud Protection Service
-
-- Turn on cloud-delivered protection: Yes
-- Cloud-delivered protection level: Not configured
-- Defender Cloud Extended Timeout In Seconds: 20
-
-#### Exclusions
-
-- Please review the FXLogix antivirus exclusion recommendations here: [Prerequisites for FSLogix](/fslogix/overview-prerequisites#file--folder-exclusions).
-
-#### Real-time Protection
-
-- Turn on all settings and set to monitor all files
-
-#### Remediation
-
-- Number of days to keep quarantined malware: 30
-- Submit samples consent: Send all samples automatically
-- Action to take on potentially unwanted apps: Enable
-- Actions for detected threats:
-  - Low threat: Clean
-  - Moderate threat, High threat, Severe threat: Quarantine
-
-#### Scan
-
-- Scan archived files: Yes
-- Use low CPU priority for scheduled scans: Not configured
-- Disable catch-up full scan: Not configured
-- Disable catchup quick scan: Not configured
-- CPU usage limit per scan: 50
-- Scan mapped network drives during full scan: Not configured
-- Run daily quick scan at: 12 PM
-- Scan type: Not configured
-- Day of week to run scheduled scan: Not configured
-- Time of day to run a scheduled scan: Not configured
-- Check for signature updates before running scan: Yes
-
-#### Updates
-
-- Enter how often to check for security intelligence updates: 8
-- Leave other settings in default state
-
-#### User experience
-
-- Allow user access to Microsoft Defender app: Not configured
-
-#### Enable Tamper protection
-
-- Enable tamper protection to prevent Microsoft Defender being disabled: Enable
-
-#### Attack surface reduction
-
-- Enable network protection: Test mode
-- Require SmartScreen for Microsoft Edge: Yes
-- Block malicious site access: Yes
-- Block unverified file download: Yes
-
-#### Attack surface reduction rules
-
-- Configure all available rules to Audit.
-
-> [!NOTE]
-> Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
+The configuration settings in this link are recommended: [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
 ## Related topics
 
