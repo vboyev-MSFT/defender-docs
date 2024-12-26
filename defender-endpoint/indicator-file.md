@@ -81,7 +81,9 @@ Understand the following prerequisites before you create indicators for files:
 
 - Available in Defender for Endpoint version 101.85.27 or later.
 
-- [File hash computation is enabled](/defender-endpoint/linux-preferences#configure-file-hash-computation-feature) from the portal or in the managed JSON 
+- [File hash computation is enabled](/defender-endpoint/linux-preferences#configure-file-hash-computation-feature) from the portal or in the managed JSON
+
+- BM is preferred but will work with any other scan (RTP, Custom, etc).
 
 ## Create an indicator for files from the settings page
 
