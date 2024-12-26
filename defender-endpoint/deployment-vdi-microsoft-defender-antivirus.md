@@ -64,7 +64,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
    A field automatically appears.
 
-5. Enter `\\<Windows File Server shared location\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
+1. Enter `\\<File Server shared location\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
 6. Select **OK**, and then deploy the Group Policy Object to the VMs you want to test.
 
@@ -72,7 +72,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 1. On each RDS or VDI device, use the following cmdlet to enable the feature: 
 
-   `Set-MpPreference -SharedSignaturesPath \\<Windows File Server shared location>\wdav-update`
+   `Set-MpPreference -SharedSignaturesPath \\<File Server shared location>\wdav-update`
    
 2. Push the update as you normally would push PowerShell-based configuration policies onto your VMs. (See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section in this article. Look for the *shared location* entry.) 
 
@@ -101,9 +101,9 @@ You can also set up your single server or machine to fetch the updates on behalf
 
 1. Create an SMB/CIFS file share.
 
-2. Use the following example to create a file share with the following share permissions.
+1. Use the following example to create a file share with the following share permissions.
 
-   ```PowerShell
+      ```PowerShell
    
    PS c:\> Get-SmbShareAccess -Name mdatp$
 
@@ -113,10 +113,10 @@ You can also set up your single server or machine to fetch the updates on behalf
    
    ```
 
-   > [!NOTE]
+      > [!NOTE]
    > An NTFS permission is added for **Authenticated Users:Read:**.
 
-   For this example, the file share is `\\WindowsFileServer.fqdn\mdatp$\wdav-update`.
+   For this example, the file share is `\\FileServer.fqdn\mdatp$\wdav-update`.
    
 ### Set a scheduled task to run the PowerShell script
 
@@ -158,100 +158,174 @@ If you would prefer to do everything manually, here's what to do to replicate th
    > [!NOTE]
    > The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
 
-## Randomize scheduled scans
+## Microsoft Defender Antivirus configuration settings
 
-Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
+It’s important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.  It’s optimized for VDI environments.
 
-The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization causes Microsoft Defender Antivirus to start a scan on each machine within a four-hour window from the time set for the scheduled scan.
+> [!TIP]
+> The latest Windows group policy administrative templates are available in [Create and manage Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-See [Schedule scans](schedule-antivirus-scans.md) for other configuration options available for scheduled scans.
+### Root
 
-## Use quick scans
+Configure detection for potentially unwanted applications: Enabled - Block
 
-You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they're designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
+Configure local administrator merge behavior for lists: Disabled
 
-1. In your Group Policy Editor, go to **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
+Control whether or not exclusions are visible to Local Admins: Enabled
 
-2. Select **Specify the scan type to use for a scheduled scan** and then edit the policy setting.
+Turn off routine remediation: Disabled
 
-3. Set the policy to **Enabled**, and then under **Options**, select  **Quick scan**.
+Randomize scheduled scans: Enabled
 
-4. Select **OK**.
 
-5. Deploy your Group Policy object as you usually do.
 
-## Prevent notifications
+### Client Interface
 
-Sometimes, Microsoft Defender Antivirus notifications are sent to or persist across multiple sessions. To help avoid user confusion, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications using Group Policy.
+Enable headless UI mode: Enabled
 
-1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
+> [!NOTE]
+> This policy hides the entire Microsoft Defender Antivirus user interface from end users in your organization.
 
-2. Select **Suppress all notifications** and then edit the policy settings.
+Suppress all notifications: Enabled
 
-3. Set the policy to **Enabled**, and then select **OK**.
+> [!NOTE]
+> Sometimes, Microsoft Defender Antivirus notifications are sent to or persist across multiple sessions. To help avoid user confusion, you can lock down the Microsoft Defender Antivirus user interface.
+> Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team sees the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated, and appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
-4. Deploy your Group Policy object as you usually do.
+### MAPS
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team sees the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated, and appear in the [Microsoft Defender portal](https://security.microsoft.com).
+Join Microsoft MAPS (Turn on cloud-delivered protection): Enabled - Advanced MAPS
 
-## Disable scans after an update
+Send file samples when further analysis is required: Send all samples (more secure) or Send safe sample (less secure)
 
-Disabling a scan after an update prevents a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
+### MPEngine
+
+Configure extended cloud check: 20
+
+Select cloud protection level: Enabled - High
+
+Enable file hash computation feature: Enabled
+
+> [!NOTE]
+> "Enable file hash computation feature" is only needed if using Indicators – File hash.  It can cause higher amount of CPU utilization, since it has to parse thru each binary on disk to get the file hash.
+
+### Real-time Protection
+
+Configure monitoring for incoming and outgoing file and program activity: Enabled – bi-directional (full on-access)
+
+Monitor file and program activity on your computer: Enabled
+
+Scan all downloaded files and attachments: Enabled
+
+Turn on behavior monitoring: Enabled
+
+Turn on process scanning whenever real-time protection is enabled: Enabled
+
+Turn on raw volume write notifications: Enabled
+
+### Scans
+
+Check for the latest virus and spyware security intelligence before running a scheduled scan: Enabled
+
+Scan archive files: Enabled
+
+Scan network files: Not configured
+
+Scan packed executables: Enabled
+
+Scan removable drives: Enabled
+
+Turn on catch-up full scan (Disable catch-up full scan): Not configured
+
+Turn on catch-up quick scan (Disable catchup quick scan): Not configured
+
+> [!NOTE]
+> If you want to harden, you could change "Turn on catch-up quick scan" to enabled, which will help when VMs have been offline, and have missed two or more consecutive scheduled scans.  But since it is running a scheduled scan, it will use additional CPU.
+
+Turn on e-mail scanning: Enabled
+
+Turn on heuristics: Enabled
+
+Turn on reparse point scanning: Enabled
+
+#### __General scheduled scan settings__
+
+Configure low CPU priority for scheduled scans (Use low CPU priority for scheduled scans): Not configured
+
+Specify the maximum percentage of CPU utilization during a scan (CPU usage limit per scan): 50
+
+Start the scheduled scan only when computer is on but not in use (ScanOnlyIfIdle): Not configured
+
+       Use the following cmdlet, to stop a quick or scheduled scan whenever the device goes idle if it is in passive mode.
+
+ 
+
+
+```powershell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+> [!TIP]
+> "Start the scheduled scan only when computer is on but not in use" setting prevents significant CPU contention in high density environments.
+
+#### __Daily quick scan__
+
+Specify the interval to run quick scans per day: Not configured
+
+Specify the time for a daily quick scan (Run daily quick scan at): 12 PM
+
+
+
+#### __Run a weekly scheduled scan (quick or full)__
+
+Specify the scan type to use for a scheduled scan (Scan type): Not configured
+
+Specify the time of day to run a scheduled scan (Day of week to run scheduled scan): Not configured
+
+Specify the day of the week to run a scheduled scan (Time of day to run a scheduled scan): Not configured
+
+### Security Intelligence Updates
+
+Turn on scan after security intelligence update (Disable scans after an update): Disabled
+
+> [!NOTE]
+> Disabling a scan after a security intelligence update prevents a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 > [!IMPORTANT]
 > Running scans after an update helps ensure your VMs are protected with the latest security intelligence updates. Disabling this option reduces the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
+Specify the interval to check for security intelligence updates (Enter how often to check for security intelligence updates): Enabled - 8
 
-2. Select **Turn on scan after security intelligence update** and then edit the policy setting.
+Leave other settings in default state
 
-3. Set the policy to **Disabled**.
+### Threats
 
-4. Select **OK**.
+Specify threat alert levels at which default action should not be taken when detected: Enabled.  Set Severe (5), High (4), Medium (2) and Low (1), all to quarantine (2)
 
-5. Deploy your Group Policy object as you usually do.
+|Value name|Value |
+| -------- | -------- |
+|1   |2   |
+|2|2|
+|4|2|
+|5|2|
 
-This policy prevents a scan from running immediately after an update.
+### Attack surface reduction rules
 
-## Disable the `ScanOnlyIfIdle` option
+Configure all available rules to Audit.
 
-Use the following cmdlet, to stop a quick or scheduled scan whenever the device goes idle if it is in passive mode.
 
-```PowerShell
-Set-MpPreference -ScanOnlyIfIdleEnabled $false
-```
 
-You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This setting prevents significant CPU contention in high density environments.
+### Enable network protection
 
-For more information, see [Start the scheduled scan only when computer is on but not in use](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
+Prevent users and apps from accessing dangerous websites (Enable network protection): Enabled - Audit mode
 
-## Scan VMs that have been offline
+### SmartScreen for Microsoft Edge
 
-1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
+Require SmartScreen for Microsoft Edge: Yes
 
-2. Select **Turn on catch-up quick scan** and then edit the policy setting.
+Block malicious site access: Yes
 
-3. Set the policy to **Enabled**.
-
-4. Select **OK**.
-
-5. Deploy your Group Policy Object as you usually do.
-
-This policy forces a scan if the VM missed two or more consecutive scheduled scans.
-
-## Enable headless UI mode
-
-1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
-
-2. Select **Enable headless UI mode** and edit the policy.
-
-3. Set the policy to **Enabled**.
-
-4. Select **OK**.
-
-5. Deploy your Group Policy Object as you usually do.
-
-This policy hides the entire Microsoft Defender Antivirus user interface from end users in your organization.
+Block unverified file download: Yes
 
 ## Run the "Windows Defender Cache Maintenance" scheduled task
 
@@ -259,13 +333,24 @@ Optimize the "Windows Defender Cache Maintenance" scheduled task for non-persist
 
 1. Open up the **Task Scheduler** mmc (`taskschd.msc`).
 
-2. Expand **Task Scheduler Library** > **Microsoft** > **Windows** > **Windows Defender**, and then right-click on **Windows Defender Cache Maintenance**.
+1. Expand **Task Scheduler Library** > **Microsoft** > **Windows** > **Windows Defender**, and then right-click on **Windows Defender Cache Maintenance**.
 
-3. Select **Run**, and let the scheduled task finish.
+1. Select **Run**, and let the scheduled task finish.
 
-## Exclusions
+1. > [!WARNING]
+> If you do not do this, it can cause higher cpu utilization while the cache maintenance task is running on each of the VMs.
+
+### Enable Tamper protection
+
+Enable tamper protection to prevent Microsoft Defender being disabled in the Microsoft Defender XDR portal (security.microsoft.com).
+
+### Exclusions
 
 If you think you need to add exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+
+## Next step
+
+If you are also deploying Microsoft Defender for Endpoint - EDR to your Windows based VDI VMs, please go thru the steps here: [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](/defender-endpoint/configure-endpoints-vdi)
 
 ## See also
 
@@ -278,6 +363,7 @@ If you're looking for information about Defender for Endpoint on non-Windows pla
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Defender for Endpoint on Android features](android-configure.md)
+
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
