@@ -161,6 +161,9 @@ The following table lists commonly used Group Policy settings that are available
 |Threats|Specify threats upon which default action should not be taken when detected|[Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)|
 
 > [!TIP]
+> Instead of using "Run full scan on mapped network drives", if you have a Network-Attached Storage (NAS) or Storage Area Network (SAN), you can use Internet Content Adaption Protocol (ICAP) scanning with the Microsoft Defender Antivirus engine. For more information, see **[Tech Community Blog: MetaDefender ICAP with Windows Defender Antivirus: World-class security for hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/metadefender-icap-with-windows-defender-antivirus-world-class/ba-p/800234)**.
+
+> [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
