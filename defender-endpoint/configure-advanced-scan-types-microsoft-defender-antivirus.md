@@ -75,6 +75,9 @@ For details on configuring Microsoft Configuration Manager (current branch), see
 > [!NOTE]
 > If real-time protection is turned on, files are scanned before they are accessed and executed. The scanning scope includes all files, including files on mounted removable media, such as USB drives. If the device performing the scan has real-time protection or on-access protection turned on, the scan also includes network shares.
 
+> [!TIP]
+> If you have a Network-Attached Storage (NAS) or Storage Area Network (SAN), you can use Internet Content Adaption Protocol (ICAP) scanning with the Microsoft Defender Antivirus engine. For more information, see **[Tech Community Blog: MetaDefender ICAP with Windows Defender Antivirus: World-class security for hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/metadefender-icap-with-windows-defender-antivirus-world-class/ba-p/800234)**.
+
 ## Use PowerShell to configure scanning options
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see the following articles:
