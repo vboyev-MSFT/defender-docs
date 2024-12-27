@@ -35,17 +35,11 @@ There are two ways to manage user access to the Defender portal, depending on th
 
 The instructions and permission settings listed in this article apply to Defender XDR Unified RBAC.
 
-### RBAC for version 1 or 2
-
-Depending on your tenant, you might have access to RBAC version 1 or 2 instead of Defender XDR Unified RBAC. For more information, see [permissions for RBAC version 1](/defender-endpoint/prepare-deployment), or [permissions for RBAC version 2](/defender-endpoint/user-roles#permission-options).
-
-If you're using the Defender portal for the first time, you need to set up all of your roles and permissions. For more information, see [manage portal access using role-based access control](/defender-xdr/manage-rbac).
-
 ## Set up Defender XDR Unified RBAC roles for site security
-<!-- to change the above title, remove unified? or give general title for this section? Set up Defender portal RBAC roles for site security -->
+
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
-1. In the Defender portal, select **Settings** \> **Microsoft XDR** \> **Permissions and roles**.
+1. In the Defender portal, select **Settings** \> **Microsoft Defender XDR** \> **Permissions and roles**.
 1. Enable **Endpoints & Vulnerability Management**.
 1. Select **Go to Permissions and roles**.
 1. Select **Create custom role**.
@@ -66,6 +60,27 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Select **Next** to **Review and finish**.
 1. Select **Submit**.
 
+## Set up Defender XDR for MDE RBAC (Version 2) roles for site security
+
+Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
+<!-- check with hadar that this is the correct procedure and permissions chosen -->
+1. In the Defender portal, select **Settings** \> **Endpoints** \> **Roles**. <!-- LIMOR is this: permission> Roles-->
+1. Enable **Endpoints & Vulnerability Management**.<!-- remove this? i think so, is this needed?-->
+1. Select **Add role**.
+1. Type a **Role name**, and a **Description**.
+1. then select **Next** for Permissions.
+
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the permissions set up page for site security." lightbox="media/set-up-rbac/permissions-set-up.png":::
+
+1. For write permissions, select **Manage security settings in Security Center**.
+1. For read permissions, in **View Data**, select **Security Operations**. In **Active remediation actions**, select **Security Operations**.
+
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-choose-options.png" alt-text="Screenshot of the permissions set up page with the specific permissions chosen for site security." lightbox="media/set-up-rbac/permissions-choose-options.png":::
+
+1. Select **Next**.
+1. In **Assigned user groups**, select the user groups from the list to assign assign to this role.
+1. Select **Submit**.
+
 ### Summary of RBAC roles and permissions for site security
 
 **For Unified RBAC**:
@@ -73,14 +88,13 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 |Write permissions |Read permissions |
 |----|----|
 | **MDE Roles**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **MDE Roles**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
-<!-- Limor do we remove global admin? -->
-**For RBAC version 2**:
+
+**For MDE RBAC (version 2)**:
 
 |Write permissions |Read permissions |
 |----|----|
 | **MDE roles**: Manage security settings in Security Center and scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator.| Write roles (including roles that are non-scoped to all device groups). <br> **MDE roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
-<!-- Limor do we remove global admin? -->
-<!-- Hadar the entra id roles are not listed for the write roles is that correct? -->
+
 ## Next steps
 
 Once you have set up the RBAC roles and permissions, [set up a site](set-up-sites.md) so that Microsoft Defender for IoT can begin sending data to the Defender portal.
