@@ -771,7 +771,10 @@ Determines whether module load events are monitored using eBPF and scanned.
 
 ##### Configure monitoring of open events from specific filesystems using eBPF
 
-Determines whether open events from procfs and devfs are monitored by eBPF.
+Determines whether open events from procfs are monitored by eBPF.
+
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
@@ -782,7 +785,7 @@ Determines whether open events from procfs and devfs are monitored by eBPF.
 
 ##### Configure source enrichment of events using eBPF
 
-Determines whether events are enriched with metadata from source in eBPF.
+Determines whether events are enriched with metadata at source in eBPF.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
