@@ -68,7 +68,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Enable **Endpoints & Vulnerability Management**.<!-- remove this? i think so, is this needed?-->
 1. Select **Add role**.
 1. Type a **Role name**, and a **Description**.
-1. then select **Next** for Permissions.
+1. Select **Next** for Permissions.
 
     :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
 
@@ -78,7 +78,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
     :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-choose-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-choose-options.png":::
 
 1. Select **Next**.
-1. In **Assigned user groups**, select the user groups from the list to assign assign to this role.
+1. In **Assigned user groups**, select the user groups from the list to assign to this role.
 1. Select **Submit**.
 
 ### Summary of RBAC roles and permissions for site security
