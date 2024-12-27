@@ -27,6 +27,38 @@ ms.date: 12/06/2024
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+### Upgrading Your Experience: Upcoming UX Enhancements You Should Know About
+
+January 2025
+
+**Key Changes**
+
+We are pleased to introduce the new dashboard for our enterprise users, which has been designed to be more user-friendly and accessible. The updated dashboard structure now includes -
+
+1. Recommendation Cards for Alerts 
+
+1. Feature Tiles
+
+The recommendation card will prominently display any active alerts, ensuring you stay informed. Additionally, features will now be presented in the form of tiles, enhancing ease of use and navigation. 
+
+          **New Dashboard Screen**      
+
+![User's image](media/android-whatsnew/image1.png)![User's image](media/android-whatsnew/image4.png)
+
+1. **Recommendation Cards for Alerts**
+
+   The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard. 
+   
+                                      **Few of the Recommendation Cards are attached below**
+   
+   ![User's image](media/android-whatsnew/image2.png)
+   
+1. **Feature Tiles**
+
+   We have enhanced the Current enterprise Dashboard UX and have presented the features in the form of Tile View. 
+   
+                       **Below are the examples of how the features are presented in form of Tiles**
+   
 ## Android low-touch onboarding is now GA
 
 **December 2024**
@@ -143,7 +175,7 @@ Notify your users and help desk (as applicable) that end users must accept the n
 
 1. Tap on the Defender for Endpoint in-app notification or open the Defender for Endpoint app. Users see a screen that lists the permissions needed. A green check mark is missing next to **Storage permission**.
 
-2. Tap **Begin**.
+1. Tap **Begin**.
 
 3. Tap the toggle for **Allow access to manage all files.** 
 
