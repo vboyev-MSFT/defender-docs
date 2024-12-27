@@ -70,12 +70,12 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Type a **Role name**, and a **Description**.
 1. then select **Next** for Permissions.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the permissions set up page for site security." lightbox="media/set-up-rbac/permissions-set-up.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
 
 1. For write permissions, select **Manage security settings in Security Center**.
 1. For read permissions, in **View Data**, select **Security Operations**. In **Active remediation actions**, select **Security Operations**.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-choose-options.png" alt-text="Screenshot of the permissions set up page with the specific permissions chosen for site security." lightbox="media/set-up-rbac/permissions-choose-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-choose-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-choose-options.png":::
 
 1. Select **Next**.
 1. In **Assigned user groups**, select the user groups from the list to assign assign to this role.
