@@ -21,16 +21,6 @@ MDE agents offer various discovery and security capabilities, such as passive mo
 
 - [Standard probing](#standard-probing)
 
-## General Recommendations
-
-General recommendations to set up the MDE agent as an OT discovery data source are:
-
-- Minimum Requirement: an MDE agent running in the subnet, if Standard mode is enabled<!-- Is this last part needed? is there something else if the mode is off? -->.
-
-- Scanners per VLAN: at least five scanners per VLAN.
-
-- Onboarding Devices: onboard any devices with the "Can Be Onboarded" status in order to increase visibility.
-
 ## Usage Ability
 
 - Server 2019 and computers with Build Version 17763
@@ -51,11 +41,17 @@ Passive monitoring involves silently analyzing network traffic using known endpo
 
 Standard probing involves actively probing observed devices in the network to enrich collected data.
 
-This mode leverages common discovery protocols that use multicast queries in the network to identify other devices not located using passive monitoring. For example, MDE can use standard probing to actively find devices in your network, which helps build a reliable and coherent device inventory.<!-- this doesnt show and example for this type of probing?-->
+This mode leverages common discovery protocols that use multicast queries in the network to identify other devices not located using passive monitoring. For example, MDE can use standard probing to actively find devices in your network, which helps build a reliable and coherent device inventory.
 
-- Requirement: An MDE agent must be running on the LAN or subnet to be monitored.
+General recommendations for standard probing to set up the MDE agent as an OT discovery data source are:
 
-- Functionality: Broadcast packets allow the MDE agent to create the device, <!-- Theo - what does this mean? create the device in the inventory? link to it?find it? identify it? -->though not necessarily with all the information needed for OT classification and CVEs. Based on the initial information discovered, the agent uses standard probing to complete the necessary information using appropriate protocols.
+- Minimum Requirement: an MDE agent running on the LAN or subnet to be monitored.
+
+- Scanners per VLAN: at least five scanners per VLAN.
+
+- Onboarding Devices: onboard any devices with the "Can Be Onboarded" status in order to increase visibility.
+
+- Functionality: Broadcast packets allow the MDE agent to create the device in the inventory though not necessarily with all the information needed for OT classification and CVEs. Based on the initial information discovered, the agent uses standard probing to complete the necessary information using appropriate protocols.
 
 :::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-2.png" alt-text="A diagram showing the standard probing discovery process." lightbox="media/mde-agent-deployment-guide/mde-agent-deployment-guide-2.png":::
 
