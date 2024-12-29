@@ -9,7 +9,7 @@ ms.author: lwainstein
 <!-- This isnt really a how-to but a concept - is that correct? Limor-->
 # MDE Agent Deployment Guide for OT Discovery
 
-## How to properly place an MDE agent to receive maximum value
+## Placement of an MDE agent to receive maximum network value
 
 This guide provides step-by-step instructions for deploying a Microsoft Defender for Endpoint (MDE) agent in the correct network location to ensure that it receives the relevant traffic. Proper placement enhances data quality and optimal performance within the network.
 
@@ -25,11 +25,11 @@ MDE agents offer various discovery and security capabilities, such as passive mo
 
 General recommendations to set up the MDE agent as an OT discovery data source are:
 
-- Minimum Requirement: an MDE agent running in the subnet, if Standard mode is enabled<!-- I this last part needed? is there something else if the mode is off? -->.
+- Minimum Requirement: an MDE agent running in the subnet, if Standard mode is enabled<!-- Is this last part needed? is there something else if the mode is off? -->.
 
 - Scanners per VLAN: at least five scanners per VLAN.
 
-- Onboarding Devices: onboard any devices with "Can Be Onboarded" status that can be located<!-- what does this mean?-->, in order to increase visibility.
+- Onboarding Devices: onboard any devices with the "Can Be Onboarded" status in order to increase visibility.
 
 ## Usage Ability
 
@@ -43,7 +43,7 @@ Passive monitoring involves silently analyzing network traffic using known endpo
 
 - Requirement: An MDE agent must be running on the LAN or subnet to be monitored.
 
-- Network traffic type required: the MDE agent needs to receive unicast traffic between the discovered OT devices and the device with the agent.<!-- Theo - what does this mean? -->
+- Network traffic type required: the MDE agent needs to receive unicast traffic between<!-- from ...  to the --> the discovered OT devices and the device with the agent.<!-- Theo - what does this mean? -->
 
 :::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png" alt-text="A diagram showing the passive monitoring of a subnet." lightbox="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png":::
 
