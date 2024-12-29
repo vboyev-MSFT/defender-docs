@@ -234,6 +234,7 @@ Live response allows PowerShell scripts to run, however you must first put the f
 You can have a collection of PowerShell scripts that can run on devices that you initiate live response sessions with.
 
 #### To upload a file in the library
+Note: There are restrictions on the characters that can be uploaded to the library. Alphanumeric and some characters (-,_,.) only.
 
 1. Click **Upload file to library**.
 
