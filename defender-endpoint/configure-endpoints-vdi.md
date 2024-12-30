@@ -5,7 +5,7 @@ search.appverid: met150
 ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr; yonghree
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
