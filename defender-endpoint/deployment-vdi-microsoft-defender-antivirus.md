@@ -76,7 +76,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 ## Download and unpackage the latest updates
 
-Now you can get started on downloading and installing new updates. We've created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you're familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
+Now you can get started on downloading and installing new updates. This section contains a sample PowerShell script that you can use. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you're familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
 
 ```PowerShell
 
@@ -335,9 +335,9 @@ Optimize the "Windows Defender Cache Maintenance" scheduled task for non-persist
    > [!WARNING]
    > If you do not do this, it can cause higher cpu utilization while the cache maintenance task is running on each of the VMs.
 
-### Enable Tamper protection
+### Enable tamper protection
 
-Enable tamper protection to prevent Microsoft Defender being disabled in the Microsoft Defender XDR portal (security.microsoft.com).
+Enable tamper protection to prevent Microsoft Defender Antivirus from being disabled in the [Microsoft Defender portal](https://security.microsoft.com).
 
 ### Exclusions
 
@@ -358,7 +358,6 @@ If you're looking for information about Defender for Endpoint on non-Windows pla
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Defender for Endpoint on Android features](android-configure.md)
-
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
