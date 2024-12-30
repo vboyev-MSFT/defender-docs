@@ -31,9 +31,9 @@ search.appverid: met150
 
 - Windows
 
-This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside other device protection capabilities), also go through [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
+This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside other device protection capabilities), see [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
 
-You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
+You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Using the guidance in this article, you can configure updates to download directly to your RDS or VDI environments whenever a user signs in.
 
 This guide describes how to configure Microsoft Defender Antivirus on your VMs for optimal protection and performance, including how to:
 
@@ -60,11 +60,9 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 3. Select **Administrative templates**. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
 
-4. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. 
+4. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
 
-   A field automatically appears.
-
-1. Enter `\\<File Server shared location\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
+5. In the field, type `\\<File Server shared location\>\wdav-update`. (For help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates).)
 
 6. Select **OK**, and then deploy the Group Policy Object to the VMs you want to test.
 
@@ -81,6 +79,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 Now you can get started on downloading and installing new updates. We've created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you're familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
 
 ```PowerShell
+
 $vdmpathbase = "$env:systemdrive\wdav-update\{00000000-0000-0000-0000-"
 $vdmpathtime = Get-Date -format "yMMddHHmmss"
 $vdmpath = $vdmpathbase + $vdmpathtime + '}'
@@ -91,6 +90,7 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
 Start-Process -FilePath $vdmpackage -WorkingDirectory $vdmpath -ArgumentList "/x"
+
 ```
 
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs receive the new update. We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
@@ -101,9 +101,9 @@ You can also set up your single server or machine to fetch the updates on behalf
 
 1. Create an SMB/CIFS file share.
 
-1. Use the following example to create a file share with the following share permissions.
+2. Use the following example to create a file share with the following share permissions.
 
-      ```PowerShell
+   ```PowerShell
    
    PS c:\> Get-SmbShareAccess -Name mdatp$
 
@@ -113,7 +113,7 @@ You can also set up your single server or machine to fetch the updates on behalf
    
    ```
 
-      > [!NOTE]
+   > [!NOTE]
    > An NTFS permission is added for **Authenticated Users:Read:**.
 
    For this example, the file share is `\\FileServer.fqdn\mdatp$\wdav-update`.
@@ -160,33 +160,31 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 ## Microsoft Defender Antivirus configuration settings
 
-It’s important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.  It’s optimized for VDI environments.
+It's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.  It's optimized for VDI environments.
 
 > [!TIP]
 > The latest Windows group policy administrative templates are available in [Create and manage Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 ### Root
 
-Configure detection for potentially unwanted applications: Enabled - Block
+- Configure detection for potentially unwanted applications: `Enabled - Block`
 
-Configure local administrator merge behavior for lists: Disabled
+- Configure local administrator merge behavior for lists: `Disabled`
 
-Control whether or not exclusions are visible to Local Admins: Enabled
+- Control whether or not exclusions are visible to Local Admins: `Enabled`
 
-Turn off routine remediation: Disabled
+- Turn off routine remediation: `Disabled`
 
-Randomize scheduled scans: Enabled
-
-
+- Randomize scheduled scans: `Enabled`
 
 ### Client Interface
 
-Enable headless UI mode: Enabled
+- Enable headless UI mode: `Enabled`
 
-> [!NOTE]
-> This policy hides the entire Microsoft Defender Antivirus user interface from end users in your organization.
+   > [!NOTE]
+   > This policy hides the entire Microsoft Defender Antivirus user interface from end users in your organization.
 
-Suppress all notifications: Enabled
+- Suppress all notifications: `Enabled`
 
 > [!NOTE]
 > Sometimes, Microsoft Defender Antivirus notifications are sent to or persist across multiple sessions. To help avoid user confusion, you can lock down the Microsoft Defender Antivirus user interface.
@@ -194,95 +192,92 @@ Suppress all notifications: Enabled
 
 ### MAPS
 
-Join Microsoft MAPS (Turn on cloud-delivered protection): Enabled - Advanced MAPS
+- Join Microsoft MAPS (Turn on cloud-delivered protection): `Enabled - Advanced MAPS`
 
-Send file samples when further analysis is required: Send all samples (more secure) or Send safe sample (less secure)
+- Send file samples when further analysis is required: `Send all samples (more secure)` or `Send safe sample (less secure)`
 
 ### MPEngine
 
-Configure extended cloud check: 20
+- Configure extended cloud check: `20`
 
-Select cloud protection level: Enabled - High
+- Select cloud protection level: `Enabled - High`
 
-Enable file hash computation feature: Enabled
+- Enable file hash computation feature: `Enabled`
 
 > [!NOTE]
 > "Enable file hash computation feature" is only needed if using Indicators – File hash.  It can cause higher amount of CPU utilization, since it has to parse thru each binary on disk to get the file hash.
 
-### Real-time Protection
+### Real-time protection
 
-Configure monitoring for incoming and outgoing file and program activity: Enabled – bi-directional (full on-access)
+- Configure monitoring for incoming and outgoing file and program activity: `Enabled – bi-directional (full on-access)`
 
-Monitor file and program activity on your computer: Enabled
+- Monitor file and program activity on your computer: `Enabled`
 
-Scan all downloaded files and attachments: Enabled
+- Scan all downloaded files and attachments: `Enabled`
 
-Turn on behavior monitoring: Enabled
+- Turn on behavior monitoring: `Enabled`
 
-Turn on process scanning whenever real-time protection is enabled: Enabled
+- Turn on process scanning whenever real-time protection is enabled: `Enabled`
 
-Turn on raw volume write notifications: Enabled
+- Turn on raw volume write notifications: `Enabled`
 
 ### Scans
 
-Check for the latest virus and spyware security intelligence before running a scheduled scan: Enabled
+- Check for the latest virus and spyware security intelligence before running a scheduled scan: `Enabled`
 
-Scan archive files: Enabled
+- Scan archive files: `Enabled`
 
-Scan network files: Not configured
+- Scan network files: `Not configured`
 
-Scan packed executables: Enabled
+- Scan packed executables: `Enabled`
 
-Scan removable drives: Enabled
+- Scan removable drives: `Enabled`
 
-Turn on catch-up full scan (Disable catch-up full scan): Not configured
+- Turn on catch-up full scan (Disable catch-up full scan): `Not configured`
 
-Turn on catch-up quick scan (Disable catchup quick scan): Not configured
+- Turn on catch-up quick scan (Disable catchup quick scan): `Not configured`
 
-> [!NOTE]
-> If you want to harden, you could change "Turn on catch-up quick scan" to enabled, which will help when VMs have been offline, and have missed two or more consecutive scheduled scans.  But since it is running a scheduled scan, it will use additional CPU.
+   > [!NOTE]
+   > If you want to harden, you could change "Turn on catch-up quick scan" to enabled, which will help when VMs have been offline, and have missed two or more consecutive scheduled scans.  But since it is running a scheduled scan, it will use additional CPU.
 
-Turn on e-mail scanning: Enabled
+- Turn on e-mail scanning: `Enabled`
 
-Turn on heuristics: Enabled
+- Turn on heuristics: `Enabled`
 
-Turn on reparse point scanning: Enabled
+- Turn on reparse point scanning: `Enabled`
 
-#### __General scheduled scan settings__
+#### General scheduled scan settings
 
-Configure low CPU priority for scheduled scans (Use low CPU priority for scheduled scans): Not configured
+- Configure low CPU priority for scheduled scans (Use low CPU priority for scheduled scans): `Not configured`
 
-Specify the maximum percentage of CPU utilization during a scan (CPU usage limit per scan): 50
+- Specify the maximum percentage of CPU utilization during a scan (CPU usage limit per scan): `50`
 
-Start the scheduled scan only when computer is on but not in use (ScanOnlyIfIdle): Not configured
+- Start the scheduled scan only when computer is on but not in use (ScanOnlyIfIdle): `Not configured`
 
-       Use the following cmdlet, to stop a quick or scheduled scan whenever the device goes idle if it is in passive mode.
+- Use the following cmdlet, to stop a quick or scheduled scan whenever the device goes idle if it is in passive mode.
 
- 
+   ```powershell
 
+   Set-MpPreference -ScanOnlyIfIdleEnabled $false
 
-```powershell
-Set-MpPreference -ScanOnlyIfIdleEnabled $false
-```
+   ```
 
 > [!TIP]
-> "Start the scheduled scan only when computer is on but not in use" setting prevents significant CPU contention in high density environments.
+> The setting, "Start the scheduled scan only when computer is on but not in use" prevents significant CPU contention in high-density environments.
 
-#### __Daily quick scan__
+#### Daily quick scan
 
-Specify the interval to run quick scans per day: Not configured
+- Specify the interval to run quick scans per day: `Not configured`
 
-Specify the time for a daily quick scan (Run daily quick scan at): 12 PM
+- Specify the time for a daily quick scan (Run daily quick scan at): `12 PM`
 
+#### Run a weekly scheduled scan (quick or full)
 
+- Specify the scan type to use for a scheduled scan (Scan type): `Not configured`
 
-#### __Run a weekly scheduled scan (quick or full)__
+- Specify the time of day to run a scheduled scan (Day of week to run scheduled scan): `Not configured`
 
-Specify the scan type to use for a scheduled scan (Scan type): Not configured
-
-Specify the time of day to run a scheduled scan (Day of week to run scheduled scan): Not configured
-
-Specify the day of the week to run a scheduled scan (Time of day to run a scheduled scan): Not configured
+- Specify the day of the week to run a scheduled scan (Time of day to run a scheduled scan): `Not configured`
 
 ### Security Intelligence Updates
 
