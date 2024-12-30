@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: android
 search.appverid: met150
-ms.date: 12/06/2024
+ms.date: 12/30/2024
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -117,7 +117,7 @@ Defender for Endpoint is now generally available on AE COPE devices. Enterprises
 - Network protection (preview).
 - More breach prevention through integration with Microsoft Intune and Conditional Access.
 
-Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
+Read the announcement [Tech Community Blog: Defender for Endpoint is now available on Android corporate-owned personally enabled devices](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
 
 ## Privacy Controls
 
