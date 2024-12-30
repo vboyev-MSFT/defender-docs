@@ -6,6 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
+ms.reviewer: denishdonga
 audience: ITPro
 ms.collection:
 - m365-security
