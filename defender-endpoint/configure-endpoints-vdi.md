@@ -100,16 +100,16 @@ The following steps guide you through onboarding VDI devices and highlight steps
 
    1. Create a pool with one device.
 
-   2. Log on to device.
+   2. Sign into device.
    
-   3. Log off from device.
+   3. Sign out on the device.
    
-   4. Log on to device with another user.
+   4. Sign into the device using another account.
    
    5. Depending on the method you'd like to implement, follow the appropriate steps:
    
-      - For single entry for each device: Check only one entry in Microsoft Defender portal.
-      - For multiple entries for each device: Check multiple entries in Microsoft Defender portal.
+      - For single entry for each device: Check for only one entry in the [Microsoft Defender portal](https://security.microsoft.com).
+      - For multiple entries for each device: Check multiple entries in the [Microsoft Defender portal](https://security.microsoft.com).
 
 6. Click **Devices list** on the Navigation pane.
 
