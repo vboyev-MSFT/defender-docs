@@ -38,12 +38,9 @@ You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persis
 This guide describes how to configure Microsoft Defender Antivirus on your VMs for optimal protection and performance, including how to:
 
 - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share-for-security-intelligence)
-- [Randomize scheduled scans](#randomize-scheduled-scans)
-- [Use quick scans](#use-quick-scans)
-- [Prevent notifications](#prevent-notifications)
-- [Disable scans from occurring after every update](#disable-scans-after-an-update)
-- [Scan out-of-date machines or machines that were offline for a while](#scan-vms-that-have-been-offline)
-- [Apply exclusions](#exclusions)
+- [Download and unpackage the latest updates](#download-and-unpackage-the-latest-updates)
+- [Configure Microsoft Defender Antivirus settings](#microsoft-defender-antivirus-configuration-settings)
+- 
 
 > [!IMPORTANT]
 > Although a VDI can be hosted on Windows Server 2012 or Windows Server 2016, virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
@@ -312,7 +309,7 @@ Configure all available rules to `Audit`.
 
 ### Enable network protection
 
-Prevent users and apps from accessing dangerous websites (Enable network protection): `Enabled - Audit mode`
+Prevent users and apps from accessing dangerous websites (Enable network protection): `Enabled - Audit mode`.
 
 ### SmartScreen for Microsoft Edge
 
@@ -322,7 +319,7 @@ Prevent users and apps from accessing dangerous websites (Enable network protect
 
 - Block unverified file download: `Yes`
 
-## Run the "Windows Defender Cache Maintenance" scheduled task
+## Run the Windows Defender Cache Maintenance scheduled task
 
 Optimize the "Windows Defender Cache Maintenance" scheduled task for non-persistent and/or persistent VDI environments. Run this task on the main image before sealing.
 
@@ -343,7 +340,7 @@ Enable tamper protection to prevent Microsoft Defender Antivirus from being disa
 
 If you think you need to add exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
-## EDR
+## Next step
 
 If you're also deploying [endpoint detection and response](overview-endpoint-detection-response.md) (EDR) to your Windows-based VDI VMs, see [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](/defender-endpoint/configure-endpoints-vdi).
 
