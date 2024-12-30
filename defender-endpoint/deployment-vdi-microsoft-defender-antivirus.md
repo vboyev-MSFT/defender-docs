@@ -281,17 +281,17 @@ It's important to take advantage of the included threat protection capabilities 
 
 ### Security Intelligence Updates
 
-Turn on scan after security intelligence update (Disable scans after an update): Disabled
+- Turn on scan after security intelligence update (Disable scans after an update): `Disabled`
 
-> [!NOTE]
-> Disabling a scan after a security intelligence update prevents a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
+   > [!NOTE]
+   > Disabling a scan after a security intelligence update prevents a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
-> [!IMPORTANT]
-> Running scans after an update helps ensure your VMs are protected with the latest security intelligence updates. Disabling this option reduces the protection level of your VMs and should only be used when first creating or deploying the base image.
+   > [!IMPORTANT]
+   > Running scans after an update helps ensure your VMs are protected with the latest security intelligence updates. Disabling this option reduces the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-Specify the interval to check for security intelligence updates (Enter how often to check for security intelligence updates): Enabled - 8
+- Specify the interval to check for security intelligence updates (Enter how often to check for security intelligence updates): `Enabled - 8`
 
-Leave other settings in default state
+- Leave other settings in their default state
 
 ### Threats
 
