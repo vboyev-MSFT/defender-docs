@@ -33,32 +33,24 @@ January 2025
 
 **Key Changes**
 
-We are pleased to introduce the new dashboard for our enterprise users, which has been designed to be more user-friendly and accessible. The updated dashboard structure now includes -
+We are pleased to introduce the new dashboard for our enterprise users, which has been designed to be more user-friendly and accessible. The updated dashboard structure now includes recommendation cards for alerts and feature tiles.
 
-1. Recommendation Cards for Alerts 
+Recommendation cards prominently display any active alerts, ensuring you stay informed. Additionally, features are now presented in the form of tiles, enhancing ease of use and navigation. 
 
-1. Feature Tiles
+The following screenshot is an example of what the user sees:
 
-The recommendation card will prominently display any active alerts, ensuring you stay informed. Additionally, features will now be presented in the form of tiles, enhancing ease of use and navigation. 
+:::image type="content" source="media/android-whatsnew/image1.png" alt-text="Screenshot showing what the user sees on the device.":::
 
-          **New Dashboard Screen**      
+**Recommendation cards for alerts**
 
-![User's image](media/android-whatsnew/image1.png)![User's image](media/android-whatsnew/image4.png)
+The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard, as shown in the following screenshot:
 
-1. **Recommendation Cards for Alerts**
+:::image type="content" source="media/android-whatsnew/image2.png" alt-text="Screenshot showing several recommendation cards.":::
+      
+**Feature Tiles**
 
-   The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard. 
-   
-                                      **Few of the Recommendation Cards are attached below**
-   
-   ![User's image](media/android-whatsnew/image2.png)
-   
-1. **Feature Tiles**
+The current enterprise dashboard experience now features a tile view.
 
-   We have enhanced the Current enterprise Dashboard UX and have presented the features in the form of Tile View. 
-   
-                       **Below are the examples of how the features are presented in form of Tiles**
-   
 ## Android low-touch onboarding is now GA
 
 **December 2024**
@@ -88,7 +80,6 @@ Although low-touch onboarding is disabled by default, security administrators ca
 > - Intune and Defender for Endpoint technical support will no longer support devices with access to GMS.
 > 
 > For more information, see [Tech Community blog: Intune ending support for Android device administrator on devices with GMS in December 2024](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443).
-
 
 ## Network protection
 
