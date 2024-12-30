@@ -17,6 +17,7 @@ ms.localizationpriority: medium
 
 **Applies to**:
 
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 - Microsoft Defender Antivirus
 
@@ -81,7 +82,7 @@ A: No. EDR in block mode is a functionality in Microsoft Defender for Endpoint P
 
 Q: Can I use indicators, such as file hash, IP address/URL's, or certificates with Microsoft Defender Antivirus (in active mode) with my Microsoft 365 E3/A3 license?
 
-A: Yes. See [Tech Community Blog: Microsoft Defender for Endpoint Plan 1 Now Included in Microsoft 365 E3/A3 Licenses](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3a3-licenses/3060639) and [Overview of Microsoft Defender for Endpoint Plan 1](/defender-endpoint/defender-endpoint-plan-1)
+A: Yes. See [Tech Community Blog: Microsoft Defender for Endpoint Plan 1 Now Included in Microsoft 365 E3/A3 Licenses](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3a3-licenses/3060639) and [Overview of Microsoft Defender for Endpoint Plan 1](/defender-endpoint/defender-endpoint-plan-1).
 
 ## See also
 
