@@ -76,7 +76,7 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 ## Download and unpackage the latest updates
 
-Now you can get started on downloading and installing new updates. This section contains a sample PowerShell script that you can use. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you're familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those scripts).
+Now you can get started on downloading and installing new updates. This section contains a sample PowerShell script that you can use. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task. Or, if you're familiar with using PowerShell scripts in Azure, Intune, or Configuration Manager, you could use those scripts instead.
 
 ```PowerShell
 
