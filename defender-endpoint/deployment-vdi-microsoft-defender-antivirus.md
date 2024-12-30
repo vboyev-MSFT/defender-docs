@@ -295,7 +295,7 @@ It's important to take advantage of the included threat protection capabilities 
 
 ### Threats
 
-- Specify threat alert levels at which default action should not be taken when detected: `Enabled`
+- Specify threat alert levels at which default action shouldn't be taken when detected: `Enabled`
 
 - Set `Severe (5)`, `High (4)`, `Medium (2)`, and `Low (1)` all to `Quarantine (2)`, as shown in the following table:
 
@@ -343,9 +343,9 @@ Enable tamper protection to prevent Microsoft Defender Antivirus from being disa
 
 If you think you need to add exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
-## Next step
+## EDR
 
-If you are also deploying Microsoft Defender for Endpoint - EDR to your Windows based VDI VMs, please go thru the steps here: [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](/defender-endpoint/configure-endpoints-vdi)
+If you're also deploying [endpoint detection and response](overview-endpoint-detection-response.md) (EDR) to your Windows-based VDI VMs, see [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](/defender-endpoint/configure-endpoints-vdi).
 
 ## See also
 
