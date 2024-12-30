@@ -56,14 +56,14 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv | ft -auto DisplayName, Name
 
 Q: Can I update Microsoft Defender Antivirus components such as "Security intelligence update" or "Engine update" "Platform update" when Microsoft Defender Antivirus is disabled?
 
-A: No. When Microsoft Defender Antivirus is disabled, since the services and drivers are not running, you will not be able to update the components such as "Security intelligence update" or "Engine update" "Platform update".
+A: No. When Microsoft Defender Antivirus is disabled, since the services and drivers aren't running, you won't be able to update the components such as "Security intelligence update" or "Engine update" "Platform update".
 
 > [!TIP]
 > If you are migrating to Microsoft Defender for Endpoint, when onboarded, Microsoft Defender Antivirus goes into passive mode automatically on Windows clients, and can be set to passive mode using a registry key on Windows Server. You can update the different components of Microsoft Defender Antivirus.
 
 Q: Can I manually change the start type of the services and drivers for Microsoft Defender Antivirus?
 
-A: We do not support the manual modification of the start type of the services and drivers for Microsoft Defender Antivirus in Windows images. On Windows clients, the supported method is by registring your non-Microsoft antivirus in Windows Security (WSC) api. Or, on Windows Server, you can uninstall the Microsoft Defender Antivirus feature by using roles and features MMC or by running the following PowerShell command (as an administrator): 
+A: We don't support the manual modification of the start type of the services and drivers for Microsoft Defender Antivirus in Windows images. On Windows clients, the supported method is by registering your non-Microsoft antivirus in Windows Security (WSC) API. Or, on Windows Server, you can uninstall the Microsoft Defender Antivirus feature by using roles and features MMC or by running the following PowerShell command (as an administrator): 
 
 ```powershell
 
@@ -81,7 +81,7 @@ A: No. EDR in block mode is a functionality in Microsoft Defender for Endpoint P
 
 Q: Can I use indicators, such as file hash, IP address/URL's, or certificates with Microsoft Defender Antivirus (in active mode) with my Microsoft 365 E3/A3 license?
 
-A: Yes. See [Tech Community Blog: Microsoft Defender for Endpoint Plan 1 Now Included in M365 E3/A3 Licenses](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3a3-licenses/3060639) and [Overview of Microsoft Defender for Endpoint Plan 1](/defender-endpoint/defender-endpoint-plan-1)
+A: Yes. See [Tech Community Blog: Microsoft Defender for Endpoint Plan 1 Now Included in Microsoft 365 E3/A3 Licenses](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3a3-licenses/3060639) and [Overview of Microsoft Defender for Endpoint Plan 1](/defender-endpoint/defender-endpoint-plan-1)
 
 ## See also
 
