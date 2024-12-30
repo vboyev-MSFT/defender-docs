@@ -80,7 +80,7 @@ Q: Can I use [EDR in block mode](edr-in-block-mode.md) without onboarding to Mic
 
 A: No. EDR in block mode is a functionality in Microsoft Defender for Endpoint Plan 2.
 
-Q: Can I use indicators, such as file hash, IP address/URL's, or certificates with Microsoft Defender Antivirus (in active mode) with my Microsoft 365 E3/A3 license?
+Q: Can I use indicators, such as file hashes, IP addresses, URLs, or certificates with Microsoft Defender Antivirus (in active mode) with my Microsoft 365 E3/A3 license?
 
 A: Yes. See [Tech Community Blog: Microsoft Defender for Endpoint Plan 1 Now Included in Microsoft 365 E3/A3 Licenses](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3a3-licenses/3060639) and [Overview of Microsoft Defender for Endpoint Plan 1](/defender-endpoint/defender-endpoint-plan-1).
 
