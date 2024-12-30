@@ -49,7 +49,9 @@ The structure of the dashboard has been updated to include a recommendation card
       
 **Feature Tiles**
 
-The current enterprise dashboard experience now features a tile view.
+The current enterprise dashboard experience now features a tile view, as shown in the following image:
+
+:::image type="content" source="media/android-whatsnew/image3.png" alt-text="Screenshot showing the tile view of features and capabilities.":::
 
 ## Android low-touch onboarding is now GA
 
