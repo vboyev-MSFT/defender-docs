@@ -40,7 +40,7 @@ This guide describes how to configure Microsoft Defender Antivirus on your VMs f
 - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share-for-security-intelligence)
 - [Download and unpackage the latest updates](#download-and-unpackage-the-latest-updates)
 - [Configure Microsoft Defender Antivirus settings](#microsoft-defender-antivirus-configuration-settings)
-- 
+- [Run the Windows Defender Cache Maintenance scheduled task](#run-the-windows-defender-cache-maintenance-scheduled-task)
 
 > [!IMPORTANT]
 > Although a VDI can be hosted on Windows Server 2012 or Windows Server 2016, virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
