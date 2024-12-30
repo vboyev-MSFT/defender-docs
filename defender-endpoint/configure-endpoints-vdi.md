@@ -36,13 +36,13 @@ Virtual desktop infrastructure (VDI) is an IT infrastructure concept that lets e
 Like any other system in an IT environment, VDI devices should have an endpoint detection and response (EDR) and antivirus solution to protect against advanced threats and attacks.
 
 > [!NOTE]
-> **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
+> **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information, see [Onboarding Windows client](onboard-windows-client.md).
 
 ## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
 Defender for Endpoint supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDI instances. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
+- Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint before actual provisioning.
 
 - The device name is typically reused for new sessions.
 
@@ -73,11 +73,11 @@ The following steps guide you through onboarding VDI devices and highlight steps
 
     3.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
-    4. Click **Download package** and save the file.
+    4. Select **Download package** and save the file.
 
 2. Copy the files from the `WindowsDefenderATPOnboardingPackage` folder extracted from the zipped folder into the golden/primary image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
 
-    - If you are implementing multiple entries for each device - one for each session, copy `WindowsDefenderATPOnboardingScript.cmd`.
+    - If you're implementing multiple entries for each device - one for each session, copy `WindowsDefenderATPOnboardingScript.cmd`.
 
     - If you're implementing a single entry for each device, copy both `Onboard-NonPersistentMachine.ps1` and `WindowsDefenderATPOnboardingScript.cmd`.
 
@@ -93,8 +93,8 @@ The following steps guide you through onboarding VDI devices and highlight steps
 
    | Method | Steps |
    |---|---|
-   | Single entry for each device | 1. Select the **PowerShell Scripts** tab, then select **Add** (Windows Explorer opens directly in the path where you copied the onboarding script earlier). <br/>2. Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it is triggered automatically. |
-   | Multiple entries for each device | 1. Select the **Scripts** tab, then click **Add** (Windows Explorer opens directly in the path where you copied the onboarding script earlier). <br/>2. Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`. |
+   | Single entry for each device | 1. Select the **PowerShell Scripts** tab, then select **Add** (Windows Explorer opens directly in the path where you copied the onboarding script earlier). <br/>2. Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it's triggered automatically. |
+   | Multiple entries for each device | 1. Select the **Scripts** tab, then select **Add** (Windows Explorer opens directly in the path where you copied the onboarding script earlier). <br/>2. Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`. |
 
 5. Test your solution by following these steps:
 
@@ -171,9 +171,9 @@ If you have onboarded the primary image of your VDI environment (SENSE service i
 
 ### Are you using a third party for VDIs?
 
-If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
+If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs aren't onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
 
-If either the primary image, template VM, or replica VM are onboarded to Defender for Endpoint using the single entry method, it will stop Defender from creating entries for new non-persistent VDIs in the Microsoft Defender portal.
+If either the primary image, template VM, or replica VM are onboarded to Defender for Endpoint using the single entry method, it stops Defender for Endpoint from creating entries for new non-persistent VDIs in the Microsoft Defender portal.
 
 Reach out to your third-party vendors for further assistance.
 
