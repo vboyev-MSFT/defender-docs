@@ -295,32 +295,32 @@ It's important to take advantage of the included threat protection capabilities 
 
 ### Threats
 
-Specify threat alert levels at which default action should not be taken when detected: Enabled.  Set Severe (5), High (4), Medium (2) and Low (1), all to quarantine (2)
+- Specify threat alert levels at which default action should not be taken when detected: `Enabled`
 
-|Value name|Value |
-| -------- | -------- |
-|1   |2   |
-|2|2|
-|4|2|
-|5|2|
+- Set `Severe (5)`, `High (4)`, `Medium (2)`, and `Low (1)` all to `Quarantine (2)`, as shown in the following table:
+
+   |Value name|Value |
+   | -------- | -------- |
+   |`1` (Low) |`2` |
+   |`2` (Medium) |`2`|
+   |`4` (High) |`2`|
+   |`5` (Severe) |`2`|
 
 ### Attack surface reduction rules
 
-Configure all available rules to Audit.
-
-
+Configure all available rules to `Audit`.
 
 ### Enable network protection
 
-Prevent users and apps from accessing dangerous websites (Enable network protection): Enabled - Audit mode
+Prevent users and apps from accessing dangerous websites (Enable network protection): `Enabled - Audit mode`
 
 ### SmartScreen for Microsoft Edge
 
-Require SmartScreen for Microsoft Edge: Yes
+- Require SmartScreen for Microsoft Edge: `Yes`
 
-Block malicious site access: Yes
+- Block malicious site access: `Yes`
 
-Block unverified file download: Yes
+- Block unverified file download: `Yes`
 
 ## Run the "Windows Defender Cache Maintenance" scheduled task
 
@@ -328,12 +328,12 @@ Optimize the "Windows Defender Cache Maintenance" scheduled task for non-persist
 
 1. Open up the **Task Scheduler** mmc (`taskschd.msc`).
 
-1. Expand **Task Scheduler Library** > **Microsoft** > **Windows** > **Windows Defender**, and then right-click on **Windows Defender Cache Maintenance**.
+2. Expand **Task Scheduler Library** > **Microsoft** > **Windows** > **Windows Defender**, and then right-click on **Windows Defender Cache Maintenance**.
 
-1. Select **Run**, and let the scheduled task finish.
+3. Select **Run**, and let the scheduled task finish.
 
-1. > [!WARNING]
-> If you do not do this, it can cause higher cpu utilization while the cache maintenance task is running on each of the VMs.
+   > [!WARNING]
+   > If you do not do this, it can cause higher cpu utilization while the cache maintenance task is running on each of the VMs.
 
 ### Enable Tamper protection
 
