@@ -82,7 +82,7 @@ Understand the following prerequisites before you create indicators for files:
 
 - [File hash computation is enabled](/defender-endpoint/linux-preferences#configure-file-hash-computation-feature) in the Microsoft Defender portal or in the managed JSON
 
-- Behavior monitoring is preferred, but this will work with any other scan (RTP, Custom, etc).
+- Behavior monitoring is preferred, but this will work with any other scan (RTP or Custom).
 
 ## Create an indicator for files from the settings page
 
