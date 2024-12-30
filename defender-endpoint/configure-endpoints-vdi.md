@@ -125,14 +125,18 @@ The following registry is relevant only when the aim is to achieve a single entr
 1. Set the registry value as follows:
 
    ```console
+
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
+
    ```
 
    Or, you can use command line as follows:
 
    ```console
+
    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
+
    ```
 
 2. Follow the [server onboarding process](configure-server-endpoints.md). 
@@ -144,20 +148,25 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
 If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
 
 1. [Offboard the machine](offboard-machines.md).
+
 2. Ensure the sensor is stopped by running the following command in a CMD window:
 
    ```console
+
    sc query sense
+
    ```
 
 3. Run the following commands in a CMD window::
 
    ```console
+
    del "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber\*.*" /f /s /q
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v 7DC0B629-D7F6-4DB3-9BF7-64D5AAF50F1A /f
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\48A68F11-7A16-4180-B32C-7F974C7BD783" /f
    exit
+
    ```
 
 ### Are you using a third party for VDIs?
@@ -176,7 +185,7 @@ After onboarding devices to the service, it's important to take advantage of the
 
 The configuration settings in this link are recommended: [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
-## Related topics
+## Related articles
 
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows devices using Microsoft Configuration Manager](configure-endpoints-sccm.md)
