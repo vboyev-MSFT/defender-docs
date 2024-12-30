@@ -111,7 +111,7 @@ The following steps guide you through onboarding VDI devices and highlight steps
       - For single entry for each device: Check for only one entry in the [Microsoft Defender portal](https://security.microsoft.com).
       - For multiple entries for each device: Check multiple entries in the [Microsoft Defender portal](https://security.microsoft.com).
 
-6. Click **Devices list** on the Navigation pane.
+6. In the navigation pane, select **Devices list**.
 
 7. Use the search function by entering the device name and select **Device** as search type.
 
@@ -120,20 +120,20 @@ The following steps guide you through onboarding VDI devices and highlight steps
 > [!NOTE]
 > These instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unified solution are at [Server migration scenarios in Microsoft Defender for Endpoint](server-migration.md).
 
-The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
+The following registry is relevant only when the aim is to achieve a single entry for each device.
 
-1. Set registry value to:
+1. Set the registry value as follows:
 
-    ```console
+   ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
-    ```
+   ```
 
-    or using command line:
+   Or, you can use command line as follows:
 
-    ```console
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
-    ```
+   ```console
+   reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
+   ```
 
 2. Follow the [server onboarding process](configure-server-endpoints.md). 
 
