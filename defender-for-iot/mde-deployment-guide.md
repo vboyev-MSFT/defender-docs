@@ -25,7 +25,7 @@ MDE agents offer various discovery and security capabilities, such as passive mo
 
 - Server 2019 and computers with Build Version 17763
 
-- Lower operating system versions: Machines with lower operating system versions (e.g., Server 2016) can be onboarded to MDE an MDE agent but can't run SENSENDR.
+- Lower operating system versions: Machines with lower operating system versions (e.g., Server 2016) can be onboarded to an MDE agent but can't run SENSENDR.
 
 ## Passive Monitoring
 
