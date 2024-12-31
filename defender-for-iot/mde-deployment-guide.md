@@ -25,7 +25,7 @@ MDE agents offer various discovery and security capabilities, such as passive mo
 
 - Server 2019 and computers with Build Version 17763
 
-- Lower operating system versions: Machines with lower operating system versions (e.g., Server 2016) can be onboarded to MDE <!-- does this mean: can be onboarded to an MDE agent OR can still have an MDE agent onboarded to it-->but can't run SENSENDR.
+- Lower operating system versions: Machines with lower operating system versions (e.g., Server 2016) can be onboarded to MDE an MDE agent but can't run SENSENDR.
 
 ## Passive Monitoring
 
@@ -33,7 +33,7 @@ Passive monitoring involves silently analyzing network traffic using known endpo
 
 - Requirement: An MDE agent must be running on the LAN or subnet to be monitored.
 
-- Network traffic type required: the MDE agent needs to receive unicast traffic between<!-- from ...  to the --> the discovered OT devices and the device with the agent.<!-- Theo - what does this mean? -->
+- Network traffic type required: the MDE agent needs to pass unicast traffic between the discovered OT devices and the agent/ sensor.<!--?-->
 
 :::image type="content" source="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png" alt-text="A diagram showing the passive monitoring of a subnet." lightbox="media/mde-agent-deployment-guide/mde-agent-deployment-guide-1.png":::
 
