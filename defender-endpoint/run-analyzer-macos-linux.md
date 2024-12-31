@@ -342,6 +342,37 @@ The data file can be read using the command:
 
 `perf report -i <pid>.data`
 
+#### Run connectivity test
+This modes test if the cloud resources needed by MDE is reachable or not.
+
+```console
+  -h, --help            show this help message and exit
+  -o ONBOARDING_SCRIPT, --onboarding-script ONBOARDING_SCRIPT
+                        Path to onboarding script
+  -g GEO, --geo GEO     Geo string to test <US|UK|EU|AU|CH|IN>
+```
+Usage example: `sudo ./MDESupportTool connectivitytest -o ~/MicrosoftDefenderATPOnboardingLinuxServer.py`
+
+The result will be printed in the screen.
+
+
+#### Collect different installation/onboarding reports
+This mode collects installation related info like disto info, system requirements, etc.
+
+```console
+  -h, --help    show this help message and exit
+  -d, --distro  Check for distro support
+  -a, --all     Run all checks
+```
+
+Usage example: `sudo ./MDESupportTool installation --all`
+
+A single report `installation_report.json` will be generated. The keys in the file are as:
+| Key  | Remarks |
+| ------------- | ------------- |
+| agent_version  | Version of MDE installed  |
+| onboarding_status | The onboarding and ring info |
+
 
 #### Use OS trace (for macOS only)
 
