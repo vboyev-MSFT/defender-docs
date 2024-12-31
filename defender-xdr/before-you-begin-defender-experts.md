@@ -28,19 +28,30 @@ ms.date: 08/14/2024
 **Applies to:**
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
+- [Microsoft Defender Experts for XDR](dex-xdr-overview.md)
+
+Microsoft Defender Experts for Hunting is a managed service that provides hunting capabilities for novel emerging threats that are not yet well-known in the industry. The analysts for the hunting service review trends in the threat attacker evolution based on world-renowned Microsoft Threat Intelligence and Research and apply the insights to hunt for emerging attack vectors within the customer ecosystem.
 
 This document outlines the key infrastructure requirements you must meet and important information on data access and compliance you must know before purchasing the Microsoft Defender Experts for Hunting service. Microsoft understands that customers who use our managed services entrust us with their most valued asset, their data.
 
-## Check if your environment meets licensing and access prerequisites
+With deep product expertise powered by threat intelligence, we are uniquely positioned to help you:
+
+1. Focus on novel threat actor evolution in the context of your ecosystem.
+1. Our experts provide detailed, step-by-step, actionable guidance to respond to these emerging threats.
+1. Seek assistance from Defender Experts.
+
+## Eligibility and licensing
+
+This document outlines the key infrastructure requirements you must meet and important information on data access and compliance you must know before purchasing the Microsoft Defender Experts for Hunting service. Microsoft understands that customers who use our managed services entrust us with their most valued asset, their data.
+
+### Check if your environment meets licensing and access prerequisites
 
 Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access.
-
-### Eligibility and licensing
 
 To enable us to get started with this threat hunting service, we require the following licensing prerequisites:
 
 - Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
-- Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
+- Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection)
 
 The following products are also eligible to get Defender Experts for Hunting coverage, and you must have their appropriate product licenses to get started with the service:
 
@@ -52,12 +63,20 @@ The following product is **not** covered by this service:
 
 - Microsoft Defender for IoT
 
+### Defender Experts for Hunting coverage
+
+This service relies on event signals from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps and Microsoft Defender for Identity, along with proprietary Microsoft Threat Intelligence sources. 
+Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Endpoint for Servers license.
+Any detection that is not written by Microsoft Defender Products i.e., 3rd party authored detection, is not within the scope of Defender Experts for Hunting.
+
 ### Server coverage
 
 Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Endpoint for Servers license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud.
 [Learn more about specific hardware and software requirements](/defender-endpoint/minimum-requirements)
 
 ### Ask Defender Experts
+
+Ask Defender Experts is intended to provide a better understanding of complex threats affecting your organization – focused on products included in Microsoft Defender XDR that is Microsoft Defender for Endpoint, Microsoft Defender for Office, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identify. See sample questions you can ask from Defender Experts.
 
 Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
