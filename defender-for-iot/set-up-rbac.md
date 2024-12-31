@@ -39,7 +39,7 @@ The instructions and permission settings listed in this article apply to Defende
 
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
-1. In the Defender portal, select **Settings** \> **Microsoft Defender XDR** \> **Permissions and roles**.
+1. In the Defender portal, select **Systems** \>**Settings** \> **Microsoft Defender XDR** \> **Permissions and roles**.
 1. Enable **Endpoints & Vulnerability Management**.
 1. Select **Go to Permissions and roles**.
 1. Select **Create custom role**.
@@ -63,8 +63,8 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 ## Set up Defender XDR for MDE RBAC (Version 2) roles for site security
 
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
-<!-- check with hadar that this is the correct procedure and permissions chosen -->
-1. In the Defender portal, select **Settings** \> **Endpoints** \> **Roles**. <!-- LIMOR is this: permission> Roles-->
+
+1. In the Defender portal, select **System** \>**Settings** \> **Endpoints** \> **Roles**. <!-- LIMOR is this: permission> Roles-->
 1. Enable **Endpoints & Vulnerability Management**.<!-- remove this? i think so, is this needed?-->
 1. Select **Add role**.
 1. Type a **Role name**, and a **Description**.
@@ -72,10 +72,13 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
     :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
 
-1. For write permissions, select **Manage security settings in Security Center**.
-1. For read permissions, in **View Data**, select **Security Operations**. In **Active remediation actions**, select **Security Operations**.
+1. For read permissions, in **View Data**, select **Security Operations**.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-choose-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-choose-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-read-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-read-options.png":::
+
+1. For write permissions, select **Manage security settings in Security Center**.
+
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-write-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific read and write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-write-options.png":::
 
 1. Select **Next**.
 1. In **Assigned user groups**, select the user groups from the list to assign to this role.
