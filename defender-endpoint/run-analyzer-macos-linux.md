@@ -319,7 +319,7 @@ The files generated when using this mode:
 
 #### Collect performance info
 
-Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand.
+Collect extensive machine performance tracing of MDE processes for analysis of a performance scenario that can be reproduced on demand.
 
 ```console
 -h, --help            show this help message and exit
@@ -328,7 +328,20 @@ Collect extensive machine performance tracing for analysis of a performance scen
 --length LENGTH       length of time to collect (in seconds)
 ```
 
-Usage example: `sudo ./MDESupportTool performance --frequency 2`
+Usage example: `sudo ./MDESupportTool performance --frequency 500`
+
+The files generated when using this mode:
+| File  | Remarks |
+| ------------- | ------------- |
+| perf_benchmark.tar.gz  | MDE processes performance data  |
+> [!NOTE]
+> The files corresponding to diagnostic mode will also be generated.
+
+The tar files contains files on the format `<pid of a MDE process>.data`.
+The data file can be read using the command:
+
+`perf report -i <pid>.data`
+
 
 #### Use OS trace (for macOS only)
 
