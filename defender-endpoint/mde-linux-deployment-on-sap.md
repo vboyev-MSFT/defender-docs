@@ -47,9 +47,9 @@ Conventional security defenses that have been commonly used to protect SAP syste
 - Suse 11.x, Redhat 6.x and Oracle Linux 6.x are not supported.
 - Suse and Redhat offer tailored distributions for SAP.  These "for SAP" versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
 - SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle Automatic Storage Management (ASM) filesystem is sometimes used for Oracle DBMS and can't be read by Defender for Endpoint.
-- Some SAP applications use "standalone engines" such as TREX, Adobe Document Server, Content Server and LiveCache. These engines require specific configuration and file exclusions.
+- Some SAP applications use standalone engines, such as TREX, Adobe Document Server, Content Server, and LiveCache. These engines require specific configuration and file exclusions.
 - SAP applications often have Transport and Interface directories with many thousands of small files. If the number of files is larger than 100,000, it might and affect performance. It's recommended to archive files.
-- It's strongly recommended to deploy Defender for Endpoint to nonproductive SAP landscapes for several weeks before deploying to production. The SAP Basis Team should use tools such as `sysstat`, `KSAR`, and `nmon` to verify if CPU and other performance parameters are impacted. 
+- It's strongly recommended to deploy Defender for Endpoint to nonproductive SAP landscapes for several weeks before deploying to production. The SAP Basis Team should use tools, such as `sysstat`, `KSAR`, and `nmon` to verify if CPU and other performance parameters are impacted. It's also possible to configure broad exclusions with the global scope parameter and then incrementally reduce the number of directories that are excluded.
 
 ## Prerequisites for deploying Microsoft Defender for Endpoint on Linux on SAP VMs
 
