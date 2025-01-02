@@ -53,7 +53,7 @@ Conventional security defenses that have been commonly used to protect SAP syste
 
 ## Prerequisites for deploying Microsoft Defender for Endpoint on Linux on SAP VMs
 
-- Microsoft Defender for Endpoint [version](./linux-whatsnew.md) >= 101.23082.0009 | Release version: 30.123082.0009 or higher must be deployed.
+- Microsoft Defender for Endpoint [version](./linux-whatsnew.md) `101.24082.0004` (release version `30.124082.0004.0`) or later must be deployed.
 - Microsoft Defender for Endpoint on Linux supports all the [Linux releases](microsoft-defender-endpoint-linux.md#system-requirements) used by SAP applications.
 - Microsoft Defender for Endpoint on Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update antivirus Definitions.
 - Microsoft Defender for Endpoint on Linux requires some crontab (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise Security teams normally manage these entries. Refer to [How to schedule an update for Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
