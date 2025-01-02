@@ -219,7 +219,7 @@ Here's a list of what to check:
 
 3. **Check the status of EDR**. Open Command Prompt, and then run the following command:
 
-   ```powershell
+   ```command
 
    PS C:\Windows\System32> Get-Service -Name sense | FL *
    
@@ -228,6 +228,7 @@ Here's a list of what to check:
    You should see output that resembles the following code snippet:
 
    ```output
+
    Name        : sense
    RequiredServices  : {}
    CanPauseAndContinue : False
@@ -244,11 +245,10 @@ Here's a list of what to check:
    StartType      : Automatic
    Site        :
    Container      :
+   
    ```
 
-   The values you want to see are `Status: Running` and `StartType: Automatic`.
-
-   For more information about the output, see [Review events and errors using Event Viewer](event-error-codes.md).
+   The values you want to see are `Status: Running` and `StartType: Automatic`. For more information, see [Review events and errors using Event Viewer](event-error-codes.md).
 
 4. **Make sure that Microsoft Defender Antivirus is up to date**. The best way to make sure your antivirus protection is up to date is by using Windows Update. If you encounter issues or get an error, contact your security team.
 
