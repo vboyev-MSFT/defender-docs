@@ -4,7 +4,7 @@ description: Understand how Microsoft Defender for Endpoint with EDR and other a
 author: cgardin
 ms.author: cgardin
 manager: deniseb
-ms.date: 05/07/2024
+ms.date: 01/02/2025
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: ngp
@@ -25,11 +25,11 @@ audience: ITPro
 - Microsoft Defender for Endpoint Server
 - [Microsoft Defender for Servers](/azure/defender-for-cloud/integration-defender-for-endpoint)
 
-If your organization uses SAP, it's essential to understand the compatibility and support between [antivirus](microsoft-defender-antivirus-on-windows-server.md) and [EDR](overview-endpoint-detection-response.md) in Microsoft Defender for Endpoint and your SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint and how they interact with SAP applications.
+If your organization uses SAP, it's essential to understand the compatibility and support between [antivirus](microsoft-defender-antivirus-on-windows-server.md) and [endpoint detection and response (EDR)](overview-endpoint-detection-response.md) capabilities in Microsoft Defender for Endpoint and your SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint and how they interact with SAP applications.
 
-This article describes how to use Microsoft Defender for Endpoint on Windows Server alongside SAP applications, such as NetWeaver and S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint. For an overview of all of the Defender for Endpoint capabilities, see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+This article describes how to use Defender for Endpoint on Windows Server alongside SAP applications, such as NetWeaver and S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes additional capabilities. For an overview of all of the Defender for Endpoint capabilities, see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
-This article doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices.
+This article doesn't cover SAP client software, such as SAPGUI, or Microsoft Defender Antivirus on Windows client devices.
 
 ## Enterprise security and your SAP Basis team
 
