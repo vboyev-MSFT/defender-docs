@@ -67,11 +67,11 @@ The default configuration option for deployment as an Azure Extension for Antivi
 - **Automatic threat remediation is turned on**: Files are moved and the security administrator is alerted.
 - **Security intelligence updates are turned on**: Alerts are available in the [Microsoft Defender portal](https://security.microsoft.com).
 
-Online Kernel patching tools, such as Ksplice or similar, can lead to unpredictable OS stability if Defender for Endpoint is running. It's recommended to temporarily stop the Defender for Endpoint daemon before performing online Kernel patching. After the Kernel is updated, Defender for Endpoint on Linux can be safely restarted. This is especially important on large SAP HANA VMs with huge memory contexts.
+Online Kernel patching tools, such as Ksplice or similar, can lead to unpredictable OS stability if Defender for Endpoint is running. It's recommended to temporarily stop the Defender for Endpoint daemon before performing online Kernel patching. After the Kernel is updated, Defender for Endpoint on Linux can be safely restarted. This action is especially important on large SAP HANA VMs with huge memory contexts.
 
-When Microsoft Defender Antivirus is running with real-time protection, it is no longer required to schedule scans. You should run a scan at least once to set a baseline. Then, if required, the Linux crontab is typically used to schedule Microsoft Defender Antivirus scans and log rotation tasks. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
+When Microsoft Defender Antivirus is running with real-time protection, it's no longer required to schedule scans. You should run a scan at least once to set a baseline. Then, if necessary, the Linux crontab is typically used to schedule Microsoft Defender Antivirus scans and log rotation tasks. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
 
-[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) functionality is active whenever Microsoft Defender for Endpoint on Linux is installed. EDR functionality can be disabled through command line or configuration by using [global exclusions](/defender-endpoint/linux-exclusions#supported-exclusion-scopes). For more information on troubleshooting EDR, see the sections, [Useful Commands](#useful-commands) and [Useful Links](#useful-links) (in this article).
+[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) functionality is active whenever Microsoft Defender for Endpoint on Linux is installed. EDR functionality can be disabled through command line or configuration by using [global exclusions](/defender-endpoint/linux-exclusions#supported-exclusion-scopes). For more information on troubleshooting EDR, see the sections [Useful Commands](#useful-commands) and [Useful Links](#useful-links) (in this article).
 
 ## Important configuration settings for Microsoft Defender for Endpoint on SAP on Linux  
 
@@ -98,7 +98,7 @@ For information about troubleshooting installation issues, see [Troubleshoot ins
 
 Your enterprise security team must obtain a full list of antivirus [exclusions](/defender-endpoint/linux-exclusions) from the SAP Administrators (typically the SAP Basis Team). It's recommended to initially exclude:
 
-- DBMS data files, log files and temp files, including disks containing backup files
+- DBMS data files, log files, and temp files, including disks containing backup files
 - The entire contents of the SAPMNT directory
 - The entire contents of the SAPLOC directory
 - The entire contents of the TRANS directory
@@ -108,7 +108,7 @@ Your enterprise security team must obtain a full list of antivirus [exclusions](
 - DB2 – [IBM documentation: Which DB2 directories to exclude with antivirus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software)
 - SAP ASE – contact SAP
 - MaxDB – contact SAP
-- Adobe Document Server, SAP Archive Directories, TREX, LiveCache, Content Server, and other standalone engines must be tested carefully in non-production landscapes before deploying Defender for Endpoint in production 
+- Adobe Document Server, SAP Archive Directories, TREX, LiveCache, Content Server, and other standalone engines must be tested carefully in nonproduction landscapes before deploying Defender for Endpoint in production 
 
 Oracle ASM systems don't need exclusions as Microsoft Defender for Endpoint can't read ASM disks.
 
