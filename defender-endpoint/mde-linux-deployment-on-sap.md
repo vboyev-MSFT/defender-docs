@@ -251,3 +251,8 @@ sudo mdatp diagnostic create
 - [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md#run-the-connectivity-test)
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md#troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer)
+
+## Related articles
+
+- [Onboard servers to Microsoft Defender for Endpoint](onboard-server.md)
+- [Microsoft Defender for Endpoint on Windows Server with SAP](mde-sap-windows-server.md)
