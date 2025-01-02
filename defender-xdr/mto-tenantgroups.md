@@ -19,8 +19,6 @@ appliesto:
 
 # Content distribution in multitenant management
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
-
 Content distribution helps you manage content at scale, across tenants in multitenant management in Microsoft Defender XDR. In content distribution, you can create tenant groups to copy existing content, like custom detection rules, from the source tenant to the target tenants you assign during tenant group creation. The content then runs on the target tenant's devices or device groups that you set in the tenant group scope.
 
 Distributing content in this manner, across tenants, enables you to organize tenants and content based on categories like business groups or location.
