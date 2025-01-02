@@ -51,7 +51,7 @@ For more detailed information about Defender for Endpoint and Microsoft security
 Defender for Endpoint includes capabilities that are beyond the scope of this article. In this article, we focus on two main areas:
 
 - **Next-generation protection** (which includes antivirus protection). [Next-generation protection](next-generation-protection.md) is an antivirus product like other antivirus solutions for Windows environments.
-- **Endpoint Detection and Response** (EDR). [EDR capabilities](overview-endpoint-detection-response.md) detect suspicious activity and system calls, and provide an extra layer of protection against threats that bypassed antivirus protection.
+- **EDR**. [EDR capabilities](overview-endpoint-detection-response.md) detect suspicious activity and system calls, and provide an extra layer of protection against threats that bypassed antivirus protection.
 
 Microsoft and other security software vendors track threats and provide trend information. For information, see [Cyberthreats, viruses, and malware - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/threats).
 
