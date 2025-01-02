@@ -33,7 +33,7 @@ This article doesn't cover SAP client software, such as SAPGUI, or Microsoft Def
 
 ## Enterprise security and your SAP Basis team
 
-Enterprise security is a specialist role and the activities described in this article should be planned as a joint activity between your enterprise security team and the SAP Basis team. The enterprise security team needs to coordinate with the SAP Basis team and jointly design the Defender for Endpoint configuration and analyze any exclusions.
+Enterprise security is a specialist role and the activities described in this article should be planned as a joint activity between your enterprise security team and your SAP Basis team. The enterprise security team needs to coordinate with the SAP Basis team and jointly design your Defender for Endpoint configuration and analyze any exclusions.
 
 ### Get an overview of Defender for Endpoint
 
@@ -46,7 +46,7 @@ Before you begin to plan or deploy Defender for Endpoint on Windows Server with 
 For more detailed information about Defender for Endpoint and Microsoft security offerings, see the following resources:
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
-- [Microsoft Security documentation and training - Security documentation](/security/)
+- [Microsoft Security documentation and training](/security/)
 
 Defender for Endpoint includes capabilities that are beyond the scope of this article. In this article, we focus on two main areas:
 
