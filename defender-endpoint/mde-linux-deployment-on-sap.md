@@ -43,7 +43,7 @@ Conventional security defenses that have been commonly used to protect SAP syste
 
 - SAP only supports Suse, Redhat, and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
 - Suse 15.x, Redhat 9.x and Oracle Linux 9.x are strongly recommended.
-- Suse 12.x, Redhat 7.x and 8.x, and Oracle Linux 7.x and 8.x are technically supported, are no longer tested in combination with SAP software.
+- Suse 12.x, Redhat 7.x and 8.x, and Oracle Linux 7.x and 8.x are technically supported, but are no longer tested in combination with SAP software.
 - Suse 11.x, Redhat 6.x and Oracle Linux 6.x are not supported.
 - Suse and Redhat offer tailored distributions for SAP.  These "for SAP" versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
 - SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle Automatic Storage Management (ASM) filesystem is sometimes used for Oracle DBMS and can't be read by Defender for Endpoint.
