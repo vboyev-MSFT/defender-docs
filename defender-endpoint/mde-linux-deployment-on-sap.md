@@ -44,7 +44,7 @@ Conventional security defenses that have been commonly used to protect SAP syste
 - SAP only supports Suse, Redhat, and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
 - Suse 15.x, Redhat 9.x and Oracle Linux 9.x are strongly recommended.
 - Suse 12.x, Redhat 7.x and 8.x, and Oracle Linux 7.x and 8.x are technically supported, but are no longer tested in combination with SAP software.
-- Suse 11.x, Redhat 6.x and Oracle Linux 6.x are not supported.
+- Suse 11.x, Redhat 6.x and Oracle Linux 6.x aren't supported.
 - Suse and Redhat offer tailored distributions for SAP.  These "for SAP" versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
 - SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle Automatic Storage Management (ASM) filesystem is sometimes used for Oracle DBMS and can't be read by Defender for Endpoint.
 - Some SAP applications use standalone engines, such as TREX, Adobe Document Server, Content Server, and LiveCache. These engines require specific configuration and file exclusions.
@@ -58,16 +58,16 @@ Conventional security defenses that have been commonly used to protect SAP syste
 - Microsoft Defender for Endpoint on Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update antivirus definitions.
 - Microsoft Defender for Endpoint on Linux requires some `crontab` (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise security teams normally manage these entries. For more information, see [How to schedule an update for Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
-As of December, 2024, Defender for Endpoint on Linux can safely be configured with real-time protection enabled. 
+As of December  2024, Defender for Endpoint on Linux can safely be configured with real-time protection enabled. 
 
-The default configuration option for deployment as an Azure Extension for Antivirus is *passive mode*. This means that Microsoft Defender Antivirus, the antivirus/antimalware component of Microsoft Defender for Endpoint, doesn't intercept IO calls. We recommend running Defender for Endpoint in with real-time protection enabled on all SAP applications. As such:
+The default configuration option for deployment as an Azure Extension for Antivirus is *passive mode*. This means that Microsoft Defender Antivirus, the antivirus/anti-malware component of Microsoft Defender for Endpoint, doesn't intercept IO calls. We recommend running Defender for Endpoint in with real-time protection enabled on all SAP applications. As such:
 
 - **Real-time protection is turned on**: Microsoft Defender Antivirus intercepts IO calls in real time.
 - **On-demand scanning is turned on**: You can use scan capabilities on the endpoint.
 - **Automatic threat remediation is turned on**: Files are moved and the security administrator is alerted.
 - **Security intelligence updates are turned on**: Alerts are available in the [Microsoft Defender portal](https://security.microsoft.com).
 
-Online Kernel patching tools, such as Ksplice or similar, can lead to unpredictable OS stability if Defender for Endpoint is running. It is recommended to temporarily stop the Defender for Endpoint daemon prior to performing online Kernel patching. After the Kernel is updated, Defender for Endpoint on Linux can be safely restarted. This is especially important on large SAP HANA VMs with huge memory contexts.
+Online Kernel patching tools, such as Ksplice or similar, can lead to unpredictable OS stability if Defender for Endpoint is running. It's recommended to temporarily stop the Defender for Endpoint daemon before performing online Kernel patching. After the Kernel is updated, Defender for Endpoint on Linux can be safely restarted. This is especially important on large SAP HANA VMs with huge memory contexts.
 
 When Microsoft Defender Antivirus is running with real-time protection, it is no longer required to schedule scans. You should run a scan at least once to set a baseline. Then, if required, the Linux crontab is typically used to schedule Microsoft Defender Antivirus scans and log rotation tasks. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
 
