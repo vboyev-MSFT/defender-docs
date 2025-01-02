@@ -53,9 +53,9 @@ Conventional security defenses that have been commonly used to protect SAP syste
 
 ## Prerequisites for deploying Microsoft Defender for Endpoint on Linux on SAP VMs
 
-- Microsoft Defender for Endpoint [version](./linux-whatsnew.md) `101.24082.0004` (release version `30.124082.0004.0`) or later must be deployed.
-- Microsoft Defender for Endpoint on Linux supports all the [Linux releases](microsoft-defender-endpoint-linux.md#system-requirements) used by SAP applications.
-- Microsoft Defender for Endpoint on Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update antivirus Definitions.
+- Microsoft Defender for Endpoint [Build: 101.24082.0004 | Release version: 30.124082.0004.0](/defender-endpoint/linux-whatsnew#oct-2024-build-101240820004--release-version-3012408200040) or later must be deployed.
+- Microsoft Defender for Endpoint on Linux supports [Linux releases](microsoft-defender-endpoint-linux.md#system-requirements) used by SAP applications.
+- Microsoft Defender for Endpoint on Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update antivirus definitions.
 - Microsoft Defender for Endpoint on Linux requires some crontab (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise Security teams normally manage these entries. Refer to [How to schedule an update for Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
 The default configuration option for deployment as an Azure Extension for Antivirus is *passive mode*. This means that Microsoft Defender Antivirus, the antivirus/antimalware component of Microsoft Defender for Endpoint, doesn't intercept IO calls. We recommend running Microsoft Defender for Endpoint in passive mode on all SAP applications, and schedule a scan once per day. In this mode:
