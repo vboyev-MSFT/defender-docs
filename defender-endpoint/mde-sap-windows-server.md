@@ -81,6 +81,12 @@ Here's a list of SAP articles you can use as needed:
 - [2496239 - Ransomware / malware on Windows - SAP for Me](https://me.sap.com/notes/2496239)
 - [1497394 - Which files and directories should be excluded from an antivirus scan for SAP BusinessObjects Business Intelligence Platform products in Windows? - SAP for Me](https://me.sap.com/notes/1497394/E)
 
+ Microsoft Defender for Endpoint on includes a feature called [Endpoint Data Loss Prevention](/purview/endpoint-dlp-learn-about) (Endpoint DLP). Endpoint DLP should not be activated on any Windows Server running NetWeaver, S4, Adobe Document Server, Archive Servers, TREX, LiveCache or Content Server. In addition, it is critical that Windows clients, such as a Windows laptop running Windows 11 with Endpoint DLP enabled, to never access a network share used by any SAP application. Depending on configuration and policies it is possible that a Windows client PC may write DLP attributes onto a Network Share.   
+
+Adobe Document Servers or Archive systems that write many files rapidly onto SMB shares and/or Interface File Transfer shares with DLP enabled may cause file corruption or "access denied" messages.   
+
+Do not expose SAP file systems to external Windows client PCs and do not activate DLP on Windows Servers running SAP software.  Do not allow Windows clients to access SAP server shares.   
+
 ## SAP applications on Windows Server: Top 10 recommendations
 
 1. **Limit access to SAP servers, block network ports, and take all other common security protection measures**. This first step is essential. The threat landscape has evolved from file-based viruses to file-less complex and sophisticated threats. Actions, such as **blocking ports and limiting logon/access** to VMs are **no longer considered sufficient** to fully mitigate modern threats.
