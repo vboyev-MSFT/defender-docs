@@ -6,7 +6,7 @@ ms.author: deniseb
 manager: deniseb
 ms.service: defender-endpoint
 ms.topic: overview
-ms.date: 12/11/2024
+ms.date: 01/02/2025
 ms.subservice: ngp
 audience: ITPro
 ms.collection:
