@@ -396,4 +396,5 @@ For more information about cloud-delivered protection, see the following resourc
 
 - [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md)
 - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+- [Onboard servers to Microsoft Defender for Endpoint](onboard-server.md)
 - [Overview of endpoint detection and response](overview-endpoint-detection-response.md)
