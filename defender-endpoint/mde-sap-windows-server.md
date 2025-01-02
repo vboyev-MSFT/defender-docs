@@ -133,9 +133,11 @@ Here's a list of SAP articles you can use as needed:
 
    ```
 
-9. **Use tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to set up Defender for Endpoint**. Such tools can help ensure that Defender for Endpoint is configured correctly and uniformly deployed.
+9. **Use tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to set up Defender for Endpoint**. Such tools can help ensure that Defender for Endpoint is configured correctly and uniformly deployed. To use Defender for Endpoint security settings management, follow these steps:
 
-   To use Defender for Endpoint security settings management, in the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](manage-security-policies.md).
+   1. In the [Microsoft Defender portal](https://security.microsoft.com), go to **Endpoints** > **Configuration management** > **Endpoint security policies**.
+   
+   2. Select **Create new Policy**, and follow the guidance. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](manage-security-policies.md).
 
 10. **Use the latest release of Defender for Endpoint**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. For more information about new features, see [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 
@@ -176,35 +178,43 @@ Here's a list of what to check:
    **[Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve-view=true)**, as follows:
 
    ```powershell
+   
    Get-MpPreference |Select-Object -Property  DisableCpuThrottleOnIdleScans, DisableRealtimeMonitoring, DisableScanningMappedNetworkDrivesForFullScan , DisableScanningNetworkFiles, ExclusionPath, MAPSReporting
+   
    ```
 
    Expected output for `Get-MpComputerStatus`:
 
    ```output
+   
    DisableCpuThrottleOnIdleScans                 : True
    DisableRealtimeMonitoring                     : False
    DisableScanningMappedNetworkDrivesForFullScan : True
    DisableScanningNetworkFiles                   : False
    ExclusionPath                                 :   <<configured exclusions will show here>>
    MAPSReporting                                 : 2
+   
    ```
 
    **[Get-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)**, as follows:
 
    ```powershell
+   
    Get-MpComputerStatus |Select-Object -Property AMRunningMode, AntivirusEnabled, BehaviorMonitorEnabled, IsTamperProtected , OnAccessProtectionEnabled, RealTimeProtectionEnabled
+   
    ```
 
    Expected output for `Get-MpPreference`:
 
    ```output
+
    AMRunningMode             : Normal
    AntivirusEnabled          : True
    BehaviorMonitorEnabled    : True
    IsTamperProtected         : True
    OnAccessProtectionEnabled : True
    RealTimeProtectionEnabled : True
+   
    ```
 
 3. **Check the status of EDR**. Open Command Prompt, and then run the following command:
