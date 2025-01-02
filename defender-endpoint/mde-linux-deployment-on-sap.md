@@ -29,7 +29,7 @@ ms.custom:
 
 This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. This article includes recommended SAP OSS (Online Services System) notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions, and guidance on scheduling antivirus scans.
 
-Conventional security defenses that have been commonly used to protect SAP systems, such as isolating infrastructure behind firewalls and limiting interactive operating system logons, are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The enterprise security administrators should contact the SAP Basis team prior to deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
+Conventional security defenses that have been commonly used to protect SAP systems, such as isolating infrastructure behind firewalls and limiting interactive operating system logons, are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The enterprise security administrators should contact the SAP Basis team before deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
 
 ## Recommended SAP OSS Notes
 
@@ -242,9 +242,7 @@ sudo mdatp diagnostic create
 
 ## Useful Links
 
-- Microsoft Endpoint Manager doesn't support Linux at this time
-
-- [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
+- Microsoft Intune doesn't support Linux at this time. See [Learn how to use Intune endpoint security policies to manage Microsoft Defender for Endpoint on devices that are not enrolled with Intune](/mem/intune/protect/mde-security-integration).
 
 - [Microsoft Tech Community: Microsoft Defender for Endpoint Linux - Configuration and Operation Command List](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-defender-for-endpoint-linux-configuration-and/ba-p/1577902)
 
