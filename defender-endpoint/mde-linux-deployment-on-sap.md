@@ -58,21 +58,22 @@ Conventional security defenses that have been commonly used to protect SAP syste
 - Microsoft Defender for Endpoint on Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update antivirus definitions.
 - Microsoft Defender for Endpoint on Linux requires some `crontab` (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise security teams normally manage these entries. For more information, see [How to schedule an update for Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
-The default configuration option for deployment as an Azure Extension for Antivirus is *passive mode*. This means that Microsoft Defender Antivirus, the antivirus/antimalware component of Microsoft Defender for Endpoint, doesn't intercept IO calls. We recommend running Microsoft Defender for Endpoint in passive mode on all SAP applications, and schedule a scan once per day. In this mode:
+As of December, 2024, Defender for Endpoint on Linux can safely be configured with real-time protection enabled. 
 
-- **Real-time protection is turned off**: Threats aren't remediated by Microsoft Defender Antivirus.
-- **On-demand scanning is turned on**: Still use the scan capabilities on the endpoint.
-- **Automatic threat remediation is turned off**: No files are moved and the security administrator is expected to take required action.
-- **Security intelligence updates are turned on**: Alerts are available on security administrator's tenant.
+The default configuration option for deployment as an Azure Extension for Antivirus is *passive mode*. This means that Microsoft Defender Antivirus, the antivirus/antimalware component of Microsoft Defender for Endpoint, doesn't intercept IO calls. We recommend running Defender for Endpoint in with real-time protection enabled on all SAP applications. As such:
 
-Online Kernel patching tools such as Ksplice or similar can lead to unpredictable OS stability if Defender for Endpoint is running. It is recommended to temporarily stop the Defender for Endpoint daemon prior to performing online Kernel patching. After the Kernel is updated Defender for Endpoint on Linux can be safely restarted. This is especially important on large SAP HANA VMs with huge memory contexts.
+- **Real-time protection is turned on**: Microsoft Defender Antivirus intercepts IO calls in real time.
+- **On-demand scanning is turned on**: You can use scan capabilities on the endpoint.
+- **Automatic threat remediation is turned on**: Files are moved and the security administrator is alerted.
+- **Security intelligence updates are turned on**: Alerts are available in the [Microsoft Defender portal](https://security.microsoft.com).
 
-The Linux crontab is typically used to schedule Microsoft Defender for Endpoint AV scan and log rotation tasks:
-[How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md)
+Online Kernel patching tools, such as Ksplice or similar, can lead to unpredictable OS stability if Defender for Endpoint is running. It is recommended to temporarily stop the Defender for Endpoint daemon prior to performing online Kernel patching. After the Kernel is updated, Defender for Endpoint on Linux can be safely restarted. This is especially important on large SAP HANA VMs with huge memory contexts.
 
-Endpoint Detection and Response (EDR) functionality is active whenever Microsoft Defender for Endpoint on Linux is installed. There's no simple way to disable EDR functionality through command line or configuration. For more information on troubleshooting EDR, see the sections [Useful Commands](#useful-commands) and [Useful Links](#useful-links).
+When Microsoft Defender Antivirus is running with real-time protection, it is no longer required to schedule scans. You should run a scan at least once to set a baseline. Then, if required, the Linux crontab is typically used to schedule Microsoft Defender Antivirus scans and log rotation tasks. For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
 
-## Important Configuration Settings for Microsoft Defender for Endpoint on SAP on Linux  
+[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) functionality is active whenever Microsoft Defender for Endpoint on Linux is installed. EDR functionality can be disabled through command line or configuration by using [global exclusions](/defender-endpoint/linux-exclusions#supported-exclusion-scopes). For more information on troubleshooting EDR, see the sections, [Useful Commands](#useful-commands) and [Useful Links](#useful-links) (in this article).
+
+## Important configuration settings for Microsoft Defender for Endpoint on SAP on Linux  
 
 It's recommended to check the installation and configuration of Defender for Endpoint with the command `mdatp health`.
 
