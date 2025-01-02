@@ -264,31 +264,34 @@ Here's a list of what to check:
 
 7. **Keep in mind how scans work with network shares**. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes.
 
-   [Defender for Endpoint EDR](overview-endpoint-detection-response.md) on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete, and move operations.
+   [EDR in Defender for Endpoint](overview-endpoint-detection-response.md) on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete, and move operations.
 
    Defender for Endpoint on Linux doesn't scan NFS file systems during [scheduled scans](linux-schedule-scan-mde.md).
 
-8. **Troubleshoot sense health or reliability issues**. To troubleshoot such issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer can be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. Get the latest version of the Defender for Endpoint Client Analyzer here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
+8. **Troubleshoot sense health or reliability issues**. To troubleshoot such issues, use the [Defender for Endpoint client analyzer tool](overview-client-analyzer.md). The Defender for Endpoint client analyzer can be useful when diagnosing sensor health or reliability issues on onboarded Windows, Linux, or Mac devices. Get the latest version of the Defender for Endpoint client analyzer here: [https://aka.ms/MDEClientAnalyzer](https://aka.ms/MDEClientAnalyzer).
 
 9. **Open a support case** if you need help. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
-10. **If you're using production SAP VMs with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs**. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. If you need more time to test Defender for Endpoint before deplying to your production environment, [contact support](contact-support.md).
+10. **If you're using production SAP VMs with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs**. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. If you need more time to test Defender for Endpoint before deploying to your production environment, [contact support](contact-support.md).
 
 ## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
-The following sections describe how to confirm or configure Defender for Endpoint settings by using PowerShell and Command Prompt:
+This section includes commands to confirm or configure Defender for Endpoint settings by using PowerShell and Command Prompt:
 
 ### Update Microsoft Defender Antivirus definitions manually
 
 Use Windows Update, or run the following command:
 
 ```powershell
+
 PS C:\Program Files\Windows Defender> .\MpCmdRun.exe -SignatureUpdate
+
 ```
 
 You should see an output that resembles the following code snippet:
 
 ```output
+
 Signature update started . . .
 Service Version: 4.18.23050.9
 Engine Version: 1.1.23060.1005
@@ -296,12 +299,15 @@ AntiSpyware Signature Version: 1.393.925.0
 Antivirus Signature Version: 1.393.925.0
 Signature update finished.
 PS C:\Program Files\Windows Defender>
+
 ```
 
 Another option is to use this command:
 
 ```powershell
+
 PS C:\Program Files\Windows Defender> Update-MpSignature
+
 ```
 
 For more information about these commands, see the following resources:
