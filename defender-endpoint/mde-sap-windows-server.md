@@ -378,7 +378,7 @@ For more information about these commands, see [Set-MpPreference](/powershell/mo
 > [!IMPORTANT]
 > You can't turn off EDR subcomponents on a device. The only way to turn off EDR is to [offboard the device](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
-To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Advanced Protection Service, or MAPS), run the following commands:
+To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also referred to as Microsoft Advanced Protection Service, or MAPS), run the following commands:
 
 ```powershell
 
