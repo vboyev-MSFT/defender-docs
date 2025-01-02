@@ -345,13 +345,13 @@ For more information about this command, see [Get-MpComputerStatus](/powershell/
 
 For more information about exclusions, see the following resources:
 
-- [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+- [Exclusions overview](navigate-defender-endpoint-antivirus-exclusions.md)
 - [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
 - [Contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 
 ### Configure EDR exclusions
 
-It isn't recommended to exclude files, paths, or processes from EDR as such exclusions comprise the protection from modern nonfile based threats. If necessary, open a support case with Microsoft Support via the Microsoft Defender portal specifying executables and/or paths to exclude. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
+It isn't recommended to exclude files, paths, or processes from EDR, because such exclusions compromise protection from modern, nonfile-based threats. If necessary, open a support case in the [Microsoft Defender portal](https://security.microsoft.com) and specify the executables and/or paths to exclude. For more information, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 ### Completely disable Defender for Endpoint on Windows for testing purposes
 
