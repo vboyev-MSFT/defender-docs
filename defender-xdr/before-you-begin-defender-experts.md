@@ -18,7 +18,7 @@ ms.custom:
 - cx-ti
 - cx-ean
 search.appverid: met150
-ms.date: 08/14/2024
+ms.date: 01/02/2025
 ---
 
 # Before you begin using Defender Experts for Hunting
