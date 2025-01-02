@@ -39,7 +39,7 @@ The instructions and permission settings listed in this article apply to Defende
 
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
-1. In the Defender portal, select **Systems** \>**Settings** \> **Microsoft Defender XDR** \> **Permissions and roles**.
+1. In the Defender portal, select **System** \>**Settings** \> **Microsoft Defender XDR** \> **Permissions and roles**.
 1. Enable **Endpoints & Vulnerability Management**.
 1. Select **Go to Permissions and roles**.
 1. Select **Create custom role**.
@@ -64,7 +64,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
-1. In the Defender portal, select **System** \>**Settings** \> **Endpoints** \> **Roles**. <!-- LIMOR is this: permission> Roles-->
+1. In the Defender portal, select **System** \>**Settings** \> **Endpoints** \> **Roles**.
 1. Enable **Endpoints & Vulnerability Management**.<!-- remove this? i think so, is this needed?-->
 1. Select **Add role**.
 1. Type a **Role name**, and a **Description**.
