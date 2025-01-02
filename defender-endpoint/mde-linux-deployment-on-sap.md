@@ -96,120 +96,148 @@ For information about troubleshooting installation issues, see [Troubleshoot ins
 
 ## Recommended Microsoft Defender for Endpoint Antivirus Exclusions for SAP on Linux
 
-Enterprise Security Team must obtain a full list of antivirus exclusions from the SAP Administrators (typically the SAP Basis Team).
-It's recommended to initially exclude:
+Your enterprise security team must obtain a full list of antivirus [exclusions](/defender-endpoint/linux-exclusions) from the SAP Administrators (typically the SAP Basis Team). It's recommended to initially exclude:
 
 - DBMS data files, log files and temp files, including disks containing backup files
 - The entire contents of the SAPMNT directory
 - The entire contents of the SAPLOC directory
 - The entire contents of the TRANS directory
-- The entire contents of directories for standalone engines such as TREX
 - Hana – exclude /hana/shared, /hana/data, and /hana/log - see Note 1730930
-- SQL Server – [Configure antivirus software to work with SQL Server - SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
+- SQL Server – [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
 - Oracle – See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
-- DB2 – [https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software)
+- DB2 – [IBM documentation: Which DB2 directories to exclude with antivirus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software)
 - SAP ASE – contact SAP
 - MaxDB – contact SAP
+- Adobe Document Server, SAP Archive Directories, TREX, LiveCache, Content Server, and other standalone engines must be tested carefully in non-production landscapes before deploying Defender for Endpoint in production 
 
 Oracle ASM systems don't need exclusions as Microsoft Defender for Endpoint can't read ASM disks.
 
 Customers with Pacemaker clusters should also configure these exclusions:
 
 ```bash
+
 mdatp exclusion folder add --path /usr/lib/pacemaker/  (for RedHat /var/lib/pacemaker/)
+
 ```
 
 ```bash
+
 mdatp exclusion process add --name pacemakerd
+
 ```
 
 ```bash
+
 mdatp exclusion process add --name crm_*
+
 ```
 
 Customers running the Azure Security security policy might trigger a scan using the Freeware Clam AV solution. It's recommended to disable Clam AV scan after a VM has been protected with Microsoft Defender for Endpoint using following commands:
 
 ```bash
+
 sudo azsecd config  -s clamav -d "Disabled"
+
 ```
 
 ```bash
+
 sudo service azsecd restart
+
 ```
 
 ```bash
+
 sudo azsecd status 
+
 ```
 
-The following articles detail how to configure AV exclusions for processes, files, and folders per individual VM:
+The following articles detail how to configure antivirus exclusions for processes, files, and folders per individual VM:
 
 - [Set up exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-## Scheduling a Daily AV Scan
+## Scheduling a daily antivirus scan (optional)
 
-The recommended configuration for SAP applications disables real-time interception of IO calls for AV scanning. The recommended setting is passive mode in which real_time_protection_enabled = false.
+The recommended configuration for SAP applications enables real-time interception of IO calls for antivirus scanning. The recommended setting is passive mode in which `real_time_protection_enabled = true`. 
 
-The following link details how to schedule a scan: [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
+SAP applications running on older versions of Linux or on hardware that's overloaded might consider using `real_time_protection_enabled = false`. In this case, antivirus scans should be scheduled.
 
-Large SAP systems might have more than 20 SAP application servers each with a connection to the SAPMNT NFS share. Twenty or more application servers simultaneously scanning the same NFS server will likely overload the NFS server. By default, Defender for Endpoint on Linux doesn't scan NFS sources.
+For more information, see [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
 
-If there's a requirement to scan SAPMNT then this scan should be configured on one or two VMs only.
+Large SAP systems might have more than 20 SAP application servers, each with a connection to the SAPMNT NFS share. Twenty or more application servers simultaneously scanning the same NFS server will likely overload the NFS server. By default, Defender for Endpoint on Linux doesn't scan NFS sources.
+
+If there's a requirement to scan SAPMNT, then this scan should be configured on one or two VMs only.
 
 Scheduled scans for SAP ECC, BW, CRM, SCM, Solution Manager, and other components should be staggered at different times to avoid all SAP components from overloading a shared NFS storage source shared by all SAP components.
 
 ## Useful Commands
 
-If, during manual zypper installation on Suse an error "Nothing provides 'policycoreutils'" occurs, refer to:
-[Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+If, during manual zypper installation on Suse an error "Nothing provides 'policycoreutils'" occurs, see [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 There are several command-line commands that can control the operation of mdatp. To enable passive mode, you can use the following command:
 
 ```bash
+
 mdatp config passive-mode --value enabled
+
 ```
 
 > [!NOTE]
-> passive mode is the default mode on installing defender for endpoint on Linux.
+> Passive mode is the default mode when installing Defender for Endpoint on Linux.
 
-To turn off real-time protection, you can use the command:
+To turn on real-time protection, you can use the command:
 
 ```bash
-mdatp config real-time-protection --value disabled
+
+mdatp config real-time-protection --value enabled
+
 ```
 
 This command tells mdatp to retrieve the latest definitions from the cloud:
 
 ```bash
+
 mdatp definitions update 
+
 ```
 
-This command tests whether mdatp can connect to the cloud-based endpoints via the network:
+This command tests whether mdatp can connect to the cloud-based endpoints on the network:
 
 ```bash
+
 mdatp connectivity test
+
 ```
 
 These commands update the mdatp software, if needed:
 
 ```bash
+
 yum update mdatp
+
 ```
 
 ```bash
+
 zypper update mdatp
+
 ```
 
 Since mdatp runs as a linux system service, you can control mdatp using the service command, for example:
 
 ```bash
+
 service mdatp status 
+
 ```
 
 This command creates a diagnostic file that can be uploaded to Microsoft support:
 
 ```bash
+
 sudo mdatp diagnostic create
+
 ```
 
 ## Useful Links
