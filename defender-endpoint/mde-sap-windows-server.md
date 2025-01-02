@@ -353,22 +353,24 @@ For more information about exclusions, see the following resources:
 
 It isn't recommended to exclude files, paths, or processes from EDR, because such exclusions compromise protection from modern, nonfile-based threats. If necessary, open a support case in the [Microsoft Defender portal](https://security.microsoft.com) and specify the executables and/or paths to exclude. For more information, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
-### Completely disable Defender for Endpoint on Windows for testing purposes
+### Disable Defender for Endpoint on Windows for testing purposes
 
 > [!CAUTION]
-> It is not recommended to disable security software unless there is no alternative to solve or isolate a problem.
+> It is not recommended to disable security software unless there is no other alternative to solve or isolate a problem.
 
 Defender for Endpoint should be configured with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) turned on. To temporarily disable Defender for Endpoint to isolate problems, use [troubleshooting mode](enable-troubleshooting-mode.md).
 
 To shut down various subcomponents of the Microsoft Defender Antivirus solution, run the following commands:
 
 ```powershell
+
 Set-MPPreference -DisableTamperProtection $true
 Set-MpPreference -DisableRealtimeMonitoring $true
 Set-MpPreference -DisableBehaviorMonitoring $true
 Set-MpPreference -MAPSReporting Disabled
 Set-MpPreference -DisableIOAVProtection $true
 Set-MpPreference -EnableNetworkProtection Disabled
+
 ```
 
 For more information about these commands, see [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true).
@@ -379,8 +381,10 @@ For more information about these commands, see [Set-MpPreference](/powershell/mo
 To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Advanced Protection Service, or MAPS), run the following commands:
 
 ```powershell
+
 PowerShell Set-MpPreference -MAPSReporting 0
 PowerShell Set-MpPreference -MAPSReporting Disabled
+
 ```
 
 For more information about cloud-delivered protection, see the following resources:
@@ -391,7 +395,5 @@ For more information about cloud-delivered protection, see the following resourc
 ## Related articles
 
 - [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md)
-
 - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
-
 - [Overview of endpoint detection and response](overview-endpoint-detection-response.md)
