@@ -122,12 +122,16 @@ Here's a list of SAP articles you can use as needed:
 
 8. **Verify Defender for Endpoint settings**. Microsoft Defender Antivirus with SAP applications should have the following settings in most cases:
 
-   - `AntivirusEnabled                   : True`
-   - `AntivirusSignatureAge              : 0`
-   - `BehaviorMonitorEnabled             : True`
-   - `DefenderSignaturesOutOfDate        : False`
-   - `IsTamperProtected                  : True`
-   - `RealTimeProtectionEnabled          : True`
+   ```properties
+
+   AntivirusEnabled                   : True
+   AntivirusSignatureAge              : 0
+   BehaviorMonitorEnabled             : True
+   DefenderSignaturesOutOfDate        : False
+   IsTamperProtected                  : True
+   RealTimeProtectionEnabled          : True
+
+   ```
 
 9. **Use tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to set up Defender for Endpoint**. Such tools can help ensure that Defender for Endpoint is configured correctly and uniformly deployed.
 
