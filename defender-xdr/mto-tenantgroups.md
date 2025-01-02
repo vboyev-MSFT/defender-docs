@@ -8,13 +8,13 @@ ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - highpri
-  - tier1
+- m365-security
+- highpri
+- tier1
 ms.topic: conceptual
-ms.date: 11/20/2024
+ms.date: 01/02/2025
 appliesto: 
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
+- ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Content distribution in multitenant management
