@@ -278,7 +278,7 @@ NRI should have a low impact on network performance. Instead of holding the conn
 
 1. Enable network real-time inspection (NRI):
 
-   ```Bash
+      ```Bash
    
    sudo mdatp network-protection remote-settings-override set --value "{\"enableNriMpengineMetadata\" : true}"
    
@@ -286,5 +286,6 @@ NRI should have a low impact on network performance. Instead of holding the conn
    ```
    
    > [!NOTE]
-   > While in Public Preview, since the setting is set via a command line, network real-time inspection (NRI) will not persist reboots. You will need to re-enable it.
+   > While this feature is in preview, and because the setting is set by using command line, network real-time inspection (NRI) doesn't persist following reboots. You must re-enable it.
+   
    
