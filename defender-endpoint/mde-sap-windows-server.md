@@ -53,7 +53,7 @@ Defender for Endpoint includes capabilities that are beyond the scope of this ar
 - **Next-generation protection** (which includes antivirus protection). [Next-generation protection](next-generation-protection.md) is an antivirus product like other antivirus solutions for Windows environments.
 - **EDR**. [EDR capabilities](overview-endpoint-detection-response.md) detect suspicious activity and system calls, and provide an extra layer of protection against threats that bypassed antivirus protection.
 
-Microsoft and other security software vendors track threats and provide trend information. For information, see [Cyberthreats, viruses, and malware - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/threats).
+Microsoft and other security software vendors track threats and provide trend information. For more information, see [Cyberthreats, viruses, and malware - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/threats).
 
 > [!NOTE]
 > For information on Microsoft Defender for SAP on Linux, see [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md). Defender for Endpoint on Linux is significantly different than the Windows version.
