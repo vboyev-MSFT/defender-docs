@@ -336,7 +336,9 @@ Before you configure exclusions, make sure that the SAP Basis team coordinates w
 To view exclusions, use the following command:
 
 ```powershell
+
 Get-MpPreference | Select-Object -Property ExclusionPath
+
 ```
 
 For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve-view=true).
