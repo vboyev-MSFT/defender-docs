@@ -77,19 +77,22 @@ When Microsoft Defender Antivirus is running with real-time protection, it is no
 
 It's recommended to check the installation and configuration of Defender for Endpoint with the command `mdatp health`.
 
-The key parameters recommended for SAP applications are:
+The key parameters recommended for SAP applications are as follows:
 
-- `healthy = true`
-- `release_ring = Production`. Prerelease and insider rings shouldn't be used with SAP Applications.
-- `real_time_protection_enabled = false`. Real-time protection is off in passive mode, which is the default mode and prevents real-time IO interception.
-- `automatic_definition_update_enabled = true`
-- `definition_status = "up_to_date"`.  Run a manual update if a new value is identified.
-- `edr_early_preview_enabled = "disabled"`. If enabled on SAP systems it might lead to system instability.
-- `conflicting_applications = [ ]`. Other AV or security software installed on a VM such as Clam.
-- `supplementary_events_subsystem = "ebpf"`.  Don't proceed if ebpf isn't displayed. Contact the security admin team.
+```properties
 
-This article has some useful hints on troubleshooting installation issues for Microsoft Defender for Endpoint:
-[Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md#installation-failed)
+healthy = true
+release_ring = Production (Prerelease and insider rings shouldn't be used with SAP Applications.)
+real_time_protection_enabled = true  (Real-time protection can be enabled for SAP NetWeaver applications and enables real-time IO interception.) 
+automatic_definition_update_enabled = true
+definition_status = "up_to_date" (Run a manual update if a new value is identified.)
+edr_early_preview_enabled = "disabled" (If enabled on SAP systems it might lead to system instability.)
+conflicting_applications = [ ] (Other antivirus or security software installed on a VM such as Clam.)
+supplementary_events_subsystem = "ebpf" (Don't proceed if ebpf isn't displayed. Contact the security admin team.)
+
+```
+
+For information about troubleshooting installation issues, see [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md#installation-failed).
 
 ## Recommended Microsoft Defender for Endpoint Antivirus Exclusions for SAP on Linux
 
