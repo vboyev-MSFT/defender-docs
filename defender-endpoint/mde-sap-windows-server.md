@@ -320,16 +320,18 @@ For more information about these commands, see the following resources:
 [EDR in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts when Microsoft Defender Antivirus isn't the primary antivirus product and is running in passive mode. You can determine whether EDR in block mode is enabled by running the following command:
 
 ```powershell
+
 Get-MPComputerStatus|select AMRunningMode
+
 ```
 
-There are two modes: Normal and Passive Mode. Testing with SAP systems was done only with `AMRunningMode = Normal` for SAP systems.
+There are two modes: *Normal* and *Passive Mode*. We used `AMRunningMode = Normal` when testing SAP systems.
 
 For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve-view=true).
 
 ### Configure antivirus exclusions
 
-Before you configure exclusions, make sure that the SAP Basis team coordinates with your security team. Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the [Intune admin portal](https://intune.microsoft.com).
+Before you configure exclusions, make sure that the SAP Basis team coordinates with your security team. Exclusions should be configured centrally and not at the VM level. Some exclusions, such as the shared SAPMNT file system exclusion should be configured with a policy in the [Microsoft Intune admin portal](https://intune.microsoft.com).
 
 To view exclusions, use the following command:
 
