@@ -141,10 +141,3 @@ landingContent:
           - text: Hunt for threats
             url: advanced-hunting-overview.md
 
-# Card
-  - title: Reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Microsoft Defender XDR APIs
-            url: api-overview.md
