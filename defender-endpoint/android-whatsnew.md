@@ -28,7 +28,7 @@ ms.date: 01/03/2025
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-### Upgrading your experience: Upcoming UX enhancements you should know about
+### Upgrading your experience: Upcoming enhancements you should know about
 
 January 2025
 
