@@ -55,9 +55,14 @@ The structure of the dashboard has been updated to include a recommendation card
       
 **Feature Tiles**
 
-The current enterprise dashboard experience now features a tile view, as shown in the following image:
+The current enterprise dashboard experience now features a tile view, as shown in the following screenshots.
 
-:::image type="content" source="media/android-whatsnew/image3.png" alt-text="Screenshot showing the tile view of features and capabilities.":::
+| Tile | Description |
+|---|---|
+| :::image type="content" source="media/android-whatsnew/android-tile-networkprotection.png" alt-text="Screenshot showing the network protection tile for security administrators."::: | **Network protection** <br/>Your security team can see whether a connection is secured or unsecured. |
+| :::image type="content" source="media/android-whatsnew/android-tile-webprotection.png" alt-text="Screenshot of a tile that shows whether web protection is enabled on a device."::: | **Web protection** <br/>Your security team can see whether web protection is enabled on a user's device. |
+| :::image type="content" source="media/android-whatsnew/android-tile-appsecurity.png" alt-text="Screenshot showing the app security tile."::: | **App security** <br/>Your security team can see whether any threats were found in apps installed on a user's device. |
+| :::image type="content" source="media/android-whatsnew/android-tile-globalsecureaccess.png" alt-text="Screenshot showing Global Secure Access status."::: | **Global secure access** <br/>Your security team can see current connection status. |
 
 ## Android low-touch onboarding is now GA
 
