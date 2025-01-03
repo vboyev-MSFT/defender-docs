@@ -42,7 +42,7 @@ The following screenshot is an example of what the user sees in their dashboard:
 
 :::image type="content" source="media/android-whatsnew/android-dashboard-screen.png" alt-text="Screenshot showing what the user sees on the device.":::
 
-### **Recommendation Cards for Alerts**
+**Recommendation cards for alerts**
 
 The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard, as shown in the following table:
 
