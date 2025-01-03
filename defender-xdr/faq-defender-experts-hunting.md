@@ -26,3 +26,10 @@ ms.date: 01/02/2025
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 
+The following section lists down questions your SOC team might have regarding the Microsoft Defender Experts for Hunting service:
+
+| Questions | Answers |
+|---------|---------|
+| **What is Microsoft Defender Experts for Hunting?** | Microsoft Defender Experts for Hunting provides proactive threat hunting service to proactively find threats. Please note that Defender Experts for XDR also includes the proactive threat hunting offered by Defender Experts for Hunting.|
+|**Does Defender Experts for Hunting either use or need Sentinel or a SIEM?**|No. Defender Experts does not use any 3rd party data ingested via either Sentinel or any other SIEM.|
+|**What products does Defender Experts for Hunting operate on?**|This service relies on event signals from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps and Microsoft Defender for Identity, along with proprietary Microsoft Threat Intelligence sources. Any event definitions that is not written by Microsoft Defender Products i.e., 3rd party authored event or detection, is not within the scope of Defender Experts for Hunting.|
