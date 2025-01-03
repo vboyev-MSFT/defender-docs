@@ -50,7 +50,7 @@ The structure of the dashboard has been updated to include a recommendation card
 |---|---|
 | :::image type="content" source="media/android-whatsnew/android-connection-unsecured.png" alt-text="Screenshot of recommendation to connect to a secure network."::: | **Network protection** <br/>The user is advised to switch to a secure network. |
 | :::image type="content" source="media/android-whatsnew/android-allow-vpn.png" alt-text="Screenshot showing a recommendation to set up a VPN connection."::: | **VPN option** <br/>The user is prompted to set up a VPN connection on their device. |
-| 
+| :::image type="content" source="media/android-whatsnew/android-threat-found.png" alt-text="Screenshot showing a recommendation to take action on a detected threat."::: | **Malware detection** <br/>The user is prompted to take action on a detected threat. |
 
       
 **Feature Tiles**
