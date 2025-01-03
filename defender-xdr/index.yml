@@ -63,6 +63,23 @@ landingContent:
           url: deploy-supported-services.md
         - text: Setup guides for Microsoft Defender XDR
           url: deploy-configure-m365-defender.md
+
+  # Card
+  - title: Microsoft's unified security operations platform
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "What is Microsoft's unified SecOps platform?"
+            url: /unified-secops-platform/overview-unified-security
+          - text: "Microsoft Defender portal overview"
+            url: /unified-secops-platform/overview-defender-portal
+      - linkListType: deploy
+        links:
+          - text: "Plan your unified SecOps deployment"
+            url: /unified-secops-platform/overview-plan
+          - text: "Deploy Microsoft's unified SecOps platform"
+            url: /unified-secops-platform/overview-deploy
+
 # Card
   - title: Microsoft Defender for Identity
     linkLists:
