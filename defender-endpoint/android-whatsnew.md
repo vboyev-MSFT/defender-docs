@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: android
 search.appverid: met150
-ms.date: 12/30/2024
+ms.date: 01/03/2025
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -38,9 +38,9 @@ We are pleased to introduce the new dashboard for our enterprise users, which ha
 
 Recommendation cards prominently display any active alerts, ensuring you stay informed. Additionally, features are now presented in the form of tiles, enhancing ease of use and navigation. 
 
-The following screenshot is an example of what the user sees:
+The following screenshot is an example of what the user sees in their dashboard:
 
-:::image type="content" source="media/android-whatsnew/image1.png" alt-text="Screenshot showing what the user sees on the device.":::
+:::image type="content" source="media/android-whatsnew/android-dashboard-screen.png" alt-text="Screenshot showing what the user sees on the device.":::
 
 **Recommendation cards for alerts**
 
