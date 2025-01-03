@@ -42,7 +42,7 @@ The following screenshot is an example of what the user sees in their dashboard:
 
 :::image type="content" source="media/android-whatsnew/android-dashboard-screen.png" alt-text="Screenshot showing what the user sees on the device.":::
 
-**Recommendation cards for alerts**
+### **Recommendation Cards for Alerts**
 
 The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard, as shown in the following table:
 
@@ -87,7 +87,7 @@ Although low-touch onboarding is disabled by default, security administrators ca
 > 
 > **For devices with access to GMS**
 > 
-> After support ends for device administrator enrolled devices, devices with access to GMS will be afffected in the following ways: 
+> After support ends for device administrator enrolled devices, devices with access to GMS will be affected in the following ways: 
 > 
 > - Intune and Defender for Endpoint won't make changes or updates to Android device administrator management, such as bug fixes, security fixes, or fixes to address changes in new Android versions.
 > - Intune and Defender for Endpoint technical support will no longer support devices with access to GMS.
@@ -100,7 +100,7 @@ Although low-touch onboarding is disabled by default, security administrators ca
 
 - Network Protection feature is enabled by default for all users
 
-Network protection on Microsoft Defender for Endpoint is now generally available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices, and rogue certificates. It notifies the user if a related threat is detected. Users also see a guided experience to connect to secure networks and change networks when they're connected to an unsecure connection.
+Network protection on Microsoft Defender for Endpoint is now generally available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices, and rogue certificates. It notifies the user if a related threat is detected. Users also see a guided experience to connect to secure networks and change networks when they're connected to an insecure connection.
 
 > [!IMPORTANT]
 > **This feature is now enabled by default for all users.** As a result, users will be able to see a network protection card in the Defender for Endpoint app, along with App Protection and Web Protection. Users are also required to provide location permission to complete the set up. Administrators can change the default value for network protection if they decide not to use it via the Intune App Configuration policies. 
