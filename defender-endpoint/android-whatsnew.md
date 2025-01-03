@@ -44,9 +44,14 @@ The following screenshot is an example of what the user sees in their dashboard:
 
 **Recommendation cards for alerts**
 
-The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard, as shown in the following screenshot:
+The structure of the dashboard has been updated to include a recommendation card that contains active alerts (if any). In case there are multiple alerts, resolving the top alert will bring forward the next one. Recommendation cards have been implemented to provide a more cohesive user experience. These cards are designed to display important alerts and notifications prominently on the dashboard, as shown in the following screenshots.
 
-:::image type="content" source="media/android-whatsnew/image2.png" alt-text="Screenshot showing several recommendation cards.":::
+| Card | Description |
+|---|---|
+| :::image type="content" source="media/android-whatsnew/android-connection-unsecured.png" alt-text="Screenshot of recommendation to connect to a secure network."::: | **Network protection** <br/>The user is advised to switch to a secure network. |
+| :::image type="content" source="media/android-whatsnew/android-allow-vpn.png" alt-text="Screenshot showing a recommendation to set up a VPN connection."::: | **VPN option** <br/>The user is prompted to set up a VPN connection on their device. |
+| 
+
       
 **Feature Tiles**
 
