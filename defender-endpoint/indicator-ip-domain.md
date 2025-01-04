@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: 
 search.appverid: met150
-ms.date: 12/11/2024
+ms.date: 01/03/2025
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -32,7 +32,7 @@ ms.date: 12/11/2024
 
 ## Overview
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users with a prompt if they open a risky app. The prompt won't stop them from using the app; users can bypass the warning and continue to use the app if needed.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users if they open a risky app. The prompt doesn't stop them from using the app; users can bypass the warning and continue to use the app if needed.
 
 To block malicious IPs/URLs (as determined by Microsoft), Defender for Endpoint can use:
 
