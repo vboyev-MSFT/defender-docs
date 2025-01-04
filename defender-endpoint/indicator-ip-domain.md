@@ -61,11 +61,11 @@ You can block malicious IPs/URLs through the settings page or by machine groups,
 
 ## Before you begin
 
-It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains.
+It's important to understand the following prerequisites before creating indicators for IPS, URLs, or domains.
 
 ### Microsoft Defender Antivirus version requirements
 
-- Your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows). Microsoft Defender Antivirus must be in active mode for non-Microsoft browsers. With Microsoft browsers, like Edge, Microsoft Defender Antivirus can be in active or passive mode.
+- Your organization uses [Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows). Microsoft Defender Antivirus must be in active mode for non-Microsoft browsers. With Microsoft browsers, like Microsoft Edge, Microsoft Defender Antivirus can be in active or passive mode.
 
 - [Behavior Monitoring](/defender-endpoint/behavior-monitor) is enabled.
 
@@ -73,7 +73,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - [Cloud Protection network connectivity](/defender-endpoint/configure-network-connections-microsoft-defender-antivirus) is turned on.
 
-- The antimalware client version must be `4.18.1906.x` or later. See [Monthly platform and engine versions](/defender-endpoint/microsoft-defender-antivirus-updates).
+- The anti-malware client version must be `4.18.1906.x` or later. See [Monthly platform and engine versions](/defender-endpoint/microsoft-defender-antivirus-updates).
 
 ### Network Protection requirements
 
@@ -89,16 +89,16 @@ For support of indicators on Android, see [Microsoft Defender for Endpoint on An
 
 ### IoC indicator list limitations
 
-Only external IPs can be added to the indicator list. Indicators can't be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
+Only external IPs can be added to the indicator list. Indicators can't be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge uses [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
 
 ### Non Microsoft Edge and Internet Explorer processes
 
-For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+For processes other than Microsoft Edge and Internet Explorer, web protection scenarios use Network Protection for inspection and enforcement:
 
 - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
-- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge)
-- Encrypted URLs (FQDN only) can be blocked in third party browsers (that is, other than Internet Explorer, Edge)
+- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Microsoft Edge)
+- Encrypted URLs (FQDN only) can be blocked in non-Microsoft browsers (that is, other than Internet Explorer, Edge)
 - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, can only be blocked on first party browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
