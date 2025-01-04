@@ -32,7 +32,7 @@ ms.date: 12/11/2024
 
 ## Overview
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users with a prompt if they open a risky app. The prompt won't stop them from using the app but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users with a prompt if they open a risky app. The prompt won't stop them from using the app; users can bypass the warning and continue to use the app if needed.
 
 To block malicious IPs/URLs (as determined by Microsoft), Defender for Endpoint can use:
 
