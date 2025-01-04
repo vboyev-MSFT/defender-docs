@@ -152,7 +152,7 @@ In the case where multiple different action types are set on the same indicator 
 
 ### Defender for Cloud Apps Indicators
 
-If your organization has enabled integration between Defender for Endpoint and Defender for Cloud Apps, block indicators will be created in Defender for Endpoint for all unsanctioned cloud applications. If an application is put in monitor mode, warn indicators (bypassable block) will be created for the URLs associated with the application. Allow indicators cannot be created for sanctioned applications at this time. Indicators created by Defender for Cloud Apps follow the same policy conflict handling described in the previous section.
+If your organization has enabled integration between Defender for Endpoint and Defender for Cloud Apps, block indicators are created in Defender for Endpoint for all unsanctioned cloud applications. If an application is put in monitor mode, warn indicators (bypassable block) are created for the URLs associated with the application. Allow indicators can't be created for sanctioned applications at this time. Indicators created by Defender for Cloud Apps follow the same policy conflict handling described in the previous section.
 
 ## Policy precedence
 
@@ -160,12 +160,12 @@ Microsoft Defender for Endpoint policy has precedence over Microsoft Defender An
 
 ### Precedence for multiple active policies
 
-Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
+Applying multiple different web content filtering policies to the same device result in the more restrictive policy applying for each category. Consider the following scenario:
 
 - **Policy 1** blocks categories 1 and 2 and audits the rest
 - **Policy 2** blocks categories 3 and 4 and audits the rest
 
-The result is that categories 1-4 are all blocked. This is illustrated in the following image.
+The result is that categories 1-4 are all blocked. This scenario is illustrated in the following image.
 
 :::image type="content" source="media/web-content-filtering-policies-mode-precedence.png" alt-text="Diagram that shows the precedence of web content filtering policy block mode over audit mode.":::
 
