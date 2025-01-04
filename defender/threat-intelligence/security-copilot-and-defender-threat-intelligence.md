@@ -16,7 +16,7 @@ ms.custom:
 - cx-ti
 - cx-mdti
 ms.topic: conceptual
-ms.date: 11/18/2024
+ms.date: 12/04/2024
 ---
 
 # Microsoft Security Copilot in Microsoft Defender Threat Intelligence
@@ -77,7 +77,7 @@ You can also select any of the built-in prompts that are available in the Defend
 ## Turn on the Security Copilot integration in Defender TI
 
 1. Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
-2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png).
+2.	Make sure that the Microsoft Threat Intelligence plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png).
 
     ![Screenshot of the prompt bar in Microsoft Security Copilot with the Sources icon highlighted.](media/defender-ti-and-copilot/copilot-prompts-bar-sources.png)
   
@@ -86,7 +86,7 @@ You can also select any of the built-in prompts that are available in the Defend
     ![Screenshot of the Manage plugins pop-up window with the Microsoft Threat Intelligence plugin highlighted.](media/defender-ti-and-copilot/copilot-manage-plugins.png)
 
     > [!NOTE]
-    > Some roles can turn the toggle on or off for plugins like Defender TI. For more information, read [Manage plugins in Microsoft Security Copilot](/copilot/security/manage-plugins).
+    > Some roles can turn the toggle on or off for plugins like Microsoft Threat Intelligence. For more information, read [Manage plugins in Microsoft Security Copilot](/copilot/security/manage-plugins).
     
     
 3. Enter your prompt in the prompt bar.
@@ -137,7 +137,7 @@ Get information on threat actors and the tactics, techniques, and procedures (TT
 
 ### Vulnerability data by CVE
 
-Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs), which are derived from Defender TI articles, [threat analytics reports](/defender-xdr/threat-analytics), and data from [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) and [Microsoft Defender Endpoint Attack Surface Management](/azure/external-attack-surface-management/overview).
+Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs), which are derived from Defender TI articles, [threat analytics reports](/defender-xdr/threat-analytics), and data from [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) and [Microsoft Defender External Attack Surface Management](/azure/external-attack-surface-management/overview).
 
 **Sample prompts**:
 
