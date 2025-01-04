@@ -99,13 +99,13 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
 - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer or Microsoft Edge)
 - Encrypted URLs (FQDN only) can be blocked in non-Microsoft browsers (that is, other than Internet Explorer or Microsoft Edge)
-- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, can only be blocked on first party browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
+- URLs loaded via HTTP connection coalescing, such as content loaded by modern CDNs, can only be blocked on first party browsers (Internet Explorer, Microsoft Edge), unless the CDN URL itself is added to the indicator list.
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
-- In the case of URL indicator policy conflicts, the longer path may not be applied due to redirection. In such cases, register a non-redirected URL.
+- If URL indicator policy conflicts occur, the longer path might not be applied due to redirection. In such cases, register a non-redirected URL.
 
 > [!NOTE]
-> Custom Indicators of Compromise and Web Content Filtering features are currently not supported in Application Guard sessions of Microsoft Edge. These containerized browser sessions can only enforce web threat blocks via the built-in SmartScreen protection. They cannot enforce any enterprise web protection policies.
+> Custom Indicators of Compromise and Web Content Filtering features are currently not supported in Application Guard sessions of Microsoft Edge. These containerized browser sessions can only enforce web threat blocks via the built-in SmartScreen protection. They can't enforce any enterprise web protection policies.
 
 ## Network protection and the TCP three-way handshake
 
@@ -124,14 +124,14 @@ Here's an example of how that works:
 When using warn mode, you can configure the following controls:
 
 - **Bypass ability**
-  - Allow button in Edge
+  - Allow button in Microsoft Edge
   - Allow button on toast (Non-Microsoft browsers)
   - Bypass duration parameter on the indicator
   - Bypass enforcement across Microsoft and Non-Microsoft browsers
 
 - **Redirect URL**
   - Redirect URL parameter on the indicator
-  - Redirect URL in Edge
+  - Redirect URL in Microsoft Edge
   - Redirect URL on toast (Non-Microsoft browsers)
 
 For more information, see [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
@@ -179,9 +179,9 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 
 4. Specify the following details:
 
-   - Indicator - Specify the entity details and define the expiration of the indicator.
-   - Action - Specify the action to be taken and provide a description.
-   - Scope - Define the scope of the machine group.
+   - **Indicator**: Specify the entity details and define the expiration of the indicator.
+   - **Action**: Specify the action to be taken and provide a description.
+   - **Scope**: Define the scope of the machine group.
 
 5. Review the details in the **Summary** tab, then select **Save**.
 
