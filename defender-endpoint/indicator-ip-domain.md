@@ -97,8 +97,8 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 
 - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS))
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators
-- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Microsoft Edge)
-- Encrypted URLs (FQDN only) can be blocked in non-Microsoft browsers (that is, other than Internet Explorer, Edge)
+- Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer or Microsoft Edge)
+- Encrypted URLs (FQDN only) can be blocked in non-Microsoft browsers (that is, other than Internet Explorer or Microsoft Edge)
 - URLs loaded via HTTP connection coalescing, such as content loaded by modern CDN's, can only be blocked on first party browsers (Internet Explorer, Edge), unless the CDN URL itself is added to the indicator list.
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
