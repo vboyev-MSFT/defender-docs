@@ -188,6 +188,7 @@
     ".openpublishing.redirection.ata-atp.json",
     ".openpublishing.redirection.defender.json",
     ".openpublishing.redirection.defender-cloud-apps.json",
+    ".openpublishing.redirection.defender-office-365.json",
     ".openpublishing.redirection.defender-xdr.json"
   ]
 }
