@@ -341,13 +341,13 @@ The files generated when using this mode:
 > [!NOTE]
 > The files corresponding to diagnostic mode are also generated.
 
-The tar files contains files on the format `<pid of a MDE process>.data`.
+The tar files contain files on the format `<pid of a MDE process>.data`.
 The data file can be read using the command:
 
 `perf report -i <pid>.data`
 
 #### Run connectivity test
-This modes test if the cloud resources needed by Defender for Endpoint is reachable or not.
+This modes test if the cloud resources needed by Defender for Endpoint are reachable or not.
 
 ```console
 
@@ -360,12 +360,12 @@ This modes test if the cloud resources needed by Defender for Endpoint is reacha
 
 Usage example: `sudo ./MDESupportTool connectivitytest -o ~/MicrosoftDefenderATPOnboardingLinuxServer.py`
 
-The result will be printed in the screen.
+The result is printed in the screen.
 
 
 #### Collect different installation/onboarding reports
 
-This mode collects installation related info like disto info, system requirements, etc.
+This mode collects installation related info like distro info, system requirements, etc.
 
 ```console
 
@@ -401,7 +401,7 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 
 On running this command for the first time, it installs a Profile configuration.
 
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
+For more information about how to approve profile installation, see [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
 
 Usage example `./mde_support_tool.sh trace --length 5`
 
