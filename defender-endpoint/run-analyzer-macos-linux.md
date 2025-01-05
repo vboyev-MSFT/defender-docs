@@ -274,8 +274,8 @@ The files generated when using this mode are summarized in the following table:
 | `syslog.zip`  | The files under /var/log/syslog  |
 | `messages.zip`  | The files under /var/log/messages  |
 | `conflicting_processes_information.txt`  | Defender for Endpoint Conflicting Processes |
-| `exclusions.txt`  | List of AV exclusions |
-| `definitions.txt`  | AV definition info  |
+| `exclusions.txt`  | List of Antivirus exclusions |
+| `definitions.txt`  | Antivirus definition info  |
 | `mde_directories.txt` | List of files in the Defender for Endpoint directories |
 | `disk_usage.txt`  | Disk usage details |
 | `mde_user.txt` | Defender for Endpoint User Info |
@@ -289,33 +289,34 @@ The files generated when using this mode are summarized in the following table:
 | `meminfo.txt` | Detailed information about the system's memory usage |
 | `cpuinfo.txt` | CPU Information |
 | `lsns_info.txt` | Linux namespace information |
-| `lsof.txt` | Defender for Endpoint Open File Descriptors Information [^1]  |
+| `lsof.txt` | Defender for Endpoint Open File Descriptors Information <br/>(see the note after this table)  |
 | `sestatus.txt` | Defender for Endpoint Open File Descriptors Information |
 | `lsmod.txt` | Status of modules in the Linux kernel |
 | `dmesg.txt` | Messages from the kernel ring buffer |
 | `kernel_lockdown.txt` | kernel lockdown Info |
-| `rtp_statistics.txt` | Defender for Endpoint Real Time Protection(RTP) statistics [^1]   |
+| `rtp_statistics.txt` | Defender for Endpoint Real Time Protection(RTP) statistics <br/>(see the note after this table) |
 | `libc_info.txt` | libc library information |
 | `uptime_info.txt` | Time since last restart |
 | `last_info.txt` | Listing of last logged in users |
 | `locale_info.txt` | Show current locale |
-| `tmp_files_owned_by_mdatp.txt` | /tmp files owned by group:mdatp [^1]  |
-| `mdatp_config.txt` | All the Defender for Endpoint configurations [^1]  |
-| `mpenginedb.db`, `mpenginedb.db-wal`, `mpenginedb.db-shm` | AV definitions file [^1]  |
+| `tmp_files_owned_by_mdatp.txt` | /tmp files owned by group:mdatp <br/>(see the note after this table) |
+| `mdatp_config.txt` | All the Defender for Endpoint configurations <br/>(see the note after this table)  |
+| `mpenginedb.db`<br/>`mpenginedb.db-wal`<br/> `mpenginedb.db-shm` | Antivirus definitions file <br/>(see the note after this table) |
 | `iptables_rules.txt` | Linux iptables rules |
 | `network_info.txt` | Network information |
 | `sysctl_info.txt` | kernel settings info |
 | `hostname_diagnostics.txt` | Hostname diagnostics information |
-| `mde_event_statistics.txt` | Defender for Endpoint Event statistics [^1]  |
-| `mde_ebpf_statistics.txt` | Defender for Endpoint eBPF statistics [^1]  |
+| `mde_event_statistics.txt` | Defender for Endpoint Event statistics <br/>(see the note after this table) |
+| `mde_ebpf_statistics.txt` | Defender for Endpoint eBPF statistics <br/>(see the note after this table) |
 | `kernel_logs.zip` | Kernel logs |
 | `mdc_log.zip` | Microsoft Defender for Cloud logs |
 | `netext_config.txt` |  |
-| `threat_list.txt` | List of threats detected by Defender for Endpoint [^1]  |
+| `threat_list.txt` | List of threats detected by Defender for Endpoint <br/>(see the note after this table) |
 | `top_output.txt `| Process running in the machine when the tool was run |
 | `top_summary.txt` | Memory and CPU usage analytics of the process running |
 
-[^1]: Only when Defender for Endpoint is installed.
+> [!NOTE]
+> This file is present only when Defender for Endpoint is installed.
 
 ### Positional arguments
 
@@ -436,7 +437,7 @@ Add exclusions for audit-d monitoring.
 
 Usage example: `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
-### AuditD Rate Limiter
+### AuditD rate limiter
 
 Syntax that can be used to limit the number of events being reported by the auditD plugin. This option sets the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events are limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
 
@@ -455,7 +456,7 @@ Usage example: `sudo ./mde_support_tool.sh ratelimit -e true`
 > [!NOTE]
 > This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
 
-### AuditD Skip Faulty Rules
+### AuditD skips faulty rules
 
 This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there's a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the `-c` option.
 
