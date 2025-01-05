@@ -15,7 +15,7 @@ After preparing the server that you're going to use for your Microsoft Defender 
 For more information, see [Required ports](../prerequisites.md#ports).
 
 > [!NOTE]
-> To get the name and other important details about your Defender for Identity workspace, see the [About page](settings-about.md) in the [Microsoft Defender XDR](https://security.microsoft.com/) portal.
+> To get the name and other important details about your Defender for Identity workspace, see the [About page](../settings-about.md) in the [Microsoft Defender XDR](https://security.microsoft.com/) portal.
 
 ## Test connectivity using a browser
 
