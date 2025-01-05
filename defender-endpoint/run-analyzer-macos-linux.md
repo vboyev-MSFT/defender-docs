@@ -97,7 +97,7 @@ If you're using a terminal, download the tool by entering the following command:
 > - If your device is behind a proxy, then you can pass the proxy server as an environment variable to the `mde_support_tool.sh` script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`.
 
 > [!WARNING]
-> Running the Python-based client analyzer requires the installation of PIP packages which could cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
+> Running the Python-based client analyzer requires the installation of PIP packages which could cause some issues in your environment. To avoid issues from occurring, it's recommended that you install the packages into a user PIP environment.
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate. If you're using a terminal, download the tool by running the following command:
 
@@ -137,7 +137,7 @@ If you're using a terminal, download the tool by entering the following command:
     chmod a+x mde_support_tool.sh
     ```
 
-6. Run as a non-root user to install required dependencies.
+6. Run as a nonroot user to install required dependencies.
 
     ```bash
     ./mde_support_tool.sh
@@ -214,8 +214,8 @@ optional arguments:
 
 ### Diagnostics mode
 
-This is used to collected etensive set of machine information, such as memory, disk, MDATP logs, etc.
-These set of files give us primary set of information required to debug any issue related to MDE.
+Diagnostics mode is used to collected extensive set of machine information, such as memory, disk, MDATP logs, etc.
+This set of files give us primary set of information required to debug any issue related to MDE.
 
 The options supported are as follows:
 
