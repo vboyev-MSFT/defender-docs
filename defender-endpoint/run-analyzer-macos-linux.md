@@ -472,6 +472,6 @@ This option enables you to skip the faulty rules added in the auditd rules file 
 Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 > [!NOTE]
-> This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
+> This functionality skips faulty rules. Faulty rules must be further identified and fixed.
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
