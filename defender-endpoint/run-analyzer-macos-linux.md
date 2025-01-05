@@ -52,9 +52,7 @@ If you're using a terminal, download the tool by entering the following command:
     ```
 
 
-2. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
-
-    If you're using a terminal, extract the files by entering the following command:
+2. Extract the contents of `XMDEClientAnalyzerBinary.zip` on the machine. If you're using a terminal, extract the files by entering the following command:
 
     ```bash
     unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
@@ -71,9 +69,7 @@ If you're using a terminal, download the tool by entering the following command:
    - **SupportToolLinuxBinary.zip** : For all Linux devices
    - **SupportToolMacOSBinary.zip** : For Mac devices
 
-5. Unzip one of the above 2 zip files based on the machine you need to investigate.
-
-   When using a terminal, unzip the file by entering one of the following commands based on OS type:
+5. Unzip one of the above 2 zip files based on the machine you need to investigate. When using a terminal, unzip the file by entering one of the following commands based on OS type:
 
    - Linux
 
@@ -103,15 +99,13 @@ If you're using a terminal, download the tool by entering the following command:
 > [!WARNING]
 > Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 
-1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
-
-    If you're using a terminal, download the tool by running the following command:
+1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate. If you're using a terminal, download the tool by running the following command:
 
     ```bash
     wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
     ```
 
-2. Verify the download
+2. Verify the download.
 
    - Linux
 
@@ -125,8 +119,7 @@ If you're using a terminal, download the tool by entering the following command:
     echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
-3. Extract the contents of XMDEClientAnalyzer.zip on the machine.
-    If you're using a terminal, extract the files by using the following command:
+3. Extract the contents of XMDEClientAnalyzer.zip on the machine. If you're using a terminal, extract the files by using the following command:
 
     ```bash
     unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
@@ -138,19 +131,19 @@ If you're using a terminal, download the tool by entering the following command:
     cd XMDEClientAnalyzer
     ```
 
-5. Give the tool executable permission:
+5. Give the tool executable permission.
 
     ```bash
     chmod a+x mde_support_tool.sh
     ```
 
-6. Run as a non-root user to install required dependencies:
+6. Run as a non-root user to install required dependencies.
 
     ```bash
     ./mde_support_tool.sh
     ```
 
-7. To collect actual diagnostic package and generate the result archive file, run again as root:
+7. To collect actual diagnostic package and generate the result archive file, run again as root.
 
     ```bash
     sudo ./mde_support_tool.sh -d
@@ -161,6 +154,7 @@ If you're using a terminal, download the tool by entering the following command:
 ### All command line options
 
 ```console
+
 usage: MDESupportTool [-h] [--output OUTPUT] [--outdir OUTDIR] [--no-zip]
                       [--force] [--diagnostic] [--skip-mdatp]
                       [--bypass-disclaimer] [--interactive] [--delay DELAY]
@@ -215,6 +209,7 @@ optional arguments:
   --max-log-size MAX_LOG_SIZE
                         Maximum log file size in MB before rotating(Will
                         restart mdatp).
+
 ```
 
 ### Diagnostics mode
@@ -222,8 +217,10 @@ optional arguments:
 This is used to collected etensive set of machine information, such as memory, disk, MDATP logs, etc.
 These set of files give us primary set of information required to debug any issue related to MDE.
 
-The options supported for this is:
+The options supported are as follows:
+
 ```console
+
 optional arguments:
   -h, --help            show this help message and exit
   --output OUTPUT, -o OUTPUT
@@ -247,10 +244,13 @@ optional arguments:
   --max-log-size MAX_LOG_SIZE
                         Maximum log file size in MB before rotating(Will
                         restart mdatp).
+
 ```
+
 Usage example: `sudo ./MDESupportTool -d`
 
-NOTE: The log level auto-reset feature only available in 2405 or newer client version.
+> [!NOTE]
+> The log level auto-reset feature only available in 2405 or newer client version.
 
 The files generated when using this mode:
 | File  | Remarks |
