@@ -33,7 +33,7 @@ There are two ways to manage user access to the Defender portal, depending on th
 - [Global Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference).
 - [Microsoft Defender XDR Unified RBAC](/defender-xdr/custom-roles): Use Defender XDR Unified role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
 
-The instructions and permission settings listed in this article apply to Defender XDR Unified RBAC.
+The instructions and permission settings listed in this article apply to both Defender XDR Unified and MDE RBAC.
 
 ## Set up Defender XDR Unified RBAC roles for site security
 
@@ -47,12 +47,15 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
     :::image type="content" source="media/set-up-rbac/permissions-set-up.png" alt-text="Screenshot of the permissions set up page for site security." lightbox="media/set-up-rbac/permissions-set-up.png":::
 
-1. Select **Security operations**, and select **Select custom permissions**.
-1. In **Security settings**, select **Security data basics** and select **Apply**
-1. Select **Authorization and settings**, select **Select custom permissions**.
+1. For read permissions, select **Security operations**, and select **Select custom permissions**.
+1. In **Security data**, select **Security data basics(read)** and select **Apply**
+
+    :::image type="content" source="media/set-up-rbac/permissions-unified-read-options.png" alt-text="Screenshot of the permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-unified-read-options.png":::
+
+1. For write permissions, select **Authorization and settings**, select **Select custom permissions**.
 1. In **Security data** ,select **Core security settings (manage)** and select **Apply**
 
-    :::image type="content" source="media/set-up-rbac/permissions-choose-options.png" alt-text="Screenshot of the permissions set up page with the specific permissions chosen for site security." lightbox="media/set-up-rbac/permissions-choose-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-choose-options.png" alt-text="Screenshot of the permissions set up page with the specific write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-choose-options.png":::
 
 1. Select **Next** for Assignments.
 1. Select **Add assignment**, type a name, choose users and groups and select the Data sources.
