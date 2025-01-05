@@ -266,7 +266,7 @@ The files generated when using this mode:
 | auditd_log_analysis.txt  | Summary of events processed by auditd  |
 | auditd_logs.zip  | Auditd log files  |
 | ebpf_kernel_config.txt  | Currently loaded Linux Kernel config  |
-| ebpf_enabled_func.txt  | List of ---------  |
+| ebpf_enabled_func.txt  | List of all the kernel functions that are currently enabled for tracing |
 | ebpf_syscalls.zip | Information about system call tracing  |
 | ebpf_raw_syscalls.zip  | Tracing events related to raw system calls  |
 | ebpf_maps_info.txt  | eBPF maps' id and size info  |
@@ -456,41 +456,4 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 > [!NOTE]
 > This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
 
-## Result package contents on macOS and Linux
-
-- report.html
-
-  Description: The main HTML output file that contains the findings and guidance from running the client analyzer tool on the device. This file is only generated when running the Python-based version of the client analyzer tool.
-  
-- mde_diagnostic.zip
-
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information).
-  
-- mde.xml
-
-  Description: XML output that is generated while running and is used to build the html report file.
-  
-- Processes_information.txt
-
-  Description: contains the details of the running Microsoft Defender for Endpoint related processes on the system.
-  
-- Log.txt
-
-  Description: contains the same log messages written on screen during the data collection.
-  
-- Health.txt
-
-  Description: The same basic health output that is shown when running *mdatp health* command.
-  
-- Events.xml
-
-  Description: Additional XML file used by the analyzer when building the HTML report.
-  
-- Audited_info.txt
-
-  Description: details on audited service and related components for [Linux](linux-resources.md) OS.
-  
-- perf_benchmark.tar.gz
-
-  Description: The performance test reports. You'll see this only if you're using the performance parameter.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
