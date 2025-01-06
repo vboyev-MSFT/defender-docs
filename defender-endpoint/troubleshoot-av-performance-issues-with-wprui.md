@@ -13,6 +13,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH 
 audience: ITPro
 ai-usage: human-only
+ms.collection: 
+- m365-security
+- tier3
+- mde-macos
+ms.custom:
+- partner-contribution
 ---
 
 # Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
