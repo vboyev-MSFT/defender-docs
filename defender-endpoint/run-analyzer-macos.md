@@ -124,7 +124,7 @@ The tool currently requires Python version 3 or later to be installed on your de
    ./mde_support_tool.sh
    ```
    
-1. When you download files on macOS, it automatically adds a new extended attribut called com.apple.quarantine which is scanned by Gatekeeper.  Before running, you will want to remove this extended attribute:
+1. When you download files on macOS, it automatically adds a new extended attribute called com.apple.quarantine which is scanned by Gatekeeper.  Before running, you will want to remove this extended attribute:
 
    ```bash
    xattr -c MDESupportTools
