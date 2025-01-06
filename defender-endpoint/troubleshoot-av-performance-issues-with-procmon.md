@@ -1,16 +1,23 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor
 description: Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+author: emmwalshh
+ms.author: ewalsh 
+ms.reviewer: yonghree
+manager: deniseb
 ms.service: defender-endpoint
 ms.topic: troubleshooting-general
-ms.date:     01/06/2025
+ms.date: 01/06/2025
 ms.subservice: ngp
+ms.localizationpriority: medium 
+ms.collection: 
+- m365-security
+- tier3
+ms.custom:
+- partner-contribution
+f1.keywords: NOCSH
+audience: ITPro
+ai-usage: human-only
 ---
 
 # Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor
