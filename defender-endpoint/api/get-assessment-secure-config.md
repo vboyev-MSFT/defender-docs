@@ -247,7 +247,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 > [!NOTE]
 > - The files are gzip compressed & in multiline json format.
 > - The download URLs are only valid for 1 hour; otherwise you can use the parameter.
-- For maximum download speed of your data, you can make sure you are downloading from the same Azure region in which your data resides.
+> - For maximum download speed of your data, you can make sure you are downloading from the same Azure region in which your data resides.
 
 
 <br>
