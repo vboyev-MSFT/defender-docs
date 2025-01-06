@@ -44,7 +44,7 @@ Conventional security defenses that have been commonly used to protect SAP syste
 > [!IMPORTANT]
 > When you deploy Defender for Endpoint on Linux, eBPF is strongly advised. For more information, see [eBPF Documentation](https://ebpf.io/what-is-ebpf/). Defender for Endpoint has been enhanced to use the eBPF framework.
 > 
-> The supported distributions include all common Linux distributions but not Suse 12.x. Suse 12.x customers are advised to upgrade to Suse 15.  Suse 12.x will use an old Audit.D based sensor that has performance limitations.
+> The supported distributions include all common Linux distributions but not Suse 12.x. Suse 12.x customers are advised to upgrade to Suse 15.  Suse 12.x uses an old `Audit.D` based sensor that has performance limitations.
 > 
 > For more information about support distributions, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md).
 > 
