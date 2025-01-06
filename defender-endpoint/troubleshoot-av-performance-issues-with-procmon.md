@@ -39,6 +39,8 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 3. Run the MDE Client Analyzer with the -c and -v switches
 
 
+
+
 ```powershell
 C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
 ```
