@@ -6,11 +6,12 @@ ms.author: deniseb
 ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: conceptual
-ms.date: 12/30/2024
+ms.date: 01/06/2025
 ms.subservice: ngp
 search.appverid: met150
 ms.localizationpriority: medium
-
+ms.custom:
+- partner-contribution
 ---
 
 # Microsoft Defender Antivirus and non-Microsoft antivirus solutions without Defender for Endpoint
