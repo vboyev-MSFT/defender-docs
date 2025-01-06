@@ -89,7 +89,7 @@ landingContent:
             url: /defender-for-identity/what-is
           - text: Microsoft Defender for Office 365
             url: /defender-office-365/mdo-about
-            text: Microsoft Defender for Endpoint
+          - text: Microsoft Defender for Endpoint
             url: /defender-endpoint/microsoft-defender-endpoint
           - text: Microsoft Defender for Cloud Apps
             url: /cloud-app-security/what-is-cloud-app-security
