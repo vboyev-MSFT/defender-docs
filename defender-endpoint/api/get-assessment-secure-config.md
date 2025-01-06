@@ -15,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 06/04/2021
+ms.date: 01/06/2025
 ---
 
 # Export secure configuration assessment per device
