@@ -49,7 +49,7 @@ Conventional security defenses that have been commonly used to protect SAP syste
 > For more information about support distributions, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md).
 > 
 
-Here are some important point abotu SAP applications on Linux Server:
+Here are some important point about SAP applications on Linux Server:
 
 - SAP only supports Suse, Redhat, and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
 - Suse 15.x, Redhat 9.x and Oracle Linux 9.x are strongly recommended. The supported distributions include all common Linux distributions but not Suse 12.x.
