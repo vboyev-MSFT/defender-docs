@@ -12,7 +12,7 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: how-to
-ms.date: 06/27/2024
+ms.date: 11/17/2024
 ms.reviewer: 
 search.appverid: met150
 ---
@@ -30,6 +30,7 @@ search.appverid: met150
 - [Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 - [Microsoft Security Exposure Management](/security-exposure-management/)
+- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 
 In Microsoft Defender XDR Unified role-based access control (RBAC), you can edit and delete custom roles or roles that were imported from Defender for Endpoint, Defender for Identity, or Defender for Office 365.
 
