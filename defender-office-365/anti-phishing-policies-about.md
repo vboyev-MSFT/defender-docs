@@ -33,7 +33,7 @@ Policies to configure anti-phishing protection settings are available in Microso
 Examples of Microsoft Defender for Office 365 organizations include:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
-- [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
+- [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/microsoft-365-enterprise)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Microsoft Defender for Office 365 as an add-on](https://products.office.com/exchange/advance-threat-protection)
 
@@ -50,6 +50,25 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 |First contact safety tip|✔|✔|
 |Impersonation settings||✔|
 |Advanced phishing thresholds||✔|
+
+Both Exchange Online Protection and Defender for Office 365 anti-phishing policies are configured from the same location within the Microsoft 365 Defender portal. However, the key difference lies in the additional layers of protection provided by Defender for Office 365, which are enabled through its licensing. While EOP offers essential anti-phishing protection features, Defender for Office 365 enhances these capabilities by introducing advanced protection mechanisms within the same configuration interface.
+
+**Key Differences Enabled by Defender for Office 365:**
+
+**Impersonation Protection:**
+- Protection against user, domain, and sender impersonation.
+- Ability to define trusted senders and domains to reduce false positives.
+
+**Advanced Phishing Detection:**
+- Customizable phishing thresholds (Standard, Aggressive, Most Aggressive) to fine-tune detection.
+
+**AI and Machine Learning-Based Detection:**
+- Improved detection of sophisticated phishing attacks through advanced algorithms.
+
+**Additional Reporting and Insights:**
+- Advanced reporting features and visibility into phishing attempts beyond basic logging.
+
+In summary, while both EOP and Defender for Office 365 anti-phishing policies are accessed and configured from the same portal, an Defender for Office 365 license unlocks advanced anti-phishing features and enhanced security layers within the same interface. 
 
 <sup>\*</sup> In the default policy, the policy name and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
@@ -360,3 +379,23 @@ The following advanced phishing thresholds are only available in anti-phishing p
 - **4 - Most aggressive**: Messages that are identified as phishing with a low, medium, or high degree of confidence are treated as if they were identified with a very high degree of confidence.
 
 The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended settings, see [anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+
+### Spoofing vs. Impersonation
+
+**Spoofing:**
+
+- **Definition:** Spoofing occurs when an attacker forges the sender's email address or domain to make it look like a trusted source.
+- **Key Behavior:** The attacker manipulates the email header (e.g., "From" address) to deceive the recipient.
+- **Protection in EOP/Defender for Office 365:**
+  - **EOP:** Basic spoof detection via SPF, DKIM, and DMARC validation.
+  - **Defender for Defender for Office 365:** Enhanced spoof intelligence for better detection and mitigation of sophisticated spoofing attacks.
+
+**Impersonation:**
+
+- **Definition:** Impersonation occurs when an attacker mimics a trusted user, domain, or brand to trick the recipient into believing the email is genuine.
+- **Key Behavior:** The attacker often uses subtle variations of the actual user’s or domain’s name (e.g., john.doe@micr0soft.com instead of john.doe@microsoft.com).
+- **Protection in Defender for Office 365:** Impersonation protection for users, domains, and brands is an advanced feature available with Defender for Office 365, allowing administrators to define trusted entities and thresholds for detection.
+
+In impersonation attacks, email authentication checks (SPF, DKIM, and DMARC) may pass successfully because the attacker can create a lookalike domain and publish valid DNS records. Despite passing authentication, the attacker is still impersonating a trusted domain or user by using subtle variations in the domain name or display name to deceive recipients. This highlights the importance of advanced impersonation protection, as provided by Microsoft Defender for Office 365, to detect and block such sophisticated threats.
+
+To understand the order of processing for the email protection types and the priority order of policies, please refer to [Order and precedence of email protection](how-policies-and-protections-are-combined.md). 
