@@ -89,7 +89,7 @@ Learn how to classify incidents and alerts through this video:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LHJq]
 
 > [!TIP]
-> **Defender Boxed** appears for a limited time during January and July of each year. It's a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
+> **Defender Boxed**, a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year, appears for a limited time during January and July of each year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
 
 ## Next steps
 

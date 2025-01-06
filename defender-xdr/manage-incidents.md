@@ -50,16 +50,14 @@ This article shows you how to perform various incident management tasks associat
 - [Specify an incident's classification](#specify-the-incidents-classification).
 - [Add comments to an incident](#add-comments-to-an-incident).
 
-> [!TIP]
-> **Defender Boxed** appears for a limited time during January and July of each year. It's a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
-
-Here are the ways you can manage your incidents:
-=======
 **[Incident logging and reporting:](#incident-logging-and-reporting)**
 
 - [Edit the incident name](#edit-the-incident-name).
 - Assess the activity audit and add comments in the [Activity log](#view-the-activity-log-of-an-incident).
 - [Export incident data to PDF](#export-incident-data-to-pdf).
+
+> [!TIP]
+> **Defender Boxed**, a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year, appears for a limited time during January and July of each year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
 
 ## Access the *Manage incident* pane
 
