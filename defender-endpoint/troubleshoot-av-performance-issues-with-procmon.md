@@ -12,7 +12,6 @@ ms.subservice: ngp
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
-- tier3
 ms.custom:
 - partner-contribution
 f1.keywords: NOCSH
