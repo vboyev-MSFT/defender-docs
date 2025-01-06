@@ -82,7 +82,7 @@ landingContent:
 
 # Card
   - title: Microsoft Defender XDR services
-  linkLists:
+    linkLists:
       - linkListType: overview
         links:
           - text: Microsoft Defender for Identity
