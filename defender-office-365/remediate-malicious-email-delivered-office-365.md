@@ -30,9 +30,10 @@ Remediation means to take a prescribed action against a threat. Malicious email 
 - There are throttling limits for large-scale remediations that help ensure stability and performance of the service:
   - **Organization limits**: The maximum number of active, concurrent email remediations is 50. Once the limit is reached. no new remediations are triggered until some actions are completed.
   - **Email message limits**: If an active remediation involves more than one million email messages, no new email remediations are allowed.
-  - **Recipient requirements in remediations**: The total percentage of selected recipients must be at least 40% of the total email message count in the remediation. For example, if the remediation requires the deletion of 5000 email messages, the remediation must target at least 2000 recipients.
-    - If the recipient count is less than 40% of the total email message count, ensure that the percentage of email messages per recipient doesn't exceed 20% of the total number of email messages submitted.
-    - If the recipient count is less than 40% of the total email message count, the remediation can't be used to delete more than 1000 messages that were sent to a single recipient.
+  - **Recipient requirements in remediations**:
+     
+      -  The total percentage of selected recipients must be at least 40% of the total email message count in the remediation.  For instance, if an email is sent to 5 recipients, Threat Explorer counts it as 5 emails. If the remediation requires the deletion of 5000 email messages, the remediation must target at least 2000 recipients.
+      - If the recipient count is less than 40% of the total email message count, the remediation can't be used to delete more than 1000 messages that were sent to a single recipient.
 
 - You need to be assigned permissions before you can do the procedures in this article. Admins can take the required action on email messages, but the **Search and Purge** role is required to get those actions approved. To assign the **Search and Purge** role, you have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/defender-xdr/manage-rbac) (If **Email & collaboration** \> **Defender for Office 365** permissions is :::image type="icon" source="media/scc-toggle-on.png" border="false"::: **Active**. Affects the Defender portal only, not PowerShell): **Security operations/Security data/Email & collaboration advanced actions (manage)**.
@@ -108,6 +109,9 @@ Open any remediation item to view details about it, including its remediation na
 
     - **Hard delete**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
 
+  > [!NOTE]
+  > In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD) admins can take **Soft delete**, **Move to junk folder**,  **Move to deleted items**,  **Hard delete**,**Move to inbox** action,  **Delete sender's copy** and **Move to inbox** from qurantine folder are not availabe.
+  
   Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Explorer retention period for your organization.
 
   Unless you're remediating old messages after your organization's Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.
@@ -154,3 +158,4 @@ In case of remediating large batches of email, export the messages sent for reme
 :::image type="content" source="media/microsoft-365-defender-advanced-hunting-actions-pane.png" lightbox="media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="The Advanced Hunting, Take Actions panel with your choice of actions.":::
 
 Remediation mitigates threats, addresses suspicious emails, and helps keep an organization secure.
+
