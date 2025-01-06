@@ -34,7 +34,7 @@ There are three ways to manage user access to the Defender portal, depending on 
 - [Microsoft Defender XDR Unified RBAC](/defender-xdr/manage-rbac): Use Defender XDR Unified role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
 - [Microsoft Defender for Endpoint XDR RBAC](/defender-endpoint/user-roles): Use Defender for Endpoint XDR role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
 
-The instructions and permission settings listed in this article apply to both Defender XDR Unified and Microsfot Defender for Endpoint XDR RBAC.
+The instructions and permission settings listed in this article apply to both Defender XDR Unified and Microsoft Defender for Endpoint XDR RBAC.
 
 ## Set up Defender XDR Unified RBAC roles for site security
 
@@ -53,8 +53,8 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
     :::image type="content" source="media/set-up-rbac/permissions-unified-read-options.png" alt-text="Screenshot of the permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-unified-read-options.png":::
 
-1. For write permissions, select **Authorization and settings**, select **Select custom permissions**.
-1. In **Security data** ,select **Core security settings (manage)** and select **Apply**.
+1. For write permissions, in **Authorization and settings**, select **Select custom permissions**.
+1. In **Security data**, select **Core security settings (manage)** and select **Apply**.
 
     :::image type="content" source="media/set-up-rbac/permissions-choose-options.png" alt-text="Screenshot of the permissions set up page with the specific write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-choose-options.png":::
 
@@ -64,7 +64,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Select **Next** to **Review and finish**.
 1. Select **Submit**.
 
-## Set up Microsfot Defender for Endpoint XDR RBAC (Version 2) roles for site security
+## Set up Microsoft Defender for Endpoint XDR RBAC (Version 2) roles for site security
 
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
@@ -73,15 +73,15 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Type a **Role name**, and a **Description**.
 1. Select **Next** for Permissions.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the Microsfot Defender for Endpoint XDR RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the Microsoft Defender for Endpoint XDR RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
 
 1. For read permissions, in **View Data**, select **Security Operations**.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-read-options.png" alt-text="Screenshot of the Microsfot Defender for Endpoint XDR RBAC (version2) permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-read-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-read-options.png" alt-text="Screenshot of the Microsoft Defender for Endpoint XDR RBAC (version2) permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-read-options.png":::
 
 1. For write permissions, select **Manage security settings in Security Center**.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-write-options.png" alt-text="Screenshot of the Microsfot Defender for Endpoint XDR RBAC (version2) permissions set up page with the specific read and write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-write-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-write-options.png" alt-text="Screenshot of the Microsoft Defender for Endpoint XDR RBAC (version2) permissions set up page with the specific read and write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-write-options.png":::
 
 1. Select **Next**.
 1. In **Assigned user groups**, select the user groups from the list to assign to this role.
@@ -95,7 +95,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 |----|----|
 | **Defender permissions**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **Defender permissions**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
 
-**For Microsfot Defender for Endpoint XDR RBAC (version 2)**:
+**For Microsoft Defender for Endpoint XDR RBAC (version 2)**:
 
 |Write permissions |Read permissions |
 |----|----|
