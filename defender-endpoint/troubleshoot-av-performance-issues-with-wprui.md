@@ -1,16 +1,18 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
 description: Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+author: emmwalshh
+ms.author: emmwalsh
+ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: troubleshooting-general
-ms.date:     01/06/2025
+ms.date: 01/06/2025
 ms.subservice: ngp
+manager: deniseb
+ms.localizationpriority: medium 
+f1.keywords: NOCSH 
+audience: ITPro
+ai-usage: human-only
 ---
 
 # Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
