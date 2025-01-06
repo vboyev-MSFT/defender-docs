@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "defender-endpoint/configure-microsoft-threat-experts.md",
-      "redirect_url": "/defender-xdr/defender-experts-for-hunting.md",
+      "redirect_url": "/defender-xdr/defender-experts-for-hunting",
       "redirect_document_id": false
     },    
     {
