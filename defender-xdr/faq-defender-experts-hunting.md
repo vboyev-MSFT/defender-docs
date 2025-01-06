@@ -17,7 +17,7 @@ ms.custom:
 - cx-ti
 - cx-ean
 search.appverid: met150
-ms.date: 01/02/2025
+ms.date: 01/06/2025
 ---
 
 # General information on Defender Experts for Hunting service
@@ -37,7 +37,7 @@ The following section lists down questions your SOC team might have regarding th
 |**What is the role of Defender Experts for Hunting in the context of a Purple Team exercise?**|Defender Experts for Hunting is part of the blue team in a purple team exercise (Red Team and Blue Team coordinated work stream). Defender Experts for Hunting complements your internal hunting team by enhancing their capabilities rather than replacing them.|
 |**What actions can your experts take during a hunting investigation that results in a Defender Experts Hunting Notification?**|During threat hunting investigations, our analysts refrain from taking direct actions on customer assets. Instead, they provide detailed information, including threat summary, hunting queries that show the timeline of events for the identified attack and remediation action recommendations. Defender Experts Notifications will provide guidance on how to review and address the novel threat.|
 |**What types of incidents can your experts investigate?**|The Defender Experts for Hunting focuses on novel emerging threat landscape, where there might be knowledge gaps in the industry in the best ways to identify them. This service does not prioritize well-established threats that are adequately addressed by Defender Products . However, when a well-known tactic is employed to generate a novel attack, Defender Experts will diligently identify both the novel and existing attack tactics. Please see review our Defender Experts Blogs on Novel attacks.|
-|**Can your experts help me improve my security posture?**|The scope of the posture change recommendation is limited to the scope of the Defender Experts Notification scope and is limited to preventing the attack identified in the context of the Notification.|
+|**Can your experts help me improve my security posture?**|The scope of the posture change recommendation is limited to the scope of the Defender Experts Notification scope and is limited to preventing the attack identified in the context of the notification.|
 |**Can Defender Experts for Hunting help with an active compromise or vulnerability?**|No, Defender Experts currently don't provide incident response services.Contact your Microsoft representative or fill out the Experiencing a Cybersecurity Incident? form to engage Microsoft Incident Response for incident response assistance.|
 |**How can my organization participate in the Defender Experts for Hunting service?**|Contact your Microsoft representative to express interest in Defender Experts for Hunting|
 |**Does Defender Experts for Hunting Cover Cloud Servers that have Defender for Endpoint deployed on them.**|Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Endpoint for Servers license. For Defender Experts coverage, a server is considered as a user seat for billing. The service doesn't cover Microsoft Defender for Cloud. Learn more about specific hardware and software requirements|
