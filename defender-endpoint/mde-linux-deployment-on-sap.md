@@ -41,10 +41,20 @@ Conventional security defenses that have been commonly used to protect SAP syste
 
 ## SAP Applications on Linux
 
+> [!IMPORTANT]
+> When you deploy Defender for Endpoint on Linux, eBPF is strongly advised. For more information, see [eBPF Documentation](https://ebpf.io/what-is-ebpf/). Defender for Endpoint has been enhanced to use the eBPF framework.
+> 
+> The supported distributions include all common Linux distributions but not Suse 12.x. Suse 12.x customers are advised to upgrade to Suse 15.  Suse 12.x will use an old Audit.D based sensor that has performance limitations.
+> 
+> For more information about support distributions, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](linux-support-ebpf.md).
+> 
+
+Here are some important point abotu SAP applications on Linux Server:
+
 - SAP only supports Suse, Redhat, and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
-- Suse 15.x, Redhat 9.x and Oracle Linux 9.x are strongly recommended.
-- Suse 12.x, Redhat 7.x and 8.x, and Oracle Linux 7.x and 8.x are technically supported, but are no longer tested in combination with SAP software.
+- Suse 15.x, Redhat 9.x and Oracle Linux 9.x are strongly recommended. The supported distributions include all common Linux distributions but not Suse 12.x.
 - Suse 11.x, Redhat 6.x and Oracle Linux 6.x aren't supported.
+- Redhat 7.x and 8.x, and Oracle Linux 7.x and 8.x are technically supported, but are no longer tested in combination with SAP software.
 - Suse and Redhat offer tailored distributions for SAP.  These "for SAP" versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
 - SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle Automatic Storage Management (ASM) filesystem is sometimes used for Oracle DBMS and can't be read by Defender for Endpoint.
 - Some SAP applications use standalone engines, such as TREX, Adobe Document Server, Content Server, and LiveCache. These engines require specific configuration and file exclusions.
