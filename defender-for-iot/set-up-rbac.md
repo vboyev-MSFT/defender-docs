@@ -28,12 +28,13 @@ To make general changes to RBAC roles and permissions that relate to all other a
 
 ## Access management options
 
-There are two ways to manage user access to the Defender portal, depending on the type of tenent you're using. Each system has different named permissions that allow access for site security. The two systems are:
+There are three ways to manage user access to the Defender portal, depending on the type of tenent you're using. Each system has different named permissions that allow access for site security. The systems are:
 
 - [Global Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference).
-- [Microsoft Defender XDR Unified RBAC](/defender-xdr/custom-roles): Use Defender XDR Unified role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
+- [Microsoft Defender XDR Unified RBAC](/defender-xdr/manage-rbac): Use Defender XDR Unified role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
+- [Microsoft Defender for Endpoint RBAC](/defender-endpoint/user-roles) (use the link): Use Defender for Endpoint XDR role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
 
-The instructions and permission settings listed in this article apply to both Defender XDR Unified and MDE RBAC.
+The instructions and permission settings listed in this article apply to both Defender XDR Unified and Microsfot Defender for Endpoint XDR RBAC.
 
 ## Set up Defender XDR Unified RBAC roles for site security
 
@@ -63,7 +64,7 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Select **Next** to **Review and finish**.
 1. Select **Submit**.
 
-## Set up Defender XDR for MDE RBAC (Version 2) roles for site security
+## Set up Microsfot Defender for Endpoint XDR RBAC (Version 2) roles for site security
 
 Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac-roles-and-permissions-for-site-security), to give users access to site security features:
 
@@ -72,15 +73,15 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 1. Type a **Role name**, and a **Description**.
 1. Select **Next** for Permissions.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-add-role.png" alt-text="Screenshot of the Microsfot Defender for Endpoint XDR RBAC (version2) permissions set up page for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-add-role.png":::
 
 1. For read permissions, in **View Data**, select **Security Operations**.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-read-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-read-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-read-options.png" alt-text="Screenshot of the Microsfot Defender for Endpoint XDR RBAC (version2) permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-read-options.png":::
 
 1. For write permissions, select **Manage security settings in Security Center**.
 
-    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-write-options.png" alt-text="Screenshot of the MDE RBAC (version2) permissions set up page with the specific read and write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-write-options.png":::
+    :::image type="content" source="media/set-up-rbac/permissions-mde-rbac2-write-options.png" alt-text="Screenshot of the Microsfot Defender for Endpoint XDR RBAC (version2) permissions set up page with the specific read and write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-mde-rbac2-write-options.png":::
 
 1. Select **Next**.
 1. In **Assigned user groups**, select the user groups from the list to assign to this role.
@@ -92,13 +93,13 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
 |Write permissions |Read permissions |
 |----|----|
-| **MDE Roles**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **MDE Roles**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
+| **Microsoft Defender for Endpoint roles**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **Microsoft Defender for Endpoint Roles**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
 
-**For MDE RBAC (version 2)**:
+**For Microsfot Defender for Endpoint XDR RBAC (version 2)**:
 
 |Write permissions |Read permissions |
 |----|----|
-| **MDE roles**: Manage security settings in Security Center and scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator.| Write roles (including roles that are non-scoped to all device groups). <br> **MDE roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
+| **Microsoft Defender for Endpoint roles**: Manage security settings in Security Center and scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator.| Write roles (including roles that are non-scoped to all device groups). <br> **Microsoft Defender for Endpoint roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
 
 ## Next steps
 
