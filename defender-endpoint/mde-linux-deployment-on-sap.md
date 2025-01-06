@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 01/02/2025
+ms.date: 01/06/2025
 ms.custom: 
 - partner-contribution
 ---
@@ -241,6 +241,8 @@ sudo mdatp diagnostic create
 ```
 
 ## Useful Links
+
+- To analyze performance or other issues, see [Run the client analyzer on Linux](run-analyzer-linux.md).
 
 - Microsoft Intune doesn't support Linux at this time. See [Learn how to use Intune endpoint security policies to manage Microsoft Defender for Endpoint on devices that are not enrolled with Intune](/mem/intune/protect/mde-security-integration).
 
