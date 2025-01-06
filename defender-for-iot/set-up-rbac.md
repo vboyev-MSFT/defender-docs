@@ -49,12 +49,12 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
     :::image type="content" source="media/set-up-rbac/permissions-set-up.png" alt-text="Screenshot of the permissions set up page for site security." lightbox="media/set-up-rbac/permissions-set-up.png":::
 
 1. For read permissions, select **Security operations**, and select **Select custom permissions**.
-1. In **Security data**, select **Security data basics(read)** and select **Apply**
+1. In **Security data**, select **Security data basics(read)** and select **Apply**.
 
     :::image type="content" source="media/set-up-rbac/permissions-unified-read-options.png" alt-text="Screenshot of the permissions set up page with the specific read permissions chosen for site security." lightbox="media/set-up-rbac/permissions-unified-read-options.png":::
 
 1. For write permissions, select **Authorization and settings**, select **Select custom permissions**.
-1. In **Security data** ,select **Core security settings (manage)** and select **Apply**
+1. In **Security data** ,select **Core security settings (manage)** and select **Apply**.
 
     :::image type="content" source="media/set-up-rbac/permissions-choose-options.png" alt-text="Screenshot of the permissions set up page with the specific write permissions chosen for site security." lightbox="media/set-up-rbac/permissions-choose-options.png":::
 
