@@ -32,7 +32,7 @@ There are three ways to manage user access to the Defender portal, depending on 
 
 - [Global Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference).
 - [Microsoft Defender XDR Unified RBAC](/defender-xdr/manage-rbac): Use Defender XDR Unified role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
-- [Microsoft Defender for Endpoint RBAC](/defender-endpoint/user-roles) (use the link): Use Defender for Endpoint XDR role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
+- [Microsoft Defender for Endpoint XDR RBAC](/defender-endpoint/user-roles): Use Defender for Endpoint XDR role-based access control (RBAC) to manage access to specific data, tasks, and capabilities in the Defender portal.
 
 The instructions and permission settings listed in this article apply to both Defender XDR Unified and Microsfot Defender for Endpoint XDR RBAC.
 
@@ -93,13 +93,13 @@ Assign RBAC permissions and roles, based on the [summary table](#summary-of-rbac
 
 |Write permissions |Read permissions |
 |----|----|
-| **Microsoft Defender for Endpoint roles**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **Microsoft Defender for Endpoint Roles**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
+| **Defender permissions**: Core security settings (manage) under Authorization and Settings and scoped to all device groups. <br>**Entra ID roles**: Global Administrator, Security Administrator, Security Operator and scoped to all device groups.| Write roles (including roles that are non-scoped to all device groups). <br> **Defender permissions**: Security data basics (under Security Operations).<br>**Entra ID roles**: Global Reader, Security Reader.|
 
 **For Microsfot Defender for Endpoint XDR RBAC (version 2)**:
 
 |Write permissions |Read permissions |
 |----|----|
-| **Microsoft Defender for Endpoint roles**: Manage security settings in Security Center and scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator.| Write roles (including roles that are non-scoped to all device groups). <br> **Microsoft Defender for Endpoint roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
+| **Defender for Endpoint roles**: Manage security settings in Security Center and scoped to all device groups.<br>**Entra ID roles**: Global Administrator, Security Administrator.| Write roles (including roles that are non-scoped to all device groups). <br> **Defender for Endpoint roles**: View data - Security operations (read). <br>**Entra ID roles**: Global Reader, Security Reader.|
 
 ## Next steps
 
