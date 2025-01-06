@@ -18,7 +18,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 07/18/2024
+ms.date: 01/06/2025
 appliesto: 
 - Microsoft Defender XDR 
 - Microsoft Sentinel in the Microsoft Defender portal
@@ -63,7 +63,7 @@ We recommend that you avoid using the incident name as a condition for triggerin
 
 ### Defender Boxed
 
-For a limited time during January and July of each year, **Defender Boxed** automatically appears when you first visit the Incidents page. Defender Boxed highlights your organization's security success, improvements, and response actions during the previous six months or calendar year.
+For a limited time during January and July of each year, **Defender Boxed** automatically appears when you first open the incident queue. Defender Boxed highlights your organization's security success, improvements, and response actions during the previous six months or calendar year.
 
 :::image type="content" source="/defender/media/defender-boxed/defender-boxed-recording.gif" alt-text="Defender Boxed as shown in the incident queue.":::
 
