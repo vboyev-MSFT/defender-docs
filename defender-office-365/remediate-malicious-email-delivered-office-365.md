@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Threat remediation
 ms.service: defender-office-365
-ms.date: 12/18/2024
+ms.date: 01/06/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
@@ -31,9 +31,8 @@ Remediation means to take a prescribed action against a threat. Malicious email 
   - **Organization limits**: The maximum number of active, concurrent email remediations is 50. Once the limit is reached. no new remediations are triggered until some actions are completed.
   - **Email message limits**: If an active remediation involves more than one million email messages, no new email remediations are allowed.
   - **Recipient requirements in remediations**:
-     
-      -  The total percentage of selected recipients must be at least 40% of the total email message count in the remediation.  For instance, if an email is sent to 5 recipients, Threat Explorer counts it as 5 emails. If the remediation requires the deletion of 5000 email messages, the remediation must target at least 2000 recipients.
-      - If the recipient count is less than 40% of the total email message count, the remediation can't be used to delete more than 1000 messages that were sent to a single recipient.
+    -  The total percentage of selected recipients must be at least 40% of the total email message count in the remediation. For instance, if an email is sent to 5 recipients, Explorer (Threat Explorer) counts it as 5 email messages. If the remediation requires the deletion of 5000 email messages, the remediation must target at least 2000 recipients.
+    - If the recipient count is less than 40% of the total email message count, the remediation can't be used to delete more than 1000 messages that were sent to a single recipient.
 
 - You need to be assigned permissions before you can do the procedures in this article. Admins can take the required action on email messages, but the **Search and Purge** role is required to get those actions approved. To assign the **Search and Purge** role, you have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/defender-xdr/manage-rbac) (If **Email & collaboration** \> **Defender for Office 365** permissions is :::image type="icon" source="media/scc-toggle-on.png" border="false"::: **Active**. Affects the Defender portal only, not PowerShell): **Security operations/Security data/Email & collaboration advanced actions (manage)**.
@@ -43,15 +42,15 @@ Remediation means to take a prescribed action against a threat. Malicious email 
 
 ## Manual and automated remediation
 
-*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
+*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer (Threat Explorer). Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
-:::image type="content" source="media/microsoft-365-defender-threat-explorer-manual-remediation.png"  lightbox="media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Screenshot of manual hunting in Office 365 Explorer by date.":::
+:::image type="content" source="media/microsoft-365-defender-threat-explorer-manual-remediation.png"  lightbox="media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Screenshot of manual hunting in Explorer (Threat Explorer) by date.":::
 
 Security teams can use Explorer to select emails in several ways:
 
 - Choose emails by hand: Use filters in various views. Select up to 100 emails to remediate.
 
-- Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details. Customers can submit maximum 200,000 emails from threat explorer.
+- Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details. Customers can submit maximum 200,000 emails from Explorer.
 
 - Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 200,000 emails.
 
@@ -79,7 +78,7 @@ Unified Action Center shows remediation actions for the past 30 days. Actions ta
 Open any remediation item to view details about it, including its remediation name, approval Id, Investigation Id, creation date, description, status, action source, action type, decided by, status. It also opens a side pane with action details, email cluster details, alert and Incident details.
 
 - *Open Investigation page* this opens up an admin Investigation that contains fewer details and tabs. It shows details like: related alert, entity selected for remediation, action taken, remediation status, entity count, logs, approver of action. This investigation keeps a track of investigation done by the admin manually and  contains details to selections made by the admin, hence is called admin action investigation. No need to act on the investigation and alert its already in approved state.
-- *Email count* Displays the number of emails submitted through Threat Explorer. These emails can be actionable or not actionable.
+- *Email count* Displays the number of emails submitted through Explorer. These emails can be actionable or not actionable.
 - *Action logs* Show the details of remediation statuses like successful, failed, and already in destination.
 
   :::image type="content" source="media/microsoft-365-defender-action-center-history-panel.png" lightbox="media/microsoft-365-defender-action-center-history-panel.png" alt-text="The Action Center with the Move to Inbox option open.":::
@@ -110,7 +109,7 @@ Open any remediation item to view details about it, including its remediation na
     - **Hard delete**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
 
   > [!NOTE]
-  > In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD) admins can take **Soft delete**, **Move to junk folder**,  **Move to deleted items**,  **Hard delete**,**Move to inbox** action,  **Delete sender's copy** and **Move to inbox** from qurantine folder are not availabe.
+  > In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD) admins can take the actions **Soft delete**, **Move to junk folder**, **Move to deleted items**, **Hard delete**, and **Move to inbox**. The actions **Delete sender's copy** and **Move to inbox** from qurantine folder aren't available.
   
   Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Explorer retention period for your organization.
 
@@ -145,9 +144,9 @@ Open any remediation item to view details about it, including its remediation na
 
   - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one that are already soft deleted. Now these emails won't be acted upon again, they'll just show as "already in destination", since no action was taken on them as they existed in the destination location.
 
-  - **New**: An *Already in destination* column has been added in the Action Log. This feature uses the latest delivery location in Threat Explorer to signal if the mail has already been remediated. *Already in destination* helps security teams understand the total number of messages that still need to be addressed.
+  - **New**: An *Already in destination* column has been added in the Action Log. This feature uses the latest delivery location in Explorer to signal if the mail has already been remediated. *Already in destination* helps security teams understand the total number of messages that still need to be addressed.
 
-Actions can only be taken on messages in Inbox, Junk, Deleted, and Soft Deleted folders of Threat Explorer. Here's an example of how the new column works. A *soft delete action* takes place on the message present in the Inbox, then the message is handled according to policies. The next time a soft delete is performed, this message will show under the column 'Already in destination' signaling it doesn't need to be addressed again.
+Actions can only be taken on messages in the Inbox, Junk, Deleted, and Soft Deleted folders of Explorer. Here's an example of how the new column works. A *soft delete action* takes place on the message present in the Inbox, then the message is handled according to policies. The next time a soft delete is performed, this message will show under the column 'Already in destination' signaling it doesn't need to be addressed again.
 
 Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox", that item was already removed from the mailbox. Sometimes there's a system error during remediation. In those cases, it's a good idea to retry the remediation action.
 
@@ -158,4 +157,3 @@ In case of remediating large batches of email, export the messages sent for reme
 :::image type="content" source="media/microsoft-365-defender-advanced-hunting-actions-pane.png" lightbox="media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="The Advanced Hunting, Take Actions panel with your choice of actions.":::
 
 Remediation mitigates threats, addresses suspicious emails, and helps keep an organization secure.
-
