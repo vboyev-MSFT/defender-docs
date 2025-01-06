@@ -42,6 +42,8 @@
       items:
       - name: Overview
         href: device-discovery.md
+      - name: MDE agent depolyment guide
+        href: mde-deployment-guide.md  
       - name: Discover and manage devices
         href: manage-devices-inventory.md
     - name: Review security initiatives       
