@@ -125,7 +125,7 @@ Read the announcement [Tech Community Blog: Defender for Endpoint is now availab
 
 ## Privacy controls
 
-Microsoft Defender for Endpoint on Android enables privacy controls for both administrators and end users, and includes controls for enrolled (MDM) and unenrolled (MAM) devices. Administrators can configure the privacy in the alert report while End Users can configure the information shared to their organization. For more information, see [privacy controls(MDM)](android-configure.md#privacy-controls) and [privacy controls (MAM)](android-configure-mam.md#configure-privacy-controls).
+Microsoft Defender for Endpoint on Android enables privacy controls for both administrators and end users, and includes controls for enrolled (MDM) and unenrolled (MAM) devices. Administrators can configure the privacy in the alert report while End Users can configure the information shared to their organization. For more information, see [privacy controls (MDM)](android-configure.md#privacy-controls) and [privacy controls (MAM)](android-configure-mam.md#configure-privacy-controls).
 
 ## Optional permissions and the ability to disable web protection
 
