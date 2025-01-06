@@ -35,6 +35,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 > [!NOTE]
 > In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
+> Microsoft 365 operated by 21Vianet is designed to meet the needs for secure, reliable, and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. 
 
 Whether a detected message is quarantined by default depends on the following factors:
 
@@ -99,6 +100,6 @@ How long quarantined messages or files are held in quarantine before they expire
 |Files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams (malware files).|30 days|No|Files quarantined in SharePoint or OneDrive are removed from quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.|
 |Messages in chats and channels quarantined by zero-hour auto protection (ZAP) for Microsoft Teams in Defender for Office 365|30 days|No|
 
-When a message expires from quarantine, you can't recover it.
+When the messages expire from quarantine after the retention period, the messages are permanently deleted and cannot be recovered.
 
 For more information about quarantine, see [Quarantine FAQ](quarantine-faq.yml).
