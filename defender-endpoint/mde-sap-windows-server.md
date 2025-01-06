@@ -4,7 +4,7 @@ description: Understand how Microsoft Defender for Endpoint with EDR and other a
 author: cgardin
 ms.author: cgardin
 manager: deniseb
-ms.date: 01/02/2025
+ms.date: 01/06/2025
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: ngp
@@ -81,12 +81,12 @@ Here's a list of SAP articles you can use as needed:
 - [2496239 - Ransomware / malware on Windows - SAP for Me](https://me.sap.com/notes/2496239)
 - [1497394 - Which files and directories should be excluded from an antivirus scan for SAP BusinessObjects Business Intelligence Platform products in Windows? - SAP for Me](https://me.sap.com/notes/1497394/E)
 
-> [!CAUTION]
-> Microsoft Defender for Endpoint on includes a feature called [Endpoint Data Loss Prevention](/purview/endpoint-dlp-learn-about) (Endpoint DLP). Endpoint DLP should not be activated on any Windows Server running NetWeaver, S4, Adobe Document Server, Archive Servers, TREX, LiveCache or Content Server. In addition, it is critical that Windows clients, such as a Windows laptop running Windows 11 with Endpoint DLP enabled, to never access a network share used by any SAP application. Depending on configuration and policies, it is possible for a Windows client PC to write DLP attributes onto a Network Share.   
+> [!IMPORTANT]
+> Microsoft Defender for Endpoint on includes a feature called [Endpoint Data Loss Prevention](/purview/endpoint-dlp-learn-about) (Endpoint DLP). Endpoint DLP should not be activated on any Windows Server running NetWeaver, S4, Adobe Document Server, Archive Servers, TREX, LiveCache or Content Server. In addition, it is critical that Windows clients, such as a Windows laptop running Windows 11 with Endpoint DLP enabled, to never access a network share used by any SAP application. Depending on configuration and policies, it is possible for a Windows client PC to write DLP attributes onto a Network Share.
 > 
-> Adobe Document Servers or Archive systems that write many files rapidly onto SMB shares and/or Interface File Transfer shares with DLP enabled can cause file corruption or "access denied" messages.   
-> 
-> Do not expose SAP file systems to external Windows client PCs, and do not activate Endpoint DLP on Windows Servers running SAP software. Do not allow Windows clients to access SAP server shares.   
+> Adobe Document Servers or Archive systems that write many files rapidly onto SMB shares and/or Interface File Transfer shares with DLP enabled can cause file corruption or "access denied" messages.
+>
+> Do not expose SAP file systems to external Windows client PCs, and do not activate Endpoint DLP on Windows Servers running SAP software. Do not allow Windows clients to access SAP server shares. Use Robocopy or a similar tool to copy Adobe Document or other interface files to a Corporate NAS solution.
 
 ## SAP applications on Windows Server: Top 10 recommendations
 
