@@ -49,7 +49,7 @@ On the top navigation you can:
 :::image type="content" source="media/atp-incident-queue.png" alt-text="The Incidents queue" lightbox="media/atp-incident-queue.png":::
 
 > [!TIP]
-> **Defender Boxed**, a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year, appears for a limited time during January and July of each year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
+> **Defender Boxed**, a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year, appears for a limited time during January and July of each year. Learn how you can share your [Defender Boxed](/defender-xdr/incident-queue#defender-boxed) highlights.
 
 ## Sort and filter the incidents queue
 
