@@ -60,7 +60,7 @@ To investigate insider risk management alerts in the Microsoft Defender portal, 
 
 Data sharing with other security solutions must be turned on in the **Data sharing** settings in Microsoft Purview Insider Risk Management. Turning on **Share user risk details with other security solutions** enables users with the correct permissions to review user risk details in the user entity pages in the Microsoft Defender portal. See [Share alert severity levels with other Microsoft security solutions](/purview/insider-risk-management-settings-dlp-sync#share-alert-severity-levels-with-other-microsoft-security-solutions) for more information.
 
-:::image type="content" source="/defender-xdr/media/insider-risk-alerts/irm-toggle-settings-smalls.png" alt-text="Highlighting the setting in the Microsoft Purview portal required for insider risk alerts to show in Defender XDR.":::
+:::image type="content" source="/defender-xdr/media/insider-risk-alerts/irm-toggle-settings-small.png" alt-text="Highlighting the setting in the Microsoft Purview portal required for insider risk alerts to show in Defender XDR.":::
 
 ## Permissions and roles
 
