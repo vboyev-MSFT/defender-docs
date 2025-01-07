@@ -4,7 +4,7 @@ description: With Microsoft Defender Antivirus now included in the Windows Secur
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: demmwalshh
+author: emmwalshh
 ms.author: ewalsh
 ms.custom: nextgen
 ms.reviewer: yongrhee

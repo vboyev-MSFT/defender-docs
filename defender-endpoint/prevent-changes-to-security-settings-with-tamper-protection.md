@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: conceptual
 author: emmwalshh
 ms.author: ewalsh
-ms.reviewer: yongrhee
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
