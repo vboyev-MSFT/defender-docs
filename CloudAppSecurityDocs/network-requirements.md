@@ -13,7 +13,7 @@ This article provides a list of ports and IP addresses you need to allow and all
 
 In order to stay up to date on IP ranges, it's recommended to refer to the following Azure service tags for Microsoft Defender for Cloud Apps services. The latest IP ranges are found in the service tag. For more information, see [Azure IP ranges](https://azureipranges.azurewebsites.net/).
 
-| Service tag name    |    Defender for Endpoint services included   |
+| Service tag name    |    Defender for Cloud Apps services included   |
 |:---|:---|
 | MicrosoftCloudAppSecurity | Portal access, Access and session controls, SIEM agent connection, App connector, Mail server, Log collector. |
 
