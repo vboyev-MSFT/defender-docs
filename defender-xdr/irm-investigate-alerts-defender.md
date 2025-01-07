@@ -89,11 +89,15 @@ For more information on these role groups, see [Enable permissions for insider r
 
 Insider risk management alerts related to a user are correlated to a single incident to ensure a holistic approach to incident response. This correlation allows SOC analysts to have a unified view of all alerts about a user coming from Microsoft Purview Insider Risk Management and various Defender products. Unifying all alerts also allows SOC analysts to view the details of devices involved in the alerts.
 
+:::image type="content" source="/defender-xdr/media/insider-risk-alerts/xdr-irm-incident-small.png" alt-text="Sample of an incident with insider risk alerts from Microsoft Purview Insider Risk Management." lightbox="/defender-xdr/media/insider-risk-alerts/xdr-irm-incident.png":::
+
 You can filter incidents by choosing Microsoft Purview Insider Risk Management under **Service source**.
 
 ### Alerts
 
-All insider risk management alerts are also visible in the Microsoft Defender portal’s alert queue. Filter these alerts by choosing Microsoft Purview Insider Risk Management under **Service source**.
+All insider risk management alerts are also visible in the Microsoft Defender portal's alert queue. Filter these alerts by choosing Microsoft Purview Insider Risk Management under **Service source**.
+
+:::image type="content" source="/defender-xdr/media/insider-risk-alerts/xdr-irm-alert-small.png" alt-text="Sample of an insider risk alerts from Microsoft Purview Insider Risk Management." lightbox="/defender-xdr/media/insider-risk-alerts/xdr-irm-alert.png":::
 
 Any updates made to an insider risk management alert in the Microsoft Purview or the Microsoft Defender portals are automatically reflected in both portals. These updates might include:
 
@@ -115,6 +119,10 @@ Use advanced hunting to further investigate insider risk events and behaviors. R
 |[AlertEvidence](advanced-hunting-alertevidence-table.md)|Insider risk management alerts are available as part of the AlertEvidence table, which contains information about entities associated with alerts from various Microsoft security solutions.|
 |DataSecurityBehaviors|This table contains insights into potentially suspicious user behavior that violates the default or customer-defined policies in Microsoft Purview.|
 |DataSecurityEvents|This table contains enriched events about user activities that violate the default or customer-defined policies in Microsoft Purview.|
+
+In the example below, we use the **DataSecurityEvents** table to investigate potentially suspicious user behavior. In this case, the user uploaded a file to Google Drive, which can be viewed as suspicious behavior if a company does not use support file uploads to Google Drive.
+
+:::image type="content" source="/defender-xdr/media/insider-risk-alerts/irm-adv-hunting-small.png" alt-text="Advanced hunting page showing a query using the tables related to insider risk behaviors and events." lightbox="/defender-xdr/media/insider-risk-alerts/irm-adv-hunting.png":::
 
 ## Integrate insider risk management data through Graph API
 
