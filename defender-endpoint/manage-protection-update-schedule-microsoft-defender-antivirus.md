@@ -6,8 +6,8 @@ search.appverid: met150
 ms.localizationpriority: medium
 ms.date: 12/20/2022
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: emmwalshh
+ms.author: ewalsh
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: deniseb
