@@ -67,9 +67,9 @@ Devices on your network must be running one of the supported operating systems. 
 ### Supported Windows versions
 
 > [!IMPORTANT]
-> Windows 11 Home devices that have been upgraded to one of the below supported editions might require you to run the following command before onboarding: 
-> `DISM /online /Add-Capability /CapabilityName:Microsoft.Windows.Sense.Client~~~~`. 
-> For more information about edition upgrades and features, see ([Features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true))
+> Windows 11 Home devices that are upgraded to a supported edition might require you to run the following command before onboarding: `DISM /online /Add-Capability /CapabilityName:Microsoft.Windows.Sense.Client~~~~`
+>
+> For more information about edition upgrades and features, see ([Windows features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true))
 
 Supported versions of Windows include:
 
