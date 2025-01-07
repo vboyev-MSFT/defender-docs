@@ -51,7 +51,7 @@ Attack surface reduction rules are categorized as one of two types:
 
 - **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you're evaluating the effect and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
 
-- **Other rules**: Rules that require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md)
+- **Other rules**: Rules that require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md).
 
 For the easiest method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
@@ -181,9 +181,9 @@ Toast notifications are generated for all rules in Block mode. Rules in any othe
 For rules with the "Rule State" specified:
 
 - ASR rules with `\ASR Rule, Rule State\` combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at cloud block level "High". 
-- Devices that not at the high cloud block level don't generate alerts for any `ASR Rule, Rule State` combinations
-- EDR alerts are generated for ASR rules in the specified states, for devices at cloud block level "High+"
-- Toast notifications occur in block mode only and for devices at cloud block level "High"
+- Devices that not at the high cloud block level don't generate alerts for any `ASR Rule, Rule State` combinations.
+- EDR alerts are generated for ASR rules in the specified states, for devices at cloud block level "High+".
+- Toast notifications occur in block mode only and for devices at cloud block level "High".
 
 | Rule name | Rule state | EDR alerts | Toast notifications |
 |---|---|---|---|
