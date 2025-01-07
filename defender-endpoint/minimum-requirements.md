@@ -62,7 +62,7 @@ Access to Defender for Endpoint is done through a browser. The following browser
 
 ## Hardware and software requirements
 
-Devices on your network must be running one of these editions. New features or capabilities are typically provided only on operating systems that haven't yet reached the end of their support lifecycle. For more information, see [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md). Microsoft recommends the installation of the latest available security patches for any operating system.
+Devices on your network must be running one of the supported operating systems. New features or capabilities are typically provided only on supported operating systems. For more information, see [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md). Microsoft recommends installing the latest available security patches for any operating system.
 
 ### Supported Windows versions
 
