@@ -95,7 +95,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
   > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md). 
    
   > [!NOTE]
-  > Distributions and versions that aren't explicitly listed are unsupported (even if they are derived from the officially supported distributions). 
+  > Distributions and versions that aren't explicitly listed are unsupported (even if they're derived from the officially supported distributions). 
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
   > Currently, Rocky and Alma distributions aren't supported in Microsoft Defender Vulnerability Management.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version agnostic. The minimal requirement for the kernel version to be `3.10.0-327` or later.
@@ -126,7 +126,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
     
   > [!NOTE]
   > Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
-  > If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or lower, then Audit framework (`auditd`) must be enabled on your system.
+  > If eBPF isn't supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or lower, then Audit framework (`auditd`) must be enabled on your system.
   > If you're using Auditd, then system events captured by rules added to `/etc/audit/rules.d/` adds to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux are tagged with the `mdatp` key.
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
