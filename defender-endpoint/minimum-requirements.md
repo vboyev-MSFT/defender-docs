@@ -123,15 +123,15 @@ To add anti-malware protection to these older operating systems, you can use [Sy
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
-> - [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> - [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) don't include server licenses. To onboard servers to those plans, you need another license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 > - If your organization is a small or medium-sized business, see [Microsoft Defender for Business requirements](/defender-business/mdb-requirements). 
 
 ### Hardware requirements
 
 The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they aren't in addition to the requirements for the operating system).
 
-- Cores: 2 minimum, 4 preferred
-- Memory: 1 GB minimum, 4 preferred
+- Cores: Two minimum, four preferred
+- Memory: One GB minimum, four preferred
 
 ### Network and data storage and configuration requirements
 
@@ -139,7 +139,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 > [!NOTE]
 >
-> - You cannot change your data storage location after the first-time setup.
+> - You can't change your data storage location after the first-time setup.
 > - Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
 #### IP stack
@@ -158,22 +158,22 @@ For more information on other proxy configuration settings, see [Configure devic
 
 The Defender for Endpoint agent depends on Microsoft Defender Antivirus to scan files and provide information about them.
 
-Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware solution or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware solution or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes into passive mode.
+When Microsoft Defender Antivirus isn't the active anti-malware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes into passive mode.
 
-If your organization has turned off Microsoft Defender Antivirus through Group Policy or other methods, devices that are onboarded must be excluded from the Group Policy.
+If your organization turns off Microsoft Defender Antivirus through Group Policy or other methods, devices that are onboarded must be excluded from the Group Policy.
 
-If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, configure Microsoft Defender Antivirus to run in passive mode or uninstall it. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you're onboarding servers and Microsoft Defender Antivirus isn't the active anti-malware on your servers, configure Microsoft Defender Antivirus to run in passive mode or uninstall it. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> Your regular Group Policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
+> Your regular Group Policy doesn't apply to tamper protection, and changes to Microsoft Defender Antivirus settings are ignored when tamper protection is on. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 ## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 
-If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
+If you're running Microsoft Defender Antivirus as the primary anti-malware product on your devices, the Defender for Endpoint agent successfully onboards.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus isn't disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a non-Microsoft anti-malware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus isn't disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## Related articles
 
