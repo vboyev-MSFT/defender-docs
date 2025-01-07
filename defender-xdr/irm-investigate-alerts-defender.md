@@ -122,7 +122,7 @@ Use advanced hunting to further investigate insider risk events and behaviors. R
 |DataSecurityBehaviors|This table contains insights into potentially suspicious user behavior that violates the default or customer-defined policies in Microsoft Purview.|
 |DataSecurityEvents|This table contains enriched events about user activities that violate the default or customer-defined policies in Microsoft Purview.|
 
-In the example below, we use the **DataSecurityEvents** table to investigate potentially suspicious user behavior. In this case, the user uploaded a file to Google Drive, which can be viewed as suspicious behavior if a company does not use support file uploads to Google Drive.
+In the example below, we use the **DataSecurityEvents** table to investigate potentially suspicious user behavior. In this case, the user uploaded a file to Google Drive, which can be viewed as suspicious behavior if a company doesn't support file uploads to Google Drive.
 
 :::image type="content" source="/defender-xdr/media/insider-risk-alerts/irm-adv-hunting-small.png" alt-text="Advanced hunting page showing a query using the tables related to insider risk behaviors and events." lightbox="/defender-xdr/media/insider-risk-alerts/irm-adv-hunting.png":::
 
