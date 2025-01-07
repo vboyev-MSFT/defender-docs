@@ -299,7 +299,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
           - Relaxed: Common modifications to the message header are tolerated. For example, header field line rewrapping, changes in unnecessary whitespace or empty lines, and changes in case for header fields. This is the default value.
           - Simple: No changes to the header fields are tolerated.
         - The _KeySize_ parameter specifies the bit size of the public key in the DKIM record:
-           - 1024 (this is the default value)
+           - 1024 (default)
            - 2048
 
           
