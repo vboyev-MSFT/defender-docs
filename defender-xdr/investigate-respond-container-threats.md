@@ -42,7 +42,7 @@ Users on AKS, EKS, and GKE platforms can take advantage of the cloud response ac
 
 |Required license|Actions|
 |---|---|
-|[Microsoft Defender for Containers](/azure/defender-for-cloud/defender-for-containers-introduction)|View container-related alerts </br>Isolate pod </br>Terminate pod|
+|[Microsoft Defender for Containers](/azure/defender-for-cloud/defender-for-containers-introduction)|View container-related alerts </br>View container-related data for investigation in advanced hunting </br>Isolate pod </br>Terminate pod|
 |[Microsoft Defender for Cloud Security Posture Management](/azure/defender-for-cloud/concept-cloud-security-posture-management)|View attack paths in the incident graph|
 |[Microsoft Security Copilot](/copilot/security/microsoft-security-copilot)|View and apply guided responses to investigate and remediate container threats|
 
