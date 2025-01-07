@@ -33,21 +33,18 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 
 ### Using the MDE Client Analyzer
 
-1. Download the [MDE Client Analyzer ](/defender-endpoint/download-client-analyzer)
+1. Download the [MDE Client Analyzer ](/defender-endpoint/download-client-analyzer).
 
-1. Run the MDE Client Analyzer using [Live Response or locally ](/defender-endpoint/run-analyzer-windows)
+1. Run the MDE Client Analyzer using [Live Response or locally ](/defender-endpoint/run-analyzer-windows).
 
-> [!TIP]
-> Before starting the trace, please make sure that the issue is reporducible. Additionally, close any applications that do not contribute to the reproduction of the issue.
+   > [!TIP]
+   > Before starting the trace, please make sure that the issue is reproducible. Additionally, close any applications that do not contribute to the reproduction of the issue.
 
 1. Run the MDE Client Analyzer with the -c and -v switches
 
-
-
-
-```powershell
-C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
-```
+   ```powershell
+   C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
+   ```
 
 ### Manually
 
@@ -63,14 +60,14 @@ C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
       
    1. Select **Apply**.
       
-![Screenshot showing the Remove MOTW page.](media/procmon-motw.png)
+      ![Screenshot showing the Remove MOTW page.](media/procmon-motw.png)
 
 1. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
 
 1. Copy **ProcMon.exe** to the Windows client or Windows server you're troubleshooting.
 
-> [!TIP] 
-> Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
+   > [!TIP] 
+   > Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
 
 1. You can launch ProcMon in two ways.
 
@@ -108,29 +105,29 @@ C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
       
 1. After completing step 6, set filters by selecting **OK**. You can filter the results after the capture is complete.
 
-![Screenshot showing the page where System Exclude is chosen as the Filter out Process Name.](media/procmon-filter-options.png)
+   ![Screenshot showing the page where System Exclude is chosen as the Filter out Process Name.](media/procmon-filter-options.png)
 
 1. To start the capture, select the magnifying glass icon again.
 
 1. Reproduce the problem.
 
-> [!TIP] 
-> Wait for the problem to be reproduced, then note the timestamp when the trace begins.
+   > [!TIP] 
+   > Wait for the problem to be reproduced, then note the timestamp when the trace begins.
 
 1. After capturing two to four minutes of process activity during high CPU usage, stop the capture by clicking the magnifying glass icon.
 
-2. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
+1. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
-![Screenshot showing the save settings page](media/procmon-savesettings1.png)
+   ![Screenshot showing the save settings page](media/procmon-savesettings1.png)
 
 1. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
 
-  - `%ComputerName%` is the device name
-  - `MMDDYEAR` is the month, day, and year
-  - `Repro_of_issue` is the name of the issue you're trying to reproduce
+   - `%ComputerName%` is the device name
+   - `MMDDYEAR` is the month, day, and year
+   - `Repro_of_issue` is the name of the issue you're trying to reproduce
     
-> [!TIP] 
-> If you have a working system, you might want to get a sample log to compare.
+   > [!TIP] 
+   > If you have a working system, you might want to get a sample log to compare.
 
-1. Zip the `.pml` file and submit it to Microsoft support.
+1. Zip the `.pml` file and submit it to Microsoft Support.
 
