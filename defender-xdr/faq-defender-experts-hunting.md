@@ -1,7 +1,7 @@
 ---
-title: How to subscribe to Microsoft Defender Experts for Hunting
+title: FAQ's related to Microsoft Defender Experts for Hunting service
 ms.reviewer:
-description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you onboard, receive, and set up Defender experts notifications.
+description: Frequently asked questions related to the Microsoft Defender Experts for hunting service
 ms.service: defender-experts-for-hunting
 ms.author: vpattnaik
 author: vpattnai
