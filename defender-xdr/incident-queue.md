@@ -86,7 +86,7 @@ You can do the following actions in the series of cards that appear in Defender 
 
 To reopen Defender Boxed, go to the Incidents queue and then select **Your Defender Boxed** on the right side of the pane.
 
-:::image type="content" source="/defender/media/defender-boxed/defender-boxed-incident-small.png" alt-text="Screenshot of Defender Boxed slide with the save option highlighted." lightbox="/defender/media/defender-boxed/defender-boxed-incident.png":::
+:::image type="content" source="/defender/media/defender-boxed/defender-boxed-incident-small.png" alt-text="Screenshot of the incident queue where the Defender Boxed is highlighted." lightbox="/defender/media/defender-boxed/defender-boxed-incident.png":::
 
 ## Filters <a name="available-filters"></a>
 
