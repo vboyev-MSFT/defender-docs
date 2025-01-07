@@ -15,13 +15,13 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 01/02/2025
+ms.date: 01/07/2025
 ---
 
 # Microsoft Defender for Endpoint on Linux
 
 > [!TIP]
-> We are excited to share that Microsoft Defender for Endpoint on Linux now extends support for ARM64-based Linux servers in preview! For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md).
+> We're excited to share that Microsoft Defender for Endpoint on Linux now extends support for ARM64-based Linux servers in preview! For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md).
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -95,9 +95,9 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
   > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md). 
    
   > [!NOTE]
-  > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+  > Distributions and versions that aren't explicitly listed are unsupported (even if they are derived from the officially supported distributions). 
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
-  > Microsoft Defender Vulnerability Management is not supported on Rocky and Alma currently.
+  > Currently, Rocky and Alma distributions are not supported in Microsoft Defender Vulnerability Management.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
   
   > [!CAUTION]
