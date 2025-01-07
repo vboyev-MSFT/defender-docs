@@ -33,6 +33,7 @@ You can also get product updates and important notifications through the [messag
 ## January 2025
 
 - (Preview) Users with provisioned access to Microsoft Purview Insider Risk Management can now view and manage insider risk management alerts and hunt for insider risk management events and behaviors in the Microsoft Defender portal. For more information, see [Investigate insider risk threats in the Microsoft Defender portal with insights from Microsoft Purview Insider Risk Management](irm-investigate-alerts-defender.md).
+- **Defender Boxed** is available for a limited time in January and July of each year. This series of slides highlights your organization’s security successes, improvements, and response actions in the Microsoft Defender portal for the past six months/year. To learn how you can share your security operations team’s achievements, see [Defender Boxed](incident-queue.md#defender-boxed).
 
 ## December 2024
 
@@ -71,14 +72,10 @@ You can also get product updates and important notifications through the [messag
     - In the [query resources report](advanced-hunting-limits.md#find-resource-heavy-queries), you can view any of the queries by selecting the three dots on the query row and selecting **Open in query editor**. 
     - For device entities involved in incidents or alerts, **Go hunt** is also available as one of the options after selecting the three dots on the device side panel.
 
-
-
-
 ## August 2024
 
 - (Preview) Microsoft Sentinel data is now available with Defender XDR data in Microsoft Defender multitenant management. Only one Microsoft Sentinel workspace per tenant is currently supported in the Microsoft unified security operations platform. So, Microsoft Defender multitenant management shows security information and event management (SIEM) data from one Microsoft Sentinel workspace per tenant. For more information, see [Microsoft Defender multitenant management](mto-overview.md) and [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal).
 - To ensure a smooth experience while navigating the Microsoft Defender portal, configure your network firewall by adding the appropriate addresses to your allow list. For more information, see [Network firewall configuration for Microsoft Defender XDR](m365d-enable.md#configure-your-network-firewall).
-
 
 ## July 2024
 
@@ -104,8 +101,6 @@ You can also get product updates and important notifications through the [messag
 - (GA) The **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)** table in advanced hunting is now generally available. Use this table to get information about [Safe Links](/defender-office-365/safe-links-about) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps.
 
 - (GA) You can now **release or move email messages from quarantine** back to the user's inbox directly from [Take actions in advanced hunting](advanced-hunting-take-action.md#take-various-actions-on-emails) and in [custom detections](custom-detection-rules.md#actions-on-emails). This allows security operators to manage false positives more efficiently and without losing context. 
-
-
 
 ## June 2024
 
