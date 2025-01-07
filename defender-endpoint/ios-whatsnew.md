@@ -42,7 +42,7 @@ Recommendation cards prominently display any active alerts, ensuring you stay in
 
 The following screenshot is an example of what the user sees in their dashboard:
 
-
+:::image type="content" source="media/ios-whatsnew/ios-dashboard.png" alt-text="Screenshot showing the user's dashboard.":::
 
 **Recommendation cards for alerts**
 
