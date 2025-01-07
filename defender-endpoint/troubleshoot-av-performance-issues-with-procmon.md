@@ -23,9 +23,7 @@ ai-usage: human-only
 
 ## Capture process logs using Process Monitor
 
-Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this tool to capture the performance issue (e.g. high cpu) as it is occurring.
-
-This is also especially useful when troubleshooting various application compatibility scenarios.
+Process Monitor (ProcMon) is an advanced monitoring tool that provides real-time data on processes. It can be used to capture performance issues, such as high CPU usage, and to monitor application compatibility scenarios as they occur.
 
 There are two ways to capture a Process Monitor (ProcMon) trace:
 
@@ -40,9 +38,9 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 1. Run the MDE Client Analyzer using [Live Response or locally ](/defender-endpoint/run-analyzer-windows)
 
 > [!TIP]
-> Before starting the trace, please make sure that the issue is reproducing.  And have as many apps closed that do not contribute to the repro.
+> Before starting the trace, please make sure that the issue is reporducible. Additionally, close any applications that do not contribute to the reproduction of the issue.
 
-3. Run the MDE Client Analyzer with the -c and -v switches
+1. Run the MDE Client Analyzer with the -c and -v switches
 
 
 
@@ -71,17 +69,18 @@ C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
 
 1. Copy **ProcMon.exe** to the Windows client or Windows server you're troubleshooting.
 
-1. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
+> [!TIP] 
+> Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
 
 1. You can launch ProcMon in two ways.
 
    1. Right-click **ProcMon.exe** and select **Run as administrator**.
       
-      Since logging starts automatically, select the magnifying glass icon to stop the current capture or use the keyboard shortcut **Ctrl+E**.
+      Since logging starts automatically, stop the capture by selecting the magnifying glass icon or pressing  **Ctrl+E**.
       
       ![Screenshot showing the magnifying glass icon.](media/procmon-magglass.png)
       
-      To verify that you've stopped the capture, check if the magnifying glass icon now appears with a red X.
+      To confirm the capture has stopped, look for a red X on the magnifying glass icon.
       
       ![Screenshot showing a red slash.](media/procmon-magglass-stop.png)
       
@@ -91,7 +90,7 @@ C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
       
       Or use the keyboard shortcut **Ctrl+X**.
       
-   1. The second way is to run the **command line** as admin, then from the Process Monitor path, run:
+   1. Run the **command line** as admin, then from the Process Monitor path, run:
       
       ![Screenshot showing the cmd procmon.](media/cmd-procmon.png)
       
@@ -102,13 +101,12 @@ C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
        Procmon.exe /AcceptEula /Noconnect /Profiling
       ```
       
-      **Tip**
-      
-      Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
+     > [!TIP]
+     > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
       
       ![Screenshot showing the page with Procmon minimized.](media/procmon-minimize.png)
       
-1. After following one of the procedures in step 6, you'll next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
+1. After completing step 6, set filters by selecting **OK**. You can filter the results after the capture is complete.
 
 ![Screenshot showing the page where System Exclude is chosen as the Filter out Process Name.](media/procmon-filter-options.png)
 
@@ -116,13 +114,12 @@ C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd -c -v
 
 1. Reproduce the problem.
 
-**Tip**
+> [!TIP] 
+> Wait for the problem to be reproduced, then note the timestamp when the trace begins.
 
-Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
+1. After capturing two to four minutes of process activity during high CPU usage, stop the capture by clicking the magnifying glass icon.
 
-1. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
-
-1. To save the capture with a unique name and with the `.pml` format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
+2. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
 ![Screenshot showing the save settings page](media/procmon-savesettings1.png)
 
@@ -132,9 +129,8 @@ Wait for the problem to be fully reproduced, then take note of the timestamp whe
   - `MMDDYEAR` is the month, day, and year
   - `Repro_of_issue` is the name of the issue you're trying to reproduce
     
-**Tip**
-
-If you have a working system, you might want to get a sample log to compare.
+> [!TIP] 
+> If you have a working system, you might want to get a sample log to compare.
 
 1. Zip the `.pml` file and submit it to Microsoft support.
 
