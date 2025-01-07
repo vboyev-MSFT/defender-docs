@@ -30,8 +30,8 @@ search.appverid: met150
 There are some minimum requirements for onboarding devices to Defender for Endpoint. This article describes licensing, hardware and software requirements, and other configuration settings needed to onboard devices.
 
 > [!TIP]
-> - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
-> - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - For information about the latest enhancements in Defender for Endpoint, see [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - For information about how Defender for Endpoint demonstrates industry-leading optics and detection capabilities, see [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 > - If you're looking for endpoint protection for small and medium-sized businesses, see [Microsoft Defender for Business](/defender-business/mdb-overview) and [Defender for Business requirements](/defender-business/mdb-requirements).
 
 ## Licensing requirements
