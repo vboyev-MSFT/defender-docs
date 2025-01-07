@@ -34,7 +34,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Tamper protection helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage the tamper protection for your organization in the [Intune admin center](https://intune.microsoft.com). Or, you can use [Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure). With Intune or Configuration Manager, you can perform the following tasks:
+Tamper protection helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage the tamper protection feature for your organization in the [Intune admin center](https://intune.microsoft.com). Or, you can use [Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure). With Intune or Configuration Manager, you can perform the following tasks:
 
 - [Turn tamper protection on (or off) for some or all devices](#turn-tamper-protection-on-or-off-in-microsoft-intune). 
 - [Protect Microsoft Defender Antivirus exclusions from tampering](#tamper-protection-for-antivirus-exclusions) (certain requirements must be met).
@@ -42,9 +42,9 @@ Tamper protection helps protect certain [security settings](prevent-changes-to-s
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, make sure to set [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to `true` on devices.
 >
-> When tamper protection is turned on, [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) can't be changed. To avoid breaking management experiences, including Intune (and [Configuration Manager](manage-tamper-protection-configuration-manager.md)), keep in mind that changes to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. Depending on your particular scenario, you have several options available: 
+> When tamper protection is turned on, [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) can't be changed. To avoid breaking management experiences, including Intune (and [Configuration Manager](manage-tamper-protection-configuration-manager.md)), keep in mind that changes to tamper-protected settings might appear to succeed but are blocked by tamper protection. Depending on your particular scenario, you have several options available: 
 >
-> - If you must make changes to a device which have been blocked by tamper protection, we recommend using [troubleshooting mode](enable-troubleshooting-mode.md) to temporarily disable tamper protection on the device. After troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+> - If you must make changes to a device, and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](enable-troubleshooting-mode.md) to temporarily disable tamper protection on the device. After the troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 >
 > - You can use Intune or [Configuration Manager](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. 
 >
