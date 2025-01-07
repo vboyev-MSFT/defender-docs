@@ -180,10 +180,10 @@ Toast notifications are generated for all rules in Block mode. Rules in any othe
 
 For rules with the "Rule State" specified:
 
-- ASR rules with `\ASR Rule, Rule State\` combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at cloud block level "High". 
-- Devices that not at the high cloud block level don't generate alerts for any `ASR Rule, Rule State` combinations.
-- EDR alerts are generated for ASR rules in the specified states, for devices at cloud block level "High+".
-- Toast notifications occur in block mode only and for devices at cloud block level "High".
+- ASR rules with `\ASR Rule, Rule State\` combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at cloud block level "High"
+- Devices that not at the high cloud block level don't generate alerts for any `ASR Rule, Rule State` combinations
+- EDR alerts are generated for ASR rules in the specified states, for devices at cloud block level "High+"
+- Toast notifications occur in block mode only and for devices at cloud block level "High"
 
 | Rule name | Rule state | EDR alerts | Toast notifications |
 |---|---|---|---|
