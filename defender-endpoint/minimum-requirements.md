@@ -94,7 +94,7 @@ Supported versions of Windows include:
   - Windows Server 2022
   - Windows Server 2022 core edition
 - Azure Virtual Desktop
-- Windows 365 running one of the above operating systems/versions
+- Windows 365 running one of the previously listed operating systems/versions
 
 The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent) / [Microsoft Monitoring Agent](update-agent-mma-windows.md) (MMA) to work with Defender for Endpoint:
 
@@ -107,7 +107,7 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 > [!NOTE]
 > Make sure to [stay up to date with the Microsoft Monitoring Agent](update-agent-mma-windows.md) (MMA, also known as the Log Analytics or Azure Monitor agent) to avoid service interruptions. 
 
-To add antimalware protection to these older operating systems, you can use [System Center Endpoint Protection](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients). 
+To add anti-malware protection to these older operating systems, you can use [System Center Endpoint Protection](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients). 
 
 ### Other supported operating systems
 
@@ -118,8 +118,8 @@ To add antimalware protection to these older operating systems, you can use [Sys
 - [iOS](microsoft-defender-endpoint-ios.md)
 
 > [!NOTE]
-> - You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint.
-> - While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability. 
+> - Make sure to confirm that the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint.
+> - Although Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability. 
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
