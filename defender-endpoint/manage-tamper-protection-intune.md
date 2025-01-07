@@ -44,7 +44,7 @@ Tamper protection helps protect certain [security settings](prevent-changes-to-s
 >
 > When tamper protection is turned on, [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) can't be changed. To avoid breaking management experiences, including Intune (and [Configuration Manager](manage-tamper-protection-configuration-manager.md)), keep in mind that changes to tamper-protected settings might appear to succeed but are blocked by tamper protection. Depending on your particular scenario, you have several options available: 
 >
-> - If you must make changes to a device, and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](enable-troubleshooting-mode.md) to temporarily disable tamper protection on the device. After the troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+> - If you must make changes to a device, and the tamper protection feature blocks those changes, we recommend using [troubleshooting mode](enable-troubleshooting-mode.md) to temporarily disable tamper protection on the device. After the troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 >
 > - You can use Intune or [Configuration Manager](manage-tamper-protection-configuration-manager.md) to exclude devices from tamper protection. 
 >
