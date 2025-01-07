@@ -52,10 +52,7 @@ The structure of the dashboard has been updated to include a recommendation card
 |--|--|
 | :::image type="content" source="media/ios-whatsnew/ios-network-protection-unsafe-connection.png" alt-text="Screenshot of a card indicating an unsafe network connection."::: | **Network protection** <br/>The user is prompted to connect to a secure network. |
 | :::image type="content" source="media/ios-whatsnew/ios-web-protection.png" alt-text="Screenshot of a card prompting the user to turn on web protection."::: | **Web protection** <br/>The user is prompted to turn on web protection. |
-
-
-
-![User's image](media/ios-whatsnew/image5.png)
+| :::image type="content" source="media/ios-whatsnew/ios-update.png" alt-text="Screenshot of a card telling the user an iOS update is available."::: | **Device health** <br/>The user is prompted to update their device. |
 
 **Feature tiles**
 
