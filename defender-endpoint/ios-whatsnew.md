@@ -4,7 +4,7 @@ description: Learn about the major changes for previous versions of Microsoft De
 ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
-ms.reviewer: sunasing
+ms.reviewer: sunasing; denishdonga
 ms.localizationpriority: medium
 ms.date: 01/07/2025
 manager: deniseb
