@@ -43,13 +43,13 @@ In the following screenshot, you can see the message: **Threat service has stopp
 
 :::image type="content" source="media/virus-threat-protection-2.png" alt-text="Screenshot of threat service has stopped.":::  
 
-In the following screenshot, you can see the message: **Unexpected error. Sorry, we ran into a problem. Please try again.** <br> Click **Close**.
+In the following screenshot, you can see the message: **Unexpected error. Sorry, we ran into a problem. Please try again.** <br> Select **Close**.
 
 :::image type="content" source="media/unexpected-error.png" alt-text="Screenshot of unexpected error." lightbox="media/unexpected-error.png":::  
 
 ## Events
 
-You may see the following events in the *Windows Defender – Operational* event log:
+You might see the following events in the *Windows Defender – Operational* event log:
 
 ### Event 5007
 
@@ -71,7 +71,7 @@ Microsoft Defender Antivirus Real-time Protection scanning for malware and other
 
 ## Resolution
 
-The following steps will help to resolve the issue:
+The following steps help to resolve the issue:
 
 1. Check the services and filter drivers for Microsoft Defender Antivirus.
 
@@ -92,7 +92,7 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
 
 2. Download and run the [Microsoft Safety Scanner](safety-scanner-download.md) to try ruling out any malware.
 
-3. If you are trying to use Microsoft Defender Antivirus as your primary antivirus, make sure to uninstall the third-party antivirus software.
+3. If you're trying to use Microsoft Defender Antivirus as your primary antivirus, make sure to uninstall the third-party antivirus software.
 
 4. Remove the **Security Intelligence** and **engine**.
 
