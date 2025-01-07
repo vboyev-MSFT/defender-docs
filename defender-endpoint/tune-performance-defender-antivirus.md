@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.date: 09/20/2024
+ms.date: 01/07/2025
 manager: deniseb
 ms.collection: 
 - m365-security
@@ -91,7 +91,7 @@ To start recording system events, open PowerShell in administrator mode and perf
 
 4. Analyze the results using the performance analyzer's `Get-MpPerformanceReport` parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top three files affecting performance.
 
-   For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
+   For more information on command-line parameters and options, see the [New-MpPerformanceRecording](/powershell/module/defenderperformance/new-mpperformancerecording)   and [Get-MpPerformanceReport](/powershell/module/defenderperformance/get-mpperformancereport).
 
 > [!NOTE]
 > When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", run the following command to stop the existing trace with the new command: `wpr -cancel -instancename MSFT_MpPerformanceRecording`.
