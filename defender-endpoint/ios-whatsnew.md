@@ -56,11 +56,13 @@ The structure of the dashboard has been updated to include a recommendation card
 
 **Feature tiles**
 
-We have enhanced the Current enterprise Dashboard UX and have presented the features in the form of Tile View. 
+We have enhanced the current enterprise dashboard experience, featuring a new tile view. The following table lists some examples of tiles:
 
-Below are the examples of how the features are presented in form of Tiles.
+| Tile | Description |
+|--|--|
+| :::image type="content" source="media/ios-whatsnew/ios-tile-network.png" alt-text="Screenshot of the network protection tile."::: | **Network protection** <br/>The user sees whether or not their connection is secure. |
+| 
 
-![User's image](media/ios-whatsnew/image8.png)![User's image](media/ios-whatsnew/image9.png)![User's image](media/ios-whatsnew/image10.png)
 
 ## Defender for Endpoint on iOS now supports iOS/iPadOS 16.x as the minimum version
 
