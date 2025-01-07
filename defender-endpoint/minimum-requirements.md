@@ -71,6 +71,8 @@ Devices on your network must be running one of the supported operating systems. 
 > `DISM /online /Add-Capability /CapabilityName:Microsoft.Windows.Sense.Client~~~~`. 
 > For more information about edition upgrades and features, see ([Features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true))
 
+Supported versions of Windows include:
+
 - Windows 11 Enterprise
 - Windows 11 IoT Enterprise
 - Windows 11 Education
@@ -103,7 +105,7 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 - Windows Server 2008 R2 SP1
 
 > [!NOTE]
-> Ensure you [stay up to date with the Microsoft Monitoring Agent](update-agent-mma-windows.md) (MMA, also known as the Log Analytics or Azure Monitor agent) to avoid service interruptions. 
+> Make sure to [stay up to date with the Microsoft Monitoring Agent](update-agent-mma-windows.md) (MMA, also known as the Log Analytics or Azure Monitor agent) to avoid service interruptions. 
 
 To add antimalware protection to these older operating systems, you can use [System Center Endpoint Protection](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients). 
 
