@@ -95,6 +95,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
   > Support for Microsoft Defender for Endpoint on Linux for ARM64-based Linux devices is now in preview. For more information, see [Microsoft Defender for Endpoint on Linux for ARM64-based devices (preview)](mde-linux-arm.md). 
    
   > [!NOTE]
+  > The workstation versions of these distributions are unsupported.
   > Distributions and versions that aren't explicitly listed are unsupported (even if they're derived from the officially supported distributions). 
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
   > Currently, Rocky and Alma distributions aren't supported in Microsoft Defender Vulnerability Management.
