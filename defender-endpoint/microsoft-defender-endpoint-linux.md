@@ -97,11 +97,11 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
   > [!NOTE]
   > Distributions and versions that aren't explicitly listed are unsupported (even if they are derived from the officially supported distributions). 
   > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
-  > Currently, Rocky and Alma distributions are not supported in Microsoft Defender Vulnerability Management.
+  > Currently, Rocky and Alma distributions aren't supported in Microsoft Defender Vulnerability Management.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version agnostic. The minimal requirement for the kernel version to be `3.10.0-327` or later.
   
   > [!CAUTION]
-  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system that use `fanotify` in blocking mode, applications are listed in the `conflicting_applications` field of the `mdatp health` command output. The Linux **FAPolicyD** feature uses `fanotify` in blocking mode, and is therefore unsupported when running Defender for Endpoint in active mode. You can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality Real Time Protection Enabled to [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
+  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions isn't supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system that use `fanotify` in blocking mode, applications are listed in the `conflicting_applications` field of the `mdatp health` command output. The Linux **FAPolicyD** feature uses `fanotify` in blocking mode, and is therefore unsupported when running Defender for Endpoint in active mode. You can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality Real Time Protection Enabled to [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
   
 - List of supported filesystems for RTP, Quick, Full, and Custom Scan.
 
@@ -127,7 +127,7 @@ Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint det
   > [!NOTE]
   > Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
   > If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or lower, then Audit framework (`auditd`) must be enabled on your system.
-  > If you are using Auditd, then system events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
+  > If you're using Auditd, then system events captured by rules added to `/etc/audit/rules.d/` adds to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux are tagged with the `mdatp` key.
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
