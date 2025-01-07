@@ -66,7 +66,7 @@ The **isolate pod** response action supports Kubernetes cluster version 1.27 and
 
 The **isolate pod** response action requires a network policy enforcer for your Kubernetes cluster. The following documentation provides specific steps on how to install and check network policies depending on your platform:
 
-- Azure Kubernetes Service: [Secure traffic between pods by using network policies in AKS](azure/aks/use-network-policies)
+- Azure Kubernetes Service: [Secure traffic between pods by using network policies in AKS](/azure/aks/use-network-policies)
 - Google Kubernetes Engine: [Control communication between Pods and Services using network policies](https://cloud.google.com/kubernetes-engine/docs/how-to/network-policy)
 - Amazon Kubernetes Engine: [Limit pod traffic with Kubernetes network policies](https://docs.aws.amazon.com/eks/latest/userguide/cni-network-policy.html)
 
@@ -170,7 +170,7 @@ The results should mention any of the specified plugins in the network policy re
 1. Navigate to your cluster in AWS Cloud Portal. 
 2. Select **CloudShell** on the top-right corner. A Cloud Shell session opens at the bottom of your browser, which provides a command-line interface to manage your AWS resources.
 3. Connect to your cluster by running the following command:</br></br>
-    **aws eks --region <cluster region> update-kubeconfig --name <cluster name>**
+    **aws eks --region &lt;cluster region&gt; update-kubeconfig --name &lt;cluster name&gt;**
    > [!NOTE]
    > Ensure that the aws-node is deleted or disabled for the Calico and Cilium plugins.
 
@@ -178,7 +178,7 @@ The results should mention any of the specified plugins in the network policy re
 
 You need to confirm that the target pod's state is active or valid. To check if the pod is active, run the following command in the Cloud Shell:
 
-  **kubectl get pod <pod-name>**
+  **kubectl get pod &lt;pod-name&gt;**
 
 ## See also
 
