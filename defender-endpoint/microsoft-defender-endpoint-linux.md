@@ -147,8 +147,8 @@ You can use one of the following methods to deploy Microsoft Defender for Endpoi
 If you experience any installation failures, see [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 > [!IMPORTANT]
-> Installing Microsoft Defender for Endpoint in any location other than the default install path is not supported.
-> Microsoft Defender for Endpoint on Linux creates an `mdatp` user with random UID and GID. If you want to control the UID and GID, create an `mdatp` user prior to installation using the  `/usr/sbin/nologin` shell option. Here's an example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
+> Installing Microsoft Defender for Endpoint in any location other than the default install path isn't supported.
+> Microsoft Defender for Endpoint on Linux creates an `mdatp` user with random UID and GID. If you want to control the UID and GID, create an `mdatp` user before installation using the  `/usr/sbin/nologin` shell option. Here's an example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
 
 ### External package dependency
 
@@ -159,16 +159,16 @@ If the Microsoft Defender for Endpoint installation fails due to missing depende
 - For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, and `mde-netfilter`
 
 > [!NOTE]
-> Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
-> If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or lower, the following additional dependency on the auditd package exists for mdatp:
+> Beginning with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology.
+> If eBPF isn't supported on your machines, or if there are specific requirements to remain on Auditd, and your machines are using Defender for Endpoint on Linux version `101.24072.0001` or older, the following additional dependency on the auditd package exists for mdatp:
 > - The mdatp RPM package requires `audit`, `semanage`.
-> - For DEBIAN the mdatp package requires `auditd`.
-> - For Mariner the mdatp package requires `audit`.
+> - For DEBIAN, the mdatp package requires `auditd`.
+> - For Mariner, the mdatp package requires `audit`.
 
 The`mde-netfilter` package also has the following package dependencies:
 
-- For DEBIAN the mde-netfilter package requires `libnetfilter-queue1`, and `libglib2.0-0`
-- For RPM the mde-netfilter package requires `libmnl`, `libnfnetlink`, `libnetfilter_queue`, and `glib2`
+- For DEBIAN, the mde-netfilter package requires `libnetfilter-queue1`, and `libglib2.0-0`
+- For RPM, the mde-netfilter package requires `libmnl`, `libnfnetlink`, `libnetfilter_queue`, and `glib2`
 
 ### Configuring Exclusions
 
@@ -186,8 +186,8 @@ Defender for Endpoint on Linux can connect through a proxy server by using the f
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs. For transparent proxies, no another configuration is needed for Defender for Endpoint. For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).
 
 > [!WARNING]
-> PAC, WPAD, and authenticated proxies are not supported. Ensure that only a static proxy or transparent proxy is being used.
-> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint on Linux to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
+> PAC, WPAD, and authenticated proxies aren't supported. Ensure that only a static proxy or transparent proxy is being used.
+> SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint on Linux to the relevant URLs without interception. Adding your interception certificate to the global store won't allow for interception.
 
 For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
 
