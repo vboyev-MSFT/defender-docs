@@ -61,7 +61,8 @@ We have enhanced the current enterprise dashboard experience, featuring a new ti
 | Tile | Description |
 |--|--|
 | :::image type="content" source="media/ios-whatsnew/ios-tile-network.png" alt-text="Screenshot of the network protection tile."::: | **Network protection** <br/>The user sees whether or not their connection is secure. |
-| :::image type="content" source="media/ios-whatsnew/ios-tile-web-protection.png" alt-text="Screenshot of the web protection tile."::: | The user sees their current status of web protection. If it's not enabled, the tile indicates action is needed. |
+| :::image type="content" source="media/ios-whatsnew/ios-tile-web-protection.png" alt-text="Screenshot of the web protection tile."::: | **Web protection** <br/>The user sees their current status of web protection. If it's not enabled, the tile indicates action is needed. |
+| :::image type="content" source="media/ios-whatsnew/ios-tile-device-health.png" alt-text="Screenshot of the device health tile."::: | **Device health** <br/>The user sees their device health status. If an iOS update is available, the tile indicates that action is needed. |
 
 
 ## Defender for Endpoint on iOS now supports iOS/iPadOS 16.x as the minimum version
