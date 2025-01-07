@@ -4,8 +4,9 @@ description: Describes the procedure to tune the performance of Microsoft Defend
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: emmwalshh
+ms.author: ewalsh
+ms.reviewer: yongrhee
 ms.date: 09/20/2024
 manager: deniseb
 ms.collection: 
