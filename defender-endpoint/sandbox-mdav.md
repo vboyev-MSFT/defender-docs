@@ -69,7 +69,7 @@ You can follow these steps to enable sandboxing by setting a machine-wide enviro
     setx /M MP_FORCE_USE_SANDBOX 1  
     ```
 
-    :::image type="content" source="media/enable-sandbox.png" alt-text="Screenshot that shows Windows PowerShell tool for admins with cmdlet details to enable sanbox.":::
+    :::image type="content" source="media/enable-sandbox.png" alt-text="Screenshot that shows Windows PowerShell tool for admins with cmdlet details to enable sandbox.":::
 
 2. Restart the device. Once you've restarted, you'll see a new process besides MsMpEng.exe that is `MsMpEngCP.exe` in the following folders:
    
