@@ -9,7 +9,6 @@ ms.localizationpriority: medium
 ms.date: 08/21/2023
 author: emmwalshh
 ms.author: ewalsh
-ms.reviewer: yongrhee
 ms.topic: conceptual
 ms.custom: nextgen
 ms.collection: 
