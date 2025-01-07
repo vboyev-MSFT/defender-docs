@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 12/15/2024
+ms.date: 01/17/2025
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/defender-xdr/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 - <a href="https://learn.microsoft.com/unified-secops-platform/" target="_blank">Microsoft's unified security operations platform</a>
@@ -58,7 +58,9 @@ To investigate insider risk management alerts in the Microsoft Defender portal, 
 - Confirm your Microsoft 365 subscription supports insider risk management access. Know more about [subscription and licensing](/purview/insider-risk-management-configure#subscriptions-and-licensing).
 - Confirm your access to Microsoft Defender XDR. See [Microsoft Defender XDR licensing requirements](prerequisites.md#licensing-requirements).
 
-Data sharing with other security solutions must be turned on in the **Data sharing** settings in Microsoft Purview Insider Risk Management. Turning on **Share user risk details with other security solutions** allows users with the correct permissions to review user risk details in the user entity pages in the Microsoft Defender portal. See [Share alert severity levels with other Microsoft security solutions](/purview/insider-risk-management-settings-dlp-sync#share-alert-severity-levels-with-other-microsoft-security-solutions) for more information.
+Data sharing with other security solutions must be turned on in the **Data sharing** settings in Microsoft Purview Insider Risk Management. Turning on **Share user risk details with other security solutions** enables users with the correct permissions to review user risk details in the user entity pages in the Microsoft Defender portal. See [Share alert severity levels with other Microsoft security solutions](/purview/insider-risk-management-settings-dlp-sync#share-alert-severity-levels-with-other-microsoft-security-solutions) for more information.
+
+:::image type="content" source="/defender-xdr/media/insider-risk-alerts/irm-toggle-settings-smalls.png" alt-text="Highlighting the setting in the Microsoft Purview portal required for insider risk alerts to show in Defender XDR.":::
 
 ## Permissions and roles
 
@@ -66,8 +68,10 @@ Data sharing with other security solutions must be turned on in the **Data shari
 
 The following permissions are essential to access insider risk management alerts in the Microsoft Defender portal:
 
-- Security operator
-- Security reader
+- Security Operator
+- Security Reader
+
+For more information about Microsoft Defender XDR roles, see [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](m365d-permissions.md).
 
 ### Microsoft Purview Insider Risk Management roles
 
@@ -77,11 +81,13 @@ You must also be a member of one of the following insider risk management role g
 - Insider Risk Management Analysts
 - Insider Risk Management Investigators
 
+For more information on these role groups, see [Enable permissions for insider risk management](/purview/insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management).
+
 ## Investigation experience in the Microsoft Defender portal
 
 ### Incidents
 
-Insider risk management alerts about a user are correlated to a single incident to ensure a holistic approach to incident response. This correlation allows SOC analysts to have a unified view of all alerts about a user coming from Microsoft Purview Insider Risk Management and various Defender products. Unifying all alerts also allows SOC analysts to view the details of devices involved in the alerts.
+Insider risk management alerts related to a user are correlated to a single incident to ensure a holistic approach to incident response. This correlation allows SOC analysts to have a unified view of all alerts about a user coming from Microsoft Purview Insider Risk Management and various Defender products. Unifying all alerts also allows SOC analysts to view the details of devices involved in the alerts.
 
 You can filter incidents by choosing Microsoft Purview Insider Risk Management under **Service source**.
 
