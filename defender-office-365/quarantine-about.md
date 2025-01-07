@@ -100,6 +100,6 @@ How long quarantined messages or files are held in quarantine before they expire
 |Files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams (malware files).|30 days|No|Files quarantined in SharePoint or OneDrive are removed from quarantine after 30 days, but the blocked files remain in SharePoint or OneDrive in the blocked state.|
 |Messages in chats and channels quarantined by zero-hour auto protection (ZAP) for Microsoft Teams in Defender for Office 365|30 days|No|
 
-When the messages expire from quarantine after the retention period, the messages are permanently deleted and cannot be recovered.
+When messages expire from quarantine after the retention period, the messages are permanently deleted and can't be recovered.
 
 For more information about quarantine, see [Quarantine FAQ](quarantine-faq.yml).
