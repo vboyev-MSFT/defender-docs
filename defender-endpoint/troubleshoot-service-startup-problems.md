@@ -33,15 +33,15 @@ audience: ITPro
 
 In the following screenshot, you can see that **Virus & threat protection** has a red cross, where it says **Threat service has stopped.  Restart it now**.
 
-:::image type="content" source="media/virus-threat-protection.jpg" alt-text="Screenshot of virus and threat protection notification." lightbox="media/virus-threat-protection.jpg":::
+:::image type="content" source="media/virus-threat-protection.jpg" alt-text="Screenshot of virus and threat protection notification.":::
 
 Within **Security Providers**, you can see the following. <br> You can see that **Microsoft Defender Antivirus is turned off**.
 
-:::image type="content" source="media/security-providers.png" alt-text="Screenshot of security providers." lightbox="media/security-providers.png":::  
+:::image type="content" source="media/security-providers.png" alt-text="Screenshot of security providers.":::  
 
 In the following screenshot, you can see the message: **Threat service has stopped. Restart it now.**
 
-:::image type="content" source="media/virus-threat-protection-2.png" alt-text="Screenshot of threat service has stopped." lightbox="media/virus-threat-protection-2.png":::  
+:::image type="content" source="media/virus-threat-protection-2.png" alt-text="Screenshot of threat service has stopped.":::  
 
 In the following screenshot, you can see the message: **Unexpected error. Sorry, we ran into a problem. Please try again.** <br> Click **Close**.
 
@@ -146,6 +146,6 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
 
 10. Make sure that **Tamper Protection** is enabled.
 
-    :::image type="content" source="media/tamper-protection.png" alt-text="Screenshot of Tamper Protection is enabled." lightbox="media/tamper-protection.png":::
+    :::image type="content" source="media/tamper-protection.png" alt-text="Screenshot of Tamper Protection is enabled.":::
 
 11. Run **Microsoft Update**.
