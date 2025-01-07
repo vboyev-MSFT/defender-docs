@@ -11,7 +11,7 @@ ms.author: ewalsh
 ms.custom: 
 - nextgen
 - partner-contribution
-ms.reviewer: pahuijbr, tudobril, yongrhee, bsabetghadam
+ms.reviewer: bsabetghadam
 manager: deniseb
 ms.subservice: ngp
 ms.collection: 
