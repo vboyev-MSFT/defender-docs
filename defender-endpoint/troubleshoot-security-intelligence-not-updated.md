@@ -52,7 +52,7 @@ The following screenshot shows an error about **Signature Update failed**.
 
 ## Solution
 
-1. Check the URL's required for the Security intelligence updates, you can get them via the firewall and/or proxy. See [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
+1. Check the URLs required for the Security intelligence updates. You can get them via the firewall and/or proxy. See [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
 2. Is Microsoft Defender Antivirus (MDAV) the primary antivirus? Is there a third-party antivirus installed, which uses the Windows Security Center (WSC) API, which disables MDAV? If MDAV is disabled, then no updates such as Security intelligence update can occur.
 
@@ -68,6 +68,6 @@ The following screenshot shows an error about **Signature Update failed**.
        & "${env:ProgramFiles}\Windows Defender\MpCmdRun.exe" -SignatureUpdate -MMPC
     ```
     3. If it works, then you could be having issues with the Security intelligence [Fallback order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) being set to a WSUS server that doesn't have the **Security intelligence** updates approved. Or if pointing to a UNC share, they might be stale or the Windows Update service might be having issues.
-        1. To check the WSUS server that the machine goes to, review `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\WUServer (REG_SZ)`. Once you find the WUServer, check if that WSUS server has the MDAV security intelligences [(KB2267602 for MDAV and KB2461484 for SCEP)](microsoft-defender-antivirus-updates.md#security-intelligence-updates) approved.
+        1. To check the WSUS server that the machine goes to, review `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\WUServer (REG_SZ)`. Once you find the WUServer, check if that WSUS server has the MDAV security intelligence [(KB2267602 for MDAV and KB2461484 for SCEP)](microsoft-defender-antivirus-updates.md#security-intelligence-updates) approved.
         2. To check the UNC share, review [Manage how and where Microsoft Defender Antivirus receives updates](manage-protection-updates-microsoft-defender-antivirus.md#create-a-unc-share-for-security-intelligence-and-platform-updates).
         3. To check the status of the Windows Update service, review [Guidance for troubleshooting Windows Update issues](/troubleshoot/windows-client/installing-updates-features-roles/troubleshoot-windows-update-issues) and [Troubleshoot problems updating Windows](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c).
