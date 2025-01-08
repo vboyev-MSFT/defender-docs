@@ -140,9 +140,9 @@ Manually
 
    ![Screenshot that displays the notification that WPR trace has been saved.](media/wpr-14.png)
    
-      Include both the file and the folder in your submission to Microsoft Support.
-
-   ![Screenshot showing the details of the file and the folder.](media/wpr-15.png)
+```
+  Include both the file and the folder in your submission to Microsoft Support.
+```   ![Screenshot showing the details of the file and the folder.](media/wpr-15.png)
    
 ### Capture performance logs using the WPR CLI
 
@@ -182,8 +182,20 @@ To collect a WPR trace using the command-line tool wpr.exe:
 
 ## See also
 
+- [Run the client analyzer on Windows](/defender-endpoint/run-analyzer-windows)
+
 - [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
+
+- [Troubleshoot Microsoft Defender Antivirus settings](/defender-endpoint/troubleshoot-settings)
+
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+
+- [Troubleshoot performance issues related to Microsoft Defender Antivirus](/defender-endpoint/troubleshoot-performance-issues)
+
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+
+- [Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon)
+
+- [Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI](/defender-endpoint/troubleshoot-av-performance-issues-with-wprui)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
