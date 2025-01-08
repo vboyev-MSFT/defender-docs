@@ -34,7 +34,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 > [!IMPORTANT]
-> Starting with version `101.2408.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023, and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
+> Starting with version `101.24082.0004`, Defender for Endpoint on Linux no longer supports the `Auditd` event provider. We're transitioning completely to the more efficient eBPF technology. This change allows for better performance, reduced resource consumption, and overall improved stability. eBPF support has been available since August 2023, and is fully integrated into all updates of Defender for Endpoint on Linux (version `101.23082.0006` and later). We strongly encourage you to adopt the eBPF build, as it provides significant enhancements over Auditd. If eBPF is not supported on your machines, or if there are specific requirements to remain on Auditd, you have the following options:
 > 
 > 1. Continue to use Defender for Endpoint on Linux build `101.24072.0000` with Auditd. This build will continue to be supported for several months, so you have time to plan and execute your migration to eBPF.
 >
@@ -45,6 +45,22 @@ This article is updated frequently to let you know what's new in the latest rele
 > If you have any concerns or need assistance during this transition, contact support.
 
 ## Releases for Defender for Endpoint on Linux
+
+### Jan-2025 Build: 101.24102.0000 | Release version: 30.124102.0000.0
+
+| Build:             | **101.24102.0000**    |
+|--------------------|-----------------------|
+| Released:          | **January 8, 2025** |
+| Published:         | **January 8, 2025** |
+| Release version:   | **30.124102.0000.0** |
+| Engine version:    | **1.1.24080.11**       |
+| Signature version: | **1.419.351.0**      |
+
+#### What's new
+
+- The default engine version has been updated to 1.1.24080.11, and the default signature version has been updated to 1.419.351.0.
+
+- Improved the reporting of command-line threat information for short lived processes on the security portal.
 
 ### Nov-2024 Build: 101.24092.0002 | Release version: 30.124092.0002.0
 
@@ -58,7 +74,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 #### What's new
 
-- Support added for hardened installations on non-executable `/var` partitions. Beginning with this release, antivirus signatures are installed at `/opt/microsoft/mdatp/definitions.noindex` by default, instead of `/var/opt/microsoft/mdatp/definitions.noindex`. During upgrades, the installer attempts to migrate older definitions to the new path unless it detects that the path is already customized (using `mdatp definitions path set`).
+- To support hardened installations with non-executable `/var` partitions, mdatp AV definitions will now install to `/opt/microsoft/mdatp/definitions.noindex` instead of `/var` if the latter is detected as non-executable. During upgrades, the installer will attempt to migrate older definitions to the new path upon detecting a non-executable `/var`, unless it finds that the path has already been customized (using `mdatp definitions path set`).
 
 - Beginning with this version, Defender for Endpoint on Linux no longer needs executable permissions for `/var/log`. If these permissions are not available, log files are automatically be redirected to `/opt`.
 
@@ -1221,7 +1237,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 
 ##### What's new
 
-  - Added new switches to the command-line tool:
+- Added new switches to the command-line tool:
   - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
   - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this setting is set to `enabled`.
   - Changing the product log level now requires elevation
