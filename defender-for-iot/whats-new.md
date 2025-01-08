@@ -6,7 +6,7 @@ ms.service: defender-for-iot
 author: lwainstein
 ms.author: lwainstein
 ms.localizationpriority: medium
-ms.date: 03/07/2024
+ms.date: 01/07/2025
 ms.custom: enterprise-iot
 ---
 
@@ -15,6 +15,16 @@ ms.custom: enterprise-iot
 This article describes features available in Microsoft Defender for IoT in the Defender portal, across both OT and Enterprise IoT networks.
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
+
+## January 2025
+|Service area  |Updates  |
+|---------|---------|
+| **OT networks** | - [Manually update the site association of a device](#manually-update-the-site-association-of-a-device)|
+
+### Manually update the site association of a device
+
+Manually assign or modify the site location for a specific device or set of devices. For more information, see [manually update device site association](manage-sites.md#manually-update-device-site-association).
+
 
 ## December 2024
 
