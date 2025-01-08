@@ -15,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 06/01/2022
+ms.date: 01/08/2025
 ---
 
 # Export browser extensions assessment per device
@@ -182,16 +182,12 @@ Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability 
 GET /api/machines/browserextensionsinventoryExport
 ```
 
-### 2.4 Parameters
-
-- sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours)
-
-### 2.5 Properties
+### 2.4 Properties
 
 > [!NOTE]
 >
 > - The files are gzip compressed & in multiline JSON format.
-> - The download URLs are only valid for 3 hours. Otherwise you can use the parameter.
+> - The download URLs are only valid for 1 hour.
 > - For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
 
 <br>
