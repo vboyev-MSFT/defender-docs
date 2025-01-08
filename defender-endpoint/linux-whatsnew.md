@@ -76,7 +76,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - To support hardened installations with non-executable `/var` partitions, mdatp AV definitions will now install to `/opt/microsoft/mdatp/definitions.noindex` instead of `/var` if the latter is detected as non-executable. During upgrades, the installer will attempt to migrate older definitions to the new path upon detecting a non-executable `/var`, unless it finds that the path has already been customized (using `mdatp definitions path set`).
 
-- Beginning with this version, Defender for Endpoint on Linux no longer needs executable permissions for `/var/log`. If these permissions are not available, log files are automatically be redirected to `/opt`.
+- Beginning with this version, Defender for Endpoint on Linux no longer needs executable permissions for `/var/log`. If these permissions are not available, log files will automatically be redirected to `/opt`.
 
 ### Oct-2024 Build: 101.24082.0004 | Release version: 30.124082.0004.0
 
