@@ -442,11 +442,32 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 ## See also
 
 - [Client analyzer overview](overview-client-analyzer.md)
+
 - [Download and run the client analyzer](download-client-analyzer.md)
+
 - [Run the client analyzer on Windows](run-analyzer-windows.md)
+
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+
 - [Understand the analyzer HTML report](analyzer-report.md)
+
+#### MDE on Linux troubleshooting documents:
+
+- [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-install)
+
+- [Investigate agent health issues](/defender-endpoint/health-status)
+
+- [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-connectivity)
+
+- [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-perf)
+
+- [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-events)
+
+- [Address false positives/negatives in Microsoft Defender for Endpoint](/defender-endpoint/defender-endpoint-false-positives-negatives)
+
+ 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
 
