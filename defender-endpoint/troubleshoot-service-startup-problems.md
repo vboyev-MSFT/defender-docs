@@ -2,8 +2,8 @@
 title: Troubleshoot Microsoft Defender Antivirus service startup problems
 description: Learn how to troubleshoot Microsoft Defender Antivirus service startup problems.
 author: denisebmsft
-ms.author: deniseb
-manager: deniseb
+ms.author: emmwalshh
+manager: ewalsh
 ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: troubleshooting-general
@@ -31,29 +31,29 @@ audience: ITPro
 
 - Microsoft Defender Antivirus
 
-In the following screenshot, you can see that **Virus & threat protection** has a red cross, where it says **Threat service has stopped.  Restart it now**.
+In the following screenshot, **Virus & threat protection** displays a red cross, where it says **Threat service has stopped.  Restart it now**.
 
 :::image type="content" source="media/virus-threat-protection.jpg" alt-text="Screenshot of virus and threat protection notification.":::
 
-Within **Security Providers**, you can see the following. <br> You can see that **Microsoft Defender Antivirus is turned off**.
+Within **Security Providers**, you can see the following. <br> **Microsoft Defender Antivirus is turned off**.
 
 :::image type="content" source="media/security-providers.png" alt-text="Screenshot of security providers.":::  
 
-In the following screenshot, you can see the message: **Threat service has stopped. Restart it now.**
+The following screenshot displays the message: **Threat service has stopped. Restart it now.**
 
 :::image type="content" source="media/virus-threat-protection-2.png" alt-text="Screenshot of threat service has stopped.":::  
 
-In the following screenshot, you can see the message: **Unexpected error. Sorry, we ran into a problem. Please try again.** <br> Select **Close**.
+The following screenshot displays the message: **Unexpected error. Sorry, we ran into a problem. Please try again.** <br> Select **Close**.
 
 :::image type="content" source="media/unexpected-error.png" alt-text="Screenshot of unexpected error." lightbox="media/unexpected-error.png":::  
 
 ## Events
 
-You might see the following events in the *Windows Defender – Operational* event log:
+The *Windows Defender – Operational* event log might display the following events:
 
 ### Event 5007
 
-Microsoft Defender Antivirus Configuration has changed. If this is an expected event you should review the settings as this may be the result of malware.
+The configuration of Microsoft Defender Antivirus has changed. If you expected this event, review the settings, as it may be the result of malware.
 
 |Old value  |New value  |
 |---------|---------|
@@ -71,7 +71,7 @@ Microsoft Defender Antivirus Real-time Protection scanning for malware and other
 
 ## Resolution
 
-The following steps help to resolve the issue:
+Follow these steps to resolve the issue:
 
 1. Check the services and filter drivers for Microsoft Defender Antivirus.
 
@@ -90,11 +90,11 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
 | Microsoft Defender Antivirus Service | WinDefend | Automatic | Running | If stopped, check steps 3, 6, 7. |
 | wscsvc | Security Center | Automatic | Running |  |
 
-2. Download and run the [Microsoft Safety Scanner](safety-scanner-download.md) to try ruling out any malware.
+1. Download and run the [Microsoft Safety Scanner](safety-scanner-download.md) to rule out any malware.
 
-3. If you're trying to use Microsoft Defender Antivirus as your primary antivirus, make sure to uninstall the third-party antivirus software.
+1. If you're using Microsoft Defender Antivirus as your primary antivirus, make sure to uninstall third-party antivirus software.
 
-4. Remove the **Security Intelligence** and **engine**.
+1. Remove the **Security Intelligence** and **engine**.
 
    Run the following PowerShell command as an administrator.
 
@@ -102,7 +102,7 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
     & "${env:ProgramFiles}\Windows Defender\MpCmdRun.exe" -RemoveDefinitions -All
     ```
 
-5. Reset the **Platform**.
+1. Reset the **Platform**.
 
    Run the following PowerShell command as an administrator.
 
@@ -110,7 +110,7 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
     & "${env:ProgramFiles}\Windows Defender\MpCmdRun.exe" -ResetPlatform
     ```
 
-6. Backup Microsoft Defender Antivirus policies.
+1. Backup Microsoft Defender Antivirus policies.
 
    Run the following PowerShell command as an administrator.
 
@@ -119,7 +119,7 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
     Invoke-Command {reg export 'HKLM\SOFTWARE\Policies\Microsoft\Windows Defender' C:\Temp\MDAV\_backup.reg
     ```
 
-7. Delete any policies that are set for Microsoft Defender Antivirus.
+1. Delete any policies that are set for Microsoft Defender Antivirus.
 
     Run the following PowerShell command as an administrator.
 
@@ -128,7 +128,7 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
     ```
     For more information, see: [Troubleshoot Microsoft Defender Antivirus settings](troubleshoot-settings.md).
 
-8. Re-enable Microsoft Defender Antivirus.
+1. Re-enable Microsoft Defender Antivirus.
 
     Run the following PowerShell command as an administrator.
 
@@ -136,7 +136,7 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
     & "${env:ProgramFiles}\Windows Defender\MpCmdRun.exe" -WdEnable
     ```
 
-9. Update Security Intelligence.
+1. Update Security Intelligence.
 
     Run the following PowerShell command as an administrator.
 
@@ -144,8 +144,8 @@ gsv WinDefend, WdBoot, WdFilter, WdNisSvc, WdNisDrv, SecurityHealthService, wscs
     & "${env:ProgramFiles}\Windows Defender\MpCmdRun.exe" -SignatureUpdate -MMPC
     ```
 
-10. Make sure that **Tamper Protection** is enabled.
+1.  Make sure that **Tamper Protection** is enabled.
 
     :::image type="content" source="media/tamper-protection.png" alt-text="Screenshot of Tamper Protection is enabled.":::
 
-11. Run **Microsoft Update**.
+1. Run **Microsoft Update**.
