@@ -24,6 +24,12 @@ Learn more about MSEM by reading the blogs, [here](https://techcommunity.microso
 >
 > `https://aka.ms/msem/rss`
 
+## January 2025
+
+### Metrics progress bar enhancement
+
+The metrics progress bar has been improved based on your feedback. The enhancements include updated coloring and a new logic that aligns with a standard progress bar, progressing from left to right and from 0% (indicating hig exposure) to 100% (indicating no exposure). This change replaces the previous version's logic, providing a more intuitive and user-friendly experience.
+
 ## December 2024
 
 ### New predefined classifications

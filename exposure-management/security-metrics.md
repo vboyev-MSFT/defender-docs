@@ -38,10 +38,8 @@ Security initiative metrics in [Microsoft Security Exposure Management](microsof
     - **Description**: Metric description.
     - **State**: Current state of metric.
     - **Last state update**: The last time metric state was updated.
-    - **Current value**: Current exposure score from significant to no/low exposure.
     - **Affected assets**. The number of affected assets out of the total assets.
     - **Weight**: Metric weight which affects the metric impact on initiative score.
-    - **Score impact**: Possible score gain.
     - **Security recommendations**: Recommendations associated with the metric.
 
 ## Edit the metric weight
