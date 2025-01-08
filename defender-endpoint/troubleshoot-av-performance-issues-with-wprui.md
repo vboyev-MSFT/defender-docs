@@ -22,7 +22,7 @@ ms.custom:
 # Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
 
 > [!TIP]
-> First review common reasons for performance issues such as high cpu in [Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (rtp) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)).
+> First, review common reasons for performance issues such as high cpu in [Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (rtp) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)).
 > Then, run the [Microsoft Defender Antivirus Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus) which makes analyzing the reason for a high cpu in Microsoft Defender Antivirus (Antimalware Service Executable or Microsoft Defender Antivirus service or MsMpEng.exe)
 > If for any reason, the Microsoft Defender Antivirus Performance Analyzer doesn't provide with the root cause of the high cpu utilization, then, next run [Processor Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon) to find narrow down or root cause the high cpu utilization in Microsoft Defender Antivirus.
 > And the last tool in the toolbelt is to run a Windows Performance Recorder UI (WPRUI) or Windows Performance Recorded (WPR command-line) discussed in this article.
