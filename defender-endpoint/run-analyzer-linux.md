@@ -344,7 +344,8 @@ Use the following command to get the machine diagnostic.
 
 Usage example: `sudo ./MDESupportTool -d`
 
-NOTE: The log level autoreset feature only available in 2405 or newer client version.
+> [!NOTE]
+> The log level autoreset feature only available in 2405 or newer client version.
 
 ### Positional arguments
 
@@ -363,7 +364,7 @@ Usage example: `sudo ./MDESupportTool performance --frequency 2`
 
 #### Exclude mode
 
-Add exclusions for audit-d monitoring.
+Add exclusions for auditd monitoring.
 
 > [!NOTE]
 > This functionality exists for Linux only.
