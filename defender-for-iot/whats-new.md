@@ -6,7 +6,7 @@ ms.service: defender-for-iot
 author: lwainstein
 ms.author: lwainstein
 ms.localizationpriority: medium
-ms.date: 03/07/2024
+ms.date: 01/08/2025
 ms.custom: enterprise-iot
 ---
 
@@ -16,7 +16,7 @@ This article describes features available in Microsoft Defender for IoT in the D
 
 [!INCLUDE [defender-iot-preview](../includes//defender-for-iot-defender-public-preview.md)]
 
-## November 2024
+## January 2025
 
 |Service area  |Updates  |
 |---------|---------|
