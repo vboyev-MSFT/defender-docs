@@ -33,7 +33,7 @@ Microsoft Defender for Cloud Apps is available inside the Microsoft Defender por
 
 SOC analysts can triage, investigate, and hunt across all Microsoft Defender XDR workloads, including cloud apps.
 
-Take a look in Microsoft Defender XDR at <https://security.microsoft.com>.
+Take a look in the Microsoft Defender portal at <https://security.microsoft.com>.
 
 Learn more about the benefits: [Overview of Microsoft Defender XDR](microsoft-365-defender.md).
 
@@ -76,7 +76,7 @@ Learn how to protect your cloud apps in Microsoft Defender XDR:
 > [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f title="Defender for Cloud Apps in Microsoft Defender XDR for customers migrating from the classic portal"]
 
 
-## Related information
+## Related content
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
