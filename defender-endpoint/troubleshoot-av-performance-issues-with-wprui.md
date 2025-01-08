@@ -38,11 +38,11 @@ Alternatively, follow the steps in [Capture performance logs using the WPR UI](/
 
 1. Under *Windows Kits*, right-click **Windows Performance Recorder**.
 
-   ![Screenshow showing the Start menu](media/wpr-01.png)
+   ![Screenshot showing the Start menu](media/wpr-01.png)
 
-Select **More**. Select **Run as administrator**.
+1. Select **More**. Select **Run as administrator**.
 
-1.Right-click **Yes** when the User Account Control dialog box appears.
+1. Right-click **Yes** when the User Account Control dialog box appears.
 
    ![Screenshot showing the UAC page.](media/wpt-yes.png)
 
