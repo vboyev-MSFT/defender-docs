@@ -21,6 +21,12 @@ ai-usage: human-only
 
 # Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor
 
+> [!TIP]
+> First, review common reasons for performance issues such as high cpu in **[Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (rtp) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)**).
+> Then, run the **[Microsoft Defender Antivirus Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus)** which makes analyzing the reason for a high cpu in Microsoft Defender Antivirus (Antimalware Service Executable or Microsoft Defender Antivirus service or MsMpEng.exe)
+> If for any reason, the Microsoft Defender Antivirus Performance Analyzer doesn't provide with the root cause of the high cpu utilization, then, next run **[Processor Monitor ](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon)**discussed in this article, to find narrow down or root cause the high cpu utilization in Microsoft Defender Antivirus.
+> And the last tool in the toolbelt is to run a [Windows Performance Recorder UI (WPRUI) or Windows Performance Recorded (WPR command-line)](/defender-endpoint/troubleshoot-av-performance-issues-with-wprui).
+
 ## Capture process logs using Process Monitor
 
 Process Monitor (ProcMon) is an advanced monitoring tool that provides real-time data on processes. It can be used to capture performance issues, such as high CPU usage, and to monitor application compatibility scenarios as they occur.
@@ -59,9 +65,9 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
    1. Check the box beside **Unblock**.
       
    1. Select **Apply**.
-      
+   
       ![Screenshot showing the Remove MOTW page.](media/procmon-motw.png)
-
+      
 1. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
 
 1. Copy **ProcMon.exe** to the Windows client or Windows server you're troubleshooting.
@@ -72,41 +78,41 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 1. You can launch ProcMon in two ways.
 
    1. Right-click **ProcMon.exe** and select **Run as administrator**.
-      
-      Since logging starts automatically, stop the capture by selecting the magnifying glass icon or pressing  **Ctrl+E**.
-      
+   
+         Since logging starts automatically, stop the capture by selecting the magnifying glass icon or pressing  **Ctrl+E**.
+
       ![Screenshot showing the magnifying glass icon.](media/procmon-magglass.png)
       
-      To confirm the capture has stopped, look for a red X on the magnifying glass icon.
-      
+            To confirm the capture has stopped, look for a red X on the magnifying glass icon.
+
       ![Screenshot showing a red slash.](media/procmon-magglass-stop.png)
       
-      Next, to clear the earlier capture, select the eraser icon.
-      
+            Next, to clear the earlier capture, select the eraser icon.
+
       ![Screenshot showing the clear icon](media/procmon-eraser-clear.png)
       
-      Or use the keyboard shortcut **Ctrl+X**.
-      
+            Or use the keyboard shortcut **Ctrl+X**.
+
    1. Run the **command line** as admin, then from the Process Monitor path, run:
-      
+   
       ![Screenshot showing the cmd procmon.](media/cmd-procmon.png)
       
-      ConsoleEdit development language
-      
-      
-      ```
+            ConsoleEdit development language
+
+
+            ```
        Procmon.exe /AcceptEula /Noconnect /Profiling
       ```
       
-     > [!TIP]
+        > [!TIP]
      > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
       
       ![Screenshot showing the page with Procmon minimized.](media/procmon-minimize.png)
-      
+   
 1. After completing step 6, set filters by selecting **OK**. You can filter the results after the capture is complete.
 
    ![Screenshot showing the page where System Exclude is chosen as the Filter out Process Name.](media/procmon-filter-options.png)
-
+   
 1. To start the capture, select the magnifying glass icon again.
 
 1. Reproduce the problem.
@@ -119,7 +125,7 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 1. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
    ![Screenshot showing the save settings page](media/procmon-savesettings1.png)
-
+   
 1. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
 
    - `%ComputerName%` is the device name
@@ -131,3 +137,4 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 
 1. Zip the `.pml` file and submit it to Microsoft Support.
 
+1. 
