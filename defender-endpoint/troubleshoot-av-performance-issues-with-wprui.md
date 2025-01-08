@@ -46,15 +46,15 @@ Alternatively, follow the steps in [Capture performance logs using the WPR UI](/
 
    ![Screenshot showing the UAC page.](media/wpt-yes.png)
 
-2. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder such as `C:\temp`.
+1. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder such as `C:\temp`.
 
-3. In the WPR dialog box, select **More options**.
+1. In the WPR dialog box, select **More options**.
 
    ![Screenshot showing the page where you can select more options](media/wpr-03.png)
 
-4. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
+1. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
 
-5. A new profile named Microsoft Defender for Endpoint analysis should appear under Custom measurements.
+1. A new profile named Microsoft Defender for Endpoint analysis should appear under Custom measurements.
 
    ![Screenshot showing the in-file.](media/wpr-infile.png)
 
@@ -62,7 +62,7 @@ Alternatively, follow the steps in [Capture performance logs using the WPR UI](/
    > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system consumes a high amount of non-paged pool memory or buffers, leading to system instability. Explore **Resource Analysis** to choose profiles to add.
    > This custom profile provides the necessary context for in-depth performance analysis.
 
-6. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
+1. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
 
    1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
 
@@ -77,34 +77,34 @@ Alternatively, follow the steps in [Capture performance logs using the WPR UI](/
    > [!IMPORTANT]
    > Select **File** to use the file logging mode if you can directly reproduce the performance issue. Most issues fall under this category. However, if you cannot directly reproduce the issue, select Memory to use the memory logging mode. This prevents the trace log from inflating excessively due to long run times.
 
-7. Now you're ready to collect data. Close all unnecessary applications. Click **Hide options** to keep the space occupied by the WPR window small.
+1. Now you're ready to collect data. Close all unnecessary applications. Click **Hide options** to keep the space occupied by the WPR window small.
 
    ![Screenshot showing the Hide options.](media/wpr-08.png)
 
-8. Select **Start**.
+1. Select **Start**.
 
    ![Screenshot showing the Record system information page.](media/wpr-09.png)
 
-9. Reproduce the issue.
+1. Reproduce the issue.
 
    > [!TIP]
    > Limit the data collection to a maximum of five minutes. Ideally, aim for two to three minutes, as a significant amount of data is being collected.
 
-10. Select **Save**.
+1. Select **Save**.
 
    ![Screenshot showing the Save option.](media/wpr-10.png)
 
-11. Fill in **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
+1. Fill in **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
 
    ![Screenshot showing the pane in which you fill.](media/wpr-12.png)
 
-12. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
+1. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
 
    1. Select **Save**.
 
    ![Screenshot showing the WPR gathering general trace.](media/wpr-13.png)
 
-13. After the trace has been merged and saved, right-click **Open folder**.
+1. After the trace has been merged and saved, right-click **Open folder**.
 
    ![Screenshot that displays the notification that WPR trace has been saved.](media/wpr-14.png)
 
@@ -146,7 +146,7 @@ To collect a WPR trace using the command-line tool wpr.exe:
 
 1. Wait until the trace is merged.
 
-1. Include both the file and the folder in your submission to Microsoft support.
+1. Include both the file and the folder in your submission to Microsoft Support.
 
 ## See also
 
