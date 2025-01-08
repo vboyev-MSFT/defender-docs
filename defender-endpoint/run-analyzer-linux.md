@@ -9,7 +9,7 @@ ms.service: defender-endpoint
 ms.subservice: linux
 ms.localizationpriority: medium
 ms.topic: troubleshooting-general
-ms.date: 11/01/2024
+ms.date: 01/08/2024
 ms.custom: partner-contribution
 ms.collection:
 - m365-security
@@ -189,7 +189,7 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 ### Run the binary version of the client analyzer
 
-#### Summary:
+#### Summary
 
 1. Obtain from [https://go.microsoft.com/fwlink/?linkid=2297517](https://go.microsoft.com/fwlink/?linkid=2297517). Or, if your Linux server has internet access use `wget` to download the file:
 
@@ -215,7 +215,7 @@ This section provides instructions on how to run the tool locally on the Linux m
 
 6. Upload the file for the support engineer.
 
-#### Details:
+#### Details
 
 1. Download the [XMDE Client Analyzer Binary](https://go.microsoft.com/fwlink/?linkid=2297517) tool to the Linux machine you need to investigate.
 
@@ -262,7 +262,7 @@ This section provides instructions on how to run the tool locally on the Linux m
    sudo ./MDESupportTool -d
    ```
 
-## Rung the Python-based client analyzer
+## Run the Python-based client analyzer
 
 > [!NOTE]
 > - The analyzer depends on few extra PIP packages (`decorator`, `sh`, `distro`, `lxml`, and `psutil`) which are installed in the operating system when in root to produce the result output. If not installed, the analyzer attempts to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
@@ -453,7 +453,7 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 - [Understand the analyzer HTML report](analyzer-report.md)
 
-#### MDE on Linux troubleshooting documents:
+#### Defender for Endpoint on Linux troubleshooting documents
 
 - [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-install)
 
