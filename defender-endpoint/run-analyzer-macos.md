@@ -62,7 +62,7 @@ If you're experiencing reliability or device health issues with Microsoft Defend
    - `SupportToolLinuxBinary.zip`: For all Linux devices
    - `SupportToolMacOSBinary.zip`: For Mac devices
 
-1. Unzip the SupportToolMacOSBinary.zip. 
+5. Unzip the SupportToolMacOSBinary.zip. 
 
    ```bash
     unzip -q SupportToolMacOSBinary.zip
@@ -91,14 +91,14 @@ The tool currently requires Python version 3 or later to be installed on your de
    wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
       ```
       
-1. Verify the download. 
+2. Verify the download. 
 
    | OS | Command |
    |--|--|
    | Linux | `echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11 XMDEClientAnalyzer.zip'| sha256sum -c` |
    | macOS | `echo '84C9718FF3D29DA0EEE650FB2FC0625549A05CD1228AC253DBB92C8B1D9F1D11  XMDEClientAnalyzer.zip'| shasum -a 256 -c` |
    
-1. Extract the contents of `XMDEClientAnalyzer.zip` on the machine. 
+3. Extract the contents of `XMDEClientAnalyzer.zip` on the machine. 
 
    If you're using a terminal, extract the files by using the following command:
    
@@ -106,25 +106,25 @@ The tool currently requires Python version 3 or later to be installed on your de
    unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
    ```
    
-1. Change directory to the extracted location.
+4. Change directory to the extracted location.
 
    ```bash
    cd XMDEClientAnalyzer
    ```
    
-1. Give the tool executable permission:
+5. Give the tool executable permission:
 
    ```bash
    chmod a+x mde_support_tool.sh
    ```
    
-1. Run as a nonroot user to install required dependencies:
+6. Run as a nonroot user to install required dependencies:
 
    ```bash
    ./mde_support_tool.sh
    ```
    
-1. When you download files on macOS, it automatically adds a new extended attribute called com.apple.quarantine which is scanned by Gatekeeper.  Before running, you will want to remove this extended attribute:
+7. When you download files on macOS, it automatically adds a new extended attribute called com.apple.quarantine which is scanned by Gatekeeper.  Before running, you will want to remove this extended attribute:
 
    ```bash
    xattr -c MDESupportTools
@@ -136,7 +136,7 @@ The tool currently requires Python version 3 or later to be installed on your de
 
       Apple could not verify "MDESupportTool" is free of malware that may harm your Mac or compromise your privacy"
 
-1. To collect actual diagnostic package and generate the result archive file, run again as root:
+8. To collect actual diagnostic package and generate the result archive file, run again as root:
 
    ```bash
    sudo ./mde_support_tool.sh -d
@@ -168,7 +168,8 @@ Use the following command to get the machine diagnostic.
 
 Usage example: `sudo ./MDESupportTool -d`
 
-NOTE: The log level autoreset feature only available in 2405 or newer client version.
+> [!NOTE]
+> The log level autoreset feature only available in 2405 or newer client version.
 
 ### Positional arguments
 
@@ -220,7 +221,7 @@ Usage example `./mde_support_tool.sh trace --length 5`
 
 ## See also
 
-### MDE on macOS troubleshooting documents:
+### Defender for Endpoint on macOS troubleshooting
 
 [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](/defender-endpoint/mac-troubleshoot-mode)
 
