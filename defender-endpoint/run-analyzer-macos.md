@@ -169,7 +169,7 @@ Use the following command to get the machine diagnostic.
 Usage example: `sudo ./MDESupportTool -d`
 
 > [!NOTE]
-> The log level autoreset feature only available in 2405 or newer client version.
+> The log level autoreset feature is only available in 2405 or newer client version.
 
 ### Positional arguments
 
