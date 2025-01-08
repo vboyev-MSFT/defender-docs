@@ -84,7 +84,7 @@ You can use Microsoft Intune Endpoint Security to configure custom attack surfac
 
 Your new attack surface reduction policy for attack surface reduction rules is listed in **Endpoint security | Attack surface reduction**.
 
-   > [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
    > :::image type="content" source="media/asr-mem-my-asr-rules.png" alt-text=" The Attack surface reduction page" lightbox="media/asr-mem-my-asr-rules.png":::
 
 <a name='step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal'></a>
@@ -188,10 +188,9 @@ For more information about using the attack surface reduction rules report, see 
 
 Attack surface reduction rules now provide the capability to configure rule-specific exclusions, known as "Per Rule Exclusions."
 
-> [!NOTE]
-> Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
+To configure specific rule exclusions, you have the choices of using the MDE Security Settings Management, Intune, and Group Policy.
 
-To configure specific rule exclusions:
+#### Via Intune:
 
 1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
 
@@ -207,6 +206,37 @@ To configure specific rule exclusions:
 
 > [!TIP]
 > Use the checkboxes next to your list of exclusion entries to select items to **Delete**, **Sort**, **Import**, or **Export**.
+
+### Via Group Policy
+
+
+
+Use Group Policy to set the per-user ASR rule exclusions
+
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+
+1. Right-click the Group Policy Object you want to configure, and then select **Edit**.
+
+1. In the **Group Policy Management Editor** go to **Computer configuration**.
+
+1. Select **Administrative templates**.
+
+1. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Microsoft Defender Exploit Guard > Attack Surface Reduction**.
+
+1. Double-click **Apply a list of exclusions to specific attack surface reduction (ASR) rules**, and set the option to **Enabled**. 
+
+1. Then click on **Show...**
+
+1. Under "**Value Name**", enter "GUID for the ASR Rule" without the double quotes
+
+1. Under "**Value**", enter the <drive_letter:\Path\ProcessName>.  In order to add multiple processes, it's separated by a greater than sign (>)
+
+   e.g. "C:\Notepad.exe>c:\regedit.exe>C:\SomeFolder\test.exe" without the double quotes
+   
+1. select **OK**. This setting allows the processes that are being blocked by the particular ASR Rule to continue running.
+
+> [!NOTE]
+> If the policies are not applying, please review [Troubleshoot Microsoft Defender Antivirus settings](/defender-endpoint/troubleshoot-settings)
 
 ### Use PowerShell as an alternative method to enable attack surface reduction rules
 
@@ -254,5 +284,7 @@ Event ID | Description
 [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+
+[Troubleshoot attack surface reduction rules](/defender-endpoint/troubleshoot-asr)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../includes/defender-mde-techcommunity.md)]
