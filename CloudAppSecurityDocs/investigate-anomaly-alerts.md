@@ -714,7 +714,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 ### Investigation priority score increase (legacy)
 
 > [!IMPORTANT]
-> Starting November 2024, **Investigate risky users** support for Microsoft Defender for Cloud Apps is retired. As such, the legacy procedure presented in this article is provided for informational purposes only.
+> Starting November 2024, **Investigate risky users** support for Microsoft Defender for Cloud Apps is retired.
 >
 > If this feature was used in your organization and is needed, we recommend using the Entra risk score feature. Please use the following resources for additional information:
 >
