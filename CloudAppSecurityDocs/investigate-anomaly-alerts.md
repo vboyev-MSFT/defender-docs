@@ -718,9 +718,9 @@ Establishing a new user's activity pattern requires an initial learning period o
 >
 > If this feature was used in your organization and is needed, we recommend using the Entra risk score feature. Please use the following resources for additional information:
 >
->[Investigate risk Microsoft Entra ID Protection - Microsoft Entra ID Protection | Microsoft Learn](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-investigate-risk)
+>[Investigate risk Microsoft Entra ID Protection - Microsoft Entra ID Protection | Microsoft Learn](/entra/id-protection/howto-identity-protection-investigate-risk)
 >
->[Microsoft Entra ID Protection risk-based access policies - Microsoft Entra ID Protection | Microsoft Learn](https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies)
+>[Microsoft Entra ID Protection risk-based access policies - Microsoft Entra ID Protection | Microsoft Learn](/entra/id-protection/concept-identity-protection-policies)
 > 
 
 Anomalous activities and activities that triggered alerts are given scores based on severity, user impact, and behavioral analysis of the user. The analysis is done based on other users in the tenants.
