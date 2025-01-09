@@ -26,9 +26,9 @@ This article lists recent features added into Microsoft's unified SecOps platfor
 
 ### SOC optimization updates for unified coverage management
 
-In workspaces enabled for unified security operations, SOC optimziations now support both SIEM and XDR data, with detection coverage from across Microsoft Defender services. 
+In workspaces enabled for unified security operations, SOC optimizations now support both SIEM and XDR data, with detection coverage from across Microsoft Defender services. 
 
-In the Defender portal, the **SOC optimizations** and **MITRE ATT&CK** pages also now provide extra functionality for threat-based coverage optimiations to help you understand the impact of the recommendations on your environment and help you prioritize which to implement first.
+In the Defender portal, the **SOC optimizations** and **MITRE ATT&CK** pages also now provide extra functionality for threat-based coverage optimizations to help you understand the impact of the recommendations on your environment and help you prioritize which to implement first.
 
 Enhancements include:
 
