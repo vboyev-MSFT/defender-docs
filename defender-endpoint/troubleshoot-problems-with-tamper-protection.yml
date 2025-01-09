@@ -5,10 +5,10 @@ metadata:
   ms.service: defender-endpoint
   ms.localizationpriority: medium
   ms.topic: faq
-  author: denisebmsft
-  ms.author: deniseb
+  author: emmwalshh
+  ms.author: ewalsh
   ms.custom: nextgen
-  ms.reviewer:
+  ms.reviewer: yongrhee
   manager: deniseb
   ms.subservice: ngp
   ms.collection: 
@@ -45,7 +45,7 @@ sections:
         answer: |
           1. Ensure that all of the following requirements are met:
 
-             - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).)
+             - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#platform-and-engine-releases).)
 
              - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
 

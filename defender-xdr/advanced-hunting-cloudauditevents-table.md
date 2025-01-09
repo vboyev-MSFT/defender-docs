@@ -15,12 +15,13 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: 
-- cxti
+- cx-ti
+- cx-ah
 ms.topic: reference
 ms.date: 12/29/2023
 ---
 
-# CloudAuditEvents
+# CloudAuditEvents (Preview)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 

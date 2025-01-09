@@ -27,6 +27,8 @@
        href: mail-flow-about.md
      - name: Microsoft Defender portal overview
        href: /defender-xdr/microsoft-365-defender-portal
+     - name: Integrate non-Microsoft security services with Microsoft 365
+       href: mdo-integrate-security-service.md
 
    - name: Evaluate
      items:
@@ -36,7 +38,9 @@
        href: trial-user-guide-defender-for-office-365.md
 
    - name: Deploy
-     items:
+     items: 
+     - name: Pilot and deploy Defender for Office 365
+       href: /defender-xdr/pilot-deploy-defender-office-365?toc=/defender-office-365/TOC.json&bc=/defender-office-365/breadcrumb/toc.json
      - name: Get started with Microsoft Defender for Office 365
        href: mdo-deployment-guide.md
      - name: Step 1 - Configure email authentication
