@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: android
 search.appverid: met150
-ms.date: 08/30/2024
+ms.date: 11/22/2024
 ---
 
 # Configure Defender for Endpoint on Android features
@@ -37,8 +37,10 @@ For more information about how to set up Defender for Endpoint on Android and Co
 
 > [!NOTE]
 > Defender for Endpoint on Android only supports creating custom indicators for IP addresses and URLs/domains.
+> 
+> Also, alerts for custom indicators are currently not supported for Defender for Endpoint on Android.
 
-Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Manage indicators](manage-indicators.md).
+Defender for Endpoint on Android enables admins to configure custom indicators to support Android devices as well. For more information on how to configure custom indicators, see [Overview of indicators](indicators-overview.md).
 
 ## Configure web protection
 
@@ -57,7 +59,7 @@ This feature provides protection against rogue Wi-Fi related threats and rogue c
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center and add trusted certificates. Admins can enable [privacy controls](android-configure.md#privacy-controls) to configure the data sent to Defender for Endpoint from Android devices.
 
-Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
+Network protection in Microsoft Defender for endpoint is enabled by default. Admins can use the following steps to **configure Network protection in Android devices.**
 
 In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
 
@@ -197,9 +199,9 @@ Defender for Endpoint supports vulnerability assessment of apps in the work prof
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** \> **App configuration policies** \\> **Add** > **Managed devices**.
 2. Give the policy a name; **Platform \> Android Enterprise**; select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
-4. In Settings page, select **Use configuration designer** and add **DefenderTVMPrivacyMode** as the key and value type as **Integer**
+1. In Settings page, select **Use configuration designer** and add **Enable TVM Privacy** as the key and value type as **Integer**
 
-   - To disable vulnerability of apps in the work profile, enter value as `1` and assign this policy to users. By default, this value is set to `0`.
+- To disable vulnerability of apps in the work profile, enter value as `1` and assign this policy to users. By default, this value is set to `0`.
    - For users with key set as `0`, Defender for Endpoint sends the list of apps from the work profile to the backend service for vulnerability assessment.
 
 5. Select **Next** and assign this profile to targeted devices/users.

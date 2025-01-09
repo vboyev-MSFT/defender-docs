@@ -22,7 +22,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the link, QR code (currently in Preview), or attachment in the simulated phishing email message that's presented to users. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that work better for your organization.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the link, QR code, or attachment in the simulated phishing email message that's presented to users. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that work better for your organization.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -133,9 +133,6 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
 ## QR code payloads
 
-> [!TIP]
-> QR code payloads are currently in Preview, aren't available in all organizations, and are subject to change.
-
 On the **Global payloads** tab of **Content library** \> **Payloads** at <https://security.microsoft.com/attacksimulator?viewid=contentlibrary&source=global>, you can see the built-in, unmodifiable QR code payloads by typing **QR** in the :::image type="icon" source="media/m365-cc-sc-search-icon.png" border="false"::: **Search** box, and then pressing the ENTER key.
 
 QR code payloads are available in five languages to address real-world scenarios that involve QR code attacks.
@@ -172,13 +169,13 @@ You can also create custom payloads that use QR codes as phishing links as descr
 3. On the **Select technique** page, the available options are the same as on the **Select technique** page in the new simulation wizard:
    - **Credential Harvest**<sup>\*</sup>
    - **Malware Attachment**
-   - **Link in Attachment**
+   - **Link in Attachment**<sup>\*</sup>
    - **Link to Malware**<sup>\*</sup>
-   - **Drive-by URL**
+   - **Drive-by URL**<sup>\*</sup>
    - **OAuth Consent Grant**<sup>\*</sup>
-   - **How-to Guide**<sup>\*</sup>
+   - **How-to Guide**
 
-   <sup>\*</sup> This social engineering technique allows you to use QR codes (currently in Preview).
+   <sup>\*</sup> This social engineering technique allows you to use QR codes.
 
    For more information about the different social engineering techniques, see [Simulations](attack-simulation-training-get-started.md#simulations).
 
@@ -239,7 +236,7 @@ You can also create custom payloads that use QR codes as phishing links as descr
        - **Text** tab: A rich text editor is available to create the payload. To see the typical font and formatting settings, toggle **Formatting controls** to :::image type="icon" source="media/scc-toggle-on.png" border="false"::: **On**.
 
          > [!TIP]
-         > The **Formatting controls** bar contains an **Insert QR code** action that you can use instead of selecting **Insert QR code** control from the **Dynamic tag** dropdown list for applicable social engineering techniques (currently in Preview):
+         > The **Formatting controls** bar contains an **Insert QR code** action that you can use instead of selecting **Insert QR code** control from the **Dynamic tag** dropdown list for applicable social engineering techniques:
          >
          > :::image type="content" source="media/attack-sim-training-payloads-formatting-controls-insert-qr-code.png" alt-text="The Insert QR code action in the formatting controls on the Configure payload page of the new payload creation wizard.":::
          >
@@ -262,7 +259,7 @@ You can also create custom payloads that use QR codes as phishing links as descr
             |**Insert City**|`${city}`|
             |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
 
-         - The **Insert QR code** control (currently in Preview) is available only in the **Credential Harvest**, **Drive-by URL**, **OAuth Consent Grant**, or **How-to Guide** techniques.
+         - The **Insert QR code** control is available only in the **Credential Harvest**, **Drive-by URL**, **OAuth Consent Grant**, or **How-to Guide** techniques.
 
            Instead of using a link as the phishing payload in the message, you can use a QR code. Selecting the **Insert QR code** control opens the **Insert QR code** flyout where you configure the following information:
 

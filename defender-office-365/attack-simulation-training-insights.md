@@ -13,7 +13,7 @@ ms.collection:
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft Defender portal affects users and can gain insights from simulation and training outcomes.
 search.appverid: met150
-ms.date: 08/14/2024
+ms.date: 10/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
@@ -220,12 +220,18 @@ If you hover over a data point in the chart, the actual values are shown.
 
 The details table below the chart shows the following information. You can sort the information by clicking on an available column header. Select :::image type="icon" source="media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
-- **User**
-- **Simulation types**
-- **Simulations**
-- **Email address**
-- **Last repeat count**
-- **Repeat offenses**
+- **User**: Name of the user.
+- **Simulation types**: Type of simulations where the user was involved.
+- **Simulations**: Name of simulations where the user was involved.
+- **Email address**: Email address of the user.
+- **Latest repeat count**: Latest count of compromises for users categorized as repeat offenders. For example, if the repeat offender threshold is set to 3, and a user was compromised in 3 consecutive simulations, then the latest repeat count is 3. If the user was compromised in 4 consecutive simulations, then the latest repeat count is 4. If the user was compromised in 2 consecutive simulations, then the value N/A. The latest repeat count sets to 0 (N/A), every time a repeat offender flag is reset (meaning the user passes a simulation).
+- **Repeat offences**: Includes the number of times a user was classified as a repeat offender. For example:
+  -   The user was classified as a repeat offender in first few simulations (they were compromised 3 consecutive times, where repeat offender threshold is 2).
+  -   The user was classified as 'clean' after passing a simulation.
+  -   The user was classified as a repeat offender in the next few simulations (they were compromised 4 consecutive times, where repeat offender threshold is 2).
+
+  In these cases, the number of repeat offences is set to 2. The count updates every time a user is considered a repeat offender.
+
 - **Last simulation name**
 - **Last simulation result**
 - **Last training assigned**
@@ -274,9 +280,6 @@ For more information about the **Users** and **Details** tabs, see the following
   - [Details tab](attack-simulation-training-training-campaigns.md#details-tab)
 
 ### Reporting for QR code simulations
-
-> [!TIP]
-> QR code payloads are currently in Preview, aren't available in all organizations, and are subject to change.
 
 You can select QR code payloads to use in simulations. The QR code replaces the phishing URL as the payload that's used in the simulation email message. For more information, see [QR code payloads](attack-simulation-training-payloads.md#qr-code-payloads).
 
@@ -420,7 +423,7 @@ When you export information from the reports, the CSV file contains more informa
 |EmailLinkClicked_Browser|The web browser that was used to click the link payload in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. This information comes from UserAgent.|
 |EmailLinkClicked_IP|The IP address where the link payload was clicked in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. This information comes from UserAgent.|
 |EmailLinkClicked_Device|The device where the link payload was clicked in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. This information comes from UserAgent.|
-|EmailLinkClicked_ClickSource|Whether the payload link was selected by clicking on a URL or scanning a QR Code in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. Values are `PhishingURL` or `QRCode`. QR code support is currently in Preview.|
+|EmailLinkClicked_ClickSource|Whether the payload link was selected by clicking on a URL or scanning a QR Code in **Credential Harvest**, **Link to Malware**, **Drive-by-url**, and **OAuth Consent Grant** simulations. Values are `PhishingURL` or `QRCode`.|
 |CredSupplied_TimeStamp(Compromised)|When the user entered their credentials.|
 |CredSupplied_Browser|The web browser that was used when the user entered their credentials. This information comes from UserAgent.|
 |CredSupplied_IP|The IP address where the user entered their credentials. This information comes from UserAgent.|
@@ -459,14 +462,14 @@ How user activity signals are captured is described in the following table.
 |Opened Attachment|A user opened the attachment.|The signal comes from the client (for example, Outlook or Word).|
 |Read Message|The user read the simulation message.|Message read signals might experience issues in the following scenarios: <ul><li>The user reported the message as phishing in Outlook without leaving the reading pane, and **Mark items as read when viewed in the Reading Pane** wasn't configured (default).</li><li>The user reported the unread message as phishing in Outlook, the message was deleted, and **Mark messages as read when deleted** wasn't configured (default).</li></ul>|
 |Out of Office|Determines whether the user is out of office.|Currently calculated by the Automatic replies setting from Outlook.|
-|Compromised User|The user was compromised. The compromise signal varies based on the social engineering technique.|<ul><li>**Credential Harvest**: The user entered their credentials on the login page (credentials aren't stored by Microsoft).¹</li><li>**Malware Attachment**: The user opened the payload attachment and selected **Enable Editing** in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).</li><li>**Link in Attachment**: The user opened the attachment and clicked on the payload link.</li><li>**Link to Malware**: The user clicked on the payload link and entered their credentials.</li><li>**Drive by URL**: The user clicked on the payload link (entering credentials isn't required).¹</li><li>**OAuth Consent Grant**: The user clicked on the payload link and accepted the prompt to share permissions.¹</li></ul>|
-|Clicked Message Link|The user clicked on the payload link in the simulation message.|The URL in the simulation is unique for each user, which allows individual user activity tracking. Third-party filtering services or email forwarding can lead to false positives. For more information, see [I see clicks or compromise events from users who insist they didn't click the link in the simulation message](attack-simulation-training-faq.md#i-see-clicks-or-compromise-events-from-users-who-insist-they-didnt-click-the-link-in-the-simulation-message).|
+|Compromised User|The user was compromised. The compromise signal varies based on the social engineering technique.|<ul><li>**Credential Harvest**: The user entered their credentials on the login page (credentials aren't stored by Microsoft).¹</li><li>**Malware Attachment**: The user opened the payload attachment and selected **Enable Editing** in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).</li><li>**Link in Attachment**: The user opened the attachment and entered their credentials after clicking on the payload link.</li><li>**Link to Malware**: The user clicked on the payload link and entered their credentials.</li><li>**Drive by URL**: The user clicked on the payload link (entering credentials isn't required).¹</li><li>**OAuth Consent Grant**: The user clicked on the payload link and accepted the prompt to share permissions.¹</li></ul>|
+|Clicked Message Link|The user clicked on the payload link in the simulation message.|The URL in the simulation is unique for each user, which allows individual user activity tracking. Third-party filtering services or email forwarding can lead to false positives. For more information, see [I see clicks or compromise events from users who insist they didn't click the link in the simulation message OR I see clicks within a few seconds of delivery for many users (false positives). What's going on?](attack-simulation-training-faq.md#i-see-clicks-or-compromise-events-from-users-who-insist-they-didnt-click-the-link-in-the-simulation-message-or-i-see-clicks-within-a-few-seconds-of-delivery-for-many-users-false-positives-whats-going-on)|
 |Forwarded Message|The user forwarded the message.||
 |Replied to Message|The user replied to the message.||
 |Deleted message|The user deleted the message.|The signal comes from the Outlook activity of the user. If the user reports the message as phishing, the message might be moved to the Deleted Items folder, which is identified as a deletion.|
 |Permissions granted|The user shared permissions in an **OAuth Consent Grant** simulation.||
 
-¹ The clicked link can be a selected URL or a scanned QR code (QR code support in Attack simulation training is currently in Preview).
+¹ The clicked link can be a selected URL or a scanned QR code.
 
 ## Related Links
 
