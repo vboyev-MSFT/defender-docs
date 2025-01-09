@@ -15,7 +15,7 @@ ms.collection:
 - mde-ngp
 ms.topic: conceptual
 ms.subservice: ngp
-ms.date: 10/26/2023
+ms.date: 01/09/2025
 ---
 
 # Troubleshooting mode scenarios in Microsoft Defender for Endpoint 
@@ -45,7 +45,7 @@ If you want to install an application but receive an error message that Microsof
 
 2. Connect to the device (using Terminal Services for example) with local admin permissions.  
 
-3. Start [Process Monitor](troubleshoot-performance-issues.md#capture-process-logs-using-process-monitor) (ProcMon). See the steps described in [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md).  
+3. Start [Process Monitor](troubleshoot-av-performance-issues-with-procmon.md), and see the steps described in [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md).  
 
 4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.
 
