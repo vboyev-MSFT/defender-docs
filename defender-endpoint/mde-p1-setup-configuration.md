@@ -2,16 +2,16 @@
 title: Set up and configure Microsoft Defender for Endpoint Plan 1
 description: Learn how to set up and configure Defender for Endpoint Plan 1. Review the requirements, plan your rollout, and set up your environment. 
 search.appverid: MET150 
-author: siosulli
-ms.author: siosulli
+author: denisebmsft
+ms.author: deniseb
 manager: deniseb 
 audience: ITPro
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: onboard
 ms.localizationpriority: medium
-ms.date: 06/24/2024
-ms.reviewer: shlomiakirav
+ms.date: 12/10/2024
+ms.reviewer: yonghree, pahuijbr
 f1.keywords: NOCSH
 ms.collection: 
 - m365-security
@@ -50,7 +50,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 (standalone, or as part of Microsoft 365 E3 or A3) |
+| Licensing requirements | Defender for Endpoint Plan 1 (standalone, or as part of Microsoft 365 E3, A3, or G3) |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating systems (client) | Windows 11<br/>Windows 10, version 1709, or later<br/>[macOS](microsoft-defender-endpoint-mac.md)<br/>[iOS](microsoft-defender-endpoint-ios.md) <br/>[Android OS](microsoft-defender-endpoint-android.md) |
 | Operating systems (server) | Windows Server 2022<br/>Windows Server 2019<br/>Windows Server version 1803 and later<br/>Windows Server 2016 and 2012 R2 are supported when using the [modern unified solution](configure-server-endpoints.md#functionality-in-the-modern-unified-solution)<br/>[Linux Server](microsoft-defender-endpoint-linux.md)   |
@@ -60,10 +60,10 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 > The standalone version of Defender for Endpoint Plan 1 doesn't include server licenses. To onboard servers, you'll require an additional license, such as:
 > 
 > - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering.
-> - Microsoft Defender for Endpoint for Servers
+> - Microsoft Defender for Endpoint Server
 > - [Microsoft Defender for Business servers](/defender-business/get-defender-business#how-to-get-microsoft-defender-for-business-servers) (for small and medium-sized businesses)
 > 
-> To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
+> To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md)
 
 ## Plan your deployment
 
@@ -78,7 +78,7 @@ When you plan your deployment, you can choose from several different architectur
 
 To learn more about your deployment options, see [Plan your Defender for Endpoint deployment](deployment-strategy.md). And, download the following poster: 
 
-[:::image type="content" source="/defender/media/defender-endpoint/mde-deployment-strategy.png" alt-text="Screnshot of deployment strategy poster thumbnail.":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)
+[:::image type="content" source="/defender/media/defender-endpoint/mde-deployment-strategy.png" alt-text="Screenshot of deployment strategy poster thumbnail.":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)
 
 **[Get the deployment poster](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
@@ -109,7 +109,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 | Role | Description |
 |:---|:---|
-| Global Administrators <br/><br/> *As a best practice, limit the number of Global Administrators.* | Global Administrators can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a Global Administrator by default. <br/><br/> Global Administrators are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Global Administrators <br/><br/> *As a best practice, limit the number of Global Administrators.* | Global Administrators can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a Global Administrator by default. <br/><br/> Global Administrators are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com))  |
 | Security Administrators | Security Administrators can perform Security Operator tasks plus the following tasks: <br/>- Monitor security-related policies <br/>- Manage security threats and alerts <br/>- View reports |
 | Security Operator | Security Operators can perform Security Reader tasks plus the following tasks: <br/>- View information about detected threats <br/>- Investigate and respond to detected threats  |
 | Security Reader | Security Readers can perform the following tasks: <br/>- View security-related policies across Microsoft 365 services <br/>- View security threats and alerts <br/>- View reports  |
@@ -141,7 +141,7 @@ We recommend using [Intune](/mem) to manage your organization's devices and secu
 
 To configure your next-generation protection in Intune, follow these steps:
 
-1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) and sign in.
 
 2. Select **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, create a new policy.)
 
@@ -239,7 +239,7 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 :::image type="content" source="/defender/media/mde-p1/mem-admintemplates.png" alt-text="Screenshot of Intune administrative templates." lightbox="/defender/media/mde-p1/mem-admintemplates.png":::
 
-1. Go to the [Intune admin center](https://endpoint.microsoft.com) and sign in. 
+1. Go to the [Intune admin center](https://intune.microsoft.com) and sign in. 
 
 2. Select **Devices** > **Configuration** > **+ Create** > **Create policy**.
 
@@ -251,7 +251,7 @@ You can configure Defender for Endpoint to block or allow removable devices and 
 
 5. On the **Configuration settings** tab, select **All Settings**. Then in the search box, type `Removable` to see all the settings that pertain to removable devices.
 
-6. Select an item in the list, such as **All Removable Storage classes: Deny all access**, to open its flyout pane. The flyout for each setting explains what happens when it's enabled, disabled, or not configured. Select a setting, and then choose **OK**. 
+6. Select an item in the list, such as **All Removable Storage classes, Deny all access**, to open its flyout pane. The flyout for each setting explains what happens when it's enabled, disabled, or not configured. Select a setting, and then choose **OK**. 
 
 7. Repeat step 6 for each setting that you want to configure. Then choose **Next**.
 
@@ -272,7 +272,7 @@ With network protection, you can help protect your organization against dangerou
 
 :::image type="content" source="/defender/media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Screenshot of endpoint protection profile in the Intune portal." lightbox="/defender/media/mde-p1/mem-endpointprotectionprofile.png":::
 
-1. Go to the [Intune admin center](https://endpoint.microsoft.com) and sign in. 
+1. Go to the [Intune admin center](https://intune.microsoft.com) and sign in. 
 
 2. Select **Devices** > **Configuration** > **+ Create** > **Create policy**.
 
@@ -307,7 +307,7 @@ With web protection, you can protect your organization's devices from web threat
 
 #### Configure web threat protection
 
-1. Go to the [Intune admin center](https://endpoint.microsoft.com), and sign in.
+1. Go to the [Intune admin center](https://intune.microsoft.com), and sign in.
  
 2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
 
@@ -362,7 +362,7 @@ Network firewall helps reduce the risk of network security threats. Your securit
 
 To configure basic firewall settings, follow these steps:
 
-1. Go to the [Intune admin center](https://endpoint.microsoft.com), and sign in.
+1. Go to the [Intune admin center](https://intune.microsoft.com), and sign in.
 
 2. Choose **Endpoint security** > **Firewall**, and then choose **+ Create Policy**.
 

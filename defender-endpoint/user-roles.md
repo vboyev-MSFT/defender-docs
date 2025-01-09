@@ -2,8 +2,9 @@
 title: Create and manage roles for role-based access control
 description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft Defender XDR
 ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+ms.subservice: onboard
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
