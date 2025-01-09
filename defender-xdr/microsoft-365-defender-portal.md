@@ -220,7 +220,7 @@ With this learning path from Microsoft Learn, you can understand Microsoft Defen
 - [Microsoft Defender for Office 365 in the Microsoft Defender portal](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in Microsoft Defender portal](microsoft-365-security-center-mde.md)
 - [Microsoft Defender for Identity in the Microsoft Defender portal](/defender-for-identity/microsoft-365-security-center-mdi)
-- [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/defender-cloud-apps/microsoft-365-security-center-defender-cloud-apps.md)
+- [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/defender-cloud-apps/microsoft-365-security-center-defender-cloud-apps)
 - [Microsoft Defender for Cloud in the Microsoft Defender portal](microsoft-365-security-center-defender-cloud.md)
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 
