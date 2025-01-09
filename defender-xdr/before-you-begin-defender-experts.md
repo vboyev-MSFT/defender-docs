@@ -30,7 +30,7 @@ ms.date: 01/09/2025
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender Experts for XDR](dex-xdr-overview.md)
 
-[Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) is a managed service that provides hunting capabilities for novel emerging threats that aren't yet well-known in the industry. The analysts for the hunting service review trends in the threat actor evolution based on world-renowned Microsoft Threat Intelligence and Research. They then apply the insights they gather to hunt for emerging attack vectors within the customer ecosystem.
+[Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) is a managed service that provides hunting capabilities for novel emerging threats that aren't yet well known in the industry. The analysts for the hunting service review trends in the threat actor evolution based on world-renowned Microsoft Threat Intelligence and Research. They then apply the insights they gather to hunt for emerging attack vectors within the customer ecosystem.
 
 With deep product expertise powered by threat intelligence, we're uniquely positioned to help you:
 
