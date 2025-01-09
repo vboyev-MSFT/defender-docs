@@ -72,7 +72,7 @@ To configure the device types that a device control policy is applied, follow th
 1. Use the properties in your removable storage group to create an XML file for each removable storage group.
 
 > [!NOTE]
-> Ensure header name is PolicyGroups, for example, the following XML:
+> Ensure root node of the XML is PolicyGroups, for example, the following XML:
 > <PolicyGroups>
 >     <Group id={etc.}>
 > </PolicyGroups>
@@ -100,7 +100,7 @@ You can create different group types. Here's one group example XML file for any 
 1. Use the properties in removable storage access policy rule(s) to create an XML for each group's removable storage access policy rule. 
 
 > [!NOTE]
-> Ensure header name is PolicyRules, for example, the following XML:
+> Ensure root node of the XML is PolicyRules, for example, the following XML:
 > <PolicyRules>
 >      <Rule id={etc.}>
 > </PolicyRules>
