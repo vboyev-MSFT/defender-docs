@@ -236,11 +236,11 @@ Use Group Policy to set the per-user ASR rule exclusions
 1. select **OK**. This setting allows the processes that are being blocked by the particular ASR Rule to continue running.
 
 > [!NOTE]
-> If the policies are not applying, please review [Troubleshoot Microsoft Defender Antivirus settings](/defender-endpoint/troubleshoot-settings)
+> "If policies aren't applying, review [Troubleshoot Microsoft Defender Antivirus settings](/defender-endpoint/troubleshoot-settings)
 
 ### Use PowerShell as an alternative method to enable attack surface reduction rules
 
-You can use PowerShell - as an alternative to Intune - to enable attack surface reduction rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. You can also get an idea of how often the rules fire during normal use.
+Use PowerShell, as an alternative to Intune, to enable attack surface reduction rules in audit mode. This allows you to view a record of apps that would have been blocked if the feature was fully enabled. You can also see how often the rules fire during normal use.
 
 To enable an attack surface reduction rule in audit mode, use the following PowerShell cmdlet:
 
