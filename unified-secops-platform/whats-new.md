@@ -20,7 +20,7 @@ ms.topic: concept-article
 
 This article lists recent features added into Microsoft's unified SecOps platform within the Microsoft Defender portal, and new features in related services that provide an enhanced user experience in the platform.
 
-## January 2024
+## January 2025
 
 [SOC optimization updates for unified coverage management](#soc-optimization-updates-for-unified-coverage-management)
 
