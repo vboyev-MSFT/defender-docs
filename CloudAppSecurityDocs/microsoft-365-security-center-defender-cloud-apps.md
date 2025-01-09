@@ -41,7 +41,7 @@ Learn more about the benefits: [Overview of Microsoft Defender XDR](/defender-xd
 
 Find Defender for Cloud Apps functionality in the Microsoft Defender portal under **Cloud Apps**. For example:
 
-:::image type="content" source="./media/microsoft-365-security-center-defender-cloud-apps/cloud-apps.png" alt-text="Screenshot that shows the Defender for Cloud Apps Cloud discovery page." lightbox="media/defender-for-cloud-apps/cloud-apps.png":::
+:::image type="content" source="media/microsoft-365-security-center-defender-cloud-apps/cloud-apps.png" alt-text="Screenshot that shows the Defender for Cloud Apps Cloud discovery page." lightbox="media/microsoft-365-security-center-defender-cloud-apps/cloud-apps.png":::
 
 ## Investigate cloud app alerts
 
@@ -57,7 +57,7 @@ Use the Microsoft Defender portal's global search bar at the top of the page to 
 
 Use the **Assets > Identities** page to find comprehensive details about entities pulled from connected cloud applications, including a users's activity history and security alerts related to the user. For example:
 
-:::image type="content" source="./media/microsoft-365-security-center-defender-cloud-apps/dashboard-top-users.png" alt-text="Screenshot that shows cloud app entities in the Identities page." lightbox="media/defender-for-cloud-apps/dashboard-top-users.png":::
+:::image type="content" source="media/microsoft-365-security-center-defender-cloud-apps/dashboard-top-users.png" alt-text="Screenshot that shows cloud app entities in the Identities page." lightbox="media/microsoft-365-security-center-defender-cloud-apps/dashboard-top-users.png":::
 
 <a name='redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender'></a>
 
