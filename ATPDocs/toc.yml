@@ -20,7 +20,9 @@ items:
   items:
   - name: Quick installation guide
     href: deploy/quick-installation-guide.md
-  - name: Deployment overview
+  - name: Pilot and deploy Microsoft Defender XDR
+    href: /defender-xdr/pilot-deploy-overview?toc=/defender-for-identity/toc.json&bc=/defender-for-identity/breadcrumb/toc.json
+  - name: Defender for Identity deployment overview
     href: deploy/deploy-defender-identity.md
   - name: Plan and prepare
     items:

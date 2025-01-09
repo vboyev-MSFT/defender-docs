@@ -33,6 +33,8 @@ items:
     href: best-practices.md
 - name: Deploy Defender for Cloud Apps
   items:
+  - name: Pilot and deploy Microsoft Defender XDR
+    href: /defender-xdr/pilot-deploy-overview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/breadcrumb/toc.json
   - name: Network requirements
     href: network-requirements.md
   - name: Getting started
