@@ -274,7 +274,7 @@ If you already have Defender for Endpoint running on any of these distros and fa
 > 
 > Microsoft Defender for Endpoint for Linux on Rocky and Alma currently has the following known issues:
 > - Live Response and Threat Vulnerability Management are currently not supported (work in progress).
-> - Operating system info for devices is not visible in the Microsoft Defender portal
+> - Operating system info for devices isn't visible in the Microsoft Defender portal
 
 ### January-2024 Build: 101.23112.0009 | Release version: 30.123112.0009.0
 
@@ -332,7 +332,7 @@ There are multiple fixes and new changes in this release:
   ```
 - Starting with this release, Microsoft Defender for Endpoint on Linux will no longer be shipping a solution for RHEL 6.
   
-    RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run Defender for Endpoint on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
+    RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run Defender for Endpoint on RHEL 6 servers can continue to use version 101.23082.0011 (doesn't expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
   - Engine Update to `1.1.23080.2007` and Signatures Ver: `1.395.1560.0`.
   - Streamlined device connectivity experience is now in public preview mode. [public blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-a-streamlined-device-connectivity-experience-for/ba-p/3956236)
   - Performance improvements & bug fixes.
@@ -355,7 +355,7 @@ There are multiple fixes and new changes in this release:
 
 This new release is build over October 2023 release (101.23082.0009) with addition of following changes. There's no change for other customers and upgrading is optional.
 
-Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules were not cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user should not see any mdatp rules loaded on reboot
+Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules weren't cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user shouldn't see any mdatp rules loaded on reboot
 
 Fix for MDE not starting up on RHEL 6.
 
@@ -440,7 +440,7 @@ sudo systemctl disable mdatp
     - You must add "*.dm.microsoft.com" to firewall exclusions for the feature to work correctly
   - Defender for Endpoint is now available for Debian 12 and Amazon Linux 2023
   - Support to enable Signature verification of updates downloaded
-    - Note that you must update the manajed.json as shown below
+    - You must update the manajed.json as shown below
       ```
         "features":{
           "OfflineDefinitionUpdateVerifySig":"enabled"
@@ -645,7 +645,7 @@ sudo systemctl disable mdatp
 - There are multiple fixes and new changes in this release 
     - Improved Network Protection Proxy handling.
     - In Passive mode, Defender for Endpoint no longer scans when Definition update happens.
-    - Devices continue to be protected even after Defender for Endpoint agent has expired. We recommend upgrading the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
+    - Devices continue to be protected even after Defender for Endpoint agent has expired. We recommend upgrading the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features, and performance improvements.
     - Removed semanage package dependency.
     - Engine Update to `1.1.20100.7` and Signatures Ver: `1.385.1648.0`.
     - Bug fixes.
@@ -897,7 +897,7 @@ sudo systemctl disable mdatp
   - Fixes an issue with accessing SMB shares behind Cisco AnyConnect VPN connections.
   - Fixes an issue with Network Protection and SMB.
   - lttng performance tracing support.
-  - TVM, eBPF, auditd, telemetry and mdatp cli improvements.
+  - TVM, eBPF, auditd, telemetry, and mdatp cli improvements.
   - mdatp health now reports behavior_monitoring
   - Other fixes.
 
@@ -1052,7 +1052,7 @@ As an alternative approach, follow the instructions to [uninstall](linux-resourc
 #### What's new
 
 - Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
-- From this build onwards, the product has the new antimalware engine by default
+- From this build onwards, the product has the new anti-malware engine by default
 - Performance improvements for file copy operations
 - Bug fixes
 
