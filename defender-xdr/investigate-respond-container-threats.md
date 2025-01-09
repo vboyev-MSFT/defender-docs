@@ -124,7 +124,9 @@ To determine the full scope of a container attack, you can deepen your investiga
 
 In the [Advanced hunting](advanced-hunting-overview.md) page, you can extend your search for container-related activities using the **CloudProcessEvents** and **CloudAuditEvents** tables.
 
-The [CloudProcessEvents](advanced-hunting-cloudprocessevents-table.md) table contains information about process events in multi-cloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine. On the other hand, the [CloudAuditEvents](advanced-hunting-cloudauditevents-table.md) table contains cloud audit events from cloud platforms protected by Microsoft Defender for Cloud. It also contains Kubeaudit logs, which holds information about Kubernetes-related events.
+The [CloudProcessEvents](advanced-hunting-cloudprocessevents-table.md) table contains information about process events in multi-cloud hosted environments such as Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine. 
+
+The [CloudAuditEvents](advanced-hunting-cloudauditevents-table.md) table contains cloud audit events from cloud platforms protected by Microsoft Defender for Cloud. It also contains Kubeaudit logs, which holds information about Kubernetes-related events.
 
 ## Troubleshoot issues
 
@@ -150,7 +152,7 @@ Learn how to access the Cloud Shell and check your network plugins by following 
 2. Above the **Essential** information, select **Connect** button and follow the instructions. 
 3. The Cloud Shell opens at the bottom of your browser. In the command line interface, run the following command to check your network plugins:
 
-      **kubectl get pods --all-namespaces -o json | jq -r '.items[].metadata.labels["k8s-app"]' | uniq | grep -E 'azure-npm|calico-node|cilium|aws-node' | head -n 1**
+      > kubectl get pods --all-namespaces -o json | jq -r '.items[].metadata.labels["k8s-app"]' | uniq | grep -E 'azure-npm|calico-node|cilium|aws-node' | head -n 1
 
 The results should mention any of the specified plugins in the network policy requirement. An empty line means that the supported plugin is not installed.
 
@@ -159,7 +161,7 @@ The results should mention any of the specified plugins in the network policy re
 1. Navigate your cluster in Google Cloud Portal. 
 2. Select **Connect** above the name of the cluster. In the small window that appears, copy the following command and run it in your local terminal.
 	
-	  **kubectl get pods --all-namespaces -o json | jq -r '.items[].metadata.labels["k8s-app"]' | uniq | grep -E 'azure-npm|calico-node|cilium|aws-node' | head -n 1**
+	  > kubectl get pods --all-namespaces -o json | jq -r '.items[].metadata.labels["k8s-app"]' | uniq | grep -E 'azure-npm|calico-node|cilium|aws-node' | head -n 1
 	
 3. You can also choose **Run in Cloud Shell** to run a shell session that opens at the bottom of your browser. You can copy the command in the interface to check your network plugins.
 
@@ -170,7 +172,8 @@ The results should mention any of the specified plugins in the network policy re
 1. Navigate to your cluster in AWS Cloud Portal. 
 2. Select **CloudShell** on the top-right corner. A Cloud Shell session opens at the bottom of your browser, which provides a command-line interface to manage your AWS resources.
 3. Connect to your cluster by running the following command:</br></br>
-    **aws eks --region &lt;cluster region&gt; update-kubeconfig --name &lt;cluster name&gt;**
+    > aws eks --region &lt;cluster region&gt; update-kubeconfig --name &lt;cluster name&gt;**
+   
    > [!NOTE]
    > Ensure that the aws-node is deleted or disabled for the Calico and Cilium plugins.
 
@@ -178,7 +181,7 @@ The results should mention any of the specified plugins in the network policy re
 
 You need to confirm that the target pod's state is active or valid. To check if the pod is active, run the following command in the Cloud Shell:
 
-  **kubectl get pod &lt;pod-name&gt;**
+  > kubectl get pod &lt;pod-name&gt;
 
 ## See also
 
