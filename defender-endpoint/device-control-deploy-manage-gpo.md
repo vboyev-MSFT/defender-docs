@@ -69,7 +69,13 @@ To configure the device types that a device control policy is applied, follow th
 
 1. Create one XML file for each removable storage group. 
 
-2. Use the properties in your removable storage group to create an XML file for each removable storage group. 
+1. Use the properties in your removable storage group to create an XML file for each removable storage group.
+
+> [!NOTE]
+> Ensure header name is PolicyGroups, for example, the following XML:
+> <PolicyGroups>
+>     <Group id={etc.}>
+> </PolicyGroups>
 
 3. Save each XML file to your network share.
 
@@ -91,7 +97,13 @@ You can create different group types. Here's one group example XML file for any 
 
 1. Create one XML file for access policy rule.
 
-2. Use the properties in removable storage access policy rule(s) to create an XML for each group's removable storage access policy rule. 
+1. Use the properties in removable storage access policy rule(s) to create an XML for each group's removable storage access policy rule. 
+
+> [!NOTE]
+> Ensure header name is PolicyRules, for example, the following XML:
+> <PolicyRules>
+>      <Rule id={etc.}>
+> </PolicyRules>
 
 3. Save the XML file to network share.
 
@@ -110,4 +122,6 @@ You can create different group types. Here's one group example XML file for any 
 
 - [Device control in Defender for Endpoint](device-control-overview.md)
 - [Device control policies in and settings](device-control-policies.md)
+
 - [Device Control for macOS](mac-device-control-overview.md)
+
