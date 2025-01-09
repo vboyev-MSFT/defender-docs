@@ -25,27 +25,56 @@ ms.collection:
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+
+- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
+
 - Microsoft Defender Antivirus
 
 **Platforms**
 - Windows
 
-If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
+- Windows Server
+
+If your system is having high CPU usage or performance issues related to the Microsoft Defender Antivirus (Antimalware Service Executable, MsMpEng.exe, Microsoft Defender Antivirus).
 
 As an admin, you can also troubleshoot these issues on your own.
 
 First, you might want to check if the issue is caused by other software. Read [Check with the vendor for known issues with antivirus exclusions](#check-with-the-vendor-for-known-issues-with-antivirus-products).
 
-Otherwise, you can identify which software is related to the identified performance issue by following the steps in [Analyze the Microsoft Protection Log](#analyze-the-microsoft-protection-log).
+## Common reasons for higher cpu utilization by Microsoft Defender Antivirus:
 
-You can also provide other logs to your submission to Microsoft support by following the steps in:
+|#|Common reason for higher cpu utilization|Information|Solution |
+| -------- | -------- | -------- | -------- |
+|1|Binaries not being signed (.exe’s, .dll’s, .ps1, etc…)  |Anytime that a binary (.exe’s, .dll’s, .ps1, etc…) are launched/started, if they are not digitally signed, we will go ahead and do a real-time protection (rtp) scan and/or scheduled scan and/or on-demand scan.|You all should consider signing (Extended code validation (EV) code signing or using internal PKI) the binaries.  And/or reaching out to the vendor so they could sign the binary (EV code signing).  We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/en-us/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor or if it’s an inhouse built application/service/script, the software can be submitted through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper). Work-around: 1) (Preferred) For .exe’s and dll’s use [Indicators – File hash - allow](/defender-endpoint/indicator-file) or [Indicators – Certificate - allow](/defender-endpoint/indicator-certificates) 2) (Alternative) 2) Add [AV exclusions (process+path)](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus).  |
+|2|Using HTA’s, CHM’s and different files as databases.|Anytime that MDAV needs to extract and/or scan complex file formats, higher cpu utilization can occur.|Look at using actual databases, if you need to save info and query it. Work-around: Add [AV exclusions (process+path)](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)|
+|3|Using obfuscations on scripts|If you obfuscate scripts, MDAV in order to check if the script contains malicious payloads, it can use more cpu utilization while scanning.|Only use script obfuscation if really necessary.  Work-around: Add [AV exclusions (process+path)](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)|
+|4|Not letting the MDAV cache finish before sealing the image.  |If you are creating a VDI image such as for a non-persistent image, make sure that the ‘cache maintenance’ completes before the image is sealed. |Review: [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)|
+|5|Having the wrong path exclusion(s) due to misspelling|If you add misspelled exclusion paths, it can lead to performance issues.|Use MpCmdRun.exe -CheckExclusion -Path to validate path-based exclusions.|
+|6|When a path exclusion is added, it works for scanning flows.  |Behavior Monitoring (BM) and Network Real-time Inspection (NRI) may still cause performance issues. |Work-around: 1) (Preferred) For .exe’s and dll’s use [Indicators – File hash - allow](/defender-endpoint/indicator-file) or [Indicators – Certificate - allow](/defender-endpoint/indicator-certificates) 2) (Alternative) 2) [Add AV exclusions (process+path)](/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)|
+|7|File hash computation|If you enable "File hash computation" which is used for Indicators - File hash - allow, there is an additional performance overhead which is [documented](/defender-endpoint/indicator-file).  For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance. |This is where you, and your leadership team will have to make a decision, of having more security or less cpu utilization.  Solution would be to disable the File hash computation feature. Computer Configuration > Adminstrative Templates > Windows Components > Microsoft Defender Antivirus > MpEngine > Enable file hash computation features.|
 
-- [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
-- [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder)
+### Narrowing it down to which Microsoft Defender Antivirus component could be contributing to the higher cpu utilization:
 
-For performance-specific issues related to Microsoft Defender Antivirus, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+|Component|Information| Solution|
+| -------- | -------- | -------- |
+|Real-time protection (RTP) scanning|You can use [Troubleshooting mode](/defender-endpoint/enable-troubleshooting-mode) to turn off [Tamper Protection](/defender-endpoint/troubleshoot-problems-with-tamper-protection).  Once Tamper Protection is turned off, you could turn off the “Real-time protection” temporarily, in order to rule it out.|Please see above “Common reasons for higher cpu utilization by Microsoft Defender Antivirus”|
+|Scheduled scanning|Check your default scheduled scan settings|A few things that you can do to lower the cpu utilization during a scheduled scan.  1) **General scheduled scan settings** •	1a) Configure low CPU priority for scheduled scans (Use low CPU priority for scheduled scans): The thread priority in Windows for Normal, has two values.  8 (lower) and 9 (higher).  By setting this to enabled, you are lowering the scheduled scan thread priority from 9 to 8.  Which provides the other application threads to run with a higher priority, thus getting more cpu time than MDAV.  •	1b) Specify the maximum percentage of CPU utilization during a scan (CPU usage limit per scan): 50 (default), you could lower it to 20 or 30%.  Note: If you have a change control window, by modifying the amount of cpu that can be used, causes the scan to take longer. •	1c) Start the scheduled scan only when computer is on but not in use (ScanOnlyIfIdle): Not configured (Enabled by default).  It requires the machine to be idle, meaning the cpu usage overall of the device has to be lower than 80%.  2) __Daily quick scan 2a) Specify the interval to run quick scans per day: Not configured (How many hours have elapsed, before the next quick scan runs - 0 to 24 hours) 2b) Specify the time for a daily quick scan (Run daily quick scan at): 12 PM.  3) Run a weekly scheduled scan (quick or full) 3a) Specify the scan type to use for a scheduled scan (Scan type): Not configured 3b) Specify the time of day to run a scheduled scan (Day of week to run scheduled scan): Not configured 3c) Specify the day of the week to run a scheduled scan (Time of day to run a scheduled scan): Not configured__|
+|Scan after a security intelligence update.|By default, MDAV scans after a security intelligence update for optimal protection purposes.  Note: Customers that have scheduled scans enabled, might think that there are scans that are run outside of the schedule.|This is where you, and your leadership team will have to make a decision, of having more security or less cpu utilization. Work-around: In Group Policy (or other management such as MDM), Computer Configuration > Administrative Templates > Microsoft Defender Antivirus > Security Intelligence Updates > Turn on scan after security intelligence update > Disabled|
+|Conflict with other security software|If you have a 3rd party security software such as antivirus, edr, dlp, endpoint privilege management, vpn, etc…|Add the 3rd party security software to the MDAV exclusions (path + processes) and vice-versa.  The list of the MDAV binaries are listed in the .xlsx here: [Configure your network environment to ensure connectivity with Defender for Endpoint service](/defender-endpoint/configure-environment)|
+|Scanning a large number of files or folders|Having big file such as an .iso or .vhdx , etc…  sitting in your user profile (desktop, downloads, documents, etc…), and that profile is being redirected to network shares such as  via Offline Files (CSC) or onedrive (or similar products).  Since it has to scan via a network, where there is additional latency compared to sitting locally on the disk, the scans could take longer. |If you don’t need the .iso/.vhd/.vhdx, etc… sitting on your profile, move it to a different folder where it’s not sitting on a network share (mapped drive, unc share, smb share)|
+
+## What’s triggering and causing the higher cpu utilization in Microsoft Defender Antivirus.
+
+Now, if you have gone thru the proactive steps, next is to find what’s triggering and causing the higher cpu utilization:
+
+
+| #|Tools to help narrow down what’s triggering the high cpu utilization|Comments|
+| -------- | -------- | -------- |
+|1   |[Collect Microsoft Defender Antivirus diagnostic data](/defender-endpoint/collect-diagnostic-data)|Microsoft Defender Antivirus diagnostic data that you want to include whenever troubleshooting an issue with MDAV.|
+|2|[Performance analyzer for Microsoft Defender Antivirus](/defender-endpoint/tune-performance-defender-antivirus)|For performance-specific issues related to Microsoft Defender Antivirus, see Performance analyzer for Microsoft Defender Antivirus.  This allows you to run the data collection and parse the data, where it’s easy to understand. Note: Please make sure that the issue is reproducing when you collect this data.|
+|3|[Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon)|If for some reason that the MDAV performance analyzer doesn’t provide with the details that you need to narrow down on what’s triggering the high cpu utilization, you can use Process Monitor (ProcMon). Tip: You can collect for 5-10 minutes. Note: Please make sure that the issue is reproducing when you collect this data.|
+|4|[Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI](Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI)|In cases of a more advanced troubleshooting needed, you can use the Windows Performance Recorder UI (WPRUI) or Windows Performance Recorder (WPR).  Tip: Due to the verbosity of this trace, keep it to 3 to 5 minute max.  Note: Please make sure that the issue is reproducing when you collect this data.|
 
 ## Check with the vendor for known issues with antivirus products
 
@@ -53,243 +82,15 @@ If you can readily identify the software affecting system performance, go to the
 
 We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
-## Analyze the Microsoft Protection Log
+**Q**:  Should I use the “EstimatedImpact” in the Microsoft Protection Log C:\ProgramData\Microsoft\Windows Defender\Support\MPLog-xxxxxxxx-xxxxxx.log?
 
-You can find the Microsoft protection log file in **C:\ProgramData\Microsoft\Windows Defender\Support**.
+**A**: No, we do not support looking anything in the MPLog.log, please use the tools mentioned “What’s triggering and causing the higher cpu utilization in Microsoft Defender Antivirus.“
 
-In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact information of running software as *EstimatedImpact*:
+## What if I still have an issue?
 
-`Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
+You can submit a ticket to [Microsoft support](/defender-endpoint/contact-support).
 
-|Field name|Description|
-|---|---|
-|ProcessImageName|Process image name|
-|TotalTime|The cumulative duration in milliseconds spent in scans of files accessed by this process|
-|Count|The number of scanned files accessed by this process|
-|MaxTime|The duration in milliseconds in the longest single scan of a file accessed by this process|
-|MaxTimeFile|The path of the file accessed by this process for which the longest scan of `MaxTime` duration was recorded|
-|EstimatedImpact|The percentage of time spent in scans for files accessed by this process out of the period in which this process experienced scan activity|
-
-If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](collect-diagnostic-data.md).
-
-If the previous step doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections.
-
-## Capture process logs using Process Monitor
-
-Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this tool to capture the performance issue as it is occurring.
-
-1. Download [Process Monitor v3.89](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
-
-2. To remove the file's mark of the web:
-
-    1. Right-click **ProcessMonitor.zip** and select **Properties**.
-
-    1. Under the *General* tab, look for *Security*.
-
-    1. Check the box beside **Unblock**.
-
-    1. Select **Apply**.
-
-    :::image type="content" source="media/procmon-motw.png" alt-text="Screenshot showing the Remove MOTW page." lightbox="media/procmon-motw.png":::
-
-3. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
-
-4. Copy **ProcMon.exe**  to the Windows client or Windows server you're troubleshooting.
-
-5. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
-
-6. You can launch ProcMon in two ways.
-
-    1. Right-click **ProcMon.exe** and select **Run as administrator**.
-
-        Since logging starts automatically, select the magnifying glass icon  to stop the current capture or use the keyboard shortcut **Ctrl+E**.
-
-        :::image type="content" source="media/procmon-magglass.png" alt-text="Screenshot showing the magnifying glass icon." lightbox="media/procmon-magglass.png":::
-
-        To verify that you've stopped the capture, check if the magnifying glass icon now appears with a red X.
-
-        :::image type="content" source="media/procmon-magglass-stop.png" alt-text="Screenshot showing a red slash." lightbox="media/procmon-magglass-stop.png":::
-
-        Next, to clear the earlier capture, select the eraser icon.
-
-        :::image type="content" source="media/procmon-eraser-clear.png" alt-text="Screenshot showing the clear icon" lightbox="media/procmon-eraser-clear.png":::
-
-        Or use the keyboard shortcut **Ctrl+X**.
-
-    2. The second way is to run the **command line** as admin, then from the Process Monitor path, run:
-
-       :::image type="content" source="media/cmd-procmon.png" alt-text="Screenshot showing the cmd procmon." lightbox="media/cmd-procmon.png":::
-
-        ```console
-        Procmon.exe /AcceptEula /Noconnect /Profiling
-        ```
-
-        > [!TIP]
-        > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
-        >
-        > :::image type="content" source="media/procmon-minimize.png" alt-text="Screenshot showing the page with Procmon minimized." lightbox="media/procmon-minimize.png":::
-
-7. After following one of the procedures in step 6, you'll next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
-
-   :::image type="content" source="media/procmon-filter-options.png" alt-text="Screenshot showing the page where System Exclude is chosen as the Filter out Process Name." lightbox="media/procmon-filter-options.png":::
-
-8. To start the capture, select the magnifying glass icon again.
-
-9. Reproduce the problem.
-
-    > [!TIP]
-    > Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
-
-10. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
-
-11. To save the capture with a unique name and with the `.pml` format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
-
-    :::image type="content" source="media/procmon-savesettings1.png" alt-text="Screenshot showing the save settings page" lightbox="media/procmon-savesettings1.png":::
-
-12. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
-
-    - `%ComputerName%` is the device name
-    - `MMDDYEAR` is the month, day, and year
-    - `Repro_of_issue` is the name of the issue you're trying to reproduce
-
-    > [!TIP]
-    > If you have a working system, you might want to get a sample log to compare.
-
-13. Zip the `.pml` file and submit it to Microsoft support.
-
-## Capture performance logs using Windows Performance Recorder
-
-You can use Windows Performance Recorder (WPR) to include additional information in your submission to Microsoft support. WPR is a powerful recording tool that creates Event Tracing for Windows recordings.
-
-WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). You can also download it as part of the Windows 10 Software Development Kit at [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
-
-You can use the WPR user interface by following the steps in [Capture performance logs using the WPR UI](#capture-performance-logs-using-the-wpr-ui).
-
-Alternatively, you can also use the command-line tool *wpr.exe*, which is available in Windows 8 and later versions  by following the steps in [Capture performance logs using the WPR CLI](#capture-performance-logs-using-the-wpr-cli).
-
-### Capture performance logs using the WPR UI
-
-> [!TIP]
-> If multiple devices are experiencing this issue, use the one which has the most RAM.
-
-1. Download and install WPR.
-
-2. Under *Windows Kits*, right-click **Windows Performance Recorder**.
-
-   :::image type="content" source="media/wpr-01.png" alt-text="Screenshow showing the Start menu" lightbox="media/wpr-01.png":::
-
-    Select **More**. Select **Run as administrator**.
-
-3. When the User Account Control dialog box appears, select **Yes**.
-
-   :::image type="content" source="media/wpt-yes.png" alt-text="Screenshot showing the UAC page." lightbox="media/wpt-yes.png":::
-
-4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder like `C:\temp`.
-
-5. On the WPR dialog box, select **More options**.
-
-   :::image type="content" source="media/wpr-03.png" alt-text="Screenshot showing the page where you can select more options" lightbox="media/wpr-03.png":::
-
-6. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
-
-7. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
-
-   :::image type="content" source="media/wpr-infile.png" alt-text="Screenshot showing the in-file." lightbox="media/wpr-infile.png":::
-
-    > [!WARNING]
-    > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**.
-    This custom profile provides the necessary context for in-depth performance analysis.
-
-8. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
-
-   1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
-    
-   2. Select **Custom measurements**.
-    
-   3. Select **Microsoft Defender for Endpoint analysis**.
-    
-   4. Select **Verbose** under *Detail* level.
-    
-   5. Select **File** or **Memory** under Logging mode.
-
-   > [!IMPORTANT]
-   > You should select *File* to use the file logging mode if the performance issue can be reproduced directly by the user. Most issues fall under this category. However, if the user cannot directly reproduce the issue but can easily notice it once the issue occurs, the user should select *Memory* to use the memory logging mode. This ensures that the trace log will not inflate excessively due to the long run time.
-
-9. Now you're ready to collect data. Exit all the applications that aren't relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
-
-   :::image type="content" source="media/wpr-08.png" alt-text="Screenshot showing the Hide options." lightbox="media/wpr-08.png":::
-
-   > [!TIP]
-   > Try starting the trace at whole number seconds. For instance, 01:30:00. This will make it easier to analyze the data. Also try to keep track of the timestamp of exactly when the issue is reproduced.
-
-10. Select **Start**.
-
-   :::image type="content" source="media/wpr-09.png" alt-text="Screenshot showing the Record system information page." lightbox="media/wpr-09.png":::
-
-11. Reproduce the issue.
-
-   > [!TIP]
-   > Keep the data collection to no more than five minutes. Two to three minutes is a good range since a lot of data is being collected.
-
-12. Select **Save**.
-
-   :::image type="content" source="media/wpr-10.png" alt-text="Screenshot showing the Save option." lightbox="media/wpr-10.png":::
-
-13. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
-
-   :::image type="content" source="media/wpr-12.png" alt-text="Screenshot showing the pane in which you fill." lightbox="media/wpr-12.png":::
-
-   1. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
-    
-   1. Select **Save**.
-
-14. Wait while the trace is being merged.
-
-   :::image type="content" source="media/wpr-13.png" alt-text="Screenshot showing the WPR gathering general trace." lightbox="media/wpr-13.png":::
-
-15. Once the trace is saved, select **Open folder**.
-
-   :::image type="content" source="media/wpr-14.png" alt-text="Screenshot that displays the notification that WPR trace has been saved." lightbox="media/wpr-14.png":::
-
-   Include both the file and the folder in your submission to Microsoft Support.
-
-   :::image type="content" source="media/wpr-15.png" alt-text="Screenshot showing the details of the file and the folder." lightbox="media/wpr-15.png":::
-
-### Capture performance logs using the WPR CLI
-
-The command-line tool *wpr.exe* is part of the operating system starting with Windows 8. To collect a WPR trace using the command-line tool wpr.exe:
-
-1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `MDAV.wprp` in a local directory such as `C:\traces`.
-
-2. Right-click the **Start Menu** icon and select **Windows PowerShell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
-
-3. When the User Account Control dialog box appears, select **Yes**.
-
-4. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
-
-   ```console
-   
-   wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
-  
-   ```
-
-   > [!WARNING]
-   > If your Windows Server has 64 GB or RAM or more, use profiles `WDForLargeServers.Light` and `WDForLargeServers.Verbose` instead of profiles `WD.Light` and `WD.Verbose`, respectively. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability.
-
-5. Reproduce the issue.
-
-   > [!TIP]
-   > Keep the data collection no to more than five minutes. Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
-
-6. At the elevated prompt, run the following command to stop the performance trace, making sure to provide information about the problem and how you reproduced the issue:
-
-   ```console
-   wpr.exe -stop merged.etl "Timestamp when the issue was reproduced, in HH:MM:SS format" "Description of the issue" "Any error that popped up"
-   ```
-
-7. Wait until the trace is merged.
-
-8. Include both the file and the folder in your submission to Microsoft support.
+Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).  Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
 ## See also
 
