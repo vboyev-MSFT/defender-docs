@@ -58,7 +58,7 @@ First, you might want to check if other software is causing the issue. Read [Che
 | Conflicts with other security software | If you have non-Microsoft security software, such as antivirus, EDR, DLP, endpoint privilege management, VPN, and so on, add the that software to the Microsoft Defender Antivirus exclusions (path + processes), and vice-versa.<br/><br/> To get the list of the Microsoft Defender Antivirus binaries, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](/defender-endpoint/configure-environment). |
 | Scanning a large number of files or folders | If you have a big file such as an .iso, .vhdx, and so on, sitting in your user profile (desktop, downloads, documents, and so on) and that profile is being redirected to network shares, such as Offline Files (CSC) or OneDrive (or similar products), scans can take longer to run. This is because you're scanning a network, where there's more latency compared to files stored locally on a device.<br/><br/>If you don't need the .iso/.vhd/.vhdx, etc… sitting on your profile, move it to a different folder where it's not sitting on a network share (mapped drive, unc share, smb share). |
 
-## What's triggering and causing higher CPU utilization in Microsoft Defender Antivirus.
+## What's triggering and causing higher CPU utilization in Microsoft Defender Antivirus
 
 Now, if you have gone through the proactive steps, next is to find what's triggering and causing the higher CPU utilization:
 
