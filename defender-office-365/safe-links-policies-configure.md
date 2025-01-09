@@ -65,7 +65,7 @@ You configure Safe Links policies in the Microsoft Defender portal or in Exchang
 - For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
   > [!TIP]
-  > [Exceptions to Built-in protection for Safe Links](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy) or settings in custom Safe Links policies are ignored if a recipient is also included in the [Standard or Strict preset security policies](preset-security-policies.md). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  > If a recipient is included in the [Standard or Strict preset security policies](preset-security-policies.md), exceptions to Built-in protection for Safe Links or exceptions in custom Safe Links policies don't apply due to the order of precedence (preset security policies are always applied first). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
