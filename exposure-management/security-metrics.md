@@ -37,6 +37,7 @@ Security initiative metrics in [Microsoft Security Exposure Management](microsof
 
     - **Description**: Metric description.
     - **State**: Current state of metric.
+    - **Progress**: Shows the improvement of the exposure level for the metric from 0 (high exposure) to 100 (no exposure).
     - **Last state update**: The last time metric state was updated.
     - **Affected assets**. The number of affected assets out of the total assets.
     - **Weight**: Metric weight which affects the metric impact on initiative score.
