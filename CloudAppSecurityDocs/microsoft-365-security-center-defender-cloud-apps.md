@@ -43,7 +43,6 @@ Find Defender for Cloud Apps functionality in the Microsoft Defender portal unde
 
 :::image type="content" source="media/microsoft-365-security-center-defender-cloud-apps/cloud-apps.png" alt-text="Screenshot that shows the Defender for Cloud Apps Cloud discovery page." lightbox="media/microsoft-365-security-center-defender-cloud-apps/cloud-apps.png":::
 
-
 ## Investigate cloud app alerts
 
 Defender for Cloud Apps alerts show in the Defender portal's incident and alerts queues, with relevant content inside alert pages for each type of an alert. For more information, see [Investigate incidents in Microsoft Defender XDR](/defender-xdr/investigate-incidents).
