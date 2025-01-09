@@ -74,7 +74,9 @@ To configure the device types that a device control policy is applied, follow th
 > [!NOTE]
 > Ensure root node of the XML is PolicyGroups, for example, the following XML:
 > <PolicyGroups>
->     <Group id={etc.}>
+>     <Group Id="{d8819053-24f4-444a-a0fb-9ce5a9e97862}" Type="Device">
+>          ...
+>     </Group>
 > </PolicyGroups>
 
 1. Save the XML file to your network share.
@@ -102,7 +104,9 @@ You can create different group types. Here's one group example XML file for any 
 > [!NOTE]
 > Ensure root node of the XML is PolicyRules, for example, the following XML:
 > <PolicyRules>
->      <Rule id={etc.}>
+>     <PolicyRule Id="{d8819053-24f4-444a-a0fb-9ce5a9e97862}">
+>         ...
+>      </PolicyRule>
 > </PolicyRules>
 
 3. Save the XML file to network share.
