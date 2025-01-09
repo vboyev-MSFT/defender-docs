@@ -91,6 +91,9 @@ In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Em
 
 By default, only the first 100 entries are shown until you scroll down to the bottom of the list, which loads more results.
 
+> [!TIP]
+> For answers to frequently asked questions about quarantined messages, select :::image type="icon" source="media/m365-cc-sc-refresh-icon.png" border="false"::: **Resolution to common issues** at the top of the page.
+
 On the **Email** tab, you can decrease the vertical spacing in the list by clicking :::image type="icon" source="media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal** and then selecting :::image type="icon" source="media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
