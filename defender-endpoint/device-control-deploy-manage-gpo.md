@@ -77,7 +77,7 @@ To configure the device types that a device control policy is applied, follow th
 >     <Group id={etc.}>
 > </PolicyGroups>
 
-3. Save each XML file to your network share.
+1. Save the XML file to your network share.
 
 4. Define the settings as follows:
 
