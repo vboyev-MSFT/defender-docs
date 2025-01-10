@@ -86,7 +86,7 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
    2. To confirm the capture has stopped, look for a red X on the magnifying glass icon.
 
       ![Screenshot showing a red slash.](media/procmon-magglass-stop.png)
-      ![Screenshot showing the clear icon](media/procmon-eraser-clear.png)
+      ![Screenshot showing the clear icon.](media/procmon-eraser-clear.png)
 
    3. Run the **command line** as admin, then from the Process Monitor path, run:
 
@@ -111,7 +111,7 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 
 10. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
-    ![Screenshot showing the save settings page](media/procmon-savesettings1.png)
+    ![Screenshot showing the save settings page.](media/procmon-savesettings1.png)
 
 11. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
 
