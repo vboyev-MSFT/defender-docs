@@ -186,8 +186,8 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
   |Not spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
 
 - [Allow entries in the Tenant Allow/Block List](tenant-allow-block-list-about.md#allow-entries-in-the-tenant-allowblock-list): There are two types of allow entries:
-  - Message level allow entries act on the entire message, regardless of the entities in the message. Allow entries for email address and domains are message level allow entries. These allows override bulk, spam and ML model caused high confidence phishing verdicts. 
-  - Entity level allow entries act on the filtering verdict of entities. Allow entries for URLs, spoofed senders, and files are entity level allow entries. To override malware and high confidence phishing verdicts, you need to use entity level allow entries, which you can create by submission only due to [Secure by default in Microsoft 365](secure-by-default.md).
+  - **Message level** allow entries act on the entire message, regardless of the entities in the message. Allow entries for email address and domains are message level allow entries. These allow entries override bulk and spam verdicts, and high confidence phishing verdicts from machine learning models.
+  - **Entity level** allow entries act on the filtering verdict of entities. Allow entries for URLs, spoofed senders, and files are entity level allow entries. To override malware and high confidence phishing verdicts, you need to use entity level allow entries, which you can create by submission only due to [Secure by default in Microsoft 365](secure-by-default.md).
 
   |Filtering stack verdict|Email address/domain|
   |---|---|
