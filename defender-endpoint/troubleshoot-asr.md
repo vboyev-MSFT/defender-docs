@@ -84,8 +84,8 @@ If the attack surface reduction rule is blocking something that it shouldn't blo
 To add an exclusion, see [Customize attack surface reduction](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
 
 > [!IMPORTANT]
-> You can specify individual files and folders to be excluded, but you cannot specify individual rules.
-> This means any files or folders that are excluded will be excluded from all ASR rules.
+> You can specify individual files and folders to be excluded, but you can't specify individual rules.
+> This means any files or folders that are excluded are excluded from all ASR rules.
 
 ## Report a false positive or false negative
 
@@ -93,7 +93,7 @@ Use the [Microsoft Security Intelligence web-based submission form](https://www.
 
 ## Collect diagnostic data for file submissions
 
-When you report a problem with attack surface reduction rules, you're asked to collect and submit diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues.
+When you report a problem with attack surface reduction rules, you're asked to collect and submit diagnostic data for Microsoft support and engineering teams to help troubleshoot issues.
 
 1. Open Command Prompt as an administrator and open the Windows Defender directory:
 
