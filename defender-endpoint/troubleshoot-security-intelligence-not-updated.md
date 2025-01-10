@@ -1,9 +1,9 @@
 ---
 title: Troubleshoot Microsoft Defender Antivirus Security intelligence not getting updated
 description: Learn how to troubleshoot Microsoft Defender Antivirus Security intelligence not getting updated.
-author: denisebmsft
-ms.author: deniseb
-manager: deniseb 
+author: emmwalshh
+ms.author: ewalsh
+manager: ewalsh 
 ms.date: 01/10/2025
 ms.topic: troubleshooting
 ms.service: defender-endpoint
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection: # Useful for querying on a set of strategic or high-priority content.
 ms.custom: 
 - partner-contribution
-ms.reviewer: yongrhee
+ms.reviewer: ewalsh
 search.appverid: MET150
 f1.keywords: NOCSH
 audience: ITPro
@@ -30,11 +30,11 @@ audience: ITPro
 
 ## Symptom
 
-When you try updating the Security intelligence for Microsoft Defender Antivirus, you might see an error about **Protection definition update failed**.
+When you update Microsoft Defender Antivirus security intelligence, you might see the error **Protection definition update failed**.
 
 :::image type="content" source="media/protection-definition-update-failed.png" alt-text="Screenshot of Protection definition update failed.":::
 
-You might see the following error codes:
+These error codes might also appear:
 
 - 0x8024402c 
 - 0x80240022 
@@ -46,7 +46,7 @@ You might see the following error codes:
 - 0x80072ee2 
 - 0x8007001B 
 
-The following screenshot shows an error about **Signature Update failed**.
+The following screenshot shows the error **Signature Update failed**.
 
 :::image type="content" source="media/signature-update-failed.png" alt-text="Screenshot showing signature update failed." lightbox="media/signature-update-failed.png":::
 
@@ -54,13 +54,13 @@ The following screenshot shows an error about **Signature Update failed**.
 
 1. Check the URLs required for the Security intelligence updates. You can get them via the firewall and/or proxy. See [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
-2. Is Microsoft Defender Antivirus (MDAV) the primary antivirus? Is there a third-party antivirus installed, which uses the Windows Security Center (WSC) API, which disables MDAV? If MDAV is disabled, then no updates such as Security intelligence update can occur.
+1. Ensure that Microsoft Defender Antivirus (MDAV) is your primary antivirus. If you have a third-party antivirus that uses the Windows Security Center (WSC) API, it will disable MDAV. When MDAV is disabled, updates can't occur.
 
-3. If MDAV is the primary antivirus and the services are running:
+1. Given that MDAV is the primary antivirus and the services are running:
 
-    1. Does updating the Security intelligence work if you manually download from [Latest security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware?](https://www.microsoft.com/wdsi/defenderupdates)
+    1. Check if updating Security Intelligence works when you manually download from [Latest security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware?](https://www.microsoft.com/wdsi/defenderupdates)
 
-    2. If it does, then you could try updating via Microsoft Malware Protection Center (MMPC).
+    1. If so, try updating through the Microsoft Malware Protection Center (MMPC).
 
        Run the following PowerShell command as an administrator.
 
@@ -68,7 +68,8 @@ The following screenshot shows an error about **Signature Update failed**.
           & "${env:ProgramFiles}\Windows Defender\MpCmdRun.exe" -SignatureUpdate -MMPC
        ```
 
-    3. If it works, then you could be having issues with the Security intelligence [Fallback order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) being set to a WSUS server that doesn't have the **Security intelligence** updates approved. Or if pointing to a UNC share, they might be stale or the Windows Update service might be having issues.
+    1. If this command works, the issue might be that the Security intelligence  [Fallback order](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) is set to a WSUS server without **Security intelligence** approved updates. Alternatively, the UNC share might be stale, or the Windows Update service might have issues.
+
         1. To check the WSUS server that the machine goes to, review `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\WUServer (REG_SZ)`. Once you find the WUServer, check if that WSUS server has the MDAV security intelligence [(KB2267602 for MDAV and KB2461484 for SCEP)](microsoft-defender-antivirus-updates.md#security-intelligence-updates) approved.
-        2. To check the UNC share, review [Manage how and where Microsoft Defender Antivirus receives updates](manage-protection-updates-microsoft-defender-antivirus.md#create-a-unc-share-for-security-intelligence-and-platform-updates).
-        3. To check the status of the Windows Update service, review [Guidance for troubleshooting Windows Update issues](/troubleshoot/windows-client/installing-updates-features-roles/troubleshoot-windows-update-issues) and [Troubleshoot problems updating Windows](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c).
+        1. To check the UNC share, review [Manage how and where Microsoft Defender Antivirus receives updates](manage-protection-updates-microsoft-defender-antivirus.md#create-a-unc-share-for-security-intelligence-and-platform-updates).
+        1. To check the status of the Windows Update service, review [Guidance for troubleshooting Windows Update issues](/troubleshoot/windows-client/installing-updates-features-roles/troubleshoot-windows-update-issues) and [Troubleshoot problems updating Windows](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c).
