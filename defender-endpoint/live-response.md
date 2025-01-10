@@ -229,7 +229,7 @@ Here are some examples:
 
 Live response has a library where you can put files into. The library stores files (such as scripts) that can be run in a live response session at the tenant level.
 
-Live response allows PowerShell and Bash scripts to run, however you must first put the files into the library before you can run them.
+Live response allows PowerShell and Bash scripts to run; however, you must first put the files into the library before you can run them.
 
 You can have a collection of PowerShell and Bash scripts that can run on devices that you initiate live response sessions with.
 
