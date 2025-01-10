@@ -119,7 +119,7 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
    - `MMDDYEAR` is the month, day, and year
    - `Repro_of_issue` is the name of the issue you're trying to reproduce
 
-   > [!TIP]
-   > If you have a working system, you might want to get a sample log to compare.
+> [!TIP]
+> If you have a working system, you might want to get a sample log to compare.
 
 12. Zip the `.pml` file and submit it to Microsoft Support.
