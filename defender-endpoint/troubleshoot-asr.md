@@ -25,10 +25,8 @@ search.appverid: met150
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
 
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
-
+- [Microsoft Defender for Endpoint Plan 1 and 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender XDR](/defender-xdr)
 
 When you use [attack surface reduction rules](attack-surface-reduction.md) you might run into issues, such as:
