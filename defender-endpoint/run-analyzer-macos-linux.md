@@ -60,4 +60,4 @@ The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint he
 
 [Address false positives/negatives in Microsoft Defender for Endpoint](/defender-endpoint/defender-endpoint-false-positives-negatives)
 
-[Microsoft Defender for Endpoint Tech Community](includes/defender-mde-techcommunity.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](includes/defender-mde-techcommunity.md)]
