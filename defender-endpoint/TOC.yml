@@ -512,7 +512,7 @@
         - name: Troubleshoot Microsoft Defender Antivirus settings
           href: troubleshoot-settings.md
         - name: Troubleshoot Microsoft Defender Antivirus Security intelligence not getting updated
-          href: troubleshoot-security-intelligence-not-updated.md  
+          href: troubleshoot-security-intelligence-not-updated.md 
         - name: Troubleshooting Security Intelligence Updates from Microsoft Update source
           href: security-intelligence-update-tshoot.md
           displayName: Troubleshooting Security Intelligence Updates from Microsoft Update source
@@ -936,6 +936,10 @@
               antivirus windows defender antivirus
           - name: Troubleshoot performance issues related to real-time protection
             href: troubleshoot-performance-issues.md
+          - name: Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
+            href: troubleshoot-av-performance-issues-with-wprui.md
+            displayName: Troubleshoot antivirus performance issues with WPRUI windows
+              performance recorder UI WPR windows performance recorder
           - name: Troubleshoot Microsoft Defender Antivirus performance issues with Process
               Monitor
             href: troubleshoot-av-performance-issues-with-procmon.md
