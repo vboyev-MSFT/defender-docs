@@ -183,7 +183,7 @@ Selecting :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" b
 |**Initiate automated investigation**|✔||
 |**Propose remediation**|✔||
 
-¹ This action requires the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned only to the **Data Investigator** and **Organization Management** role groups. You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
+¹ This action requires the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md) or the **Security operations/Security data/Email & collaboration advanced actions (manage)** permission in [Microsoft Defender XDR Unified role based access control (RBAC)](/defender-xdr/manage-rbac). By default, the **Search and Purge** role is assigned only to the **Data Investigator** and **Organization Management** role groups. You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
 ² This option is available for quarantined messages when you select **Inbox** as the move location.
 
