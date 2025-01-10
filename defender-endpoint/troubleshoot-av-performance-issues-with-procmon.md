@@ -94,8 +94,7 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 
      > [!TIP]
      > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
-
-      ![Screenshot showing the page with Procmon minimized.](media/procmon-minimize.png)
+     > ![Screenshot showing the page with Procmon minimized.](media/procmon-minimize.png)
 
 6. After completing step 6, set filters by selecting **OK**. You can filter the results after the capture is complete.
 
