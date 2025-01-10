@@ -43,7 +43,7 @@ Admins configure user reported messages to go to a specified reporting mailbox, 
 - The built-in **Report** button is available in the following versions of Outlook:
   - Outlook for Microsoft 365 version 16.0.17827.15010 or later and Outlook 2021 Version 2407 (Build 17830.20138) or later.
   - Outlook for Mac version 16.89 (24090815) or later.
-  - Outlook for Android and iOS version 4.2446 or later.
+  - Outlook for iOS and Android version 4.2446 or later.
   - The new Outlook for Windows.
   - Outlook on the web.
 
