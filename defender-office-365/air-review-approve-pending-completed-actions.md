@@ -17,7 +17,7 @@ ms.collection:
 ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.service: defender-office-365
-ms.date: 07/10/2024
+ms.date: 01/10/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
@@ -26,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Microsoft 365 organizations with [Microsoft Defender for Office 365 Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), automated investigation and response (AIR) often results in pending remediation actions. For example:
+In Microsoft 365 organizations with [Microsoft Defender for Office 365 Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)  (included in Microsoft 365 licenses like E5 or as a standalone subscription), automated investigation and response (AIR) often results in pending remediation actions. For example:
 
 - Soft deleting email messages or clusters.
 - Turning off external mail forwarding.
@@ -47,9 +47,9 @@ These remediation actions aren't taken automatically. The remediation actions ne
 
 For more information about the **Incidents** page in Defender for Office 365, see [Details and results of automated investigation and response (AIR) in Microsoft Defender for Office 365 Plan 2](air-view-investigation-results.md).
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the Email & collaboration **Investigations** page at **Email & collaboration** \> **Investigations**. Or, to go directly to the Email & collaboration **Investigations** page, use <https://security.microsoft.com/airinvestigation>.
-2. On the **Investigations** page, find and an item in the list where the **Status** value is **Pending approval**. Use :::image type="icon" source="media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the results by the **Status** value **Pending action**.
-3. On the **Investigations** page, select the **Pending action** item by clicking on :::image type="icon" source="media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** in the **ID**column (don't select the check box).
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Investigations** page in Defender for Office 365 at **Email & collaboration** \> **Investigations**. Or, to go directly to the **Investigations** page in Defender for Office 365, use <https://security.microsoft.com/airinvestigation>.
+2. On the **Investigations** page in Defender for Office 365, find and an item in the list where the **Status** value is **Pending approval**. Use :::image type="icon" source="media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the results by the **Status** value **Pending action**.
+3. On the **Investigations** page, select the **Pending action** item by clicking on :::image type="icon" source="media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** in the **ID** column (don't select the check box).
 4. In the investigation details page that opens, select the **Pending actions** tab, and then select an entry from the list by clicking anywhere in the row other than the check box next to the first column.
 5. In the details flyout that opens, review the information and then select one of the following actions from the top of the flyout:
    - :::image type="icon" source="media/m365-cc-sc-check-mark-icon.png" border="false"::: **Approve**: Initiate the pending action.
@@ -59,8 +59,8 @@ For more information about the **Incidents** page in Defender for Office 365, se
 
 For more information about the **Incidents** page in Defender XDR, see [Investigate incidents in Microsoft Defender XDR](/defender-xdr/investigate-incidents).
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the Defender XDR **Incidents** page at **Incidents & alerts** \> **Incidents**. Or, to go directly to the Defender XDR **Incidents** page, use <https://security.microsoft.com/incidents>.
-2. On the **Investigations** page, find and an item in the list where the **Status** value is **Pending approval**. Use the following steps to filter the results:
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Incidents** page in Defender XDR at **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page in Defender XDR, use <https://security.microsoft.com/incidents>.
+2. On the **Investigations** page in Defender XDR, find and an item in the list where the **Status** value is **Pending approval**. Use the following steps to filter the results:
    1. Clear any existing unwanted filters on the **Incidents** page by selecting :::image type="icon" source="media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Clear**.
    2. Select :::image type="icon" source="media/m365-cc-sc-filter-icon.png" border="false"::: **Add filter**.
    3. In the **Add filter** dialog that opens, select **Automated investigation state**, and then select **Add**.
