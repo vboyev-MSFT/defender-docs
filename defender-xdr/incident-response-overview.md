@@ -54,7 +54,7 @@ It's not enough to respond to attacks as they occur. For extended, multi-phase a
 Advanced hunting is a query-based threat hunting tool in Microsoft Defender XDR that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. 
 
 > [!TIP]
-> You are able to extend the 30 days of raw data of advanced hunting using [Microsoft XDR Streaming api](/defender-xdr/streaming-api) and [Microsoft Defender for Endpoint Streaming api.](/defender-endpoint/api/raw-data-export)
+> You can extend the 30 days of raw data of advanced hunting using [Microsoft XDR Streaming API](/defender-xdr/streaming-api) and [Microsoft Defender for Endpoint Streaming API](/defender-endpoint/api/raw-data-export).
 
 This flexible access to the Microsoft Defender XDR data enables unconstrained hunting for both known and potential threats.
 
