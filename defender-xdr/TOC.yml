@@ -573,44 +573,44 @@
                  href: /defender-endpoint/professional-services
     - name: Resources
       items:
-        - name: Threat actor naming
-          href: microsoft-threat-actor-naming.md
-        - name: Malware names
-          href: malware-naming.md
-        - name: How Microsoft identifies malware and PUA
-          href: criteria.md
-        - name: Submit files for analysis
-          href: submission-guide.md
-        - name: Understand threat intelligence concepts
-          href: /defender-endpoint/threat-indicator-concepts          
-        - name: Microsoft virus initiative
-          href: virus-initiative-criteria.md
-        - name: Software developer FAQ
-          href: developer-faq.yml     
-        - name: Alert classification playbooks
-          items:
-            - name: Overview
-              href: alert-classification-playbooks.md
-            - name: Suspicious email forwarding activity
-              href: alert-grading-playbook-email-forwarding.md
-            - name: Suspicious inbox forwarding rules
-              href: alert-grading-playbook-inbox-forwarding-rules.md
-            - name: Suspicious inbox manipulation rules
-              href: alert-grading-playbook-inbox-manipulation-rules.md
-            - name: Suspicious password-spray-related IP address
-              href: alert-classification-suspicious-ip-password-spray.md
-            - name: Malicious Exchange connectors
-              href: alert-classification-malicious-exchange-connectors.md
-            - name: Password spray attacks
-              href: alert-classification-password-spray-attack.md
-        - name: Incident response playbooks
-          href: /security/operations/incident-response-playbooks
-        - name: Ransomware playbooks
-          items:
-            - name: Detecting human-operated ransomware attacks with Microsoft Defender XDR
-              href: playbook-detecting-ransomware-m365-defender.md
-            - name: Responding to ransomware attacks
-              href: playbook-responding-ransomware-m365-defender.md                       
+      - name: Alert classification playbooks
+        items:
+        - name: Overview
+          href: alert-classification-playbooks.md
+        - name: Suspicious email forwarding activity
+          href: alert-grading-playbook-email-forwarding.md
+        - name: Suspicious inbox forwarding rules
+          href: alert-grading-playbook-inbox-forwarding-rules.md
+        - name: Suspicious inbox manipulation rules
+          href: alert-grading-playbook-inbox-manipulation-rules.md
+        - name: Suspicious password-spray-related IP address
+          href: alert-classification-suspicious-ip-password-spray.md
+        - name: Malicious Exchange connectors
+          href: alert-classification-malicious-exchange-connectors.md
+        - name: Password spray attacks
+          href: alert-classification-password-spray-attack.md
+      - name: Incident response playbooks
+        href: /security/operations/incident-response-playbooks
+      - name: Ransomware playbooks
+        items:
+        - name: Detecting human-operated ransomware attacks with Microsoft Defender XDR
+          href: playbook-detecting-ransomware-m365-defender.md
+        - name: Responding to ransomware attacks
+          href: playbook-responding-ransomware-m365-defender.md
+      - name: Threat actor naming
+        href: microsoft-threat-actor-naming.md
+      - name: Malware names
+        href: malware-naming.md
+      - name: How Microsoft identifies malware and PUA
+        href: criteria.md
+      - name: Submit files for analysis
+        href: submission-guide.md
+      - name: Understand threat intelligence concepts
+        href: /defender-endpoint/threat-indicator-concepts          
+      - name: Microsoft virus initiative
+        href: virus-initiative-criteria.md
+      - name: Software developer FAQ
+        href: developer-faq.yml                                    
     - name: Microsoft Defender XDR docs
       items:
        - name: Defender for Office 365
