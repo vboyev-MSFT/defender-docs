@@ -68,7 +68,7 @@ Now, if you have gone through the proactive steps, next is to find what's trigge
 |1  |[Collect Microsoft Defender Antivirus diagnostic data](/defender-endpoint/collect-diagnostic-data)|Microsoft Defender Antivirus diagnostic data that you want to include whenever troubleshooting an issue with Microsoft Defender Antivirus.|
 |2|[Performance analyzer for Microsoft Defender Antivirus](/defender-endpoint/tune-performance-defender-antivirus)|For performance-specific issues related to Microsoft Defender Antivirus, see Performance analyzer for Microsoft Defender Antivirus. This allows you to run the data collection and parse the data, where it's easy to understand. Note: Make sure that the issue is reproducing when you collect this data.|
 |3|[Troubleshoot Microsoft Defender Antivirus performance issues with Process Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon)|If for some reason that the Microsoft Defender Antivirus performance analyzer doesn't provide with the details that you need to narrow down on what's triggering the high CPU utilization, you can use Process Monitor (ProcMon). Tip: You can collect for 5-10 minutes. Note: Make sure that the issue is reproducing when you collect this data.|
-|4|[Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI](Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI)|In cases of a more advanced troubleshooting needed, you can use the Windows Performance Recorder UI (WPRUI) or Windows Performance Recorder (WPR). Tip: Due to the verbosity of this trace, keep it to 3 to 5 minute max. Note: Make sure that the issue is reproducing when you collect this data.|
+|4|[Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI](/defender-endpoint/troubleshoot-av-performance-issues-with-wprui)|In cases of a more advanced troubleshooting needed, you can use the Windows Performance Recorder UI (WPRUI) or Windows Performance Recorder (WPR). Tip: Due to the verbosity of this trace, keep it to 3 to 5 minute max. Note: Make sure that the issue is reproducing when you collect this data.|
 
 ## Check with the vendor for known issues with antivirus products
 
@@ -76,15 +76,11 @@ If you can readily identify the software affecting system performance, go to the
 
 We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
-**Q**: Should I use the "EstimatedImpact" in the Microsoft Protection Log C:\ProgramData\Microsoft\Windows Defender\Support\MPLog-xxxxxxxx-xxxxxx.log?
-
-**A**: No, we don't support looking anything in the MPLog.log. Use the tools mentioned in the section, [What's triggering and causing higher CPU utilization in Microsoft Defender Antivirus](#whats-triggering-and-causing-higher-cpu-utilization-in-microsoft-defender-antivirus)?
-
 ## What if I still have an issue?
 
 You can submit a ticket to [Microsoft support](/defender-endpoint/contact-support).
 
-Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md). Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
+Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
 ## See also
 
