@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how the order of protection settings and the priority order of security policies affect the application of security policies in Microsoft 365.
 ms.service: defender-office-365
 search.appverid: met150
-ms.date: 01/08/2024
+ms.date: 01/10/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
