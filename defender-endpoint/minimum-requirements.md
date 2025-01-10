@@ -130,8 +130,9 @@ To add anti-malware protection to these older operating systems, you can use [Sy
 
 The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they aren't in addition to the requirements for the operating system).
 
-- Cores: Two minimum, four preferred
-- Memory: One GB minimum, four preferred
+- Cores: 2 minimum, 4 preferred
+
+- Memory: 1GB minimum, 4GB preferred
 
 ### Network and data storage and configuration requirements
 
@@ -144,9 +145,9 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 #### IP stack
 
-IPv4 (Internet Protocol Version 4) stack must be enabled on devices for communication to the Defender for Endpoint cloud service to work as expected.
+Internet Protocol Version 4 (IPv4) stack must be enabled on devices for communication to the Defender for Endpoint cloud service to work as expected.
 
-Alternatively, if you must use an IPv6-only configuration, consider adding dynamic IPv6/IPv4 transitional mechanisms, such as DNS64/NAT64 to ensure end-to-end IPv6 connectivity to Microsoft 365 without any other network reconfiguration.
+Alternatively, if you must use an Internet Protocol Version 6 (IPv6) only configuration, consider adding dynamic IPv6/IPv4 transitional mechanisms, such as DNS64/NAT64 to ensure end-to-end IPv6 connectivity to Microsoft 365 without any other network reconfiguration.
 
 #### Internet connectivity
 
