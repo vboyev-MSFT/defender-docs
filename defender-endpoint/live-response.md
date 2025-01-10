@@ -311,7 +311,7 @@ Live response supports table and JSON format output types. For each command, the
 
 ## Supported output pipes
 
-Live response supports output piping to CLI and file. CLI is the default output behavior. You can pipe the output to a file using the following command: [command] > [filename].txt.
+Live response supports output piping to CLI and file. CLI is the default output behavior. You can pipe the output to a file using the following command: `[command] > [filename].txt`.
 
 Example:
 
