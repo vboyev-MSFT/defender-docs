@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 04/03/2024
+ms.date: 01/10/2025
 ---
 
 # Investigate entities on devices using live response
