@@ -56,7 +56,7 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 
 1. Download [Process Monitor v3.89](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
 
-1. To remove the file's mark of the web:
+2. To remove the file's mark of the web:
 
    1. Right-click **ProcessMonitor.zip** and select **Properties**.
 
@@ -68,54 +68,53 @@ There are two ways to capture a Process Monitor (ProcMon) trace:
 
       ![Screenshot showing the Remove MOTW page.](media/procmon-motw.png)
 
-1. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
+3. Unzip the file in `C:\temp` so that the folder path is `C:\temp\ProcessMonitor`.
 
-1. Copy **ProcMon.exe** to the Windows client or Windows server you're troubleshooting.
+4. Copy **ProcMon.exe** to the Windows client or Windows server you're troubleshooting.
 
    > [!TIP]
    > Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Taking this step helps to minimize the number of processes to check.
 
-1. You can launch ProcMon in two ways.
+5. You can launch ProcMon in two ways.
 
    1. Right-click **ProcMon.exe** and select **Run as administrator**.
 
-         Since logging starts automatically, stop the capture by selecting the magnifying glass icon or pressing  **Ctrl+E**.
+    - Since logging starts automatically, stop the capture by selecting the magnifying glass icon or pressing  **Ctrl+E**.
 
       ![Screenshot showing the magnifying glass icon.](media/procmon-magglass.png)
 
-To confirm the capture has stopped, look for a red X on the magnifying glass icon.
+   2. To confirm the capture has stopped, look for a red X on the magnifying glass icon.
 
-   ![Screenshot showing a red slash.](media/procmon-magglass-stop.png)
+      ![Screenshot showing a red slash.](media/procmon-magglass-stop.png)
+      ![Screenshot showing the clear icon](media/procmon-eraser-clear.png)
 
-   ![Screenshot showing the clear icon](media/procmon-eraser-clear.png)
-
-   1. Run the **command line** as admin, then from the Process Monitor path, run:
+   3. Run the **command line** as admin, then from the Process Monitor path, run:
 
       ![Screenshot showing the cmd procmon.](media/cmd-procmon.png)
 
-        > [!TIP]
+     > [!TIP]
      > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
 
       ![Screenshot showing the page with Procmon minimized.](media/procmon-minimize.png)
 
-1. After completing step 6, set filters by selecting **OK**. You can filter the results after the capture is complete.
+6. After completing step 6, set filters by selecting **OK**. You can filter the results after the capture is complete.
 
    ![Screenshot showing the page where System Exclude is chosen as the Filter out Process Name.](media/procmon-filter-options.png)
 
-1. To start the capture, select the magnifying glass icon again.
+7. To start the capture, select the magnifying glass icon again.
 
-1. Reproduce the problem.
+8. Reproduce the problem.
 
    > [!TIP]
    > Wait for the problem to be reproduced, then note the timestamp when the trace begins.
 
-1. After capturing two to four minutes of process activity during high CPU usage, stop the capture by clicking the magnifying glass icon.
+9. After capturing two to four minutes of process activity during high CPU usage, stop the capture by clicking the magnifying glass icon.
 
-1. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
+10. To save the capture with a unique name in the `.pml` format, go to **File** then click **Save...**. Ensure you select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
-   ![Screenshot showing the save settings page](media/procmon-savesettings1.png)
+    ![Screenshot showing the save settings page](media/procmon-savesettings1.png)
 
-1. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
+11. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
 
    - `%ComputerName%` is the device name
    - `MMDDYEAR` is the month, day, and year
@@ -124,4 +123,4 @@ To confirm the capture has stopped, look for a red X on the magnifying glass ico
    > [!TIP]
    > If you have a working system, you might want to get a sample log to compare.
 
-1. Zip the `.pml` file and submit it to Microsoft Support.
+12. Zip the `.pml` file and submit it to Microsoft Support.
