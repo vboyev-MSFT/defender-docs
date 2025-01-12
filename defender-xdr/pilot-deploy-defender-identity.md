@@ -5,9 +5,9 @@ search.appverid: met150
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
-ms.date: 05/31/2024
+ms.author: bagol
+author: batamig
+ms.date: 01/12/2025
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -29,9 +29,9 @@ ms.topic: conceptual
 
 This article provides a workflow for piloting and deploying Microsoft Defender for Identity in your organization. You can use these recommendations to onboard Microsoft Defender for Identity as an individual cybersecurity tool or as part of an end-to-end solution with Microsoft Defender XDR.
 
-This article assumes you have a production Microsoft 365 tenant and are piloting and deploying Microsoft Defender for Identity in this environment. This practice will maintain any settings and customizations you configure during your pilot for your full deployment.
+This article assumes you have a production Microsoft 365 tenant and are piloting and deploying Microsoft Defender for Identity in this environment. This practice will maintain any settings and customizations you configure during your pilot for your [full deployment](/defender-for-identity/deploy/deploy-defender-identity).
 
-Defender for Office 365 contributes to a Zero Trust architecture by helping to prevent or reduce business damage from a breach. For more information, see the [Prevent or reduce business damage from a breach](/security/zero-trust/adopt/prevent-reduce-business-damage-breach) business scenario in the Microsoft Zero Trust adoption framework.
+Defender for Identity contributes to a Zero Trust architecture by helping to prevent or reduce business damage from a breach. For more information, see the [Prevent or reduce business damage from a breach](/security/zero-trust/adopt/prevent-reduce-business-damage-breach) business scenario in the Microsoft Zero Trust adoption framework.
 
 ## End-to-end deployment for Microsoft Defender XDR
 
@@ -51,7 +51,7 @@ The articles in this series correspond to the following phases of end-to-end dep
 
 The following diagram illustrates a common process to deploy a product or service in an IT environment.
 
-:::image type="content" source="./media/eval-defender-xdr/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="./media/eval-defender-xdr/adoption-phases.svg":::
+:::image type="content" source="./media/eval-defender-xdr/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="./media/eval-defender-xdr/adoption-phases.svg" border="false":::
 
 You start by evaluating the product or service and how it will work within your organization. Then, you pilot the product or service with a suitably small subset of your production infrastructure for testing, learning, and customization. Then, gradually increase the scope of the deployment until your entire infrastructure or organization is covered.
 
@@ -65,16 +65,15 @@ Follow these steps:
 1. [Install and configure sensors](#step-2)
 1. [Configure event log and proxy settings on machines with the sensor](#step-3)
 1. [Allow Defender for Identity to identify local admins on other computers](#step-4)
-1. [Configure benchmark recommendations for your identity environment](#step-5)
-1. [Try out capabilities](#step-6)
+1. [Try out capabilities](#step-5)
 
 Here are the recommended steps for each deployment stage.
 
 | Deployment stage | Description |
 | --- | --- |
 | Evaluate | Perform product evaluation for Defender for Identity. |
-| Pilot | Perform Steps 1-6 for a suitable subset of servers with sensors in your production environment. |
-| Full deployment | Perform Steps 2-5 for your remaining servers, expanding beyond the pilot to include all of them. |
+| Pilot | Perform Steps 1-5 for a suitable subset of servers with sensors in your production environment. |
+| Full deployment | Perform Steps 2-4 for your remaining servers, expanding beyond the pilot to include all of them. |
 
 ### Protecting your organization from hackers
 
@@ -113,14 +112,8 @@ In this illustration:
 
 Defender for Identity sensors can be directly installed on the following servers:
 
-- AD DS domain controllers
-
-  The sensor directly monitors domain controller traffic, without the need for a dedicated server or the configuration of port mirroring.
-
-- AD CS servers
-- AD FS servers
-
-  The sensor directly monitors network traffic and authentication events.
+- **AD DS domain controllers**. The sensor directly monitors domain controller traffic, without the need for a dedicated server or the configuration of port mirroring.
+- **AD FS servers / AD CS servers**. The sensor directly monitors network traffic and authentication events.
 
 For a deeper look into the architecture of Defender for Identity, see [Microsoft Defender for Identity architecture](/defender-for-identity/architecture).
 
@@ -128,27 +121,25 @@ For a deeper look into the architecture of Defender for Identity, see [Microsoft
 
 ## Step 1: Set up the Defender for Identity instance
 
-First, Defender for Identity requires some prerequisite work to ensure that your on-premises identity and networking components meet minimum requirements. Use the [Microsoft Defender for Identity prerequisites](/defender-for-identity/prerequisites) article as a checklist to ensure your environment is ready.
-
-Next, sign in to the Defender for Identity portal to create your instance and then connect this instance to your Active Directory environment.
-
-| Step | Description | More information |
-|---|---|---|
-| 1 | Create the Defender for Identity instance | [Quickstart: Create your Microsoft Defender for Identity instance](/defender-for-identity/install-step1) |
-| 2 | Connect the Defender for Identity instance to your Active Directory forest | [Quickstart: Connect to your Active Directory Forest](/defender-for-identity/install-step2) |
+Sign in to the Defender portal to start deploying supported services, including Microsoft Defender for Identity. For more information, see [Start using Microsoft Defender XDR](/defender-for-identity/deploy/deploy-defender-identity##start-using-microsoft-defender-xdr).
 
 <a name="step-2"></a>
 
-## Step 2: Install and configure sensors
+## Step 2: Install your sensors
 
-Next, download, install, and configure the Defender for Identity sensor on the domain controllers, AD FS, and AD CS servers in your on-premises environment.
+First, Defender for Identity requires some prerequisite work to ensure that your on-premises identity and networking components meet minimum requirements. Use the [Microsoft Defender for Identity prerequisites](/defender-for-identity/prerequisites) article as a checklist to ensure your environment is ready.
+
+Next, make sure that you have the necessary permissions and prerequisites in place to install the Defender for Identity sensor in your environment, and plan your capacity requirements. For more information, see [Plan capacity for Microsoft Defender for Identity deployment](/defender-for-identity/deploy/capacity-planning).
+
+When you're ready, download, install, and configure the Defender for Identity sensor on the domain controllers, AD FS, and AD CS servers in your on-premises environment.
 
 | Step | Description | More information |
 |---|---|---|
-| 1 | Determine how many Microsoft Defender for Identity sensors you need. | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning) |
-| 2 | Download the sensor setup package | [Quickstart: Download the Microsoft Defender for Identity sensor setup package](/defender-for-identity/install-step3) |
-| 3 | Install the Defender for Identity sensor | [Quickstart: Install the Microsoft Defender for Identity sensor](/defender-for-identity/install-step4) |
-| 4 | Configure the sensor | [Configure Microsoft Defender for Identity sensor settings](/defender-for-identity/install-step5)|
+| 1 | Confirm that your environment meets Defender for Identity prerequisites. | [Microsoft Defender for Identity prerequisites](/defender-for-identity/prerequisites)|
+| 2 | Determine how many Microsoft Defender for Identity sensors you need. | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning) |
+| 3 | Verify connectivity to the Defender for Identity service | [Check network activity](/defender-for-identity/deploy/quick-installation-guidecheck-network-connectivity) |
+| 4 | Download and install the Defender for Identity sensor | [Install Defender for Identity](/defender-for-identity/deploy/quick-installation-guide#install-defender-for-identity)  |
+| 5 | Configure the sensor | [Configure Microsoft Defender for Identity sensor settings](/defender-for-identity/deploy/configure-sensor-settings)|
 
 <a name="step-3"></a>
 
@@ -158,32 +149,29 @@ On the machines that you installed the sensor on, configure Windows event log co
 
 | Step | Description | More information |
 |---|---|---|
-| 1 | Configure Windows event log collection | [Configure Windows Event collection](/defender-for-identity/configure-windows-event-collection) |
-| 2 | Configure Internet proxy settings | [Configure endpoint proxy and Internet connectivity settings for your Microsoft Defender for Identity Sensor](/defender-for-identity/configure-proxy) |
+| 1 | Configure Windows event log collection | [Event collection with Microsoft Defender for Identity](/defender-for-identity/event-collection-overview) and [Configure audit policies for Windows event logs](/defender-for-identity/deploy/configure-windows-event-collection) |
 
 <a name="step-4"></a>
 
 ## Step 4: Allow Defender for Identity to identify local admins on other computers
 
-Microsoft Defender for Identity lateral movement path detection relies on queries that identify local admins on specific machines. These queries are performed with the SAM-R protocol, using the Defender for Identity Service account.
+Microsoft Defender for Identity lateral movement path (LMP) detection relies on queries that identify local admins on specific machines. These queries are performed with the SAM-R protocol, using the Defender for Identity Service account.
 
 To ensure Windows clients and servers allow your Defender for Identity account to perform SAM-R, a modification to Group Policy must be made to add the Defender for Identity service account in addition to the configured accounts listed in the Network access policy. Make sure to apply group policies to all computers **except domain controllers**.
 
-For instructions on how to do this, see [Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr).
+For instructions on how to do this, see [Configure SAM-R to enable lateral movement path detection in Microsoft Defender for Identity](/defender-for-identity/deploy/remote-calls-sam).
 
 <a name="step-5"></a>
 
-## Step 5: Configure benchmark recommendations for your identity environment
+## Step 5: Try out capabilities
 
-Microsoft provides security benchmark recommendations for customers using Microsoft Cloud services. The [Azure Security Benchmark](/security/benchmark/azure/overview) (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
+The Defender for Identity documentation includes the following articles that walk through the process of identifying and remediating various attack types:
 
-Implementing these recommendations can take some time to plan and implement. While these recommendations greatly increase the security of your identity environment, they shouldn't prevent you from continuing to evaluate and implement Microsoft Defender for Identity. These recommendations are provided here for your awareness.
+- [Investigate assets](/defender-for-identity/investigate-assets), including suspicious users, groups, and devices
+- [Understand and investigate LMPs with Microsoft Defender for Identity](/defender-for-identity/understand-lateral-movement-paths)
+- [Understand security alerts](/defender-for-identity/understanding-security-alerts)
 
-<a name="step-6"></a>
-
-## Step 6: Try out capabilities
-
-The Defender for Identity documentation includes the following tutorials that walk through the process of identifying and remediating various attack types:
+For more information, see:
 
 - [Reconnaissance alerts](/defender-for-identity/reconnaissance-alerts)
 - [Compromised credential alerts](/defender-for-identity/compromised-credentials-alerts)
