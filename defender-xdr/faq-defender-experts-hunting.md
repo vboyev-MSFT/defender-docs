@@ -17,13 +17,14 @@ ms.custom:
 - cx-ti
 - cx-ean
 search.appverid: met150
-ms.date: 01/07/2025
+ms.date: 01/12/2025
 ---
 
 # General information on Microsoft Defender Experts for Hunting service
 
 **Applies to:**
 
+- [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md)
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 
 The following section lists down questions your security operations center (SOC) team might have about the Microsoft Defender Experts for Hunting service:
@@ -32,8 +33,7 @@ The following section lists down questions your security operations center (SOC)
 |---------|---------|
 | **What is the Microsoft Defender Experts for Hunting service?** | [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) provides a proactive threat hunting service to identify threats in advance. <br><br>[Microsoft Defender Experts for XDR](dex-xdr-overview.md) also includes the proactive threat hunting offered by Defender Experts for Hunting.|
 |**Does Defender Experts for Hunting use or require Microsoft Sentinel or a security information and event management (SIEM) platform?**| No. This service doesn't use any non-Microsoft data ingested either through Microsoft Sentinel or any other SIEM platform.|
-|**What products does Defender Experts for Hunting operate on?**| Defender Experts for Hunting relies on event signals from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. It also relies on proprietary Microsoft Threat Intelligence sources. Any event definitions not authored by Microsoft Defender products, such as third-party events or detections, fall outside the scope of this service.|
-|**Does Defender Experts for Hunting replace my threat hunting team?**| Defender Experts for Hunting doesn't replace your internal hunting team but instead augments their capabilities. This service targets new and emerging threats, addressing industry knowledge gaps in identifying them.|
+|**What products does Defender Experts for Hunting operate on?**| Defender Experts for Hunting relies on event signals from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, Microsoft Entra ID protection, and Microsoft Defender for Identity. It also relies on proprietary Microsoft Threat Intelligence sources. Any event definitions not authored by Microsoft Defender products, such as third-party events or detections, fall outside the scope of this service.|
 |**What is the role of Defender Experts for Hunting in the context of a purple team (red team and blue team coordinated work stream) exercise?**| Defender Experts for Hunting is part of the blue team in a purple team exercise. It complements your internal hunting team by enhancing their capabilities rather than replacing them.|
 |**What actions can your experts take during a hunting investigation that results in a Defender Experts Notification?**| During threat hunting investigations, our analysts refrain from taking direct actions on customer assets. Instead, they provide detailed information, including a threat summary and hunting queries that show the timeline of events for the identified attack, and remediation action recommendations. Defender Experts Notifications provide guidance on how you can review and address the novel threat.|
 |**What types of incidents can your experts investigate?**| The Defender Experts for Hunting service specializes in addressing the evolving threat landscape, bridging industry knowledge gaps, and recommending the most effective ways to identify these threats. Our experts don't prioritize well-established threats that Microsoft Defender products address adequately. However, when a well-known tactic is employed to generate a novel attack, our experts identify both the novel and existing attack tactics diligently. [Learn more about novel attacks in our in the Microsoft Security Experts Blog](https://techcommunity.microsoft.com/tag/Defender%20Experts%20for%20Hunting?nodeId=board%3AMicrosoftSecurityExperts)|
