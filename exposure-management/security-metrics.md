@@ -47,7 +47,7 @@ Security initiative metrics in [Microsoft Security Exposure Management](microsof
 
 You can customize metric weight according to your business needs.
 > [!NOTE]
-> You must have **Exposure managment (manage)** permissions and access to all assets on the tenant level to edit the weight.
+> You must have **Exposure managment (manage)** permissions and access to all assets on the tenant level to edit the weight. For more information, see, [Permissions](prerequisites.md#permissions)
 
 1. To edit the metric weight, select a specific metric.
 1. In the metric properties side panel, select Edit metric, then change the metric weight and apply.
