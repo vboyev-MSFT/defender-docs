@@ -108,6 +108,6 @@ Use the following steps as a guide to start using the Microsoft Defender XDR Uni
 
 Watch the following video to see the preceding steps in action:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12hyh]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0b4bc29d-0b8b-41f1-ad8b-105b0d0386f8]
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/defender-m3d-techcommunity.md)]
