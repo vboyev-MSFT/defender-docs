@@ -1065,7 +1065,7 @@ If the JSON is well-formed, the above command outputs it back to the Terminal an
 
 ## Verifying that the mdatp_managed.json file is working as expected
 
-To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:
+To verify that your `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` is working properly, you should see "[managed]" next to these settings:
 
 - `cloud_enabled`
 - `cloud_automatic_sample_submission_consent`
