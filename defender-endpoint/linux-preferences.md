@@ -502,7 +502,7 @@ Specifies a process for which all file activity is excluded from scanning. The p
 The following settings can be configured to enable certain advanced scanning features. 
 
 > [!IMPORTANT]
-> Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
+> Enabling these features might impact device performance. As such, it is recommended to keep the defaults unless recommended otherwise by Microsoft Support.
 
 ##### Configure scanning of file modify permissions events
 
@@ -638,7 +638,7 @@ Depending on the enforcement level, the automatic security intelligence updates 
 The following settings can be configured to enable certain advanced features.
 
 >[!IMPORTANT]
->Enabling these features might impact device performance. It is recommended to keep the defaults.
+>Enabling these features might impact device performance. It is recommended to keep the defaults unless recommended otherwise by Microsoft Support.
 
 |Description|JSON Value|Defender Portal Value|
 |---|---|---|
