@@ -57,13 +57,13 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - Upgraded the Bond version to 13.0.1 to address security vulnerabilities in versions 12 or lower.
 
-- Mdatp package no longer has a dependency on selinux packages.
+- Mdatp package no longer has a dependency on SELinux packages.
   
 - User can now query the status of supplementary event provider eBPF using the threat hunting query in DeviceTvmInfoGathering. To learn more about this query check: [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/defender-endpoint/linux-support-ebpf). The result of this query can return the following two values as eBPF status:
   - Enabled: When eBPF is enabled as working as expected.
   - Disabled: When eBPF is disabled due to one of the following reasons:
     - When MDE is using auditD as a supplementary sensor
-    - When eBPF is not present and we fallback to Netlink as supplementory event provider
+    - When eBPF is not present and we fallback to Netlink as supplementary event provider
     - There is no supplementary sensor present.
 
 - Starting from 2411, the MDATP package release to Production on packages.microsoft.com will follow a gradual rollout mechanism which spans over a week. The other release rings, insiderFast and insiderSlow, are unaffected by this change.
