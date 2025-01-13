@@ -271,7 +271,7 @@ To remove both NFS and Fuse from unmonitored list of filesystems, do the followi
 > [!NOTE]
 > Here's the default list of monitored filesystems for RTP: `btrfs`, `ecryptfs`, `ext2`, `ext3`, `ext4`, `fuseblk`, `jfs`, `overlay`, `ramfs`, `reiserfs`, `tmpfs`, `vfat`, `xfs`.
 >
-> If any monitored filesystem needs to be added to the list of unmonitored filesystems,then it needs to be evaluated and enabled by Microsoft via cloud config. Following which customers can update managed_mdatp.json to unmonitor that filesystem.
+> If any monitored filesystem needs to be added to the list of unmonitored filesystems, then it needs to be evaluated and enabled by Microsoft via cloud config. Following which customers can update managed_mdatp.json to unmonitor that filesystem.
 
 
 
@@ -385,7 +385,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 
 ### Exclusion setting preferences
 
-**Exlusion setting preferences are currently in preview**.
+**Exclusion setting preferences are currently in preview**.
 
 > [!NOTE] 
 > Global exclusions are currently in public preview, and are available in Defender for Endpoint beginning with version `101.23092.0012` or later in the Insiders Slow and Production rings.
@@ -434,7 +434,7 @@ Specifies the type of content excluded from the scan.
 
 ##### Scopes of exclusion (optional)
 
-Specifies the set of exlusion scopes of content excluded. Currently supported scopes are `epp` and `global`.
+Specifies the set of exclusion scopes of content excluded. Currently supported scopes are `epp` and `global`.
 
 If nothing is specified in for an exclusion under *exclusionSettings* in managed configuration, then `global` is considered as scope.
 
