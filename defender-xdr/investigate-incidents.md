@@ -52,7 +52,7 @@ From here, you can select **Open incident page**. This opens the main page for t
 Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context.
 
 The attack story is briefly described in the following video. 
- > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW129Jc]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=7004c8ca-43e7-430c-92f5-562c2d240b91]
 
 Within the attack story you can find the alert page and the incident graph.
 
@@ -253,6 +253,9 @@ Information is organized in these sections.
 Some incidents might have similar incidents listed on the **Similar incidents** page. This section shows incidents that have similar alerts, entities, and other properties. This can help you understand the scope of the attack and identify other incidents that might be related. Here's an example.
 
 :::image type="content" source="/defender/media/investigate-incidents/incident-similartab-small.png" alt-text="Screenshot that shows the Similar incidents tab for an incident in the Microsoft Defender portal." lightbox="/defender/media/investigate-incidents/incident-similartab.png":::
+
+> [!TIP]
+> **Defender Boxed**, a series of cards showcasing your organization's security successes, improvements, and response actions in the past six months/year, appears for a limited time during January and July of each year. Learn how you can share your [Defender Boxed](incident-queue.md#defender-boxed) highlights.
 
 ## Next steps
 
