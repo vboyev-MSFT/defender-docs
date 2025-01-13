@@ -19,7 +19,7 @@ ms.collection:
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.service: defender-office-365
-ms.date: 01/19/2024
+ms.date: 01/10/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/defender-xdr/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -184,6 +184,11 @@ Permissions for managing Defender for Office 365 in the Microsoft Defender porta
 > Privileged Identity Management (PIM) in Microsoft Entra ID is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](pim-in-mdo-configure.md).
 
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
+
+- **Microsoft Defender XDR Unified role based access control (RBAC)**: A single permissions management experience that provides one central location for administrators to control user permissions across different security solutions. For more information, see [Microsoft Defender XDR Unified RBAC](/defender-xdr/manage-rbac).
+  - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email & collaboration metadata (read)**.
+  - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email & collaboration content (read)**.
+  - _Remediate malicious email_: **Security operations/Security data/Email & collaboration advanced actions (manage)**.
 
 - **Microsoft Entra ID**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Microsoft Entra roles and assigned users in the Microsoft Defender portal, but you can't manage them directly there. Instead, you manage Microsoft Entra roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
   - **[Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)**

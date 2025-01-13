@@ -38,7 +38,7 @@ Threat Explorer or Real-time detections allow you to take the following actions:
 
 Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Defender for Office 365.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyPRU]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=62857c41-a1ad-41cb-a2b2-5bfe2cb4be77]
 
 > [!TIP]
 > Advanced hunting in Microsoft Defender XDR supports an easy-to-use query builder that doesn't use the Kusto Query Language (KQL). For more information, see [Build queries using guided mode](/defender-xdr/advanced-hunting-query-builder).
@@ -183,7 +183,7 @@ Selecting :::image type="icon" source="media/m365-cc-sc-take-actions-icon.png" b
 |**Initiate automated investigation**|✔||
 |**Propose remediation**|✔||
 
-¹ This action requires the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned only to the **Data Investigator** and **Organization Management** role groups. You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
+¹ This action requires the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md) or the **Security operations/Security data/Email & collaboration advanced actions (manage)** permission in [Microsoft Defender XDR Unified role based access control (RBAC)](/defender-xdr/manage-rbac). By default, the **Search and Purge** role is assigned only to the **Data Investigator** and **Organization Management** role groups. You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
 ² This option is available for quarantined messages when you select **Inbox** as the move location.
 
