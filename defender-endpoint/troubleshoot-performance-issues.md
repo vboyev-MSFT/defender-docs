@@ -3,11 +3,11 @@ title: Troubleshoot performance issues
 description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: maccruz
-author: schmurky
+ms.author: ewalsh
+author: emwalshh
 ms.localizationpriority: medium
-manager: dolmont
-ms.date: 01/09/2025
+manager: deniseb
+ms.date: 01/13/2025
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: ngp
