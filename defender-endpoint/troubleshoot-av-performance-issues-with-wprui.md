@@ -22,10 +22,10 @@ ms.custom:
 # Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
 
 > [!TIP]
-> First, review common reasons for performance issues such as high cpu in [Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (rtp) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)).
-> Then, run the [Microsoft Defender Antivirus Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus) which makes analyzing the reason for a high cpu in Microsoft Defender Antivirus (Antimalware Service Executable or Microsoft Defender Antivirus service or MsMpEng.exe)
-> If for any reason, the Microsoft Defender Antivirus Performance Analyzer doesn't provide with the root cause of the high cpu utilization, then, next run [Processor Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon) to find narrow down or root cause the high cpu utilization in Microsoft Defender Antivirus.
-> And the last tool in the toolbelt is to run a Windows Performance Recorder UI (WPRUI) or Windows Performance Recorded (WPR command-line) discussed in this article.
+> First, review common reasons for performance issues such as high CPU usage in [Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (rtp) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)).
+> Then, run the [Microsoft Defender Antivirus Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus) to analyze the cause of high CPU usage in Microsoft Defender Antivirus (Antimalware Service Executable, Microsoft Defender Antivirus service, or MsMpEng.exe).
+> If the Microsoft Defender Antivirus Performance Analyzer does not identify the root cause of high CPU utilization, run [Processor Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon) to narrow down or determine the root cause of the high CPU utilization in Microsoft Defender Antivirus.
+> The final tool in your toolkit is to run the Windows Performance Recorder UI (WPRUI) or the Windows Performance Recorder (WPR command-line) as discussed in this article.
 
 ## Capture performance logs using Windows Performance Recorder
 
@@ -35,23 +35,23 @@ WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can b
 
 Alternatively, follow the steps in [Capture performance logs using the WPR UI](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Ftroubleshoot-performance-issues.md/main/ae28f1cf-14bc-fb9c-5f0c-873a683e907c/?branch=main&branchFallbackFrom=main%2C), or use the command-line tool *wpr.exe* [Capture performance logs using the WPR CLI](/editor/MicrosoftDocs/defender-docs-pr/defender-endpoint%2Ftroubleshoot-performance-issues.md/main/ae28f1cf-14bc-fb9c-5f0c-873a683e907c/?branch=main&branchFallbackFrom=main%2C). Both are available in Windows 8 and later versions.
 
-There are two ways to capture a Windows Performance Recorder (WPRUI) trace:
+There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
 
-Using the MDE Client Analyzer
+1. Using the MDE Client Analyzer
 
-Manually
+1. Manually
 
 ## Using the MDE Client Analyzer
 
 1. Download the [MDE Client Analyzer ](/defender-endpoint/download-client-analyzer).
 
-2. Run the MDE Client Analyzer using [Live Response or locally](/defender-endpoint/run-analyzer-windows).
+1. Run the MDE Client Analyzer using [Live Response or locally](/defender-endpoint/run-analyzer-windows).
 
 > [!TIP]
-> Before starting the trace, please make sure that the issue is reproducible. Additionally, close any applications that do not contribute to the reproduction of the issue.
+> Before starting the trace, make sure the issue is reproducible. Additionally, close any applications that do not contribute to the reproduction of the issue.
 
 
-3. Run the MDE Client Analyzer with the -a and -v switches
+1. Run the MDE Client Analyzer with the -a and -v switches
 
    PowerShellCopy
    
@@ -64,79 +64,79 @@ Manually
 ### Capture performance logs using the WPR UI
 
 > [!TIP]
-> If multiple devices are experiencing this issue, try using the one with the most RAM.
+> If multiple devices are experiencing this issue, use the one with the most RAM.
 
 1. Download and install WPR.
 
-2. Under *Windows Kits*, right-click **Windows Performance Recorder**.
+1. Under *Windows Kits*, right-click **Windows Performance Recorder**.
 
    ![Screenshot showing the Start menu](media/wpr-01.png)
    
-3. Select **More**. Select **Run as administrator**.
+1. Select **More**. Select **Run as administrator**.
 
-4. Right-click **Yes** when the User Account Control dialog box appears.
+1. Right-click **Yes** when the User Account Control dialog box appears.
 
    ![Screenshot showing the UAC page.](media/wpt-yes.png)
    
-5. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder such as `C:\temp`.
+1. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `MDAV.wprp` to a folder such as `C:\temp`.
 
-6. In the WPR dialog box, select **More options**.
+1. In the WPR dialog box, select **More options**.
 
    ![Screenshot showing the page where you can select more options](media/wpr-03.png)
    
-7. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
+1. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
 
-8. A new profile named Microsoft Defender for Endpoint analysis should appear under Custom measurements.
+1. A new profile named Microsoft Defender for Endpoint analysis should appear under Custom measurements.
 
    ![Screenshot showing the in-file.](media/wpr-infile.png)
    
       > [!WARNING]
-   > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system consumes a high amount of non-paged pool memory or buffers, leading to system instability. Explore **Resource Analysis** to choose profiles to add.
+   > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system may consume a high amount of non-paged pool memory or buffers, leading to system instability.To address this, explore **Resource Analysis** to choose profiles to add.
    > This custom profile provides the necessary context for in-depth performance analysis.
 
-9. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
+1. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
 
    1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
 
-   2. Select **Custom measurements**.
+   1. Select **Custom measurements**.
 
-   3. Select **Microsoft Defender for Endpoint analysis**.
+   1. Select **Microsoft Defender for Endpoint analysis**.
 
-   4. Select **Verbose** under *Detail* level.
+   1. Select **Verbose** under *Detail* level.
 
-   5. Select **File** or **Memory** under Logging mode.
+   1. Select **File** or **Memory** under Logging mode.
 
    > [!IMPORTANT]
    > Select **File** to use the file logging mode if you can directly reproduce the performance issue. Most issues fall under this category. However, if you cannot directly reproduce the issue, select Memory to use the memory logging mode. This prevents the trace log from inflating excessively due to long run times.
 
-10. Now you're ready to collect data. Close all unnecessary applications. Click **Hide options** to keep the space occupied by the WPR window small.
+1. Now you're ready to collect data. Close all unnecessary applications. Click **Hide options** to keep the space occupied by the WPR window small.
 
    ![Screenshot showing the Hide options.](media/wpr-08.png)
    
-11. Select **Start**.
+1. Select **Start**.
 
    ![Screenshot showing the Record system information page.](media/wpr-09.png)
    
-12. Reproduce the issue.
+1. Reproduce the issue.
 
    > [!TIP]
    > Limit the data collection to a maximum of five minutes. Ideally, aim for two to three minutes, as a significant amount of data is being collected.
 
-13. Select **Save**.
+1. Select **Save**.
 
    ![Screenshot showing the Save option.](media/wpr-10.png)
    
-14. Fill in **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
+1. Fill in **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
 
    ![Screenshot showing the pane in which you fill.](media/wpr-12.png)
    
-15. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
+1. Select **File Name:** to determine where your trace file is saved. By default, it's saved to `%user%\Documents\WPR Files\`.
 
-16. Select **Save**.
+1. Select **Save**.
 
    ![Screenshot showing the WPR gathering general trace.](media/wpr-13.png)
    
-17. After the trace has been merged and saved, right-click **Open folder**.
+1. After the trace has been merged and saved, right-click **Open folder**.
 
    ![Screenshot that displays the notification that WPR trace has been saved.](media/wpr-14.png)
    
@@ -150,11 +150,11 @@ To collect a WPR trace using the command-line tool wpr.exe:
 
 1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** performance trace profile as `MDAV.wprp` in a local directory such as `C:\traces`.
 
-2. Right-click the **Start Menu** icon and select **Windows PowerShell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
+1. Right-click the **Start Menu** icon and select **Windows PowerShell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
 
-3. Select **Yes** in the User Account Control dialog box.
+1. Select **Yes** in the User Account Control dialog box.
 
-4. At the **Command Prompt (Admin)**, run the following command to start a Microsoft Defender for Endpoint performance trace:
+1. At the **Command Prompt (Admin)**, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
    ```console
    
@@ -165,20 +165,20 @@ To collect a WPR trace using the command-line tool wpr.exe:
    > [!WARNING]
    > If your Windows Server has 64 GB of RAM or more, use profiles `WDForLargeServers.Light` and `WDForLargeServers.Verbose` instead of profiles `WD.Light` and `WD.Verbose`, respectively. Otherwise, your system consumes a high amount of non-paged pool memory or buffers, leading to system instability.
 
-5. Reproduce the issue.
+1. Reproduce the issue.
 
    > [!TIP]
    > Limit the data collection to a maximum of five minutes. Ideally, aim for two to three minutes, as a significant amount of data is being collected.
 
-6. At the **Command Prompt (Admin)**, run the following command to start a Microsoft Defender for Endpoint performance trace:
+1. At the **Command Prompt (Admin)**, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
    ```console
    wpr.exe -stop merged.etl "Timestamp when the issue was reproduced, in HH:MM:SS format" "Description of the issue" "Any error that popped up"
    ```
 
-7. Wait until the trace is merged.
+1. Wait until the trace is merged.
 
-8. Include both the file and the folder in your submission to Microsoft Support.
+1. Include both the file and the folder in your submission to Microsoft Support.
 
 ## See also
 
