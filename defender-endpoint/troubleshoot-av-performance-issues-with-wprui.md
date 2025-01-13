@@ -140,9 +140,9 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
 
    ![Screenshot that displays the notification that WPR trace has been saved.](media/wpr-14.png)
    
-```
-  Include both the file and the folder in your submission to Microsoft Support.
-```   ![Screenshot showing the details of the file and the folder.](media/wpr-15.png)
+1. Include both the file and the folder in your submission to Microsoft Support.
+
+   ![Screenshot showing the details of the file and the folder.](media/wpr-15.png)
    
 ### Capture performance logs using the WPR CLI
 
