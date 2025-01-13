@@ -22,9 +22,9 @@ ms.custom:
 # Troubleshoot Microsoft Defender Antivirus performance issues with WPRUI
 
 > [!TIP]
-> First, review common reasons for performance issues such as high CPU usage in [Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (rtp) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)).
+> First, review common reasons for performance issues such as high CPU usage in [Troubleshoot performance issues related to Microsoft Defender Antivirus real-time protection (RTP) or scans (scheduled or on-demand](/defender-endpoint/troubleshoot-performance-issues)).
 > Then, run the [Microsoft Defender Antivirus Performance Analyzer](/defender-endpoint/tune-performance-defender-antivirus) to analyze the cause of high CPU usage in Microsoft Defender Antivirus (Antimalware Service Executable, Microsoft Defender Antivirus service, or MsMpEng.exe).
-> If the Microsoft Defender Antivirus Performance Analyzer does not identify the root cause of high CPU utilization, run [Processor Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon) to narrow down or determine the root cause of the high CPU utilization in Microsoft Defender Antivirus.
+> If the Microsoft Defender Antivirus Performance Analyzer doesn't identify the root cause of high CPU utilization, run [Processor Monitor](/defender-endpoint/troubleshoot-av-performance-issues-with-procmon) to narrow down or determine the root cause of the high CPU utilization in Microsoft Defender Antivirus.
 > The final tool in your toolkit is to run the Windows Performance Recorder UI (WPRUI) or the Windows Performance Recorder (WPR command-line) as discussed in this article.
 
 ## Capture performance logs using Windows Performance Recorder
@@ -48,7 +48,7 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
 1. Run the MDE Client Analyzer using [Live Response or locally](/defender-endpoint/run-analyzer-windows).
 
 > [!TIP]
-> Before starting the trace, make sure the issue is reproducible. Additionally, close any applications that do not contribute to the reproduction of the issue.
+> Before starting the trace, make sure the issue is reproducible. Additionally, close any applications that don't contribute to the reproduction of the issue.
 
 
 1. Run the MDE Client Analyzer with the -a and -v switches
@@ -91,7 +91,7 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
    ![Screenshot showing the in-file.](media/wpr-infile.png)
    
       > [!WARNING]
-   > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system may consume a high amount of non-paged pool memory or buffers, leading to system instability.To address this, explore **Resource Analysis** to choose profiles to add.
+   > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system might consume a high amount of nonpaged pool memory or buffers, leading to system instability. To address this, explore **Resource Analysis** to choose profiles to add.
    > This custom profile provides the necessary context for in-depth performance analysis.
 
 1. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
@@ -107,9 +107,9 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
    1. Select **File** or **Memory** under Logging mode.
 
    > [!IMPORTANT]
-   > Select **File** to use the file logging mode if you can directly reproduce the performance issue. Most issues fall under this category. However, if you cannot directly reproduce the issue, select Memory to use the memory logging mode. This prevents the trace log from inflating excessively due to long run times.
+   > Select **File** to use the file logging mode if you can directly reproduce the performance issue. Most issues fall under this category. However, if you can't directly reproduce the issue, select Memory to use the memory logging mode. This prevents the trace log from inflating excessively due to long run times.
 
-1. Now you're ready to collect data. Close all unnecessary applications. Click **Hide options** to keep the space occupied by the WPR window small.
+1. Now you're ready to collect data. Close all unnecessary applications. Select **Hide options** to keep the space occupied by the WPR window small.
 
    ![Screenshot showing the Hide options.](media/wpr-08.png)
    
@@ -163,7 +163,7 @@ To collect a WPR trace using the command-line tool wpr.exe:
    ```
 
    > [!WARNING]
-   > If your Windows Server has 64 GB of RAM or more, use profiles `WDForLargeServers.Light` and `WDForLargeServers.Verbose` instead of profiles `WD.Light` and `WD.Verbose`, respectively. Otherwise, your system consumes a high amount of non-paged pool memory or buffers, leading to system instability.
+   > If your Windows Server has 64 GB of RAM or more, use profiles `WDForLargeServers.Light` and `WDForLargeServers.Verbose` instead of profiles `WD.Light` and `WD.Verbose`, respectively. Otherwise, your system consumes a high amount of nonpaged pool memory or buffers, leading to system instability.
 
 1. Reproduce the issue.
 
