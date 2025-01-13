@@ -43,15 +43,15 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
 
 ## Using the MDE Client Analyzer
 
-1. Download the [MDE Client Analyzer ](/defender-endpoint/download-client-analyzer).
+1. Download the [MDE Client Analyzer](/defender-endpoint/download-client-analyzer).
 
 1. Run the MDE Client Analyzer using [Live Response or locally](/defender-endpoint/run-analyzer-windows).
 
-> [!TIP]
-> Before starting the trace, make sure the issue is reproducible. Additionally, close any applications that don't contribute to the reproduction of the issue.
+   > [!TIP]
+   > Before starting the trace, make sure the issue is reproducible. Additionally, close any applications that don't contribute to the reproduction of the issue.
 
 
-1. Run the MDE Client Analyzer with the -a and -v switches
+1. Run the MDE Client Analyzer with the `-a` and `-v` switches.
 
    PowerShellCopy
    
@@ -59,7 +59,7 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
    
-## Manually:
+## Manually
 
 ### Capture performance logs using the WPR UI
 
@@ -90,7 +90,7 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
 
    ![Screenshot showing the in-file.](media/wpr-infile.png)
    
-      > [!WARNING]
+   > [!WARNING]
    > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system might consume a high amount of nonpaged pool memory or buffers, leading to system instability. To address this, explore **Resource Analysis** to choose profiles to add.
    > This custom profile provides the necessary context for in-depth performance analysis.
 
@@ -107,7 +107,7 @@ There are two ways to capture the Windows Performance Recorder (WPRUI) trace:
    1. Select **File** or **Memory** under Logging mode.
 
    > [!IMPORTANT]
-   > Select **File** to use the file logging mode if you can directly reproduce the performance issue. Most issues fall under this category. However, if you can't directly reproduce the issue, select Memory to use the memory logging mode. This prevents the trace log from inflating excessively due to long run times.
+   > Select **File** to use the file logging mode if you can directly reproduce the performance issue. Most issues fall under this category. However, if you can't directly reproduce the issue, select **Memory** to use the memory logging mode. This prevents the trace log from inflating excessively due to long run times.
 
 1. Now you're ready to collect data. Close all unnecessary applications. Select **Hide options** to keep the space occupied by the WPR window small.
 
