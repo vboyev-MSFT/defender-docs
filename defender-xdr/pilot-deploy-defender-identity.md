@@ -137,7 +137,7 @@ When you're ready, download, install, and configure the Defender for Identity se
 |---|---|---|
 | 1 | Confirm that your environment meets Defender for Identity prerequisites. | [Microsoft Defender for Identity prerequisites](/defender-for-identity/prerequisites)|
 | 2 | Determine how many Microsoft Defender for Identity sensors you need. | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning) |
-| 3 | Verify connectivity to the Defender for Identity service | [Check network activity](/defender-for-identity/deploy/quick-installation-guidecheck-network-connectivity) |
+| 3 | Verify connectivity to the Defender for Identity service | [Check network activity](/defender-for-identity/deploy/quick-installation-guide#check-network-connectivity) |
 | 4 | Download and install the Defender for Identity sensor | [Install Defender for Identity](/defender-for-identity/deploy/quick-installation-guide#install-defender-for-identity)  |
 | 5 | Configure the sensor | [Configure Microsoft Defender for Identity sensor settings](/defender-for-identity/deploy/configure-sensor-settings)|
 
@@ -149,7 +149,7 @@ On the machines that you installed the sensor on, configure Windows event log co
 
 | Step | Description | More information |
 |---|---|---|
-| 1 | Configure Windows event log collection | [Event collection with Microsoft Defender for Identity](/defender-for-identity/event-collection-overview) and [Configure audit policies for Windows event logs](/defender-for-identity/deploy/configure-windows-event-collection) |
+| 1 | Configure Windows event log collection | [Event collection with Microsoft Defender for Identity](/defender-for-identity/deploy/event-collection-overview) and [Configure audit policies for Windows event logs](/defender-for-identity/deploy/configure-windows-event-collection) |
 
 <a name="step-4"></a>
 
