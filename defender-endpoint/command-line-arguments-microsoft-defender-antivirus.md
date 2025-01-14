@@ -61,13 +61,21 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-RemoveDefinitions [-All]`|Restores the installed security intelligence to a previous backup copy or to the original default set.|
 |`-RemoveDefinitions [-DynamicSignatures]`|Removes only the dynamically downloaded security intelligence.|
 |`-RemoveDefinitions [-Engine]`|Restores the previous installed engine.|
-|`-SignatureUpdate [-UNC \|-MMPC]`|Checks for new security intelligence updates.|
-|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|Restores or lists quarantined item(s).|
+|`-SignatureUpdate [-UNC |-MMPC]`|Checks for new security intelligence updates.|
+|`-Restore  [-ListAll |[[-Name <name>] [-All] |[-FilePath <filePath>]] [-Path <path>]]`|Restores or lists quarantined item(s).|
 |`-AddDynamicSignature [-Path]`|Loads dynamic security intelligence.|
 |`-ListAllDynamicSignatures`|Lists the loaded dynamic security intelligence.|
 |`-RemoveDynamicSignature [-SignatureSetID]`|Removes dynamic security intelligence.|
 |`-CheckExclusion -path <path>`|Checks whether a path is excluded.|
+|`-TDT [-on|-off|-default]`|Disable or Enable TDT feature or sets it to default. If no option is specified, it will retrieve the current status.|
+|`-OSCA`|Prints OS Copy Acceleration feature status.|
+|`-DeviceControl -TestPolicyXml  <FilePath> [-Rules | -Groups]`|Validate xml policy groups and rules.|
+|`-TrustCheck -File <FilePath>`|Checks trust status of a file.|
 |`-ValidateMapsConnection`|Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
+|`-ListCustomASR`|List the custom ASR rules present on this device.|
+|`-DisplayECSConnection`|displays URLs that Defender Core service will use to establish connection to ECS.|
+|`-HeapSnapshotConfig <-Enable|-Disable> [-Pid <ProcessID>]`|Enable or Disable heap snapshot (tracing) configuration for process.<p><ProcessID> values<p>**0**  (Default) 'MsMpEng.exe', currently running on system.<p>**1**  'MpDefenderCoreService.exe', currently running on system.<p>**2**  'NisSrv.exe', currently running on system.|
+|<p>3  'MpDlpService.exe', currently running on system.<p><other> Apply command to a running process ID.||
 |`-ResetPlatform`| Reset platform binaries back to `%ProgramFiles%\Windows Defender`.|
 |`-RevertPlatform`| Revert platform binaries back to the previously installed version of the Defender platform.|
 
