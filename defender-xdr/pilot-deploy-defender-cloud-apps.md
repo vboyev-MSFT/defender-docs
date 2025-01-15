@@ -92,20 +92,23 @@ Defender for Cloud Apps detects anomalous behavior like impossible-travel, crede
 
 Microsoft Defender XDR correlates the signals from all the Microsoft Defender components to provide the full attack story.
 
-### Defender for Cloud Apps role as a CASB
+### Defender for Cloud Apps role as a CASB and more
 
-A cloud access security broker (CASB) acts as a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using. Defender for Cloud Apps is a CASB for your organization's cloud apps. Defender for Cloud Apps natively integrates with Microsoft security capabilities, including Microsoft Defender XDR.
+A cloud access security broker (CASB) acts as a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using.  Software as a service (SaaS) apps are ubiquitous across hybrid work environments, and protecting SaaS apps and the important data they store is a big challenge for organizations. 
 
-Without Defender for Cloud Apps, cloud apps that are used by your organization are unmanaged and unprotected.
+The rise in app usage, combined with employees accessing company resources outside of the corporate perimeter has also introduced new attack vectors. To combat these attacks effectively, security teams need an approach that protects their data within cloud apps beyond the traditional scope of cloud access security brokers (CASBs).
 
-:::image type="content" source="./media/eval-defender-xdr/m365-defender-mcas-architecture-a.svg" alt-text="A diagram that shows cloud apps that are not managed and protected by your organization." lightbox="./media/eval-defender-xdr/m365-defender-mcas-architecture-a.svg":::
+Microsoft Defender for Cloud Apps delivers full protection for SaaS applications, helping you monitor and protect your cloud app data across the following feature areas:
 
-In the illustration:
+- **Fundamental cloud access security broker (CASB) functionality**, such as Shadow IT discovery, visibility into cloud app usage, protection against app-based threats from anywhere in the cloud, and information protection and compliance assessments.
 
-- The use of cloud apps by an organization is unmonitored and unprotected.
-- This use falls outside the protections achieved within a managed organization.
+- **SaaS Security Posture Management (SSPM) features**, enabling security teams to improve the organization’s security posture
 
-To discover cloud apps used in your environment, you can implement one or both of the following methods:
+- **Advanced threat protection**, as part of Microsoft's extended detection and response (XDR) solution, enabling powerful correlation of signal and visibility across the full kill chain of advanced attacks
+
+- **App-to-app protection**, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
+
+Without Defender for Cloud Apps, cloud apps that are used by your organization are unmanaged and unprotected. To discover cloud apps used in your environment, you can implement one or both of the following methods:
 
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 and Windows 11 devices, on and off your network.
 - To discover all cloud apps accessed by all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies. This deployment helps collect data from your endpoints and sends it to Defender for Cloud Apps for analysis. Defender for Cloud Apps natively integrates with some third-party proxies for even more capabilities.
@@ -116,7 +119,7 @@ This article includes guidance for both methods.
 
 ## Step 1. Access Microsoft Defender for Cloud Apps
 
-To verify licensing and to connect to the Defender for Cloud Apps portal, see [Get started with Microsoft Defender for Cloud Apps](defender-cloud-apps/get-started).
+To verify licensing and to connect to the Defender for Cloud Apps portal, see [Access Defender for Cloud Apps](defender-cloud-apps/get-started#access-defender-for-cloud-apps).
 
 If you're not immediately able to connect to the portal, you might need to add the IP address to the allow list of your firewall. For more information, see [Basic setup for Defender for Cloud Apps](/defender-cloud-apps/general-setup).
 
