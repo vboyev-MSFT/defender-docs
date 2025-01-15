@@ -24,12 +24,12 @@ ms.date: 11/04/2024
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
+
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft Defender XDR](/defender-xdr)
-
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
