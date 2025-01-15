@@ -119,7 +119,7 @@ This article includes guidance for both methods.
 
 ## Step 1. Access Microsoft Defender for Cloud Apps
 
-To verify licensing and to connect to the Defender for Cloud Apps portal, see [Access Defender for Cloud Apps](defender-cloud-apps/get-started#access-defender-for-cloud-apps).
+To verify licensing and to connect to the Defender for Cloud Apps portal, see [Access Defender for Cloud Apps](/defender-cloud-apps/get-started#access-defender-for-cloud-apps).
 
 If you're not immediately able to connect to the portal, you might need to add the IP address to the allow list of your firewall. For more information, see [Basic setup for Defender for Cloud Apps](/defender-cloud-apps/general-setup).
 
