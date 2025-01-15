@@ -1,6 +1,6 @@
 ---
 title: How do I pilot and deploy Microsoft Defender for Cloud Apps?
-description: How to pilot and deploy Microsoft Defender for Cloud Apps in your production Microsoft 365 tenant.
+description: Learn how to pilot and deploy Microsoft Defender for Cloud Apps as part of Microsoft Defender XDR to enhance your organization's security posture.
 search.appverid: met150
 ms.service: defender-xdr
 f1.keywords:
@@ -18,7 +18,9 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.topic: conceptual
+ms.topic: concept-article
+#customerIntent: As a security admin, I want to pilot and deploy Microsoft Defender for Cloud Apps to evaluate it's ability to enhance my organization's security posture and protect against cloud application-based threats.
+
 ---
 
 # Pilot and deploy Microsoft Defender for Cloud Apps
@@ -27,9 +29,9 @@ ms.topic: conceptual
 
 - Microsoft Defender XDR
 
-This article provides a workflow for piloting and deploying Microsoft Defender for Cloud Apps in your organization. You can use these recommendations to onboard Microsoft Defender for Cloud Apps as an individual cybersecurity tool or as part of an end-to-end solution with Microsoft Defender XDR.
+This article provides a workflow for piloting and deploying Microsoft Defender for Cloud Apps in your organization. Use these recommendations to onboard Microsoft Defender for Cloud Apps as part of an end-to-end solution with Microsoft Defender XDR.
 
-This article assumes you have a production Microsoft 365 tenant and are piloting and deploying Microsoft Defender for Cloud Apps in this environment. This practice will maintain any settings and customizations you configure during your pilot for your full deployment.
+This article assumes you have a production Microsoft 365 tenant and are piloting and deploying Microsoft Defender for Cloud Apps in this environment. This practice will maintain any settings and customizations you configure during your pilot for your [full deployment](/defender-cloud-apps/get-started).
 
 Defender for Office 365 contributes to a Zero Trust architecture by helping to prevent or reduce business damage from a breach. For more information, see the [Prevent or reduce business damage from a breach](/security/zero-trust/adopt/prevent-reduce-business-damage-breach) business scenario in the Microsoft Zero Trust adoption framework.
 
@@ -114,7 +116,7 @@ This article includes guidance for both methods.
 
 ## Step 1. Access Microsoft Defender for Cloud Apps
 
-To verify licensing and to connect to the Defender for Cloud Apps portal, see [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/getting-started-with-defender-cloud-apps).
+To verify licensing and to connect to the Defender for Cloud Apps portal, see [Get started with Microsoft Defender for Cloud Apps](defender-cloud-apps/get-started).
 
 If you're not immediately able to connect to the portal, you might need to add the IP address to the allow list of your firewall. For more information, see [Basic setup for Defender for Cloud Apps](/defender-cloud-apps/general-setup).
 
@@ -261,7 +263,7 @@ You can integrate Defender for Cloud Apps with Microsoft Sentinel or a generic s
 
 :::image type="content" source="./media/eval-defender-xdr/defender-cloud-apps-siem-integration.svg" alt-text="A diagram that shows the architecture for Microsoft Defender for Cloud Apps with SIEM integration." lightbox="./media/eval-defender-xdr/defender-cloud-apps-siem-integration.svg":::
 
-Microsoft Sentinel includes a Defender for Cloud Apps connector. This allows you to not only gain visibility into your cloud apps but to also get sophisticated analytics to identify and combat cyberthreats and to control how your data travels. For more information, see [Microsoft Sentinel integration](/defender-cloud-apps/siem-sentinel) and [Stream alerts and Cloud Discovery logs from Defender for Cloud Apps into Microsoft Sentinel](/azure/sentinel/connect-defender-cloud-apps).
+Microsoft Sentinel includes a Defender for Cloud Apps connector. This allows you to not only gain visibility into your cloud apps but to also get sophisticated analytics to identify and combat cyberthreats and to control how your data travels. For more information, see [Microsoft Sentinel integration](/defender-cloud-apps/siem-sentinel) and [Stream alerts and Cloud Discovery logs from Defender for Cloud Apps into Microsoft Sentinel](azure/sentinel/data-connectors/microsoft-defender-for-cloud-apps).
 
 For information about integration with third-party SIEM systems, see [Generic SIEM integration](/defender-cloud-apps/siem).
 

@@ -1,6 +1,6 @@
 ---
-title: How do I pilot and deploy Microsoft Defender for Identity>
-description: How to pilot and deploy Microsoft Defender for Identity in your production Microsoft 365 tenant.
+title: How do I pilot and deploy Microsoft Defender for Identity
+description: Learn how to pilot and deploy Microsoft Defender for Identity as part of Microsoft Defender XDR to enhance your organization's security posture.
 search.appverid: met150
 ms.service: defender-xdr
 f1.keywords: 
@@ -18,16 +18,16 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.topic: conceptual
+ms.topic: concept-article
+#customerIntent: As a security admin, I want to pilot and deploy Microsoft Defender for Identity to evaluate it's ability to enhance my organization's security posture and protect against identity-based threats.
 ---
 
 # Pilot and deploy Microsoft Defender for Identity
 
-
 **Applies to:**
 - Microsoft Defender XDR
 
-This article provides a workflow for piloting and deploying Microsoft Defender for Identity in your organization. You can use these recommendations to onboard Microsoft Defender for Identity as an individual cybersecurity tool or as part of an end-to-end solution with Microsoft Defender XDR.
+This article provides a workflow for piloting and deploying Microsoft Defender for Identity in your organization. Use these recommendations to onboard Microsoft Defender for Identity as part of an end-to-end solution with Microsoft Defender XDR.
 
 This article assumes you have a production Microsoft 365 tenant and are piloting and deploying Microsoft Defender for Identity in this environment. This practice will maintain any settings and customizations you configure during your pilot for your [full deployment](/defender-for-identity/deploy/deploy-defender-identity).
 
@@ -127,11 +127,9 @@ Sign in to the Defender portal to start deploying supported services, including 
 
 ## Step 2: Install your sensors
 
-First, Defender for Identity requires some prerequisite work to ensure that your on-premises identity and networking components meet minimum requirements. Use the [Microsoft Defender for Identity prerequisites](/defender-for-identity/prerequisites) article as a checklist to ensure your environment is ready.
+Defender for Identity requires some prerequisite work to ensure that your on-premises identity and networking components meet minimum requirements for you to install the Defender for Identity sensor in your environment.
 
-Next, make sure that you have the necessary permissions and prerequisites in place to install the Defender for Identity sensor in your environment, and plan your capacity requirements. For more information, see [Plan capacity for Microsoft Defender for Identity deployment](/defender-for-identity/deploy/capacity-planning).
-
-When you're ready, download, install, and configure the Defender for Identity sensor on the domain controllers, AD FS, and AD CS servers in your on-premises environment.
+Once you're sure of your environment's readiness, plan your capacity, and verify connectivity to Defender for Identity. Then when you're ready, download, install, and configure the Defender for Identity sensor on the domain controllers, AD FS, and AD CS servers in your on-premises environment.
 
 | Step | Description | More information |
 |---|---|---|
@@ -145,11 +143,11 @@ When you're ready, download, install, and configure the Defender for Identity se
 
 ## Step 3: Configure event log and proxy settings on machines with the sensor
 
-On the machines that you installed the sensor on, configure Windows event log collection and Internet proxy settings to enable and enhance detection capabilities.
+On the machines that you installed the sensor on, configure Windows event log collection to enable and enhance detection capabilities.
 
 | Step | Description | More information |
 |---|---|---|
-| 1 | Configure Windows event log collection | [Event collection with Microsoft Defender for Identity](/defender-for-identity/deploy/event-collection-overview) and [Configure audit policies for Windows event logs](/defender-for-identity/deploy/configure-windows-event-collection) |
+| 1 | Configure Windows event log collection | [Event collection with Microsoft Defender for Identity](/defender-for-identity/deploy/event-collection-overview) <br><br>[Configure audit policies for Windows event logs](/defender-for-identity/deploy/configure-windows-event-collection) |
 
 <a name="step-4"></a>
 
@@ -185,13 +183,14 @@ For more information, see:
 
 ## SIEM integration
 
-You can integrate Defender for Identity with Microsoft Sentinel or a generic security information and event management (SIEM) service to enable centralized monitoring of alerts and activities from connected apps. With Microsoft Sentinel, you can more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.
+You can integrate Defender for Identity with Microsoft Sentinel as part of Microsoft's [unified security operations platform](/unified-secops-platform/) or a generic security information and event management (SIEM) service to enable centralized monitoring of alerts and activities from connected apps. With Microsoft Sentinel, you can more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.
 
-:::image type="content" source="./media/eval-defender-xdr/defender-identity-siem-integration.svg" alt-text="A diagram that shows the architecture for Microsoft Defender for Identity with SIEM integration." lightbox="./media/eval-defender-xdr/defender-identity-siem-integration.svg":::
+Microsoft Sentinel includes a Microsoft Defender for XDR data connector to bring all signals from Defender XDR, including Defender for Identity, to Microsoft Sentinel. Use the unified security operations platform in the Defender portal as a single platform for end-to-end security operations (SecOps). 
 
-Microsoft Sentinel includes a Defender for Identity connector. For more information, see [Microsoft Defender for Identity connector for Microsoft Sentinel](/azure/sentinel/data-connectors/microsoft-defender-for-identity).
+For more information, see:
 
-For information about integration with third-party SIEM systems, see [Generic SIEM integration](/cloud-app-security/siem).
+- [Connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard)
+- [Generic SIEM integration](/cloud-app-security/siem)
 
 ## Next step
 
