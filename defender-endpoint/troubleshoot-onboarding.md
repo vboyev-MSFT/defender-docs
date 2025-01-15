@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 11/04/2024
+ms.date: 01/15/2025
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
@@ -299,7 +299,7 @@ If the verification fails and your environment is using a proxy to connect to th
    >   
    > If Microsoft Defender Antivirus is in passive mode, these drivers are set to manual (`0`).
 
-## Troubleshoot onboarding issues on Windows Server 2016 and earlier versions of Windows Server
+## Troubleshoot onboarding issues on Windows Server 2016 and earlier versions of Windows Server.
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
