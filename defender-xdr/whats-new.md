@@ -33,6 +33,8 @@ You can also get product updates and important notifications through the [messag
 ## January 2025
 
 - **Defender Boxed** is available for a limited time in January and July of each year. This series of slides highlights your organization’s security successes, improvements, and response actions in the Microsoft Defender portal for the past six months/year. To learn how you can share your security operations team’s achievements, see [Defender Boxed](incident-queue.md#defender-boxed).
+- (GA) The **[Link to incident](advanced-hunting-defender-results.md#link-query-results-to-an-incident)** feature in Microsoft Defender advanced hunting now allows linking of Microsoft Sentinel query results. In both the Microsoft Defender unified experience and in [Defender XDR advanced hunting](advanced-hunting-link-to-incident.md), you can now specify whether an entity is an impacted asset or related evidence.
+- (GA) Migrating custom detection queries to **Continuous (near real-time or NRT) frequency** is now generally available in advanced hunting. Using the Continuous (NRT) frequency increases your organization's ability to identify threats faster. It has minimal to no impact to your resource usage, and should thus be considered for any qualified custom detection rule in your organization. Migrate compatible KQL queries by following the steps in [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency).
 
 ## December 2024
 
