@@ -99,6 +99,8 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 6. Click **Save**.
 
+Note: Alert suppression is not compatible for Custom detection, customer should fine-tune their custom detection to avoid False Positives.
+
 #### View the list of suppression rules
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**.
