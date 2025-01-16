@@ -195,7 +195,7 @@ Sensor-specific health issues are displayed in the **Sensor health issues** tab 
 
 |Alert|Description|Resolution|Severity|Displayed in|
 |----|----|----|----|----|
-|Auditing for AD CS servers is not enabled as required. (This configuration is validated once a day, per sensor).|The Advanced Auditing Policy Configuration or AD CS auditing are not enabled as required.|Enable the Advanced Auditing Policy Configuration and AD CS auditing according to the guidance as described in the [Configure auditing on AD CS](configure-windows-event-collection.md#configure-auditing-on-ad-cs) section, in the [Configure Windows Event collection](configure-windows-event-collection.md) page.|Medium|Sensors health issues tab|
+|Auditing for AD CS servers is not enabled as required. (This configuration is validated once a day, per sensor).|The Advanced Auditing Policy Configuration or AD CS auditing is not enabled as required.|Enable the Advanced Auditing Policy Configuration and AD CS auditing according to the guidance as described in the [Configure auditing on AD CS](configure-windows-event-collection.md#configure-auditing-on-ad-cs) section, in the [Configure Windows Event collection](configure-windows-event-collection.md) page.|Medium|Sensors health issues tab|
 
 ### Sensor failed to retrieve Microsoft Entra Connect service configuration
 
