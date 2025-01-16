@@ -108,6 +108,8 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - **App-to-app protection**, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
 
+## Cloud app discovery methods
+
 Without Defender for Cloud Apps, cloud apps that are used by your organization are unmanaged and unprotected. To discover cloud apps used in your environment, you can implement one or both of the following methods:
 
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 and Windows 11 devices, on and off your network.
