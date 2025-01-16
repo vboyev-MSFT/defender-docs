@@ -8,7 +8,7 @@ ms.author: ewalsh
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: deniseb
-ms.date: 01/15/2025
+ms.date: 01/16/2025
 ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
@@ -74,8 +74,7 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 |`-ValidateMapsConnection`|Verifies that your network can communicate with the Microsoft Defender Antivirus cloud service. This command will only work on Windows 10, version 1703 or higher.|
 |`-ListCustomASR`|List the custom Azure Site Recovery rules present on this device.|
 |`-DisplayECSConnection`|displays URLs that Defender Core service uses to establish connection to ECS.|
-|`-HeapSnapshotConfig <-Enable|-Disable> [-Pid <ProcessID>]`|Enable or Disable heap snapshot (tracing) configuration for process.<p><ProcessID> values<p>**0**  (Default) 'MsMpEng.exe', currently running on system.<p>**1**  'MpDefenderCoreService.exe', currently running on system.<p>**2**  'NisSrv.exe', currently running on system.|
-|<p>3  'MpDlpService.exe', currently running on system.<p><other> Apply command to a running process ID.||
+|`-HeapSnapshotConfig <-Enable|-Disable> [-Pid <ProcessID>]`|Enable or Disable heap snapshot (tracing) configuration for process. Replace `<ProcessID>` with the actual process ID.|
 |`-ResetPlatform`| Reset platform binaries back to `%ProgramFiles%\Windows Defender`.|
 |`-RevertPlatform`| Revert platform binaries back to the previously installed version of the Defender platform.|
 
