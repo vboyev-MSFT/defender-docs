@@ -56,7 +56,7 @@ The following table summarizes network protection areas of coverage.
 > On Mac and Linux, you must have network protection in block mode for these features to be supported in the Microsoft Edge browser.
 > On Windows, network protection doesn't monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
 
-Here are a few important points to keep in mind:
+### Known issues & limitations:
 
 - IP is supported for all three protocols (`TCP`, `HTTP`, and `HTTPS` (TLS)).
 - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
