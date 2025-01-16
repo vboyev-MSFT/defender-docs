@@ -236,7 +236,7 @@ You can have a collection of PowerShell scripts that can run on devices that you
 #### To upload a file in the library
 
 > [!NOTE]
-> There are restrictions on the characters that can be uploaded to the library. Use alphanumeric characters and some symbols(`-`, `_`, or `.`).
+> There are restrictions on the characters that can be uploaded to the library. Use alphanumeric characters and some symbols (specifically, `-`, `_`, or `.`).
 
 1. Select **Upload file to library**.
 
@@ -257,7 +257,7 @@ You can have a collection of PowerShell scripts that can run on devices that you
 Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 > [!WARNING]
-> Using this shortcut will not stop the command in the agent side. It only cancels the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled.
+> Using this shortcut doesn't stop the command in the agent side. It only cancels the command in the Microsoft Defender portal. So, changing operations such as "remediate" may continue, even if the command is canceled.
 
 ## Run a script
 
