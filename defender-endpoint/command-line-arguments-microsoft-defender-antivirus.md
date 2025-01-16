@@ -32,7 +32,7 @@ search.appverid: met150
 You can perform various functions in Microsoft Defender Antivirus using the dedicated command-line tool **mpcmdrun.exe**. This utility is useful when you want to automate Microsoft Defender Antivirus tasks. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
 
 > [!TIP]
-> You might need to open an administrator-level version of the command prompt. When you search for **Command Prompt** on the Start menu, choose **Run as administrator**. If you're running an updated Microsoft Defender antimalware platform version, run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. For more information about the antimalware platform, see [Microsoft Defender Antivirus updates and baselines](microsoft-defender-antivirus-updates.md).
+> You might need to open an administrator-level version of the command prompt. When you search for **Command Prompt** on the **Start** menu, choose **Run as administrator**. If you're running an updated Microsoft Defender antimalware platform version, run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. For more information about the antimalware platform, see [Microsoft Defender Antivirus updates and baselines](microsoft-defender-antivirus-updates.md).
 
 The MpCmdRun utility uses the following syntax:
 
@@ -80,8 +80,8 @@ In our example, the MpCmdRun utility starts a full antivirus scan on the device.
 
 > [!NOTE]
 > For the `Scan` command, the following are the default time out values for Quick or Full scans where the scan will stop at that time by default.
-- Scheduled Full Scans or MpCmdRun -scan: Seven day limit
-- Scheduled Quick Scans or MpCmdRun -scan: One day limit
+> - Scheduled Full Scans or MpCmdRun -scan: Seven day limit
+> - Scheduled Quick Scans or MpCmdRun -scan: One day limit
 
 
 ## Common errors in running commands via mpcmdrun.exe
