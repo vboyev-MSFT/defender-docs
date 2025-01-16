@@ -201,7 +201,7 @@ One of the most powerful protections you can configure is Conditional access app
 
 You might already have SaaS apps added to your Microsoft Entra tenant to enforce multi-factor authentication and other conditional access policies. Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra ID. All you must do is configure a policy in Microsoft Entra ID to use conditional access app control in Defender for Cloud Apps. This routes network traffic for these managed SaaS apps through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls.
 
-:::image type="content" source="media/eval-defender-xdr/conditional-access-app-control.png" alt-text="A diagram that shows the architecture for Defender for Cloud Apps conditional access app control." lightbox="media/eval-defender-xdr/conditional-access-app-control.png":::
+:::image type="content" source="media/eval-defender-xdr/m365-defender-mcas-architecture-e.svg" alt-text="A diagram that shows the architecture for Defender for Cloud Apps conditional access app control." lightbox="media/eval-defender-xdr/m365-defender-mcas-architecture-e.svg":::
 
 In this illustration:
 
@@ -227,7 +227,7 @@ For sample policies, see [Recommended Microsoft Defender for Cloud Apps policies
 
 Once you have session policies configured, apply them to your cloud apps to provide controlled access to those apps.
 
-:::image type="content" source="media/eval-defender-xdr/apply-session-policies.png" alt-text="A diagram that shows how cloud apps are acessed via session control policies with Defender for Cloud Apps." lightbox="media/eval-defender-xdr/apply-session-policies.png":::
+:::image type="content" source="media/eval-defender-xdr/m365-defender-office-architecture.svg" alt-text="A diagram that shows how cloud apps are accessed via session control policies with Defender for Cloud Apps." lightbox="media/eval-defender-xdr/m365-defender-office-architecture.svg":::
 
 In the illustration:
 
