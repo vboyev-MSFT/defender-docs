@@ -26,20 +26,20 @@ appliesto:
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-You can set up email notifications that sends you updates on [threat analytics](threat-analytics.md) reports.
+You can set up email notifications that send you updates on [threat analytics](threat-analytics.md) reports.
 
 ## Set up email notifications for report updates
 
 To set up email notifications for threat analytics reports, perform the following steps:
 
-1. In the navigation pane of the Microsoft Defender portal, select **Settings > Microsoft Defender XDR**.  Under **General**, select **Email notifications**.
+1. In the navigation pane of the Microsoft Defender portal, select **Settings > Microsoft Defender XDR**. Under **General**, select **Email notifications**.
 
-2. In the **Threat analytics** tab, select **+ Create a notification rule**. A flyout will appear.
+2. In the **Threat analytics** tab, select **+ Create a notification rule**. A flyout appears.
 
 3. Follow the steps listed in the flyout. First, give your new rule a name. The description field is optional, but a name is required. You can toggle the rule on or off using the checkbox under the description field.
 
    > [!NOTE]
-   > The name and description fields for a new notification rule only accept English letters and numbers. Punctuations like spaces, dashes, underscores, are not supported.
+   > The name and description fields for a new notification rule only accept English letters and numbers. Punctuations like spaces, dashes, underscores, aren't supported.
 
    ![Screenshot of the naming screen, with all fields filled out and the "Turn rule on" checkbox checked](/defender/media/threat-analytics/ta_create_notification_2.png)
 
@@ -51,7 +51,7 @@ To set up email notifications for threat analytics reports, perform the followin
 
    ![Screenshot of the recipients screen. There are 3 recipients listed, and a test email has been sent, as indicated by a green checkmark](/defender/media/threat-analytics/ta_create_notification_4.png)
 
-6. Review your new rule. If there is anything you would like to change, select **Edit** at the end of each subsection. Once your review is complete, select **Create rule**.
+6. Review your new rule. Select **Edit** at the end of each subsection to change any of the settings. Once your review is complete, select **Create rule**.
 
    ![Screenshot of the review screen. An edit button is highlighted in red](/defender/media/threat-analytics/ta_create_notification_5.png)
 
