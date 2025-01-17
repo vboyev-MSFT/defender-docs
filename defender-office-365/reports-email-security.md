@@ -19,7 +19,7 @@ description: "Admins can learn how to find and use the email security reports th
 ms.custom: 
 - seo-marvel-apr2020
 ms.service: defender-office-365
-ms.date: 01/16/2025
+ms.date: 01/17/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -241,6 +241,10 @@ If you hover over a horizontal band in the diagram, you see the number of relate
 <sup>\*</sup> If you select this element, the diagram expands to show further details. For a description of each element in the expanded nodes, see [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 
 :::image type="content" source="media/mail-flow-status-report-mailflow-view-details.png" alt-text="The Phishing block details in Mailflow view in the Mailflow status report." lightbox="media/mail-flow-status-report-mailflow-view-details.png":::
+
+In Defender for Office 365, if you select **Phishing block** \> **General filter**, threat classification results are shown. For more information, see [Threat classification in Microsoft Defender for Office 365](mdo-threat-classification.md).
+
+:::image type="content" source="media/mail-flow-status-report-mailflow-view-phishing-block-threat-class.png" alt-text="Screenshot of selecting Phishing block, General filter in the Mailflow view of the Mailflow status report." lightbox="media/mail-flow-status-report-mailflow-view-phishing-block-threat-class.png":::
 
 The details table below the diagram shows the following information:
 
