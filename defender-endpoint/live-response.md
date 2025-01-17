@@ -122,7 +122,7 @@ The dashboard also gives you access to:
 ## Initiate a live response session on a device
 
 > [!NOTE]
-> Live response actions initiated from the Device page are not available in the machineActions API.
+> Live response actions initiated from the Device page are not available in the MachineActions API.
 
 1. Sign in to [Microsoft Defender portal](https://security.microsoft.com).
 
