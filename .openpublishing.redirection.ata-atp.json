@@ -1041,7 +1041,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "CloudAppSecurityDocs\file-filters.md",
+      "source_path": "CloudAppSecurityDocs\file-filters",
       "redirect_url": "CloudAppSecurityDocs/data-protection-policies.md",
       "redirect_document_id": true
     }

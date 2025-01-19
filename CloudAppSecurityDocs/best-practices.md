@@ -133,7 +133,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [File filters](file-filters.md)
+* [File policies](data-protection-policies.md)
 * [Content inspection](content-inspection.md)
 
 ---

@@ -115,7 +115,7 @@ In conclusion, managing sensitive information in this way ensures that data save
 ## See also
 
 > [!div class="nextstepaction"]
-> [Understanding file data and filters](file-filters.md)
+> [Understanding file data and policies](data-protection-policies.md)
 
 > [!div class="nextstepaction"]
 > [File policies](data-protection-policies.md)
