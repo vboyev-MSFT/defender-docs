@@ -11,15 +11,24 @@ ms.topic: reference
 
 This article provides a list of ports and IP addresses you need to allow and allowlist to work with Microsoft Defender for Cloud Apps.
 
+In order to stay up to date on IP ranges, it's recommended to refer to the following Azure service tags for Microsoft Defender for Cloud Apps services. The latest IP ranges are found in the service tag. For more information, see [Azure IP ranges](https://azureipranges.azurewebsites.net/).
+
+| Service tag name    |    Defender for Cloud Apps services included   |
+|:---|:---|
+| MicrosoftCloudAppSecurity | Portal access, Access and session controls, SIEM agent connection, App connector, Mail server, Log collector. |
+
+The following tables list the current static IP ranges covered by the MicrosoftCloudAppSecurity service tag. For latest list, refer to the [Azure service tags](/azure/virtual-network/service-tags-overview) documentation.
+
+
 ## View your data center
 
 Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **About**.
+1. In the Microsoft Defender Portal, select **System > Settings > Cloud Apps > System > About**.
 
-2. In the **About** screen, you can see the region and the data center.
+1. In the **About** screen, you can see the region and the data center.
 
     ![View your data center.](media/data-center.png)
 
@@ -28,6 +37,8 @@ To see which data center you're connecting to, do the following steps:
 To use Defender for Cloud Apps in the Microsoft Defender Portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
+cdn.cloudappsecurity.com
+cdn-discovery.cloudappsecurity.com
 adaproddiscovery.azureedge.net
 *.s-microsoft.com
 *.msecnd.net

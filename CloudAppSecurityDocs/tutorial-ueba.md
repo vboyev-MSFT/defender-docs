@@ -6,6 +6,10 @@ ms.topic: tutorial
 ---
 # Tutorial: Investigate risky users
 
+> [!IMPORTANT]
+> Starting November 2024, **Investigate risky users** support for Microsoft Defender for Cloud Apps is retired. As such, the legacy procedure presented in this article is provided for informational purposes only.
+> 
+
 Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Defender for Cloud Apps removes the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
 To help you focus on user identity, Microsoft Defender for Cloud Apps provides user entity behavioral analytics (UEBA) in the cloud. UEBA can be extended to your on-premises environment by integrating with Microsoft Defender for Identity, after which you'll also gain context around user identity from its native integration with Active Directory.
@@ -41,12 +45,6 @@ Defender for Cloud Apps uses the following to measure risk:
 - **Activity scoring**: The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores.
 
 Select the investigation priority score for an alert or an activity to view the evidence that explains how Defender for Cloud Apps scored the activity.
-
-> [!NOTE]
-> We're gradually retiring the [**Investigation priority score increase**](investigate-anomaly-alerts.md#investigation-priority-score-increase-preview) alert from Microsoft Defender for Cloud Apps by August 2024. The investigation priority score and the procedure described in this article are not affected by this change.
->
-> For more information, see [Investigation priority score increase deprecation timeline](investigate-anomaly-alerts.md#deprecation-timeline).
-
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
