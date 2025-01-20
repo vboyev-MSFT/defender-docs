@@ -141,7 +141,7 @@ Drill down into the details of individual events by selecting and event and view
 
 :::image type="content" source="media/entity-page-device/entity-device-unified-timeline.png" alt-text="Screenshot of unified device timeline.":::
 
-You can elect not to show events from Microsoft Sentinel in the main timeline, and instead continue to view them as before, only on the *Sentinel events* tab. To do this, select **Timeline settings** and move the **Stream events from Microsoft Sentinel queries** to **Off**. Select **Apply** to save the setting.
+You can elect not to show events from Microsoft Sentinel in the main timeline, and instead continue to view them as before, only on the *Sentinel events* tab. To do this, select **Timeline settings** and move the **Stream events from Microsoft Sentinel queries** toggle to **Off**. Select **Apply** to save the setting.
 
 :::image type="content" source="media/entity-page-device/entity-device-timeline-settings.png" alt-text="Screenshot of entity device timeline settings toggle.":::
 
