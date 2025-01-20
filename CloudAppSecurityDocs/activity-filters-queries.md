@@ -15,7 +15,7 @@ This article provides descriptions and instructions for Defender for Cloud Apps 
 
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as *NOT* to provide you with a powerful tool for policy creation.
 
-- Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Microsoft Defender for Cloud Apps to your SIEM (using the SIEM agent) and you want to further investigate alerts within the Defender for Cloud Apps portal.
+- Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Microsoft Defender for Cloud Apps to your SIEM (using the SIEM agent) and you want to further investigate alerts using Defender for Cloud Apps.
 
 - Activity objects – Search for the objects the activity was done on. This filter applies to files, folders, users, or app objects.
     - Activity object ID - the ID of the object (file, folder, user, or app ID).

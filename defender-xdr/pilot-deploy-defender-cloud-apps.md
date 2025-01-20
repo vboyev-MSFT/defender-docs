@@ -61,7 +61,7 @@ Here is the workflow for piloting and deploying Defender for Cloud Apps in your 
 
 Follow these steps:
 
-1. [Connect to the Defender for Cloud Apps portal](#step-1)
+1. [Connect to Defender for Cloud Apps](#step-1)
 1. [Integrate with Microsoft Defender for Endpoint](#step-2)
 1. [Deploy the log collector on your firewalls and other proxies](#step-3)
 1. [Create a pilot group](#step-4)
@@ -86,7 +86,7 @@ Here's an example of a cyber-attack and how the components of Microsoft Defender
 
 :::image type="content" source="./media/eval-defender-xdr/m365-defender-eval-threat-chain.svg" alt-text="A diagram that shows how Microsoft Defender XDR stops a threat chain." lightbox="./media/eval-defender-xdr/m365-defender-eval-threat-chain.svg":::
 
-Defender for Cloud Apps detects anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and displays these behaviors in the Defender for Cloud Apps portal. Defender for Cloud Apps also helps prevent lateral movement by hackers and exfiltration of sensitive data.
+Defender for Cloud Apps detects anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and displays these behaviors in the Defender for Cloud Apps. Defender for Cloud Apps also helps prevent lateral movement by hackers and exfiltration of sensitive data.
 
 Microsoft Defender XDR correlates the signals from all the Microsoft Defender components to provide the full attack story.
 
@@ -112,9 +112,9 @@ This article includes guidance for both methods.
 
 <a name="step-1"></a>
 
-## Step 1. Connect to the Defender for Cloud Apps portal
+## Step 1. Connect to Defender for Cloud Apps
 
-To verify licensing and to connect to the Defender for Cloud Apps portal, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
+To verify licensing and to connect to Defender for Cloud Apps, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
 If you're not immediately able to connect to the portal, you might need to add the IP address to the allow list of your firewall. See [Basic setup for Defender for Cloud Apps](/cloud-app-security/general-setup).
 
@@ -126,7 +126,7 @@ If you're still having trouble, review [Network requirements](/cloud-app-securit
 
 Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Endpoint natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network and enables device-based investigation. This integration reveals cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices.
 
-If you've already set up Microsoft Defender for Endpoint, configuring integration with Defender for Cloud Apps is a toggle in Microsoft Defender XDR. After integration is turned on, you can return to the Defender for Cloud Apps portal and view rich data in the Cloud Discovery Dashboard.
+If you've already set up Microsoft Defender for Endpoint, configuring integration with Defender for Cloud Apps is a toggle in Microsoft Defender XDR. After integration is turned on, you can return to Defender for Cloud Apps and view rich data in the Cloud Discovery Dashboard.
 
 To accomplish these tasks, see [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
 

@@ -15,7 +15,7 @@ Defender for Cloud Apps takes your security and privacy seriously. Therefore, on
 > [!IMPORTANT]
 > If there is a problem accessing your Azure Key Vault key, Defender for Cloud Apps will fail to encrypt your data and your tenant will be lock down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored.
 >
-> This procedure is available only on the Microsoft Defender portal, and cannot be performed on the classic Microsoft Defender for Cloud Apps portal.
+> This procedure is available only on the Microsoft Defender portal, and cannot be performed on the classic Microsoft Defender for Cloud Apps.
 
 ## Prerequisites
 
