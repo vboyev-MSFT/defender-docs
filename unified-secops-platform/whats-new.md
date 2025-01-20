@@ -29,7 +29,7 @@ This article lists recent features added into Microsoft's unified SecOps platfor
 
 The **unified device timeline**, a single, cohesive view that integrates device activity from Microsoft Sentinel and Defender XDR into a single timeline, is now available in Preview. This feature streamlines security investigations by enabling analysts to access all relevant device activities in one place, reducing the need to switch between platforms and lowering incident response times.
 
-For more information, see [Device entity page in Microsoft Defender](../defender-xdr/entity-page-device.md#timeline-tab).
+For more information, see [Device entity page in Microsoft Defender](/defender-xdr/entity-page-device#timeline-tab).
 
 ### SOC optimization updates for unified coverage management
 
