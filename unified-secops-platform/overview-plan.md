@@ -67,7 +67,7 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | **Other services supported in the Microsoft Defender portal**   |   |
 | Microsoft Security Exposure Management                   | [Prerequisites and support](/security-exposure-management/prerequisites)  | [Data freshness, retention, and related functionality](/security-exposure-management/microsoft-security-exposure-management#data-freshness-retention-and-related-functionality)
 | Microsoft Security Copilot                               | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  | [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security)
-| Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. |
+| Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. | [Microsoft Defender for Cloud data security](/azure/defender-for-cloud/data-security)
 | Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) |
 | Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) |
 
