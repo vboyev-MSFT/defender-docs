@@ -132,7 +132,7 @@ Defender for Cloud Apps enables you to invite external admins (MSSPs) as adminis
 ### To add MSSPs to the MSSP customer Defender for Cloud Apps service
 
 1. Add MSSPs as a guest in the MSSP customer directory using the steps under [Add guest users to the directory](/azure/active-directory/external-identities/add-users-administrator#add-guest-users-to-the-directory).
-1. Add MSSPs and assign an administrator role in the MSSP customer Defender for Cloud Apps portal using the steps under [Add additional admins](#add-additional-admins). Provide the same external email address used when adding them as guests in the MSSP customer directory.
+1. Add MSSPs and assign an administrator role in the MSSP customer Defender for Cloud Apps using the steps under [Add additional admins](#add-additional-admins). Provide the same external email address used when adding them as guests in the MSSP customer directory.
 
 ### Access for MSSPs to the MSSP customer Defender for Cloud Apps service
 

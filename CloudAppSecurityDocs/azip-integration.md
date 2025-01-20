@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate with Microsoft Purview for information protection
 
-Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview. These labels are applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection. You can also investigate files by filtering for the applied sensitivity label within the Defender for Cloud Apps portal. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Purview with Defender for Cloud Apps is as easy as selecting a single checkbox.
+Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview. These labels are applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection. You can also investigate files by filtering for the applied sensitivity label within Defender for Cloud Apps. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Purview with Defender for Cloud Apps is as easy as selecting a single checkbox.
 
 By integrating Microsoft Purview into Defender for Cloud Apps, you can use the full power of both services and secure files in your cloud, including:
 
@@ -82,7 +82,7 @@ In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps*
 
     ![Screenshot of enabling Microsoft Purview.](media/enable-azip.png)
 
-After enabling Microsoft Purview, you'll be able to see files that have sensitivity labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Microsoft Purview integration features to apply sensitivity labels from Microsoft Purview (with or without encryption) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply sensitivity labels automatically as a governance action.
+After enabling Microsoft Purview, you'll be able to see files that have sensitivity labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Microsoft Purview integration features to apply sensitivity labels from Microsoft Purview (with or without encryption) in the Defender for Cloud Apps, by adding them directly to files or by configuring a file policy to apply sensitivity labels automatically as a governance action.
 
 > [!NOTE]
 > Automatic scan does not scan existing files until they are modified again. To scan existing files for sensitivity labels from Microsoft Purview, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects sensitivity labels from Microsoft Purview.
