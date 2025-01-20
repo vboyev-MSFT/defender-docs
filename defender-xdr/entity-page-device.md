@@ -135,18 +135,18 @@ You can export up to seven days' worth of events to a CSV file, for download.
 
 Drill down into the details of individual events by selecting and event and viewing its details in the resulting flyout panel. See [Event details](#event-details) below.
 
-As of January 2025, if you onboarded Microsoft Sentinel to the Defender portal, device activity events ingested to Microsoft Sentinel also appear in this timeline.
-
+As of January 2025, if you onboarded Microsoft Sentinel to the Defender portal, device activity events ingested to Microsoft Sentinel also appear in this timeline. For more information about these activity events, see [Unified timeline](#sentinel-timeline) later in this article.
 
 > [!NOTE]
+>
 > - You can elect not to show events from Microsoft Sentinel in the main timeline, and instead continue to view them as before, only on the *Sentinel events* tab. To do this, select **Timeline settings** and move the **Stream events from Microsoft Sentinel queries** to **Off**. Select **Apply** to save the setting.
 >
-> - For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+> - For firewall events to be displayed, you'll need to enable the audit policy. For instructions, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
 >
->    Firewall covers the following events:
->    - [5025](/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
->    - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
->    - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
+>   Firewall covers the following events:
+>   - [5025](/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
+>   - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
+>   - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
 :::image type="content" source="/defender/media/entity-page-device/entity-device-timeline-tab.png" alt-text="Screenshot of the Timeline tab for the device entity page in the Microsoft Defender portal." lightbox="/defender/media/entity-page-device/entity-device-timeline-tab.png":::
 
@@ -250,7 +250,11 @@ This timeline shows four types of messages associated with the device entity, kn
 
 - Unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
 
-**As of January 2025**, device activity events that appear on this timeline *are also displayed* on the main [Timeline tab](#timeline-tab), so they can be viewed together with events recorded by other Microsoft Defender services in a single context.
+#### Unified timeline
+
+**As of January 2025**, device activity events that appear on this timeline *are also displayed* on the main [*Timeline* tab](#timeline-tab), so they can be viewed together with events recorded by other Microsoft Defender services in a single context. This unified timeline helps simplify investigations by providing a unified view of device activities, eliminating the need to toggle between screens, and enabling faster decision-making.
+
+Also as of January 2025, these activities include dropped, blocked, or denied network traffic originating from a given device, based on data collected from industry-leading network device logs. These logs provide your security teams with critical information to quickly identify and address potential threats.
 
 ### Insights
 
