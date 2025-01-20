@@ -112,7 +112,7 @@ This article includes guidance for both methods.
 
 <a name="step-1"></a>
 
-## Step 1. Connect to the Defender for Cloud Apps portal
+## Step 1. Connect to Defender for Cloud Apps
 
 To verify licensing and to connect to the Defender for Cloud Apps portal, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
