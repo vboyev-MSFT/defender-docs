@@ -50,7 +50,7 @@ Device entities can be found in the following areas:
 
 You can select devices whenever you see them in the portal to open the device's entity page, which displays more details about the device. For example, you can see the details of devices listed in the alerts of an incident in the Microsoft Defender portal at **Investigation & response > Incidents & alerts > Incidents > *incident* > Assets > Devices**.
 
-:::image type="content" source="/defender/media/entity-page-device/device-incident-assets.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal.":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/device-incident-assets.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal.":::
 
 The device entity page presents its information in a tabbed format. This article lays out the types of information available in each tab, and also the actions you can take on a given device.
 
@@ -107,7 +107,7 @@ The main part of the **Overview** tab shows several dashboard-type display cards
  > [!TIP]
  > Exposure level relates to how much the device is complying with security recommendations, while risk level is calculated based on a number of factors, including the types and severity of active alerts.
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-overview-tab.png" alt-text="Screenshot of the Overview tab for the device entity page in the Microsoft Defender portal." lightbox="/defender/media/entity-page-device/entity-device-overview-tab.png":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-overview-tab.png" alt-text="Screenshot of the Overview tab for the device entity page in the Microsoft Defender portal." lightbox="/defender-xdr/media/entity-page-device/entity-device-overview-tab.png":::
 
 ## *Incidents and alerts* tab
 
@@ -121,7 +121,7 @@ When an incident or alert is selected, a fly-out appears. From this panel you ca
 
 To see a full page view of an incident or alert, select its title.
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-incidents-tab.png" alt-text="Screenshot of the Incidents and alerts tab for the device entity page in the Microsoft Defender portal." lightbox="/defender/media/entity-page-device/entity-device-incidents-tab.png":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-incidents-tab.png" alt-text="Screenshot of the Incidents and alerts tab for the device entity page in the Microsoft Defender portal." lightbox="/defender-xdr/media/entity-page-device/entity-device-incidents-tab.png":::
 
 ## *Timeline* tab
 
@@ -135,7 +135,16 @@ You can export up to seven days' worth of events to a CSV file, for download.
 
 Drill down into the details of individual events by selecting and event and viewing its details in the resulting flyout panel. See [Event details](#event-details) below.
 
-As of January 2025, if you onboarded Microsoft Sentinel to the Defender portal, device activity events ingested to Microsoft Sentinel also appear in this timeline. For more information about these activity events, see [Unified timeline](#sentinel-timeline) later in this article.
+#### Unified timeline (Preview)
+
+**As of January 2025**, if you onboarded Microsoft Sentinel to the Defender portal, device activities that appear on the [Sentinel timeline](#sentinel-timeline) on the [*Sentinel events* tab](#sentinel-events-tab) *are also displayed* here on the main *Timeline* tab, so they can be viewed together with events recorded by other Microsoft Defender services in a single context. This unified timeline helps simplify investigations by providing a unified view of device activities, eliminating the need to toggle between screens, and enabling faster decision-making.
+
+Also as of January 2025, these activities include dropped, blocked, or denied network traffic originating from a given device, based on data collected from industry-leading network device logs. These logs provide your security teams with critical information to quickly identify and address potential threats.
+
+
+
+
+As of January 2025, device activity events ingested to Microsoft Sentinel also appear in this timeline. For more information about these activity events, see [Unified timeline](#sentinel-timeline) later in this article.
 
 > [!NOTE]
 >
@@ -148,7 +157,7 @@ As of January 2025, if you onboarded Microsoft Sentinel to the Defender portal, 
 >   - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
 >   - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-timeline-tab.png" alt-text="Screenshot of the Timeline tab for the device entity page in the Microsoft Defender portal." lightbox="/defender/media/entity-page-device/entity-device-timeline-tab.png":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-timeline-tab.png" alt-text="Screenshot of the Timeline tab for the device entity page in the Microsoft Defender portal." lightbox="/defender-xdr/media/entity-page-device/entity-device-timeline-tab.png":::
 
 #### Event details
 
@@ -156,7 +165,7 @@ Select an event to view relevant details about that event. A flyout panel displa
 
 To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query returns the selected event and the list of other events that occurred around the same time on the same endpoint.
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-event-details.png" alt-text="Screenshot of the event details panel.":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-event-details.png" alt-text="Screenshot of the event details panel.":::
 
 ## *Security recommendations* tab
 
@@ -168,7 +177,7 @@ The default view includes columns that detail the security weaknesses addressed,
 
 Learn more about [security recommendations](/defender-vulnerability-management/tvm-security-recommendation).
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-recommendations-tab.png" alt-text="Screenshot of the Security recommendations tab for the device entity page." lightbox="/defender/media/entity-page-device/entity-device-recommendations-tab.png":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-recommendations-tab.png" alt-text="Screenshot of the Security recommendations tab for the device entity page." lightbox="/defender-xdr/media/entity-page-device/entity-device-recommendations-tab.png":::
 
 ## *Inventories* tab
 
@@ -184,7 +193,7 @@ Selecting an item from this list opens a flyout containing more details about th
 
 This list can be filtered by product code, weaknesses, and the presence of threats.
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-inventories-tab.png" alt-text="Screenshot of the Software inventory tab for device profile in the Microsoft Defender portal" lightbox="/defender/media/entity-page-device/entity-device-inventories-tab.png":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-inventories-tab.png" alt-text="Screenshot of the Software inventory tab for device profile in the Microsoft Defender portal" lightbox="/defender-xdr/media/entity-page-device/entity-device-inventories-tab.png":::
 
 ### Vulnerable components
 
@@ -220,7 +229,7 @@ As with the previous tabs, the choice of columns to be displayed can be customiz
 
 Selecting an item from this list opens a flyout that describes the CVE.
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-vulnerabilities-tab.png" alt-text="Screenshot of the Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="/defender/media/entity-page-device/entity-device-vulnerabilities-tab.png":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-vulnerabilities-tab.png" alt-text="Screenshot of the Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="/defender-xdr/media/entity-page-device/entity-device-vulnerabilities-tab.png":::
 
 ## *Missing KBs* tab
 
@@ -249,12 +258,6 @@ This timeline shows four types of messages associated with the device entity, kn
 - Device activity events collected from Azure services and non-Microsoft data sources.
 
 - Unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
-
-#### Unified timeline
-
-**As of January 2025**, device activity events that appear on this timeline *are also displayed* on the main [*Timeline* tab](#timeline-tab), so they can be viewed together with events recorded by other Microsoft Defender services in a single context. This unified timeline helps simplify investigations by providing a unified view of device activities, eliminating the need to toggle between screens, and enabling faster decision-making.
-
-Also as of January 2025, these activities include dropped, blocked, or denied network traffic originating from a given device, based on data collected from industry-leading network device logs. These logs provide your security teams with critical information to quickly identify and address potential threats.
 
 ### Insights
 
@@ -287,17 +290,17 @@ The insights are based on the following data sources:
 - Heartbeat (Azure Monitor Agent)
 - CommonSecurityLog (Microsoft Sentinel)
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-sentinel-events-tab.png" alt-text="Screenshot of Sentinel events tab in user entity page.":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-sentinel-events-tab.png" alt-text="Screenshot of Sentinel events tab in user entity page.":::
 
 If you want to further explore any of the insights in this panel, select the link accompanying the insight. The link takes you to the **Advanced hunting** page, where it displays the query underlying the insight, along with its raw results. You can modify the query or drill down into the results to expand your investigation or just satisfy your curiosity.
 
-:::image type="content" source="/defender/media/entity-page-device/device-insights-advanced-hunting.png" alt-text="Screenshot of Advanced hunting screen with insight query.":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/device-insights-advanced-hunting.png" alt-text="Screenshot of Advanced hunting screen with insight query.":::
 
 ## Response actions
 
 Response actions offer shortcuts to analyze, investigate, and defend against threats.
 
-:::image type="content" source="/defender/media/entity-page-device/entity-device-response-actions.png" alt-text="Screenshot of the Action bar for the device entity page in the Microsoft Defender portal.":::
+:::image type="content" source="/defender-xdr/media/entity-page-device/entity-device-response-actions.png" alt-text="Screenshot of the Action bar for the device entity page in the Microsoft Defender portal.":::
 
 > [!IMPORTANT]
 >
