@@ -99,7 +99,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 
 > [!IMPORTANT]
 >
-> - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
+> - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers, and Global Readers groups.
 > - To edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps, you must have at least a Security Administrator role.
 >
 > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
@@ -109,7 +109,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 
 1. Under **Cloud Apps**, choose **Roles**.
 
-  :::image type="content" source="media/permissions-menu.png" alt-text="Permissions menu.":::
+   :::image type="content" source="media/permissions-menu.png" alt-text="Permissions menu.":::
 
 1. Select **+Add user** to add the admins who should have access to Defender for Cloud Apps. Provide an email address of a user from inside your organization.
 
