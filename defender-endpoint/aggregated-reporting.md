@@ -58,16 +58,17 @@ When you turn off aggregated reporting, the changes take a few hours to be appli
 
 Aggregated reporting supports the following event types:
 
-|Action type|Advanced hunting table|Device timeline presentation|Properties|
-|---|---|---|-----------|
-|FileCreatedAggregatedReport|DeviceFileEvents|{ProcessName} created {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
-|FileRenamedAggregatedReport|DeviceFileEvents|{ProcessName} renamed {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
-|FileModifiedAggregatedReport|DeviceFileEvents|{ProcessName} modified {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
-|ProcessCreatedAggregatedReport|DeviceProcessEvents|{InitiatingProcessName} created {Occurrences} {ProcessName} processes|1. Initiating process command line </br> 2. Initiating process SHA1 </br> 3. Initiating process file path </br> 4. Process command line </br> 5. Process SHA1 </br> 6. Folder path|
-|ConnectionSuccessAggregatedReport|DeviceNetworkEvents|{InitiatingProcessName} established {Occurrences} connections with {RemoteIP}:{RemotePort}|1. Initiating process name </br> 2. Source IP </br> 3. Remote IP </br> 4. Remote port|
-|ConnectionFailedAggregatedReport|DeviceNetworkEvents|{InitiatingProcessName} failed to establish {Occurrences} connections with {RemoteIP:RemotePort}|1. Initiating process name </br> 2. Source IP </br> 3. Remote IP </br> 4. Remote port|
-|LogonSuccessAggregatedReport|DeviceLogonEvents|{Occurrences} {LogonType} logons by {UserName}&bsol;{DomainName}|1. Target username </br> 2. Target user SID </br> 3. Target domain name </br> 4. Logon type|
-|LogonFailedAggregatedReport|DeviceLogonEvents|{Occurrences}{LogonType} logons failed by {UserName}&bsol;{DomainName} |1. Target username </br> 2. Target user SID </br> 3. Target domain name </br> 4. Logon type|
+> [!div class="mx-tdBreakAll"]
+> |Action type|Advanced hunting table|Device timeline presentation|Properties|
+> |:---|:---|:---|:-----------|
+> |FileCreatedAggregatedReport|DeviceFileEvents|{ProcessName} created {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
+>|FileRenamedAggregatedReport|DeviceFileEvents|{ProcessName} renamed {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
+> |FileModifiedAggregatedReport|DeviceFileEvents|{ProcessName} modified {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
+> |ProcessCreatedAggregatedReport|DeviceProcessEvents|{InitiatingProcessName} created {Occurrences} {ProcessName} processes|1. Initiating process command line </br> 2. Initiating process SHA1 </br> 3. Initiating process file path </br> 4. Process command line </br> 5. Process SHA1 </br> 6. Folder path|
+> |ConnectionSuccessAggregatedReport|DeviceNetworkEvents|{InitiatingProcessName} established {Occurrences} connections with {RemoteIP}:{RemotePort}|1. Initiating process name </br> 2. Source IP </br> 3. Remote IP </br> 4. Remote port|
+> |ConnectionFailedAggregatedReport|DeviceNetworkEvents|{InitiatingProcessName} failed to establish {Occurrences} connections with {RemoteIP:RemotePort}|1. Initiating process name </br> 2. Source IP </br> 3. Remote IP </br> 4. Remote port|
+> |LogonSuccessAggregatedReport|DeviceLogonEvents|{Occurrences} {LogonType} logons by {UserName}&bsol;{DomainName}|1. Target username </br> 2. Target user SID </br> 3. Target domain name </br> 4. Logon type|
+> |LogonFailedAggregatedReport|DeviceLogonEvents|{Occurrences}{LogonType} logons failed by {UserName}&bsol;{DomainName} |1. Target username </br> 2. Target user SID </br> 3. Target domain name </br> 4. Logon type|
 
 > [!NOTE]
 > Turning on aggregated reporting improves signal visibility, which might incur higher storage costs if you are streaming Defender for Endpoint advanced hunting tables to your SIEM or storage solutions.
