@@ -133,12 +133,9 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [File filters](file-filters.md)
+* [File policies](data-protection-policies.md)
 * [Content inspection](content-inspection.md)
 
----
----
----
 ---
 
 ## Enforce DLP and compliance policies for data stored in the cloud
@@ -149,9 +146,6 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 * [Governing connected apps](governance-actions.md)
 
----
----
----
 ---
 
 ## Block and protect download of sensitive data to unmanaged or risky devices

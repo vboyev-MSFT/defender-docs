@@ -18,8 +18,6 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 > - [Understand how quarantine works](#understand-how-quarantine-works)
 > - [Set up admin quarantine](#set-up-admin-quarantine)
 
-> [!IMPORTANT]
-> Starting **September 1, 2024**, we'll be deprecating the **Files** page from Microsoft Defender for Cloud Apps. At that point, create and modify Information Protection policies and find malware files from the **Cloud apps > Policies > Policy Management** page. For more information, see [File policies in Microsoft Defender for Cloud Apps](data-protection-policies.md).
 
 ## Understand how quarantine works
 
@@ -28,10 +26,10 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 > - For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md). 
 > - Files labeled by Defender for Cloud Apps can't be quarantined.
 > - Defender for Cloud Apps admin quarantine actions are limited to 100 actions per day.
-> - Sharepoint sites that are renamed either directly or as part of domain rename cannot be used as a folder location for admin quarantine.
+> - Sharepoint sites that are renamed either directly or as part of domain rename can't be used as a folder location for admin quarantine.
 
 
-1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
+1. When a file matches a policy, the **Admin quarantine** option is available for the file.
 
 1. Do one of the following actions to quarantine the file:
 
@@ -53,7 +51,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 
     1. The user can only access the tombstone file. In the file, they can read the custom guidelines provided by IT and the correlation ID to give IT to release the file.
 
-1. When you receive the alert that a file has been quarantined, go to **Policies** -> **Policy Management**. Then select the **Information Protection** tab.  In the row with your file policy, choose the three dots at the end of the line, and select **View all matches**. This will bring you the report of matches, where you can see the matching and quarantined files:
+1. When you receive the alert that a file has been quarantined, go to **Policies** -> **Policy Management**. Then select the **Information Protection** tab.  In the row with your file policy, choose the three dots at the end of the line, and select **View all matches**. This brings you the report of matches, where you can see the matching and quarantined files:
 
     ![Quarantined files.](media/quarantine-alerts.png)
 
@@ -71,7 +69,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 > [!NOTE]
 > When you restore a file:
 >
-> - Original shares are not restored, default folder inheritance applied.
+> - Original shares aren't restored, default folder inheritance applied.
 > - The restored file contains only the most recent version.
 > - The quarantine folder site access management is the customer's responsibility.
 

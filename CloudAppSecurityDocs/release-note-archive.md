@@ -2263,7 +2263,7 @@ Released October 30, 2016
 
 **New features:**
 
-- To simplify filtering in the [activity log](activity-filters.md) and [file log](file-filters.md), similar filters have been consolidated. Use the activity filters: Activity object, IP address, and User. Use the file filter Collaborators to find exactly what you need.
+- To simplify filtering in the [activity log](activity-filters.md) and [file log](data-protection-policies.md), similar filters have been consolidated. Use the activity filters: Activity object, IP address, and User. Use the file filter Collaborators to find exactly what you need.
 - From the activity log drawer, under **Source**, you can click the link for **View raw data**. This action downloads the raw data used to generate the activity log for greater drill down into app events.
 - Added support for extra login activities in Okta. [Private preview]
 - Added support for extra login activities in Salesforce.
