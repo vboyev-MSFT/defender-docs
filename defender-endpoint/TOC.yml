@@ -1090,15 +1090,6 @@
       - name: Use sensitivity labels to prioritize incident response
         href: information-protection-investigation.md
 
-      - name: Reporting
-        items:
-        - name: Power BI - How to use API - Samples
-          href: api/api-power-bi.md
-        - name: Threat protection reports
-          href: threat-protection-reports.md
-        - name: Monthly security summary
-          href: monthly-security-summary-report.md
-
     - name: Advanced hunting
       href: /defender-xdr/advanced-hunting-overview
 
@@ -1132,6 +1123,16 @@
 
   - name: Reference
     items:
+    - name: Reports
+      items:
+        - name: Aggregated reports
+          href: aggregated-reporting.md
+        - name: Monthly security summary
+          href: monthly-security-summary-report.md
+        - name: Create custom reports using Power BI
+          href: api/api-power-bi.md
+        - name: Threat protection reports
+          href: threat-protection-reports.md       
     - name: Microsoft Security Resources
       items: 
         - name: Threat actor naming
