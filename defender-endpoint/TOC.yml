@@ -1125,62 +1125,14 @@
     items:
     - name: Reports
       items:
-        - name: Aggregated reports
-          href: aggregated-reporting.md
         - name: Monthly security summary
           href: monthly-security-summary-report.md
         - name: Create custom reports using Power BI
           href: api/api-power-bi.md
         - name: Threat protection reports
-          href: threat-protection-reports.md       
-    - name: Microsoft Security Resources
-      items: 
-        - name: Threat actor naming
-          href: /defender-xdr/microsoft-threat-actor-naming
-        - name: Malware names
-          href: /defender-xdr/malware-naming
-        - name: How Microsoft identifies malware and PUA
-          href: /defender-xdr/criteria
-        - name: Submit files for analysis
-          href: /defender-xdr/submission-guide
-        - name: Troubleshoot MSI portal errors caused by admin block
-          href: /defender-xdr/portal-submission-troubleshooting
-        - name: Microsoft virus initiative
-          href: /defender-xdr/virus-initiative-criteria
-        - name: Software developer FAQ
-          href: /defender-xdr/developer-faq
-    - name: Malware information
-      items: 
-       - name: Understanding malware
-         href: malware/understanding-malware.md
-       - name: Coinminers
-         href: malware/coinminer-malware.md
-       - name: Exploits and Exploit Kits
-         href: malware/exploits-malware.md
-       - name: Fileless threats
-         href: malware/fileless-threats.md
-       - name: Macro threats
-         href: malware/macro-malware.md
-       - name: Phishing trends
-         href: malware/phishing-trends.md
-       - name: Phishing
-         href: malware/phishing.md
-       - name: Prevent malware infection
-         href: malware/prevent-malware-infection.md
-       - name: Rootkits
-         href: malware/rootkits-malware.md
-       - name: Supply chain malware
-         href: malware/supply-chain-malware.md
-       - name: Support scams
-         href: malware/support-scams.md
-       - name: Trojans
-         href: malware/trojans-malware.md
-       - name: Unwanted software
-         href: malware/unwanted-software.md
-       - name: Worms
-         href: malware/worms-malware.md
-    - name: Understand threat intelligence concepts
-      href: threat-indicator-concepts.md
+          href: threat-protection-reports.md
+        - name: Aggregated reports
+          href: aggregated-reporting.md                 
     - name: Configure integration with other Microsoft solutions
       items:
       - name: Configure conditional access
@@ -1583,7 +1535,55 @@
         href: conditional-access.md
       - name: Microsoft Defender for Cloud Apps integration overview
         href: microsoft-cloud-app-security-integration.md
-
+    - name: Microsoft Security Resources
+      items: 
+        - name: Threat actor naming
+          href: /defender-xdr/microsoft-threat-actor-naming
+        - name: Malware names
+          href: /defender-xdr/malware-naming
+        - name: How Microsoft identifies malware and PUA
+          href: /defender-xdr/criteria
+        - name: Submit files for analysis
+          href: /defender-xdr/submission-guide
+        - name: Troubleshoot MSI portal errors caused by admin block
+          href: /defender-xdr/portal-submission-troubleshooting
+        - name: Microsoft virus initiative
+          href: /defender-xdr/virus-initiative-criteria
+        - name: Software developer FAQ
+          href: /defender-xdr/developer-faq        
+    - name: Malware information
+      items: 
+       - name: Understanding malware
+         href: malware/understanding-malware.md
+       - name: Coinminers
+         href: malware/coinminer-malware.md
+       - name: Exploits and Exploit Kits
+         href: malware/exploits-malware.md
+       - name: Fileless threats
+         href: malware/fileless-threats.md
+       - name: Macro threats
+         href: malware/macro-malware.md
+       - name: Phishing trends
+         href: malware/phishing-trends.md
+       - name: Phishing
+         href: malware/phishing.md
+       - name: Prevent malware infection
+         href: malware/prevent-malware-infection.md
+       - name: Rootkits
+         href: malware/rootkits-malware.md
+       - name: Supply chain malware
+         href: malware/supply-chain-malware.md
+       - name: Support scams
+         href: malware/support-scams.md
+       - name: Trojans
+         href: malware/trojans-malware.md
+       - name: Unwanted software
+         href: malware/unwanted-software.md
+       - name: Worms
+         href: malware/worms-malware.md
+    - name: Understand threat intelligence concepts
+      href: threat-indicator-concepts.md
+      
   - name: Microsoft Defender XDR docs
     items:
     - name: Microsoft Defender XDR

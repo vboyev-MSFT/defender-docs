@@ -60,7 +60,7 @@ Aggregated reporting supports the following event types:
 
 > [!div class="mx-tdBreakAll"]
 > |Action type|Advanced hunting table|Device timeline presentation|Properties|
-> |:---|:---|:---|:-----------|
+> |:---|:---|:-------|:-------------------------------|
 > |FileCreatedAggregatedReport|DeviceFileEvents|{ProcessName} created {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
 >|FileRenamedAggregatedReport|DeviceFileEvents|{ProcessName} renamed {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
 > |FileModifiedAggregatedReport|DeviceFileEvents|{ProcessName} modified {Occurrences} {FilePath} files|1. File path </br> 2. Process name </br> 3. Process name|
