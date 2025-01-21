@@ -26,7 +26,7 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
     - **Generated:** Tokens that have never been used.
     - **Active:** Tokens that were generated and were used within the past seven days.
-    - **Inactive:** Tokens that were used but there was no activity in the last seven days.
+    - **Inactive:** Tokens that were used, but there was no activity in the last seven days.
 
 1. After you generate a new token, you'll be provided with a new URL to use to access Defender for Cloud Apps.
 
