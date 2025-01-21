@@ -65,6 +65,7 @@ Defender for Cloud Apps plans to rotate its application certificate. If you’ve
     
     ```powershell
     keytool -list -keystore ..\lib\security\cacerts
+    ```
 
 1. If you see the following four aliases, that means you have previously explicitly trusted our certificate and need to take action. If those aliases aren't present, no action should be needed.
     - *azuretls01crt*
