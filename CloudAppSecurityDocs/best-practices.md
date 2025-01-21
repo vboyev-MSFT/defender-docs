@@ -59,9 +59,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 * [OAuth app policies](app-permission-policy.md)
 
 ---
----
----
----
+<br/><br/>
 
 ## Apply cloud governance policies
 
@@ -137,6 +135,8 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 * [Content inspection](content-inspection.md)
 
 ---
+<br/><br/>
+
 
 ## Enforce DLP and compliance policies for data stored in the cloud
 
@@ -147,6 +147,8 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 * [Governing connected apps](governance-actions.md)
 
 ---
+<br/><br/>
+
 
 ## Block and protect download of sensitive data to unmanaged or risky devices
 
@@ -158,9 +160,8 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 * [Session policies](session-policy-aad.md)
 
 ---
----
----
----
+<br/><br/>
+
 
 ## Secure collaboration with external users by enforcing real-time session controls
 
@@ -172,9 +173,8 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 * [Session policies](session-policy-aad.md)
 
 ---
----
----
----
+<br/><br/>
+
 
 ## Detect cloud threats, compromised accounts, malicious insiders, and ransomware
 
@@ -214,9 +214,8 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 * [OAuth app policies](app-permission-policy.md)
 
 ---
----
----
----
+<br/><br/>
+
 
 ## Use the audit trail of activities for forensic investigations
 
@@ -231,9 +230,8 @@ When dismissing alerts, it's important to investigate and understand why they ar
 * [Activities](activity-filters.md)
 
 ---
----
----
----
+<br/><br/>
+
 
 ## Secure IaaS services and custom apps
 
