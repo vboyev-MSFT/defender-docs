@@ -155,7 +155,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     ./keytool --list --keystore ../lib/security/cacerts | grep self
     ```
 
-Your imported proxy CA certificate is displayed.
+    Your imported proxy CA certificate is displayed.
 
 ### Restrict IP addresses sending syslog messages to the log collector on Linux
 
