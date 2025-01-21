@@ -81,7 +81,7 @@ To query new data with aggregated reports:
 
 Here is an example of advanced hunting query results with aggregated reports.
 
-:::image type="content" source="/defender-endpoint/media/reports/aggregated-reporting/sample-results-aggregated-reports-small.png" alt-text="Screenshot of advanced hunting query results with aggregated reports." "lightbox="/defender-endpoint/media/reports/aggregated-reporting/sample-results-aggregated-reports.png:::
+:::image type="content" source="/defender-endpoint/media/reports/aggregated-reporting/sample-results-aggregated-reports-small.png" alt-text="Screenshot of advanced hunting query results with aggregated reports." lightbox="/defender-endpoint/media/reports/aggregated-reporting/sample-results-aggregated-reports.png":::
 
 ## Sample advanced hunting queries
 
