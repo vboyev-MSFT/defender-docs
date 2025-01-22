@@ -60,9 +60,9 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
 | Microsoft Sentinel                                       | [Prerequisites to deploy Microsoft Sentinel](/azure/sentinel/prerequisites)  | [Geographical availability and data residency in Microsoft Sentinel](/azure/sentinel/geographical-availability-data-residency)
 | **Optional Microsoft Defender XDR services**              |                                                 |
-| Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)  | [Privacy with Microsoft Defender for Identity](defender-for-identity/privacy-compliance)
+| Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)  | [Privacy with Microsoft Defender for Identity](/defender-for-identity/privacy-compliance)
 | Microsoft Defender for Endpoint                          | [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)   | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
-| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Defender for IoT in the Defender portal](defender-for-iot/prerequisites)   | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy)
+| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Defender for IoT in the Defender portal](/defender-for-iot/prerequisites)   | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy)
 | Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)   | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
 | Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   | [Privacy with Microsoft Defender for Cloud Apps](/defender-cloud-apps/cas-compliance-trust)
 | **Other services supported in the Microsoft Defender portal**   |   |
@@ -70,7 +70,7 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | Microsoft Security Copilot                               | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  | [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security)
 | Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. | [Microsoft Defender for Cloud data security](/azure/defender-for-cloud/data-security)
 | Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
-| Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) | [Microsoft Entra data retention](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention) |
+| Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) | [Microsoft Entra data retention](/entra/identity/monitoring-health/reference-reports-data-retention) |
 
 ## Plan your Log Analytics workspace architecture
 
