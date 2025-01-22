@@ -56,12 +56,13 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | Security service         | Prerequisites                  | Data security and privacy |
 | ------------------------ | ------------------------------ |--------------------------------------- |
 | **Required for unified SecOps**       |      | |
-| Microsoft Defender XDR and Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) | [Data security and retnetion in Microsoft Defender XDR](/defender-xdr/data-privacy)
+| Microsoft Defender XDR | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
+| Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
 | Microsoft Sentinel                                       | [Prerequisites to deploy Microsoft Sentinel](/azure/sentinel/prerequisites)  | [Geographical availability and data residency in Microsoft Sentinel](/azure/sentinel/geographical-availability-data-residency)
 | **Optional Microsoft Defender XDR services**              |                                                 |
 | Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)  | [Privacy with Microsoft Defender for Identity](defender-for-identity/privacy-compliance)
 | Microsoft Defender for Endpoint                          | [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)   | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
-| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Defender for IoT in the Defender portal](defender-for-iot/prerequisites)   | [Data security and retnetion in Microsoft Defender XDR](/defender-xdr/data-privacy)
+| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Defender for IoT in the Defender portal](defender-for-iot/prerequisites)   | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy)
 | Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)   | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
 | Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   | [Privacy with Microsoft Defender for Cloud Apps](/defender-cloud-apps/cas-compliance-trust)
 | **Other services supported in the Microsoft Defender portal**   |   |
