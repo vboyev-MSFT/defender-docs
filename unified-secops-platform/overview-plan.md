@@ -70,7 +70,7 @@ Before you deploy Microsoft's unified security operations platform, review the p
 | Microsoft Security Copilot                               | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  | [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security)
 | Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. | [Microsoft Defender for Cloud data security](/azure/defender-for-cloud/data-security)
 | Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
-| Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) |
+| Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) | [Microsoft Entra data retention](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention) |
 
 ## Plan your Log Analytics workspace architecture
 
