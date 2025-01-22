@@ -32,10 +32,10 @@ Microsoft Defender XDR services include:
 
 | Service | Description |
 | ------- | ----------- |
-| [**Microsoft Defender for Identity**](/defender-for-identity/what-is) | Identifies, detects, and investigates threats from both on-premises Active Directory and cloud identities like Microsoft Entra ID. |
 | [**Microsoft Defender for Office 365**](/defender-office-365/mdo-about) | Protects against threats posed by email messages, URL links, and Office 365 collaboration tools. |
+| [**Microsoft Defender for Identity**](/defender-for-identity/what-is) | Identifies, detects, and investigates threats from both on-premises Active Directory and cloud identities like Microsoft Entra ID. |
 | [**Microsoft Defender for Endpoint**](/defender-endpoint/microsoft-defender-endpoint) | Monitors and protects endpoint devices, detects and investigates device breaches, and automatically responds to security threats. |
-| **Enterprise IoT monitoring** from [Microsoft Defender for IoT](/defender-for-iot/microsoft-defender-iot) | Provides both IoT device discovery and security value for IoT devices. |
+| [**Microsoft Defender for IoT**](/defender-for-iot/microsoft-defender-iot) | Provides both IoT device discovery and security value for IoT devices. |
 | [**Microsoft Defender Vulnerability Management**](/defender-vulnerability-management/defender-vulnerability-management) | Identifies assets and software inventory, and assesses device posture to find security vulnerabilities. |
 | [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps) | Protects and controls access to SaaS cloud apps. |
 
@@ -49,28 +49,51 @@ Other services supported in the Microsoft Defender portal as part of Microsoft's
 | [**Microsoft Defender Threat Intelligence**](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | Streamlines threat intelligence workflows by aggregating and enriching critical data sources to correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. |
 | [**Microsoft Entra ID Protection**](/entra/id-protection/overview-identity-protection) | Evaluates risk data from sign-in attempts to evaluate the risk of each sign-in to your environment. |
 
-## Review service prerequisites and data security and privacy practices
+## Review service prerequisites
 
-Before you deploy Microsoft's unified security operations platform, review the prerequisites and make sure that you understand the data security and privacy practices for each service you plan to use. The following table lists the services and links for more information:
+Before you deploy Microsoft's unified security operations platform, review the prerequisites for each service you plan to use. The following table lists the services and links for more information:
 
-| Security service         | Prerequisites                  | Data security and privacy |
-| ------------------------ | ------------------------------ |--------------------------------------- |
-| **Required for unified SecOps**       |      | |
-| Microsoft Defender XDR | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
-| Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
-| Microsoft Sentinel                                       | [Prerequisites to deploy Microsoft Sentinel](/azure/sentinel/prerequisites)  | [Geographical availability and data residency in Microsoft Sentinel](/azure/sentinel/geographical-availability-data-residency)
+| Security service         | Prerequisites                  |
+| ------------------------ | ------------------------------ |
+| **Required for unified SecOps**       |      |
+| Microsoft Defender XDR | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) |
+| Microsoft Sentinel                                       | [Prerequisites to deploy Microsoft Sentinel](/azure/sentinel/prerequisites)  |
 | **Optional Microsoft Defender XDR services**              |                                                 |
-| Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)  | [Privacy with Microsoft Defender for Identity](/defender-for-identity/privacy-compliance)
-| Microsoft Defender for Endpoint                          | [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)   | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
-| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Defender for IoT in the Defender portal](/defender-for-iot/prerequisites)   | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy)
-| Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)   | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy)
-| Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   | [Privacy with Microsoft Defender for Cloud Apps](/defender-cloud-apps/cas-compliance-trust)
+| Microsoft Defender for Office | [Microsoft Defender XDR prerequisites](/defender-xdr/prerequisites) |
+| Microsoft Defender for Identity                          | [Microsoft Defender for Identity prerequisites](/defender-for-identity/deploy/prerequisites)  |
+| Microsoft Defender for Endpoint                          | [Set up Microsoft Defender for Endpoint deployment](/defender-endpoint/production-deployment)   |
+| Enterprise monitoring with Microsoft Defender for IoT    | [Prerequisites for Defender for IoT in the Defender portal](/defender-for-iot/prerequisites)   |
+| Microsoft Defender Vulnerability Management              | [Prerequisites & Permissions for Microsoft Defender Vulnerability Management](/defender-vulnerability-management/tvm-prerequisites)   |
+| Microsoft Defender for Cloud Apps                        | [Get started with Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started)   |
 | **Other services supported in the Microsoft Defender portal**   |   |
-| Microsoft Security Exposure Management                   | [Prerequisites and support](/security-exposure-management/prerequisites)  | [Data freshness, retention, and related functionality](/security-exposure-management/microsoft-security-exposure-management#data-freshness-retention-and-related-functionality)
-| Microsoft Security Copilot                               | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  | [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security)
-| Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. | [Microsoft Defender for Cloud data security](/azure/defender-for-cloud/data-security)
-| Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
-| Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) | [Microsoft Entra data retention](/entra/identity/monitoring-health/reference-reports-data-retention) |
+| Microsoft Security Exposure Management                   | [Prerequisites and support](/security-exposure-management/prerequisites)  |
+| Microsoft Security Copilot                               | [Minimum requirements](/copilot/security/get-started-security-copilot#minimum-requirements)  |
+| Microsoft Defender for Cloud                             | [Start planning multicloud protection](/azure/defender-for-cloud/plan-multicloud-security-get-started) and other articles in the same section. |
+| Microsoft Defender Threat Intelligence                   | [Prerequisites for Defender Threat Intelligence](/defender/threat-intelligence/learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal#prerequisites) |
+| Microsoft Entra ID Protection                            | [Prerequisites for Microsoft Entra ID Protection](/entra/id-protection/how-to-deploy-identity-protection#prerequisites) |
+
+## Review data security and privacy practices
+
+Before you deploy Microsoft's unified security operations platform, make sure that you understand the data security and privacy practices for each service you plan to use. The following table lists the services and links for more information. Note that several services use the data security and retention practices for Microsoft Defender XDR instead of have separate practices of their own.
+
+| Security service         | Data security and privacy |
+| ------------------------ |--------------------------------------- |
+| **Required for unified SecOps**       | |
+| Microsoft Defender XDR | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
+| Microsoft Sentinel | [Geographical availability and data residency in Microsoft Sentinel](/azure/sentinel/geographical-availability-data-residency) |
+| **Optional Microsoft Defender XDR services** | |
+| Microsoft Defender for Office | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
+| Microsoft Defender for Identity | [Privacy with Microsoft Defender for Identity](/defender-for-identity/privacy-compliance) |
+| Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy) |
+| Enterprise monitoring with Microsoft Defender for IoT | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
+| Microsoft Defender Vulnerability Management | [Microsoft Defender for Endpoint data storage and privacy](/defender-endpoint/data-storage-privacy) |
+| Microsoft Defender for Cloud Apps | [Privacy with Microsoft Defender for Cloud Apps](/defender-cloud-apps/cas-compliance-trust) |
+| **Other services supported in the Microsoft Defender portal** | |
+| Microsoft Security Exposure Management | [Data freshness, retention, and related functionality](/security-exposure-management/microsoft-security-exposure-management#data-freshness-retention-and-related-functionality) |
+| Microsoft Security Copilot | [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security) |
+| Microsoft Defender for Cloud | [Microsoft Defender for Cloud data security](/azure/defender-for-cloud/data-security) |
+| Microsoft Defender Threat Intelligence | [Data security and retention in Microsoft Defender XDR](/defender-xdr/data-privacy) |
+| Microsoft Entra ID Protection | [Microsoft Entra data retention](/entra/identity/monitoring-health/reference-reports-data-retention) |
 
 ## Plan your Log Analytics workspace architecture
 
