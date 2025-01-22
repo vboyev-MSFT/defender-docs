@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ios
 search.appverid: met150
-ms.date: 12/02/2024
+ms.date: 01/22/2025
 ---
 
 # Troubleshoot issues and find answers to FAQs on Microsoft Defender for Endpoint on iOS
@@ -48,8 +48,8 @@ While enabled by default, there might be some cases that require you to disable 
 
 3. Toggle off **Connect On Demand** to disable VPN.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/ios-vpn-config.png" alt-text="The Connect on demand option" lightbox="media/ios-vpn-config.png":::
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="media/ios-vpn-config.png" alt-text="The Connect on demand option" lightbox="media/ios-vpn-config.png":::
 
 > [!NOTE]
 > Web Protection isn't available when VPN is disabled. To re-enable Web Protection, open the Defender for Endpoint app on the device and enable Web Protection.
