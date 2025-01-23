@@ -186,7 +186,7 @@ To enable Network Protection for Windows Servers, for now, please use Powershell
 | OS | Powershell cmdlet |
 | --- | --- |
 | Windows Server 2012 R2Windows Server 2022 and later	| set-mpPreference -AllowNetworkProtectionOnWinServer $true |
-| Windows Server 2016 and Windows Server 2012 R2 [unified MDE client](https://learn.microsoft.com/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) | set-MpPreference -AllowNetworkProtectionOnWinServer $true and set-MpPreference -AllowNetworkProtectionDownLevel $true
+| Windows Server 2016 and Windows Server 2012 R2 [unified MDE client](/defender-endpoint/update-agent-mma-windows#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) | set-MpPreference -AllowNetworkProtectionOnWinServer $true and set-MpPreference -AllowNetworkProtectionDownLevel $true
 
 ## Attack Surface Reduction Rules
 
